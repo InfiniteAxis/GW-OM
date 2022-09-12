@@ -1,0 +1,2849 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         The Ghetto~
+Author       Nemesis~
+Ranges       1 1007 1 1007
+Economy      0 9187620
+ResetMsg     Gunshots ring out as there is another driveby..~
+ResetFreq    5
+#ENDAREADATA
+
+#MOBILE
+Vnum       9000
+Keywords   Uncle Frank~
+Short      Uncle Frank~
+Long       Uncle Frank the Shank Shop owner stands here, watching you.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   5 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       9001
+Keywords   Ezail the Crackhead~
+Short      Ezail the Crackhead~
+Long       Ezail the Crackhead is wandering about the ghetto..
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 500 0 -1150 0 0
+Stats2     100 10 5000
+Stats3     50 4 2
+Stats4     0 0 6 100 100
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    bite~
+Defenses   dodge~
+ShopData   19 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   emote looks at you, twitching
+quickly.
+say ...I got 'dese
+cheeseburgers!
+say ..Cheeseburgers!
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   so~
+Comlist   say ..C'mon man..
+say ...
+say ...I'll suck yo dick, MAN!
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9002
+Keywords   Cocaine Addict~
+Short      A Cocaine Addict~
+Long       A guy stands here twitching oddly..
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 500 0 -1150 0 0
+Stats2     300 150 150
+Stats3     60 30 30
+Stats4     0 0 3 100 100
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    punch~
+Defenses   parry~
+#ENDMOBILE
+
+#MOBILE
+Vnum       9003
+Keywords   Wang Yun~
+Short      Wang Yun~
+Long       A short chinese man stands here reading a pornographic magazine.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   5 9 15 0 0 100 70 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   pussy~
+Comlist   emote does a doubletake, realizing what you said.
+say ..You say pussy in my store?!
+say ...IN MY STORE?!
+say ...Where can I get some? >:)
+emote dashes toward you, but trips and falls on his face.
+say ..Oww, my scrotom..
+emote lies there a while..
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   emote doesn't see you there, and keeps talking to himself.
+say Yeah...Wang Get Some Sucky Sucky Tonight!
+emote giggles to himself, reading the porno.
+emote notices you and drops the magazine quickly.
+say Oh, I, uh, ...HURRY UP AND BUY!
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9004
+Keywords   Mojo~
+Short      Mojo the Monkey~
+Long       A little monkey sits here fanning the ATM machine.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   bribe~
+Comlist   if goldamt ($n) >= 300
+mpforce $n give 300 dollars mo
+emote nods.
+emote gets a sign out, which reads "Look below the
+sewer."
+say Oh Oh Ah Ah Ah!
+else
+emote flicks you off, since you don't have enough to pay the
+bribe.
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9005
+Keywords   A Receptionist~
+Short      A Receptionist~
+Long       A receptionist sits at a little desk, smiling.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 25 0 37 0 0
+Stats2     5 10 250
+Stats3     2 4 2
+Stats4     0 0 0 5 5
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#ENDMOBILE
+
+#MOBILE
+Vnum       9007
+Keywords   Mister T~
+Short      Mister T~
+Long       A tall man stands here, muttering something about pitty.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 13 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    punch~
+Defenses   parry~
+#MUDPROG
+Progtype  fight_prog~
+Arglist   15~
+Comlist   say FRITO..LAYS...STRIKE!!!
+mpecho Mister T uses his Cheetos
+Bag!
+mea $n Mister T's papercut &Yh&Oi&Yt&Os you!
+&B-<&C[&c3323&C]&B>-
+mpdamage $n 3500
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say 'FOO!
+say You broke in..
+say While we're tapin'!
+say ..I PITTY..
+say &YY&OO&YU&O!!!
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9012
+Keywords   Cid the Keyblade Salesman~
+Short      Cid Highwind~
+Long       A tall man stands here, smoking a cigarette, awaiting your purchase.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   5 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       9020
+Keywords   Sewer Training Level 1~
+Short      A Holographic Rat~
+Long       A hologram of a rat flickers about the sewer.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1 0 97 25 0
+Stats2     0 10 10
+Stats3     0 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9021
+Keywords   Sewer Training Level 2~
+Short      A Holographic Bat~
+Long       A holographic bat flutters around the sewer.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 27 0 32 50 0
+Stats2     5 10 270
+Stats3     2 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9022
+Keywords   Sewer Training Level 2~
+Short      A Holographic Giant Rat~
+Long       A large rat scampers across the floor here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 52 0 -30 75 0
+Stats2     10 10 520
+Stats3     5 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9023
+Keywords   Sewer Training Level 4~
+Short      A Holographic Homeless Boy~
+Long       A homeless boy begs for money here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 77 0 -92 100 0
+Stats2     15 10 770
+Stats3     7 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9024
+Keywords   Sewer Training Level 5~
+Short      A Holographic Cray~
+Long       A masturbating hologram of Cray is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9025
+Keywords   Sewer Training Level 5~
+Short      A Hologram of Nemesis~
+Long       A hologram of some big ugly ass creature stands before you.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 140 0 -250 150 0
+Stats2     28 10 1400
+Stats3     14 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9026
+Keywords   Sewer Training Level 7~
+Short      A Hologram of Tyrant~
+Long       A tall creature with a large beating heart on his chest is before you.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 200 0 -400 175 0
+Stats2     40 10 2000
+Stats3     20 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9027
+Keywords   Sewer Training Level 8~
+Short      A Hologram of Bob the Builder~
+Long       Bob the builder stands before you, singing that cheesy ass song.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 400 0 -900 250 0
+Stats2     80 10 4000
+Stats3     40 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9028
+Keywords   Mister Nice Guy~
+Short      Mister Nice Guy~
+Long       A guy with a fake jamaican accent stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 500 0 -1150 0 0
+Stats2     100 10 5000
+Stats3     50 4 2
+Stats4     0 0 6 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    bite~
+Defenses   dodge~
+ShopData   61 77 0 0 0 140 50 0 23
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say We're a Jamaican Bobsled team..!
+emote does some weird crap..
+say OUII!!!!
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9030
+Keywords   FuBu Bandana~
+Short      the general store owner~
+Long       The General Store owner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel stayarea nocorpse~
+Stats1     0 100 0 -150 1000 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9031
+Keywords   Aaliyah~
+Short      Aaliyah~
+Long       A beautiful light skinned girl stands here, awaiting your purchase.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   9 15 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       9034
+Keywords   Bob~
+Short      Bob the Bootlegger~
+Long       A tall goofy looking crackhead stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   5 9 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   stock~
+Comlist   mpjunk all
+mpoload 9026
+mpoload 9027
+mpoload 9028
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9035
+Keywords   Jimmy~
+Short      Jimmy the security guard~
+Long       An old man brandishing a stick watches you walking around.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 700 0 -1650 0 0
+Stats2     140 10 7000
+Stats3     70 4 2
+Stats4     0 0 0 30 30
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   emote sees you entering, and begins to shout.
+say Damn Whipper Snappers!
+say You're ruining this neighborhood!
+say When I was your age, I, I...
+emote falls asleep in mid sentence.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9040
+Keywords   Construction Worker~
+Short      A Construction Worker~
+Long       A construction worker stands here, wearing short shorts and a tight shirt.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 5 0 87 0 0
+Stats2     1 10 50
+Stats3     0 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   emote speaks with a lisp.
+say My toolbox..!
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9043
+Keywords   Picketer~
+Short      The picketer~
+Long       A man stands here holding a sign, shouting something.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -30000 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    18 10 10 18 10 10 10
+Saves      0 0 0 0 0
+Defenses   parry dodge~
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   emote holds his sign up.
+say BAN COLOUR T.V!!!!
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  death_prog~
+Arglist   10~
+Comlist   mpmload 9054
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9044
+Keywords   Store Clerk~
+Short      A Store Clerk~
+Long       A nerdy pimplefaced store clerk stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   66 69 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       9046
+Keywords   Prostitute~
+Short      A prostitute~
+Long       A prostitute stand here, wanting to show you a good time.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     -1000 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9047
+Keywords   Opera~
+Short      &WO&wp&We&wr&Wa~
+Long       Some god abandoned a newly created Opera here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9050
+Keywords   Polly~
+Short      &YP&Oo&Yl&Ol&Yy~
+Long       An annoying little bird sits perched on the counter here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel nocorpse~
+Stats1     0 600 0 100 0 0
+Stats2     120 10 6000
+Stats3     60 4 2
+Stats4     0 0 0 120 120
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say POLLY WANTS A CRACKER!
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Dirty~
+Comlist   say YESH!
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   ugly~
+Comlist   say YESH!
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   say &YC&OR&YA&OC&YK&OE&YR...
+say .. &OS&YT&OR&YI&OK&YE!!
+mpdamage $n 2000
+emote strikes quickly, then
+dies.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9052
+Keywords   Luo Guanzhong~
+Short      Luo Guanzhong~
+Long       Luo Guanzhong, the author of ROTK, stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   5 9 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   stock~
+Comlist   mpat 9053 mpoload 9050
+mpat 9053 mpoload 9051
+mpat 9053 mpoload 9053
+mpat 9053 mpoload 9054
+mpat 9053 mpoload 9055
+mpat 9053 mpoload 9056
+mpat 9053 mpoload 9057
+say Done.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say Pssst!! ... hey you wanna get a Metobolic Frame?
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   yes~
+Comlist   say go talk to Howard and tell him you want a frame.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9053
+Keywords   Long Schlong Tong~
+Short      Long Shlong Tong~
+Long       The laundromat owner stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   emote sees you enter.
+say Welkom to Long Shlong Tong's!
+say We haf spechal deal!
+say You wash one thong you wash two othas fwee!
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9054
+Keywords   Picketer~
+Short      &CC&cr&za&wy~
+Long       A man stands here holding a sign, shouting something.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -30000 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    18 10 10 18 10 10 10
+Saves      0 0 0 0 0
+Defenses   parry dodge~
+#MUDPROG
+Progtype  death_prog~
+Arglist   20~
+Comlist   mpoload 11501
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9099
+Keywords   last~
+Short      a newly created last~
+Long       Some god abandoned a newly created last here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#OBJECT
+Vnum     9000
+Keywords first~
+Type     trash~
+Short    a first~
+Long     A first is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9001
+Keywords Submachine-Gun Uzi~
+Type     weapon~
+Short    A SMG Uzi~
+Long     A small hand-gun looking weapon lies here, with a long clip in it.~
+Flags    contraband inventory~
+WFlags   take wield~
+Values   1000 10 125 6 0 0
+Stats    1 15000 1500 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9002
+Keywords Spoon~
+Type     weapon~
+Short    A Spoon~
+Long     A spoon is tuck in the ground here.~
+Flags    inventory~
+WFlags   take wield~
+Values   12 5 6 2 0 0
+Stats    4 100 10 0 0
+Affect       -1 -1 -1 18 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9003
+Keywords Dirty Desk~
+Type     container~
+Short    Dirty Desk~
+Long     &OA large brown dirty desk is here.~
+Values   10 0 0 0 0 0
+Stats    10000 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9004
+Keywords Seraded Shank~
+Type     weapon~
+Short    &YS&Oe&Yr&Oa&Yd&Oe&Yd &CS&ch&Ca&c&Cn&ck~
+Long     A short but strong shank lies here.~
+Flags    inventory~
+WFlags   take wield~
+Values   500 10 50 2 0 0
+Stats    1 1000 100 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9009
+Keywords Key to the Keyblade store~
+Type     key~
+Short    Key to the Secret Shop~
+Long     There is a small shining key lying on the ground here.~
+Flags    inventory~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 22000 2200 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9010
+Keywords Kingdom Key~
+Type     weapon~
+Short    &YT&Oh&Ye &OK&Yi&On&Yg&Od&Yo&Om &YK&Oe&Yy~
+Long     A large key lies here.~
+Flags    contraband inventory~
+WFlags   take wield~
+Values   1100 10 150 2 0 0
+Stats    1 22000 2200 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9016
+Keywords Metal Chocobo~
+Type     weapon~
+Short    &zM&We&zt&Wa&zl &YC&Oh&Yo&Oc&Yo&Oc&Yo&Ob&Yo~
+Long     A long steel keyblade lies here shining brightly.~
+Flags    glow contraband inventory~
+WFlags   take wield~
+Values   1100 10 150 3 0 0
+Stats    1 25000 2500 0 0
+Affect       -1 -1 2 1 0
+Affect       -1 -1 5 18 0
+Affect       -1 -1 5 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9017
+Keywords Lionheart~
+Type     weapon~
+Short    &B&WL&wi&B&Wo&wn&B&Wh&we&B&Wa&wr&B&Wt~
+Long     A long keyblade with a lion head chain lies here.~
+Flags    contraband inventory~
+WFlags   take wield~
+Values   1100 10 150 2 0 0
+Stats    1 22000 2200 0 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 4 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9018
+Keywords Pumpkinhead~
+Type     weapon~
+Short    &zP&Ru&zm&Rp&zk&Ri&zn&Rh&ze&Ra&zd~
+Long     A long skinny black keyblade lies on the ground here.~
+Flags    glow contraband inventory~
+WFlags   take wield~
+Values   1100 10 150 2 0 0
+Stats    1 22000 2200 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9019
+Keywords Cheeseburger~
+Type     food~
+Short    A Cheeseburger~
+Long     A cheeseburger from Ezail's crackhead ass lies here rotting..~
+WFlags   take~
+Values   40 40 0 0 0 0
+Stats    1 10 1 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9020
+Keywords Mobile Suit~
+Type     trash~
+Short    &CGundam: Jacked Suit~
+Long     &CGundam: Jacked Zero~
+Values   0 0 0 0 0 0
+Stats    500 0 0 0 0
+#EXDESC
+ExDescKey    Mobile Suit~
+ExDesc       This was once one of the most prominent mobile suits around...Until they
+parked it here.  Now it sits on cynder blocks and has graphiti all over
+it.. 
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     9022
+Keywords Shrooms~
+Type     rawspice~
+Short    some shrooms~
+Long     Some great lookin fungi is growing on the floor.~
+Flags    inventory~
+WFlags   take~
+Values   3 0 0 0 0 0
+Stats    1 1000 100 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9023
+Keywords unrefined carsinum~
+Type     rawspice~
+Short    Some unrefined carsinum~
+Long     Some unrefined carsinum lies here.~
+Flags    inventory~
+WFlags   take~
+Values   1 0 0 0 0 0
+Stats    1 1000 100 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9024
+Keywords Mowie Wowie~
+Type     rawspice~
+Short    a baggie of marijuana~
+Long     A baggie of green herbs lies here.~
+Flags    inventory~
+WFlags   take~
+Values   0 5 0 0 0 0
+Stats    1 1000 100 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9025
+Keywords Bullet Proof Vest~
+Type     armor~
+Short    A Titanium Bullet Proof Vest~
+Long     A large and heavy vest lies here.~
+Flags    inventory~
+WFlags   take about~
+Values   200 200 0 0 0 0
+Stats    1 50000 5000 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9026
+Keywords A Japanamanese Sword~
+Type     weapon~
+Short    A Japanamanese Sword~
+Long     A long sharp sword made of plastic lies here.~
+Flags    inventory~
+WFlags   take wield~
+Values   40 5 40 2 0 0
+Stats    1 500 50 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9027
+Keywords Gundarnium Vest~
+Type     armor~
+Short    A Gundarnium Vest~
+Long     A Bullet Proof Vest is here.~
+Flags    inventory~
+WFlags   take body~
+Values   75 75 0 0 0 0
+Stats    1 653 65 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9028
+Keywords A Crack Pilot Helmet~
+Type     armor~
+Short    A Crack Pilot Helmet~
+Long     A Black Pilot Helmet is lying here.~
+Flags    inventory~
+WFlags   take head~
+Values   30 30 0 0 0 0
+Stats    1 200 20 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9030
+Keywords FuBu Dewrag~
+Type     armor~
+Short    &RF&ru&RB&ru &zDewrag~
+Long     An expensive dewrag lies on the ground here, unused.~
+Flags    inventory~
+WFlags   take head~
+Values   50 50 0 0 0 0
+Stats    5 20000 2000 0 0
+Affect       -1 -1 2 4 0
+Affect       -1 -1 5 18 0
+Affect       -1 -1 2 3 0
+Affect       -1 -1 2 25 0
+#EXDESC
+ExDescKey    plate armour~
+ExDesc       This plate of armour will give you protection until you can find
+something better. 
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     9031
+Keywords FuBu Wifebeater~
+Type     armor~
+Short    &RF&ru&RB&ru &zWifebeater~
+Long     A black wifebeater lies here on the ground.~
+Flags    inventory~
+WFlags   take body~
+Values   50 50 0 0 0 0
+Stats    10 23000 2300 0 0
+Affect       -1 -1 5 18 0
+Affect       -1 -1 5 19 0
+Affect       -1 -1 1000 13 0
+#EXDESC
+ExDescKey    plate armour~
+ExDesc       This plate of armour will give you protection until you can find
+something better. 
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     9032
+Keywords FuBu Jeans~
+Type     armor~
+Short    &zA pair of &RF&ru&RB&ru &YF&Oa&Yt &CA&cl&Cb&ce&Cr&ct &zjeans~
+Long     A pair of legplate made of &gemerald&w lie here.~
+Flags    inventory~
+WFlags   take legs~
+Values   50 50 0 0 0 0
+Stats    10 23000 2300 0 0
+Affect       -1 -1 3 1 0
+Affect       -1 -1 2 2 0
+Affect       -1 -1 500 14 0
+Affect       -1 -1 500 13 0
+Affect       -1 -1 20 17 0
+#EXDESC
+ExDescKey    plate armour~
+ExDesc       This plate of armour will give you protection until you can find
+something better. 
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     9043
+Keywords Picketer~
+Type     trash~
+Short    a Picketer~
+Long     A Picketer is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9050
+Keywords Sword Of Trust~
+Type     weapon~
+Short    &CS&cw&Co&cr&Cd &RO&rf &YT&Or&Yu&Os&Yt~
+Long     A long and shinig sword is stuck in the ground here.~
+Flags    glow hum inventory~
+WFlags   take wield~
+Values   0 10 150 3 0 0
+Stats    1 20000 2000 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9051
+Keywords Triple Bladed Halberd~
+Type     weapon~
+Short    &wA &CDiamond &wencrusted Halberd~
+Long     A spear with a curious &gemerald &Gtip lies here.~
+Flags    hum contraband inventory~
+WFlags   take wield~
+Values   50 10 9 11 0 0
+Stats    8 1000 100 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9053
+Keywords Huang Zhong's Bow~
+Type     weapon~
+Short    &YH&Ou&Ya&On&Yg &OZ&Yh&Oo&Yn&Og&Y'&Os &YB&Oo&Yw~
+Long     A long golden bow lies here on the ground.~
+WFlags   take wield~
+Values   1000 10 151 9 2000 2000
+Stats    1 30000 2100 0 0
+Affect       -1 -1 5 18 0
+Affect       -1 -1 5 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9054
+Keywords Little Dragon Spear~
+Type     weapon~
+Short    &GT&gh&Ge &gL&Gi&gt&Gt&gl&Ge &RD&rr&Ra&rg&Ro&rn &GS&gp&Ge&ga&Gr~
+Long     A long majestic spear with red frillies on its end is embedded here.~
+WFlags   take wield~
+Values   1000 11 148 11 3000 3000
+Stats    1 30000 3000 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9055
+Keywords War Fan~
+Type     weapon~
+Short    &B&WW&wa&B&Wr &wF&B&Wa&wn~
+Long     A large fan composed of feathers lies here.~
+Flags    glow magic~
+WFlags   take wield~
+Values   1000 10 145 8 0 0
+Stats    1 28000 2800 0 0
+Affect       -1 -1 3 18 0
+Affect       -1 -1 2 19 0
+Affect       -1 -1 0 17 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9056
+Keywords Gan Ning's Belt of Bells~
+Type     armor~
+Short    &RG&ra&Rn &rN&Ri&rn&Rg&r'&Rs &zB&We&zl&Wt &Co&cf &YB&Oe&Yl&Ol&Ys~
+Long     A large black belt with gold bells hanging from its buckle lies here.~
+Flags    inventory~
+WFlags   take waist~
+Values   70 -70 0 0 0 0
+Stats    1 12000 1200 0 0
+Affect       -1 -1 5 18 0
+Affect       -1 -1 5 19 0
+Affect       -1 -1 1 1 0
+Affect       -1 -1 20 41 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9057
+Keywords Book of Heaven~
+Type     book~
+Short    &CB&co&Co&ck &pO&Pf &YH&Oe&Ya&Ov&Ye&On~
+Long     A large book with chinese characters on its cover lies here.~
+Flags    glow hum magic~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 18000 1800 0 0
+Affect       -1 -1 4 4 0
+Affect       -1 -1 2 31 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 5 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9058
+Keywords Sparkle Paper Towels~
+Type     trash~
+Short    a Sparkle Paper Towels~
+Long     A Sparkle Paper Towels is here.~
+Flags    prototype~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9060
+Keywords Operation Meteor Quest Token~
+Type     treasure~
+Short    &CO&cp&be&Br&ga&Gt&gi&co&Cn &WM&we&zt&we&zo&Wr &GQ&gu&Oe&gs&Gt &RT&ro&pk&re&Rn~
+Long     &zAn &CO&cp&be&Br&ga&Gt&gi&co&Cn &WM&we&zt&we&zo&Wr &GQ&gu&Oe&gs&Gt &RT&ro&pk&re&Rn &zlies on the ground here, gaining value by the minute..~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9061
+Keywords [10] Operation Meteor Quest Token~
+Type     treasure~
+Short    &Y[&O10&Y] &CO&cp&be&Br&ga&Gt&gi&co&Cn &WM&we&zt&we&zo&Wr &GQ&gu&Oe&gs&Gt &RT&ro&pk&re&Rn&ps~
+Long     &zAn &Y[&O10&Y] &CO&cp&be&Br&ga&Gt&gi&co&Cn &WM&we&zt&we&zo&Wr &GQ&gu&Oe&gs&Gt &RT&ro&pk&re&Rn&ps &zlies on the ground here, gaining value by the minute..~
+WFlags   take hold~
+Values   0 0 0 1 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9062
+Keywords [100] Operation Meteor Quest Token~
+Type     treasure~
+Short    &Y[&O100&Y] &CO&cp&be&Br&ga&Gt&gi&co&Cn &WM&we&zt&we&zo&Wr &GQ&gu&Oe&gs&Gt &RT&ro&pk&re&Rn&ps~
+Long     &zAn &Y[&O100&Y] &CO&cp&be&Br&ga&Gt&gi&co&Cn &WM&we&zt&we&zo&Wr &GQ&gu&Oe&gs&Gt &RT&ro&pk&re&Rn&ps &zlies on the ground here, gaining value by the minute..~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9099
+Keywords ~
+Type     fountain~
+Short    a fountain~
+Long     A drinking fountain rests against the wall.~
+Values   1000 1000 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     9000
+Name     The Ghetto Landing Pad~
+Sector   city~
+Desc     The area around this landing pad is pure rubble, as this isn't the richest
+area around.  The wee children of the ghetto scatter about as they see
+you, thinking you're some wierd white man.  To the west, you see a Mobile
+Suit on cinder blocks, evidently being jacked by thugs.  To the east, you
+see the Goodwill office, where people can buy good things at a cheap
+price. 
+ 
+&CSay 'Main' to return!
+~
+#EXIT
+Direction north~
+ToRoom    9003
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9002
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9001
+#ENDEXIT
+
+Reset O 0 9099 1 9000
+#MUDPROG
+Progtype  speech_prog~
+Arglist   main~
+Comlist   mpechoaround $n $n is taken back to Z64.
+mptransfer $n 5129
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     9001
+Name     A Broken Down Alley~
+Sector   city~
+Desc     There is a mobile suit up on cinder blocks here, evidently being jacked for
+all its parts. The thugs around it flock toward you, quickly searching for
+a wallet of some kind, but find nothing from your poor ass. As you start
+to walk away, you notice "&RNemesis Wuz Herr&z" written on a wall..
+~
+#EXIT
+Direction east~
+ToRoom    9000
+#ENDEXIT
+
+Reset M 0 9002 6 9001
+Reset M 0 9002 6 9001
+Reset M 0 9002 6 9001
+#ENDROOM
+
+#ROOM
+Vnum     9002
+Name     The Goodwill Store~
+Sector   city~
+Desc     The wallpaper in this store is beyond ghetto, and you wonder who in the
+hell would pick such a thing.  The clerk, wielding a shotgun and starring
+at you funny, sips his 40 of Old E liquor, awaiting your purchase.
+~
+#EXIT
+Direction west~
+ToRoom    9000
+#ENDEXIT
+
+Reset M 0 9003 1 9002
+  Reset G 1 9001 1
+  Reset G 1 9025 1
+  Reset G 1 2007 1
+  Reset G 1 1356 1
+  Reset G 1 202 1
+#ENDROOM
+
+#ROOM
+Vnum     9003
+Name     The Ghetto Street~
+Sector   city~
+Desc     This ghetto little region is full of top of the line cardboard boxes for your
+living pleasure!  Just think, you could own your very own cardboard box!
+They even come with complementary roaches, rotting stench, and prostitutes!
+Ghetto life has never been this good!
+~
+#EXIT
+Direction north~
+ToRoom    9005
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9004
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9000
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9006
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    9014
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    9013
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    9015
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    9016
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9004
+Name     Uncle Frank's Shank Shop~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction west~
+ToRoom    9003
+#ENDEXIT
+
+Reset M 0 9000 1 9004
+  Reset G 1 9002 1
+  Reset G 1 9004 1
+#ENDROOM
+
+#ROOM
+Vnum     9005
+Name     The Ghetto Street~
+Sector   city~
+Desc     You hear the eerie music from the old T.V show called the A-Team, with a
+ladder leading up to a house. You see cheeto bags lying all over the
+street in this area, with cats and dogs scavenging through it all.  To the
+south is the ghetto housing complex, and the north is still the ghetto
+street..
+~
+#EXIT
+Direction north~
+ToRoom    9008
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9003
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    9041
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9006
+Name     An Empty Apartment~
+Sector   city~
+Flags    indoors empty_home~
+#EXIT
+Direction east~
+ToRoom    9003
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9007
+Name     Before the Radio Station~
+Sector   city~
+Flags    indoors~
+Desc     The new Jibber Jabberin' With Mister T radio station is to the north, with
+ample parking to the northeast, and northwest. Just think, you could be on
+the air with the famour Mister T! If you're lucky, he'll pitty your sorry
+ass!
+~
+#EXIT
+Direction north~
+ToRoom    9057
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    9055
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    9056
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9008
+Name     The Ghetto Street~
+Sector   city~
+Desc     This is the big ghetto intersection, where you can find several useful
+things. To the northeast, is a ATM with a monkey, to the southwest
+is the world famous bootleg shop. The street continues to the east and
+south, with the hospital down where the Sewer used to be. Strangely, there
+is no way of telling what there is to the northwest..
+~
+#EXIT
+Direction east~
+ToRoom    9009
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9005
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    9017
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    9011
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    9034
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9009
+Name     The Ghetto Street~
+Sector   city~
+Desc     This is the hangout of the notorious crackhead Ezail.  He's been know to do
+favors if you give him, uh, directions, but who wants that?  Unless you're
+someone like Leppy, keep away from this butt raping anal pirate.
+~
+#EXIT
+Direction east~
+ToRoom    9018
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9010
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9008
+#ENDEXIT
+
+Reset M 0 9001 1 9009
+  Reset G 1 9019 1
+#ENDROOM
+
+#ROOM
+Vnum     9010
+Name     The Roach Motel~
+Sector   city~
+Flags    indoors hotel~
+Desc     This luxorious suite is composed of duct tape, ramen noodles, and fried
+chicken. There are roaches, both the insect and joint, burning on the
+stoves, with boxes of shoes stuffed with porno littering the place. If you
+think about it, this area looks awfully like New Castle, Delaware.
+~
+#EXIT
+Direction north~
+ToRoom    9009
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9011
+Name     The First Ghetto National Bank~
+Sector   city~
+Flags    indoors bank~
+Desc     This ghetto establishment consists of a ATM Machine(complete with duct
+tape), three ju ju beans, and a monkey named Mojo. The little monkey sits
+beside the ATM machine cooling it off, so it doesn't overheat and burn all
+the money. Maybe if you bribed him, he could give you a hint of the Ghetto
+City's secrets.
+~
+#EXIT
+Direction southwest~
+ToRoom    9008
+#ENDEXIT
+
+Reset M 0 9004 1 9011
+#ENDROOM
+
+#ROOM
+Vnum     9012
+Name     The Keyblade Shop~
+Sector   city~
+Desc     This area is fill with mysticism, unlike its ghetto surroundings.  There
+are several wierd swords hung on the walls, in the shape of keys. These
+aren't normal weapons, and may even posess great power, so one shouldn't
+overlook them..
+~
+#EXIT
+Direction southeast~
+ToRoom    9008
+Key       9009
+Flags     isdoor closed locked~
+#ENDEXIT
+
+Reset M 0 9012 1 9012
+  Reset G 1 9016 1
+  Reset G 1 9017 1
+  Reset G 1 9018 1
+  Reset G 1 9010 1
+Reset D 0 9012 8 2
+#ENDROOM
+
+#ROOM
+Vnum     9013
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+Desc     This almost makes any ghetto person cry with nostalgia.  This premium
+cardboard box has everything a ghetto person could want. There's a fridge
+to hold your 40's, a black and white 15" T.V, and even cockroaches
+scampering across the floor.
+~
+#EXIT
+Direction southeast~
+ToRoom    9003
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9014
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction southwest~
+ToRoom    9003
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9015
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+Desc     This almost makes any ghetto person cry with nostalgia.  This premium
+cardboard box has everything a ghetto person could want. There's a fridge
+to hold your 40's, a black and white 15" T.V, and even cockroaches
+scampering across the floor. look Rhis
+~
+#EXIT
+Direction northwest~
+ToRoom    9003
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9016
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+Desc     This almost makes any ghetto person cry with nostalgia.  This premium
+cardboard box has everything a ghetto person could want. There's a fridge
+to hold your 40's, a black and white 15" T.V, and even cockroaches
+scampering across the floor.
+~
+#EXIT
+Direction northeast~
+ToRoom    9003
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9017
+Name     The Free Clinic~
+Sector   city~
+Flags    nomob heal~
+Desc     Used needles and blood are splattered about, as the stench of cornbeef
+fills the air. Just when you think it couldn't get worse, you notice a naked
+picture of Cray taped on the wall... Heal up quick, before you're scarred
+for life.
+~
+#EXIT
+Direction up~
+ToRoom    9008
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9018
+Name     The Ghetto Street~
+Sector   city~
+Flags    nomob~
+Desc     To the east is the faint smell of sewage, well, the smell is worse to the
+east, but the whole place smells. To the west is still a ghetto street,
+with little poor children begging along it. Finally, to the north, there
+is a road leading to the FuBu outlet, which your ghetto ass can't afford,
+so don't bother.
+~
+#EXIT
+Direction north~
+ToRoom    9030
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9019
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9009
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9019
+Name     The Ghetto Street~
+Sector   city~
+Flags    nomob~
+Desc     There is a pretty large sign lying in the middle of the rode, written it
+crayon.  It says, "The sewer is, uh...down..I think.." along with a used
+condom next to it. Feels just like home, doesn't it? 
+~
+#EXIT
+Direction west~
+ToRoom    9018
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    9020
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9020
+Name     The Sewers~
+Sector   city~
+Flags    indoors~
+Desc     It's amazing to think of a high tech holographic machine in such a lowlife
+area. Thankfully, with government aid(think welfare), they were able to
+install training devices to protect themselves from other crackheads.
+Remember, one crackhead's trash is another one's way of toking up.
+~
+#EXIT
+Direction north~
+ToRoom    9021
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9024
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9022
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9023
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    9019
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    9029
+Flags     secret hidden~
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    9025
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    9026
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    9028
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    9027
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9021
+Name     Sewer Training Level 1~
+Sector   city~
+Flags    indoors~
+Desc     Say Rodent to start.
+~
+#EXIT
+Direction south~
+ToRoom    9020
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   rodent~
+Comlist   mpechoat $n A hologram
+appears.
+mpmload 9020 1
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     9022
+Name     Sewer Training Level 3~
+Sector   city~
+Flags    indoors~
+Desc     Say mutant to start.
+~
+#EXIT
+Direction north~
+ToRoom    9020
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   mutant~
+Comlist   mpechoat $n A hologram
+appears.
+mpmload 9022
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     9023
+Name     Sewer Training Level 4~
+Sector   city~
+Flags    indoors~
+Desc     Say poor to begin.
+~
+#EXIT
+Direction east~
+ToRoom    9020
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   poor~
+Comlist   mpechoat $n A hologram
+appears.
+mpmload 9023
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     9024
+Name     Sewer Training Level 2~
+Sector   city~
+Flags    indoors~
+Desc     Say Bat for the hologram to appear.
+~
+#EXIT
+Direction west~
+ToRoom    9020
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   bat~
+Comlist   mpechoat $n A hologram
+appears.
+mpmload 9021
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     9025
+Name     Sewer Training Level 5~
+Sector   city~
+Flags    indoors~
+Desc     Say Canadian to start.
+~
+#EXIT
+Direction southwest~
+ToRoom    9020
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Canadian~
+Comlist   mpechoat $n A hologram
+appears.
+mpmload 9024
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     9026
+Name     Sewer Training Level 6~
+Sector   city~
+Flags    indoors~
+Desc     Say ogre to start.
+~
+#EXIT
+Direction southeast~
+ToRoom    9020
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   ogre~
+Comlist   mpechoat $n A hologram
+appears.
+mpmload 9025
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     9027
+Name     Sewer Training Level 8~
+Sector   city~
+Flags    indoors~
+Desc     Say queer to start.
+~
+#EXIT
+Direction northeast~
+ToRoom    9020
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   queer~
+Comlist   mpechoat $n A hologram
+appears.
+mpmload 9027
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     9028
+Name     Sewer Training Level 7~
+Sector   city~
+Flags    indoors~
+Desc     Say ugly to start.
+~
+#EXIT
+Direction northwest~
+ToRoom    9020
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   ugly~
+Comlist   mpechoat $n A hologram
+appears.
+mpmload 9026
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     9029
+Name     A Secluded Room~
+Sector   city~
+Flags    nomob indoors~
+Desc     What is Nemesis' favorite football team? (Say it, and you'll get out of
+here.) 
+~
+Reset O 0 9009 1 9029
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Eagles~
+Comlist   mpechoaround $n $n goes back up. Bleh
+mptransfer $n 9020
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     9030
+Name     The Ghetto Street~
+Sector   city~
+Flags    nomob~
+Desc     To your west is a dark alley, where you hear little brats giggling and
+robbing an old lady.  Further north is the FuBu outlet, and you know your
+broke ass only has foodstamps, so I don't know why you're even bothering.
+~
+#EXIT
+Direction north~
+ToRoom    9031
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9035
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9018
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9032
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9031
+Name     The Fubu Outlet~
+Sector   city~
+Desc     This store sells high quality threads of FuBu authenticity.  Don't be
+fooled by the bootleggers out there, this is the only place where you can
+sport FuBu. The clerk, Aaliyah, will help you with all of your needs and
+the like. 
+~
+#EXIT
+Direction south~
+ToRoom    9030
+#ENDEXIT
+
+Reset M 0 9031 1 9031
+  Reset G 1 9030 1
+  Reset G 1 9031 1
+  Reset G 1 9032 1
+#ENDROOM
+
+#ROOM
+Vnum     9032
+Name     A Dark Alley~
+Sector   city~
+Flags    dark nomob~
+Desc     It's pretty damn dark in here, better watch your wallet, since all the wee
+thugs chill around here. You see some light to the west, and figure you
+ought to move toward it before you get robbed by shifty mexicans with
+shanks.
+~
+#EXIT
+Direction east~
+ToRoom    9030
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9033
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9033
+Name     Mister Nice Guy Party Accessories~
+Sector   city~
+Flags    nomob~
+Desc     This room is full of crap that reminds you of jamacai, with spears and
+things hung on the walls.  It's a pretty nicely made establishment, for
+being in such a craphole area. On the wall there's a large smiley face
+with the "Mister Nice Guy" logo on it, offering a discount on some good
+stuff.
+~
+#EXIT
+Direction east~
+ToRoom    9032
+#ENDEXIT
+
+Reset M 0 9028 1 9033
+  Reset G 1 9022 1
+  Reset G 1 9023 1
+  Reset G 1 9024 1
+#ENDROOM
+
+#ROOM
+Vnum     9034
+Name     Bob's Better Bootlegs~
+Sector   city~
+Flags    nomob~
+Desc     This bootleg shop makes its own bootlegs, and sells them for dirt cheap. 
+Just remember, once you buy the bootleg, you can't take it back!
+~
+#EXIT
+Direction northeast~
+ToRoom    9008
+#ENDEXIT
+
+Reset M 0 9034 1 9034
+  Reset G 0 9026 1
+  Reset G 0 9027 1
+  Reset G 0 9028 1
+#ENDROOM
+
+#ROOM
+Vnum     9035
+Name     The Projects~
+Sector   city~
+Flags    nomob indoors~
+Desc     The flagrant smell of beer and urine are all around this place, with bums
+and drug addicts walking around trying to make a living. There's a large
+shopping cart in the middle of the road, with pornographic magazines in
+it. There's one sole building security guard, an old man with a stick as a
+weapon.
+~
+#EXIT
+Direction north~
+ToRoom    9036
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9038
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9037
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9030
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    9039
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    9040
+#ENDEXIT
+
+Reset M 0 9035 1 9035
+#ENDROOM
+
+#ROOM
+Vnum     9036
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction south~
+ToRoom    9035
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9037
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction north~
+ToRoom    9035
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9038
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction west~
+ToRoom    9035
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9039
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction southwest~
+ToRoom    9035
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9040
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction northwest~
+ToRoom    9035
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9041
+Name     A dilapitated Road~
+Sector   city~
+Desc     It's a broken down piece of crap road, what do you expect to be here?
+~
+#EXIT
+Direction east~
+ToRoom    9042
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    9005
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9042
+Name     A dilapitated Road~
+Sector   city~
+Desc     It's a broken down piece of crap road, what do you expect to be here?
+~
+#EXIT
+Direction east~
+ToRoom    9043
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9041
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9043
+Name     Road Before Radioshack~
+Sector   city~
+Desc     This is a beat up old road where a lot of druggies like to hop people as
+they walk to the store. There is a roll of duct tape lying out in the
+middle of the road for no reason, maybe to try and catch some food..
+~
+#EXIT
+Direction east~
+ToRoom    9044
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9045
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9042
+#ENDEXIT
+
+Reset M 0 9043 1 9043
+#ENDROOM
+
+#ROOM
+Vnum     9044
+Name     Old Broken Down Radioshack~
+Sector   city~
+Desc     This old store has been here a while, and makes a stable business from all
+of the people coming in and buying radios, rims, and the like. The nerdy
+little clerk stands there looking stupid, and awaits your purchase.  There
+is also a Color T.V in the window pointing outside.
+~
+#EXIT
+Direction west~
+ToRoom    9043
+#ENDEXIT
+
+Reset M 0 9044 1 9044
+  Reset G 1 2017 1
+  Reset G 1 2026 1
+#ENDROOM
+
+#ROOM
+Vnum     9045
+Name     The Red Light District~
+Sector   city~
+Desc     This large industrial area is lined with whores, and other smelly
+tuna-esque creatures. There are factories, shops, and other smog producing
+pieces of crap around this area. Try not to breathe the air, it's not
+pretty. 
+~
+#EXIT
+Direction north~
+ToRoom    9043
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    9046
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9046
+Name     The Red Light District~
+Sector   city~
+Desc     Pimps, whores, and other decrepit creatures line the streets in vain
+attempts to score some quick cash.  You hear the shout of, "GIMME MAH
+MONEY, HO!" as a prostitute is pimpslapped by none other than her pimp. 
+~
+#EXIT
+Direction east~
+ToRoom    9047
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9051
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    9045
+#ENDEXIT
+
+Reset M 0 9046 2 9046
+Reset M 0 9040 1 9046
+#ENDROOM
+
+#ROOM
+Vnum     9047
+Name     Road to China-Town~
+Sector   city~
+Flags    nomob~
+Desc     The city life fades from smog to rice patties as you enter near Chinatown. 
+Migrant workers husk their fields trying to make a harvest, with a poster
+saying "Long Schlong Tong was here". 
+~
+#EXIT
+Direction west~
+ToRoom    9046
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    9048
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9048
+Name     Chinatown~
+Sector   city~
+Flags    nomob~
+Desc     The chinese mafia runs these parts, and it wouldn't be smart to cross them.
+They'll hang your by your ankles and beat you with noodles until they feel
+like stopping. Besides that, this simple road continues through the city,
+with people pushing carts and all that other ghetto crap.
+~
+#EXIT
+Direction northwest~
+ToRoom    9047
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    9049
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9049
+Name     Chinatown Intersection~
+Sector   city~
+Flags    nomob~
+Desc     This intersection is a great place to look around, take in the sights...Get
+a fried puppy on a stick?  There are several stores around, too, along
+with a laundromat to clean your dirty ghetto ass wannabe Gucci shirts..
+~
+#EXIT
+Direction east~
+ToRoom    9052
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9050
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9053
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    9048
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9050
+Name     Noodles 'R Us~
+Sector   city~
+Flags    nomob~
+Desc     This used to be a noodle shop, where all the people flocked to buy ramen
+noodles. Now, it's just a room abandon, with a lonely parrot sitting in
+the middle of it.
+ 
+&Csay You're a dirty bird, aren't you?
+say Isn't Nemesis an ugly
+freak?
+~
+#EXIT
+Direction north~
+ToRoom    9049
+#ENDEXIT
+
+Reset M 0 9050 1 9050
+#ENDROOM
+
+#ROOM
+Vnum     9051
+Name     A Factory~
+Sector   city~
+Flags    indoors factory~
+Desc     This desolate little factory has seen its own share of driveby shootings
+and killings in its short history. There is still visible cocaine residue
+on the table, along with roaches all over.
+~
+#EXIT
+Direction north~
+ToRoom    9046
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9052
+Name     Three Kingdoms Artifact Store~
+Sector   city~
+Desc     This majestic place is a great store for collectors of the Three Kingdoms
+period.  Many old time weapons are hung on the walls, making this place a
+jolly good time for any kleptomaniac.
+~
+#EXIT
+Direction west~
+ToRoom    9049
+#ENDEXIT
+
+Reset M 0 9052 1 9052
+  Reset G 1 9050 1
+  Reset G 1 9051 1
+  Reset G 1 9053 1
+  Reset G 1 9054 1
+  Reset G 1 9055 1
+  Reset G 1 9056 1
+  Reset G 1 9057 1
+#ENDROOM
+
+#ROOM
+Vnum     9053
+Name     Long Shlong Tong's Laundromat~
+Sector   city~
+Desc     Welcome to Long Shlong Tong's, don't play a gong, wash your thong!  There
+are several coin operated washers lined against the walls, with driers
+right by them. The owner, Long Shlong Tong, has a large picture of himself
+on the wall, with the words below it, "Big Schlong, little store!"
+~
+#EXIT
+Direction east~
+ToRoom    9049
+#ENDEXIT
+
+Reset M 0 9053 1 9053
+#ENDROOM
+
+#ROOM
+Vnum     9054
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     9055
+Name     Radio Station Parking Lot~
+Sector   city~
+Flags    nomob~
+Desc     This parking lot is empty, it even has tumble weed rolling through it..
+~
+#EXIT
+Direction southwest~
+ToRoom    9007
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9056
+Name     Radio Station Parking Lot~
+Sector   city~
+Flags    prototype~
+Desc     This big space has plenty of room to fit big ass boat of cars from the
+ghetto.  There is one spot with a lonesome van, though. Upon closer
+inspection, you see it's the &RA Team&z van! 
+~
+#EXIT
+Direction southeast~
+ToRoom    9007
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9057
+Name     Jibber Jabberin' With Mister T Radiostation~
+Sector   city~
+Flags    prototype~
+Desc     This made-with-toiletpaper-and-glue structure is cheap and effective for
+Mister T. There's one big sign in the middle of the room, reading, "&RFOR
+FURTHER PITTY, GO NORTH! ...'FOO!&z".
+~
+#EXIT
+Direction north~
+ToRoom    9058
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9007
+#ENDEXIT
+
+Reset M 0 9005 1 9057
+#ENDROOM
+
+#ROOM
+Vnum     9058
+Name     Jibber Jabberin' With Mister T Radiostation~
+Sector   city~
+Flags    prototype~
+Desc     There's one big sign in the middle of the room, reading, "&RFOR FURTHER
+PITTY, GO NORTH! ...'FOO!&z". 
+~
+#EXIT
+Direction east~
+ToRoom    9059
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9057
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9059
+Name     Jibber Jabberin' With Mister T Radiostation~
+Sector   city~
+Flags    prototype~
+Desc     On the wall, there is something written in blue crayon, "&BTha Pitty Stops
+here, suckahs!&z". Poor Mister T, he seems misunderstood, maybe you should
+go help him. 
+~
+#EXIT
+Direction south~
+ToRoom    9060
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9058
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9060
+Name     Before The Recording Booth~
+Sector   city~
+Flags    prototype~
+Desc     There's a sign lit up on the wall reading, "&RPittyin' in Progress!&z" 
+Further south is the recording booth, where the famous Mister T works his
+cheese luvin' frito lays magic.. 
+~
+#EXIT
+Direction north~
+ToRoom    9059
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9061
+Flags     isdoor~
+#ENDEXIT
+
+#MUDPROG
+Progtype  rand_prog~
+Arglist   100~
+Comlist   mpechoat $n &zThe rant of &YC&Oh&Ye&Oe&Yt&Oo&Y'&Os&z rings throughout the area.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     9061
+Name     Recording Booth~
+Sector   city~
+Flags    prototype~
+Desc     Ah, this is it, the booth where Mister T makes or breaks his poor victims. 
+It looks like something out of the Rocky Horror Picture show, with cheetos
+everywhere. As you look closer at Mister T, you see a tattoo on his right
+arm, stating, "&CDeath Before Pringles&z."
+~
+#EXIT
+Direction north~
+ToRoom    9060
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset M 0 9007 1 9061
+Reset O 0 9003 1 9061
+Reset D 0 9061 0 1
+#ENDROOM
+
+#ROOM
+Vnum     9062
+Name     &CL&ca&Cb &cH&Ca&cl&Cl&cw&Ca&cy~
+Sector   city~
+Flags    nomob indoors prototype~
+Desc     This is a long hallway with several tubes to the north and south. Moans are
+heard around, as the mutants search for another victim.. 
+~
+#EXIT
+Direction north~
+ToRoom    9063
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9065
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9064
+#ENDEXIT
+
+#MUDPROG
+Progtype  rand_prog~
+Arglist   100~
+Comlist   mpechoat $n &CA Defense System's Lasers &RC&rU&RT&C through your skin!
+mpdamage $n 150000
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     9063
+Name     &GT&g-&G1&g0&G2 &gC&Ga&gg&Ge~
+Sector   city~
+Flags    nomob indoors bank prototype~
+Desc     The large beast known as Tyrant is kept here, and he is a relative of
+Nemesis. They're both dangerous alone, but unstoppable together.
+~
+#EXIT
+Direction south~
+ToRoom    9062
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9064
+Name     &RC&ch&Ci&cm&Ce&cr&Ca &cC&ca&Cg&ce~
+Sector   city~
+Flags    nomob indoors prototype~
+Desc     These ugly monsters aren't to be taken likely, and pack quite a wallop when
+they need to.  They can usually be seen clinging from the top of walls
+trying to claim new victims.
+~
+#EXIT
+Direction north~
+ToRoom    9062
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9065
+Name     &CL&ca&Cb &cH&Ca&cl&Cl&cw&Ca&cy~
+Sector   city~
+Flags    nomob indoors prototype~
+Desc     This is a dark dank hallway leading north, south, east, and west.  Several
+moans are still heard, as an &RA&rl&Ra&rr&Rm&z sounds.. 
+~
+#EXIT
+Direction north~
+ToRoom    9066
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9067
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9062
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9066
+Name     &zM&Wr&z. &WX&z'&Ws &PO&pf&Pf&pi&Pc&pe~
+Sector   city~
+Flags    nomob indoors prototype~
+Desc     This big baddy sports a gray trenchcoat and is also related to Nemesis. 
+They're big, ugly, and use reckless abandon, be aware! 
+~
+#EXIT
+Direction south~
+ToRoom    9065
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9067
+Name     &GH&gu&Gn&gt&Ge&gr&G'&gs &CC&ca&Cg&ce~
+Sector   city~
+Flags    nomob indoors prototype~
+Desc     These disruptive little bastards have a knack for decapitating people with
+one hit, and can poison if they hit right. Don't stick around too long, or
+you won't live to tell what they look like.
+~
+#EXIT
+Direction north~
+ToRoom    9065
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9068
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     9069
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     9070
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     9080
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     9090
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     9099
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ENDAREA

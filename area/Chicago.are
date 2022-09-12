@@ -1,0 +1,4762 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         Old Chicago~
+Author       Asuka~
+Ranges       1 1007 1 1007
+Economy      -2 645050778
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       11300
+Keywords   first~
+Short      a newly created first~
+Long       Some god abandoned a newly created first here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       11408
+Keywords   Kraven~
+Short      Kraven~
+Long       A very old man is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 199 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   1 13 5 0 0 120 80 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Lever~
+Comlist   if hasqbit($n) == 2
+say Hello $n, welcome back. To Lever Land you go.
+wave $n
+mptransfer $n 11408
+else
+if hasabit($n) == 2
+say Hello $n, your pass is still active. To Lever Land you go.
+wave $n
+mptransfer $n 11408
+else
+say You need to have a Lever Land lifetime pass or a leverland one login pass.
+say The lifetime costs 500,000 dollars and the login pass costs 25,000 dollars.
+Say If you want one of the passes, give me the money.
+endif
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  bribe_prog~
+Arglist   500000~
+Comlist   say Ok $n, one lifetime pass.
+smile $n
+mpqset $n 2
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  bribe_prog~
+Arglist   25000~
+Comlist   say Ok $n, one login pass.
+smile $n
+mpaset $n 2
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11409
+Keywords   Maximus2~
+Short      An old man~
+Long       An old man is here tending his weapons.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Affected   detect_invis detect_hidden~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   stock 100~
+Comlist   mpoload 11306
+mpoload 11307
+mpoload 11326
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11410
+Keywords   Raider~
+Short      Raider~
+Long       A small sized raider is standing here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 100 0 -150 25 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 4 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpoload 11340
+mpmload 11410
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11411
+Keywords   Raider~
+Short      Raider~
+Long       A small sized raider is standing here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 200 0 -400 50 0
+Stats2     40 10 2000
+Stats3     20 4 2
+Stats4     0 0 4 40 40
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpoload 11341
+mpmload 11411
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11412
+Keywords   Raider~
+Short      raider~
+Long       A small sized raider is standing here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 300 0 -650 75 0
+Stats2     60 10 3000
+Stats3     30 4 2
+Stats4     0 0 4 60 60
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpoload 11342
+mpmload 11412
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11413
+Keywords   raider~
+Short      raider~
+Long       A small sized raider is standing here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 400 0 -900 100 0
+Stats2     80 10 4000
+Stats3     40 4 2
+Stats4     0 0 4 80 80
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpoload 11343
+mpmload 11413
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11414
+Keywords   Raider~
+Short      raider~
+Long       A small sized raider is standing here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 500 0 -1150 125 0
+Stats2     100 10 5000
+Stats3     50 4 2
+Stats4     0 0 4 100 100
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpoload 11344
+mpmload 11414
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11415
+Keywords   Raider~
+Short      raider~
+Long       A small sized raider is standing here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 600 0 -1400 150 0
+Stats2     120 10 6000
+Stats3     60 4 2
+Stats4     0 0 4 120 120
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpoload 11345
+mpmload 11415
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11416
+Keywords   Raider~
+Short      raider~
+Long       A small sized raider is standing here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 700 0 -1650 175 0
+Stats2     140 10 7000
+Stats3     70 4 2
+Stats4     0 0 4 140 140
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpoload 11346
+mpmload 11416
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11417
+Keywords   Raider~
+Short      raider~
+Long       A small sized raider is standing here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 800 0 -1900 200 0
+Stats2     160 10 8000
+Stats3     80 4 2
+Stats4     0 0 4 160 160
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpoload 11347
+mpmload 11417
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11418
+Keywords   Raider~
+Short      raider~
+Long       A small sized raider is standing here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 900 0 -2150 225 0
+Stats2     180 10 9000
+Stats3     90 4 2
+Stats4     0 0 4 180 180
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpoload 11348
+mpmload 11418
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11419
+Keywords   Raider~
+Short      raider~
+Long       A small sized raider is standing here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 250 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 4 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpoload 11349
+mpmload 11419
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11420
+Keywords   Guard~
+Short      Guard~
+Long       A guard is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if hasabit($n) == 0
+say Welcome, $n. Have fun while you train.
+else
+if hasqbit($n) == 0
+say Welcome, $n. Have fun while you train.
+else
+say You aren't allowed in here until you get a pass from downstairs.
+mea $n The Guard chases you back to the loby.
+mptransfer $n 11450
+endif
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11421
+Keywords   Customs Guard~
+Short      Customs Guard~
+Long       A person is here confiscating weapons
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_customs_weapons~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 8 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       11422
+Keywords   Mallos~
+Short      Mallos~
+Long       An old man is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Training 100~
+Comlist   say Hello $n, to get into the training room you need to have a pass.
+say A lifetime pass costs 100,000 dollars and a login pass costs 5,000 dollars.
+say If you would like to buy one just give me the money.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  bribe_prog~
+Arglist   100000~
+Comlist   say Alrighty then, One lifetime pass.
+say I've informed the Guard, you're all set.
+mpqset $n 0
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  bribe_prog~
+Arglist   5000~
+Comlist   say Alrighty then, One login pass.
+say I've informed the Guard, you're all set.
+mpaset $n 0
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11423
+Keywords   Guard~
+Short      Chicago guard~
+Long       A person of the shadows is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Affected   invisible hide~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     1 1 999
+Stats4     0 0 4 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       11424
+Keywords   Guard~
+Short      Gatekeeper~
+Long       A person of the shadows is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Affected   invisible sneak hide~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     1 1 999
+Stats4     0 0 4 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  speech_prog~
+Arglist   open 100~
+Comlist   unlock north
+open north
+say Be on your way.
+mpforce $n north
+close north
+lock north
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11425
+Keywords   Guard~
+Short      Gatekeeper~
+Long       A person of the shadows is here
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Affected   invisible sneak hide~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     1 1 999
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  speech_prog~
+Arglist   open 100~
+Comlist   unlock south
+open south
+say Be on your way.
+mpforce $n south
+close south
+lock south
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11426
+Keywords   Old Lady~
+Short      Old Lady~
+Long       A poor old lady is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_thief~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 200 0 -400 0 0
+Stats2     40 10 2000
+Stats3     20 4 2
+Stats4     0 0 0 40 40
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       11427
+Keywords   Old man~
+Short      Old man~
+Long       A poor old man is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_thief~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 200 0 -400 100 0
+Stats2     40 10 2000
+Stats3     20 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       11428
+Keywords   Lucious~
+Short      Lucious~
+Long       Lucious the black smith is standing here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Affected   detect_invis detect_hidden~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   5 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       11429
+Keywords   Victor~
+Short      Victor~
+Long       Victor is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Affected   detect_invis~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   stock 100~
+Comlist   mpoload 11301
+mpoload 11356
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11430
+Keywords   Kahn~
+Short      Kahn~
+Long       Kahn is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Affected   detect_invis~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   stock 100~
+Comlist   mpoload 11350
+mpoload 11354
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11499
+Keywords   last~
+Short      a newly created last~
+Long       Some god abandoned a newly created last here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#OBJECT
+Vnum     11300
+Keywords first~
+Type     trash~
+Short    a first~
+Long     A first is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11301
+Keywords Silk Cloak~
+Type     armor~
+Short    &CS&ci&Cl&ck &WC&zl&Wo&za&Wk~
+Long     A weird looking cloak is here.~
+Flags    invis inventory~
+WFlags   take body~
+Values   75 75 0 0 0 0
+Stats    1 100000 10000 0 64
+Affect       -1 -1 15 19 0
+Affect       -1 -1 15 18 0
+Affect       -1 -1 1000 13 0
+Affect       -1 -1 2 26 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11302
+Keywords Lever number one~
+Type     lever~
+Short    Lever number one~
+Long     Lever number one is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mpforce $n pull on
+mea $n _red You must start all over again!
+mpdamage $n 1500
+mptransfer $n 11301
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11303
+Keywords Lever number two~
+Type     lever~
+Short    Lever number two~
+Long     Lever number two is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mpforce $n pull two
+mea $n _red You must start all over again!
+mpdamage $n 1500
+mptransfer $n 11301
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11304
+Keywords Lever number three~
+Type     lever~
+Short    Lever number three~
+Long     Lever number three is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mpforce $n pull three
+mea $n _red You must start all over again!
+mpdamage $n 1500
+mptransfer $n 11301
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11305
+Keywords Lever number four~
+Type     lever~
+Short    Lever number four~
+Long     Lever number four is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mpforce $n pull four
+mea $n _red You must start all over again!
+mpdamage $n 1500
+mptransfer $n 11301
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11308
+Keywords Lever number three~
+Type     lever~
+Short    Lever number three~
+Long     Lever number three is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mpforce $n pull three
+mea $n You may continue to the next room!
+mptransfer $n 11304
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11309
+Keywords Lever number two~
+Type     lever~
+Short    Lever number two~
+Long     Lever number two is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mpforce $n pull two
+mea $n You may continue to the next room!
+mptransfer $n 11306
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11310
+Keywords Lever number three~
+Type     lever~
+Short    Lever number three~
+Long     Lever number three is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mpforce $n pull three
+mea $n You may continue to the next room!
+mptransfer $n 11308
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11311
+Keywords Return lever~
+Type     lever~
+Short    Return lever~
+Long     A return lever is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mpforce $n pull lever
+mea $n Please try again.
+mptransfer $n 11301
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11312
+Keywords Lever number four~
+Type     lever~
+Short    Lever number four~
+Long     Lever number four is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mpforce $n pull four
+mea $n You may continue to the next room!
+mptransfer $n 11315
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11313
+Keywords Lever number four~
+Type     lever~
+Short    Lever number four~
+Long     Lever number four is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mpforce $n pull four
+mea $n You may continue to the next room!
+mptransfer $n 11311
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11314
+Keywords Lever number three~
+Type     lever~
+Short    Lever number three~
+Long     Lever number three is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mpforce $n pull three
+mea $n You may continue to the next room!
+mptransfer $n 11322
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11315
+Keywords Lever number one~
+Type     lever~
+Short    Lever number one~
+Long     Lever number one is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mpforce $n pull one
+mea $n You may continue to the next room!
+mptransfer $n 11323
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11316
+Keywords Lever number three~
+Type     lever~
+Short    Lever number three~
+Long     Lever number three is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mpforce $n pull three
+mea $n You may continue to the next room!
+mptransfer $n 11328
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11317
+Keywords Lever number two~
+Type     lever~
+Short    Lever number two~
+Long     Lever number two is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mpforce $n pull two
+mea $n You may continue to the next room!
+mptransfer $n 11329
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11318
+Keywords Lever number one~
+Type     lever~
+Short    Lever number one~
+Long     Lever number one is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mpforce $n pull one
+mea $n You may continue to the next room!
+mptransfer $n 11330
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11319
+Keywords Lever number four~
+Type     lever~
+Short    Lever number four~
+Long     Lever number four is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mpforce $n pull four
+mea $n You may continue to the next room!
+mptransfer $n 11331
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11320
+Keywords Lever number three~
+Type     lever~
+Short    Lever number three~
+Long     Lever number three is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mpforce $n pull three
+mea $n You may continue to the next room!
+mptransfer $n 11332
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11321
+Keywords Lever number four~
+Type     lever~
+Short    Lever number four~
+Long     Lever number four is here~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mpforce $n pull four
+mea $n You may continue to the next room!
+mptransfer $n 11333
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11322
+Keywords Return lever~
+Type     lever~
+Short    Return Lever~
+Long     A return lever is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mpforce $n pull return
+mea $n You have finished Lever Lands, have fun!
+mptransfer $n 11301
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11323
+Keywords Lever number three~
+Type     lever~
+Short    Lever number three~
+Long     Lever number three is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mpforce $n pull three
+mea $n You may continue to the next room!
+mptransfer $n 11316
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11324
+Keywords Lever number four~
+Type     lever~
+Short    Lever number four~
+Long     Lever number four is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mpforce $n pull four
+mea $n You may continue to the next room!
+mptransfer $n 11317
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11325
+Keywords Lever number two~
+Type     lever~
+Short    Lever number two~
+Long     Lever number two is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mpforce $n pull two
+mea $n You may continue to the next room!
+mptransfer $n 11318
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11326
+Keywords Aura Strength~
+Type     light~
+Short    &zThe &GA&gu&Gr&ga &zof &RS&rt&Rr&re&Rn&rg&Rt&rh~
+Long     A strange aura is here.~
+Flags    invis~
+WFlags   take~
+Values   0 0 -1 0 0 0
+Stats    1 100000 10000 0 0
+Affect       -1 -1 15 18 0
+Affect       -1 -1 15 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11327
+Keywords Lever number two~
+Type     lever~
+Short    Lever number two~
+Long     Lever number two is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mpforce $n pull two
+mea $n You may continue to the next room!
+mptransfer $n 11339
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11328
+Keywords Lever number two~
+Type     lever~
+Short    Lever number two~
+Long     Lever number two is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mpforce $n pull two
+mea $n You may continue to the next room!
+mptransfer $n 11347
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11329
+Keywords Lever number three~
+Type     lever~
+Short    Lever number three~
+Long     Lever number three is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mpforce $n pull three
+mea $n You may continue to the next room!
+mptransfer $n 11349
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11330
+Keywords Lever number one~
+Type     lever~
+Short    Lever number one~
+Long     Lever number one is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mpforce $n pull one
+mea $n You may continue to the next room!
+mptransfer $n 11343
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11331
+Keywords Lever number three~
+Type     lever~
+Short    Lever number three~
+Long     Lever number three is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mpforce $n pull three
+mea $n You may continue to the next room!
+mptransfer $n 11344
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11332
+Keywords Lever number two~
+Type     lever~
+Short    Lever number two~
+Long     Lever number two is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mpforce $n pull two
+mea $n You may continue to the next room!
+mptransfer $n 11354
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11333
+Keywords Lever number three~
+Type     lever~
+Short    Lever number three~
+Long     Lever number there is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mpforce $n pull three
+mea $n You may continue to the next room!
+mptransfer $n 11355
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11334
+Keywords Lever number one~
+Type     lever~
+Short    Lever number one~
+Long     Lever number one is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mpforce $n pull one
+mea $n You may continue to the next room!
+mptransfer $n 11351
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11340
+Keywords A raider's knife~
+Type     weapon~
+Short    A raider's knife~
+Long     A raider's knife~
+WFlags   take wield~
+Values   10 15 15 2 1000 1000
+Stats    1 1000 10 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11341
+Keywords A raider's knife~
+Type     weapon~
+Short    A raider's knife~
+Long     A raider's knife~
+WFlags   take wield~
+Values   10 15 15 2 0 0
+Stats    1 1000 20 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11342
+Keywords A raider's knife~
+Type     weapon~
+Short    A raider's knife~
+Long     A raider's knife~
+WFlags   take wield~
+Values   10 15 15 2 0 0
+Stats    1 1000 30 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11343
+Keywords A raider's knife~
+Type     weapon~
+Short    A raider's knife~
+Long     A raider's knife~
+WFlags   take wield~
+Values   10 15 15 2 0 0
+Stats    1 1000 40 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11344
+Keywords A raider's knife~
+Type     weapon~
+Short    A raider's knife~
+Long     A raider's knife~
+WFlags   take wield~
+Values   10 15 15 2 0 0
+Stats    1 1000 50 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11345
+Keywords A raider's knife~
+Type     weapon~
+Short    A raider's knife~
+Long     A raider's knife~
+WFlags   take wield~
+Values   10 15 15 2 0 0
+Stats    1 1000 60 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11346
+Keywords A raider's knife~
+Type     weapon~
+Short    A raider's knife~
+Long     A raider's knife~
+WFlags   take wield~
+Values   10 15 15 2 0 0
+Stats    1 1000 70 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11347
+Keywords A raider's knife~
+Type     weapon~
+Short    A raider's knife~
+Long     A raider's knife~
+WFlags   take wield~
+Values   10 15 15 2 0 0
+Stats    1 1000 80 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11348
+Keywords A raider's knife~
+Type     weapon~
+Short    A raider's knife~
+Long     A raider's knife~
+WFlags   take wield~
+Values   10 15 15 2 0 0
+Stats    1 1000 90 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11349
+Keywords A raider's knife~
+Type     weapon~
+Short    A raider's knife~
+Long     A raider's knife~
+WFlags   take wield~
+Values   10 15 15 2 0 0
+Stats    1 1000 100 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11350
+Keywords Turtle Shell Pendent~
+Type     armor~
+Short    &WT&wu&Wr&wt&Wl&we &GS&gh&Ge&gl&Gl &WP&we&Wn&wd&We&wn&Wt~
+Long     &WT&wu&Wr&wt&Wl&we &GS&gh&Ge&gl&Gl &WP&we&Wn&wd&We&wn&Wt~
+WFlags   take neck~
+Values   75 75 75 0 0 0
+Stats    1 65000 6500 0 0
+Affect       -1 -1 15 18 0
+Affect       -1 -1 15 19 0
+Affect       -1 -1 1000 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11351
+Keywords Gate Key~
+Type     key~
+Short    a Gate Key~
+Long     A Gate Key is here.~
+WFlags   take hold~
+Values   0 11414 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11352
+Keywords A white dragon~
+Type     container~
+Short    &wA white dragon~
+Long     &wA white dragon~
+Flags    inventory~
+WFlags   take hold~
+Values   500 0 0 1000 500 0
+Stats    1 25000 2500 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11353
+Keywords Canteen Waterskin~
+Type     drinkcon~
+Short    A waterskin~
+Long     A strange bottle of liquid is here.~
+WFlags   take hold~
+Values   100 100 0 1 0 0
+Stats    1 500 1000 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11354
+Keywords Earrings of Power~
+Type     armor~
+Short    &BE&ba&Br&br&Bi&bn&Bg&bs &zof &RP&ro&Rw&re&Rr&z~
+Long     &BE&ba&Br&br&Bi&bn&Bg&bs &zof &RP&ro&Rw&re&Rr&z are here.~
+Flags    invis~
+WFlags   take ears~
+Values   0 75 0 0 0 0
+Stats    1 75000 7500 0 0
+Affect       -1 -1 15 18 0
+Affect       -1 -1 15 19 0
+Affect       -1 -1 1000 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11356
+Keywords Black Speedo~
+Type     armor~
+Short    &wA &zb&Wl&za&Wc&zk &wS&Wp&we&We&wd&Wo~
+Long     Some wierd looking underpants are here...~
+Flags    inventory~
+WFlags   take legs~
+Values   75 75 0 0 0 0
+Stats    1 70000 7000 0 0
+Affect       -1 -1 15 18 0
+Affect       -1 -1 15 19 0
+Affect       -1 -1 1000 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11499
+Keywords last~
+Type     trash~
+Short    a last~
+Long     A last is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     11300
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     11301
+Name     A tattered tent~
+Sector   city~
+Flags    indoors~
+Desc     This room is finished as if had lived here. But you can only see a
+little old man sitting behind an old desk in the center of the room.
+On the desk you see a sign that says Lever Land. You may want to ask
+Luthor a question about such land.
+~
+#EXIT
+Direction north~
+ToRoom    11399
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    11408
+Flags     isdoor closed locked secret pickproof hidden bashproof~
+#ENDEXIT
+
+Reset M 0 11408 1 11301
+Reset D 0 11301 5 2
+#ENDROOM
+
+#ROOM
+Vnum     11302
+Name     A path of choices~
+Sector   city~
+Flags    nomob indoors~
+Desc     You may choose your destiny either go one way or the other
+~
+#EXIT
+Direction north~
+ToRoom    11303
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11325
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11303
+Name     Lever room~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of the many different rooms with levers in them. To see if
+you will advance to the next lever, or have to start over, push one of
+the levers.
+~
+Reset O 0 11302 1 11303
+Reset O 0 11303 1 11303
+Reset O 0 11308 1 11303
+Reset O 0 11305 1 11303
+#ENDROOM
+
+#ROOM
+Vnum     11304
+Name     A path of choices~
+Sector   city~
+Flags    nomob indoors~
+Desc     You may choose your destiny either go one way or the other
+~
+#EXIT
+Direction north~
+ToRoom    11309
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11305
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11310
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11305
+Name     Lever room~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of the many different rooms with levers in them. To see if
+you will advance to the next lever, or have to start over, push one of
+the levers.
+~
+Reset O 0 11302 1 11305
+Reset O 0 11309 1 11305
+Reset O 0 11304 1 11305
+Reset O 0 11305 1 11305
+#ENDROOM
+
+#ROOM
+Vnum     11306
+Name     A path of choices~
+Sector   city~
+Flags    nomob indoors~
+Desc     You may choose your destiny either go one way or the other
+~
+#EXIT
+Direction east~
+ToRoom    11307
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    11314
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11307
+Name     Lever room~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of the many different rooms with levers in them. To see if
+you will advance to the next lever, or have to start over, push one of
+the levers.
+~
+Reset O 0 11302 1 11307
+Reset O 0 11303 1 11307
+Reset O 0 11310 1 11307
+Reset O 0 11305 1 11307
+#ENDROOM
+
+#ROOM
+Vnum     11308
+Name     A dead end~
+Sector   city~
+Flags    nomob indoors~
+Desc     You have encountered a dead end. Push the lever here to go back to the
+start.
+~
+Reset O 0 11311 1 11308
+#ENDROOM
+
+#ROOM
+Vnum     11309
+Name     A path of choices~
+Sector   city~
+Flags    nomob indoors~
+Desc     You may choose your destiny either go one way or the other
+~
+#EXIT
+Direction north~
+ToRoom    11312
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    11313
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    11319
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11310
+Name     Lever room~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of the many different rooms with levers in them. To see if
+you will advance to the next lever, or have to start over, push one of
+the levers.
+~
+Reset O 0 11302 1 11310
+Reset O 0 11303 1 11310
+Reset O 0 11304 1 11310
+Reset O 0 11313 1 11310
+#ENDROOM
+
+#ROOM
+Vnum     11311
+Name     A path of choices~
+Sector   city~
+Flags    nomob indoors~
+Desc     You may choose your destiny either go one way or the other
+~
+#EXIT
+Direction west~
+ToRoom    11321
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    11320
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11312
+Name     Lever room~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of the many different rooms with levers in them. To see if
+you will advance to the next lever, or have to start over, push one of
+the levers.
+~
+Reset O 0 11302 1 11312
+Reset O 0 11303 1 11312
+Reset O 0 11304 1 11312
+Reset O 0 11324 1 11312
+#ENDROOM
+
+#ROOM
+Vnum     11313
+Name     Lever room~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of the many different rooms with levers in them. To see if
+you will advance to the next lever, or have to start over, push one of
+the levers.
+~
+Reset O 0 11302 1 11313
+Reset O 0 11303 1 11313
+Reset O 0 11323 1 11313
+Reset O 0 11305 1 11313
+#ENDROOM
+
+#ROOM
+Vnum     11314
+Name     Lever room~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of the many different rooms with levers in them. To see if
+you will advance to the next lever, or have to start over, push one of
+the levers.
+~
+Reset O 0 11302 1 11314
+Reset O 0 11303 1 11314
+Reset O 0 11304 1 11314
+Reset O 0 11312 1 11314
+#ENDROOM
+
+#ROOM
+Vnum     11315
+Name     A dead end~
+Sector   city~
+Flags    nomob indoors~
+Desc     You have encountered a dead end. Push the lever here to go back to the
+start.
+~
+Reset O 0 11311 1 11315
+#ENDROOM
+
+#ROOM
+Vnum     11316
+Name     A dead end~
+Sector   city~
+Flags    nomob indoors~
+Desc     You have encountered a dead end. Push the lever here to go back to the
+start.
+~
+Reset O 0 11311 1 11316
+#ENDROOM
+
+#ROOM
+Vnum     11317
+Name     A dead end~
+Sector   city~
+Flags    nomob indoors~
+Desc     You have encountered a dead end. Push the lever here to go back to the
+start.
+~
+Reset O 0 11311 1 11317
+#ENDROOM
+
+#ROOM
+Vnum     11318
+Name     A dead end~
+Sector   city~
+Flags    nomob indoors~
+Desc     You have encountered a dead end. Push the lever here to go back to the
+start.
+~
+Reset O 0 11311 1 11318
+#ENDROOM
+
+#ROOM
+Vnum     11319
+Name     Lever room~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of the many different rooms with levers in them. To see if
+you will advance to the next lever, or have to start over, push one of
+the levers.
+~
+Reset O 0 11302 1 11319
+Reset O 0 11325 1 11319
+Reset O 0 11304 1 11319
+Reset O 0 11305 1 11319
+#ENDROOM
+
+#ROOM
+Vnum     11320
+Name     Lever room~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of the many different rooms with levers in them. To see if
+you will advance to the next lever, or have to start over, push one of
+the levers.
+~
+Reset O 0 11315 1 11320
+Reset O 0 11303 1 11320
+Reset O 0 11304 1 11320
+Reset O 0 11305 1 11320
+#ENDROOM
+
+#ROOM
+Vnum     11321
+Name     Lever room~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of the many different rooms with levers in them. To see if
+you will advance to the next lever, or have to start over, push one of
+the levers.
+~
+Reset O 0 11302 1 11321
+Reset O 0 11303 1 11321
+Reset O 0 11314 1 11321
+Reset O 0 11305 1 11321
+#ENDROOM
+
+#ROOM
+Vnum     11322
+Name     A dead end~
+Sector   city~
+Flags    nomob indoors~
+Desc     You have encountered a dead end. Push the lever here to go back to the
+start.
+~
+Reset O 0 11311 1 11322
+#ENDROOM
+
+#ROOM
+Vnum     11323
+Name     A path of choices~
+Sector   city~
+Flags    nomob indoors~
+Desc     You may choose your destiny either go one way or the other
+~
+#EXIT
+Direction north~
+ToRoom    11327
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11326
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11324
+Name     A path of choices~
+Sector   city~
+Flags    nomob indoors~
+Desc     You may choose your destiny either go one way or the other
+~
+#EXIT
+Direction west~
+ToRoom    11350
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11325
+Name     A path of choices~
+Sector   city~
+Flags    nomob indoors~
+Desc     You may choose your destiny either go one way or the other
+~
+#EXIT
+Direction east~
+ToRoom    11338
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    11345
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    11340
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11326
+Name     Lever room~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of the many different rooms with levers in them. To see if
+you will advance to the next lever, or have to start over, push one of
+the levers.
+~
+Reset O 0 11302 1 11326
+Reset O 0 11317 1 11326
+Reset O 0 11304 1 11326
+Reset O 0 11305 1 11326
+#ENDROOM
+
+#ROOM
+Vnum     11327
+Name     Lever room~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of the many different rooms with levers in them. To see if
+you will advance to the next lever, or have to start over, push one of
+the levers.
+~
+Reset O 0 11302 1 11327
+Reset O 0 11303 1 11327
+Reset O 0 11316 1 11327
+Reset O 0 11305 1 11327
+#ENDROOM
+
+#ROOM
+Vnum     11328
+Name     A dead end~
+Sector   city~
+Flags    nomob indoors~
+Desc     You have encountered a dead end. Push the lever here to go back to the
+start.
+~
+Reset O 0 11311 1 11328
+#ENDROOM
+
+#ROOM
+Vnum     11329
+Name     Lever room~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of the many different rooms with levers in them. To see if
+you will advance to the next lever, or have to start over, push one of
+the levers.
+~
+Reset O 0 11318 1 11329
+Reset O 0 11303 1 11329
+Reset O 0 11304 1 11329
+Reset O 0 11305 1 11329
+#ENDROOM
+
+#ROOM
+Vnum     11330
+Name     Lever room~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of the many different rooms with levers in them. To see if
+you will advance to the next lever, or have to start over, push one of
+the levers.
+~
+Reset O 0 11302 1 11330
+Reset O 0 11303 1 11330
+Reset O 0 11304 1 11330
+Reset O 0 11319 1 11330
+#ENDROOM
+
+#ROOM
+Vnum     11331
+Name     Lever room~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of the many different rooms with levers in them. To see if
+you will advance to the next lever, or have to start over, push one of
+the levers.
+~
+Reset O 0 11302 1 11331
+Reset O 0 11303 1 11331
+Reset O 0 11320 1 11331
+Reset O 0 11305 1 11331
+#ENDROOM
+
+#ROOM
+Vnum     11332
+Name     Lever room~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of the many different rooms with levers in them. To see if
+you will advance to the next lever, or have to start over, push one of
+the levers.
+~
+Reset O 0 11302 1 11332
+Reset O 0 11303 1 11332
+Reset O 0 11304 1 11332
+Reset O 0 11321 1 11332
+#ENDROOM
+
+#ROOM
+Vnum     11333
+Name     A long hallway~
+Sector   city~
+Flags    dark nomob~
+#EXIT
+Direction southeast~
+ToRoom    11334
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11334
+Name     A long hallway~
+Sector   city~
+Flags    dark nomob~
+#EXIT
+Direction south~
+ToRoom    11335
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    11333
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11335
+Name     A long hallway~
+Sector   city~
+Flags    dark nomob~
+#EXIT
+Direction north~
+ToRoom    11334
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11336
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11336
+Name     Final Room~
+Sector   city~
+Flags    nomob~
+Desc     You have finished Lever Land. To your east is a place to buy equipment.
+To return just pull the return to the city just push the return lever.
+~
+#EXIT
+Direction east~
+ToRoom    11337
+#ENDEXIT
+
+Reset O 0 11322 1 11336
+#ENDROOM
+
+#ROOM
+Vnum     11337
+Name     &RA&rr&Rm&ro&Rr &WS&wh&Wo&wp~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction west~
+ToRoom    11336
+#ENDEXIT
+
+Reset M 0 11409 1 11337
+  Reset G 1 11326 1
+#ENDROOM
+
+#ROOM
+Vnum     11338
+Name     Lever room~
+Sector   city~
+Flags    nomob~
+Desc     This is one of the many different rooms with levers in them. To see if
+you will advance to the next lever, or have to start over, push one of
+the levers.
+~
+Reset O 0 11302 1 11338
+Reset O 0 11327 1 11338
+Reset O 0 11304 1 11338
+Reset O 0 11305 1 11338
+#ENDROOM
+
+#ROOM
+Vnum     11339
+Name     A dead end~
+Sector   city~
+Flags    nomob~
+Desc     You have encountered a dead end. Push the lever here to go back to the
+start.
+~
+Reset O 0 11311 1 11339
+#ENDROOM
+
+#ROOM
+Vnum     11340
+Name     A path of choices~
+Sector   city~
+Flags    nomob~
+Desc     You may choose your destiny either go one way or the other
+~
+#EXIT
+Direction east~
+ToRoom    11341
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    11342
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11341
+Name     Lever room~
+Sector   city~
+Flags    nomob~
+Desc     This is one of the many different rooms with levers in them. To see if
+you will advance to the next lever, or have to start over, push one of
+the levers.
+~
+Reset O 0 11330 1 11341
+Reset O 0 11303 1 11341
+Reset O 0 11304 1 11341
+Reset O 0 11305 1 11341
+#ENDROOM
+
+#ROOM
+Vnum     11342
+Name     Lever room~
+Sector   city~
+Flags    nomob~
+Desc     This is one of the many different rooms with levers in them. To see if
+you will advance to the next lever, or have to start over, push one of
+the levers.
+~
+Reset O 0 11302 1 11342
+Reset O 0 11303 1 11342
+Reset O 0 11331 1 11342
+Reset O 0 11305 1 11342
+#ENDROOM
+
+#ROOM
+Vnum     11343
+Name     A dead end~
+Sector   city~
+Flags    nomob~
+Desc     You have encountered a dead end. Push the lever here to go back to the
+start.
+~
+Reset O 0 11311 1 11343
+#ENDROOM
+
+#ROOM
+Vnum     11344
+Name     A dead end~
+Sector   city~
+Flags    nomob~
+Desc     You may choose your destiny either go one way or the other
+You have encountered a dead end. Push the lever here to go back to the
+start.
+~
+Reset O 0 11311 1 11344
+#ENDROOM
+
+#ROOM
+Vnum     11345
+Name     A path of choices~
+Sector   city~
+Flags    nomob~
+Desc     You may choose your destiny either go one way or the other
+~
+#EXIT
+Direction east~
+ToRoom    11346
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    11348
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11346
+Name     Lever room~
+Sector   city~
+Flags    nomob~
+Desc     This is one of the many different rooms with levers in them. To see if
+you will advance to the next lever, or have to start over, push one of
+the levers.
+~
+Reset O 0 11302 1 11346
+Reset O 0 11328 1 11346
+Reset O 0 11304 1 11346
+Reset O 0 11305 1 11346
+#ENDROOM
+
+#ROOM
+Vnum     11347
+Name     A dead end~
+Sector   city~
+Flags    nomob~
+Desc     You have encountered a dead end. Push the lever here to go back to the
+start.
+~
+Reset O 0 11311 1 11347
+#ENDROOM
+
+#ROOM
+Vnum     11348
+Name     Lever room~
+Sector   city~
+Flags    nomob~
+Desc     This is one of the many different rooms with levers in them. To see if
+you will advance to the next lever, or have to start over, push one of
+the levers.
+~
+Reset O 0 11302 1 11348
+Reset O 0 11303 1 11348
+Reset O 0 11329 1 11348
+Reset O 0 11305 1 11348
+#ENDROOM
+
+#ROOM
+Vnum     11349
+Name     A dead end~
+Sector   city~
+Flags    nomob~
+Desc     You have encountered a dead end. Push the lever here to go back to the
+start.
+~
+Reset O 0 11311 1 11349
+#ENDROOM
+
+#ROOM
+Vnum     11350
+Name     A path of choices~
+Sector   city~
+Desc     You may choose your destiny either go one way or the other
+~
+#EXIT
+Direction west~
+ToRoom    11353
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    11356
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11351
+Name     A dead end~
+Sector   city~
+Flags    nomob~
+Desc     You have encountered a dead end. Push the lever here to go back to the
+start.
+~
+#ENDROOM
+
+#ROOM
+Vnum     11352
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11353
+Name     Lever room~
+Sector   city~
+Flags    nomob~
+Desc     This is one of the many different rooms with levers in them. To see if
+you will advance to the next lever, or have to start over, push one of
+the levers.
+~
+Reset O 0 11302 1 11353
+Reset O 0 11332 1 11353
+Reset O 0 11304 1 11353
+Reset O 0 11305 1 11353
+#ENDROOM
+
+#ROOM
+Vnum     11354
+Name     A dead end~
+Sector   city~
+Flags    nomob~
+Desc     You have encountered a dead end. Push the lever here to go back to the
+start.
+~
+Reset O 0 11311 1 11354
+#ENDROOM
+
+#ROOM
+Vnum     11355
+Name     A dead end~
+Sector   city~
+Flags    nomob~
+Desc     You have encountered a dead end. Push the lever here to go back to the
+start.
+~
+Reset O 0 11311 1 11355
+#ENDROOM
+
+#ROOM
+Vnum     11356
+Name     Lever room~
+Sector   city~
+Flags    nomob~
+Desc     This is one of the many different rooms with levers in them. To see if
+you will advance to the next lever, or have to start over, push one of
+the levers.
+~
+Reset O 0 11302 1 11356
+Reset O 0 11303 1 11356
+Reset O 0 11333 1 11356
+Reset O 0 11305 1 11356
+#ENDROOM
+
+#ROOM
+Vnum     11357
+Name     Training Level 4~
+Sector   city~
+Flags    nomob indoors~
+Desc     This training rooms is rather small. It is big enough for about 2
+People. The walls are lined with blood from previous battles. Many of
+The weapons from the Raiders are here on the ground.
+~
+#EXIT
+Direction east~
+ToRoom    11358
+#ENDEXIT
+
+Reset M 0 11413 2 11357
+#ENDROOM
+
+#ROOM
+Vnum     11358
+Name     Stairs~
+Sector   city~
+Flags    nomob indoors~
+Desc     This stair case is wide so many people can fit in the training center
+at once. You can hear the screams of raiders in the nearby corridors.
+~
+#EXIT
+Direction east~
+ToRoom    11359
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11357
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    11360
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    11447
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11359
+Name     Training Level 4~
+Sector   city~
+Flags    nomob indoors~
+Desc     This training rooms is rather small. It is big enough for about 2
+People. The walls are lined with blood from previous battles. Many of
+The weapons from the Raiders are here on the ground.
+~
+#EXIT
+Direction west~
+ToRoom    11358
+#ENDEXIT
+
+Reset M 0 11413 2 11359
+#ENDROOM
+
+#ROOM
+Vnum     11360
+Name     Stairs~
+Sector   city~
+Flags    nomob indoors~
+Desc     This stair case is wide so many people can fit in the training center
+at once. You can hear the screams of raiders in the nearby corridors.
+~
+#EXIT
+Direction east~
+ToRoom    11361
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11362
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    11363
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    11358
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11361
+Name     Training Level 5~
+Sector   city~
+Flags    nomob indoors~
+Desc     This training rooms is rather small. It is big enough for about 2
+People. The walls are lined with blood from previous battles. Many of
+The weapons from the Raiders are here on the ground.
+~
+#EXIT
+Direction west~
+ToRoom    11360
+#ENDEXIT
+
+Reset M 0 11414 2 11361
+#ENDROOM
+
+#ROOM
+Vnum     11362
+Name     Training Level 5~
+Sector   city~
+Flags    nomob indoors~
+Desc     This training rooms is rather small. It is big enough for about 2
+People. The walls are lined with blood from previous battles. Many of
+The weapons from the Raiders are here on the ground.
+~
+#EXIT
+Direction east~
+ToRoom    11360
+#ENDEXIT
+
+Reset M 0 11414 2 11362
+Reset O 0 17 1 11362
+#ENDROOM
+
+#ROOM
+Vnum     11363
+Name     Stairs~
+Sector   city~
+Flags    nomob indoors~
+Desc     This stair case is wide so many people can fit in the training center
+at once. You can hear the screams of raiders in the nearby corridors.
+~
+#EXIT
+Direction east~
+ToRoom    11367
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11368
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    11370
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    11360
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11364
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11365
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11366
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11367
+Name     Training Level 6~
+Sector   city~
+Flags    nomob indoors~
+Desc     This training rooms is rather small. It is big enough for about 2
+People. The walls are lined with blood from previous battles. Many of
+The weapons from the Raiders are here on the ground.
+~
+#EXIT
+Direction west~
+ToRoom    11363
+#ENDEXIT
+
+Reset M 0 11415 2 11367
+#ENDROOM
+
+#ROOM
+Vnum     11368
+Name     Training Level 6~
+Sector   city~
+Flags    nomob indoors~
+Desc     This training rooms is rather small. It is big enough for about 2
+People. The walls are lined with blood from previous battles. Many of
+The weapons from the Raiders are here on the ground.
+~
+#EXIT
+Direction east~
+ToRoom    11363
+#ENDEXIT
+
+Reset M 0 11415 2 11368
+#ENDROOM
+
+#ROOM
+Vnum     11369
+Name     Training Level 7~
+Sector   city~
+Flags    nomob indoors~
+Desc     This training rooms is rather small. It is big enough for about 2
+People. The walls are lined with blood from previous battles. Many of
+The weapons from the Raiders are here on the ground.
+~
+#EXIT
+Direction east~
+ToRoom    11370
+#ENDEXIT
+
+Reset M 0 11416 2 11369
+#ENDROOM
+
+#ROOM
+Vnum     11370
+Name     Stairs~
+Sector   city~
+Flags    nomob indoors~
+Desc     This stair case is wide so many people can fit in the training center
+at once. You can hear the screams of raiders in the nearby corridors.
+~
+#EXIT
+Direction east~
+ToRoom    11371
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11369
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    11372
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    11363
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11371
+Name     Training Level 7~
+Sector   city~
+Flags    nomob indoors~
+Desc     This training rooms is rather small. It is big enough for about 2
+People. The walls are lined with blood from previous battles. Many of
+The weapons from the Raiders are here on the ground.
+~
+#EXIT
+Direction west~
+ToRoom    11370
+#ENDEXIT
+
+Reset M 0 11416 2 11371
+#ENDROOM
+
+#ROOM
+Vnum     11372
+Name     Stairs~
+Sector   city~
+Flags    nomob indoors~
+Desc     This stair case is wide so many people can fit in the training center
+at once. You can hear the screams of raiders in the nearby corridors.
+~
+#EXIT
+Direction east~
+ToRoom    11373
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11374
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    11375
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    11370
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11373
+Name     Training Level 8~
+Sector   city~
+Flags    nomob indoors~
+Desc     This training rooms is rather small. It is big enough for about 2
+People. The walls are lined with blood from previous battles. Many of
+The weapons from the Raiders are here on the ground.
+~
+#EXIT
+Direction west~
+ToRoom    11372
+#ENDEXIT
+
+Reset M 0 11417 2 11373
+#ENDROOM
+
+#ROOM
+Vnum     11374
+Name     Training Level 8~
+Sector   city~
+Flags    nomob indoors~
+Desc     This training rooms is rather small. It is big enough for about 2
+People. The walls are lined with blood from previous battles. Many of
+The weapons from the Raiders are here on the ground.
+~
+#EXIT
+Direction east~
+ToRoom    11372
+#ENDEXIT
+
+Reset M 0 11417 2 11374
+#ENDROOM
+
+#ROOM
+Vnum     11375
+Name     Stairs~
+Sector   city~
+Flags    nomob indoors~
+Desc     This stair case is wide so many people can fit in the training center
+at once. You can hear the screams of raiders in the nearby corridors.
+~
+#EXIT
+Direction east~
+ToRoom    11376
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11377
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    11378
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    11372
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11376
+Name     Training Level 9~
+Sector   city~
+Flags    nomob indoors~
+Desc     This training rooms is rather small. It is big enough for about 2
+People. The walls are lined with blood from previous battles. Many of
+The weapons from the Raiders are here on the ground.
+~
+#EXIT
+Direction west~
+ToRoom    11375
+#ENDEXIT
+
+Reset M 0 11418 2 11376
+#ENDROOM
+
+#ROOM
+Vnum     11377
+Name     Training Level 9~
+Sector   city~
+Flags    nomob indoors~
+Desc     This training rooms is rather small. It is big enough for about 2
+People. The walls are lined with blood from previous battles. Many of
+The weapons from the Raiders are here on the ground.
+~
+#EXIT
+Direction east~
+ToRoom    11375
+#ENDEXIT
+
+Reset M 0 11418 2 11377
+#ENDROOM
+
+#ROOM
+Vnum     11378
+Name     Stairs~
+Sector   city~
+Flags    nomob indoors~
+Desc     This stair case is wide so many people can fit in the training center
+at once. You can hear the screams of raiders in the nearby corridors.
+~
+#EXIT
+Direction east~
+ToRoom    11379
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11380
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    11375
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11379
+Name     Training Level 10~
+Sector   city~
+Flags    nomob indoors~
+Desc     This training rooms is rather small. It is big enough for about 2
+People. The walls are lined with blood from previous battles. Many of
+The weapons from the Raiders are here on the ground.
+~
+#EXIT
+Direction west~
+ToRoom    11378
+#ENDEXIT
+
+Reset M 0 11419 2 11379
+#ENDROOM
+
+#ROOM
+Vnum     11380
+Name     Training Level 10~
+Sector   city~
+Flags    nomob indoors~
+Desc     This training rooms is rather small. It is big enough for about 2
+People. The walls are lined with blood from previous battles. Many of
+The weapons from the Raiders are here on the ground.
+~
+#EXIT
+Direction east~
+ToRoom    11378
+#ENDEXIT
+
+Reset M 0 11419 2 11380
+Reset O 0 17 1 11380
+Reset O 0 17 2 11380
+#ENDROOM
+
+#ROOM
+Vnum     11381
+Name     Stairs~
+Sector   city~
+Flags    nomob indoors~
+Desc     As you enter the room you see that there are many people here showing
+their ids to the guard that is only letting certain people into the
+Training Center.
+~
+#EXIT
+Direction east~
+ToRoom    11383
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11384
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11382
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    11442
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    11450
+#ENDEXIT
+
+Reset M 0 11420 1 11381
+#ENDROOM
+
+#ROOM
+Vnum     11382
+Name     Customs Center~
+Sector   city~
+Flags    nomob indoors~
+Desc     There is a pile of weapons behind a guard in this room. As you enter
+the guard looks at you and starts to search you for weapons and drugs.
+You smirk and him, but he keeps on searching
+~
+#EXIT
+Direction east~
+ToRoom    11381
+#ENDEXIT
+
+Reset M 0 11421 10 11382
+Reset M 0 11421 10 11382
+Reset M 0 11421 10 11382
+Reset M 0 11421 10 11382
+Reset M 0 11421 10 11382
+#ENDROOM
+
+#ROOM
+Vnum     11383
+Name     Customs Center~
+Sector   city~
+Flags    nomob indoors~
+Desc     There is a pile of weapons behind a guard in this room. As you enter
+the guard looks at you and starts to search you for weapons and drugs.
+You smirk at him, but he continues his search.
+~
+#EXIT
+Direction west~
+ToRoom    11381
+#ENDEXIT
+
+Reset M 0 11421 10 11383
+  Reset G 0 11342 1
+Reset M 0 11421 10 11383
+Reset M 0 11421 10 11383
+Reset M 0 11421 10 11383
+Reset M 0 11421 10 11383
+#ENDROOM
+
+#ROOM
+Vnum     11384
+Name     Medical Center~
+Sector   city~
+Flags    nomob indoors heal~
+Desc     This is the one place that you can wait to be healed in the Training
+Center.
+~
+#EXIT
+Direction north~
+ToRoom    11381
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11385
+Name     Wandering the streets~
+Sector   city~
+Flags    indoors~
+Desc     Many people are running up and down the street to make sure they aren't
+late for work. Many children are on the ground playing with stones and
+rocks. People have packages in hands from the different shops.
+~
+#EXIT
+Direction north~
+ToRoom    11386
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11435
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11387
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11388
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11386
+Name     A tattered tent~
+Sector   city~
+Flags    dark nomob indoors bank heal~
+Desc     This is the citys only bank.
+~
+#EXIT
+Direction south~
+ToRoom    11385
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11387
+Name     A tattered tent~
+Sector   city~
+Flags    nomob indoors~
+Desc     You see many different pieces of equipment scattered over the ground.
+there is a little man standing in the back of the room browsing for
+items.
+~
+#EXIT
+Direction north~
+ToRoom    11385
+#ENDEXIT
+
+Reset M 0 11430 1 11387
+  Reset G 1 11354 1
+  Reset G 1 11350 1
+#ENDROOM
+
+#ROOM
+Vnum     11388
+Name     Wandering the streets~
+Sector   city~
+Flags    indoors~
+Desc     This part of the town looks deserted. No one is within five feet of
+you. You do not know why there is no one here, but you think there must
+be something wrong.
+~
+#EXIT
+Direction north~
+ToRoom    11389
+Flags     hidden~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11385
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11390
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11391
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11389
+Name     A tattered tent~
+Sector   city~
+Flags    nomob indoors~
+Desc     You see many different pieces of equipment scattered over the ground.
+there is a little man standing in the back of the room browsing for
+items.
+ 
+Before selling anything to Lucious, suggest that he restock his inventory.
+~
+#EXIT
+Direction south~
+ToRoom    11388
+#ENDEXIT
+
+Reset M 0 11428 1 11389
+#MUDPROG
+Progtype  speech_prog~
+Arglist   restock~
+Comlist   mpforce Lucious mpjunk all
+mpforce Lucious nod
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     11390
+Name     A tattered tent~
+Sector   city~
+Flags    nomob indoors~
+Desc     You see many different pieces of equipment scattered over the ground.
+there is a little man standing in the back of the room browsing for
+items.
+~
+#EXIT
+Direction north~
+ToRoom    11388
+#ENDEXIT
+
+Reset M 0 11429 1 11390
+  Reset G 1 11356 1
+  Reset G 1 11301 1
+#ENDROOM
+
+#ROOM
+Vnum     11391
+Name     Wandering the streets~
+Sector   city~
+Flags    indoors~
+Desc     Many people are running up and down the street to make sure they aren't
+late for work. Many children are on the ground playing with stones and
+rocks. People have packages in hands from the different shops.
+~
+#EXIT
+Direction east~
+ToRoom    11388
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11392
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11392
+Name     Wandering the streets~
+Sector   city~
+Flags    indoors~
+Desc     Many people seem hard at work putting up new buildings and creating new
+benches for Chicago. Even though they look very old, they are truly in
+their teen years. They have been aged from all of the dust in the sky.
+~
+#EXIT
+Direction north~
+ToRoom    11391
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11393
+#ENDEXIT
+
+Reset M 0 11423 6 11392
+Reset M 0 11427 8 11392
+#ENDROOM
+
+#ROOM
+Vnum     11393
+Name     Wandering the streets~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    11392
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11394
+#ENDEXIT
+
+Reset M 0 11426 8 11393
+#ENDROOM
+
+#ROOM
+Vnum     11394
+Name     Wandering the streets~
+Sector   city~
+Flags    indoors~
+Desc     Many people seem hard at work putting up new buildings and creating new
+benches for Chicago. Even though they look very old, they are truly in
+their teen years. They have been aged from all of the dust in the sky.
+~
+#EXIT
+Direction north~
+ToRoom    11393
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11451
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11395
+#ENDEXIT
+
+Reset M 0 11426 8 11394
+#ENDROOM
+
+#ROOM
+Vnum     11395
+Name     Wandering the streets~
+Sector   city~
+Flags    indoors~
+Desc     This part of the town looks deserted. No one is within five feet of
+you. You do not know why there is no one here, but you think there must
+be something wrong.
+~
+#EXIT
+Direction north~
+ToRoom    11394
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11396
+#ENDEXIT
+
+Reset M 0 11426 8 11395
+#ENDROOM
+
+#ROOM
+Vnum     11396
+Name     Wandering the streets~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    11395
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11397
+#ENDEXIT
+
+Reset M 0 11427 8 11396
+#ENDROOM
+
+#ROOM
+Vnum     11397
+Name     Wandering the streets~
+Sector   city~
+Flags    indoors~
+Desc     Many people seem hard at work putting up new buildings and creating new
+benches for Chicago. Even though they look very old, they are truly in
+their teen years. They have been aged from all of the dust in the sky.
+~
+#EXIT
+Direction north~
+ToRoom    11453
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11398
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11455
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11396
+#ENDEXIT
+
+Reset M 0 11426 8 11397
+#ENDROOM
+
+#ROOM
+Vnum     11398
+Name     Wandering the streets~
+Sector   city~
+Flags    indoors~
+Desc     Many people are running up and down the street to make sure they aren't
+late for work. Many children are on the ground playing with stones and
+rocks. People have packages in hands from the different shops.
+~
+#EXIT
+Direction north~
+ToRoom    11454
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11416
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11456
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11397
+#ENDEXIT
+
+Reset M 0 11426 8 11398
+#ENDROOM
+
+#ROOM
+Vnum     11399
+Name     Outside a tattered tent~
+Sector   city~
+Flags    indoors~
+Desc     You are standing before a very old and battle worn tent. You can see a
+fire going on inside but nothing else. As you walk closer you can see
+the faint outline of a person but nothing more.
+~
+#EXIT
+Direction north~
+ToRoom    11407
+Flags     isdoor closed hidden~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11301
+#ENDEXIT
+
+Reset D 0 11399 0 1
+#ENDROOM
+
+#ROOM
+Vnum     11400
+Name     A torn landing pad~
+Sector   city~
+Flags    indoors can_fly~
+Desc     You look around and see a few creates that have been broken open. You
+can see no one else but your self for miles around you. Too the north
+you can see the remains of a city that was once inhabited by humans.
+Say 'Ruined' to return to the ruined part of Earth.
+~
+#EXIT
+Direction north~
+ToRoom    11401
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Ruined 100~
+Comlist   mea $n You arive by car.
+mptransfer $n 8000
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     11401
+Name     A battle scared path~
+Sector   city~
+Flags    indoors~
+Desc     There are many pieces of different kinds of metal scatered over this
+path. You can see only a faint outline of the path as you contuine.
+~
+#EXIT
+Direction south~
+ToRoom    11400
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    11402
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11402
+Name     A battle scared path~
+Sector   city~
+Flags    indoors~
+Desc     Many of the foot prints you see here are only a day old. You think to
+yourself about people living on such a baron wasteland. You look again
+and the foot prints are gone.
+~
+#EXIT
+Direction north~
+ToRoom    11403
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    11401
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11403
+Name     A battle scared path~
+Sector   city~
+Desc     You can hear the shouts of people from far off in the distance. Far
+away over by a giant mountain, you can see many campfires, probably
+which are from tribes that live on this wasteland.
+~
+#EXIT
+Direction south~
+ToRoom    11402
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    11404
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11404
+Name     A battle scared path~
+Sector   city~
+Flags    indoors~
+Desc     You can see many foot prints from many different sizes of human feet.
+You keep on walking even though you can barely see the path.
+~
+#EXIT
+Direction northwest~
+ToRoom    11405
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    11403
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11405
+Name     A battle Scared path~
+Sector   city~
+Flags    indoors~
+Desc     You come to a path where you see a small burning fire. You can hear
+something on the ground, buy you can not quite make out what it is.
+~
+#EXIT
+Direction north~
+ToRoom    11411
+Flags     hidden~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11406
+Flags     hidden~
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    11404
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11406
+Name     &W A &zg&Wr&za&Wv&ze&Wl&W path~
+Sector   city~
+Flags    nomob indoors~
+Desc     You look down on a path that looks like it has just been covered
+with brand new gravel. You notice something different about this
+path but you cannot put your tongue on it.
+~
+#EXIT
+Direction north~
+ToRoom    11405
+Flags     hidden~
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    11407
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11407
+Name     &W A &zg&Wr&za&Wv&ze&Wl&W path~
+Sector   city~
+Flags    nomob indoors~
+Desc     You can see that this path is brand new. You hear something around 
+you, but you do not know what it is.
+~
+#EXIT
+Direction south~
+ToRoom    11399
+Flags     isdoor closed hidden~
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    11406
+#ENDEXIT
+
+Reset D 0 11407 2 1
+#ENDROOM
+
+#ROOM
+Vnum     11408
+Name     Lever Land~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    11302
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11409
+Name     Approaching Chicago~
+Sector   city~
+Flags    indoors~
+Desc     Many boxes and creates are here, probably from shipments to the city
+that happened before the war. You hear something move inside one of
+the boxes, but you keep moving on in spite of reaching the city.
+~
+#EXIT
+Direction south~
+ToRoom    11411
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11413
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11410
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11411
+Name     Approaching Chicago~
+Sector   city~
+Flags    indoors~
+Desc     The path below you has changed in to a magnificent road of red bricks.
+You can see up ahead of you that there is a giant city wall. You are
+thinking about what could be behind such a great wall.
+~
+#EXIT
+Direction north~
+ToRoom    11409
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11405
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11412
+Name     Approaching Chicago~
+Sector   city~
+Flags    nomob indoors~
+Desc     You are standing outside of the gates. You can see the very fine detail
+work on the edge of the building. The men guarding the building are
+staring at you with no expression.
+~
+#EXIT
+Direction north~
+ToRoom    11414
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11413
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11413
+Name     Approaching Chicago~
+Sector   city~
+Flags    indoors~
+Desc     You can see the guards in the watch tower of the city. They are heavily
+armored and look like they are ready for war.
+~
+#EXIT
+Direction north~
+ToRoom    11412
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11409
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11414
+Name     Passing through the gates~
+Sector   city~
+Flags    nomob indoors~
+#EXIT
+Direction north~
+ToRoom    11415
+Key       11351
+Flags     isdoor closed locked~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11412
+#ENDEXIT
+
+Reset M 0 11424 1 11414
+  Reset G 1 11351 1
+Reset D 0 11414 0 2
+#ENDROOM
+
+#ROOM
+Vnum     11415
+Name     Wandering the streets~
+Sector   city~
+Flags    indoors~
+Desc     You can see many guards personal around this part of the town. They are
+all heavily armed and look vicious. Even the citizens around this part
+look as if they are carrying weapons.
+~
+#EXIT
+Direction north~
+ToRoom    11416
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11414
+Key       11351
+Flags     isdoor closed locked~
+#ENDEXIT
+
+Reset M 0 11425 1 11415
+  Reset G 1 11351 1
+Reset M 0 11427 8 11415
+Reset D 0 11415 2 2
+#ENDROOM
+
+#ROOM
+Vnum     11416
+Name     Wandering the streets~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    11422
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11417
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11415
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11398
+#ENDEXIT
+
+Reset M 0 11423 6 11416
+#ENDROOM
+
+#ROOM
+Vnum     11417
+Name     Wandering the streets~
+Sector   city~
+Flags    indoors~
+Desc     This part of the town looks deserted. No one is within five feet of
+you. You do not know why there is no one here, but you think there must
+be something wrong.
+~
+#EXIT
+Direction north~
+ToRoom    11425
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11418
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11420
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11416
+#ENDEXIT
+
+Reset M 0 11426 8 11417
+Reset M 0 11426 8 11417
+#ENDROOM
+
+#ROOM
+Vnum     11418
+Name     Wandering the streets~
+Sector   city~
+Flags    indoors~
+Desc     Many people are running up and down the street to make sure they aren't
+late for work. Many children are on the ground playing with stones and
+rocks. People have packages in hands from the different shops.
+~
+#EXIT
+Direction north~
+ToRoom    11438
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11419
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11421
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11417
+#ENDEXIT
+
+Reset M 0 11427 8 11418
+#ENDROOM
+
+#ROOM
+Vnum     11419
+Name     Wandering the streets~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    11423
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11418
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11420
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+Owner    Hyphy~
+#EXIT
+Direction north~
+ToRoom    11417
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11421
+Name     An empty tent~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction north~
+ToRoom    11418
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11422
+Name     Wandering the streets~
+Sector   city~
+Flags    indoors~
+Desc     Many people seem hard at work putting up new buildings and creating new
+benches for Chicago. Even though they look very old, they are truly in
+their teen years. They have been aged from all of the dust in the sky.
+~
+#EXIT
+Direction north~
+ToRoom    11426
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11416
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11423
+Name     Wandering the streets~
+Sector   city~
+Flags    indoors~
+Desc     This part of the town looks deserted. No one is within five feet of
+you. You do not know why there is no one here, but you think there must
+be something wrong.
+~
+#EXIT
+Direction north~
+ToRoom    11430
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11419
+#ENDEXIT
+
+Reset M 0 11427 8 11423
+#ENDROOM
+
+#ROOM
+Vnum     11424
+Name     Wandering the streets~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    11430
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11428
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11425
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+Owner    Xenarg~
+#EXIT
+Direction south~
+ToRoom    11417
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11426
+Name     Wandering the streets~
+Sector   city~
+Flags    indoors~
+Desc     This part of the town looks deserted. No one is within five feet of
+you. You do not know why there is no one here, but you think there must
+be something wrong.
+~
+#EXIT
+Direction north~
+ToRoom    11427
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11428
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11422
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11452
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11427
+Name     Wandering the streets~
+Sector   city~
+Flags    indoors~
+Desc     Many people seem hard at work putting up new buildings and creating new
+benches for Chicago. Even though they look very old, they are truly in
+their teen years. They have been aged from all of the dust in the sky.
+~
+#EXIT
+Direction north~
+ToRoom    11434
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11426
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11428
+Name     Wandering the streets~
+Sector   city~
+Flags    indoors~
+Desc     Many people are running up and down the street to make sure they aren't
+late for work. Many children are on the ground playing with stones and
+rocks. People have packages in hands from the different shops.
+~
+#EXIT
+Direction east~
+ToRoom    11424
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11426
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11429
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+Desc     This part of the town looks deserted. No one is within five feet of
+you. You do not know why there is no one here, but you think there must
+be something wrong.
+~
+#ENDROOM
+
+#ROOM
+Vnum     11430
+Name     Wandering the streets~
+Sector   city~
+Flags    indoors~
+Desc     Many people seem hard at work putting up new buildings and creating new
+benches for Chicago. Even though they look very old, they are truly in
+their teen years. They have been aged from all of the dust in the sky.
+~
+#EXIT
+Direction north~
+ToRoom    11431
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11423
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11424
+#ENDEXIT
+
+Reset M 0 11427 8 11430
+#ENDROOM
+
+#ROOM
+Vnum     11431
+Name     Wandering the streets~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    11432
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11430
+#ENDEXIT
+
+Reset M 0 11427 8 11431
+#ENDROOM
+
+#ROOM
+Vnum     11432
+Name     Wandering the streets~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    11433
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11431
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11433
+Name     Wandering the streets~
+Sector   city~
+Flags    indoors~
+Desc     Many people are running up and down the street to make sure they aren't
+late for work. Many children are on the ground playing with stones and
+rocks. People have packages in hands from the different shops.
+~
+#EXIT
+Direction south~
+ToRoom    11432
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11437
+#ENDEXIT
+
+Reset M 0 11426 8 11433
+#ENDROOM
+
+#ROOM
+Vnum     11434
+Name     Wandering the streets~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    11435
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11427
+#ENDEXIT
+
+Reset M 0 11423 6 11434
+#ENDROOM
+
+#ROOM
+Vnum     11435
+Name     Wandering the streets~
+Sector   city~
+Flags    indoors~
+Desc     Many people seem hard at work putting up new buildings and creating new
+benches for Chicago. Even though they look very old, they are truly in
+their teen years. They have been aged from all of the dust in the sky.
+~
+#EXIT
+Direction east~
+ToRoom    11436
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11434
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11385
+#ENDEXIT
+
+Reset M 0 11423 6 11435
+Reset M 0 11423 6 11435
+#ENDROOM
+
+#ROOM
+Vnum     11436
+Name     Wandering the streets~
+Sector   city~
+Flags    indoors~
+Desc     Many people are running up and down the street to make sure they aren't
+late for work. Many children are on the ground playing with stones and
+rocks. People have packages in hands from the different shops.
+~
+#EXIT
+Direction east~
+ToRoom    11437
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11439
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11435
+#ENDEXIT
+
+Reset M 0 11423 6 11436
+#ENDROOM
+
+#ROOM
+Vnum     11437
+Name     Wandering the streets~
+Sector   city~
+Flags    indoors~
+Desc     Many people seem hard at work putting up new buildings and creating new
+benches for Chicago. Even though they look very old, they are truly in
+their teen years. They have been aged from all of the dust in the sky.
+~
+#EXIT
+Direction east~
+ToRoom    11433
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11440
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11436
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11438
+Name     &RT&rh&Re &wR&Re&wd~
+Sector   city~
+Flags    nomob indoors plr_home~
+Owner    Toshiba~
+Guests   scorpion flick maldar ~
+#EXIT
+Direction south~
+ToRoom    11418
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11439
+Name     Inside the Training Center~
+Sector   city~
+Flags    nomob indoors~
+Desc     You can hear many screams from upstairs of people dieing. There is a
+line that is coming from southeast, they must be getting tickets or
+something.
+~
+#EXIT
+Direction north~
+ToRoom    11436
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    11450
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11440
+Name     Inside the Training Center~
+Sector   city~
+Flags    nomob indoors~
+Desc     You can hear many screams from upstairs of people dieing. There is a
+line that is coming from southwest, they must be getting tickets or
+something.
+~
+#EXIT
+Direction north~
+ToRoom    11437
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    11450
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11441
+Name     Training Level 1~
+Sector   city~
+Flags    indoors~
+Desc     This training rooms is rather small. It is big enough for about 2
+People. The walls are lined with blood from previous battles. Many of
+The weapons from the Raiders are here on the ground.
+~
+#EXIT
+Direction east~
+ToRoom    11442
+#ENDEXIT
+
+Reset M 0 11410 2 11441
+#ENDROOM
+
+#ROOM
+Vnum     11442
+Name     Stairs~
+Sector   city~
+Flags    nomob indoors~
+Desc     This stair case is wide so many people can fit in the training center
+at once. You can hear the screams of raiders in the nearby corridors.
+~
+#EXIT
+Direction east~
+ToRoom    11443
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11441
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    11444
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    11381
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11443
+Name     Training Level 1~
+Sector   city~
+Flags    indoors~
+Desc     This training rooms is rather small. It is big enough for about 2
+People. The walls are lined with blood from previous battles. Many of
+The weapons from the Raiders are here on the ground.
+~
+#EXIT
+Direction west~
+ToRoom    11442
+#ENDEXIT
+
+Reset M 0 11410 2 11443
+#ENDROOM
+
+#ROOM
+Vnum     11444
+Name     Stairs~
+Sector   city~
+Flags    nomob indoors~
+Desc     This stair case is wide so many people can fit in the training center
+at once. You can hear the screams of raiders in the nearby corridors.
+~
+#EXIT
+Direction east~
+ToRoom    11445
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11446
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    11447
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    11442
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11445
+Name     Training Level 2~
+Sector   city~
+Flags    indoors~
+Desc     This training rooms is rather small. It is big enough for about 2
+People. The walls are lined with blood from previous battles. Many of
+The weapons from the Raiders are here on the ground.
+~
+#EXIT
+Direction west~
+ToRoom    11444
+#ENDEXIT
+
+Reset M 0 11411 2 11445
+#ENDROOM
+
+#ROOM
+Vnum     11446
+Name     Training Level 2~
+Sector   city~
+Flags    indoors~
+Desc     This training rooms is rather small. It is big enough for about 2
+People. The walls are lined with blood from previous battles. Many of
+The weapons from the Raiders are here on the ground.
+~
+#EXIT
+Direction east~
+ToRoom    11444
+#ENDEXIT
+
+Reset M 0 11411 2 11446
+#ENDROOM
+
+#ROOM
+Vnum     11447
+Name     Stairs~
+Sector   city~
+Flags    nomob indoors~
+Desc     This stair case is wide so many people can fit in the training center
+at once. You can hear the screams of raiders in the nearby corridors.
+~
+#EXIT
+Direction east~
+ToRoom    11448
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11449
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    11358
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    11444
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11448
+Name     Training Level 3~
+Sector   city~
+Flags    nomob indoors~
+Desc     This training rooms is rather small. It is big enough for about 2
+People. The walls are lined with blood from previous battles. Many of
+The weapons from the Raiders are here on the ground.
+~
+#EXIT
+Direction west~
+ToRoom    11447
+#ENDEXIT
+
+Reset M 0 11412 2 11448
+#ENDROOM
+
+#ROOM
+Vnum     11449
+Name     Training Level 3~
+Sector   city~
+Flags    nomob indoors~
+Desc     This training rooms is rather small. It is big enough for about 2
+People. The walls are lined with blood from previous battles. Many of
+The weapons from the Raiders are here on the ground.
+~
+#EXIT
+Direction east~
+ToRoom    11447
+#ENDEXIT
+
+Reset M 0 11412 2 11449
+#ENDROOM
+
+#ROOM
+Vnum     11450
+Name     Training Center's Lobby~
+Sector   city~
+Flags    indoors~
+Desc     As you enter the room you can see many different types of people here
+standing in line to get a pass to the Training Center. Even though this
+looks like an average training center it is not. This Training Center
+is for practicing smuggling. Ask around to see if you can get into the
+Training Center.
+~
+#EXIT
+Direction up~
+ToRoom    11381
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    11440
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    11439
+#ENDEXIT
+
+Reset M 0 11422 1 11450
+  Reset G 1 3 1
+#ENDROOM
+
+#ROOM
+Vnum     11451
+Name     Wandering the streets~
+Sector   city~
+Flags    indoors~
+Desc     This part of the town looks deserted. No one is within five feet of
+you. You do not know why there is no one here, but you think there must
+be something wrong.
+~
+#EXIT
+Direction east~
+ToRoom    11452
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11394
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11452
+Name     Wandering the streets~
+Sector   city~
+Flags    indoors~
+Desc     Many people are running up and down the street to make sure they aren't
+late for work. Many children are on the ground playing with stones and
+rocks. People have packages in hands from the different shops.
+~
+#EXIT
+Direction east~
+ToRoom    11426
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11451
+#ENDEXIT
+
+Reset M 0 11427 8 11452
+#ENDROOM
+
+#ROOM
+Vnum     11453
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+Owner    Draxxus~
+#EXIT
+Direction south~
+ToRoom    11397
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11454
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+Owner    Akiran~
+#EXIT
+Direction south~
+ToRoom    11398
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11455
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction north~
+ToRoom    11397
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11456
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction north~
+ToRoom    11398
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11457
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11458
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11459
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11460
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11461
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11463
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11464
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11465
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11466
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11467
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11468
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11469
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11470
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11471
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11472
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11473
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11474
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11475
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11476
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11477
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11478
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11479
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11480
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11481
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11482
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11483
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11484
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11485
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11486
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11487
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11488
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11489
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11490
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11491
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11492
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11493
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11494
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11495
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11496
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11497
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     11498
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+Desc     Many people are running up and down the street to make sure they aren't
+late for work. Many children are on the ground playing with stones and
+rocks. People have packages in hands from the different shops.
+~
+#ENDROOM
+
+#ROOM
+Vnum     11499
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ENDAREA

@@ -1,0 +1,50 @@
+#CORPSE
+Vnum         5120
+Room         5113
+Level        1007
+Values       80 80 0 0 0 0
+End
+
+#CORPSE
+Vnum         5126
+Room         601
+Level        1007
+Values       12 5 500 3 0 0
+End
+
+#CORPSE
+Vnum         5121
+Room         917
+Level        1007
+Values       80 80 0 0 0 0
+End
+
+#CORPSE
+Vnum         5123
+Room         2327
+Level        1007
+Values       80 80 0 0 0 0
+End
+
+#CORPSE
+Vnum         5124
+Room         4133
+Level        1007
+Values       1000 20 3000 2 0 0
+End
+
+#CORPSE
+Vnum         5122
+Room         11418
+Level        1007
+Values       80 80 0 0 0 0
+End
+
+#CORPSE
+Vnum         5125
+Room         6546
+Level        1007
+Values       1100 12 1920 1 0 0
+End
+
+#END

@@ -1,0 +1,1117 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         Gundam Wing Academy~
+Author       Antonio~
+Ranges       1 1007 1 1007
+Economy      0 6239770
+ResetMsg     You hear a bell ring loadly.~
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       10500
+Keywords   first~
+Short      a newly created first~
+Long       Some god abandoned a newly created first here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       10599
+Keywords   last~
+Short      a newly created last~
+Long       Some god abandoned a newly created last here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#OBJECT
+Vnum     10500
+Keywords Chest~
+Type     container~
+Short    A Chest~
+Long     A Chest is here, on the ground~
+Values   500 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10501
+Keywords sunglasses~
+Type     trash~
+Short    a sunglasses~
+Long     A sunglasses is here.~
+WFlags   take eyes~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10502
+Keywords red button~
+Type     button~
+Short    A Button~
+Long     A Button is here on the wall.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  pull_prog~
+Arglist   100~
+Comlist   mpoload 10303 1
+mpoload 10316 1
+mpoload 10308 1
+drop all
+pull button
+mpecho Sevral items appear
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     10503
+Keywords sandwich~
+Type     food~
+Short    a sandwich~
+Long     A sandwich is here.~
+Flags    inventory~
+WFlags   take hold~
+Values   55 55 0 0 0 0
+Stats    1 1 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10504
+Keywords Canteen~
+Type     drinkcon~
+Short    a Canteen~
+Long     A Canteen is here.~
+WFlags   take hold~
+Values   30 30 0 0 0 0
+Stats    1 1 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10505
+Keywords A Letter~
+Type     trash~
+Short    A Letter~
+Long     A Letter from Mary, to the principal~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10599
+Keywords final objec~
+Type     trash~
+Short    a final objec~
+Long     A final objec is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     10500
+Name     The Entrace to the Academy~
+Sector   city~
+Flags    nomob safe~
+Desc     Once you get out of the academy, you can type 'save' to save your stats.
+It's a good idea to type 'save' often in case of a crash. Also if you 
+wish to quit this game, type 'hail' then type 'quit' when you arrive at
+the hotel.
+ 
+&B Say "G42" to go to colony G42
+say "S19" to goto Tricolonies.
+Say "Tokyo" to go to Tokyo.
+Say "Z64" to go to colony Z64.
+~
+#EXIT
+Direction north~
+ToRoom    10501
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   g42~
+Comlist   mpecho You're transported to G42.
+mptransfer $n 500
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   S19~
+Comlist   mpecho You're transferred to S19.
+mptransfer $n 1300
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   z64~
+Comlist   mpecho You're transferred to Z64.
+mptransfer $n 5100
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   tokyo~
+Comlist   mpecho You're transferred to Tokyo.
+mptransfer $n 800
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     10501
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     If you completed the academy you must be here. You can
+come back in if you want to visit your old teachers
+or to get some simplete equipment. There is a
+50ft flag pole here with a Flag at the top of it.
+ 
+~
+#EXIT
+Direction north~
+ToRoom    10502
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10500
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10502
+Name     Leaving the Academy~
+Sector   city~
+Flags    indoors safe~
+Desc     In this hallway there is a exit south out of here. You first have to
+complete the Academy and get your diploma and other stuff.
+After you get the diploma you can leave here and enter the
+game. You also may come back any time you want to.
+ 
+~
+#EXIT
+Direction north~
+ToRoom    10503
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10501
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10503
+Name     The End of a Hallway~
+Sector   city~
+Flags    indoors safe~
+#EXIT
+Direction north~
+ToRoom    10504
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10502
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10504
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+#EXIT
+Direction north~
+ToRoom    10505
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10503
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10505
+Name     A Hallway Intersection~
+Sector   city~
+Flags    indoors~
+Desc     This is the intersection where the hallways meet and intersect with each
+other. If you explore the academy you are bound to find new things that
+are useful. You should try to find your way to class now so you can learn
+how to do stuff.
+ 
+&BType '&gLook sign&B'
+ 
+&RTo be Authed go North
+ 
+&GAfter Being Authorized go south and leave here.
+~
+#EXIT
+Direction north~
+ToRoom    10515
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10509
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10504
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10506
+#ENDEXIT
+
+#EXDESC
+ExDescKey    sign ~
+ExDesc       &G&gWelcome to the Gundam Wing Academy. Please find the principal or ask a
+Immortal to be authorize to play. To get authorize when no immortals are
+on first you must find Mary and get the note from here. Then you must find
+the principal (In the janitors closet) and give him the note. Mary is on
+the second floor and the principal is on the very top.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     10506
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     You see the Cafeteria over to the west. Maybe you should go gets some food
+and water becuase you need food and water to live on the mud. You also
+need to sleep sometimes.
+~
+#EXIT
+Direction north~
+ToRoom    10511
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10505
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10507
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10507
+Name     An Academy Cafeteria~
+Sector   city~
+Flags    indoors safe~
+Desc     You look around and you see a lunch lady here serving 
+food. You see a few students chatting over in the
+corner and the food here doesn't look to good.
+ 
+&BType '&gList&B' to get a list of food
+~
+#EXIT
+Direction east~
+ToRoom    10506
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10508
+Name     Floating in a void~
+Sector   city~
+Flags    nomob indoors safe~
+#ENDROOM
+
+#ROOM
+Vnum     10509
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+#EXIT
+Direction east~
+ToRoom    10510
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10505
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10510
+Name     Equipment Station~
+Sector   city~
+Flags    indoors safe~
+Desc     This room has been designed to teach people how to use basic equipment.
+Some Items you find or buy in the game can be worn, wielded, or holded.
+The Commands are (wear/weild/hold) <item> Other items have differnt
+affects and properties.
+ 
+&B Say 'equip'
+~
+#EXIT
+Direction west~
+ToRoom    10509
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10511
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+#EXIT
+Direction north~
+ToRoom    10512
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10506
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10512
+Name     A Gym~
+Sector   city~
+Flags    indoors safe~
+Desc     Here is a small gym where you can training yourself  a bit. You can Train
+your stats here up to 12 but no further then that. Training you stats can 
+improve how good you are.
+&BType 'score' to see your stats
+&BType 'train <stat>' to start training
+~
+#EXIT
+Direction south~
+ToRoom    10511
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10513
+Name     A Hallway~
+Sector   city~
+Flags    nomob indoors safe~
+Desc     This long narrow Hallway leads to a small shop.
+~
+#ENDROOM
+
+#ROOM
+Vnum     10514
+Name     A School Shop~
+Sector   city~
+Flags    nomob indoors safe~
+Desc     This is a small shop for students to buy some stuff they can use. There is
+a small safe in the back of the room next to a broken tv.
+There is some good equipment here and some other useless junk too...
+ 
+&BType '&gList&B' to see a list of items
+~
+#ENDROOM
+
+#ROOM
+Vnum     10515
+Name     A Hallway~
+Sector   city~
+Flags    indoors~
+Desc     &RContinue North
+~
+#EXIT
+Direction north~
+ToRoom    10516
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10505
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10516
+Name     A Stairwell~
+Sector   city~
+Flags    indoors safe~
+Desc     &RGo Up
+~
+#EXIT
+Direction south~
+ToRoom    10515
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    10517
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10517
+Name     A Stairwell~
+Sector   city~
+Flags    indoors safe~
+Desc     &RGo North until you find Mary and come back then go
+up.
+~
+#EXIT
+Direction north~
+ToRoom    10518
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    10525
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    10516
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10518
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+#EXIT
+Direction north~
+ToRoom    10519
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10524
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10517
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10521
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10519
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     You look around and see a student named Mary. She looks like she needs a
+little help. Why don't you help her? 
+HINT: SAY HELLO
+HINT: SAY YES
+~
+#EXIT
+Direction north~
+ToRoom    10520
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10518
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10523
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10520
+Name     A Storage Room~
+Sector   city~
+Flags    indoors safe~
+Desc     This is a small storage room that has a chest on the floor
+I dont think they would mind if you took a few things.
+&BType 'look in chest' to see whats in there
+&BType 'get <item> chest' to take an item
+&BType 'put <item> chest' to put something in it
+~
+#EXIT
+Direction south~
+ToRoom    10519
+#ENDEXIT
+
+Reset O 0 10500 1 10520
+  Reset P 0 10304 1 10500
+  Reset P 1 10501 1 10304
+  Reset P 0 10501 1 10500
+#ENDROOM
+
+#ROOM
+Vnum     10521
+Name     Combat Training~
+Sector   city~
+Flags    nomob indoors safe~
+Desc     This room has been designed to teach people how to
+fight and defend thier self. The actually fighting
+training takes place west in the combat room.
+ 
+&BType 'look sign' to learn how to fight.
+~
+#EXIT
+Direction east~
+ToRoom    10518
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10522
+#ENDEXIT
+
+#EXDESC
+ExDescKey    sign~
+ExDesc       How to fight.
+ 
+Consider <mob/player> - First you need to consider
+ the mob before killing it so you know you can
+ 
+Kill <mob> - to start a battle with a mobile
+ 
+Flee - to run away from a battle so you dont die
+ 
+Murder <player> - to start combat with another
+ player. This is not advised to do because
+ player kill has to be done with a rp
+ reason. You can just kill someone that
+ you dont like.
+ 
+Wimpy <hps> - sets the hitpoints to
+ automatically run away during
+ battle.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     10522
+Name     Combat Room~
+Sector   city~
+Flags    indoors~
+Desc     This room is here to practice fighting in. You look
+wall and some cameras are in all 4
+corners of the room watching your every
+move. They are probally monitoring how
+good you can fight.
+ 
+&BSay 'begin' to start the holograms.
+~
+#EXIT
+Direction east~
+ToRoom    10521
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho &BThe Hologram starts up.
+mpmload 10500
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     10523
+Name     A Destroyed Classroom~
+Sector   city~
+Flags    indoors safe~
+Desc     This is what happenes when teachers give thier students too much homework.
+There is nothing much left except for some glass on the floor, a few
+peices of chalk, and a frightened teacher.
+~
+#EXIT
+Direction east~
+ToRoom    10519
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10524
+Name     A Workshop~
+Sector   city~
+Flags    indoors safe silence factory~
+Desc     This seems like a nice quiet place to build some nice items. But you need
+to know some engineering skills and have the right material to build
+stuff.
+~
+#EXIT
+Direction west~
+ToRoom    10518
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10525
+Name     A Stairwell~
+Sector   city~
+Flags    nomob indoors safe~
+Desc     &RGo North until you can't
+~
+#EXIT
+Direction north~
+ToRoom    10526
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    10517
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10526
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+#EXIT
+Direction north~
+ToRoom    10527
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10532
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10525
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10531
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10527
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+#EXIT
+Direction north~
+ToRoom    10528
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10534
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10526
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10533
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10528
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+#EXIT
+Direction north~
+ToRoom    10529
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10536
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10527
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10535
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10529
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+#EXIT
+Direction north~
+ToRoom    10530
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10528
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10530
+Name     A Stairwell~
+Sector   city~
+Flags    indoors safe~
+Desc     &RGo Up
+~
+#EXIT
+Direction south~
+ToRoom    10529
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    10537
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10531
+Name     An Empty Apartment~
+Sector   city~
+Flags    indoors safe empty_home~
+#EXIT
+Direction east~
+ToRoom    10526
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10532
+Name     An Empty Apartment~
+Sector   city~
+Flags    indoors safe empty_home~
+#EXIT
+Direction west~
+ToRoom    10526
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10533
+Name     An Empty Apartment~
+Sector   city~
+Flags    indoors safe empty_home~
+#EXIT
+Direction east~
+ToRoom    10527
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10534
+Name     An Empty Apartment~
+Sector   city~
+Flags    indoors safe empty_home~
+#EXIT
+Direction west~
+ToRoom    10527
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10535
+Name     An Empty Apartment~
+Sector   city~
+Flags    indoors safe empty_home~
+#EXIT
+Direction east~
+ToRoom    10528
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10536
+Name     An Empty Apartment~
+Sector   city~
+Flags    indoors safe empty_home~
+#EXIT
+Direction west~
+ToRoom    10528
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10537
+Name     A Stairwell~
+Sector   city~
+Flags    indoors safe~
+Desc     &RGo South
+~
+#EXIT
+Direction south~
+ToRoom    10538
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    10530
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10538
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     &RGo South
+~
+#EXIT
+Direction north~
+ToRoom    10537
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10539
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10539
+Name     A Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     You look around and see that the principals office is just to the south. To
+the West is a closed door. To Open Doors Type open <dir>.
+&RGo West and give him the note from
+mary.
+~
+#EXIT
+Direction north~
+ToRoom    10538
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10540
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10542
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset D 0 10539 3 1
+#ENDROOM
+
+#ROOM
+Vnum     10540
+Name     The Principals Office~
+Sector   city~
+Flags    indoors~
+Desc     This is the Principals office. But the Principal seems to be missing. Maybe
+you should go look for him.
+HINT: hes behind a closed door.
+~
+#EXIT
+Direction north~
+ToRoom    10539
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10541
+Name     Floating in a void~
+Sector   city~
+Flags    nomob indoors safe~
+#ENDROOM
+
+#ROOM
+Vnum     10542
+Name     Janitors Closet~
+Sector   city~
+Flags    nomob indoors~
+Desc     This small little closet is where teh janitor keeps he supplies and other
+stuff.
+HINT: Give him the letter
+HINT: Say this is from mary
+~
+#EXIT
+Direction east~
+ToRoom    10539
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset D 0 10542 1 1
+#ENDROOM
+
+#ROOM
+Vnum     10543
+Name     A Hallway~
+Sector   city~
+Flags    nomob indoors safe~
+Desc     After You've gave the principal the note he took you here to be graduated.
+Just go south of here to be Graduated 
+~
+#EXIT
+Direction south~
+ToRoom    10544
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10544
+Name     Graduating from the Academy~
+Sector   city~
+Flags    nomob indoors safe~
+Desc     l Wait Till you are Authorize then go down  Wait Till you are Authorize
+then go down
+~
+#EXIT
+Direction north~
+ToRoom    10543
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    10505
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10545
+Name     Floating in a void~
+Sector   city~
+Flags    nomob indoors safe~
+#ENDROOM
+
+#ROOM
+Vnum     10546
+Name     Floating in a void~
+Sector   city~
+Flags    nomob indoors safe~
+#ENDROOM
+
+#ROOM
+Vnum     10547
+Name     Floating in a void~
+Sector   city~
+Flags    nomob indoors safe~
+#ENDROOM
+
+#ROOM
+Vnum     10548
+Name     Floating in a void~
+Sector   city~
+Flags    nomob indoors safe~
+#ENDROOM
+
+#ROOM
+Vnum     10549
+Name     Floating in a void~
+Sector   city~
+Flags    nomob indoors safe~
+#ENDROOM
+
+#ROOM
+Vnum     10550
+Name     Floating in a void~
+Sector   city~
+Flags    nomob indoors safe~
+#ENDROOM
+
+#ROOM
+Vnum     10556
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     10599
+Name     MOB PROG ROOM! DO NOT TOUCH~
+Sector   city~
+Flags    nomob~
+Reset O 0 10505 1 10599
+#ENDROOM
+
+#ENDAREA

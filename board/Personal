@@ -1,0 +1,323 @@
+Sender  Scoyn~
+Date    Sat Jun  9 08:51:44 2012~
+Stamp   1339257246
+Expire  1344441114
+To      Gunther~
+Subject helpfiles~
+Text
+Since you're more interested in getting the helpfiles fixed
+than you are having areas fixed/built, when I can (maybe Monday
+or maybe not until I get unpacked after I move next weekend),
+I'll start at the top of the commands list and check/make
+the helpfile for every command and make sure that there
+either is one or that the one that there is for the command
+save
+is correct.  It's going to take a while though, so please
+don't harp on me about how it's going.  I'll let you know
+when it's done.
+~
+
+Sender  Mouse~
+Date    Mon Jun 11 12:13:25 2012~
+Stamp   1339442048
+Expire  1341861214
+To      Cray~
+Subject Hello~
+Text
+Hello Cray.
+&/I wanted to get this over and done with. I recently found logs of the
+last time we interacted. And I want to apologize for how I acted back
+when we last talked, genuinely this time. Not the same "I'm sorry" I 
+gave you last time.
+&/The last time we spoke, way back in 2005, I was a general bitch, and
+honestly, there was no excuse for how I acted.
+&/We've both done stupid things. It also has been 7+ years, people
+change, you have, and so have I. We're no longer the same people we
+were then. I had recently decided that I would start relations anew,
+throwing out what I knew of people, and let them make a new
+impression. This includes you.
+&/So if we start hating each other, let it be over new stuff, and not
+the old stuff.
+&/&/&/&G- &WM&zou&Ps&ze &GAKA&W Sora/Rem/Rena
+&YP.S. By the time you read this, I might have gotten my name changed
+&Yby Gunther to something that doesn't conflict with the Mighty Mouse mob.
+~
+
+Sender  Gunther~
+Date    Fri Jun 15 21:04:31 2012~
+Stamp   1339819777
+Expire  1342238684
+To      Cray~
+Subject Fixes~
+Text
+Obviously do what you gotta to clan system to make It look the old way.
+1. Tasks are not working prolly just something simple but I would like them in.
+2. You already started to look into pcrename.
+3. I dunno if you can/want to finish up the train system. I dont think Ghost will ever do it.
+4. Adding PPK back in and I the benefits of doing such ie. Armor doesnt get damaged in ppk but does in pk.
+I think that is all I have for now but when I think of any more I will let you know.
+Thanks a lot man for helping out. I was starting to get frustrated that Ghost wasnt getting any where with fixes.
+ 
+Thanks
+Gunther
+~
+
+Sender  Gunther~
+Date    Sat Jun 16 11:54:38 2012~
+Stamp   1339873081
+Expire  1342292088
+To      cray~
+Subject New Server~
+Text
+Hey man i put the new code onto new server and something is wrong that it wont let the shell start it up. It has a huge line.
+swr: malloc.c:3097: sYSMALLOc: Assertion `(old_top == (((mbinptr) (((char *) &((av)->bins[((1) - 1) * 2])) - __builtin_offsetof (struct malloc_chunk, fd))))$
+is half of it
+I dunno what the fuck is wrong if you could please help me out that would be great
+New shell is mud.themudhost.net port 22 same login name and pword
+ 
+ 
+Thanks
+Gunther
+~
+
+Sender  Cray~
+Date    Sat Jun 16 16:09:37 2012~
+Stamp   1339888281
+Expire  1342307387
+To      Gunther~
+Subject Shell~
+Text
+Hey man,
+ 
+I messed around with it for a while, but I couldn't get it
+to start, I'm shit with that kind of stuff.
+ 
+However Ghost did have a copy running on port 1987,
+so he definitely knows how to get past the boot error.
+ 
+Hopefully he can fix that for us, cause that shell
+is way frickin quicker Lol
+ 
+ 
+-Cray
+~
+
+Sender  Gunther~
+Date    Sun Jun 17 03:56:50 2012~
+Stamp   1339916487
+Expire  1342335420
+To      Cray~
+Subject Update...~
+Text
+Hey man something happened with score/level. The amount of exp need for next level keeps growing into huge numbers.
+I dont know wtf is going on. If I could get you to code for me a couple days a week I would get rid of the other coder and keep Ghost.
+Anyways with ppk it needs made so ppk does not get damaged equipment and I believe that is all because I think owning a gundam and entering a gang
+should stay as an incentive to go pk. You have been a huge help, I cant thank you enough. Any questions please ask.
+ 
+Thanks
+Gunther
+~
+
+Sender  Cray~
+Date    Sun Jun 17 09:24:11 2012~
+Stamp   1339935902
+Expire  1342355059
+To      Gunther~
+Subject Level/Score~
+Text
+Took some annoying tinkering but score and level took
+more time then I thought. So I'll try for train next
+chance I get.
+ 
+-Cray
+~
+
+Sender  Racor~
+Date    Mon Jun 18 05:07:48 2012~
+Stamp   1340006941
+Expire  1342426084
+To      cray~
+Subject fathers day~
+Text
+So yesterday was fathers day. Thought i would share a joke with you i heard.
+wasnt able to tell it to you yesterday.
+Fathers day- Most confusing day in the Ghetto. :-p
+`
+~
+
+Sender  Scoyn~
+Date    Sun Jun 24 00:44:01 2012~
+Stamp   1340509462
+Expire  1342928650
+To      racor~
+Subject Project for me~
+Text
+What's the project?
+~
+
+Sender  Racor~
+Date    Sun Jun 24 09:18:05 2012~
+Stamp   1340540436
+Expire  1342959499
+To      scoyn~
+Subject project~
+Text
+I need something taken care of.
+Frost and Phoenix on m9, 
+Players can steal their items in the invontory being the ice shard armor,
+THe burning mask of phoenix, the nightmare and nemesis.
+I need it changed so rather when somebody tries to steal the items the mob
+attacks them automatically and the player has no chance of getting the item. 
+Or take the items out of their inventory and make it a program alot like the bounty heads
+are.
+Either way i dont care how you do it. I just need it changed so the items can't be 
+stolen.
+The mobs needs to be killed in order to get the items.
+Thats what i have in mind right now.
+~
+
+Sender  Maldar~
+Date    Mon Jun 25 21:08:34 2012~
+Stamp   1340669457
+Expire  1343088523
+To      Aralia~
+Subject Playing~
+Text
+Hey there. I will give all your stuff back free of charge. I really dont want you to quit I enjoy having you around. Please dont quit. Please just contact me for your belongings.
+ 
+Thanks
+Maldar
+~
+
+Sender  Aralia~
+Date    Tue Jul  3 13:53:08 2012~
+Stamp   1341334522
+Expire  1343753615
+To      Arcturis~
+Subject Being Targetted buy Ships non stop~
+Text
+I went to System X and did a little piloting training. When I was done I started flying away. I went to R28 and landed. The entire time I got the message, "Your suit is being targeted by Peacemillion." and "Your suit is being targeted by Virgo V24."
+ 
+This persisted even when landed and even after exiting the ship.
+~
+
+Sender  Hiead~
+Date    Mon Nov 19 01:23:54 2012~
+Stamp   1353302660
+Expire  1355721846
+To      Scoyn~
+Subject Cockpit colors~
+Text
+        &w_______________________
+&w/   &C_________________   &w\
+&w/&C/| |                 &C| |\&w\
+&w/&C/ | | &R-      &r|      &R- &C| | \&w\
+&w/&C/  | | &R-      &r|      &R- &C| |  \&w\
+&w/&C/   | + &R- &r<---(+)---> &R- &C+ |   \&w\
+&w/&C/    | | &R-      &r|      &R- &C| |    \&w\
+&w/&C/  &r|  &C| | &R-      &r|      &R- &C| |  &r|  &C\&w\
+&w|&C|   &r|/ &C| |_________________| | &r\|   &C|&w|
+&w|&C|  &r/|  &C/ &w___________________ &C\  &r|\  &C|&w|
+&w|&C|   &r| &C/ &w/&z________&O[&Y+&O]&z________&w\ &C\ &r|   &C|&w|
+&w|&C|    / &w/ /&z_&O[&R+&O]&B[]&z/ &g^ &z\&B[]&O[&R+&O]&z_&w\ \ &C\    &C|&w|
+&w|&C|   / &w/ /&W|&z===&W|&R]&z(&g<&G(+)&g>&z)&R[&W|&z===&W|&w\ \ &C\   |&w|
+&w|&C|  / &w/ / &z/      &z\ &gv &z/      &z\ &w\ \ &C\  |&w|
+&w|&C| / &w/ / &Y=        &z\_/        &Y= &w\ \ &C\ |&w|
+&w|&C|/ &w/ / &z\/         &r0         &z\/ &w\ \ &C\|&w|
+~
+
+Sender  Hiead~
+Date    Mon Nov 19 01:27:34 2012~
+Stamp   1353302879
+Expire  1355722063
+To      Scoyn~
+Subject Colors v2~
+Text
+&x        &w_______________________
+&x       &w/   &C_________________   &w\
+&x      &w/&C/| |                 &C| |\&w\
+&x     &w/&C/ | | &R-      &r|      &R- &C| | \&w\
+&x    &w/&C/  | | &R-      &r|      &R- &C| |  \&w\
+&x   &w/&C/   | + &R- &r<---(+)---> &R- &C+ |   \&w\
+&x  &w/&C/    | | &R-      &r|      &R- &C| |    \&w\
+&x &w/&C/  &r|  &C| | &R-      &r|      &R- &C| |  &r|  &C\&w\
+&w|&C|   &r|/ &C| |_________________| | &r\|   &C|&w|
+&w|&C|  &r/|  &C/ &w___________________ &C\  &r|\  &C|&w|
+&w|&C|   &r| &C/ &w/&z________&O[&Y+&O]&z________&w\ &C\ &r|   &C|&w|
+&w|&C|    / &w/ /&z_&O[&R+&O]&B[]&z/ &g^ &z\&B[]&O[&R+&O]&z_&w\ \ &C\    &C|&w|
+&w|&C|   / &w/ /&W|&z===&W|&R]&z(&g<&G(+)&g>&z)&R[&W|&z===&W|&w\ \ &C\   |&w|
+&w|&C|  / &w/ / &z/      &z\ &gv &z/      &z\ &w\ \ &C\  |&w|
+&w|&C| / &w/ / &Y=        &z\_/        &Y= &w\ \ &C\ |&w|
+&w|&C|/ &w/ / &z\/         &r0         &z\/ &w\ \ &C\|&w|
+ 
+~
+
+Sender  Akiran~
+Date    Sun Jun 30 00:52:42 2013~
+Stamp   1372564404
+Expire  1374983569
+To      Scoyn~
+Subject Hey~
+Text
+Dude....
+ 
+ 
+ 
+- Forever and always yours, Akiran <3 -
+~
+
+Sender  Gyran~
+Date    Mon Nov  4 12:12:08 2013~
+Stamp   1383581604
+Expire  1386000732
+To      draxxus~
+Subject Sparda~
+Text
+I'm soooo sorry draxxus, a customs guard took the
+sparda! I know you said it was expensive. I'll
+reimburse you the 4M! Also, is it possible for you to
+let me know where to get one? So that I won't have
+to run the risk of losing your stuff again?
+ 
+Thanks in advance,
+Gyran
+~
+
+Sender  Gyran~
+Date    Mon Nov  4 12:56:53 2013~
+Stamp   1383584246
+Expire  1386003419
+To      draxxus~
+Subject Sparda (2)~
+Text
+so... disregard the 1st note pls, Jefed helped me to
+recover your Sparda, so it's ready when you want it
+back :)
+ 
+ 
+Thanks again,
+Gyran
+~
+
+Sender  Draxxus~
+Date    Tue Nov 12 16:45:00 2013~
+Stamp   1384289157
+Expire  1386708309
+To      scoyn~
+Subject levels~
+Text
+is there anyway you can bring my combat levels down to 500 so I can help gyran and myself level leadership?
+~
+
+Sender  Aramaust~
+Date    Wed Sep 24 02:34:04 2014~
+Stamp   1411537164
+Expire  1413956066
+To      Souza~
+Subject RE: Corpse~
+Text
+Yeah I lost essenetially everything due to being unable to retrieve my corpse. Anything would be of great assistance. It sucks because I was doing a quest and the merc was a bit beastier than expected. Lost a Full Set of Gear, 2 Full Jewels, half a jewel
+and enough shards to complete a Jewel. The only fortunate aspect of this ordeal is I hadn't bought my Task Gear yet lol  I work 3-11PM EST and am available most others times. When would be good for you?
+and enough shards to complete a Jewel. The only fortunate aspect of this ordeal is I hadn't bought my Task Gear yet lol  I work 3-11PM EST and am available most others times. When would be good for you?
+~
+

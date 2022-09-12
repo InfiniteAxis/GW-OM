@@ -1,0 +1,377 @@
+#AREA   {PROTO} Magnus's area in progress~
+
+
+
+#AUTHOR Magnus~
+
+#RANGES
+0 0 0 0
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 0
+
+#MOBILES
+#0
+
+
+#OBJECTS
+#7200
+A Black Gundam Jacket~
+A Black Gundam Jacket~
+A Black Gundam Jacket is thrown here.~
+~
+9 8192 9
+200 -30 0 0
+1 8000 800
+A
+17 10
+#7201
+A Epyon Whip~
+A Epyon Whip~
+A glowing whip is lying here.~
+~
+5 3 8193
+0 10 150 3
+1 5000000 500000
+A
+1 10
+A
+18 100
+A
+19 100
+A
+19 1000
+A
+18 1000
+A
+16 100000
+A
+3 10
+A
+4 10
+#0
+
+
+#ROOMS
+#7200
+Colony E31 Landing Pad~
+This is the Main Landing Pad on Colony E31. The smell of exhaust fills the
+air, and the sound of Mobile Suits being worked on can be heard. Lined up
+along the sides of the hanger are verious MS and transports ready to take
+off.
+~
+0 1073741876 1
+D0
+~
+~
+0 -1 7201
+S
+#7201
+North of Landing Pad~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 7202
+D2
+~
+~
+0 -1 7200
+S
+#7202
+Colony E31~
+~
+0 1073741824 1
+D2
+~
+~
+0 -1 7201
+S
+#7203
+Colony E31 Main Sector~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 7207
+D7
+~
+~
+0 -1 7206
+D8
+~
+~
+0 -1 7204
+D9
+~
+~
+0 -1 7205
+S
+#7204
+Colony E31 Bank~
+~
+0 1073743104 1
+D7
+~
+~
+0 -1 7203
+S
+#7205
+Colony E31 Hotel~
+~
+0 1082131456 1
+D6
+~
+~
+0 -1 7203
+S
+#7206
+Food Stand~
+~
+0 1073741824 1
+D8
+~
+~
+0 -1 7203
+S
+#7207
+Trans Tube~
+Say 'Enter' To enter the Tube.
+~
+0 1073741824 1
+D2
+~
+~
+0 -1 7203
+> speech_prog Enter~
+mpechoat $n You are sucked into the Trans Tube.
+mpechoaround $n $n is sucked into the Trans Tube.
+mptransfer $n 7208
+~
+|
+S
+#7208
+Inside The Trans Tube~
+Say 'Main' To go to the Main Sector.
+Say 'Train' To go to the Training Sector.
+~
+0 1073741828 1
+> speech_prog Main~
+mpechoat $n You are flung around some tubes.
+mpechoaround $n $n is shot away.
+mptransfer $n 7207
+~
+> speech_prog Train~
+mpechoat $n You are flung around some tubes.
+mpechoaround $n $n is shot away.
+mptransfer $n 7209
+~
+|
+S
+#7209
+Entrance to Training Sector~
+Say 'Enter' To enter the trans tube.
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 7210
+> speech_prog Enter~
+mpechoat $n You are sucked up in a Trans
+Tube.
+mpechoaround $n $n is sucked into the Trans Tube.
+mptransfer $n 7208
+~
+|
+S
+#7210
+Center Of the Training Sector~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 7211
+D1
+~
+~
+0 -1 7213
+D2
+~
+~
+0 -1 7215
+D3
+~
+~
+0 -1 7209
+D4
+~
+~
+0 -1 7218
+D5
+~
+~
+0 -1 7219
+D6
+~
+~
+0 -1 7212
+D7
+~
+~
+0 -1 7217
+D8
+~
+~
+0 -1 7214
+D9
+~
+~
+0 -1 7216
+S
+#7211
+Colony E31 Training Room 1~
+~
+0 1073741824 1
+D2
+~
+~
+0 -1 7210
+S
+#7212
+Colony E31 Training Room 2~
+~
+0 1073741824 1
+D9
+~
+~
+0 -1 7210
+S
+#7213
+Colony E31 Training Room 3~
+~
+0 1073741824 1
+D3
+~
+~
+0 -1 7210
+S
+#7214
+Colony E31 Training Room 4~
+~
+0 1073741824 1
+D7
+~
+~
+0 -1 7210
+S
+#7215
+Colony E31 Training Room 5~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 7210
+S
+#7216
+Colony E31 Training Room 6~
+~
+0 1073741824 1
+D6
+~
+~
+0 -1 7210
+S
+#7217
+Colony E31 Training Room 7~
+~
+0 1073741824 1
+D8
+~
+~
+0 -1 7210
+S
+#7218
+Colony E31 Training Room 8~
+~
+0 1073741824 1
+D5
+~
+~
+0 -1 7210
+S
+#7219
+Healing Tank~
+~
+0 1073741824 1
+D4
+~
+~
+0 -1 7210
+> speech_prog heal~
+mpechoat $n &RA red bandage flys at you.
+mpechoaround $n &b$n is hit by a
+bandage.
+mprestore $n 30000
+~
+|
+S
+#7220
+Entrance To the Shopping Sector~
+~
+0 1073741824 1
+D2
+~
+~
+0 -1 7221
+S
+#7221
+Colony E31 Shopping Area~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 7220
+D1
+~
+~
+0 -1 7222
+S
+#7222
+Colony E31 Item Shop~
+~
+0 1073741824 1
+D3
+~
+~
+0 -1 7221
+S
+#0
+
+
+#RESETS
+O 1 7200 1 7200
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

@@ -1,0 +1,3812 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         Large Ships~
+Author       Akumaka~
+Ranges       1 1007 1 1007
+Economy      0 6327878
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       1100
+Keywords   Armory Seargent Sarge~
+Short      Armory Sarge~
+Long       The seargent in charge of the armory stand here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 16 10 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       1101
+Keywords   Libra Security~
+Short      Libra Security~
+Long       Libra Security is here, checking you out.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if clan ($n) == White Fang
+salute
+else
+Yell Intruder!  Your not allowed in here!
+mpkill $n
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1102
+Keywords   Peacemillion Security~
+Short      Peacemillion Security~
+Long       Peacemillion Security is here, checking you out.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if name ($n) == Reed
+salute
+else
+Yell Intruder!  Your not allowed in here!
+mpkill $n
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1103
+Keywords   Barge Security~
+Short      Barge Security~
+Long       Barge Security is here, checking you out.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if clan ($n) == Oz
+emote salutes
+else
+yell Intruder!  Your not allowed in here!
+mpkill $n
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1299
+Keywords   last~
+Short      a newly created last~
+Long       Some god abandoned a newly created last here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#OBJECT
+Vnum     1100
+Keywords Infrared Goggles~
+Type     armor~
+Short    Infrared Goggles~
+Long     A pair of goggles was misplaced here.~
+WFlags   take eyes~
+Values   30 30 0 0 0 0
+Stats    1 10000 1000 0 0
+Affect       -1 -1 32 26 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1101
+Keywords Captain's Chair~
+Type     furniture~
+Short    a Captain's Chair~
+Long     The Captain's command chair sits here.~
+Values   1 1 3 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1102
+Keywords A soft chair~
+Type     furniture~
+Short    A soft chair~
+Long     A soft chair is here in front of the consoles~
+Values   1 1 3 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1299
+Keywords last~
+Type     trash~
+Short    a last~
+Long     A last is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     1100
+Name     MS Transport Cockpit~
+Sector   city~
+Flags    spacecraft~
+#EXIT
+Direction south~
+ToRoom    1110
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1101
+Name     MS Transport Cockpit~
+Sector   city~
+Flags    spacecraft~
+#EXIT
+Direction south~
+ToRoom    1111
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1102
+Name     MS Transport Cockpit~
+Sector   city~
+Flags    spacecraft~
+#EXIT
+Direction south~
+ToRoom    1112
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1103
+Name     MS Transport Cockpit~
+Sector   city~
+Flags    spacecraft~
+#EXIT
+Direction south~
+ToRoom    1113
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1104
+Name     MS Transport Cockpit~
+Sector   city~
+Flags    spacecraft~
+#EXIT
+Direction south~
+ToRoom    1114
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1105
+Name     MS Transport Cockpit~
+Sector   city~
+Flags    spacecraft~
+#EXIT
+Direction south~
+ToRoom    1115
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1106
+Name     MS Transport Cockpit~
+Sector   city~
+Flags    spacecraft~
+#EXIT
+Direction south~
+ToRoom    1116
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1107
+Name     MS Transport Cockpit~
+Sector   city~
+Flags    spacecraft~
+#EXIT
+Direction south~
+ToRoom    1117
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1108
+Name     MS Transport Cockpit~
+Sector   city~
+Flags    spacecraft~
+#EXIT
+Direction south~
+ToRoom    1118
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1109
+Name     MS Transport Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction south~
+ToRoom    1119
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1110
+Name     MS Transport Hanger~
+Sector   city~
+Flags    can_land can_fly spacecraft~
+#EXIT
+Direction north~
+ToRoom    1100
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1111
+Name     MS Transport Hanger~
+Sector   city~
+Flags    can_land can_fly spacecraft~
+#EXIT
+Direction north~
+ToRoom    1101
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1112
+Name     MS Transport Hanger~
+Sector   city~
+Flags    can_land can_fly spacecraft~
+#EXIT
+Direction north~
+ToRoom    1102
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1113
+Name     MS Transport Hanger~
+Sector   city~
+Flags    can_land can_fly spacecraft~
+#EXIT
+Direction north~
+ToRoom    1103
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1114
+Name     MS Transport Hanger~
+Sector   city~
+Flags    can_land can_fly spacecraft~
+#EXIT
+Direction north~
+ToRoom    1104
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1115
+Name     MS Transport Hanger~
+Sector   city~
+Flags    can_land can_fly spacecraft~
+#EXIT
+Direction north~
+ToRoom    1105
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1116
+Name     MS Transport Hanger~
+Sector   city~
+Flags    can_land can_fly spacecraft~
+#EXIT
+Direction north~
+ToRoom    1106
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1117
+Name     MS Transport Hanger~
+Sector   city~
+Flags    can_land can_fly spacecraft~
+#EXIT
+Direction north~
+ToRoom    1107
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1118
+Name     MS Transport Hanger~
+Sector   city~
+Flags    can_land can_fly spacecraft~
+#EXIT
+Direction north~
+ToRoom    1108
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1119
+Name     MS Transport Hanger~
+Sector   city~
+Flags    can_land can_fly spacecraft~
+#EXIT
+Direction north~
+ToRoom    1109
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1120
+Name     Captain's Chair~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1124
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1121
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1122
+#ENDEXIT
+
+Reset O 0 1101 1 1120
+#ENDROOM
+
+#ROOM
+Vnum     1121
+Name     Bridge~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1125
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1130
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1120
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1122
+Name     Bridge~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1123
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1120
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1123
+Name     Bridge~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1124
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1122
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1129
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1124
+Name     Bridge~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1126
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1125
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1120
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1123
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    1127
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1125
+Name     Bridge~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1128
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1121
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1124
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1126
+Name     Pilot's Seat~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction south~
+ToRoom    1124
+#ENDEXIT
+
+Reset O 0 1102 1 1126
+#ENDROOM
+
+#ROOM
+Vnum     1127
+Name     Navigation Control~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction up~
+ToRoom    1124
+#ENDEXIT
+
+Reset O 0 1102 1 1127
+#ENDROOM
+
+#ROOM
+Vnum     1128
+Name     Copilot's Seat~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction west~
+ToRoom    1125
+#ENDEXIT
+
+Reset O 0 1102 1 1128
+#ENDROOM
+
+#ROOM
+Vnum     1129
+Name     Weapons Control~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1123
+#ENDEXIT
+
+Reset O 0 1102 1 1129
+#ENDROOM
+
+#ROOM
+Vnum     1130
+Name     A Turbolift~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     &BSay 'Bridge' to go the the Bridge.
+Say 'Main' to go to the Main Deck.
+Say 'Hanger' to go to the Hanger Level.
+~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Bridge~
+Comlist   mpechoat $n You are taken to the bridge.
+mpechoaround $n $n is taken to the bridge.
+mptransfer $n 1121
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Main~
+Comlist   mpechoat $n You are taken to the main deck.
+mpechoaround $n $n is taken to the main deck.
+mptransfer $n 1131
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Hanger~
+Comlist   mpechoat $n You are taken to the hanger deck.
+mpechoaround $n $n is taken to the hanger deck.
+mptransfer $n 1176
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1131
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction south~
+ToRoom    1134
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1132
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    1135
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    1130
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1132
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1131
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1133
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    1159
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1133
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1132
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1134
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    1151
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1134
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1131
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1133
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    1143
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1135
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1142
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1136
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    1131
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1136
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1167
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1137
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1135
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1137
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1138
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1136
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1138
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1139
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1137
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1139
+Name     Main Deck~
+Sector   city~
+Flags    nomob hotel spacecraft~
+#EXIT
+Direction south~
+ToRoom    1138
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1140
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1140
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1139
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1168
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1141
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1141
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1140
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1142
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1142
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1141
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1135
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1143
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1144
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1150
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    1134
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1144
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1145
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1169
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1143
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1145
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction south~
+ToRoom    1146
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1144
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1146
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1145
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1147
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1147
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1146
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1148
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    1179
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1148
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1170
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1147
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1149
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1149
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1150
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1148
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1150
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1143
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1149
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1151
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction south~
+ToRoom    1152
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1158
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    1133
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1152
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1151
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1153
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1153
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1152
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1154
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1154
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1171
+Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1153
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1155
+#ENDEXIT
+
+Reset D 0 1154 0 1
+#ENDROOM
+
+#ROOM
+Vnum     1155
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1156
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1154
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1156
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1157
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1155
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1157
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1158
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1156
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1158
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1151
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1172
+Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1157
+#ENDEXIT
+
+Reset D 0 1158 2 1
+#ENDROOM
+
+#ROOM
+Vnum     1159
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1160
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1166
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    1132
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1160
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1161
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1159
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1161
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction south~
+ToRoom    1160
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1162
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1162
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1161
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1174
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1163
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1163
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1162
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1164
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    1178
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1164
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1163
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1165
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1165
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1166
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1166
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1175
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1159
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1165
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1167
+Name     Armory~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction south~
+ToRoom    1136
+#ENDEXIT
+
+Reset M 0 1100 3 1167
+  Reset G 1 206 1
+  Reset G 1 201 1
+  Reset G 1 505 1
+  Reset G 1 504 1
+  Reset G 1 503 1
+  Reset G 1 1333 1
+  Reset G 1 60 1
+#ENDROOM
+
+#ROOM
+Vnum     1168
+Name     Ration Stores~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1140
+#ENDEXIT
+
+Reset M 0 10365 21 1168
+#ENDROOM
+
+#ROOM
+Vnum     1169
+Name     Crew Quarters~
+Sector   city~
+Flags    nomob hotel spacecraft~
+#EXIT
+Direction north~
+ToRoom    1144
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1170
+Name     Crew Quarters~
+Sector   city~
+Flags    nomob bank hotel spacecraft~
+#EXIT
+Direction south~
+ToRoom    1148
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1171
+Name     Private Meeting Quarters~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction south~
+ToRoom    1154
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset D 0 1171 2 1
+#ENDROOM
+
+#ROOM
+Vnum     1172
+Name     Council Room~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1158
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset D 0 1172 0 1
+#ENDROOM
+
+#ROOM
+Vnum     1173
+Name     Floating in a void~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     1174
+Name     Medical Bay~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     &BSay 'Heal' to be attended to.
+~
+#EXIT
+Direction north~
+ToRoom    1162
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1175
+Name     Engineroom~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction south~
+ToRoom    1166
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1176
+Name     Security Station~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1130
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1177
+#ENDEXIT
+
+Reset M 0 1101 1 1176
+  Reset E 1 201 1 5
+  Reset E 1 60 1 16
+#ENDROOM
+
+#ROOM
+Vnum     1177
+Name     Mobile Suit Hanger~
+Sector   city~
+Flags    nomob can_land can_fly spacecraft~
+#EXIT
+Direction north~
+ToRoom    1176
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1178
+Name     Turret: Beta~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction southeast~
+ToRoom    1163
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1179
+Name     Turret: Alpha~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction northwest~
+ToRoom    1147
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1180
+Name     Captain's Chair~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1184
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1185
+#ENDEXIT
+
+Reset O 0 1101 1 1180
+#ENDROOM
+
+#ROOM
+Vnum     1181
+Name     Bridge~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1183
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1198
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1182
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1182
+Name     Bridge~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1185
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1181
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1183
+Name     Bridge~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1184
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1181
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1184
+Name     Bridge~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1187
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1183
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1180
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1185
+Name     Bridge~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1180
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1182
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1186
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1186
+Name     Bridge~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1192
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1185
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1187
+Name     Bridge~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1188
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1184
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1188
+Name     Bridge~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1197
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1187
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1189
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1189
+Name     Weapons Control~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1188
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1190
+#ENDEXIT
+
+Reset O 0 1102 1 1189
+#ENDROOM
+
+#ROOM
+Vnum     1190
+Name     Bridge~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1189
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1191
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1191
+Name     Navigation Control~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1190
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1192
+#ENDEXIT
+
+Reset O 0 1102 1 1191
+#ENDROOM
+
+#ROOM
+Vnum     1192
+Name     Bridge~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1193
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1191
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1186
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1193
+Name     Bridge~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1194
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1192
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1194
+Name     Pilot's Seat~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1195
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1193
+#ENDEXIT
+
+Reset O 0 1102 1 1194
+#ENDROOM
+
+#ROOM
+Vnum     1195
+Name     Bridge~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1196
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1194
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1196
+Name     Copilot's Seat~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1197
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1195
+#ENDEXIT
+
+Reset O 0 1102 1 1196
+#ENDROOM
+
+#ROOM
+Vnum     1197
+Name     Bridge~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction south~
+ToRoom    1188
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1196
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1198
+Name     Bridge Turbolift~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     &BSay 'Bridge' to go to the Bridge.
+Say 'Main' to go to the Main Deck. 
+~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   bridge~
+Comlist   mpechoat $n You are taken to the bridge.
+mpechoaround $n $n is taken to the bridge.
+mptransfer $n 1181
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Main~
+Comlist   mpechoat $n You are taken to the main deck.
+mpechoaround $n $n is taken to the main deck.
+mptransfer $n 1199
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1199
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1198
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1200
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1200
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1199
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1201
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1211
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1206
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1201
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1205
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1202
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1200
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    1216
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1202
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1203
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1201
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1203
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction south~
+ToRoom    1204
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1202
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1204
+Name     Crew Quarters~
+Sector   city~
+Flags    nomob hotel spacecraft~
+#EXIT
+Direction north~
+ToRoom    1203
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1205
+Name     Crew Quarters~
+Sector   city~
+Flags    nomob bank hotel spacecraft~
+#EXIT
+Direction south~
+ToRoom    1201
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1206
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1210
+Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1200
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1207
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    1217
+#ENDEXIT
+
+Reset D 0 1206 0 1
+#ENDROOM
+
+#ROOM
+Vnum     1207
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1206
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1208
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1208
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1207
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1209
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset D 0 1208 2 1
+#ENDROOM
+
+#ROOM
+Vnum     1209
+Name     Private Meeting Quarters~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1208
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset D 0 1209 0 1
+#ENDROOM
+
+#ROOM
+Vnum     1210
+Name     Council Room~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction south~
+ToRoom    1206
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset D 0 1210 2 1
+#ENDROOM
+
+#ROOM
+Vnum     1211
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1200
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1212
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1212
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1211
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1213
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1213
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1212
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1214
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1230
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1222
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1214
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1215
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1213
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1215
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1218
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1214
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    1216
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    1229
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1216
+Name     A Long Corridor~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction northwest~
+ToRoom    1201
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    1215
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1217
+Name     A Long Corridor~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction northeast~
+ToRoom    1206
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    1223
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1218
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1219
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1221
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1215
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1219
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1220
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1218
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1220
+Name     Turret: Beta~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction west~
+ToRoom    1219
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1221
+Name     Ration Storage~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1218
+#ENDEXIT
+
+Reset M 0 10365 21 1221
+#ENDROOM
+
+#ROOM
+Vnum     1222
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1213
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1223
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1223
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1255
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1222
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1224
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    1217
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    1228
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1224
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1223
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1225
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1226
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1225
+Name     Medical Bay~
+Sector   city~
+Flags    nomob spacecraft heal~
+#EXIT
+Direction north~
+ToRoom    1224
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1226
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1224
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1227
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1227
+Name     Turret: Alpha~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1226
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1228
+Name     A Long Corridor~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction northeast~
+ToRoom    1223
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    1240
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1229
+Name     A Long Corridor~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction northwest~
+ToRoom    1215
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    1234
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1230
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1213
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1231
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1231
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1230
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1232
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1244
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1238
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1232
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1293
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1233
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1231
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1233
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1234
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1232
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1234
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1235
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1233
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    1229
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1235
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1236
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1237
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1234
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1236
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction west~
+ToRoom    1235
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1237
+Name     Engineroom~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1235
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1238
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1231
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1239
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1239
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1238
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1240
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1240
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1239
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1241
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    1228
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1241
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1240
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1242
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1243
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1242
+Name     Armory~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1241
+#ENDEXIT
+
+Reset M 0 1100 3 1242
+  Reset G 1 1333 1
+  Reset G 1 503 1
+  Reset G 1 504 1
+  Reset G 1 505 1
+  Reset G 1 201 1
+  Reset G 1 206 1
+  Reset G 1 60 1
+#ENDROOM
+
+#ROOM
+Vnum     1243
+Name     Main Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1241
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1244
+Name     Hanger Turbolift~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     &BSay 'Main' to go the the main deck.
+Say 'Hanger' to go the the hanger.
+~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Main~
+Comlist   mpechoat $n You are taken to the main deck.
+mpechoaround $n $n is taken to the main deck.
+mptransfer $n 1231
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Hanger~
+Comlist   mpechoat $n You are taken to the hanger.
+mpechoaround $n $n is taken to the hanger.
+mptransfer $n 1245
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1245
+Name     Security Station~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1244
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1246
+#ENDEXIT
+
+Reset M 0 1102 1 1245
+  Reset E 1 60 1 16
+  Reset E 1 201 1 5
+#ENDROOM
+
+#ROOM
+Vnum     1246
+Name     Mobile Suit Hanger~
+Sector   city~
+Flags    nomob can_land can_fly spacecraft~
+#EXIT
+Direction north~
+ToRoom    1245
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1247
+Name     Captain's Chair~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1252
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1248
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1249
+#ENDEXIT
+
+Reset O 0 1101 1 1247
+#ENDROOM
+
+#ROOM
+Vnum     1248
+Name     Bridge~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1254
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1247
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    1261
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1249
+Name     Bridge~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1250
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1247
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1250
+Name     Bridge~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1260
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1252
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1249
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1251
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1251
+Name     Copilot's Seat~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1250
+#ENDEXIT
+
+Reset O 0 1102 1 1251
+#ENDROOM
+
+#ROOM
+Vnum     1252
+Name     Bridge~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1258
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1254
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1247
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1250
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    1253
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1253
+Name     Pilot's Seat~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction down~
+ToRoom    1252
+#ENDEXIT
+
+Reset O 0 1102 1 1253
+#ENDROOM
+
+#ROOM
+Vnum     1254
+Name     Bridge~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1257
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1256
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1248
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1252
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1255
+Name     Training Room~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction south~
+ToRoom    1223
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   'level 1~
+Comlist   mpechoat $n Training Program: LEVEL 1
+mpmload 1105
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   'level 2~
+Comlist   mpechoat $n Training Program: LEVEL 2
+mpmload 1106
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   'level 3~
+Comlist   mpechoat $n Training Program: LEVEL 3
+mpmload 1107
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   'level 4~
+Comlist   mpechoat $n Training Program: LEVEL 4
+mpmload 1108
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1256
+Name     Navigation Control~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction west~
+ToRoom    1254
+#ENDEXIT
+
+Reset O 0 1102 1 1256
+#ENDROOM
+
+#ROOM
+Vnum     1257
+Name     Bridge~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction south~
+ToRoom    1254
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1258
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1258
+Name     Bridge~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1259
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1257
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1252
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1260
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1259
+Name     Weapons Control~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction south~
+ToRoom    1258
+#ENDEXIT
+
+Reset O 0 1102 1 1259
+#ENDROOM
+
+#ROOM
+Vnum     1260
+Name     Bridge~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1258
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1250
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1261
+Name     Turbolift~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     &BSay 'Bridge' to go to the bridge.
+Say 'Upper' to go to the upper deck.
+Say 'Lower' to go to the lower deck.
+Say 'Hanger' to go to the hanger.
+~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Bridge~
+Comlist   mpechoat $n You are taken to the bridge.
+mpechoaround $n $n is taken to the bridge.
+mptransfer $n 1248
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   upper~
+Comlist   mpechoat $n You are taken to the upper deck.
+mpechoaround $n $n is taken to the upper deck.
+mptransfer $n 1262
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   lower~
+Comlist   mpechoat $n You are taken to the lower deck.
+mpechoaround $n $n is taken to the lower deck.
+mptransfer $n 1281
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   hanger~
+Comlist   mpechoat $n You are taken to the hanger.
+mpechoaround $n $n is taken to the hanger.
+mptransfer $n 1296
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1262
+Name     Upper Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1263
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1261
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1263
+Name     Upper Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1264
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1279
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1262
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1264
+Name     Upper Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1266
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1263
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1265
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset D 0 1264 3 1
+#ENDROOM
+
+#ROOM
+Vnum     1265
+Name     Private Meeting Room~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1264
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset D 0 1265 1 1
+#ENDROOM
+
+#ROOM
+Vnum     1266
+Name     Upper Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction south~
+ToRoom    1264
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    1267
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1267
+Name     Upper Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction west~
+ToRoom    1268
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    1266
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1268
+Name     Upper Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1267
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    1269
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1269
+Name     Upper Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction south~
+ToRoom    1270
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    1268
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1270
+Name     Upper Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1269
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1271
+Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1272
+#ENDEXIT
+
+Reset D 0 1270 1 1
+#ENDROOM
+
+#ROOM
+Vnum     1271
+Name     Council Room~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction west~
+ToRoom    1270
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset D 0 1271 3 1
+#ENDROOM
+
+#ROOM
+Vnum     1272
+Name     Upper Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1270
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1273
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1273
+Name     Upper Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1272
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1275
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1274
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1274
+Name     Turret: Alpha~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1273
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1275
+Name     Upper Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1273
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    1298
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1276
+Name     Upper Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1277
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    1299
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    1298
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1277
+Name     Engineroom~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction south~
+ToRoom    1276
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1278
+Name     Upper Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1279
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    1299
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1279
+Name     Upper Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1263
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1280
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1278
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1280
+Name     Turret: Beta~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction west~
+ToRoom    1279
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1281
+Name     Lower Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1282
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1292
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1261
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1282
+Name     Lower Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction south~
+ToRoom    1281
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    1284
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    1283
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1283
+Name     Medical Bay~
+Sector   city~
+Flags    nomob spacecraft heal~
+Desc     You are in the Medical Bay of the Barge. Here you can wait patiently to be
+healed by nurses around. 
+~
+#EXIT
+Direction northeast~
+ToRoom    1282
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1284
+Name     Lower Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction west~
+ToRoom    1285
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    1282
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1285
+Name     Lower Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1284
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    1286
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1286
+Name     Lower Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction south~
+ToRoom    1288
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    1285
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    1287
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1287
+Name     Crew Quarters~
+Sector   city~
+Flags    nomob hotel spacecraft~
+#EXIT
+Direction northwest~
+ToRoom    1286
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1288
+Name     Lower Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1286
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1289
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1289
+Name     Lower Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1288
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1290
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1290
+Name     Lower Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1289
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1291
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    1294
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1291
+Name     Lower Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    1292
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1290
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1292
+Name     Lower Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1281
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1291
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    1295
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1293
+Name     The Practice Room~
+Sector   city~
+Flags    spacecraft~
+#EXIT
+Direction south~
+ToRoom    1232
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1294
+Name     Ration Storage~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction southwest~
+ToRoom    1290
+#ENDEXIT
+
+Reset M 0 10365 21 1294
+#ENDROOM
+
+#ROOM
+Vnum     1295
+Name     Armory~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction southeast~
+ToRoom    1292
+#ENDEXIT
+
+Reset M 0 1100 3 1295
+  Reset G 1 206 1
+  Reset G 1 201 1
+  Reset G 1 505 1
+  Reset G 1 504 1
+  Reset G 1 503 1
+  Reset G 1 1333 1
+  Reset G 1 60 1
+#ENDROOM
+
+#ROOM
+Vnum     1296
+Name     Security Station~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction north~
+ToRoom    1261
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1297
+#ENDEXIT
+
+Reset M 0 1103 1 1296
+  Reset E 1 60 1 16
+  Reset E 1 201 1 5
+#ENDROOM
+
+#ROOM
+Vnum     1297
+Name     Mobile Suit Hanger~
+Sector   city~
+Flags    nomob can_land can_fly spacecraft docking~
+#EXIT
+Direction north~
+ToRoom    1296
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1298
+Name     Upper Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction northeast~
+ToRoom    1276
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    1275
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1299
+Name     Upper Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction northeast~
+ToRoom    1278
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    1276
+#ENDEXIT
+
+#ENDROOM
+
+#ENDAREA

@@ -1,0 +1,2175 @@
+#AREA   The Ghetto~
+
+
+
+#VERSION 1
+
+#AUTHOR Nemesis~
+
+#OWNED_BY None~
+
+#RANGES
+1 1007 1 1007
+$
+
+#RESETMSG Gunshots ring out as there is another driveby..~
+
+#FLAGS
+0 5
+
+#ECONOMY 0 40184397
+
+#MOBILES
+#9000
+Uncle Frank~
+Uncle Frank~
+Uncle Frank the Shank Shop owner stands here, watching you.
+~
+~
+134217731 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+#9001
+Ezail the Crackhead~
+Ezail the Crackhead~
+Ezail the Crackhead is wandering about the ghetto..
+~
+~
+134217731 0 0 Z
+500 0 -1150 100d10+5000 50d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 6
+100 100 0 0 0 0 1 2
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+emote looks at you, twitching
+quickly.
+say ...I got 'dese
+cheeseburgers!
+say ..Cheeseburgers!
+~
+> speech_prog so~
+say ..C'mon man..
+say ...
+say ...I'll suck yo dick, MAN!
+~
+|
+#9002
+Cocaine Addict~
+A Cocaine Addict~
+A guy stands here twitching oddly..
+~
+~
+1 0 0 Z
+500 0 -1150 300d150+150 60d30+30
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+100 100 0 0 0 0 16 1
+0 0 0 0 0 0 0 0
+#9003
+Wang Yun~
+Wang Yun~
+A short chinese man stands here reading a pornographic magazine.
+~
+~
+134217731 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog pussy~
+emote does a doubletake, realizing what you said.
+say ..You say pussy in my store?!
+say ...IN MY STORE?!
+say ...Where can I get some? >:)
+emote dashes toward you, but trips and falls on his face.
+say ..Oww, my scrotom..
+emote lies there a while..
+~
+> greet_prog 100~
+emote doesn't see you there, and keeps talking to himself.
+say Yeah...Wang Get Some Sucky Sucky Tonight!
+emote giggles to himself, reading the porno.
+emote notices you and drops the magazine quickly.
+say Oh, I, uh, ...HURRY UP AND BUY!
+~
+|
+#9004
+Mojo~
+Mojo the Monkey~
+A little monkey sits here fanning the ATM machine.
+~
+~
+134217731 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+0 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog bribe~
+if goldamt ($n) >= 300
+mpforce $n give 300 dollars mo
+emote nods.
+emote gets a sign out, which reads "Look below the
+sewer."
+say Oh Oh Ah Ah Ah!
+else
+emote flicks you off, since you don't have enough to pay the
+bribe.
+endif
+~
+|
+#9005
+A Receptionist~
+A Receptionist~
+A receptionist sits at a little desk, smiling.
+~
+~
+3 0 0 Z
+25 0 37 5d10+250 2d4+2
+0 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+5 5 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+#9007
+Mister T~
+Mister T~
+A tall man stands here, muttering something about pitty.
+~
+~
+3 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 13
+200 200 0 0 0 0 16 1
+0 0 0 0 0 0 0 0
+> fight_prog 15~
+say FRITO..LAYS...STRIKE!!!
+mpecho Mister T uses his Cheetos
+Bag!
+mea $n Mister T's papercut &Yh&Oi&Yt&Os you!
+&B-<&C[&c3323&C]&B>-
+mpdamage $n 3500
+~
+> greet_prog 100~
+say 'FOO!
+say You broke in..
+say While we're tapin'!
+say ..I PITTY..
+say &YY&OO&YU&O!!!
+~
+|
+#9012
+Cid the Keyblade Salesman~
+Cid Highwind~
+A tall man stands here, smoking a cigarette, awaiting your purchase.
+~
+~
+134217729 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9020
+Sewer Training Level 1~
+A Holographic Rat~
+A hologram of a rat flickers about the sewer.
+~
+~
+3 0 0 Z
+1 0 97 0d10+10 0d4+2
+25 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9021
+Sewer Training Level 2~
+A Holographic Bat~
+A holographic bat flutters around the sewer.
+~
+~
+3 0 0 Z
+27 0 32 5d10+270 2d4+2
+50 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9022
+Sewer Training Level 2~
+A Holographic Giant Rat~
+A large rat scampers across the floor here.
+~
+~
+3 0 0 Z
+52 0 -30 10d10+520 5d4+2
+75 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9023
+Sewer Training Level 4~
+A Holographic Homeless Boy~
+A homeless boy begs for money here.
+~
+~
+3 0 0 Z
+77 0 -92 15d10+770 7d4+2
+100 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9024
+Sewer Training Level 5~
+A Holographic Cray~
+A masturbating hologram of Cray is here.
+~
+~
+1 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9025
+Sewer Training Level 5~
+A Hologram of Nemesis~
+A hologram of some big ugly ass creature stands before you.
+~
+~
+3 0 0 Z
+140 0 -250 28d10+1400 14d4+2
+150 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9026
+Sewer Training Level 7~
+A Hologram of Tyrant~
+A tall creature with a large beating heart on his chest is before you.
+~
+~
+3 0 0 Z
+200 0 -400 40d10+2000 20d4+2
+175 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9027
+Sewer Training Level 8~
+A Hologram of Bob the Builder~
+Bob the builder stands before you, singing that cheesy ass song.
+~
+~
+3 0 0 Z
+400 0 -900 80d10+4000 40d4+2
+250 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9028
+Mister Nice Guy~
+Mister Nice Guy~
+A guy with a fake jamaican accent stands here.
+~
+~
+134217731 0 0 Z
+500 0 -1150 100d10+5000 50d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 6
+0 0 0 0 2048 0 1 2
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say We're a Jamaican Bobsled team..!
+emote does some weird crap..
+say OUII!!!!
+~
+|
+#9030
+FuBu Bandana~
+the general store owner~
+The General Store owner is here.
+~
+~
+134219843 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+1000 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9031
+Aaliyah~
+Aaliyah~
+A beautiful light skinned girl stands here, awaiting your purchase.
+~
+~
+134217729 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+#9034
+Bob~
+Bob the Bootlegger~
+A tall goofy looking crackhead stands here.
+~
+~
+134217731 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+#9035
+Jimmy~
+Jimmy the security guard~
+An old man brandishing a stick watches you walking around.
+~
+~
+134217731 0 0 Z
+700 0 -1650 140d10+7000 70d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+30 30 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+emote sees you entering, and begins to shout.
+say Damn Whipper Snappers!
+say You're ruining this neighborhood!
+say When I was your age, I, I...
+emote falls asleep in mid sentence.
+~
+|
+#9040
+Construction Worker~
+A Construction Worker~
+A construction worker stands here, wearing short shorts and a tight shirt.
+~
+~
+3 0 0 Z
+5 0 87 1d10+50 0d4+2
+0 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+emote speaks with a lisp.
+say My toolbox..!
+~
+|
+#9043
+Picketer~
+The picketer~
+A man stands here holding a sign, shouting something.
+~
+~
+35 0 0 Z
+1000 0 -30000 200d10+10000 100d4+2
+0 0
+8 8 0
+18 10 10 18 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0 3
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+emote holds his sign up.
+say BAN COLOUR T.V!!!!
+~
+> death_prog 10~
+mpmload 9054
+~
+|
+#9044
+Store Clerk~
+A Store Clerk~
+A nerdy pimplefaced store clerk stands here.
+~
+~
+134217731 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+#9046
+Prostitute~
+A prostitute~
+A prostitute stand here, wanting to show you a good time.
+~
+~
+3 0 -1000 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9047
+Opera~
+&WO&wp&We&wr&Wa~
+Some god abandoned a newly created Opera here.
+~
+~
+1073741825 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9050
+Polly~
+&YP&Oo&Yl&Ol&Yy~
+An annoying little bird sits perched on the counter here.
+~
+~
+134217731 0 0 Z
+600 0 100 120d10+6000 60d4+2
+0 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+120 120 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say POLLY WANTS A CRACKER!
+~
+> speech_prog Dirty~
+say YESH!
+~
+> speech_prog ugly~
+say YESH!
+~
+> death_prog 100~
+say &YC&OR&YA&OC&YK&OE&YR...
+say .. &OS&YT&OR&YI&OK&YE!!
+mpdamage $n 2000
+emote strikes quickly, then
+dies.
+~
+|
+#9052
+Luo Guanzhong~
+Luo Guanzhong~
+Luo Guanzhong, the author of ROTK, stands here.
+~
+~
+134217731 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+200 200 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog stock~
+mpat 9053 mpoload 9050
+mpat 9053 mpoload 9051
+mpat 9053 mpoload 9053
+mpat 9053 mpoload 9054
+mpat 9053 mpoload 9055
+mpat 9053 mpoload 9056
+mpat 9053 mpoload 9057
+say Done.
+~
+> greet_prog 100~
+say Pssst!! ... hey you wanna get a Metobolic Frame?
+~
+> speech_prog yes~
+say go talk to Howard and tell him you want a frame.
+~
+|
+#9053
+Long Schlong Tong~
+Long Shlong Tong~
+The laundromat owner stands here.
+~
+~
+134217731 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+0 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+emote sees you enter.
+say Welkom to Long Shlong Tong's!
+say We haf spechal deal!
+say You wash one thong you wash two othas fwee!
+~
+|
+#9054
+Picketer~
+&CC&cr&za&wy~
+A man stands here holding a sign, shouting something.
+~
+~
+35 0 0 Z
+1000 0 -30000 200d10+10000 100d4+2
+0 0
+8 8 0
+18 10 10 18 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0 3
+0 0 0 0 0 0 0 0
+> death_prog 20~
+mpoload 11501
+~
+|
+#0
+
+
+#OBJECTS
+#9001
+Submachine-Gun Uzi~
+A SMG Uzi~
+A small hand-gun looking weapon lies here, with a long clip in it.~
+~
+5 8208 8193
+1000 10 125 6
+1 15000 1500
+#9002
+Spoon~
+A Spoon~
+A spoon is tuck in the ground here.~
+~
+5 8192 8193
+12 5 6 2
+4 100 10
+A
+18 -1
+#9003
+Dirty Desk~
+Dirty Desk~
+&OA large brown dirty desk is here.~
+~
+15 0 0
+10 0 0 0
+10000 0 0
+#9004
+Seraded Shank~
+&YS&Oe&Yr&Oa&Yd&Oe&Yd &CS&ch&Ca&c&Cn&ck~
+A short but strong shank lies here.~
+~
+5 8192 8193
+500 10 50 2
+1 1000 100
+#9009
+Key to the Keyblade store~
+Key to the Secret Shop~
+There is a small shining key lying on the ground here.~
+~
+18 8192 16385
+0 0 0 0
+1 22000 2200
+#9010
+Kingdom Key~
+&YT&Oh&Ye &OK&Yi&On&Yg&Od&Yo&Om &YK&Oe&Yy~
+A large key lies here.~
+~
+5 8208 8193
+1100 10 150 2
+1 22000 2200
+#9016
+Metal Chocobo~
+&zM&We&zt&Wa&zl &YC&Oh&Yo&Oc&Yo&Oc&Yo&Ob&Yo~
+A long steel keyblade lies here shining brightly.~
+~
+5 8209 8193
+1100 10 150 3
+1 25000 2500
+A
+1 2
+A
+18 5
+A
+19 5
+#9017
+Lionheart~
+&B&WL&wi&B&Wo&wn&B&Wh&we&B&Wa&wr&B&Wt~
+A long keyblade with a lion head chain lies here.~
+~
+5 8208 8193
+1100 10 150 2
+1 22000 2200
+A
+18 10
+A
+19 4
+#9018
+Pumpkinhead~
+&zP&Ru&zm&Rp&zk&Ri&zn&Rh&ze&Ra&zd~
+A long skinny black keyblade lies on the ground here.~
+~
+5 8209 8193
+1100 10 150 2
+1 22000 2200
+#9019
+Cheeseburger~
+A Cheeseburger~
+A cheeseburger from Ezail's crackhead ass lies here rotting..~
+~
+19 0 1
+40 40 0 0
+1 10 1
+#9020
+Mobile Suit~
+&CGundam: Jacked Suit~
+&CGundam: Jacked Zero~
+~
+13 0 0
+0 0 0 0
+500 0 0
+E
+Mobile Suit~
+This was once one of the most prominent mobile suits around...Until they
+parked it here.  Now it sits on cynder blocks and has graphiti all over
+it.. 
+~
+#9022
+Shrooms~
+some shrooms~
+Some great lookin fungi is growing on the floor.~
+~
+61 8192 1
+3 0 0 0
+1 1000 100
+#9023
+unrefined carsinum~
+Some unrefined carsinum~
+Some unrefined carsinum lies here.~
+~
+61 8192 1
+1 0 0 0
+1 1000 100
+#9024
+Mowie Wowie~
+a baggie of marijuana~
+A baggie of green herbs lies here.~
+~
+61 8192 1
+0 5 0 0
+1 1000 100
+#9025
+Bullet Proof Vest~
+A Titanium Bullet Proof Vest~
+A large and heavy vest lies here.~
+~
+9 8192 1025
+200 200 0 0
+1 50000 5000
+#9026
+A Japanamanese Sword~
+A Japanamanese Sword~
+A long sharp sword made of plastic lies here.~
+~
+5 8192 8193
+40 5 40 2
+1 500 50
+#9027
+Gundarnium Vest~
+A Gundarnium Vest~
+A Bullet Proof Vest is here.~
+~
+9 8192 9
+75 75 0 0
+1 653 65
+#9028
+A Crack Pilot Helmet~
+A Crack Pilot Helmet~
+A Black Pilot Helmet is lying here.~
+~
+9 8192 17
+30 30 0 0
+1 200 20
+#9030
+FuBu Dewrag~
+&RF&ru&RB&ru &zDewrag~
+An expensive dewrag lies on the ground here, unused.~
+~
+9 8192 17
+50 50 0 0
+5 20000 2000
+E
+plate armour~
+This plate of armour will give you protection until you can find
+something better. 
+~
+A
+4 2
+A
+18 5
+A
+3 2
+A
+25 2
+#9031
+FuBu Wifebeater~
+&RF&ru&RB&ru &zWifebeater~
+A black wifebeater lies here on the ground.~
+~
+9 8192 9
+50 50 0 0
+10 23000 2300
+E
+plate armour~
+This plate of armour will give you protection until you can find
+something better. 
+~
+A
+18 5
+A
+19 5
+A
+13 1000
+#9032
+FuBu Jeans~
+&zA pair of &RF&ru&RB&ru &YF&Oa&Yt &CA&cl&Cb&ce&Cr&ct &zjeans~
+A pair of legplate made of &gemerald&w lie here.~
+~
+9 8192 33
+50 50 0 0
+10 23000 2300
+E
+plate armour~
+This plate of armour will give you protection until you can find
+something better. 
+~
+A
+1 3
+A
+2 2
+A
+14 500
+A
+13 500
+A
+17 20
+#9043
+Picketer~
+a Picketer~
+A Picketer is here.~
+~
+13 0 0
+0 0 0 0
+1 0 0
+#9050
+Sword Of Trust~
+&CS&cw&Co&cr&Cd &RO&rf &YT&Or&Yu&Os&Yt~
+A long and shinig sword is stuck in the ground here.~
+~
+5 8195 8193
+0 10 150 3
+1 20000 2000
+#9051
+Triple Bladed Halberd~
+&wA &CDiamond &wencrusted Halberd~
+A spear with a curious &gemerald &Gtip lies here.~
+~
+5 8210 8193
+50 10 9 11
+8 1000 100
+#9053
+Huang Zhong's Bow~
+&YH&Ou&Ya&On&Yg &OZ&Yh&Oo&Yn&Og&Y'&Os &YB&Oo&Yw~
+A long golden bow lies here on the ground.~
+~
+5 0 8193
+1000 10 151 9 2000 2000
+1 30000 2100
+A
+18 5
+A
+19 5
+#9054
+Little Dragon Spear~
+&GT&gh&Ge &gL&Gi&gt&Gt&gl&Ge &RD&rr&Ra&rg&Ro&rn &GS&gp&Ge&ga&Gr~
+A long majestic spear with red frillies on its end is embedded here.~
+~
+5 0 8193
+1000 11 148 11 3000 3000
+1 30000 3000
+#9055
+War Fan~
+&B&WW&wa&B&Wr &wF&B&Wa&wn~
+A large fan composed of feathers lies here.~
+~
+5 65 8193
+1000 10 145 8
+1 28000 2800
+A
+18 3
+A
+19 2
+A
+17 0
+#9056
+Gan Ning's Belt of Bells~
+&RG&ra&Rn &rN&Ri&rn&Rg&r'&Rs &zB&We&zl&Wt &Co&cf &YB&Oe&Yl&Ol&Ys~
+A large black belt with gold bells hanging from its buckle lies here.~
+~
+9 8192 2049
+70 -70 0 0
+1 12000 1200
+A
+18 5
+A
+19 5
+A
+1 1
+A
+41 20
+#9057
+Book of Heaven~
+&CB&co&Co&ck &pO&Pf &YH&Oe&Ya&Ov&Ye&On~
+A large book with chinese characters on its cover lies here.~
+~
+35 67 16385
+0 0 0 0
+1 18000 1800
+A
+4 4
+A
+31 2
+A
+18 10
+A
+19 5
+#9058
+Sparkle Paper Towels~
+a Sparkle Paper Towels~
+A Sparkle Paper Towels is here.~
+~
+13 1073741824 16385
+0 0 0 0
+1 0 0
+#9060
+Operation Meteor Quest Token~
+&CO&cp&be&Br&ga&Gt&gi&co&Cn &WM&we&zt&we&zo&Wr &GQ&gu&Oe&gs&Gt &RT&ro&pk&re&Rn~
+&zAn &CO&cp&be&Br&ga&Gt&gi&co&Cn &WM&we&zt&we&zo&Wr &GQ&gu&Oe&gs&Gt &RT&ro&pk&re&Rn &zlies on the ground here, gaining value by the minute..~
+~
+8 0 16385
+0 0 0 0
+1 0 0
+#9061
+[10] Operation Meteor Quest Token~
+&Y[&O10&Y] &CO&cp&be&Br&ga&Gt&gi&co&Cn &WM&we&zt&we&zo&Wr &GQ&gu&Oe&gs&Gt &RT&ro&pk&re&Rn&ps~
+&zAn &Y[&O10&Y] &CO&cp&be&Br&ga&Gt&gi&co&Cn &WM&we&zt&we&zo&Wr &GQ&gu&Oe&gs&Gt &RT&ro&pk&re&Rn&ps &zlies on the ground here, gaining value by the minute..~
+~
+8 0 16385
+0 0 0 1
+1 0 0
+#9062
+[100] Operation Meteor Quest Token~
+&Y[&O100&Y] &CO&cp&be&Br&ga&Gt&gi&co&Cn &WM&we&zt&we&zo&Wr &GQ&gu&Oe&gs&Gt &RT&ro&pk&re&Rn&ps~
+&zAn &Y[&O100&Y] &CO&cp&be&Br&ga&Gt&gi&co&Cn &WM&we&zt&we&zo&Wr &GQ&gu&Oe&gs&Gt &RT&ro&pk&re&Rn&ps &zlies on the ground here, gaining value by the minute..~
+~
+8 0 16385
+0 0 0 0
+1 0 0
+#9099
+~
+a fountain~
+A drinking fountain rests against the wall.~
+~
+25 0 0
+1000 1000 0 0
+1 0 0
+#0
+
+
+#ROOMS
+#9000
+The Ghetto Landing Pad~
+The area around this landing pad is pure rubble, as this isn't the richest
+area around.  The wee children of the ghetto scatter about as they see
+you, thinking you're some wierd white man.  To the west, you see a Mobile
+Suit on cinder blocks, evidently being jacked by thugs.  To the east, you
+see the Goodwill office, where people can buy good things at a cheap
+price. 
+ 
+&CSay 'Main' to return!
+~
+0 0 0 1 0 0 0 0
+D0
+~
+~
+0 -1 9003
+D1
+~
+~
+0 -1 9002
+D3
+~
+~
+0 -1 9001
+R O 0 9099 1 9000
+> speech_prog main~
+mpechoaround $n $n is taken back to Z64.
+mptransfer $n 5129
+~
+|
+S
+#9001
+A Broken Down Alley~
+There is a mobile suit up on cinder blocks here, evidently being jacked for
+all its parts. The thugs around it flock toward you, quickly searching for
+a wallet of some kind, but find nothing from your poor ass. As you start
+to walk away, you notice "&RNemesis Wuz Herr&z" written on a wall..
+~
+0 0 0 1 0 0 0 0
+D1
+~
+~
+0 -1 9000
+R M 0 9002 6 9001
+R M 0 9002 6 9001
+R M 0 9002 6 9001
+S
+#9002
+The Goodwill Store~
+The wallpaper in this store is beyond ghetto, and you wonder who in the
+hell would pick such a thing.  The clerk, wielding a shotgun and starring
+at you funny, sips his 40 of Old E liquor, awaiting your purchase.
+~
+0 0 0 1 0 0 0 0
+D3
+~
+~
+0 -1 9000
+R M 0 9003 1 9002
+  R G 1 9001 1
+  R G 1 9025 1
+  R G 1 2007 1
+  R G 1 1356 1
+  R G 1 202 1
+S
+#9003
+The Ghetto Street~
+This ghetto little region is full of top of the line cardboard boxes for your
+living pleasure!  Just think, you could own your very own cardboard box!
+They even come with complementary roaches, rotting stench, and prostitutes!
+Ghetto life has never been this good!
+~
+0 0 0 1 0 0 0 0
+D0
+~
+~
+0 -1 9005
+D1
+~
+~
+0 -1 9004
+D2
+~
+~
+0 -1 9000
+D3
+~
+~
+0 -1 9006
+D6
+~
+~
+0 -1 9014
+D7
+~
+~
+0 -1 9013
+D8
+~
+~
+0 -1 9015
+D9
+~
+~
+0 -1 9016
+S
+#9004
+Uncle Frank's Shank Shop~
+~
+0 8 0 1 0 0 0 0
+D3
+~
+~
+0 -1 9003
+R M 0 9000 1 9004
+  R G 1 9002 1
+  R G 1 9004 1
+S
+#9005
+The Ghetto Street~
+You hear the eerie music from the old T.V show called the A-Team, with a
+ladder leading up to a house. You see cheeto bags lying all over the
+street in this area, with cats and dogs scavenging through it all.  To the
+south is the ghetto housing complex, and the north is still the ghetto
+street..
+~
+0 0 0 1 0 0 0 0
+D0
+~
+~
+0 -1 9008
+D2
+~
+~
+0 -1 9003
+D6
+~
+~
+0 -1 9041
+S
+#9006
+&RV&ri&zn&Wc&We&zn&rt&R's &RP&rl&Wa&rc&Re~
+~
+0 1048588 0 1 0 0 0 0
+D1
+~
+~
+0 -1 9003
+S
+#9007
+Before the Radio Station~
+The new Jibber Jabberin' With Mister T radio station is to the north, with
+ample parking to the northeast, and northwest. Just think, you could be on
+the air with the famour Mister T! If you're lucky, he'll pitty your sorry
+ass!
+~
+0 8 0 1 0 0 0 0
+D0
+~
+~
+0 -1 9057
+D6
+~
+~
+0 -1 9055
+D7
+~
+~
+0 -1 9056
+S
+#9008
+The Ghetto Street~
+This is the big ghetto intersection, where you can find several useful
+things. To the northeast, is a ATM with a monkey, to the southwest
+is the world famous bootleg shop. The street continues to the east and
+south, with the hospital down where the Sewer used to be. Strangely, there
+is no way of telling what there is to the northwest..
+~
+0 0 0 1 0 0 0 0
+D1
+~
+~
+0 -1 9009
+D2
+~
+~
+0 -1 9005
+D5
+~
+~
+0 -1 9017
+D6
+~
+~
+0 -1 9011
+D9
+~
+~
+0 -1 9034
+S
+#9009
+The Ghetto Street~
+This is the hangout of the notorious crackhead Ezail.  He's been know to do
+favors if you give him, uh, directions, but who wants that?  Unless you're
+someone like Leppy, keep away from this butt raping anal pirate.
+~
+0 0 0 1 0 0 0 0
+D1
+~
+~
+0 -1 9018
+D2
+~
+~
+0 -1 9010
+D3
+~
+~
+0 -1 9008
+R M 0 9001 1 9009
+  R G 1 9019 1
+S
+#9010
+The Roach Motel~
+This luxorious suite is composed of duct tape, ramen noodles, and fried
+chicken. There are roaches, both the insect and joint, burning on the
+stoves, with boxes of shoes stuffed with porno littering the place. If you
+think about it, this area looks awfully like New Castle, Delaware.
+~
+0 8388616 0 1 0 0 0 0
+D0
+~
+~
+0 -1 9009
+S
+#9011
+The First Ghetto National Bank~
+This ghetto establishment consists of a ATM Machine(complete with duct
+tape), three ju ju beans, and a monkey named Mojo. The little monkey sits
+beside the ATM machine cooling it off, so it doesn't overheat and burn all
+the money. Maybe if you bribed him, he could give you a hint of the Ghetto
+City's secrets.
+~
+0 264 0 1 0 0 0 0
+D9
+~
+~
+0 -1 9008
+R M 0 9004 1 9011
+S
+#9012
+The Keyblade Shop~
+This area is fill with mysticism, unlike its ghetto surroundings.  There
+are several wierd swords hung on the walls, in the shape of keys. These
+aren't normal weapons, and may even posess great power, so one shouldn't
+overlook them..
+~
+0 0 0 1 0 0 0 0
+D8
+~
+~
+7 9009 9008
+R M 0 9012 1 9012
+  R G 1 9016 1
+  R G 1 9017 1
+  R G 1 9018 1
+  R G 1 9010 1
+R D 0 9012 8 2
+S
+#9013
+a hole in the wall~
+This almost makes any ghetto person cry with nostalgia.  This premium
+cardboard box has everything a ghetto person could want. There's a fridge
+to hold your 40's, a black and white 15" T.V, and even cockroaches
+scampering across the floor.
+~
+0 1048588 0 1 0 0 0 0
+D8
+~
+~
+0 -1 9003
+S
+#9014
+&BW&ba&Bt&be&Br&bf&Ba&bl&Bl~
+This almost makes any ghetto person cry with nostalgia.  This premium
+cardboard box has everything a ghetto person could want. There's a fridge
+to hold your 40's, a black and white 15" T.V, and even cockroaches
+scampering across the floor.
+~
+0 1048588 0 1 0 0 0 0
+D9
+~
+~
+0 -1 9003
+S
+#9015
+An Empty Apartment~
+This almost makes any ghetto person cry with nostalgia.  This premium
+cardboard box has everything a ghetto person could want. There's a fridge
+to hold your 40's, a black and white 15" T.V, and even cockroaches
+scampering across the floor. look Rhis
+~
+0 2097164 0 1 0 0 0 0
+D7
+~
+~
+0 -1 9003
+S
+#9016
+&RH&re&Rl&rl&Rs &rG&Ra&rt&Re~
+This almost makes any ghetto person cry with nostalgia.  This premium
+cardboard box has everything a ghetto person could want. There's a fridge
+to hold your 40's, a black and white 15" T.V, and even cockroaches
+scampering across the floor.
+~
+0 1048588 0 1 0 0 0 0
+D6
+~
+~
+0 -1 9003
+S
+#9017
+The Free Clinic~
+Used needles and blood are splattered about, as the stench of cornbeef
+fills the air. Just when you think it couldn't get worse, you notice a naked
+picture of Cray taped on the wall... Heal up quick, before you're scarred
+for life.
+~
+0 4&1 0 1 0 0 0 0
+D4
+~
+~
+0 -1 9008
+S
+#9018
+The Ghetto Street~
+To the east is the faint smell of sewage, well, the smell is worse to the
+east, but the whole place smells. To the west is still a ghetto street,
+with little poor children begging along it. Finally, to the north, there
+is a road leading to the FuBu outlet, which your ghetto ass can't afford,
+so don't bother.
+~
+0 4 0 1 0 0 0 0
+D0
+~
+~
+0 -1 9030
+D1
+~
+~
+0 -1 9019
+D3
+~
+~
+0 -1 9009
+S
+#9019
+The Ghetto Street~
+There is a pretty large sign lying in the middle of the rode, written it
+crayon.  It says, "The sewer is, uh...down..I think.." along with a used
+condom next to it. Feels just like home, doesn't it? 
+~
+0 4 0 1 0 0 0 0
+D3
+~
+~
+0 -1 9018
+D5
+~
+~
+0 -1 9020
+S
+#9020
+The Sewers~
+It's amazing to think of a high tech holographic machine in such a lowlife
+area. Thankfully, with government aid(think welfare), they were able to
+install training devices to protect themselves from other crackheads.
+Remember, one crackhead's trash is another one's way of toking up.
+~
+0 8 0 1 0 0 0 0
+D0
+~
+~
+0 -1 9021
+D1
+~
+~
+0 -1 9024
+D2
+~
+~
+0 -1 9022
+D3
+~
+~
+0 -1 9023
+D4
+~
+~
+0 -1 9019
+D5
+~
+~
+2056 -1 9029
+D6
+~
+~
+0 -1 9025
+D7
+~
+~
+0 -1 9026
+D8
+~
+~
+0 -1 9028
+D9
+~
+~
+0 -1 9027
+S
+#9021
+Sewer Training Level 1~
+Say Rodent to start.
+~
+0 8 0 1 0 0 0 0
+D2
+~
+~
+0 -1 9020
+> speech_prog rodent~
+mpechoat $n A hologram
+appears.
+mpmload 9020 1
+~
+|
+S
+#9022
+Sewer Training Level 3~
+Say mutant to start.
+~
+0 8 0 1 0 0 0 0
+D0
+~
+~
+0 -1 9020
+> speech_prog mutant~
+mpechoat $n A hologram
+appears.
+mpmload 9022
+~
+|
+S
+#9023
+Sewer Training Level 4~
+Say poor to begin.
+~
+0 8 0 1 0 0 0 0
+D1
+~
+~
+0 -1 9020
+> speech_prog poor~
+mpechoat $n A hologram
+appears.
+mpmload 9023
+~
+|
+S
+#9024
+Sewer Training Level 2~
+Say Bat for the hologram to appear.
+~
+0 8 0 1 0 0 0 0
+D3
+~
+~
+0 -1 9020
+> speech_prog bat~
+mpechoat $n A hologram
+appears.
+mpmload 9021
+~
+|
+S
+#9025
+Sewer Training Level 5~
+Say Canadian to start.
+~
+0 8 0 1 0 0 0 0
+D9
+~
+~
+0 -1 9020
+> speech_prog Canadian~
+mpechoat $n A hologram
+appears.
+mpmload 9024
+~
+|
+S
+#9026
+Sewer Training Level 6~
+Say ogre to start.
+~
+0 8 0 1 0 0 0 0
+D8
+~
+~
+0 -1 9020
+> speech_prog ogre~
+mpechoat $n A hologram
+appears.
+mpmload 9025
+~
+|
+S
+#9027
+Sewer Training Level 8~
+Say queer to start.
+~
+0 8 0 1 0 0 0 0
+D6
+~
+~
+0 -1 9020
+> speech_prog queer~
+mpechoat $n A hologram
+appears.
+mpmload 9027
+~
+|
+S
+#9028
+Sewer Training Level 7~
+Say ugly to start.
+~
+0 8 0 1 0 0 0 0
+D7
+~
+~
+0 -1 9020
+> speech_prog ugly~
+mpechoat $n A hologram
+appears.
+mpmload 9026
+~
+|
+S
+#9029
+A Secluded Room~
+What is Nemesis' favorite football team? (Say it, and you'll get out of
+here.) 
+~
+0 12 0 1 0 0 0 0
+R O 0 9009 1 9029
+> speech_prog Eagles~
+mpechoaround $n $n goes back up. Bleh
+mptransfer $n 9020
+~
+|
+S
+#9030
+The Ghetto Street~
+To your west is a dark alley, where you hear little brats giggling and
+robbing an old lady.  Further north is the FuBu outlet, and you know your
+broke ass only has foodstamps, so I don't know why you're even bothering.
+~
+0 4 0 1 0 0 0 0
+D0
+~
+~
+0 -1 9031
+D1
+~
+~
+0 -1 9035
+D2
+~
+~
+0 -1 9018
+D3
+~
+~
+0 -1 9032
+S
+#9031
+The Fubu Outlet~
+This store sells high quality threads of FuBu authenticity.  Don't be
+fooled by the bootleggers out there, this is the only place where you can
+sport FuBu. The clerk, Aaliyah, will help you with all of your needs and
+the like. 
+~
+0 0 0 1 0 0 0 0
+D2
+~
+~
+0 -1 9030
+R M 0 9031 1 9031
+  R G 1 9030 1
+  R G 1 9031 1
+  R G 1 9032 1
+S
+#9032
+A Dark Alley~
+It's pretty damn dark in here, better watch your wallet, since all the wee
+thugs chill around here. You see some light to the west, and figure you
+ought to move toward it before you get robbed by shifty mexicans with
+shanks.
+~
+0 5 0 1 0 0 0 0
+D1
+~
+~
+0 -1 9030
+D3
+~
+~
+0 -1 9033
+S
+#9033
+Mister Nice Guy Party Accessories~
+This room is full of crap that reminds you of jamacai, with spears and
+things hung on the walls.  It's a pretty nicely made establishment, for
+being in such a craphole area. On the wall there's a large smiley face
+with the "Mister Nice Guy" logo on it, offering a discount on some good
+stuff.
+~
+0 4 0 1 0 0 0 0
+D1
+~
+~
+0 -1 9032
+R M 0 9028 1 9033
+  R G 1 9022 1
+  R G 1 9023 1
+  R G 1 9024 1
+S
+#9034
+Bob's Better Bootlegs~
+This bootleg shop makes its own bootlegs, and sells them for dirt cheap. 
+Just remember, once you buy the bootleg, you can't take it back!
+~
+0 4 0 1 0 0 0 0
+D6
+~
+~
+0 -1 9008
+R M 0 9034 1 9034
+  R G 1 9026 1
+  R G 1 9028 1
+  R G 1 9027 1
+S
+#9035
+The Projects~
+The flagrant smell of beer and urine are all around this place, with bums
+and drug addicts walking around trying to make a living. There's a large
+shopping cart in the middle of the road, with pornographic magazines in
+it. There's one sole building security guard, an old man with a stick as a
+weapon.
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 9036
+D1
+~
+~
+0 -1 9038
+D2
+~
+~
+0 -1 9037
+D3
+~
+~
+0 -1 9030
+D6
+~
+~
+0 -1 9039
+D8
+~
+~
+0 -1 9040
+R M 0 9035 1 9035
+S
+#9036
+Thanos' Crib~
+~
+0 1048588 0 1 0 0 0 0
+D2
+~
+~
+0 -1 9035
+S
+#9037
+Eternal Pit Of Flames.~
+~
+0 1048588 0 1 0 0 0 0
+D0
+~
+~
+0 -1 9035
+S
+#9038
+&RR&zacna's &RC&zrib~
+~
+0 1048588 0 1 0 0 0 0
+D3
+~
+~
+0 -1 9035
+S
+#9039
+An Empty Apartment~
+~
+0 2097164 0 1 0 0 0 0
+D9
+~
+~
+0 -1 9035
+S
+#9040
+An Empty Apartment~
+~
+0 2097164 0 1 0 0 0 0
+D7
+~
+~
+0 -1 9035
+S
+#9041
+A dilapitated Road~
+It's a broken down piece of crap road, what do you expect to be here?
+~
+0 0 0 1 0 0 0 0
+D1
+~
+~
+0 -1 9042
+D9
+~
+~
+0 -1 9005
+S
+#9042
+A dilapitated Road~
+It's a broken down piece of crap road, what do you expect to be here?
+~
+0 0 0 1 0 0 0 0
+D1
+~
+~
+0 -1 9043
+D3
+~
+~
+0 -1 9041
+S
+#9043
+Road Before Radioshack~
+This is a beat up old road where a lot of druggies like to hop people as
+they walk to the store. There is a roll of duct tape lying out in the
+middle of the road for no reason, maybe to try and catch some food..
+~
+0 0 0 1 0 0 0 0
+D1
+~
+~
+0 -1 9044
+D2
+~
+~
+0 -1 9045
+D3
+~
+~
+0 -1 9042
+R M 0 9043 1 9043
+S
+#9044
+Old Broken Down Radioshack~
+This old store has been here a while, and makes a stable business from all
+of the people coming in and buying radios, rims, and the like. The nerdy
+little clerk stands there looking stupid, and awaits your purchase.  There
+is also a Color T.V in the window pointing outside.
+~
+0 0 0 1 0 0 0 0
+D3
+~
+~
+0 -1 9043
+R M 0 9044 1 9044
+  R G 1 2017 1
+  R G 1 2026 1
+S
+#9045
+The Red Light District~
+This large industrial area is lined with whores, and other smelly
+tuna-esque creatures. There are factories, shops, and other smog producing
+pieces of crap around this area. Try not to breathe the air, it's not
+pretty. 
+~
+0 0 0 1 0 0 0 0
+D0
+~
+~
+0 -1 9043
+D8
+~
+~
+0 -1 9046
+S
+#9046
+The Red Light District~
+Pimps, whores, and other decrepit creatures line the streets in vain
+attempts to score some quick cash.  You hear the shout of, "GIMME MAH
+MONEY, HO!" as a prostitute is pimpslapped by none other than her pimp. 
+~
+0 0 0 1 0 0 0 0
+D1
+~
+~
+0 -1 9047
+D2
+~
+~
+0 -1 9051
+D7
+~
+~
+0 -1 9045
+R M 0 9046 2 9046
+R M 0 9040 1 9046
+S
+#9047
+Road to China-Town~
+The city life fades from smog to rice patties as you enter near Chinatown. 
+Migrant workers husk their fields trying to make a harvest, with a poster
+saying "Long Schlong Tong was here". 
+~
+0 4 0 1 0 0 0 0
+D3
+~
+~
+0 -1 9046
+D8
+~
+~
+0 -1 9048
+S
+#9048
+Chinatown~
+The chinese mafia runs these parts, and it wouldn't be smart to cross them.
+They'll hang your by your ankles and beat you with noodles until they feel
+like stopping. Besides that, this simple road continues through the city,
+with people pushing carts and all that other ghetto crap.
+~
+0 4 0 1 0 0 0 0
+D7
+~
+~
+0 -1 9047
+D9
+~
+~
+0 -1 9049
+S
+#9049
+Chinatown Intersection~
+This intersection is a great place to look around, take in the sights...Get
+a fried puppy on a stick?  There are several stores around, too, along
+with a laundromat to clean your dirty ghetto ass wannabe Gucci shirts..
+~
+0 4 0 1 0 0 0 0
+D1
+~
+~
+0 -1 9052
+D2
+~
+~
+0 -1 9050
+D3
+~
+~
+0 -1 9053
+D6
+~
+~
+0 -1 9048
+S
+#9050
+Noodles 'R Us~
+This used to be a noodle shop, where all the people flocked to buy ramen
+noodles. Now, it's just a room abandon, with a lonely parrot sitting in
+the middle of it.
+ 
+&Csay You're a dirty bird, aren't you?
+say Isn't Nemesis an ugly
+freak?
+~
+0 4 0 1 0 0 0 0
+D0
+~
+~
+0 -1 9049
+R M 0 9050 1 9050
+S
+#9051
+A Factory~
+This desolate little factory has seen its own share of driveby shootings
+and killings in its short history. There is still visible cocaine residue
+on the table, along with roaches all over.
+~
+0 67108872 0 1 0 0 0 0
+D0
+~
+~
+0 -1 9046
+S
+#9052
+Three Kingdoms Artifact Store~
+This majestic place is a great store for collectors of the Three Kingdoms
+period.  Many old time weapons are hung on the walls, making this place a
+jolly good time for any kleptomaniac.
+~
+0 0 0 1 0 0 0 0
+D3
+~
+~
+0 -1 9049
+R M 0 9052 1 9052
+  R G 1 9050 1
+  R G 1 9051 1
+  R G 1 9053 1
+  R G 1 9054 1
+  R G 1 9055 1
+  R G 1 9056 1
+  R G 1 9057 1
+S
+#9053
+Long Shlong Tong's Laundromat~
+Welcome to Long Shlong Tong's, don't play a gong, wash your thong!  There
+are several coin operated washers lined against the walls, with driers
+right by them. The owner, Long Shlong Tong, has a large picture of himself
+on the wall, with the words below it, "Big Schlong, little store!"
+~
+0 0 0 1 0 0 0 0
+D1
+~
+~
+0 -1 9049
+R M 0 9053 1 9053
+S
+#9054
+Floating in a void~
+~
+0 4 0 1 0 0 0 0
+S
+#9055
+Radio Station Parking Lot~
+This parking lot is empty, it even has tumble weed rolling through it..
+~
+0 4 0 1 0 0 0 0
+D9
+~
+~
+0 -1 9007
+S
+#9056
+Radio Station Parking Lot~
+This big space has plenty of room to fit big ass boat of cars from the
+ghetto.  There is one spot with a lonesome van, though. Upon closer
+inspection, you see it's the &RA Team&z van! 
+~
+0 1073741824 0 1 0 0 0 0
+D8
+~
+~
+0 -1 9007
+S
+#9057
+Jibber Jabberin' With Mister T Radiostation~
+This made-with-toiletpaper-and-glue structure is cheap and effective for
+Mister T. There's one big sign in the middle of the room, reading, "&RFOR
+FURTHER PITTY, GO NORTH! ...'FOO!&z".
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 9058
+D2
+~
+~
+0 -1 9007
+R M 0 9005 1 9057
+S
+#9058
+Jibber Jabberin' With Mister T Radiostation~
+There's one big sign in the middle of the room, reading, "&RFOR FURTHER
+PITTY, GO NORTH! ...'FOO!&z". 
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 9059
+D2
+~
+~
+0 -1 9057
+S
+#9059
+Jibber Jabberin' With Mister T Radiostation~
+On the wall, there is something written in blue crayon, "&BTha Pitty Stops
+here, suckahs!&z". Poor Mister T, he seems misunderstood, maybe you should
+go help him. 
+~
+0 1073741824 0 1 0 0 0 0
+D2
+~
+~
+0 -1 9060
+D3
+~
+~
+0 -1 9058
+S
+#9060
+Before The Recording Booth~
+There's a sign lit up on the wall reading, "&RPittyin' in Progress!&z" 
+Further south is the recording booth, where the famous Mister T works his
+cheese luvin' frito lays magic.. 
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 9059
+D2
+~
+~
+1 -1 9061
+> rand_prog 100~
+mpechoat $n &zThe rant of &YC&Oh&Ye&Oe&Yt&Oo&Y'&Os&z rings throughout the area.
+~
+|
+S
+#9061
+Recording Booth~
+Ah, this is it, the booth where Mister T makes or breaks his poor victims. 
+It looks like something out of the Rocky Horror Picture show, with cheetos
+everywhere. As you look closer at Mister T, you see a tattoo on his right
+arm, stating, "&CDeath Before Pringles&z."
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+3 -1 9060
+R M 0 9007 1 9061
+R O 0 9003 1 9061
+R D 0 9061 0 1
+S
+#9062
+&CL&ca&Cb &cH&Ca&cl&Cl&cw&Ca&cy~
+This is a long hallway with several tubes to the north and south. Moans are
+heard around, as the mutants search for another victim.. 
+~
+0 1073741836 0 1 0 0 0 0
+D0
+~
+~
+0 -1 9063
+D1
+~
+~
+0 -1 9065
+D2
+~
+~
+0 -1 9064
+D3
+~
+~
+0 -1 113
+> rand_prog 100~
+mpechoat $n &CA Defense System's Lasers &RC&rU&RT&C through your skin!
+mpdamage $n 150000
+~
+|
+S
+#9063
+&GT&g-&G1&g0&G2 &gC&Ga&gg&Ge~
+The large beast known as Tyrant is kept here, and he is a relative of
+Nemesis. They're both dangerous alone, but unstoppable together.
+~
+0 1073742092 0 1 0 0 0 0
+D2
+~
+~
+0 -1 9062
+S
+#9064
+&RC&ch&Ci&cm&Ce&cr&Ca &cC&ca&Cg&ce~
+These ugly monsters aren't to be taken likely, and pack quite a wallop when
+they need to.  They can usually be seen clinging from the top of walls
+trying to claim new victims.
+~
+0 1073741836 0 1 0 0 0 0
+D0
+~
+~
+0 -1 9062
+S
+#9065
+&CL&ca&Cb &cH&Ca&cl&Cl&cw&Ca&cy~
+This is a dark dank hallway leading north, south, east, and west.  Several
+moans are still heard, as an &RA&rl&Ra&rr&Rm&z sounds.. 
+~
+0 1073741836 0 1 0 0 0 0
+D0
+~
+~
+0 -1 9066
+D2
+~
+~
+0 -1 9067
+D3
+~
+~
+0 -1 9062
+S
+#9066
+&zM&Wr&z. &WX&z'&Ws &PO&pf&Pf&pi&Pc&pe~
+This big baddy sports a gray trenchcoat and is also related to Nemesis. 
+They're big, ugly, and use reckless abandon, be aware! 
+~
+0 1073741836 0 1 0 0 0 0
+D2
+~
+~
+0 -1 9065
+S
+#9067
+&GH&gu&Gn&gt&Ge&gr&G'&gs &CC&ca&Cg&ce~
+These disruptive little bastards have a knack for decapitating people with
+one hit, and can poison if they hit right. Don't stick around too long, or
+you won't live to tell what they look like.
+~
+0 1073741836 0 1 0 0 0 0
+D0
+~
+~
+0 -1 9065
+S
+#9068
+Floating in a void~
+~
+0 1073741828 0 1 0 0 0 0
+S
+#9069
+Floating in a void~
+~
+0 1073741828 0 1 0 0 0 0
+S
+#9070
+Floating in a void~
+~
+0 1073741828 0 1 0 0 0 0
+S
+#9099
+Floating in a void~
+~
+0 1073741828 0 1 0 0 0 0
+S
+#0
+
+
+#SHOPS
+ 9000    5  0  0  0  0   120  90         0 23    ; Uncle Frank
+ 9001   19  0  0  0  0   120  90         0 23    ; Ezail the Crackhead
+ 9003    5  9 15  0  0   100  70         0 23    ; Wang Yun
+ 9012    5  0  0  0  0   120  90         0 23    ; Cid Highwind
+ 9028   61 77  0  0  0   140  50         0 23    ; Mister Nice Guy
+ 9031    9 15  0  0  0   120  90         0 23    ; Aaliyah
+ 9034    5  9  0  0  0   120  90         0 23    ; Bob the Bootlegger
+ 9044   66 69  0  0  0   120  90         0 23    ; A Store Clerk
+ 9052    5  9  0  0  0   120  90         0 23    ; Luo Guanzhong
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+M  9004 spec_questmaster
+M  9050 spec_questmaster
+M  9053 spec_questmaster
+S
+
+
+#$

@@ -1,0 +1,3194 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         China~
+Author       Nemesis~
+Ranges       1 1007 1 1007
+Economy      -2 561641151
+ResetMsg     Wind rustles throughout the area..~
+ResetFreq    3
+#ENDAREADATA
+
+#MOBILE
+Vnum       9200
+Keywords   Commoner~
+Short      A Commoner~
+Long       A lowly commoner wanders about the streets here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 1 0 0 5 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9210
+Keywords   Zombie~
+Short      A Zombie~
+Long       A tall man with a decaying figure munches on a corpse here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_infected~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 500 0 -1150 0 0
+Stats2     300 150 150
+Stats3     60 30 30
+Stats4     0 0 3 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    bite punch~
+Defenses   parry~
+#MUDPROG
+Progtype  death_prog~
+Arglist   3~
+Comlist   mpoload 11512
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9216
+Keywords   Lui Bei~
+Short      &GL&gu&Gi &gB&Ge&gi~
+Long       The lord of the Shu Dynasty stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel stayarea~
+Stats1     0 1000 0 -2400 750 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   mpforce $n give head Lui
+if ovnuminv(9200)
+tell $n Good, keep up the work
+mpgain $n 3 100
+mpjunk head
+else
+if
+ovnuminv(9201)
+tell $n Great! We could have a place for you here!
+mpgain $n 3 200
+mpjunk head
+else
+if ovnuminv(9202)
+tell $n You truely are a hero of the Three Kingdoms!
+mpgain $n 3 500
+mpjunk head
+else
+if ovnuminv(9203)
+tell $n You defeated Lu Bu?!?! WOW!
+mpgain $n 3 1000
+mpjunk head
+else
+say Hello, $n.
+say Bring me the heads of those Wei fools, and we'll talk!
+mpjunk sash
+endif
+endif
+endif
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9217
+Keywords   A Shu Guard~
+Short      A Shu Guard~
+Long       A Guard of the Shu Kingdom stands here. 
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Affected   invisible detect_invis detect_magic~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#ENDMOBILE
+
+#MOBILE
+Vnum       9218
+Keywords   A Farmer~
+Short      A Farmer~
+Long       A man stands here with a pitchfork.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 1 0 0 5 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9225
+Keywords   A Wu Guard~
+Short      A Wu Guard~
+Long       A Guard of the Wu Kingdom stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Affected   invisible detect_invis detect_magic~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#ENDMOBILE
+
+#MOBILE
+Vnum       9226
+Keywords   Sun Jian~
+Short      &RS&ru&Rn &rJ&Ri&ra&Rn~
+Long       &RS&ru&Rn &rJ&Ri&ra&Rn&w stands here, awaiting your request.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#ENDMOBILE
+
+#MOBILE
+Vnum       9227
+Keywords   A Wu Guard~
+Short      &GL&gu&Gi &gB&Ge&gi~
+Long       The lord of the Shu Dynasty stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel stayarea~
+Stats1     0 1000 0 -2400 750 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9228
+Keywords   Weapon Shop Keeper~
+Short      Weapon Shop Keeper~
+Long       The weapon shop owner stands here, ready to do business.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 5 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   5 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   stock~
+Comlist   say Yesh'ir!
+mpat 9228 mpoload 9226
+mpat 9228 mpoload 9227
+mpat 9228 mpoload 9228
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9229
+Keywords   Armor Shop keeper~
+Short      Armor Shop Keeper~
+Long       The armor shop keeper stands here, ready to do business.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 5 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   9 0 0 0 0 120 100 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   stock~
+Comlist   mpat 9229 mpoload 9220
+mpat 9229 mpoload 9221
+mpat 9229 mpoload 9222
+mpat 9229 mpoload 9223
+mpat 9229 mpoload 9224
+mpat 9229 mpoload 9225
+say Yesh'ir!
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9236
+Keywords   Ancient Monk Shopkeeper~
+Short      &YA&On &YA&On&Yc&Oi&Ye&On&Yt &OM&Yo&On&Yk~
+Long       An old monk levitates here, ready to sell you things.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 5 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   9 5 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   stock~
+Comlist   mpat 9236 mpoload 9210
+mpat 9236 mpoload 9211
+mpat 9236 mpoload 9212
+mpat 9236 mpoload 9213
+mpat 9236 mpoload 9214
+mpat 9236 mpoload 9215
+mpat 9236 mpoload 9216
+mpat 9236 mpoload 9217
+say Very well, it is done.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   stock~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9250
+Keywords   Zombie~
+Short      A Zombie~
+Long       A tall man with a decaying figure munches on a corpse here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_infected~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 500 0 -1150 0 0
+Stats2     300 150 150
+Stats3     60 30 30
+Stats4     0 0 3 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    bite punch~
+Defenses   parry~
+#ENDMOBILE
+
+#MOBILE
+Vnum       9252
+Keywords   Tyrant T-102~
+Short      &GT&gy&Gr&ga&Gn&gt &GT&g-&G1&g0&G2~
+Long       A large creature with a bulging heart stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel noquest nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 5 0 0
+Attribs    25 25 25 25 25 25 25
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   roar
+emote &Cr&ca&Ci&cs&Ce&cs &Yh&Oi&Ys &Wc&wl&Wa&ww&Ws&w.
+mea $n &GT&gy&Gr&ga&Gn&gt&z's stab &Yh&Oi&Yt&Os&z you! &b-< &C[&c11220&C] &b>-
+mpdamage $n 11220
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9253
+Keywords   Cerberous~
+Short      &RC&re&Rr&rb&Re&rr&Ro&ru&Rs~
+Long       A doberman pincher wanders around here, decayed and smelly.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_infected~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 600 0 -1400 0 0
+Stats2     120 10 6000
+Stats3     60 4 2
+Stats4     0 0 0 120 120
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    bite~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   emote takes a &CH&cu&Cg&ce&z chunk from your neck!
+mea $n &RC&re&Rr&rb&Re&rr&Ro&ru&Rs&r'&Rs&z bite &Ym&Oa&Yu&Ol&Ys&z you!
+mpdamage $n 10000
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9257
+Keywords   A Wei Smuggling Guard~
+Short      A Wei Smuggling Guard~
+Long       A strong soldier stands here, making sure people don't bring weapons into Cao Cao's office.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_customs_weapons~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9258
+Keywords   Big Black Guy Named Ben~
+Short      &zA Big Black Guy Named Ben~
+Long       &zA tall black man stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   emote steps up into your face.
+say Step Away From The Suit, Mother Fucker!
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9260
+Keywords   Dian Wei~
+Short      &CD&ci&Ca&cn &CW&ce&Ci~
+Long       The great &CD&ci&Ca&cn &CW&ce&Ci&P stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel noquest nocorpse~
+Stats1     0 1000 0 -2000 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 5 0 0
+Attribs    25 25 25 25 25 25 25
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   say I give my life..
+say In defense of..
+say &RCAO CAO!!!
+mpecho &CD&ci&Ca&cn &CW&ce&Ci&z launches his giant Axe! 
+Stuff
+mea $n &CD&ci&Ca&cn &CW&ce&Ci&z's axe &Yh&Oi&Yt&Os&z you! &b-&B<
+&C[&c10000&c] &B>&b-
+Blah
+mpdamage $n 10000
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9261
+Keywords   Cao Cao~
+Short      &CC&ca&Co &CC&ca&Co~
+Long       The great emporer &CC&ca&Co &CC&ca&Co&P is here, ready to train people.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel train~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    18 18 18 18 18 18 18
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say Ah! Hello, $n!
+say You look strong, are you ready to train? 
+Bleh
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9271
+Keywords   Keeper of the Catacombs~
+Short      &GK&geeper &YO&Of &CT&che &zC&Watacombs~
+Long       A pair of dark red eyes peer at you from the shadows..
+~
+Desc       This tall monk stands ready to defend the sacred grounds which he calls
+home. He may look a bit feeble, but it is not wise to test his abilities.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 500 0 -1150 0 0
+Stats2     100 10 5000
+Stats3     50 4 2
+Stats4     0 0 0 100 100
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    punch~
+Defenses   dodge~
+#ENDMOBILE
+
+#MOBILE
+Vnum       9272
+Keywords   Catacomb Warrior~
+Short      &zC&Wa&zt&Wa&zc&Wo&zm&Wb &zW&Wa&zr&Wr&zi&Wo&zr~
+Long       A regal looking warrior stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 700 0 -700 0 0
+Stats2     140 10 7000
+Stats3     70 4 2
+Stats4     0 0 0 140 140
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    kick~
+#ENDMOBILE
+
+#MOBILE
+Vnum       9274
+Keywords   An Ancient Monk~
+Short      &YA&On &YA&On&Yc&Oi&Ye&On&Yt &OM&Yo&On&Yk~
+Long       An old monk levitates here, ready to sell you things.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 5 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   stock 100~
+Comlist   mpoload 9272
+mpoload 9273
+nod
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9275
+Keywords   An Ancient Monk~
+Short      &YA&On &YA&On&Yc&Oi&Ye&On&Yt &OM&Yo&On&Yk~
+Long       An old monk sits here chanting encantations..
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 5 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       9281
+Keywords   Hunter~
+Short      &GH&gu&Gn&gt&Ge&gr~
+Long       A short &Ggreen&P creature with large claws roams around here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     -1000 700 0 -1650 0 0
+Stats2     140 10 7000
+Stats3     70 4 2
+Stats4     0 0 0 140 140
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    claws~
+#ENDMOBILE
+
+#MOBILE
+Vnum       9284
+Keywords   Umbrella Employee~
+Short      &RU&rm&rb&Rr&re&Rl&rl&Ra &YI&On&Yc &zWorker~
+Long       &zA short scared man cowers in fear here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 5 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say Don't hurt me!!!!!!!
+emote sees you're normal..
+say Oh, I'm sorry, you're a survivor.
+say Well, while you're here, I can sell you some supplies.
+say They should help you to get outta here!
+nod
+say And don't worry about me! I'm good at hiding.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9296
+Keywords   A Military Chef~
+Short      A Military Chef~
+Long       A Chef of the military base stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 0 0
+Attribs    18 10 10 18 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9298
+Keywords   Military Weapons Dealer~
+Short      Military Weapons Dealer~
+Long       A man stands here cleaning out rifle barrels.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 0 0
+Attribs    18 10 10 18 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9299
+Keywords   Monkey Sniper~
+Short      &CM&co&Cn&ck&Ce&cy &GS&gn&Gi&gp&Ge&gr~
+Long       A short monkey with a PSG1 sniper rifle is sitting here.
+~
+Desc       This is no ordinary monkey, as it happens to be wielding the PSG1 Sniper
+rifle.  He's just one of Nemesis' millions of Monkey snipers, watch out,
+you bastards! The Monkey Snipers are comin' to town!
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Affected   blind invisible detect_evil detect_invis detect_magic~
+Stats1     0 1000 0 -4000 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 6 85 65
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    bite~
+#ENDMOBILE
+
+#OBJECT
+Vnum     9200
+Keywords Wei Soldier's Head~
+Type     trash~
+Short    &YWei Soldier's Head~
+Long     The head of a Wei Soldier lies here, decaying.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9201
+Keywords Wei Guard's Head~
+Type     trash~
+Short    &YWei Guard's Head~
+Long     The head of a Wei Soldier lies here, decaying.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9202
+Keywords Dian Wei's Head~
+Type     trash~
+Short    &CD&ci&Ca&cn &CW&ce&Ci&Y's Head~
+Long     Dian Wei's head lies on the ground here.~
+WFlags   take wield~
+Values   50 50 50 2 0 0
+Stats    2 6000 600 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9210
+Keywords Akujiki~
+Type     weapon~
+Short    &RA&rk&Ru&rj&Ri&rk&Ri~
+Long     A long sword floats in the air here, ominously..~
+Flags    glow hum contraband inventory~
+WFlags   take wield~
+Values   1100 10 150 2 0 0
+Stats    1 28000 2200 0 0
+#MUDPROG
+Progtype  wear_prog~
+Arglist   100~
+Comlist   mpechoaround $n Something murmurs
+'feed
+mpechoaround $n me..'
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     9211
+Keywords Bokken Sword~
+Type     weapon~
+Short    &YA &OB&Yo&Ok&Yk&Oe&Yn &OS&Yw&Oo&Yr&Od~
+Long     A long wooden sword lies here.~
+Flags    contraband inventory~
+WFlags   take wield~
+Values   1100 10 150 2 0 0
+Stats    1 44000 1500 0 0
+Affect       -1 -1 2000 36 0
+Affect       -1 -1 40 32 0
+Affect       -1 -1 40 36 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9212
+Keywords Long Flowing Scarf~
+Type     armor~
+Short    &RL&ro&Rn&rg &RF&rl&Ro&rw&Ri&rn&Rg &WN&zinjits&Wu &RS&rc&Ra&rr&Rf~
+Long     A 12 foot long scarf lies on the ground here, gleaming beautifully.~
+WFlags   take neck~
+Values   19 19 0 0 0 0
+Stats    1 10000 1000 0 0
+Affect       -1 -1 1000 13 0
+Affect       -1 -1 1000 14 0
+Affect       -1 -1 15 40 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9213
+Keywords Ninjitsu Wristbands~
+Type     armor~
+Short    &WN&zinjits&Wu W&zristban&Wd~
+Long     A stealth black wristband lies here.~
+Flags    inventory~
+WFlags   take wrist~
+Values   75 75 0 0 0 0
+Stats    1 10000 1000 0 0
+Affect       -1 -1 20 17 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 10 19 0
+Affect       -1 -1 1 1 0
+Affect       -1 -1 1 2 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9214
+Keywords Ninjitsu Waistband~
+Type     armor~
+Short    &WN&zinjits&Wu W&zaistban&Wd~
+Long     A large black belt with gold bells hanging from its buckle lies here.~
+Flags    inventory~
+WFlags   take waist~
+Values   70 -70 0 0 0 0
+Stats    1 12000 1200 0 0
+Affect       -1 -1 5 18 0
+Affect       -1 -1 5 19 0
+Affect       -1 -1 1 1 0
+Affect       -1 -1 20 41 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9216
+Keywords Ninjitsu Spandex~
+Type     armor~
+Short    &WN&zinjits&Wu &BS&bp&Ba&bn&Bd&be&Bx~
+Long     A pair of darkblack pants lies here, in sleek spandex style.~
+Flags    inventory~
+WFlags   take legs~
+Values   100 100 0 0 0 0
+Stats    1 20000 2000 0 0
+Affect       -1 -1 10 19 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 25 36 0
+Affect       -1 -1 25 48 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9217
+Keywords Ninjitsu Gloves~
+Type     trash~
+Short    &WN&zinjits&Wu G&zlove&Ws~
+Long     A pair of sleek gloves lies here.~
+WFlags   take hands~
+Values   0 0 0 0 0 0
+Stats    1 8000 800 0 0
+Affect       -1 -1 -70 17 0
+Affect       -1 -1 10 36 0
+Affect       -1 -1 3 18 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9220
+Keywords A Rice Hat~
+Type     armor~
+Short    &YA &OR&Yi&Oc&Ye &OH&Ya&Ot~
+Long     A hat made of straw lies here.~
+Flags    inventory~
+WFlags   take head~
+Values   30 30 0 0 0 0
+Stats    1 200 20 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9221
+Keywords A Straw Backpack~
+Type     container~
+Short    &YA &OS&Yt&Or&Ya&Ow &YB&Oa&Yc&Ok&Yp&Oa&Yc&Ok~
+Long     A straw backpack lies here.~
+WFlags   take about~
+Values   20 0 0 0 0 0
+Stats    1 5 0 0 0
+Affect       -1 -1 -5 17 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9222
+Keywords Dirty White Shirt~
+Type     armor~
+Short    &ODirty &WWhite Shirt~
+Long     A dirty white shirt lies here, full of holes.~
+WFlags   take about~
+Values   9 9 0 0 0 0
+Stats    2 300 30 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9223
+Keywords Dirty Khakis~
+Type     armor~
+Short    &ODirty &WKhakis~
+Long     A pair of dirty khakis lies on the ground here.~
+WFlags   take legs~
+Values   10 10 0 0 0 0
+Stats    3 450 45 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9224
+Keywords A Simple Belt~
+Type     container~
+Short    &WA Simple Belt~
+Long     A long white belt lies here.~
+WFlags   take waist~
+Values   5 5 0 0 0 0
+Stats    1 500 50 0 0
+Affect       -1 -1 -10 17 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9225
+Keywords Straw Shoes~
+Type     armor~
+Short    &YS&Ot&Yr&Oa&Yw &OS&Yh&Oo&Ye&Os~
+Long     A pair of straw shoes lies here.~
+WFlags   take feet~
+Values   5 5 0 0 0 0
+Stats    1 100 10 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9226
+Keywords A Simple Sword~
+Type     weapon~
+Short    A Simple Sword~
+Long     A simple sword lies here.~
+Flags    inventory~
+WFlags   take wield~
+Values   12 5 6 2 0 0
+Stats    4 100 10 0 0
+Affect       -1 -1 -1 18 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9227
+Keywords Long Sword~
+Type     weapon~
+Short    &WL&wong &WS&wword~
+Long     A large sword lies here.~
+WFlags   take wield~
+Values   1000 10 10 2 500 500
+Stats    1 3400 340 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9228
+Keywords Battle Axe~
+Type     weapon~
+Short    &zA Bat&Wt&zle &WA&zxe~
+Long     A large battle axe lies on the floor here.~
+WFlags   take wield~
+Values   100 10 700 11 700 700
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9250
+Keywords A scientist's corpse~
+Type     trash~
+Short    A Scientist's corpse~
+Long     A bloody corpse lies here.~
+Values   0 0 0 0 0 0
+Stats    1000 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9251
+Keywords A Capsule~
+Type     trash~
+Short    a A Capsule~
+Long     A large Umbrella Capsule is broken open here.~
+Values   0 0 0 0 0 0
+Stats    1000 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9260
+Keywords a long flowing black trench coat~
+Type     armor~
+Short    &wA &WL&wo&Wn&wg &WF&wl&Wo&ww&Wi&wn&Wg &zBlack &wT&Wr&we&Wn&wc&Wh &wC&wo&Wa&wt~
+Long     &zNemesis' custom black trentch Coat lies here.~
+WFlags   take about~
+Values   75 75 0 0 0 0
+Stats    1 70000 7000 0 1
+Affect       -1 -1 1000 13 0
+Affect       -1 -1 5 18 0
+Affect       -1 -1 20 19 0
+Affect       -1 -1 5 40 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9261
+Keywords Umbrella Insignia Belt~
+Type     container~
+Short    &RU&rm&Rb&rr&Re&rl&Rl&ra &YI&On&Ys&Oi&Yg&On&Yi&Oa &WB&we&Wl&wt~
+Long     &zA belt with the buckle of, "Umbrella Inc" lies here.~
+WFlags   waist~
+Values   100 0 0 0 0 0
+Stats    1 0 0 0 0
+Affect       -1 -1 -70 17 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9262
+Keywords Tentacle~
+Type     weapon~
+Short    &PA &pL&Pa&pr&Pg&pe &GT&g-&GV&gi&Gr&gu&Gs &PI&pn&Pf&pe&Pc&pt&Pe&pd &PT&pe&Pn&pt&Pa&pc&Pl&pe~
+Long     &zA large oozing &pp&Pu&pr&Pp&pl&Pe &ztentacle lies here..~
+Flags    dark noremove~
+WFlags   take wield~
+Values   500 11 700 11 5000 5000
+Stats    1 0 0 0 0
+Affect       -1 -1 0 13 0
+Affect       -1 -1 2000 13 0
+#MUDPROG
+Progtype  wear_prog~
+Arglist   100~
+Comlist   mea $n &PTentacles &zbegin to grow out of your back. It's hideous.
+mpechoaround $n &PTentacles &zstart to grow off of &C$n&z's back and hands.
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     9263
+Keywords Combat Boots~
+Type     armor~
+Short    &WA &wP&Wa&wi&Wr &wO&Wf &zBlack &wC&Wo&wm&Wb&wa&Wt &wB&wo&Wo&wt&Ws~
+Long     A pair of large black combat boots were left here.~
+Flags    inventory~
+WFlags   take feet~
+Values   100 0 0 0 0 0
+Stats    1 12000 1200 0 0
+Affect       -1 -1 3 18 0
+Affect       -1 -1 4 19 0
+Affect       -1 -1 -70 17 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9264
+Keywords Albert Wesker's Sunglasses~
+Type     armor~
+Short    &WA&wl&Wb&we&Wr&wt &WW&we&Ws&wk&We&wr&w'&Ws &zBlack &wS&wu&Wn&wg&Wl&wa&Ws&ws&We&ws~
+Long     A pair of dark black sunglasses have been left here.~
+Flags    inventory~
+WFlags   take eyes~
+Values   100 0 0 0 0 0
+Stats    1 5000 500 0 0
+Affect       -1 -1 -70 17 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9266
+Keywords Pants~
+Type     armor~
+Short    &WA &wP&Wa&wi&Wr &wO&wf &zBlack &WP&wa&Wn&wt&Ws~
+Long     &zA pair of black pants pants was left here.~
+Flags    inventory~
+WFlags   take legs~
+Values   100 100 0 0 0 0
+Stats    1 10000 1000 0 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 10 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9267
+Keywords Wifebeater~
+Type     armor~
+Short    &WA &wL&Wa&wr&Wg&we &zBlack &WW&wi&Wf&we&Wb&we&Wa&wt&We&wr~
+Long     &zA large black wifebeater was left here.~
+Flags    inventory~
+WFlags   take body~
+Values   250 250 0 0 0 0
+Stats    1 10000 1000 0 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 10 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9270
+Keywords Black Gi~
+Type     armor~
+Short    &zBlack &YG&Oi~
+Long     A black shirt lies here.~
+WFlags   body~
+Values   150 150 0 0 0 0
+Stats    1 14000 1400 0 0
+Affect       -1 -1 10 19 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 -70 17 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9271
+Keywords White Gi~
+Type     armor~
+Short    &wWhite &YG&Oi~
+Long     A white uniform lies here.~
+WFlags   body~
+Values   150 150 0 0 0 0
+Stats    1 14000 1400 0 0
+Affect       -1 -1 10 19 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 -70 17 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9272
+Keywords Black Pants~
+Type     armor~
+Short    &zBlack &YP&Oa&Yn&Yt&Os~
+Long     A pair of blank pants that matches the gi lies here.~
+Flags    inventory~
+WFlags   take legs~
+Values   100 100 0 0 0 0
+Stats    1 20000 2000 0 0
+Affect       -1 -1 10 19 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 25 36 0
+Affect       -1 -1 25 48 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9273
+Keywords White Pants~
+Type     armor~
+Short    &wWhite &YP&Oa&Yn&Ot&Ys~
+Long     A pair of white pants that matches the gi lies here.~
+Flags    inventory~
+WFlags   take legs~
+Values   100 100 0 0 0 0
+Stats    1 20000 2000 0 0
+Affect       -1 -1 10 19 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 25 36 0
+Affect       -1 -1 25 48 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9274
+Keywords A Large Scimitar~
+Type     weapon~
+Short    &CA &cL&Ca&cr&Cg&ce &zS&Wc&zi&Wm&zi&Wt&za&Wr~
+Long     A large object lies here.~
+WFlags   take wield~
+Values   100 10 111 1 0 0
+Stats    1 12000 1200 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9275
+Keywords Shadow Rod~
+Type     weapon~
+Short    &WA &zS&Wh&za&Wd&zo&Ww &zR&Wo&zd~
+Long     A large black rod for battle lies here.~
+WFlags   take wield~
+Values   100 10 124 8 0 0
+Stats    1 13333 1333 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9277
+Keywords Tiger Amulet~
+Type     treasure~
+Short    &RT&ri&Rg&re&Rr &YA&Om&Yu&Ol&Ye&Ot~
+Long     A Tiger Amulet is here.~
+WFlags   take neck~
+Values   0 0 0 0 0 0
+Stats    1 15000 1500 0 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 15 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9278
+Keywords Vitality Charm~
+Type     armor~
+Short    &YV&Oi&Yt&Oa&Yl&Oi&Yt&Oy &zC&Wh&za&Wr&zm~
+Long     A long chain with a glimmering charm lies here.~
+WFlags   take neck~
+Values   19 19 0 0 0 0
+Stats    1 300 30 0 0
+Affect       -1 -1 1000 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9279
+Keywords Sky Lance~
+Type     weapon~
+Short    &Pt&ph&Pe &YS&Ok&Yy &CL&ca&Cn&cc&Ce~
+Long     A regal looking halberd is stuck in the ground here.~
+Flags    glow contraband inventory~
+WFlags   take wield~
+Values   1100 10 150 2 0 0
+Stats    1 40000 4000 0 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 5 19 0
+Affect       -1 -1 2 1 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9284
+Keywords Umbrella Inc Worker~
+Type     trash~
+Short    &zUmbrella Inc Worker~
+Long     &zA short scared man cowers in fear here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9291
+Keywords RPG-7V Grenade Clip~
+Type     ammo~
+Short    a RPG-7V Grenade Clip~
+Long     A small clip with 5 grenades lies here.~
+WFlags   take~
+Values   5 0 0 0 0 0
+Stats    1 50 5 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9292
+Keywords M9 Beretta Pistol~
+Type     weapon~
+Short    &za M9 Beretta Pistol~
+Long     A M9 Beretta Pistol is here.~
+WFlags   take wield~
+Values   100 10 70 6 500 500
+Stats    1 9200 920 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9293
+Keywords M9 Beretta Clip~
+Type     ammo~
+Short    M9 Beretta Clip~
+Long     A small clip for a pistol lies here.~
+WFlags   take hold~
+Values   500 0 0 0 0 0
+Stats    1 50 5 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9299
+Keywords PSG1 Sniper Rifle~
+Type     weapon~
+Short    &RP&rS&RG&r1 &RS&rn&Ri&rp&Re&rr &RR&ri&Rf&rl&Re~
+Long     A wooden bolt-action rifle is lying here on a tripod.~
+Flags    contraband inventory~
+WFlags   take wield~
+Values   100 2648 0 6 0 0
+Stats    10 25000 2500 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     9200
+Name     Landing Pad of Chi Bi~
+Sector   city~
+Flags    nomob~
+Desc     This is the Three Kingdoms Colony, a place of majestic adventure.  The
+people here disassociated themselves from technology, and launched their
+colony before earth became desolate. They're simple people, and prefer to
+stick to themselves, although they're devided into three kingdoms. Wu,
+Shu, and Wei are all the allegances they pledge themselves to.
+~
+#EXIT
+Direction north~
+ToRoom    800
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9217
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    9201
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    9262
+Flags     hidden~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9201
+Name     Chi Bi City Streets~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    9202
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    9200
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9202
+Name     Chi Bi City Streets~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction south~
+ToRoom    9201
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9203
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9203
+Name     Chi Bi Market Area~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    9229
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9202
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9228
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9204
+#ENDEXIT
+
+Reset M 0 9200 2 9203
+#ENDROOM
+
+#ROOM
+Vnum     9204
+Name     Chi Bi Market Area~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction east~
+ToRoom    9203
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    9205
+#ENDEXIT
+
+Reset M 0 9200 4 9204
+#ENDROOM
+
+#ROOM
+Vnum     9205
+Name     Road to Chang Ban~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    9206
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9276
+Flags     hidden~
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    9204
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9206
+Name     Road to Chang Ban~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    9207
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9205
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9207
+Name     Before Chang Ban's Gates~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction east~
+ToRoom    9208
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9206
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9208
+Name     City Of Chang Ban~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    9209
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9207
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9209
+Name     City Of Chang Ban Intersection~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    9210
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9208
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9210
+Name     City Of Chang Ban~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    9211
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9209
+#ENDEXIT
+
+Reset M 0 9217 1 9210
+#ENDROOM
+
+#ROOM
+Vnum     9211
+Name     Before The Shu Kingdom~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction south~
+ToRoom    9210
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    9212
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9212
+Name     The &GS&gh&Gu &CDynasty~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction northwest~
+ToRoom    9213
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    9211
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9213
+Name     The &GS&gh&Gu &CDynasty~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction northeast~
+ToRoom    9214
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    9212
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9214
+Name     Before The King of Shu~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction east~
+ToRoom    9215
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    9213
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9215
+Name     The Throne Room~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction east~
+ToRoom    9216
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9214
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9216
+Name     Liu Bei's Room~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction west~
+ToRoom    9215
+#ENDEXIT
+
+Reset M 0 9216 1 9216
+  Reset G 1 9202 1
+  Reset G 1 9201 1
+#ENDROOM
+
+#ROOM
+Vnum     9217
+Name     Wandering The Rice Patties~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction east~
+ToRoom    9218
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9237
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9200
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9218
+Name     Wandering The Rice Patties~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction east~
+ToRoom    9218
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9218
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9217
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    9219
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    9218
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    9297
+Flags     hidden~
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    9218
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9219
+Name     Wandering The Rice Patties~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction southeast~
+ToRoom    9220
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    9218
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9220
+Name     A Thick Marsh~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction east~
+ToRoom    9221
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    9220
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    9219
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9221
+Name     Wandering About the Marsh~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction east~
+ToRoom    9222
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9221
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9220
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    9221
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    9221
+#ENDEXIT
+
+Reset M 0 9218 5 9221
+#ENDROOM
+
+#ROOM
+Vnum     9222
+Name     Before the Wu Dynasty~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction south~
+ToRoom    9223
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9221
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9223
+Name     The &RW&ru &CDynasty~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    9222
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9224
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9224
+Name     The &RW&ru &CDynasty~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction south~
+ToRoom    9225
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9223
+#ENDEXIT
+
+Reset M 0 9225 4 9224
+#ENDROOM
+
+#ROOM
+Vnum     9225
+Name     The Throne Room~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    9224
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9226
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9226
+Name     Sun Jian's Room~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    9225
+#ENDEXIT
+
+Reset M 0 9226 1 9226
+#ENDROOM
+
+#ROOM
+Vnum     9227
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     9228
+Name     A Weapon Shop~
+Sector   city~
+Flags    nomob~
+Desc     This is a simple shop, selling weapons and other things in an attempt to
+make some cash. The owner stands there, hunched back, prepared for your
+order.
+ 
+&BSay 'Stock' to restock everything!
+~
+#EXIT
+Direction north~
+ToRoom    9203
+#ENDEXIT
+
+Reset M 0 9228 1 9228
+  Reset G 1 9226 1
+  Reset G 1 9227 1
+  Reset G 1 9228 1
+#ENDROOM
+
+#ROOM
+Vnum     9229
+Name     An Armor Shop~
+Sector   city~
+Flags    nomob~
+Desc     This is an old room with nothing really neat, but worth a look. There are
+tablets, inscriptions, and all sorts of ancient pieces of Chinese Culture.
+Of them all, there is a strange inscription, which reads, "ajnin on
+ibonihs," on a small tablet near the counter. I wonder if it unlocks
+something?
+ 
+&CSay "Stock" to restock.
+~
+#EXIT
+Direction south~
+ToRoom    9203
+#ENDEXIT
+
+Reset M 0 9229 1 9229
+  Reset G 1 9220 1
+  Reset G 1 9221 1
+  Reset G 1 9222 1
+  Reset G 1 9223 1
+  Reset G 1 9224 1
+  Reset G 1 9225 1
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Shinobi~
+Comlist   mpechoat $n You disappear
+suddenly.
+mpechoaround $n $n
+disappears.
+mptransfer $n 9230
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     9230
+Name     The Ninjitsu Temple~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction east~
+ToRoom    9231
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9229
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   return~
+Comlist   mpechoat $n You disappear
+suddenly.
+mpechoaround $n $n
+disappears.
+mptransfer $n
+9229
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     9231
+Name     The Ninjitsu Temple~
+Sector   city~
+#EXIT
+Direction south~
+ToRoom    9232
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9230
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9232
+Name     The Ninjitsu Temple~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    9231
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9233
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9233
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9233
+Name     The Ninjitsu Temple~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    9232
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9232
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    9234
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9234
+Name     The Ninjitsu Temple~
+Sector   city~
+#EXIT
+Direction northwest~
+ToRoom    9233
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    9235
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9235
+Name     The Ninjitsu Temple~
+Sector   city~
+#EXIT
+Direction west~
+ToRoom    9236
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    9234
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9236
+Name     The Ninjitsu Shop~
+Sector   city~
+Desc     This old place has the pungent smell of dust.  An old monk levitates behind
+a counter, selling incredible items for your use. He is a nice looking old
+man, with a good disposition. 
+ 
+&BSay "Stock" to restock him.
+~
+#EXIT
+Direction east~
+ToRoom    9235
+#ENDEXIT
+
+Reset M 0 9236 1 9236
+  Reset G 1 9210 1
+  Reset G 1 9211 1
+  Reset G 1 9212 1
+  Reset G 1 9213 1
+  Reset G 1 9214 1
+  Reset G 1 9216 1
+  Reset G 1 9217 1
+#ENDROOM
+
+#ROOM
+Vnum     9237
+Name     Before Xuchang's Gates~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    9217
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9238
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9238
+Name     Inside Xuchang's Gates~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    9237
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9240
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9242
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9239
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9239
+Name     Xuchang Province~
+Sector   city~
+Flags    nomob~
+Desc     This is the upscale part of Xuchang, where all the lies and deceit take
+place. These rich bastards have so much money, they don't even know what
+to do with it. Their generous donations to Cao Cao don't hurt things,
+either.
+~
+#EXIT
+Direction north~
+ToRoom    9248
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9238
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9250
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9251
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9240
+Name     Xuchang Ghetto~
+Sector   city~
+Flags    nomob~
+Desc     This poor and desolate region lives in fear of the great Cao cao, paying
+him tributes with what little money they have. These ghettos are
+definately poor, with nothing much to live off of.  The houses are all
+straw huts, some with a few scraps of iron embedded.
+~
+#EXIT
+Direction south~
+ToRoom    9241
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9238
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9241
+Name     Xuchang Ghetto~
+Sector   city~
+Desc     This poor and desolate region lives in fear of the great Cao cao, paying
+him tributes with what little money they have. These ghettos are
+definately poor, with nothing much to live off of.  The houses are all
+straw huts, some with a few scraps of iron embedded.
+~
+#EXIT
+Direction north~
+ToRoom    9240
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9243
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9247
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9242
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9242
+Name     Xuchang Ghetto~
+Sector   city~
+Desc     This poor and desolate region lives in fear of the great Cao cao, paying
+him tributes with what little money they have. These ghettos are
+definately poor, with nothing much to live off of.  The houses are all
+straw huts, some with a few scraps of iron embedded.
+~
+#EXIT
+Direction north~
+ToRoom    9238
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9241
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9244
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    9245
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    9246
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9243
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction west~
+ToRoom    9241
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9244
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction north~
+ToRoom    9242
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9245
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction northwest~
+ToRoom    9242
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9246
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction northeast~
+ToRoom    9242
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9247
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction north~
+ToRoom    9241
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9248
+Name     An Empty Apartment~
+Sector   city~
+Flags    empty_home~
+#EXIT
+Direction south~
+ToRoom    9239
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9250
+Name     An Empty Apartment~
+Sector   city~
+Flags    empty_home~
+Owner    Oracle~
+#EXIT
+Direction north~
+ToRoom    9239
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9251
+Name     Xuchang Province~
+Sector   city~
+Desc     This is the upscale part of Xuchang, where all the lies and deceit take
+place. These rich bastards have so much money, they don't even know what
+to do with it. Their generous donations to Cao Cao don't hurt things,
+either.
+~
+#EXIT
+Direction north~
+ToRoom    9252
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9239
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9253
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9252
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9252
+Name     Xuchang Province~
+Sector   city~
+Desc     This is the upscale part of Xuchang, where all the lies and deceit take
+place. These rich bastards have so much money, they don't even know what
+to do with it. Their generous donations to Cao Cao don't hurt things,
+either.
+~
+#EXIT
+Direction north~
+ToRoom    9254
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9251
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9251
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9253
+Name     Civil Officers Building~
+Sector   city~
+Desc     This building is home to all of the Big Wigs of the Wei Dynasty.  They take
+care of Cao Cao's personal affairs, so he can take more time planning on
+the Shu and Wu kingdoms. 
+~
+#EXIT
+Direction north~
+ToRoom    9251
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9254
+Name     Before the Xuchang Government building~
+Sector   city~
+#EXIT
+Direction south~
+ToRoom    9252
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9255
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9255
+Name     The Xuchang Government building~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    9254
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    9256
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9256
+Name     The Xuchang Government building~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction up~
+ToRoom    9257
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    9255
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9257
+Name     Wei Checkpoint~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction east~
+ToRoom    9258
+Flags     isdoor closed locked~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9260
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9259
+Flags     isdoor closed locked~
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    9261
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    9256
+#ENDEXIT
+
+Reset M 0 9257 1 9257
+Reset D 0 9257 1 2
+Reset D 0 9257 3 2
+#ENDROOM
+
+#ROOM
+Vnum     9258
+Name     Wei Jail Cell~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction west~
+ToRoom    9257
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9259
+Name     Wei Jail Cell~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction east~
+ToRoom    9257
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9260
+Name     Dian Wei's Room~
+Sector   city~
+Flags    nomob~
+Desc     The great emporer Cao Cao's body guard resides here.  He is a strong
+resiliant man, who would give his own life to protect Cao Cao. This room
+is littered with war trophies, such as skulls and warriors of those who
+have fallen to him.
+~
+#EXIT
+Direction north~
+ToRoom    9257
+#ENDEXIT
+
+Reset M 0 9260 1 9260
+#ENDROOM
+
+#ROOM
+Vnum     9261
+Name     Cao Cao's Office~
+Sector   city~
+Flags    nomob~
+Desc     This majestic room is home to Imperial Governer Cao Cao, or, for the
+Stupid, Emporer Cao Cao. He watches over his city with great pride, with
+Dian Wei at his side.  Although viewed evil by most, he is prepared to
+train anyone who enters his office, and does so with pride.
+~
+#EXIT
+Direction down~
+ToRoom    9257
+#ENDEXIT
+
+Reset M 0 9261 1 9261
+#ENDROOM
+
+#ROOM
+Vnum     9262
+Name     Before the Kingdoms Graveyard~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction east~
+ToRoom    9263
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    9200
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9263
+Name     Graveyard gates~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    9264
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9266
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9265
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9262
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Honor~
+Comlist   >speech_prog Honor
+if clan ($n) == Black Knights
+mptrans $n 10706
+else
+if name ($n) == Demonaire
+mptrans $n 10706
+else
+mptrans $n 6
+endif
+endif
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     9264
+Name     An Empty Apartment~
+Sector   city~
+Flags    indoors empty_home~
+Owner    Demonaire~
+#EXIT
+Direction south~
+ToRoom    9263
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9265
+Name     An Empty Apartment~
+Sector   city~
+Flags    empty_home~
+Owner    Voromak~
+#EXIT
+Direction north~
+ToRoom    9263
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9266
+Name     The Graveyard~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    9267
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9268
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9263
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9267
+Name     A Memorial~
+Sector   city~
+Flags    nomob~
+Desc     This memorial is dedicated to all those who have fallen in wars, battles,
+and mishaps.  Some are legends, and some have never been heard of before.
+~
+#EXIT
+Direction south~
+ToRoom    9266
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9268
+Name     The Graveyard~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    9266
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9269
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9269
+Name     Road to the Catacombs~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    9268
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9270
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9270
+Name     Well Leading to the Catacombs~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    9269
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    9271
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9271
+Name     The Catacombs~
+Sector   city~
+Flags    dark~
+#EXIT
+Direction south~
+ToRoom    9272
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    9270
+#ENDEXIT
+
+Reset M 0 9271 1 9271
+#ENDROOM
+
+#ROOM
+Vnum     9272
+Name     The Catacombs~
+Sector   city~
+Flags    dark~
+#EXIT
+Direction north~
+ToRoom    9271
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    9273
+#ENDEXIT
+
+Reset M 0 9272 2 9272
+#ENDROOM
+
+#ROOM
+Vnum     9273
+Name     The Catacombs~
+Sector   city~
+Flags    dark~
+#EXIT
+Direction west~
+ToRoom    9274
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    9272
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    9275
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9274
+Name     Keepers of the Catacombs shop~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    9273
+#ENDEXIT
+
+Reset M 0 9274 1 9274
+  Reset G 1 9271 1
+  Reset G 1 9270 1
+  Reset G 1 9273 1
+  Reset G 1 9272 1
+  Reset G 1 9275 1
+  Reset G 1 9274 1
+Reset M 0 9272 1 9274
+#ENDROOM
+
+#ROOM
+Vnum     9275
+Name     The Way Of The Musou~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction northwest~
+ToRoom    9273
+#ENDEXIT
+
+Reset M 0 9275 1 9275
+  Reset G 1 9277 1
+  Reset G 1 9278 1
+  Reset G 1 9279 1
+#ENDROOM
+
+#ROOM
+Vnum     9276
+Name     &RU&rm&Rb&rr&Re&rl&Rl&ra &YI&On&Yc &c- Entrance~
+Sector   city~
+Flags    nomob~
+Desc     This is Umbrella Incorporation's hidden facility,  they seem to have them
+everywhere nowadays.  It is home to plenty of mutations, including the
+Nemesis. This room happens to be dark, and an erie moan can be heard from
+the west.. 
+~
+#EXIT
+Direction east~
+ToRoom    9205
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9277
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9277
+Name     &RU&rm&Rb&rr&Re&rl&Rl&ra &YI&On&Yc &c- Lobby~
+Sector   city~
+Desc     This hallway is awfully dark, with an emergency light beeping, like some
+sort of disaster happened recently.. 
+~
+#EXIT
+Direction east~
+ToRoom    9276
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9278
+#ENDEXIT
+
+#MUDPROG
+Progtype  rand_prog~
+Arglist   100~
+Comlist   mpecho &RAn alarm sounds, with a computer voice saying, "EMERGENCY!"
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     9278
+Name     &RU&rm&Rb&rr&Re&rl&Rl&ra &YI&On&Yc &c- Hallway~
+Sector   city~
+Flags    nomob~
+Desc     As the room north of here, this place is very dank and scarry. There is
+also a bloody handprint on the wall, with a puddle of blooding leading
+west.. 
+~
+#EXIT
+Direction north~
+ToRoom    9277
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9279
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9280
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9279
+Name     &RU&rm&Rb&rr&Re&rl&Rl&ra &YI&On&Yc &c- Dead End~
+Sector   city~
+Flags    nomob~
+Desc     This room is labled under construction, but there's something horribly
+wrong, as the scent of blood is apparent in the air.
+~
+#EXIT
+Direction north~
+ToRoom    9278
+#ENDEXIT
+
+Reset M 0 9250 1 9279
+Reset O 0 9250 1 9279
+#ENDROOM
+
+#ROOM
+Vnum     9280
+Name     &RU&rm&Rb&rr&Re&rl&Rl&ra &YI&On&Yc &c- Hallway~
+Sector   city~
+Flags    nomob~
+Desc     This hallway is awfully dark, with an emergency light beeping, like some
+sort of disaster happened recently..  
+~
+#EXIT
+Direction north~
+ToRoom    9283
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9278
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9281
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9282
+#ENDEXIT
+
+Reset M 0 9250 2 9280
+#ENDROOM
+
+#ROOM
+Vnum     9281
+Name     &RU&rm&Rb&rr&Re&rl&Rl&ra &YI&On&Yc &c- Test Lab~
+Sector   city~
+Flags    nomob~
+Desc     A recent test was apparently done here, and a capsule is broken open. 
+~
+#EXIT
+Direction north~
+ToRoom    9280
+#ENDEXIT
+
+Reset M 0 9281 1 9281
+Reset O 0 9251 1 9281
+#ENDROOM
+
+#ROOM
+Vnum     9282
+Name     &RU&rm&Rb&rr&Re&rl&Rl&ra &YI&On&Yc &c- Tyrant T-102 Test Tank~
+Sector   city~
+Flags    nomob~
+Desc     The Tyrant is a large biological creature with unfathomable power. It kills
+without regard, and has no emotions, making it a perfect killer. This room
+is all torn up with blood stains and a broken capsule, indicating a recent
+battle of some sort happened here recently.
+~
+#EXIT
+Direction east~
+ToRoom    9280
+#ENDEXIT
+
+Reset M 0 9252 1 9282
+Reset O 0 9251 1 9282
+#ENDROOM
+
+#ROOM
+Vnum     9283
+Name     &RU&rm&Rb&rr&Re&rl&Rl&ra &YI&On&Yc &c- Hallway~
+Sector   city~
+Flags    nomob~
+Desc     This hallway is awfully dark, with an emergency light beeping, like some
+sort of disaster happened recently..  There is also a small office to the
+west with the sound of trembling coming from it.
+~
+#EXIT
+Direction north~
+ToRoom    9285
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9280
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9284
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9284
+Name     &RU&rm&Rb&rr&Re&rl&Rl&ra &YI&On&Yc &c- Birkin's Office~
+Sector   city~
+Flags    nomob~
+Desc     This is the room of William Birkin, the creator of this lab. It is a small
+office, with a desk with a computer on top of it, and, unlike the rest of
+the place, it's clean. 
+~
+#EXIT
+Direction east~
+ToRoom    9283
+#ENDEXIT
+
+Reset M 0 9284 1 9284
+  Reset G 1 9266 1
+  Reset G 1 9267 1
+  Reset G 1 9263 1
+  Reset G 1 9264 1
+  Reset G 1 9261 1
+  Reset G 1 9260 1
+#ENDROOM
+
+#ROOM
+Vnum     9285
+Name     &RU&rm&Rb&rr&Re&rl&Rl&ra &YI&On&Yc &c- Hallway~
+Sector   city~
+Flags    nomob~
+Desc     This hallway is awfully dark, with an emergency light beeping, like some
+sort of disaster happened recently..  
+~
+#EXIT
+Direction south~
+ToRoom    9283
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9286
+Name     Second Story~
+Sector   city~
+Flags    nomob~
+Reset O 0 4110 1 9286
+#ENDROOM
+
+#ROOM
+Vnum     9287
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     9288
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     9289
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     9290
+Name     Guan Du Military Base~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    9293
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9291
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9296
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9292
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9291
+Name     Guan Du Military Base~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    9295
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9290
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    9298
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9292
+Name     Guan Du Military Base~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    9294
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9290
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    9299
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9293
+Name     Guan Du Military Base~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    9295
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9290
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9294
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9294
+Name     Guan Du Military Base~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    9293
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9292
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9295
+Name     Guan Du Military Base~
+Sector   city~
+#EXIT
+Direction south~
+ToRoom    9291
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9293
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9296
+Name     Before the Guan Du Military Base~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    9290
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9297
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9297
+Name     A Secluded Area~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    9296
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    9218
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9298
+Name     Guan Du Military Base~
+Sector   city~
+#EXIT
+Direction northwest~
+ToRoom    9291
+#ENDEXIT
+
+Reset M 0 9298 1 9298
+  Reset G 1 9299 1
+  Reset G 1 9292 1
+  Reset G 1 9293 1
+  Reset G 1 9291 1
+#ENDROOM
+
+#ROOM
+Vnum     9299
+Name     Guan Du Military Base~
+Sector   city~
+#EXIT
+Direction northeast~
+ToRoom    9292
+#ENDEXIT
+
+Reset M 0 9296 2 9299
+  Reset G 1 10313 1
+  Reset G 1 10314 1
+#ENDROOM
+
+#ENDAREA

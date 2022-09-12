@@ -1,0 +1,1479 @@
+#AREA   Russia~
+
+
+
+#AUTHOR Cray~
+
+#RANGES
+1 500 1 500
+$
+
+#RESETMSG You hear someone walking nearby...~
+
+#FLAGS
+0
+
+#ECONOMY 0 620472291
+
+#MOBILES
+#7546
+Transporter Man~
+A Transporter mam~
+A Tall Man Transporting people here
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+sa Hello Welcome to Russia Colony
+~
+|
+#7547
+Bankteller~
+Bankteller~
+A Bankteller
+~
+~
+33554499 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+sa Hello, Welcome to Russia National Bank. May i Help you
+~
+|
+#7548
+Russia Soldier~
+Soldier~
+A Russia Soldier, Standing here
+~
+~
+67 0 0 Z
+290 0 -625 58d10+2900 29d4+2
+0 0
+8 8 0
+18 10 8 18 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+58 58 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#7549
+Kali~
+Kali~
+The Leader Of Russia Military, standing here
+~
+~
+3 0 0 Z
+400 0 -900 80d10+4000 40d4+2
+0 0
+8 8 0
+18 18 18 18 10 18 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+80 80 0 0 0 0 16 2
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+sa Hello. My name is Kali, Welcome to Russia Military
+~
+|
+#7550
+Mobile Suit:No Tolerance~
+No Tolerance~
+Mobile Suit:No Tolerance
+~
+~
+67108867 0 0 Z
+500 0 -1150 100d10+5000 50d4+2
+0 0
+8 8 0
+18 18 18 18 10 18 10
+0 0 0 0 0
+0 0 0 0 1 1 4
+100 100 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#7551
+Russia Recruits~
+Recruit~
+Recruit, standing here
+~
+~
+1 0 0 Z
+279 0 -597 55d10+2790 27d4+2
+0 0
+8 8 0
+15 15 13 10 10 8 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+55 55 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#7552
+Nikki~
+&PN&pi&rk&pk&Pi&C~
+&PN&pi&rk&pk&Pi&w is here, serving customers.
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#7553
+Eurika~
+&YE&Ou&Yr&Oi&Yk&Oa&C~
+&YE&Ou&Yr&Oi&Yk&Oa&w is here selling candy.
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#7554
+Nurse Kayla~
+&wN&Wu&wr&Ws&we &CK&ca&gy&Gl&Ca&C~
+&wN&Wu&wr&Ws&we &CK&ca&gy&Gl&Ca&G is greeting the wounded.
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> all_greet_prog 100~
+say Hey there $n, do you need any help? ^^_^^ 
+~
+> speech_prog heal~
+say okie dokie.
+mprestore $n 32000
+say All done =)
+~
+|
+#7555
+Veronica~
+&CV&ce&Cr&co&Cn&ci&Cc&ca&C~
+&CV&ce&Cr&co&Cn&ci&Cc&ca&C is here selling drinks.
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Hi, May I sell you something?
+smile
+~
+|
+#7556
+Courtney~
+&CC&Wo&Cu&Wr&Ct&Wn&Ce&Wy~
+&CC&Wo&Cu&Wr&Ct&Wn&Ce&Wy is here in a model's pose.
+~
+~
+3 0 0 Z
+300 0 -650 60d10+3000 30d4+2
+0 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+2 0 0 0 1 1 0
+60 60 0 0 0 0 32 2
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpmload 7556
+mpecho Cray's Mom Comes crawling out on her knees to please Leppy.
+~
+|
+#7560
+Goomba~
+&GA &OG&Yo&Oo&Ym&Ob&Ya&C~
+&GA &OG&Yo&Oo&Ym&Ob&Ya&G is bouncing up and down here.
+~
+~
+3 0 0 Z
+4 0 90 0d10+40 0d4+2
+25 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpmload 7560
+mpecho Another Goomba comes hopping out.
+~
+|
+#7561
+Kirby~
+&PK&pi&Pr&pb&Py&C~
+&PK&pi&Pr&pb&Py&G is hovering here.
+~
+~
+3 524288 0 Z
+27 0 32 5d10+270 2d4+2
+50 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 16 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpmload 7561
+mpecho Another Kirby appears.
+~
+|
+#7562
+Some Punk~
+Some Punk~
+Some Punk is here standing guard.
+~
+~
+3 0 0 Z
+250 0 -525 50d10+2500 25d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+50 50 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> all_greet_prog 100~
+say Oh crap dude, scared me there for a sec.
+say Thought you were the police trying to bust us!
+say Anyways, go on in, its all good.
+~
+|
+#7563
+Task Force Member~
+&GA &YT&Oa&Ys&Ok &GF&go&Gr&gc&Ge &BM&be&pmb&be&Br&c~
+&GA &YT&Oa&Ys&Ok &GF&go&Gr&gc&Ge &BM&be&pmb&be&Br&w is patrolling here.
+~
+~
+1 0 0 Z
+500 0 -1150 100d10+5000 50d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 3
+100 100 0 0 0 0 16 1
+0 0 0 0 0 0 0 0
+#7564
+Ryoga~
+&RR&ry&po&rg&Ra&C~
+&RR&ry&po&rg&Ra&w is practicing his attacks.
+~
+~
+3 0 0 Z
+200 0 -400 40d10+2000 20d4+2
+75 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+40 40 0 0 0 0 32 2
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpmload 7564
+mpecho Another Ryoga clone appears.
+~
+|
+#7565
+Sweating Guard~
+A Sweating Guard~
+A Sweating Guard is here giving out warnings.
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> all_greet_prog 100~
+say You'd be best not to run around here carelessly.
+say Especially if you're wanted on another colony!
+~
+|
+#0
+
+
+#OBJECTS
+#7501
+Picnic Table~
+a Picnic Table~
+A Picnic Table is here.~
+~
+12 0 0
+8 0 1 0
+1 0 0
+#7502
+A Big Mac~
+A Big Mac~
+A Yummy Big Mac is here.~
+~
+19 0 1
+30 30 0 0
+1 9 0
+#7503
+Pack of McNuggets~
+a Pack of McNuggets~
+A Pack of McNuggets is here.~
+~
+19 0 1
+35 0 0 0
+1 10 1
+#7504
+Sweet Tab~
+&RA &YS&Ow&pe&Oe&Yt &PT&pa&Pb~
+&RA &YS&Ow&pe&Oe&Yt &PT&pa&Pb&G was dropped here.~
+~
+26 0 1
+6 67 67 67 1 0
+1 500 50
+#7505
+Neo-Sugar Pouch~
+&CN&ce&Co&z-&BS&bu&Bg&ba&Br &RP&ro&pu&rc&Rh&w~
+&CN&ce&Co&z-&BS&bu&Bg&ba&Br &RP&ro&pu&rc&Rh&G was dropped here.~
+~
+26 0 1
+6 205 205 205 1 0
+1 600 60
+#7506
+Kool-Aid~
+A glass of Lemonaide flavored Kool-Aid~
+A glass of Kool-Aid is sitting here.~
+~
+17 0 1
+40 40 6 0
+1 100 10
+#7507
+Vanilla Coke~
+A glass of Vanilla Coke~
+Some Vanilla Coke lies here.~
+~
+17 0 1
+40 40 15 0
+1 100 150
+#7508
+Comfy Bed~
+a Comfy Bed~
+A Comfy Bed is here.~
+~
+12 0 0
+3 0 2 0
+1 0 0
+#7509
+Bean Bag Chairs~
+Bean Bag Chair~
+A Few Bean Bag Chairs are on the ground.~
+~
+12 0 0
+5 0 2 0
+1 0 0
+#7547
+Shades~
+Shades~
+Shades~
+~
+80 0 131073
+200 2147483647 90000000 115
+1 0 0
+#7555
+cigarette~
+a cigarette~
+A cigarette is here.~
+~
+13 0 16385
+0 0 0 0
+1 0 0
+#7592
+Swift Blade~
+a Swift Blade~
+Swift Blade~
+~
+5 8208 8193
+100 100 100 100 100 100
+1 1300000 9000000
+#7599
+A Beautiful Blowup Woman~
+Blowup Doll~
+A Baeutiful Blowup Doll~
+~
+13 8320 0
+0 0 0 0
+1 0 0
+E
+A Beautiful Blowup Woman~
+A Blowup Doll that is used for Fucking,Oral, or Anal, 
+Hope You have a good time with it
+~
+#0
+
+
+#ROOMS
+#7500
+Transport Pad: Moscow, Russia~
+Welcome to Russia, one of the largest countries in the world. This is the
+capital city of Moscow. There are shuttles and small, private crafts are
+flying to and from the transport pad. Technicians scurry about with their
+duties, from refueling ships to directing them into the proper docking
+bays and running maintenance checks on the various ships. There is
+constant flurry of activity and various announcements are made in Russian
+and English on the incoming and outgoing flights as well as whic ports the
+shuttles were docking at and launching from.
+~
+0 0 4 1
+D0
+~
+~
+0 -1 7596
+S
+#7501
+Russia Colony Streets~
+~
+0 0 0 1
+D0
+~
+~
+0 -1 7502
+D2
+~
+~
+0 -1 7596
+S
+#7502
+Russia Colony Streets~
+~
+0 0 0 1
+D0
+~
+~
+0 -1 7503
+D2
+~
+~
+0 -1 7501
+D3
+~
+~
+1 -1 7542
+S
+#7503
+Russia Colony Streets~
+~
+0 0 0 1
+D0
+~
+~
+0 -1 7504
+D1
+~
+~
+0 -1 7528
+D2
+~
+~
+0 -1 7502
+S
+#7504
+Russia Colony Streets Crossways~
+~
+0 0 0 1
+D0
+~
+~
+1 -1 7506
+D2
+~
+~
+0 -1 7503
+D8
+~
+~
+0 -1 7548
+S
+#7505
+Russia Item Shop~
+~
+0 4 0 1
+S
+#7506
+Russia Colony Streets~
+~
+0 0 0 1
+D0
+~
+~
+1 -1 7545
+D1
+~
+~
+0 -1 7530
+D2
+~
+~
+0 -1 7504
+D3
+~
+~
+0 -1 7507
+S
+#7507
+A Dirt Path~
+~
+0 0 0 1
+D1
+~
+~
+0 -1 7506
+D3
+~
+~
+0 -1 7508
+S
+#7508
+A Dirt Path~
+~
+0 0 0 1
+D0
+~
+~
+0 -1 7509
+D1
+~
+~
+0 -1 7507
+S
+#7509
+A Bridge~
+~
+0 0 0 1
+D0
+~
+~
+0 -1 7510
+D2
+~
+~
+0 -1 7508
+S
+#7510
+A Bridge~
+~
+0 0 0 1
+D0
+~
+~
+0 -1 7511
+D2
+~
+~
+0 -1 7509
+S
+#7511
+A Bridge~
+~
+0 0 0 1
+D0
+~
+~
+0 -1 7512
+D2
+~
+~
+0 -1 7510
+D3
+~
+~
+0 -1 7560
+S
+#7512
+A Dirt Road~
+~
+0 0 0 1
+D1
+~
+~
+0 -1 7513
+D2
+~
+~
+0 -1 7511
+S
+#7513
+Tall Grass~
+~
+0 4 0 1
+D1
+~
+~
+0 -1 7514
+D3
+~
+~
+0 -1 7512
+S
+#7514
+Lake Front~
+&x            &w^^^^                   &Y@@@@@@@@@
+       &w^^^^       ^^^^            &Y@@@@@@@@@@@@@@@
+                            &Y@@@@@@@@@@@@@@@@@@             &w^^^^
+                           &Y@@@@@@@@@@@@@@@@@@@@
+ &B-=-=- -= -=-=-= -=-=-=-=- &r#################### &B-=-=-=- -=-=-=-=-=--=-
+ &b-         ==   -  =       &O"""""""""""""""""""" &b=       ==     --=
+ &B  =      ==      =- -- -=  &O""""""""""""" """"  &B=     -=-    = =-=  =--
+ &b  -  --     =         -      &O""""""  "" """    &b   =- - ==  =- -
+ &B-  -       - =      -           &O"" """"""  &B-      ==  -            -=
+ &b      =             -        =      =      =-   -=             =
+~
+0 0 0 1
+D1
+~
+~
+0 -1 7515
+D3
+~
+~
+0 -1 7513
+S
+#7515
+Tall Grass~
+~
+0 0 0 1
+D3
+~
+~
+0 -1 7514
+D8
+~
+~
+0 -1 7516
+S
+#7516
+Water Front Path~
+~
+0 0 0 1
+D7
+~
+~
+0 -1 7515
+D8
+~
+~
+0 -1 7517
+> speech_prog heal~
+mpat hologram mpforce hologram mpat kerepres mpdamage kerepres 30000
+~
+|
+S
+#7517
+Water Front Path~
+~
+0 0 0 1
+D2
+~
+~
+0 -1 7530
+D7
+~
+~
+0 -1 7516
+S
+#7518
+Tall Grass~
+~
+0 0 0 1
+D1
+~
+~
+0 -1 7519
+S
+#7519
+Tall Grass~
+~
+0 0 0 1
+D1
+~
+~
+2099211 -1 7520
+D3
+~
+~
+0 -1 7518
+S
+#7520
+Russia Military Base~
+You enter A Highly Operated Military Office From Russia.
+~
+0 0 0 1
+D0
+~
+~
+0 -1 7521
+D1
+~
+~
+0 -1 7522
+D3
+~
+~
+3 -1 7519
+S
+#7521
+Russia Factory~
+You walk into a factory that has been made by the Russia soldiers not to
+long ago. You may practice your making of weapons and armor here
+~
+0 67108864 0 1
+D2
+~
+~
+0 -1 7520
+S
+#7522
+Russia Hallway~
+You begin to walk the halls of the Military Base
+~
+0 0 0 1
+D0
+~
+~
+0 -1 7524
+D1
+~
+~
+0 -1 7525
+D2
+~
+~
+0 -1 7523
+D3
+~
+~
+0 -1 7520
+S
+#7523
+Military Testing Room~
+Here you see A Scientist testing on a Mobile Suit, You not want to disturb
+him of his testing
+~
+0 0 0 1
+D0
+~
+~
+0 -1 7522
+S
+#7524
+Lounge~
+Here you see the Lounge of the Soldiers and Scientist, they rest here and
+shoot the Bull awhile.
+~
+0 1024 0 1
+D2
+~
+~
+0 -1 7522
+S
+#7525
+Russia Hallway~
+~
+0 4 0 1
+D0
+~
+~
+0 -1 7526
+D1
+~
+~
+0 -1 7527
+D3
+~
+~
+0 -1 7522
+S
+#7526
+Weapon Shop~
+Not to far from you, you see a keeper selling weapons
+&B say Keeper to fetch him
+~
+0 0 0 1
+D2
+~
+~
+0 -1 7525
+S
+#7527
+Military Office~
+You walk into the Office of the Superiors. They donot seem interested in
+you
+~
+0 0 0 1
+D3
+~
+~
+0 -1 7525
+S
+#7528
+Bank of Russia~
+~
+0 256 0 1
+D3
+~
+~
+0 -1 7503
+S
+#7529
+Russia Armor Shop~
+~
+0 4 0 1
+S
+#7530
+Russia Colony Streets~
+~
+0 0 0 1
+D0
+~
+~
+0 -1 7517
+D1
+~
+~
+0 -1 7531
+D3
+~
+~
+0 -1 7506
+S
+#7531
+Russia Colony Streets~
+~
+0 0 0 1
+D0
+~
+~
+1 -1 7532
+D1
+~
+~
+0 -1 7547
+D3
+~
+~
+0 -1 7530
+S
+#7532
+FunFun Training Grounds~
+Welcome to the main center of Russia's training ground. The technicians who
+created this system, based the Holo-Fighters off of Anime's and Video
+Games to increase the fun. The Holo-Fighters will repop upon death to
+decrease wait time.
+~
+0 0 0 1
+D0
+~
+~
+0 -1 7533
+D1
+~
+~
+0 -1 7534
+D2
+~
+~
+33 -1 7531
+D3
+~
+~
+0 -1 7535
+D4
+~
+~
+0 -1 7540
+D5
+~
+~
+0 -1 7583
+D6
+~
+~
+0 -1 7536
+D7
+~
+~
+0 -1 7537
+D8
+~
+~
+0 -1 7538
+D9
+~
+~
+0 -1 7539
+S
+#7533
+Difficulty: 1~
+~
+0 0 0 1
+D2
+~
+~
+0 -1 7532
+S
+#7534
+Difficulty: 2~
+~
+0 0 0 1
+D3
+~
+~
+0 -1 7532
+S
+#7535
+Difficulty: 3~
+~
+0 0 0 1
+D1
+~
+~
+0 -1 7532
+S
+#7536
+Difficuly: 6~
+~
+0 0 0 1
+D9
+~
+~
+0 -1 7532
+S
+#7537
+Difficuly: 7~
+~
+0 0 0 1
+D8
+~
+~
+0 -1 7532
+S
+#7538
+Difficuly: 8~
+~
+0 0 0 1
+D7
+~
+~
+0 -1 7532
+S
+#7539
+Difficuly: 9~
+~
+0 0 0 1
+D6
+~
+~
+0 -1 7532
+S
+#7540
+Difficulty: 4~
+~
+0 0 0 1
+D5
+~
+~
+0 -1 7532
+S
+#7541
+A Vacant Apartment~
+~
+0 2097160 0 1
+D2
+~
+~
+0 -1 7542
+S
+#7542
+An Apartment Building~
+~
+0 12 0 1
+D0
+~
+~
+0 -1 7541
+D1
+~
+~
+1 -1 7502
+D2
+~
+~
+0 -1 7544
+D3
+~
+~
+0 -1 7543
+S
+#7543
+A Vacant Apartment~
+~
+0 2097164 0 1
+D1
+~
+~
+0 -1 7542
+S
+#7544
+A Vacant Apartment~
+~
+0 2097164 0 1
+D0
+~
+~
+0 -1 7542
+S
+#7545
+Food Court~
+~
+0 0 0 2
+D0
+~
+~
+0 -1 7599
+D1
+~
+~
+0 -1 7597
+D2
+~
+~
+0 -1 7506
+D3
+~
+~
+0 -1 7598
+S
+#7546
+Russia Training Area~
+~
+0 1028 0 1
+D3
+~
+~
+1 -1 7513
+S
+#7547
+Nurse Kayla's Home~
+Welcome to nurse Kayla's home. Her place is well decorated, even though it
+seems a bit unfurnished. She awaits young people who get hurt from
+training to fix them up. She loves her job, and the smiles on the peoples
+faces she helps, keeps her going.
+~
+0 8 2 1
+D3
+~
+~
+0 -1 7531
+S
+#7548
+A Short Dirt Path~
+~
+0 8388612 0 1
+D7
+~
+~
+0 -1 7504
+D8
+~
+~
+0 -1 7549
+S
+#7549
+The Russian Inn~
+~
+0 8388616 0 1
+D0
+~
+~
+0 -1 7550
+D1
+~
+~
+0 -1 7551
+D2
+~
+~
+0 -1 7552
+D7
+~
+~
+0 -1 7548
+S
+#7550
+Hotel Room~
+~
+0 8 0 1
+D2
+~
+~
+0 -1 7549
+S
+#7551
+Hotel Room~
+~
+0 8 0 1
+D3
+~
+~
+0 -1 7549
+S
+#7552
+Hotel Room~
+~
+0 8 0 1
+D0
+~
+~
+0 -1 7549
+S
+#7560
+Bushes~
+~
+0 16777220 0 1
+D1
+~
+~
+0 -1 7511
+D5
+~
+~
+0 -1 7561
+S
+#7561
+A Strange Hole~
+~
+0 8 0 1
+D2
+~
+~
+3 -1 7562
+S
+#7562
+A Small Room~
+~
+0 8 0 1
+D0
+~
+~
+1 -1 7561
+D1
+~
+~
+0 -1 7563
+S
+#7563
+Warehouse~
+~
+0 8 0 1
+D1
+~
+~
+0 -1 7564
+D2
+~
+~
+0 -1 7566
+D3
+~
+~
+0 -1 7562
+S
+#7564
+Warehouse~
+~
+0 8 0 1
+D2
+~
+~
+0 -1 7565
+D3
+~
+~
+0 -1 7563
+S
+#7565
+Warehouse~
+~
+0 8 0 1
+D0
+~
+~
+0 -1 7564
+D3
+~
+~
+0 -1 7566
+S
+#7566
+Warehouse~
+~
+0 8 0 1
+D0
+~
+~
+0 -1 7563
+D1
+~
+~
+0 -1 7565
+D2
+~
+~
+0 -1 7567
+S
+#7567
+A Party Room~
+&C#        &P#&p#&P#&p#&P#&p#&P#&p#&P#&p#
+    &C#&c#       &P#&p#&P#&p#&P#&p#&P#&p#
+    &C#&c#&C#      &P#&p#&P#&p#&P#&p#&P#
+    &C#&c#&C#&c#     &P#&p#&P#&p#&P#&p#
+    &C#&c#&C#&c#&C#    &P#&p#&P#&p#&P#
+    &C#&c#&C#&c#&C#&c#   &P#&p#&P#&p#
+    &C#&c#&C#&c#&C#&c#&C#  &P#&p#&P#
+    &C#&c#&C#&c#&C#&c#&C#&c# &P#&p#
+    &C#&c#&C#&c#&C#&c#&C#&c#&C#&P#
+            &B#&G#&g#&G#&g#&G#&g#&G#&g#
+           &b#&B# &g#&G#&g#&G#&g#&G#&g#
+          &B#&b#&B#  &G#&g#&G#&g#&G#&g#
+         &b#&B#&b#&B#   &g#&G#&g#&G#&g#
+        &B#&b#&B#&b#&B#    &G#&g#&G#&g#
+       &b#&B#&b#&B#&b#&B#     &g#&G#&g#
+      &B#&b#&B#&b#&B#&b#&B#      &G#&g#
+     &b#&B#&b#&B#&b#&B#&b#&B#       &g#
+    &B#&b#&B#&b#&B#&b#&B#&b#&B#
+       &b#&B#&b#&B#&b#&B#
+          &B#&b#&B#
+           &b#
+~
+0 1073741824 0 1
+D0
+~
+~
+0 -1 7566
+S
+#7568
+The Real Party~
+This is the confined party/hang out room. The lights are quite dim, with
+only one exit, up the ladder to the warehouse. This is usually where all
+the partiers run to and hide from the police when they come searching to
+bust them down.
+~
+0 0 0 1
+D4
+~
+~
+0 -1 7565
+S
+#7569
+Floating in a void~
+~
+0 1073741828 0 1
+S
+#7579
+Floating in a void~
+~
+0 4 0 1
+S
+#7580
+Gundam Z ~
+Through the Years Of Destiny, we have the Technology of scientist who know
+how to help us Soldiers
+The Gundam Z is the Best ship there is to be made, Hopefully the Scientists
+hurry up for the next ship to be
+made.
+~
+0 0 0 1
+D2
+~
+~
+0 -1 7581
+S
+#7581
+Gundam Z: Cockpit~
+Times fly by and only The Z can past the the Times of Hate, To Noone that
+knows soon they will fear The Gundam
+Z
+~
+0 0 0 1
+D0
+~
+~
+0 -1 7580
+S
+#7582
+Hell's Entrance~
+You enter War's Hell Warrior, famous for battles, This suit is highly
+Dangerious, becareful of This Suit.
+To enter Cockpit,&B say, Cockpit
+~
+0 4 0 1
+S
+#7583
+Difficulty: 5~
+~
+0 4 0 1
+D4
+~
+~
+0 -1 7532
+S
+#7590
+Entrance of Red Dragon~
+From here you search the area of The Red Dragon, Have a Nice Time, and
+Cheers for Victory on
+here.
+~
+0 4 0 1
+S
+#7591
+Void~
+~
+0 4 0 1
+S
+#7592
+Floating in a void~
+~
+0 4 0 1
+S
+#7594
+Turret 2~
+~
+0 4 0 1
+S
+#7595
+Turret2~
+~
+0 4 0 1
+D1
+~
+~
+0 -1 7598
+S
+#7596
+Security Office~
+This is a small customs office, a lone window is open, a fan is blowing in
+the corner, the heat is almost too much for the guard. He's simply here to
+warn you that wanted people have to watch out on this colony, as there are
+many police.
+~
+0 8 0 1
+D0
+~
+~
+0 -1 7501
+D2
+~
+~
+0 -1 7500
+S
+#7597
+Drinks R Us~
+~
+0 0 0 1
+D3
+~
+~
+0 -1 7545
+S
+#7598
+Candy Store~
+~
+0 4 0 1
+S
+#7599
+McDonalds~
+~
+0 4 0 1
+D2
+~
+~
+0 -1 7545
+S
+#0
+
+
+#RESETS
+O 1 7501 1 7545
+M 1 7553 1 7598
+G 1 7504 1
+G 1 7505 1
+M 1 7552 1 7599
+G 1 7503 1
+G 1 7502 1
+M 1 7554 1 7547
+O 1 7508 1 7550
+O 1 7508 1 7551
+O 1 7508 1 7552
+M 1 7555 1 7597
+G 1 7506 1
+G 1 7507 1
+M 1 7560 1 7533
+M 1 7561 1 7534
+M 1 7562 1 7561
+D 0 7561 2 1
+O 1 7509 1 7568
+M 1 7565 1 7596
+M 1 7564 1 7535
+M 1 7556 1 7540
+S
+
+
+#SHOPS
+ 7552   17 19  0  0  0   120  90         0 23    ; &PN&pi&rk&pk&Pi&C
+ 7553    0  0  0  0  0   120  90         0 23    ; &YE&Ou&Yr&Oi&Yk&Oa&C
+ 7555    0  0  0  0  0   120  90         0 23    ; &CV&ce&Cr&co&Cn&ci&Cc&ca&C
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+M  7563 spec_police_attack
+S
+
+
+#$

@@ -1,0 +1,182 @@
+#AREA   {PROTO} Cri's area in progress~
+
+
+
+#AUTHOR Cri~
+
+#RANGES
+0 0 0 0
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 0
+
+#MOBILES
+#0
+
+
+#OBJECTS
+#9301
+dress~
+&zA Long, B&wl&Wa&wc&zk Dress~
+A dress is here.~
+~
+13 0 8
+0 0 0 0
+1 0 0
+#9302
+ankle boots~
+a ankle boots~
+A ankle boots is here.~
+~
+13 0 64
+0 0 0 0
+1 0 0
+#9303
+hat~
+a hat~
+A hat is here.~
+~
+13 0 0
+0 0 0 0
+1 0 0
+#9304
+necklace~
+a necklace~
+A necklace is here.~
+~
+13 0 0
+0 0 0 0
+1 0 0
+#9305
+stockings~
+a stockings~
+A stockings is here.~
+~
+13 0 0
+0 0 0 0
+1 0 0
+#9306
+wings~
+a wings~
+A wings is here.~
+~
+13 0 0
+0 0 0 0
+1 0 0
+> wear_prog ~
+oecho Cri's Black Feathered Wings give a soft flap as they stretch out...
+~
+|
+#9307
+earrings~
+a earrings~
+A earrings is here.~
+~
+13 0 0
+0 0 0 0
+1 0 0
+#9308
+belt~
+a belt~
+A belt is here.~
+~
+13 0 0
+0 0 0 0
+1 0 0
+#0
+
+
+#ROOMS
+#9301
+Decending Pathway~
+~
+0 1073741824 0 1 0
+D5
+~
+~
+0 -1 9302
+S
+#9302
+Decending Pathway~
+~
+0 1073741824 0 1 0
+D4
+~
+~
+0 -1 9301
+D5
+~
+~
+0 -1 9303
+S
+#9303
+Decending Pathway~
+~
+0 1073741824 0 1 0
+D4
+~
+~
+0 -1 9302
+D5
+~
+~
+0 -1 9304
+S
+#9304
+Decending Pathway~
+~
+0 1073741824 0 1 0
+D4
+~
+~
+0 -1 9303
+D5
+~
+~
+0 -1 9305
+S
+#9305
+Decending Pathway~
+~
+0 1073741824 0 1 0
+D4
+~
+~
+0 -1 9304
+D5
+~
+~
+0 -1 9306
+S
+#9306
+Decending Pathway~
+~
+0 1073741824 0 1 0
+D4
+~
+~
+0 -1 9305
+S
+#0
+
+
+#RESETS
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

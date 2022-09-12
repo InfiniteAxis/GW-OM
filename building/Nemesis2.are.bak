@@ -1,0 +1,914 @@
+#AREA   {PROTO} Nemesis's area in progress~
+
+
+
+#AUTHOR Nemesis~
+
+#RANGES
+0 0 0 0
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 0
+
+#MOBILES
+#11201
+Reploid Citizen~
+&Wa &zr&we&Wp&wl&Wo&wi&zd &Cc&ci&Bt&ci&Bz&ce&Cn~
+&WA &zr&we&Wp&wl&Wo&wi&zd &Cc&ci&Bt&ci&Bz&ce&Cn&W walks by you.
+~
+~
+1 0 0 Z
+500 0 -1150 100d10+23000 50d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+100 100 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+if hasqbit($n) == 1
+say Hello there!
+else
+say 0101010000101101
+endif
+~
+|
+#11202
+Reploid Guard~
+&Wa &zr&we&Wp&wl&Wo&wi&zd &Cg&cu&Ca&cr&Cd&W~
+&WA &zr&we&Wp&wl&Wo&wi&zd &Cg&cu&Ca&cr&Cd&W stands at attention here.
+~
+~
+33554499 0 0 Z
+1000 0 -2400 200d10+40000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+if hasqbit($n) == 1
+say I see you have the implant. You can now understand us..
+say Welcome to the Colony.
+else
+say 010101010101000101011110110101
+say 1111010101010101010101
+mea $n The Robot guard hits a button, and you end up at the landing pad.
+mptransfer $n 11201
+~
+|
+#11203
+Reploid Child~
+&Wa &zr&we&Wp&wl&Wo&wi&zd &Gc&gh&Oi&gl&Gd&W~
+&WA &zr&we&Wp&wl&Wo&wi&zd &Gc&gh&Oi&gl&Gd&W walks around here joyfully.
+~
+~
+1 0 0 Z
+3 0 92 0d10+5000 0d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> all_greet_prog 100~
+if hasqbit($n) == 1
+say Hiya! How are you, $n?
+else
+say 01010100101010100110
+endif
+~
+|
+#11227
+Reploid Clerk~
+&Wa &zr&we&Wp&wl&Wo&wi&zd &Yc&pl&Oe&pr&Yk&W~
+&WA &zr&we&Wp&wl&Wo&wi&zd &Yc&pl&Oe&pr&Yk&W waits for you to buy something.
+~
+~
+167772163 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+> all_greet_prog 100~
+if hasqbit($n) == 1
+say Welcome to our little corner store, $n!
+say I hope you find what you're looking for.
+else
+say 01010101010000111010101101
+say 010101001010101011
+endif
+~
+|
+#0
+
+
+#OBJECTS
+#11201
+Binary Implant~
+&ca &Wb&wi&Wn&wa&Wr&wy &Ci&cm&Cp&cl&Ca&cn&Ct~
+A pair of small earphone looking objects have been misplaced here.~
+~
+9 0 65537
+5 5 0 0
+1 500000 50000
+> wear_prog 100~
+mea $n You place the implant on your ears. You feel a numbing sensation
+mea $n as nanoprobes release from the implants. They imbed inside of
+mea $n your brain, and you gain the knowledge of binary translation.
+mpqset $n 1
+~
+> remove_prog 100~
+mea $n The nanoprobes quickly submerge back into the binary implant. The
+mea $n numb sensation leaves your body, and you've lost the ability to
+mea $n understand binary code..
+mpqset $n 1
+~
+|
+#11202
+Z-Saber Hilt~
+&Wt&zh&we &RZ&r-&GS&ga&Ob&ge&Gr &Wh&wi&zl&Wt~
+&zThe &Whilt&z of a high tech &Bplasma &zblade lies here, broken.~
+~
+13 0 8193
+0 0 0 0
+1 0 0
+> wear_prog 100~
+mea $n You press the button as you wield it, but smoke sputters out instead.
+mea $n This thing needs fixed, badly!
+mpechoaround $n $n clicks a button on the hilt of the Z-Saber, but smoke
+mpechoaround $n starts to pour out. It eventually sputters out and dies.
+~
+|
+#11203
+Z-Saber Circuit~
+&Wa &RZ&r-&GS&ga&Ob&ge&Gr &wc&Wi&zr&wc&Wu&zi&wt~
+A Z-Saber Circuit is here.~
+~
+13 0 16385
+0 0 0 0
+1 0 0
+#11204
+Z-Saber Battery~
+&Wa &RZ&r-&GS&ga&Ob&ge&Gr &wb&Wa&zt&wt&We&zr&wy~
+&zA piece of the Z-Saber is here.~
+~
+65 0 1
+5000 0 0 0
+1 5000 500
+#11205
+Z-Saber Blade Trigger~
+&Wt&zh&we &RZ&r-&GS&ga&Ob&ge&Gr &wb&Wl&za&wd&ze &ct&Cr&Bi&bg&Bg&Ce&cr~
+&zThe trigger mechanism for the plasma blade of the Z-Saber lies here.~
+~
+13 0 1
+0 0 0 0
+1 0 0
+#11206
+the Z-Saber~
+&Wt&zh&we &RZ&r-&GS&ga&Ob&ge&Gr~
+&zA &Wmetallic&z hilt with a &Gg&gr&Oe&ge&Gn &bplasma&z blade lies here.~
+~
+5 0 8193
+25 10 150 3 5000 5000
+1 0 0
+A
+19 34
+A
+18 24
+> wear_prog 100~
+mea $n You hit the button on the hilt as you twirl it around with great ease.
+mea $n The beam emits a beautiful green glow. It looks like it could cut 
+mea $n through diamond!
+mpechoaround $n $n clicks a button on the hilt of the Z-Saber as they swivel
+mpechoaround $n it around them with great mastery. They look like they could
+mpechoaround $n cut through diamond with it!
+~
+> remove_prog 100~
+mea $n You click the button again, swirling the hilt around one more time
+mea $n before holstering it on your belt.
+mpechoaround $n The radiance fades as $n clicks a button on the Z-Saber's hilt.
+mpechoaround $n They twirl it around once before holstering it on their belt.
+~
+|
+#11210
+beam voulge~
+&Wa &Gb&ge&Oa&Gm &Cv&co&bu&Bl&cg&Ce~
+&zA hilt with two blade exits lies here, it appears to be a voulge.~
+~
+5 524289 8193
+50 15 80 3 1000 1000
+1 14242 1424
+A
+19 2
+A
+18 2
+> wear_prog 100~
+mea $n As you press the button in the middle of the hilt, two beam blades
+mea $n emerge from the handle. They glow a radiant green color as they pulsate.
+mpechoaround $n $n hits a button on the handle, and green beams emerge
+mpechoaround $n from the hilt. They pulsate radiantly.
+~
+> remove_prog 100~
+mea $n You hit the button once more, and the beams fade.
+mpechoaround $n $n presses a button, and the beams fade as it's unequipped.
+~
+|
+#11211
+Heat Hawk~
+&Wa &RH&re&Oa&Rt &OH&raw&Ok~
+&WAn axe handle lies here, with a blunted blade.~
+~
+5 0 8193
+25 10 123 1 1000 1000
+1 13000 1300
+> wear_prog 100~
+mea $n You grasp the handle of the axe, which triggers the blade. The blunt
+mea $n edge of the Heat Hawk glows orange. It seems like it could cut through
+mea $n nearly anything
+mpechoaround $n $n grasps the Heat Hawk's handle. The blade emits an Orange
+mpechoaround $n glow.
+~
+> remove_prog 100~
+mea $n You release the handle of the Heat Hawk, and its blade fades.
+mpechoaround $n The Heat Hawk's beam blade fades as $n releases its handle.
+~
+|
+#11212
+mini-beam rifle~
+&Wa &Cm&ci&Cn&ci&B-&Gb&Oe&ga&Gm &zr&wi&Wf&wl&ze~
+&WA &Cm&ci&Cn&ci&B-&Gb&Oe&ga&Gm &zr&wi&Wf&wl&ze&z is lying here, unused.~
+~
+5 0 8193
+20 10 120 6 5000 5000
+1 15000 1500
+A
+19 4
+A
+13 500
+> wear_prog 100~
+mea $n You snap the clip into place, as the circuitry loads up.
+mpechoaround $n $n snaps the energy clip in place as a humming sound is
+mpechoaround $n heard from the rifle.
+~
+> remove_prog 100~
+mea $n You press a few buttons on the rifle, and it shuts down.
+mpechoaround $n $n hits a few buttons, and the beam rifle powers down.
+~
+|
+#11213
+Nailbunny's Head~
+&WN&wa&Wi&wl&Pb&pu&Pn&pn&Py&c'&Cs &GH&Oe&ga&Gd~
+&WN&wa&Wi&wl&Pb&pu&Pn&pn&Py&c'&Cs &GH&Oe&ga&Gd&z lies here.~
+~
+9 0 16385
+20 20 0 0
+1 15000 1500
+A
+19 12
+A
+18 12
+A
+13 1000
+#11214
+Cybernetic Chestplate~
+&Wa &Cc&cyberneti&Cc &Gc&gh&Oe&gs&Gt&Pp&pl&Pa&pt&Pe~
+&WA &Cc&cyberneti&Cc &Gc&gh&Oe&gs&Gt&Pp&pl&Pa&pt&Pe&w lies here.~
+~
+9 0 9
+40 40 0 0
+1 15000 1500
+A
+17 -75
+A
+19 5
+A
+18 5
+> wear_prog 100~
+mea $n &wYou slip into the cybernetic armor, and the processors hum with
+mea $n activity. They scan your body and contort to a perfect fit.
+mpechoaround $n &C$n&z slips into their cybernetic armor, and a humming sound
+mpechoaround $n is heard as the armor contorts to their body.
+~
+|
+#11215
+metallic vest~
+&Wa &zm&We&wt&Wa&wl&Wl&wi&zc &Rv&re&ps&Rt&W~
+&WA &zm&We&wt&Wa&wl&Wl&wi&zc &Rv&re&ps&Rt&W lies here gathering dust.~
+~
+9 0 9
+5 5 0 0
+1 250 25
+A
+17 -14
+#11216
+metallic armguards~
+&Wa pair of &zm&We&wt&Wa&wl&Wl&wi&zc &Ra&rr&Rm&pg&Ru&ra&pr&rd&Rs&W~
+&WSome &zm&We&wt&Wa&wl&Wl&wi&zc &Ra&rr&Rm&pg&Ru&ra&pr&rd&Rs&W lay here gathering dust.~
+~
+9 0 257
+5 5 0 0
+1 250 25
+A
+17 -20
+#11217
+metallic shinguards~
+&Wa pair of &zm&We&wt&Wa&wl&Wl&wi&zc &Rs&rh&Ri&rn&pg&Ru&ra&pr&rd&Rs&W~
+&WA pair of &zm&We&wt&Wa&wl&Wl&wi&zc &Rs&rh&ri&Rn&pg&Ru&ra&pr&rd&Rs&W lay here gathering dust.~
+~
+9 0 33
+5 6 0 0
+1 250 25
+A
+17 -20
+#11218
+metallic wristbands~
+&Wa &zm&We&wt&Wa&wl&Wl&wi&zc &Rw&rr&Ri&rs&pt&Rb&ra&pn&rd&W~
+&WA &zm&We&wt&Wa&wl&Wl&wi&zc &Rw&rr&Ri&rs&pt&Rb&ra&pn&rd&W lies here, gathering dust.~
+~
+9 0 4097
+5 5 0 0
+1 250 25
+A
+17 -20
+A
+13 100
+#11219
+metallic helmet~
+&Wa &zm&Wet&wa&Wl&wl&Wi&zc &Rh&re&pl&rm&pe&Rt~
+&WA &zm&Wet&wa&Wl&wl&Wi&zc &Rh&re&pl&rm&pe&Rt&W lies here, unused.~
+~
+9 0 17
+5 5 0 0
+1 300 30
+A
+17 -40
+#11220
+Nemesis doll~
+&Wa &zd&Wr&wu&Wn&wk&We&zn &zN&Re&rmes&Ri&zs &Cd&col&Cl~
+&WA tall &zd&Wr&wu&Wn&wk&We&zn&W doll sits here, slurring its words and drinking liquor.~
+~
+9 0 16385
+40 40 0 0
+1 75000 7500
+A
+17 -75
+A
+18 15
+A
+19 8
+A
+13 750
+> wear_prog 100~
+if name ($n) == Aelysse
+mea $n The drunken doll steals an alchohol bottle from your stash.
+mea $n It gulps it down, and then starts to dryhump your kneecap.
+mpechoaround $n $n is suddenly dryhumped by the Nemesis doll!
+if name ($n) == Hydro
+mea $n The doll shouts, 'Get the fuck out of my country, Mexican!'
+mpechoaround $n $n is assaulted by the drunken doll!
+if name ($n) == Crystal
+mea $n The doll hops at your face and licks your eye!
+mpechoaround $n $n gets their eye licked by the drunken doll!
+if name ($n) == Cray
+mea $n The doll pickets next to you shouting, 'White Paur!'
+mpechoaround $n 'White Paur' is shouted from behind $n by a doll.
+if name ($n) == Nemesis
+mea $n The doll cracks open its canteen and gets drunk next to you.
+mpechoaround $n The scent of liquor fills the air as a doll gets drunk
+mpechoaround $n beside $n.
+else
+mea $n The doll screams, 'Weeed! Hoooo's! Dough!! That's all we *hiccup*'
+mea $n before passing out.
+mpechoaround $n Drunken screams are heard.. Then a thud. A doll falls over.
+endif
+endif
+endif
+endif
+endif
+~
+|
+#11221
+Nemesis' soul~
+&zN&Re&rmes&Ri&zs&r' &zS&wo&Wu&zl~
+&zA whispy &Ga&gu&Or&Ga&z in the form of a &zS&wo&Wu&zl&z floats about here&O.&Y.~
+~
+1 0 513
+0 0 10000000 0
+1 24000 2400
+A
+19 22
+A
+18 12
+> wear_prog 100~
+mea $n You feel the soul of Nemesis protecting you.
+mpechoaround $n $n is covered in a faint purple aura from Nemesis' soul.
+~
+> remove_prog 100~
+mea $n You see the soul dissipate before your eyes.
+mpechoaround $n The purple aura around $n dissipates.
+~
+|
+#0
+
+
+#ROOMS
+#11201
+Reploid Colony XA221~
+The landing pad of XA221 is a large one, with a very shiny coat of titanium
+across the landing pad. Several reploids walk about their business, not
+caring about the hulking behomeths that are mobile suits. There is an exit
+to the north.
+~
+0 1073741832 0 1 0
+D0
+~
+~
+0 -1 11202
+S
+#11202
+Reploid Colony XA221 - Intersection~
+~
+0 1073741836 0 1 0
+D0
+~
+~
+0 -1 11219
+D1
+~
+~
+0 -1 11211
+D2
+~
+~
+0 -1 11201
+D3
+~
+~
+0 -1 11203
+S
+#11203
+Reploid Colony XA221 - Binary Street~
+~
+0 1073741832 0 1 0
+D0
+~
+~
+0 -1 11227
+D1
+~
+~
+0 -1 11202
+D3
+~
+~
+0 -1 11204
+S
+#11204
+Reploid Colony XA221 - Binary Street~
+~
+0 1073741832 0 1 0
+D1
+~
+~
+0 -1 11203
+D3
+~
+~
+0 -1 11205
+S
+#11205
+Reploid Colony XA221 - Binary Street~
+~
+0 1073741832 0 1 0
+D1
+~
+~
+0 -1 11204
+D3
+~
+~
+0 -1 11206
+S
+#11206
+Reploid Colony XA221 - Binary Street~
+~
+0 1073741832 0 1 0
+D1
+~
+~
+0 -1 11205
+D3
+~
+~
+0 -1 11207
+S
+#11207
+Reploid Colony XA221 - Binary Street~
+~
+0 1073741832 0 1 0
+D1
+~
+~
+0 -1 11206
+D3
+~
+~
+0 -1 11208
+S
+#11208
+Reploid Colony XA221 - Binary Street~
+~
+0 1073741832 0 1 0
+D1
+~
+~
+0 -1 11207
+D3
+~
+~
+0 -1 11209
+S
+#11209
+Reploid Colony XA221 - Binary Street~
+~
+0 1073741832 0 1 0
+D1
+~
+~
+0 -1 11208
+D3
+~
+~
+0 -1 11210
+S
+#11210
+Reploid Colony XA221 - Binary Street~
+~
+0 1073741832 0 1 0
+D1
+~
+~
+0 -1 11209
+S
+#11211
+Reploid Colony XA221 - Hexadecimal Street~
+~
+0 1073741832 0 1 0
+D1
+~
+~
+0 -1 11212
+D3
+~
+~
+0 -1 11202
+S
+#11212
+Reploid Colony XA221 - Hexadecimal Street~
+~
+0 1073741832 0 1 0
+D1
+~
+~
+0 -1 11213
+D3
+~
+~
+0 -1 11211
+S
+#11213
+Reploid Colony XA221 - Hexadecimal Street~
+~
+0 1073741832 0 1 0
+D1
+~
+~
+0 -1 11214
+D3
+~
+~
+0 -1 11212
+S
+#11214
+Reploid Colony XA221 - Hexadecimal Street~
+~
+0 1073741832 0 1 0
+D1
+~
+~
+0 -1 11215
+D3
+~
+~
+0 -1 11213
+S
+#11215
+Reploid Colony XA221 - Hexadecimal Street~
+~
+0 1073741832 0 1 0
+D1
+~
+~
+0 -1 11216
+D3
+~
+~
+0 -1 11214
+S
+#11216
+Reploid Colony XA221 - Hexadecimal Street~
+~
+0 1073741832 0 1 0
+D3
+~
+~
+0 -1 11215
+S
+#11217
+Reploid Colony XA221 - Hexadecimal Street~
+~
+0 1073741836 0 1 0
+S
+#11218
+Reploid Colony XA221 - Hexadecimal Street~
+~
+0 1073741836 0 1 0
+S
+#11219
+Reploid Colony XA221 - Octal Avenue~
+~
+0 1073741832 0 1 0
+D0
+~
+~
+0 -1 11220
+D2
+~
+~
+0 -1 11202
+D3
+~
+~
+0 -1 11227
+S
+#11220
+Reploid Colony XA221 - Octal Avenue~
+~
+0 1073741832 0 1 0
+D0
+~
+~
+0 -1 11221
+D2
+~
+~
+0 -1 11219
+S
+#11221
+Reploid Colony XA221 - Octal Avenue~
+~
+0 1073741832 0 1 0
+D0
+~
+~
+0 -1 11222
+D2
+~
+~
+0 -1 11220
+S
+#11222
+Reploid Colony XA221 - Octal Avenue~
+~
+0 1073741832 0 1 0
+D0
+~
+~
+0 -1 11223
+D2
+~
+~
+0 -1 11221
+S
+#11223
+Reploid Colony XA221 - Octal Avenue~
+~
+0 1073741832 0 1 0
+D0
+~
+~
+0 -1 11224
+D2
+~
+~
+0 -1 11222
+S
+#11224
+Reploid Colony XA221 - Octal Avenue~
+~
+0 1073741832 0 1 0
+D0
+~
+~
+0 -1 11225
+D2
+~
+~
+0 -1 11223
+S
+#11225
+Reploid Colony XA221 - Octal Avenue~
+~
+0 1073741832 0 1 0
+D0
+~
+~
+0 -1 11226
+D2
+~
+~
+0 -1 11224
+S
+#11226
+Reploid Colony XA221 - Octal Avenue~
+~
+0 1073741832 0 1 0
+D2
+~
+~
+0 -1 11225
+S
+#11227
+Reploid Colony XA221 - Corner Store~
+~
+0 1073741828 0 1 0
+D1
+~
+~
+0 -1 11219
+D2
+~
+~
+0 -1 11203
+S
+#11228
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#11229
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#11230
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#11231
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#11232
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#11233
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#11234
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#11235
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#11236
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#11237
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#11238
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#11239
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#11240
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#11241
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#11242
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#11243
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#11244
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#11245
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#11246
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#11247
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#11248
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#11249
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#11250
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#0
+
+
+#RESETS
+M 1 11202 1 11202
+M 1 11201 4 11203
+M 1 11201 4 11207
+M 1 11201 4 11215
+M 1 11201 4 11216
+M 1 11203 2 11219
+M 1 11203 2 11221
+M 1 11227 1 11227
+G 1 11215 1
+G 1 11216 1
+G 1 11217 1
+G 1 11218 1
+G 1 11219 1
+S
+
+
+#SHOPS
+ 11227    5  0  0  0  0   120  90         0 23    ; &Wa &zr&we&Wp&wl&Wo&wi&zd &Yc&pl&Oe&pr&Yk&W
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

@@ -1,0 +1,214 @@
+#AREA   {PROTO} Trent's area in progress~
+
+
+
+#AUTHOR Trent~
+
+#RANGES
+0 0 0 0
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 22349
+
+#MOBILES
+#0
+
+
+#OBJECTS
+#7500
+power money women~
+Power.. and money!!... and.... women!~
+Power.. and money!!... and.... women!~
+~
+78 0 1
+0 100 0 0
+1 0 0
+#7501
+asthana's clothes~
+a asthana's clothes~
+A asthana's clothes is here.~
+~
+13 0 9
+0 0 0 0
+1 0 0
+#7502
+gambini~
+a gambini~
+A gambini is here.~
+~
+82 0 0
+0 0 0 0
+1 0 0
+#0
+
+
+#ROOMS
+#7500
+Mobile Colony C13 Cockpit~
+~
+0 1075838980 1
+D2
+~
+~
+0 -1 7501
+> speech_prog immforcelevels~
+mpgain $n 7 300000
+~
+|
+S
+#7501
+Mobile Colony C13 Engine Room~
+~
+0 1073741828 1
+D0
+~
+~
+0 -1 7500
+D1
+~
+~
+0 -1 7502
+D3
+~
+~
+0 -1 7503
+D5
+~
+~
+0 -1 7504
+S
+#7502
+Turret One~
+~
+0 1073741828 1
+D3
+~
+~
+0 -1 7501
+S
+#7503
+Turret Two~
+~
+0 1073741828 1
+D1
+~
+~
+0 -1 7501
+S
+#7504
+Mobile Colony C13 Landing Pad~
+~
+0 1073741828 1
+D4
+~
+~
+0 -1 7501
+S
+#7505
+Floating in a void~
+~
+0 1073741828 1
+S
+#7506
+Floating in a void~
+~
+0 1073741828 1
+S
+#7507
+Floating in a void~
+~
+0 1073741828 1
+S
+#7508
+Floating in a void~
+~
+0 1073741828 1
+S
+#7509
+Floating in a void~
+~
+0 1073741828 1
+S
+#7510
+Floating in a void~
+~
+0 1073741828 1
+S
+#7511
+Floating in a void~
+~
+0 1073741828 1
+S
+#7512
+Floating in a void~
+~
+0 1073741828 1
+S
+#7513
+Floating in a void~
+~
+0 1073741828 1
+S
+#7514
+Floating in a void~
+~
+0 1073741828 1
+S
+#7515
+Floating in a void~
+~
+0 1073741828 1
+S
+#7516
+Floating in a void~
+~
+0 1073741828 1
+S
+#7517
+Floating in a void~
+~
+0 1073741828 1
+S
+#7518
+Floating in a void~
+~
+0 1073741828 1
+S
+#7519
+Floating in a void~
+~
+0 1073741828 1
+S
+#7520
+Floating in a void~
+~
+0 1073741828 1
+S
+#7599
+Floating in a void~
+~
+0 1073741828 1
+S
+#0
+
+
+#RESETS
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

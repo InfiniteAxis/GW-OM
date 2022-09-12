@@ -1,0 +1,4592 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         Libra~
+Author       Asuka~
+Ranges       1 1007 1 1007
+Economy      0 181445185
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       600
+Keywords   Level 1 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 1 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 100 0 -150 100 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 3 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 601
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       601
+Keywords   Level 1 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 1 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 100 0 -150 100 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 3 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 602
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       602
+Keywords   Level 1 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 1 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 100 0 -150 100 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 3 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 603
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       603
+Keywords   Level 1 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 1 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 100 0 -150 100 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 3 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 604
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       604
+Keywords   Level 1 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 1 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 100 0 -150 100 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 3 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 605
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       605
+Keywords   Level 1 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 1 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 100 0 -150 100 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 3 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 601
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       606
+Keywords   Turret~
+Short      A turret~
+Long       A robotic like turret is here ready too shoot.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Affected   invisible detect_invis detect_hidden hide~
+Stats1     0 1000 0 -2400 0 0
+Stats2     1 20 29999
+Stats3     100 40 1000
+Stats4     0 0 3 200 200
+Attribs    20 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       607
+Keywords   Guardian~
+Short      A Guardian~
+Long       A shadowy creature is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc aggressive nocorpse~
+Affected   invisible detect_invis detect_hidden~
+Stats1     0 1000 0 -2400 0 0
+Stats2     1 1 49999
+Stats3     5 5 750
+Stats4     0 0 4 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+#ENDMOBILE
+
+#MOBILE
+Vnum       608
+Keywords   Akamos~
+Short      Akamos~
+Long       A stiff old creature is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Affected   detect_invis detect_hidden~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Might~
+Comlist   if ovnuminv(611)
+if ovnuminv(612)
+if ovnuminv(613)
+if ovnuminv(614)
+mpjunk disk
+mpjunk disk
+mpjunk disk
+mpjunk disk
+mea $n Flowing energy appears out of nowhere.
+mpoload 616
+give might $n
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Comsystem~
+Comlist   if ovnuminv(611)
+if ovnuminv(612)
+if ovnuminv(613)
+if ovnuminv(614)
+mpjunk disk
+mpjunk disk
+mpjunk disk
+mpjunk disk
+mea $n A magical comsystem appears out of nowhere.
+mpoload 601
+give comsystem $n
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Shirt~
+Comlist   if ovnuminv(611)
+if ovnuminv(612)
+if ovnuminv(613)
+if ovnuminv(614)
+mpjunk disk
+mpjunk disk
+mpjunk disk
+mpjunk disk
+mea $n A magical shirt appears out of nowhere.
+mpoload 607
+give shirt $n
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       609
+Keywords   Robotic Guard~
+Short      A robotic guard~
+Long       A robotic guard is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel aggressive nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     1 1 24999
+Stats3     1 1 2
+Stats4     0 0 4 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+#ENDMOBILE
+
+#MOBILE
+Vnum       610
+Keywords   Level 2 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 2 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 20 0 50 150 0
+Stats2     4 10 200
+Stats3     2 4 2
+Stats4     0 0 3 4 4
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 611
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       611
+Keywords   Level 2 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 2 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 200 0 -400 150 0
+Stats2     40 10 2000
+Stats3     20 4 2
+Stats4     0 0 3 40 40
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 612
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       612
+Keywords   Level 2 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 2 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 200 0 -400 150 0
+Stats2     40 10 2000
+Stats3     20 4 2
+Stats4     0 0 3 40 40
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 613
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       613
+Keywords   Level 2 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 2 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 200 0 -400 150 0
+Stats2     40 10 2000
+Stats3     20 4 2
+Stats4     0 0 3 40 40
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 614
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       614
+Keywords   Level 2 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 2 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 200 0 -400 150 0
+Stats2     40 10 2000
+Stats3     20 4 2
+Stats4     0 0 3 40 40
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 615
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       615
+Keywords   Level 2 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 2 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 200 0 -400 150 0
+Stats2     40 10 2000
+Stats3     20 4 2
+Stats4     0 0 3 40 40
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 611
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       616
+Keywords   Preventor Earth~
+Short      Preventor Earth~
+Long       A Preventor is here standing tall and strong.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Affected   truesight~
+Stats1     0 1000 0 -2400 0 0
+Stats2     1 1 149999
+Stats3     100 4 2
+Stats4     0 0 8 22 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   parry~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpoload 611
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       617
+Keywords   Preventor Water~
+Short      Preventor Water~
+Long       A Preventor is here standing tall and strong.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Affected   truesight~
+Stats1     0 1000 0 -2400 0 0
+Stats2     1 1 149999
+Stats3     100 4 2
+Stats4     0 0 8 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   parry~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpoload 612
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       618
+Keywords   Preventor Fire~
+Short      Preventor Fire~
+Long       A Preventor is here standing tall and strong.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Affected   truesight~
+Stats1     0 1000 0 -2400 0 0
+Stats2     1 1 149999
+Stats3     100 4 2
+Stats4     0 0 8 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   parry~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpoload 613
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       619
+Keywords   Preventor Wind~
+Short      Preventor Wind~
+Long       A Preventor is here standing tall and strong.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Affected   truesight~
+Stats1     0 1000 0 -2400 0 0
+Stats2     1 1 249999
+Stats3     100 4 2
+Stats4     0 0 9 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   parry~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpoload 614
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       620
+Keywords   Level 3 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 3 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 300 0 -650 200 0
+Stats2     60 10 3000
+Stats3     30 4 2
+Stats4     0 0 3 60 60
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 621
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       621
+Keywords   Level 3 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 3 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 300 0 -650 200 0
+Stats2     60 10 3000
+Stats3     30 4 2
+Stats4     0 0 3 60 60
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 622
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       622
+Keywords   Level 3 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 3 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 300 0 -650 200 0
+Stats2     60 10 3000
+Stats3     30 4 2
+Stats4     0 0 3 60 60
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 623
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       623
+Keywords   Level 3 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 3 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 300 0 -650 200 0
+Stats2     60 10 3000
+Stats3     30 4 2
+Stats4     0 0 3 60 60
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 624
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       624
+Keywords   Level 3 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 3 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 300 0 -650 200 0
+Stats2     60 10 3000
+Stats3     30 4 2
+Stats4     0 0 3 60 60
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 625
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       625
+Keywords   Level 3 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 3 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 300 0 -650 200 0
+Stats2     60 10 3000
+Stats3     30 4 2
+Stats4     0 0 3 60 60
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 621
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       626
+Keywords   Fragen~
+Short      Fragen~
+Long       An old man is standing here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       627
+Keywords   Cylias~
+Short      Cylias~
+Long       An old man is lying here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    25 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   15 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       628
+Keywords   Weary Solider~
+Short      Weary Soldier~
+Long       A weary soldier drones about.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Affected   invisible hide~
+Stats1     0 1000 0 -2400 0 0
+Stats2     1 1 24999
+Stats3     100 4 2
+Stats4     0 0 4 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    punch kick~
+#ENDMOBILE
+
+#MOBILE
+Vnum       630
+Keywords   Level 4 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 4 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 400 0 -900 250 0
+Stats2     80 10 4000
+Stats3     40 4 2
+Stats4     0 0 3 80 80
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 631
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       631
+Keywords   Level 4 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 4 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 400 0 -900 250 0
+Stats2     80 10 4000
+Stats3     40 4 2
+Stats4     0 0 3 80 80
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 632
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       632
+Keywords   Level 4 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 4 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 400 0 -900 250 0
+Stats2     80 10 4000
+Stats3     40 4 2
+Stats4     0 0 3 80 80
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 633
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       633
+Keywords   Level 4 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 4 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 400 0 -900 250 0
+Stats2     80 10 4000
+Stats3     40 4 2
+Stats4     0 0 3 80 80
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 634
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       634
+Keywords   Level 4 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 4 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 400 0 -900 250 0
+Stats2     80 10 4000
+Stats3     40 4 2
+Stats4     0 0 3 80 80
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 635
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       635
+Keywords   Level 4 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 4 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 400 0 -900 250 0
+Stats2     80 10 4000
+Stats3     40 4 2
+Stats4     0 0 3 80 80
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 631
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       639
+Keywords   Wandering Soul~
+Short      A Wandering Soul~
+Long       A soul is wandering here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Affected   invisible~
+Stats1     0 10 0 75 100 0
+Stats2     2 10 100
+Stats3     1 4 2
+Stats4     0 0 0 2 2
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#ENDMOBILE
+
+#MOBILE
+Vnum       640
+Keywords   Level 5 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 5 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 500 0 -1150 300 0
+Stats2     100 10 5000
+Stats3     50 4 2
+Stats4     0 0 3 100 100
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 641
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       641
+Keywords   Level 5 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 5 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 500 0 -1150 300 0
+Stats2     100 10 5000
+Stats3     50 4 2
+Stats4     0 0 3 100 100
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 642
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       642
+Keywords   Level 5 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 5 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 500 0 -1150 300 0
+Stats2     100 10 5000
+Stats3     50 4 2
+Stats4     0 0 3 100 100
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 643
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       643
+Keywords   Level 5 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 5 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 500 0 -1150 300 0
+Stats2     100 10 5000
+Stats3     50 4 2
+Stats4     0 0 3 100 100
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 644
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       644
+Keywords   Level 5 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 5 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 500 0 -1150 300 0
+Stats2     100 10 5000
+Stats3     50 4 2
+Stats4     0 0 3 100 100
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 645
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       645
+Keywords   Level 5 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 5 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 500 0 -1150 300 0
+Stats2     100 10 5000
+Stats3     50 4 2
+Stats4     0 0 3 100 100
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 641
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       650
+Keywords   Level 6 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 6 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 600 0 -1400 350 0
+Stats2     120 10 6000
+Stats3     60 4 2
+Stats4     0 0 3 120 120
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 651
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       651
+Keywords   Level 6 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 6 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 600 0 -1400 350 0
+Stats2     120 10 6000
+Stats3     60 4 2
+Stats4     0 0 3 120 120
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 652
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       652
+Keywords   Level 6 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 6 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 600 0 -1400 350 0
+Stats2     120 10 6000
+Stats3     60 4 2
+Stats4     0 0 3 120 120
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 653
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       653
+Keywords   Level 6 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 6 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 600 0 -1400 350 0
+Stats2     120 10 6000
+Stats3     60 4 2
+Stats4     0 0 3 120 120
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 654
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       654
+Keywords   Level 6 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 6 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 600 0 -1400 350 0
+Stats2     120 10 6000
+Stats3     60 4 2
+Stats4     0 0 3 120 120
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 655
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       655
+Keywords   Level 6 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 6 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 600 0 -1400 350 0
+Stats2     120 10 6000
+Stats3     60 4 2
+Stats4     0 0 3 120 120
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 651
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       660
+Keywords   Level 7 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 7 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 700 0 -1650 400 0
+Stats2     140 10 7000
+Stats3     70 4 2
+Stats4     0 0 3 140 140
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 661
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       661
+Keywords   Level 7 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 7 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 700 0 -1650 400 0
+Stats2     140 10 7000
+Stats3     70 4 2
+Stats4     0 0 3 140 140
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 662
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       662
+Keywords   Level 7 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 7 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 700 0 -1650 400 0
+Stats2     140 10 7000
+Stats3     70 4 2
+Stats4     0 0 3 140 140
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 663
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       663
+Keywords   Level 7 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 7 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 700 0 -1650 400 0
+Stats2     140 10 7000
+Stats3     70 4 2
+Stats4     0 0 3 140 140
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 664
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       664
+Keywords   Level 7 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 7 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 700 0 -1650 400 0
+Stats2     140 10 7000
+Stats3     70 4 2
+Stats4     0 0 3 140 140
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 665
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       665
+Keywords   Level 7 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 7 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 700 0 -1650 400 0
+Stats2     140 10 7000
+Stats3     70 4 2
+Stats4     0 0 3 140 140
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 661
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       666
+Keywords   Punching Bag~
+Short      Sparring Partner~
+Long       A Level 9 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 900 0 -2150 450 0
+Stats2     180 10 9000
+Stats3     90 4 2
+Stats4     0 0 3 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   1~
+Comlist   mpoload 11511
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       670
+Keywords   Level 8 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 8 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 800 0 -1900 450 0
+Stats2     160 10 8000
+Stats3     80 4 2
+Stats4     0 0 3 160 160
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 671
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       671
+Keywords   Level 8 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 8 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 800 0 -1900 450 0
+Stats2     160 10 8000
+Stats3     80 4 2
+Stats4     0 0 3 160 160
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 672
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       672
+Keywords   Level 8 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 8 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 800 0 -1900 450 0
+Stats2     160 10 8000
+Stats3     80 4 2
+Stats4     0 0 3 160 160
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 673
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       673
+Keywords   Level 8 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 8 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 800 0 -1900 450 0
+Stats2     160 10 8000
+Stats3     80 4 2
+Stats4     0 0 3 160 160
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 674
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       674
+Keywords   Level 8 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 8 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 800 0 -1900 450 0
+Stats2     160 10 8000
+Stats3     80 4 2
+Stats4     0 0 3 160 160
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 675
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       675
+Keywords   Level 8 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 8 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 800 0 -1900 450 0
+Stats2     160 10 8000
+Stats3     80 4 2
+Stats4     0 0 3 160 160
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 671
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       680
+Keywords   Level 9 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 9 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 900 0 -2150 450 0
+Stats2     180 10 9000
+Stats3     90 4 2
+Stats4     0 0 3 180 180
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 681
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       681
+Keywords   Level 9 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 9 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 900 0 -2150 450 0
+Stats2     180 10 9000
+Stats3     90 4 2
+Stats4     0 0 3 180 180
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 682
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       682
+Keywords   Level 9 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 9 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 900 0 -2150 450 0
+Stats2     180 10 9000
+Stats3     90 4 2
+Stats4     0 0 3 180 180
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 683
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       683
+Keywords   Level 9 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 9 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 900 0 -2150 450 0
+Stats2     180 10 9000
+Stats3     90 4 2
+Stats4     0 0 3 180 180
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 684
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       684
+Keywords   Level 9 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 9 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 900 0 -2150 450 0
+Stats2     180 10 9000
+Stats3     90 4 2
+Stats4     0 0 3 180 180
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 685
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       685
+Keywords   Level 9 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 9 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 900 0 -2150 450 0
+Stats2     180 10 9000
+Stats3     90 4 2
+Stats4     0 0 3 180 180
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 681
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       686
+Keywords   Punching Bag~
+Short      A punching bag~
+Long       A punching bag is hanging here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     10000 10000 3000000
+Stats3     1 1 1
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+#MUDPROG
+Progtype  death_prog~
+Arglist   1~
+Comlist   mpmload 666
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  death_prog~
+Arglist   2~
+Comlist   mpoload 11511
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       690
+Keywords   Level 10 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 10 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 500 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 3 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 691
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       691
+Keywords   Level 10 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 10 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 500 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 3 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 692
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       692
+Keywords   Level 10 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 10 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 500 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 3 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 693
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       693
+Keywords   Level 10 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 10 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 500 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 3 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 694
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       694
+Keywords   Level 10 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 10 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 500 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 3 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 695
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       695
+Keywords   Level 10 Sparring Partner~
+Short      Sparring Partner~
+Long       A Level 10 Sparring Partner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 500 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 3 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   Mpmload 691
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       699
+Keywords   last~
+Short      a newly created last~
+Long       Some god abandoned a newly created last here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#OBJECT
+Vnum     600
+Keywords Bean Chair Bag Red~
+Type     furniture~
+Short    &zA &RR&re&Rd &zBean Bag Chair~
+Long     &zA &RR&re&Rd &zBean Bag Chair~
+Values   1 0 2 0 100000 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     601
+Keywords advanced comsystem~
+Type     comlink~
+Short    &zAn &RA&rd&Rv&ra&Rn&rc&Re&rd &BC&bo&Bm&bs&By&bs&Bt&be&Bm~
+Long     &zAn &RA&rd&Rv&ra&Rn&rc&Re&rd &BC&bo&Bm&bs&By&bs&Bt&be&Bm&z is here.~
+WFlags   take eyes~
+Values   0 0 0 0 0 0
+Stats    1 500000 50000 0 0
+Affect       -1 -1 32 26 0
+Affect       -1 -1 8 26 0
+Affect       -1 -1 1000 13 0
+Affect       -1 -1 20 18 0
+Affect       -1 -1 20 19 0
+Affect       -1 -1 15 32 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     602
+Keywords Ration Food~
+Type     food~
+Short    A food ration~
+Long     A food ration.~
+Flags    inventory~
+WFlags   take~
+Values   50 50 0 0 0 0
+Stats    1 100 10 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     603
+Keywords Water Bottle~
+Type     drinkcon~
+Short    A water bottle~
+Long     A small water bottle is here.~
+Flags    inventory~
+WFlags   take~
+Values   50 50 0 0 0 0
+Stats    1 100 10 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     604
+Keywords Bean Chair Bag Red~
+Type     furniture~
+Short    &za &Rr&re&Rd&z bean bag &Wc&wh&za&wi&Wr~
+Long     &zA &Rr&re&Rd&z bean bag &Wc&wh&za&wi&Wr&z is here ready to be sat on.~
+WFlags   take~
+Values   1 0 2 2 0 0
+Stats    100 25000 2500 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     605
+Keywords Angel Tear Angel's~
+Type     light~
+Short    &WA&wn &CA&cn&Cg&ce&Cl&ci&Cc &RT&re&Ra&rr~
+Long     A puddle of tear drops is on the ground.~
+Flags    inventory~
+WFlags   take~
+Values   0 0 -1 0 0 0
+Stats    1 85000 25000 0 0
+Affect       -1 -1 15 18 0
+Affect       -1 -1 15 19 0
+Affect       -1 -1 1000 13 0
+Affect       -1 -1 -50 17 0
+Affect       -1 -1 1 31 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     606
+Keywords buster pistol gun~
+Type     weapon~
+Short    &zA &CB&cu&Cs&ct&Ce&cr&C&z-&GP&gi&Gs&gt&Go&gl~
+Long     A mysterious looking gun is lying here.~
+Flags    inventory~
+WFlags   take wield~
+Values   1001 10 150 6 2000 2000
+Stats    1 145000 14500 0 0
+Affect       -1 -1 20 18 0
+Affect       -1 -1 1000 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     607
+Keywords Thin white shirt~
+Type     armor~
+Short    &BT&bh&Bi&bn &wW&Wh&wi&Wt&we &CS&ch&Ci&cr&Ct~
+Long     An old piece of cloth is lying here.~
+WFlags   take body~
+Values   65 65 0 0 0 0
+Stats    1 75000 7500 0 0
+Affect       -1 -1 1000 13 0
+Affect       -1 -1 15 19 0
+Affect       -1 -1 15 18 0
+Affect       -1 -1 5 40 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     608
+Keywords Angel Barrier Angel's~
+Type     armor~
+Short    &RA&rn &WA&wn&Wg&we&Wl&w'&Ws &GB&ga&Gr&gr&Gi&ge&Gr~
+Long     A weird barrier is lying here.~
+WFlags   take shield~
+Values   75 75 0 0 0 0
+Stats    1 75000 7500 0 0
+Affect       -1 -1 1000 13 0
+Affect       -1 -1 15 18 0
+Affect       -1 -1 20 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     609
+Keywords Treasure Chest~
+Type     container~
+Short    A Treasure Chest~
+Long     A Treasure Chest~
+WFlags   take~
+Values   500 0 0 1000 500 0
+Stats    150 10000 1000 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     610
+Keywords Ammo Cell~
+Type     ammo~
+Short    An Ammo Cell~
+Long     An ammo cell is lying here.~
+WFlags   take hold~
+Values   2000 2000 0 0 0 0
+Stats    1 200 20 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     611
+Keywords An Earth Disk~
+Type     treasure~
+Short    &WAn &GE&ga&Gr&gt&Gh &WDisk~
+Long     A magical disk is here...~
+Flags    glow~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     612
+Keywords Water Disk~
+Type     treasure~
+Short    &WA &BW&ba&Bt&Be&br &WDisk~
+Long     A magical disk is here...~
+Flags    glow~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     613
+Keywords A Fire Disk~
+Type     treasure~
+Short    &WA &RF&ri&Rr&re &WDisk~
+Long     A magical disk is here...~
+Flags    glow~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     614
+Keywords A Wind Disk~
+Type     treasure~
+Short    &WA &CW&ci&Cn&cd &WDisk~
+Long     A magical disk is here...~
+Flags    glow~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     616
+Keywords Flowing Energy Might~
+Type     armor~
+Short    &BF&bl&Bo&bw&Bi&bn&Bg &RE&rn&Re&rr&Rg&ry &zof &YM&Oigh&Yt~
+Long     Useless energy is flowing here~
+WFlags   take wrist~
+Values   75 75 0 0 0 0
+Stats    1 0 0 0 0
+Affect       -1 -1 1000 13 0
+Affect       -1 -1 30 18 0
+Affect       -1 -1 30 19 0
+#MUDPROG
+Progtype  wear_prog~
+Arglist   100~
+Comlist   if wearingvnum($n) 616
+mpeacho _white &WClick.
+else
+mpecho $n _red &WA magical force prevents you from wearing that.
+mpforce $n remove might
+endif
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     617
+Keywords Water Pendent~
+Type     armor~
+Short    &BW&ba&Bt&be&Br &WP&we&Wn&wd&We&wn&Wt~
+Long     &BW&ba&Bt&be&Br &WP&we&Wn&wd&We&wn&Wt~
+WFlags   take neck~
+Values   75 75 0 0 0 0
+Stats    1 70000 12500 0 0
+Affect       -1 -1 1000 13 0
+Affect       -1 -1 15 18 0
+Affect       -1 -1 15 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     618
+Keywords angelic boots~
+Type     armor~
+Short    A pair of angelic boots lay here.~
+Long     A angelic boots is here.~
+Action   The boots glow raidiantly as you slip them onto your feet.~
+WFlags   take feet~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    angelic boots~
+ExDesc       A pair of boots lie here
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     699
+Keywords last~
+Type     trash~
+Short    a last~
+Long     A last is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     600
+Name     &WA &YW&Oo&Yr&On&z-&PO&pu&Pt &WEntrance~
+Sector   city~
+Flags    nomob indoors~
+Desc     The door to the ships has been blow open and is lying on the ground in
+the corner. Everything else in the room has been destroyed by the first
+attack. You also notice a weird word on the wall here...
+~
+#EXIT
+Direction north~
+ToRoom    601
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    685
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset D 0 600 2 1
+#EXDESC
+ExDescKey    Sign~
+ExDesc       The words of the past lye ahead....
+ 
+                  Arbil
+ 
+ 
+~
+#ENDEXDESC
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Arbil~
+Comlist   mptransfer $n 606
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     601
+Name     &WA &GS&ge&Gc&gu&Gr&gi&Gt&gy&W Check~
+Sector   city~
+Flags    indoors~
+Desc     Turrets are hanging down from the sides of the wall. Each turret is
+scanning everyone who comes in to insure that intruders stay out.
+~
+#EXIT
+Direction north~
+ToRoom    602
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    600
+#ENDEXIT
+
+Reset M 0 606 6 601
+Reset M 0 606 6 601
+#MUDPROG
+Progtype  entry_prog~
+Arglist   100~
+Comlist   mpechoaround $n _red Scanning for user authenticity..
+mpechoaround $n _red ....
+mpechoaround $n _red Name, $n, unauthorized user! Intruder Alert!
+mea $n _red Scanning for user authenticity..
+mea $n _red ....
+mea $n _red Name, $n, unauthorized user! Intruder Alert!
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     602
+Name     &WA &CS&cm&Ca&cl&Cl&W Hallway~
+Sector   city~
+Flags    nomob indoors~
+Desc     You notice that you are in a very small hallway in between Security
+Checks. This room is only big enough for one person to walk through at
+a time.
+~
+#EXIT
+Direction north~
+ToRoom    603
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    601
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     603
+Name     &WA &GS&ge&Gc&gu&Gr&gi&Gt&gy&W Check~
+Sector   city~
+Flags    indoors~
+Desc     Turrets are hanging down from the sides of the wall. Each turret is
+scanning everyone who comes in to insure that intruders stay out.
+~
+#EXIT
+Direction north~
+ToRoom    604
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    602
+#ENDEXIT
+
+Reset M 0 606 6 603
+Reset M 0 606 6 603
+#MUDPROG
+Progtype  entry_prog~
+Arglist   100~
+Comlist   mea $n _red Warning Intruder Alert
+mpechoaround $n _red Warning Intruder Alert
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     604
+Name     &WA &CS&cm&Ca&cl&Cl&W Hallway~
+Sector   city~
+Flags    nomob indoors~
+Desc     This hallway is filled with tiny pieces of metal from the ships
+interior. From all the metal piled up against the walls, only 2 people
+can fit in this room.
+~
+#EXIT
+Direction north~
+ToRoom    605
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    603
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     605
+Name     &WA &GS&ge&Gc&gu&Gr&gi&Gt&gy&W Check~
+Sector   city~
+Flags    indoors~
+Desc     Turrets are hanging down from the sides of the wall. Each turret is
+scanning everyone who comes in to insure that intruders stay out.
+~
+#EXIT
+Direction north~
+ToRoom    606
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    604
+#ENDEXIT
+
+Reset M 0 606 6 605
+Reset M 0 606 6 605
+#MUDPROG
+Progtype  entry_prog~
+Arglist   100~
+Comlist   mea $n _red Warning Intruder Alert
+mpechoaround $n _red Warning Intruder Alert
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     606
+Name     &WA &zD&Wa&zr&Wk &BM&be&Be&bt&Bi&bn&Bg &WPoint~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is one of the meeting points used by one of the search parties
+that killed the crew of this ship years ago. What lies beyond here is
+unknown and dangerous.
+~
+#EXIT
+Direction south~
+ToRoom    605
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    607
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    610
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   arbil~
+Comlist   mptransfer $n 600
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     607
+Name     &WA &GR&go&Gt&gt&Gi&gn&Gg &WWalkway~
+Sector   city~
+Flags    indoors~
+Desc     Many pieces of rotten wood have fallen from the ceiling and are
+crowding the room.
+~
+#EXIT
+Direction north~
+ToRoom    608
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    606
+#ENDEXIT
+
+Reset M 0 628 4 607
+#ENDROOM
+
+#ROOM
+Vnum     608
+Name     &WA &GR&go&Gt&gt&Gi&gn&Gg &WWalkway~
+Sector   city~
+Flags    indoors~
+Desc     The wood around this walkway is rotted and has been chewed by a
+numerous number of beetles. From all of the shards of wood, Only 1
+person can fit in this room.
+~
+#EXIT
+Direction east~
+ToRoom    609
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    607
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    659
+Flags     hidden~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     609
+Name     &WA &RC&ro&Rl&rl&Ra&rp&Ra&rs&Re&rd &WCorridor~
+Sector   city~
+Flags    indoors~
+Desc     There are no exits here other than the way that you entered. Over in
+the corner metal is covering up large hole.
+~
+#EXIT
+Direction west~
+ToRoom    608
+#ENDEXIT
+
+Reset M 0 628 4 609
+#ENDROOM
+
+#ROOM
+Vnum     610
+Name     &WA &RS&rm&Ra&rl&Rl&W Hallway~
+Sector   city~
+Flags    indoors~
+Desc     This is one of the smallest hallways in the spaceship. Many pipes that
+read caution are running alongside the walls, you may want to sand back.
+~
+#EXIT
+Direction north~
+ToRoom    611
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    606
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    642
+Flags     hidden~
+#ENDEXIT
+
+Reset M 0 628 4 610
+#ENDROOM
+
+#ROOM
+Vnum     611
+Name     &WA &RS&rm&Ra&rl&Rl&W Hallway~
+Sector   city~
+Flags    indoors~
+Desc     The hallway is very small and only big enough to fit about two to three
+people in it at a time. To the north you hear someone scream "Go
+Preventors!"
+~
+#EXIT
+Direction north~
+ToRoom    612
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    610
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     612
+Name     &WA &RS&rm&Ra&rl&Rl&W Hallway~
+Sector   city~
+Flags    indoors~
+Desc     As you enter you can see that there is many spots of blood on the
+ground. There is also some blood oozing from one of the pipes in the
+broken ceiling.
+~
+#EXIT
+Direction east~
+ToRoom    613
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    611
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    614
+Flags     hidden~
+#ENDEXIT
+
+Reset M 0 628 4 612
+#ENDROOM
+
+#ROOM
+Vnum     613
+Name     &WA &GW&gar&Gp &WHole~
+Sector   city~
+Flags    nomob indoors~
+Desc     This warp hole can transfer you to the different places on the ship.
+Say 'Main' to go to the Main Sector.
+Say 'Bunking' to go to the Cabin Sector.
+Say 'Bridge' to go to the Bridge.
+Say 'Training' to go to the Training Sector.
+~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Main~
+Comlist   mea $n &WYou step through a &Gw&gar&Gp&W hole and appear in the main sector.
+mpechoaround $n &W$n steps through a &Gw&gar&Gp&W hole.
+mptransfer $n 612
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Bridge~
+Comlist   mea $n &WYou Step through a &Gw&gar&Gp&W hole and appear at the bridge.
+mpeachoaround $n &W$n steps through a &Gw&gar&Gp&W hole.
+mptransfer $n 616
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Bunking~
+Comlist   mea $n &WYou Step through a &Gw&gar&Gp&W hole and appear at the bridge.
+mpeachoaround $n &W$n steps through a &Gw&gar&Gp&W hole.
+mptransfer $n 638
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Training~
+Comlist   mea $n &WYou Step through a &Gw&gar&Gp&W hole and appear at the bridge.
+mpeachoaround $n &W$n steps through a &Gw&gar&Gp&W hole.
+mptransfer $n 655
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     614
+Name     &WA &BS&bt&Bo&br&Ba&bg&Be&W Room~
+Sector   city~
+Flags    indoors~
+Desc     You notice that you are in one of the many hidden storage rooms on the
+battle ship. You see nothing but broken down walls and pieces of unused
+metal.
+~
+#EXIT
+Direction east~
+ToRoom    612
+#ENDEXIT
+
+Reset M 0 616 1 614
+#ENDROOM
+
+#ROOM
+Vnum     615
+Name     &WA &GW&gar&Gp &WHole~
+Sector   city~
+Flags    nomob indoors~
+Desc     This warp hole can transfer you to the different places on the ship.
+Say 'Bridge' to go to the Bridge.
+Say 'Energy' to go to a Secret Sector.
+~
+#EXIT
+Direction south~
+ToRoom    635
+Flags     isdoor closed hidden~
+#ENDEXIT
+
+Reset D 0 615 2 1
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Bridge~
+Comlist   mea $n &WYou step through a &Gw&gar&Gp&W hole and appear in the main sector.
+mpechoaround $n &W$n steps through a &Gw&gar&Gp&W hole.
+mptransfer $n 635
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Energy~
+Comlist   mea $n &WYou step through a &Gw&gar&Gp&W hole and appear in the main sector.
+mpechoaround $n &W$n steps through a &Gw&gar&Gp&W hole.
+mptransfer $n 643
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     616
+Name     &WA &GB&gr&Go&gk&Ge&gn&z-&RD&ro&Rw&rn&W Passageway~
+Sector   city~
+Flags    nomob indoors~
+Desc     Many pieces of metal from the ceiling are on the ground here. The pipes
+that run along the walls have slashes in them. 
+~
+#EXIT
+Direction north~
+ToRoom    613
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    617
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    626
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     617
+Name     &WA &GB&gr&Go&gk&Ge&gn&z-&RD&ro&Rw&rn&W Passageway~
+Sector   city~
+Flags    indoors~
+Desc     As you approach from the shadows you notice that there is a piece of
+cement is wrecked and scattered on the ground.
+~
+#EXIT
+Direction north~
+ToRoom    632
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    618
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    616
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     618
+Name     &WA &GB&gr&Go&gk&Ge&gn&z-&RD&ro&Rw&rn&W Passageway~
+Sector   city~
+Flags    indoors~
+Desc     As you look around you notice that the walls are scratched in numerous
+places as if someone was trying to escape.
+~
+#EXIT
+Direction north~
+ToRoom    619
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    617
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    674
+Flags     hidden~
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    636
+Flags     hidden~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     619
+Name     &WA &GB&gr&Go&gk&Ge&gn&z-&RD&ro&Rw&rn&W Passageway~
+Sector   city~
+Flags    indoors~
+Desc     As you walk in you can tell that there was once a body laying on the
+ground because there is a pile of bones laying in the corner.
+~
+#EXIT
+Direction north~
+ToRoom    620
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    618
+#ENDEXIT
+
+Reset M 0 607 5 619
+#ENDROOM
+
+#ROOM
+Vnum     620
+Name     &WA &GB&gr&Go&gk&Ge&gn&z-&RD&ro&Rw&rn&W Passageway~
+Sector   city~
+Flags    indoors~
+Desc     Many pieces of metal from the ceiling are on the ground here. The pipes
+that run along the walls have slashes in them. 
+~
+#EXIT
+Direction south~
+ToRoom    619
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    621
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    629
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     621
+Name     &WA &BD&be&Bs&bt&Br&bo&By&be&Bd&W Corridor~
+Sector   city~
+Flags    indoors~
+Desc     Many different skeletons are scattered across the room here. You can
+almost sense a presence in the room but then the feeling fades away.
+~
+#EXIT
+Direction north~
+ToRoom    629
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    620
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    622
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     622
+Name     &WA &BD&be&Bs&bt&Br&bo&By&be&Bd&W Corridor~
+Sector   city~
+Flags    nomob indoors~
+Desc     You notice that some of the piping on the wall has been torn and is
+leaking out gas. You feel light headed and loose some life.
+~
+#EXIT
+Direction north~
+ToRoom    628
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    621
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    623
+#ENDEXIT
+
+#MUDPROG
+Progtype  entry_prog~
+Arglist   100~
+Comlist   mpecho You inhale some funky gas.
+mpechoaround $n $n inhales some funky gas.
+mpdamage $n 2500
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     623
+Name     &WA &BD&be&Bs&bt&Br&bo&By&be&Bd&W Corridor~
+Sector   city~
+Flags    indoors~
+Desc     Many different skeletons are scattered across the room here. You can
+almost sense a presence in the room but then the feeling fades away.
+~
+#EXIT
+Direction north~
+ToRoom    627
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    622
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    624
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     624
+Name     &WA &GB&gr&Go&gk&Ge&gn&z-&RD&ro&Rw&rn&W Passageway~
+Sector   city~
+Flags    indoors~
+Desc     As you look around you notice that the walls are scratched in numerous
+places as if someone was trying to escape.
+~
+#EXIT
+Direction east~
+ToRoom    623
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    625
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    627
+#ENDEXIT
+
+Reset M 0 607 5 624
+#ENDROOM
+
+#ROOM
+Vnum     625
+Name     &WA &GB&gr&Go&gk&Ge&gn&z-&RD&ro&Rw&rn&W Passageway~
+Sector   city~
+Flags    indoors~
+Desc     You see that part of the hallway has a giant piece of sheet metal
+covering it. You have the sudden urge to look behind it but then notice
+that people are guarding it.
+~
+#EXIT
+Direction north~
+ToRoom    624
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    637
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     626
+Name     &WA &GB&gr&Go&gk&Ge&gn&z-&RD&ro&Rw&rn&W Passageway~
+Sector   city~
+Flags    indoors~
+Desc     Walking around in here, it is evident there was once a struggle in this
+very room.  A trail of blood leads to a pile of bones lying in the lower
+right corner.
+~
+#EXIT
+Direction north~
+ToRoom    631
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    616
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    637
+#ENDEXIT
+
+Reset M 0 607 5 626
+#ENDROOM
+
+#ROOM
+Vnum     627
+Name     &WA &GB&gr&Go&gk&Ge&gn&z-&RD&ro&Rw&rn&W Passageway~
+Sector   city~
+Flags    indoors~
+Desc     Many pieces of metal from the ceiling are on the ground here. The pipes
+that run along the walls have slashes in them. 
+~
+#EXIT
+Direction east~
+ToRoom    628
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    623
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    630
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    624
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     628
+Name     &WA &BD&be&Bs&bt&Br&bo&By&be&Bd&W Corridor~
+Sector   city~
+Flags    indoors~
+Desc     As you approach from the shadows you notice that there is a piece of
+cement is wrecked and scattered on the ground.
+~
+#EXIT
+Direction north~
+ToRoom    630
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    629
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    622
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    627
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     629
+Name     &WA &GB&gr&Go&gk&Ge&gn&z-&RD&ro&Rw&rn&W Passageway~
+Sector   city~
+Flags    indoors~
+Desc     As you look around you notice that the walls are scratched in numerous
+places as if someone was trying to escape.
+~
+#EXIT
+Direction south~
+ToRoom    621
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    628
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    630
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    620
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     630
+Name     &PV&pi&Pe&pw&Pi&pn&Pg &YD&Oe&Yc&Ok~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is the main viewing deck for the whole ship. You can see that
+there is a pile of bones in a corner. You still peek out the giant
+window even though there is nothing to view other than dust
+~
+#EXIT
+Direction south~
+ToRoom    628
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    629
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    627
+#ENDEXIT
+
+Reset M 0 619 1 630
+#ENDROOM
+
+#ROOM
+Vnum     631
+Name     &WA &RM&re&Rd&ri&Rc&ra&Rl &WCenter~
+Sector   city~
+Flags    nomob indoors heal~
+Desc     In this medical center you see that there are many stretchers that have
+sheets lying over them with the indentations of a Human body. Even though
+this medical center is deserted, it still works.
+~
+#EXIT
+Direction south~
+ToRoom    626
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     632
+Name     &WA &RM&re&Rd&ri&Rc&ra&Rl &WCenter~
+Sector   city~
+Flags    nomob indoors heal~
+Desc     In this medical center you see that there are many stretchers that have
+sheets lying over them with the indentations of a Human body. Even though
+this medical center is deserted, it still works.
+~
+#EXIT
+Direction south~
+ToRoom    617
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     633
+Name     &WA &PS&pe&Pc&pr&Pe&pt &WWalkway~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is a secret walkway.....
+~
+#EXIT
+Direction northwest~
+ToRoom    637
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    635
+Flags     hidden~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     634
+Name     Floating in a void~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     635
+Name     &WA &PS&pe&Pc&pr&Pe&pt &WWalkway~
+Sector   city~
+Desc     This is a secret walkway.....
+~
+#EXIT
+Direction north~
+ToRoom    615
+Flags     isdoor closed hidden~
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    636
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    633
+#ENDEXIT
+
+Reset D 0 635 0 1
+#ENDROOM
+
+#ROOM
+Vnum     636
+Name     &WA &PS&pe&Pc&pr&Pe&pt &WWalkway~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is a secret walkway.....
+~
+#EXIT
+Direction northeast~
+ToRoom    618
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    635
+Flags     hidden~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     637
+Name     &WA &GB&gr&Go&gk&Ge&gn&z-&RD&ro&Rw&rn&W Passageway~
+Sector   city~
+Flags    indoors~
+Desc     Many pieces of metal from the ceiling are on the ground here. The pipes
+that run along the walls have slashes in them. 
+~
+#EXIT
+Direction north~
+ToRoom    625
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    626
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    633
+Flags     hidden~
+#ENDEXIT
+
+Reset M 0 607 5 637
+Reset M 0 607 5 637
+#ENDROOM
+
+#ROOM
+Vnum     638
+Name     &WA &BL&bo&Bn&bg&W Hallway~
+Sector   city~
+Flags    nomob indoors~
+Desc     This hallway is very long and never ends. It may take you awhile to get
+where you are going.
+~
+#EXIT
+Direction north~
+ToRoom    639
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    613
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     639
+Name     &WA &BL&bo&Bn&bg &WHallway~
+Sector   city~
+Flags    nomob indoors~
+Desc     This hallway is very long and never ends. It may take you awhile to get
+where you are going.
+~
+#EXIT
+Direction north~
+ToRoom    640
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    638
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     640
+Name     &WA &GS&gh&Go&gr&Gt&W Hallway~
+Sector   city~
+Flags    nomob indoors~
+Desc     This hallway is very short and is only 2 feet long. You won't need to
+waste time here.
+~
+#EXIT
+Direction north~
+ToRoom    645
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    641
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    639
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    654
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     641
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction west~
+ToRoom    640
+#ENDEXIT
+
+Reset O 0 604 1 641
+#ENDROOM
+
+#ROOM
+Vnum     642
+Name     &WAn &BA&br&Bm&bo&Br &WShop~
+Sector   city~
+Flags    nomob indoors refinery factory~
+Desc     As you enter you see that there is an old man hiding behind a giant
+pile of armor. You also see that no one else is in the shop.
+~
+#EXIT
+Direction northeast~
+ToRoom    610
+#ENDEXIT
+
+Reset M 0 626 1 642
+  Reset G 1 608 1
+  Reset G 1 605 1
+  Reset G 1 617 1
+#ENDROOM
+
+#ROOM
+Vnum     643
+Name     &WA &GP&ga&Gt&gh &Wof &BF&bl&Bo&bw&Bi&bn&Bg &RE&rn&Re&rr&Rg&ry~
+Sector   city~
+Flags    nomob indoors~
+Desc     You can sense a powerful presence flowing through the ground here
+~
+#EXIT
+Direction north~
+ToRoom    644
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    615
+#ENDEXIT
+
+Reset M 0 609 8 643
+#ENDROOM
+
+#ROOM
+Vnum     644
+Name     &WA &GP&ga&Gt&gh &Wof &BF&bl&Bo&bw&Bi&bn&Bg &RE&rn&Re&rr&Rg&ry~
+Sector   city~
+Flags    nomob indoors~
+Desc     You can sense a powerful presence flowing through the ground here
+~
+#EXIT
+Direction north~
+ToRoom    647
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    643
+#ENDEXIT
+
+Reset M 0 609 8 644
+#MUDPROG
+Progtype  speech_prog~
+Arglist   1~
+Comlist   mea $n A sparing parter appears before you
+mpmload 600
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   2~
+Comlist   mea $n A sparing parter appears before you
+mpmload 610
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   3~
+Comlist   mea $n A sparing parter appears before you
+mpmload 620
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   4~
+Comlist   mea $n A sparing parter appears before you
+mpmload 630
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   5~
+Comlist   mea $n A sparing parter appears before you
+mpmload 640
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   6~
+Comlist   mea $n A sparing parter appears before you
+mpmload 650
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   7~
+Comlist   mea $n A sparing parter appears before you
+mpmload 660
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   8~
+Comlist   mea $n A sparing parter appears before you
+mpmload 670
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   9~
+Comlist   mea $n A sparing parter appears before you
+mpmload 680
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   10~
+Comlist   mea $n A sparing parter appears before you
+mpmload 690
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   purge~
+Comlist   mppurge Sparring
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     645
+Name     &WA &GS&gh&Go&gr&Gt &WHallway~
+Sector   city~
+Flags    nomob indoors~
+Desc     This hallway is very short and is only 2 feet long. You won't need to
+waste time here.
+~
+#EXIT
+Direction north~
+ToRoom    646
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    658
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    640
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    656
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    675
+Flags     hidden~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     646
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction south~
+ToRoom    645
+#ENDEXIT
+
+Reset O 0 604 1 646
+#ENDROOM
+
+#ROOM
+Vnum     647
+Name     &WA &GP&ga&Gt&gh &Wof &BF&bl&Bo&bw&Bi&bn&Bg &RE&rn&Re&rr&Rg&ry~
+Sector   city~
+Flags    nomob indoors~
+Desc     You can sense a powerful presence flowing through the ground here
+~
+#EXIT
+Direction south~
+ToRoom    644
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    648
+#ENDEXIT
+
+Reset M 0 609 8 647
+#ENDROOM
+
+#ROOM
+Vnum     648
+Name     &WA &GP&ga&Gt&gh &Wof &BF&bl&Bo&bw&Bi&bn&Bg &RE&rn&Re&rr&Rg&ry~
+Sector   city~
+Flags    nomob indoors~
+Desc     You can sense a powerful presence flowing through the ground here
+~
+#EXIT
+Direction north~
+ToRoom    649
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    647
+#ENDEXIT
+
+Reset M 0 609 8 648
+#ENDROOM
+
+#ROOM
+Vnum     649
+Name     &WA &GP&ga&Gt&gh &Wof &BF&bl&Bo&bw&Bi&bn&Bg &RE&rn&Re&rr&Rg&ry~
+Sector   city~
+Flags    nomob indoors~
+Desc     You can sense a powerful presence flowing through the ground here
+~
+#EXIT
+Direction south~
+ToRoom    648
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    650
+#ENDEXIT
+
+Reset M 0 609 8 649
+#MUDPROG
+Progtype  speech_prog~
+Arglist   1~
+Comlist   mea $n A sparing parter appears before you
+mpmload 600
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   2~
+Comlist   mea $n A sparing parter appears before you
+mpmload 610
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   3~
+Comlist   mea $n A sparing parter appears before you
+mpmload 620
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   4~
+Comlist   mea $n A sparing parter appears before you
+mpmload 630
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   5~
+Comlist   mea $n A sparing parter appears before you
+mpmload 640
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   6~
+Comlist   mea $n A sparing parter appears before you
+mpmload 650
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   7~
+Comlist   mea $n A sparing parter appears before you
+mpmload 660
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   8~
+Comlist   mea $n A sparing parter appears before you
+mpmload 670
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   9~
+Comlist   mea $n A sparing parter appears before you
+mpmload 680
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   10~
+Comlist   mea $n A sparing parter appears before you
+mpmload 690
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   purge~
+Comlist   mppurge Sparring
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     650
+Name     &WA &GP&ga&Gt&gh &Wof &BF&bl&Bo&bw&Bi&bn&Bg &RE&rn&Re&rr&Rg&ry~
+Sector   city~
+Flags    nomob indoors~
+Desc     You can sense a powerful presence flowing through the ground here
+~
+#EXIT
+Direction east~
+ToRoom    649
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    651
+#ENDEXIT
+
+Reset M 0 609 8 650
+#ENDROOM
+
+#ROOM
+Vnum     651
+Name     &WA &GP&ga&Gt&gh &Wof &BF&bl&Bo&bw&Bi&bn&Bg &RE&rn&Re&rr&Rg&ry~
+Sector   city~
+Flags    nomob indoors~
+Desc     You can sense a powerful presence flowing through the ground here
+~
+#EXIT
+Direction east~
+ToRoom    650
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    652
+#ENDEXIT
+
+Reset M 0 609 8 651
+#ENDROOM
+
+#ROOM
+Vnum     652
+Name     &WA &GP&ga&Gt&gh &Wof &BF&bl&Bo&bw&Bi&bn&Bg &RE&rn&Re&rr&Rg&ry~
+Sector   city~
+Flags    nomob indoors~
+Desc     You can sense a powerful presence flowing through the ground here
+~
+#EXIT
+Direction east~
+ToRoom    651
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    653
+#ENDEXIT
+
+Reset M 0 609 8 652
+#ENDROOM
+
+#ROOM
+Vnum     653
+Name     &WThe &RF&ri&pn&ra&Rl &WDestination~
+Sector   city~
+Flags    indoors safe~
+Desc     As you approach the Final Destination you notice that there is nothing
+for sale here. You should use key words to receive the equipment, but
+don't forget he needs all four disks.
+~
+#EXIT
+Direction north~
+ToRoom    652
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    615
+#ENDEXIT
+
+Reset M 0 608 1 653
+#EXDESC
+ExDescKey    sign~
+ExDesc       For items
+ Say Might
+ Say Comsystem
+ Say Shirt
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     654
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+Owner    Rivelinho~
+#EXIT
+Direction east~
+ToRoom    640
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     655
+Name     &WA &BS&bt&Be&be&Bl &WHallway~
+Sector   city~
+Flags    nomob indoors~
+Desc     This hallway is made of pure steel, even the benches on the sides are
+steel. It is hard for you too see due to the glare off of all the
+metal.
+~
+#EXIT
+Direction north~
+ToRoom    657
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    613
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     656
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction east~
+ToRoom    645
+#ENDEXIT
+
+Reset O 0 604 1 656
+#MUDPROG
+Progtype  speech_prog~
+Arglist   1~
+Comlist   mea $n A sparing parter appears before you
+mpmload 600
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   2~
+Comlist   mea $n A sparing parter appears before you
+mpmload 610
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   3~
+Comlist   mea $n A sparing parter appears before you
+mpmload 620
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   4~
+Comlist   mea $n A sparing parter appears before you
+mpmload 630
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   5~
+Comlist   mea $n A sparing parter appears before you
+mpmload 640
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   6~
+Comlist   mea $n A sparing parter appears before you
+mpmload 650
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   7~
+Comlist   mea $n A sparing parter appears before you
+mpmload 660
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   8~
+Comlist   mea $n A sparing parter appears before you
+mpmload 670
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   9~
+Comlist   mea $n A sparing parter appears before you
+mpmload 680
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   10~
+Comlist   mea $n A sparing parter appears before you
+mpmload 690
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   purge~
+Comlist   mptrans sparring 699
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     657
+Name     &WA &BS&bt&Be&be&Bl &WHallway~
+Sector   city~
+Flags    nomob indoors heal~
+Desc     This hallway is made of pure steel, even the benches on the sides are
+steel. It is hard for you too see due to the glare off of all the
+metal.
+~
+#EXIT
+Direction north~
+ToRoom    660
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    655
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     658
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction west~
+ToRoom    645
+#ENDEXIT
+
+Reset O 0 604 1 658
+#ENDROOM
+
+#ROOM
+Vnum     659
+Name     &BI&bt&Be&bm&Bs &WS&wh&Wo&wp~
+Sector   city~
+Flags    nomob indoors bank~
+Desc     As you enter you see that many items are stacked up on shelves that go
+to the ceiling. There is an old man standing on some boxes to over
+look his desk.
+~
+#EXIT
+Direction east~
+ToRoom    608
+#ENDEXIT
+
+Reset M 0 627 1 659
+  Reset G 1 606 1
+  Reset G 1 602 1
+  Reset G 1 603 1
+  Reset G 1 604 1
+  Reset G 1 610 1
+  Reset G 1 609 1
+#ENDROOM
+
+#ROOM
+Vnum     660
+Name     &WA &YC&Or&Yu&Om&Yb&Ol&Ye&Od &WIntersection~
+Sector   city~
+Flags    nomob indoors~
+Desc     Many pieces of crumbled wood are scattered here. One of the exits has
+been covered up with wood shards that were torn from the ceiling.
+~
+#EXIT
+Direction north~
+ToRoom    673
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    661
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    657
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    667
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     661
+Name     &WA &RT&rr&Ra&ri&Rn&ri&Rn&rg &WSector~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is where some of the warrior that fought on the ship trained
+before they went into battle.
+To go to a practice sector say "Practice".
+~
+#EXIT
+Direction north~
+ToRoom    664
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    662
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    665
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    660
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    666
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    663
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Practice~
+Comlist   mptransfer $n 686
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     662
+Name     &WLevel &GT&gw&Go &WTraining~
+Sector   city~
+Flags    nomob indoors~
+Desc     The holograms here respawn after each kill.
+~
+#EXIT
+Direction west~
+ToRoom    661
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     663
+Name     &WLevel &GF&gi&Gv&ge &WTraining~
+Sector   city~
+Flags    nomob indoors~
+Desc     The holograms here respawn after each kill.
+~
+#EXIT
+Direction up~
+ToRoom    661
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     664
+Name     &WLevel &GO&gn&Ge &WTraining~
+Sector   city~
+Flags    nomob indoors~
+Desc     The holograms here respawn after each kill.
+~
+#EXIT
+Direction south~
+ToRoom    661
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     665
+Name     &WLevel &GT&gh&Gr&ge&Ge &WTraining~
+Sector   city~
+Flags    nomob indoors~
+Desc     The holograms here respawn after each kill.
+~
+#EXIT
+Direction north~
+ToRoom    661
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     666
+Name     &WLevel &GF&go&Gu&gr &WTraining~
+Sector   city~
+Flags    nomob indoors~
+Desc     The holograms here respawn after each kill.
+~
+#EXIT
+Direction down~
+ToRoom    661
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     667
+Name     &WA &RT&rr&Ra&ri&Rn&ri&Rn&rg &WSector~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is where some of the warrior that fought on the ship trained
+before they went into battle.
+~
+#EXIT
+Direction north~
+ToRoom    670
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    660
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    668
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    669
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    672
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    671
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     668
+Name     &WLevel &GE&gi&Gg&gh&Gt &WTraining~
+Sector   city~
+Flags    nomob indoors~
+Desc     The holograms here respawn after each kill.
+~
+#EXIT
+Direction north~
+ToRoom    667
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     669
+Name     &WLevel &GS&ge&Gv&ge&Gn &WTraining~
+Sector   city~
+Flags    nomob indoors~
+Desc     The holograms here respawn after each kill.
+~
+#EXIT
+Direction east~
+ToRoom    667
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     670
+Name     &WLevel &GS&gi&Gx&W Training~
+Sector   city~
+Flags    nomob indoors~
+Desc     The holograms here respawn after each kill.
+~
+#EXIT
+Direction south~
+ToRoom    667
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     671
+Name     &WLevel &GT&ge&Gn&W Training~
+Sector   city~
+Flags    nomob indoors~
+Desc     The holograms here respawn after each kill.
+~
+#EXIT
+Direction up~
+ToRoom    667
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     672
+Name     &WLevel &GN&gi&Gn&ge &WTraining~
+Sector   city~
+Flags    nomob indoors~
+Desc     The holograms here respawn after each kill.
+~
+#EXIT
+Direction down~
+ToRoom    667
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     673
+Name     &WAn &CU&cn&Cu&cs&Ce&cd&W Hospital~
+Sector   city~
+Flags    nomob indoors heal~
+Desc     In this medical center you see that there are many stretchers that have
+sheets lying over them with the indentations of a Human body. Even though
+this medical center is deserted, it still works.
+~
+#EXIT
+Direction south~
+ToRoom    660
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     674
+Name     &WA &BS&bt&Bo&br&Ba&bg&Be &WRoom~
+Sector   city~
+Flags    nomob indoors~
+Desc     You notice that you are in one of the many hidden storage rooms on the
+battle ship. You see nothing but broken down walls and pieces of unused
+metal.
+~
+#EXIT
+Direction northwest~
+ToRoom    618
+#ENDEXIT
+
+Reset M 0 617 1 674
+#ENDROOM
+
+#ROOM
+Vnum     675
+Name     &WA &BS&bt&Bo&br&Ba&bg&Be &WRoom~
+Sector   city~
+Flags    nomob indoors~
+Desc     You notice that you are in one of the many hidden storage rooms on the
+battle ship. You see nothing but broken down walls and pieces of unused
+metal.
+~
+#EXIT
+Direction southwest~
+ToRoom    645
+#ENDEXIT
+
+Reset M 0 618 1 675
+#ENDROOM
+
+#ROOM
+Vnum     676
+Name     &WA &GW&go&Gr&gn&z-&PO&pu&Pt &WPathway~
+Sector   city~
+Flags    nomob indoors~
+Desc     As you look down you can see many different types of foot prints
+scattered around. You can sense a something close by but the feeling
+fades.
+~
+#EXIT
+Direction north~
+ToRoom    677
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8457
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     677
+Name     &WA &GW&go&Gr&gn&z-&PO&pu&Pt &WPathway~
+Sector   city~
+Flags    indoors~
+Desc     As you are walking around you can see that the ground on this path has
+been worn down to nothing but stones. On the outside of the path there
+are dead bodies with tiny gnats flying around them.
+~
+#EXIT
+Direction south~
+ToRoom    676
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    678
+#ENDEXIT
+
+Reset M 0 639 18 677
+Reset M 0 639 18 677
+#ENDROOM
+
+#ROOM
+Vnum     678
+Name     &WA &GW&go&Gr&gn&z-&PO&pu&Pt &WPathway~
+Sector   city~
+Flags    indoors~
+Desc     As you walk along the path you see pieces of metal of many shapes and
+sizes. There are patches of fire running along the worn-out path.
+~
+#EXIT
+Direction north~
+ToRoom    679
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    677
+#ENDEXIT
+
+Reset M 0 639 18 678
+Reset M 0 639 18 678
+#ENDROOM
+
+#ROOM
+Vnum     679
+Name     &WA &GW&go&Gr&gn&z-&PO&pu&Pt &WPathway~
+Sector   city~
+Flags    nomob indoors~
+Desc     As you look around can you see something shimmer amongst the rocks but
+you look again and see that nothing is there. While moving on you trip
+over a rock and hurt your arm.
+~
+#EXIT
+Direction south~
+ToRoom    678
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    680
+#ENDEXIT
+
+Reset M 0 639 18 679
+Reset M 0 639 18 679
+#ENDROOM
+
+#ROOM
+Vnum     680
+Name     &WA &GW&go&Gr&gn&z-&PO&pu&Pt &WPathway~
+Sector   city~
+Flags    indoors~
+Desc     As you look down you can see many different types of foot prints
+scattered around. You can sense a something close by but the feeling
+fades.
+~
+#EXIT
+Direction north~
+ToRoom    681
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    679
+#ENDEXIT
+
+Reset M 0 639 18 680
+Reset M 0 639 18 680
+#ENDROOM
+
+#ROOM
+Vnum     681
+Name     &WA &GW&go&Gr&gn&z-&PO&pu&Pt &WPathway~
+Sector   city~
+Flags    indoors~
+Desc     As you walk along the path you see pieces of metal of many shapes and
+sizes. There are patches of fire running along the worn-out path.
+~
+#EXIT
+Direction south~
+ToRoom    680
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    682
+#ENDEXIT
+
+Reset M 0 639 18 681
+Reset M 0 639 18 681
+#ENDROOM
+
+#ROOM
+Vnum     682
+Name     &WA &GW&go&Gr&gn&z-&PO&pu&Pt &WPathway~
+Sector   city~
+Flags    indoors~
+Desc     As you are walking around you can see that the ground on this path has
+been worn down to nothing but stones. On the outside of the path there
+are dead bodies with tiny gnats flying around them.
+~
+#EXIT
+Direction north~
+ToRoom    683
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    681
+#ENDEXIT
+
+Reset M 0 639 18 682
+Reset M 0 639 18 682
+#ENDROOM
+
+#ROOM
+Vnum     683
+Name     &WA &GW&go&Gr&gn&z-&PO&pu&Pt &WPathway~
+Sector   city~
+Flags    indoors~
+Desc     As you walk along the path you see pieces of metal of many shapes and
+sizes. There are patches of fire running along the worn-out path.
+~
+#EXIT
+Direction north~
+ToRoom    684
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    682
+#ENDEXIT
+
+Reset M 0 639 18 683
+#ENDROOM
+
+#ROOM
+Vnum     684
+Name     &WA &GW&go&Gr&gn&z-&PO&pu&Pt &WPathway~
+Sector   city~
+Flags    indoors~
+Desc     As you look down you can see many different types of foot prints
+scattered around. You can sense a something close by but the feeling
+fades.
+~
+#EXIT
+Direction north~
+ToRoom    685
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    683
+#ENDEXIT
+
+Reset M 0 639 18 684
+Reset M 0 639 18 684
+#ENDROOM
+
+#ROOM
+Vnum     685
+Name     &WA &GW&go&Gr&gn &WWalkway~
+Sector   city~
+Flags    indoors~
+Desc     To you this looks like a modern walkway but it is encrusted in dust.
+From the looks of it no one has ever walked up or down the walkway.
+Toward the north lies a door to a gigantic ship that has crashed on
+this planet.
+~
+#EXIT
+Direction north~
+ToRoom    600
+Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    684
+#ENDEXIT
+
+Reset M 0 639 18 685
+Reset M 0 639 18 685
+Reset M 0 639 18 685
+Reset D 0 685 0 1
+#ENDROOM
+
+#ROOM
+Vnum     686
+Name     A Practice Room~
+Sector   city~
+Flags    nomob indoors~
+Desc     This room is where you can practice combat skills.
+To return to the training sector say "Return".
+~
+Reset M 0 686 1 686
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Return~
+Comlist   mptrans $n 661
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     687
+Name     Floating in a void~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     688
+Name     Floating in a void~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     689
+Name     Floating in a void~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     690
+Name     Floating in a void~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     691
+Name     Floating in a void~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     692
+Name     Floating in a void~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     693
+Name     Floating in a void~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     694
+Name     Floating in a void~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     695
+Name     Floating in a void~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     696
+Name     Floating in a void~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     697
+Name     Floating in a void~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     698
+Name     Floating in a void~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     699
+Name     Floating in a void~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ENDAREA

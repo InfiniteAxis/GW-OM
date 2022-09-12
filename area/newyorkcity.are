@@ -1,0 +1,6540 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         New York City~
+Author       Pathon~
+Ranges       1 1007 1 1007
+Economy      -1 209609483
+ResetMsg     The Sounds of the City That Never Sleeps Echo All Around You.~
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       11000
+Keywords   first~
+Short      a newly created first~
+Long       Some god abandoned a newly created first here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       11002
+Keywords   Customs Official~
+Short      a Customs Official~
+Long       A Customs Official is here, taking your shit.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_customs_weapons~
+Specfun2    spec_police~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Affected   blind invisible detect_evil detect_magic~
+Stats1     0 999 0 -2397 0 0
+Stats2     199 10 9990
+Stats3     99 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       11011
+Keywords   wandering tourist~
+Short      a Wandering Tourist~
+Long       A Wandering Tourist is here.. wandering..
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc~
+Stats1     0 1000 0 -2400 25 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       11024
+Keywords   tower security~
+Short      The Tower Security Guard~
+Long       The Tower Security Guard is standing here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_police~
+Specfun2    spec_customs_weapons~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Affected   blind invisible detect_evil detect_magic~
+Stats1     0 999 0 -2397 0 0
+Stats2     199 10 9990
+Stats3     99 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       11028
+Keywords   trader break~
+Short      a Trader on his Break~
+Long       A Trader on his Break is resting here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc~
+Stats1     0 1000 0 -2400 25 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       11036
+Keywords   The Receptionist~
+Short      The Receptionist~
+Long       The Receptionist shouldn't be standing.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say Hello, $n, and Welcome to the Western Tower
+say of the World Trade Center. This Tower is used
+say primarily for the trading of stocks, but there
+say are other things here, too. If you'd like some
+say more information, just go ahead and say "Help Me."
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   help~
+Comlist   say I can teach you about several things, Just
+say say, "Stocks", "Floors", or "Skywalk", for
+say Help with those.
+smile $n
+say I also know a few $gSecret$Gs.
+wink $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   secrets~
+Comlist   say He he he. You really wanna know?..
+say Well, there're some hidden maintaince staircases..
+say Both of the entrances to them are here, on the first
+say floor.. The one against the western wall leads to the
+say basement, the one against the eastern wall heads to a few
+say hidden offices..
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   stocks~
+Comlist   say Well, it's pretty simple.
+say On the second and third floors of this tower are where
+say all the stock trading in the world takes place. If you
+say manage to get a hold of some stocks, just look for the
+say stock certificate cashier on the fourth floor, he'll be
+say more than happy to pay you for your certificates.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   floors~
+Comlist   say Well, Instead of telling you, I'll show you.
+emote activates a holographic map display for $n.
+mea $n &x.       &z////\\\\\\\\\\
+mea $n &x.   &z////              \\\\\\\\\\
+mea $n &x.&z///                            \\\\\\\\\
+mea $n &x.&CFloor 6  &z| |  &cThe Observation Deck (Roof)
+mea $n &x.&g=========&z| |&g=============================
+mea $n &x.         &z| |
+mea $n &x.&CFloor 5  &z| |           &cThe Daycare Center
+mea $n &x.&g=========&z| |&g=============================
+mea $n &x.         &z| |
+mea $n &x.&CFloor 4  &z| |     &cThe Stockkeeping Offices
+mea $n &x.&g=========&z| |&g=============================
+mea $n &x.         &z| |
+mea $n &x.&CFloor 3  &z| |   &cThe Executive Trading Area
+mea $n &x.&g=========&z| |&g=============================
+mea $n &x.         &z| |
+mea $n &x.&CFloor 2  &z| |             &cThe Trading Pits
+mea $n &x.&g=========&z| |&g=============================
+mea $n &x.         &z| |
+mea $n &x.&CFloor 1  &z| |     &cThe Foyer (You are here)
+mea $n &x.&g=========&z| |&g=============================
+mea $n &x.&g=========================================
+emote shuts off the holographic display.
+say There ya go.
+wink $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   skywalk~
+Comlist   say Well, the Skywalk is pretty simple really.
+say Whenever you're on the observation deck, (the roof),
+say You can say "Skywalk" to activate a holographic pathway
+say and walk to the observation deck of the eastern tower.
+smile $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  rand_prog~
+Arglist   100~
+Comlist   sit desk
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11046
+Keywords   trader break~
+Short      a Trader on his Break~
+Long       A Trader on his Break is resting here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nokill~
+Stats1     -1000 1000 0 -2400 0 0
+Stats2     200 10 15000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   dodge~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p Let me borrow your key?~
+Comlist   say Sure, I wouldn't mind.
+mpoload 11046
+give key $n
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11052
+Keywords   security officer~
+Short      A Security Officer~
+Long       A Security Officer is standing here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     -1000 1000 0 -2400 0 0
+Stats2     200 10 15000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   dodge~
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say Hey Pal, how're ya?.. Sorry but the Tower is undergoing quite a bit of
+say Construction right now.. Try to come back in the future. We're still
+say Recovering from the Terrorist Attacks.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11055
+Keywords   Security Officer~
+Short      A Security Officer~
+Long       A Security Officer is standing here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     -1000 1000 0 -2400 0 0
+Stats2     200 10 15000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   dodge~
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say Hey there, $n. Sorry, but you aren't allowed in here unless you're
+say a trader.. But.. If you're really interested in getting in, I'll
+say Tell you a secret. I saw one of your arena fights once, And I have
+say to say, You were AWESOME!.. So I'm willing to hook you up with my
+say secret..
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   secret~
+Comlist   say Well it's not a big secret, but if You walk around downstairs, there
+say Are tons of Trader's on breaks.. They all take turns in the pits..
+say If you ask politely, they'd probobly lend you their keycard.
+say Just say something like "Let me borrow your Key?"
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11066
+Keywords   pit overseer~
+Short      The Pit Overseer~
+Long       The Pit Overseer is standing here, watching the day's trading.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     -1000 1000 0 -2400 0 0
+Stats2     200 10 15000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   dodge~
+#ENDMOBILE
+
+#MOBILE
+Vnum       11067
+Keywords   Oranges Trader~
+Short      &zan Oranges Trader~
+Long       &za Man is here, frantically trading shares of Oranges.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 35 35
+Attribs    18 10 10 16 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpecho &zAnother Frenzied Trader rushes into the pits.
+mpmload 11067
+mpoload 11067
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11072
+Keywords   Soy Beans Trader~
+Short      &za Soy-Beans Trader~
+Long       &za Man is here, frantically trading shares of Soy-Beans.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 0 0
+Attribs    18 10 10 16 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpecho &zAnother Frenzied Trader rushes into the pits.
+mpmload 11072
+mpoload 11072
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11078
+Keywords   silver trader~
+Short      &za Silver Trader~
+Long       &za Man is here, frantically trading shares of Silver.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 0 0
+Attribs    18 10 10 16 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpecho &zAnother Frenzied Trader rushes into the pits.
+mpmload 11078
+mpoload 11078
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11086
+Keywords   Gold Trader~
+Short      &za Gold Trader~
+Long       &za Man is here, frantically trading shares of Gold.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 0 0
+Attribs    18 10 10 16 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpecho &zAnother Frenzied Trader rushes into the pits.
+mpmload 11086
+mpoload 11086
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11089
+Keywords   Charles Schwabb~
+Short      Charles Schwabb~
+Long       Charles Schwabb is here, looking through his briefcase.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     -1000 1000 0 -2400 0 0
+Stats2     200 10 15000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   dodge~
+#ENDMOBILE
+
+#MOBILE
+Vnum       11090
+Keywords   Merril Lynch~
+Short      Merril Lynch~
+Long       Merril Lynch is here, Reviewing the day's profit.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     -1000 1000 0 -2400 0 0
+Stats2     200 10 15000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   dodge~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpoload 11090
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11091
+Keywords   Forbes~
+Short      Forbes~
+Long       Forbes is here, Reviewing the Top 20 list.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     -1000 1000 0 -2400 0 0
+Stats2     200 10 15000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   dodge~
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   em raises an eyebrow as you enter.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11092
+Keywords   paymobpayer~
+Short      The Stock Cashier~
+Long       Some god abandoned a newly created paymobpayer here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Affected   detect_invis detect_hidden~
+Stats1     0 1 0 0 1000 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       11094
+Keywords   Construction Worker~
+Short      A Construction Worker~
+Long       A Construction Worker is here, Relaxing.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     -1000 1000 0 -2400 0 0
+Stats2     200 10 15000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   dodge~
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say Hey, sorry bud, can't go on the roof right now, You know, OSHA Rules.
+say No civilians allowed on the Job site while it's under construction.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11101
+Keywords   wandering shopper~
+Short      a wandering shopper~
+Long       A wandering shopper is here.. wandering..
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc~
+Stats1     0 1000 0 -2400 25 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       11102
+Keywords   man sheet metal~
+Short      A Man in Sheet Metal~
+Long       A Man in Sheet Metal is standing here
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     -1000 1000 0 -2400 0 0
+Stats2     200 10 15000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   dodge~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       11103
+Keywords   Angry Store Owner~
+Short      An Angry Store Owner~
+Long       An Angry Store Owner is here, Swinging around a Golf-Club.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     -1000 1000 0 -2400 0 0
+Stats2     200 10 15000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   dodge~
+#ENDMOBILE
+
+#MOBILE
+Vnum       11105
+Keywords   naked old man~
+Short      A Naked Old Man~
+Long       A Naked Old Man stands behind the counter, barely covering his privates.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     -1000 1000 0 -2400 0 0
+Stats2     200 10 15000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   dodge~
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   em laughs incessantly at your reaction to seeing him as you enter.
+say Clothes?! Who needs them! They just get in the way!
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11108
+Keywords   shady thug~
+Short      &za Shady Thug~
+Long       &za Shady Thug is chillin' here, He thinks he "Pwns".
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel aggressive nocorpse~
+Stats1     1000 1000 0 -2400 0 0
+Stats2     200 10 50000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       11109
+Keywords   naked fat trench coat~
+Short      a Naked Fat Man~
+Long       A Naked Fat Man is here, Hiding under a Trench Coat.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     -1000 1000 0 -2400 0 0
+Stats2     200 10 15000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   dodge~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       11110
+Keywords   old woman~
+Short      A Toothless Old Lady~
+Long       A Toothless old woman is standing here, cackling oddly.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     -1000 1000 0 -2400 0 0
+Stats2     200 10 15000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   dodge~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       11111
+Keywords   Michaelangelo~
+Short      &gM&Oichaelangelo~
+Long       Michaelangelo is here, pigging out on pizza!
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Affected   detect_invis detect_hidden~
+Stats1     -1000 1000 0 -2400 0 0
+Stats2     200 10 15000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   dodge~
+#MUDPROG
+Progtype  death_prog~
+Arglist   1~
+Comlist   say Kowabunga dude!
+mpoload 11503
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11120
+Keywords   foot soldier~
+Short      a Foot Soldier~
+Long       A Foot Soldier is here, stalking about.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 850000
+Stats3     40 22 1000
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       11129
+Keywords   splinter~
+Short      &zSplinter~
+Long       Splinter is here, meditating.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     -1000 1000 0 -2400 0 0
+Stats2     200 10 15000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   dodge~
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say Hello there, $n. I think Leonardo wanted to speak with you..
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11130
+Keywords   Leonardo~
+Short      &gL&Ceonardo~
+Long       Leonardo is here, Chillin' and practicing the Katana.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     -1000 1000 0 -2400 0 0
+Stats2     200 10 15000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   dodge~
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say Hey, What's up Dude?
+say I heard Shredder and Krang used some kind of warp gate to go to a
+say Space station in another dimension. If you bring me proof that
+say You killed them, I'd be glad to hook you up!
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11131
+Keywords   donatello~
+Short      &gD&ponatello~
+Long       Donatello is Here, working on some new gadgets.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     -1000 1000 0 -2400 0 0
+Stats2     200 10 15000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   dodge~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       11132
+Keywords   Raphael~
+Short      &gR&raphael~
+Long       Raphael is here, fast asleep.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     -1000 1000 0 -2400 0 0
+Stats2     200 10 15000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   dodge~
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   mpecho Raphael snores loudly. ZzZZzZZZzZzzz.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  rand_prog~
+Arglist   80~
+Comlist   mpecho Raphael snores loudly. ZzZZzZZZzZzzz.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11133
+Keywords   Michaelangelo~
+Short      &gM&Oichaelangelo~
+Long       Michaelangelo is here, pigging out on pizza!
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Affected   detect_invis detect_hidden~
+Stats1     -1000 1000 0 -2400 0 0
+Stats2     200 10 15000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   dodge~
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say Sorry if I scared you earlier bro. No hard feelings okay?
+say Here, Take this!
+mpoload 11133
+give pizza $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  death_prog~
+Arglist   2~
+Comlist   say Bummer dude, lets go again!
+mpmload 11111
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11134
+Keywords   Cyborg~
+Short      a Cyborg~
+Long       A Cybernetic Organism is standing here, looking insanely powerful.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Affected   detect_invis detect_hidden infrared~
+Stats1     -1000 1000 0 -2400 0 0
+Stats2     200 10 15000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   dodge~
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say I Have some spare parts here..
+say I'd be willing to augment your legs.. for a price..
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11136
+Keywords   blonde girl~
+Short      a Blonde Girl~
+Long       A Sexy Blonde Girl in a tight white t-shirt stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     -1000 1000 0 -2400 0 0
+Stats2     200 10 15000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   dodge~
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say Hey there.
+say We decided to open this shop to sell the tiny soaps and shampoos
+say That everyone usually steals, just so they could get a bunch to take home.
+smile
+say If you'd like a demonstration of the products,..
+say We could always take a shower together ^^_^^;
+wink
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11137
+Keywords   ritz bartender~
+Short      The Ritz-Carlton Bartender~
+Long       The Ritz-Carlton Bartender is here, Preparing a cup of "Java".
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     -1000 1000 0 -2400 0 0
+Stats2     200 10 15000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   dodge~
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   emote stirs a cup of coffee, and looks up.
+say What can I get ya?
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11139
+Keywords   receptionist~
+Short      The Ritz-Carlton Receptionist~
+Long       The Ritz-Carlton Receptionist is standing behind the counter with a bright smile.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     -1000 1000 0 -2400 0 0
+Stats2     200 10 15000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   dodge~
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   if hasabit($n) == 4
+say Welcome back, $n, Your room is still paid for.
+else
+if hasqbit($n) == 4
+say Welcome back, $n, Your room is still paid for.
+else
+say Welcome to the Ritz-Carlton. You may purchase a day pass to the suites
+say for 500 dollars, or a lifetime pass for 100,000 dollars. Just give
+say The money to me when you want one.
+endif
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  bribe_prog~
+Arglist   100000~
+Comlist   say Alrighty then, One lifetime pass.
+say I've informed the Guard, you're all set.
+mpqset $n 4
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  bribe_prog~
+Arglist   500~
+Comlist   say Alrighty then, One daytime pass.
+say I've informed the Guard, you're all set.
+mpaset $n 4
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11141
+Keywords   Security Guard~
+Short      A Security Guard~
+Long       A Security Guard is standing here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     -1000 1000 0 -2400 0 0
+Stats2     200 10 15000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   dodge~
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   if hasabit($n) == 4
+say Welcome, $n. Go right ahead to the south.
+else
+if hasqbit($n) == 4
+say Welcome, $n. Go right ahead to the south.
+else
+say You aren't allowed in here until you pay the receptionist downstairs.
+mea $n The Guard chases you back into the elevator.
+mptransfer $n 11140
+endif
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#OBJECT
+Vnum     11000
+Keywords first~
+Type     trash~
+Short    a first~
+Long     A first is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11001
+Keywords rolex watch gold~
+Type     trash~
+Short    &Ya golden Rolex watch~
+Long     An extravagant golden watch has been left here.~
+WFlags   take wrist~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  wear_prog~
+Arglist   100~
+Comlist   mea $n You unclasp the coupling of the watch, and slip it over your
+mea $n wrist. It automatically clasp shut around your wrist, and softly
+mea $n begins to tick as it starts to keep the time.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  remove_prog~
+Arglist   100~
+Comlist   mea $n You tap the coupling of the watch three times, and it quietly
+mea $n unclasps from your wrist. You slip it over your hand, and put
+mea $n it in a soft velvet pouch.
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11021
+Keywords Plaza Fountain~
+Type     fountain~
+Short    The Plaza Fountain~
+Long     &BThe Plaza Fountain is here, Dancing Gloriously with Streams of Water.~
+Values   -1 -1 45 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11036
+Keywords information desk~
+Type     furniture~
+Short    the center of a large, round information desk~
+Long     A large, round information desk fills the center of the foyer.~
+Values   10000 10000 1 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11046
+Keywords trader key card~
+Type     key~
+Short    a Trader's key card~
+Long     A Trader's key card is lying here~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11066
+Keywords yellow key card~
+Type     key~
+Short    &ca &Yyellow &ckey card~
+Long     &ca &Yyellow &ckey card lies here.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11067
+Keywords Oranges Share Commodity~
+Type     treasure~
+Short    a Share of the "Oranges" Commodity~
+Long     A Share of the "Oranges" Commodity is lying here.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11072
+Keywords share soy beans commodity~
+Type     treasure~
+Short    a Share of the "Soy-Beans" Commodity~
+Long     A Share of the "Soy-Beans" Commodity is lying here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11078
+Keywords share silver commodity~
+Type     treasure~
+Short    a Share of the "Silver" Commodity~
+Long     A Share of the "Silver" Commodity is lying here.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11086
+Keywords share gold commodity~
+Type     treasure~
+Short    a Share of the "Gold" Commodity~
+Long     A Share of the "Gold" Commodity is lying here.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11088
+Keywords blue card key~
+Type     key~
+Short    &ca &Bblue &ccard key~
+Long     &ca &Bblue &ccard key is lying here.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11089
+Keywords schwabb briefcase~
+Type     container~
+Short    Charles Schwabb's Briefcase~
+Long     Charles Schwabb's Briefcase is here.~
+WFlags   take hold~
+Values   200 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11090
+Keywords red card key~
+Type     key~
+Short    &ca &Rred &ccard key~
+Long     &ca &Rred &ccard key is lying here.~
+WFlags   take hold~
+Values   11089 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11092
+Keywords executive key card~
+Type     key~
+Short    the Executive Keycard~
+Long     The Executive Keycard is lying here.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11100
+Keywords tiger eye charm~
+Type     armor~
+Short    &za &RTi&rge&Rrs&z-&BE&by&Be &zCharm~
+Long     A tiger's eye is laying here in the dust.~
+Flags    inventory~
+WFlags   take neck~
+Values   75 75 0 0 0 0
+Stats    1 51000 5100 0 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 15 19 0
+Affect       -1 -1 1000 13 0
+#MUDPROG
+Progtype  wear_prog~
+Arglist   100~
+Comlist   mea $n You tie a small golden chain around your neck, with a single Tiger's
+mea $n Eye on it.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  remove_prog~
+Arglist   100~
+Comlist   mea $n You remove the charm, and tuck it away.
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11101
+Keywords twist wrist~
+Type     armor~
+Short    &za &YT&Ow&Yi&Os&Yt&O-&YT&Oi&Ye &OW&Yr&Oi&Ys&Ot&Y-&OT&Yi&Oe~
+Long     A cheap ass twist-tie is lying here.~
+Flags    inventory~
+WFlags   take wrist~
+Values   40 40 0 0 0 0
+Stats    1 250000 25000 0 0
+Affect       -1 -1 -100 13 0
+Affect       -1 -1 1000 14 0
+Affect       -1 -1 -65 18 0
+Affect       -1 -1 -10 19 0
+#MUDPROG
+Progtype  wear_prog~
+Arglist   100~
+Comlist   mea $n You tie a twist-tie around your wrist, and notice it's cutting
+mea $n The circulation to your hands! Ouch this sucks!
+mpdamage $n 5000
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  rand_prog~
+Arglist   40~
+Comlist   mea $n The twist tie cuts off your circulation again..
+mpdamage $n 1000
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  remove_prog~
+Arglist   100~
+Comlist   mea $n The twist tie absolutely refuses to be removed.
+mpdamage $n 2500
+mpforce $n wear twist
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11102
+Keywords zip lock shirt~
+Type     armor~
+Short    &zA &BZ&bi&Bp&z-&BL&bo&Bc&bk &zShirt~
+Long     A Large Ziplock(tm) Bag lies here.~
+WFlags   take body~
+Values   40 40 0 0 0 0
+Stats    1 250000 25000 0 0
+Affect       -1 -1 -100 13 0
+Affect       -1 -1 1000 14 0
+Affect       -1 -1 -65 18 0
+Affect       -1 -1 -10 19 0
+#MUDPROG
+Progtype  wear_prog~
+Arglist   100~
+Comlist   mea $n You wear a Zip Lock bag. Feels stupid doesn't it?
+mpecharound $n $n Wears a Zip Lock (tm) bag. Let's point and laugh!
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  remove_prog~
+Arglist   100~
+Comlist   mea $n a Zip-Lock Shirt says, "YOU SHALL NEVER BE RID OF MY FASHION!"
+mpecharound $n a Zip-Lock Shirt says, "YOU SHALL NEVER BE RID OF MY FASHION!"
+mpforce $n wear zip
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11103
+Keywords anti gravity belt~
+Type     armor~
+Short    &zan &CA&Wn&Ct&Wi&C-&WG&Cr&Wa&Cv&Wi&Ct&Wy &zBelt~
+Long     An Anti-Gravity belt is lying here, humming softly.~
+Flags    hum inventory~
+WFlags   take waist~
+Values   50 50 0 0 0 0
+Stats    5 130000 13000 0 0
+Affect       -1 -1 1000 14 0
+Affect       -1 -1 2 2 0
+Affect       -1 -1 20 17 0
+Affect       -1 -1 524288 26 0
+Affect       -1 -1 1000 13 0
+Affect       -1 -1 8 18 0
+Affect       -1 -1 14 19 0
+#EXDESC
+ExDescKey    plate armour~
+ExDesc       This plate of armour will give you protection until you can find
+something better. 
+~
+#ENDEXDESC
+
+#MUDPROG
+Progtype  wear_prog~
+Arglist   100~
+Comlist   mea $n _cya You strap the belt to your waist and press the button.
+mea $n _cya You suddenly feel weightless!
+mpechoaround $n _cya As $n straps his belt on and activates it, they begin
+mpechoaround $n _cya to levitate above the ground.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  remove_prog~
+Arglist   100~
+Comlist   mea $n _cya You deactivate the belt and slowly sink to the ground.
+mpechoaround $n _cya As $n deactivates the belt, they slowly sink to the ground
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11104
+Keywords beam saber double~
+Type     weapon~
+Short    &za &RD&rouble&z-&RE&rdged &CBe&cam&Bsa&bb&cer~
+Long     A large beamsaber is lying here, flickering.~
+Flags    glow inventory~
+WFlags   take wield~
+Values   1100 11 137 2 0 0
+Stats    1 135000 13500 0 0
+Affect       -1 -1 20 18 0
+Affect       -1 -1 5 19 0
+Affect       -1 -1 10 19 0
+#MUDPROG
+Progtype  wear_prog~
+Arglist   100~
+Comlist   mea $n _red You take hold of the beamsaber and press the button.
+mea $n _red Two destructive blades of energy emit from the ends of the saber.
+mpecharound $n _red $n takes hold of a beamsaber and presses the button.
+mpechoaround $n _red Two blades of energy emit from the ends of the saber.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  remove_prog~
+Arglist   100~
+Comlist   mea $n _red As you shut off the saber and tuck it away, the blades of
+mea $n _red energy flicker out of existance, and fade from view.
+mpechoaround $n _red As $n shuts off his saber and tucks it away, the blades
+mpechoaround $n _red of energy flicker out of existance, and fade away.
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11105
+Keywords helmet gundam~
+Type     armor~
+Short    &za &rHe&Rlm&ret &zResembling a &gG&cu&znd&ca&gm &zHead~
+Long     A helmet resembling a gundam head is lying here.~
+Flags    glow inventory~
+WFlags   take head~
+Values   60 60 0 0 0 0
+Stats    25 150000 15000 0 0
+Affect       -1 -1 1000 13 0
+Affect       -1 -1 3 31 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 10 19 0
+Affect       -1 -1 5 18 0
+Affect       -1 -1 5 19 0
+#MUDPROG
+Progtype  wear_prog~
+Arglist   100~
+Comlist   mea $n &gAs you place the large Gundanium helmet upon your head, its 
+mea $n &gactuality thrusters fire up and it seems nearly weightless. 
+mea $n &gThe eyes of the helmet begin to glow with a menacing, soft, 
+mea $n &gstrangely violent &Yyellow &gcolor.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  remove_prog~
+Arglist   100~
+Comlist   mea $n &gAs you attempt the pull the mystical helmet away from your
+mea $n &gHead, it refuses to let go. This helmet is one with you, and
+mea $n &gIt takes alot of forcing to remove. You finallay manage to
+mea $n &gSever the helmet from your head, though it leaves your face
+mea $n &gAnd Head scarred and torn.
+mpdamage $n 2500
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11109
+Keywords vhs tape~
+Type     treasure~
+Short    a VHS Tape~
+Long     A VHS tape lies in the dust here.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 7 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11110
+Keywords aura life~
+Type     light~
+Short    &zThe &GA&gu&Gr&ga &zof &CL&ci&Cf&ce~
+Long     A strange wooden box lies here, engraved 'life'.~
+Flags    glow inventory~
+WFlags   take~
+Values   0 0 -1 0 0 0
+Stats    1 103982 10398 0 0
+Affect       -1 -1 1000 13 0
+Affect       -1 -1 1000 14 0
+Affect       -1 -1 3 31 0
+#MUDPROG
+Progtype  wear_prog~
+Arglist   100~
+Comlist   mea $n _gre You unclasp the small wooden box labeled "Life", and open it.
+mea $n _gre A sweet, soft, green aura of life begins to surround you.
+mpechoaround $n _gre $n Unclasps a small wooden box labeled "Life," and
+mpecharound $n _gre Opens it. $n is bathed in sweet, soft green light.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  remove_prog~
+Arglist   100~
+Comlist   mea $n You frown sadly as you hold the box up, and your beloved aura
+mea $n once again drifts back into its place.
+mpechoaround $n frowns sadly as they return the aura of life to its box.
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11130
+Keywords cloaking tiny personal pair device~
+Type     armor~
+Short    &za tiny pair of Personal &BC&cl&Bo&ca&Bk&ci&Bn&cg &RDe&rvic&Res~
+Long     A set of strange, tiny devices is laying here, sparking and sputtering.~
+Flags    hum inventory~
+WFlags   take ears~
+Values   55 55 0 0 0 0
+Stats    1 192001 19200 0 0
+Affect       -1 -1 1000 13 0
+Affect       -1 -1 12 18 0
+Affect       -1 -1 8 19 0
+#MUDPROG
+Progtype  wear_prog~
+Arglist   100~
+Comlist   mea $n You slowly clip the devices to your ears.
+mea $n They begin to spark to life, and generate a field, rendering you
+mea $n completely invisible to the naked eye.
+mpechoaround $n $n clips a pair of odd devices onto their eyes and
+mpechoaround $n vanishes without a trace.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  remove_prog~
+Arglist   100~
+Comlist   mea $n You unclasp the devices from your ears, and flicker back into
+mea $n existance again. The odd devices, no longer drawing power from
+mea $n your neural cortex, sputter, spark, and suddenly explode.
+mpechoaround $n $n removes the strange devices from their ears, which
+mpechoaround $n suddenly spark violently and explode.
+mpdamage $n 5000
+mpforce $n drop cloaking
+mpforce $n sacrifice cloaking
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11131
+Keywords advanced matrix scanning glasses~
+Type     armor~
+Short    &za pair of &RA&rd&Rv&ra&Rn&rc&Re&rd &BSca&bnn&Bing &gM&za&gt&zr&gi&zx &zSunglasses~
+Long     A advanced matrix scanning glasses is here.~
+Flags    inventory~
+WFlags   take eyes~
+Values   55 55 0 0 0 0
+Stats    1 193190 19319 0 0
+Affect       -1 -1 600 13 0
+Affect       -1 -1 -100 14 0
+Affect       -1 -1 8 18 0
+Affect       -1 -1 4 19 0
+Affect       -1 -1 8 26 0
+Affect       -1 -1 32 26 0
+#MUDPROG
+Progtype  wear_prog~
+Arglist   100~
+Comlist   mea $n As you place the sunglasses over your eyes, they beep and suddenly
+mea $n begin to feed information directly into your retinas. You notice
+mea $n that quite a few things appear differently than before.
+mpechoaround $n As $n wears their sunglasses, they suddenly beep softly.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  remove_prog~
+Arglist   100~
+Comlist   mea $n After removing the sunglasses, you blink several times in an attempt
+mea $n to get used to normal vision again.
+mpechoaround $n $n removes their sunglasses, and blinks several times.
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11133
+Keywords pizza~
+Type     food~
+Short    a Large Pizza~
+Long     A Large Pizza is here, looking delicious.~
+WFlags   take~
+Values   50 50 0 0 0 0
+Stats    1 4 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11134
+Keywords cybernetic implants~
+Type     armor~
+Short    &BC&by&Bb&be&Br&bn&Be&bt&Bi&bc &zLeg &RI&rmplant&Rs~
+Long     A cybernetic implants is here.~
+Flags    inventory~
+WFlags   take legs~
+Values   75 75 0 0 0 0
+Stats    1 111029 11102 0 0
+Affect       -1 -1 12 18 0
+Affect       -1 -1 8 19 0
+Affect       -1 -1 1000 13 0
+Affect       -1 -1 1100 14 0
+Affect       -1 -1 25 40 0
+#MUDPROG
+Progtype  wear_prog~
+Arglist   100~
+Comlist   mea $n You rest the implants against your legs, and they immediately
+mea $n thread their way into your leg muscles.
+mpechoaround $n $n lets some implants inhabit his leg muscles..
+mpechoaround $n looks .. kinda painful.. though they look powerful now..
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  remove_prog~
+Arglist   100~
+Comlist   mea $n You cut the implants out of your leg muscles, screaming in agony
+mea $n the entire time.
+mpechoaround $n $n cuts the implants from his legs, screaming in horror.
+mpdamage $n 10000
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     11136
+Keywords tiny soap~
+Type     treasure~
+Short    a tiny bar of soap~
+Long     A tiny bar of soap is laying here.~
+Values   0 0 0 0 0 0
+Stats    1 3 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11137
+Keywords tiny shampoo~
+Type     treasure~
+Short    a tiny bottle of shampoo~
+Long     A tiny bottle of shampoo is laying here.~
+Values   0 0 0 0 0 0
+Stats    1 3 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11138
+Keywords hot dog~
+Type     food~
+Short    a delicious hot-dog~
+Long     A delicious hot-dog is here.~
+Flags    inventory prototype~
+WFlags   take~
+Values   50 50 0 0 0 0
+Stats    1 2 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11139
+Keywords nachos~
+Type     food~
+Short    a huge basket of nachos~
+Long     A huge basket of nachos is here.~
+Flags    inventory~
+WFlags   take~
+Values   50 50 0 0 0 0
+Stats    1 3 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11140
+Keywords coffee pudding~
+Type     food~
+Short    some coffee pudding~
+Long     Some coffee pudding is here.~
+Flags    inventory~
+WFlags   take~
+Values   50 50 0 0 0 0
+Stats    1 4 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     11000
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     11001
+Name     The John F. Kennedy International Spaceport~
+Sector   city~
+Desc     The floors of the spaceport are clean and well maintained, and the lighting
+is bright and adequate. Directly to the north of this entrance is a
+Security Gate, after which there is a large open foyer, littered with
+screens showing flight arrival and departure times, while off to the east
+is the lost baggae claim center. 
+~
+#EXIT
+Direction north~
+ToRoom    11002
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11003
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    800
+#ENDEXIT
+
+Reset M 0 11011 33 11001
+#ENDROOM
+
+#ROOM
+Vnum     11002
+Name     Security Gate One~
+Sector   city~
+Desc     The security gate is a large steel-crafted metal detector, with small x-ray
+machines on either side. There is a sign in front of the gate asking that
+all metal objects be removed and places in a bin on one of the x-ray
+conveyer belts. A seperate sign clearly cites that all weaponry is banned
+from the Spaceport, and that violators will be prosecuted to the fullest
+extent of the law.
+~
+#EXIT
+Direction north~
+ToRoom    11005
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11001
+#ENDEXIT
+
+Reset M 0 11002 2 11002
+Reset M 0 11011 33 11002
+#ENDROOM
+
+#ROOM
+Vnum     11003
+Name     Lost Baggage Claim Center~
+Sector   city~
+Desc     The room is littered with litterally hundreds of suitcases, briefcases,
+shoulderbags and various other sorts of luggage. Each of the shelves in
+the room has been packed far beyond capacity, and a tiny tag bearing the
+flight number the luggage was found unclaimed on is visibly attached to
+each of the bags. 
+~
+#EXIT
+Direction west~
+ToRoom    11001
+#ENDEXIT
+
+Reset M 0 11011 33 11003
+Reset M 0 11011 33 11003
+#ENDROOM
+
+#ROOM
+Vnum     11004
+Name     The John F. Kennedy International Spaceport~
+Sector   city~
+Desc     This is the large central section of the spaceport. The area is well lit,
+wide open, and quite well maintained. There are television screens
+littering the area, suspended from the ceiling that display arrival and
+departure times for various flights.
+~
+#EXIT
+Direction north~
+ToRoom    11007
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11005
+#ENDEXIT
+
+Reset M 0 11011 33 11004
+#ENDROOM
+
+#ROOM
+Vnum     11005
+Name     The John F. Kennedy International Spaceport~
+Sector   city~
+Desc     This is the large central section of the spaceport. The area is well lit,
+wide open, and quite well maintained. There are television screens
+littering the area, suspended from the ceiling that display arrival and
+departure times for various flights.
+~
+#EXIT
+Direction north~
+ToRoom    11008
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11006
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11002
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11004
+#ENDEXIT
+
+Reset M 0 11011 33 11005
+#ENDROOM
+
+#ROOM
+Vnum     11006
+Name     The John F. Kennedy International Spaceport~
+Sector   city~
+Desc     This is the large central section of the spaceport. The area is well lit,
+wide open, and quite well maintained. There are television screens
+littering the area, suspended from the ceiling that display arrival and
+departure times for various flights.
+~
+#EXIT
+Direction north~
+ToRoom    11009
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11005
+#ENDEXIT
+
+Reset M 0 11011 33 11006
+#ENDROOM
+
+#ROOM
+Vnum     11007
+Name     The John F. Kennedy International Spaceport~
+Sector   city~
+Desc     This is the large central section of the spaceport. The area is well lit,
+wide open, and quite well maintained. There are television screens
+littering the area, suspended from the ceiling that display arrival and
+departure times for various flights.
+~
+#EXIT
+Direction north~
+ToRoom    11010
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11008
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11004
+#ENDEXIT
+
+Reset M 0 11011 33 11007
+Reset M 0 11011 33 11007
+#ENDROOM
+
+#ROOM
+Vnum     11008
+Name     The John F. Kennedy International Spaceport~
+Sector   city~
+Desc     This is the large central section of the spaceport. The area is well lit,
+wide open, and quite well maintained. There are television screens
+littering the area, suspended from the ceiling that display arrival and
+departure times for various flights.
+~
+#EXIT
+Direction north~
+ToRoom    11011
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11009
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11005
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11007
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11009
+Name     The John F. Kennedy International Spaceport~
+Sector   city~
+Desc     This is the large central section of the spaceport. The area is well lit,
+wide open, and quite well maintained. There are television screens
+littering the area, suspended from the ceiling that display arrival and
+departure times for various flights.
+~
+#EXIT
+Direction north~
+ToRoom    11012
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11006
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11008
+#ENDEXIT
+
+Reset M 0 11011 33 11009
+#ENDROOM
+
+#ROOM
+Vnum     11010
+Name     The John F. Kennedy International Spaceport~
+Sector   city~
+Desc     This is the large central section of the spaceport. The area is well lit,
+wide open, and quite well maintained. There are television screens
+littering the area, suspended from the ceiling that display arrival and
+departure times for various flights.
+~
+#EXIT
+Direction east~
+ToRoom    11011
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11007
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11011
+Name     The John F. Kennedy International Spaceport~
+Sector   city~
+Desc     This is the large central section of the spaceport. The area is well lit,
+wide open, and quite well maintained. There are television screens
+littering the area, suspended from the ceiling that display arrival and
+departure times for various flights.
+~
+#EXIT
+Direction north~
+ToRoom    11013
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11012
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11008
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11010
+#ENDEXIT
+
+Reset M 0 11011 33 11011
+Reset M 0 11011 33 11011
+#ENDROOM
+
+#ROOM
+Vnum     11012
+Name     The John F. Kennedy International Spaceport~
+Sector   city~
+Desc     This is the large central section of the spaceport. The area is well lit,
+wide open, and quite well maintained. There are television screens
+littering the area, suspended from the ceiling that display arrival and
+departure times for various flights.
+~
+#EXIT
+Direction south~
+ToRoom    11009
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11011
+#ENDEXIT
+
+Reset M 0 11011 33 11012
+#ENDROOM
+
+#ROOM
+Vnum     11013
+Name     Security Gate Two~
+Sector   city~
+Desc     The security gate is a large steel-crafted metal detector, with small x-ray
+machines on either side. There is a sign in front of the gate asking that
+all metal objects be removed and places in a bin on one of the x-ray
+conveyer belts. A seperate sign clearly cites that all weaponry is banned
+from the Spaceport, and that violators will be prosecuted to the fullest
+extent of the law.
+~
+#EXIT
+Direction north~
+ToRoom    11014
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11011
+#ENDEXIT
+
+Reset M 0 11002 2 11013
+#ENDROOM
+
+#ROOM
+Vnum     11014
+Name     Entrance to the John F. Kennedy Spaceport~
+Sector   city~
+Desc     This is a very plain entryway consisting of a revolving door.
+~
+#EXIT
+Direction north~
+ToRoom    11200
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11013
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11015
+Name     Hallway to the Western Terminals~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    11007
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11016
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11016
+Name     Hallway to the Western Terminals~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    11017
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11015
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11017
+Name     The Western Terminal Foyer~
+Sector   city~
+#EXIT
+Direction south~
+ToRoom    11016
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11018
+Name     Hallway to the Eastern Terminals~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    11019
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11009
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11019
+Name     Hallway to the Eastern Terminals~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    11020
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11018
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11020
+Name     The Eastern Terminal Foyer~
+Sector   city~
+#EXIT
+Direction south~
+ToRoom    11019
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11021
+Name     World Trade Center Plaza~
+Sector   city~
+Desc     In the center of the plaza is an enormous fountain, which is surrounded by
+comfortable looking park benches. On the East and the West sides of the
+plaza are entrances to the infamous "Twin Towers", or, New York City's
+great landmark, the World Trade Center. 
+~
+#EXIT
+Direction north~
+ToRoom    11096
+Flags     hidden~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11023
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11150
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11022
+#ENDEXIT
+
+Reset M 0 11011 33 11021
+Reset O 0 11021 1 11021
+#ENDROOM
+
+#ROOM
+Vnum     11022
+Name     Entrance to the Western Tower~
+Sector   city~
+Desc     The Entrance way is quite simple, with a standard revolving door into
+the tower. To the north is a security checkpoint.
+~
+#EXIT
+Direction north~
+ToRoom    11024
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11021
+#ENDEXIT
+
+Reset M 0 11011 33 11022
+#ENDROOM
+
+#ROOM
+Vnum     11023
+Name     Entrance to the Eastern Tower~
+Sector   city~
+Desc     The Entrance way is quite simple, with a standard revolving door into
+the tower. To the north is a security checkpoint.
+~
+#EXIT
+Direction north~
+ToRoom    11025
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11021
+#ENDEXIT
+
+Reset M 0 11011 33 11023
+#ENDROOM
+
+#ROOM
+Vnum     11024
+Name     Western Tower Security Gate~
+Sector   city~
+Desc     This Security Checkpoint is very standard, with a simple set of metal
+detectors along with a few guards. To the north lies the foyer of the
+tower.
+~
+#EXIT
+Direction north~
+ToRoom    11027
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11022
+#ENDEXIT
+
+Reset M 0 11024 1 11024
+#ENDROOM
+
+#ROOM
+Vnum     11025
+Name     Eastern Tower Security Gate~
+Sector   city~
+Flags    safe~
+Desc     This Security Checkpoint is very standard, with a simple set of metal
+detectors along with a few guards.
+~
+#EXIT
+Direction south~
+ToRoom    11023
+#ENDEXIT
+
+Reset M 0 11052 1 11025
+Reset M 0 11011 33 11025
+Reset M 0 11101 10 11025
+#ENDROOM
+
+#ROOM
+Vnum     11026
+Name     The First Floor Foyer - Western Tower~
+Sector   city~
+Desc     The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+#EXIT
+Direction north~
+ToRoom    11030
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11027
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    11029
+#ENDEXIT
+
+Reset M 0 11101 10 11026
+Reset M 0 11028 14 11026
+Reset M 0 11028 14 11026
+#ENDROOM
+
+#ROOM
+Vnum     11027
+Name     The First Floor Foyer - Western Tower~
+Sector   city~
+Desc     The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+#EXIT
+Direction north~
+ToRoom    11031
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11028
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11024
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11026
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11028
+Name     The First Floor Foyer - Western Tower~
+Sector   city~
+Desc     The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+#EXIT
+Direction north~
+ToRoom    11032
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11027
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    11033
+#ENDEXIT
+
+Reset M 0 11101 10 11028
+#ENDROOM
+
+#ROOM
+Vnum     11029
+Name     The First Floor Foyer - Western Tower~
+Sector   city~
+Desc     The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+#EXIT
+Direction north~
+ToRoom    11034
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11030
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    11026
+#ENDEXIT
+
+Reset M 0 11028 14 11029
+Reset M 0 11028 14 11029
+#ENDROOM
+
+#ROOM
+Vnum     11030
+Name     The First Floor Foyer - Western Tower~
+Sector   city~
+Desc     The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+#EXIT
+Direction north~
+ToRoom    11035
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11031
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11026
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11029
+#ENDEXIT
+
+Reset M 0 11011 33 11030
+Reset M 0 11028 14 11030
+#ENDROOM
+
+#ROOM
+Vnum     11031
+Name     The First Floor Foyer - Western Tower~
+Sector   city~
+Desc     The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+#EXIT
+Direction north~
+ToRoom    11036
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11032
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11027
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11030
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11032
+Name     The First Floor Foyer - Western Tower~
+Sector   city~
+Desc     The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+#EXIT
+Direction north~
+ToRoom    11037
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11033
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11028
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11031
+#ENDEXIT
+
+Reset M 0 11028 14 11032
+Reset M 0 11011 33 11032
+#ENDROOM
+
+#ROOM
+Vnum     11033
+Name     The First Floor Foyer - Western Tower~
+Sector   city~
+Desc     The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+#EXIT
+Direction north~
+ToRoom    11038
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11032
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    11028
+#ENDEXIT
+
+Reset M 0 11011 33 11033
+Reset M 0 11011 33 11033
+#ENDROOM
+
+#ROOM
+Vnum     11034
+Name     The First Floor Foyer - Western Tower~
+Sector   city~
+Desc     The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+#EXIT
+Direction north~
+ToRoom    11039
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11035
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11029
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11035
+Name     The First Floor Foyer - Western Tower~
+Sector   city~
+Desc     The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+#EXIT
+Direction north~
+ToRoom    11040
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11036
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11030
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11034
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11036
+Name     The Information Desk - Western Tower~
+Sector   city~
+Flags    nomob~
+Desc     The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+#EXIT
+Direction north~
+ToRoom    11041
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11037
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11031
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11035
+#ENDEXIT
+
+Reset M 0 11036 1 11036
+Reset O 0 11036 1 11036
+#ENDROOM
+
+#ROOM
+Vnum     11037
+Name     The First Floor Foyer - Western Tower~
+Sector   city~
+Desc     The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+#EXIT
+Direction north~
+ToRoom    11042
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11038
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11032
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11036
+#ENDEXIT
+
+Reset M 0 11028 14 11037
+#ENDROOM
+
+#ROOM
+Vnum     11038
+Name     The First Floor Foyer - Western Tower~
+Sector   city~
+Desc     The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+#EXIT
+Direction north~
+ToRoom    11043
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11033
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11037
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11039
+Name     The First Floor Foyer - Western Tower~
+Sector   city~
+Desc     The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+#EXIT
+Direction east~
+ToRoom    11040
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11034
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    11044
+#ENDEXIT
+
+Reset M 0 11101 10 11039
+#ENDROOM
+
+#ROOM
+Vnum     11040
+Name     The First Floor Foyer - Western Tower~
+Sector   city~
+Desc     The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+#EXIT
+Direction north~
+ToRoom    11044
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11041
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11035
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11039
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11041
+Name     The First Floor Foyer - Western Tower~
+Sector   city~
+Desc     The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+#EXIT
+Direction north~
+ToRoom    11045
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11042
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11036
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11040
+#ENDEXIT
+
+Reset M 0 11011 33 11041
+Reset M 0 11011 33 11041
+#ENDROOM
+
+#ROOM
+Vnum     11042
+Name     The First Floor Foyer - Western Tower~
+Sector   city~
+Desc     The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+#EXIT
+Direction north~
+ToRoom    11046
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11043
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11037
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11041
+#ENDEXIT
+
+Reset M 0 11028 14 11042
+#ENDROOM
+
+#ROOM
+Vnum     11043
+Name     The First Floor Foyer - Western Tower~
+Sector   city~
+Desc     The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+#EXIT
+Direction south~
+ToRoom    11038
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11042
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    11046
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11044
+Name     The First Floor Foyer - Western Tower~
+Sector   city~
+Desc     The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+#EXIT
+Direction east~
+ToRoom    11045
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11040
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    11039
+#ENDEXIT
+
+Reset M 0 11046 1 11044
+  Reset E 0 11046 1 17
+Reset M 0 11028 14 11044
+#ENDROOM
+
+#ROOM
+Vnum     11045
+Name     The First Floor Foyer - Western Tower~
+Sector   city~
+Desc     The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+#EXIT
+Direction north~
+ToRoom    11047
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11046
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11041
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11044
+#ENDEXIT
+
+Reset M 0 11028 14 11045
+#ENDROOM
+
+#ROOM
+Vnum     11046
+Name     The First Floor Foyer - Western Tower~
+Sector   city~
+Flags    safe~
+Desc     The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+#EXIT
+Direction south~
+ToRoom    11042
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11045
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    11043
+#ENDEXIT
+
+Reset M 0 11101 10 11046
+#ENDROOM
+
+#ROOM
+Vnum     11047
+Name     The Elevator - Western Tower~
+Sector   city~
+Desc     The Elevator is nothing more than a large, smooth titanium sphere. The
+bottom of the sphere has been made flat, to allow easier standing, but
+other than that, the rest remains completely round. There is a single
+word, written in exquisite italics against the wall of the sphere
+opposite the entrance, "&CActivate&z". The sphere is lit by a large white
+light that shines down from the center of the top of the sphere.
+~
+#EXIT
+Direction south~
+ToRoom    11045
+#ENDEXIT
+
+Reset M 0 11011 33 11047
+#MUDPROG
+Progtype  speech_prog~
+Arglist   activate~
+Comlist   mpechoaround $n _cya $n looks as if they're hearing voices.
+mea $n _red The sphere begins to echo sounds into your ears.
+mea $n _blu |     Say "Floor 1"     |
+mea $n _blu |     Say "Floor 2"     |
+mea $n _blu |     Say "Floor 3"     |
+mea $n _blu |     Say "Floor 4"     |
+mea $n _blu |     Say "Floor 5"     |
+mea $n _blu |     Say "Floor 6"     |
+mea $n _red The echos within the chamber cease.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 2~
+Comlist   mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11048
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 3~
+Comlist   mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11049
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 4~
+Comlist   mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11050
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 5~
+Comlist   mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11051
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 6~
+Comlist   mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11052
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 1~
+Comlist   mpechoaround $n _red A Laser drops from the ceiling.
+mpechoaround $n _red The laser shoots $n for being an idiot.
+mea $n _blu *** Warning: You are already on Floor 1. ***
+mea $n _red A laser drops from the ceiling.
+mea $n _red The laser shoots you for being an idiot.
+mpdamage $n 2500
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     11048
+Name     The Elevator - Western Tower~
+Sector   city~
+Flags    nomob~
+Desc     The Elevator is nothing more than a large, smooth titanium sphere. The
+bottom of the sphere has been made flat, to allow easier standing, but
+other than that, the rest remains completely round. There is a single
+word, written in exquisite italics against the wall of the sphere
+opposite the entrance, "&CActivate&z". The sphere is lit by a large white
+light that shines down from the center of the top of the sphere.
+~
+#EXIT
+Direction south~
+ToRoom    11053
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   activate~
+Comlist   mpechoaround $n _cya $n looks as if they're hearing voices.
+mea $n _red The sphere begins to echo sounds into your ears.
+mea $n _blu |     Say "Floor 1"     |
+mea $n _blu |     Say "Floor 2"     |
+mea $n _blu |     Say "Floor 3"     |
+mea $n _blu |     Say "Floor 4"     |
+mea $n _blu |     Say "Floor 5"     |
+mea $n _blu |     Say "Floor 6"     |
+mea $n _red The echos within the chamber cease.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 1~
+Comlist   mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11047
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 3~
+Comlist   mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11049
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 4~
+Comlist   mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11050
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 5~
+Comlist   mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11051
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 6~
+Comlist   mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11052
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 2~
+Comlist   mpechoaround $n _red A Laser drops from the ceiling.
+mpechoaround $n _red The laser shoots $n for being an idiot.
+mea $n _blu *** Warning: You are already on Floor 2. ***
+mea $n _red A laser drops from the ceiling.
+mea $n _red The laser shoots you for being an idiot.
+mpdamage $n 2500
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     11049
+Name     The Elevator - Western Tower~
+Sector   city~
+Flags    nomob~
+Desc     The Elevator is nothing more than a large, smooth titanium sphere. The
+bottom of the sphere has been made flat, to allow easier standing, but
+other than that, the rest remains completely round. There is a single
+word, written in exquisite italics against the wall of the sphere
+opposite the entrance, "&CActivate&z". The sphere is lit by a large white
+light that shines down from the center of the top of the sphere.
+~
+#EXIT
+Direction south~
+ToRoom    11087
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   activate~
+Comlist   mpechoaround $n _cya $n looks as if they're hearing voices.
+mea $n _red The sphere begins to echo sounds into your ears.
+mea $n _blu |     Say "Floor 1"     |
+mea $n _blu |     Say "Floor 2"     |
+mea $n _blu |     Say "Floor 3"     |
+mea $n _blu |     Say "Floor 4"     |
+mea $n _blu |     Say "Floor 5"     |
+mea $n _blu |     Say "Floor 6"     |
+mea $n _red The echos within the chamber cease.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 1~
+Comlist   mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11047
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 2~
+Comlist   mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11048
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 4~
+Comlist   mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11050
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 5~
+Comlist   mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11051
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 6~
+Comlist   mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11052
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 3~
+Comlist   mpechoaround $n _red A Laser drops from the ceiling.
+mpechoaround $n _red The laser shoots $n for being an idiot.
+mea $n _blu *** Warning: You are already on Floor 3. ***
+mea $n _red A laser drops from the ceiling.
+mea $n _red The laser shoots you for being an idiot.
+mpdamage $n 2500
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     11050
+Name     The Elevator - Western Tower~
+Sector   city~
+Flags    nomob~
+Desc     The Elevator is nothing more than a large, smooth titanium sphere. The
+bottom of the sphere has been made flat, to allow easier standing, but
+other than that, the rest remains completely round. There is a single
+word, written in exquisite italics against the wall of the sphere
+opposite the entrance, "&CActivate&z". The sphere is lit by a large white
+light that shines down from the center of the top of the sphere.
+~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   activate~
+Comlist   mpechoaround $n _cya $n looks as if they're hearing voices.
+mea $n _red The sphere begins to echo sounds into your ears.
+mea $n _blu |     Say "Floor 1"     |
+mea $n _blu |     Say "Floor 2"     |
+mea $n _blu |     Say "Floor 3"     |
+mea $n _blu |     Say "Floor 4"     |
+mea $n _blu |     Say "Floor 5"     |
+mea $n _blu |     Say "Floor 6"     |
+mea $n _red The echos within the chamber cease.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 1~
+Comlist   mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11047
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 2~
+Comlist   mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11048
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 3~
+Comlist   mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11049
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 5~
+Comlist   mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11051
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 6~
+Comlist   mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11052
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 4~
+Comlist   mpechoaround $n _red A Laser drops from the ceiling.
+mpechoaround $n _red The laser shoots $n for being an idiot.
+mea $n _blu *** Warning: You are already on Floor 4. ***
+mea $n _red A laser drops from the ceiling.
+mea $n _red The laser shoots you for being an idiot.
+mpdamage $n 2500
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     11051
+Name     The Elevator - Western Tower~
+Sector   city~
+Flags    nomob~
+Desc     The Elevator is nothing more than a large, smooth titanium sphere. The
+bottom of the sphere has been made flat, to allow easier standing, but
+other than that, the rest remains completely round. There is a single
+word, written in exquisite italics against the wall of the sphere
+opposite the entrance, "&CActivate&z". The sphere is lit by a large white
+light that shines down from the center of the top of the sphere.
+~
+#EXIT
+Direction south~
+ToRoom    11165
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   activate~
+Comlist   mpechoaround $n _cya $n looks as if they're hearing voices.
+mea $n _red The sphere begins to echo sounds into your ears.
+mea $n _blu |     Say "Floor 1"     |
+mea $n _blu |     Say "Floor 2"     |
+mea $n _blu |     Say "Floor 3"     |
+mea $n _blu |     Say "Floor 4"     |
+mea $n _blu |     Say "Floor 5"     |
+mea $n _blu |     Say "Floor 6"     |
+mea $n _red The echos within the chamber cease.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 1~
+Comlist   mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11047
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 2~
+Comlist   mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11048
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 3~
+Comlist   mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11049
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 4~
+Comlist   mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11050
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 6~
+Comlist   mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11052
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 5~
+Comlist   mpechoaround $n _red A Laser drops from the ceiling.
+mpechoaround $n _red The laser shoots $n for being an idiot.
+mea $n _blu *** Warning: You are already on Floor 5. ***
+mea $n _red A laser drops from the ceiling.
+mea $n _red The laser shoots you for being an idiot.
+mpdamage $n 2500
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     11052
+Name     The Elevator - Western Tower~
+Sector   city~
+Flags    nomob~
+Desc     The Elevator is nothing more than a large, smooth titanium sphere. The
+bottom of the sphere has been made flat, to allow easier standing, but
+other than that, the rest remains completely round. There is a single
+word, written in exquisite italics against the wall of the sphere
+opposite the entrance, "&CActivate&z". The sphere is lit by a large white
+light that shines down from the center of the top of the sphere.
+~
+#EXIT
+Direction south~
+ToRoom    11094
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   activate~
+Comlist   mpechoaround $n _cya $n looks as if they're hearing voices.
+mea $n _red The sphere begins to echo sounds into your ears.
+mea $n _blu |     Say "Floor 1"     |
+mea $n _blu |     Say "Floor 2"     |
+mea $n _blu |     Say "Floor 3"     |
+mea $n _blu |     Say "Floor 4"     |
+mea $n _blu |     Say "Floor 5"     |
+mea $n _blu |     Say "Floor 6"     |
+mea $n _red The echos within the chamber cease.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 1~
+Comlist   mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11047
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 2~
+Comlist   mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11048
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 3~
+Comlist   mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11049
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 4~
+Comlist   mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11050
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 5~
+Comlist   mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11051
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p floor 6~
+Comlist   mpechoaround $n _red A Laser drops from the ceiling.
+mpechoaround $n _red The laser shoots $n for being an idiot.
+mea $n _blu *** Warning: You are already on Floor 6. ***
+mea $n _red A laser drops from the ceiling.
+mea $n _red The laser shoots you for being an idiot.
+mpdamage $n 2500
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     11053
+Name     Entrance to the Trading Pits~
+Sector   city~
+Desc     This platform is slightly above the trading floor of the trading pits, and
+from here, numerous pits can be seen, hundreds of traders and runners are
+nearly wrestling to buy and sell commodities stocks in such a way that
+would produce the most profits.
+~
+#EXIT
+Direction north~
+ToRoom    11048
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11055
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11054
+Name     Between The Trading Pits~
+Sector   city~
+Desc     The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information. 
+~
+#EXIT
+Direction east~
+ToRoom    11056
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11068
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11055
+Name     Before The Trading Pits~
+Sector   city~
+Flags    safe~
+Desc     The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information. A large doorway into the pits stands to the south.
+~
+#EXIT
+Direction north~
+ToRoom    11053
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11056
+Key       11046
+Flags     isdoor closed locked pickproof~
+#ENDEXIT
+
+Reset M 0 11055 1 11055
+Reset D 0 11055 2 2
+#ENDROOM
+
+#ROOM
+Vnum     11056
+Name     Between The Trading Pits~
+Sector   city~
+Desc     The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information. 
+~
+#EXIT
+Direction north~
+ToRoom    11055
+Key       11046
+Flags     isdoor closed locked~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11057
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11058
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11054
+#ENDEXIT
+
+Reset D 0 11056 0 2
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p let me out~
+Comlist   mptransfer $n 11055
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     11057
+Name     Between The Trading Pits~
+Sector   city~
+Desc     The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information. 
+~
+#EXIT
+Direction south~
+ToRoom    11071
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11056
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11058
+Name     Between The Trading Pits~
+Sector   city~
+Desc     The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information. 
+~
+#EXIT
+Direction north~
+ToRoom    11056
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11071
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11059
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11068
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11059
+Name     Between The Trading Pits~
+Sector   city~
+Desc     The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information.
+~
+#EXIT
+Direction north~
+ToRoom    11058
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11073
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11062
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11070
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11060
+Name     Between The Trading Pits~
+Sector   city~
+Desc     The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information.
+~
+#EXIT
+Direction north~
+ToRoom    11069
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11076
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11061
+Name     Between The Trading Pits~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    11070
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11062
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11062
+Name     Between The Trading Pits~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    11059
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11063
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11065
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11061
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11063
+Name     Between The Trading Pits~
+Sector   city~
+Desc     The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information.
+~
+#EXIT
+Direction north~
+ToRoom    11073
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11064
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11077
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11060
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11064
+Name     Between The Trading Pits~
+Sector   city~
+Desc     The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information.
+~
+#EXIT
+Direction north~
+ToRoom    11074
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11082
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11063
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11065
+Name     Between The Trading Pits~
+Sector   city~
+Desc     The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information. 
+~
+#EXIT
+Direction north~
+ToRoom    11062
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11081
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11066
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11077
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11066
+Name     Between The Trading Pits~
+Sector   city~
+Desc     The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information. 
+~
+#EXIT
+Direction north~
+ToRoom    11065
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11084
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11080
+#ENDEXIT
+
+Reset M 0 11066 1 11066
+  Reset G 0 11066 1
+#ENDROOM
+
+#ROOM
+Vnum     11067
+Name     In the "Oranges" Pit~
+Sector   city~
+Desc     The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information.
+~
+#EXIT
+Direction east~
+ToRoom    11068
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11069
+#ENDEXIT
+
+Reset M 0 11067 8 11067
+Reset M 0 11067 8 11067
+#ENDROOM
+
+#ROOM
+Vnum     11068
+Name     In the "Oranges" Pit~
+Sector   city~
+Desc     The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information. 
+~
+#EXIT
+Direction north~
+ToRoom    11054
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11058
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11070
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11067
+#ENDEXIT
+
+Reset M 0 11067 8 11068
+Reset M 0 11067 8 11068
+#ENDROOM
+
+#ROOM
+Vnum     11069
+Name     In the "Oranges" Pit~
+Sector   city~
+Desc     The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information.
+~
+#EXIT
+Direction north~
+ToRoom    11067
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11070
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11060
+#ENDEXIT
+
+Reset M 0 11067 8 11069
+Reset M 0 11067 8 11069
+#ENDROOM
+
+#ROOM
+Vnum     11070
+Name     In the "Oranges" Pit~
+Sector   city~
+Desc     The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information.
+~
+#EXIT
+Direction north~
+ToRoom    11068
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11059
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11061
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11069
+#ENDEXIT
+
+Reset M 0 11067 8 11070
+Reset M 0 11067 8 11070
+#ENDROOM
+
+#ROOM
+Vnum     11071
+Name     In the "Soy Beans" Pit~
+Sector   city~
+Desc     The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information. 
+~
+#EXIT
+Direction north~
+ToRoom    11057
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11072
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11073
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11058
+#ENDEXIT
+
+Reset M 0 11072 8 11071
+Reset M 0 11072 8 11071
+#ENDROOM
+
+#ROOM
+Vnum     11072
+Name     In the "Soy Beans" Pit~
+Sector   city~
+#EXIT
+Direction south~
+ToRoom    11074
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11071
+#ENDEXIT
+
+Reset M 0 11072 8 11072
+Reset M 0 11072 8 11072
+#ENDROOM
+
+#ROOM
+Vnum     11073
+Name     In the "Soy Beans" Pit~
+Sector   city~
+Desc     The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information.
+~
+#EXIT
+Direction north~
+ToRoom    11071
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11074
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11063
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11059
+#ENDEXIT
+
+Reset M 0 11072 8 11073
+Reset M 0 11072 8 11073
+#ENDROOM
+
+#ROOM
+Vnum     11074
+Name     In the "Soy Beans" Pit~
+Sector   city~
+Desc     The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information.
+~
+#EXIT
+Direction north~
+ToRoom    11072
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11064
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11073
+#ENDEXIT
+
+Reset M 0 11072 8 11074
+Reset M 0 11072 8 11074
+#ENDROOM
+
+#ROOM
+Vnum     11075
+Name     In the "Silver" Pit~
+Sector   city~
+Desc     The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information.
+~
+#EXIT
+Direction east~
+ToRoom    11076
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11078
+#ENDEXIT
+
+Reset M 0 11078 12 11075
+Reset M 0 11078 12 11075
+#ENDROOM
+
+#ROOM
+Vnum     11076
+Name     In the "Silver" Pit~
+Sector   city~
+Desc     The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information.
+~
+#EXIT
+Direction north~
+ToRoom    11060
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11077
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11079
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11075
+#ENDEXIT
+
+Reset M 0 11078 12 11076
+Reset M 0 11078 12 11076
+#ENDROOM
+
+#ROOM
+Vnum     11077
+Name     In the "Silver" Pit~
+Sector   city~
+Desc     The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information. 
+~
+#EXIT
+Direction east~
+ToRoom    11065
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11080
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11076
+#ENDEXIT
+
+Reset M 0 11078 12 11077
+Reset M 0 11078 12 11077
+#ENDROOM
+
+#ROOM
+Vnum     11078
+Name     In the "Silver" Pit~
+Sector   city~
+Desc     The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information. 
+~
+#EXIT
+Direction north~
+ToRoom    11075
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11079
+#ENDEXIT
+
+Reset M 0 11078 12 11078
+Reset M 0 11078 12 11078
+#ENDROOM
+
+#ROOM
+Vnum     11079
+Name     In the "Silver" Pit~
+Sector   city~
+Desc     The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information.
+~
+#EXIT
+Direction north~
+ToRoom    11076
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11080
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11078
+#ENDEXIT
+
+Reset M 0 11078 12 11079
+Reset M 0 11078 12 11079
+#ENDROOM
+
+#ROOM
+Vnum     11080
+Name     In the "Silver" Pit~
+Sector   city~
+Desc     The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information. 
+~
+#EXIT
+Direction north~
+ToRoom    11077
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11066
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11079
+#ENDEXIT
+
+Reset M 0 11078 12 11080
+Reset M 0 11078 12 11080
+#ENDROOM
+
+#ROOM
+Vnum     11081
+Name     In the "Gold" Pit~
+Sector   city~
+Desc     The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information.
+~
+#EXIT
+Direction north~
+ToRoom    11063
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11082
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11084
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11065
+#ENDEXIT
+
+Reset M 0 11086 12 11081
+Reset M 0 11086 12 11081
+#ENDROOM
+
+#ROOM
+Vnum     11082
+Name     In the "Gold" Pit~
+Sector   city~
+Desc     The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information.
+~
+#EXIT
+Direction north~
+ToRoom    11064
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11083
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11085
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11081
+#ENDEXIT
+
+Reset M 0 11086 12 11082
+Reset M 0 11086 12 11082
+#ENDROOM
+
+#ROOM
+Vnum     11083
+Name     In the "Gold" Pit~
+Sector   city~
+Desc     The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information. 
+~
+#EXIT
+Direction south~
+ToRoom    11086
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11082
+#ENDEXIT
+
+Reset M 0 11086 12 11083
+Reset M 0 11086 12 11083
+#ENDROOM
+
+#ROOM
+Vnum     11084
+Name     In the "Gold" Pit~
+Sector   city~
+Desc     The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information. 
+~
+#EXIT
+Direction north~
+ToRoom    11081
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11085
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11066
+#ENDEXIT
+
+Reset M 0 11086 12 11084
+Reset M 0 11086 12 11084
+#ENDROOM
+
+#ROOM
+Vnum     11085
+Name     In the "Gold" Pit~
+Sector   city~
+Desc     The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information. 
+~
+#EXIT
+Direction north~
+ToRoom    11082
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11086
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11084
+#ENDEXIT
+
+Reset M 0 11086 12 11085
+Reset M 0 11086 12 11085
+#ENDROOM
+
+#ROOM
+Vnum     11086
+Name     In the "Gold" Pit~
+Sector   city~
+Desc     The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information.
+~
+#EXIT
+Direction north~
+ToRoom    11083
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11085
+#ENDEXIT
+
+Reset M 0 11086 12 11086
+Reset M 0 11086 12 11086
+#ENDROOM
+
+#ROOM
+Vnum     11087
+Name     Entrance to the Executive Trading Area~
+Sector   city~
+Desc     The executive trading area is lavishly decorated with expensive carpets,
+solid oak floors, and marble walls.
+~
+#EXIT
+Direction north~
+ToRoom    11049
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11088
+Key       11066
+Flags     isdoor closed locked pickproof~
+#ENDEXIT
+
+Reset D 0 11087 2 2
+#ENDROOM
+
+#ROOM
+Vnum     11088
+Name     Hallway in the Executive Trading Area~
+Sector   city~
+Desc     The executive trading area is lavishly decorated with expensive carpets,
+solid oak floors, and marble walls.
+~
+#EXIT
+Direction north~
+ToRoom    11087
+Key       11066
+Flags     isdoor closed locked pickproof~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11089
+Key       11090
+Keywords  door~
+Flags     isdoor closed locked pickproof~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11091
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11090
+#ENDEXIT
+
+Reset D 0 11088 0 2
+Reset D 0 11088 1 2
+#ENDROOM
+
+#ROOM
+Vnum     11089
+Name     Charles Schwabb's Office~
+Sector   city~
+Desc     Schwabb's office is absolutely immaculate, everything is expansive and
+built of the finest marble and precious metals. Everything, right down to
+the floor, shines.
+~
+#EXIT
+Direction west~
+ToRoom    11088
+Key       11090
+Keywords  door~
+Flags     isdoor pickproof~
+#ENDEXIT
+
+Reset M 0 11089 1 11089
+  Reset G 0 11088 1
+  Reset E 0 11089 1 17
+Reset D 0 11089 3 0
+#ENDROOM
+
+#ROOM
+Vnum     11090
+Name     Merril Lynch's Office~
+Sector   city~
+Desc     Merril Lynch's office is neatly kept, with a beautiful oaken desk in  the
+center. Very few things are in the room, other than the soft leather chair
+and Laptop situated upon the desk.
+~
+#EXIT
+Direction east~
+ToRoom    11088
+#ENDEXIT
+
+Reset M 0 11090 1 11090
+  Reset E 0 11090 1 17
+#ENDROOM
+
+#ROOM
+Vnum     11091
+Name     Hallway in the Executive Trading Area~
+Sector   city~
+Desc     The executive trading area is lavishly decorated with expensive carpets,
+solid oak floors, and marble walls.
+~
+#EXIT
+Direction north~
+ToRoom    11088
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11092
+Key       11088
+Flags     isdoor closed locked pickproof~
+#ENDEXIT
+
+Reset D 0 11091 2 2
+#ENDROOM
+
+#ROOM
+Vnum     11092
+Name     Forbes' Office~
+Sector   city~
+Desc     Forbes' Office is perhaps the simplest of them all. Very little is in the
+room, Except for a single black filing cabinet, a single metal desk, a
+single wooden chair, and a single laptop. It appears that this man prefers
+a relaxed and casual work environment to the cliche' extravagance.
+~
+#EXIT
+Direction north~
+ToRoom    11091
+Key       11088
+Flags     isdoor closed locked pickproof~
+#ENDEXIT
+
+Reset M 0 11091 1 11092
+  Reset E 0 11092 1 17
+Reset D 0 11092 0 2
+#ENDROOM
+
+#ROOM
+Vnum     11093
+Name     Floating in a void~
+Sector   city~
+Flags    nomob bank safe~
+#ENDROOM
+
+#ROOM
+Vnum     11094
+Name     A Large Barricade~
+Sector   city~
+Flags    heal~
+Desc     There is a large barricade here, and it seems to be completey impenetrable.
+There are several construction workers beyond the barricade, apparently
+remodeling the rooftop of the Western Tower.
+~
+#EXIT
+Direction north~
+ToRoom    11052
+#ENDEXIT
+
+Reset M 0 11094 1 11094
+#ENDROOM
+
+#ROOM
+Vnum     11095
+Name     Beneath the Fountain~
+Sector   city~
+Desc     Now You've Done it.. You've managed to fall under the fountain. Better hope
+you can get back out of here the same way you came in, Or you might be
+here an awful long time.
+~
+#EXIT
+Direction up~
+ToRoom    11096
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    11097
+Flags     hidden~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11096
+Name     In the World Trade Center Plaza~
+Sector   city~
+Desc     In the center of the plaza is an enormous fountain, which is surrounded by
+comfortable looking park benches. On the East and the West sides of the
+plaza are entrances to the infamous "Twin Towers", or, New York City's
+great landmark, the World Trade Center. 
+~
+#EXIT
+Direction south~
+ToRoom    11021
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    11095
+Flags     fly hidden~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11097
+Name     An Access Ladder~
+Sector   city~
+Desc     This appears to be an Access Ladder of some sort.. Downward is nothing but
+Darkness. A wise person would immediately turn away. 
+~
+#EXIT
+Direction down~
+ToRoom    11098
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    11095
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11098
+Name     Descending the Ladder~
+Sector   city~
+#EXIT
+Direction up~
+ToRoom    11097
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    11099
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11099
+Name     In The Sewers..~
+Sector   city~
+Flags    dark~
+Desc     The sewers are dark, grimey, and disgusting.
+Not to mention, They smell like Feces.
+~
+#EXIT
+Direction north~
+ToRoom    11118
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11111
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11118
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11117
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    11098
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11100
+Name     Entrance to the Macy's Mall~
+Sector   city~
+Desc     Gazing into the entrance of a fairly stocked mall, there's  items for sale
+that could make you look good or simply keep you  alive. There are two
+floors to the establishment, so be sure  to visit all of them.
+~
+#EXIT
+Direction northwest~
+ToRoom    11101
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    11158
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11101
+Name     First Floor Stores~
+Sector   city~
+Desc     On each wall is the entrance to a store selling various goods.  Whether
+it's clothes or sports equipment, the store owners  could care less. As
+long as they make a decent profit, they'd  even sell ketchup popsicles.
+~
+#EXIT
+Direction northeast~
+ToRoom    11102
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    11104
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    11100
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    11103
+#ENDEXIT
+
+Reset M 0 11011 33 11101
+#ENDROOM
+
+#ROOM
+Vnum     11102
+Name     Derelictere's~
+Sector   city~
+Flags    safe~
+Desc     Someone would think that a clothes store would sell clothes... Well this
+store does sell clothes but it's not the usual kind of clothes. Boxes of
+trashbags and even some zip-bags line  the walls in "fancy" styles to
+catch a shoppers eye.
+~
+#EXIT
+Direction southwest~
+ToRoom    11101
+#ENDEXIT
+
+Reset M 0 11102 1 11102
+  Reset G 0 11102 1
+#ENDROOM
+
+#ROOM
+Vnum     11103
+Name     Sports'n Stuff~
+Sector   city~
+Flags    safe~
+Desc     It almost appears that the store has been robbed recently, but  there are
+still a few pieces of sporting equipment thrown about.  A golf club can be
+just as dangerous as a gun if thrown.
+~
+#EXIT
+Direction northeast~
+ToRoom    11101
+#ENDEXIT
+
+Reset M 0 11103 1 11103
+#ENDROOM
+
+#ROOM
+Vnum     11104
+Name     Continuing through the mall~
+Sector   city~
+Desc     The mall appears to have been worn away through the years as the bustle of
+shoppers rushed in and out. The janitors have  apparently either quit or
+don't do their jobs as there is trash lying about in every corner.
+~
+#EXIT
+Direction up~
+ToRoom    11106
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    11101
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    11105
+Flags     hidden~
+#ENDEXIT
+
+Reset M 0 11101 10 11104
+#ENDROOM
+
+#ROOM
+Vnum     11105
+Name     Futuristic Fashions~
+Sector   city~
+Desc     This store seems to be in great shape and it's easy to tell  why. Being
+that it was hidden in the first place, it is more difficult for burglars
+to just run in and grab anything.
+~
+#EXIT
+Direction northeast~
+ToRoom    11104
+#ENDEXIT
+
+Reset M 0 11105 1 11105
+  Reset G 0 11103 1
+  Reset G 0 11104 1
+  Reset G 0 11105 1
+Reset M 0 11101 10 11105
+#ENDROOM
+
+#ROOM
+Vnum     11106
+Name     Second Floor Stairwell~
+Sector   city~
+Desc     The stairs under your feet are all chipped away and worn down by the
+constant stomping of feet on them as the shoppers make their way up and
+down them. The second floor has a few shops, but just as the first floor,
+they aren't the prettiest.
+~
+#EXIT
+Direction down~
+ToRoom    11104
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    11107
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11107
+Name     Dead End Shops~
+Sector   city~
+Desc     This is the end of the top floor so it's either time to shop or go back the
+way you came. But perhaps shopping might be worth the time and effort. You
+could find something worth while.
+~
+#EXIT
+Direction northeast~
+ToRoom    11108
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    11106
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    11110
+Flags     hidden~
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    11109
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11108
+Name     Trades and Trash~
+Sector   city~
+Desc     This isn't really a shop, but some people have come here to throw away
+their unwanted garbage or possibly get money for it.
+~
+#EXIT
+Direction southwest~
+ToRoom    11107
+#ENDEXIT
+
+Reset M 0 11108 1 11108
+#ENDROOM
+
+#ROOM
+Vnum     11109
+Name     The 99-Censtore~
+Sector   city~
+Flags    safe~
+Desc     An old porn store. Full of porn. Porn everywhere. Porn on the walls. Porn
+on the floor. Porn all around you. Porn Porn Porn. But there's only one
+tape left so get it while you can.
+~
+#EXIT
+Direction northeast~
+ToRoom    11107
+#ENDEXIT
+
+Reset M 0 11109 1 11109
+  Reset G 0 11109 1
+Reset M 0 11011 33 11109
+#ENDROOM
+
+#ROOM
+Vnum     11110
+Name     A Charms Dealer~
+Sector   city~
+Flags    safe~
+Desc     The shop smells of incense and a small monkey plays a tiny drum in the
+corner. An old woman stands behind a rusty, iron counter with strange
+objects infront of her on a  cushion-like display.
+~
+#EXIT
+Direction northwest~
+ToRoom    11107
+#ENDEXIT
+
+Reset M 0 11110 1 11110
+  Reset G 0 11110 1
+  Reset G 0 11100 1
+#ENDROOM
+
+#ROOM
+Vnum     11111
+Name     In The Sewers..~
+Sector   city~
+Flags    dark~
+Desc     The sewers are dark, grimey, and disgusting.
+Not to mention, They smell like Feces.
+~
+#EXIT
+Direction north~
+ToRoom    11112
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11118
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11118
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11099
+#ENDEXIT
+
+Reset M 0 11120 28 11111
+Reset M 0 11120 28 11111
+Reset M 0 11011 33 11111
+#ENDROOM
+
+#ROOM
+Vnum     11112
+Name     In The Sewers..~
+Sector   city~
+Flags    dark nomob~
+Desc     The sewers are dark, grimey, and disgusting.
+Not to mention, They smell like Feces.
+~
+#EXIT
+Direction north~
+ToRoom    11111
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11113
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11111
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11118
+#ENDEXIT
+
+Reset M 0 11120 28 11112
+Reset M 0 11120 28 11112
+#ENDROOM
+
+#ROOM
+Vnum     11113
+Name     In The Sewers..~
+Sector   city~
+Flags    dark nomob~
+Desc     The sewers are dark, grimey, and disgusting.
+Not to mention, They smell like Feces.
+~
+#EXIT
+Direction north~
+ToRoom    11114
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11118
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11111
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11112
+#ENDEXIT
+
+Reset M 0 11120 28 11113
+Reset M 0 11120 28 11113
+#ENDROOM
+
+#ROOM
+Vnum     11114
+Name     In The Sewers..~
+Sector   city~
+Flags    dark nomob~
+Desc     The sewers are dark, grimey, and disgusting.
+Not to mention, They smell like Feces.
+~
+#EXIT
+Direction north~
+ToRoom    11118
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11115
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11113
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11111
+#ENDEXIT
+
+Reset M 0 11120 28 11114
+Reset M 0 11120 28 11114
+#ENDROOM
+
+#ROOM
+Vnum     11115
+Name     In The Sewers..~
+Sector   city~
+Flags    dark nomob~
+Desc     The sewers are dark, grimey, and disgusting.
+Not to mention, They smell like Feces.
+~
+#EXIT
+Direction north~
+ToRoom    11116
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11118
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11111
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11114
+#ENDEXIT
+
+Reset M 0 11120 28 11115
+Reset M 0 11120 28 11115
+#ENDROOM
+
+#ROOM
+Vnum     11116
+Name     In The Sewers..~
+Sector   city~
+Flags    dark nomob~
+Desc     The sewers are dark, grimey, and disgusting.
+Not to mention, They smell like Feces.
+~
+#EXIT
+Direction north~
+ToRoom    11112
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11117
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11115
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11111
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    11134
+#ENDEXIT
+
+Reset M 0 11120 28 11116
+Reset M 0 11120 28 11116
+#ENDROOM
+
+#ROOM
+Vnum     11117
+Name     In The Sewers..~
+Sector   city~
+Flags    dark~
+Desc     The sewers are dark, grimey, and disgusting.
+Not to mention, They smell like Feces.
+~
+#EXIT
+Direction north~
+ToRoom    11117
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11099
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11118
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11117
+#ENDEXIT
+
+Reset M 0 11120 28 11117
+Reset M 0 11120 28 11117
+Reset M 0 11028 14 11117
+Reset M 0 11028 14 11117
+Reset M 0 11011 33 11117
+Reset M 0 11028 14 11117
+#ENDROOM
+
+#ROOM
+Vnum     11118
+Name     In The Sewers..~
+Sector   city~
+Flags    dark~
+Desc     The sewers are dark, grimey, and disgusting.
+Not to mention, They smell like Feces.
+~
+#EXIT
+Direction north~
+ToRoom    11117
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11119
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11117
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11118
+#ENDEXIT
+
+Reset M 0 11120 28 11118
+Reset M 0 11120 28 11118
+Reset M 0 11028 14 11118
+#ENDROOM
+
+#ROOM
+Vnum     11119
+Name     In The Sewers..~
+Sector   city~
+Flags    dark~
+Desc     The sewers are dark, grimey, and disgusting.
+Not to mention, They smell like Feces.
+~
+#EXIT
+Direction north~
+ToRoom    11117
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11118
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11120
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11118
+#ENDEXIT
+
+Reset M 0 11120 28 11119
+Reset M 0 11120 28 11119
+#ENDROOM
+
+#ROOM
+Vnum     11120
+Name     In The Sewers..~
+Sector   city~
+Flags    dark~
+Desc     The sewers are dark, grimey, and disgusting.
+Not to mention, They smell like Feces.
+~
+#EXIT
+Direction north~
+ToRoom    11119
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11117
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11118
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11121
+#ENDEXIT
+
+Reset M 0 11120 28 11120
+Reset M 0 11120 28 11120
+#ENDROOM
+
+#ROOM
+Vnum     11121
+Name     In The Sewers..~
+Sector   city~
+Flags    dark~
+Desc     The sewers are dark, grimey, and disgusting.
+Not to mention, They smell like Feces.
+~
+#EXIT
+Direction north~
+ToRoom    11117
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11120
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11122
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11118
+#ENDEXIT
+
+Reset M 0 11120 28 11121
+Reset M 0 11120 28 11121
+#ENDROOM
+
+#ROOM
+Vnum     11122
+Name     In The Sewers..~
+Sector   city~
+Flags    dark~
+Desc     The sewers are dark, grimey, and disgusting.
+Not to mention, They smell like Feces.
+~
+#EXIT
+Direction north~
+ToRoom    11121
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11123
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11120
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11119
+#ENDEXIT
+
+Reset M 0 11120 28 11122
+Reset M 0 11120 28 11122
+#ENDROOM
+
+#ROOM
+Vnum     11123
+Name     In The Sewers..~
+Sector   city~
+Flags    dark~
+Desc     The sewers are dark, grimey, and disgusting.
+Not to mention, They smell like Feces.
+~
+#EXIT
+Direction north~
+ToRoom    11121
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11118
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11124
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11122
+#ENDEXIT
+
+Reset M 0 11120 28 11123
+Reset M 0 11120 28 11123
+#ENDROOM
+
+#ROOM
+Vnum     11124
+Name     In The Sewers..~
+Sector   city~
+Flags    dark~
+Desc     The sewers are dark, grimey, and disgusting.
+Not to mention, They smell like Feces.
+~
+#EXIT
+Direction north~
+ToRoom    11123
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11120
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11121
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11125
+#ENDEXIT
+
+Reset M 0 11120 28 11124
+Reset M 0 11120 28 11124
+#ENDROOM
+
+#ROOM
+Vnum     11125
+Name     Entrance to a Strange Cave~
+Sector   city~
+Flags    dark~
+Desc     The Sewer seems to come to an abrupt halt here, although there is a large
+whole in the wall. Perhaps it wouldn't be the safest idea to enter it.
+~
+#EXIT
+Direction north~
+ToRoom    11126
+Flags     hidden~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11124
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11118
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11126
+Name     An Odd Seeming Dead End~
+Sector   city~
+Flags    dark~
+Desc     The Alcove comes to an abrupt halt here, for some strange reason.
+The word "&CKawabunga!&z" is spray-painted upon the wall.
+~
+#EXIT
+Direction south~
+ToRoom    11125
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Kawabunga!~
+Comlist   mea $n _dgr Turtle Power! .. Things are not as they were....
+mpechoaround $n _dgr $n vanishes in a strange cloud of Turtle Power!
+mptransfer $n 11127
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     11127
+Name     Entrance to the Teenage Mutant Ninja Turtles Lair~
+Sector   city~
+Desc     The cave is dank, and quiet, it almost seems as if you were being watched.
+Up ahead in there seems to be a small livingroom built in the sewer, with
+smaller rooms branching off of it.
+say "Turtle Power" to return.
+~
+#EXIT
+Direction north~
+ToRoom    11128
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p Turtle Power~
+Comlist   mea $n _dgr You have been transported.
+mpechoaround $n _dgr $n has been transported.
+mptransfer $n 11126
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     11128
+Name     Within the TMNT Livingroom~
+Sector   city~
+Desc     The room is completely disorganized and cluttery. Pizza boxes, skateboards,
+and various weapons of the Ninjitsu arts are thrown everywhere. There
+seems to be four rooms branching off from this main chamber, in addition
+to the hallway which lies back to the south.
+~
+#EXIT
+Direction north~
+ToRoom    11129
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11132
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11127
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11133
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    11131
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    11130
+#ENDEXIT
+
+#MUDPROG
+Progtype  entry_prog~
+Arglist   100~
+Comlist   mpecho _dgr Michaelangelo drops down from above suddenly!
+mpecho Michaelangelo says, "Woa Dude! I Thought you were one of those foot"
+mpecho Michaelangelo says, "clan Assholes! Sorry if I scared you! Make"
+mpecho Michaelangelo says, "Yourself at home."
+mpecho _dgr Michaelangelo walks into his room.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     11129
+Name     Splinter's Room~
+Sector   city~
+Desc     A Simple room for a Simple Rat-Man. Splinter's Room is quiet and free of
+objects, save a collection of staves, and a Ninjitsu scroll upon the wall.
+~
+#EXIT
+Direction south~
+ToRoom    11128
+#ENDEXIT
+
+Reset M 0 11129 1 11129
+#ENDROOM
+
+#ROOM
+Vnum     11130
+Name     Leonardo's Room~
+Sector   city~
+Desc     A set of sheathes hang from the wall on a hook, but the swords appear to be
+missing from them. A picture of a man-size turtle with a blue headband
+rests on a shabby wooden table across from a well-made bed.
+~
+#EXIT
+Direction southeast~
+ToRoom    11128
+#ENDEXIT
+
+Reset M 0 11130 1 11130
+#ENDROOM
+
+#ROOM
+Vnum     11131
+Name     Donatello's Lab~
+Sector   city~
+Desc     A bookshelf containing quite a few thick books is in the back corner
+surrounded by posters of famous intelligent scientists. A small wooden
+table that is supposed to resemble a counter stands in the back of the
+room with strange looking devices in it.
+~
+#EXIT
+Direction southwest~
+ToRoom    11128
+#ENDEXIT
+
+Reset M 0 11131 1 11131
+  Reset G 0 11131 1
+  Reset G 0 11130 1
+#ENDROOM
+
+#ROOM
+Vnum     11132
+Name     Raphael's Room~
+Sector   city~
+Flags    safe~
+Desc     A pair of sai are impaled into a nearby wooden desk, and a large radio sits
+in the far corner of the room but looks as if it were broken. A Futon is
+crammed between the desk and the wall.
+~
+#EXIT
+Direction west~
+ToRoom    11128
+#ENDEXIT
+
+Reset M 0 11132 1 11132
+#ENDROOM
+
+#ROOM
+Vnum     11133
+Name     Michaelangelo's Room~
+Sector   city~
+Desc     Pizza boxes.. Everywhere.. Even the bed is made of old pizza boxes..
+~
+#EXIT
+Direction east~
+ToRoom    11128
+#ENDEXIT
+
+Reset M 0 11133 1 11133
+#ENDROOM
+
+#ROOM
+Vnum     11134
+Name     a Strange Alcove..~
+Sector   city~
+Flags    dark safe~
+Desc     A small alcove in the ground, accessible from a broken down wall in the
+sewer system. The place seems a little too quiet, and there is a
+frightening man standing here, with metal all over his body.
+~
+#EXIT
+Direction down~
+ToRoom    11116
+#ENDEXIT
+
+Reset M 0 11134 1 11134
+  Reset G 0 11134 1
+#ENDROOM
+
+#ROOM
+Vnum     11135
+Name     The Lobby of the Ritz-Carlton Hotel~
+Sector   city~
+Flags    bank~
+Desc     A huge chandalier hangs about you in all of it's glory. It's made of almost
+over a thousand diamonds. A large counter in the back of the lobby has
+quite a few computers resting upon it, and the constant sound of an
+elevator door opening and closing. On each side of the lobby are shops.
+There is an atm machine in the corner of the room here, as well.
+~
+#EXIT
+Direction north~
+ToRoom    11138
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11136
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11164
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11137
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    11139
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11136
+Name     The Souvenier Soap Shop~
+Sector   city~
+Flags    safe~
+Desc     A few shelves rest in the direct center of the room with quite a few little
+statues and souveniers to buy. Along the counter is a large statue of the
+Statue of Liberty for sale, but it looks to be quite expensive. There are
+also coffee mugs in cabinets and glass cases as well little crystalline
+figurines.
+~
+#EXIT
+Direction west~
+ToRoom    11135
+#ENDEXIT
+
+Reset M 0 11136 1 11136
+  Reset G 0 11136 1
+  Reset G 0 11137 1
+Reset M 0 11011 33 11136
+#ENDROOM
+
+#ROOM
+Vnum     11137
+Name     The Ritz Cafe'~
+Sector   city~
+Desc     The aroma of freshly ground coffee and hot chocolate permeates all around
+you as though it were blanketing you in protection. A big hot-dog cooking
+machine as well as a nacho cart sits near the coffee makers and tables
+that line the walls. This room is very relaxing, and it seems as though
+you'd recover quite easy in such an environment.
+~
+#EXIT
+Direction east~
+ToRoom    11135
+#ENDEXIT
+
+Reset M 0 11137 1 11137
+  Reset G 0 11139 1
+  Reset G 0 11140 1
+Reset O 0 11138 1 11137
+#ENDROOM
+
+#ROOM
+Vnum     11138
+Name     The Elevator~
+Sector   city~
+Desc     The walls almost appear to be lined with real gold, but upon greater
+inspection, it is definitely not. The floor is covered in a silk-quality
+crimson carpet. The ceiling on the other hand is made up of several
+mirrors.
+say "Up" to go up.
+~
+#EXIT
+Direction south~
+ToRoom    11135
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   up~
+Comlist   mea $n The Elevator begins to go upwards.
+mea $n ...
+mea $n ......
+mea $n .........
+mea $n ** Ding! **
+mptransfer $n 11140
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     11139
+Name     The Ritz Check-in Desk~
+Sector   city~
+Flags    safe~
+Desc     A large computer monitor rests on top of  the counter before you, with a
+calculator  to it's side and a credit card swiper  just next to that. The
+counter is made of marble  and a golden railing rims it, curving slightly
+to  give it a circular look, although the  counter itself is actually
+flat.
+~
+#EXIT
+Direction southwest~
+ToRoom    11135
+#ENDEXIT
+
+Reset M 0 11139 1 11139
+  Reset G 0 3 1
+#ENDROOM
+
+#ROOM
+Vnum     11140
+Name     The Elevator~
+Sector   city~
+Desc     The walls almost appear to be lined with real gold, but upon greater
+inspection, it is definitely not. The floor is covered in a silk-quality
+crimson carpet. The ceiling on the other hand is made up of several
+mirrors.
+say "Down" to go back down.
+~
+#EXIT
+Direction south~
+ToRoom    11141
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   down~
+Comlist   mea $n The Elevator begins to go downwards.
+mea $n ...
+mea $n ......
+mea $n .........
+mea $n ** Ding! **
+mptransfer $n 11138
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     11141
+Name     Entrance to the Ritz-Carlton Suites~
+Sector   city~
+Flags    safe~
+Desc     A lavishly decorated hallway of oak, marble, and gold. The crimson carpets
+feel very silky, and the lighting is provided by fancy chaneliers.
+~
+#EXIT
+Direction north~
+ToRoom    11140
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11142
+#ENDEXIT
+
+Reset M 0 11141 1 11141
+#ENDROOM
+
+#ROOM
+Vnum     11142
+Name     Between the Ritz-Carlton suites~
+Sector   city~
+Desc     A lavishly decorated hallway of oak, marble, and gold. The crimson
+carpets feel very silky, and the lighting is provided by fancy chaneliers.
+~
+#EXIT
+Direction north~
+ToRoom    11141
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11146
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11149
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11145
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    11144
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    11143
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    11148
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    11147
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11143
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+Owner    Toshiba~
+#EXIT
+Direction southeast~
+ToRoom    11142
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11144
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+Owner    Flick~
+Guests   maldar scorpion toshiba ~
+#EXIT
+Direction southwest~
+ToRoom    11142
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11145
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+Owner    Oracle~
+#EXIT
+Direction east~
+ToRoom    11142
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11146
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+Owner    Oracle~
+#EXIT
+Direction west~
+ToRoom    11142
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11147
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+Owner    Oracle~
+#EXIT
+Direction northeast~
+ToRoom    11142
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11148
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+Owner    Flick~
+#EXIT
+Direction northwest~
+ToRoom    11142
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11149
+Name     The Complementary Suite~
+Sector   city~
+Flags    hotel~
+Desc     Theres a bed and a lamp along with other necessities  such as T.V. The
+carpet is made of shag, and it's pink.  This could possibly be the "love
+room" that every hotel has.  Hopefully they changed the sheets.
+~
+#EXIT
+Direction north~
+ToRoom    11142
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11150
+Name     Wall Street~
+Sector   city~
+Flags    nomob~
+Desc     The roar of taxis passing by and the constant  passersby resemble that of a
+party. The street  is made of smoothed asphalt and the sidewalks  have
+very few cracks or weathering.  Streetlamps line the edge of the road to 
+light the way during the night, because even then, the city continues to
+bustle with commotion.
+~
+#EXIT
+Direction north~
+ToRoom    11021
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11151
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11151
+Name     Wall Street~
+Sector   city~
+Flags    nomob~
+Desc     The roar of taxis passing by and the constant  passersby resemble that of a
+party. The street  is made of smoothed asphalt and the sidewalks  have
+very few cracks or weathering.  Streetlamps line the edge of the road to 
+light the way during the night, because even then, the city continues to
+bustle with commotion.
+~
+#EXIT
+Direction east~
+ToRoom    11150
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11152
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11152
+Name     Wall Street~
+Sector   city~
+Flags    nomob~
+Desc     The roar of taxis passing by and the constant  passersby resemble that of a
+party. The street  is made of smoothed asphalt and the sidewalks  have
+very few cracks or weathering.  Streetlamps line the edge of the road to 
+light the way during the night, because even then, the city continues to
+bustle with commotion.
+~
+#EXIT
+Direction north~
+ToRoom    11151
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11153
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11153
+Name     Wall Street~
+Sector   city~
+Flags    nomob~
+Desc     The roar of taxis passing by and the constant  passersby resemble that of a
+party. The street  is made of smoothed asphalt and the sidewalks  have
+very few cracks or weathering.  Streetlamps line the edge of the road to 
+light the way during the night, because even then, the city continues to
+bustle with commotion.
+~
+#EXIT
+Direction north~
+ToRoom    11152
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11200
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11154
+Name     Broadway~
+Sector   city~
+Desc     The roar of taxis passing by and the constant  passersby resemble that of a
+party. The street  is made of smoothed asphalt and the sidewalks  have
+very few cracks or weathering.  Streetlamps line the edge of the road to 
+light the way during the night, because even then, the city continues to
+bustle with commotion.
+~
+#EXIT
+Direction east~
+ToRoom    11200
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11155
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11155
+Name     Broadway~
+Sector   city~
+Desc     The roar of taxis passing by and the constant  passersby resemble that of a
+party. The street  is made of smoothed asphalt and the sidewalks  have
+very few cracks or weathering.  Streetlamps line the edge of the road to 
+light the way during the night, because even then, the city continues to
+bustle with commotion.
+~
+#EXIT
+Direction east~
+ToRoom    11154
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11156
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11156
+Name     Broadway~
+Sector   city~
+Desc     The roar of taxis passing by and the constant  passersby resemble that of a
+party. The street  is made of smoothed asphalt and the sidewalks  have
+very few cracks or weathering.  Streetlamps line the edge of the road to 
+light the way during the night, because even then, the city continues to
+bustle with commotion.
+~
+#EXIT
+Direction east~
+ToRoom    11155
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    11157
+#ENDEXIT
+
+Reset M 0 11101 10 11156
+#ENDROOM
+
+#ROOM
+Vnum     11157
+Name     Broadway~
+Sector   city~
+Desc     The roar of taxis passing by and the constant  passersby resemble that of a
+party. The street  is made of smoothed asphalt and the sidewalks  have
+very few cracks or weathering.  Streetlamps line the edge of the road to 
+light the way during the night, because even then, the city continues to
+bustle with commotion.
+~
+#EXIT
+Direction northwest~
+ToRoom    11158
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    11156
+#ENDEXIT
+
+Reset M 0 11101 10 11157
+#ENDROOM
+
+#ROOM
+Vnum     11158
+Name     Broadway~
+Sector   city~
+Desc     The roar of taxis passing by and the constant  passersby resemble that of a
+party. The street  is made of smoothed asphalt and the sidewalks  have
+very few cracks or weathering.  Streetlamps line the edge of the road to 
+light the way during the night, because even then, the city continues to
+bustle with commotion.
+~
+#EXIT
+Direction northwest~
+ToRoom    11100
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    11157
+#ENDEXIT
+
+Reset M 0 11101 10 11158
+#ENDROOM
+
+#ROOM
+Vnum     11159
+Name     Third Street~
+Sector   city~
+Desc     The roar of taxis passing by and the constant  passersby resemble that of a
+party. The street  is made of smoothed asphalt and the sidewalks  have
+very few cracks or weathering.  Streetlamps line the edge of the road to 
+light the way during the night, because even then, the city continues to
+bustle with commotion.
+~
+#EXIT
+Direction east~
+ToRoom    11160
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11200
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11160
+Name     Third Street~
+Sector   city~
+Desc     The roar of taxis passing by and the constant  passersby resemble that of a
+party. The street  is made of smoothed asphalt and the sidewalks  have
+very few cracks or weathering.  Streetlamps line the edge of the road to 
+light the way during the night, because even then, the city continues to
+bustle with commotion.
+~
+#EXIT
+Direction west~
+ToRoom    11159
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    11161
+#ENDEXIT
+
+Reset M 0 11011 33 11160
+#ENDROOM
+
+#ROOM
+Vnum     11161
+Name     Third Street~
+Sector   city~
+Desc     The roar of taxis passing by and the constant  passersby resemble that of a
+party. The street  is made of smoothed asphalt and the sidewalks  have
+very few cracks or weathering.  Streetlamps line the edge of the road to 
+light the way during the night, because even then, the city continues to
+bustle with commotion.
+~
+#EXIT
+Direction northwest~
+ToRoom    11160
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    11162
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11162
+Name     Third Street~
+Sector   city~
+Desc     The roar of taxis passing by and the constant  passersby resemble that of a
+party. The street  is made of smoothed asphalt and the sidewalks  have
+very few cracks or weathering.  Streetlamps line the edge of the road to 
+light the way during the night, because even then, the city continues to
+bustle with commotion.
+~
+#EXIT
+Direction east~
+ToRoom    11163
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    11161
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11163
+Name     Third Street~
+Sector   city~
+Desc     The roar of taxis passing by and the constant  passersby resemble that of a
+party. The street  is made of smoothed asphalt and the sidewalks  have
+very few cracks or weathering.  Streetlamps line the edge of the road to 
+light the way during the night, because even then, the city continues to
+bustle with commotion.
+~
+#EXIT
+Direction east~
+ToRoom    11164
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11162
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11164
+Name     Third Street~
+Sector   city~
+Desc     The roar of taxis passing by and the constant  passersby resemble that of a
+party. The street  is made of smoothed asphalt and the sidewalks  have
+very few cracks or weathering.  Streetlamps line the edge of the road to 
+light the way during the night, because even then, the city continues to
+bustle with commotion.
+~
+#EXIT
+Direction north~
+ToRoom    11135
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11163
+#ENDEXIT
+
+Reset M 0 11011 33 11164
+#ENDROOM
+
+#ROOM
+Vnum     11165
+Name     A Blocked off Entrance~
+Sector   city~
+Desc     A Large sign is here, reading:
+"We are very sorry for the inconvenience, but due to the construction
+ on the rooftop, the daycare is currently closed."
+~
+#EXIT
+Direction north~
+ToRoom    11051
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11200
+Name     The Regional Transportation Center~
+Sector   city~
+Flags    nomob~
+Desc     This place is so enormous it's hard to describe. Basically say where You'd
+like to go, and they'll hook you up with either a taxi, subway, or a bus.
+ 
+say "Airport" For the Airport.
+say "Wall Street" For Wall Street.
+say "Third Street" For Third Street.
+say "Broadway" For Broadway.
+~
+Reset M 0 11011 33 11200
+Reset M 0 11011 33 11200
+  Reset G 0 11088 1
+#MUDPROG
+Progtype  speech_prog~
+Arglist   airport~
+Comlist   mea $n A Taxi drives you to the Airport.
+mptransfer $n 11014
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p wall street~
+Comlist   mea $n A City Bus takes you to Wall Street.
+mptransfer $n 11153
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   broadway~
+Comlist   mea $n the Subway takes you to Broadway.
+mptransfer $n 11154
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p third street~
+Comlist   mea $n A Taxi takes you to Third Street.
+mptransfer $n 11159
+~
+#ENDPROG
+
+#ENDROOM
+
+#ENDAREA

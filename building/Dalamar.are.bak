@@ -1,0 +1,153 @@
+#AREA   {PROTO} Dalamar's area in progress~
+
+
+
+#AUTHOR Dalamar~
+
+#RANGES
+0 0 0 0
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 0
+
+#MOBILES
+#0
+
+
+#OBJECTS
+#0
+
+
+#ROOMS
+#11500
+Docking Bay~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 11501
+D1
+~
+~
+0 -1 11502
+D2
+~
+~
+0 -1 11503
+D3
+~
+~
+0 -1 11504
+D6
+~
+~
+0 -1 11506
+D7
+~
+~
+0 -1 11505
+D8
+~
+~
+0 -1 11507
+D9
+~
+~
+0 -1 11508
+S
+#11501
+Tavern to the north of here~
+~
+0 1073741824 0 1 0
+D2
+~
+~
+0 -1 11500
+S
+#11502
+Town to the east of here~
+~
+0 1073741824 0 1 0
+D3
+~
+~
+0 -1 11500
+S
+#11503
+Fortress to the south~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 11500
+S
+#11504
+Airport to the west~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 11500
+S
+#11505
+Small trail throught he forest NW~
+~
+0 1073741824 0 1 0
+D8
+~
+~
+0 -1 11500
+S
+#11506
+Mobilesuit hangar (Planetary)~
+~
+0 1073741856 0 1 0
+D9
+~
+~
+0 -1 11500
+S
+#11507
+Path around the fortress (SE)~
+~
+0 1073741824 0 1 0
+D7
+~
+~
+0 -1 11500
+S
+#11508
+path around the fortress (SW)~
+~
+0 1073741824 0 1 0
+D6
+~
+~
+0 -1 11500
+S
+#0
+
+
+#RESETS
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

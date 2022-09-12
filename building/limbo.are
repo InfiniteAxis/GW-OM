@@ -1,0 +1,2727 @@
+#AREA   Limbo~
+
+
+
+#AUTHOR Akumaka~
+
+#OWNED_BY None~
+
+#RANGES
+0 103 0 1000
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 6512568
+
+#MOBILES
+#1
+Treize Khushrenada Pilot Spirit~
+Treize Khushrenada~
+The lost spirit of a slain pilot floats here, free of all expression.
+~
+~
+3 31 1000 Z
+50 20 -30 5d10+30550 4d10+200
+10000 0
+8 8 1
+13 13 13 13 13 13 13
+0 0 0 0 0
+31 0 0 0 3420515 3420515 0
+0 0 0 0 3156992 0 2 3
+0 0 0 0 0 0 0 0
+> speech_prog test~
+say triggered by (name):	$n
+say triggered by (name&title): 	$N
+say triggerer is (he,she,it):	$e
+say triggerer is (him,her,it):	$m
+say triggerer is (his,hers,its):$s
+say random char (name):		$r
+say random char (name&title or short): 	$R
+say random char  (he,she,it):	$J
+say random char (him,her,it):	$L
+say random char (his,hers,its):	$K
+~
+> speech_prog test2~
+say firstname of obj:	 	$i
+say short_desc/title of obj: 	$I
+say he/she/it of obj:	 	$j
+say him/her/it of obj:	 	$k
+say his/hers/its of obj:	$l
+say firstname of victim: 	$t
+say short_desc/title of victim:	$T
+say he/she/it of victim: 	$E
+say him/her/it of victim: 	$M
+say his/hers/its of victim:	$S
+~
+> rand_prog 25~
+say You pilots...You can't die yet...
+~
+> rand_prog 15~
+say History is much like an Endless Waltz.
+say The three beats of War, Peace, and Revolution
+say continue on forever...
+~
+> speech_prog supertesting~
+auth $n
+~
+|
+#2
+demon imp~
+a Demon Imp~
+A Demon Imp is here, cackling at your torture.
+~
+This demon is clearly something that you don't want to mess with...
+It appears to be very agile, and very strong.  
+~
+3 7 -1000 Z
+50 1 -300 5d10+31550 1d2+2
+10000 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> act_prog p bashes against~
+cast heal $n
+~
+> act_prog p shivers and~
+cast 'cure poison' $n
+cast heal $n
+~
+> act_prog p wears~
+c heal $n
+c heal $n
+~
+> act_prog p wields~
+c heal $n
+c heal $n
+~
+> act_prog p is DEAD!!~
+mptrans $n 6
+~
+> speech_prog ration~
+mpoload 10313 0
+if ispc($n)
+give ration $n
+endif
+~
+> speech_prog canteen~
+if is pc($n)
+mpoload 10504
+give canteen $n
+endif
+~
+|
+#3
+Supermob~
+Supermob~
+The supermob is here.  He looks busy as hell.
+~
+How clever he looks!
+~
+2105345 23 -1000 Z
+105 1 -162 21d10+1050 10d4+2
+10000 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+21 21 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> rand_prog 25~
+mpinvis 51
+~
+|
+#4
+superteacher teacher master~
+the superteacher~
+The master of all knowledge stands here waiting.
+~
+~
+1027 0 0 Z
+103 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5
+undead animated corpse~
+an animated corpse~
+An animated corpse struggles with the horror of its undeath.
+~
+Denied its rightful death, this animated corpse has been infused with the
+powerful energies of its master.  It exists on the precipice between life
+and unlife, even as its physical body rots and decays under the strain of
+its tasks.
+~
+1 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 7 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#10
+wolf~
+a deadly wolf~
+A deadly wolf prowls around you with a vengeance
+~
+While this large beast circles you, you have a chance to see its large          
+fangs and its sharp claws.  The wolf's eyes are small, black and have           
+the aura of a deadly intent.  Its raggedy coat tells of a recent battle         
+with something.
+~
+1 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+69 0 0 0 135445263 135445263 2
+0 0 0 0 0 0 3 0
+0 0 0 0 0 0 0 0
+#11
+mist~
+mist~
+A thick mist plays with your senses.
+~
+Is it the fog you see?  Or are your eyes playing deadly tricks on you.  The
+mist swirls around you and then quickly disappears before you can blink.  You
+suddenly find yourself overcome with an unknown power.
+~
+1 31 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+85 0 0 0 135447947 135447947 2
+0 0 0 0 0 0 35651584 0
+0 0 0 0 0 0 0 0
+#12
+bat~
+bat~
+A bat hovers nearby with bloody fangs.
+~
+As this bloodsucking creature flies past you, you notice the tiny black
+eyes that stare at your jugular vein.  This little black bat has the
+intentions of drinking your blood until there is none left in your body.
+~
+1 19 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+23 0 0 0 1996514925 1996514924 2
+0 0 0 0 0 0 3 0
+0 0 0 0 0 0 0 0
+#13
+hawk~
+hawk~
+A hawk watches you with predatory eyes from its perch.
+~
+This proud creature stands upon its perch watching you with unblinking
+eyes.  Any movement made by you could make it flare its wings in disapproval
+and open its beak to scream its intent.  Its long beak open and before you
+know what has happened, it comes flying towards you.
+~
+1 19 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+78 0 0 0 135448667 135448666 2
+0 0 0 0 0 0 2 0
+0 0 0 0 0 0 0 0
+#14
+black cat~
+black cat~
+A black cat has crossed your path with deadly intent.
+~
+With a furry black coat, and big yellow eyes, this cat gracefully walks
+across your path, bringing you several years of bad luck.  Its tail moves
+slowly to tell you that it is laughing at your misfortune.
+~
+1 3 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+29 0 0 0 6645091 6645090 2
+0 0 0 0 0 0 3 0
+0 0 0 0 0 0 0 0
+#15
+dove~
+dove~
+A beautiful dove sings a melancholy melody from its nest.
+~
+With feathers the colour of soft grey and soft loving black eyes, this small
+delicate creature sings you a tune full of romance.  The tune it sings comes
+from the small breast that rises and falls with every chorus it sings.  You
+are at peace as you listen to this lovable creature.
+~
+1 19 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+78 0 0 0 135448667 135448666 1
+0 0 0 0 0 0 2 0
+0 0 0 0 0 0 0 0
+#16
+fish~
+fish~
+A fish blows large bubbles as it quickly swims past you.
+~
+With fins, teeth and gills, this slippery little thing is hard to catch.
+It swims with a speed no beast, human or animal can compete with.  It's
+tiny eyes, move with every breath.  It blows several large bubbles as it
+quickly swims past you.
+~
+1 31 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+81 0 0 0 135448379 135448378 1
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#20
+imperial trooper stormtrooper~
+a stormtrooper~
+An imperial stormtrooper stands at attention here.
+~
+~
+32769 0 0 Z
+1 0 0 0d0+0 1d10+0
+0 0
+8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#21
+imperial guard stormtrooper~
+an imperial guard~
+An imperial guard stands at attention.
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 1d10+0
+0 0
+8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#22
+New Republic guard~
+a New Republic guard~
+A New Republic guard stands at attention.
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 1d10+0
+0 0
+8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#23
+New Republic Trooper soldier~
+a new republic trooper~
+A new republic trooper is ready for battle.
+~
+~
+32769 0 0 Z
+1 0 0 0d0+0 1d10+0
+0 0
+8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#24
+solier thug mercinary hitman~
+a mercinary~
+A mercinary stands here ready for battle.
+~
+~
+32769 0 0 Z
+1 0 0 0d0+0 1d10+0
+0 0
+8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#25
+bouncer guard thug~
+a guard~
+An alert guard stands at attention.
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 1d10+0
+0 0
+8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#26
+dead corpse~
+Dead Corpse~
+A Dead Corpse is here.
+~
+~
+33 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#50
+jedimaster luke skywalker~
+Luke~
+An old jedi master feels at peace in the jungles here.
+~
+~
+33555457 7 1000 Z
+105 0 -162 21d10+5000 10d4+2
+0 0
+8 8 1
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 0 0 0 1 1 0
+21 21 0 1048589 0 0 0 534791
+0 0 0 0 0 0 0 0
+> act_prog package.~
+if ovnuminv(10208) >= 1
+say Thank you.
+mpwithdraw 2500
+give 2500 credits $n
+mpgain $n 5 100000
+else
+say hmm... Thanks, but this isn't adressed to me.
+drop all
+endif
+mpat 10299 drop all
+mpat 10299 mppurge
+~
+> speech_prog corusca~
+non $n 
+' The corusca is on of the best crytals used to make a lightsaber
+' and for that reason they are very rare
+' I have seen but a few in my day.
+~
+> speech_prog give~
+chuckle 
+' yes i did give a Corusca Crystal to a young apprentice of mine
+' he would have grown strong in the force, if his father would
+' not have died , and him have to return to his fathers shop.
+~
+> speech_prog shop~
+grin $n
+' yes the jedi shop in the space mall , he is the owner of it now.
+' if you seek the corusca crystal he may still have it 
+' i don't believe he had crafted his lightsaber before he left.
+~
+|
+#51
+Duo~
+Duo~
+Duo is here.
+~
+~
+1 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#54
+Thug~
+Thug~
+A local turf Thug is loitering here.
+~
+~
+1 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#55
+Hitman~
+Hitman~
+A Hitman is peering around for his target.
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 5
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#56
+Drug Addict~
+Drug Addict~
+A twitching Drug Addict is huddled against himself.
+~
+~
+1 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> bribe_prog 1000~
+say I is gonna get me a fix tonight!
+~
+> bribe_prog 100000~
+emote shivers with delight.
+mpsleep 5
+say i's gonna share now.
+mpsleep 6
+mpoload 816
+give cocaine $n
+mpsleep 3
+emote gives you a half toothless smile.
+~
+> greet_prog 35~
+if ispc($n)
+say I need a fix ... can ya gimme some money
+else
+say i don't need no favors from you kinda peoples.
+endif
+~
+|
+#57
+Pimp~
+A Pimp~
+A Pimp be stand'n here staring down game.
+~
+~
+1 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 90~
+if ispc($n)
+say What up Playa
+else
+say roll up outta here pimp ... before i regulate all up in ya ass.
+~
+> bribe_prog 100~
+say man, get outta here with that bullshit charity.
+~
+> bribe_prog 10000~
+say now thats what i'm talkin about ...
+mpoload 813
+mpsleep 7
+give condom $n
+mpsleep 3
+say wrap your tool playa...
+~
+|
+#58
+Hooker Hoe~
+A Hoe~
+A Street Hooker stands here, trying to turn her next trick.
+~
+~
+1 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 2 2
+0 0 0 0 0 0 0 0
+#60
+Shadow Bunny~
+A Shadow Bunny~
+A Black Shadow Bunny is bouncing around.
+~
+~
+16781313 0 0 Z
+500 0 -1150 100d10+30000 50d4+2
+0 0
+8 8 0
+10 10 10 11 10 10 10
+0 1 0 0 0
+0 0 0 0 1 1 2
+100 100 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#61
+Shadow Soldier~
+A Shadow Soldier~
+A Shadow Soldier is here, looking for another victim.
+~
+~
+4097 0 0 Z
+600 0 -1400 120d10+37000 60d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 2 0 0 0
+0 0 0 0 1 1 2
+120 120 0 0 0 0 0 2
+0 0 0 0 0 0 0 0
+#62
+Shadow Wight Knight~
+Shadow Wight Knight~
+A Shadow Wight Knight is jumping from place to place.
+~
+~
+4097 0 0 Z
+700 0 -1650 140d10+42000 70d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 3 0 0 0
+0 0 0 0 1 1 4
+140 140 0 104 0 0 0 0
+0 0 0 0 0 0 0 0
+#63
+Shadow Defender~
+Shadow Defender~
+A Shadow Defender is here, getting ready to charge.
+~
+~
+4097 0 0 Z
+850 0 -2025 170d10+70000 85d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 4 0 0 0
+0 0 0 0 1 1 0
+170 170 0 0 0 0 0 1
+0 0 0 0 0 0 0 0
+#64
+Shadow Behemoth~
+Shadow Behemoth~
+A giant Shadow Behemoth is ready to fight you.
+~
+~
+4097 128 0 Z
+970 0 -2325 194d10+100000 97d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 5 0 0 0
+0 0 0 0 1 1 4
+194 194 0 0 0 0 2 0
+0 0 0 0 0 0 0 0
+#80
+guardian vampire~
+a guardian vampire~
+A vampire is here hiding his face from your light source.
+~
+Before you stands a guardian vampire, looking quite evil to say the least.
+The hair on your arms is raised by its presence alone, and it seems to you
+that he appears too formidable to be a minor minion.
+~
+35 7 -1000 Z
+25 0 -4 1d1+385 4d5+15
+0 0
+8 8 1
+13 13 13 13 13 13 13
+0 0 0 0 0
+67 0 0 0 1836212595 1836212595 0
+0 0 1735 0 0 0 33558528 0
+0 0 0 0 0 0 0 0
+#98
+janitor droid~
+a janitor droid~
+A janitor droid is wandering around picking up trash.
+~
+~
+83886209 0 0 Z
+15 0 62 3d10+150 1d4+2
+0 0
+8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 0 0 0 1 1 0
+3 3 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> entry_prog 100~
+get all
+mpat 32179 drop all
+~
+|
+#99
+final mob~
+a newly created final mob~
+Some god abandoned a newly created final mob here.
+~
+~
+1 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#2
+dollar dollars.~
+a dollar.~
+One miserable dollar.~
+~
+20 0 1
+1 0 0 0
+1 0 0
+#3
+dollars dollar.~
+%d dollars~
+Some money.~
+~
+20 0 1
+0 0 0 0
+1 0 0
+#9
+corpse remains pieces parts~
+the broken parts of %s~
+The shatered remains of %s are here.~
+~
+85 0 1
+0 0 0 1
+1 0 0
+#10
+corpse~
+the corpse of %s~
+The corpse of %s lies here.~
+~
+23 0 1
+0 0 0 1
+100 0 0
+#11
+corpse~
+the corpse of %s~
+The corpse of %s is lying here.~
+~
+24 0 16384
+0 0 0 1
+100 0 0
+#12
+head~
+the head of %s~
+The severed head of %s is lying here.~
+%s gobble$q down $p with gusto... disgusting!~
+19 0 16385
+10 0 0 0
+5 0 0
+#13
+heart~
+the heart of %s~
+The torn-out heart of %s is lying here.~
+%s savagely devour$q $p!~
+19 0 1
+16 0 0 0
+2 0 0
+#14
+arm~
+the arm of %s~
+The sliced-off arm of %s is lying here.~
+%s chomp$q on $p.~
+19 0 1
+20 0 0 0
+5 0 0
+#15
+leg~
+the leg of %s~
+The sliced-off leg of %s is lying here.~
+%s chomp$q on $p.~
+19 0 1
+20 0 0 0
+5 0 0
+#16
+guts~
+the spilled guts of %s~
+The spilled guts of %s makes you lose your appetite.~
+~
+13 0 0
+5 0 0 1
+1 0 0
+#17
+blood~
+the spilled blood~
+A pool of spilled blood lies here.~
+~
+27 0 0
+5 0 0 1
+1 0 0
+#18
+bloodstain~
+the bloodstain~
+Blood stains the ground.~
+~
+28 0 0
+5 0 0 1
+1 0 0
+#19
+scraps~
+the scraps of %s~
+The scraps of %s lie here.~
+~
+29 0 1
+5 0 0 1
+1 0 0
+#20
+mushroom~
+a magic mushroom~
+A delicious magic mushroom is here.~
+%s enjoy$q $p.~
+19 0 1
+5 0 0 0
+1 10 1
+#21
+ball light~
+a bright ball of light~
+A bright ball of light shimmers in the air.~
+~
+1 0 1
+0 0 50 0
+1 0 0
+#22
+spring~
+a magical spring~
+A magical spring flows here.~
+~
+25 64 0
+100000 100000 0 0
+10 10 1
+#23
+Dud~
+Dud~
+Dud~
+~
+13 0 0
+0 0 0 0
+1 0 0
+#24
+meat fresh slice~
+a slice of raw meat from %s~
+A slice of raw meat from %s lies lies on the ground.~
+~
+19 262144 1
+15 0 0 0
+2 0 0
+#25
+shopping bag~
+a bag~
+A shopping bag lies discarded on the ground nearby.~
+~
+15 8192 1
+50 0 0 0
+2 20 2
+#30
+fire~
+a magical fire~
+A magical fire burns brightly.~
+~
+34 64 0
+0 0 0 0
+10 10 1
+#31
+trap~
+a trap~
+You detect a trap.~
+~
+44 0 0
+0 0 0 0
+100 10 1
+#32
+portal~
+a portal~
+A misty portal beckons you to the unknown.~
+~
+46 64 0
+0 0 0 0
+100 10 1
+#33
+black poison powder~
+black poisoning powder~
+A small amount of black poisoning powder sits in a small container on the ground.~
+~
+13 0 16385
+0 0 0 0
+1 48000 4800
+#34
+scroll scribing blank~
+a blank scroll~
+A blank scroll lays here gathering dust.~
+~
+2 0 16385
+0 -1 -1 -1
+2 10000 1000
+#35
+flask empty~
+an empty flask~
+An empty flask lays here gathering dust.~
+~
+10 0 16385
+1 -1 -1 -1
+1 15000 1500
+#36
+parchment paper note data disk message info~
+a message disk~
+A message disk has been discarded here.~
+~
+47 0 16385
+0 0 0 0
+1 1500 150
+#37
+quill pen datapad recorder message disk~
+a datapad~
+A datapad used for recording message disks is here.~
+~
+21 0 1
+15 15 0 0
+2 2000 200
+#38
+mail terminal~
+a mail terminal~
+A standard galactic-net mail terminal has been installed here.~
+~
+12 0 0
+0 0 0 0
+1 0 0
+#43
+holy symbol faith~
+a symbol of faith~
+A holy symbol lies here, shining.~
+~
+9 0 16385
+5 5 0 0
+5 0 0
+A
+4 2
+#45
+grenade~
+a grenade~
+A grenade .... run!!!!~
+~
+82 0 16385
+100 200 0 0
+1 1200 120
+#46
+landmine mine~
+a landmine~
+Don't step on the landmine.~
+~
+83 0 16385
+100 200 0 0
+1 1000 100
+#50
+Shotgun~
+A Shotgun~
+A Shotgun was carelessly dropped here~
+~
+5 8192 8193
+0 8 4 6 2000 2000
+10 10000 750
+A
+18 2
+#51
+9mm~
+A 9mm hand gun~
+A 9mm hand gun was dropped here.~
+~
+5 8192 8193
+0 5 6 6 2000 2000
+6 3000 300
+A
+18 1
+#52
+Desert Eagle~
+A Desert Eagle~
+A Desert Eagle hand gun was dropped here.~
+~
+5 8192 8193
+0 6 6 6 2000 2000
+8 3600 360
+A
+19 1
+#53
+AR-15 Assault Rifle~
+An AR-15 Assault Rifle~
+An AR-15 Assault Rifle was carelessly dropped here.~
+~
+5 8192 8193
+0 9 4 6 2000 2000
+12 3750 375
+A
+18 2
+#54
+Ak-47~
+An Ak-47~
+An Ak-47 was carelessly dropped here.~
+~
+5 8192 8193
+0 10 4 6 2000 2000
+10 3900 390
+A
+18 3
+#55
+SPAS-15~
+An SPAS-15~
+An SPAS-15 was carelessly dropped here.~
+~
+5 8192 8193
+0 6 6 6
+8 3700 370
+#56
+Tec-9~
+A Tec-9~
+A Tec-9 was dropped here.~
+~
+5 8192 8193
+0 7 4 6 300 300
+4 900 90
+A
+18 -3
+#57
+Uzi~
+An Uzi~
+An Uzi was carelessly dropped here.~
+~
+5 8192 8193
+0 7 4 6 1000 1000
+4 2800 280
+#58
+MAC-10~
+A MAC-10~
+A MAC-10 was dropped here.~
+~
+5 8192 8193
+0 5 4 6
+3 2000 200
+#59
+A long sharp dagger~
+A long sharp dagger~
+A long sharp dagger was left here.~
+~
+5 8192 8193
+12 5 6 2 100 110
+4 100 120
+A
+18 -1
+#60
+Standard Issue Pistol~
+A standard issue pistol~
+A standard issue pistol has been left here.~
+~
+5 8192 8193
+0 8 4 6
+10 1000 300
+A
+18 1
+#61
+Large Table~
+A Large Table~
+A Large Table is here.~
+~
+12 0 0
+10 0 1 0
+1 0 0
+#62
+Lottery Ticket~
+A Lottery Ticket~
+A Lottery Ticket was misplaced here.~
+~
+13 0 16385
+0 0 0 0
+1 0 0
+#65
+Needle and Thread~
+a Needle and Thread~
+A Needle and Thread is here.~
+~
+77 0 16385
+0 0 0 0
+1 1000 100
+#66
+Shikon Jewel Shard~
+&P[&p>&BS&bh&zik&bo&Bn &YJ&Oe&Ww&Oe&Yl &GS&gh&ca&gr&Gd&p<&P]~
+A discarded &BS&bh&zik&bo&Bn &YJ&Oe&Ww&Oe&Yl &GS&gh&ca&gr&Gd&w is on the ground.~
+~
+9 1 4194305
+10 10 0 0
+1 0 0
+A
+13 10
+#67
+Shikon Quarter Piece~
+&GQu&ga&cr&gt&Ger &BS&bh&zik&bo&Bn &YJ&Oe&Ww&Oe&Yl &RP&ri&pe&rc&Re~
+A &GQu&ga&cr&gt&Ger &BS&bh&zik&bo&Bn &YJ&Oe&Ww&Oe&Yl &RP&ri&pe&rc&Re&w was completely misplaced here.~
+~
+9 16385 4194305
+80 80 0 0
+1 0 0
+A
+13 2000
+A
+19 100
+A
+18 50
+#68
+The Shikon Jewel~
+&GT&gh&Ge &BS&bh&zik&bo&Bn &YJ&Oe&Ww&Oe&Yl~
+&GT&gh&Ge &BS&bh&zik&bo&Bn &YJ&Oe&Ww&Oe&Yl&w was stupidly dropped here.~
+~
+9 16385 4194305
+200 200 0 0
+1 0 0
+A
+13 10000
+A
+19 500
+A
+14 5000
+A
+18 200
+#75
+%s Voodoo Doll~
+a voodoo doll of %s~
+A voodoo doll of %s is lying here.~
+~
+8 268435456 16385
+0 0 0 0
+1 0 0
+#76
+Candy Cane~
+&C(&zGW&c:&zOM&C) &RC&ra&Rn&rd&Ry &wC&Wa&wn&We~
+&C(&zGW&c:&zOM&C) &RC&ra&Rn&rd&Ry &wC&Wa&wn&We~
+~
+26 0 1
+100 67 -1 -1 -1 0
+1 0 0
+#80
+Quatre's Goggles~
+&CQ&cu&zat&cr&Ce&z'&cs &YG&Oo&pg&Pg&pl&Oe&Ys~
+&CQ&cu&zat&cr&Ce&z'&cs &YG&Oo&pg&Pg&pl&Oe&Ys are here.~
+~
+9 0 131073
+60 60 0 0
+1 0 0
+A
+26 32
+A
+13 1000
+A
+26 8
+A
+13 500
+A
+32 15
+A
+18 20
+A
+19 20
+#81
+Wufei's Wrist Guard~
+&GW&gu&cf&ge&Gi&c'&gs &BW&br&zi&bs&Bt &RG&ru&pa&rr&Rd~
+&GW&gu&cf&ge&Gi&c'&gs &BW&br&zi&bs&Bt &RG&ru&pa&rr&Rd&w has been left here.~
+~
+9 0 4097
+75 75 0 0
+1 0 0
+A
+19 50
+A
+18 20
+A
+13 1000
+#82
+Super Iluma Stick~
+&CS&cu&zp&ce&Cr &YI&Ol&Yu&Om&Ya &zS&Wt&wi&z&Wc&zk~
+&CS&cu&zp&ce&Cr &YI&Ol&Yu&Om&Ya &zS&Wt&wi&z&Wc&zk&w is here.~
+~
+1 0 16385
+0 0 -1 0
+1 0 0
+A
+13 500
+A
+13 1000
+A
+17 -100
+A
+31 2
+A
+18 20
+A
+19 20
+#83
+Energy Claw~
+&GA&gn &PE&pn&Wer&pg&Py &YC&Ol&Ya&Ow~
+&GA&gn &PE&pn&Wer&pg&Py &YC&Ol&Ya&Ow&w was dropped here.~
+~
+5 0 8193
+1000 20 100 2 2000 2000
+1 0 0
+A
+19 25
+A
+13 1000
+A
+18 25
+#84
+Nano-Tech Shield~
+&YA &CN&ca&Cn&co&z-&BT&be&Bc&bh &PS&ph&gie&pl&Pd~
+&YA &CN&ca&Cn&co&z-&BT&be&Bc&bh &PS&ph&gie&pl&Pd&w was carelessy dropped here.~
+~
+9 8192 513
+75 75 0 0
+1 0 0
+A
+26 128
+A
+13 1100
+A
+18 20
+A
+19 25
+#85
+Ruby~
+&GA &zS&Wh&wi&z&Wn&zy &RR&ru&Rb&ry~
+&GA &zS&Wh&wi&z&Wn&zy &RR&ru&Rb&ry&w has been dropped here.~
+~
+13 0 1
+0 0 0 0
+1 0 0
+#86
+Emerald~
+&YA&On &GE&gm&ce&Cr&ca&gl&Gd&w~
+&YA&On &GE&gm&ce&Cr&ca&gl&Gd&w was dropped here.~
+~
+13 0 1
+0 0 0 0
+1 0 0
+#87
+Diamond~
+&CA &wD&B&Wi&za&cm&zo&Wn&wd~
+&CA &wD&B&Wi&za&cm&zo&Wn&wd was carelessly dropped here.~
+~
+13 0 1
+0 0 0 0
+1 0 0
+#88
+Saphire~
+A &BS&ba&pp&Pph&pi&br&Be~
+A &BS&ba&pp&Pph&pi&br&Be&w is shimmering on the ground.~
+~
+13 0 1
+0 0 0 0
+1 0 0
+#89
+Onix~
+&CA&cn &zO&Wn&Ci&cx~
+&CA&cn &zO&Wn&Ci&cx&w is here.~
+~
+13 0 1
+0 0 0 0
+1 0 0
+#90
+trap~
+a trap~
+A trap is here.~
+~
+90 0 0
+0 0 0 0
+1 0 0
+#91
+Part~
+a Part~
+A Part is here.~
+~
+13 0 0
+0 0 0 0
+1 0 0
+#92
+blue chaos jewel~
+&BB&bl&Bu&be &WCh&wa&Wos &zJe&Ww&zel~
+Someone dropped a &BB&bl&Bu&be &WCh&wa&Wos &zJe&Ww&zel&w.~
+~
+8 1 1
+0 0 0 0
+1 100000 10000
+#93
+Red Chaos Jewel~
+&RR&re&Rd &WCh&wa&Wos &zJe&Ww&zel&w~
+Someone dropped a &RR&re&Rd &WCh&wa&Wos &zJe&Ww&zel&w.~
+~
+8 1 1
+0 0 0 0
+1 100000 10000
+#94
+Half Shikon Jewel~
+&GH&ga&cl&Gf &BS&bh&zik&bo&Bn &YJ&Oe&Ww&Oe&Yl &RP&ri&pe&rc&Re~
+&GH&ga&cl&Gf &BS&bh&zik&bo&Bn &YJ&Oe&Ww&Oe&Yl &RP&ri&pe&rc&Re&w does not belong on the ground.~
+~
+9 16385 4194305
+200 200 0 0
+1 0 0
+A
+13 6000
+A
+19 300
+A
+18 125
+A
+14 3000
+#99
+final object~
+a newly created final object~
+Some god dropped a newly created final object here.~
+~
+13 0 0
+0 0 0 0
+1 0 0
+#0
+
+
+#ROOMS
+#1
+An Empty Apartment~
+You are floating in nothing.
+~
+0 10551308 0 1 200
+> speech_prog test~
+say triggered by (name):	$n
+say triggered by (name&title): 	$N
+say triggerer is (he,she,it):	$e
+say triggerer is (him,her,it):	$m
+say triggerer is (his,hers,its):$s
+say random char (name):		$r
+say random char (name&title or short): 	$R
+say random char  (he,she,it):	$J
+say random char (him,her,it):	$K
+say random char (his,hers,its):	$L
+~
+> speech_prog test2~
+say firstname of room:	 	$i
+say short_desc/title of room: 	$I
+say he/she/it of room:	 	$j
+say him/her/it of room:	 	$k
+say his/hers/its of room:	$l
+say firstname of victim: 	$t
+say short_desc/title of victim:	$T
+say he/she/it of victim: 	$E
+say him/her/it of victim: 	$M
+say his/hers/its of victim:	$S
+~
+|
+S
+#2
+Limbo~
+You float in a formless void, detached from all sensation of physical
+matter, surrounded by swirling glowing light which fades into the
+relative darkness around you without any trace of edge or shadow.
+~
+0 8389644 0 1 0
+D4
+~
+~
+0 -1 500
+S
+#3
+Storage~
+This room is reserved for storage of polymorphed players.
+~
+0 2107910 0 1 0
+S
+#4
+Storage~
+This room is reserved for future use.
+~
+0 3153932 0 0 0
+S
+#5
+Void~
+~
+0 1073741828 0 1 0
+> speech_prog leave~
+mptransfer $n 2038
+~
+|
+S
+#6
+&RHell&w~
+Now you've done it... the gods must have truly forsaken you, to have sent
+you straight to hell!    It is highly advised to wait here to make your
+appeal to the wrath of the gods... or face being damned to hell for all
+eternity!  
+~
+0 8594508 0 1 0
+> act_prog link.~
+mpforce $n quit
+~
+|
+S
+#7
+Mobprog Purge Room~
+~
+0 1073741828 0 1 0
+> speech_prog purge~
+mppurge
+~
+|
+S
+#8
+Test Suit Cockpit~
+~
+0 1073741828 0 1 0
+S
+#9
+Test Suit Cockpit~
+~
+0 1073741828 0 1 0
+S
+#10
+Test Suit Cockpit~
+~
+0 1073741828 0 1 0
+S
+#11
+Test Suit Cockpit~
+~
+0 1073741828 0 1 0
+S
+#12
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#13
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#14
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#15
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#16
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#17
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#18
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#19
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#20
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#21
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#22
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#23
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#25
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#26
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#27
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#28
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#29
+The Arena~
+All you can see around you are left over bones from rats that have infested
+this place full of various types of diseases.  Your nose suddenly quivers
+as you  smell the left-over of the last victim's last action.
+~
+0 -2147475444 0 1 0
+D0
+~
+~
+0 -1 31
+D1
+~
+~
+0 -1 32
+D2
+~
+~
+0 -1 33
+D3
+~
+~
+0 -1 30
+S
+#30
+The Arena~
+All you can see around you are left over bones from rats that have infested
+this place full of various types of diseases.  Your nose suddenly quivers
+as you  smell the left-over of the last victim's last action.
+~
+0 -2147475444 0 1 0
+D1
+~
+~
+0 -1 29
+D7
+~
+~
+0 -1 38
+D9
+~
+~
+0 -1 37
+S
+#31
+The Arena~
+All you can see around you are left over bones from rats that have infested
+this place full of various types of diseases.  Your nose suddenly quivers
+as you  smell the left-over of the last victim's last action.
+~
+0 -2147475444 0 1 0
+D2
+~
+~
+0 -1 29
+D6
+~
+~
+0 -1 39
+D7
+~
+~
+0 -1 41
+S
+#32
+The Arena~
+All you can see around you are left over bones from rats that have infested
+this place full of various types of diseases.  Your nose suddenly quivers
+as you  smell the left-over of the last victim's last action.
+~
+0 -2147475444 0 1 0
+D3
+~
+~
+0 -1 29
+D6
+~
+~
+0 -1 40
+D8
+~
+~
+0 -1 36
+S
+#33
+The Arena~
+All you can see around you are left over bones from rats that have infested
+this place full of various types of diseases.  Your nose suddenly quivers
+as you  smell the left-over of the last victim's last action.
+~
+0 -2147475444 0 1 0
+D0
+~
+~
+0 -1 29
+D8
+~
+~
+0 -1 35
+D9
+~
+~
+0 -1 34
+S
+#34
+The Arena~
+All you can see around you are left over bones from rats that have infested
+this place full of various types of diseases.  Your nose suddenly quivers
+as you  smell the left-over of the last victim's last action.
+~
+0 -2147475444 0 1 0
+D6
+~
+~
+0 -1 33
+D7
+~
+~
+0 -1 37
+S
+#35
+The Arena~
+All you can see around you are left over bones from rats that have infested
+this place full of various types of diseases.  Your nose suddenly quivers
+as you  smell the left-over of the last victim's last action.
+~
+0 -2130698228 0 1 0
+D5
+~
+~
+0 -1 43
+D6
+~
+~
+0 -1 36
+D7
+~
+~
+0 -1 33
+S
+#36
+The Arena~
+All you can see around you are left over bones from rats that have infested
+this place full of various types of diseases.  Your nose suddenly quivers
+as you  smell the left-over of the last victim's last action.
+~
+0 -2147475444 0 1 0
+D7
+~
+~
+0 -1 32
+D9
+~
+~
+0 -1 35
+S
+#37
+The Arena~
+All you can see around you are left over bones from rats that have infested
+this place full of various types of diseases.  Your nose suddenly quivers
+as you  smell the left-over of the last victim's last action.
+~
+0 -2147475444 0 1 0
+D6
+~
+~
+0 -1 30
+D8
+~
+~
+0 -1 34
+S
+#38
+The Arena~
+All you can see around you are left over bones from rats that have infested
+this place full of various types of diseases.  Your nose suddenly quivers
+as you  smell the left-over of the last victim's last action.
+~
+0 -2147475444 0 1 0
+D6
+~
+~
+0 -1 41
+D8
+~
+~
+0 -1 30
+S
+#39
+The Arena~
+All you can see around you are left over bones from rats that have infested
+this place full of various types of diseases.  Your nose suddenly quivers
+as you  smell the left-over of the last victim's last action.
+~
+0 -2147475444 0 1 0
+D8
+~
+~
+0 -1 42
+D9
+~
+~
+0 -1 31
+S
+#40
+The Arena~
+All you can see around you are left over bones from rats that have infested
+this place full of various types of diseases.  Your nose suddenly quivers
+as you  smell the left-over of the last victim's last action.
+~
+0 -2147475444 0 1 0
+D0
+~
+~
+0 -1 42
+D9
+~
+~
+0 -1 32
+S
+#41
+The Arena~
+All you can see around you are left over bones from rats that have infested
+this place full of various types of diseases.  Your nose suddenly quivers
+as you  smell the left-over of the last victim's last action.
+~
+0 -2147475444 0 1 0
+D8
+~
+~
+0 -1 30
+D9
+~
+~
+0 -1 38
+S
+#42
+The Arena~
+All you can see around you are left over bones from rats that have infested
+this place full of various types of diseases.  Your nose suddenly quivers
+as you  smell the left-over of the last victim's last action.
+~
+0 -2147475444 0 1 0
+D2
+~
+~
+0 -1 40
+D7
+~
+~
+0 -1 39
+S
+#43
+Pit of No Return~
+Well while you were running blindly through the arena, you made a stupid
+mistake and fell into a pit.  Too bad you gotta stay here...FOREVER!!!!
+Actually you hear some foot steps near by and you realize that it'll be the
+death of you.
+~
+0 -2147475448 0 1 0
+D4
+~
+~
+0 -1 35
+S
+#44
+Lost in Space~
+~
+0 6 0 1 0
+S
+#45
+Secret Lab~
+A wet grey mist hangs over this large yard of old an unused vessels.
+Ships of all types and sizes rest here empty and abandoned...
+~
+0 536870916 0 1 0
+S
+#46
+The Morgue~
+~
+0 1073741836 0 1 0
+D4
+~
+~
+0 -1 516
+S
+#47
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#48
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#49
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#50
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#51
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#52
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#53
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#54
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#55
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#56
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#57
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#58
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#59
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#60
+Waiting Room~
+This is the place that is feared by all creatures in the universe.  This is
+where you can show that you are tough enough, brave enough, and have the
+guys to stand up against anyone in the entire galaxy!  This is the arena,
+be prepared for your worst nightmares to become a reality...
+~
+0 -2147179508 0 1 0
+> speech_prog heal~
+if isfight ($n)
+mea $n Not while you're fighting cheapskate!
+hahaha!!
+else
+mprestore $n 30000
+mea $n There ya go!
+endif
+~
+|
+S
+#61
+Arena Enter Room~
+~
+0 4 0 1 0
+D2
+~
+~
+3 -1 4114
+S
+#62
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#63
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#64
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#65
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#66
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#67
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#68
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#69
+Waiting Room for Freeze Tag~
+This is the place where it seperates the men from the boys and no, not with
+crobars, this isn't Greece.  Here we seperate it will skill and the
+ability to type the word TAG!  Prepare yourselves for your ultimate test
+of Freeze Tag! 
+~
+0 1036 8 1 0
+S
+#70
+Red Base~
+This is the base where the red team can form up strategies to defeat the
+smelly Blue Team. 
+~
+0 1036 8 1 0
+D0
+~
+~
+0 -1 72
+D2
+~
+~
+0 -1 71
+D4
+~
+~
+0 -1 74
+S
+#71
+Red Base~
+This is the base where the red team can form up strategies to defeat the
+smelly Blue Team. 
+~
+0 1036 8 1 0
+D0
+~
+~
+0 -1 70
+D2
+~
+~
+0 -1 76
+D8
+~
+~
+0 -1 73
+S
+#72
+Red Base~
+This is the base where the red team can form up strategies to defeat the
+smelly Blue Team. 
+~
+0 1036 8 1 0
+D0
+~
+~
+0 -1 77
+D2
+~
+~
+0 -1 70
+D6
+~
+~
+0 -1 75
+S
+#73
+Red Base~
+This is the base where the red team can form up strategies to defeat the
+smelly Blue Team. 
+~
+0 1036 8 1 0
+D0
+~
+~
+0 -1 74
+D7
+~
+~
+0 -1 71
+S
+#74
+Red Base~
+This is the base where the red team can form up strategies to defeat the
+smelly Blue Team. 
+~
+0 1036 8 1 0
+D0
+~
+~
+0 -1 75
+D2
+~
+~
+0 -1 73
+D5
+~
+~
+0 -1 70
+D6
+~
+~
+0 -1 79
+D8
+~
+~
+0 -1 78
+S
+#75
+Red Base~
+This is the base where the red team can form up strategies to defeat the
+smelly Blue Team. 
+~
+0 1036 8 1 0
+D2
+~
+~
+0 -1 74
+D9
+~
+~
+0 -1 72
+S
+#76
+Red Base~
+This is the base where the red team can form up strategies to defeat the
+smelly Blue Team. 
+~
+0 1036 8 1 0
+D0
+~
+~
+0 -1 71
+S
+#77
+Red Base~
+This is the base where the red team can form up strategies to defeat the
+smelly Blue Team. 
+~
+0 1036 8 1 0
+D2
+~
+~
+0 -1 72
+S
+#78
+No Man's Land~
+Here is where anything can go and no one has the upper hand.  Here there
+are only 2 exits and only one person knows the way through and the problem
+is... he forgot.
+~
+0 1036 8 1 0
+D1
+~
+~
+0 -1 81
+D6
+~
+~
+0 -1 80
+D7
+~
+~
+0 -1 74
+D8
+~
+~
+0 -1 82
+S
+#79
+No Man's Land~
+Here is where anything can go and no one has the upper hand.  Here there
+are only 2 exits and only one person knows the way through and the problem
+is... he forgot.
+~
+0 1036 8 1 0
+D1
+~
+~
+0 -1 83
+D2
+~
+~
+0 -1 78
+D6
+~
+~
+0 -1 84
+D8
+~
+~
+0 -1 80
+D9
+~
+~
+0 -1 74
+S
+#80
+No Man's Land~
+Here is where anything can go and no one has the upper hand.  Here there
+are only 2 exits and only one person knows the way through and the problem
+is... he forgot.
+~
+0 1036 8 1 0
+D0
+~
+~
+0 -1 80
+D1
+~
+~
+0 -1 80
+D2
+~
+~
+0 -1 83
+D3
+~
+~
+0 -1 84
+D6
+~
+~
+0 -1 81
+D7
+~
+~
+0 -1 88
+D8
+~
+~
+0 -1 89
+D9
+~
+~
+0 -1 82
+S
+#81
+No Man's Land~
+Here is where anything can go and no one has the upper hand.  Here there
+are only 2 exits and only one person knows the way through and the problem
+is... he forgot.
+~
+0 1036 8 1 0
+D0
+~
+~
+0 -1 80
+D1
+~
+~
+0 -1 82
+D2
+~
+~
+0 -1 88
+D3
+~
+~
+0 -1 86
+D6
+~
+~
+0 -1 89
+D7
+~
+~
+0 -1 85
+D8
+~
+~
+0 -1 81
+D9
+~
+~
+0 -1 87
+S
+#82
+No Man's Land~
+Here is where anything can go and no one has the upper hand.  Here there
+are only 2 exits and only one person knows the way through and the problem
+is... he forgot.
+~
+0 1036 8 1 0
+D0
+~
+~
+0 -1 78
+D1
+~
+~
+0 -1 86
+D2
+~
+~
+0 -1 88
+D3
+~
+~
+0 -1 84
+D6
+~
+~
+0 -1 81
+D7
+~
+~
+0 -1 81
+D8
+~
+~
+0 -1 87
+D9
+~
+~
+0 -1 83
+S
+#83
+No Man's Land~
+Here is where anything can go and no one has the upper hand.  Here there
+are only 2 exits and only one person knows the way through and the problem
+is... he forgot.
+~
+0 1036 8 1 0
+D0
+~
+~
+0 -1 85
+D1
+~
+~
+0 -1 82
+D2
+~
+~
+0 -1 89
+D3
+~
+~
+0 -1 88
+D6
+~
+~
+0 -1 84
+D7
+~
+~
+0 -1 86
+D8
+~
+~
+0 -1 80
+D9
+~
+~
+0 -1 87
+S
+#84
+No Man's Land~
+Here is where anything can go and no one has the upper hand.  Here there
+are only 2 exits and only one person knows the way through and the problem
+is... he forgot.
+~
+0 1036 8 1 0
+D0
+~
+~
+0 -1 86
+D1
+~
+~
+0 -1 85
+D2
+~
+~
+0 -1 81
+D3
+~
+~
+0 -1 88
+D6
+~
+~
+0 -1 82
+D7
+~
+~
+0 -1 89
+D8
+~
+~
+0 -1 84
+D9
+~
+~
+0 -1 80
+S
+#85
+No Man's Land~
+Here is where anything can go and no one has the upper hand.  Here there
+are only 2 exits and only one person knows the way through and the problem
+is... he forgot.
+~
+0 1036 8 1 0
+D0
+~
+~
+0 -1 89
+D1
+~
+~
+0 -1 88
+D2
+~
+~
+0 -1 80
+D3
+~
+~
+0 -1 84
+D6
+~
+~
+0 -1 87
+D7
+~
+~
+0 -1 85
+D8
+~
+~
+0 -1 81
+D9
+~
+~
+0 -1 82
+S
+#86
+No Man's Land~
+Here is where anything can go and no one has the upper hand.  Here there
+are only 2 exits and only one person knows the way through and the problem
+is... he forgot. 
+~
+0 1036 8 1 0
+D0
+~
+~
+0 -1 83
+D1
+~
+~
+0 -1 91
+D2
+~
+~
+0 -1 81
+D3
+~
+~
+0 -1 88
+D6
+~
+~
+0 -1 84
+D7
+~
+~
+0 -1 80
+D8
+~
+~
+0 -1 81
+D9
+~
+~
+0 -1 87
+S
+#87
+No Man's Land~
+Here is where anything can go and no one has the upper hand.  Here there
+are only 2 exits and only one person knows the way through and the problem
+is... he forgot. 
+~
+0 1036 8 1 0
+D0
+~
+~
+0 -1 82
+D1
+~
+~
+0 -1 89
+D2
+~
+~
+0 -1 81
+D3
+~
+~
+0 -1 85
+D6
+~
+~
+0 -1 84
+D7
+~
+~
+0 -1 87
+D8
+~
+~
+0 -1 83
+D9
+~
+~
+0 -1 86
+S
+#88
+No Man's Land~
+Here is where anything can go and no one has the upper hand.  Here there
+are only 2 exits and only one person knows the way through and the problem
+is... he forgot. 
+~
+0 1036 8 1 0
+D0
+~
+~
+0 -1 86
+D1
+~
+~
+0 -1 87
+D2
+~
+~
+0 -1 83
+D3
+~
+~
+0 -1 85
+D6
+~
+~
+0 -1 89
+D7
+~
+~
+0 -1 88
+D8
+~
+~
+0 -1 82
+D9
+~
+~
+0 -1 84
+S
+#89
+No Man's Land~
+Here is where anything can go and no one has the upper hand.  Here there
+are only 2 exits and only one person knows the way through and the problem
+is... he forgot. 
+~
+0 1036 8 1 0
+D0
+~
+~
+0 -1 89
+D1
+~
+~
+0 -1 81
+D2
+~
+~
+0 -1 82
+D3
+~
+~
+0 -1 86
+D6
+~
+~
+0 -1 80
+D7
+~
+~
+0 -1 87
+D8
+~
+~
+0 -1 88
+D9
+~
+~
+0 -1 85
+S
+#90
+No Man's Land~
+Here is where anything can go and no one has the upper hand.  Here there
+are only 2 exits and only one person knows the way through and the problem
+is... he forgot. 
+~
+0 1036 8 1 0
+D3
+~
+~
+0 -1 88
+D7
+~
+~
+0 -1 89
+D8
+~
+~
+0 -1 93
+D9
+~
+~
+0 -1 87
+S
+#91
+No Man's Land~
+Here is where anything can go and no one has the upper hand.  Here there
+are only 2 exits and only one person knows the way through and the problem
+is... he forgot. 
+~
+0 1036 8 1 0
+D3
+~
+~
+0 -1 86
+D6
+~
+~
+0 -1 93
+D7
+~
+~
+0 -1 87
+D9
+~
+~
+0 -1 85
+S
+#92
+Blue Base~
+~
+0 1036 8 1 0
+D2
+~
+~
+0 -1 93
+D8
+~
+~
+0 -1 97
+S
+#93
+Blue Base~
+~
+0 1036 8 1 0
+D0
+~
+~
+0 -1 92
+D2
+~
+~
+0 -1 94
+D5
+~
+~
+0 -1 99
+D7
+~
+~
+0 -1 90
+D9
+~
+~
+0 -1 91
+S
+#94
+Blue Base~
+~
+0 1036 8 1 0
+D0
+~
+~
+0 -1 93
+D6
+~
+~
+0 -1 98
+S
+#95
+Blue Base~
+~
+0 1036 8 1 0
+D0
+~
+~
+0 -1 98
+S
+#96
+Blue Base~
+~
+0 1036 8 1 0
+D2
+~
+~
+0 -1 97
+S
+#97
+Blue Base~
+~
+0 1036 8 1 0
+D0
+~
+~
+0 -1 96
+D2
+~
+~
+0 -1 99
+D7
+~
+~
+0 -1 92
+S
+#98
+Blue Base~
+~
+0 1036 8 1 0
+D0
+~
+~
+0 -1 99
+D2
+~
+~
+0 -1 95
+D9
+~
+~
+0 -1 94
+S
+#99
+Blue Base~
+~
+0 1032 8 1 0
+D0
+~
+~
+0 -1 97
+D2
+~
+~
+0 -1 98
+D4
+~
+~
+0 -1 93
+S
+#0
+
+
+#RESETS
+M 0 1 1 2
+M 1 2 1 6
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+M  20 spec_stormtrooper
+M  21 spec_clan_guard
+M  22 spec_clan_guard
+M  23 spec_new_republic_trooper
+M  25 spec_clan_guard
+M  51 spec_questmaster
+S
+
+
+#$

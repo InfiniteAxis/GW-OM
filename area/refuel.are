@@ -1,0 +1,1310 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         Refueling Stations~
+Author       Goku~
+Ranges       1 1007 1 1007
+Economy      0 6226745
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       6100
+Keywords   A Snack Vendor~
+Short      a newly created A Snack Vendor~
+Long       Some god abandoned a newly created A Snack Vendor here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6101
+Keywords   Guard~
+Short      A Security Guard Official~
+Long       A Security Guard is sitting behind a desk, watching security televisions
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 500 0 -1150 0 0
+Stats2     100 10 5000
+Stats3     50 4 2
+Stats4     0 0 0 100 100
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6199
+Keywords   last~
+Short      a newly created last~
+Long       Some god abandoned a newly created last here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#OBJECT
+Vnum     6100
+Keywords Orange Fighting Gi~
+Type     armor~
+Short    &OO&Yr&Oa&Yn&Og&Ye &OG&Yi~
+Long     A Pair of Orange Fighting Gi lies here~
+WFlags   take about~
+Values   25 25 0 0 0 0
+Stats    1 50000 5000 0 1
+Affect       -1 -1 -75 17 0
+Affect       -1 -1 15 19 0
+Affect       -1 -1 5 18 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6101
+Keywords Orange Baggy Pants~
+Type     armor~
+Short    &OO&Yr&Oa&Yn&Og&Ye &OB&Ya&Og&Yg&Oy &YP&Oa&Yn&Ot&Ys~
+Long     Blue Combat Gi lays here in a pile~
+WFlags   take legs~
+Values   25 25 0 0 0 0
+Stats    1 50000 5000 0 0
+Affect       -1 -1 -75 17 0
+Affect       -1 -1 15 18 0
+Affect       -1 -1 5 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6102
+Keywords A Blue Combat Sash~
+Type     armor~
+Short    A Blue Combat Sash~
+Long     A blue sash is here, crumpled on the floor~
+WFlags   take waist~
+Values   20 20 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6103
+Keywords A Pair of Blue Boots~
+Type     armor~
+Short    A Pair of Blue Boots~
+Long     A pair of boots lie here on the ground~
+WFlags   take feet~
+Values   15 15 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6104
+Keywords Blue Wristbands~
+Type     armor~
+Short    A Blue Wristband~
+Long     A wristband lies here on the ground~
+WFlags   take wrist~
+Values   18 18 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6105
+Keywords The Powerpole~
+Type     weapon~
+Short    The Powerpole~
+Long     A pole sits here, collecting dust on the ground~
+WFlags   take wield~
+Values   1000 20 20 11 5000 5000
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6106
+Keywords A Bag of Chips~
+Type     food~
+Short    A Bag of Chips~
+Long     A Bag of Chips lie here~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 100 10 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6107
+Keywords Sandwich~
+Type     food~
+Short    A Sandwich~
+Long     A sandwich is on the floor, growing mold~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 25 10 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6108
+Keywords Soda~
+Type     drinkcon~
+Short    A Can of Soda~
+Long     A can of soda sits on the ground~
+WFlags   take~
+Values   0 1000 8 0 0 0
+Stats    1 60 20 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6199
+Keywords last~
+Type     trash~
+Short    a last~
+Long     A last is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     6100
+Name     M03 Refueling Station's Landing Pad~
+Sector   city~
+Flags    nomob indoors can_land can_fly docking~
+Desc     This small little refueling station is home to several people of all walks
+of life. They have come here to evade certain government faction's taxes
+and regulations. There are few mobile suits here, since so many people 
+are poor.
+~
+#EXIT
+Direction north~
+ToRoom    6101
+#ENDEXIT
+
+Reset O 0 10315 1 6100
+#ENDROOM
+
+#ROOM
+Vnum     6101
+Name     M03 Refueling Station - Hallway~
+Sector   city~
+Flags    indoors~
+Desc     Lights cast a glow along the steel walls of this hallway. Small windows
+show the outside, which is nothing more then stars and blackness. The only
+obvious exit is north. 
+~
+#EXIT
+Direction north~
+ToRoom    6102
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6100
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6102
+Name     M03 Refueling Station - Intersection~
+Sector   city~
+Flags    indoors~
+Desc     Pathways seem to be going in all 4 directions. People coming from the east
+seem to be holding food, and, as you look closer, you can see a man
+selling food items. A guard's station is to the west, where all people who
+cause problems seem to be going. The vapor lights above make everything
+plainly visible.
+~
+#EXIT
+Direction north~
+ToRoom    6105
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6103
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6101
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6104
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6135
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6103
+Name     M03 Refueling Station - Food Store~
+Sector   city~
+Flags    indoors~
+Desc     A single man sits in the middle of the room, selling food for a certain
+price. The food looks good, maybe you should get some.
+~
+#EXIT
+Direction west~
+ToRoom    6102
+#ENDEXIT
+
+Reset M 0 6100 3 6103
+  Reset G 1 10313 1
+  Reset G 1 6106 1
+  Reset G 1 6107 1
+  Reset G 1 6108 1
+#ENDROOM
+
+#ROOM
+Vnum     6104
+Name     M03 Refueling Station - Guard Station~
+Sector   city~
+Flags    indoors~
+Desc     A small vapor light is the only source of light for this whole room. The
+steel walls illuminate the pictures of security televisions. A guard sits
+behind them, closely watching every television for any violations. 
+~
+#EXIT
+Direction east~
+ToRoom    6102
+Flags     isdoor~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6105
+Name     M03 Refueling Station - Hallway~
+Sector   city~
+Flags    indoors~
+Desc     Lights cast a glow along the steel walls of this hallway. Small windows
+show the outside, which is nothing more then stars and blackness. The only
+obvious exit is north.  
+~
+#EXIT
+Direction north~
+ToRoom    6106
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6102
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6106
+Name     M03 Refueling Station - Intersection~
+Sector   city~
+Flags    indoors~
+Desc     There's a light mist in the air, as the air conditioning of the colony
+leaks water about, and it evaporates. There are two shops near here, to
+the west, an armor shop. To the east, a weapon shop.
+~
+#EXIT
+Direction north~
+ToRoom    6109
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6107
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6105
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6108
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6107
+Name     M03 Refueling Station - Weapon Shop~
+Sector   city~
+Flags    nomob indoors safe~
+Desc     This is a small weapon shop located on M03. It's not much, but it does have
+a few rare items that have been smuggled on the colony. It's a brightly
+lit establishment, with gun racks on the walls, and a cheery owner at the
+counter.
+~
+#EXIT
+Direction west~
+ToRoom    6106
+#ENDEXIT
+
+Reset M 0 5127 2 6107
+  Reset G 1 2001 1
+  Reset G 1 60 1
+  Reset G 1 502 1
+#ENDROOM
+
+#ROOM
+Vnum     6108
+Name     M03 Refueling Station - Armor Shop~
+Sector   city~
+Flags    nomob indoors safe~
+#EXIT
+Direction east~
+ToRoom    6106
+#ENDEXIT
+
+Reset M 0 5169 2 6108
+  Reset G 1 505 1
+  Reset G 1 504 1
+  Reset G 1 503 1
+#ENDROOM
+
+#ROOM
+Vnum     6109
+Name     M03 Refueling Station - Hallway~
+Sector   city~
+Flags    nomob indoors~
+Desc     Lights cast a glow along the steel walls of this hallway. Small windows
+show the outside, which is nothing more then stars and blackness. The only
+obvious exit is north. 
+~
+#EXIT
+Direction north~
+ToRoom    6110
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6106
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6110
+Name     M03 Refueling Station - Hallway~
+Sector   city~
+Flags    nomob indoors~
+Desc     The vapor lights end here, as the hallway ends as well. A medical station
+is to the east, where voices and the smell of blood is present. The
+resting quarters are the the west, where there are most likely beds and
+comfort.
+~
+#EXIT
+Direction north~
+ToRoom    6113
+Flags     isdoor closed hidden~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6111
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6109
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6112
+#ENDEXIT
+
+Reset D 0 6110 0 1
+#ENDROOM
+
+#ROOM
+Vnum     6111
+Name     M03 Refueling Station - Medical Bay~
+Sector   city~
+Flags    nomob indoors heal~
+Desc     Cabinates filled with medical equipment surrond the room. A medical mat is
+in the middle of the room. The vapor lights cast illumination all over the
+area. A sink is under some cabinates hanging from the wall, with soap
+dispensers around it.
+~
+#EXIT
+Direction west~
+ToRoom    6110
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6112
+Name     M03 Refueling Station - Resting Quarters~
+Sector   city~
+Flags    nomob indoors bank hotel~
+Desc     Beds surrond the area. Curtains surrond the beds, which block out the vapor
+light's glow. A television with comfortable chairs surronding it is on,
+casting a nice glow. 
+From here you may save and quit
+~
+#EXIT
+Direction east~
+ToRoom    6110
+#ENDEXIT
+
+Reset M 0 10365 20 6112
+#ENDROOM
+
+#ROOM
+Vnum     6113
+Name     Command Deck~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction east~
+ToRoom    6114
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6110
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset D 0 6113 2 1
+#ENDROOM
+
+#ROOM
+Vnum     6114
+Name     Engineroom~
+Sector   city~
+Flags    nomob spacecraft~
+#EXIT
+Direction west~
+ToRoom    6113
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6115
+Name     Landing Pad of M02 Refueling Station~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    6116
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6116
+Name     Main Intersection~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    6119
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6117
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6115
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6118
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6117
+Name     A Food Vendor~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction west~
+ToRoom    6116
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6118
+Name     A Security Room~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction east~
+ToRoom    6116
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6119
+Name     A Long Hallway~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    6120
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6116
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6120
+Name     A Long Hallway~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    6121
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6119
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6121
+Name     A Hallway~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    6131
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6122
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6120
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6122
+Name     Training Zone~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    6123
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6125
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6124
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6121
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6130
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6126
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6127
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6129
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6128
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6123
+Name     Level One~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction south~
+ToRoom    6122
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6124
+Name     Final Level~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    6122
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6125
+Name     Level Two~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction west~
+ToRoom    6122
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6126
+Name     Level Three~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction southwest~
+ToRoom    6122
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6127
+Name     Level Four~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction southeast~
+ToRoom    6122
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6128
+Name     Level Six~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction northeast~
+ToRoom    6122
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6129
+Name     Level Five~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction northwest~
+ToRoom    6122
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6130
+Name     Emergency Station~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction down~
+ToRoom    6122
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6131
+Name     A Hallway~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    6132
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6121
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6132
+Name     The Second Intersection~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction east~
+ToRoom    6133
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6131
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6134
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6133
+Name     An Armor and Weapon's Shop~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction west~
+ToRoom    6132
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6134
+Name     The Resting Quarters~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction east~
+ToRoom    6132
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6135
+Name     M03 Refueling Station - Bank~
+Sector   city~
+Flags    nomob bank~
+Desc     Here is where you can withdraw/deposit money into your bank account or your
+friend's.   Thank you for choosing M03 Fuel Station's Bank!
+~
+#EXIT
+Direction up~
+ToRoom    6102
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6136
+Name     The Halls of Asgard~
+Sector   city~
+Flags    nomob indoors~
+Desc     You seem to have fallen into a strange room, filled with a strange collection
+of ancient weaponry and mystical treasures... It seems that way, anyways,
+until you realize this is some kind of strange tourist shop. How they expect
+anyone to find their shop hidden in the library is a mystery, but nevertheless,
+a few silly trinkets catch your eye. Behind the counter stands a old, decrepit
+man, staring straight at you, obviously waiting for you to make your selection.
+Might as well have a look at the wares before you go.
+~
+#ENDROOM
+
+#ROOM
+Vnum     6137
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6138
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6139
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6140
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6141
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6142
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6143
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6144
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6145
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6146
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6147
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6148
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6149
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6150
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6151
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6152
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6153
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6154
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6155
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6156
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6157
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6158
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6159
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6160
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6161
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6162
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6163
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6164
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6165
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6166
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6167
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6168
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6169
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6170
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6171
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6172
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6173
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6174
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6175
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6176
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6177
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6178
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6179
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6180
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6181
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6182
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6183
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6184
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6185
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6186
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6187
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6188
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6189
+Name     Floating in a void~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     6190
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6191
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6192
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6193
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6194
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6195
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6196
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6197
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6198
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6199
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ENDAREA

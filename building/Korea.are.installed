@@ -1,0 +1,2094 @@
+#AREA   Korea~
+
+
+
+#AUTHOR Hana~
+
+#RANGES
+0 1005 0 1005
+$
+
+#RESETMSG A chilly breeze sweeps throughout the area.~
+
+#FLAGS
+0
+
+#ECONOMY 0 0
+
+#MOBILES
+#700
+The Customs Officer~
+The Customs Officer~
+The customs officer is here, checking all bags.
+~
+~
+3 4194304 0 Z
+880 0 -2100 176d10+8800 88d4+2
+0 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+176 176 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> act_prog p gives you A Passport.~
+ifobjtype ($o)== book
+say Thank you. Please proceed. Welcome to South Korea.
+give passport $n
+unlock n
+open n
+mpforce $n north
+close n
+lock n
+endif
+~
+> speech_prog hello~
+say Hello $n. May I see your passport please?
+~
+|
+#701
+An Airport Attendant~
+An Airport Attendant~
+An airport attendant is here.
+~
+~
+3 4194304 0 Z
+540 0 -1250 108d10+5400 54d4+2
+0 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+108 108 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog hello~
+say Hello $n. Welcome to Seoul. 
+mpoload 700
+say Here is your passport.
+give passport $n
+~
+|
+#702
+A Korean Waitress~
+A Korean Waitress~
+A waitress is here to serve food to visitors.
+~
+~
+3 0 0 Z
+35 0 12 7d10+350 3d4+2
+0 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+7 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog gim-bap~
+say Here you are.
+mpoload 702
+give gim-bap $n
+say Enjoy!
+smile
+~
+> speech_prog man-du~
+say Here you are.
+mpoload 704
+give man-du $n
+say Enjoy!
+smile
+~
+> speech_prog dictionary~
+say Here is a Korean/English Dictionary.
+mpoload 712
+give dictionary $n
+bow
+say I hope it helps you.
+smile
+~
+|
+#703
+The Museum Attendant~
+The Museum Attendant~
+The Museum Attendant is ready to escort you around the museum.
+~
+~
+3 4194304 0 Z
+35 0 12 7d10+350 3d4+2
+0 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+7 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> act_prog p gives you A Ticket.~
+ifobjtype ($o)== book
+say Thank you. Hope you enjoy your time.
+mptransfer $n 716
+~
+|
+#704
+A Ticket Salesperson~
+A Ticket Salesperson~
+A Ticket Salesperson is here.
+~
+~
+3 0 0 Z
+52 0 -30 10d10+520 5d4+2
+0 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+10 10 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#705
+Mr. Kim~
+Mr. Kim~
+Mr. Kim is here, watching the store.
+~
+~
+3 4194304 0 Z
+15 0 62 3d10+150 1d4+2
+0 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+3 3 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Ahn-nyung-ha-sae-yo.
+bow
+say How may I help you?
+~
+|
+#706
+Park Yu Jin~
+Park Yu Jin~
+Park Yu Jin is here, watching the store.
+~
+~
+134217731 0 0 Z
+15 0 62 3d10+150 1d4+2
+0 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+3 3 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Hwan-yung-hap-nee-da.
+bow
+say How may I help you today?
+~
+|
+#707
+A Police Officer~
+A Police Officer~
+A police officer is patrolling the streets.
+~
+~
+1 4194304 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+0 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+85 65 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#708
+A Museum Personnel~
+A Museum Personnel~
+A museum personnel is demonstrating here.
+~
+~
+134217731 0 0 Z
+890 0 -2125 178d10+8900 89d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+178 178 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog show~
+say This is the Katana no Raiden.
+say It belonged to Kyung Jo, the greatest Korean warrior.
+say I will demonstrate the power of Katana no Raiden.
+wield raiden
+mpmload 5100
+kill holo
+~
+|
+#709
+Jo Yoon Seung~
+Jo Yoon Seung~
+Jo Yoon Seung is here, standing behind the counter.
+~
+~
+3 0 0 Z
+153 0 -282 30d10+1530 15d4+2
+0 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+30 30 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Ahn-nyung-ha-sae-yo.
+bow
+say What can I do for you today?
+~
+|
+#710
+Yoon Hyung Seok~
+Yoon Hyung Seok~
+Yoon Hyung Seok is here, ready to take your order.
+~
+~
+3 0 0 Z
+15 0 62 3d10+150 1d4+2
+0 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+3 3 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Ahn-nyung-ha-sae-yo.
+bow
+say What would you like today?
+~
+|
+#711
+Kim Hae In~
+Kim Hae In~
+Kim Hae In the pharmacist is here.
+~
+~
+3 0 0 Z
+15 0 62 3d10+150 1d4+2
+0 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+3 3 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#712
+An SNU Security Guard~
+An SNU Security Guard~
+An SNU Security Guard is patrolling the area.
+~
+~
+65 4194304 0 Z
+985 0 -2362 197d10+9850 98d4+2
+0 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+197 197 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#713
+A Physical Trainer~
+A Physical Trainer~
+A physical trainer is here, ready to help you.
+~
+~
+515 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 2
+25 25 25 25 25 25 25
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Hi $n! Welcome to the SNU Gym.
+say Type &Rtrain&C to see what stats you can train.
+say Type 'train <stat name>' to train a stat.
+~
+|
+#714
+A Female College Student~
+A Female College Student~
+A female college student is here.
+~
+~
+3 0 0 Z
+55 0 -37 11d10+550 5d4+2
+0 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+11 11 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog them...~
+giggle
+say Andrew, you're so sweet!
+hug male
+say I love them!
+~
+|
+#715
+A Male College Student~
+A Male College Student~
+A male college student is here.
+~
+~
+3 0 0 Z
+55 0 -37 11d10+550 5d4+2
+0 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+11 11 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> rand_prog 1~
+say Hey Jess.
+smile female
+say I got you a boquet of flowers.
+emote gives Jess a boquet of flowers.
+blush
+say I hope you like them...
+~
+|
+#716
+A Cafeteria Service Lady~
+A Cafeteria Service Lady~
+A cafeteria service lady is here, ready to take your order.
+~
+~
+3 0 0 Z
+60 0 -50 12d10+600 6d4+2
+0 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+12 12 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#717
+A Smuggling Professor~
+A Smuggling Professor~
+A professor in smuggling is here.
+~
+~
+1027 0 0 Z
+200 0 -400 40d10+2000 20d4+2
+0 0
+8 8 0
+10 10 25 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+40 40 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#718
+A Training Dummy~
+A Training Dummy~
+A Training Dummy is here for practising.
+~
+~
+3 0 0 Z
+450 0 -1025 90d10+4500 45d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+90 90 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#723
+A Priest~
+A Priest~
+A Priest stands here, giving blessings.
+~
+~
+3 4194432 0 Z
+45 0 -12 9d10+450 4d4+2
+0 0
+8 8 0
+10 10 15 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+9 9 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Welcome my child.
+bow
+say How may I be of service to you?
+~
+> speech_prog blessing~
+say Then blessed you will be.
+emote prays silently.
+feel sanctuary $n
+~
+|
+#0
+
+
+#OBJECTS
+#700
+A Passport~
+A Passport~
+A passport lies here.~
+~
+35 8192 1
+0 0 0 0
+1 0 0
+#701
+A Pair of Camouflage BDU Pants~
+A Pair of Camouflage BDU Pants~
+A pair of camouflage pants is here.~
+~
+9 8192 33
+12 12 0 0
+1 50 5
+A
+17 -5
+#702
+Gim-bap~
+Gim-bap~
+A Gim-bap is here.~
+~
+19 0 1
+50 50 0 0
+1 5 0
+#703
+The Complaint Board~
+The Complaint Board~
+The complaint board for all complaints is here.~
+~
+13 0 0
+0 0 0 0
+1 0 0
+#704
+Man-du~
+Man-du~
+A Man-du is here.~
+~
+19 0 1
+50 50 0 0
+1 5 0
+#705
+A Black Leather Waistcoat~
+A Black Leather Waistcoat~
+A black leather jacket is here.~
+~
+9 8192 1025 8
+18 0 0 0
+1 150 15
+#706
+Steroids~
+Some steroids~
+A small bottle of pills sit here.~
+~
+26 0 1
+85 236 61 16
+1 0 0
+#707
+Katana no Raiden~
+Katana no Raiden~
+The legendary sword of the greatest Korean Warrior lies here.~
+~
+5 1 8193
+21 300 1320 3 1000 1000
+1 0 0
+#708
+A Ticket~
+A Ticket~
+A Ticket has been abandoned here.~
+~
+35 0 1
+0 0 0 0
+1 3 0
+#709
+A Cup of Coffee~
+A Cup of Coffee~
+A cup of coffee sits here.~
+~
+17 0 1
+25 15 12 0
+1 15 1
+#710
+Biker Gloves~
+&CB&ci&Bk&ce&Cr &WG&wl&Wo&wv&We&ws~
+A pair of fingerless gloves.~
+~
+9 0 129 2
+100 100 0 0
+2 120 12
+A
+53 85
+#711
+A Pair of Black Combat Boots~
+A Pair of Black Combat Boots~
+A pair of black boots are here.~
+~
+9 0 65
+18 18 0 0
+1 80 8
+#712
+A Korean/English Dictionary~
+A Korean/English Dictionary~
+A Korean/English Dictionary is here.~
+~
+35 0 1
+0 0 0 0
+1 0 0
+#713
+Han-Bok~
+&RH&Ca&Bn&W-&GB&Yo&Pk&w~
+A Han-Bok is here.~
+~
+13 8192 1025
+50 50 0 0
+1 10385 1038
+#714
+Don-Ga-Tse~
+Don-Ga-Tse~
+A plate of don-ga-tse is here.~
+~
+19 0 1
+50 50 0 0
+1 20 2
+#715
+A Wristlink~
+&CA &RW&Gr&Pi&Ws&Bt&Yl&pi&gn&Wk&w~
+A wristwatch comlink is here.~
+~
+13 8192 4097
+30 30 0 0
+1 70 7
+A
+17 -5
+#716
+Lionheart~
+&BL&bi&co&Cnhe&ca&br&Bt&w~
+A mysterious weapon is lying here.~
+~
+5 17 8193
+1000 50 500 3 1000 1000
+1 0 0
+#717
+A Trinity Cross necklace~
+A &BT&bri&cni&bt&By &RC&rr&po&rs&Rs&G necklace&w~
+A necklace with a cross pendant is lying here.~
+~
+9 8193 5
+45 0 0 0
+1 0 0
+A
+17 -20
+A
+3 4
+#718
+A SNU Student ID Card~
+A SNU Student ID Card~
+A student ID card has been left here.~
+~
+18 0 1
+0 0 0 0
+1 0 0
+E
+A SNU Student ID Card~
+Student ID: 063-887-954
+ 
+Status: Registered Student
+ 
+Clearance: Gold
+~
+#719
+A Pair of Blue Pants~
+&GA Pair of &BBlue&G Pants&w~
+A pair of blue pants have been left here.~
+~
+9 0 33 2
+20 20 0 0
+1 190 19
+#720
+A Blue Uniform Shirt~
+&GA &BBlue&G Uniform Shirt&w~
+A blue uniform shirt is lying here.~
+~
+9 0 9 2
+20 20 0 0
+1 110 11
+#721
+A Blue Uniform Skirt~
+&GA &BBlue&G Uniform Skirt&w~
+A blue uniform skirt has been left here.~
+~
+9 0 33 2
+20 20 0 0
+1 100 10
+#722
+A Chicken Gordita~
+A Chicken Gordita~
+A chicken gordita has been left here.~
+~
+19 0 1
+50 50 0 0
+1 13 1
+#723
+A Bandanna~
+&BA &gBa&Gn&cd&Ga&gna&w~
+A bandanna has been left here.~
+~
+13 0 17
+45 45 0 0
+1 204 20
+A
+41 90
+A
+4 5
+#0
+
+
+#ROOMS
+#700
+Kimpo International Airport~
+Welcome to Seoul, South Korea. This is the Kimpo International Airport, the
+major airport that handles much of the incoming and outgoing flights
+within the Seoul area.
+ 
+Coming off the shuttle, the area is filled with people and activity. There
+is a large screen mounted on top that shows all the incoming and outgoing
+flights from the airport.
+ 
+&RPlease greet the attendant with a hello and collect your passport.
+ 
+&BSay 'Tokyo' to go to Tokyo.
+Say 'r28' to go to Colony R28.
+Say 'g42' to go to Colony G42.
+~
+0 48 1
+D0
+~
+~
+0 -1 701
+> speech_prog tokyo~
+mpechoat $n You hop onto a shuttle and take off to Tokyo. 
+mptransfter $n 800
+mpecho $n takes a shuttle to Tokyo.
+~
+> speech_prog r28~
+mpechoat $n You hop onto a shuttle and take off to Colony R28.
+mptransfer $n 2000
+mpecho $n takes a shuttle to Colony R28.
+~
+> speech_prog g42~
+mpechoat $n You hop onto a shuttle and take off to Colony G42.
+mptransfer $n 500
+mpecho $n takes a shuttle to Colony G42.
+~
+|
+S
+#701
+The Customs Center~
+This is the Customs Center, where all arriving passengers must go through.
+The room is full of machinery and equipment, as well as metal detectors
+and armed guards. The customs officers are systematically checking the
+luggage of passengers, checking through passports, issuing visas or
+checking immigration documents. &RPlease greet the customs officer with a
+hello and give him your passport.&g
+~
+0 1032 0
+D0
+~
+~
+7 10423 702
+D2
+~
+~
+0 -1 700
+S
+#702
+The Arrival Terminal~
+This is where all arriving passengers are exiting to. The street is the
+Konghanggil (Airport Road). From there, you can go to catch the subway to
+the main city. 
+ 
+The room is filled with people who are waiting to see their friends,
+families and visitors. There are several airport attendants who are taking
+bags to the claims center. Other people are holding up signs to ensure that
+they find the right person.
+~
+0 8 0
+D0
+~
+~
+0 -1 703
+S
+#703
+Konghanggil (Airport Road) [Kangso Region]~
+This is the Konghanggil, the road that leads to the airport. It stretches
+to the east and there is a hotel where you can stay for the night. There
+is also a subway transit that will take you to the heart of Seoul.
+~
+0 0 1
+D1
+~
+~
+0 -1 705
+D2
+~
+~
+0 -1 702
+D9
+~
+~
+0 -1 704
+S
+#704
+The Departure Terminal~
+This is the departure terminal, where all departing passengers are waiting
+for their flights. There is a large digital screen mounted on the wall
+that shows all the incoming and outgoing flights from Seoul. There is an
+airport stewardess who will check your tickets before boarding your
+flight.
+~
+0 8 0
+D2
+~
+~
+0 -1 701
+D6
+~
+~
+0 -1 703
+> rand_prog 63~
+mpecho A stewardess says, 'Would passengers please proceed to the gate.'
+~
+|
+S
+#705
+Konghanggil (Airport Road) [Kangso Region]~
+There is an exit down to the subway, but the road goes onto a highway.
+There is a hotel to the north where you can stay for a night or two.
+~
+0 0 1
+D0
+~
+~
+0 -1 707
+D3
+~
+~
+0 -1 703
+D5
+~
+~
+0 -1 706
+S
+#706
+The Subway~
+This is the subway stop. From here, you can reach almost any location in
+Seoul. After all, Seoul IS a pretty big city.   The platform is kept clean
+and there are passengers standing around, waiting for the subway train.
+ 
+&CSay 'Kwanak-Gu' to go to Kwanak-Gu.
+Say 'Sodaemun-Gu' to go to Sodaemun-Gu.
+~
+0 0 1
+D4
+~
+~
+0 -1 705
+> speech_prog kwanak-gu~
+mpechoat $n A subway train takes you to Kwanak-Gu.
+mptransfer $n 708
+mpecho $n takes the subway to Kwanak-Gu.
+~
+> speech_prog sodaemun-gu~
+mpechoat $n A subway train takes you to Sodaemun-Gu.
+mptransfer $n 720
+mpecho $n takes the subway to Sodaemun-Gu.
+~
+|
+S
+#707
+Airport Hotel [Kayang-Dong]~
+This is the Airport Hotel of the Kayang-Dong neighbourhood. The rooms are
+clean and well-kept. There is a comfortable couch in the room and a
+drinking fountain as well. There is also a young lady who is handing out
+snacks and other korean delicacies to fulfill one's appetite.
+ 
+&CSay 'man-du' for some Man-du.
+Say 'gim-bap' for some Gim-bap.
+Say 'dictionary' for a dictionary.
+~
+0 8388616 0
+D2
+~
+~
+0 -1 705
+S
+#708
+Kwanak-Gu Subway Stop~
+This is the Kwanak-Gu Subway station. From here, you can explore this
+region and visit one of the most prestigeous schools in South Korea, Seoul
+National University. Many Korean students apply to enter into their
+programs, but their grades must be exceptional in order to be considered
+as an eligible applicant.
+ 
+&CSay 'airport' to go to the Airport.
+Say 'Sodaemun-Gu' to go to Sodaemun-Gu.
+~
+0 8 0
+D4
+~
+~
+0 -1 709
+> speech_prog airport~
+mpechoat $n A subway train takes you to Konghanggil.
+mptransfer $n 706
+mpecho $n takes the subway to Konghanggil.
+~
+> speech_prog sodaemun-gu~
+mpechoat $n A subway train takes you to Sodaemun-Gu.
+mptransfer $n 720
+mpecho $n takes the subway to Sodaemun-Gu.
+~
+|
+S
+#709
+Shillimno [Kwanak Region]~
+This is Shillimno street. This road leads to the Seoul National University
+Museum and to Seoul National University. There are korean citizens walking
+around, many of them university students.
+~
+0 0 1
+D1
+~
+~
+0 -1 710
+D5
+~
+~
+0 -1 708
+S
+#710
+Shillimno [Kwanak Region]~
+Taking the western path leads back to the direction you just came from, and
+the path southeast leads to the Seoul National University Museum.
+~
+0 0 1
+D3
+~
+~
+0 -1 709
+D8
+~
+~
+0 -1 711
+S
+#711
+Shillimno [Kwanak Region]~
+The path northwest leads you back to where you came from, and the southwest
+path takes you to Seoul National University Museum.
+~
+0 0 1
+D1
+~
+~
+0 -1 774
+D7
+~
+~
+0 -1 710
+D9
+~
+~
+0 -1 712
+S
+#712
+Shillimno [Kwanak Region]~
+~
+0 0 1
+D2
+~
+~
+0 -1 713
+D6
+~
+~
+0 -1 711
+S
+#713
+Shillimno [Kwanak Region]~
+From here, you can either go to the Seoul National University Museum, or
+the University itself. The university's beautifully architectured
+buildings create a welcoming aura to students.
+~
+0 0 1
+D0
+~
+~
+0 -1 712
+D8
+~
+~
+0 -1 732
+D9
+~
+~
+0 -1 714
+S
+#714
+Before the Seoul National University Museum~
+This is the Seoul National University Museum, where historical artifacts
+are stored and archived here. Out of the other museums in Seoul, this one
+has the biggest collection of ancient Korean weapons, armor and other
+objects from the times of the Dynasties and their kings.
+~
+0 0 1
+D3
+~
+~
+0 -1 715
+D6
+~
+~
+0 -1 713
+S
+#715
+The Lobby of the Seoul National University Museum~
+This is the Seoul National University Museum. The attendant will take you
+into the gallery as soon as a ticket is presented to her.
+
+This museum is nationally recognized for its collection of ancient Korean
+artifacts of war. Armor and weapons, as well as cultural pieces of Korean
+ 
+Please do not bring in weapons to the museum.
+~
+0 1032 0
+D1
+~
+~
+0 -1 714
+S
+#716
+The Intersection~
+This is the main intersection of the Museum. The north exit leads to the
+cultural display. The eastern exit leads to the display of Korean history
+and culture. The western exit leads to the arms display.
+~
+0 1032 0
+D0
+~
+~
+0 -1 718
+D1
+~
+~
+0 -1 717
+D2
+~
+~
+0 -1 715
+D3
+~
+~
+0 -1 719
+S
+#717
+Korean Historic Gallery~
+This is the Korean History Gallery. This gallery has a complete display of
+ancient Korean culture and information as to where the Koreans derived
+from. It also shows the different eras and kings that ruled the Korean
+empire and which dystany was in rule and when.
+~
+0 1032 0
+D3
+~
+~
+0 -1 716
+S
+#718
+Korean Culture Display~
+The Korean Culture Gallery shows the evolution of the Korean culture, when
+and the causes of it. It also shows modern culture and features many
+different things, from foods to music.
+~
+0 1032 0
+D2
+~
+~
+0 -1 716
+S
+#719
+Ancient Korean Arms Gallery~
+This is the home to the largest collection of ancient Korean weapons and
+armor. The armor slightly resembles those of a medieval Japanese samurai,
+but with slight modifications to the style and material. Also on display
+is the sword called &RKatana no Raiden,&g the sword that belonged to the
+greatest Korean warrior that had ever lived.
+ 
+Say 'show me' to see the power of Katana no Raiden.
+~
+0 8 0
+D1
+~
+~
+0 -1 716
+> leave_prog 100~
+mppurge corpse
+~
+|
+S
+#720
+Sodaemun-Gu Subway Stop~
+This is the Sodaemun-Gu Subway Stop, where the Tongnimnun, the Independence
+Gate stands. The War Memorial is also situated here. The Independence Gate
+is the gate that signifies our independence from a dominion as an
+independent nation. The War memorial is a tribute to all the soldiers lost
+in the Korean War, whether they be Korean, American or Canadian.
+ 
+&CSay 'airport' to go to the Airport.
+Say 'Kwanak-Gu' to go to Kwanak-Gu.
+~
+0 8 0
+D4
+~
+~
+0 -1 721
+> speech_prog airport~
+mpechoat $n A subway train takes you to Konghanggil.
+mptransfer $n 706
+mpecho $n takes the subway to Konghanggil.
+~
+> speech_prog kwanak-gu~
+mpechoat $n A subway train takes you to Kwanak-Gu.
+mptransfer $n 708
+mpecho $n takes the subway to Kwanak-Gu.
+~
+|
+S
+#721
+Yunhuiro Gil [Sodaemun Region]~
+Yunhuiro Gil is a shopping district, full of stores of every conceivable
+item you can possibly ask for. The streets are busy with cars and people,
+and there is the occasional person atop a bicycle that passes by.
+~
+0 0 1
+D1
+~
+~
+0 -1 722
+D2
+~
+~
+0 -1 724
+D5
+~
+~
+0 -1 720
+D6
+~
+~
+0 -1 729
+S
+#722
+Yunhuiro Gil [Sodaemun Region]~
+Yunhuiro Gil stretches east and west. There are other stores and people
+walking through the streets. Cars are passing by and pedestrians are quite
+peaceful.
+~
+0 0 1
+D0
+~
+~
+0 -1 725
+D1
+~
+~
+0 -1 723
+D2
+~
+~
+0 -1 726
+D3
+~
+~
+0 -1 721
+S
+#723
+Yunhuiro Gil [Sodaemun Region]~
+This is Yunhiro Gil, the shopping district. You can buy all assortment of
+items here, and there are police constantly patrolling the streets, so
+watch out if you have a weapon. 
+~
+0 0 1
+D0
+~
+~
+0 -1 727
+D2
+~
+~
+0 -1 728
+D3
+~
+~
+0 -1 722
+S
+#724
+Shin-mun Ga-Gae~
+The shin-mun ga-gae is run by Mr. Kim, a small business owner. He has had
+this store for several years now and it is very successful. He sells
+foods, drinks (coffee), and other trinkets of interest.
+~
+0 8 0
+D0
+~
+~
+0 -1 721
+S
+#725
+Baek-Hwa-Jum~
+The Baek-Hwa-Jum is a clothing store, where you can buy all different types
+of armor. Many of the clothes are made only in Korea. The aisles are
+stocked with clothing, arranging from jeans, jackets, boots, shirts and
+hats and other clothing.
+~
+0 8 0
+D2
+~
+~
+0 -1 722
+S
+#726
+Dae-Joong Um-Sik-Jang~
+This restaurant caters to many people, from the famous to the elderly. It
+is famous for its annual Christmas and Thanksgiving dinners they throw for
+the homeless. Many varities of korean foods are sold here.
+~
+0 8 0
+D0
+~
+~
+0 -1 722
+S
+#727
+Jun-Ja-Gong-Aak Sang-Jum~
+This electronics store is the American equivalent of Radio Shack. All kinds
+of electronics are sold here, including comlinks, circuits, batteries and
+other assortment of equipment. The storekeeper will be happy to assist in
+any way possible.
+~
+0 8 0
+D2
+~
+~
+0 -1 723
+S
+#728
+Yak-Hak~
+The smell of medicine permeates the atmosphere upon entrance. The place is
+small and maybe a bit impersonal, but there are many medicinal items
+stocked here. Please ask the lady at the counter for assistance.
+~
+0 8 0
+D0
+~
+~
+0 -1 723
+S
+#729
+Sungsanno~
+This is the pathway that leads to the Independence Gate, constructed in
+memory of the independence all Koreans have in their country, and also
+serves as a memorial to all those who have died in service in Korea.
+~
+0 4 1
+D0
+~
+~
+0 -1 730
+D9
+~
+~
+0 -1 721
+S
+#730
+Sungsanno~
+~
+0 0 1
+D0
+~
+~
+0 -1 731
+D2
+~
+~
+0 -1 729
+S
+#731
+Dok-Lip-Mun~
+The massive arch stands before the quiet atmosphere. Even though it is
+built within a bustling city, the Dok-Lip-Mun area is usually quiet and
+serene. All Koreans have tremendous respect to the dead who are buried in
+the cemetary that holds many of the soldiers, Korean and American, who
+have died in service during the Korean War or any other military conflict.
+~
+0 4 1
+D2
+~
+~
+0 -1 730
+S
+#732
+The Seoul National University Campus Entrance~
+Welcome to Seoul National University. This is a place of learning and
+meeting new people, as well as having unforgettable experiences.
+University is the time of one's life when they can exercise their true
+freedom.  To the north is the main building where you can go into the
+lecture halls, to the exercise rooms, cafeteria and many other places. To
+the west is the residence building, where all the first year SNU students
+are housed.
+~
+0 0 1
+D0
+~
+~
+0 -1 736
+D3
+~
+~
+0 -1 733
+D7
+~
+~
+0 -1 713
+S
+#733
+Ethan Robert Clancy Residence Building~
+The Ethan Robert Clancy building is a tribute to the one of the alumni
+members of the Seoul National University. This building is the other
+residence building that takes on the population of students. It has two
+floors of dormitory rooms, each with bedrooms. There is a young woman
+checking id cards of students as they walk into the lobby.
+~
+0 8 0
+D1
+~
+~
+0 -1 732
+D6
+~
+~
+0 -1 737
+> speech_prog ehrgeiz~
+ifname ($n) == Jessica
+mpechoat $n Being transferred to your home.
+mptransfer $n 777
+~
+|
+S
+#734
+Kim Bora Technical Facility~
+This room is &RSILENT &gfor a reason. It is a facility where you can build
+objects and other trinkets. Please pay respect to other students and
+visitors who are using this facility. There is a refinery to the east.
+~
+0 67175432 0
+D1
+~
+~
+0 -1 775
+D2
+~
+~
+0 -1 771
+S
+#735
+Kim Seung Hyun Building~
+~
+0 1032 0
+D1
+~
+~
+0 -1 771
+S
+#736
+The Main Building~
+This is the main building of the university. From here, you can go to the
+recreation center to work out or to get some training in, or go north
+to learn more about some skills, or go to the cafeteria to eat some food
+for yourself. Please feel free to explore the university. Make sure you
+don't get caught by the security with weapons. Weapons are prohibited from
+the university.
+~
+0 1032 0
+D0
+~
+~
+0 -1 771
+D1
+~
+~
+0 -1 738
+D2
+~
+~
+0 -1 732
+D3
+~
+~
+0 -1 772
+S
+#737
+East Wing~
+This is the dormitory building that houses 12 people within it. There are
+two floors of rooms, and many students walk in and out of the building.
+Each room has a room number on the door and there is a list of all the
+tenants with the receptionist.
+~
+0 8 0
+D1
+~
+~
+0 -1 741
+D9
+~
+~
+0 -1 733
+S
+#738
+The Recreation Center~
+This is the Recreation Center, where students train to build up your
+strength or to take out frustration against dummies, holograms and
+punching bags. To the north is a gym, where a trainer is there to help you
+with exercising. To the south is the training room, where you can vent
+anger and frustration against several holograms and dummies.
+~
+0 1032 0
+D0
+~
+~
+0 -1 769
+D2
+~
+~
+0 -1 770
+D3
+~
+~
+0 -1 736
+S
+#739
+An Empty Dormitory~
+~
+0 1032 0
+D1
+~
+~
+0 -1 740
+D2
+~
+~
+0 -1 741
+S
+#740
+The Bedroom~
+~
+0 1032 0
+D3
+~
+~
+0 -1 739
+S
+#741
+A Dormitory Hallway~
+The hallway is painted a soft mahogany brown color and has a moss green
+carpet. Each door shows the room number. The hallway stretches onward.
+~
+0 1032 0
+D0
+~
+~
+1 -1 739
+D1
+~
+~
+0 -1 742
+D2
+~
+~
+1 -1 744
+D3
+~
+~
+0 -1 737
+S
+#742
+A Dormitory Hallway~
+There is a table in the hallway, as well as pictures of several famous
+pilots and military men in the hallway. Also, a portrait of the
+university's founder is on the wall.
+~
+0 1032 0
+D0
+~
+~
+1 -1 746
+D1
+~
+~
+0 -1 743
+D2
+~
+~
+1 -1 748
+D3
+~
+~
+0 -1 741
+S
+#743
+A Dormitory Hallway~
+There is the staircase that leads to the 2nd floor hallway. There are
+students roaming the hallways who are welcoming of any newcomers into the
+building. Please try to keep quiet as there are residents who are sleeping
+or studying.
+~
+0 1032 0
+D0
+~
+~
+1 -1 750
+D2
+~
+~
+1 -1 752
+D3
+~
+~
+0 -1 742
+D4
+~
+~
+0 -1 754
+S
+#744
+An Empty Dormitory~
+~
+0 1032 0
+D0
+~
+~
+0 -1 741
+D1
+~
+~
+0 -1 745
+S
+#745
+The Bedroom~
+~
+0 1032 0
+D3
+~
+~
+0 -1 744
+S
+#746
+An Empty Dormitory~
+~
+0 1032 0
+D1
+~
+~
+0 -1 747
+D2
+~
+~
+0 -1 742
+S
+#747
+The Bedroom~
+~
+0 1032 0
+D3
+~
+~
+0 -1 746
+S
+#748
+An Empty Dormitory~
+~
+0 1032 0
+D0
+~
+~
+0 -1 742
+D1
+~
+~
+0 -1 749
+S
+#749
+The Bedroom~
+~
+0 1032 0
+D3
+~
+~
+0 -1 748
+S
+#750
+An Empty Dormitory~
+~
+0 1032 0
+D1
+~
+~
+0 -1 751
+D2
+~
+~
+0 -1 743
+S
+#751
+The Bedroom~
+~
+0 1032 0
+D3
+~
+~
+0 -1 750
+S
+#752
+An Empty Dormitory~
+~
+0 1032 0
+D0
+~
+~
+0 -1 743
+D1
+~
+~
+0 -1 753
+S
+#753
+The Bedroom~
+~
+0 1032 0
+D3
+~
+~
+0 -1 752
+S
+#754
+2nd Floor Dormitory Hallway~
+You can hear faint music coming from some of the dorm rooms as the moss
+green carpeted floor and beige colored walls stretch down to the other end
+of the hallway. Students are studying or sleeping here, so please keep
+quiet.
+~
+0 1032 0
+D0
+~
+~
+1 -1 757
+D2
+~
+~
+1 -1 759
+D3
+~
+~
+0 -1 755
+D5
+~
+~
+0 -1 743
+S
+#755
+2nd Floor Dormitory Hallway~
+A wooden table sits in the hallway, with a vase on top of it. The
+university has done a fairly good job of keeping the residence buildings
+looking very clean and welcoming.
+~
+0 1032 0
+D0
+~
+~
+1 -1 763
+D1
+~
+~
+0 -1 754
+D2
+~
+~
+1 -1 761
+D3
+~
+~
+0 -1 756
+S
+#756
+2nd Floor Dormitory Hallway~
+A picture of some of the leading students that have graduated from the
+university adorn the walls, and each door shows the room number. The beige
+walls with light fixtures that pleasantly light the hallway glow as the
+tranquility in these hallways are never broken.
+~
+0 1032 0
+D0
+~
+~
+1 -1 767
+D1
+~
+~
+0 -1 755
+D2
+~
+~
+1 -1 765
+S
+#757
+An Empty Dormitory~
+~
+0 1032 0
+D1
+~
+~
+0 -1 758
+D2
+~
+~
+0 -1 754
+S
+#758
+The Bedroom~
+~
+0 1032 0
+D3
+~
+~
+0 -1 757
+S
+#759
+An Empty Dormitory~
+~
+0 1032 0
+D0
+~
+~
+0 -1 754
+D1
+~
+~
+0 -1 760
+S
+#760
+The Bedroom~
+~
+0 1032 0
+D3
+~
+~
+0 -1 759
+S
+#761
+An Empty Dormitory~
+~
+0 1032 0
+D0
+~
+~
+0 -1 755
+D1
+~
+~
+0 -1 762
+S
+#762
+The Bedroom~
+~
+0 1032 0
+D3
+~
+~
+0 -1 761
+S
+#763
+An Empty Dormitory~
+~
+0 0 1
+D1
+~
+~
+0 -1 764
+D2
+~
+~
+0 -1 755
+S
+#764
+The Bedroom~
+~
+0 1032 0
+D3
+~
+~
+0 -1 763
+S
+#765
+An Empty Dormitory~
+~
+0 1032 0
+D0
+~
+~
+0 -1 756
+D1
+~
+~
+0 -1 766
+S
+#766
+The Bedroom~
+~
+0 1036 0
+D3
+~
+~
+0 -1 765
+S
+#767
+An Empty Dormitory~
+~
+0 1032 0
+D1
+~
+~
+0 -1 768
+D2
+~
+~
+0 -1 756
+S
+#768
+The Bedroom~
+~
+0 1032 0
+D3
+~
+~
+0 -1 767
+S
+#769
+The Gym~
+This is the Gym. There are various exercise machines in the room, with
+floor length windows and mirrors. Students are on treadmills or
+benchpressing, and some of them are in the pool, swimming. From a
+bench-press to dumb bells, they are all here.
+~
+0 1032 0
+D2
+~
+~
+0 -1 738
+S
+#770
+The Training Room~
+This room has one training mob, which is at a level that many people can
+cope with. If it is too difficult for you, leave the room immediately. The
+room has several different equipment set up for students and visitors
+alike to use. 
+ 
+&CSay 'begin' to bring in the Training Dummy.
+~
+0 8 0
+D0
+~
+~
+0 -1 738
+> speech_prog begin~
+mpecho A Training Dummy appears from a hatch before you.
+mpmload 718
+~
+|
+S
+#771
+The University Square~
+The University Square has been decorated with a fountain the middle, with
+greenery growing throught this area. Stone-cobbled paths lead to the
+different buildings that have courses being run in them. Students often
+gather here for social gatherings or just to hang out. The lush green
+grass, as well as many flowers, trees and other plants are here. The
+students are very friendly to each other and the Korean language, as well
+as English, are very frequent here.
+~
+0 0 1
+D0
+~
+~
+0 -1 734
+D1
+~
+~
+0 -1 773
+D2
+~
+~
+0 -1 736
+D3
+~
+~
+0 -1 735
+S
+#772
+The Cafeteria~
+This is the cafeteria, where you can get a variety of meals from. They sell
+drinks, snacks and hamburgers to satisfy the needs of the students. Type
+&Rlist&g to see what you can buy from here.
+~
+0 1032 0
+D1
+~
+~
+0 -1 736
+S
+#773
+Yoo Seung Jun Center~
+~
+0 1032 0
+D3
+~
+~
+0 -1 771
+S
+#774
+A Church~
+The peacefulness of the church is tranquilizing as the atmosphere strips
+away the tenseness and the usual bustle of life. The elderly priest that
+runs the church is kneeling in front of the massive cross that overlooks
+the entire room. The stained-glass windows have pictures of the 12 saints,
+the most noticeable one is St. Peter.
+ 
+Ask the priest for a &Rblessing &g and he will give it to you.
+~
+0 32776 0
+D3
+~
+~
+0 -1 711
+S
+#775
+A Refinery~
+~
+0 33555468 0
+D3
+~
+~
+0 -1 734
+S
+#776
+The Bedroom~
+This is Jessica's Bedroom. There is a closet in the corner, and there is a
+door that leads to her office. There is a queen-sized bed, and a desk with
+a computer sitting on top of it. The floor is carpeted a dark navy-blue
+color and the walls are sky blue glazed shabbily with white, exuding the
+feeling of an old, run down room.
+~
+0 8 0
+D3
+~
+~
+3 -1 779
+D5
+~
+~
+0 -1 777
+S
+#777
+The Front Foyer~
+Welcome to Jessica's studio loft apartment, where she lives. There are
+large, two-floor glass windows that look down at the city of Seoul. There
+is also a balcony that a glass door leads to, as well as a spacious den.
+The stairs up lead to Jessica's Bedroom.
+~
+0 8 0
+D0
+~
+~
+0 -1 778
+D4
+~
+~
+0 -1 776
+> speech_prog main~
+mpechoat $n Transferring to the Airport.
+mptransfer $n 705
+~
+|
+S
+#778
+The Den~
+This is the den, where Jessica spends her time to relax. There is a
+television set against the wall, as well as a coffee table that sits in
+the room. The entire apartment's walls are painted a soft beige.
+~
+0 8 0
+D0
+~
+~
+0 -1 780
+D2
+~
+~
+0 -1 777
+S
+#779
+Jess' Office~
+This is the office where Jessica does some of the paperwork. A large
+mahogany desk is piled with stacks of papers and there is a large picture
+of Mashi Maro on the wall. 
+~
+0 8 0
+D1
+~
+~
+3 -1 776
+S
+#780
+A Balcony~
+~
+0 0 1
+D2
+~
+~
+0 -1 778
+S
+#0
+
+
+#RESETS
+M 1 701 1 700
+G 1 700 1
+M 1 700 1 701
+G 1 10423 1
+G 1 708 1
+G 1 10311 1
+M 1 707 3 701
+D 0 701 0 2
+M 1 702 1 707
+O 1 10315 1 707
+M 1 704 1 714
+G 1 708 1
+M 1 703 1 715
+M 1 708 1 719
+E 1 707 1 16
+M 1 705 1 724
+G 1 709 1
+M 1 706 1 725
+G 1 710 1
+G 1 701 1
+G 1 705 1
+G 1 711 1
+G 1 713 1
+M 1 710 1 726
+G 1 709 1
+G 1 714 1
+M 1 709 1 727
+G 1 2022 1
+G 1 2026 1
+G 1 6804 1
+G 1 2024 1
+G 1 2023 1
+G 1 1322 1
+G 1 10491 1
+G 1 2016 1
+G 1 2015 1
+G 1 2017 1
+G 1 2013 1
+G 1 2020 1
+G 1 2021 1
+G 1 10424 1
+G 1 511 1
+G 1 715 1
+M 1 707 3 727
+M 1 711 1 728
+G 1 614 1
+G 1 6806 1
+D 0 741 0 0
+D 0 741 2 0
+D 0 742 0 0
+D 0 742 2 0
+D 0 743 0 0
+D 0 743 2 0
+M 1 707 3 752
+G 1 810 1
+G 1 810 1
+D 0 754 0 0
+D 0 754 2 0
+D 0 755 0 0
+D 0 755 2 0
+D 0 756 0 0
+D 0 756 2 0
+M 1 713 1 769
+M 1 718 1 770
+M 1 715 1 771
+E 1 719 1 7
+E 1 720 1 5
+M 1 714 2 771
+M 1 716 1 772
+G 1 702 1
+G 1 704 1
+G 1 714 1
+G 1 709 1
+G 1 508 1
+G 1 1311 1
+G 1 617 1
+G 1 722 1
+M 1 714 2 773
+E 1 720 1 5
+E 1 721 1 7
+M 1 723 1 774
+D 0 776 3 1
+D 0 779 1 1
+S
+
+
+#SHOPS
+ 704    0  0  0  0  0   120  90         0 23    ; A Ticket Salesperson
+ 705    0  0  0  0  0   120  90         0 23    ; Mr. Kim
+ 706    9  0  0  0  0   120  90         0 23    ; Park Yu Jin
+ 709    0  0  0  0  0   120  90         0 23    ; Jo Yoon Seung
+ 710    0  0  0  0  0   120  90         0 23    ; Yoon Hyung Seok
+ 711    0  0  0  0  0   120  90         0 23    ; Kim Hae In
+ 716    0  0  0  0  0   120  90         0 23    ; A Cafeteria Service Lady
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+M  700 spec_customs_alcohol
+M  700 spec_customs_spice
+M  703 spec_customs_weapons
+M  707 spec_customs_weapons
+M  707 spec_police_jail
+M  712 spec_customs_weapons
+S
+
+
+#$

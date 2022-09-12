@@ -1,0 +1,2512 @@
+#AREA   Colony K46~
+
+
+
+#AUTHOR Zantas~
+
+#OWNED_BY None~
+
+#RANGES
+0 0 0 1000
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 28685865
+
+#MOBILES
+#6000
+varimere~
+&zVarimere&T~
+&zVarimere stands here greeting people.&T
+~
+~
+515 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+32 0 0 0 0 0 0 0
+> act_prog "steps out of a ship."~
+bow $n
+say Welcome to Colony K46, $n.
+say Enjoy your stay.
+~
+> all_greet_prog 100~
+bow $n
+say Enjoy You're stay?
+~
+|
+#6001
+k46 custom guard~
+&WA &cK&C4&c6 &WC&wu&Ws&wt&Wo&wm&Ws &zG&wu&za&wr&zd~
+&zA &cK&C4&c6 &WC&wu&Ws&wt&Wo&wm&Ws &zG&wu&za&wr&zd stands here checking for illegal goods.&T
+~
+~
+3 0 0 Z
+1000 0 -2400 199d10+9990 99d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Welcome to Colony K46, $n.
+tip $n
+say Enjoy your stay here. And Try and stay out of trouble.
+~
+|
+#6002
+Shelly~
+&WS&wh&We&wl&Wl&wy&z~
+&WS&wh&We&wl&Wl&wy&z stands here awaiting your purchase.
+~
+~
+134217731 40 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+0 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Hi there, $n!
+say Welcome to the Shining Cutlass, Premier Weapons dealership on K46.
+say How can I help you?
+smile $n
+~
+> speech_prog stock~
+say Oh Sorry, I must be missing a few things.
+mpoload 6009 0
+mpoload 6008 0
+mpoload 6010 0
+mpoload 502 0
+~
+|
+#6003
+john~
+&RJ&ro&Rh&rn&z~
+&RJ&ro&Rh&rn&z is here sorting through some of his junk.
+~
+~
+134217731 40 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+0 0
+8 8 0
+18 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+bow $n
+say Welcome to my Junk Shop.
+say If there's anything I can get you just let me know.
+~
+|
+#6004
+Mark~
+&zM&wa&zr&wk&z~
+&zM&wa&zr&wk&z is here unpacking some surplus army gear.
+~
+~
+134217731 40 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Hey, Welcome to the Army Surplus Store.
+say Lemme know if there's Anything I can get for you.
+~
+|
+#6005
+hologram gheed~
+A Hologram of Gheed~
+A Hologram of Gheed stands here like a retard.
+~
+~
+3 0 0 Z
+503 0 -1408 100d10+5040 50d4+2
+300 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+100 100 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#6006
+hologram level 2~
+A level 2 Hologram~
+A Hologram is here, ready for battle.
+~
+~
+3 0 0 Z
+560 0 -1580 112d10+5600 56d4+2
+325 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+112 112 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#6007
+hologram level 3~
+A level 3 Hologram~
+A Hologram stands here ready for combat.
+~
+~
+3 0 0 Z
+616 0 -1748 123d10+6160 61d4+2
+350 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+123 123 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#6008
+hologram level 4~
+A level 4 Hologram~
+A Hologram stands here ready for combat.
+~
+~
+3 0 0 Z
+671 0 -1912 134d10+6710 67d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+134 134 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#6010
+hologram level 6~
+A level 6 Hologram~
+A Hologram stands here ready for combat.
+~
+~
+3 0 0 Z
+785 0 -1862 157d10+7850 78d4+2
+425 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+157 157 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#6011
+hologram level 7~
+A level 7 Hologram~
+A Hologram stands here ready for combat.
+~
+~
+3 0 0 Z
+841 0 -2002 168d10+8410 84d4+2
+450 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+168 168 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#6012
+hologram level 8~
+A level 8 Hologram~
+A Hologram stands here ready for combat.
+~
+~
+3 0 0 Z
+896 0 -2140 179d10+8960 89d4+2
+475 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+179 179 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#6013
+hologram level 9~
+A level 9 Hologram~
+A Hologram stands here ready for combat.
+~
+~
+3 0 0 Z
+951 0 -2277 190d10+9510 95d4+2
+500 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+190 190 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#6014
+hologram level 10~
+A level 10 Hologram~
+A Hologram stands here ready for combat.
+~
+~
+3 0 0 Z
+1001 0 -2402 200d10+10010 100d4+2
+500 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#6015
+hologram level 5~
+A level 5 Hologram~
+A hologram is here, ready for combat.
+~
+~
+3 0 0 Z
+729 0 -2086 145d10+7290 72d4+2
+400 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+145 145 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#6016
+captain phoenix~
+Phoenix~
+&RP&Yh&Wo&we&Wn&Yi&Rx&z, Captain of the Predator, is here.
+~
+~
+3 33554432 0 Z
+1000 0 -2400 200d10+299458 100d4+2
+500 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 2048 0 48 3
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Welcome, Perhaps you've come to try and claim my Mask? Maybe my Sword?
+mfinger $n
+say Good Luck.
+~
+|
+#6017
+frost first officer~
+Frost~
+&BF&Cr&co&Cs&Bt&z, First officer of the Predator, is here.
+~
+~
+3 268435456 0 Z
+991 0 -2377 198d10+298000 99d4+2
+500 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+198 198 0 0 2048 0 48 3
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Welcome, Theses are my quarters.
+bow $n
+say Is there something you're looking for?
+~
+|
+#6018
+predator crew male~
+A Predator crew member~
+A male member of the predator crew stands here.
+~
+~
+1 0 0 Z
+900 0 -2150 180d10+90000 90d4+2
+400 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+180 180 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#6019
+predator crew female~
+A Predator crew member~
+A female member of the predator crew stands here.
+~
+~
+1 0 0 Z
+900 0 -2150 180d10+90000 90d4+2
+400 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+180 180 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#6020
+k46 citizen~
+A K46 Citizen~
+A Citizen of K46 is strolling the streets here.
+~
+~
+1 0 0 Z
+56 0 -40 11d10+560 5d4+2
+100 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+11 11 0 0 0 0 0 0
+32 0 0 0 0 0 0 0
+#6021
+predator pilot~
+The Pilot~
+The Predator's Pilot is here.
+~
+~
+3 0 0 Z
+900 0 -2150 180d10+80000 90d4+2
+350 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+180 180 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#6022
+predator copilot~
+The Co-Pilot~
+The Predator's Co-Pilot is here.
+~
+~
+3 0 0 Z
+900 0 -2150 180d10+80000 90d4+2
+350 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+180 180 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#6023
+sewer rat~
+&GS&ge&Gw&ge&Gr &zR&wa&zt~
+&zA &GS&ge&Gw&ge&Gr &zR&wa&zt wanders along here.
+~
+~
+1 0 0 Z
+500 0 -1150 100d10+5000 50d4+2
+10 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+100 100 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#6024
+cody~
+&WCody&z~
+&WCody&z is here.
+~
+~
+513 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog p Ahh, Cody, Bearer of the seal. Come give me the seal.~
+shake
+~
+|
+#6025
+tyler~
+Tyler~
+Tyler sits here playing with some cars.
+~
+~
+513 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#6026
+rebecca~
+Rebecca~
+Rebecca is here playing hopscotch.
+~
+~
+513 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#6027
+jonathan~
+Jonathan~
+Jonathan is here picking up cans and putting them in his wagon.
+~
+~
+513 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#6028
+eric stark~
+&zE&wr&zi&wc &RS&rt&Ra&rr&Rk~
+A man stands here, dressed in all black and with a pale face.
+~
+~
+1073741827 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+200 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+#6030
+Lokita~
+&BL&Co&cki&Ct&Ba&T~
+&BL&Co&cki&Ct&Ba &zstands here whoring herself out.
+~
+~
+1073741827 40 0 Z
+1000 0 -2400 200d10+99945 50d4+2
+0 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Ooooo. Don't you just look sexy, $n
+grope $n
+say For a dollar we can go a little further.
+wink $n
+~
+> rand_prog 15~
+say You know, If you smear peanut butter all over your dick, Your dog will give
+say you a nice little session of Oral sex.
+say I should know, I've tried it myself.
+innocent
+~
+> rand_prog 10~
+say I'll tell you a secret if you will give me oral.
+~
+> speech_prog p What's your secret?~
+say Oh, It's not really a Secret.
+say It's just that I'ma manipulative bitch, a whore, I couldn't 
+say tell the truth if my life depended on it. And that no one really
+say likes me, they just all pretend to.
+sigh
+~
+> bribe_prog 1~
+ooo
+say Now the fun begins!
+mpechoat $n She tries to undo your pants to give you Oral but gives up when she
+mpechoat $n can't figure out how.
+mpechoaround $n &BL&Co&cki&Ct&Ba&w tries to give $n Oral but she can't undo their pants. 
+~
+> speech_prog train~
+say I'm the Operation Meteor Choo-Choo Train!
+say If you need a ride, just grab onto my caboose! :)
+emote &Pw&pi&Pg&pg&Pl&pe&Ps&z what &Rj&ri&Rg&rg&Rl&re&Rs&z.
+emote &zwipes at the &Ws&we&Wm&we&Wn&z around her mouth and &Cw&ci&Cn&ck&Cs&z.
+~
+|
+#0
+
+
+#OBJECTS
+#6000
+Water cooler pass~
+&WA Pass to the &BW&ba&Bt&be&Br &CC&co&Co&cl&Ce&cr &WRoom~
+&WA Pass to the &BW&ba&Bt&be&Br &CC&co&Co&cl&Ce&cr &WRoom is lying here. Who's the dumbass?~
+~
+13 8323 16385
+0 0 0 0
+1 0 0
+#6001
+burning mask phoenix~
+&RB&Yu&Wr&wn&Wi&Yn&Rg &RM&zas&Rk &zof &RP&Yh&Wo&we&Wn&Yi&Rx~
+A Mask is lying here, burning with an unnatural flame.~
+~
+72 1 131073
+75 75 0 0
+1 50000 5000
+E
+mask burning phoenix~
+The Mask burns with unnatural flames, and radiates with an unknown power.
+It is covered in an interesting pattern of runes that seem to shift and
+rearrange themselves every little bit.
+~
+A
+18 25
+A
+19 35
+A
+13 1000
+#6002
+ice shard armor~
+&CIce&cShard &CA&cr&Cm&co&Cr~
+A suit of armor made from shards of ice lies here.~
+~
+9 0 9
+75 75 0 0
+1 60000 6000
+E
+ice shard armor~
+The Armor is made from small shards of ice. It doesn't seem to be melting
+and it radiates with a strange power. Whatever made this was beyond our
+comprehension.
+~
+A
+18 40
+A
+19 45
+A
+13 1500
+#6003
+sword nemesis~
+&zN&we&zm&we&zs&wi&zs~
+&zA sword of some power lies here gathering dust.~
+~
+5 3 8193
+1000 10 170 2 1000 1000
+1 40000 4000
+A
+18 45
+A
+19 50
+A
+13 1000
+#6004
+sword nightmare~
+&zN&ri&zg&rh&zt&rm&za&rr&ze~
+&zA sword of some power lies here collecting dust.~
+~
+5 3 8193
+1000 10 150 2 1000 1000
+1 0 0
+A
+18 45
+A
+19 50
+A
+13 1000
+#6005
+light shard darkness~
+&RS&rh&pa&rr&Rd &zof &zD&wa&Wr&zk&wn&We&zs&ws~
+&zA &RS&rh&pa&rr&Rd &zof &zD&wa&Wr&zk&wn&We&zs&ws &zhas been carelessly dropped here.~
+~
+1 1 16385
+0 0 -1 0
+1 100000 10000
+A
+13 1000
+A
+17 -100
+A
+18 15
+A
+19 20
+#6006
+statue fallen hero fountain~
+A Statue of a Forgotten Hero~
+A Statue of a Forgotten Hero is here, a fountain at its base.~
+~
+25 0 0
+1000000 1000000 0 0
+1 0 0
+E
+statue fallen hero fountain~
+A White marble Statue of a Forgotten Hero. The Fountain at it's base
+keeping the little pool filled with sparkling clean water. A small golden
+plaque can be seen at the base of the Statue. It Reads:
+     "In honor of a Fallen Comrade, and Great Leader."
+                         "WWSD"
+~
+#6007
+backpack dragon~
+&zA Backpack embroidered with a Dragon Emblem~
+&zSomeone dropped their backpack here.~
+~
+15 0 1
+350 0 0 0
+1 50000 5000
+#6008
+particle beam rifle~
+&CP&carticl&Ce &PB&pea&Pm &CR&cifl&Ce~
+&zA &CP&carticl&Ce &PB&pea&Pm &CR&cifl&Ce&z was carelessly dropped here.~
+~
+5 2 8193
+1100 10 120 6 2000 2000
+25 1000000 100000
+A
+18 20
+A
+19 25
+#6009
+blade chaos~
+&RB&rlad&Re &zof &RC&zh&wa&zo&Rs~
+&zA blade lies here, a glowing chain around it's hilt.~
+~
+5 1 8193
+1000 10 150 2 2000 2000
+1 100000 10000
+A
+18 30
+A
+19 30
+A
+13 1000
+> wear_prog 100~
+mea $n _dch As you wield the blade, the chain wraps itself around your
+mea $n _dch forearm, and sears itself to your skin.
+mer $n _dch As $n wields the blade, the chain wraps itself around their
+mer $n _dch forearm and sears itself to their skin.
+~
+> remove_prog 100~
+mea $n _dch As you remove the blade, the chains tear away from your flesh
+mea $n _dch leaving you scarred and bloody.
+mpdamage $n 3000
+mer $n _dch As $n removes the blade, the chains tear away from their flesh
+mer $n _dch leaving them scarred and bloody.
+~
+|
+#6010
+spear destiny~
+&WS&wp&We&wa&Wr &zof &YD&Oe&Ys&Ot&Yi&On&Yy~
+&zA &WS&wp&We&wa&Wr &zof &YD&Oe&Ys&Ot&Yi&On&Yy&z has been misplaced here.~
+~
+5 3 8193
+1000 10 100 11 1000 1000
+5 450000 45000
+A
+18 20
+A
+19 20
+#6011
+urban camouflage pants~
+&zU&wr&Wb&wa&zn &zC&wa&Wm&zo&wu&Wf&zl&wa&Wg&ze &zC&wa&Wr&wg&zo &zP&wa&Wn&wt&zs~
+Some urban camouflage pants are lying here.~
+~
+9 1073741824 33
+75 75 0 0
+1 500000 50000
+A
+18 30
+A
+19 40
+A
+13 100
+A
+13 1000
+A
+13 400
+#6037
+desk~
+a desk~
+A Mahogany desk sits here in the middle of the room. ~
+~
+12 0 0
+5 5 1 0
+1 0 0
+#6038
+captain's chair~
+&zThe &RC&Ya&Wp&wt&Wa&Yi&Rn&z's Chair~
+&zThe &RC&Ya&Wp&wt&Wa&Yi&Rn&z's Chair sits here in the middle of the bridge.~
+~
+12 0 0
+5 5 3 0
+1 0 0
+#6045
+insterstellar message board~
+a insterstellar message board~
+A insterstellar message board is here.~
+~
+13 0 0
+0 0 0 0
+1 0 0
+#6046
+vending machine~
+a vending machine~
+A vending machine is here.~
+~
+15 0 0
+4 0 0 0
+1 0 0
+#6047
+k46 map~
+a k46 map~
+A k46 map is here.~
+~
+45 0 1
+0 0 0 0
+1 0 0
+#0
+
+
+#ROOMS
+#6000
+&cK&C4&c6 &YD&Oo&Yc&Ok&Yi&On&Yg &wB&Wa&wy~
+You stand on the Landing pad of K46. Engineers scurry about trying to repair
+the damage to suits and keep the bay clear of debris. Perhaps it would be best
+to get clear of here before you get in the way.
+~
+0 12 4 1 0
+D0
+~
+~
+0 -1 6001
+S
+#6001
+&cK&C4&c6 &WC&wu&Ws&wt&Wo&wm&Ws &zO&wf&zf&wi&zc&we~
+People are here getting bags checked and being checked for illegal items
+by the Customs guards. A sign hung from the ceiling reads, "Weapons are banned
+from non-military usage."
+~
+0 12 0 1 0
+D0
+~
+~
+0 -1 6002
+D2
+~
+~
+0 -1 6000
+S
+#6002
+&cK&C4&c6 &zMain &wHub~
+This is the main intersection for K46. People walk all around but they seem
+to be avoiding the Alley to the east. The Residetial area is off to the west, 
+and north of here is Main Street.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 6007
+D1
+~
+~
+0 -1 6003
+D2
+~
+~
+0 -1 6001
+D3
+~
+~
+0 -1 6011
+D7
+~
+~
+0 -1 6018
+S
+#6003
+&RA&rl&pl&re&Ry &CE&cn&wt&Wra&wn&cc&Ce~
+The lights of this alley are dim and many are broken. Trash litters the alley,
+Food wrappers, old magazines, lots of miscellaneous trash.
+~
+0 4 0 1 0
+D1
+~
+~
+0 -1 6004
+D3
+~
+~
+0 -1 6002
+S
+#6004
+&zD&Wa&zr&Wk &zA&wl&Wl&ze&wy&Ww&za&wy~
+The lights of this alley are dim and many are broken. Trash litters the alley,
+Food wrappers, old magazines, lots of miscellaneous trash.
+~
+0 4 0 1 0
+D1
+~
+~
+0 -1 6005
+D3
+~
+~
+0 -1 6003
+S
+#6005
+&zD&Wa&zr&Wk &zA&wl&Wl&ze&wy&Ww&za&wy~
+The lights of this alley are dim and many are broken. Trash litters the alley,
+Food wrappers, old magazines, lots of miscellaneous trash.
+~
+0 4 0 1 0
+D1
+~
+~
+0 -1 6006
+D3
+~
+~
+0 -1 6004
+S
+#6006
+&zD&we&za&wd &RE&rn&Rd~
+The wall here is covered in posters of Rock shows, plays, operas, and other
+theatrical stuff. But what really gets your attention is the nasty smell
+coming from somewhere below you. It smells almost like... Sewage.
+~
+0 4 0 1 0
+D3
+~
+~
+0 -1 6005
+D5
+~
+~
+2048 -1 6022
+S
+#6007
+&BM&ba&Bi&bn &CS&ct&wre&ce&Ct~
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 6008
+D2
+~
+~
+0 -1 6002
+D7
+~
+~
+0 -1 115
+S
+#6008
+&BM&ba&Bi&bn &CS&ct&wre&ce&Ct~
+~
+0 0 0 1 125
+D0
+~
+~
+0 -1 6009
+D1
+~
+~
+0 -1 6054
+D2
+~
+~
+0 -1 6007
+S
+#6009
+&BM&ba&Bi&bn &CS&ct&wre&ce&Ct~
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 6010
+D2
+~
+~
+0 -1 6008
+S
+#6010
+&YS&Oh&Yo&Op&Yp&Oi&Yn&Og &CD&ci&Cs&ct&Cr&ci&Cc&ct~
+Welcome to the K46 Shopping District, To the North we have John's Junk Shop,
+East we have Mark's Army Surplus, to the West we have the Shining Cutlass, 
+and to the southeast we have the Colony Bank.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 6021
+D1
+~
+~
+0 -1 6019
+D2
+~
+~
+0 -1 6009
+D3
+~
+~
+0 -1 6020
+D8
+~
+~
+0 -1 6017
+S
+#6011
+&RC&ro&Rr&ro&Rn&ra&Rd&ro &BD&br&Bi&bv&Be~
+This is Coronado Drive, The way to the Residential section. Not many people
+come here. Must not be their kinda place. The road is kept neat and there
+is very little littering the street, A couple of leaves here and there,
+nothing much else.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 6002
+D3
+~
+~
+0 -1 6012
+S
+#6012
+&RC&ro&Rr&ro&Rn&ra&Rd&ro &BD&br&Bi&bv&Be~
+This is Coronado Drive, The way to the Residential section. Not many people
+come here. Must not be their kinda place. The road is kept neat and there
+is very little littering the street, A couple of leaves here and there,
+nothing much else.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 6011
+D3
+~
+~
+0 -1 6013
+S
+#6013
+&RC&ro&Rr&ro&Rn&ra&Rd&ro &BD&br&Bi&bv&Be~
+This is Coronado Drive, The way to the Residential section. Not many people
+come here. Must not be their kinda place. The road is kept neat and there
+is very little littering the street, A couple of leaves here and there,
+nothing much else.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 6016
+D1
+~
+~
+0 -1 6012
+D2
+~
+~
+0 -1 6015
+D3
+~
+~
+0 -1 6014
+S
+#6014
+An Empty Apartment~
+~
+0 2097164 0 1 200
+D1
+~
+~
+0 -1 6013
+S
+#6015
+An Empty Apartment~
+~
+0 2097164 0 1 0
+D0
+~
+~
+0 -1 6013
+S
+#6016
+An Empty Apartment~
+~
+0 2097164 0 1 0
+D2
+~
+~
+0 -1 6013
+S
+#6017
+&cK&C4&c6 &YB&Oan&Yk~
+This bank is first rate. Polished Oak tables, Gold timming along the Teller
+windows. ATM's Everywhere. This is truely a magnificent bank. The place
+looks like a mansion.. But it's a Bank?!
+~
+0 264 0 1 0
+D7
+~
+~
+0 -1 6010
+S
+#6018
+&PB&pe&Pd &Ra&rn&Rd &GB&gr&Ge&ga&Gk&gf&Ga&gs&Gt~
+This quaint little bed and breakfast is run by a little ole lady that very
+rarely shows herself. It's free to use and nicely decorated. 
+&B Say 'Breakfast' For something to Eat.
+~
+0 8388620 0 1 0
+D8
+~
+~
+0 -1 6002
+> speech_prog breakfast~
+mpecho &zNorma yells out from the kitchen, "&cGo to hell! I'm not your damn mom!&z"
+~
+|
+S
+#6019
+&zM&wa&zr&wk&z'&ws &GA&gr&Gm&gy &BS&Ru&Br&Rp&Bl&Ru&Bs~
+Helmets, Sets of BDU's, Military grade weapons. Mark has it all. And he gets
+more on a regular basis, If he doesn't have something try stopping by
+at a later date. Who knows, maybe he'll have it.
+~
+0 8 0 1 0
+D3
+~
+~
+0 -1 6010
+S
+#6020
+&WS&wh&Wi&wn&Wi&wn&Wg &zC&ru&zt&rl&za&rs&zs~
+This is the Shining Cutlass, the premier Weapons dealership of K46. Which
+may seem odd being that weapons are banned from non-military use here on
+K46. But Obviously, Someone has connections within the local government.
+~
+0 8 -2147483648 1 0
+D1
+~
+~
+0 -1 6010
+S
+#6021
+&RJ&ro&Rh&rn&R'&rs &zJ&wu&zn&wk &wS&Wh&wo&Wp~
+Tons of Junk litters this store. Everything you could ever need you can
+probably find here at John's. He's known as the Colony packrat. He doesn't
+what it is. He'll keep it.
+~
+0 8 0 1 0
+D2
+~
+~
+0 -1 6010
+S
+#6022
+&GS&ge&Gw&ge&Gr &CE&cn&wt&Wra&wn&cc&Ce~
+~
+0 8 0 1 0
+D0
+~
+~
+0 -1 6023
+D1
+~
+~
+0 -1 6029
+D3
+~
+~
+0 -1 6026
+D4
+~
+~
+0 -1 6006
+S
+#6023
+&GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+~
+0 8 0 1 0
+D1
+~
+~
+0 -1 6024
+D2
+~
+~
+0 -1 6022
+D3
+~
+~
+0 -1 6028
+S
+#6024
+&GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+~
+0 8 0 1 0
+D0
+~
+~
+0 -1 6036
+D1
+~
+~
+0 -1 6032
+D2
+~
+~
+0 -1 6029
+D3
+~
+~
+0 -1 6023
+S
+#6025
+&GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+redit desc This is the janitor's closet. All the utilities for cleaning the
+complex are in this room. It is amazing that someone still works here in
+this building. The janitor usually roams about the complex picking of
+pieces of trash that he finds scattered about.
+~
+0 8 0 1 0
+D0
+~
+~
+0 -1 6026
+D8
+~
+~
+0 -1 6038
+S
+#6026
+&GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+~
+0 8 0 1 0
+D0
+~
+~
+0 -1 6028
+D1
+~
+~
+0 -1 6022
+D2
+~
+~
+0 -1 6025
+D3
+~
+~
+0 -1 6034
+S
+#6027
+&GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+~
+0 8 0 1 0
+D4
+~
+~
+0 -1 6028
+S
+#6028
+&GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+~
+0 8 0 1 0
+D0
+~
+~
+0 -1 6035
+D1
+~
+~
+0 -1 6023
+D2
+~
+~
+0 -1 6026
+D3
+~
+~
+0 -1 6033
+D5
+~
+~
+0 -1 6027
+S
+#6029
+&GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+~
+0 8 0 1 0
+D0
+~
+~
+0 -1 6024
+D1
+~
+~
+0 -1 6031
+D2
+~
+~
+0 -1 6030
+D3
+~
+~
+0 -1 6022
+S
+#6030
+&GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+~
+0 8 0 1 0
+D0
+~
+~
+0 -1 6029
+D9
+~
+~
+0 -1 6038
+S
+#6031
+&GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+~
+0 8 0 1 0
+D3
+~
+~
+0 -1 6029
+S
+#6032
+&GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+~
+0 12 0 1 0
+D3
+~
+~
+0 -1 6024
+S
+#6033
+&GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+~
+0 8 0 1 0
+D1
+~
+~
+0 -1 6028
+S
+#6034
+&GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+~
+0 8 0 1 0
+D1
+~
+~
+0 -1 6026
+S
+#6035
+&GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+~
+0 8 0 1 0
+D2
+~
+~
+0 -1 6028
+D6
+~
+~
+0 -1 6037
+S
+#6036
+&GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+~
+0 8 0 1 0
+D2
+~
+~
+0 -1 6024
+D7
+~
+~
+0 -1 6037
+S
+#6037
+&GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+~
+0 8 0 1 0
+D0
+~
+~
+0 -1 6040
+D8
+~
+~
+0 -1 6036
+D9
+~
+~
+0 -1 6035
+S
+#6038
+&GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+~
+0 8 0 1 0
+D2
+~
+~
+0 -1 6039
+D6
+~
+~
+0 -1 6030
+D7
+~
+~
+0 -1 6025
+S
+#6039
+&GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+~
+0 8 0 1 0
+D0
+~
+~
+0 -1 6038
+S
+#6040
+&GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+~
+0 8 0 1 0
+D2
+~
+~
+0 -1 6037
+D6
+~
+~
+0 -1 6067
+S
+#6041
+&cK&C4&c6 &GC&go&Gm&gb&Ga&gt &RA&rr&Re&rn&Ra &GE&gn&wt&Wra&wn&gc&Ge ~
+&B Say 'Main' to Return.
+~
+0 0 0 1 0
+D3
+~
+~
+0 -1 6042
+> speech_prog main~
+mpechoat $n You are taken to the Main Sector.
+mpechoaround $n $n is transported to the Main Sector.
+mptransfer $n 6054
+~
+|
+S
+#6042
+&zA&wp&zp&wr&zo&wa&zc&wh&zi&wn&zg &Bt&bh&Be &RA&rr&Re&rn&Ra~
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 6041
+D3
+~
+~
+0 -1 6043
+S
+#6043
+&RA&rr&Re&rn&Ra &CL&co&Cb&cb&Cy~
+~
+0 0 2 1 0
+D1
+~
+~
+0 -1 6042
+D3
+~
+~
+0 -1 6044
+S
+#6044
+&RA&rr&Re&rn&Ra &BH&bu&Bb~
+&BSay 'Begin' To call up Holograms
+&BSay 'Final' To go to the Final Level
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 6046
+D1
+~
+~
+0 -1 6043
+D2
+~
+~
+0 -1 6047
+D3
+~
+~
+0 -1 6045
+D4
+~
+~
+0 -1 6048
+D5
+~
+~
+0 -1 6049
+D6
+~
+~
+0 -1 6050
+D7
+~
+~
+0 -1 6052
+D8
+~
+~
+0 -1 6051
+D9
+~
+~
+0 -1 6053
+> speech_prog final~
+mptransfer $n 6055
+~
+|
+S
+#6045
+&RA&rr&Re&rn&Ra &WR&wo&Wu&wn&Wd &z1~
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 6044
+> speech_prog begin~
+mpecho &zA hologram of Gheed flickers to Life.
+mpmload 6005
+~
+|
+S
+#6046
+&RA&rr&Re&rn&Ra &WR&wo&Wu&wn&Wd &z2~
+~
+0 0 0 1 0
+D2
+~
+~
+0 -1 6044
+> speech_prog begin~
+mpecho &zA hologram appears.
+mpmload 6006
+~
+|
+S
+#6047
+&RA&rr&Re&rn&Ra &WR&wo&Wu&wn&Wd &z3~
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 6044
+> speech_prog begin~
+mpecho &zA hologram appears.
+mpmload 6007
+~
+|
+S
+#6048
+&RA&rr&Re&rn&Ra &WR&wo&Wu&wn&Wd &z4~
+~
+0 0 0 1 0
+D5
+~
+~
+0 -1 6044
+> speech_prog begin ~
+mpecho &zA hologram appears. 
+mpmload 6008
+~
+|
+S
+#6049
+&RA&rr&Re&rn&Ra &WR&wo&Wu&wn&Wd &z5~
+~
+0 0 0 1 0
+D4
+~
+~
+0 -1 6044
+> speech_prog begin ~
+mpecho &zA hologram appears. 
+mpmload 6015
+~
+|
+S
+#6050
+&RA&rr&Re&rn&Ra &WR&wo&Wu&wn&Wd &z6~
+~
+0 8 0 1 0
+D9
+~
+~
+0 -1 6044
+> speech_prog begin ~
+mpecho &zA hologram appears. 
+mpmload 6010
+~
+|
+S
+#6051
+&RA&rr&Re&rn&Ra &WR&wo&Wu&wn&Wd &z7~
+~
+0 8 0 1 0
+D7
+~
+~
+0 -1 6044
+> speech_prog begin ~
+mpecho &zA hologram appears. 
+mpmload 6011
+~
+|
+S
+#6052
+&RA&rr&Re&rn&Ra &WR&wo&Wu&wn&Wd &z8~
+~
+0 8 0 1 0
+D8
+~
+~
+0 -1 6044
+> speech_prog begin ~
+mpecho &zA hologram appears. 
+mpmload 6012
+~
+|
+S
+#6053
+&RA&rr&Re&rn&Ra &WR&wo&Wu&wn&Wd &z9~
+~
+0 8 0 1 0
+D6
+~
+~
+0 -1 6044
+> speech_prog begin ~
+mpecho &zA hologram appears. 
+mpmload 6013
+~
+|
+S
+#6054
+&cK&C4&c6 &zT&wr&Wa&zn&ws&Wp&zo&wr&Wt &PP&pa&Pd~
+This is the K46 Transport Pad, where you can catch shuttles to different
+places. Several Shuttles are here awaiting passengers, but the best part
+is.. It's Free!
+&BSay 'Arena' to be taken to the Combat Arena&T
+~
+0 4 0 1 0
+D3
+~
+~
+0 -1 6008
+> speech_prog arena~
+mpechoat $n You are taken to the Combat Arena.
+mpechoaround $n $n is transported to the Combat Arena.
+mptransfer $n 6041
+~
+> speech_prog romm~
+mpechoat $n You are Here.
+mpechoaround $n $n is gone.
+mptransfer $n 4101
+~
+|
+S
+#6055
+&RA&rr&Re&rn&Ra &zF&wi&zn&wa&zl &YM&Oa&Yt&Oc&Yh~
+~
+0 0 0 1 0
+D5
+~
+~
+0 -1 6044
+> speech_prog begin ~
+mpecho &zA hologram appears. 
+mpmload 6014
+~
+|
+S
+#6056
+&zH&wul&zl &zof a &wS&Wt&wa&Wr&ws&Wh&wi&Wp~
+This is as close as you can get to the Hull without actually being inside
+the ship. "&zPr&we&Wd&wat&zor" is apparently the name of the ship as it is
+painted on both sides of the ships bow. A hole has been ripped in the hull
+obviously from the impact with the colony.
+~
+0 4 0 1 0
+D0
+~
+~
+0 -1 6057
+D2
+~
+~
+0 -1 6067
+S
+#6057
+&CI&cn&Cs&ci&Cd&ce &za &RC&rr&za&ws&zh&re&Rd &wS&Wt&wa&Wr&ws&Wh&wi&Wp~
+For colliding with a Colony, The ship seems to be in perfect working condition,
+well, if you take away the hole you just used to get inside. The Crew is 
+still out moving around and going on as though they haven't collided with
+anything at all.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 6058
+D2
+~
+~
+0 -1 6056
+S
+#6058
+&zH&wa&Wl&zl&Ww&wa&zy~
+This Hallway is kept in perfect order. Consoles along the walls provide
+easy access to the ships computer, allowing easy crew access to enable alarms
+that signal Intruders, and any other such thing that would need to be
+told to the rest of the Crew.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 6059
+D2
+~
+~
+0 -1 6057
+S
+#6059
+&CP&ca&wr&Wtia&wl&cl&Cy &RC&ro&zl&wl&Wa&wp&zs&re&Rd &zH&wa&Wl&zl&Ww&wa&zy~
+This hallway is much like the one before, only difference being there is 
+severe structural damage to the right side of the hallway. It could give way 
+at any moment.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 6060
+D2
+~
+~
+0 -1 6058
+S
+#6060
+&BS&bh&za&wdo&zw&be&Bd &wM&We&we&Wt&wi&Wn&wg &zP&wo&zi&wn&zt~
+This is the main intersection of the Predator. The Only way other than through
+the Engine bays to go from the Starboard side to the Port side. North is
+the path to the Elevator, that will take you to the Command Deck, or down to
+the Crew Quarters.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 6071
+D1
+~
+~
+0 -1 6061
+D2
+~
+~
+0 -1 6059
+D3
+~
+~
+0 -1 6065
+S
+#6061
+&BP&bo&zr&Bt&bs&zi&Bd&be &zH&wa&Wl&zl&Ww&wa&zy~
+This Hallway is kept in perfect order. Consoles along the walls provide
+easy access to the ships computer, allowing easy crew access to enable alarms
+that signal Intruders, and any other such thing that would need to be
+told to the rest of the Crew.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 6072
+D1
+~
+~
+0 -1 6063
+D2
+~
+~
+0 -1 6062
+D3
+~
+~
+0 -1 6060
+S
+#6062
+&BP&bo&Br&bt &zA&wr&zm&wo&zr&wy~
+Weapons, Armor, Grenades, Ammo. Anything you could need for a military
+offensive, is here in this Armory. Everything here looks as though it's in
+perfect working condition but you can't get to any of it without the
+permission of the Captain.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 6061
+S
+#6063
+&BP&bo&zr&Bt&bs&zi&Bd&be &RB&ro&Rw &YV&Oiewin&Yg &GD&ge&Gc&gk~
+This is the Bow Viewing Deck, Not much is to be seen from this window,
+All you can really see is the side of the Colony. The fountains here 
+are simply beautiful, and the sound is so soothing.
+~
+0 1024 0 1 0
+D0
+~
+~
+0 -1 6073
+D3
+~
+~
+0 -1 6061
+S
+#6064
+&CS&ct&war&Wbo&wa&cr&Cd &zA&wr&zm&wo&zr&wy~
+Weapons, Armor, Grenades, Ammo. Anything you could need for a military
+offensive, is here in this Armory. Everything here looks as though it's in
+perfect working condition but you can't get to any of it without the
+permission of the Captain.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 6065
+S
+#6065
+&CSt&car&wbo&Wa&wrd&csi&Cde &zH&wa&Wl&zl&Ww&wa&zy~
+This Hallway is kept in perfect order. Consoles along the walls provide
+easy access to the ships computer, allowing easy crew access to enable alarms
+that signal Intruders, and any other such thing that would need to be
+told to the rest of the Crew.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 6070
+D1
+~
+~
+0 -1 6060
+D2
+~
+~
+0 -1 6064
+D3
+~
+~
+0 -1 6066
+S
+#6066
+&CSt&car&wbo&Wa&wrd&csi&Cde &RB&ro&Rw &YV&Oiewin&Yg &GD&ge&Gc&gk~
+This is the Bow Viewing Deck, Not much is to be seen from this window,
+All you can really see is the side of the Colony. The fountains here 
+are simply beautiful, and the sound is so soothing.
+~
+0 1024 0 1 0
+D0
+~
+~
+0 -1 6069
+D1
+~
+~
+0 -1 6065
+S
+#6067
+&CB&ce&Cf&co&Cr&ce &za &RC&rr&za&Ws&zh&re&Rd &wS&Wt&wa&Wr&ws&Wh&wi&Wp~
+A large ship has crashed into the side of K46, embedding itself so well in
+the side of K46 that there is no atmosphere leakage. The air is still 
+breatheable and it doesn't seem to want to suck you into space. You must
+be ok.
+~
+0 4 0 1 0
+D0
+~
+~
+0 -1 6056
+D9
+~
+~
+0 -1 6040
+S
+#6068
+&CS&ct&wa&Wrbo&wa&cr&Cd &zG&wu&zn &wB&za&wt&zt&we&zr&wy~
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 6069
+S
+#6069
+&zI&wn&Wt&ze&wr&Ws&ze&wc&Wt&zi&wo&Wn~
+This is a secondary Intersection for the Main Deck. West is the Gun Battery,
+East is the Engineering sector, and North and South are the Viewing Decks
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 6079
+D1
+~
+~
+0 -1 6070
+D2
+~
+~
+0 -1 6066
+D3
+~
+~
+0 -1 6068
+S
+#6070
+&CS&ct&wa&Wrbo&wa&cr&Cd &zEngineering Sector~
+This is the Engineering sector, Crew members come here to machine parts 
+for different places on the ship, make something special for someone who
+has caught their eye, or even work on something for their kids back home.
+~
+0 67108864 0 1 0
+D0
+~
+~
+0 -1 6078
+D2
+~
+~
+0 -1 6065
+D3
+~
+~
+0 -1 6069
+S
+#6071
+&zP&wa&zt&wh &zto the &WE&wl&We&wv&Wa&wt&Wo&wr&T~
+This is the main path to the Elevator between decks. The path is clean and
+well taken care of. The crew takes great pride in their ship, and it's clearly
+visible in the way they keep it clean.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 6077
+D2
+~
+~
+0 -1 6060
+S
+#6072
+&BP&bo&Br&bt &zEngineering Sector&T~
+This is the Engineering sector, Crew members come here to machine parts 
+for different places on the ship, make something special for someone who
+has caught their eye, or even work on something for their kids back home.
+~
+0 67108864 0 1 0
+D0
+~
+~
+0 -1 6076
+D1
+~
+~
+0 -1 6073
+D2
+~
+~
+0 -1 6061
+S
+#6073
+&zI&wn&Wt&ze&wr&Ws&ze&wc&Wt&zi&wo&Wn~
+This is a secondary Intersection for the Main Deck. East is the Gun Battery,
+West is the Engineering sector, and North and South are the Viewing Decks.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 6075
+D1
+~
+~
+0 -1 6074
+D2
+~
+~
+0 -1 6063
+D3
+~
+~
+0 -1 6072
+S
+#6074
+&BP&bo&Br&bt &zG&wu&zn &wB&za&wt&zt&we&zr&wy~
+~
+0 0 0 1 0
+D3
+~
+~
+0 -1 6073
+S
+#6075
+&BP&bo&zr&Bt&bs&zi&Bd&be &RA&rf&Rt &YV&Oiewin&Yg &GD&ge&Gc&gk&T~
+This is the Aft Viewing Deck,The view of the Stars is amazing, and the
+glow of the engines just adds to the scene. The fountains here are simply
+beautiful, and the sound is so soothing.
+~
+0 1024 0 1 0
+D2
+~
+~
+0 -1 6073
+D3
+~
+~
+0 -1 6076
+S
+#6076
+&BP&bo&zr&Bt&bs&zi&Bd&be &RE&rn&wt&Wra&wn&rc&Re &zto the Engine Rooms&T~
+This is an Entrance to the Engine compartments, The cound s of the engines
+is almost unbearable even here outside the compartment. Pity the poor souls
+that have to work inside the compartments.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 6082
+D1
+~
+~
+0 -1 6075
+D2
+~
+~
+0 -1 6072
+S
+#6077
+&WE&wl&We&wv&Wa&wt&Wo&wr~
+This is the Main Elevator, Up leads to the Command Deck, Down leads to the
+Crew Quarters. The elevator is state of the art and moves up and down in
+complete silence.
+~
+0 0 0 1 0
+D2
+~
+~
+0 -1 6071
+D4
+~
+~
+0 -1 6084
+D5
+~
+~
+0 -1 6090
+S
+#6078
+&CSt&car&wbo&Wa&wrd&csi&Cde &RE&rn&wt&Wra&wn&rc&Re &zto the Engine Rooms&T~
+This is an Entrance to the Engine compartments, The cound s of the engines
+is almost unbearable even here outside the compartment. Pity the poor souls
+that have to work inside the compartments.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 6080
+D2
+~
+~
+0 -1 6070
+D3
+~
+~
+0 -1 6079
+S
+#6079
+&CS&ct&wa&Wrbo&wa&cr&Cd &RA&rf&Rt &YV&Oiewin&Yg &GD&ge&Gc&gk&T~
+This is the Aft Viewing Deck,The view of the Stars is amazing, and the
+glow of the engines just adds to the scene. The fountains here are simply
+beautiful, and the sound is so soothing.
+~
+0 1024 0 1 0
+D1
+~
+~
+0 -1 6078
+D2
+~
+~
+0 -1 6069
+S
+#6080
+&CS&ct&wa&Wrbo&wa&cr&Cd &zEngine Compartment~
+The sounds and heat of the engines is almost unbearable. Crew members walk
+around in fire protection suits, and sound dampening helmets. Perhaps leaving
+in short order would be a good idea.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 6081
+D2
+~
+~
+0 -1 6078
+S
+#6081
+&BC&Ce&cn&bt&cr&Ca&Bl &zEngine Compartment~
+The sounds and heat of the engines is almost unbearable. Crew members walk
+around in fire protection suits, and sound dampening helmets. Perhaps leaving
+in short order would be a good idea.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 6082
+D3
+~
+~
+0 -1 6080
+S
+#6082
+&BP&bo&Br&bt &zEngine Compartment~
+The sounds and heat of the engines is almost unbearable. Crew members walk
+around in fire protection suits, and sound dampening helmets. Perhaps leaving
+in short order would be a good idea.
+~
+0 0 0 1 0
+D2
+~
+~
+0 -1 6076
+D3
+~
+~
+0 -1 6081
+S
+#6083
+&GF&gi&Gr&gs&Gt &CO&cf&Cf&ci&Cc&ce&Cr&c'&Cs &GQ&guarter&Gs~
+A Bed rests in the far corner of the room, A Desk and chair in the center,
+and Everything the floor, the cieling, the walls... it all a crystaline
+Ice Blue color. And the room is unnaturaly cold.
+~
+0 0 0 1 0
+D2
+~
+~
+0 -1 6084
+S
+#6084
+&WS&we&Wc&wu&Wr&wi&Wt&wy &RC&rh&ze&wc&Wkp&wo&zi&rn&Rt~
+As you step off the Elevator you are scanned by several computers that
+check for concealed weapons, Explosives, or any other threats to the command
+of the Predator.
+North is the First Officer, South is the Captain, East and West are the
+missile batteries, and Up the lift here, is the Main Bridge.
+~
+0 4 0 1 0
+D0
+~
+~
+0 -1 6083
+D1
+~
+~
+0 -1 6085
+D2
+~
+~
+0 -1 6087
+D3
+~
+~
+0 -1 6086
+D4
+~
+~
+0 -1 6089
+D5
+~
+~
+0 -1 6077
+S
+#6085
+&BP&bo&zr&Bt&bs&zi&Bd&be &zM&wi&zs&ws&zi&wl&ze &wB&za&wt&zt&we&zr&wy~
+~
+0 0 0 1 0
+D3
+~
+~
+0 -1 6084
+S
+#6086
+&CSt&car&wbo&Wa&wrd&csi&Cde &zM&wi&zs&ws&zi&wl&ze &wB&za&wt&zt&we&zr&wy~
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 6084
+S
+#6087
+&zH&wa&Wl&zl&Ww&wa&zy&T~
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 6084
+D2
+~
+~
+0 -1 6088
+S
+#6088
+&RC&Ya&Wp&wta&Wi&Yn'&Rs &GQ&guarter&Gs&T~
+There is very little in this room aside from the Desk in the center. It
+feels like a furnace in here and the room is all black. Black walls, black
+floor, black ceiling...Black Everything.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 6087
+S
+#6089
+&wM&Wa&wi&Wn &RB&rr&Ri&rd&Rg&re&T~
+This is the main bridge. The Nerve center. From here All aspects of the
+Predator are controlled. Crew members run around checking on the different
+stations around the bridge. Weapons control, Sensory arrays, navigations,
+all of it controlled from here.
+~
+0 0 0 1 0
+D5
+~
+~
+0 -1 6084
+S
+#6090
+&WE&wl&We&wv&Wa&wt&Wo&wr~
+This is the Main Elevator, Up leads to the Main Deck, and further up leads to
+the Command Deck. The elevator is state of the art and moves up and down in
+complete silence.
+~
+0 0 0 1 0
+D2
+~
+~
+0 -1 6091
+D4
+~
+~
+0 -1 6077
+S
+#6091
+&YC&Ore&Yw &GQ&guarter&Gs~
+This is the Crew's quarters, It's fairly nondescript, Beds, tables, places
+where food can be made. All the neccesities needed to live comfortably while
+away from home.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 6090
+D1
+~
+~
+0 -1 6096
+D2
+~
+~
+0 -1 6092
+D3
+~
+~
+0 -1 6097
+S
+#6092
+&YC&Ore&Yw &GQ&guarter&Gs~
+This is the Crew's quarters, It's fairly nondescript, Beds, tables, places
+where food can be made. All the neccesities needed to live comfortably while
+away from home.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 6091
+D2
+~
+~
+0 -1 6093
+S
+#6093
+&YC&Ore&Yw &GQ&guarter&Gs~
+This is the Crew's quarters, It's fairly nondescript, Beds, tables, places
+where food can be made. All the neccesities needed to live comfortably while
+away from home.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 6092
+D2
+~
+~
+0 -1 6094
+S
+#6094
+&YC&Ore&Yw &GQ&guarter&Gs~
+This is the Crew's quarters, It's fairly nondescript, Beds, tables, places
+where food can be made. All the neccesities needed to live comfortably while
+away from home.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 6093
+D2
+~
+~
+0 -1 6095
+S
+#6095
+&YC&Ore&Yw &GQ&guarter&Gs~
+This is the Crew's quarters, It's fairly nondescript, Beds, tables, places
+where food can be made. All the neccesities needed to live comfortably while
+away from home.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 6094
+S
+#6096
+&YC&Ore&Yw &GQ&guarter&Gs~
+This is the Crew's quarters, It's fairly nondescript, Beds, tables, places
+where food can be made. All the neccesities needed to live comfortably while
+away from home.
+~
+0 0 0 1 0
+D3
+~
+~
+0 -1 6091
+D8
+~
+~
+0 -1 6099
+S
+#6097
+&YC&Ore&Yw &GQ&guarter&Gs~
+This is the Crew's quarters, It's fairly nondescript, Beds, tables, places
+where food can be made. All the neccesities needed to live comfortably while
+away from home.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 6091
+D9
+~
+~
+0 -1 6098
+S
+#6098
+&YC&Ore&Yw &GQ&guarter&Gs~
+This is the Crew's quarters, It's fairly nondescript, Beds, tables, places
+where food can be made. All the neccesities needed to live comfortably while
+away from home.
+~
+0 0 0 1 0
+D6
+~
+~
+0 -1 6097
+S
+#6099
+&YC&Ore&Yw &GQ&guarter&Gs~
+This is the Crew's quarters, It's fairly nondescript, Beds, tables, places
+where food can be made. All the neccesities needed to live comfortably while
+away from home.
+~
+0 0 0 1 0
+D7
+~
+~
+0 -1 6096
+S
+#0
+
+
+#RESETS
+M 1 6000 1 6000
+O 1 2027 10 6000
+M 1 6001 1 6001
+O 1 6006 1 6002
+M 1 6020 8 6007
+M 1 6020 8 6009
+M 1 6020 8 6010
+M 1 6020 8 6011
+M 1 6020 8 6012
+M 1 6020 8 6013
+M 1 6020 8 6013
+M 1 6020 8 6017
+M 1 6004 1 6019
+G 1 6005 1
+G 1 6007 1
+M 1 6003 1 6021
+G 1 2006 1
+G 1 10424 1
+G 1 10314 1
+G 1 2014 1
+G 1 2017 1
+G 1 610 1
+G 1 2013 1
+O 1 610 1 6021
+M 1 6023 18 6022
+M 1 6023 18 6023
+M 1 6023 18 6023
+M 1 6023 18 6024
+M 1 6023 18 6024
+M 1 6023 18 6024
+M 1 6023 18 6024
+M 1 6023 18 6026
+M 1 6023 18 6027
+M 1 6023 18 6028
+M 1 6023 18 6029
+M 1 6023 18 6029
+M 1 6030 1 6032
+M 1 6023 18 6033
+M 1 6023 18 6037
+M 1 6023 18 6038
+M 1 6023 18 6038
+M 1 6023 18 6040
+M 1 6023 18 6040
+M 1 6018 17 6059
+M 1 6018 17 6063
+M 1 6018 17 6063
+M 1 6019 14 6063
+M 1 6018 17 6068
+M 1 6019 14 6072
+M 1 6018 17 6072
+M 1 6019 14 6073
+M 1 6019 14 6074
+M 1 6019 14 6076
+M 1 6019 14 6077
+M 1 6019 14 6077
+M 1 6019 14 6078
+M 1 6018 17 6080
+M 1 6019 14 6081
+M 1 6018 17 6082
+M 1 6017 1 6083
+G 1 6002 1
+G 1 6004 1
+O 1 6037 1 6083
+M 1 6018 17 6085
+M 1 6018 17 6085
+M 1 6018 17 6086
+M 1 6018 17 6086
+M 1 6018 17 6086
+M 1 6018 17 6086
+M 1 6016 1 6088
+G 1 6001 1
+G 1 6003 1
+O 1 6037 1 6088
+M 1 6021 1 6089
+M 1 6022 1 6089
+O 1 6038 1 6089
+M 1 6019 14 6090
+M 1 6018 17 6091
+M 1 6019 14 6092
+M 1 6019 14 6093
+M 1 6018 17 6096
+M 1 6018 17 6098
+M 1 6018 17 6098
+M 1 6019 14 6098
+M 1 6019 14 6099
+M 1 6002 1 6020
+G 1 6008 1
+G 1 6010 1
+G 1 502 1
+G 1 6009 1
+S
+
+
+#SHOPS
+ 6002    0  0  0  0  0   100  80         0 23    ; &WS&wh&We&wl&Wl&wy&z
+ 6003    0  0  0  0  0   120 100         0 23    ; &RJ&ro&Rh&rn&z
+ 6004    0  0  0  0  0   100  80         0 23    ; &zM&wa&zr&wk&z
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+M  6001 spec_customs_weapons
+M  6001 spec_police
+S
+
+
+#$

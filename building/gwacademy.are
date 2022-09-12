@@ -1,0 +1,996 @@
+#AREA   Gundam Wing Academy~
+
+
+
+#AUTHOR Antonio~
+
+#RANGES
+0 0 0 1000
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 6250090
+
+#MOBILES
+#10500
+Training Hologram~
+A Training Hologram~
+A Training Hologram is here in a fight stance.
+~
+~
+67108867 0 0 Z
+1 0 97 0d10+10 0d4+2
+10 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#10501
+teacher~
+A Teacher~
+A Frightened teacher is here cowering in the corner.
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> all_greet_prog 100~
+Say arggg... those damn kid rioted in my classroom
+say they destroy everything and ran off....
+say i hope the dont come back
+sniff
+~
+|
+#10502
+Trainer~
+A Trainer~
+A Trainer is here, training people
+~
+~
+515 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+12 12 12 12 12 12 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#10503
+A Lunch Lady~
+A Lunch Lady~
+A Lunch Lady is here, selling food
+~
+~
+3 0 0 Z
+200 0 -400 40d10+2000 20d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+40 40 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#10504
+Mary~
+Mary~
+Mary is here, looking for the principal
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog hello hi hey~
+say Hi there, i cant find the principal
+say Can you go look for him, i need to get this note to him
+say Can you $n?
+~
+> speech_prog yes yep ok yea~
+Say Thanks
+mpoload 10505 1
+give letter $n
+Say when you find it give it too him
+smile
+~
+|
+#10505
+equipment manager~
+Equipment Manager~
+A Equipment Manager is here handing out equipment.
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog equip equipment~
+mpoload 10316 1
+mpoload 10308 1
+mpoload 10303 1
+drop all
+say there you go
+~
+|
+#10506
+Principal~
+The Principal~
+The Principal is here, scared out of his mind.
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> all_greet_prog 100~
+Say H-h-h-eeeyyyy!!!!!
+~
+> speech_prog this is from mary~
+if ovnuminv (10505) >= 1
+say OOhHOH KKkk
+mptransfer $n 10543
+mpat 10599 drop all
+mpat 10599 purge
+else
+hic
+say w-ww-w-whhaaTT
+endif
+~
+|
+#10507
+The Principal~
+The Principal~
+The Principal is here, handing out diplomas.
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#10599
+final mob~
+a newly created final mob~
+Some god abandoned a newly created final mob here.
+~
+~
+1 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#10500
+Chest~
+A Chest~
+A Chest is here, on the ground~
+~
+15 0 0
+500 0 0 0
+1 0 0
+#10501
+sunglasses~
+a sunglasses~
+A sunglasses is here.~
+~
+13 0 131073
+0 0 0 0
+1 0 0
+#10502
+red button~
+A Button~
+A Button is here on the wall.~
+~
+39 0 0
+0 0 0 0
+1 0 0
+> pull_prog 100~
+mpoload 10303 1
+mpoload 10316 1
+mpoload 10308 1
+drop all
+pull button
+mpecho Sevral items appear
+~
+|
+#10503
+sandwich~
+a sandwich~
+A sandwich is here.~
+~
+19 8192 16385
+55 55 0 0
+1 1 0
+#10504
+Canteen~
+a Canteen~
+A Canteen is here.~
+~
+17 0 16385
+30 30 0 0
+1 1 0
+#10505
+A Letter~
+A Letter~
+A Letter from Mary, to the principal~
+~
+13 0 1
+0 0 0 0
+1 0 0
+#10599
+final objec~
+a final objec~
+A final objec is here.~
+~
+13 0 0
+0 0 0 0
+1 0 0
+#0
+
+
+#ROOMS
+#10500
+The Entrace to the Academy~
+Once you get out of the academy you can type 'save' to save your stats, its
+a good idea to type save often incase of a crash. Also if you wish to quit
+this game type 'hail' then type 'quit' when you arrive at a hotel.
+~
+0 1072 1
+D0
+~
+~
+0 -1 10501
+D2
+~
+~
+0 -1 508
+S
+#10501
+A Hallway~
+If you completed the academy you must be here. You can
+come back in if you want to visit your old teachers
+or to get some simplete equipment. There is a
+50ft flag pole here with a Flag at the top of it.
+ 
+&BSay 'enter' to go back into the academy
+~
+0 1032 1
+D0
+~
+~
+7 -1 10502
+D2
+~
+~
+0 -1 10500
+> speech_prog enter~
+mpechoat $n You are takened in.
+mptransfer $n 10502
+~
+|
+S
+#10502
+Leaving the Academy~
+In this hallway there is a exit south out of here. You first have to
+complete the Academy and get your diploma and other stuff.
+After you get the diploma you can leave here and enter the
+game. You also may come back any time you want to.
+ 
+&BSay 'leave' to leave here.
+~
+0 1032 1
+D0
+~
+~
+0 -1 10503
+D2
+~
+~
+7 -1 10501
+S
+#10503
+The End of a Hallway~
+~
+0 1032 1
+D0
+~
+~
+0 -1 10504
+D2
+~
+~
+0 -1 10502
+S
+#10504
+A Hallway~
+~
+0 1032 1
+D0
+~
+~
+0 -1 10505
+D2
+~
+~
+0 -1 10503
+S
+#10505
+A Hallway Intersection~
+This is the intersection where the hallways meet and intersect with each
+other. If you explore the academy you are bound to find new things that
+are useful. You should try to find your way to class now so you can learn
+how to do stuff.
+~
+0 1032 1
+D0
+~
+~
+0 -1 10515
+D1
+~
+~
+0 -1 10509
+D2
+~
+~
+0 -1 10504
+D3
+~
+~
+0 -1 10506
+S
+#10506
+A Hallway~
+You see the Cafeteria over to the west. Maybe you should go gets some food
+and water becuase you need food and water to live on the mud. You also
+need to sleep sometimes.
+~
+0 1032 1
+D0
+~
+~
+0 -1 10511
+D1
+~
+~
+0 -1 10505
+D3
+~
+~
+0 -1 10507
+S
+#10507
+An Academy Cafeteria~
+You look around and you see a lunch lady here serving 
+food. You see a few students chatting over in the
+corner and the food here doesn't look to good.
+ 
+&BType '&gList&B' to get a list of food
+~
+0 1032 1
+D1
+~
+~
+0 -1 10506
+S
+#10508
+Floating in a void~
+~
+0 1036 1
+S
+#10509
+A Hallway~
+~
+0 1032 1
+D1
+~
+~
+0 -1 10510
+D3
+~
+~
+0 -1 10505
+S
+#10510
+Equipment Station~
+This room has been designed to teach people how to use basic equipment.
+Some Items you find or buy in the game can be worn, wielded, or holded.
+The Commands are (wear/weild/hold) <item> Other items have differnt
+affects and properties.
+~
+0 1032 1
+D3
+~
+~
+0 -1 10509
+S
+#10511
+A Hallway~
+~
+0 1032 1
+D0
+~
+~
+0 -1 10512
+D2
+~
+~
+0 -1 10506
+S
+#10512
+A Gym~
+Here is a small gym where you can training yourself  a bit. You can Train
+your stats here up to 12 but no further then that. Training you stats can 
+improve how good you are.
+&BType 'score' to see your stats
+&BType 'train <stat>' to start training
+~
+0 1032 1
+D2
+~
+~
+0 -1 10511
+S
+#10513
+A Hallway~
+This long narrow Hallway leads to a small shop.
+~
+0 1036 1
+S
+#10514
+A School Shop~
+This is a small shop for students to buy some stuff they can use. There is
+a small safe in the back of the room next to a broken tv.
+There is some good equipment here and some other useless junk too...
+ 
+&BType '&gList&B' to see a list of items
+~
+0 1036 1
+S
+#10515
+A Hallway~
+~
+0 1032 1
+D0
+~
+~
+0 -1 10516
+D2
+~
+~
+0 -1 10505
+S
+#10516
+A Stairwell~
+~
+0 1032 1
+D2
+~
+~
+0 -1 10515
+D4
+~
+~
+0 -1 10517
+S
+#10517
+A Stairwell~
+~
+0 1032 1
+D0
+~
+~
+0 -1 10518
+D4
+~
+~
+0 -1 10525
+D5
+~
+~
+0 -1 10516
+S
+#10518
+A Hallway~
+~
+0 1032 1
+D0
+~
+~
+0 -1 10519
+D1
+~
+~
+0 -1 10524
+D2
+~
+~
+0 -1 10517
+D3
+~
+~
+0 -1 10521
+S
+#10519
+A Hallway~
+You look around and see a student named mary, she looks like she needs a
+little help. Why dont you help here? 
+HINT: SAY HELLO
+~
+0 1032 1
+D0
+~
+~
+0 -1 10520
+D2
+~
+~
+0 -1 10518
+D3
+~
+~
+0 -1 10523
+S
+#10520
+A Storage Room~
+This is a small storage room that has a chest on the floor
+I dont think they would mind if you took a few things.
+&BType 'look in chest' to see whats in there
+&BType 'get <item> chest' to take an item
+&BType 'put <item> chest' to put something in it
+~
+0 1032 1
+D2
+~
+~
+0 -1 10519
+S
+#10521
+Combat Training~
+This room has been designed to teach people how to
+fight and defend thier self. The actually fighting
+training takes place west in the combat room.
+ 
+&BType 'look sign' to learn how to fight.
+~
+0 1036 1
+D1
+~
+~
+0 -1 10518
+D3
+~
+~
+0 -1 10522
+E
+sign~
+How to fight.
+ 
+Consider <mob/player> - First you need to consider
+ the mob before killing it so you know you can
+ 
+Kill <mob> - to start a battle with a mobile
+ 
+Flee - to run away from a battle so you dont die
+ 
+Murder <player> - to start combat with another
+ player. This is not advised to do because
+ player kill has to be done with a rp
+ reason. You can just kill someone that
+ you dont like.
+ 
+Wimpy <hps> - sets the hitpoints to
+ automatically run away during
+ battle.
+~
+S
+#10522
+Combat Room~
+This room is here to practice fighting in. You look
+wall and some cameras are in all 4
+corners of the room watching your every
+move. They are probally monitoring how
+good you can fight.
+ 
+&BSay 'begin' to start the holograms.
+~
+0 8 1
+D1
+~
+~
+0 -1 10521
+> speech_prog begin~
+mpecho &BThe Hologram starts up.
+mpmload 10500
+~
+|
+S
+#10523
+A Destroyed Classroom~
+This is what happenes when teachers give thier students too much homework.
+There is nothing much left except for some glass on the floor, a few
+peices of chalk, and a frightened teacher.
+~
+0 1032 1
+D1
+~
+~
+0 -1 10519
+S
+#10524
+A Workshop~
+This seems like a nice quiet place to build some nice items. But you need
+to know some engineering skills and have the right material to build
+stuff.
+~
+0 67175432 1
+D3
+~
+~
+0 -1 10518
+S
+#10525
+A Stairwell~
+~
+0 1036 1
+D0
+~
+~
+0 -1 10526
+D5
+~
+~
+0 -1 10517
+S
+#10526
+A Hallway~
+~
+0 1032 1
+D0
+~
+~
+0 -1 10527
+D1
+~
+~
+0 -1 10532
+D2
+~
+~
+0 -1 10525
+D3
+~
+~
+0 -1 10531
+S
+#10527
+A Hallway~
+~
+0 1032 1
+D0
+~
+~
+0 -1 10528
+D1
+~
+~
+0 -1 10534
+D2
+~
+~
+0 -1 10526
+D3
+~
+~
+0 -1 10533
+S
+#10528
+A Hallway~
+~
+0 1032 1
+D0
+~
+~
+0 -1 10529
+D1
+~
+~
+0 -1 10536
+D2
+~
+~
+0 -1 10527
+D3
+~
+~
+0 -1 10535
+S
+#10529
+A Hallway~
+~
+0 1032 1
+D0
+~
+~
+0 -1 10530
+D2
+~
+~
+0 -1 10528
+S
+#10530
+A Stairwell~
+~
+0 1032 1
+D2
+~
+~
+0 -1 10529
+D4
+~
+~
+0 -1 10537
+S
+#10531
+An Empty Appartment~
+~
+0 2098184 1
+D1
+~
+~
+0 -1 10526
+S
+#10532
+An Empty Appartment~
+~
+0 2098184 1
+D3
+~
+~
+0 -1 10526
+S
+#10533
+An Empty Appartment~
+~
+0 2098184 1
+D1
+~
+~
+0 -1 10527
+S
+#10534
+An Empty Appartment~
+~
+0 2098184 1
+D3
+~
+~
+0 -1 10527
+S
+#10535
+An Empty Appartment~
+~
+0 2098184 1
+D1
+~
+~
+0 -1 10528
+S
+#10536
+An Empty Appartment~
+~
+0 2098184 1
+D3
+~
+~
+0 -1 10528
+S
+#10537
+A Stairwell~
+~
+0 1032 1
+D2
+~
+~
+0 -1 10538
+D5
+~
+~
+0 -1 10530
+S
+#10538
+A Hallway~
+~
+0 1032 1
+D0
+~
+~
+0 -1 10537
+D2
+~
+~
+0 -1 10539
+S
+#10539
+A Hallway~
+You look around and see that the principals office is just to the south. To
+the West is a closed door. To Open Doors Type open <dir>.
+~
+0 1032 1
+D0
+~
+~
+0 -1 10538
+D2
+~
+~
+0 -1 10540
+D3
+~
+~
+3 -1 10542
+S
+#10540
+The Principals Office~
+This is the Principals office. But the Principal seems to be missing. Maybe
+you should go look for him.
+~
+0 1032 1
+D0
+~
+~
+0 -1 10539
+S
+#10541
+Floating in a void~
+~
+0 1036 1
+S
+#10542
+Janitors Closet~
+This small little closet is where teh janitor keeps he supplies and other
+stuff.
+HINT: Give him the letter
+HINT: Say this is from mary
+~
+0 1036 1
+D1
+~
+~
+3 -1 10539
+S
+#10543
+A Hallway~
+After You've gave the principal the note he took you here to be graduated.
+Just go south of here to be Graduated 
+~
+0 1036 1
+D2
+~
+~
+0 -1 10544
+S
+#10544
+Graduating from the Academy~
+l Wait Till you are Authorize then go down  Wait Till you are Authorize
+then go down
+~
+0 1036 1
+D0
+~
+~
+0 -1 10543
+D5
+~
+~
+0 -1 10505
+S
+#10545
+Floating in a void~
+~
+0 1036 1
+S
+#10546
+Floating in a void~
+~
+0 1036 1
+S
+#10547
+Floating in a void~
+~
+0 1036 1
+S
+#10548
+Floating in a void~
+~
+0 1036 1
+S
+#10549
+Floating in a void~
+~
+0 1036 1
+S
+#10550
+Floating in a void~
+~
+0 1036 1
+S
+#10599
+MOB PROG ROOM! DO NOT TOUCH~
+~
+0 4 1
+S
+#0
+
+
+#RESETS
+O 1 10500 1 10520
+P 0 10501 1 0
+P 1 10304 1 0
+M 1 10500 1 10522
+M 1 10501 1 10523
+M 1 10502 1 10512
+M 1 10503 1 10507
+G 1 10504 1
+G 1 10503 1
+M 1 10505 1 10510
+O 1 10505 1 10599
+M 1 10504 1 10519
+D 0 10539 3 1
+M 1 10506 1 10542
+D 0 10542 1 1
+M 1 10507 1 10544
+S
+
+
+#SHOPS
+ 10503    0  0  0  0  0   120   5         0 23    ; A Lunch Lady
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+M  10507 spec_auth
+S
+
+
+#$

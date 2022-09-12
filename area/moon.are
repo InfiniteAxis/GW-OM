@@ -1,0 +1,2161 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         Moon~
+Author       Zantas~
+Ranges       1 1007 1 1007
+Economy      0 22717711
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       1600
+Keywords   Raw Materials Distributor~
+Short      the Raw Materials Distributor~
+Long       The Raw Materials Distributor checks his shelves.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       1601
+Keywords   armor shop owner~
+Short      the armor shop owner~
+Long       The owner of the armor shop stands at the counter.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   5 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p stock~
+Comlist   mpoload 1600
+mpoload 506
+mpoload 505
+mpoload 504
+mpoload 503
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1602
+Keywords   Weapon Shop Owner~
+Short      the Weapon Shop Owner~
+Long       The weapons shop owner stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 100 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       1603
+Keywords   Shop Keeper~
+Short      the Shop Keeper~
+Long       A man stands behind the counter counting his earnings.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p stock~
+Comlist   mpoload 10314
+mpoload 2006
+mpoload 10313
+mpoload 10424
+mpoload 10317
+mpoload 2007
+mpoload 6004
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1604
+Keywords   moon guard sentinel~
+Short      a Moon Guard~
+Long       A sentinel from the local Moon Guard patrols the streets.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 200 0 -400 0 0
+Stats2     40 10 2000
+Stats3     20 4 2
+Stats4     0 0 0 40 40
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1605
+Keywords   moon citizen~
+Short      a moon citizen~
+Long       A citizen of the moon strolls around minding his own business.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+VIPFlags   Moon~
+#ENDMOBILE
+
+#MOBILE
+Vnum       1631
+Keywords   level 1 beginer hologram~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 5 0 87 0 0
+Stats2     1 10 50
+Stats3     0 4 2
+Stats4     0 0 0 1 1
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1632
+Keywords   level 2 beginer hologram~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 15 0 62 0 0
+Stats2     3 10 150
+Stats3     1 4 2
+Stats4     0 0 0 3 3
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1633
+Keywords   level 3 beginer hologram~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 25 0 37 0 0
+Stats2     5 10 250
+Stats3     2 4 2
+Stats4     0 0 0 5 5
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1634
+Keywords   level 4 beginer hologram~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 40 0 0 0 0
+Stats2     8 10 400
+Stats3     4 4 2
+Stats4     0 0 0 8 8
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1635
+Keywords   level 5 beginer hologram~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 50 0 -25 0 0
+Stats2     10 10 500
+Stats3     5 4 2
+Stats4     0 0 0 10 10
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1636
+Keywords   level 6 beginer hologram~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 65 0 -62 0 0
+Stats2     13 10 650
+Stats3     6 4 2
+Stats4     0 0 0 13 13
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1637
+Keywords   level 7 beginner hologram~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 80 0 -100 0 0
+Stats2     16 10 800
+Stats3     8 4 2
+Stats4     0 0 0 16 16
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1638
+Keywords   level 8 beginner hologram~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 90 0 -125 0 0
+Stats2     18 10 900
+Stats3     9 4 2
+Stats4     0 0 0 18 18
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1639
+Keywords   level 9 beginner hologram~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1640
+Keywords   level 10 beginner hologram~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 110 0 -175 0 0
+Stats2     22 10 1100
+Stats3     11 4 2
+Stats4     0 0 0 22 22
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1641
+Keywords   level 1 skilled hologram~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 310 0 -675 0 0
+Stats2     62 10 3100
+Stats3     31 4 2
+Stats4     0 0 0 62 62
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1642
+Keywords   level 2 skilled hologram~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 325 0 -712 0 0
+Stats2     65 10 3250
+Stats3     32 4 2
+Stats4     0 0 0 65 65
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1643
+Keywords   level 3 skilled hologram~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 345 0 -762 0 0
+Stats2     69 10 3450
+Stats3     34 4 2
+Stats4     0 0 0 69 69
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1644
+Keywords   level 4 skilled hologram~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 360 0 -800 0 0
+Stats2     72 10 3600
+Stats3     36 4 2
+Stats4     0 0 0 72 72
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1645
+Keywords   level 5 skilled hologram~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 375 0 -837 0 0
+Stats2     75 10 3750
+Stats3     37 4 2
+Stats4     0 0 0 75 75
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1646
+Keywords   level 6 skilled hologram~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 390 0 -875 0 0
+Stats2     78 10 3900
+Stats3     39 4 2
+Stats4     0 0 0 78 78
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1647
+Keywords   level 7 skilled hologram~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 400 0 -900 0 0
+Stats2     80 10 4000
+Stats3     40 4 2
+Stats4     0 0 0 80 80
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1648
+Keywords   level 8 skilled hologram~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 410 0 -925 0 0
+Stats2     82 10 4100
+Stats3     41 4 2
+Stats4     0 0 0 82 82
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1649
+Keywords   level 9 skilled hologram~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 420 0 -950 0 0
+Stats2     84 10 4200
+Stats3     42 4 2
+Stats4     0 0 0 84 84
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1650
+Keywords   level 10 skilled hologram~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 435 0 -987 0 0
+Stats2     87 10 4350
+Stats3     43 4 2
+Stats4     0 0 0 87 87
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1651
+Keywords   level 1 advanced hologram~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 500 0 -1150 0 0
+Stats2     100 10 5000
+Stats3     50 4 2
+Stats4     0 0 0 100 100
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1652
+Keywords   level 2 advanced hologram~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 510 0 -1175 0 0
+Stats2     102 10 5100
+Stats3     51 4 2
+Stats4     0 0 0 102 102
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1653
+Keywords   level 3 advanced hologram~
+Short      a hologram~
+Long       A holgram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 525 0 -1212 0 0
+Stats2     105 10 5250
+Stats3     52 4 2
+Stats4     0 0 0 105 105
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1654
+Keywords   level 4 advanced hologram~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 550 0 -1275 0 0
+Stats2     110 10 5500
+Stats3     55 4 2
+Stats4     0 0 0 110 110
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1655
+Keywords   level 5 advanced hologram~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 565 0 -1312 0 0
+Stats2     113 10 5650
+Stats3     56 4 2
+Stats4     0 0 0 113 113
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1656
+Keywords   level 6 advanced hologram~
+Short      a hologram~
+Long       A hologram stands ready to battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 580 0 -1350 0 0
+Stats2     116 10 5800
+Stats3     58 4 2
+Stats4     0 0 0 116 116
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1657
+Keywords   level 7 advanced hologram~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 600 0 -1400 0 0
+Stats2     120 10 6000
+Stats3     60 4 2
+Stats4     0 0 0 120 120
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1658
+Keywords   level 8 advanced hologram~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 615 0 -1437 0 0
+Stats2     123 10 6150
+Stats3     61 4 2
+Stats4     0 0 0 123 123
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1659
+Keywords   level 9 advanced hologram~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 630 0 -1475 0 0
+Stats2     126 10 6300
+Stats3     63 4 2
+Stats4     0 0 0 126 126
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1660
+Keywords   level 10 advanced hologram~
+Short      a holgram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 650 0 -1525 0 0
+Stats2     130 10 6500
+Stats3     65 4 2
+Stats4     0 0 0 130 130
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1699
+Keywords   last mob~
+Short      a newly created last mob~
+Long       Some god abandoned a newly created last mob here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#OBJECT
+Vnum     1600
+Keywords silk shirt~
+Type     armor~
+Short    a silk shirt~
+Long     A beautiful silk shirt is lying on the floor.~
+WFlags   take body~
+Values   0 3 0 0 0 0
+Stats    1 100 10 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1601
+Keywords Armor of Dragon Kind~
+Type     armor~
+Short    &GA&gr&Gm&go&Gr &Bo&bf &RD&rr&Ra&rg&Ro&rn &GK&gi&Gn&gd~
+Long     A strange set of armor lies on the floor.~
+WFlags   take body~
+Values   25 25 0 0 0 0
+Stats    1 8000000 800000 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1605
+Keywords colony citizen~
+Type     trash~
+Short    a colony citizen~
+Long     A citizen of the moon strolls around minding his own business.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1699
+Keywords last object~
+Type     trash~
+Short    a last object~
+Long     A last object is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     1600
+Name     Landing Pad~
+Sector   city~
+Flags    can_land can_fly docking~
+Desc     You are standing in the Moon's docking bay. Many suits lie here ready to
+take off at their owners will. You also see a few technitions working on a
+few of them.
+~
+#EXIT
+Direction north~
+ToRoom    1603
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1601
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1601
+Name     Mobile Pathway~
+Sector   city~
+Flags    nomob~
+Desc     You are walking down the mobilesuit pathway. Many suits can be seen going
+to and from the Mobile Suit Workshop.
+~
+#EXIT
+Direction north~
+ToRoom    1600
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1627
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1602
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1602
+Name     Mobile Suit Workshop~
+Sector   city~
+Desc     You now stand in the Mobile Suit Workshop where many people go to upgrade
+and enhance their suits. You can customize weaponry and possibly upgrade
+other systems in your mobile suit.
+~
+#EXIT
+Direction north~
+ToRoom    1601
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1603
+Name     Moon Hallway~
+Sector   city~
+Flags    no_drive~
+Desc     You are wondering the hallways on the Moon. there are many citizens and
+visitors going about their own business.
+~
+#EXIT
+Direction north~
+ToRoom    1604
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1600
+#ENDEXIT
+
+Reset M 0 1605 10 1603
+#ENDROOM
+
+#ROOM
+Vnum     1604
+Name     Moon Hallway~
+Sector   city~
+Desc     You are wondering the hallways on the Moon. there are many citizens and
+visitors going about their own business.
+~
+#EXIT
+Direction north~
+ToRoom    1605
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1603
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1605
+Name     Hallway Intersection~
+Sector   city~
+Desc     You are standing at an intersection of Moon Hallway and Moonlight Street.
+Many people come and go at their free will. There are also a few military
+guards to protect the innocent bistandards.
+~
+#EXIT
+Direction north~
+ToRoom    1606
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1609
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1604
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1618
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1606
+Name     Moon Hallway~
+Sector   city~
+Desc     You are wondering the hallways on the Moon. there are many citizens and
+visitors going about their own business.
+~
+#EXIT
+Direction north~
+ToRoom    1608
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1607
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1605
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1628
+#ENDEXIT
+
+Reset M 0 1604 7 1606
+Reset M 0 1605 10 1606
+#ENDROOM
+
+#ROOM
+Vnum     1607
+Name     First Bank of the Moon~
+Sector   city~
+Flags    indoors bank~
+Desc     This is the bank, where you can deposit and save credits, and also withdraw
+from your bank account. If your in an Organization, you may donate money
+into your organizations account.
+~
+#EXIT
+Direction west~
+ToRoom    1606
+#ENDEXIT
+
+Reset M 0 1604 7 1607
+#ENDROOM
+
+#ROOM
+Vnum     1608
+Name     Dead End~
+Sector   city~
+Desc     You wandered into a dead end. You don't see many people around, except
+those lurking in the shadows. You better watch yourself. 
+~
+#EXIT
+Direction south~
+ToRoom    1606
+#ENDEXIT
+
+Reset M 0 1605 10 1608
+#ENDROOM
+
+#ROOM
+Vnum     1609
+Name     Moonlight Drive~
+Sector   city~
+Desc     You walk along Moonlight Drive. You see many houses along the road. There
+are also some for sale.
+~
+#EXIT
+Direction north~
+ToRoom    1610
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1612
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1611
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1605
+#ENDEXIT
+
+Reset M 0 1604 7 1609
+Reset M 0 1604 7 1609
+#ENDROOM
+
+#ROOM
+Vnum     1610
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction south~
+ToRoom    1609
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1611
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction north~
+ToRoom    1609
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1612
+Name     Moonlight Drive~
+Sector   city~
+Desc     You walk along Moonlight Drive. You see many houses along the road. There
+are also some for sale.
+~
+#EXIT
+Direction north~
+ToRoom    1613
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1615
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1614
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1609
+#ENDEXIT
+
+Reset M 0 1605 10 1612
+#ENDROOM
+
+#ROOM
+Vnum     1613
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction south~
+ToRoom    1612
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1614
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction north~
+ToRoom    1612
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1615
+Name     Moonlight Drive~
+Sector   city~
+Desc     You walk along Moonlight Drive. You see many houses along the road. There
+are also some for sale.
+~
+#EXIT
+Direction north~
+ToRoom    1616
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1617
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1612
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1616
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+Owner    Bones~
+#EXIT
+Direction south~
+ToRoom    1615
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1617
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction north~
+ToRoom    1615
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1618
+Name     Moonlight Drive~
+Sector   city~
+Desc     You walk along Moonlight Drive. You see many houses along the road. There
+are also some for sale.
+~
+#EXIT
+Direction north~
+ToRoom    1619
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1605
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1620
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1621
+#ENDEXIT
+
+Reset M 0 1605 10 1618
+Reset M 0 1605 10 1618
+#ENDROOM
+
+#ROOM
+Vnum     1619
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction south~
+ToRoom    1618
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1620
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction north~
+ToRoom    1618
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1621
+Name     Moonlight Drive~
+Sector   city~
+Desc     You walk along Moonlight Drive. You see many houses along the road. There
+are also some for sale.
+~
+#EXIT
+Direction north~
+ToRoom    1622
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1618
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1623
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1624
+#ENDEXIT
+
+Reset M 0 1604 7 1621
+#ENDROOM
+
+#ROOM
+Vnum     1622
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+Owner    Keera~
+#EXIT
+Direction south~
+ToRoom    1621
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1623
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+Owner    Hyphy~
+#EXIT
+Direction north~
+ToRoom    1621
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1624
+Name     Moonlight Drive~
+Sector   city~
+Desc     You walk along Moonlight Drive. You see many houses along the road. There
+are also some for sale.
+~
+#EXIT
+Direction north~
+ToRoom    1625
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1621
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1626
+#ENDEXIT
+
+Reset M 0 1604 7 1624
+#ENDROOM
+
+#ROOM
+Vnum     1625
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction south~
+ToRoom    1624
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1626
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction north~
+ToRoom    1624
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1627
+Name     External Docking Bay~
+Sector   city~
+Flags    can_land can_fly prototype~
+Desc     The external landing pad is mostly used to those suits that need repair or
+reload. Although some people use it to be able to get landing clearance
+quicker.
+Say 'Base' to go to the moon base.
+~
+#EXIT
+Direction west~
+ToRoom    1601
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Base~
+Comlist   mpechoat $n You are taken to the moon base by train.
+mpechoaround $n $n is taken to the moon base by train.
+mptransfer $n 9301
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1628
+Name     Elevator~
+Sector   city~
+Flags    nomob~
+Desc     Say 'Main' to go to the main sector.
+Say 'Train' to go to the Training Center.
+Say 'Factory' to go to the Industrial Sector.
+Say 'Shops' to go to the Commercial
+Sector.
+~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   main~
+Comlist   mpechoat $n You get off at the main sector.
+mpechoaround $n $n gets off at the main
+sector.
+mptransfer $n 1606
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   train~
+Comlist   mpechoat $n You get off at the training
+center.
+mpechoaround $n $n gets off at the training
+center.
+mptransfer $n 1629
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   factory~
+Comlist   mpechoat $n You are taken to the Industrial
+Sector.
+mpechoaround $n $n is taken to the Industrial Secotor.
+mptransfer $n 1642
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   shops~
+Comlist   mpechoat $n Welcome to the Commercial Sector.
+mpechoaround $n $n gets off at the Commercial Sector.
+mptransfer $n 1647
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1629
+Name     Training Center Hallway~
+Sector   city~
+Desc     You see many people walking to and from the training center. Many of them
+look stronge, some not so. All seem to want to get stronger.
+~
+#EXIT
+Direction north~
+ToRoom    1641
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1628
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1630
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1630
+Name     Training Center~
+Sector   city~
+Desc     You have entered the Training Center of the Moon. There are many devices to
+help those training to gain full experiance needed to survive. There are
+three levels of training intensity: Beginner, Skilled, and Advanced. Be
+careful of which one you choose. All you need to do to begin your
+training, is to say which level you want to train at. Say 'Level 10' to
+proceed to the last level.
+~
+#EXIT
+Direction north~
+ToRoom    1631
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1629
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1632
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1633
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    1634
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    1635
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    1636
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    1637
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    1638
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    1639
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   10~
+Comlist   mpecho $n is taken to Level 10.
+mptransfer $n 1640
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1631
+Name     Level 1~
+Sector   city~
+Desc     You enter a large room of which to start your training. There are some
+blood stains on the floor and walls. Some holo emiters seem to be slightly
+damaged, but fully functional.
+~
+#EXIT
+Direction south~
+ToRoom    1630
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   beginner~
+Comlist   mpecho A hologram appears.
+mpmload 1631 1
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   skilled~
+Comlist   mpecho A skilled hologram appears.
+mpmload 1641 1
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   advanced~
+Comlist   mpecho An advanced hologram appears.
+mpmload 1651 1
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1632
+Name     Level 2~
+Sector   city~
+Desc     You enter a large room of which to start your training. There are some
+blood stains on the floor and walls. Some holo emiters seem to be slightly
+damaged, but fully functional.
+~
+#EXIT
+Direction north~
+ToRoom    1630
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   beginner~
+Comlist   mpecho A hologram appears.
+mpmload 1632 1
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   skilled~
+Comlist   mpecho A skilled hologram appears.
+mpmload 1642 1
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   advanced~
+Comlist   mpecho An advanced hologram appears.
+mpmload 1652 1
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1633
+Name     Level 3~
+Sector   city~
+Desc     You enter a large room of which to start your training. There are some
+blood stains on the floor and walls. Some holo emiters seem to be slightly
+damaged, but fully functional.
+~
+#EXIT
+Direction east~
+ToRoom    1630
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   beginner~
+Comlist   mpecho A hologram appears.
+mpmload 1633 1
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   skilled~
+Comlist   mpecho A skilled hologram appears.
+mpmload 1643 1
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   advanced~
+Comlist   mpecho An advanced hologram appears.
+mpmload 1653 1
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1634
+Name     Level 4~
+Sector   city~
+Desc     You enter a large room of which to start your training. There are some
+blood stains on the floor and walls. Some holo emiters seem to be slightly
+damaged, but fully functional.
+~
+#EXIT
+Direction down~
+ToRoom    1630
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   beginner~
+Comlist   mpecho A hologram appears.
+mpmload 1634 1
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   skilled~
+Comlist   mpecho A skilled hologram appears.
+mpmload 1644 1
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   advanced~
+Comlist   mpecho An advanced hologram appears.
+mpmload 1654 1
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1635
+Name     Level 5~
+Sector   city~
+Desc     You enter a large room of which to start your training. There are some
+blood stains on the floor and walls. Some holo emiters seem to be slightly
+damaged, but fully functional.
+~
+#EXIT
+Direction up~
+ToRoom    1630
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   beginner~
+Comlist   mpecho A hologram appears.
+mpmload 1635 1
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   skilled~
+Comlist   mpecho A skilled hologram appears.
+mpmload 1645 1
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   advanced~
+Comlist   mpecho An advanced hologram appears.
+mpmload 1655 1
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1636
+Name     Level 6~
+Sector   city~
+Desc     You enter a large room of which to start your training. There are some
+blood stains on the floor and walls. Some holo emiters seem to be slightly
+damaged, but fully functional.
+~
+#EXIT
+Direction southwest~
+ToRoom    1630
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   beginner~
+Comlist   mpecho A hologram appears.
+mpmload 1636 1
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   skilled~
+Comlist   mpecho A skilled hologram appears.
+mpmload 1646 1
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   advanced~
+Comlist   mpecho An advanced hologram appears.
+mpmload 1656 1
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1637
+Name     Level 7~
+Sector   city~
+Desc     You enter a large room of which to start your training. There are some
+blood stains on the floor and walls. Some holo emiters seem to be slightly
+damaged, but fully functional.
+~
+#EXIT
+Direction southeast~
+ToRoom    1630
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   beginner~
+Comlist   mpecho A hologram appears.
+mpmload 1637 1
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   skilled~
+Comlist   mpecho A skilled hologram appears.
+mpmload 1647 1
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   advanced~
+Comlist   mpecho An advanced hologram appears.
+mpmload 1657 1
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1638
+Name     Level 8~
+Sector   city~
+Desc     You enter a large room of which to start your training. There are some
+blood stains on the floor and walls. Some holo emiters seem to be slightly
+damaged, but fully functional.
+~
+#EXIT
+Direction northwest~
+ToRoom    1630
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   beginner~
+Comlist   mpecho A hologram appears.
+mpmload 1638 1
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   skilled~
+Comlist   mpecho A skilled hologram appears.
+mpmload 1648 1
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   advanced~
+Comlist   mpecho An advanced hologram appears.
+mpmload 1658 1
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1639
+Name     Level 9~
+Sector   city~
+Desc     You enter a large room of which to start your training. There are some
+blood stains on the floor and walls. Some holo emiters seem to be slightly
+damaged, but fully functional.
+~
+#EXIT
+Direction northeast~
+ToRoom    1630
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   beginner~
+Comlist   mpecho A hologram appears.
+mpmload 1639 1
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   skilled~
+Comlist   mpecho A skilled hologram appears.
+mpmload 1649 1
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   advanced~
+Comlist   mpecho An advanced hologram appears.
+mpmload 1659 1
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1640
+Name     Level 10~
+Sector   city~
+Desc     You enter a large room of which to start your training. There are some
+blood stains on the floor and walls. Some holo emiters seem to be slightly
+damaged, but fully functional.
+~
+#EXIT
+Direction down~
+ToRoom    1630
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   beginner~
+Comlist   mpecho A hologram appears.
+mpmload 1640 1
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   skilled~
+Comlist   mpecho A skilled hologram appears.
+mpmload 1650 1
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   advanced~
+Comlist   mpecho An advanced hologram appears.
+mpmload 1660 1
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1641
+Name     Medical Bay~
+Sector   city~
+Flags    heal~
+Desc     Upon entering, you see many examining beds. There are a few people here
+waiting to be treated for their injuries from the training center. 
+~
+#EXIT
+Direction south~
+ToRoom    1629
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1642
+Name     Industrial Walkway~
+Sector   city~
+Desc     All around you are large industrious buildings. Many products are being
+transported out of the colony. There are also raw materials yet to be
+manufactured.
+~
+#EXIT
+Direction north~
+ToRoom    1643
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1628
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1643
+Name     Industrial Walkway~
+Sector   city~
+Desc     All around you are large industrious buildings. Many products are being
+transported out of the colony. There are also raw materials yet to be
+manufactured.
+~
+#EXIT
+Direction north~
+ToRoom    1644
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1645
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1642
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1646
+#ENDEXIT
+
+Reset M 0 1605 10 1643
+#ENDROOM
+
+#ROOM
+Vnum     1644
+Name     Industrial Walkway~
+Sector   city~
+Desc     All around you are large industrious buildings. Many products are being
+transported out of the colony. There are also raw materials yet to be
+manufactured.
+~
+#EXIT
+Direction south~
+ToRoom    1643
+#ENDEXIT
+
+Reset M 0 1605 10 1644
+#ENDROOM
+
+#ROOM
+Vnum     1645
+Name     Raw Materials~
+Sector   city~
+Flags    indoors safe~
+Desc     You enter a large room that appears to be a shop. All along the walls,
+shelves, and counters, are raw materials to manufacture into finished
+products.
+~
+#EXIT
+Direction west~
+ToRoom    1643
+#ENDEXIT
+
+Reset M 0 1600 1 1645
+  Reset G 1 2016 1
+  Reset G 1 2026 1
+  Reset G 1 2025 1
+  Reset G 1 2024 1
+  Reset G 1 2023 1
+  Reset G 1 2022 1
+  Reset G 1 2021 1
+  Reset G 1 2020 1
+  Reset G 1 2013 1
+  Reset G 1 2018 1
+  Reset G 1 2017 1
+  Reset G 1 2015 1
+  Reset G 1 2014 1
+#ENDROOM
+
+#ROOM
+Vnum     1646
+Name     Factory~
+Sector   city~
+Flags    nomob indoors factory~
+Desc     You are in the factory. You may make objects here with no interuptions.
+~
+#EXIT
+Direction east~
+ToRoom    1643
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1647
+Name     Commercial Roadway~
+Sector   city~
+Flags    nomob~
+Desc     You see many shops and businesses along the road. Many people wander
+around, looking and buying merchandise.
+~
+#EXIT
+Direction east~
+ToRoom    1648
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1628
+#ENDEXIT
+
+Reset M 0 1605 10 1647
+#ENDROOM
+
+#ROOM
+Vnum     1648
+Name     Commercial Roadway~
+Sector   city~
+Desc     You see many shops and businesses along the road. Many people wander
+around, looking and buying merchandise.
+~
+#EXIT
+Direction north~
+ToRoom    1649
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1651
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1650
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1647
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1649
+Name     Armor Shop~
+Sector   city~
+Flags    indoors~
+Desc     Many pieces of cloth, leather, and armor are displayed all over the small
+shop. There is a wide veriaty of the types of armor and clothing that can
+suit all needs. 
+~
+#EXIT
+Direction south~
+ToRoom    1648
+#ENDEXIT
+
+Reset M 0 1601 1 1649
+  Reset G 1 1600 1
+  Reset G 1 506 1
+  Reset G 1 505 1
+  Reset G 1 504 1
+  Reset G 1 503 1
+#ENDROOM
+
+#ROOM
+Vnum     1650
+Name     Weapon Shop~
+Sector   city~
+Flags    indoors~
+Desc     As you enter, you see a large variety of weapons on displays. Many of them
+say not for sale. Only a few common and a couple one of a kind weapons are
+for sale.
+~
+#EXIT
+Direction north~
+ToRoom    1648
+#ENDEXIT
+
+Reset M 0 1602 1 1650
+  Reset G 1 2001 1
+  Reset G 1 2002 1
+  Reset G 1 59 1
+  Reset G 1 2000 1
+#ENDROOM
+
+#ROOM
+Vnum     1651
+Name     Misc. Shop~
+Sector   city~
+Desc     All sorts of items are displayed around the room. You also see many
+expensive decorations on the walls, the floor, and even the ceiling.
+Almost makes you wanna think.
+~
+#EXIT
+Direction west~
+ToRoom    1648
+#ENDEXIT
+
+Reset M 0 1603 1 1651
+  Reset G 1 10314 1
+  Reset G 1 2006 1
+  Reset G 1 10313 1
+  Reset G 1 10424 1
+  Reset G 1 10317 1
+  Reset G 1 2007 1
+  Reset G 1 6004 1
+Reset M 0 1605 10 1651
+#ENDROOM
+
+#ROOM
+Vnum     1653
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     1654
+Name     Oz Base Elevator~
+Sector   city~
+Flags    nomob~
+Desc     You've entered the Oz's Base Elevator. The elevator is roomy and bare of
+all except a voice recognition module. To go to the Base say Oz. To return
+to the moon say Moon
+ 
+~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   oz~
+Comlist   if is pc ($n)
+mptransfer $n 1020
+mpecho You are lifted up to the Oz Base.
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   moon~
+Comlist   if is pc($n)
+mptransfer $n 1608
+mpecho You are lifted back to the Moon's Surface.
+endif
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1658
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     1699
+Name     last room~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ENDAREA

@@ -1,0 +1,11 @@
+#PLANET
+Name         Russia~
+Filename     russia.plt~
+BaseValue    0
+Flags        0
+PopSupport   50.000000
+GovernedBy   Phoenix Rising~
+Area         russia.are~
+End
+
+#END

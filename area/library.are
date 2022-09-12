@@ -1,0 +1,326 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         Universal Library~
+Author       Zantas~
+Ranges       1 1007 1 1007
+Economy      -2 384523833
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       2200
+Keywords   librarian clerk~
+Short      The Librarian~
+Long       The Librarian checks a computer terminal.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nokill nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say I'm sorry $n, we have no books in stock at the moment.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       2299
+Keywords   last~
+Short      a newly created last~
+Long       Some god abandoned a newly created last here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#OBJECT
+Vnum     2200
+Keywords Crystal Shard Awareness~
+Type     armor~
+Short    &zThe &CC&Cr&cy&zs&ct&Ca&Cl &YS&Oh&Ya&Or&Yd &zof &BA&Cw&ba&cr&We&cn&be&Cs&Bs~
+Long     A magical shard of crystal is hovering low to the ground.~
+Flags    glow~
+WFlags   take neck~
+Values   40 40 0 0 0 0
+Stats    1 0 0 0 0
+Affect       -1 -1 300 13 0
+Affect       -1 -1 10 19 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 700 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2201
+Keywords Bookshelf~
+Type     container~
+Short    a bookshelf~
+Long     A tall bookshelf stands here.~
+Values   15 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2202
+Keywords Front Desk~
+Type     furniture~
+Short    the front desk~
+Long     The front desk sits here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2203
+Keywords table~
+Type     furniture~
+Short    a table~
+Long     A table is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2299
+Keywords last~
+Type     trash~
+Short    a last~
+Long     A last is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     2200
+Name     Universal Library Entrance~
+Sector   city~
+Flags    indoors~
+Desc     You are standing at the entrance of the Universal Library where all
+knowledge of the realms have been collected and stored. Large columns made
+of black obsidian line the walkway that leads to the dark red mohagany
+doors. 
+~
+#EXIT
+Direction north~
+ToRoom    2201
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    503
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2201
+Name     Inside the Universal Library~
+Sector   city~
+Flags    indoors~
+Desc     You now stand in what is considered the foyer of the library. It is a large
+room, lit by large crystal chandeliers. Their peaceful glow puts your mind
+at ease, as your body slowly relaxes. On the walls are pictures of the
+avatars of the realms.  As well as any hero's that have risen in the past.
+~
+#EXIT
+Direction north~
+ToRoom    2202
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2200
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2202
+Name     Front Desk~
+Sector   city~
+Flags    nomob indoors~
+Desc     You stand at the front desk. Behind the counter is the clerk who is
+checking the inventory displayed on a computer terminal. You may ask the
+clerk where any of the books are as long as you know what the book title
+is.
+~
+#EXIT
+Direction north~
+ToRoom    2207
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2208
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2201
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2203
+#ENDEXIT
+
+Reset M 0 2200 1 2202
+Reset O 0 2202 1 2202
+#ENDROOM
+
+#ROOM
+Vnum     2203
+Name     Reading Room~
+Sector   city~
+Flags    indoors~
+Desc     This is one of the reading rooms. Here, you can peacefully read without any
+interruptions from other people. 
+~
+#EXIT
+Direction north~
+ToRoom    2204
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2202
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2206
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2205
+#ENDEXIT
+
+Reset O 0 2203 1 2203
+#ENDROOM
+
+#ROOM
+Vnum     2204
+Name     History Section~
+Sector   city~
+Flags    indoors~
+Desc     You are standing in the history section of the library. Here, you will find
+historical information about all cities and colonies.
+~
+#EXIT
+Direction south~
+ToRoom    2203
+#ENDEXIT
+
+Reset O 0 2201 1 2204
+#ENDROOM
+
+#ROOM
+Vnum     2205
+Name     Fiction section~
+Sector   city~
+Flags    indoors~
+Desc     You are standing in the fiction section. All around you are books of tales
+and stories for your enjoyment. 
+~
+#EXIT
+Direction east~
+ToRoom    2203
+#ENDEXIT
+
+Reset O 0 2201 1 2205
+#ENDROOM
+
+#ROOM
+Vnum     2206
+Name     Science Fiction/Fantasy~
+Sector   city~
+Flags    indoors~
+Desc     Here you are in the science fiction/fantasy section. There are many stories
+about technology as well as fairy tails and mythology.
+~
+#EXIT
+Direction north~
+ToRoom    2203
+#ENDEXIT
+
+Reset O 0 2201 1 2206
+#ENDROOM
+
+#ROOM
+Vnum     2207
+Name     A Small Hallway~
+Sector   city~
+Flags    indoors~
+Desc     You are walking down a small hallway that leads towards the back of the
+library.
+~
+#EXIT
+Direction north~
+ToRoom    2209
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2202
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2208
+Name     Under Construction~
+Sector   city~
+Flags    indoors~
+Desc     This part of the library is currently under renovations.
+~
+#EXIT
+Direction west~
+ToRoom    2202
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2209
+Name     Back Room~
+Sector   city~
+Flags    dark indoors~
+Desc     You stand in the back room of the library. There isn't much here, and it's
+poorly lit.
+~
+#EXIT
+Direction south~
+ToRoom    2207
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2299
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ENDAREA

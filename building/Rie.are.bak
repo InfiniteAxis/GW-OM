@@ -1,0 +1,928 @@
+#AREA   {PROTO} Rie's area in progress~
+
+
+
+#AUTHOR Rie~
+
+#OWNED_BY None~
+
+#RANGES
+0 0 0 0
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 0
+
+#MOBILES
+#1000
+Guerrilla fighter~
+Guerrilla fighter ~
+Guerrilla fighter is hiding in the shadows
+~
+~
+1073741825 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+10 10 10 15 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#1001
+Lieutenant Arcon~
+a newly created Lieutenant Arcon~
+Some god abandoned a newly created Lieutenant Arcon here.
+~
+~
+1073741825 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#1002
+Major Kira~
+a newly created Major Kira~
+Some god abandoned a newly created Major Kira here.
+~
+~
+1073741825 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#1003
+General Hammon~
+a newly created General Hammon~
+Some god abandoned a newly created General Hammon here.
+~
+~
+1073741825 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#1004
+Major Bison~
+a newly created Major Bison~
+Some god abandoned a newly created Major Bison here.
+~
+~
+1073741825 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#1005
+Laura~
+a newly created Laura~
+Some god abandoned a newly created Laura here.
+~
+~
+1073741825 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#1006
+Nico~
+a newly created Nico~
+Some god abandoned a newly created Nico here.
+~
+~
+1073741825 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#1007
+Gado~
+a newly created Gado~
+Some god abandoned a newly created Gado here.
+~
+~
+1073742337 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+19 12 20 10 18 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#1000
+Combat helmet~
+a Combat helmet~
+A Combat helmet is here.~
+~
+9 1073741824 16
+0 0 0 0
+1 0 0
+#1001
+Combat shirt~
+a Combat shirt~
+A Combat shirt is here.~
+~
+9 1073741824 8
+0 0 0 0
+1 0 0
+#1002
+Combat boots~
+a Combat boots~
+A Combat boots is here.~
+~
+9 1073741824 64
+0 0 0 0
+1 0 0
+#1003
+Combat knife~
+a Combat knife~
+A Combat knife is here.~
+~
+13 1073741824 0
+0 0 0 0
+1 0 0
+#1004
+Combat pants~
+a Combat pants~
+A Combat pants is here.~
+~
+9 1073741824 32
+0 0 0 0
+1 0 0
+#1005
+Flight jacket~
+a Flight jacket~
+A Flight jacket is here.~
+~
+13 1073741824 1024
+0 0 0 0
+1 0 0
+#1006
+K-Ration~
+a K-Ration~
+A K-Ration is here.~
+~
+13 1073741824 0
+0 0 0 0
+1 0 0
+#1007
+Brigadine chestplate~
+a Brigadine chestplate~
+A Brigadine chestplate is here.~
+~
+13 1073741824 0
+0 0 0 0
+1 0 0
+#1008
+Naquida blaster~
+a Naquida blaster~
+A Naquida blaster is here.~
+~
+13 1073741824 0
+0 0 0 0
+1 0 0
+#1009
+Staff blaster~
+a Staff blaster~
+A Staff blaster is here.~
+~
+13 1073741824 0
+0 0 0 0
+1 0 0
+#1010
+Shield belt~
+a Shield belt~
+A Energy shield is here.~
+~
+13 1073741824 512
+0 0 0 0
+1 0 0
+#0
+
+
+#ROOMS
+#1000
+Destroyed gates~
+A guard house stands next to two large chain-link gates. The gates hang
+loosely almost decayed to nothing. At first glance this place appears
+completely empty of any inhabitants.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 1001
+S
+#1001
+Ruined Base~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 1005
+D1
+~
+~
+0 -1 1002
+D2
+~
+~
+0 -1 1000
+D3
+~
+~
+0 -1 1003
+S
+#1002
+Path to the PX~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 1007
+D3
+~
+~
+0 -1 1001
+D6
+~
+~
+0 -1 1011
+S
+#1003
+Before the barracks~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 1008
+D1
+~
+~
+0 -1 1001
+S
+#1005
+Heading toward a ruined complex~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 1006
+D2
+~
+~
+0 -1 1001
+S
+#1006
+Ruined complex~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 1012
+D1
+~
+~
+0 -1 1010
+D2
+~
+~
+0 -1 1005
+D3
+~
+~
+0 -1 1009
+S
+#1007
+Inside the PX~
+Despite the outside appearance, the room looks well maintained. A soft
+voice might be heard singing from behind the counter. Upon a closer
+inspection a girl was making sure that the selection was keep stocked.
+~
+0 1073741832 0 1 0
+D2
+~
+~
+0 -1 1002
+S
+#1008
+Barracks~
+Long rows of bunk beds line the walls of the room. One one end hangs a
+First Aid kit. On the other end of the room a beat up terminal flickers.
+Several windows are shattered. The rafters creak loudly as the wind blows.
+~
+0 1082131464 0 1 0
+D2
+~
+~
+0 -1 1003
+S
+#1009
+Dark hallway~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 1006
+D3
+~
+~
+0 -1 1014
+S
+#1010
+Dark hallway~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 1013
+D3
+~
+~
+0 -1 1006
+S
+#1011
+ATM~
+A dusty machine loosely hangs on the wall. A screen flickers on the machine.
+A sign over the machine reads, "Money Machine."
+~
+0 1073742088 0 1 0
+D9
+~
+~
+0 -1 1002
+S
+#1012
+Before the lift~
+~
+0 1073741828 0 1 0
+D0
+~
+~
+0 -1 1015
+D2
+~
+~
+0 -1 1006
+S
+#1013
+Infirmary~
+~
+0 1073741828 2 1 0
+D3
+~
+~
+0 -1 1010
+S
+#1014
+Briefing Room~
+~
+0 1073742848 0 1 0
+D1
+~
+~
+0 -1 1009
+S
+#1015
+Lift~
+~
+0 1073741824 0 1 0
+D2
+~
+~
+0 -1 1012
+> speech_prog 100 'Down'~
+mpechoat $n The lift jerks before decending. The lift grinds to a stop.
+mptransfer $n 1016
+~
+|
+S
+#1016
+Lift~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 1017
+> speech_prog 100 'Up'~
+mpechoat $n The lift rumbles as it goes up. The lift jerks to a halt.
+mptransfer $n 1015
+~
+|
+S
+#1017
+Basement level 1~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 1018
+D2
+~
+~
+0 -1 1016
+S
+#1018
+Underground maze~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 1019
+D1
+~
+~
+0 -1 1022
+D2
+~
+~
+0 -1 1017
+D3
+~
+~
+0 -1 1037
+S
+#1019
+Access ladder~
+~
+0 1073741824 0 1 0
+D2
+~
+~
+0 -1 1018
+D4
+~
+~
+0 -1 1020
+S
+#1020
+Pilots' Ready room~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 1021
+D5
+~
+~
+0 -1 1019
+S
+#1021
+Aries Hanger Bay~
+~
+0 1073741872 4 1 0
+D2
+~
+~
+0 -1 1020
+S
+#1022
+Underground maze~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 1023
+D1
+~
+~
+0 -1 1025
+D3
+~
+~
+0 -1 1018
+S
+#1023
+Underground maze~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 1026
+D1
+~
+~
+0 -1 1024
+D2
+~
+~
+0 -1 1022
+S
+#1024
+Underground maze~
+~
+0 1073741824 0 1 0
+D2
+~
+~
+0 -1 1025
+D3
+~
+~
+0 -1 1023
+S
+#1025
+Underground maze~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 1024
+D3
+~
+~
+0 -1 1022
+S
+#1026
+Underground maze~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 1027
+D2
+~
+~
+0 -1 1023
+S
+#1027
+Underground maze~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 1028
+D2
+~
+~
+0 -1 1026
+S
+#1028
+Underground maze~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 1029
+D3
+~
+~
+0 -1 1027
+S
+#1029
+Underground maze~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 1030
+D1
+~
+~
+0 -1 1032
+D2
+~
+~
+0 -1 1031
+D3
+~
+~
+0 -1 1028
+S
+#1030
+Underground maze~
+~
+0 1073741824 0 1 0
+D2
+~
+~
+0 -1 1029
+D8
+~
+~
+0 -1 1032
+S
+#1031
+Underground maze~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 1029
+D6
+~
+~
+0 -1 1032
+S
+#1032
+Underground maze~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 1033
+D3
+~
+~
+0 -1 1029
+D7
+~
+~
+0 -1 1030
+D9
+~
+~
+0 -1 1031
+S
+#1033
+Underground maze~
+~
+0 1073741824 0 1 0
+D3
+~
+~
+0 -1 1032
+D7
+~
+~
+0 -1 1034
+D9
+~
+~
+0 -1 1035
+S
+#1034
+Underground maze~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 1036
+D8
+~
+~
+0 -1 1033
+S
+#1035
+Underground maze~
+~
+0 1073741824 0 1 0
+D6
+~
+~
+0 -1 1033
+S
+#1036
+Underground maze~
+~
+0 1073741824 0 1 0
+D2
+~
+~
+0 -1 1034
+S
+#1037
+Underground Maze~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 1038
+D1
+~
+~
+0 -1 1018
+D3
+~
+~
+0 -1 1039
+S
+#1038
+Underground maze~
+~
+0 1073741824 0 1 0
+D2
+~
+~
+0 -1 1037
+D3
+~
+~
+0 -1 1040
+S
+#1039
+Underground maze~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 1040
+D1
+~
+~
+0 -1 1037
+S
+#1040
+Underground maze~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 1041
+D1
+~
+~
+0 -1 1038
+D2
+~
+~
+0 -1 1039
+S
+#1041
+Dead-end~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+2048 -1 1042
+D2
+~
+~
+0 -1 1040
+S
+#1042
+Forgotten path~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 1043
+D3
+~
+~
+0 -1 1041
+S
+#1043
+Forgotten path~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 1045
+D1
+~
+~
+0 -1 1044
+D2
+~
+~
+0 -1 1047
+D3
+~
+~
+0 -1 1042
+S
+#1044
+Underground vault~
+~
+0 1073741828 0 1 0
+D3
+~
+~
+0 -1 1043
+S
+#1045
+Forgotten path~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 1046
+D2
+~
+~
+0 -1 1043
+S
+#1046
+End of the path~
+~
+0 1073741824 0 1 0
+D3
+~
+~
+0 -1 1045
+S
+#1047
+Forgotten path~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 1043
+D1
+~
+~
+0 -1 1048
+S
+#1048
+Forgotten path~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 1049
+D3
+~
+~
+0 -1 1047
+S
+#1049
+Laura's shop~
+~
+0 1073741824 0 1 0
+D2
+~
+~
+0 -1 1048
+S
+#0
+
+
+#RESETS
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

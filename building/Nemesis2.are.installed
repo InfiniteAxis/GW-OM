@@ -1,0 +1,2570 @@
+#AREA   {PROTO} Nemesis's area in progress~
+
+
+
+#AUTHOR Nemesis~
+
+#RANGES
+0 0 0 0
+$
+
+#RESETMSG Wind rustles throughout the area..~
+
+#FLAGS
+0 3
+
+#ECONOMY 0 0
+
+#MOBILES
+#9200
+Commoner~
+A Commoner~
+A lowly commoner wanders about the streets here.
+~
+~
+1 0 0 Z
+1 0 0 0d0+0 0d0+0
+5 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9216
+Lui Bei~
+&GL&gu&Gi &gB&Ge&gi~
+The lord of the Shu Dynasty stands here.
+~
+~
+67 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+750 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> all_greet_prog 100~
+mpforce $n give head Lui
+if ovnuminv(9200)
+tell $n Good, keep up the
+work!
+mpgain $n 3 100
+mpjunk head
+else
+if
+ovnuminv(9201)
+tell $n Great! We could have a place for you
+here!
+mpgain $n 3 200
+mpjunk head
+else
+if ovnuminv(9202)
+tell $n You truely are a hero of the Three
+Kingdoms!
+mpgain $n 3 500
+mpjunk head
+else
+if ovnuminv(9203)
+tell $n You defeated Lu Bu?!?! WOW!
+mpgain $n 3 1000
+mpjunk head
+else
+say Hello, $n.
+say Bring me the heads of those Wei fools, and we'll
+talk!
+mpjunk sash
+endif
+endif
+endif
+endif
+~
+|
+#9217
+A Shu Guard~
+A Shu Guard~
+A Guard of the Shu Kingdom stands here. 
+~
+~
+134217731 67108864 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+#9218
+A Farmer~
+A Farmer~
+A man stands here with a pitchfork.
+~
+~
+1 0 0 Z
+1 0 0 0d0+0 0d0+0
+5 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9225
+A Wu Guard~
+A Wu Guard~
+A Guard of the Wu Kingdom stands here.
+~
+~
+134217731 67108864 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+#9226
+Sun Jian~
+&RS&ru&Rn &rJ&Ri&ra&Rn~
+&RS&ru&Rn &rJ&Ri&ra&Rn&w stands here, awaiting your request.
+~
+~
+134217731 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+0 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+#9227
+A Wu Guard~
+&GL&gu&Gi &gB&Ge&gi~
+The lord of the Shu Dynasty stands here.
+~
+~
+67 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+750 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9228
+Weapon Shop Keeper~
+Weapon Shop Keeper~
+The weapon shop owner stands here, ready to do business.
+~
+~
+134217731 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+5 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog stock~
+say Yesh'ir!
+mpat 9228 mpoload 9226
+mpat 9228 mpoload 9227
+mpat 9228 mpoload 9228
+~
+|
+#9229
+Armor Shop keeper~
+Armor Shop Keeper~
+The armor shop keeper stands here, ready to do business.
+~
+~
+134217731 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+5 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog stock~
+mpat 9229 mpoload 9220
+mpat 9229 mpoload 9221
+mpat 9229 mpoload 9222
+mpat 9229 mpoload 9223
+mpat 9229 mpoload 9224
+mpat 9229 mpoload 9225
+say Yesh'ir!
+~
+|
+#9236
+Ancient Monk Shopkeeper~
+&YA&On &YA&On&Yc&Oi&Ye&On&Yt &OM&Yo&On&Yk~
+An old monk levitates here, ready to sell you things.
+~
+~
+134217731 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+5 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog stock~
+~
+> speech_prog stock~
+mpat 9236 mpoload 9210
+mpat 9236 mpoload 9211
+mpat 9236 mpoload 9212
+mpat 9236 mpoload 9213
+mpat 9236 mpoload 9214
+mpat 9236 mpoload 9215
+mpat 9236 mpoload 9216
+mpat 9236 mpoload 9217
+say Very well, it is done.
+~
+|
+#9250
+Zombie~
+A Zombie~
+A tall man with a decaying figure munches on a corpse here.
+~
+~
+35 0 0 Z
+500 0 -1150 300d150+150 60d30+30
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 3
+0 0 0 0 0 0 17 1
+0 0 0 0 0 0 0 0
+#9252
+Tyrant T-102~
+&GT&gy&Gr&ga&Gn&gt &GT&g-&G1&g0&G2~
+A large creature with a bulging heart stands here.
+~
+~
+134217739 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+0 0
+8 8 0
+25 25 25 25 25 25 25
+0 0 0 0 0
+0 0 0 0 1 1 5
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+roar
+emote &Cr&ca&Ci&cs&Ce&cs &Yh&Oi&Ys &Wc&wl&Wa&ww&Ws&w.
+mea $n &GT&gy&Gr&ga&Gn&gt&z's stab &Yh&Oi&Yt&Os&z you! &b-< &C[&c11220&C] &b>-
+mpdamage $n 11220
+~
+|
+#9253
+Cerberous~
+&RC&re&Rr&rb&Re&rr&Ro&ru&Rs~
+A doberman pincher wanders around here, decayed and smelly.
+~
+~
+1 0 0 Z
+600 0 -1400 120d10+6000 60d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+120 120 0 0 2048 0 1 0
+0 0 0 0 0 0 0 0
+#9257
+A Wei Smuggling Guard~
+A Wei Smuggling Guard~
+A strong soldier stands here, making sure people don't bring weapons into Cao Cao's office.
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9260
+Dian Wei~
+&CD&ci&Ca&cn &CW&ce&Ci~
+The great &CD&ci&Ca&cn &CW&ce&Ci&P stands here.
+~
+~
+134217739 0 0 Z
+1000 0 -2000 200d10+10000 100d4+2
+0 0
+8 8 0
+25 25 25 25 25 25 25
+0 0 0 0 0
+0 0 0 0 1 1 5
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+say I give my life..
+say In defense of..
+say &RCAO CAO!!!
+mpecho &CD&ci&Ca&cn &CW&ce&Ci&z launches his giant Axe! 
+Stuff
+mea $n &CD&ci&Ca&cn &CW&ce&Ci&z's axe &Yh&Oi&Yt&Os&z you! &b-&B<
+&C[&c10000&c] &B>&b-
+Blah
+mpdamage $n 10000
+~
+|
+#9261
+Cao Cao~
+&CC&ca&Co &CC&ca&Co~
+The great emporer &CC&ca&Co &CC&ca&Co&P is here, ready to train people.
+~
+~
+515 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+18 18 18 18 18 18 18
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Ah! Hello, $n!
+say You look strong, are you ready to train? 
+Bleh
+~
+|
+#9271
+Keeper of the Catacombs~
+&GK&geeper &YO&Of &CT&che &zC&Watacombs~
+A pair of dark red eyes peer at you from the shadows..
+~
+This tall monk stands ready to defend the sacred grounds which he calls
+home. He may look a bit feeble, but it is not wise to test his abilities.
+~
+35 0 0 Z
+500 0 -1150 100d10+5000 50d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+100 100 0 0 0 0 16 2
+0 0 0 0 0 0 0 0
+#9272
+Catacomb Warrior~
+&zC&Wa&zt&Wa&zc&Wo&zm&Wb &zW&Wa&zr&Wr&zi&Wo&zr~
+A regal looking warrior stands here.
+~
+~
+36897 0 0 Z
+700 0 -700 140d10+7000 70d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+140 140 0 0 0 0 32 0
+0 0 0 0 0 0 0 0
+#9274
+An Ancient Monk~
+&YA&On &YA&On&Yc&Oi&Ye&On&Yt &OM&Yo&On&Yk~
+An old monk levitates here, ready to sell you things.
+~
+~
+134217731 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+5 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog stock 100~
+mpoload 9272
+mpoload 9273
+nod
+~
+|
+#9275
+An Ancient Monk~
+&YA&On &YA&On&Yc&Oi&Ye&On&Yt &OM&Yo&On&Yk~
+An old monk sits here chanting encantations..
+~
+~
+134217731 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+5 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+#9281
+Hunter~
+&GH&gu&Gn&gt&Ge&gr~
+A short &Ggreen&P creature with large claws roams around here.
+~
+~
+33 0 -1000 Z
+700 0 -1650 140d10+7000 70d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+140 140 0 0 0 0 2 0
+0 0 0 0 0 0 0 0
+#9284
+Umbrella Employee~
+&RU&rm&rb&Rr&re&Rl&rl&Ra &YI&On&Yc &zWorker~
+&zA short scared man cowers in fear here.
+~
+~
+134217731 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+5 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Don't hurt me!!!!!!!
+emote sees you're normal..
+say Oh, I'm sorry, you're a survivor.
+say Well, while you're here, I can sell you some supplies.
+say They should help you to get outta here!
+nod
+say And don't worry about me! I'm good at hiding.
+~
+|
+#9296
+A Military Chef~
+A Military Chef~
+A Chef of the military base stands here.
+~
+~
+134217731 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+0 0
+8 8 0
+18 10 10 18 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9298
+Military Weapons Dealer~
+Military Weapons Dealer~
+A man stands here cleaning out rifle barrels.
+~
+~
+134217731 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+0 0
+8 8 0
+18 10 10 18 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9299
+Monkey Sniper~
+&CM&co&Cn&ck&Ce&cy &GS&gn&Gi&gp&Ge&gr~
+A short monkey with a PSG1 sniper rifle is sitting here.
+~
+This is no ordinary monkey, as it happens to be wielding the PSG1 Sniper
+rifle.  He's just one of Nemesis' millions of Monkey snipers, watch out,
+you bastards! The Monkey Snipers are comin' to town!
+~
+134217731 67108904 0 Z
+1000 0 -4000 200d10+10000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 6
+85 65 0 0 0 0 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#9200
+Wei Soldier's Head~
+&YWei Soldier's Head~
+The head of a Wei Soldier lies here, decaying.~
+~
+13 0 0
+0 0 0 0
+1 0 0
+#9201
+Wei Guard's Head~
+&YWei Guard's Head~
+The head of a Wei Soldier lies here, decaying.~
+~
+13 0 0
+0 0 0 0
+1 0 0
+#9202
+Dian Wei's Head~
+&CD&ci&Ca&cn &CW&ce&Ci&Y's Head~
+Dian Wei's head lies on the ground here.~
+~
+13 0 8193
+50 50 50 2
+2 6000 600
+#9210
+Akujiki~
+&RA&rk&Ru&rj&Ri&rk&Ri~
+A long sword floats in the air here, ominously..~
+~
+5 8211 8193
+1100 10 150 2
+1 28000 2200
+> wear_prog 100~
+mpechoaround $n Something murmurs
+'feed
+mpechoaround $n me..'
+~
+|
+#9211
+Bokken Sword~
+&YA &OB&Yo&Ok&Yk&Oe&Yn &OS&Yw&Oo&Yr&Od~
+A long wooden sword lies here.~
+~
+5 8208 8193
+1100 10 150 2
+1 44000 1500
+A
+36 2000
+A
+32 40
+A
+36 40
+#9212
+Long Flowing Scarf~
+&RL&ro&Rn&rg &RF&rl&Ro&rw&Ri&rn&Rg &WN&zinjits&Wu &RS&rc&Ra&rr&Rf~
+A 12 foot long scarf lies on the ground here, gleaming beautifully.~
+~
+9 0 5
+19 19 0 0
+1 10000 1000
+A
+13 1000
+A
+14 1000
+A
+40 15
+#9213
+Ninjitsu Wristbands~
+&WN&zinjits&Wu W&zristban&Wd~
+A stealth black wristband lies here.~
+~
+9 8192 4097
+75 75 0 0
+1 10000 1000
+A
+17 20
+A
+18 10
+A
+19 10
+A
+1 1
+A
+2 1
+#9214
+Ninjitsu Waistband~
+&WN&zinjits&Wu W&zaistban&Wd~
+A large black belt with gold bells hanging from its buckle lies here.~
+~
+9 8192 2049
+70 -70 0 0
+1 12000 1200
+A
+18 5
+A
+19 5
+A
+1 1
+A
+41 20
+#9215
+Ninjitsu Kimono~
+&WN&zinjits&Wu &RK&ri&Rm&ro&Rn&ro~
+A &WN&winjits&Wu &RK&ri&Rm&ro&Rn&ro is here.~
+~
+9 0 8
+150 150 0 0
+1 14000 1400
+A
+19 10
+A
+18 10
+A
+17 -70
+#9216
+Ninjitsu Spandex~
+&WN&zinjits&Wu &BS&bp&Ba&bn&Bd&be&Bx~
+A pair of darkblack pants lies here, in sleek spandex style.~
+~
+9 8192 33
+100 100 0 0
+1 20000 2000
+A
+19 10
+A
+18 10
+A
+36 25
+A
+48 25
+#9217
+Ninjitsu Gloves~
+&WN&zinjits&Wu G&zlove&Ws~
+A pair of sleek gloves lies here.~
+~
+13 0 129
+0 0 0 0
+1 8000 800
+A
+17 -70
+A
+36 10
+A
+18 3
+#9220
+A Rice Hat~
+&YA &OR&Yi&Oc&Ye &OH&Ya&Ot~
+A hat made of straw lies here.~
+~
+9 8192 17
+30 30 0 0
+1 200 20
+#9221
+A Straw Backpack~
+&YA &OS&Yt&Or&Ya&Ow &YB&Oa&Yc&Ok&Yp&Oa&Yc&Ok~
+A straw backpack lies here.~
+~
+15 0 1025
+20 0 0 0
+1 5 0
+A
+17 -5
+#9222
+Dirty White Shirt~
+&ODirty &WWhite Shirt~
+A dirty white shirt lies here, full of holes.~
+~
+9 0 1025
+9 9 0 0
+2 300 30
+#9223
+Dirty Khakis~
+&ODirty &WKhakis~
+A pair of dirty khakis lies on the ground here.~
+~
+9 0 33
+10 10 0 0
+3 450 45
+#9224
+A Simple Belt~
+&WA Simple Belt~
+A long white belt lies here.~
+~
+15 0 2049
+5 5 0 0
+1 500 50
+A
+17 -10
+#9225
+Straw Shoes~
+&YS&Ot&Yr&Oa&Yw &OS&Yh&Oo&Ye&Os~
+A pair of straw shoes lies here.~
+~
+9 0 65
+5 5 0 0
+1 100 10
+#9226
+A Simple Sword~
+A Simple Sword~
+A simple sword lies here.~
+~
+5 8192 8193
+12 5 6 2
+4 100 10
+A
+18 -1
+#9227
+Long Sword~
+&WL&wong &WS&wword~
+A large sword lies here.~
+~
+5 0 8193
+1000 10 500 2 500 500
+1 3400 340
+#9228
+Battle Axe~
+&zA Bat&Wt&zle &WA&zxe~
+A large battle axe lies on the floor here.~
+~
+5 0 8193
+100 10 700 11 700 700
+1 0 0
+#9250
+A scientist's corpse~
+A Scientist's corpse~
+A bloody corpse lies here.~
+~
+13 0 0
+0 0 0 0
+1000 0 0
+#9251
+A Capsule~
+a A Capsule~
+A large Umbrella Capsule is broken open here.~
+~
+13 0 0
+0 0 0 0
+1000 0 0
+#9260
+Coat~
+&wA &WL&wo&Wn&wg &WF&wl&Wo&ww&Wi&wn&Wg &zBlack &wT&Wr&we&Wn&wc&Wh &wC&wo&Wa&wt~
+&zNemesis' custom black trentch Coat lies here.~
+~
+9 0 1024 1
+100 0 0 0
+1 70000 7000
+A
+18 15
+A
+19 15
+A
+17 -70
+#9261
+Umbrella Insignia Belt~
+&RU&rm&Rb&rr&Re&rl&Rl&ra &YI&On&Ys&Oi&Yg&On&Yi&Oa &WB&we&Wl&wt~
+&zA belt with the buckle of, "Umbrella Inc" lies here.~
+~
+15 0 2048
+100 0 0 0
+1 0 0
+A
+17 -70
+#9262
+Tentacle~
+&PA &pL&Pa&pr&Pg&pe &GT&g-&GV&gi&Gr&gu&Gs &PI&pn&Pf&pe&Pc&pt&Pe&pd &PT&pe&Pn&pt&Pa&pc&Pl&pe~
+&zA large oozing &pp&Pu&pr&Pp&pl&Pe &ztentacle lies here..~
+~
+5 4100 8192
+500 11 700 11 5000 5000
+1 0 0
+A
+13 0
+A
+13 2000
+#9263
+Combat Boots~
+&WA &wP&Wa&wi&Wr &wO&Wf &zBlack &wC&Wo&wm&Wb&wa&Wt &wB&wo&Wo&wt&Ws~
+A pair of large black combat boots were left here.~
+~
+9 0 64
+100 0 0 0
+1 12000 1200
+A
+18 3
+A
+19 4
+A
+17 -70
+#9264
+Albert Wesker's Sunglasses~
+&WA&wl&Wb&we&Wr&wt &WW&we&Ws&wk&We&wr&w'&Ws &zBlack &wS&wu&Wn&wg&Wl&wa&Ws&ws&We&ws~
+A pair of dark black sunglasses have been left here.~
+~
+9 0 131072
+100 0 0 0
+1 5000 500
+A
+17 -70
+#9265
+Titanium Vest~
+&WA &wL&Wa&wr&Wg&we &zBlack &WT&wi&Wt&wa&Wn&wi&Wu&wm &WV&we&Ws&wt~
+&zA large black titanium vest lies here.~
+~
+9 8192 1025 2
+200 200 0 0
+1 50000 5000
+#9266
+Pants~
+&WA &wP&Wa&wi&Wr &wO&wf &zBlack &WP&wa&Wn&wt&Ws~
+&zA pair of black pants pants was left here.~
+~
+9 8192 33
+100 100 0 0
+1 10000 1000
+A
+18 10
+A
+19 10
+#9267
+Wifebeater~
+&WA &wL&Wa&wr&Wg&we &zBlack &WW&wi&Wf&we&Wb&we&Wa&wt&We&wr~
+&zA large black wifebeater was left here.~
+~
+9 8192 9
+250 250 0 0
+1 10000 1000
+A
+18 10
+A
+19 10
+#9270
+Black Gi~
+&zBlack &YG&Oi~
+A black shirt lies here.~
+~
+9 0 8
+150 150 0 0
+1 14000 1400
+A
+19 10
+A
+18 10
+A
+17 -70
+#9271
+White Gi~
+&wWhite &YG&Oi~
+A white uniform lies here.~
+~
+9 0 8
+150 150 0 0
+1 14000 1400
+A
+19 10
+A
+18 10
+A
+17 -70
+#9272
+Black Pants~
+&zBlack &YP&Oa&Yn&Yt&Os~
+A pair of blank pants that matches the gi lies here.~
+~
+9 8192 33
+100 100 0 0
+1 20000 2000
+A
+19 10
+A
+18 10
+A
+36 25
+A
+48 25
+#9273
+White Pants~
+&wWhite &YP&Oa&Yn&Ot&Ys~
+A pair of white pants that matches the gi lies here.~
+~
+9 8192 33
+100 100 0 0
+1 20000 2000
+A
+19 10
+A
+18 10
+A
+36 25
+A
+48 25
+#9274
+A Large Scimitar~
+&CA &cL&Ca&cr&Cg&ce &zS&Wc&zi&Wm&zi&Wt&za&Wr~
+A large object lies here.~
+~
+5 0 8193
+100 10 111 1
+1 12000 1200
+#9275
+Shadow Rod~
+&WA &zS&Wh&za&Wd&zo&Ww &zR&Wo&zd~
+A large black rod for battle lies here.~
+~
+5 0 8193
+100 10 124 8
+1 13333 1333
+#9277
+Tiger Amulet~
+&RT&ri&Rg&re&Rr &YA&Om&Yu&Ol&Ye&Ot~
+A Tiger Amulet is here.~
+~
+8 0 5
+0 0 0 0
+1 15000 1500
+A
+18 10
+A
+19 15
+#9278
+Vitality Charm~
+&YV&Oi&Yt&Oa&Yl&Oi&Yt&Oy &zC&Wh&za&Wr&zm~
+A long chain with a glimmering charm lies here.~
+~
+9 0 5
+19 19 0 0
+1 300 30
+A
+13 1000
+#9279
+Sky Lance~
+&Pt&ph&Pe &YS&Ok&Yy &CL&ca&Cn&cc&Ce~
+A regal looking halberd is stuck in the ground here.~
+~
+5 8209 8193
+1100 10 150 2
+1 40000 4000
+A
+18 10
+A
+19 5
+A
+1 2
+#9280
+Speed Scroll~
+&rA &RS&rp&Re&re&Rd &rS&rc&Rr&ro&Rl&Rl~
+A scroll with kanji letters lies here.~
+~
+8 1 524288
+0 0 0 0
+1 1000 100
+#9281
+Way of the Musou~
+&CT&ch&Ce &GW&ga&Gy &PO&pf &CT&ch&Ce &YM&Ou&Ys&Oo&Yu~
+Something strange lies here..~
+~
+9 3 4225
+75 75 0 0
+1 120000 12000
+A
+18 25
+A
+19 10
+#9284
+Umbrella Inc Worker~
+&zUmbrella Inc Worker~
+&zA short scared man cowers in fear here.~
+~
+13 1073741824 0
+0 0 0 0
+1 0 0
+#9290
+RPG-7V Grenade Launcher~
+&WA &wR&WP&wG&w-&W7&wV &WG&wr&We&wn&Wa&wd&We &wL&Wa&wu&Wn&wc&Wh&we&Wr~
+A large white gun lies here.~
+~
+5 16 8193
+1000 10 1500 6 5 5
+5 30000 3000
+#9291
+RPG-7V Grenade Clip~
+a RPG-7V Grenade Clip~
+A small clip with 5 grenades lies here.~
+~
+57 0 0
+5 0 0 0
+1 50 5
+#9292
+M9 Beretta Pistol~
+&za M9 Beretta Pistol~
+A M9 Beretta Pistol is here.~
+~
+5 0 8193
+100 10 70 6 500 500
+1 9200 920
+#9293
+M9 Beretta Clip~
+M9 Beretta Clip~
+A small clip for a pistol lies here.~
+~
+57 0 0
+500 0 0 0
+1 50 5
+#9299
+PSG1 Sniper Rifle~
+&RP&rS&RG&r1 &RS&rn&Ri&rp&Re&rr &RR&ri&Rf&rl&Re~
+A wooden bolt-action rifle is lying here on a tripod.~
+~
+5 8208 8193
+100 2648 0 6
+10 25000 2500
+#0
+
+
+#ROOMS
+#9200
+Landing Pad of Chi Bi~
+This is the Three Kingdoms Colony, a place of majestic adventure.  The
+people here disassociated themselves from technology, and launched their
+colony before earth became desolate. They're simple people, and prefer to
+stick to themselves, although they're devided into three kingdoms. Wu,
+Shu, and Wei are all the allegances they pledge themselves to.
+~
+0 1073741828 0 1
+D1
+~
+~
+0 -1 9217
+D6
+~
+~
+0 -1 9201
+D8
+~
+~
+2048 -1 9262
+> speech_prog tokyo~
+mpechoat $n You are here.
+mpechoaround $n $n is gone.
+mptransfer $n 800
+~
+|
+S
+#9201
+Chi Bi City Streets~
+~
+0 1073741828 0 1
+D0
+~
+~
+0 -1 9202
+D9
+~
+~
+0 -1 9200
+S
+#9202
+Chi Bi City Streets~
+~
+0 1073741828 0 1
+D2
+~
+~
+0 -1 9201
+D3
+~
+~
+0 -1 9203
+S
+#9203
+Chi Bi Market Area~
+~
+0 1073741828 0 1
+D0
+~
+~
+0 -1 9229
+D1
+~
+~
+0 -1 9202
+D2
+~
+~
+0 -1 9228
+D3
+~
+~
+0 -1 9204
+S
+#9204
+Chi Bi Market Area~
+~
+0 1073741828 0 1
+D1
+~
+~
+0 -1 9203
+D7
+~
+~
+0 -1 9205
+S
+#9205
+Road to Chang Ban~
+~
+0 1073741828 0 1
+D0
+~
+~
+0 -1 9206
+D3
+~
+~
+2048 -1 9276
+D8
+~
+~
+0 -1 9204
+S
+#9206
+Road to Chang Ban~
+~
+0 1073741828 0 1
+D0
+~
+~
+0 -1 9207
+D2
+~
+~
+0 -1 9205
+S
+#9207
+Before Chang Ban's Gates~
+~
+0 1073741828 0 1
+D1
+~
+~
+0 -1 9208
+D2
+~
+~
+0 -1 9206
+S
+#9208
+City Of Chang Ban~
+~
+0 1073741828 0 1
+D0
+~
+~
+0 -1 9209
+D3
+~
+~
+0 -1 9207
+S
+#9209
+City Of Chang Ban Intersection~
+~
+0 1073741828 0 1
+D0
+~
+~
+0 -1 9210
+D2
+~
+~
+0 -1 9208
+S
+#9210
+City Of Chang Ban~
+~
+0 1073741828 0 1
+D0
+~
+~
+0 -1 9211
+D2
+~
+~
+0 -1 9209
+S
+#9211
+Before The Shu Kingdom~
+~
+0 1073741828 0 1
+D2
+~
+~
+0 -1 9210
+D6
+~
+~
+0 -1 9212
+S
+#9212
+The &GS&gh&Gu &CDynasty~
+~
+0 1073741828 0 1
+D7
+~
+~
+0 -1 9213
+D9
+~
+~
+0 -1 9211
+S
+#9213
+The &GS&gh&Gu &CDynasty~
+~
+0 1073741828 0 1
+D6
+~
+~
+0 -1 9214
+D8
+~
+~
+0 -1 9212
+S
+#9214
+Before The King of Shu~
+~
+0 1073741828 0 1
+D1
+~
+~
+0 -1 9215
+D9
+~
+~
+0 -1 9213
+S
+#9215
+The Throne Room~
+~
+0 1073741828 0 1
+D1
+~
+~
+0 -1 9216
+D3
+~
+~
+0 -1 9214
+S
+#9216
+Liu Bei's Room~
+~
+0 1073741828 0 1
+D3
+~
+~
+0 -1 9215
+S
+#9217
+Wandering The Rice Patties~
+~
+0 1073741828 0 1
+D1
+~
+~
+0 -1 9218
+D2
+~
+~
+0 -1 9237
+D3
+~
+~
+0 -1 9200
+S
+#9218
+Wandering The Rice Patties~
+~
+0 1073741828 0 1
+D1
+~
+~
+0 -1 9218
+D2
+~
+~
+0 -1 9218
+D3
+~
+~
+0 -1 9217
+D6
+~
+~
+0 -1 9219
+D7
+~
+~
+0 -1 9218
+D8
+~
+~
+2048 -1 9297
+D9
+~
+~
+0 -1 9218
+S
+#9219
+Wandering The Rice Patties~
+~
+0 1073741828 0 1
+D8
+~
+~
+0 -1 9220
+D9
+~
+~
+0 -1 9218
+S
+#9220
+A Thick Marsh~
+~
+0 1073741828 0 1
+D1
+~
+~
+0 -1 9221
+D6
+~
+~
+0 -1 9220
+D7
+~
+~
+0 -1 9219
+S
+#9221
+Wandering About the Marsh~
+~
+0 1073741828 0 1
+D1
+~
+~
+0 -1 9222
+D2
+~
+~
+0 -1 9221
+D3
+~
+~
+0 -1 9220
+D6
+~
+~
+0 -1 9221
+D7
+~
+~
+0 -1 9221
+S
+#9222
+Before the Wu Dynasty~
+~
+0 1073741828 0 1
+D2
+~
+~
+0 -1 9223
+D3
+~
+~
+0 -1 9221
+S
+#9223
+The &RW&ru &CDynasty~
+~
+0 1073741828 0 1
+D0
+~
+~
+0 -1 9222
+D1
+~
+~
+0 -1 9224
+S
+#9224
+The &RW&ru &CDynasty~
+~
+0 1073741828 0 1
+D2
+~
+~
+0 -1 9225
+D3
+~
+~
+0 -1 9223
+S
+#9225
+The Throne Room~
+~
+0 1073741828 0 1
+D0
+~
+~
+0 -1 9224
+D2
+~
+~
+0 -1 9226
+S
+#9226
+Sun Jian's Room~
+~
+0 1073741828 0 1
+D0
+~
+~
+0 -1 9225
+S
+#9227
+Floating in a void~
+~
+0 1073741828 0 1
+S
+#9228
+A Weapon Shop~
+This is a simple shop, selling weapons and other things in an attempt to
+make some cash. The owner stands there, hunched back, prepared for your
+order.
+ 
+&BSay 'Stock' to restock everything!
+~
+0 1073741828 0 1
+D0
+~
+~
+0 -1 9203
+S
+#9229
+An Armor Shop~
+This is an old room with nothing really neat, but worth a look. There are
+tablets, inscriptions, and all sorts of ancient pieces of Chinese Culture.
+Of them all, there is a strange inscription, which reads, "ajnin on
+ibonihs," on a small tablet near the counter. I wonder if it unlocks
+something?
+ 
+&CSay "Stock" to restock.
+~
+0 1073741828 0 1
+D2
+~
+~
+0 -1 9203
+> speech_prog Shinobi~
+mpechoat $n You disappear
+suddenly.
+mpechoaround $n $n
+disappears.
+mptransfer $n 9230
+~
+|
+S
+#9230
+The Ninjitsu Temple~
+~
+0 1073741828 0 1
+D1
+~
+~
+0 -1 9231
+D2
+~
+~
+0 -1 9229
+> speech_prog return~
+mpechoat $n You disappear
+suddenly.
+mpechoaround $n $n
+disappears.
+mptransfer $n
+9229
+~
+|
+S
+#9231
+The Ninjitsu Temple~
+~
+0 1073741824 0 1
+D2
+~
+~
+0 -1 9232
+D3
+~
+~
+0 -1 9230
+S
+#9232
+The Ninjitsu Temple~
+~
+0 1073741824 0 1
+D0
+~
+~
+0 -1 9231
+D1
+~
+~
+0 -1 9233
+D2
+~
+~
+0 -1 9233
+S
+#9233
+The Ninjitsu Temple~
+~
+0 1073741824 0 1
+D0
+~
+~
+0 -1 9232
+D3
+~
+~
+0 -1 9232
+D8
+~
+~
+0 -1 9234
+S
+#9234
+The Ninjitsu Temple~
+~
+0 1073741824 0 1
+D7
+~
+~
+0 -1 9233
+D9
+~
+~
+0 -1 9235
+S
+#9235
+The Ninjitsu Temple~
+~
+0 1073741824 0 1
+D3
+~
+~
+0 -1 9236
+D6
+~
+~
+0 -1 9234
+S
+#9236
+The Ninjitsu Shop~
+This old place has the pungent smell of dust.  An old monk levitates behind
+a counter, selling incredible items for your use. He is a nice looking old
+man, with a good disposition. 
+ 
+&BSay "Stock" to restock him.
+~
+0 1073741824 0 1
+D1
+~
+~
+0 -1 9235
+S
+#9237
+Before Xuchang's Gates~
+~
+0 1073741828 0 1
+D0
+~
+~
+0 -1 9217
+D2
+~
+~
+0 -1 9238
+S
+#9238
+Inside Xuchang's Gates~
+~
+0 1073741828 0 1
+D0
+~
+~
+0 -1 9237
+D1
+~
+~
+0 -1 9240
+D2
+~
+~
+0 -1 9242
+D3
+~
+~
+0 -1 9239
+S
+#9239
+Xuchang Province~
+This is the upscale part of Xuchang, where all the lies and deceit take
+place. These rich bastards have so much money, they don't even know what
+to do with it. Their generous donations to Cao Cao don't hurt things,
+either.
+~
+0 1073741828 0 1
+D0
+~
+~
+0 -1 9248
+D1
+~
+~
+0 -1 9238
+D2
+~
+~
+0 -1 9250
+D3
+~
+~
+0 -1 9251
+S
+#9240
+Xuchang Ghetto~
+This poor and desolate region lives in fear of the great Cao cao, paying
+him tributes with what little money they have. These ghettos are
+definately poor, with nothing much to live off of.  The houses are all
+straw huts, some with a few scraps of iron embedded.
+~
+0 1073741828 0 1
+D2
+~
+~
+0 -1 9241
+D3
+~
+~
+0 -1 9238
+S
+#9241
+Xuchang Ghetto~
+This poor and desolate region lives in fear of the great Cao cao, paying
+him tributes with what little money they have. These ghettos are
+definately poor, with nothing much to live off of.  The houses are all
+straw huts, some with a few scraps of iron embedded.
+~
+0 1073741824 0 1
+D0
+~
+~
+0 -1 9240
+D1
+~
+~
+0 -1 9243
+D2
+~
+~
+0 -1 9247
+D3
+~
+~
+0 -1 9242
+S
+#9242
+Xuchang Ghetto~
+This poor and desolate region lives in fear of the great Cao cao, paying
+him tributes with what little money they have. These ghettos are
+definately poor, with nothing much to live off of.  The houses are all
+straw huts, some with a few scraps of iron embedded.
+~
+0 1073741824 0 1
+D0
+~
+~
+0 -1 9238
+D1
+~
+~
+0 -1 9241
+D2
+~
+~
+0 -1 9244
+D8
+~
+~
+0 -1 9245
+D9
+~
+~
+0 -1 9246
+S
+#9243
+A Straw Hut~
+~
+0 1075838976 0 1
+D3
+~
+~
+0 -1 9241
+S
+#9244
+A Straw Hut~
+~
+0 1075838976 0 1
+D0
+~
+~
+0 -1 9242
+S
+#9245
+A Straw Hut~
+~
+0 1075838976 0 1
+D7
+~
+~
+0 -1 9242
+S
+#9246
+A Straw Hut~
+~
+0 1075838976 0 1
+D6
+~
+~
+0 -1 9242
+S
+#9247
+A Straw Hut~
+~
+0 1075838976 0 1
+D0
+~
+~
+0 -1 9241
+S
+#9248
+A Brick House~
+~
+0 1073741824 0 1
+D2
+~
+~
+0 -1 9239
+D4
+~
+~
+0 -1 9249
+S
+#9249
+Second Story~
+~
+0 1073741824 0 1
+D5
+~
+~
+0 -1 9248
+S
+#9250
+A Small House~
+~
+0 1073741824 0 1
+D0
+~
+~
+0 -1 9239
+S
+#9251
+Xuchang Province~
+This is the upscale part of Xuchang, where all the lies and deceit take
+place. These rich bastards have so much money, they don't even know what
+to do with it. Their generous donations to Cao Cao don't hurt things,
+either.
+~
+0 1073741824 0 1
+D0
+~
+~
+0 -1 9252
+D1
+~
+~
+0 -1 9239
+D2
+~
+~
+0 -1 9253
+D3
+~
+~
+0 -1 9252
+S
+#9252
+Xuchang Province~
+This is the upscale part of Xuchang, where all the lies and deceit take
+place. These rich bastards have so much money, they don't even know what
+to do with it. Their generous donations to Cao Cao don't hurt things,
+either.
+~
+0 1073741824 0 1
+D0
+~
+~
+0 -1 9254
+D1
+~
+~
+0 -1 9251
+D2
+~
+~
+0 -1 9251
+S
+#9253
+Civil Officers Building~
+This building is home to all of the Big Wigs of the Wei Dynasty.  They take
+care of Cao Cao's personal affairs, so he can take more time planning on
+the Shu and Wu kingdoms. 
+~
+0 1073741824 0 1
+D0
+~
+~
+0 -1 9251
+S
+#9254
+Before the Xuchang Government building~
+~
+0 1073741824 0 1
+D2
+~
+~
+0 -1 9252
+D3
+~
+~
+0 -1 9255
+S
+#9255
+The Xuchang Government building~
+~
+0 1073741824 0 1
+D1
+~
+~
+0 -1 9254
+D4
+~
+~
+0 -1 9256
+S
+#9256
+The Xuchang Government building~
+~
+0 1073741828 0 1
+D4
+~
+~
+0 -1 9257
+D5
+~
+~
+0 -1 9255
+S
+#9257
+Wei Checkpoint~
+~
+0 1073741828 0 1
+D1
+~
+~
+7 -1 9258
+D2
+~
+~
+0 -1 9260
+D3
+~
+~
+7 -1 9259
+D4
+~
+~
+0 -1 9261
+D5
+~
+~
+0 -1 9256
+S
+#9258
+Wei Jail Cell~
+~
+0 1073741828 0 1
+D3
+~
+~
+0 -1 9257
+S
+#9259
+Wei Jail Cell~
+~
+0 1073741828 0 1
+D1
+~
+~
+0 -1 9257
+S
+#9260
+Dian Wei's Room~
+The great emporer Cao Cao's body guard resides here.  He is a strong
+resiliant man, who would give his own life to protect Cao Cao. This room
+is littered with war trophies, such as skulls and warriors of those who
+have fallen to him.
+~
+0 1073741828 0 1
+D0
+~
+~
+0 -1 9257
+S
+#9261
+Cao Cao's Office~
+This majestic room is home to Imperial Governer Cao Cao, or, for the
+Stupid, Emporer Cao Cao. He watches over his city with great pride, with
+Dian Wei at his side.  Although viewed evil by most, he is prepared to
+train anyone who enters his office, and does so with pride.
+~
+0 1073741828 0 1
+D5
+~
+~
+0 -1 9257
+S
+#9262
+Before the Kingdoms Graveyard~
+~
+0 1073741828 0 1
+D1
+~
+~
+0 -1 9263
+D7
+~
+~
+0 -1 9200
+S
+#9263
+Graveyard gates~
+~
+0 1073741828 0 1
+D0
+~
+~
+0 -1 9264
+D1
+~
+~
+0 -1 9266
+D2
+~
+~
+0 -1 9265
+D3
+~
+~
+0 -1 9262
+S
+#9264
+A Tomb~
+This was once a tomb for a great king of China, but has now been converted
+into a home by thieves. 
+~
+0 1075838980 0 1
+D2
+~
+~
+0 -1 9263
+S
+#9265
+A Tomb~
+This was once a tomb for a great king of China, but has now been converted
+into a home by thieves. 
+~
+0 1075838980 0 1
+D0
+~
+~
+0 -1 9263
+S
+#9266
+The Graveyard~
+~
+0 1073741828 0 1
+D0
+~
+~
+0 -1 9267
+D2
+~
+~
+0 -1 9268
+D3
+~
+~
+0 -1 9263
+S
+#9267
+A Memorial~
+This memorial is dedicated to all those who have fallen in wars, battles,
+and mishaps.  Some are legends, and some have never been heard of before.
+~
+0 1073741828 0 1
+D2
+~
+~
+0 -1 9266
+S
+#9268
+The Graveyard~
+~
+0 1073741828 0 1
+D0
+~
+~
+0 -1 9266
+D2
+~
+~
+0 -1 9269
+S
+#9269
+Road to the Catacombs~
+~
+0 1073741828 0 1
+D0
+~
+~
+0 -1 9268
+D2
+~
+~
+0 -1 9270
+S
+#9270
+Well Leading to the Catacombs~
+~
+0 1073741828 0 1
+D0
+~
+~
+0 -1 9269
+D5
+~
+~
+0 -1 9271
+S
+#9271
+The Catacombs~
+~
+0 1073741825 0 1
+D2
+~
+~
+0 -1 9272
+D4
+~
+~
+0 -1 9270
+S
+#9272
+The Catacombs~
+~
+0 1073741825 0 1
+D0
+~
+~
+0 -1 9271
+D9
+~
+~
+0 -1 9273
+S
+#9273
+The Catacombs~
+~
+0 1073741825 0 1
+D3
+~
+~
+0 -1 9274
+D6
+~
+~
+0 -1 9272
+D8
+~
+~
+0 -1 9275
+S
+#9274
+Keepers of the Catacombs shop~
+~
+0 1073741824 0 1
+D1
+~
+~
+0 -1 9273
+S
+#9275
+The Way Of The Musou~
+~
+0 1073741828 0 1
+D7
+~
+~
+0 -1 9273
+S
+#9276
+&RU&rm&Rb&rr&Re&rl&Rl&ra &YI&On&Yc &c- Entrance~
+This is Umbrella Incorporation's hidden facility,  they seem to have them
+everywhere nowadays.  It is home to plenty of mutations, including the
+Nemesis. This room happens to be dark, and an erie moan can be heard from
+the west.. 
+~
+0 1073741828 0 1
+D1
+~
+~
+0 -1 9205
+D3
+~
+~
+0 -1 9277
+S
+#9277
+&RU&rm&Rb&rr&Re&rl&Rl&ra &YI&On&Yc &c- Lobby~
+This hallway is awfully dark, with an emergency light beeping, like some
+sort of disaster happened recently.. 
+~
+0 1073741824 0 1
+D1
+~
+~
+0 -1 9276
+D2
+~
+~
+0 -1 9278
+> rand_prog 100~
+mpecho &RAn alarm sounds, with a computer voice saying, "EMERGENCY!"
+~
+|
+S
+#9278
+&RU&rm&Rb&rr&Re&rl&Rl&ra &YI&On&Yc &c- Hallway~
+As the room north of here, this place is very dank and scarry. There is
+also a bloody handprint on the wall, with a puddle of blooding leading
+west.. 
+~
+0 1073741828 0 1
+D0
+~
+~
+0 -1 9277
+D2
+~
+~
+0 -1 9279
+D3
+~
+~
+0 -1 9280
+S
+#9279
+&RU&rm&Rb&rr&Re&rl&Rl&ra &YI&On&Yc &c- Dead End~
+This room is labled under construction, but there's something horribly
+wrong, as the scent of blood is apparent in the air.
+~
+0 1073741828 0 1
+D0
+~
+~
+0 -1 9278
+S
+#9280
+&RU&rm&Rb&rr&Re&rl&Rl&ra &YI&On&Yc &c- Hallway~
+This hallway is awfully dark, with an emergency light beeping, like some
+sort of disaster happened recently..  
+~
+0 1073741828 0 1
+D0
+~
+~
+0 -1 9283
+D1
+~
+~
+0 -1 9278
+D2
+~
+~
+0 -1 9281
+D3
+~
+~
+0 -1 9282
+S
+#9281
+&RU&rm&Rb&rr&Re&rl&Rl&ra &YI&On&Yc &c- Test Lab~
+A recent test was apparently done here, and a capsule is broken open. 
+~
+0 1073741828 0 1
+D0
+~
+~
+0 -1 9280
+S
+#9282
+&RU&rm&Rb&rr&Re&rl&Rl&ra &YI&On&Yc &c- Tyrant T-102 Test Tank~
+The Tyrant is a large biological creature with unfathomable power. It kills
+without regard, and has no emotions, making it a perfect killer. This room
+is all torn up with blood stains and a broken capsule, indicating a recent
+battle of some sort happened here recently.
+~
+0 1073741828 0 1
+D1
+~
+~
+0 -1 9280
+S
+#9283
+&RU&rm&Rb&rr&Re&rl&Rl&ra &YI&On&Yc &c- Hallway~
+This hallway is awfully dark, with an emergency light beeping, like some
+sort of disaster happened recently..  There is also a small office to the
+west with the sound of trembling coming from it.
+~
+0 1073741828 0 1
+D0
+~
+~
+0 -1 9285
+D2
+~
+~
+0 -1 9280
+D3
+~
+~
+0 -1 9284
+S
+#9284
+&RU&rm&Rb&rr&Re&rl&Rl&ra &YI&On&Yc &c- Birkin's Office~
+This is the room of William Birkin, the creator of this lab. It is a small
+office, with a desk with a computer on top of it, and, unlike the rest of
+the place, it's clean. 
+~
+0 1073741828 0 1
+D1
+~
+~
+0 -1 9283
+S
+#9285
+&RU&rm&Rb&rr&Re&rl&Rl&ra &YI&On&Yc &c- Hallway~
+This hallway is awfully dark, with an emergency light beeping, like some
+sort of disaster happened recently..  
+~
+0 1073741828 0 1
+D2
+~
+~
+0 -1 9283
+S
+#9286
+Floating in a void~
+~
+0 1073741828 0 1
+S
+#9287
+Floating in a void~
+~
+0 1073741828 0 1
+S
+#9288
+Floating in a void~
+~
+0 1073741828 0 1
+S
+#9289
+Floating in a void~
+~
+0 1073741828 0 1
+S
+#9290
+Guan Du Military Base~
+~
+0 1073741824 0 1
+D0
+~
+~
+0 -1 9293
+D1
+~
+~
+0 -1 9291
+D2
+~
+~
+0 -1 9296
+D3
+~
+~
+0 -1 9292
+S
+#9291
+Guan Du Military Base~
+~
+0 1073741824 0 1
+D0
+~
+~
+0 -1 9295
+D3
+~
+~
+0 -1 9290
+D8
+~
+~
+0 -1 9298
+S
+#9292
+Guan Du Military Base~
+~
+0 1073741824 0 1
+D0
+~
+~
+0 -1 9294
+D1
+~
+~
+0 -1 9290
+D9
+~
+~
+0 -1 9299
+S
+#9293
+Guan Du Military Base~
+~
+0 1073741824 0 1
+D1
+~
+~
+0 -1 9295
+D2
+~
+~
+0 -1 9290
+D3
+~
+~
+0 -1 9294
+D4
+~
+~
+0 -1 9300
+S
+#9294
+Guan Du Military Base~
+~
+0 1073741824 0 1
+D1
+~
+~
+0 -1 9293
+D2
+~
+~
+0 -1 9292
+S
+#9295
+Guan Du Military Base~
+~
+0 1073741824 0 1
+D2
+~
+~
+0 -1 9291
+D3
+~
+~
+0 -1 9293
+S
+#9296
+Before the Guan Du Military Base~
+~
+0 1073741824 0 1
+D0
+~
+~
+0 -1 9290
+D2
+~
+~
+0 -1 9297
+S
+#9297
+A Secluded Area~
+~
+0 1073741824 0 1
+D0
+~
+~
+0 -1 9296
+D7
+~
+~
+0 -1 9218
+S
+#9298
+Guan Du Military Base~
+~
+0 1073741824 0 1
+D7
+~
+~
+0 -1 9291
+S
+#9299
+Guan Du Military Base~
+~
+0 1073741824 0 1
+D6
+~
+~
+0 -1 9292
+S
+#9300
+Bio-Genetic Monkey Sniper Cage~
+This large area is home to the Military's dirty little secret..MONKEY
+SNIPERS!  These vicious little bastards kill without care, and are apart
+of Nemesis' personal army. Run quickly, or it'll be the end of you!
+~
+0 1073741824 0 1
+D5
+~
+~
+0 -1 9293
+S
+#0
+
+
+#RESETS
+M 1 9200 4 9204
+M 1 9229 1 9229
+M 1 9226 1 9226
+M 1 9216 1 9216
+G 1 9202 1
+G 1 9201 1
+M 1 9236 1 9236
+G 1 9210 1
+G 1 9211 1
+G 1 9212 1
+G 1 9213 1
+G 1 9214 1
+G 1 9216 1
+G 1 9217 1
+G 1 9215 1
+M 1 9200 2 9203
+M 1 9228 1 9228
+M 1 9225 4 9224
+M 1 9260 1 9260
+M 1 9257 1 9257
+D 0 9257 1 2
+D 0 9257 3 2
+M 1 9261 1 9261
+M 1 9299 1 9300
+M 1 9296 2 9299
+G 1 10313 1
+G 1 10314 1
+M 1 9298 1 9298
+G 1 9299 1
+G 1 9292 1
+G 1 9290 1
+G 1 9293 1
+G 1 9291 1
+M 1 9271 1 9271
+M 1 9272 2 9272
+M 1 9218 5 9221
+M 1 9217 1 9210
+M 1 9275 1 9275
+G 1 9277 1
+G 1 9278 1
+G 1 9280 1
+G 1 9281 1
+G 1 9279 1
+M 1 9274 1 9274
+G 1 9271 1
+G 1 9270 1
+G 1 9273 1
+G 1 9272 1
+G 1 9275 1
+G 1 9274 1
+M 1 9272 1 9274
+M 1 9250 1 9279
+O 1 9250 1 9279
+M 1 9250 2 9280
+M 1 9281 1 9281
+O 1 9251 1 9281
+M 1 9252 1 9282
+O 1 9251 1 9282
+M 1 9284 1 9284
+G 1 9265 1
+G 1 9266 1
+G 1 9267 1
+G 1 9263 1
+G 1 9264 1
+G 1 9261 1
+G 1 9260 1
+S
+
+
+#SHOPS
+ 9228    5  0  0  0  0   120  90         0 23    ; Weapon Shop Keeper
+ 9229    9  0  0  0  0   120 100         0 23    ; Armor Shop Keeper
+ 9236    9  5  0  0  0   120  90         0 23    ; &YA&On &YA&On&Yc&Oi&Ye&On&Yt &OM&Yo&On&Yk
+ 9274    0  0  0  0  0   120  90         0 23    ; &YA&On &YA&On&Yc&Oi&Ye&On&Yt &OM&Yo&On&Yk
+ 9275    0  0  0  0  0   120  90         0 23    ; &YA&On &YA&On&Yc&Oi&Ye&On&Yt &OM&Yo&On&Yk
+ 9284    0  0  0  0  0   120  90         0 23    ; &RU&rm&rb&Rr&re&Rl&rl&Ra &YI&On&Yc &zWorker
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+M  9250 spec_infected
+M  9253 spec_infected
+S
+
+
+#$

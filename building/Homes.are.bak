@@ -1,0 +1,3194 @@
+#AREA   Homes~
+
+
+
+#VERSION 1
+
+#AUTHOR Kamorov~
+
+#OWNED_BY None~
+
+#RANGES
+0 500 0 1000
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 6250000
+
+#MOBILES
+#0
+
+
+#OBJECTS
+#10700
+Blue Recliner~
+a blue recliner~
+A big comfy dark blue recliner~
+~
+12 0 0
+5 5 3 0
+1 0 0
+#10701
+Large Bed~
+an antique bed~
+An antique four post mahogany bed is here.~
+~
+12 0 0
+1000 1000 1000 1000 1000 0
+1000 0 0
+#10702
+Computer Table~
+A Computer Planing Center~
+A computer console has been set here with many planning programs activated.~
+~
+12 0 0
+1000 1000 1 0
+1 0 0
+#10703
+Dining Room Table~
+A diningroom table~
+A mahogany table is here with gold and ivory trim.~
+~
+12 0 0
+1000 1000 1 0
+1 0 0
+#10704
+the jaccuzi~
+the jaccuzi~
+&zA jaccuzi is here.~
+~
+12 0 0
+4 4 3 0
+1 0 0
+#10705
+Hot Tub~
+&rAn &pornamental &zBlack Hot tub~
+&rAn &pornamental &zBlack Hot tub &wis here bubbling gently~
+~
+12 0 0
+5 5 3 0
+1 0 0
+E
+Hot Tub~
+A beautiful hot tub encased in black oak. Along the sides of the tub are
+carvings of roses. The water in the tub is illuminated by green and blue
+lights in the bottom, that flicker like christmas lights.
+~
+#10706
+black picnic table~
+&zA Black Picnic Table~
+&zA black picnic table sits here~
+~
+12 0 0
+6 6 1 0
+1 0 0
+E
+black picnic table~
+&wThis black table is fully dressed for any meal, Plates silverware all
+covered. In the center of the table, is a pair of candles, and a vase
+holding a dozen &zblack&w roses. The table is only built and set for two
+people.
+~
+#10707
+Cloud 9 Bed~
+Cloud-9 Bed~
+&zA &Bc&bl&co&Cu&cd&b-&B9 &GB&ge&Gd &zfloats on the ground.&T~
+~
+12 0 0
+1000 1000 1000 1000 1000 0
+1 0 0
+#10708
+Wraith Chair~
+&wthe &BW&br&ca&ci&bt&Bh&z'&Bs &WC&zh&Wa&zi&Wr~
+&zThe &BW&br&ca&ci&bt&Bh&z'&Bs &WC&zh&Wa&zi&Wr &zsits at the head of the table.~
+~
+12 0 0
+1 1 3 0
+1 0 0
+#10709
+Lotus Pod~
+&GL&go&ct&gu&Gs &GP&go&Gd&w~
+&zA &GL&go&ct&gu&Gs &GP&go&Gd &zis hanging from the wall with &BBlue &zliquid in it.&w~
+~
+17 0 0
+999999 999999 41 0
+1 0 0
+#10710
+Widescreen TV~
+Widescreen TV~
+A Widescreen TV is sitting agaist the wall blarring music.~
+~
+8 0 0
+0 0 0 0
+1 0 0
+#10711
+Golden Oakwood Bed~
+&YG&Oo&Yl&Od&Ye&On &cO&Ca&ck&Cw&co&Co&cd &bB&Be&bd~
+&zA &YG&Oo&Yl&Od&Ye&On &cO&Ca&ck&Cw&co&Co&cd &bB&Be&bd &zsits in the corner here.~
+~
+12 0 0
+1000 1000 1000 1000 1000 0
+1 0 0
+#10712
+Fountain O Beer~
+&wFountain &GO&z' &YBeer~
+&wFountain &GO&z' &YBeer &zsits in the middle of the room.~
+~
+17 0 0
+999999 999999 33 0
+1 0 0
+#10713
+Master Bath~
+&wthe &zMaster &bB&Ba&bt&Bh~
+&zThe Master &bB&Ba&bt&Bh &zsits here.~
+~
+12 0 0
+2 2 3 0
+1 0 0
+#10714
+Pool Table~
+&wA ornamental &zblack oak &wpool table with a &pvelvet&w lining~
+&wAn ornamental &zblack oak &wpool table with a &pvelvet&w lining.~
+~
+12 0 0
+2 2 2 0
+1 0 0
+#10715
+Shower~
+The Shower~
+A shower is in the corner of the room.~
+~
+12 0 0
+2 2 3 0
+1 0 0
+#10716
+Adirondack chair~
+&wan Adirondack &zchair~
+&cA sizable &Ptwo seated &wAdirondack &zchair.~
+~
+12 0 0
+2 2 2 0
+1 0 0
+#10717
+stage~
+&wthe stage~
+&wA long elegant &zblack cedar &wstage with a high standing &Ppole &win the center.~
+~
+12 0 0
+6 6 2 0
+1 0 0
+#10718
+pool~
+&wa pool~
+&wA &rh&Re&ra&Rt&re&Rd &wolympic sized &Bs&bw&Bi&bm&Bm&bi&Bn&bg &Bp&bo&Bo&bl&z.~
+~
+12 0 0
+1000 1000 3 0
+1 0 0
+#10719
+bed~
+a canopy bed~
+&wA &Omahogany &wcanopy bed draped in &zsheer black &wcurtains and covered in &Rr&re&Rd &rs&Ra&rt&Ri&rn &wsheets.~
+~
+12 0 0
+2 2 2 0
+1 0 0
+#10720
+recliner~
+the recliner~
+&wA luxurious &zblack leather &wrecliner.~
+~
+12 0 0
+2 2 2 0
+1 0 0
+#10721
+Widescreen tv~
+a Widescreen tv~
+&zA &BPanasonic &zflatscreen &cH&CD &zTv mounted on the eastern wall.~
+~
+8 0 0
+0 0 0 0
+1 0 0
+#10722
+Raven Chair~
+&wthe &WR&wa&zv&we&Wn&w'&zs &WC&zh&Wa&zi&Wr~
+&zThe &WR&wa&zv&we&Wn&w'&zs &WC&zh&Wa&zi&Wr &zsits at the edge of the table.~
+~
+12 0 0
+1 1 3 0
+1 0 0
+#10723
+Jack Jeckel Chair~
+&wthe &RJ&ra&Oc&Yk &WJ&Ye&Oc&rk&Re&rl&z'&Ys &WC&zh&Wa&zi&Wr~
+&zThe &RJ&ra&Oc&Yk &WJ&Ye&Oc&rk&Re&rl&z'&Ys &WC&zh&Wa&zi&Wr &zsits at the edge of the table.~
+~
+12 0 0
+1 1 3 0
+1 0 0
+#10724
+Monoxide Child Chair~
+&wthe &GM&go&zn&Wo&Wx&zi&gd&Ge &GC&gh&zi&gl&Gd &WC&zh&Wa&zi&Wr~
+&zThe &GM&go&zn&Wo&Wx&zi&gd&Ge &GC&gh&zi&gl&Gd &WC&zh&Wa&zi&Wr &zsits at the edge of the table.~
+~
+12 0 0
+1 1 3 0
+1 0 0
+#10725
+Lotus Pod Table~
+&zA &GL&go&ct&gu&Gs &GP&go&Gd &zTable~
+&zA table with the &GL&go&ct&gu&Gs &GP&go&Gd &zdesign sits in the middle of the room.~
+~
+12 0 0
+0 0 0 0
+1 0 0
+#10726
+Milenko Chair~
+&wthe &rG&zr&we&Wa&wt &zM&ri&Rl&re&zn&wk&Wo&w'&zs &WC&zh&Wa&zi&Wr~
+&zThe &rG&zr&we&Wa&wt &zM&ri&Rl&re&zn&wk&Wo&w'&zs &WC&zh&Wa&zi&Wr &zsits at the edge of the table.~
+~
+12 0 0
+1 1 3 0
+1 0 0
+#10727
+Lotus Pod Indoor Pool~
+&wthe &GL&go&ct&gu&Gs &GP&go&Gd &zIndoor &bP&Bo&bo&Bl&w~
+&zA giant indoor &bp&Bo&bo&Bl &zin the shape of a &GL&go&ct&gu&Gs &GP&go&Gd &zsits in the middle of the room.~
+~
+12 0 0
+1000 1000 3 0
+1 0 0
+#10728
+Lotus Pod~
+&wthe &GL&go&ct&gu&Gs &GP&go&Gd&w~
+&zSitting against the wall is a &GL&go&ct&gu&Gs &GP&go&Gd &zdraped in &gg&Gr&ge&Ge&gn &zsatin sheets.~
+~
+12 0 0
+2 2 2 0
+1 0 0
+#10729
+FS HD TV~
+&zA &GF&glatscreen &CH&z.&cD&z. &BT&z.&bV&z.~
+&zA &GF&glatscreen &CH&z.&cD&z. &BT&z.&bV&z. hangs on the eastern wall.~
+~
+8 0 0
+0 0 0 0
+1 0 0
+#10730
+Black Rain Couch~
+a couch~
+A Lotus Pod Coach is here.~
+~
+12 1073741824 0
+5 5 0 0
+1 0 0
+#10733
+fridge~
+&zThe &RM&ra&Od &YP&zr&Wo&wf&We&zs&Ys&Oo&rr'&Rs &zFridge~
+&zThe &RM&ra&Od &YP&zr&Wo&wf&We&zs&Ys&Oo&rr'&Rs &zFridge is here.~
+~
+15 2 0
+199 1 0 0
+1 0 0
+#10734
+cabinet~
+&zThe &RM&ra&Od &YP&zr&Wo&wf&We&zs&Ys&Oo&rr'&Rs&z Snack Cabinet~
+&zThe &RM&ra&Od &YP&zr&Wo&wf&We&zs&Ys&Oo&rr'&Rs &zSnack Cabinet is here.~
+~
+15 0 0
+199 1 0 0
+1 0 0
+#10736
+ladder~
+A wooden ladder~
+A wooden ladder leads up into the loft.~
+~
+12 0 0
+0 0 0 0
+1 0 0
+#10737
+ladder~
+a wooden ladder~
+A wooden ladder leads into the den below.~
+~
+12 0 0
+0 0 0 0
+1 0 0
+#10738
+table for two~
+&Oan ornate table for two~
+&OAn ornate table for two sits here in the den.~
+~
+12 0 0
+2 0 1 0
+1 0 0
+#10739
+heart shaped bed~
+a &PH&pe&Pa&pr&Pt&R-&PS&ph&Pa&pp&Pe&pd &PB&pe&Pd~
+A &PH&pe&Pa&pr&Pt&R-&PS&ph&Pa&pp&Pe&pd &PB&pe&Pd &Gis here looking rather inviting.~
+~
+12 0 0
+75 75 3 0
+1 0 0
+#10740
+kitchen sink~
+the kitchen sink~
+The kitchen sink is here nestled between the stove and pantry.~
+~
+25 0 0
+1000 1000 0 0
+1 0 0
+#10741
+refridgerator fridge~
+&Wa large refridgerator~
+&WA large refridgerator is here.~
+~
+15 1073741824 0
+1200 5 0 0
+1 0 0
+#10841
+kitchen table~
+&OA small maple table~
+&OA small maple table is here in the center of the kitchen.~
+~
+12 1073741824 0
+75 75 1 0
+1 0 0
+#0
+
+
+#ROOMS
+#10700
+&GI&gn&csi&gd&Ge t&gh&Ge P&gl&can&ge&Gt~
+&zPure Mako energy flows around you as all you can see is that you are
+floating in the planet's energy. Shapes are able to be seen through the
+green mist, assuring you that people could very well be about...
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 9244
+S
+#10701
+&wThe &gLiving &bRoom~
+The main room is a huge room capable of holding a party in it without anyone
+hitting or breaking anything. The roof is curved upwards to form a dome and
+walls are painted a tanned white. there is a door hidden in the corner
+leading downwards.
+~
+0 12 0 1 0 0 0 0
+D1
+~
+~
+3 -1 10729
+D2
+~
+~
+0 -1 1473
+D3
+~
+~
+0 -1 10702
+D4
+~
+~
+0 -1 10754
+D5
+~
+~
+2056 -1 10703
+D6
+~
+~
+3 -1 10760
+D7
+~
+~
+3 -1 10704
+D8
+~
+~
+3 -1 10757
+R O 0 1829 1 10701
+R D 0 10701 1 1
+R D 0 10701 6 1
+R D 0 10701 7 1
+R D 0 10701 8 1
+S
+#10702
+&wThe &rKitchen~
+The kitchen is vast with cabinets set up. the sinks set up towards the front
+room with the wall blocking it except there is a small glassless window there
+so drinks can be given to those in the main room. the table is seen in the
+kitchen towards the main room.
+~
+0 12 0 1 0 0 0 0
+D1
+~
+~
+0 -1 10701
+R O 0 10703 1 10702
+S
+#10703
+&OUnderground &BBunker~
+This looks like the main place of operations. on one wall is racks upon racks
+of weapons and guns and even swords. On the other side is ammo and armor as
+well as various of other containers in the corner. There was a computer console
+set up as if as records for the weapons and items in the room. It also shows a
+place to sit for a good sized group of people.
+~
+0 12 0 1 0 0 0 0
+D4
+~
+~
+0 -1 10701
+S
+#10704
+&zThe Bedroom~
+You come into the master bedroom, commodious and lavishly furnished. The
+canopy bed is draped by sheer black curtains, the flicker of the handlit
+candle chandelier throws cozy shadows on the bed's flush red satin sheets.
+All along the walls hang pictures, antiques that haven't seen the light of
+day in quite some years. A grand bay window is seen in a corner, revealing
+a wonderful view of the majestic sunset. A few servants pass in and out,
+tidying here and there.
+~
+0 8388620 0 1 0 0 0 0
+D2
+~
+~
+1 -1 10733
+D8
+~
+~
+3 -1 10701
+R O 0 10719 1 10704
+R D 0 10704 2 0
+R D 0 10704 8 1
+S
+#10705
+&bT&Bh&Ce &gG&Ga&Wrd&Ge&gn~
+~
+0 8388876&128 0 1 0 0 0 0
+D1
+~
+~
+0 -1 500
+D2
+~
+~
+0 -1 10791
+D3
+~
+~
+0 -1 116
+S
+#10706
+&zA Grim Path~
+.
+                                (_____/I\_____)
+                                 \\\\\_X_/////
+                             .(__I__I-*^*-I__I__).
+                           "w/%%%%%%%%%%%%%%%%%%%\w"
+                             "Y""Y""Y"""""Y""Y""Y"
+                  |       p-p_|__|__|_____|__|__|_q-q
+    S$$$$$s.      |\._ _-[HHHHHHHHHHHHHHHHHHHH  HHHHH]-
+                   \/|----\---/--.._/--.---------.---. `\          .s$$$$$$s
+                    \_\  \  \/-  /\  -,-|  \   /| |`. -. |            ---                      \ | `   _/   | /  |  |\     `.'  ' '  .sS$SS$Ss.
+       ,sss       sS$$$\  \  /     |   / \  \|  `.'  .' |  sSS$$$$$$$$$$SSs
+.$$$$s$$$$$$Ss,    -----| |  |    /   |   ___.--'  .' | '     -------  -$$$$$$$$$$$$$$$$      /--._____...--------  __..--'|  '/'
+------- -----        /--.______...----------|    | |  |
+                    |  /    |   |  | ' .'  / \   | '_/
+                    |  \    \  /   '   /  /   |    /
+             |      |   \    \/.--'  .' \/    |   |--.
+             |--.___/ '  |   |  /  .'    |    |   /   ;___.|
+             |  --._\        |     |     |     _.-   .'\_/-|
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 10707
+D2
+~
+~
+0 -1 9264
+S
+#10707
+&zA Dark Entrance~
+&z                    \ \_\ .----------.     /
+&z                     \   (  ||    ||  )   /&Y..
+&z                  |\  \   --||====||--_  /&Y/&O/\&Y\
+&z                  | \  \    ||    || // /&Y(&O(&W()&O)&Y)
+&z                   \|  |    ||====|| - / &Y\&O\&W\/&O/&Y/
+&z                       |__  ||    ||   |  &Y`&w|&W'&O'
+&z                       | |\ ||====|| __|  _&w|&z_
+&z                       | | \`'    `'/| |  =&wO&z=
+&z                       | | |_ `    / | |
+&z                       | | ||\____|  | |_
+&z                   _   | | || ____|  | |_]
+&z                  | |  | | |l/::::|  | |
+&z                  |/   | | |::::::\  | |
+&z                       | | /:::::::\ | |
+&z                       |_|/:::::::::\|_|
+&z                    /|/|:.:.:.:.:.:.:.:|
+&z                   | / |.:.:.:.:.:.:.:.|
+&z                   |/| /...............\ |\
+&z                     |/.................\ \|
+&z                     /. . . . . . . . . .\
+&z                    /. . . . . . . . . . .\
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 10712
+D1
+~
+~
+0 -1 10708
+D2
+~
+~
+0 -1 10706
+D3
+~
+~
+0 -1 10709
+D4
+~
+~
+0 -1 10727
+S
+#10708
+&zA Bedroom~
+&R       .     .
+&R   ...  :``..':
+&R    : ````.'   :''::'
+&R  ..:..  :     .'' :
+&R``.    `:    .'     :
+&R   :    :   :        :
+&R    :   :   :         :
+&R    :    :   :        :
+&R     :    :   :..''''&g``::.
+&R      : ...:..'&g     .''
+&g      .'   .'  .::::'
+     :..'''``:::::::
+     '         `::::
+                 `::.
+                  `::
+                   :::.
+&G        ..:```.:'`.&g ::&G'`.
+&G      ..'      `:.: &g::
+&G     .:        .:``&g:::
+&G     .:    ..''     &g:::
+&G      : .''          &g::
+&G       :             &g::
+                      :
+                       :
+~
+0 131084 0 1 0 0 0 0
+D3
+~
+~
+0 -1 10707
+R O 0 801 1 10708
+S
+#10709
+&zA Dark Gaming Room~
+&z                            _______________________________________________
+                           /                                               /
+                          /_______________________________                /
+                                                          \              /
+                        __________________________________/_____________/____
+   _____________      /       __  __  _     __  ___ __   __  _   ___  ___ _ \
+  /        ____ \____/ /|  / /   /   / \   /_  /  //_/  /   / \ /    /   / \ \
+ / _______ \   \___   / | / /-- /-- /  |  /   /__//  \ /__ /__//--  /-- /  | /
+| |______ \ \______\ /  |/ /__ /__ /__/  ________________//   /___ /___/__/ /
+ \ ____  \ \  ______________________________________________________________\ 
+  \\   \ / / / ____________________________________________________________ \\
+   \\  // / / / _  ___ ____ ___ ______ _____  _____ _____ __  __ _  ___ _  \ \\
+    \\// / / / / |/  //__ //__//__   // ___/ /__  //__  // / / // |/  ///  / //
+    / / / / / / __  /_  ////_  __ / // /___ _  / /_   /// / / // __  ///  / //
+   / / / / / / / / /// ///__/ / // // //  // // // / /// / / // / / ///  / //
+  / / / / / / / / ///_////__ / _ _// /_/ //   _// /_/// /_/ // / / ///  / //
+ / / / / / /_/ /_//___//___//_/\ \/_____//_/\_\/____//_____//_/ /_///  / //
+/ / /_/ / ______________________\ \______________________________ //__/ //
+\/_____/ /_______________________\_\____________________________//_____//
+ \_____________________________________________________________________/
+                  /               /
+                 /                \______________________________
+                /                                                /
+               /________________________________________________/
+~
+0 12 0 1 0 0 0 0
+D1
+~
+~
+0 -1 10707
+R O 0 1829 1 10709
+S
+#10710
+&CF&clo&Cat&cin&Cg &GP&gla&Gtf&gor&Gm &bo&Bf &RM&ri&pg&rh&Rt~
+You have ascended upon a circular disk floating high above the earth.
+The stale stank of human sweat and blood pollutes the air, but the
+breath of God washes it away. It is here where the Lord Hell trains
+his body and spirit to prepare him for the evils of the mortal realm.
+~
+0 12 0 1 0 0 0 0
+D2
+~
+~
+0 -1 878
+S
+#10711
+&BPa&ct&Ch&cw&Bay &Gt&go &YH&We&wav&We&Yn~
+You have entered the ascension platform for the Lord Hell's magical
+journeyings. It is here where the Lord communicates with the deities
+and the knowledge of the Kami's are imparted upon mortal beings.
+Through this communication, Lord Hell has managed to help spread the
+peace of the heaven's to the people of earth.
+~
+0 12 0 1 0 0 0 0
+D3
+~
+~
+0 -1 878
+S
+#10712
+&rC&po&ru&zn&rc&pi&rl &rR&zo&po&rm~
+&z
+                      ____________________________
+                     |   &r__      __ ___________&z   |
+          __    _____|  &r/  \    /  \\_   _____/&z   |_____    __
+_________|  |__|    :|  &r\   \/\/   /  |    __)&z    |     |__|  |_________
+\       :|  |::|    :|   &r\        /   |    \&z      |     |::|  |        /
+  \     :|  |::|    :|    &r\__/\  /    \__  /&z      |     |::|  |      /
+   \    :|  |::|    :|         &r\/        \/&z       |     |::|  |     /
+    >   :|  |::|    :|____________________________|     |::|  |    <
+  /     :|__|::|____:/                            \.____|::|__|      \
+/_______:/  \::/                                        \::/  \._______\
+~
+0 12 0 1 0 0 0 0
+D1
+~
+~
+2048 -1 9200
+D2
+~
+~
+0 -1 10707
+S
+#10713
+&RH&re&pl&rl&Rs &YP&Oi&Yt~
+~
+0 12 0 1 0 0 0 0
+D2
+~
+~
+0 -1 5110
+S
+#10714
+&BV&bi&zk&bin&Bg &zC&Wo&zu&Bn&zt&Wr&zy~
+Ancient Viking warriors fill the room. They sheath there weapon and
+bow at your presence.
+~
+0 12 0 1 0 0 0 0
+D1
+~
+~
+0 -1 10715
+D5
+~
+~
+0 -1 11148
+S
+#10715
+&BV&bi&zk&bin&Bg &zC&Wo&zu&Bn&zt&Wr&zy~
+Ancient Viking warriors fill the room. They sheath there weapon and
+bow at your presence.
+~
+0 12 0 1 0 0 0 0
+D3
+~
+~
+0 -1 10714
+S
+#10716
+&zW&We&zl&Wc&zo&Wm&ze &CT&Bo &RH&re&Rl&rl~
+~
+0 12 0 1 0 0 0 0
+D6
+~
+~
+0 -1 9246
+D7
+~
+~
+0 -1 10719
+D8
+~
+~
+0 -1 10718
+D9
+~
+~
+0 -1 10717
+S
+#10717
+&WS&ct&We&ce&Wl &cH&Wa&cl&Wl&cw&Wa&cy~
+~
+0 12 0 1 0 0 0 0
+D6
+~
+~
+0 -1 10716
+D9
+~
+~
+0 -1 10722
+S
+#10718
+&OS&Yt&Oa&Yi&Or&Yw&Oe&Yl&Ol~
+~
+0 12 0 1 0 0 0 0
+D7
+~
+~
+0 -1 10716
+S
+#10719
+&rI&zn&rt&ze&rr&zi&rg&za&rt&zi&ro&zn &rR&zo&ro&zm~
+~
+0 12 0 1 0 0 0 0
+D8
+~
+~
+0 -1 10716
+S
+#10720
+&bH&Wo&bp&Wk&bi&Wn&bs~
+~
+0 12 0 1 0 0 0 0
+D5
+~
+~
+0 -1 11143
+S
+#10721
+&RW&rhite &RF&rang &RJ&rail~
+~
+0 8204 0 1 0 0 0 0
+D5
+~
+~
+33 -1 10712
+S
+#10722
+&WS&ct&We&ce&Wl &cH&Wa&cl&Wl&cw&Wa&cy~
+~
+0 12 0 1 0 0 0 0
+D5
+~
+~
+0 -1 10723
+D6
+~
+~
+0 -1 10717
+S
+#10723
+&zJ&Wa&zi&Wl &zC&We&zl&wl~
+~
+0 12 0 1 0 0 0 0
+D4
+~
+~
+0 -1 10722
+S
+#10724
+&RS&ru&bp&we&wr&bm&ra&Rn~
+~
+0 12 0 1 0 0 0 0
+D4
+~
+~
+0 -1 11144
+S
+#10725
+Strategy Room~
+~
+0 12 0 1 0 0 0 0
+D1
+~
+~
+0 -1 9265
+S
+#10726
+Bar~
+~
+0 12 0 1 0 0 0 0
+D7
+~
+~
+0 -1 9265
+S
+#10727
+&zThe Upstairs Parlor~
+~
+0 12 0 1 0 0 0 0
+D1
+~
+~
+0 -1 10798
+D2
+~
+~
+0 -1 10728
+D3
+~
+~
+0 -1 10797
+D5
+~
+~
+0 -1 10707
+S
+#10728
+&zThe Balcony~
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 10727
+R O 0 10704 1 10728
+S
+#10729
+&OBack Porch~
+You've stepped out onto the cedar porch. The railing around the porch is
+decorated with roses of every imaginable color, but mostly black and red.
+In the center of the porch, there's a picnic table capable of seating
+people who would rather eat their meal outside, where they can see both
+the rose garden, and the lake. the entire porch has been painted black,
+and coated in a sealer to keep the rain from causing damage.
+~
+0 12 0 1 0 0 0 0
+D1
+~
+~
+0 -1 10731
+D3
+~
+~
+3 -1 10701
+D6
+~
+~
+0 -1 10730
+R O 0 10706 1 10729
+R D 0 10729 3 1
+S
+#10730
+&zBlack &RRose &gGarden~
+&z       .     .
+   ...  :``..':
+    : ````.'   :''::'
+  ..:..  :     .'' :
+``.    `:    .'     :
+   :    :   :        :
+    :   :   :         :
+    :    :   :        :
+     :    :   :..''''&g``::.
+&z      : ...:..'     &g.''
+      .'   .'  .::::'
+     :..'''``:::::::
+     '         `::::
+                 `::.
+                  `::
+                   :::&G.
+        ..:```.:'`. &g::'&G`.
+&G      ..'      `:.: &g::
+&G     .:        .: `:&g::
+&G     .:    ..''     :&g::
+&G      : .''          &g::
+&G       :             &g::
+                      :
+                       :
+~
+0 12 0 1 0 0 0 0
+D9
+~
+~
+0 -1 10729
+R O 0 10705 1 10730
+S
+#10731
+&cA Small &bL&ca&Ck&ce&Bf&cr&Co&cn&bt &cView~
+&x.
+.
+.
+            &w^^^^                   &Y@@@@@@@@@
+       &z^^^^       &w^^^^            &Y@@@@@@@@@@@@@@@
+                            &Y@@@@@@@@@@@@@@@@@@             &z^^^
+                           &Y@@@@@@@@@@@@@@@@@@@@
+ &B-=-=- -= -=-=-= -=-=-=-=- &r#################### &B-=-=-=- -=-=-=-=-=--=-
+&b -         ==   -  =       &O"""""""""""""""""""" &C=&b       ==     --=
+&B   =      ==      =- -- -&C=  &O""""""""""""" """"  &B=     -=-    = =-=  =--
+&b   -  -&C-&b     =         -      &O""""""  "" """       &b=- - ==  =&C-&b -
+&B -  -       - =      -           &O"" """"""  &B-      ==  -            -=
+&b       =             -        =      =      =-   -=             =
+~
+0 12 0 1 0 0 0 0
+D3
+~
+~
+0 -1 10729
+R O 0 10716 1 10731
+S
+#10732
+A Nursery~
+~
+0 12 0 1 0 0 0 0
+D3
+~
+~
+0 -1 1469
+S
+#10733
+&zMaster &bB&Ba&bt&Bh&br&Bo&bo&Bm~
+You enter the room with a bit of shock as your feet hit the cold vinyl. The
+light from the candlelit sconces sets the room in a soft amber glow, casting
+dancing shadows about the marble fixtures. The room is themed in mulberry and
+sage with dainty curtains over a high frosted privacy window.
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+1 -1 10704
+R O 0 10713 1 10733
+R D 0 10733 0 0
+S
+#10734
+&bT&gh&ce &gD&ba&pr&rk &OC&ra&pr&bn&gi&cv&ga&bl~
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 10735
+D1
+~
+~
+0 -1 10775
+D2
+~
+~
+0 -1 10777
+D3
+~
+~
+0 -1 10778
+D4
+~
+~
+0 -1 6227
+D5
+~
+~
+0 -1 10776
+D6
+~
+~
+0 -1 10780
+D7
+~
+~
+0 -1 10781
+D8
+~
+~
+0 -1 10782
+D9
+~
+~
+0 -1 10783
+S
+#10735
+&BC&pa&Pr&pn&Bi&bv&Ba&pl &Po&pf &BC&ba&Br&pn&Pa&pg&Be~
+~
+0 12 0 1 0 0 0 0
+D2
+~
+~
+0 -1 10734
+S
+#10736
+&WA&wt&Wt&ri&Rc~
+~
+0 12 0 1 0 0 0 0
+D5
+~
+~
+0 -1 6229
+S
+#10737
+&BTrayn Bedroom&T~
+~
+0 12 0 1 0 0 0 0
+D2
+~
+~
+0 -1 801
+S
+#10738
+&GL&go&ct&gu&Gs &GP&go&Gd &zEntrance~
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 10742
+S
+#10739
+&rL&zi&wv&Wi&wn&zg &rR&zo&wo&Wm~
+~
+0 12 0 1 0 0 0 0
+D5
+~
+~
+0 -1 6232
+S
+#10740
+&rB&za&ws&We&wm&ze&rn&Rt~
+~
+0 12 0 1 0 0 0 0
+D4
+~
+~
+0 -1 6232
+S
+#10741
+&GD&gl &zHallway~
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 10761
+D1
+~
+~
+0 -1 10762
+D2
+~
+~
+0 -1 10742
+D3
+~
+~
+0 -1 10763
+D4
+~
+~
+0 -1 10770
+S
+#10742
+&GD&gL &zHallway~
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 10741
+D1
+~
+~
+0 -1 10766
+D2
+~
+~
+0 -1 10738
+D3
+~
+~
+0 -1 10767
+S
+#10743
+&GL&go&ct&gu&Gs &GP&go&Gd &zLiving Room&w~
+~
+0 12 0 1 0 0 0 0
+D1
+~
+~
+0 -1 10738
+R O 0 10709 1 10743
+S
+#10744
+&RM&ra&Rv&we&Wr&Ri&rc&Rk &YH&Ou&zn&zt&Oe&Yr &BH&be&Ba&bd&gq&Gu&ga&bt&Be&br&Bs &z2 &zF&Wl&zo&Wo&zr&w~
+This is the second floor of the Maverick Hunter HQ. There are many
+high-tech devices in this room.
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 10748
+D2
+~
+~
+0 -1 10752
+D3
+~
+~
+0 -1 10749
+D5
+~
+~
+0 -1 1441
+R O 0 10712 1 10744
+S
+#10745
+&cC&Co&cm&Cm&ca&Cn&cd &YC&Oe&Yn&Ot&Ye&Or~
+This is the Maverick Hunter Command Center. Its the place where all of the
+missions planning is done and all of the high ranking officers reside.
+There are many computers and monitor screens all over the walls and every
+now and then a bleeping noise can be heard.
+~
+0 12 0 1 0 0 0 0
+D2
+~
+~
+0 -1 1441
+S
+#10746
+&RR&re&ws&Wt&wi&rn&Rg &cC&ch&ga&Gm&gb&Ge&Cr&cs&w~
+This is the resting chambers. In this room is where the hunters go to take
+off time from all the work they do all day. This room has several pod-like
+capsules for resting inside of to speed up recovery time.
+~
+0 12 0 1 0 0 0 0
+D3
+~
+~
+0 -1 1441
+S
+#10747
+&wS&Wt&wo&Wr&we &YR&Oo&Yo&Om&w~
+This is the storage room for the Hunter base. There is not much in this
+room as there is nothing yet to store in here that has anything of value.
+~
+0 12 0 1 0 0 0 0
+D1
+~
+~
+0 -1 1441
+S
+#10748
+&zCovert &YO&Op&Ys &cR&Co&co&Cm~
+This is the Cover Operation Room. Only designated Hunters have permission
+to enter this area. This room has maps all over the walls as well as empty
+poster boards for covert mission planning. There is many different kinds
+of computers in here.
+~
+0 12 0 1 0 0 0 0
+D2
+~
+~
+0 -1 10744
+S
+#10749
+&YH&Oa&Yl&Ol &zto the &wO&Wf&wf&Wi&wc&We&ws~
+This hallway leads to the offices of the Hunters that have enough rank to
+have an office. The hallway is brightly lighted from the ceiling above.
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 10750
+D1
+~
+~
+0 -1 10744
+S
+#10750
+&zEmpty Office~
+~
+0 12 0 1 0 0 0 0
+D2
+~
+~
+0 -1 10749
+S
+#10751
+&RR&Ge&Bc &YR&Po&Go&Cm&w~
+&R|&G|&R|&G|&R|&G|&R|&G|&R|&G|&R|&G|&R|&G|&R|&G|&R|&G|&R|&G|
+&g|&B\                &b/&g|
+&r| &c\              &C/ &r|
+&g|  &B\            &b/  &g|
+&r|   &c\    &Y*     &C/   &r|
+&g|    &B\        &b/    &g|
+&r|     &c\      &C/     &r|
+&g|      &B\    &b/      &g|
+&r|       &c\  &C/       &r|
+&g|        &B\&b/        &g|
+&R|&G|&R|&G|&R|&G|&R|&G|&R|&G|&R|&G|&R|&G|&R|&G|&R|&G|&R|&G|
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 9247
+R O 0 10710 1 10751
+S
+#10752
+&YH&Oa&Yl&Ol &zto the &wO&Wf&wf&Wi&wc&We&ws~
+This hallway leads to the office of the Hunters that have a high enough
+rank to have an office. The hallway is brighty lighted from the ceiling
+above.
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 10744
+D9
+~
+~
+2048 -1 10753
+S
+#10753
+&YG&Oe&Yn&Oo&w'&Ys &cO&Cf&cf&Ci&cc&Ce~
+This is Geno's personal office. The room is dimly lighted and has darkly
+colored wallpaper and tiles. It would be wise not to be seen in this room
+unless you are authorized to be in here. Geno does not take kindly to
+trespassers.
+~
+0 12 0 1 0 0 0 0
+D6
+~
+~
+0 -1 10752
+R O 0 10711 1 10753
+S
+#10754
+&WUpstairs Hallway~
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+1 -1 10756
+D1
+~
+~
+1 -1 10755
+D5
+~
+~
+0 -1 10701
+R D 0 10754 0 0
+R D 0 10754 1 0
+S
+#10755
+&CGuest &BBedroom~
+The bedroom is set up like the main room but bigger. A window is seen in a
+corner that gives a good view of the sunset. In the center of the dome
+ceiling is a golden chandeliar.
+~
+0 12 0 1 0 0 0 0
+D3
+~
+~
+1 -1 10754
+R O 0 10701 1 10755
+R D 0 10755 3 0
+S
+#10756
+&CGuest &BBathroom~
+~
+0 12 0 1 0 0 0 0
+D2
+~
+~
+1 -1 10754
+R O 0 10715 1 10756
+R D 0 10756 2 0
+S
+#10757
+&RW&rr&Re&rc&Rk &CR&Bo&co&bm~
+~
+0 12 0 1 0 0 0 0
+D1
+~
+~
+1 -1 10759
+D5
+~
+~
+0 -1 10758
+D7
+~
+~
+3 -1 10701
+R O 0 10714 1 10757
+R D 0 10757 1 0
+R D 0 10757 7 1
+S
+#10758
+&cIndoor &BP&bo&Bo&bl~
+~
+0 12 0 1 0 0 0 0
+D4
+~
+~
+0 -1 10757
+R O 0 10718 1 10758
+S
+#10759
+&zThe &YVenue~
+~
+0 12 0 1 0 0 0 0
+D3
+~
+~
+1 -1 10757
+R O 0 10717 1 10759
+R D 0 10759 3 0
+S
+#10760
+&zT&wh&ze &rD&Re&rn~
+~
+0 12 0 1 0 0 0 0
+D9
+~
+~
+3 -1 10701
+R O 0 10720 1 10760
+R O 0 10721 1 10760
+R D 0 10760 9 1
+S
+#10761
+&GL&go&ct&gu&Gs &GP&go&Gd &zMeeting Room~
+~
+0 12 0 1 0 0 0 0
+D2
+~
+~
+0 -1 10741
+R O 0 10708 1 10761
+R O 0 10723 1 10761
+R O 0 10725 1 10761
+R O 0 10722 1 10761
+R O 0 10724 1 10761
+R O 0 10726 1 10761
+S
+#10762
+&GL&go&ct&gu&Gs &GP&go&Gd &zWreck Room~
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 10765
+D1
+~
+~
+0 -1 10772
+D2
+~
+~
+0 -1 10764
+D3
+~
+~
+0 -1 10741
+S
+#10763
+&GL&go&ct&gu&Gs &GP&go&Gd &zResting Room~
+Many beds line the walls of this room. The members of Dark Lotus come here
+to rest themselves after their hard days worth of work. A window on the
+western wall lets sunlight in to fill the room.
+~
+0 12 0 1 0 0 0 0
+D1
+~
+~
+0 -1 10741
+R O 0 10728 1 10763
+S
+#10764
+&GL&go&ct&gu&Gs &GP&go&Gd &zBar~
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 10762
+R O 0 10709 1 10764
+S
+#10765
+&GL&go&ct&gu&Gs &GP&go&Gd &zIndoor &bP&Bo&bo&Bl &zRoom~
+~
+0 12 0 1 0 0 0 0
+D2
+~
+~
+0 -1 10762
+R O 0 10727 1 10765
+S
+#10766
+&GL&go&ct&gu&Gs &GP&go&Gd &zHotel~
+~
+0 12 0 1 0 0 0 0
+D3
+~
+~
+0 -1 10742
+S
+#10767
+&GD&gL &zHallway~
+~
+0 12 0 1 0 0 0 0
+D1
+~
+~
+0 -1 10742
+D3
+~
+~
+0 -1 10768
+S
+#10768
+&GL&go&ct&gu&Gs &GP&go&Gd &zPrison Station~
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+3 -1 10769
+D1
+~
+~
+0 -1 10767
+R D 0 10768 0 1
+S
+#10769
+&GD&gL &zJail~
+~
+0 12 0 1 0 0 0 0
+D2
+~
+~
+3 -1 10768
+R D 0 10769 2 1
+S
+#10770
+&GD&gL &zSecond Floor~
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 10771
+D5
+~
+~
+0 -1 10741
+S
+#10771
+&GD&gL &GA&gr&cm&go&Gr &zShop~
+~
+0 12 0 1 0 0 0 0
+D2
+~
+~
+0 -1 10770
+S
+#10772
+&GL&go&ct&gu&Gs &GP&go&Gd &zDen~
+~
+0 12 0 1 0 0 0 0
+D3
+~
+~
+0 -1 10762
+S
+#10773
+&CL&co&Cu&cn&Cg&ce &CR&co&Co&cm~
+~
+0 12 0 1 0 0 0 0
+D1
+~
+~
+0 -1 6236
+S
+#10774
+&RG&rr&We&ra&Rt M&ri&zl&we&zn&rk&Ro~
+~
+0 12 0 1 0 0 0 0
+D8
+~
+~
+0 -1 10739
+S
+#10775
+&YR&Oi&zn&wg&Wma&ws&zt&Oe&Yr~
+~
+0 12 0 1 0 0 0 0
+D3
+~
+~
+0 -1 10734
+S
+#10776
+&WD&wa&Wr&zk &WH&wa&Wl&zl&Ww&wa&Wy~
+~
+0 12 0 1 0 0 0 0
+D4
+~
+~
+0 -1 10734
+D5
+~
+~
+0 -1 10779
+S
+#10777
+&PR&pi&gd&Gd&gl&pe&P B&po&gx~
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 10734
+S
+#10778
+&WG&wr&We&za&rt &RMi&rl&ze&Wn&wk&Wo ~
+~
+0 12 0 1 0 0 0 0
+D1
+~
+~
+0 -1 10734
+S
+#10779
+&WD&wa&Wr&zk &WH&wa&Wl&zl&Ww&wa&Wy~
+~
+0 12 0 1 0 0 0 0
+D4
+~
+~
+0 -1 10776
+D5
+~
+~
+0 -1 10786
+S
+#10780
+&RA&rm&Oa&Yz&Oi&rn&Rg &rJ&Oe&Yc&Ok&re&Rl &rB&Or&Yo&Ot&rh&Re&rr&Os ~
+~
+0 12 0 1 0 0 0 0
+D9
+~
+~
+0 -1 10734
+S
+#10781
+&zT&Wh&we &CW&cr&ba&Bi&bt&ch&C: &wS&Wh&za&wn&Wg&Cr&ci&b-&BL&ba ~
+~
+0 12 0 1 0 0 0 0
+D8
+~
+~
+0 -1 10734
+S
+#10782
+&zT&Wh&we &YW&Or&ra&Ri&rt&Oh&Y: &wH&We&zl&Wl&w'&Ys &OP&ri&Rt~
+~
+0 12 0 1 0 0 0 0
+D7
+~
+~
+0 -1 10734
+S
+#10783
+&RM&ra&Od &YP&zr&Wo&wf&We&zs&Ys&Oo&rr'&Rs &zKitchen Laboratory~
+~
+0 12 0 1 0 0 0 0
+D6
+~
+~
+0 -1 10734
+S
+#10784
+&RE&rnt&Rra&rnce &zT&wo &WThe &rS&Rt&ra&Rt&re &RA&rl&Rc&rh&Re&rm&Ri&rs&Rt &bG&Bu&bi&Bl&bd~
+~
+0 12 0 1 0 0 0 0
+D4
+~
+~
+0 -1 6230
+S
+#10785
+&zThe Crypt~
+~
+0 4 0 1 0 0 0 0
+D4
+~
+~
+0 -1 6237
+R O 0 1829 1 10785
+S
+#10786
+&WD&wa&Wr&zk &WH&wa&Wl&zl&Ww&wa&Wy~
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 10787
+D1
+~
+~
+0 -1 10788
+D2
+~
+~
+0 -1 10789
+D3
+~
+~
+0 -1 10790
+D4
+~
+~
+0 -1 10779
+S
+#10787
+&WR&we&zs&gt&Ging &gR&zo&wo&Wm~
+~
+0 8388620 0 1 0 0 0 0
+D2
+~
+~
+0 -1 10786
+R O 0 10728 1 10787
+S
+#10788
+&WM&we&ze&gt&Ging &gR&zo&wo&Wm~
+~
+0 12 0 1 0 0 0 0
+D3
+~
+~
+0 -1 10786
+R O 0 10723 1 10788
+R O 0 10726 1 10788
+R O 0 10724 1 10788
+R O 0 10722 1 10788
+R O 0 10708 1 10788
+R O 0 10725 1 10788
+S
+#10789
+&WSw&wi&zm&gm&Gin&gg &zR&wo&Wom~
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 10786
+R O 0 10727 1 10789
+S
+#10790
+&WDr&wi&zn&gk&Gin&gg &zR&wo&Wom~
+~
+0 12 0 1 0 0 0 0
+D1
+~
+~
+0 -1 10786
+R O 0 10709 1 10790
+S
+#10791
+&YB&Oi&Yg &zD&wa&Wd&wd&zy &RK&ra&rm&z'&rs &GR&zole &GP&zlay &GR&zoom~
+~
+0 4 0 1 0 0 0 0
+D0
+~
+~
+0 -1 10705
+D5
+~
+~
+0 -1 2
+S
+#10792
+&YO&Organization of &YZ&Oodiac~
+~
+0 4 0 1 0 0 0 0
+D0
+~
+~
+0 -1 10793
+D2
+~
+~
+0 -1 542
+S
+#10793
+&YOZ &YH&Oallway~
+~
+0 4 0 1 0 0 0 0
+D0
+~
+~
+0 -1 10795
+D1
+~
+~
+0 -1 10794
+D2
+~
+~
+0 -1 10792
+S
+#10794
+&YOZ C&Oommander's &YO&Office~
+~
+0 4 0 1 0 0 0 0
+D3
+~
+~
+0 -1 10793
+S
+#10795
+&YOZ H&Oallway~
+~
+0 4 0 1 0 0 0 0
+D2
+~
+~
+0 -1 10793
+D3
+~
+~
+0 -1 10796
+S
+#10796
+&YOZ B&Oarracks~
+~
+0 4 0 1 0 0 0 0
+D1
+~
+~
+0 -1 10795
+S
+#10797
+&zA Dark Balcony~
+~
+0 4 0 1 0 0 0 0
+D1
+~
+~
+0 -1 10727
+S
+#10798
+&zA Dark Hallway~
+~
+0 4 0 1 0 0 0 0
+D0
+~
+~
+0 -1 10800
+D1
+~
+~
+0 -1 10799
+D2
+~
+~
+0 -1 10801
+D3
+~
+~
+0 -1 10727
+S
+#10799
+&zRaven HQ~
+~
+0 4 0 1 0 0 0 0
+D3
+~
+~
+0 -1 10798
+S
+#10800
+&zBlack Knights HQ~
+&x.&z        /.-------./\\                        //\.-------.\
+        //@@@@@@@//@@\\  )                (  //@@\\@@@@@@@\\
+       //@@@@@@@//@@@@>>/                  \<<@@@@\\@@@@@@@\\
+      //O@O@O@O//@O@O//                      \\O@O@\\O@O@O@O\\
+    //OOOOOOOO//OOOO||          \  /          ||OOOO\\OOOOOOOO\\
+   //O%O%O%O%//O%O%O%\\         ))((         //%O%O%O\\%O%O%O%O\\
+  ||%%%%%%%%//'  `%%%%\\       //  \\       //%%%%'   `\\%%%%%%%||
+  ((%%%%%%%((      %%%%%\\    ((    ))    //%%%%%       ))%%%%%%))
+   \:::' `::\\      `:::::\\   \)--(/    //:::::'      //::' `:::/
+    )'     `;)'      (`  ` \\ `<@  @>' / / '  ')      `(;'     `(
+            (               \`\ )^^( /  /               )
+   _                         ) \\oo/   (
+  (@)                         \  `'   /                              _
+  |-|\_________________________\__^__<________oOo__________________ (@)
+  | |                                         VVV                  \|-|
+  |-|   &rW e l c o m e    T o   T h e  B l a c k  K n i g h t s&z      |-|
+  |_|\____________________________________________________________  | |
+  (@)                        / ,/ \_____/ \\ -\/-                 `\|-|
+   -                    ___//^-      \____/\\                       (@)
+                       <<<  \     __  <____/||                       -
+                                 <   \ <___/||
+                                    || <___//
+                                    \ \/__//
+~
+0 12 0 1 0 0 0 0
+D2
+~
+~
+0 -1 10798
+S
+#10801
+&zA Dark Closet~
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 10798
+S
+#10802
+&RL&ri&Rv&ri&Rn&rg &RR&ro&Ro&rm~
+~
+0 12 0 1 0 0 0 0
+D4
+~
+~
+0 -1 10803
+D8
+~
+~
+0 -1 548
+S
+#10803
+&GU&gp&Gs&gt&Ga&gi&Gr&gs &GH&ga&Gl&gl&Gw&ga&Gy~
+~
+0 12 0 1 0 0 0 0
+D1
+~
+~
+0 -1 10804
+D5
+~
+~
+0 -1 10802
+S
+#10804
+&wM&za&ws&zt&we&zr &wB&ze&wd&zr&wo&zo&wm~
+~
+0 8388620 0 1 0 0 0 0
+D1
+~
+~
+0 -1 10805
+D3
+~
+~
+0 -1 10803
+R O 0 10719 1 10804
+S
+#10805
+&wM&za&ws&zt&we&zr &wB&za&wt&zh&wr&zo&wo&zm~
+~
+0 12 0 1 0 0 0 0
+D3
+~
+~
+0 -1 10804
+S
+#10806
+&bA &BB&ba&Bl&bc&Bo&bn&By~
+~
+0 1036 0 1 0 0 0 0
+D3
+~
+~
+0 -1 809
+S
+#10807
+&OA &OB&ce&Oa&cu&Ot&ci&Of&cu&Ol &cD&Oe&cn~
+You stand in the midst of a beautiful, lavishly-decorated den, flush with
+warm, cozy atmosphere. On the wall hangs a painting of a lush garden, the
+artist capturing even the essence of the morning dew on the gorgeous
+flowers glistening in the sunlight, truly a work of soulful art. In the
+corner sits a quaint little oak endtable, with an antique vase occupied
+by only a single red rose. In the midst of the room, sitting proudly on
+the Persian rug, stands an ornate table, made of the finest pine and
+adorned in gold trim. A ladder sits at the side of the room, a whiff
+of fresh air coming in from above.
+~
+0 12 0 1 0 0 0 0
+D4
+~
+~
+128 -1 10808
+D8
+~
+~
+0 -1 654
+R O 0 10738 1 10807
+R O 0 10736 1 10807
+S
+#10808
+&rA &pn&ri&pc&re &pc&ro&pz&ry &pl&ro&pf&rt~
+~
+0 8388620 0 1 0 0 0 0
+D5
+~
+~
+128 -1 10807
+R O 0 123 1 10808
+R O 0 10737 1 10808
+S
+#10809
+The Play Room~
+The walls here are covered in rose petals of every color and type. The bed
+here is covered in the finest satin sheets money can buy, and the stuffed
+animals that cover it and much of the surrounding floor seem to love it. The
+plush carpeting looks almost as inviting as the bed itself, and the bubbles
+floating randomly about the room give it a most playful feel.
+~
+0 12 0 1 0 0 0 0
+D1
+~
+~
+0 -1 1313
+R O 0 10739 1 10809
+S
+#10810
+A Warm and Sunny Kitchen~
+Sunlight filters in from every direction filling this room with a warm cozy
+feeling. The smell of good ole fashioned cooking fills the air and makes you
+hungry just walking in. In the center of the maple table is a lovely little
+filled with several types of flowers, including one sunflower, sticking up in
+the middle above all the rest.
+~
+0 12 0 1 0 0 0 0
+D3
+~
+~
+0 -1 1313
+R O 0 10740 1 10810
+R O 0 10841 1 10810
+R O 0 10741 1 10810
+  R P 0 1352 1 10741
+  R P 0 1353 1 10741
+  R P 0 1350 1 10741
+  R P 0 1348 1 10741
+  R P 0 1347 1 10741
+  R P 0 1349 1 10741
+  R P 0 1355 1 10741
+  R P 0 1316 2 10741
+S
+#10811
+&WM&wu&zd &WR&wo&zo&Wm~
+~
+0 12 0 1 0 0 0 0
+D3
+~
+~
+0 -1 1315
+S
+#10812
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10813
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10814
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10815
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10816
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10817
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10818
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10819
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10820
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10821
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10822
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10823
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10824
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10825
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10826
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10827
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10828
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10829
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10830
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10831
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10832
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10833
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10834
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10835
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10836
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10837
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10838
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10839
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10840
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10841
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10842
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10843
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10844
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10845
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10846
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10847
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10848
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10849
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10850
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10851
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10852
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10853
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10854
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10855
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10856
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10857
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10858
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10859
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10860
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10861
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10862
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10863
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10864
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10865
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10866
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10867
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10868
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10869
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10870
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10871
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10872
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10873
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10874
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10875
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10876
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10877
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10878
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10879
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10880
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10881
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10882
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10883
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10884
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10885
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10886
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10887
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10888
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10889
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10890
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10891
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10892
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10893
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10894
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10895
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10896
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10897
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10898
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10899
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10900
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10901
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10902
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10903
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10904
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10905
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10906
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10907
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10908
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10909
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10910
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10911
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10912
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10913
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10914
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10915
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10916
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10917
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10918
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10919
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10920
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10921
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10922
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10923
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10924
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10925
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10926
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10927
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10928
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10929
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10930
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10931
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10932
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10933
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10934
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10935
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10936
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10937
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10938
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10939
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10940
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10941
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10942
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10943
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10944
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10945
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10946
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10947
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10948
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10949
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10950
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10951
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10952
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10953
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10954
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10955
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10956
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10957
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10958
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10959
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10960
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10961
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10962
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10963
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10964
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10965
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10966
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10967
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10968
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10969
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10970
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10971
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10972
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10973
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10974
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10975
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10976
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10977
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10978
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10979
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10980
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10981
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10982
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#10984
+Conference Room~
+&zYou are in the conference room where the Immortals engage the mortals in
+questioning and occasionally punishment.  The room is bare and there are
+no apparent exits except the one to the west .
+~
+0 12 0 1 0 0 0 0
+D3
+~
+~
+0 -1 10988
+S
+#10985
+MS Transport Hanger~
+~
+0 12 0 1 0 0 0 0
+D1
+~
+~
+0 -1 10996
+S
+#10986
+&YB&Oi&Yg &zD&wa&Wd&wd&zy &RK&ram&z'&rs &GR&zole &GP&zlay &GR&zoom~
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 10987
+D5
+~
+~
+0 -1 2
+S
+#10987
+&bT&Bh&Ce &gG&Ga&Wrd&Ge&gn~
+&R       .      .'
+&R          :`...' `.,'  '
+&R      `.  ' &O.&Y**&O.&R  ; ; ':
+&R      ` ``:&O`&Y****&O,&R'  .' :
+&R    ..::.  `&O`&Y**&O"&R:.''   `.
+&R  .:    `: ; `,'        :
+&R    `:    `   :         ;
+&R      :   :   :        ;
+&R      :    :   :     .:
+&R       :    :   :..,'  &g``::.
+&R        `....:..'  &g..:;''
+&g        .:   . ...::::
+&g       ,'''''``:::::::
+&g                 `::::
+&g                   `::.
+&g                    `::
+&G             . ,.    &g::::'     &G ,..
+&G           .'.'  ``.  &g::     &G .'.. `.
+&G         '        .: &g::    &G,'.'     .
+~
+0 12 0 1 0 0 0 0
+D1
+~
+~
+0 -1 500
+D2
+~
+~
+0 -1 10986
+D3
+~
+~
+0 -1 10993
+S
+#10988
+The Immortal Complex~
+&zYou are in the center of the Immortal Complex. Here the immortals can do
+their business without the distraction of mortals.
+~
+0 12 0 1 0 0 0 0
+D1
+~
+~
+0 -1 10984
+D2
+~
+~
+0 -1 10997
+S
+#10989
+&PR&Ri&Pe&R'&Ps &Ccuddle &croom~
+~
+0 12 0 1 0 0 0 0
+D7
+~
+~
+0 -1 10997
+S
+#10990
+&WThe &rBu&Rrn&Oin&Yg L&Oa&Rn&rds~
+~
+0 12 0 1 0 0 0 0
+D8
+~
+~
+0 -1 10997
+S
+#10991
+&RC&rh&pa&zm&pb&re&Rr &zof &RI&rn&pd&ze&wci&zs&pi&ro&Rn~
+~
+0 12 0 1 0 0 0 0
+D9
+~
+~
+0 -1 10997
+S
+#10992
+&CT&ch&Ce &YC&Out&Ye &PL&pi&Ptt&pl&Pe &RB&run&Rn&ry &BP&ba&Bd~
+&zAlaraitha's room is small, but well decorated. In the corner is a heart
+shaped bed, with playboy bunny bedsheets. On the wall is a big flatscreen
+television, playing a variety of japanese anime. There is a cabinet full
+of different  game systems, and another full of games. There are a few
+books on the ground,  and a table by the bed. Finally, the room is
+surround by rose sented candles.
+~
+0 12 0 1 0 0 0 0
+D5
+~
+~
+0 -1 10997
+S
+#10993
+&GK&ga&Gm&go&Gr&go&Gv&g'&Gs  &YB&Oi&Yg &OB&Ya&Od &RP&ri&Rm&rp &BP&ba&Bd~
+&x.&R       _,.
+&R      ,` -.)
+&R     ( &z_/-\\-._
+&R    /,&z|`--._,-^|            ,
+&R    \_&z| |`-._/||          &W,'|
+&z      |  `-, / |         &W/  /
+&z      |     || |        &W/  /
+&z       `r-._||/   __   &W/  /
+&z   __,-<_     )`-/  `.&W/  /
+&z /'  \   `---'   \   &W/  /
+&z|     |           |.&W/  /
+&z \    /           /&W/  /
+&z  \_/' \         |&W/  /
+&z   |    |   _,^-'&W/  /
+&z   |    , ``  &Y(\&W/  /&Y_
+&z    \,.->._    &Y\X-=/^
+&z    (  /   `-._&O//^`
+&z     `Y-.____(__}
+&z      |     {__)
+&Y            ()
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 10997
+D1
+~
+~
+0 -1 10987
+D2
+~
+~
+0 -1 5100
+S
+#10994
+An Empty Immortal Apartment~
+~
+0 12 0 1 0 0 0 0
+D6
+~
+~
+0 -1 10997
+S
+#10995
+An Empty Immortal Apartment~
+~
+0 12 0 1 0 0 0 0
+D3
+~
+~
+0 -1 10997
+S
+#10996
+&CC&Wr&ca&Wy&c'&Ws P&Ca&cd~
+~
+0 12 0 1 0 0 0 0
+D3
+~
+~
+0 -1 10985
+D4
+~
+~
+0 -1 10997
+D6
+~
+~
+0 -1 5113
+S
+#10997
+&WThe Immortal Offices~
+&zYou are in the center of the Immortal Complex. Here the immortals can do
+their business without the distraction of mortals.
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 10988
+D1
+~
+~
+0 -1 10995
+D2
+~
+~
+0 -1 10993
+D3
+~
+~
+0 -1 10998
+D4
+~
+~
+0 -1 10992
+D5
+~
+~
+0 -1 10996
+D6
+~
+~
+0 -1 10991
+D7
+~
+~
+0 -1 10990
+D8
+~
+~
+0 -1 10989
+D9
+~
+~
+0 -1 10994
+S
+#10998
+&CW&go&Gl&cf&Gw&go&co&Cd &CE&cs&gt&Ga&gt&ce&Cs~
+&RYou see a lot of empty wine bottles laying around the floor. The
+nightstand has an ashtray on it with what looks like the Rocky Mountains,
+but with ash and cigarette butts. In the far corner of the room there is a
+bed thats stripped of sheets and under the bed there are lots of girly
+magazines and an almost empty economy size bottle of Vaseline.
+~
+0 12 0 1 0 0 0 0
+D1
+~
+~
+0 -1 10997
+> speech_prog reset~
+if name ($n) == Kamorov
+mptrans justin
+~
+|
+S
+#10999
+SM Transfer Room~
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 5107
+D1
+~
+~
+0 -1 4017
+D2
+~
+~
+0 -1 2021
+D3
+~
+~
+0 -1 1342
+D4
+~
+~
+0 -1 2306
+D5
+~
+~
+0 -1 2380
+D6
+~
+~
+0 -1 7509
+D7
+~
+~
+0 -1 6013
+D8
+~
+~
+0 -1 6807
+D9
+~
+~
+0 -1 2355
+R M 0 10997 1 10999
+S
+#0
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

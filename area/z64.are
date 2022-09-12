@@ -1,0 +1,4411 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         Colony Z64~
+Author       Zantas~
+Ranges       1 1007 1 1007
+Economy      1 125069692
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       5100
+Keywords   hologram level 1~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     -1000 1 0 97 25 0
+Stats2     0 10 10
+Stats3     0 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       5101
+Keywords   hologram level 2~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 27 0 32 50 0
+Stats2     5 10 270
+Stats3     2 4 2
+Stats4     0 0 0 5 5
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       5102
+Keywords   hologram level 3~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 52 0 -30 75 0
+Stats2     10 10 520
+Stats3     5 4 2
+Stats4     0 0 0 10 10
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       5103
+Keywords   hologram level 4~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 77 0 -92 100 0
+Stats2     15 10 770
+Stats3     7 4 2
+Stats4     0 0 0 15 15
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       5104
+Keywords   hologram level 5~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 102 0 -155 125 0
+Stats2     20 10 1020
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       5105
+Keywords   hologram level 6~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 140 0 -250 150 0
+Stats2     28 10 1400
+Stats3     14 4 2
+Stats4     0 0 0 28 28
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       5106
+Keywords   hologram level 7~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 200 0 -400 175 0
+Stats2     40 10 2000
+Stats3     20 4 2
+Stats4     0 0 0 40 40
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       5107
+Keywords   hologram level 8~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 240 0 -500 200 0
+Stats2     48 10 2400
+Stats3     24 4 2
+Stats4     0 0 0 48 48
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       5108
+Keywords   hologram level 9~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 302 0 -655 225 0
+Stats2     60 10 3020
+Stats3     30 4 2
+Stats4     0 0 0 60 60
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       5109
+Keywords   hologram final level 10~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 400 0 -900 250 0
+Stats2     80 10 4000
+Stats3     40 4 2
+Stats4     0 0 0 80 80
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   1~
+Comlist   mpmload 5121
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       5110
+Keywords   hologram level 11~
+Short      a hologram~
+Long       A hologram stands ready for combat.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 504 0 -1160 300 0
+Stats2     100 10 5040
+Stats3     50 4 2
+Stats4     0 0 0 100 100
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       5111
+Keywords   hologram level 12~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 560 0 -1300 325 0
+Stats2     112 10 5600
+Stats3     56 4 2
+Stats4     0 0 0 112 112
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       5112
+Keywords   hologram level 13~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 616 0 -1440 350 0
+Stats2     123 10 6160
+Stats3     61 4 2
+Stats4     0 0 0 123 123
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       5113
+Keywords   hologram level 14~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 670 0 -1575 375 0
+Stats2     134 10 6700
+Stats3     67 4 2
+Stats4     0 0 0 134 134
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       5114
+Keywords   hologram level 15~
+Short      a hologram~
+Long       A hologram stands ready for combat.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 728 0 -1720 400 0
+Stats2     145 10 7280
+Stats3     72 4 2
+Stats4     0 0 0 145 145
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       5115
+Keywords   hologram level 16~
+Short      a hologram~
+Long       A hologram stands ready for combat.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 784 0 -1860 425 0
+Stats2     156 10 7840
+Stats3     78 4 2
+Stats4     0 0 0 156 156
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       5116
+Keywords   hologram level 17~
+Short      a hologram~
+Long       A hologram stands ready for combat.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 840 0 -2000 450 0
+Stats2     168 10 8400
+Stats3     84 4 2
+Stats4     0 0 0 168 168
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       5117
+Keywords   hologram level 18~
+Short      a hologram~
+Long       A hologram stands ready for combat.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 896 0 -2140 475 0
+Stats2     179 10 8960
+Stats3     89 4 2
+Stats4     0 0 0 179 179
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       5118
+Keywords   hologram level 19~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 952 0 -2280 500 0
+Stats2     190 10 9520
+Stats3     95 4 2
+Stats4     0 0 0 190 190
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       5119
+Keywords   hologram final level 20~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     -1000 1000 0 -2400 500 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       5120
+Keywords   Claude Kenni~
+Short      Claude~
+Long       Claude Kenni is here, minding his own business.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_claude~
+Gender     male~
+Actflags   npc noquest noassist~
+Affected   truesight~
+Stats1     0 1000 0 -2400 5000 0
+Stats2     200 10 2500000
+Stats3     1 1 1
+Stats4     0 0 8 20 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   parry~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   say Fine, Take my weapon, but I'll be back! I always come back!
+mpoload 5104
+mpnothing &?Log: $n just killed Claude.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       5121
+Keywords   hologram final level 10~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 400 0 -900 250 0
+Stats2     80 10 4000
+Stats3     40 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   1~
+Comlist   mpoload 11507
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       5122
+Keywords   Christina~
+Short      Christina~
+Long       Christina is sitting behind a desk waiting to help the next person in line.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel train~
+Stats1     0 400 0 -900 0 0
+Stats2     80 10 4000
+Stats3     40 4 2
+Stats4     0 0 0 80 80
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   if ispc($n)
+say Welcome to the Z64 Training area, $n! If you need any help just ask!
+else
+mpdamage $n 1
+mprestore $n 30000
+mprestore $n 30000
+mprestore $n 30000
+say Get the fuck out of here $n!
+MPTRANSFER $n 5123
+endif 
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   training~
+Comlist   nod $n
+say Here at the Z64 Training Complex, you can train your combat
+say ability. When you are inside a training level just say 'begin'
+say to spawn a hologram. Then once it is spawn, kill it. There is
+say a hospital to the west when you get low on health. Good Luck!
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   help~
+Comlist   say This is the Z64 Training Complex. You can freely use the
+mpsleep 9
+say training levels. I must warn you the more advanced levels
+mpsleep 9
+say can be a little dangerous. Have a good day.
+mpsleep 9
+say Oh my, I almost forgot if you have any questions about
+mpsleep 9
+say training, dont be afraid to just ask.
+mpsleep 9
+smile
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       5123
+Keywords   Heather~
+Short      Heather~
+Long       A woman stands behind a counter selling flowers.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    18 10 10 18 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       5124
+Keywords   Candace~
+Short      Candace~
+Long       A cute woman is standing here greeting people to the Training Facility.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   mpedit 5124 add greet 100
+if ispc($n)
+say Welcome to the Z64 Training area, $n!
+else
+say Get the fuck out of here $n!
+MPTRANSFER $n 5123
+endif 
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       5125
+Keywords   Supply Shopkeeper~
+Short      Shopkeeper~
+Long       The Z64 Supply Shopkeeper is standing here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say Hello $n! Welcome to the Z64 Supply Shop!
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       5126
+Keywords   item shop keeper~
+Short      an items shop keeper~
+Long       An items shop keeper is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 500 0 -1150 0 0
+Stats2     100 10 5000
+Stats3     50 4 2
+Stats4     0 0 0 100 100
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p stock~
+Comlist   mpoload 2006
+mpoload 2007
+mpoload 10424
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       5127
+Keywords   weapon shop dealer~
+Short      a weapons dealer~
+Long       The weapons dealer is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   5 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p stock~
+Comlist   mpoload 502
+mpoload 2001
+mpoload 2002
+mpoload 59
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       5128
+Keywords   Z64 Resident~
+Short      A Z64 Resident~
+Long       A Resident of Z64 is walking here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_thief~
+Gender     female~
+Actflags   npc~
+Stats1     0 55 0 -37 5 0
+Stats2     11 10 550
+Stats3     5 4 2
+Stats4     0 0 0 11 11
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     slash~
+VIPFlags   Z64~
+#MUDPROG
+Progtype  greet_prog~
+Arglist   3~
+Comlist   poke $n
+say hey buddy ... can i have a dollar?
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       5129
+Keywords   slave trader~
+Short      A Slave Trader~
+Long       A Slave trader is here keeping his slaves calm.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  bribe_prog~
+Arglist   50000~
+Comlist   say Ok here is a frail slave.
+mpechoat $n A frail slave starts walking towards you.
+mpmload 5132
+mpforce frail follow $n
+thank $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  bribe_prog~
+Arglist   100000~
+Comlist   say Ok here is a lean slave.
+mpechoat $n A lean slave starts walking towards you.
+mpmload 5131
+mpforce lean follow $n
+thank $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  bribe_prog~
+Arglist   150000~
+Comlist   say Ok here is a muscular slave.
+mpechoat $n A muscular slave starts walking towards you.
+mpmload 5130
+mpforce muscular follow $n
+thank $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   yes~
+Comlist   mpsleep 2
+say Okay, I have three types of slaves for sale...
+mpsleep 10
+say A frail slave for 50,000 dollars.
+mpsleep 10
+say A lean slave for 100,000 dollars.
+mpsleep 10
+say A muscular slave for 150,000 dollars.
+mpsleep 10
+say Once you've made your decision just give me the appropriate amount of money
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   if ispc($n)
+bow $n
+say Hello $n! Are you interested in a slave today?
+else
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       5130
+Keywords   muscular slave~
+Short      A muscular slave~
+Long       A muscular slave is standing here ready for anything.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 700 0 -1650 0 0
+Stats2     140 10 7000
+Stats3     70 4 2
+Stats4     0 0 0 140 140
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       5131
+Keywords   lean slave~
+Short      A lean slave~
+Long       A lean slave is slouching here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 400 0 -900 0 0
+Stats2     80 10 4000
+Stats3     40 4 2
+Stats4     0 0 0 80 80
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       5132
+Keywords   frail slave~
+Short      A frail slave~
+Long       A frail slave is barely holding himself up.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel prototype~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       5158
+Keywords   Factory Parts Supplier~
+Short      the factory parts seller~
+Long       The factory parts seller is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say Hello $n! Welcome to the Z64 Supply Shop!
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p stock~
+Comlist   mpoload 2016
+mpoload 2026
+mpoload 2025
+mpoload 2024
+mpoload 2023
+mpoload 2022
+mpoload 2021
+mpoload 2020
+mpoload 2013
+mpoload 2018
+mpoload 2017
+mpoload 2015
+mpoload 2014
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       5163
+Keywords   Contraband Shop Owner~
+Short      Contraband Shop Owner~
+Long       The owner of the contraband shop stands here, with a grin on his face.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   5 0 78 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p stock~
+Comlist   mpjunk all
+mpoload 5163
+mpoload 5164
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       5166
+Keywords   smuggling guard~
+Short      a smuggling guard~
+Long       A guard stands here keeping an eye out for smugglers.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_customs_weapons~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       5167
+Keywords   smuggling guard~
+Short      a smuggling guard~
+Long       A guard stands here keeping an eye out for smugglers.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_customs_spice~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       5169
+Keywords   Armor shop keeper~
+Short      the armor shop keeper~
+Long       The armor shop dealer awaits your choice.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 500 0 -1150 0 0
+Stats2     100 10 5000
+Stats3     50 4 2
+Stats4     0 0 0 100 100
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   9 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   key~
+Comlist   nod $n
+say Here you go.
+mpoload 5161
+give key $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p stock~
+Comlist   mpoload 501
+mpoload 503
+mpoload 504
+mpoload 505
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       5170
+Keywords   Molly~
+Short      &CM&co&Cl&cl&Cy&c~
+Long       &CM&co&Cl&cl&Cy &cstands here behind the bar.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel noquest train~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   say Hello $n, and welcome to &zT&wh&ze &zI&Wk&wo&zn.
+say What can I get for you?
+wink $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   beer~
+Comlist   say Coming up.
+mpecho &CM&co&Cl&cl&Cy&c pulls a bottle of Beer from behind the bar.
+mpoload 202
+give beer $n
+say Here you go.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   vodka~
+Comlist   say Coming up.
+mpecho &CM&co&Cl&cl&Cy&c pulls a bottle of vodka from behind the bar.
+mpoload 4124
+give bottle $n
+say Here you go.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   whiskey~
+Comlist   say Coming up.
+mpecho &CM&co&Cl&cl&Cy&c pulls a shot of whiskey from behind the bar.
+mpoload 203
+give whiskey $n
+say Here you go.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Absinthe~
+Comlist   say Coming up.
+mpecho &CM&co&Cl&cl&Cy&c pulls a bottle of absinthe from behind the bar.
+mpoload 121
+give bottle $n
+say Here you go.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   glowstick~
+Comlist   say Coming up.
+mpecho &CM&co&Cl&cl&Cy&c pulls a &GNeon Green Glowstick&c from behind the bar.
+mpoload 6019
+give glowstick $n
+say Here you go.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       5172
+Keywords   Unrefined Spice Dealer~
+Short      the Spice dealer~
+Long       A dealer in unrefined spice is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 500 0 -1150 0 0
+Stats2     100 10 5000
+Stats3     50 4 2
+Stats4     0 0 0 100 100
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   61 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p stock~
+Comlist   mpoload 5100
+mpoload 5101
+mpoload 5102
+mpoload 5103
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       5173
+Keywords   Sara~
+Short      Sara~
+Long       Sara awaits your choice.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel nocorpse~
+Affected   detect_invis detect_hidden~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       5174
+Keywords   Willie~
+Short      Willie~
+Long       A wierd looking figure is here in the shadows.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#ENDMOBILE
+
+#MOBILE
+Vnum       5175
+Keywords   Prostitute~
+Short      Prostitute~
+Long       A wandering prostitute is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 50 100
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#ENDMOBILE
+
+#MOBILE
+Vnum       5176
+Keywords   Prostitute~
+Short      Prostitute~
+Long       A wandering prostitute is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 50 100
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#ENDMOBILE
+
+#MOBILE
+Vnum       5177
+Keywords   Prostitute~
+Short      Prostitute~
+Long       A wandering prostitute is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 50 100
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#ENDMOBILE
+
+#MOBILE
+Vnum       5178
+Keywords   Prostitute~
+Short      Prostitute~
+Long       A wandering prostitute is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 50 100
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#ENDMOBILE
+
+#MOBILE
+Vnum       5179
+Keywords   Prostitute~
+Short      Prostitute~
+Long       A wandering prostitute is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 50 100
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#ENDMOBILE
+
+#MOBILE
+Vnum       5180
+Keywords   Prostitute~
+Short      Prostitute~
+Long       A wandering prostitute is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 50 100
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#ENDMOBILE
+
+#MOBILE
+Vnum       5181
+Keywords   Prostitute~
+Short      Prostitute~
+Long       A wandering prostitute is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 50 100
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#ENDMOBILE
+
+#MOBILE
+Vnum       5182
+Keywords   Prostitute~
+Short      Prostitute~
+Long       A wandering prostitute is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 50 100
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#ENDMOBILE
+
+#MOBILE
+Vnum       5183
+Keywords   Prostitute~
+Short      Prostitute~
+Long       A wandering prostitute is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 50 100
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#ENDMOBILE
+
+#MOBILE
+Vnum       5184
+Keywords   Prostitute~
+Short      Prostitute~
+Long       A wandering prostitute is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 50 100
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#ENDMOBILE
+
+#MOBILE
+Vnum       5185
+Keywords   Prostitute~
+Short      Prostitute~
+Long       A wandering prostitute is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 50 100
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#ENDMOBILE
+
+#MOBILE
+Vnum       5186
+Keywords   Cooler Guard~
+Short      &CC&co&Co&cl&Ce&cr &WGuard~
+Long       &WThe &CC&co&Co&cl&Ce&cr &WGuard is here, Checking for passes.
+~
+Desc       He seems ridiculously busy, checking guests in and out, trying desperately to
+keep things going at a steady pace, despite the hustle and bustle about him.
+Perhaps you should do your business with him and leave him to his own?
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel train~
+Stats1     0 1005 0 -2412 0 0
+Stats2     201 10 3000000
+Stats3     100 4 2
+Stats4     0 0 0 201 201
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if carryingvnum($n) 6000
+say Welcome to the Water Cooler Room, $n.
+else
+say You're not allowed here.
+mpforce $n se
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       5187
+Keywords   z64 police officer~
+Short      A Z64 Police Officer~
+Long       A Z64 Police Officer is looking for criminals here.
+~
+Desc       He looks TERRIBLY busy. That must be a lot of work... Racing all over the
+hotel serving countless guests for hours on end. Maybe it would be best to
+just ask him for some food or water and let him be on his way.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_police_attack~
+Gender     nonbinary~
+Actflags   npc stayarea~
+Stats1     0 25 0 37 0 0
+Stats2     5 10 250
+Stats3     2 4 2
+Stats4     0 0 0 5 5
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+VIPFlags   Z64~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   food~
+Comlist   say Certainly, here you are.
+mpoload 5191
+give steak $n
+say Enjoy!
+emote &wraces back to work.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   water~
+Comlist   say Certainly, here you are.
+mpoload 5190
+give glass $n
+say Enjoy!
+emote &wraces back to work.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       5190
+Keywords   Greed~
+Short      &GG&gr&ce&ge&Gd&w~
+Long       &GG&gr&ce&ge&Gd&w is wondering what he wants next.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_homunculus~
+Gender     male~
+Actflags   npc noquest noassist~
+Affected   invisible hide truesight~
+Stats1     0 1000 0 -2400 250000 0
+Stats2     200 10 2500000
+Stats3     1 1 1
+Stats4     0 0 5 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   parry dodge~
+#MUDPROG
+Progtype  greet_prog~
+Arglist   5~
+Comlist   growl $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   say I'll.. be.. back.. Homunculus... can't die...
+mpoload 92
+mpnothing Log: $n just killed Greed.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       5191
+Keywords   CDI Dispenser~
+Short      A CDI Dispenser~
+Long       A CDI Dispenser hangs on the wall here. Say "CDI" to activate it.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 3000000
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  speech_prog~
+Arglist   cdi~
+Comlist   mpecho The CDI Dispenser clicks and whirs, and...
+mpoload 10424
+give cdi $n
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       5199
+Keywords   Adar~
+Short      Adar~
+Long       A person wearing a hooded jacket is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc~
+Stats1     0 220 0 -450 0 0
+Stats2     44 10 2200
+Stats3     22 4 2
+Stats4     0 0 0 44 44
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Defenses   parry~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpecho &rAdar's head is cut from her body.&g  
+mpoload 2032
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#OBJECT
+Vnum     5100
+Keywords cocain leaves~
+Type     rawspice~
+Short    some cocain leaves~
+Long     Some idiot has dropped some cocain leaves.~
+WFlags   take hold~
+Values   2 0 0 0 0 0
+Stats    1 1000 10000 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5101
+Keywords tree root rawspice~
+Type     rawspice~
+Short    some tree root~
+Long     Some tree root has been dropped on the floor.~
+WFlags   take body~
+Values   0 20 0 0 0 0
+Stats    1 1000 10000 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5102
+Keywords shrooms~
+Type     rawspice~
+Short    some shrooms~
+Long     Some great lookin fungi is growing on the floor.~
+WFlags   take~
+Values   3 0 0 0 0 0
+Stats    1 1000 10000 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5103
+Keywords carsanum rawspice~
+Type     rawspice~
+Short    Some unrefined carsinum~
+Long     Some unrefined carsinum lies here.~
+WFlags   take~
+Values   1 0 0 0 0 0
+Stats    1 1000 10000 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5104
+Keywords Plasma-coated japanese sword~
+Type     weapon~
+Short    &BA &GP&gl&ca&cs&gm&Ga&C-&GC&go&ca&ct&ge&Gd&B Japanese Sword~
+Long     &BA &GP&gl&ca&cs&gm&Ga&C-&GC&go&ca&ct&ge&Gd &wJapanese Sword was misplaced here.~
+Flags    glow contraband noinvoke augmented~
+WFlags   take wield~
+Values   25 12 192 2 1000 1000
+Stats    1 0 0 0 0
+Affect       -1 -1 20 18 0
+Affect       -1 -1 20 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5105
+Keywords head claude~
+Type     treasure~
+Short    The Head of Claude~
+Long     The Head of Claude~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    50 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5107
+Keywords Rinoa~
+Type     fountain~
+Short    A Beautiful Statue of Rinoa~
+Long     A statue of the beautiful Rinoa~
+Flags    glow hutt_size magic~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    Rinoa Statue~
+ExDesc       The statue depicts a beautiful german woman. The woman has long brown hair,
+and deep brown eyes covered by a pair of glasses. The woman in the statue
+seems to be at peace. She wears a calm gentle smile, one that would put
+anyone at peace. She appears to be around the age of 19. Generally
+slender, and though her back is slightly arched, She appears to be
+relatively tall.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    Rinoa Statue~
+ExDesc       The statue depicts a beautiful german woman. The woman has long brown hair,
+and deep brown eyes covered by a pair of glasses. The woman in the statue
+seems to be at peace. She wears a calm gentle smile, one that would put
+anyone's mind at ease. She appears to be around the age of 19. Generally
+slender But yet relatively tall.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     5120
+Keywords [arti] Bunny Shoes~
+Type     armor~
+Short    &Y[&BA&br&BT&bi&Y] &PB&pu&Pn&pn&Py &WS&wh&Wo&we&Ws~
+Long     &Y[&BA&br&BT&bi&Y] &PB&pu&Pn&pn&Py &WS&wh&Wo&we&Ws~
+Flags    noinvoke artifact~
+WFlags   take feet~
+Values   80 80 0 0 0 0
+Stats    1 0 0 0 0
+Affect       -1 -1 5 31 0
+Affect       -1 -1 50 18 0
+Affect       -1 -1 5 3 0
+Affect       -1 -1 5 1 0
+Affect       -1 -1 2097152 26 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5121
+Keywords [ArTi] Tri-Emblem~
+Type     armor~
+Short    &Y[&BA&br&BT&bi&Y] &RT&rr&pi&C-&GE&gm&cbl&ge&Gm~
+Long     &Y[&BA&br&BT&bi&Y] &RT&rr&pi&C-&GE&gm&cbl&ge&Gm~
+Flags    noinvoke artifact~
+WFlags   take neck~
+Values   80 80 0 0 0 0
+Stats    1 0 0 0 0
+Affect       -1 -1 20 1 0
+Affect       -1 -1 20 3 0
+Affect       -1 -1 20 2 0
+Affect       -1 -1 20 25 0
+Affect       -1 -1 20 4 0
+Affect       -1 -1 20 5 0
+Affect       -1 -1 20 31 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5122
+Keywords [Arti] Heal Ring~
+Type     trash~
+Short    &Y[&BA&br&BT&bi&Y] &CH&ce&Ca&cl &YR&Oi&Yn&Og~
+Long     &Y[&BA&br&BT&bi&Y] &CH&ce&Ca&cl &YR&Oi&Yn&Og~
+Flags    noinvoke artifact~
+WFlags   take finger~
+Values   80 80 0 0 0 0
+Stats    1 0 0 0 0
+Affect       -1 -1 15000 13 0
+Affect       -1 -1 256 26 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5123
+Keywords Prosper Band~
+Type     armor~
+Short    &Y[&BA&br&BT&bi&Y] &O$&Y$&O$&zPr&Wo&ws&Wp&zer &GB&gan&Gd&O$&Y$&O$~
+Long     &Y[&BA&br&BT&bi&Y] &O$&Y$&O$&zPr&Wo&ws&Wp&zer &GB&gan&Gd&O$&Y$&O$~
+Flags    noinvoke artifact~
+WFlags   take wrist~
+Values   80 80 0 0 0 0
+Stats    1 0 0 0 0
+Affect       -1 -1 1048576 26 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5124
+Keywords [ArTi] [Legend of Zelda] Master Sword~
+Type     weapon~
+Short    &Y[&BA&br&BT&bi&Y] &z[&YL&Oe&Yg&Oe&Yn&Od &zo&Wf &RZ&re&pl&rd&Ra&z] &GM&ga&cst&ge&Gr &CS&cw&zo&cr&Cd~
+Long     &Y[&BA&br&BT&bi&Y] &z[&YL&Oe&Yg&Oe&Yn&Od &zo&Wf &RZ&re&pl&rd&Ra&z] &GM&ga&cst&ge&Gr &CS&cw&zo&cr&Cd is laying here.~
+Flags    artifact~
+WFlags   take wield~
+Values   1000 20 150 2 90000000 90000000
+Stats    1 0 0 0 0
+Affect       -1 -1 50 18 0
+Affect       -1 -1 100 19 0
+Affect       -1 -1 -2500 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5125
+Keywords [Arti] Tetsusaiga~
+Type     weapon~
+Short    &Y[&BA&br&BT&bi&Y] &zTe&Wts&wus&Wai&zga~
+Long     &Y[&BA&br&BT&bi&Y] &zTe&Wts&wus&Wai&zga&w was carelessly discarded here.~
+Flags    glow artifact~
+WFlags   take wield~
+Values   1100 12 160 1 100000 100000
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  remove_prog~
+Arglist   100~
+Comlist   mpechoaround $n $n's &zTe&Wts&wus&Wai&zga&w loses its gigantic fang appearance.
+mea $n &zTe&Wts&wus&Wai&zga&w slims back down as you remove it.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  wear_prog~
+Arglist   100~
+Comlist   mea $n &zTe&Wts&wus&Wai&zga&w flares up, turning into a huge fang as you wield it 
+ 
+mpechoaround $n $n's &zTe&Wts&wus&Wai&zga&w turns into a huge fang as it is wielded.
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     5126
+Keywords [ArTi] Tenseiga~
+Type     weapon~
+Short    &Y[&BA&br&BT&bi&Y] &RT&re&On&Yse&Oi&rg&Ra~
+Long     &Y[&BA&br&BT&bi&Y] &RT&re&On&Yse&Oi&rg&Ra&w was discarded carelessly.~
+Flags    artifact~
+WFlags   take wield~
+Values   0 5 100 3 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5127
+Keywords [ArTi] Ultima Materia~
+Type     treasure~
+Short    &Y[&BA&br&BT&bi&Y] &CU&cl&Ct&ci&Cm&ca &BM&ba&Bt&be&Br&bi&Ba~
+Long     &Y[&BA&br&BT&bi&Y] &CU&cl&Ct&ci&Cm&ca &BM&ba&Bt&be&Br&bi&Ba&w was very carelessly dropped here.~
+Flags    glow noinvoke artifact~
+WFlags   take hold~
+Values   75 75 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5151
+Keywords Rubber Band~
+Type     armor~
+Short    &YR&Ou&zbb&Oe&Yr&W &zB&Wan&zd~
+Long     &WA &YR&Ou&zbb&Oe&Yr&W &zB&Wan&zd&W is here.~
+WFlags   take wrist~
+Values   5 5 0 0 0 0
+Stats    1 125 12 0 0
+Affect       -1 -1 2 18 0
+Affect       -1 -1 2 19 0
+Affect       -1 -1 5 40 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5152
+Keywords Ring of Light~
+Type     armor~
+Short    &WR&wi&Wn&wg &Co&cf &YL&Oi&Yg&Oh&Yt~
+Long     &zA &WR&wi&Wn&wg &Co&cf &YL&Oi&Yg&Oh&Yt&z is here.~
+WFlags   take finger~
+Values   75 75 0 0 0 0
+Stats    1 55000 5500 0 0
+Affect       -1 -1 100 13 0
+Affect       -1 -1 11 19 0
+Affect       -1 -1 11 18 0
+Affect       -1 -1 900 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5153
+Keywords A White Dragon~
+Type     treasure~
+Short    &wA White Dragon Floats About~
+Long     &wA White Dragon Floats About~
+Flags    invis~
+WFlags   take protofloating~
+Values   0 0 0 0 0 0
+Stats    1 150000 15000 0 0
+Affect       -1 -1 1000 13 0
+Affect       -1 -1 -75 17 0
+Affect       -1 -1 20 18 0
+Affect       -1 -1 20 19 0
+Affect       -1 -1 2097152 26 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5154
+Keywords Swiss Army Knife~
+Type     weapon~
+Short    &RS&rw&Ri&rs&Rs &GA&gr&Gm&gy &YK&On&Yi&Of&Ye~
+Long     &WA &RS&rw&Ri&rs&Rs &GA&gr&Gm&gy &YK&On&Yi&Of&Ye&W is here.~
+WFlags   take wield~
+Values   10 10 32 2 1000 1000
+Stats    1 450 45 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5155
+Keywords Titanium Battle Armor~
+Type     armor~
+Short    &WT&wi&Wt&wa&Wn&wi&Wu&wm &BB&ba&Bt&bt&Bl&be &CA&cr&Cm&co&Cr~
+Long     &WA &WT&wi&Wt&wa&Wn&wi&Wu&wm &BB&ba&Bt&bt&Bl&be &CA&cr&Cm&co&Cr&W is here.~
+WFlags   take body~
+Values   60 60 0 0 0 0
+Stats    1 2750 275 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5156
+Keywords Pixie Stick~
+Type     food~
+Short    &rP&Ri&wx&Ri&re &YS&Ot&Wi&Oc&Yk~
+Long     &WA &rP&Ri&wx&Ri&re &YS&Ot&Wi&Oc&Yk&W is here.~
+WFlags   take hold~
+Values   100 0 0 0 0 0
+Stats    1 150 15 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5157
+Keywords Scotch Tape Poncho~
+Type     armor~
+Short    &YS&Oc&Yo&Ot&Yc&Oh &WT&wa&Wp&we &CP&co&Cn&cc&Ch&co~
+Long     &WA &YS&Oc&Yo&Ot&Yc&Oh &WT&wa&Wp&we &CP&co&Cn&cc&Ch&co&W is here.~
+WFlags   take body~
+Values   47 47 0 0 0 0
+Stats    1 7500 750 0 0
+Affect       -1 -1 3 18 0
+Affect       -1 -1 3 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5158
+Keywords Two By Four~
+Type     weapon~
+Short    &CT&cw&Co&W-&PB&py&W-&BF&bo&Bu&br~
+Long     &WA &CT&cw&Co&W-&PB&py&W-&BF&bo&Bu&br&W is here.~
+Flags    inventory~
+WFlags   take wield~
+Values   10 10 25 13 1000 1000
+Stats    1 750 75 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5159
+Keywords The Altima~
+Type     weapon~
+Short    &WT&wh&We &YA&Ol&Yt&Oi&Ym&Oa~
+Long     &WT&wh&We &YA&Ol&Yt&Oi&Ym&Oa&W is here.~
+WFlags   take wield~
+Values   10 10 57 2 2000 2000
+Stats    1 3500 350 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5160
+Keywords Anti Matter Pistol~
+Type     weapon~
+Short    &GA&gn&Gt&gi&W-&RM&ra&Rt&rt&Re&rr &WP&wi&Ws&wt&Wo&wl~
+Long     &WA &GA&gn&Gt&gi&W-&RM&ra&Rt&rt&Re&rr &WP&wi&Ws&wt&Wo&wl&w is here.~
+WFlags   take wield~
+Values   10 10 75 6 1500 1500
+Stats    1 4500 450 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5162
+Keywords Blue Cargo Pants~
+Type     container~
+Short    &BB&bl&Bu&be &YC&Oa&Yr&Og&Yo &WP&wa&Wn&wt&Ws~
+Long     &WA pair of &BB&bl&Bu&be &YC&Oa&Yr&Og&Yo &WP&wa&Wn&wt&Ws&W are here.~
+WFlags   take legs~
+Values   200 1 0 100 0 0
+Stats    1 75000 4800 0 0
+Affect       -1 -1 1000 13 0
+Affect       -1 -1 15 18 0
+Affect       -1 -1 15 19 0
+Affect       -1 -1 -50 17 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5163
+Keywords some contraband spice~
+Type     spice~
+Short    a some contraband spice~
+Long     A some contraband spice is here.~
+WFlags   take~
+Values   1 0 0 0 0 0
+Stats    1 1000 10000 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5164
+Keywords small unusable pistol~
+Type     weapon~
+Short    a small unusable pistol~
+Long     A worthless piece of junk of a pistol lies here.~
+WFlags   take wield~
+Values   0 0 0 6 0 0
+Stats    1 100 10 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5165
+Keywords Desk~
+Type     furniture~
+Short    a desk~
+Long     A nice looking desk is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5170
+Keywords Panacea~
+Type     food~
+Short    a Panacea~
+Long     A Panacea is here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  use_prog~
+Arglist   100~
+Comlist   mea $n You feel healthier.
+mprestore $n 30000
+mer $n $n eats a Panacea, looking much healthier after doing so.
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     5171
+Keywords Blue Tablet~
+Type     food~
+Short    A &BB&bl&Bu&be&w Tablet~
+Long     A &BB&bl&Bu&be&w Tablet was discarded here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5180
+Keywords A Red Rose~
+Type     treasure~
+Short    &gA &RRed&g Rose~
+Long     A long stem rose has been disguarded here.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+Affect       -1 -1 100 18 0
+Affect       -1 -1 100 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5181
+Keywords A Red Rose~
+Type     treasure~
+Short    &gA &RRed &gRose~
+Long     A rose has been dropped here.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 1000 100 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5182
+Keywords A White Rose~
+Type     treasure~
+Short    &gA &WWhite&g Rose~
+Long     A white rose has been left here.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 1000 100 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5183
+Keywords A Black Rose~
+Type     treasure~
+Short    &gA &zBlack &gRose~
+Long     A black rose has been left here carelesly.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 2500 250 0 0
+Affect       -1 -1 25 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5184
+Keywords Cherry Blossoms~
+Type     treasure~
+Short    &RC&rh&Re&rr&Rr&ry &PBl&Wo&Pss&Wo&Pms~
+Long     Some cherry blossoms have been left here.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 1050 105 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5185
+Keywords A Long Stem Tulip~
+Type     treasure~
+Short    &gA Long Stem &YTulip~
+Long     A long stem flower has been left here.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 750 75 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5186
+Keywords A Bonzai Tree~
+Type     treasure~
+Short    &gA B&Go&gn&Gz&ga&Gi&g Tree~
+Long     A miniature evergreen tree has been left here.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 10000 1000 0 0
+Affect       -1 -1 5000 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5187
+Keywords A Desert Eagle: Mark XIX .50AE~
+Type     weapon~
+Short    &zA Desert Eagle: Mark XIX .50AE~
+Long     A very large hand gun has been left here.~
+Flags    inventory~
+WFlags   take wield~
+Values   1000 350 5 6 500 3000
+Stats    12 25000 2500 0 0
+Affect       -1 -1 25 18 0
+Affect       -1 -1 25 19 0
+Affect       -1 -1 -10 18 0
+Affect       -1 -1 -10 19 0
+#EXDESC
+ExDescKey    Desert Eagle .50~
+ExDesc       This is a Desert Eagle handgun. Down the barrel is has inscribed on it "Desert
+Eagle .50" It is a flat grey color with a black grip on the handle.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     5188
+Keywords Gold Earrings~
+Type     armor~
+Short    &wA pair of &YGold&w Earrings~
+Long     &wA pair of gold earrings is laying here.~
+WFlags   take ears~
+Values   75 75 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  speech_prog~
+Arglist   ferrari~
+Comlist   mptrans %n 10712
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     5189
+Keywords Box of .50 cal ammunition~
+Type     ammo~
+Short    &wBox of .50 cal ammunition~
+Long     A small box has been left here.~
+WFlags   take~
+Values   3000 0 0 0 0 0
+Stats    5 25000 2500 0 0
+#EXDESC
+ExDescKey    Box of .50 cal ammunition~
+ExDesc       This is a box of .50 calibre shells. They have a short, brass jacket with a
+hollow point tip. The box its self is made of red cardboard with a grey
+cardboard excerpt. The shells are held in place by a piece of white
+styrofoam.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     5190
+Keywords glass water~
+Type     drinkcon~
+Short    a glass of water~
+Long     A tall, refreshing glass of water sits here.~
+WFlags   take~
+Values   15 15 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    glass water~
+ExDesc       This glass looks like a very expensive piece of crystalware... How can the
+hotel possibly afford to simply hand these out? Their loss, it seems.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     5191
+Keywords well done steak well-done~
+Type     food~
+Short    a well-done steak~
+Long     A thick, juicy, well-done steak lies here.~
+WFlags   take~
+Values   50 50 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    well done steak well-done~
+ExDesc       A superb cut, thoroughly done. The smell overcomes you as you look examine
+it. It's still very tender and juicy. You should consider giving your
+compliments to the chef.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     5192
+Keywords dresser oak~
+Type     container~
+Short    an oak dresser~
+Long     An oak dresser stands here against the wall.~
+Values   15 1 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    dresser oak~
+ExDesc       The proprietors spared no expense here. This is a beautifully carved piece
+of furniture, to which extremely close attention was paid every last detail.
+Oddly enough, though, the drawers seem stuck... Most likely from abuse by
+previous guests here.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     5193
+Keywords water cooler~
+Type     drinkcon~
+Short    a water cooler~
+Long     &BA &BW&ba&Bt&be&Br &CC&co&Co&cl&Ce&cr &Bis here in the corner.&D~
+Values   1000000 1000000 18 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5194
+Keywords wooden bench~
+Type     furniture~
+Short    A long Wooden Bench~
+Long     A long bench is here with padded seats.~
+Values   5 5 2 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5195
+Keywords Mystile~
+Type     armor~
+Short    &BM&by&ps&Pt&pi&bl&Be~
+Long     A shiny piece of armor lays here.~
+WFlags   take body~
+Values   50 50 0 0 0 0
+Stats    1 0 0 0 0
+Affect       -1 -1 32 28 0
+Affect       -1 -1 64 28 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5196
+Keywords Auto-Bullet Shield~
+Type     armor~
+Short    &YA&Ou&Yt&Oo&z-&BB&bu&cll&be&Bt &GSh&gie&Gld~
+Long     A little strange device was dropped here.~
+WFlags   take hands~
+Values   50 50 0 0 0 0
+Stats    1 0 0 0 0
+Affect       -1 -1 4194304 28 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     5199
+Keywords final object~
+Type     trash~
+Short    a final object~
+Long     A final object is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     5100
+Name     &BZ64 &CD&co&Cc&ck&Ci&cn&Cg &BBay~
+Sector   city~
+Flags    nomob can_land can_fly docking~
+Desc     This is Colony Z64, as you look around you see many things happening. You
+see shuttles and ships landing and launching, and team of maintenance men
+walking from ship to ship repairing and refueling them. They look busy,
+perhaps you shouldn't bother them. 
+~
+#EXIT
+Direction north~
+ToRoom    5102
+#ENDEXIT
+
+Reset O 0 10315 1 5100
+Reset O 0 10315 1 5100
+#ENDROOM
+
+#ROOM
+Vnum     5101
+Name     &WA &BC&bo&Bl&bo&Bn&by &WStreet~
+Sector   city~
+Desc     From here you can see that to the west is an elevator, and to the north is
+another a continuence of Z64's main road.
+~
+#EXIT
+Direction north~
+ToRoom    5125
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5123
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5129
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5102
+Name     &WA &BC&bo&Bl&bo&Bn&by &WStreet~
+Sector   city~
+Desc     As you move further down the street you see more and more people rushing
+through without a care of who or what they are bumping into. You notice
+that the drivers here are very careless and must have forgotten the rules
+of the road.
+~
+#EXIT
+Direction north~
+ToRoom    5103
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5100
+#ENDEXIT
+
+Reset M 0 5187 1 5102
+Reset M 0 5128 7 5102
+#ENDROOM
+
+#ROOM
+Vnum     5103
+Name     &WA &BC&bo&Bl&bo&Bn&by &WStreet~
+Sector   city~
+Desc     You see more careless drivers here, but the rushing of the Z64 citizens
+seems to have stopped. You now hear nothing but quietness. You look around
+now to see how beautiful Z64 really is without people pushing and shoving
+you around.
+~
+#EXIT
+Direction north~
+ToRoom    5104
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5181
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5102
+#ENDEXIT
+
+Reset M 0 5199 1 5103
+#ENDROOM
+
+#ROOM
+Vnum     5104
+Name     &WA &BC&bo&Bl&bo&Bn&by &WStreet~
+Sector   city~
+Desc     This street is full of tourists and citizens together just having a good
+time. They are casually talking with each other while sharing a cup of
+coffee. You would love to stay here with them but you feel you must be
+heading somewhere.
+~
+#EXIT
+Direction north~
+ToRoom    5105
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5103
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5105
+Name     &WA &BC&bo&Bl&bo&Bn&by &WStreet~
+Sector   city~
+Desc     You can now see that there is an intersection to the north of you. It seems
+pretty busy as you see cars heading in all directions. If you head north
+you can then make your decision on where you'd like to go.
+~
+#EXIT
+Direction north~
+ToRoom    5106
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5104
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5106
+Name     &WA &BC&bo&Bl&bo&Bn&by &WStreet~
+Sector   city~
+Desc     You are now in the middle of Z64, here you can head in whichever direction
+you choose. There are more citizens here just conversing and visiting.
+You look in amazement on the size and natural art that was put into Z64.
+~
+#EXIT
+Direction north~
+ToRoom    5123
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5107
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5105
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5119
+#ENDEXIT
+
+Reset M 0 5120 1 5106
+#ENDROOM
+
+#ROOM
+Vnum     5107
+Name     &WA &BC&bo&Bl&bo&Bn&by &WStreet~
+Sector   city~
+Desc     This is yet another one of Z64's many side streets. There are several
+people going about their business. There seems to be more places to go
+ahead of this room.
+~
+#EXIT
+Direction east~
+ToRoom    5108
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5106
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5108
+Name     &WA &BC&bo&Bl&bo&Bn&by &WStreet~
+Sector   city~
+Desc     This is yet another one of Z64's many side streets. There are several
+people going about their business. There seems to be more places to go
+ahead of this room.
+~
+#EXIT
+Direction north~
+ToRoom    5109
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5176
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5107
+#ENDEXIT
+
+Reset M 0 5128 4 5108
+#ENDROOM
+
+#ROOM
+Vnum     5109
+Name     &WZ64 &GR&ge&Gs&gi&Gd&ge&Gn&gt&Gi&ga&Gl &WSector~
+Sector   city~
+Desc     Here you see alot of beautiful houses for cheap prices. You smell the scent
+of cut grass then look around to notice how perfect the house's lawns are.
+~
+#EXIT
+Direction north~
+ToRoom    5112
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5111
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5108
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5110
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5110
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction east~
+ToRoom    5109
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5111
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction west~
+ToRoom    5109
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5112
+Name     &WZ64 &GR&ge&Gs&gi&Gd&ge&Gn&gt&Gi&ga&Gl &WSector~
+Sector   city~
+Desc     Here you see more beautiful houses. To the North you see more houses, but
+to the East you see Z64's Hotel.
+~
+#EXIT
+Direction north~
+ToRoom    5115
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5113
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5109
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5114
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5113
+Name     &WZ64 &CH&co&Ct&ce&Cl~
+Sector   city~
+Flags    nomob indoors hotel~
+Desc     This is Z64's Top of the Line Hotel. Here you can Save and Quit as you
+please.
+~
+#EXIT
+Direction west~
+ToRoom    5112
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5114
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction east~
+ToRoom    5112
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5115
+Name     &WZ64 &GR&ge&Gs&gi&Gd&ge&Gn&gt&Gi&ga&Gl &WSector~
+Sector   city~
+Desc     Here is the last of the many nice houses, you look around to see if any are
+for sale. 
+~
+#EXIT
+Direction north~
+ToRoom    5118
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5116
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5112
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5117
+#ENDEXIT
+
+Reset M 0 5128 6 5115
+Reset M 0 5128 6 5115
+#ENDROOM
+
+#ROOM
+Vnum     5116
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction west~
+ToRoom    5115
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5117
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction east~
+ToRoom    5115
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5118
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction south~
+ToRoom    5115
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5119
+Name     &WA &BC&bo&Bl&bo&Bn&by &WStreet~
+Sector   city~
+Desc     The haphazard streets of the colony continue to the west and the streets
+seem a little quieter on this side. The artificial sky of the colony shines
+down as it floats silently in space.
+~
+#EXIT
+Direction north~
+ToRoom    5191
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5106
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5175
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5120
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5120
+Name     &WA &BC&bo&Bl&bo&Bn&by &WStreet~
+Sector   city~
+Desc     &zThe street veers off sharply to the north and to the southwest, these
+streets show the mechanical side of Colony Z64. The sounds and the usual
+bustle seems to die away.  The sounds are fading away and an eerily
+silent business permeates the atmosphere of this area.
+~
+#EXIT
+Direction north~
+ToRoom    5130
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5119
+#ENDEXIT
+
+Reset M 0 5190 1 5120
+#ENDROOM
+
+#ROOM
+Vnum     5121
+Name     &WA &BC&bo&Bl&bo&Bn&by &WStreet~
+Sector   city~
+Desc     There are large glass tubes in the distance and several platforms rising
+and falling within them. It is the colony's elevator system that leads to
+other areas above and below the main level. There are citizens walking in
+and out of the elevators.
+~
+#EXIT
+Direction north~
+ToRoom    5122
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5120
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5122
+Name     &WA &BC&bo&Bl&bo&Bn&by &WStreet~
+Sector   city~
+Desc     As the view of the elevation system gets closer and larger, the
+technological marvel that are the colonies are in plain view as you look
+at the architectural design. The clear dome that encompasses these
+colonies from the vacuum of space are shadowed by the artificial sunlight.
+~
+#EXIT
+Direction north~
+ToRoom    5129
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5121
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5123
+Name     &WA &BC&bo&Bl&bo&Bn&by &WStreet~
+Sector   city~
+Desc     As the intersection comes to an end you head north on the main road, still
+peering on all of the natural sites of Z64.
+~
+#EXIT
+Direction north~
+ToRoom    5101
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5106
+#ENDEXIT
+
+Reset M 0 5128 4 5123
+#ENDROOM
+
+#ROOM
+Vnum     5124
+Name     &WA &BC&bo&Bl&bo&Bn&by &WStreet~
+Sector   city~
+Flags    nomob~
+Desc     This is one of the streets of Z64. Many people are rushing back and forth
+through here, some to get to work, and some to get to there homes to eat.
+Z64 is known for it's many visitors, so they may not even notice you.
+~
+#EXIT
+Direction north~
+ToRoom    5100
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5125
+Name     &WA &BC&bo&Bl&bo&Bn&by &WStreet~
+Sector   city~
+Desc     Here you can choose where it is you want to go, To the East is a Weapons
+Shop, To the West is an Armor Shop, Up is Z64's well known bank, and North
+is an Item Shop.
+~
+#EXIT
+Direction north~
+ToRoom    5126
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5127
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5101
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5169
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    5174
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5126
+Name     &YI&Ot&Ye&Om&Ys &WS&wh&Wo&wp~
+Sector   inside~
+Flags    indoors nodropall nodrop~
+Desc     This is the item shop, where you can purchase different items. The
+shopkeeper is attentively watching the store as citizens and customers
+come in and out.
+~
+#EXIT
+Direction south~
+ToRoom    5125
+#ENDEXIT
+
+Reset M 0 5126 1 5126
+  Reset G 0 2006 1
+  Reset G 0 2007 1
+  Reset G 0 10424 1
+  Reset G 0 5156 1
+  Reset G 0 96 1
+  Reset G 0 6290 1
+#ENDROOM
+
+#ROOM
+Vnum     5127
+Name     &RW&re&Ra&rp&Ro&rn&Rs&r &WS&wh&Wo&wp~
+Sector   inside~
+Flags    indoors nodropall nodrop~
+Desc     Here is a disgrunteled man selling weapons for a fairly cheap price. To see
+what he is selling type, 'list'.
+~
+#EXIT
+Direction west~
+ToRoom    5125
+#ENDEXIT
+
+Reset M 0 5127 2 5127
+  Reset G 0 5160 1
+  Reset G 0 5159 1
+  Reset G 0 5154 1
+  Reset G 0 2000 1
+  Reset G 0 5158 1
+#ENDROOM
+
+#ROOM
+Vnum     5128
+Name     &WZ64 &OS&Yu&Wpp&Yl&Oy &WShop~
+Sector   city~
+Flags    indoors safe~
+Desc     The room is sterile and clean since many electronic and sensitive parts are
+sold here. The man behind the counter has an array of parts displayed
+behind him and around the room. Parts from electronic motherboards to
+sewing kits are all sold here. 
+ 
+&CType '&Blist&C' to see what is sold here.
+&x.
+~
+#EXIT
+Direction down~
+ToRoom    5196
+#ENDEXIT
+
+Reset M 0 5158 1 5128
+  Reset G 1 2016 1
+  Reset G 1 2026 1
+  Reset G 1 2025 1
+  Reset G 1 2024 1
+  Reset G 1 2023 1
+  Reset G 1 2022 1
+  Reset G 1 2021 1
+  Reset G 1 2020 1
+  Reset G 1 2013 1
+  Reset G 1 2018 1
+  Reset G 1 2017 1
+  Reset G 1 2015 1
+  Reset G 1 2014 1
+#ENDROOM
+
+#ROOM
+Vnum     5129
+Name     &WZ64 - &wE&Wl&we&Wv&wa&Wt&wo&Wr~
+Sector   city~
+Flags    nomob indoors no_drive~
+Desc     &BSay 'Ghetto' for the ghetto.
+Say 'Training' for the training sector.
+Say 'Main' for the main sector.
+~
+#EXIT
+Direction east~
+ToRoom    5101
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5130
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    5160
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   training~
+Comlist   mpechoat $n You appear in the training sector.
+mpechoaround $n $n is taken to the training sector.
+mptransfer $n 5130
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   main~
+Comlist   mpechoat $n You appear in the main sector.
+mpechoaround $n $n is taken to the main sector.
+mptransfer $n 5101
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   ghetto~
+Comlist   mpechoat $n You appear in the ghetto.
+mpechoaround $n $n is taken to the ghetto.
+mptransfer $n 9000
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     5130
+Name     &WZ64 &OT&Yr&za&Win&zi&Yn&Og &WComplex~
+Sector   city~
+Desc     This is the main hallway that leads to the training center on this colony.
+There is a fully-equipped medical station nearby. To the east is the
+elevator. The hallway that leads to the training facility stretches to the
+west. 
+~
+#EXIT
+Direction east~
+ToRoom    5129
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5120
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5177
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5131
+Name     &WZ64 &OT&Yr&za&Win&zi&Yn&Og &W&WComplex~
+Sector   city~
+Flags    nomob~
+Desc     This is the intersection of the training center. To the north is the
+advanced combat facility for the experienced and daring combatants. To the
+south is the regular basic combat training for the newbies. To the west is
+the medical center to have wounds and injuries examined and taken care of.
+~
+#EXIT
+Direction north~
+ToRoom    5144
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5177
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5133
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5132
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    5199
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5132
+Name     &WZ64 &RM&re&Rd&ri&Rc&ra&Rl &WCenter~
+Sector   city~
+Flags    nomob heal~
+Desc     This is Z64's finest Medical Center around.  To heal all you have to do is
+lie down and let the nurses do the rest. 
+~
+#EXIT
+Direction east~
+ToRoom    5131
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    5194
+Flags     hidden~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5133
+Name     &WZ64 &CB&ca&Cs&ci&Cc&W Training~
+Sector   city~
+Desc     &BSay 'Begin' to call for a training hologram.
+Say 'Final' to go to the final level.
+~
+#EXIT
+Direction north~
+ToRoom    5131
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5134
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5135
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5136
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    5137
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    5138
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    5139
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    5140
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    5141
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    5142
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   final~
+Comlist   mpechoat $n You are transported to the final level.
+mpechoaround $n $n is transported to the final level.
+mptransfer $n 5143
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     5134
+Name     &WLevel &PO&pn&Pe &WTraining Room~
+Sector   city~
+Desc     &BSay, 'begin' for a level 1 hologram to appear.
+~
+#EXIT
+Direction west~
+ToRoom    5133
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpechoat $n A hologram appears.
+mpmload 5100 1
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     5135
+Name     &WLevel &GT&gw&Go&W Training Room~
+Sector   city~
+Desc     &BSay, 'begin' for a level 2 hologram to appear.
+~
+#EXIT
+Direction north~
+ToRoom    5133
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho A hologram appears.
+mpmload 5101 1
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     5136
+Name     &WLevel &RT&rh&Rr&re&Re&W Training Room~
+Sector   city~
+Desc     &BSay, 'begin' for a level 3 hologram to appear.
+~
+#EXIT
+Direction east~
+ToRoom    5133
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho A hologram appears.
+mpmload 5102 1
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     5137
+Name     &WLevel &CF&co&Cu&cr &WTraining Room~
+Sector   city~
+Desc     &BSay, 'begin' for a level 4 hologram to appear.
+~
+#EXIT
+Direction down~
+ToRoom    5133
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho A hologram appears.
+mpmload 5103 1
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     5138
+Name     &WLevel &BF&bi&Bv&be&W Training Room~
+Sector   city~
+Desc     &BSay, 'begin' for a level 5 hologram to appear.
+~
+#EXIT
+Direction up~
+ToRoom    5133
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho A hologram appears.
+mpmload 5104 1
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     5139
+Name     &WLevel &WS&wi&Wx &WTraining Room~
+Sector   city~
+Desc     &BSay, 'begin' for a level 6 hologram to appear.
+~
+#EXIT
+Direction southwest~
+ToRoom    5133
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho A hologram appears.
+mpmload 5105
+1
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     5140
+Name     &WLevel &YS&Oe&Yv&Oe&Yn&W Training Room~
+Sector   city~
+Desc     &BSay, 'begin' for a level 7 hologram to appear.
+~
+#EXIT
+Direction southeast~
+ToRoom    5133
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho A hologram appears.
+mpmload 5106 1
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     5141
+Name     &WLevel &CE&ci&Wg&ch&Ct&W Training Room~
+Sector   city~
+Desc     &BSay, 'begin' for a level 8 hologram to appear.
+~
+#EXIT
+Direction northwest~
+ToRoom    5133
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho A hologram appears.
+mpmload 5107 1
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     5142
+Name     &WLevel &GN&gin&Ge&W Training Complex~
+Sector   city~
+Desc     &BSay, 'begin' for a level 9 hologram to appear.
+~
+#EXIT
+Direction northeast~
+ToRoom    5133
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho A hologram appears.
+mpmload 5108 1
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     5143
+Name     &WThe &RF&ri&pn&ra&Rl &WTraining Level~
+Sector   city~
+Desc     &BSay, 'begin' for the final basic hologram to appear.
+~
+#EXIT
+Direction down~
+ToRoom    5133
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho A hologram appears.
+mpmload 5109 1
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     5144
+Name     &WZ64 &BA&bd&Bv&ba&Bn&bc&Be&bd&W Training~
+Sector   city~
+Desc     &BSay 'Begin' to start your training.
+Say 'Final' to go to the final level.
+~
+#EXIT
+Direction north~
+ToRoom    5145
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5146
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5131
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5147
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    5148
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    5149
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    5150
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    5151
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    5152
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    5153
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   final~
+Comlist   mpechoat $n You are transported to the final level.
+mpechoaround $n $n has been transported to the final level.
+mptransfer $n 5154
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     5145
+Name     &WLevel &PE&pl&Pe&pv&Pe&pn&W Training Room~
+Sector   city~
+Desc     &BSay, 'begin' for a level 11 hologram to appear.
+~
+#EXIT
+Direction south~
+ToRoom    5144
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpmload 5110 1
+mpechoaround $n _red A hologram appears.
+mea $n _red A hologram appears.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     5146
+Name     &WLevel &GT&gw&Ge&gl&Gv&ge &WTraining Room~
+Sector   city~
+Desc     &BSay, 'begin' for a level 12 hologram to appear.
+~
+#EXIT
+Direction west~
+ToRoom    5144
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpmload 5111 1
+mpechoaround $n _red A hologram appears.
+mea $n _red A hologram appears.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     5147
+Name     &WLevel &RT&rh&Ri&rr&Rt&re&Re&rn &WTraining Room~
+Sector   city~
+Desc     &BSay, 'begin' for a level 13 hologram to appear.
+~
+#EXIT
+Direction east~
+ToRoom    5144
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpmload 5112
+mpechoaround $n _red A hologram appears.
+mea $n _red A hologram appears.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     5148
+Name     &WLevel &CF&co&Cu&cr&Ct&ce&Ce&cn &WTraining Room~
+Sector   city~
+Desc     &BSay, 'begin' for a level 14 hologram to appear.
+~
+#EXIT
+Direction down~
+ToRoom    5144
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpmload 5113 1
+mpechoaround $n _red A hologram appears.
+mea $n _red A hologram appears.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     5149
+Name     &WLevel &BF&bi&Bf&bt&Be&be&Bn &WTraining Room~
+Sector   city~
+Desc     &BSay, 'begin' for a level 15 hologram to appear.
+~
+#EXIT
+Direction up~
+ToRoom    5144
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpmload 5114 1
+mpechoaround $n _red A hologram appears.
+mea $n _red A hologram appears.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     5150
+Name     &WLevel &WS&wi&Wx&wt&We&we&Wn &WTraining Room~
+Sector   city~
+Desc     &BSay, 'begin' for a level 16 hologram to appear.
+~
+#EXIT
+Direction southwest~
+ToRoom    5144
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpmload 5115 1
+mpechoaround $n _red A hologram appears.
+mea $n _red A hologram appears.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     5151
+Name     &WLevel &YS&Oe&Yv&Oe&Yn&Ot&Ye&Oe&Yn &WTraining Room~
+Sector   city~
+Desc     &BSay, 'begin' for a level 17 hologram to appear.
+~
+#EXIT
+Direction southeast~
+ToRoom    5144
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpmload 5116 1
+mpechoaround $n _red A hologram appears.
+mea $n _red A hologram appears.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     5152
+Name     &WLevel &CE&ci&zg&Wht&ze&ce&Cn &WTraining Room~
+Sector   city~
+Desc     &BSay, 'begin' for a level 18 hologram to appear.
+~
+#EXIT
+Direction northwest~
+ToRoom    5144
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpmload 5117 1
+mpechoaround $n _red A hologram appears.
+mea $n _red A hologram appears.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     5153
+Name     &WLevel &GN&gi&zn&Wet&ze&ge&Gn &WTraining Room~
+Sector   city~
+Desc     &BSay, 'begin' for a level 19 hologram to appear.
+~
+#EXIT
+Direction northeast~
+ToRoom    5144
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpmload 5118 1
+mpechoaround $n _red A hologram appears.
+mea $n _red A hologram appears.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     5154
+Name     &WThe &RF&ri&pn&ra&Rl &WTraining Level~
+Sector   city~
+Desc     &BSay, 'begin' for the final advanced hologram to appear
+~
+#EXIT
+Direction down~
+ToRoom    5144
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpmload 5119 1
+mpechoaround $n _red A hologram appears.
+mea $n _red A hologram appears.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     5155
+Name     &WZ64 - &BI&bn&Bd&bu&Bs&bt&Br&bi&Ba&bl &BP&ba&Bt&bh&Bw&ba&By~
+Sector   city~
+Desc     This is the industrial pathway, where the factories and refineries are
+located. There are shops that sell goods that can be used to create
+different things and spices are also sold here.
+~
+#EXIT
+Direction north~
+ToRoom    5156
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5129
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5156
+Name     &WZ64 - &BI&bn&Bd&bu&Bs&bt&Br&bi&Ba&bl &BP&ba&Bt&bh&Bw&ba&By~
+Sector   city~
+Desc     The pathway stretches to the north and back in the direction in which
+people arrive from -- to the south -- and also has a path that goes off to
+the west. The large buildings and tall smokestacks dominate the area and
+they seem foreboding and gloomy.
+~
+#EXIT
+Direction north~
+ToRoom    5157
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5155
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5170
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5157
+Name     &WZ64 - &BI&bn&Bd&bu&Bs&bt&Br&bi&Ba&bl &BP&ba&Bt&bh&Bw&ba&By~
+Sector   city~
+Desc     This road leads to the assembly room, where the heavy and light machinery
+are at. There are sounds of clanking metal, bending metal and hissing
+noises as the factories are in full working condition. To the east is the
+factory parts shopt, where items can be purchased for the people's needs.
+~
+#EXIT
+Direction north~
+ToRoom    5159
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5158
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5156
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5158
+Name     &OF&Ya&Oc&Yt&Oo&Yr&Oy &RP&ra&Rr&rt&Rs &GS&gh&Go&gp~
+Sector   city~
+Flags    nodropall nodrop~
+Desc     The room is sterile and clean since many electronic and sensitive parts are
+sold here. The man behind the counter has an array of parts displayed
+behind him and around the room. Parts from electronic motherboards to
+sewing kits are all sold here. 
+ 
+&CType 'list' to see what is sold here.
+~
+#EXIT
+Direction west~
+ToRoom    5157
+#ENDEXIT
+
+Reset M 0 5158 1 5158
+  Reset G 1 2016 1
+  Reset G 1 2026 1
+  Reset G 1 2025 1
+  Reset G 1 2024 1
+  Reset G 1 2023 1
+  Reset G 1 2022 1
+  Reset G 1 2021 1
+  Reset G 1 2020 1
+  Reset G 1 2013 1
+  Reset G 1 2018 1
+  Reset G 1 2017 1
+  Reset G 1 2015 1
+  Reset G 1 2014 1
+#ENDROOM
+
+#ROOM
+Vnum     5159
+Name     &WZ64 - &rA&Rssembl&ry &rR&Roo&rm~
+Sector   city~
+Flags    factory~
+#EXIT
+Direction south~
+ToRoom    5157
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5160
+Name     Z64 - Hallway~
+Sector   city~
+Desc     You have entered the area used for smuggling. You are recomended to remove
+your weapons and put them in bags or they WILL be stolen and you WILL lose
+exp. 
+~
+#EXIT
+Direction south~
+ToRoom    5161
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    5129
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5161
+Name     Z64 - Hallway~
+Sector   city~
+Desc     You see Officers walking back and forth through here taking up peoples
+weapons and spices. If you're not carefull they will take yours too.
+~
+#EXIT
+Direction north~
+ToRoom    5160
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5162
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5162
+Name     Z64 - Hallway~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    5163
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5164
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5161
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5163
+Name     Contraband Store~
+Sector   city~
+Desc     Here, you can dump your less-than-respectable wares on the seedy gentleman
+before you.
+&RIf his inventory becomes a little... "Extensive," just say 'stock'.
+~
+#EXIT
+Direction south~
+ToRoom    5162
+#ENDEXIT
+
+Reset M 0 5163 1 5163
+  Reset G 1 5163 1
+  Reset G 1 5164 1
+#ENDROOM
+
+#ROOM
+Vnum     5164
+Name     Z64 - Hallway~
+Sector   city~
+#EXIT
+Direction west~
+ToRoom    5162
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    5165
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5165
+Name     Start of Smuggling Run~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    5166
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    5164
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5166
+Name     Guard Room 1~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    5167
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5165
+#ENDEXIT
+
+Reset M 0 5166 7 5166
+#ENDROOM
+
+#ROOM
+Vnum     5167
+Name     Guard Room 2~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    5168
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5166
+#ENDEXIT
+
+Reset M 0 5167 1 5167
+#ENDROOM
+
+#ROOM
+Vnum     5168
+Name     End of Smuggling Run~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    5165
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5167
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5169
+Name     &CA&cr&Cm&co&Cr &WS&wh&Wo&wp~
+Sector   city~
+Flags    nodropall nodrop~
+Desc     Here you see an Armor Dealer selling off nice custom made armor. To see
+what kinds of armor he is selling type, 'list'. 
+~
+#EXIT
+Direction east~
+ToRoom    5125
+#ENDEXIT
+
+#EXIT
+Direction somewhere~
+ToRoom    5179
+Keywords  secret~
+Flags     hidden auto~
+#ENDEXIT
+
+Reset M 0 5169 2 5169
+  Reset G 0 5157 1
+  Reset G 0 5155 1
+  Reset G 0 5162 1
+  Reset G 0 5151 1
+#ENDROOM
+
+#ROOM
+Vnum     5170
+Name     &WZ64 - &BI&bn&Bd&bu&Bs&bt&Br&bi&Ba&bl &BP&ba&Bt&bh&Bw&ba&By~
+Sector   city~
+Desc     This road leads to the spice refinery, where you can refine spices into
+herbs among others you can create with different spices. The entire
+industrial district is draped with an eerie silence. You can hear the
+sounds of machinery and the groaning of metal and other noises.
+~
+#EXIT
+Direction east~
+ToRoom    5156
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5171
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5171
+Name     Z64 - Spice Refining~
+Sector   city~
+Desc     This is the spice refining factory, where spices can be purchased and
+refined in the refinery, located south from this location. To the north is
+a place to buy unrefined spices for anyone's needs. 
+~
+#EXIT
+Direction north~
+ToRoom    5172
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5170
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5173
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5172
+Name     Unrefined Spices~
+Sector   city~
+Desc     This room has the musty smell of many different spices as the shelves
+behind the counter are filled with containers that have spices there. The
+dealer stands serenly behind the counter, watching customers as they walk
+in.
+ 
+&CType 'list' to see what is sold here.&W
+~
+#EXIT
+Direction south~
+ToRoom    5171
+#ENDEXIT
+
+Reset M 0 5172 1 5172
+  Reset G 1 5100 1
+  Reset G 1 5101 1
+  Reset G 1 5102 1
+  Reset G 1 5103 1
+#ENDROOM
+
+#ROOM
+Vnum     5173
+Name     Spice Refinery~
+Sector   city~
+Flags    silence refinery~
+Desc     This is where you refine the spices that have been purchased. The room is
+silent with workers and other people drifing in and out to use the
+refinery. There is no talking here and the tense concentration in the room
+is very thick.
+~
+#EXIT
+Direction north~
+ToRoom    5171
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5174
+Name     &BC&bo&Bl&bo&Bn&by &WB&wa&Wn&wk~
+Sector   city~
+Flags    indoors bank~
+Desc     You are in a small bank with several atms that seem to be in perfect
+working order. The bank is neat and small. The only thing wandering the
+building is a cleaning droid. 
+ 
+~
+#EXIT
+Direction down~
+ToRoom    5125
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5175
+Name     &WThe &YL&Oo&Yt&Ot&Ye&Or&Yy &WOffice~
+Sector   city~
+Flags    nomob prototype lottery~
+Desc     The room is cluttered with small pieces of paper with numbers on them.  A
+clerk is standing behind the counter,  waiting for the next customer to
+stop by. A large machine is juggling around ping pong balls  with numbers
+on them. The entrance to the safe is located beside it.
+~
+#EXIT
+Direction north~
+ToRoom    5119
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5176
+Name     &WThe &YS&Ot&Yo&Or&Ya&Og&Ye &WFacility~
+Sector   city~
+Flags    nomob storage~
+Desc     Welcome to the Storage Facility. Please refer to
+HELP STORAGE for more information on this room.
+~
+#EXIT
+Direction west~
+ToRoom    5108
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5177
+Name     &WZ64 &OT&Yr&za&Win&zi&Yn&Og &W&WComplex~
+Sector   city~
+Desc     This is the start of the famous Z64 Training Complex. As you approach
+the entrance you can see a woman standing behind a counter help out
+newcomers.
+~
+#EXIT
+Direction east~
+ToRoom    5130
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5131
+#ENDEXIT
+
+Reset M 0 5122 1 5177
+Reset O 0 5165 1 5177
+#ENDROOM
+
+#ROOM
+Vnum     5178
+Name     &WZ64 - &wE&Wl&we&Wv&wa&Wt&wo&Wr~
+Sector   city~
+Flags    nomob prototype~
+Desc     &BSay 'Smugglers Way' to go to the smugglers training district.
+Say 'Ghetto' for the ghetto.
+Say 'Main' for the main sector.
+~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   main~
+Comlist   mpechoat $n You appear in the main sector.
+mpechoaround $n $n is taken to the main sector.
+mptransfer $n 5129
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     5179
+Name     &WThe &wS&We&wc&Wr&we&Wt &WShop~
+Sector   city~
+Flags    nomob~
+Desc     Here you see a secret shop selling off nice secret items. To see what
+kinds of items he is selling type, 'list'.
+~
+#EXIT
+Direction east~
+ToRoom    5169
+#ENDEXIT
+
+Reset M 0 5173 1 5179
+  Reset G 0 5153 1
+  Reset G 0 5152 1
+#ENDROOM
+
+#ROOM
+Vnum     5180
+Name     &PP&pe&Ont&Ya&Ogr&pa&Pm &GG&ga&Gt&ge~
+Sector   city~
+Flags    nomob prototype~
+Desc     &R            ^
+           / \ 
+          /   \ 
+     ___ /&r_____&R\ ___ 
+     \  &r/       \&R  /  
+      \&r/         \&R/ 
+      /&r\         /&R\ 
+     /__&r\ ______/&R__\   
+         \     /     
+          \   / 
+           \ /  
+            v 
+~
+#ENDROOM
+
+#ROOM
+Vnum     5181
+Name     &z.&w:&WF&Pl&pow&Pe&Wr&w:&z. &CShop~
+Sector   city~
+Flags    nomob prototype~
+Desc     &WWelcome to the Z64 Flower Shop, here you can buy many kinds of flowers
+and plants. Some of their best sellers are their Roses, they have the
+traditional Red, the Black Rose for the rememberence for the dead, or
+the White Rose of life.
+~
+#EXIT
+Direction west~
+ToRoom    5103
+#ENDEXIT
+
+Reset M 0 5123 1 5181
+  Reset G 0 5181 1
+  Reset G 0 5182 1
+  Reset G 0 5183 1
+  Reset G 0 5184 1
+  Reset G 0 5185 1
+  Reset G 0 5186 1
+  Reset G 0 5187 1
+  Reset G 0 5189 1
+#ENDROOM
+
+#ROOM
+Vnum     5182
+Name     &BH&bo&Bt&be&Bl &WHallway~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     5183
+Name     &BH&bo&Bt&be&Bl &WIntersection~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    5184
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5186
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5190
+#ENDEXIT
+
+Reset O 0 10315 1 5183
+#ENDROOM
+
+#ROOM
+Vnum     5184
+Name     &CH&co&Ct&ce&Cl &WHallway~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    5185
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5183
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5185
+Name     &CH&co&Ct&ce&Cl &WRoom~
+Sector   city~
+Flags    indoors hotel~
+Desc     This room is very well kept. Everything is thoroughly dusted, not a thing
+misplaced. Up against the eastern wall lies a masterfully crafted dresser
+of oak, and a warm, clean bed lies in the middle of the room.
+~
+#EXIT
+Direction south~
+ToRoom    5184
+Flags     isdoor~
+#ENDEXIT
+
+Reset O 0 5192 1 5185
+Reset D 0 5185 2 0
+#ENDROOM
+
+#ROOM
+Vnum     5186
+Name     &CH&co&Ct&ce&Cl &WHallway~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    5183
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5187
+Flags     isdoor~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5187
+Name     &CH&co&Ct&ce&Cl &WRoom~
+Sector   city~
+Flags    indoors hotel~
+Desc     This room is very well kept. Everything is thoroughly dusted, not a thing
+misplaced. Up against the eastern wall lies a masterfully crafted dresser
+of oak, and a warm, clean bed lies in the middle of the room.
+~
+#EXIT
+Direction north~
+ToRoom    5186
+Flags     isdoor~
+#ENDEXIT
+
+Reset O 0 5192 1 5187
+Reset D 0 5187 0 0
+#ENDROOM
+
+#ROOM
+Vnum     5188
+Name     &WA &BC&bo&Bl&bo&Bn&by &WStreet~
+Sector   city~
+Desc     The haphazard streets of the colony continues and the streets seem a
+little quieter on this side. The artificial sky of the colony shine
+down as it floats silently in space.
+~
+#EXIT
+Direction northeast~
+ToRoom    5120
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5189
+Name     &WA &BC&bo&Bl&bo&Bn&by &WStreet~
+Sector   city~
+Desc     You have arrived at the end of the side street, and are outside of Z64's
+Residential Sector.
+~
+#EXIT
+Direction west~
+ToRoom    5108
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5190
+Name     &CH&co&Ct&ce&Cl &WHallway~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    5183
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5191
+Name     &zT&wh&We &zI&Wk&wo&zn&D~
+Sector   inside~
+Flags    nomob indoors safe~
+Desc     The lights here have been dimmed, and red, green, silver, and blue lazer lights
+move in wild patterns, strobe lights flash along to the beat of the trance
+music being played by the DJ. Hundreds of people dance and some are even
+passed out around the walls of the club.
+A menu on the bar shows what you can get.
+~
+#EXIT
+Direction south~
+ToRoom    5119
+#ENDEXIT
+
+Reset M 0 5170 1 5191
+Reset O 0 259 1 5191
+#EXDESC
+ExDescKey    menu~
+ExDesc       Say 'Beer' for Beer.
+say 'Whiskey' for Whiskey.
+say 'Vodka' for Vodka
+say 'Absinthe' for Absinthe.
+say 'Glowstick' for a Glowstick.
+~
+#ENDEXDESC
+
+#MUDPROG
+Progtype  rand_prog~
+Arglist   5~
+Comlist   mpe &zThe lights dance and move wildly around the club.&D
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     5194
+Name     &WThe &BW&ba&Bt&be&Br &CC&co&Co&cl&Ce&cr &WRoom&D~
+Sector   city~
+Flags    nomob indoors~
+Desc     Congratulations. You found it. The spot where all the cool people hang out.
+They must come here to hide from all the annoying Newbs that show up from
+time to time. Must be nice, eh?
+~
+#EXIT
+Direction southeast~
+ToRoom    5132
+#ENDEXIT
+
+Reset M 0 5186 1 5194
+Reset O 0 5193 1 5194
+Reset O 0 5194 1 5194
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if ovnuminv(6000) >= 1
+mea $n Welcome to the Water Cooler Room.
+else
+mpforce $n se
+endif
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     5195
+Name     &WZ64 &GI&gn&cd&Cu&Wst&Cr&ci&ga&Gl &WSector~
+Sector   city~
+Desc     This is the Z64 Industrial Sector, the sounds of heavy machinery fill
+the air. Almost every hour the sound of a whistle can be heard in the
+distance and the shuffle of workers can be seen.
+~
+#EXIT
+Direction north~
+ToRoom    5196
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5196
+Name     &WZ64 &GI&gn&cd&Cu&Wst&Cr&ci&ga&Gl &WSector~
+Sector   city~
+Desc     This is the Z64 Industrial Sector, the sounds of heavy machinery fill
+the air. Almost every hour the sound of a whistle can be heard in the
+distance and the shuffle of workers can be seen.
+~
+#EXIT
+Direction north~
+ToRoom    5199
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    5197
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    5195
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    5198
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    5128
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5197
+Name     &WZ64 &GF&ga&cc&Ct&co&gr&Gy~
+Sector   city~
+Flags    indoors factory~
+#EXIT
+Direction west~
+ToRoom    5196
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5198
+Name     &WZ64 &GF&ga&cc&Ct&co&gr&Gy~
+Sector   city~
+Flags    indoors factory~
+#EXIT
+Direction east~
+ToRoom    5196
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     5199
+Name     &WA &OS&Yl&za&Yv&Oe &WShop~
+Sector   city~
+Flags    indoors safe~
+Desc     You look around as the slave master is calming the mass of
+slaves standing around waiting for their new owner.
+~
+#EXIT
+Direction southwest~
+ToRoom    5131
+#ENDEXIT
+
+Reset M 0 5129 2 5199
+#ENDROOM
+
+#ENDAREA

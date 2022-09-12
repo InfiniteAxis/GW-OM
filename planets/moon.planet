@@ -1,0 +1,11 @@
+#PLANET
+Name         Moon~
+Filename     moon.plt~
+BaseValue    100000
+Flags        0
+PopSupport   50.000000
+GovernedBy   Phoenix Rising~
+Area         moon.are~
+End
+
+#END

@@ -1,0 +1,84 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         Homes~
+Author       Kamorov~
+Ranges       1 1007 1 1007
+Economy      0 6250000
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       10700
+Keywords   first~
+Short      a newly created first~
+Long       Some god abandoned a newly created first here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       10999
+Keywords   last~
+Short      a newly created last~
+Long       Some god abandoned a newly created last here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#OBJECT
+Vnum     10700
+Keywords first item~
+Type     furniture~
+Short    a newly created first item~
+Long     Some god abandoned a newly created first item here.~
+Values   5 5 3 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10999
+Keywords last~
+Type     trash~
+Short    a last~
+Long     A last is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     10700
+Name     Floating in a void~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     10999
+Name     Floating in a void~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ENDAREA

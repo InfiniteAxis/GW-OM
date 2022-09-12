@@ -1,0 +1,2619 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         Korea~
+Author       Hana~
+Ranges       1 1007 1 1007
+Economy      -2 403237780
+ResetMsg     A chilly breeze sweeps throughout the area.~
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       700
+Keywords   The Customs Officer~
+Short      The Customs Officer~
+Long       The customs officer is here, checking all bags.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_customs_alcohol~
+Specfun2    spec_customs_spice~
+Gender     male~
+Actflags   npc sentinel~
+Affected   invisible detect_evil detect_magic~
+Stats1     0 880 0 -2100 0 0
+Stats2     176 10 8800
+Stats3     88 4 2
+Stats4     0 0 0 176 176
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       701
+Keywords   An Airport Attendant~
+Short      An Airport Attendant~
+Long       An airport attendant is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Affected   invisible detect_evil detect_magic~
+Stats1     0 540 0 -1250 0 0
+Stats2     108 10 5400
+Stats3     54 4 2
+Stats4     0 0 0 108 108
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  speech_prog~
+Arglist   hello~
+Comlist   say Hello $n. Welcome to Seoul. 
+mpoload 700
+say Here is your passport.
+give passport $n
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       702
+Keywords   A Korean Waitress~
+Short      A Korean Waitress~
+Long       A waitress is here to serve food to visitors.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 35 0 12 0 0
+Stats2     7 10 350
+Stats3     3 4 2
+Stats4     0 0 0 7 7
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  speech_prog~
+Arglist   gim-bap~
+Comlist   say Here you are.
+mpoload 702
+give gim-bap $n
+say Enjoy!
+smile
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   man-du~
+Comlist   say Here you are.
+mpoload 704
+give man-du $n
+say Enjoy!
+smile
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   dictionary~
+Comlist   say Here is a Korean/English Dictionary.
+mpoload 712
+give dictionary $n
+bow
+say I hope it helps you.
+smile
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       703
+Keywords   The Museum Attendant~
+Short      The Museum Attendant~
+Long       The Museum Attendant is ready to escort you around the museum.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_customs_weapons~
+Gender     female~
+Actflags   npc sentinel~
+Affected   invisible detect_evil detect_magic~
+Stats1     0 35 0 12 0 0
+Stats2     7 10 350
+Stats3     3 4 2
+Stats4     0 0 0 7 7
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  act_prog~
+Arglist   p gives you A Ticket.~
+Comlist   ifobjtype ($o)== book
+say Thank you. Hope you enjoy your time.
+mptransfer $n 716
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  act_prog~
+Arglist   give attendant ticket~
+Comlist   say Thank you. Hope you enjoy your time.
+mptransfer $n 716
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p Let me in~
+Comlist   say Thank you, I hope you enjoy your time here.
+mptransfer $n 716
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       704
+Keywords   A Ticket Salesperson~
+Short      A Ticket Salesperson~
+Long       A Ticket Salesperson is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel nocorpse~
+Stats1     0 52 0 -30 0 0
+Stats2     10 10 520
+Stats3     5 4 2
+Stats4     0 0 0 10 10
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       705
+Keywords   Mr. Kim~
+Short      Mr. Kim~
+Long       Mr. Kim is here, watching the store.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel nocorpse~
+Affected   invisible detect_evil detect_magic~
+Stats1     0 15 0 62 0 0
+Stats2     3 10 150
+Stats3     1 4 2
+Stats4     0 0 0 3 3
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say Ahn-nyung-ha-sae-yo.
+bow
+say How may I help you?
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       706
+Keywords   Park Yu Jin~
+Short      Park Yu Jin~
+Long       Park Yu Jin is here, watching the store.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel nocorpse~
+Stats1     0 15 0 62 0 0
+Stats2     3 10 150
+Stats3     1 4 2
+Stats4     0 0 0 3 3
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   9 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say Hwan-yung-hap-nee-da.
+bow
+say How may I help you today?
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       707
+Keywords   A Police Officer~
+Short      A Police Officer~
+Long       A police officer is patrolling the streets.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_customs_weapons~
+Specfun2    spec_police_jail~
+Gender     male~
+Actflags   npc~
+Affected   invisible detect_evil detect_magic~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 85 65
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   1~
+Comlist   mpmload 720
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       708
+Keywords   A Museum Personnel~
+Short      A Museum Personnel~
+Long       A museum personnel is demonstrating here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 890 0 -2125 0 0
+Stats2     178 10 8900
+Stats3     89 4 2
+Stats4     0 0 0 178 178
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  speech_prog~
+Arglist   show~
+Comlist   say This is the Katana no Raiden.
+say It belonged to Kyung Jo, the greatest Korean warrior.
+say I will demonstrate the power of Katana no Raiden.
+wield raiden
+mpmload 5100
+kill holo
+mpurge corpse
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       709
+Keywords   Jo Yoon Seung~
+Short      Jo Yoon Seung~
+Long       Jo Yoon Seung is here, standing behind the counter.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel nocorpse~
+Stats1     0 153 0 -282 0 0
+Stats2     30 10 1530
+Stats3     15 4 2
+Stats4     0 0 0 30 30
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say Ahn-nyung-ha-sae-yo.
+bow
+say What can I do for you today?
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       710
+Keywords   Yoon Hyung Seok~
+Short      Yoon Hyung Seok~
+Long       Yoon Hyung Seok is here, ready to take your order.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel nocorpse~
+Stats1     0 15 0 62 0 0
+Stats2     3 10 150
+Stats3     1 4 2
+Stats4     0 0 0 3 3
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say Ahn-nyung-ha-sae-yo.
+bow
+say What would you like today?
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       711
+Keywords   Kim Hae In~
+Short      Kim Hae In~
+Long       Kim Hae In the pharmacist is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel nocorpse~
+Stats1     0 15 0 62 0 0
+Stats2     3 10 150
+Stats3     1 4 2
+Stats4     0 0 0 3 3
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       712
+Keywords   An SNU Security Guard~
+Short      An SNU Security Guard~
+Long       An SNU Security Guard is patrolling the area.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_customs_weapons~
+Gender     male~
+Actflags   npc stayarea~
+Affected   invisible detect_evil detect_magic~
+Stats1     0 985 0 -2362 0 0
+Stats2     197 10 9850
+Stats3     98 4 2
+Stats4     0 0 0 197 197
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       713
+Keywords   A Physical Trainer~
+Short      A Physical Trainer~
+Long       A physical trainer is here, ready to help you.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel train~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    25 25 25 25 25 25 25
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say Hi $n! Welcome to the SNU Gym.
+say Type &Rtrain&C to see what stats you can train.
+say Type 'train <stat name>' to train a stat.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       714
+Keywords   A Female College Student~
+Short      A Female College Student~
+Long       A female college student is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 55 0 -37 0 0
+Stats2     11 10 550
+Stats3     5 4 2
+Stats4     0 0 0 11 11
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  speech_prog~
+Arglist   them...~
+Comlist   giggle
+say Andrew, you're so sweet!
+hug male
+say I love them!
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       715
+Keywords   A Male College Student~
+Short      A Male College Student~
+Long       A male college student is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 55 0 -37 0 0
+Stats2     11 10 550
+Stats3     5 4 2
+Stats4     0 0 0 11 11
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  rand_prog~
+Arglist   1~
+Comlist   say Hey Jess.
+smile female
+say I got you a boquet of flowers.
+emote gives Jess a boquet of flowers.
+blush
+say I hope you like them...
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       716
+Keywords   A Cafeteria Service Lady~
+Short      A Cafeteria Service Lady~
+Long       A cafeteria service lady is here, ready to take your order.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel nocorpse~
+Stats1     0 60 0 -50 0 0
+Stats2     12 10 600
+Stats3     6 4 2
+Stats4     0 0 0 12 12
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       717
+Keywords   A Smuggling Professor~
+Short      A Smuggling Professor~
+Long       A professor in smuggling is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel practice~
+Stats1     0 200 0 -400 0 0
+Stats2     40 10 2000
+Stats3     20 4 2
+Stats4     0 0 0 40 40
+Attribs    10 10 25 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       718
+Keywords   Training Dummy~
+Short      A Training Dummy~
+Long       A Training Dummy is here for practice.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     10000 10000 3000000
+Stats3     1 1 1
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+#ENDMOBILE
+
+#MOBILE
+Vnum       720
+Keywords   A Police Officer~
+Short      A Police Officer~
+Long       A police officer is patrolling the streets.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_customs_weapons~
+Specfun2    spec_police_jail~
+Gender     male~
+Actflags   npc~
+Affected   invisible detect_evil detect_magic~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   1~
+Comlist   mpoload 11515
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       723
+Keywords   A Priest~
+Short      A Priest~
+Long       A Priest stands here, giving blessings.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Affected   blind invisible detect_evil detect_magic~
+Stats1     0 45 0 -12 0 0
+Stats2     9 10 450
+Stats3     4 4 2
+Stats4     0 0 0 9 9
+Attribs    10 10 15 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say Welcome my child.
+bow
+say How may I be of service to you?
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   blessing~
+Comlist   say Then blessed you will be.
+emote prays silently.
+feel sanctuary $n
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       799
+Keywords   last~
+Short      a newly created last~
+Long       Some god abandoned a newly created last here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#OBJECT
+Vnum     700
+Keywords A Passport~
+Type     book~
+Short    A Passport~
+Long     A passport lies here.~
+Flags    inventory~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     701
+Keywords A Pair of Camouflage BDU Pants~
+Type     armor~
+Short    A Pair of Camouflage BDU Pants~
+Long     A pair of camouflage pants is here.~
+Flags    inventory~
+WFlags   take legs~
+Values   12 12 0 0 0 0
+Stats    1 50 5 0 0
+Affect       -1 -1 -5 17 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     702
+Keywords Gim-bap~
+Type     food~
+Short    Gim-bap~
+Long     A Gim-bap is here.~
+WFlags   take~
+Values   50 50 0 0 0 0
+Stats    1 5 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     703
+Keywords The Complaint Board~
+Type     trash~
+Short    The Complaint Board~
+Long     The complaint board for all complaints is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     704
+Keywords Man-du~
+Type     food~
+Short    Man-du~
+Long     A Man-du is here.~
+Flags    inventory~
+WFlags   take~
+Values   50 50 0 0 0 0
+Stats    1 5 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     705
+Keywords A Black Leather Waistcoat~
+Type     armor~
+Short    A Black Leather Waistcoat~
+Long     A black leather jacket is here.~
+Flags    inventory~
+WFlags   take about~
+Values   18 0 0 0 0 0
+Stats    1 150 15 0 8
+#ENDOBJECT
+
+#OBJECT
+Vnum     706
+Keywords Steroids~
+Type     pill~
+Short    Some steroids~
+Long     A small bottle of pills sit here.~
+WFlags   take~
+Values   85 -1 -1 -1 0 0
+Stats    1 0 0 0 0
+Spells   'aqua breath' 'cure serious' 'cure light'
+#ENDOBJECT
+
+#OBJECT
+Vnum     708
+Keywords A Ticket~
+Type     book~
+Short    A Ticket~
+Long     A Ticket has been abandoned here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 3 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     709
+Keywords A Cup of Coffee~
+Type     drinkcon~
+Short    A Cup of Coffee~
+Long     A cup of coffee sits here.~
+WFlags   take~
+Values   25 15 12 0 0 0
+Stats    1 15 1 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     710
+Keywords Biker Gloves~
+Type     armor~
+Short    &CB&ci&Bk&ce&Cr &WG&wl&Wo&wv&We&ws~
+Long     A pair of fingerless gloves.~
+Flags    inventory~
+WFlags   take hands~
+Values   20 20 0 0 0 0
+Stats    2 120 12 0 2
+Affect       -1 -1 85 53 0
+Affect       -1 -1 5 18 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     711
+Keywords A Pair of Black Combat Boots~
+Type     armor~
+Short    A Pair of Black Combat Boots~
+Long     A pair of black boots are here.~
+WFlags   take feet~
+Values   18 18 0 0 0 0
+Stats    1 80 8 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     712
+Keywords A Korean/English Dictionary~
+Type     book~
+Short    A Korean/English Dictionary~
+Long     A Korean/English Dictionary is here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     713
+Keywords Han-Bok~
+Type     trash~
+Short    &RH&Ca&Bn&W-&GB&Yo&Pk&w~
+Long     A Han-Bok is here.~
+Flags    inventory~
+WFlags   take about~
+Values   15 15 0 0 0 0
+Stats    1 10385 1038 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     714
+Keywords Don-Ga-Tse~
+Type     food~
+Short    Don-Ga-Tse~
+Long     A plate of don-ga-tse is here.~
+WFlags   take~
+Values   50 50 0 0 0 0
+Stats    1 20 2 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     715
+Keywords A Wristlink~
+Type     weapon~
+Short    &CA &RW&Gr&Pi&Ws&Bt&Yl&pi&gn&Wk&w~
+Long     A wristwatch comlink is here.~
+Flags    glow contraband~
+WFlags   take wield~
+Values   1000 10 20 3 1000 1000
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     717
+Keywords A Trinity Cross necklace~
+Type     armor~
+Short    A &BT&bri&cni&bt&By &RC&rr&po&rs&Rs&G necklace&w~
+Long     A necklace with a cross pendant is lying here.~
+Flags    glow inventory~
+WFlags   take neck~
+Values   45 0 0 0 0 0
+Stats    1 0 0 0 0
+Affect       -1 -1 -20 17 0
+Affect       -1 -1 4 3 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     718
+Keywords A SNU Student ID Card~
+Type     key~
+Short    A SNU Student ID Card~
+Long     A student ID card has been left here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    A SNU Student ID Card~
+ExDesc       Student ID: 063-887-954
+ 
+Status: Registered Student
+ 
+Clearance: Gold
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     719
+Keywords A Pair of Blue Pants~
+Type     armor~
+Short    &GA Pair of &BBlue&G Pants&w~
+Long     A pair of blue pants have been left here.~
+WFlags   take legs~
+Values   20 20 0 0 0 0
+Stats    1 190 19 0 2
+#ENDOBJECT
+
+#OBJECT
+Vnum     720
+Keywords A Blue Uniform Shirt~
+Type     armor~
+Short    &GA &BBlue&G Uniform Shirt&w~
+Long     A blue uniform shirt is lying here.~
+WFlags   take body~
+Values   20 20 0 0 0 0
+Stats    1 110 11 0 2
+#ENDOBJECT
+
+#OBJECT
+Vnum     721
+Keywords A Blue Uniform Skirt~
+Type     armor~
+Short    &GA &BBlue&G Uniform Skirt&w~
+Long     A blue uniform skirt has been left here.~
+WFlags   take legs~
+Values   20 20 0 0 0 0
+Stats    1 100 10 0 2
+#ENDOBJECT
+
+#OBJECT
+Vnum     722
+Keywords A Chicken Gordita~
+Type     food~
+Short    A Chicken Gordita~
+Long     A chicken gordita has been left here.~
+WFlags   take~
+Values   50 50 0 0 0 0
+Stats    1 13 1 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     723
+Keywords A Bandanna~
+Type     armor~
+Short    &BA &gBa&Gn&cd&Ga&gna&w~
+Long     A bandanna has been left here.~
+WFlags   take head~
+Values   45 45 0 0 0 0
+Stats    1 204 20 0 0
+Affect       -1 -1 90 41 0
+Affect       -1 -1 5 4 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     799
+Keywords last~
+Type     trash~
+Short    a last~
+Long     A last is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     700
+Name     Kimpo International Airport~
+Sector   city~
+Flags    can_land can_fly docking~
+Desc     Welcome to Seoul, South Korea. This is the Kimpo International Airport, the
+major airport that handles much of the incoming and outgoing flights
+within the Seoul area.
+ 
+Coming off the shuttle, the area is filled with people and activity. There
+is a large screen mounted on top that shows all the incoming and outgoing
+flights from the airport.
+ 
+&RPlease greet the attendant with a hello and collect your passport.
+~
+#EXIT
+Direction north~
+ToRoom    701
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    800
+#ENDEXIT
+
+Reset M 0 701 1 700
+#ENDROOM
+
+#ROOM
+Vnum     701
+Name     The Customs Center~
+Sector   inside~
+Flags    indoors~
+Desc     This is the Customs Center, where all arriving passengers must go through.
+The room is full of machinery and equipment, as well as metal detectors
+and armed guards. The customs officers are systematically checking the
+luggage of passengers, checking through passports, issuing visas or
+checking immigration documents. &RPlease greet the customs officer with a
+hello and give him your passport.&g
+~
+#EXIT
+Direction north~
+ToRoom    702
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    700
+#ENDEXIT
+
+Reset M 0 700 1 701
+  Reset G 0 700 1
+#ENDROOM
+
+#ROOM
+Vnum     702
+Name     The Arrival Terminal~
+Sector   inside~
+Flags    indoors~
+Desc     This is where all arriving passengers are exiting to. The street is the
+Konghanggil (Airport Road). From there, you can go to catch the subway to
+the main city. 
+ 
+The room is filled with people who are waiting to see their friends,
+families and visitors. There are several airport attendants who are taking
+bags to the claims center. Other people are holding up signs to ensure that
+they find the right person.
+~
+#EXIT
+Direction north~
+ToRoom    703
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     703
+Name     Konghanggil (Airport Road) [Kangso Region]~
+Sector   city~
+Desc     This is the Konghanggil, the road that leads to the airport. It stretches
+to the east and there is a hotel where you can stay for the night. There
+is also a subway transit that will take you to the heart of Seoul.
+~
+#EXIT
+Direction east~
+ToRoom    705
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    702
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    704
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     704
+Name     The Departure Terminal~
+Sector   inside~
+Flags    indoors~
+Desc     This is the departure terminal, where all departing passengers are waiting
+for their flights. There is a large digital screen mounted on the wall
+that shows all the incoming and outgoing flights from Seoul. There is an
+airport stewardess who will check your tickets before boarding your
+flight.
+~
+#EXIT
+Direction south~
+ToRoom    701
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    703
+#ENDEXIT
+
+#MUDPROG
+Progtype  rand_prog~
+Arglist   63~
+Comlist   mpecho A stewardess says, 'Would passengers please proceed to the gate.'
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     705
+Name     Konghanggil (Airport Road) [Kangso Region]~
+Sector   city~
+Desc     There is an exit down to the subway, but the road goes onto a highway.
+There is a hotel to the north where you can stay for a night or two.
+~
+#EXIT
+Direction north~
+ToRoom    707
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    703
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    706
+#ENDEXIT
+
+Reset M 0 707 3 705
+#ENDROOM
+
+#ROOM
+Vnum     706
+Name     The Subway~
+Sector   city~
+Desc     This is the subway stop. From here, you can reach almost any location in
+Seoul. After all, Seoul IS a pretty big city.   The platform is kept clean
+and there are passengers standing around, waiting for the subway train.
+ 
+&CSay 'Kwanak-Gu' to go to Kwanak-Gu.
+Say 'Sodaemun-Gu' to go to Sodaemun-Gu.
+~
+#EXIT
+Direction up~
+ToRoom    705
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   kwanak-gu~
+Comlist   mpechoat $n A subway train takes you to Kwanak-Gu.
+mptransfer $n 708
+mpecho $n takes the subway to Kwanak-Gu.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   sodaemun-gu~
+Comlist   mpechoat $n A subway train takes you to Sodaemun-Gu.
+mptransfer $n 720
+mpecho $n takes the subway to Sodaemun-Gu.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     707
+Name     Airport Hotel [Kayang-Dong]~
+Sector   inside~
+Flags    indoors hotel~
+Desc     This is the Airport Hotel of the Kayang-Dong neighbourhood. The rooms are
+clean and well-kept. There is a comfortable couch in the room and a
+drinking fountain as well. There is also a young lady who is handing out
+snacks and other korean delicacies to fulfill one's appetite.
+ 
+&CSay 'man-du' for some Man-du.
+Say 'gim-bap' for some Gim-bap.
+Say 'dictionary' for a dictionary.
+~
+#EXIT
+Direction south~
+ToRoom    705
+#ENDEXIT
+
+Reset M 0 702 1 707
+Reset O 0 10315 1 707
+#ENDROOM
+
+#ROOM
+Vnum     708
+Name     Kwanak-Gu Subway Stop~
+Sector   inside~
+Flags    indoors~
+Desc     This is the Kwanak-Gu Subway station. From here, you can explore this
+region and visit one of the most prestigeous schools in South Korea, Seoul
+National University. Many Korean students apply to enter into their
+programs, but their grades must be exceptional in order to be considered
+as an eligible applicant.
+ 
+&CSay 'airport' to go to the Airport.
+Say 'Sodaemun-Gu' to go to Sodaemun-Gu.
+~
+#EXIT
+Direction up~
+ToRoom    709
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   airport~
+Comlist   mpechoat $n A subway train takes you to Konghanggil.
+mptransfer $n 706
+mpecho $n takes the subway to Konghanggil.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   sodaemun-gu~
+Comlist   mpechoat $n A subway train takes you to Sodaemun-Gu.
+mptransfer $n 720
+mpecho $n takes the subway to Sodaemun-Gu.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     709
+Name     Shillimno [Kwanak Region]~
+Sector   city~
+Desc     This is Shillimno street. This road leads to the Seoul National University
+Museum and to Seoul National University. There are korean citizens walking
+around, many of them university students.
+~
+#EXIT
+Direction east~
+ToRoom    710
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    708
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     710
+Name     Shillimno [Kwanak Region]~
+Sector   city~
+Desc     Taking the western path leads back to the direction you just came from, and
+the path southeast leads to the Seoul National University Museum.
+~
+#EXIT
+Direction west~
+ToRoom    709
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    711
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     711
+Name     Shillimno [Kwanak Region]~
+Sector   city~
+Desc     The path northwest leads you back to where you came from, and the southwest
+path takes you to Seoul National University Museum.
+~
+#EXIT
+Direction east~
+ToRoom    774
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    710
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    712
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     712
+Name     Shillimno [Kwanak Region]~
+Sector   city~
+#EXIT
+Direction south~
+ToRoom    713
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    711
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     713
+Name     Shillimno [Kwanak Region]~
+Sector   city~
+Desc     From here, you can either go to the Seoul National University Museum, or
+the University itself. The university's beautifully architectured
+buildings create a welcoming aura to students.
+~
+#EXIT
+Direction north~
+ToRoom    712
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    732
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    714
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     714
+Name     Before the Seoul National University Museum~
+Sector   city~
+Desc     This is the Seoul National University Museum, where historical artifacts
+are stored and archived here. Out of the other museums in Seoul, this one
+has the biggest collection of ancient Korean weapons, armor and other
+objects from the times of the Dynasties and their kings.
+~
+#EXIT
+Direction west~
+ToRoom    715
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    713
+#ENDEXIT
+
+Reset M 0 704 1 714
+  Reset G 0 708 1
+#ENDROOM
+
+#ROOM
+Vnum     715
+Name     The Lobby of the Seoul National University Museum~
+Sector   inside~
+Flags    indoors~
+Desc     This is the Seoul National University Museum. The attendant will take you
+into the gallery as soon as a ticket is presented to her.
+
+This museum is nationally recognized for its collection of ancient Korean
+artifacts of war. Armor and weapons, as well as cultural pieces of Korean
+ 
+Please do not bring in weapons to the museum.
+Say "Let me in" to visit.
+~
+#EXIT
+Direction east~
+ToRoom    714
+#ENDEXIT
+
+Reset M 0 703 1 715
+#ENDROOM
+
+#ROOM
+Vnum     716
+Name     The Intersection~
+Sector   inside~
+Flags    indoors safe~
+Desc     This is the main intersection of the Museum. The north exit leads to the
+cultural display. The eastern exit leads to the display of Korean history
+and culture. The western exit leads to the arms display.
+~
+#EXIT
+Direction north~
+ToRoom    718
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    717
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    715
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    719
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     717
+Name     Korean Historic Gallery~
+Sector   inside~
+Flags    indoors safe~
+Desc     This is the Korean History Gallery. This gallery has a complete display of
+ancient Korean culture and information as to where the Koreans derived
+from. It also shows the different eras and kings that ruled the Korean
+empire and which dystany was in rule and when.
+~
+#EXIT
+Direction west~
+ToRoom    716
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     718
+Name     Korean Culture Display~
+Sector   inside~
+Flags    indoors safe~
+Desc     The Korean Culture Gallery shows the evolution of the Korean culture, when
+and the causes of it. It also shows modern culture and features many
+different things, from foods to music.
+~
+#EXIT
+Direction south~
+ToRoom    716
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     719
+Name     Ancient Korean Arms Gallery~
+Sector   inside~
+Flags    indoors~
+Desc     This is the home to the largest collection of ancient Korean weapons and
+armor. The armor slightly resembles those of a medieval Japanese samurai,
+but with slight modifications to the style and material. Also on display
+is the sword called &RKatana no Raiden,&g the sword that belonged to the
+greatest Korean warrior that had ever lived.
+ 
+Say 'show me' to see the power of Katana no Raiden.
+~
+#EXIT
+Direction east~
+ToRoom    716
+#ENDEXIT
+
+Reset M 0 708 1 719
+#ENDROOM
+
+#ROOM
+Vnum     720
+Name     Sodaemun-Gu Subway Stop~
+Sector   inside~
+Flags    indoors~
+Desc     This is the Sodaemun-Gu Subway Stop, where the Tongnimnun, the Independence
+Gate stands. The War Memorial is also situated here. The Independence Gate
+is the gate that signifies our independence from a dominion as an
+independent nation. The War memorial is a tribute to all the soldiers lost
+in the Korean War, whether they be Korean, American or Canadian.
+ 
+&CSay 'airport' to go to the Airport.
+Say 'Kwanak-Gu' to go to Kwanak-Gu.
+~
+#EXIT
+Direction up~
+ToRoom    721
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   airport~
+Comlist   mpechoat $n A subway train takes you to Konghanggil.
+mptransfer $n 706
+mpecho $n takes the subway to Konghanggil.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   kwanak-gu~
+Comlist   mpechoat $n A subway train takes you to Kwanak-Gu.
+mptransfer $n 708
+mpecho $n takes the subway to Kwanak-Gu.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     721
+Name     Yunhuiro Gil [Sodaemun Region]~
+Sector   city~
+Desc     Yunhuiro Gil is a shopping district, full of stores of every conceivable
+item you can possibly ask for. The streets are busy with cars and people,
+and there is the occasional person atop a bicycle that passes by.
+~
+#EXIT
+Direction east~
+ToRoom    722
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    724
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    720
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    729
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     722
+Name     Yunhuiro Gil [Sodaemun Region]~
+Sector   city~
+Desc     Yunhuiro Gil stretches east and west. There are other stores and people
+walking through the streets. Cars are passing by and pedestrians are quite
+peaceful.
+~
+#EXIT
+Direction north~
+ToRoom    725
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    723
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    726
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    721
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     723
+Name     Yunhuiro Gil [Sodaemun Region]~
+Sector   city~
+Desc     This is Yunhiro Gil, the shopping district. You can buy all assortment of
+items here, and there are police constantly patrolling the streets, so
+watch out if you have a weapon. 
+~
+#EXIT
+Direction north~
+ToRoom    727
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    728
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    722
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     724
+Name     Shin-mun Ga-Gae~
+Sector   inside~
+Flags    indoors~
+Desc     The shin-mun ga-gae is run by Mr. Kim, a small business owner. He has had
+this store for several years now and it is very successful. He sells
+foods, drinks (coffee), and other trinkets of interest.
+~
+#EXIT
+Direction north~
+ToRoom    721
+#ENDEXIT
+
+Reset M 0 705 1 724
+  Reset G 0 709 1
+#ENDROOM
+
+#ROOM
+Vnum     725
+Name     Baek-Hwa-Jum~
+Sector   inside~
+Flags    indoors~
+Desc     The Baek-Hwa-Jum is a clothing store, where you can buy all different types
+of armor. Many of the clothes are made only in Korea. The aisles are
+stocked with clothing, arranging from jeans, jackets, boots, shirts and
+hats and other clothing.
+~
+#EXIT
+Direction south~
+ToRoom    722
+#ENDEXIT
+
+Reset M 0 706 1 725
+  Reset G 0 710 1
+  Reset G 0 701 1
+  Reset G 0 705 1
+  Reset G 0 711 1
+  Reset G 0 713 1
+#ENDROOM
+
+#ROOM
+Vnum     726
+Name     Dae-Joong Um-Sik-Jang~
+Sector   inside~
+Flags    indoors~
+Desc     This restaurant caters to many people, from the famous to the elderly. It
+is famous for its annual Christmas and Thanksgiving dinners they throw for
+the homeless. Many varities of korean foods are sold here.
+~
+#EXIT
+Direction north~
+ToRoom    722
+#ENDEXIT
+
+Reset M 0 710 1 726
+  Reset G 0 709 1
+  Reset G 0 714 1
+#ENDROOM
+
+#ROOM
+Vnum     727
+Name     Jun-Ja-Gong-Aak Sang-Jum~
+Sector   inside~
+Flags    indoors~
+Desc     This electronics store is the American equivalent of Radio Shack. All kinds
+of electronics are sold here, including comlinks, circuits, batteries and
+other assortment of equipment. The storekeeper will be happy to assist in
+any way possible.
+~
+#EXIT
+Direction south~
+ToRoom    723
+#ENDEXIT
+
+Reset M 0 709 1 727
+  Reset G 0 2022 1
+  Reset G 0 2026 1
+  Reset G 0 6804 1
+  Reset G 0 2024 1
+  Reset G 0 2023 1
+  Reset G 0 1322 1
+  Reset G 0 10491 1
+  Reset G 0 2016 1
+  Reset G 0 2015 1
+  Reset G 0 2017 1
+  Reset G 0 2013 1
+  Reset G 0 2020 1
+  Reset G 0 2021 1
+  Reset G 0 10424 1
+  Reset G 0 511 1
+  Reset G 0 715 1
+#ENDROOM
+
+#ROOM
+Vnum     728
+Name     Yak-Hak~
+Sector   inside~
+Flags    indoors~
+Desc     The smell of medicine permeates the atmosphere upon entrance. The place is
+small and maybe a bit impersonal, but there are many medicinal items
+stocked here. Please ask the lady at the counter for assistance.
+~
+#EXIT
+Direction north~
+ToRoom    723
+#ENDEXIT
+
+Reset M 0 711 1 728
+Reset M 0 707 3 728
+#ENDROOM
+
+#ROOM
+Vnum     729
+Name     Sungsanno~
+Sector   city~
+Flags    nomob~
+Desc     This is the pathway that leads to the Independence Gate, constructed in
+memory of the independence all Koreans have in their country, and also
+serves as a memorial to all those who have died in service in Korea.
+~
+#EXIT
+Direction north~
+ToRoom    730
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    721
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     730
+Name     Sungsanno~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    731
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    729
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     731
+Name     Dok-Lip-Mun~
+Sector   city~
+Flags    nomob~
+Desc     The massive arch stands before the quiet atmosphere. Even though it is
+built within a bustling city, the Dok-Lip-Mun area is usually quiet and
+serene. All Koreans have tremendous respect to the dead who are buried in
+the cemetary that holds many of the soldiers, Korean and American, who
+have died in service during the Korean War or any other military conflict.
+~
+#EXIT
+Direction south~
+ToRoom    730
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     732
+Name     The Seoul National University Campus Entrance~
+Sector   city~
+Desc     Welcome to Seoul National University. This is a place of learning and
+meeting new people, as well as having unforgettable experiences.
+University is the time of one's life when they can exercise their true
+freedom.  To the north is the main building where you can go into the
+lecture halls, to the exercise rooms, cafeteria and many other places. To
+the west is the residence building, where all the first year SNU students
+are housed.
+~
+#EXIT
+Direction north~
+ToRoom    736
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    733
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    713
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     733
+Name     Ethan Robert Clancy Residence Building~
+Sector   inside~
+Flags    indoors~
+Desc     The Ethan Robert Clancy building is a tribute to the one of the alumni
+members of the Seoul National University. This building is the other
+residence building that takes on the population of students. It has two
+floors of dormitory rooms, each with bedrooms. There is a young woman
+checking id cards of students as they walk into the lobby.
+~
+#EXIT
+Direction east~
+ToRoom    732
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    737
+#ENDEXIT
+
+Reset M 0 714 1 733
+#ENDROOM
+
+#ROOM
+Vnum     734
+Name     Kim Bora Technical Facility~
+Sector   inside~
+Flags    indoors silence factory~
+Desc     This room is &RSILENT &gfor a reason. It is a facility where you can build
+objects and other trinkets. Please pay respect to other students and
+visitors who are using this facility. There is a refinery to the east.
+~
+#EXIT
+Direction east~
+ToRoom    775
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    771
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     735
+Name     Kim Seung Hyun Building~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    771
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     736
+Name     The Main Building~
+Sector   inside~
+Flags    indoors~
+Desc     This is the main building of the university. From here, you can go to the
+recreation center to work out or to get some training in, or go north
+to learn more about some skills, or go to the cafeteria to eat some food
+for yourself. Please feel free to explore the university. Make sure you
+don't get caught by the security with weapons. Weapons are prohibited from
+the university.
+~
+#EXIT
+Direction north~
+ToRoom    771
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    738
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    732
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    772
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     737
+Name     East Wing~
+Sector   inside~
+Flags    indoors~
+Desc     This is the dormitory building that houses 12 people within it. There are
+two floors of rooms, and many students walk in and out of the building.
+Each room has a room number on the door and there is a list of all the
+tenants with the receptionist.
+~
+#EXIT
+Direction east~
+ToRoom    741
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    733
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     738
+Name     The Recreation Center~
+Sector   inside~
+Flags    indoors~
+Desc     This is the Recreation Center, where students train to build up your
+strength or to take out frustration against dummies, holograms and
+punching bags. To the north is a gym, where a trainer is there to help you
+with exercising. To the south is the training room, where you can vent
+anger and frustration against several holograms and dummies.
+~
+#EXIT
+Direction north~
+ToRoom    769
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    770
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    736
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     739
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors empty_home~
+#EXIT
+Direction south~
+ToRoom    741
+Flags     isdoor pickproof~
+#ENDEXIT
+
+Reset D 0 739 2 0
+#ENDROOM
+
+#ROOM
+Vnum     740
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob indoors safe~
+#ENDROOM
+
+#ROOM
+Vnum     741
+Name     A Dormitory Hallway~
+Sector   inside~
+Flags    indoors~
+Desc     The hallway is painted a soft mahogany brown color and has a moss green
+carpet. Each door shows the room number. The hallway stretches onward.
+~
+#EXIT
+Direction north~
+ToRoom    739
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    742
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    744
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    737
+#ENDEXIT
+
+Reset D 0 741 0 0
+Reset D 0 741 2 0
+#ENDROOM
+
+#ROOM
+Vnum     742
+Name     A Dormitory Hallway~
+Sector   inside~
+Flags    indoors~
+Desc     There is a table in the hallway, as well as pictures of several famous
+pilots and military men in the hallway. Also, a portrait of the
+university's founder is on the wall.
+~
+#EXIT
+Direction north~
+ToRoom    746
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    743
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    748
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    741
+#ENDEXIT
+
+Reset D 0 742 0 0
+Reset D 0 742 2 0
+#ENDROOM
+
+#ROOM
+Vnum     743
+Name     A Dormitory Hallway~
+Sector   inside~
+Flags    indoors~
+Desc     There is the staircase that leads to the 2nd floor hallway. There are
+students roaming the hallways who are welcoming of any newcomers into the
+building. Please try to keep quiet as there are residents who are sleeping
+or studying.
+~
+#EXIT
+Direction north~
+ToRoom    750
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    752
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    742
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    754
+#ENDEXIT
+
+Reset D 0 743 0 0
+Reset D 0 743 2 0
+#ENDROOM
+
+#ROOM
+Vnum     744
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors empty_home~
+#EXIT
+Direction north~
+ToRoom    741
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     745
+Name     Floating in a void~
+Sector   inside~
+Flags    indoors safe~
+#EXIT
+Direction west~
+ToRoom    744
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     746
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors empty_home~
+#EXIT
+Direction south~
+ToRoom    742
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     747
+Name     Floating in a void~
+Sector   inside~
+Flags    indoors safe~
+#EXIT
+Direction west~
+ToRoom    746
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     748
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors empty_home~
+#EXIT
+Direction north~
+ToRoom    742
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     749
+Name     Floating in a void~
+Sector   inside~
+Flags    indoors safe~
+#EXIT
+Direction west~
+ToRoom    748
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     750
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors empty_home~
+#EXIT
+Direction south~
+ToRoom    743
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     751
+Name     Floating in a void~
+Sector   inside~
+Flags    indoors safe~
+#EXIT
+Direction west~
+ToRoom    750
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     752
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors empty_home~
+#EXIT
+Direction north~
+ToRoom    743
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     753
+Name     Floating in a void~
+Sector   inside~
+Flags    indoors safe~
+#EXIT
+Direction west~
+ToRoom    752
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     754
+Name     2nd Floor Dormitory Hallway~
+Sector   inside~
+Flags    indoors~
+Desc     You can hear faint music coming from some of the dorm rooms as the moss
+green carpeted floor and beige colored walls stretch down to the other end
+of the hallway. Students are studying or sleeping here, so please keep
+quiet.
+~
+#EXIT
+Direction north~
+ToRoom    757
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    759
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    755
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    743
+#ENDEXIT
+
+Reset D 0 754 0 0
+Reset D 0 754 2 0
+#ENDROOM
+
+#ROOM
+Vnum     755
+Name     2nd Floor Dormitory Hallway~
+Sector   inside~
+Flags    indoors~
+Desc     A wooden table sits in the hallway, with a vase on top of it. The
+university has done a fairly good job of keeping the residence buildings
+looking very clean and welcoming.
+~
+#EXIT
+Direction north~
+ToRoom    763
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    754
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    761
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    756
+#ENDEXIT
+
+Reset D 0 755 0 0
+Reset D 0 755 2 0
+#ENDROOM
+
+#ROOM
+Vnum     756
+Name     2nd Floor Dormitory Hallway~
+Sector   inside~
+Flags    indoors~
+Desc     A picture of some of the leading students that have graduated from the
+university adorn the walls, and each door shows the room number. The beige
+walls with light fixtures that pleasantly light the hallway glow as the
+tranquility in these hallways are never broken.
+~
+#EXIT
+Direction north~
+ToRoom    767
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    755
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    765
+Flags     isdoor~
+#ENDEXIT
+
+Reset D 0 756 0 0
+Reset D 0 756 2 0
+#ENDROOM
+
+#ROOM
+Vnum     757
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors empty_home~
+#EXIT
+Direction south~
+ToRoom    754
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     758
+Name     Floating in a void~
+Sector   inside~
+Flags    indoors safe~
+#EXIT
+Direction west~
+ToRoom    757
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     759
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors empty_home~
+#EXIT
+Direction north~
+ToRoom    754
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     760
+Name     Floating in a void~
+Sector   inside~
+Flags    indoors safe~
+#EXIT
+Direction west~
+ToRoom    759
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     761
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors empty_home~
+#EXIT
+Direction north~
+ToRoom    755
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     762
+Name     Floating in a void~
+Sector   inside~
+Flags    indoors safe~
+#EXIT
+Direction west~
+ToRoom    761
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     763
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors empty_home~
+#EXIT
+Direction south~
+ToRoom    755
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     764
+Name     Floating in a void~
+Sector   inside~
+Flags    indoors safe~
+#EXIT
+Direction west~
+ToRoom    763
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     765
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors empty_home~
+#EXIT
+Direction north~
+ToRoom    756
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     766
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob indoors safe~
+#EXIT
+Direction west~
+ToRoom    765
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     767
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors empty_home~
+#EXIT
+Direction south~
+ToRoom    756
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     768
+Name     Floating in a void~
+Sector   inside~
+Flags    indoors safe~
+#EXIT
+Direction west~
+ToRoom    767
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     769
+Name     The Gym~
+Sector   inside~
+Flags    indoors~
+Desc     This is the Gym. There are various exercise machines in the room, with
+floor length windows and mirrors. Students are on treadmills or
+benchpressing, and some of them are in the pool, swimming. From a
+bench-press to dumb bells, they are all here.
+~
+#EXIT
+Direction south~
+ToRoom    738
+#ENDEXIT
+
+Reset M 0 713 1 769
+#ENDROOM
+
+#ROOM
+Vnum     770
+Name     The Training Room~
+Sector   inside~
+Flags    indoors~
+Desc     This room has one training mob, which is at a level that many people can
+cope with. If it is too difficult for you, leave the room immediately. The
+room has several different equipment set up for students and visitors
+alike to use. 
+ 
+&CSay 'begin' to bring in the Training Dummy.
+~
+#EXIT
+Direction north~
+ToRoom    738
+#ENDEXIT
+
+Reset M 0 718 1 770
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho A Training Dummy appears from a hatch before you.
+mpmload 718
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     771
+Name     The University Square~
+Sector   city~
+Desc     The University Square has been decorated with a fountain the middle, with
+greenery growing throught this area. Stone-cobbled paths lead to the
+different buildings that have courses being run in them. Students often
+gather here for social gatherings or just to hang out. The lush green
+grass, as well as many flowers, trees and other plants are here. The
+students are very friendly to each other and the Korean language, as well
+as English, are very frequent here.
+~
+#EXIT
+Direction north~
+ToRoom    734
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    773
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    736
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    735
+#ENDEXIT
+
+Reset M 0 715 1 771
+  Reset G 0 719 1
+  Reset G 0 720 1
+Reset O 0 10 1 771
+#ENDROOM
+
+#ROOM
+Vnum     772
+Name     The Cafeteria~
+Sector   inside~
+Flags    indoors~
+Desc     This is the cafeteria, where you can get a variety of meals from. They sell
+drinks, snacks and hamburgers to satisfy the needs of the students. Type
+&Rlist&g to see what you can buy from here.
+~
+#EXIT
+Direction east~
+ToRoom    736
+#ENDEXIT
+
+Reset M 0 716 1 772
+  Reset G 0 702 1
+  Reset G 0 704 1
+  Reset G 0 714 1
+  Reset G 0 709 1
+  Reset G 0 508 1
+  Reset G 0 1311 1
+  Reset G 0 722 1
+Reset M 0 707 3 772
+#ENDROOM
+
+#ROOM
+Vnum     773
+Name     Yoo Seung Jun Center~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction west~
+ToRoom    771
+#ENDEXIT
+
+Reset O 0 703 1 773
+#ENDROOM
+
+#ROOM
+Vnum     774
+Name     A Church~
+Sector   inside~
+Flags    indoors nodropall~
+Desc     The peacefulness of the church is tranquilizing as the atmosphere strips
+away the tenseness and the usual bustle of life. The elderly priest that
+runs the church is kneeling in front of the massive cross that overlooks
+the entire room. The stained-glass windows have pictures of the 12 saints,
+the most noticeable one is St. Peter.
+ 
+Ask the priest for a &Rblessing &g and he will give it to you.
+~
+#EXIT
+Direction west~
+ToRoom    711
+#ENDEXIT
+
+Reset M 0 723 1 774
+#ENDROOM
+
+#ROOM
+Vnum     775
+Name     A Refinery~
+Sector   inside~
+Flags    nomob indoors refinery~
+#EXIT
+Direction west~
+ToRoom    734
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     776
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors empty_home~
+#EXIT
+Direction west~
+ToRoom    779
+Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    777
+#ENDEXIT
+
+Reset D 0 776 3 1
+#ENDROOM
+
+#ROOM
+Vnum     777
+Name     The Front Foyer~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    778
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    776
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   main~
+Comlist   mpechoat $n Transferring to the Airport.
+mptransfer $n 705
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   dorm~
+Comlist   mptransfer $n 733
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     778
+Name     The Den~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    780
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    777
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     779
+Name     Jess' Office~
+Sector   inside~
+Flags    indoors~
+Desc     This is the office where Jessica does some of the paperwork. A large
+mahogany desk is piled with stacks of papers and there is a large picture
+of Mashi Maro on the wall. 
+~
+#EXIT
+Direction east~
+ToRoom    776
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset D 0 779 1 1
+#ENDROOM
+
+#ROOM
+Vnum     780
+Name     A Balcony~
+Sector   city~
+#EXIT
+Direction south~
+ToRoom    778
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     799
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ENDAREA

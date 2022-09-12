@@ -1,0 +1,3365 @@
+#AREA   Libra~
+
+
+
+#VERSION 1
+
+#AUTHOR Asuka~
+
+#OWNED_BY None~
+
+#RANGES
+7 1000 7 1000
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 151944349
+
+#MOBILES
+#600
+Level 1 Sparring Partner~
+Sparring Partner~
+A Level 1 Sparring Partner is here.
+~
+~
+3 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+100 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+20 20 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 601
+~
+|
+#601
+Level 1 Sparring Partner~
+Sparring Partner~
+A Level 1 Sparring Partner is here.
+~
+~
+3 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+100 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+20 20 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 602
+~
+|
+#602
+Level 1 Sparring Partner~
+Sparring Partner~
+A Level 1 Sparring Partner is here.
+~
+~
+3 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+100 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+20 20 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 603
+~
+|
+#603
+Level 1 Sparring Partner~
+Sparring Partner~
+A Level 1 Sparring Partner is here.
+~
+~
+3 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+100 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+20 20 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 604
+~
+|
+#604
+Level 1 Sparring Partner~
+Sparring Partner~
+A Level 1 Sparring Partner is here.
+~
+~
+3 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+100 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+20 20 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 605
+~
+|
+#605
+Level 1 Sparring Partner~
+Sparring Partner~
+A Level 1 Sparring Partner is here.
+~
+~
+3 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+100 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+20 20 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 601
+~
+|
+#606
+Turret~
+A turret~
+A robotic like turret is here ready too shoot.
+~
+~
+33 65578 0 Z
+1000 0 -2400 1d20+29999 100d40+1000
+0 0
+8 8 0
+20 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#607
+Guardian~
+A Guardian~
+A shadowy creature is here.
+~
+~
+134217761 42 0 Z
+1000 0 -2400 1d1+49999 5d5+750
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 4
+200 200 0 0 2048 0 48 0
+0 0 0 0 0 0 0 0
+#608
+Akamos~
+Akamos~
+A stiff old creature is here.
+~
+~
+3 40 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+200 200 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog Might~
+if ovnuminv(611)
+if ovnuminv(612)
+if ovnuminv(613)
+if ovnuminv(614)
+mpjunk disk
+mpjunk disk
+mpjunk disk
+mpjunk disk
+mea $n Flowing energy appears out of nowhere.
+mpoload 616
+give might $n
+endif
+~
+> speech_prog Comsystem~
+if ovnuminv(611)
+if ovnuminv(612)
+if ovnuminv(613)
+if ovnuminv(614)
+mpjunk disk
+mpjunk disk
+mpjunk disk
+mpjunk disk
+mea $n A magical comsystem appears out of nowhere.
+mpoload 601
+give comsystem $n
+endif
+~
+> speech_prog Shirt~
+if ovnuminv(611)
+if ovnuminv(612)
+if ovnuminv(613)
+if ovnuminv(614)
+mpjunk disk
+mpjunk disk
+mpjunk disk
+mpjunk disk
+mea $n A magical shirt appears out of nowhere.
+mpoload 607
+give shirt $n
+endif
+~
+|
+#609
+Robotic Guard~
+A robotic guard~
+A robotic guard is here.
+~
+~
+134217763 0 0 Z
+1000 0 -2400 1d1+24999 1d1+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 4
+200 200 0 0 2048 0 48 0
+0 0 0 0 0 0 0 0
+#610
+Level 2 Sparring Partner~
+Sparring Partner~
+A Level 2 Sparring Partner is here.
+~
+~
+3 0 0 Z
+20 0 50 4d10+200 2d4+2
+150 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+4 4 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 611
+~
+|
+#611
+Level 2 Sparring Partner~
+Sparring Partner~
+A Level 2 Sparring Partner is here.
+~
+~
+3 0 0 Z
+200 0 -400 40d10+2000 20d4+2
+150 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+40 40 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 612
+~
+|
+#612
+Level 2 Sparring Partner~
+Sparring Partner~
+A Level 2 Sparring Partner is here.
+~
+~
+3 0 0 Z
+200 0 -400 40d10+2000 20d4+2
+150 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+40 40 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 613
+~
+|
+#613
+Level 2 Sparring Partner~
+Sparring Partner~
+A Level 2 Sparring Partner is here.
+~
+~
+3 0 0 Z
+200 0 -400 40d10+2000 20d4+2
+150 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+40 40 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 614
+~
+|
+#614
+Level 2 Sparring Partner~
+Sparring Partner~
+A Level 2 Sparring Partner is here.
+~
+~
+3 0 0 Z
+200 0 -400 40d10+2000 20d4+2
+150 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+40 40 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 615
+~
+|
+#615
+Level 2 Sparring Partner~
+Sparring Partner~
+A Level 2 Sparring Partner is here.
+~
+~
+3 0 0 Z
+200 0 -400 40d10+2000 20d4+2
+150 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+40 40 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 611
+~
+|
+#616
+Preventor Earth~
+Preventor Earth~
+A Preventor is here standing tall and strong.
+~
+~
+3 4194304 0 Z
+1000 0 -2400 1d1+149999 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 8
+22 0 0 0 2048 0 48 1
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpoload 611
+~
+|
+#617
+Preventor Water~
+Preventor Water~
+A Preventor is here standing tall and strong.
+~
+~
+3 4194304 0 Z
+1000 0 -2400 1d1+149999 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 8
+0 0 0 0 2048 0 48 1
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpoload 612
+~
+|
+#618
+Preventor Fire~
+Preventor Fire~
+A Preventor is here standing tall and strong.
+~
+~
+3 4194304 0 Z
+1000 0 -2400 1d1+149999 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 8
+0 0 0 0 2048 0 48 1
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpoload 613
+~
+|
+#619
+Preventor Wind~
+Preventor Wind~
+A Preventor is here standing tall and strong.
+~
+~
+3 4194304 0 Z
+1000 0 -2400 1d1+249999 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 9
+0 0 0 0 2048 0 48 1
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpoload 614
+~
+|
+#620
+Level 3 Sparring Partner~
+Sparring Partner~
+A Level 3 Sparring Partner is here.
+~
+~
+3 0 0 Z
+300 0 -650 60d10+3000 30d4+2
+200 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+60 60 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 621
+~
+|
+#621
+Level 3 Sparring Partner~
+Sparring Partner~
+A Level 3 Sparring Partner is here.
+~
+~
+3 0 0 Z
+300 0 -650 60d10+3000 30d4+2
+200 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+60 60 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 622
+~
+|
+#622
+Level 3 Sparring Partner~
+Sparring Partner~
+A Level 3 Sparring Partner is here.
+~
+~
+3 0 0 Z
+300 0 -650 60d10+3000 30d4+2
+200 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+60 60 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 623
+~
+|
+#623
+Level 3 Sparring Partner~
+Sparring Partner~
+A Level 3 Sparring Partner is here.
+~
+~
+3 0 0 Z
+300 0 -650 60d10+3000 30d4+2
+200 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+60 60 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 624
+~
+|
+#624
+Level 3 Sparring Partner~
+Sparring Partner~
+A Level 3 Sparring Partner is here.
+~
+~
+3 0 0 Z
+300 0 -650 60d10+3000 30d4+2
+200 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+60 60 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 625
+~
+|
+#625
+Level 3 Sparring Partner~
+Sparring Partner~
+A Level 3 Sparring Partner is here.
+~
+~
+3 0 0 Z
+300 0 -650 60d10+3000 30d4+2
+200 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+60 60 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 621
+~
+|
+#626
+Fragen~
+Fragen~
+An old man is standing here.
+~
+~
+134217731 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+200 200 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+#627
+Cylias~
+Cylias~
+An old man is lying here.
+~
+~
+134217731 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+200 200 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+#628
+Weary Solider~
+A Weary Solider~
+A weary solider is here.
+~
+~
+35 65538 0 Z
+1000 0 -2400 1d1+24999 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 4
+200 200 0 0 0 0 48 0
+0 0 0 0 0 0 0 0
+#630
+Level 4 Sparring Partner~
+Sparring Partner~
+A Level 4 Sparring Partner is here.
+~
+~
+3 0 0 Z
+400 0 -900 80d10+4000 40d4+2
+250 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+80 80 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 631
+~
+|
+#631
+Level 4 Sparring Partner~
+Sparring Partner~
+A Level 4 Sparring Partner is here.
+~
+~
+3 0 0 Z
+400 0 -900 80d10+4000 40d4+2
+250 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+80 80 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 632
+~
+|
+#632
+Level 4 Sparring Partner~
+Sparring Partner~
+A Level 4 Sparring Partner is here.
+~
+~
+3 0 0 Z
+400 0 -900 80d10+4000 40d4+2
+250 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+80 80 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 633
+~
+|
+#633
+Level 4 Sparring Partner~
+Sparring Partner~
+A Level 4 Sparring Partner is here.
+~
+~
+3 0 0 Z
+400 0 -900 80d10+4000 40d4+2
+250 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+80 80 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 634
+~
+|
+#634
+Level 4 Sparring Partner~
+Sparring Partner~
+A Level 4 Sparring Partner is here.
+~
+~
+3 0 0 Z
+400 0 -900 80d10+4000 40d4+2
+250 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+80 80 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 635
+~
+|
+#635
+Level 4 Sparring Partner~
+Sparring Partner~
+A Level 4 Sparring Partner is here.
+~
+~
+3 0 0 Z
+400 0 -900 80d10+4000 40d4+2
+250 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+80 80 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 631
+~
+|
+#639
+Wandering Soul~
+A Wandering Soul~
+A soul is wandering here.
+~
+~
+1 2 0 Z
+10 0 75 2d10+100 1d4+2
+100 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+2 2 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+#640
+Level 5 Sparring Partner~
+Sparring Partner~
+A Level 5 Sparring Partner is here.
+~
+~
+3 0 0 Z
+500 0 -1150 100d10+5000 50d4+2
+300 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+100 100 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 641
+~
+|
+#641
+Level 5 Sparring Partner~
+Sparring Partner~
+A Level 5 Sparring Partner is here.
+~
+~
+3 0 0 Z
+500 0 -1150 100d10+5000 50d4+2
+300 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+100 100 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 642
+~
+|
+#642
+Level 5 Sparring Partner~
+Sparring Partner~
+A Level 5 Sparring Partner is here.
+~
+~
+3 0 0 Z
+500 0 -1150 100d10+5000 50d4+2
+300 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+100 100 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 643
+~
+|
+#643
+Level 5 Sparring Partner~
+Sparring Partner~
+A Level 5 Sparring Partner is here.
+~
+~
+3 0 0 Z
+500 0 -1150 100d10+5000 50d4+2
+300 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+100 100 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 644
+~
+|
+#644
+Level 5 Sparring Partner~
+Sparring Partner~
+A Level 5 Sparring Partner is here.
+~
+~
+3 0 0 Z
+500 0 -1150 100d10+5000 50d4+2
+300 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+100 100 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 645
+~
+|
+#645
+Level 5 Sparring Partner~
+Sparring Partner~
+A Level 5 Sparring Partner is here.
+~
+~
+3 0 0 Z
+500 0 -1150 100d10+5000 50d4+2
+300 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+100 100 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 641
+~
+|
+#650
+Level 6 Sparring Partner~
+Sparring Partner~
+A Level 6 Sparring Partner is here.
+~
+~
+3 0 0 Z
+600 0 -1400 120d10+6000 60d4+2
+350 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+120 120 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 651
+~
+|
+#651
+Level 6 Sparring Partner~
+Sparring Partner~
+A Level 6 Sparring Partner is here.
+~
+~
+3 0 0 Z
+600 0 -1400 120d10+6000 60d4+2
+350 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+120 120 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 652
+~
+|
+#652
+Level 6 Sparring Partner~
+Sparring Partner~
+A Level 6 Sparring Partner is here.
+~
+~
+3 0 0 Z
+600 0 -1400 120d10+6000 60d4+2
+350 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+120 120 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 653
+~
+|
+#653
+Level 6 Sparring Partner~
+Sparring Partner~
+A Level 6 Sparring Partner is here.
+~
+~
+3 0 0 Z
+600 0 -1400 120d10+6000 60d4+2
+350 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+120 120 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 654
+~
+|
+#654
+Level 6 Sparring Partner~
+Sparring Partner~
+A Level 6 Sparring Partner is here.
+~
+~
+3 0 0 Z
+600 0 -1400 120d10+6000 60d4+2
+350 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+120 120 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 655
+~
+|
+#655
+Level 6 Sparring Partner~
+Sparring Partner~
+A Level 6 Sparring Partner is here.
+~
+~
+3 0 0 Z
+600 0 -1400 120d10+6000 60d4+2
+350 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+120 120 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 651
+~
+|
+#660
+Level 7 Sparring Partner~
+Sparring Partner~
+A Level 7 Sparring Partner is here.
+~
+~
+3 0 0 Z
+700 0 -1650 140d10+7000 70d4+2
+400 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+140 140 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 661
+~
+|
+#661
+Level 7 Sparring Partner~
+Sparring Partner~
+A Level 7 Sparring Partner is here.
+~
+~
+3 0 0 Z
+700 0 -1650 140d10+7000 70d4+2
+400 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+140 140 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 662
+~
+|
+#662
+Level 7 Sparring Partner~
+Sparring Partner~
+A Level 7 Sparring Partner is here.
+~
+~
+3 0 0 Z
+700 0 -1650 140d10+7000 70d4+2
+400 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+140 140 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 663
+~
+|
+#663
+Level 7 Sparring Partner~
+Sparring Partner~
+A Level 7 Sparring Partner is here.
+~
+~
+3 0 0 Z
+700 0 -1650 140d10+7000 70d4+2
+400 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+140 140 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 664
+~
+|
+#664
+Level 7 Sparring Partner~
+Sparring Partner~
+A Level 7 Sparring Partner is here.
+~
+~
+3 0 0 Z
+700 0 -1650 140d10+7000 70d4+2
+400 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+140 140 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 665
+~
+|
+#665
+Level 7 Sparring Partner~
+Sparring Partner~
+A Level 7 Sparring Partner is here.
+~
+~
+3 0 0 Z
+700 0 -1650 140d10+7000 70d4+2
+400 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+140 140 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 661
+~
+|
+#666
+Punching Bag~
+Sparring Partner~
+A Level 9 Sparring Partner is here.
+~
+~
+3 0 0 Z
+900 0 -2150 180d10+9000 90d4+2
+450 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 1~
+mpoload 11511
+~
+|
+#670
+Level 8 Sparring Partner~
+Sparring Partner~
+A Level 8 Sparring Partner is here.
+~
+~
+3 0 0 Z
+800 0 -1900 160d10+8000 80d4+2
+450 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+160 160 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 671
+~
+|
+#671
+Level 8 Sparring Partner~
+Sparring Partner~
+A Level 8 Sparring Partner is here.
+~
+~
+3 0 0 Z
+800 0 -1900 160d10+8000 80d4+2
+450 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+160 160 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 672
+~
+|
+#672
+Level 8 Sparring Partner~
+Sparring Partner~
+A Level 8 Sparring Partner is here.
+~
+~
+3 0 0 Z
+800 0 -1900 160d10+8000 80d4+2
+450 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+160 160 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 673
+~
+|
+#673
+Level 8 Sparring Partner~
+Sparring Partner~
+A Level 8 Sparring Partner is here.
+~
+~
+3 0 0 Z
+800 0 -1900 160d10+8000 80d4+2
+450 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+160 160 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 674
+~
+|
+#674
+Level 8 Sparring Partner~
+Sparring Partner~
+A Level 8 Sparring Partner is here.
+~
+~
+3 0 0 Z
+800 0 -1900 160d10+8000 80d4+2
+450 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+160 160 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 675
+~
+|
+#675
+Level 8 Sparring Partner~
+Sparring Partner~
+A Level 8 Sparring Partner is here.
+~
+~
+3 0 0 Z
+800 0 -1900 160d10+8000 80d4+2
+450 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+160 160 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 671
+~
+|
+#680
+Level 9 Sparring Partner~
+Sparring Partner~
+A Level 9 Sparring Partner is here.
+~
+~
+3 0 0 Z
+900 0 -2150 180d10+9000 90d4+2
+450 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+180 180 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 681
+~
+|
+#681
+Level 9 Sparring Partner~
+Sparring Partner~
+A Level 9 Sparring Partner is here.
+~
+~
+3 0 0 Z
+900 0 -2150 180d10+9000 90d4+2
+450 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+180 180 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 682
+~
+|
+#682
+Level 9 Sparring Partner~
+Sparring Partner~
+A Level 9 Sparring Partner is here.
+~
+~
+3 0 0 Z
+900 0 -2150 180d10+9000 90d4+2
+450 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+180 180 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 683
+~
+|
+#683
+Level 9 Sparring Partner~
+Sparring Partner~
+A Level 9 Sparring Partner is here.
+~
+~
+3 0 0 Z
+900 0 -2150 180d10+9000 90d4+2
+450 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+180 180 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 684
+~
+|
+#684
+Level 9 Sparring Partner~
+Sparring Partner~
+A Level 9 Sparring Partner is here.
+~
+~
+3 0 0 Z
+900 0 -2150 180d10+9000 90d4+2
+450 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+180 180 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 685
+~
+|
+#685
+Level 9 Sparring Partner~
+Sparring Partner~
+A Level 9 Sparring Partner is here.
+~
+~
+3 0 0 Z
+900 0 -2150 180d10+9000 90d4+2
+450 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+180 180 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 681
+~
+|
+#686
+Punching Bag~
+A punching bag~
+A punching bag is hanging here.
+~
+~
+3 0 0 Z
+1 0 0 10000d10000+3000000 1d1+1
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 1
+0 0 0 0 2048 0 48 0
+0 0 0 0 0 0 0 0
+> death_prog 1~
+mpmload 666
+~
+> death_prog 2~
+mpoload 11511
+~
+|
+#690
+Level 10 Sparring Partner~
+Sparring Partner~
+A Level 10 Sparring Partner is here.
+~
+~
+3 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+500 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 691
+~
+|
+#691
+Level 10 Sparring Partner~
+Sparring Partner~
+A Level 10 Sparring Partner is here.
+~
+~
+3 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+500 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 692
+~
+|
+#692
+Level 10 Sparring Partner~
+Sparring Partner~
+A Level 10 Sparring Partner is here.
+~
+~
+3 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+500 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 693
+~
+|
+#693
+Level 10 Sparring Partner~
+Sparring Partner~
+A Level 10 Sparring Partner is here.
+~
+~
+3 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+500 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 694
+~
+|
+#694
+Level 10 Sparring Partner~
+Sparring Partner~
+A Level 10 Sparring Partner is here.
+~
+~
+3 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+500 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 695
+~
+|
+#695
+Level 10 Sparring Partner~
+Sparring Partner~
+A Level 10 Sparring Partner is here.
+~
+~
+3 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+500 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+Mpmload 691
+~
+|
+#0
+
+
+#OBJECTS
+#600
+Bean Chair Bag Red~
+&zA &RR&re&Rd &zBean Bag Chair~
+&zA &RR&re&Rd &zBean Bag Chair~
+~
+12 0 0
+1 0 2 0 100000 0
+1 0 0
+#601
+advanced comsystem~
+&zAn &RA&rd&Rv&ra&Rn&rc&Re&rd &BC&bo&Bm&bs&By&bs&Bt&be&Bm~
+&zAn &RA&rd&Rv&ra&Rn&rc&Re&rd &BC&bo&Bm&bs&By&bs&Bt&be&Bm&z is here.~
+~
+72 0 131073
+0 0 0 0
+1 500000 50000
+A
+26 32
+A
+26 8
+A
+13 1000
+A
+18 20
+A
+19 20
+A
+32 15
+#602
+Ration Food~
+A food ration~
+A food ration.~
+~
+19 8192 1
+50 50 0 0
+1 100 10
+#603
+Water Bottle~
+A water bottle~
+A small water bottle is here.~
+~
+17 8192 1
+50 50 0 0
+1 100 10
+#604
+Bean Chair Bag Red~
+&za &Rr&re&Rd&z bean bag &Wc&wh&za&wi&Wr~
+&zA &Rr&re&Rd&z bean bag &Wc&wh&za&wi&Wr&z is here ready to be sat on.~
+~
+12 0 1
+1 0 2 2
+100 25000 2500
+#605
+Angel Tear Angel's~
+&WA&wn &CA&cn&Cg&ce&Cl&ci&Cc &RT&re&Ra&rr~
+A puddle of tear drops is on the ground.~
+~
+1 8192 1
+0 0 -1 0
+1 85000 25000
+A
+18 15
+A
+19 15
+A
+13 1000
+A
+17 -50
+A
+31 1
+#606
+buster pistol gun~
+&zA &CB&cu&Cs&ct&Ce&cr&C&z-&GP&gi&Gs&gt&Go&gl~
+A mysterious looking gun is lying here.~
+~
+5 8192 8193
+1001 10 150 6 2000 2000
+1 145000 14500
+A
+18 20
+A
+13 1000
+#607
+Thin white shirt~
+&BT&bh&Bi&bn &wW&Wh&wi&Wt&we &CS&ch&Ci&cr&Ct~
+An old piece of cloth is lying here.~
+~
+9 0 9
+65 65 0 0
+1 75000 7500
+A
+13 1000
+A
+19 15
+A
+18 15
+A
+40 5
+#608
+Angel Barrier Angel's~
+&RA&rn &WA&wn&Wg&we&Wl&w'&Ws &GB&ga&Gr&gr&Gi&ge&Gr~
+A weird barrier is lying here.~
+~
+9 0 513
+75 75 0 0
+1 75000 7500
+A
+13 1000
+A
+18 15
+A
+19 20
+#609
+Treasure Chest~
+A Treasure Chest~
+A Treasure Chest~
+~
+15 0 1
+500 0 0 1000 500 0
+150 10000 1000
+#610
+Ammo Cell~
+An Ammo Cell~
+An ammo cell is lying here.~
+~
+57 0 16385
+2000 2000 0 0
+1 200 20
+#611
+An Earth Disk~
+&WAn &GE&ga&Gr&gt&Gh &WDisk~
+A magical disk is here...~
+~
+8 1 1
+0 0 0 0
+1 0 0
+#612
+Water Disk~
+&WA &BW&ba&Bt&Be&br &WDisk~
+A magical disk is here...~
+~
+8 1 1
+0 0 0 0
+1 0 0
+#613
+A Fire Disk~
+&WA &RF&ri&Rr&re &WDisk~
+A magical disk is here...~
+~
+8 1 1
+0 0 0 0
+1 0 0
+#614
+A Wind Disk~
+&WA &CW&ci&Cn&cd &WDisk~
+A magical disk is here...~
+~
+8 1 1
+0 0 0 0
+1 0 0
+#616
+Flowing Energy Might~
+&BF&bl&Bo&bw&Bi&bn&Bg &RE&rn&Re&rr&Rg&ry &zof &YM&Oigh&Yt~
+Useless energy is flowing here~
+~
+9 0 4097
+75 75 0 0
+1 0 0
+A
+13 1000
+A
+18 30
+A
+19 30
+> wear_prog 100~
+if wearingvnum($n) 616
+mpeacho _white &WClick.
+else
+mpecho $n _red &WA magical force prevents you from wearing that.
+mpforce $n remove might
+endif
+~
+|
+#617
+Water Pendent~
+&BW&ba&Bt&be&Br &WP&we&Wn&wd&We&wn&Wt~
+&BW&ba&Bt&be&Br &WP&we&Wn&wd&We&wn&Wt~
+~
+9 0 5
+75 75 0 0
+1 70000 12500
+A
+13 1000
+A
+18 15
+A
+19 15
+#618
+angelic boots~
+A pair of angelic boots lay here.~
+A angelic boots is here.~
+The boots glow raidiantly as you slip them onto your feet.~
+9 0 65
+0 0 0 0
+1 0 0
+E
+angelic boots~
+A pair of boots lie here
+~
+#0
+
+
+#ROOMS
+#600
+&WA &YW&Oo&Yr&On&z-&PO&pu&Pt &WEntrance~
+The door to the ships has been blow open and is lying on the ground in
+the corner. Everything else in the room has been destroyed by the first
+attack. You also notice a weird word on the wall here...
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 601
+D2
+~
+~
+3 -1 685
+R D 0 600 2 1
+E
+Sign~
+The words of the past lye ahead....
+ 
+                  Arbil
+ 
+ 
+~
+> speech_prog Arbil~
+mptransfer $n 606
+~
+|
+S
+#601
+&WA &GS&ge&Gc&gu&Gr&gi&Gt&gy&W Check~
+Turrets are hanging down from the sides of the wall. Each turret is
+scanning everyone who comes in to insure that intruders stay out.
+~
+0 8 0 1 0 0 0 0
+D0
+~
+~
+0 -1 602
+D2
+~
+~
+0 -1 600
+R M 0 606 6 601
+R M 0 606 6 601
+> entry_prog 100~
+mpechoaround $n _red Scanning for user authenticity..
+mpechoaround $n _red ....
+mpechoaround $n _red Name, $n, unauthorized user! Intruder Alert!
+mea $n _red Scanning for user authenticity..
+mea $n _red ....
+mea $n _red Name, $n, unauthorized user! Intruder Alert!
+~
+|
+S
+#602
+&WA &CS&cm&Ca&cl&Cl&W Hallway~
+You notice that you are in a very small hallway in between Security
+Checks. This room is only big enough for one person to walk through at
+a time.
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 603
+D2
+~
+~
+0 -1 601
+S
+#603
+&WA &GS&ge&Gc&gu&Gr&gi&Gt&gy&W Check~
+Turrets are hanging down from the sides of the wall. Each turret is
+scanning everyone who comes in to insure that intruders stay out.
+~
+0 8 0 1 0 0 0 0
+D0
+~
+~
+0 -1 604
+D2
+~
+~
+0 -1 602
+R M 0 606 6 603
+R M 0 606 6 603
+> entry_prog 100~
+mea $n _red Warning Intruder Alert
+mpechoaround $n _red Warning Intruder Alert
+~
+|
+S
+#604
+&WA &CS&cm&Ca&cl&Cl&W Hallway~
+This hallway is filled with tiny pieces of metal from the ships
+interior. From all the metal piled up against the walls, only 2 people
+can fit in this room.
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 605
+D2
+~
+~
+0 -1 603
+S
+#605
+&WA &GS&ge&Gc&gu&Gr&gi&Gt&gy&W Check~
+Turrets are hanging down from the sides of the wall. Each turret is
+scanning everyone who comes in to insure that intruders stay out.
+~
+0 8 0 1 0 0 0 0
+D0
+~
+~
+0 -1 606
+D2
+~
+~
+0 -1 604
+R M 0 606 6 605
+R M 0 606 6 605
+> entry_prog 100~
+mea $n _red Warning Intruder Alert
+mpechoaround $n _red Warning Intruder Alert
+~
+|
+S
+#606
+&WA &zD&Wa&zr&Wk &BM&be&Be&bt&Bi&bn&Bg &WPoint~
+This is one of the meeting points used by one of the search parties
+that killed the crew of this ship years ago. What lies beyond here is
+unknown and dangerous.
+~
+0 12 0 1 0 0 0 0
+D2
+~
+~
+0 -1 605
+D6
+~
+~
+0 -1 607
+D7
+~
+~
+0 -1 610
+> speech_prog ~
+~
+> speech_prog arbil~
+mptransfer $n 600
+~
+|
+S
+#607
+&WA &GR&go&Gt&gt&Gi&gn&Gg &WWalkway~
+Many pieces of rotten wood have fallen from the ceiling and are
+crowding the room.
+~
+0 8 0 1 0 0 0 0
+D0
+~
+~
+0 -1 608
+D9
+~
+~
+0 -1 606
+R M 0 628 4 607
+S
+#608
+&WA &GR&go&Gt&gt&Gi&gn&Gg &WWalkway~
+The wood around this walkway is rotted and has been chewed by a
+numerous number of beetles. From all of the shards of wood, Only 1
+person can fit in this room.
+~
+0 8 0 1 0 0 0 0
+D1
+~
+~
+0 -1 609
+D2
+~
+~
+0 -1 607
+D3
+~
+~
+2048 -1 659
+S
+#609
+&WA &RC&ro&Rl&rl&Ra&rp&Ra&rs&Re&rd &WCorridor~
+There are no exits here other than the way that you entered. Over in
+the corner metal is covering up large hole.
+~
+0 8 0 1 0 0 0 0
+D3
+~
+~
+0 -1 608
+R M 0 628 4 609
+S
+#610
+&WA &RS&rm&Ra&rl&Rl&W Hallway~
+This is one of the smallest hallways in the spaceship. Many pipes that
+read caution are running alongside the walls, you may want to sand back.
+~
+0 8 0 1 0 0 0 0
+D0
+~
+~
+0 -1 611
+D8
+~
+~
+0 -1 606
+D9
+~
+~
+2048 -1 642
+R M 0 628 4 610
+S
+#611
+&WA &RS&rm&Ra&rl&Rl&W Hallway~
+The hallway is very small and only big enough to fit about two to three
+people in it at a time. To the north you hear someone scream "Go
+Preventors!"
+~
+0 8 0 1 0 0 0 0
+D0
+~
+~
+0 -1 612
+D2
+~
+~
+0 -1 610
+S
+#612
+&WA &RS&rm&Ra&rl&Rl&W Hallway~
+As you enter you can see that there is many spots of blood on the
+ground. There is also some blood oozing from one of the pipes in the
+broken ceiling.
+~
+0 8 0 1 0 0 0 0
+D1
+~
+~
+0 -1 613
+D2
+~
+~
+0 -1 611
+D3
+~
+~
+2048 -1 614
+R M 0 628 4 612
+S
+#613
+&WA &GW&gar&Gp &WHole~
+This warp hole can transfer you to the different places on the ship.
+Say 'Main' to go to the Main Sector.
+Say 'Bunking' to go to the Cabin Sector.
+Say 'Bridge' to go to the Bridge.
+Say 'Training' to go to the Training Sector.
+~
+0 12 0 1 0 0 0 0
+> speech_prog Main~
+mea $n &WYou step through a &Gw&gar&Gp&W hole and appear in the main sector.
+mpechoaround $n &W$n steps through a &Gw&gar&Gp&W hole.
+mptransfer $n 612
+~
+> speech_prog Bridge~
+mea $n &WYou Step through a &Gw&gar&Gp&W hole and appear at the bridge.
+mpeachoaround $n &W$n steps through a &Gw&gar&Gp&W hole.
+mptransfer $n 616
+~
+> speech_prog Bunking~
+mea $n &WYou Step through a &Gw&gar&Gp&W hole and appear at the bridge.
+mpeachoaround $n &W$n steps through a &Gw&gar&Gp&W hole.
+mptransfer $n 638
+~
+> speech_prog Training~
+mea $n &WYou Step through a &Gw&gar&Gp&W hole and appear at the bridge.
+mpeachoaround $n &W$n steps through a &Gw&gar&Gp&W hole.
+mptransfer $n 655
+~
+|
+S
+#614
+&WA &BS&bt&Bo&br&Ba&bg&Be&W Room~
+You notice that you are in one of the many hidden storage rooms on the
+battle ship. You see nothing but broken down walls and pieces of unused
+metal.
+~
+0 8 0 1 0 0 0 0
+D1
+~
+~
+0 -1 612
+R M 0 616 1 614
+S
+#615
+&WA &GW&gar&Gp &WHole~
+This warp hole can transfer you to the different places on the ship.
+Say 'Bridge' to go to the Bridge.
+Say 'Energy' to go to a Secret Sector.
+~
+0 12 0 1 0 0 0 0
+D2
+~
+~
+2051 -1 635
+R D 0 615 2 1
+> speech_prog Bridge~
+mea $n &WYou step through a &Gw&gar&Gp&W hole and appear in the main sector.
+mpechoaround $n &W$n steps through a &Gw&gar&Gp&W hole.
+mptransfer $n 635
+~
+> speech_prog Energy~
+mea $n &WYou step through a &Gw&gar&Gp&W hole and appear in the main sector.
+mpechoaround $n &W$n steps through a &Gw&gar&Gp&W hole.
+mptransfer $n 643
+~
+|
+S
+#616
+&WA &GB&gr&Go&gk&Ge&gn&z-&RD&ro&Rw&rn&W Passageway~
+Many pieces of metal from the ceiling are on the ground here. The pipes
+that run along the walls have slashes in them. 
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 613
+D1
+~
+~
+0 -1 617
+D3
+~
+~
+0 -1 626
+S
+#617
+&WA &GB&gr&Go&gk&Ge&gn&z-&RD&ro&Rw&rn&W Passageway~
+As you approach from the shadows you notice that there is a piece of
+cement is wrecked and scattered on the ground.
+~
+0 8 0 1 0 0 0 0
+D0
+~
+~
+0 -1 632
+D1
+~
+~
+0 -1 618
+D3
+~
+~
+0 -1 616
+S
+#618
+&WA &GB&gr&Go&gk&Ge&gn&z-&RD&ro&Rw&rn&W Passageway~
+As you look around you notice that the walls are scratched in numerous
+places as if someone was trying to escape.
+~
+0 8 0 1 0 0 0 0
+D0
+~
+~
+0 -1 619
+D3
+~
+~
+0 -1 617
+D8
+~
+~
+2048 -1 674
+D9
+~
+~
+2048 -1 636
+S
+#619
+&WA &GB&gr&Go&gk&Ge&gn&z-&RD&ro&Rw&rn&W Passageway~
+As you walk in you can tell that there was once a body laying on the
+ground because there is a pile of bones laying in the corner.
+~
+0 8 0 1 0 0 0 0
+D0
+~
+~
+0 -1 620
+D2
+~
+~
+0 -1 618
+R M 0 607 5 619
+S
+#620
+&WA &GB&gr&Go&gk&Ge&gn&z-&RD&ro&Rw&rn&W Passageway~
+Many pieces of metal from the ceiling are on the ground here. The pipes
+that run along the walls have slashes in them. 
+~
+0 8 0 1 0 0 0 0
+D2
+~
+~
+0 -1 619
+D3
+~
+~
+0 -1 621
+D7
+~
+~
+0 -1 629
+S
+#621
+&WA &BD&be&Bs&bt&Br&bo&By&be&Bd&W Corridor~
+Many different skeletons are scattered across the room here. You can
+almost sense a presence in the room but then the feeling fades away.
+~
+0 8 0 1 0 0 0 0
+D0
+~
+~
+0 -1 629
+D1
+~
+~
+0 -1 620
+D3
+~
+~
+0 -1 622
+S
+#622
+&WA &BD&be&Bs&bt&Br&bo&By&be&Bd&W Corridor~
+You notice that some of the piping on the wall has been torn and is
+leaking out gas. You feel light headed and loose some life.
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 628
+D1
+~
+~
+0 -1 621
+D3
+~
+~
+0 -1 623
+> entry_prog 100~
+mpecho $n You inhale some funky gas.
+mpechoaround $n $n inhales some funky gas.
+mpdamage $n 2500
+~
+|
+S
+#623
+&WA &BD&be&Bs&bt&Br&bo&By&be&Bd&W Corridor~
+Many different skeletons are scattered across the room here. You can
+almost sense a presence in the room but then the feeling fades away.
+~
+0 8 0 1 0 0 0 0
+D0
+~
+~
+0 -1 627
+D1
+~
+~
+0 -1 622
+D3
+~
+~
+0 -1 624
+S
+#624
+&WA &GB&gr&Go&gk&Ge&gn&z-&RD&ro&Rw&rn&W Passageway~
+As you look around you notice that the walls are scratched in numerous
+places as if someone was trying to escape.
+~
+0 8 0 1 0 0 0 0
+D1
+~
+~
+0 -1 623
+D2
+~
+~
+0 -1 625
+D6
+~
+~
+0 -1 627
+R M 0 607 5 624
+S
+#625
+&WA &GB&gr&Go&gk&Ge&gn&z-&RD&ro&Rw&rn&W Passageway~
+You see that part of the hallway has a giant piece of sheet metal
+covering it. You have the sudden urge to look behind it but then notice
+that people are guarding it.
+~
+0 8 0 1 0 0 0 0
+D0
+~
+~
+0 -1 624
+D2
+~
+~
+0 -1 637
+S
+#626
+&WA &GB&gr&Go&gk&Ge&gn&z-&RD&ro&Rw&rn&W Passageway~
+Walking around in here, it is evident there was once a struggle in this
+very room.  A trail of blood leads to a pile of bones lying in the lower
+right corner.
+~
+0 8 0 1 0 0 0 0
+D0
+~
+~
+0 -1 631
+D1
+~
+~
+0 -1 616
+D3
+~
+~
+0 -1 637
+R M 0 607 5 626
+S
+#627
+&WA &GB&gr&Go&gk&Ge&gn&z-&RD&ro&Rw&rn&W Passageway~
+Many pieces of metal from the ceiling are on the ground here. The pipes
+that run along the walls have slashes in them. 
+~
+0 8 0 1 0 0 0 0
+D1
+~
+~
+0 -1 628
+D2
+~
+~
+0 -1 623
+D6
+~
+~
+0 -1 630
+D9
+~
+~
+0 -1 624
+S
+#628
+&WA &BD&be&Bs&bt&Br&bo&By&be&Bd&W Corridor~
+As you approach from the shadows you notice that there is a piece of
+cement is wrecked and scattered on the ground.
+~
+0 8 0 1 0 0 0 0
+D0
+~
+~
+0 -1 630
+D1
+~
+~
+0 -1 629
+D2
+~
+~
+0 -1 622
+D3
+~
+~
+0 -1 627
+S
+#629
+&WA &GB&gr&Go&gk&Ge&gn&z-&RD&ro&Rw&rn&W Passageway~
+As you look around you notice that the walls are scratched in numerous
+places as if someone was trying to escape.
+~
+0 8 0 1 0 0 0 0
+D2
+~
+~
+0 -1 621
+D3
+~
+~
+0 -1 628
+D7
+~
+~
+0 -1 630
+D8
+~
+~
+0 -1 620
+S
+#630
+&PV&pi&Pe&pw&Pi&pn&Pg &YD&Oe&Yc&Ok~
+This is the main viewing deck for the whole ship. You can see that
+there is a pile of bones in a corner. You still peek out the giant
+window even though there is nothing to view other than dust
+~
+0 12 0 1 0 0 0 0
+D2
+~
+~
+0 -1 628
+D8
+~
+~
+0 -1 629
+D9
+~
+~
+0 -1 627
+R M 0 619 1 630
+S
+#631
+&WA &RM&re&Rd&ri&Rc&ra&Rl &WCenter~
+In this medical center you see that there are many stretchers that have
+sheets lying over them with the indentations of a Human body. Even though
+this medical center is deserted, it still works.
+~
+0 12&1 0 1 0 0 0 0
+D2
+~
+~
+0 -1 626
+S
+#632
+&WA &RM&re&Rd&ri&Rc&ra&Rl &WCenter~
+In this medical center you see that there are many stretchers that have
+sheets lying over them with the indentations of a Human body. Even though
+this medical center is deserted, it still works.
+~
+0 12&1 0 1 0 0 0 0
+D2
+~
+~
+0 -1 617
+S
+#633
+&WA &PS&pe&Pc&pr&Pe&pt &WWalkway~
+This is a secret walkway.....
+~
+0 12 0 1 0 0 0 0
+D7
+~
+~
+0 -1 637
+D8
+~
+~
+2048 -1 635
+S
+#634
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#635
+&WA &PS&pe&Pc&pr&Pe&pt &WWalkway~
+This is a secret walkway.....
+~
+0 0 0 1 0 0 0 0
+D0
+~
+~
+2051 -1 615
+D6
+~
+~
+0 -1 636
+D7
+~
+~
+0 -1 633
+R D 0 635 0 1
+S
+#636
+&WA &PS&pe&Pc&pr&Pe&pt &WWalkway~
+This is a secret walkway.....
+~
+0 12 0 1 0 0 0 0
+D6
+~
+~
+0 -1 618
+D9
+~
+~
+2048 -1 635
+S
+#637
+&WA &GB&gr&Go&gk&Ge&gn&z-&RD&ro&Rw&rn&W Passageway~
+Many pieces of metal from the ceiling are on the ground here. The pipes
+that run along the walls have slashes in them. 
+~
+0 8 0 1 0 0 0 0
+D0
+~
+~
+0 -1 625
+D1
+~
+~
+0 -1 626
+D8
+~
+~
+2048 -1 633
+R M 0 607 5 637
+R M 0 607 5 637
+S
+#638
+&WA &BL&bo&Bn&bg&W Hallway~
+This hallway is very long and never ends. It may take you awhile to get
+where you are going.
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 639
+D2
+~
+~
+0 -1 613
+S
+#639
+&WA &BL&bo&Bn&bg &WHallway~
+This hallway is very long and never ends. It may take you awhile to get
+where you are going.
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 640
+D2
+~
+~
+0 -1 638
+S
+#640
+&WA &GS&gh&Go&gr&Gt&W Hallway~
+This hallway is very short and is only 2 feet long. You won't need to
+waste time here.
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 645
+D1
+~
+~
+0 -1 641
+D2
+~
+~
+0 -1 639
+D3
+~
+~
+0 -1 654
+S
+#641
+An Empty Apartment~
+~
+0 2097164 0 1 0 0 0 0
+D3
+~
+~
+0 -1 640
+R O 0 604 1 641
+S
+#642
+&WAn &BA&br&Bm&bo&Br &WShop~
+As you enter you see that there is an old man hiding behind a giant
+pile of armor. You also see that no one else is in the shop.
+~
+0 100663308 0 1 0 0 0 0
+D6
+~
+~
+0 -1 610
+R M 0 626 1 642
+  R G 1 608 1
+  R G 1 605 1
+  R G 1 617 1
+S
+#643
+&WA &GP&ga&Gt&gh &Wof &BF&bl&Bo&bw&Bi&bn&Bg &RE&rn&Re&rr&Rg&ry~
+You can sense a powerful presence flowing through the ground here
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 644
+D2
+~
+~
+0 -1 615
+R M 0 609 8 643
+S
+#644
+&WA &GP&ga&Gt&gh &Wof &BF&bl&Bo&bw&Bi&bn&Bg &RE&rn&Re&rr&Rg&ry~
+You can sense a powerful presence flowing through the ground here
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 647
+D2
+~
+~
+0 -1 643
+R M 0 609 8 644
+> speech_prog 1~
+mea $n A sparing parter appears before you
+mpmload 600
+~
+> speech_prog 2~
+mea $n A sparing parter appears before you
+mpmload 610
+~
+> speech_prog 3~
+mea $n A sparing parter appears before you
+mpmload 620
+~
+> speech_prog 4~
+mea $n A sparing parter appears before you
+mpmload 630
+~
+> speech_prog 5~
+mea $n A sparing parter appears before you
+mpmload 640
+~
+> speech_prog 6~
+mea $n A sparing parter appears before you
+mpmload 650
+~
+> speech_prog 7~
+mea $n A sparing parter appears before you
+mpmload 660
+~
+> speech_prog 8~
+mea $n A sparing parter appears before you
+mpmload 670
+~
+> speech_prog 9~
+mea $n A sparing parter appears before you
+mpmload 680
+~
+> speech_prog 10~
+mea $n A sparing parter appears before you
+mpmload 690
+~
+> speech_prog purge~
+mppurge Sparring
+~
+|
+S
+#645
+&WA &GS&gh&Go&gr&Gt &WHallway~
+This hallway is very short and is only 2 feet long. You won't need to
+waste time here.
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 646
+D1
+~
+~
+0 -1 658
+D2
+~
+~
+0 -1 640
+D3
+~
+~
+0 -1 656
+D6
+~
+~
+2048 -1 675
+S
+#646
+An Empty Apartment~
+~
+0 2097164 0 1 0 0 0 0
+D2
+~
+~
+0 -1 645
+R O 0 604 1 646
+S
+#647
+&WA &GP&ga&Gt&gh &Wof &BF&bl&Bo&bw&Bi&bn&Bg &RE&rn&Re&rr&Rg&ry~
+You can sense a powerful presence flowing through the ground here
+~
+0 12 0 1 0 0 0 0
+D2
+~
+~
+0 -1 644
+D6
+~
+~
+0 -1 648
+R M 0 609 8 647
+S
+#648
+&WA &GP&ga&Gt&gh &Wof &BF&bl&Bo&bw&Bi&bn&Bg &RE&rn&Re&rr&Rg&ry~
+You can sense a powerful presence flowing through the ground here
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 649
+D9
+~
+~
+0 -1 647
+R M 0 609 8 648
+S
+#649
+&WA &GP&ga&Gt&gh &Wof &BF&bl&Bo&bw&Bi&bn&Bg &RE&rn&Re&rr&Rg&ry~
+You can sense a powerful presence flowing through the ground here
+~
+0 12 0 1 0 0 0 0
+D2
+~
+~
+0 -1 648
+D3
+~
+~
+0 -1 650
+R M 0 609 8 649
+> speech_prog 1~
+mea $n A sparing parter appears before you
+mpmload 600
+~
+> speech_prog 2~
+mea $n A sparing parter appears before you
+mpmload 610
+~
+> speech_prog 3~
+mea $n A sparing parter appears before you
+mpmload 620
+~
+> speech_prog 4~
+mea $n A sparing parter appears before you
+mpmload 630
+~
+> speech_prog 5~
+mea $n A sparing parter appears before you
+mpmload 640
+~
+> speech_prog 6~
+mea $n A sparing parter appears before you
+mpmload 650
+~
+> speech_prog 7~
+mea $n A sparing parter appears before you
+mpmload 660
+~
+> speech_prog 8~
+mea $n A sparing parter appears before you
+mpmload 670
+~
+> speech_prog 9~
+mea $n A sparing parter appears before you
+mpmload 680
+~
+> speech_prog 10~
+mea $n A sparing parter appears before you
+mpmload 690
+~
+> speech_prog purge~
+mppurge Sparring
+~
+|
+S
+#650
+&WA &GP&ga&Gt&gh &Wof &BF&bl&Bo&bw&Bi&bn&Bg &RE&rn&Re&rr&Rg&ry~
+You can sense a powerful presence flowing through the ground here
+~
+0 12 0 1 0 0 0 0
+D1
+~
+~
+0 -1 649
+D3
+~
+~
+0 -1 651
+R M 0 609 8 650
+S
+#651
+&WA &GP&ga&Gt&gh &Wof &BF&bl&Bo&bw&Bi&bn&Bg &RE&rn&Re&rr&Rg&ry~
+You can sense a powerful presence flowing through the ground here
+~
+0 12 0 1 0 0 0 0
+D1
+~
+~
+0 -1 650
+D3
+~
+~
+0 -1 652
+R M 0 609 8 651
+S
+#652
+&WA &GP&ga&Gt&gh &Wof &BF&bl&Bo&bw&Bi&bn&Bg &RE&rn&Re&rr&Rg&ry~
+You can sense a powerful presence flowing through the ground here
+~
+0 12 0 1 0 0 0 0
+D1
+~
+~
+0 -1 651
+D2
+~
+~
+0 -1 653
+R M 0 609 8 652
+S
+#653
+&WThe &RF&ri&pn&ra&Rl &WDestination~
+As you approach the Final Destination you notice that there is nothing
+for sale here. You should use key words to receive the equipment, but
+don't forget he needs all four disks.
+~
+0 1036 0 1 0 0 0 2
+D0
+~
+~
+0 -1 652
+D1
+~
+~
+0 -1 615
+R M 0 608 1 653
+E
+sign~
+For items
+ Say Might
+ Say Comsystem
+ Say Shirt
+~
+S
+#654
+Tenshi Maison~
+~
+0 1048588 0 1 0 0 0 0
+D1
+~
+~
+0 -1 640
+D7
+~
+~
+0 -1 10807
+G seva ~S
+#655
+&WA &BS&bt&Be&be&Bl &WHallway~
+This hallway is made of pure steel, even the benches on the sides are
+steel. It is hard for you too see due to the glare off of all the
+metal.
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 657
+D2
+~
+~
+0 -1 613
+S
+#656
+An Empty Apartment~
+~
+0 2097164 0 1 0 0 0 0
+D1
+~
+~
+0 -1 645
+R O 0 604 1 656
+> speech_prog 1~
+mea $n A sparing parter appears before you
+mpmload 600
+~
+> speech_prog 2~
+mea $n A sparing parter appears before you
+mpmload 610
+~
+> speech_prog 3~
+mea $n A sparing parter appears before you
+mpmload 620
+~
+> speech_prog 4~
+mea $n A sparing parter appears before you
+mpmload 630
+~
+> speech_prog 5~
+mea $n A sparing parter appears before you
+mpmload 640
+~
+> speech_prog 6~
+mea $n A sparing parter appears before you
+mpmload 650
+~
+> speech_prog 7~
+mea $n A sparing parter appears before you
+mpmload 660
+~
+> speech_prog 8~
+mea $n A sparing parter appears before you
+mpmload 670
+~
+> speech_prog 9~
+mea $n A sparing parter appears before you
+mpmload 680
+~
+> speech_prog 10~
+mea $n A sparing parter appears before you
+mpmload 690
+~
+> speech_prog purge~
+mptrans sparring 699
+~
+|
+S
+#657
+&WA &BS&bt&Be&be&Bl &WHallway~
+This hallway is made of pure steel, even the benches on the sides are
+steel. It is hard for you too see due to the glare off of all the
+metal.
+~
+0 12&1 0 1 0 0 0 0
+D0
+~
+~
+0 -1 660
+D2
+~
+~
+0 -1 655
+S
+#658
+Luthor's~
+~
+0 1048588 0 1 0 0 0 0
+D3
+~
+~
+0 -1 645
+R O 0 604 1 658
+S
+#659
+&BI&bt&Be&bm&Bs &WS&wh&Wo&wp~
+As you enter you see that many items are stacked up on shelves that go
+to the ceiling. There is an old man standing on some boxes to over
+look his desk.
+~
+0 268 0 1 0 0 0 0
+D1
+~
+~
+0 -1 608
+R M 0 627 1 659
+  R G 1 606 1
+  R G 1 602 1
+  R G 1 603 1
+  R G 1 604 1
+  R G 1 610 1
+  R G 1 609 1
+S
+#660
+&WA &YC&Or&Yu&Om&Yb&Ol&Ye&Od &WIntersection~
+Many pieces of crumbled wood are scattered here. One of the exits has
+been covered up with wood shards that were torn from the ceiling.
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 673
+D1
+~
+~
+0 -1 661
+D2
+~
+~
+0 -1 657
+D3
+~
+~
+0 -1 667
+S
+#661
+&WA &RT&rr&Ra&ri&Rn&ri&Rn&rg &WSector~
+This is where some of the warrior that fought on the ship trained
+before they went into battle.
+To go to a practice sector say "Practice".
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 664
+D1
+~
+~
+0 -1 662
+D2
+~
+~
+0 -1 665
+D3
+~
+~
+0 -1 660
+D4
+~
+~
+0 -1 666
+D5
+~
+~
+0 -1 663
+> speech_prog Practice~
+mptransfer $n 686
+~
+|
+S
+#662
+&WLevel &GT&gw&Go &WTraining~
+The holograms here respawn after each kill.
+~
+0 12 0 1 0 0 0 0
+D3
+~
+~
+0 -1 661
+S
+#663
+&WLevel &GF&gi&Gv&ge &WTraining~
+The holograms here respawn after each kill.
+~
+0 12 0 1 0 0 0 0
+D4
+~
+~
+0 -1 661
+S
+#664
+&WLevel &GO&gn&Ge &WTraining~
+The holograms here respawn after each kill.
+~
+0 12 0 1 0 0 0 0
+D2
+~
+~
+0 -1 661
+S
+#665
+&WLevel &GT&gh&Gr&ge&Ge &WTraining~
+The holograms here respawn after each kill.
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 661
+S
+#666
+&WLevel &GF&go&Gu&gr &WTraining~
+The holograms here respawn after each kill.
+~
+0 12 0 1 0 0 0 0
+D5
+~
+~
+0 -1 661
+S
+#667
+&WA &RT&rr&Ra&ri&Rn&ri&Rn&rg &WSector~
+This is where some of the warrior that fought on the ship trained
+before they went into battle.
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 670
+D1
+~
+~
+0 -1 660
+D2
+~
+~
+0 -1 668
+D3
+~
+~
+0 -1 669
+D4
+~
+~
+0 -1 672
+D5
+~
+~
+0 -1 671
+S
+#668
+&WLevel &GE&gi&Gg&gh&Gt &WTraining~
+The holograms here respawn after each kill.
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 667
+S
+#669
+&WLevel &GS&ge&Gv&ge&Gn &WTraining~
+The holograms here respawn after each kill.
+~
+0 12 0 1 0 0 0 0
+D1
+~
+~
+0 -1 667
+S
+#670
+&WLevel &GS&gi&Gx&W Training~
+The holograms here respawn after each kill.
+~
+0 12 0 1 0 0 0 0
+D2
+~
+~
+0 -1 667
+S
+#671
+&WLevel &GT&ge&Gn&W Training~
+The holograms here respawn after each kill.
+~
+0 12 0 1 0 0 0 0
+D4
+~
+~
+0 -1 667
+S
+#672
+&WLevel &GN&gi&Gn&ge &WTraining~
+The holograms here respawn after each kill.
+~
+0 12 0 1 0 0 0 0
+D5
+~
+~
+0 -1 667
+S
+#673
+&WAn &CU&cn&Cu&cs&Ce&cd&W Hospital~
+In this medical center you see that there are many stretchers that have
+sheets lying over them with the indentations of a Human body. Even though
+this medical center is deserted, it still works.
+~
+0 12&1 0 1 0 0 0 0
+D2
+~
+~
+0 -1 660
+S
+#674
+&WA &BS&bt&Bo&br&Ba&bg&Be &WRoom~
+You notice that you are in one of the many hidden storage rooms on the
+battle ship. You see nothing but broken down walls and pieces of unused
+metal.
+~
+0 12 0 1 0 0 0 0
+D7
+~
+~
+0 -1 618
+R M 0 617 1 674
+S
+#675
+&WA &BS&bt&Bo&br&Ba&bg&Be &WRoom~
+You notice that you are in one of the many hidden storage rooms on the
+battle ship. You see nothing but broken down walls and pieces of unused
+metal.
+~
+0 12 0 1 0 0 0 0
+D9
+~
+~
+0 -1 645
+R M 0 618 1 675
+S
+#676
+&WA &GW&go&Gr&gn&z-&PO&pu&Pt &WPathway~
+As you look down you can see many different types of foot prints
+scattered around. You can sense a something close by but the feeling
+fades.
+~
+0 12 0 1 0 0 0 0
+D0
+~
+~
+0 -1 677
+D1
+~
+~
+0 -1 8457
+S
+#677
+&WA &GW&go&Gr&gn&z-&PO&pu&Pt &WPathway~
+As you are walking around you can see that the ground on this path has
+been worn down to nothing but stones. On the outside of the path there
+are dead bodies with tiny gnats flying around them.
+~
+0 8 0 1 0 0 0 0
+D2
+~
+~
+0 -1 676
+D6
+~
+~
+0 -1 678
+R M 0 639 18 677
+R M 0 639 18 677
+S
+#678
+&WA &GW&go&Gr&gn&z-&PO&pu&Pt &WPathway~
+As you walk along the path you see pieces of metal of many shapes and
+sizes. There are patches of fire running along the worn-out path.
+~
+0 8 0 1 0 0 0 0
+D0
+~
+~
+0 -1 679
+D9
+~
+~
+0 -1 677
+R M 0 639 18 678
+R M 0 639 18 678
+S
+#679
+&WA &GW&go&Gr&gn&z-&PO&pu&Pt &WPathway~
+As you look around can you see something shimmer amongst the rocks but
+you look again and see that nothing is there. While moving on you trip
+over a rock and hurt your arm.
+~
+0 12 0 1 0 0 0 0
+D2
+~
+~
+0 -1 678
+D3
+~
+~
+0 -1 680
+R M 0 639 18 679
+R M 0 639 18 679
+S
+#680
+&WA &GW&go&Gr&gn&z-&PO&pu&Pt &WPathway~
+As you look down you can see many different types of foot prints
+scattered around. You can sense a something close by but the feeling
+fades.
+~
+0 8 0 1 0 0 0 0
+D0
+~
+~
+0 -1 681
+D1
+~
+~
+0 -1 679
+R M 0 639 18 680
+R M 0 639 18 680
+S
+#681
+&WA &GW&go&Gr&gn&z-&PO&pu&Pt &WPathway~
+As you walk along the path you see pieces of metal of many shapes and
+sizes. There are patches of fire running along the worn-out path.
+~
+0 8 0 1 0 0 0 0
+D2
+~
+~
+0 -1 680
+D6
+~
+~
+0 -1 682
+R M 0 639 18 681
+R M 0 639 18 681
+S
+#682
+&WA &GW&go&Gr&gn&z-&PO&pu&Pt &WPathway~
+As you are walking around you can see that the ground on this path has
+been worn down to nothing but stones. On the outside of the path there
+are dead bodies with tiny gnats flying around them.
+~
+0 8 0 1 0 0 0 0
+D0
+~
+~
+0 -1 683
+D9
+~
+~
+0 -1 681
+R M 0 639 18 682
+R M 0 639 18 682
+S
+#683
+&WA &GW&go&Gr&gn&z-&PO&pu&Pt &WPathway~
+As you walk along the path you see pieces of metal of many shapes and
+sizes. There are patches of fire running along the worn-out path.
+~
+0 8 0 1 0 0 0 0
+D0
+~
+~
+0 -1 684
+D2
+~
+~
+0 -1 682
+R M 0 639 18 683
+S
+#684
+&WA &GW&go&Gr&gn&z-&PO&pu&Pt &WPathway~
+As you look down you can see many different types of foot prints
+scattered around. You can sense a something close by but the feeling
+fades.
+~
+0 8 0 1 0 0 0 0
+D0
+~
+~
+0 -1 685
+D2
+~
+~
+0 -1 683
+R M 0 639 18 684
+R M 0 639 18 684
+S
+#685
+&WA &GW&go&Gr&gn &WWalkway~
+To you this looks like a modern walkway but it is encrusted in dust.
+From the looks of it no one has ever walked up or down the walkway.
+Toward the north lies a door to a gigantic ship that has crashed on
+this planet.
+~
+0 8 0 1 0 0 0 0
+D0
+~
+~
+3 -1 600
+D2
+~
+~
+0 -1 684
+R M 0 639 18 685
+R M 0 639 18 685
+R M 0 639 18 685
+R D 0 685 0 1
+S
+#686
+A Practice Room~
+This room is where you can practice combat skills.
+To return to the training sector say "Return".
+~
+0 12 0 1 0 0 0 0
+R M 0 686 1 686
+> speech_prog Return~
+mptrans $n 661
+~
+|
+S
+#687
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#688
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#689
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#690
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#691
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#692
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#693
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#694
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#695
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#696
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#697
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#698
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#699
+Floating in a void~
+~
+0 12 0 1 0 0 0 0
+S
+#0
+
+
+#SHOPS
+ 626    0  0  0  0  0   120  90         0 23    ; Fragen
+ 627   15  0  0  0  0   120  90         0 23    ; Cylias
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

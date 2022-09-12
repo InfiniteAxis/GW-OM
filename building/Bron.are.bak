@@ -1,0 +1,98 @@
+#AREA   {PROTO} Bron's area in progress~
+
+
+
+#AUTHOR Bron~
+
+#RANGES
+0 0 0 0
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 0
+
+#MOBILES
+#0
+
+
+#OBJECTS
+#0
+
+
+#ROOMS
+#1100
+Floating in a void~
+~
+0 1073741824 1
+D4
+~
+~
+0 -1 1101
+S
+#1101
+Upper Corridor~
+~
+0 1073741824 1
+D4
+~
+~
+0 -1 1102
+D5
+~
+~
+0 -1 1100
+S
+#1102
+Upper Corridor~
+~
+0 1073741824 1
+D4
+~
+~
+0 -1 1103
+D5
+~
+~
+0 -1 1101
+S
+#1103
+Upper Corridor~
+~
+0 1073741824 1
+D5
+~
+~
+0 -1 1102
+S
+#1104
+Floating in a void~
+~
+0 1073741824 1
+S
+#1105
+Floating in a void~
+~
+0 1073741824 1
+S
+#0
+
+
+#RESETS
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

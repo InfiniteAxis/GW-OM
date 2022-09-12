@@ -1,0 +1,2247 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         GW:OM Academy~
+Author       Charis~
+Ranges       1 1007 1 1007
+Economy      -2 382087923
+ResetFreq    5
+#ENDAREADATA
+
+#MOBILE
+Vnum       300
+Keywords   Noin~
+Short      &BNoin&W~
+Long       &zNoin&W, the &CV&cice &CP&crincipal&W is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 200 0 -400 0 0
+Stats2     40 10 2000
+Stats3     20 4 2
+Stats4     0 0 0 40 40
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  speech_prog~
+Arglist   hello~
+Comlist   shake $n
+say Hello $n, I'm feeling down..
+say I really need help cheering up..
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   pretty~
+Comlist   say Oh my gosh.. Thank you ^^_^^
+blush
+say Use this to see the Principal.
+mpoload 300
+drop pass
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   ugly~
+Comlist   growl $n
+say How dare you utter the word ugly around me!
+murder $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   ho~
+Comlist   growl $n
+say How are you utter that word around me!
+murder $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   bitch~
+Comlist   growl $n
+say How dare you utter that word around me!
+murder $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   whore~
+Comlist   growl $n
+say How dare you utter that word around me!
+murder $n
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       301
+Keywords   Dorothy~
+Short      &PD&porothy&W~
+Long       &PD&porothy&W is here accepting Meeting Passes.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 200 0 -400 0 0
+Stats2     40 10 2000
+Stats3     20 4 2
+Stats4     0 0 0 40 40
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  speech_prog~
+Arglist   meeting~
+Comlist   if ovnuminv (300) >= 1
+say Would you like to see the Principal?
+say Lemme let you in.
+mea $n Dorothy lets you into the office.
+mptransfer $n 359
+mpat 359 mpforce $n west
+mpat 359 drop all
+mpat 359 mppurge pass
+else
+say Sorry, you can't until you have a Meeting Paper.
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   say Hello ^^_^^
+say I will require a meeting paper from Ms Noin to allow you in.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       302
+Keywords   Zechs~
+Short      &RZ&rechs&W~
+Long       &RZ&rechs&W the Principal, is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_auth~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if level($n) == 1
+mpadvance $n 2
+open w
+say Off you go.
+endif
+say I'm glad to see you've made it this far.
+say Take care in the future.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       303
+Keywords   Kimmy~
+Short      &YK&Oimmy&W~
+Long       &YK&Oimmy&W is here, helping out students.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 10 0 75 500 0
+Stats2     2 10 100
+Stats3     1 4 2
+Stats4     0 0 0 2 2
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  speech_prog~
+Arglist   noin~
+Comlist   say Hmm Ms Noin has been feeling really down..
+say But i know the secret to cheering her up!
+say Just call her pretty! It gets her everytime
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   noin?~
+Comlist   say Hmm Ms Noin has been feeling really down..
+say But i know the secret to cheering her up!
+say Just call her pretty! It gets her everytime
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       304
+Keywords   Student~
+Short      A Student~
+Long       A Student is wandering the halls and classrooms.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 5 0 87 10 0
+Stats2     1 10 50
+Stats3     0 4 2
+Stats4     0 0 0 1 1
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       305
+Keywords   vending machine prog~
+Short      The Vending Machine~
+Long       A Vending Machine is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nokill~
+Affected   invisible hide~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  speech_prog~
+Arglist   coke~
+Comlist   mpoload 7507
+mea $n The Coke Machine humms and sputters.
+give coke $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   canteen~
+Comlist   mpoload 10504
+drop canteen
+mpecho A canteen pops out for you.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   hamburger~
+Comlist   mpoload 508
+drop hamburger
+mpecho A hamburger pops out for you.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   heal~
+Comlist   mprestore $n 30000
+mea $n You are healed by a soft light.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       399
+Keywords   last~
+Short      a newly created last~
+Long       Some god abandoned a newly created last here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#OBJECT
+Vnum     300
+Keywords Pass Meeting Paper~
+Type     treasure~
+Short    Meeting Paper~
+Long     Someone dropped a Meeting Paper here.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     305
+Keywords Vending Machine~
+Type     button~
+Short    a Vending Machine~
+Long     A Voice Activated Vending Machine is here.~
+Flags    prototype~
+Values   1000 0 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    Vending Machine~
+ExDesc       Instructions:
+Say "Canteen" for a Canteen.
+Say "Hamburger", for a hamburger.
+Say "Heal", if you're hurt.
+~
+#ENDEXDESC
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   canteen~
+Comlist   mpoload 10504
+drop canteen
+mpecho A canteen pops out for you.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   hamburger~
+Comlist   mpoload 508
+drop hamburger
+mpecho A hamburger pops out for you.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   heal~
+Comlist   mprestore $n 30000
+mea $n You are healed by a soft light.
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     310
+Keywords academy issue dagger~
+Type     weapon~
+Short    an academy issue dagger~
+Long     An academy issue dagger is here~
+WFlags   take wield~
+Values   12 5 4 2 110 110
+Stats    3 500 150 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     311
+Keywords academy issue vest~
+Type     armor~
+Short    an academy issue vest~
+Long     A vest with the name Space Academy embroidered on the pocket is here.~
+WFlags   take about~
+Values   9 9 0 0 0 0
+Stats    2 300 120 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     312
+Keywords academy issue leggings~
+Type     armor~
+Short    A pair of academy issue leggings~
+Long     A pair of leggings with Space Academy embroidered on the leg is here.~
+WFlags   take legs~
+Values   10 10 0 0 0 0
+Stats    3 450 200 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     313
+Keywords academy issue boots~
+Type     armor~
+Short    a academy issue boots~
+Long     A academy issue boots is here.~
+WFlags   take feet~
+Values   5 5 0 0 0 0
+Stats    1 100 75 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     314
+Keywords academy issue shirt~
+Type     armor~
+Short    An academy issue shirt~
+Long     A white collar shirt with an embroidered patch saying Space Academy is here.~
+WFlags   take body~
+Values   10 10 0 0 0 0
+Stats    2 750 300 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     315
+Keywords academy issue pistol~
+Type     weapon~
+Short    an academy issue pistol~
+Long     A small pistol with the Space Academy insignia on the handle is here.~
+WFlags   take wield~
+Values   12 5 4 6 500 500
+Stats    5 1000 550 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     316
+Keywords academy issue belt pouch~
+Type     container~
+Short    an academy issue belt pouch~
+Long     A academy issue belt is here.~
+WFlags   take waist~
+Values   5 5 0 0 0 0
+Stats    1 500 175 0 0
+Affect       -1 -1 -10 17 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     317
+Keywords academy issue helmet~
+Type     armor~
+Short    an academy issue helmet~
+Long     A helmet enscribed with the Space Academy insignia is here.~
+WFlags   take head~
+Values   13 13 0 0 0 0
+Stats    1 350 175 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     318
+Keywords Lost Found Box~
+Type     container~
+Short    A Lost and Found Box~
+Long     A Lost and Found Box is here~
+Values   20 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     399
+Keywords last~
+Type     trash~
+Short    a last~
+Long     A last is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     300
+Name     &BSpace Academy Main Entrance&W~
+Sector   city~
+Flags    hotel~
+Desc     This appears to be the enterance to the Space Academy, 
+judging by the pictures and plaques on the walls, which 
+gleam of the mixture between shiny metals and the bright 
+yellow lights from above. All through the hallways east 
+and west are doors. Voices echo through the hallways, 
+seemingly preaching the teachings of the ways of the 
+universe. A door directly north of the enterance appears 
+to be open... Perhaps a look inside wouldn't hurt...
+&O// OOC: If you don't know how to move, type 'N' and hit the 'Enter' key. \\
+~
+#EXIT
+Direction north~
+ToRoom    321
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    301
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    308
+#ENDEXIT
+
+#MUDPROG
+Progtype  act_prog~
+Arglist   .has entered~
+Comlist   mpmload 303
+mpecho Kimmy runs in from the east.
+mpforce kimmy say Like hi, there! Welcome to GWOM Academy ^_^^
+mpforce kimmy give 500 dollars $n
+mpforce kimmy mpoload 10317
+mpforce kimmy give back $n
+mpforce kimmy say If you have any questions, just ask me!
+mpforce kimmy say Here's a quick guide to help!
+mpforce $n help newbie
+mpforce $n help channelusage
+mpforce kimmy mpgoto 359
+mpat kimmy mpforce kimmy say purge
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     301
+Name     &BHallway&W~
+Sector   city~
+Desc     This hallway appears about the same as the others... 
+The very same walls, the very same yellow lights... 
+Only the sounds, tones and volumes of voices change 
+as they continue echoing down the hallways.
+~
+#EXIT
+Direction north~
+ToRoom    320
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    302
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    300
+#ENDEXIT
+
+Reset M 0 304 15 301
+#ENDROOM
+
+#ROOM
+Vnum     302
+Name     &BHallway&W~
+Sector   city~
+Desc     This hallway appears about the same as the others... 
+The very same walls, the very same yellow lights... 
+Only the sounds, tones and volumes of voices change 
+as they continue echoing down the hallways. Further 
+west, a sudden rounded bend appears in this hallway...
+~
+#EXIT
+Direction north~
+ToRoom    324
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    303
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    301
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     303
+Name     &BBend in the Hallway&W~
+Sector   city~
+Desc     This bend appears to have small rusting spots... One 
+can only ponder the reasons behind such a thing...
+~
+#EXIT
+Direction north~
+ToRoom    304
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    302
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     304
+Name     &BHallway&W~
+Sector   city~
+Desc     This hallway appears about the same as the others... 
+The very same walls, the very same yellow lights... 
+Only the sounds, tones and volumes of voices change 
+as they continue echoing down the hallways. Further 
+south, a sudden rounded bend appears in this hallway...
+~
+#EXIT
+Direction north~
+ToRoom    305
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    303
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     305
+Name     &BHallway&W~
+Sector   city~
+Desc     This hallway appears about the same as the others... 
+The very same walls, the very same yellow lights... 
+Only the sounds, tones and volumes of voices change 
+as they continue echoing down the hallways.
+~
+#EXIT
+Direction north~
+ToRoom    306
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    304
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    329
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     306
+Name     &BIntersection&W~
+Sector   city~
+Desc     This portion of the hallway breaks the origional 
+trend of the rest; the lights have changed from a 
+radiant, blinding yellow color, to a softer light-
+blue color. The lights seem to be shining toward the
+east, which reveals a small staircase.
+~
+#EXIT
+Direction east~
+ToRoom    319
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    305
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    307
+#ENDEXIT
+
+Reset M 0 305 1 306
+Reset M 0 304 15 306
+#EXDESC
+ExDescKey    vending~
+ExDesc       The vending machine on the wall here seems to be voice activated.
+say Canteen for a canteen of water,
+say Coke for a glass of coke,
+say Hamburger for a quick snack,
+or say Heal if youre a little wounded.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     307
+Name     &BHallway&W~
+Sector   city~
+Desc     This hallway appears about the same as the others... 
+The very same walls, the very same yellow lights... 
+Only the sounds, tones and volumes of voices change 
+as they continue echoing down the hallways.
+~
+#EXIT
+Direction east~
+ToRoom    306
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    318
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     308
+Name     &BHallway&W~
+Sector   city~
+Desc     This hallway appears about the same as the others... 
+The very same walls, the very same yellow lights... 
+Only the sounds, tones and volumes of voices change 
+as they continue echoing down the hallways.
+~
+#EXIT
+Direction north~
+ToRoom    322
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    300
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    309
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     309
+Name     &BHallway&W~
+Sector   city~
+Desc     This hallway appears about the same as the others... 
+The very same walls, the very same yellow lights... 
+Only the sounds, tones and volumes of voices change 
+as they continue echoing down the hallways. Further 
+west, a sudden rounded bend appears in this hallway...
+~
+#EXIT
+Direction north~
+ToRoom    323
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    308
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    310
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     310
+Name     &BBend in the Hallway&W~
+Sector   city~
+Desc     This bend appears to have small rusting spots... One 
+can only ponder the reasons behind such a thing...
+~
+#EXIT
+Direction north~
+ToRoom    311
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    309
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     311
+Name     &BHallway&W~
+Sector   city~
+Desc     This hallway appears about the same as the others... 
+The very same walls, the very same yellow lights... 
+Only the sounds, tones and volumes of voices change 
+as they continue echoing down the hallways. Further 
+south, a sudden rounded bend appears in this hallway...
+~
+#EXIT
+Direction north~
+ToRoom    312
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    310
+#ENDEXIT
+
+Reset M 0 304 15 311
+Reset M 0 304 15 311
+#ENDROOM
+
+#ROOM
+Vnum     312
+Name     &BHallway&W~
+Sector   city~
+Desc     This hallway appears about the same as the others... 
+The very same walls, the very same yellow lights... 
+Only the sounds, tones and volumes of voices change 
+as they continue echoing down the hallways.
+~
+#EXIT
+Direction north~
+ToRoom    313
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    325
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    311
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     313
+Name     &BIntersection&W~
+Sector   city~
+Desc     This portion of the hallway breaks the origional 
+trend of the rest; the lights have changed from a 
+radiant, blinding yellow color, to a softer light-
+blue color. The lights seem to be shining toward the
+west, which reveals a small staircase.
+~
+#EXIT
+Direction east~
+ToRoom    314
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    312
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    315
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     314
+Name     &BHallway&W~
+Sector   city~
+Desc     This hallway appears about the same as the others... 
+The very same walls, the very same yellow lights... 
+Only the sounds, tones and volumes of voices change 
+as they continue echoing down the hallways.
+~
+#EXIT
+Direction east~
+ToRoom    316
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    313
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     315
+Name     &CLower Staircase&W~
+Sector   city~
+Desc     Upon the walls going up this staircase are pictures, 
+apparently of students who have completed the Academy. 
+One picture stands out, though. A picture of a young 
+man standing tall. His dark blue eyes seem to gaze 
+honorably forward into the room. They seem filled with 
+memory, memory of combat, memory of rivals, and memory 
+of loss. His long white hair swings to one side slightly, 
+as if a small breeze filled the air around him. His suit 
+resembles that of a soldier's uniform... Under this 
+portrait, a name is scribbled - apparently origionally. 
+The name darkens the minds of soldiers who read it, 
+hoping they never have to see him in combat... The name 
+reads: "Zechs Merquise"
+~
+#EXIT
+Direction east~
+ToRoom    313
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    331
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     316
+Name     &BHallway&W~
+Sector   city~
+Desc     This hallway appears about the same as the others... 
+The very same walls, the very same yellow lights... 
+Only the sounds, tones and volumes of voices change 
+as they continue echoing down the hallways.
+~
+#EXIT
+Direction east~
+ToRoom    317
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    326
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    314
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     317
+Name     &BHallway&W~
+Sector   city~
+Desc     This hallway appears about the same as the others... 
+The very same walls, the very same yellow lights... 
+Only the sounds, tones and volumes of voices change 
+as they continue echoing down the hallways.
+~
+#EXIT
+Direction east~
+ToRoom    318
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    327
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    316
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     318
+Name     &BHallway&W~
+Sector   city~
+Desc     This hallway appears about the same as the others... 
+The very same walls, the very same yellow lights... 
+Only the sounds, tones and volumes of voices change 
+as they continue echoing down the hallways.
+~
+#EXIT
+Direction east~
+ToRoom    307
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    328
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    317
+#ENDEXIT
+
+Reset M 0 304 15 318
+Reset M 0 304 15 318
+#ENDROOM
+
+#ROOM
+Vnum     319
+Name     &CLower Staircase&W~
+Sector   city~
+Desc     Upon the walls going up this staircase are pictures, 
+apparently of students who have completed the Academy. 
+One picture stands out, though. This portrait reflects 
+a young woman with shoulder-length darkened hair, 
+dark-blue eyes, and a bold expression on her face. Her 
+outfit appears to be more of a commoner's outfit, at 
+first glance. Judging by the background appearance, she
+seems to be in a mobile suit of some sort... Her eyes 
+appear filled with rage, as if her best friend were in 
+grave danger, and she were their only possible savior... 
+At the bottom of the picture, an origionally-signed name 
+appears. Sudden praise enters the hearts of soldiers who 
+walk up and down these stairs... The name clearly reads: 
+"Lucrezia Noin"
+~
+#EXIT
+Direction west~
+ToRoom    306
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    330
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     320
+Name     &GClass - Channels/Talking&W~
+Sector   city~
+Desc     A rather large desk is seen in the very north of the room upon 
+entering. Desks and chairs are set up in rows, seperated from one 
+another. A large chalkboard stands pinned to the northern wall, 
+and the young teacher stands there, waiting patiently for new students.
+~
+#EXIT
+Direction south~
+ToRoom    301
+#ENDEXIT
+
+#EXDESC
+ExDescKey    chalkboard chalk board~
+ExDesc       Welcome to Channels/Talking Class. In order to effectively communicate on
+this mud one needs to know the proper "channels" to use. In order to use a
+channel one must have a "comlink" in their inventory or on their person.
+To use a certain channel one must type the proper extension then what they
+wish to say. For more help on channels you can type help channels.
+ 
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    chalkboard chalk board~
+ExDesc       Welcome to the Communications class. ere you will learn how to communicate
+with the rest of the mud. A necessary piece of equipment, the CDI, is
+provided for you. This device helps you communicate to others. In order to
+use any of the channels such as tell, ooc, ic(role play), shout or yell
+one must have a CDI in their inventory or equipped. As a newbie you have
+very few channels avaible to you. Newbie, Tells and Replies are readily
+avaible for your use. For more help on channels type help channel.
+ 
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     321
+Name     &GClass - How to Move&W~
+Sector   city~
+Desc     A rather large desk is seen in the very north of the room upon 
+entering. Desks and chairs are set up in rows, seperated from one 
+another. A large chalkboard stands pinned to the northern wall. 
+On the chalkboard, a message is written. "My name is Professor Dash." 
+A young teacher stands there, waiting impatiently for late students.
+~
+#EXIT
+Direction south~
+ToRoom    300
+#ENDEXIT
+
+#EXDESC
+ExDescKey    chalkboard chalk board~
+ExDesc       Welcome to Moving Class. We all Have to get around somehow in this mud and
+we do that with directions. ALthough some muds have North, South, East,
+West, Up ,Down, Northeast, Southeast, Northwest, Southwest, We only have
+the normal directions. North, South, East, West, Up and Down. To move in
+any of these directions you must either type the first letter for example
+d to go down or the entire word. Moving about is easy so long as you know
+where you can move to. By typing look you can see which directions the
+exits of a room lead.
+ 
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     322
+Name     &GClass - Basic MUD commands&W~
+Sector   city~
+Desc     A rather large desk is seen in the very north of the room upon 
+entering. Desks and chairs are set up in rows, seperated from one 
+another. A large chalkboard stands pinned to the northern wall. 
+On the chalkboard, a message is written, "Please turn to page 101 
+in your Basic Commands workbook." The room's walls seem to hold 
+water and food posters everywhere... A young teacher stands there, 
+twiddling her thumbs as she waits for everyone to turn to the 
+correct pages.
+~
+#EXIT
+Direction south~
+ToRoom    308
+#ENDEXIT
+
+Reset M 0 304 15 322
+#EXDESC
+ExDescKey    chalkboard chalk board~
+ExDesc       In this class you learn the basic commands of the mud. Like real life you
+need to eat and drink as well as clothe yourself and learn. In order to
+learn specific skills you must be at the appropriate teacher and type
+practice 'skill name' In order to get a list of commands type help
+commands. If further help is needed just type help and the command name.
+ 
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     323
+Name     &GClass - Info on other Players&W~
+Sector   city~
+Desc     The small classroom is quite neat as you look about. A large chalkboard
+sits on the North Wall with writing on it. There is a small desk in the
+corner that appears to be broken and a  Teacher sits there patiently
+waiting for you to read what she wrote. Type Look Chalkboard to read what
+is on it.
+~
+#EXIT
+Direction south~
+ToRoom    309
+#ENDEXIT
+
+#EXDESC
+ExDescKey    chalkboard chalk board~
+ExDesc       In this class you will learn how to get information on existing players. In
+order to use the commands explained in the following you must have a CDI
+unit either in your inventory or on your person. If you wish to know who
+else is on type "who" and it will show you a list of current occupants of
+the mud visible to yourself. The who list all tells you if any immortals
+are on as well. To fingure out more information on a person who is
+currently on. Type "whois <player's name>" This will give a short
+biography of the character. If you wish to know when someone was on last
+type "finger <player's name>".
+ 
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     324
+Name     &GClass - Objects/Items&W~
+Sector   city~
+Desc     The small classroom is quite neat as you look about. A large chalkboard
+sits on the North Wall with writing on it. There is a small desk in the
+corner that appears to be broken and a  Teacher sits there patiently
+waiting for you to read what she wrote. Type Look Chalkboard to read what
+is on it.
+~
+#EXIT
+Direction south~
+ToRoom    302
+#ENDEXIT
+
+#EXDESC
+ExDescKey    chalkboard chalk board~
+ExDesc       Welcome to the Items and Objects classroom. Although this mud has many many
+object types we'll only be running through basics. In this mud we have
+clothing, armor and weapons. These are generally worn on the body. To wear
+a piece of clothing or armor simply type "wear <object>". To wear a weapon
+though you can type "wield <weapon>". Other items such as vibroblades and
+blasters need to be recharged occasionally. Weapons do run out of
+ammunition here.  To get more help on weapons and armor simply type help
+blaster.
+ 
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     325
+Name     &GClass - Config/Options&W~
+Sector   city~
+Desc     The small classroom is quite neat as you look about. A large chalkboard
+sits on the North Wall with writing on it. There is a small desk in the
+corner that appears to be broken and a Teacher sits there patiently
+waiting for you to read what she wrote. Type Look Chalkboard to read what
+is on it.
+~
+#EXIT
+Direction west~
+ToRoom    312
+#ENDEXIT
+
+#EXDESC
+ExDescKey    chalkboard chalk board~
+ExDesc       Welcome to the Config class. If you have not learned by now there are a few
+things on this mud you can configure. In order to configure channels
+simply type "channel -/+channel" to toggle that channel on or off. As for
+other configuration options. You can configure looting, autosacrificing
+and other things. To see what can be configured type config alone. To
+configure that toggle simply type "config toggle" to activate it or
+deactivate it.
+ 
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     326
+Name     &GClass - Beginner Pilot&W~
+Sector   city~
+Desc     The small classroom is quite neat as you look about. A large chalkboard
+sits on the North Wall with writing on it. There is a small desk in the
+corner that appears to be broken and a Teacher sits there patiently
+waiting for you to read what she wrote. Type Look Chalkboard to read what
+is on it.
+~
+#EXIT
+Direction north~
+ToRoom    316
+#ENDEXIT
+
+Reset M 0 304 15 326
+#EXDESC
+ExDescKey    chalk board chalkboard~
+ExDesc       Flying is rather quite easy once you get used to it. But first you will
+have to buy a suit. Once you have picked out a suit, Type "Allships",
+it'll bring up a list of suits/ships you  can purchase. The ones with
+prices beside them are buyable, the other ones with names belong to other
+people. Once you have found the suit you want to buy, type "buyship <name
+of  suit/ship>". But before you try and fly, go learn the skills "Mobile
+Suits", "Navigation", "Ship Systems", and "Weapon Systems". After that, go
+to your suit, and type "open <suit  name>", then "enter <suit name>". Once
+inside, type "Launch", you may fail on your first few tries, but keep on
+typing launch till you take off.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     327
+Name     &GClass - Novice Pilot&W~
+Sector   city~
+Desc     The small classroom is quite neat as you look about. A large chalkboard
+sits on the North Wall with writing on it. There is a small desk in the
+corner that appears to be broken and a Teacher sits there patiently
+waiting for you to read what she wrote. Type Look Chalkboard to read what
+is on it.
+~
+#EXIT
+Direction north~
+ToRoom    317
+#ENDEXIT
+
+#EXDESC
+ExDescKey    chalk board chalkboard~
+ExDesc       Once you are in space, you can move around. Moving may seem complicated at
+first, but it really isn't. It is done by directing your suit towards 3
+coordinates, <x>, <y>, and <z>. So if you type "course 100 100 100", it
+would bring you towards those coordinates. To see if there is anything
+worthwhile going to, type radar, and it will show you anything else in the
+starsystem. To control the speed at which you're going, type "speed
+<speed>", <speed> being the number you'd wish to go at. If you type "speed
+0", it will bring your suit to a complete stop. Typing Status will show
+you your current coordinates, as well as the coordinates  you're heading.
+Pay special attention to your fuel, if it goes down to 0, you blow up!
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     328
+Name     &GClass - Advanced Pilot&W~
+Sector   city~
+Desc     The small classroom is quite neat as you look about. A large chalkboard
+sits on the North Wall with writing on it. There is a small desk in the
+corner that appears to be broken and a Teacher sits there patiently
+waiting for you to read what she wrote. Type Look Chalkboard to read what
+is on it.
+~
+#EXIT
+Direction north~
+ToRoom    318
+#ENDEXIT
+
+#EXDESC
+ExDescKey    chalk board chalkboard~
+ExDesc       If you would like to go to another starsystem, or somewhere in your same
+starsystem faster. Use hyperspeed! To hyper you must designate where to,
+and the coordinates in the system you  wish to hyper to. "Calculate
+<starsystem> <x> <y> <z>", to see a list of starsystems you can hyper to,
+type "calculate". Then just use normal coordinates. Not too hard! So to
+hyper to  the Terra Starsystem, type "Calculate terra 100 100 100", or the
+coordinates you prefer. once it says you have entered them correctly, type
+hyper. And away you go. Now to land,  point your suit towards a colony
+using course and calculate, just type radar to see the coordinates of a
+Colony/Planet. Once you are close, it'll say "Proximity alert:
+colonyname". Thats when you type "Land <colony/planet>" 
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     329
+Name     &GClass - Shops&W~
+Sector   city~
+Desc     The small classroom is quite neat as you look about. A large chalkboard
+sits on the North Wall with writing on it. There is a small desk in the
+corner that appears to be broken and a Teacher sits there patiently
+waiting for you to read what she wrote. Type Look Chalkboard to read what
+is on it.
+~
+#EXIT
+Direction east~
+ToRoom    305
+#ENDEXIT
+
+#EXDESC
+ExDescKey    chalkboard chalk board~
+ExDesc       Welcome to Shop Class. We all need food, drink, equipment in order to
+survive and one way of getting the items needed is to purchase them from
+shops and shopkeepers. In order to see what a shopkeeper has for sale type
+"list". This will give you a list of items the keeper sells. No in order
+to purchase the product you wish to have type "buy <item>". The shopkeeper
+will then give you the item for the amount you purchased it. All
+shopkeepers have set prices. For more information type help shop.
+ 
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     330
+Name     &CUpper Staircase&W~
+Sector   city~
+Desc     You find yourself in a stairwell made of the same shiny spotless metal as
+the hallways. Below you the small staircase heads to the lower staircase
+and the lower level classrooms. To the West is an Intersection. Down is
+the Lower Staircase.  
+ 
+~
+#EXIT
+Direction west~
+ToRoom    332
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    319
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     331
+Name     &CUpper Staircase&W~
+Sector   city~
+Desc     You find yourself in a stairwell made of the same shiny spotless metal as
+the hallways. Below you the small staircase heads to the lower staircase
+and the lower level classrooms. To the East is an Intersection. Down is
+the Lower Staircase. 
+ 
+~
+#EXIT
+Direction east~
+ToRoom    338
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    315
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     332
+Name     &BIntersection&W~
+Sector   city~
+Desc     Like all the other hallways here. This one is just as new just as shiny and
+just as boring. To the East though you see something unlike the other
+parts of the hallway, A staircase. The Hallway continues West and South. A
+staircase lies to the East.  
+ 
+~
+#EXIT
+Direction east~
+ToRoom    330
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    349
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    333
+#ENDEXIT
+
+Reset M 0 304 15 332
+#ENDROOM
+
+#ROOM
+Vnum     333
+Name     &BHallway&W~
+Sector   city~
+Desc     You follow the gleaming signs to find yourself standing in a part of the
+hallway that looks exactly like all the others. The walls are of a
+gleaming shiny metal and seems to sing with fresh brightness. To the West
+the hallway continues. To the East is an intersection.
+ 
+~
+#EXIT
+Direction east~
+ToRoom    332
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    334
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     334
+Name     &BHallway&W~
+Sector   city~
+Desc     You follow the gleaming signs to find yourself standing in a part of the
+hallway that looks exactly like all the others. The walls are of a
+gleaming shiny metal and seems to sing with fresh brightness.  To the
+South you can make out a Classroom. To the East and to the West is more
+Hallway.  
+ 
+~
+#EXIT
+Direction east~
+ToRoom    333
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    350
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    335
+#ENDEXIT
+
+Reset M 0 304 15 334
+#ENDROOM
+
+#ROOM
+Vnum     335
+Name     &BHallway&W~
+Sector   city~
+Desc     You follow the gleaming signs to find yourself standing in a part of the
+hallway that looks exactly like all the others. The walls are of a
+gleaming shiny metal and seems to sing with fresh brightness.  To the
+South you can make out a Classroom. To the East and to the West is more
+Hallway. 
+ 
+~
+#EXIT
+Direction east~
+ToRoom    334
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    351
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    336
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     336
+Name     &BHallway&W~
+Sector   city~
+Desc     You follow the gleaming signs to find yourself standing in a part of the
+hallway that looks exactly like all the others. The walls are of a
+gleaming shiny metal and seems to sing with fresh brightness.  To the
+South you can make out a Classroom. To the East and to the West is more
+Hallway. 
+ 
+~
+#EXIT
+Direction east~
+ToRoom    335
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    352
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    337
+#ENDEXIT
+
+Reset M 0 304 15 336
+Reset M 0 304 15 336
+#ENDROOM
+
+#ROOM
+Vnum     337
+Name     &BHallway&W~
+Sector   city~
+Desc     You follow the gleaming signs to find yourself standing in a part of the
+hallway that looks exactly like all the others. The walls are of a
+gleaming shiny metal and seems to sing with fresh brightness. To the West
+is an intersection and to the East the hallway continues.
+ 
+~
+#EXIT
+Direction east~
+ToRoom    336
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    338
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     338
+Name     &BIntersection&W~
+Sector   city~
+Desc     Like all the other hallways here. This one is just as new just as shiny and
+just as boring. To the West though you see something unlike the other
+parts of the hallway, A staircase. The Hallway continues East and South. A
+staircase lies to the West.  
+ 
+~
+#EXIT
+Direction east~
+ToRoom    337
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    339
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    331
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     339
+Name     &BHallway&W~
+Sector   city~
+Desc     You follow the gleaming signs to find yourself standing in a part of the
+hallway that looks exactly like all the others. The walls are of a
+gleaming shiny metal and seems to sing with fresh brightness.  To the East
+you can make out a Classroom. To the South is more Hallway. To the North
+is an intersection.
+ 
+~
+#EXIT
+Direction north~
+ToRoom    338
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    353
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    340
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     340
+Name     &BHallway&W~
+Sector   city~
+Desc     You follow the gleaming signs to find yourself standing in a part of the
+hallway that looks exactly like all the others. The walls are of a
+gleaming shiny metal and seems to sing with fresh brightness. To the North
+is more Hallway. To the South the hallway bends. 
+ 
+~
+#EXIT
+Direction north~
+ToRoom    339
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    341
+#ENDEXIT
+
+Reset M 0 304 15 340
+Reset M 0 304 15 340
+#ENDROOM
+
+#ROOM
+Vnum     341
+Name     &BBend in the Hallway&W~
+Sector   city~
+Desc     You follow the gleaming signs to find yourself standing in a part of the
+hallway that looks exactly like all the others. The only exception is this
+part of the hallway bends. The walls are of a gleaming shiny metal and
+seems to sing with fresh brightness. To the East and to the North is more
+Hallway.
+ 
+~
+#EXIT
+Direction north~
+ToRoom    340
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    342
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     342
+Name     &BHallway&W~
+Sector   city~
+Desc     You follow the gleaming signs to find yourself standing in a part of the
+hallway that looks exactly like all the others. The walls are of a
+gleaming shiny metal and seems to sing with fresh brightness. To the East
+is more Hallway. To the West the hallway bends. 
+ 
+~
+#EXIT
+Direction north~
+ToRoom    361
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    343
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    341
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     343
+Name     &BHallway&W~
+Sector   city~
+Desc     You follow the gleaming signs to find yourself standing in a part of the
+hallway that looks exactly like all the others. The walls are of a
+gleaming shiny metal and seems to sing with fresh brightness. To the West
+and to the East the hallway continues. 
+ 
+~
+#EXIT
+Direction east~
+ToRoom    344
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    342
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     344
+Name     &BIntersection&W~
+Sector   city~
+Desc     You follow the gleaming signs to find yourself standing in a part of the
+hallway that looks exactly like all the others. The walls are of a
+gleaming shiny metal and seems to sing with fresh brightness. To the North
+is the School Office. To the West and to the East the hallway continues.
+ 
+~
+#EXIT
+Direction north~
+ToRoom    356
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    345
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    343
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     345
+Name     &BHallway&W~
+Sector   city~
+Desc     You follow the gleaming signs to find yourself standing in a part of the
+hallway that looks exactly like all the others. The walls are of a
+gleaming shiny metal and seems to sing with fresh brightness. To the West
+and to the East the hallway continues. 
+ 
+~
+#EXIT
+Direction east~
+ToRoom    346
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    344
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     346
+Name     &BHallway&W~
+Sector   city~
+Desc     You follow the gleaming signs to find yourself standing in a part of the
+hallway that looks exactly like all the others. The walls are of a
+gleaming shiny metal and seems to sing with fresh brightness. To the North
+you can make out a classroom. To the West and to the East the hallway
+continues. 
+ 
+~
+#EXIT
+Direction north~
+ToRoom    355
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    347
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    345
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     347
+Name     &BBend in the Hallway&W~
+Sector   city~
+Desc     You follow the gleaming signs to find yourself standing in a part of the
+hallway that looks exactly like all the others. The walls are of a
+gleaming shiny metal and seems to sing with fresh brightness. To the West
+and to the North the hallway continues.
+ 
+~
+#EXIT
+Direction north~
+ToRoom    348
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    346
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     348
+Name     &BHallway&W~
+Sector   city~
+Desc     You follow the gleaming signs to find yourself standing in a part of the
+hallway that looks exactly like all the others. The walls are of a
+gleaming shiny metal and seems to sing with fresh brightness. To the South
+and to the North the hallway continues. 
+ 
+~
+#EXIT
+Direction north~
+ToRoom    349
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    347
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     349
+Name     &BHallway&W~
+Sector   city~
+Desc     You follow the gleaming signs to find yourself standing in a part of the
+hallway that looks exactly like all the others. The walls are of a
+gleaming shiny metal and seems to sing with fresh brightness.  To the West
+you can make out a Classroom. To the South and to the North is more
+Hallway. 
+ 
+~
+#EXIT
+Direction north~
+ToRoom    332
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    348
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    354
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     350
+Name     &GClass - Engineering Basics&W~
+Sector   city~
+Desc     The small classroom is quite neat as you look about. A large chalkboard
+sits on the North Wall with writing on it. There is a small desk in the
+corner that appears to be broken and a Teacher sits there patiently
+waiting for you to read what she wrote. Type Look Chalkboard to read what
+is on it.
+~
+#EXIT
+Direction north~
+ToRoom    334
+#ENDEXIT
+
+#EXDESC
+ExDescKey    chalkboard chalk board~
+ExDesc       Welcome to Engineering Basics 101. In order to advance in Engineering you
+must learn a few things first. The first skill you learn in Engineering is
+makecontainer. Now to do this one must have the proper tools. Cloth and a
+sewing kit are necessary. In order to make a container one must have the
+sewing kit and cloth in their inventory. To make a container you must also
+specify the containers location and the name of the container. For example
+to make a container worn on the body named Light type "makecontainer body
+Light". You can get creative with where and the name of your containers.
+For more help type help makecontainer.
+ 
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     351
+Name     &GClass - Diplomacy Basics&W~
+Sector   city~
+Desc     The small classroom is quite neat as you look about. A large chalkboard
+sits on the North Wall with writing on it. There is a small desk in the
+corner that appears to be broken and a Teacher sits there patiently
+waiting for you to read what she wrote. Type Look Chalkboard to read what
+is on it.
+~
+#EXIT
+Direction north~
+ToRoom    335
+#ENDEXIT
+
+#EXDESC
+ExDescKey    chalkboard chalk board~
+ExDesc       Welcome to Diplomacy 101. here you will learn the Basics of being
+diplomatic. In order to be diplomatic one must learn the basic diplomacy
+skills aid and smalltalk. Now to use aid you must have a victim or someone
+in need of aid. Generally this is a person mortally wounded or unconcious.
+Simply type "aid character". To use smalltalk one must have a willing and
+unwounded mob to work this on. To use smalltalk simply type "smalltalk
+mob"
+ 
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     352
+Name     &GClass - Smuggling Basics&W~
+Sector   city~
+Desc     The small classroom is quite neat as you look about. A large chalkboard
+sits on the North Wall with writing on it. There is a small desk in the
+corner that appears to be broken and a Teacher sits there patiently
+waiting for you to read what she wrote. Type Look Chalkboard to read what
+is on it.
+~
+#EXIT
+Direction north~
+ToRoom    336
+#ENDEXIT
+
+#EXDESC
+ExDescKey    chalkboard chalk board~
+ExDesc       Welcome to Smuggling 101. In order for you to advance yourself in Smuggling
+any further you must learn the skill beg. Beg is used to gain money from
+mobs. To use beg simply type "beg mob" For this to work the mob must be
+uninjured. 
+ 
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     353
+Name     &GClass - Bounty Hunting Basics&W~
+Sector   city~
+Desc     The small classroom is quite neat as you look about. A large chalkboard
+sits on the North Wall with writing on it. There is a small desk in the
+corner that appears to be broken and a Teacher sits there patiently
+waiting for you to read what she wrote. Type Look Chalkboard to read what
+is on it.
+~
+#EXIT
+Direction west~
+ToRoom    339
+#ENDEXIT
+
+#EXDESC
+ExDescKey    chalkboard chalk board~
+ExDesc       Welcome to Bounty Hunting 101. In order for you to get past level 1 Bounty
+Hunting there are several things you must learn. First of all you must
+have practiced and learned the skill track. Second of all to use track one
+must have a victim. The victim can be anyone Pk or Nonpk. To gain levels
+in Bounty Hunting though, one must PK or player kill someone with a bounty
+on their head.  In order to find out who is bountied simply type "bounty".
+Remember you have to be PK in order to collect the bounty.
+ 
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     354
+Name     &GClass - Leadership Basics&W~
+Sector   city~
+Desc     The small classroom is quite neat as you look about. A large chalkboard
+sits on the North Wall with writing on it. There is a small desk in the
+corner that appears to be broken and a Teacher sits there patiently
+waiting for you to read what she wrote. Type Look Chalkboard to read what
+is on it.
+~
+#EXIT
+Direction east~
+ToRoom    349
+#ENDEXIT
+
+#EXDESC
+ExDescKey    chalkboard chalk board~
+ExDesc       Welcome to Leadership 101. Now skills arent necessary in order to gain
+levels in leadership. What is necessary is that you be the leader of a
+group. To group someone they first must type "follow character" For this
+example the character would of course be you. Once the person follows you,
+you then type "group character" and will allow that person to be in your
+group.  Bear in mind there are level restrictions on groups. Please
+remember that when asking someone to group with you. Also in order for you
+to get Leadership experience you must be getting experience from the mobs
+you kill. For more help type "help group".
+ 
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     355
+Name     &GClass - Combat&W~
+Sector   city~
+Desc     The small classroom is quite neat as you look about. A large chalkboard
+sits on the North Wall with writing on it. There is a small desk in the
+corner that appears to be broken and a Teacher sits there patiently
+waiting for you to read what she wrote. Type Look Chalkboard to read what
+is on it.
+~
+#EXIT
+Direction south~
+ToRoom    346
+#ENDEXIT
+
+#EXDESC
+ExDescKey    chalkboard chalk board~
+ExDesc       Welcome to Combat 101. In order for you to excel or even gain levels in
+combat you must learn the basic combat skills. The skills you learn will
+help you kill mobs which are within your capability. In order to kill a
+mob one must type "kill mob" Once you kills the mob you will recieve
+experience for it. As you kill more mobs your experience increases as well
+as your knowledge in the skills you use. For more help on combat type
+"help combat"
+ 
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     356
+Name     &YSchool Office&W~
+Sector   city~
+Desc     You've stepped into the Academy's main office and find yourself with two
+ways to take. The room although rather nondescript has a purpose. There
+are waiting chairs all about the room and anxious students await their
+turn to speak to Vice Principal Noin. Her office is located to the East.
+To the North is the Reception office of the Principal.
+ 
+ 
+~
+#EXIT
+Direction north~
+ToRoom    358
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    357
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    344
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    363
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     357
+Name     &GVice Principals Office&W~
+Sector   city~
+Flags    nomob~
+Desc     Vice principal Noin's office is elegant and very regal. Her office although
+devoid of plants, makes up for it with immaculately polished furniture. All
+about you mahogany pieces of furniture tower over you. A bookshelf holds
+records of  past students who have graduated her academy. 
+&YYou should say HELLO.
+Next: Maybe Kimmy can help, go find and ask her about Noin.
+~
+#EXIT
+Direction west~
+ToRoom    356
+#ENDEXIT
+
+Reset M 0 300 1 357
+#ENDROOM
+
+#ROOM
+Vnum     358
+Name     &YReception Office&W~
+Sector   city~
+Flags    nomob safe~
+Desc     You have by some miracle made it this far to the Reception Office of the
+Principal. Unfortunately it seems your obstacles tend to be getting
+bigger.  The receptionist here who is sitting behind a tall desk looks at
+you with curiosity and inquires about your presence. Better think of
+something quickly.
+&YIf you have the meeting paper, give it to Dorothy, then ask her about a
+"meeting".
+~
+#EXIT
+Direction south~
+ToRoom    356
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    360
+Flags     isdoor closed locked~
+#ENDEXIT
+
+Reset M 0 301 1 358
+Reset D 0 358 3 2
+#ENDROOM
+
+#ROOM
+Vnum     359
+Name     &GStorage Closet&W~
+Sector   city~
+Desc     Don't remove this room! It applies for the entire area!
+~
+#EXIT
+Direction west~
+ToRoom    360
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     360
+Name     &GPrincipal's Office&W~
+Sector   city~
+Flags    safe~
+Desc     The room gives off the feeling of warmth and pride. You've made it this far
+and the Principal Zechs is here to greet you. He appears to be standing
+next to a rather large mahogany desk. The room itself is almost devoid of
+decoration other than standard school decorations. Apparently the
+holo-vids that project the plants aren't working right.
+ 
+~
+#EXIT
+Direction east~
+ToRoom    358
+Flags     isdoor closed locked~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    362
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset M 0 302 1 360
+Reset D 0 360 1 2
+Reset D 0 360 3 1
+#ENDROOM
+
+#ROOM
+Vnum     361
+Name     &GSuit Fighting&W~
+Sector   city~
+Flags    safe~
+Desc     The classroom is quite open, a few desks and chairs for students to use.
+The teacher isn't in at the moment, but Kimmy is watching the students.
+All of his notes are on the chalkboard, which you can look at by typing
+"Look Chalkboard".
+~
+#EXIT
+Direction south~
+ToRoom    342
+#ENDEXIT
+
+Reset M 0 303 1 361
+#EXDESC
+ExDescKey    chalk board chalkboard~
+ExDesc       These will be the basic commands used in Mobile Suit Combat:
+ 
+&WTarget &R- &BTarget (Ship or Mobile Suit Name)
+&gLets you target the ship or Mobile Suit you want to attack.
+ 
+&WAutotrack &R- &BAutotrack
+&gMakes your ship or Mobile Suit turn around and face the target
+automatically.
+ 
+&WFirstweapon, Secondweapon, and Thirdweapon. &R- &BFirst, Second, or
+Third.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    chalk board chalkboard~
+ExDesc       These are the basic commands you will need in Mobile Suit Combat:
+ 
+&WTarget &R- &BTarget (Enemy ship or suit)
+&gSets your target to the enemy ship or suit so you can attack it.
+ 
+&WAutotrack &R- &BAutotrack
+&gTurns your ship automatically to face the targeted enemy.
+ 
+ 
+&WFirstweapon &R- &BFirst
+&gFires your suit's primary weapon.  Some suits only have one weapon.
+ 
+&WSecondweapon &R- &BSecond
+&gFires your suit's secondary weapon.
+ 
+&WThirdweapon &R- &BThird
+&gFires your suit's third weapon.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     362
+Name     &YAcademy Exit&W~
+Sector   city~
+Desc     Before you can officially enter this wonder little shin-dig of a MUD, you
+have to have read all of the rules. To read these most awesome rules,
+you'll need to access the help files 'rules' and 'rules2'. After reading
+them you will be one step closer to joining our fantastic world of Gundam
+Wing : Operation Meteor. Now once you finished reading them and fully
+understanding each and every rule, you may accompany us on the journey of
+your life! After you have read them, simply type &Ragree &zto enter the MUD.
+~
+#EXIT
+Direction east~
+ToRoom    360
+#ENDEXIT
+
+#EXIT
+Direction somewhere~
+ToRoom    500
+Keywords  agree~
+Flags     hidden auto~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     363
+Name     &CLost and Found&W~
+Sector   city~
+Flags    prototype~
+Desc     This is the lost and found room, anything you see on the floor you can
+take, seeing as how no one else has claimed it. If there is nothing in
+here, just wait a few minutes and more stuff should be found. 
+~
+#EXIT
+Direction east~
+ToRoom    356
+#ENDEXIT
+
+Reset O 0 310 1 363
+Reset O 0 311 1 363
+Reset O 0 312 1 363
+Reset O 0 313 1 363
+Reset O 0 314 1 363
+Reset O 0 315 1 363
+Reset O 0 316 1 363
+Reset O 0 317 1 363
+#ENDROOM
+
+#ROOM
+Vnum     399
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ENDAREA

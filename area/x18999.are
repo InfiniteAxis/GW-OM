@@ -1,0 +1,1807 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         Colony X18999~
+Author       Antonio~
+Ranges       1 1007 1 1007
+Economy      0 1187473
+ResetMsg     Some crazy people stick their tounge out at you as they pass~
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       6800
+Keywords   An Armor Shop Keeper~
+Short      An Armor Shop Keeper~
+Long       An Armor Shop Keeper is here, selling some armor
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 300 0 -650 0 0
+Stats2     60 10 3000
+Stats3     30 4 2
+Stats4     0 0 0 60 60
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       6801
+Keywords   A Clothing Shop Keeper~
+Short      A Clothing Shop Keeper~
+Long       A Clothing Shop Keeper is here, selling some nice clothes.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 200 0 -400 0 0
+Stats2     40 10 2000
+Stats3     20 4 2
+Stats4     0 0 0 40 40
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       6802
+Keywords   Weapon Shop Keeper~
+Short      A Weapon Shop Keeper~
+Long       A Weapon Shop Keeper is here selling useful stuff
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 400 0 -900 0 0
+Stats2     80 10 4000
+Stats3     40 4 2
+Stats4     0 0 0 80 80
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       6803
+Keywords   A Resturant Owner~
+Short      A Restaurant Owner~
+Long       A Restaurant Owner is here, selling food.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       6810
+Keywords   Level 1 Hologram ~
+Short      A Level 1 Hologram~
+Long       A Level 1 Hologram is here, ready to fight.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpmload 6810 1
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6811
+Keywords   Level 2 Hologram~
+Short      A Level 2 Hologram~
+Long       A Level 2 Hologram is here, ready to fight.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 5 0 87 0 0
+Stats2     1 10 50
+Stats3     0 4 2
+Stats4     0 0 0 1 1
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpmload 6811
+1
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6812
+Keywords   Level 3 Hologram~
+Short      A Level 3 Hologram~
+Long       A Level 3 Hologram is here, ready to fight.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 15 0 62 0 0
+Stats2     3 10 150
+Stats3     1 4 2
+Stats4     0 0 0 3 3
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpmload 6812 1
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6813
+Keywords   Level 4 Hologram~
+Short      A Level 4 Hologram~
+Long       A Level 4 Hologram is here, ready to fight.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 35 0 12 0 0
+Stats2     7 10 350
+Stats3     3 4 2
+Stats4     0 0 0 7 7
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpmload 6813 1
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6814
+Keywords   X18999 Citizen~
+Short      A X18999 Citizen~
+Long       A X18999 Citizen is here, wondering around.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc scavenger~
+Stats1     0 100 0 -150 100 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+VIPFlags   X18999~
+#MUDPROG
+Progtype  death_prog~
+Arglist   1~
+Comlist   mpmload 6815
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6815
+Keywords   X18999 Citizen~
+Short      A X18999 Citizen~
+Long       A X18999 Citizen is here, wondering around.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc scavenger~
+Stats1     0 100 0 -150 100 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+VIPFlags   X18999~
+#MUDPROG
+Progtype  death_prog~
+Arglist   1~
+Comlist   mpoload 11509
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6816
+Keywords   X18999 Police Officer~
+Short      A X18999 Police Officer~
+Long       A X18999 Police Officer is here looking for criminals.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_police_attack~
+Gender     nonbinary~
+Actflags   npc stayarea~
+Stats1     0 25 0 37 0 0
+Stats2     5 10 250
+Stats3     2 4 2
+Stats4     0 0 0 5 5
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+VIPFlags   X18999~
+#ENDMOBILE
+
+#MOBILE
+Vnum       6899
+Keywords   Kolak~
+Short      Kolak~
+Long       Kolak is here, looking a little nervous.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 420 0 -950 0 0
+Stats2     84 10 4200
+Stats3     42 4 2
+Stats4     0 0 0 84 84
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    kick~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpecho &rYou casually remove Kolak's head from his shoulders.&g 
+mpoload 2033
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#OBJECT
+Vnum     6800
+Keywords Bullet Proof Vest~
+Type     armor~
+Short    a Bullet Proof Vest~
+Long     A Bullet Proof Vest is here.~
+WFlags   take body~
+Values   75 75 0 0 0 0
+Stats    1 653 65 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6801
+Keywords Armored Pants~
+Type     armor~
+Short    a Armored Pants~
+Long     A Armored Pants is here.~
+WFlags   take legs~
+Values   45 45 0 0 0 0
+Stats    1 400 40 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6802
+Keywords pirate ring~
+Type     armor~
+Short    a pirate ring~
+Long     A pirate ring is glowing here.~
+WFlags   take finger~
+Values   75 75 0 0 0 0
+Stats    1 350 35 0 0
+Affect       -1 -1 150 14 0
+Affect       -1 -1 5 47 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6803
+Keywords some fabric~
+Type     fabric~
+Short    some fabric~
+Long     Some fabric is lying on the ground in a ball.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 2 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6804
+Keywords sewing kit~
+Type     thread~
+Short    a sewing kit~
+Long     A sewing kit is here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 19 1 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6805
+Keywords small beam saber~
+Type     weapon~
+Short    a small beam saber~
+Long     A small beam saber is here, lying on the gound~
+Flags    inventory~
+WFlags   take wield~
+Values   12 5 6 2 0 0
+Stats    4 350 35 0 0
+Affect       -1 -1 -1 18 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6806
+Keywords Tropical Skittles~
+Type     pill~
+Short    &YT&Or&po&Ppi&pc&Oa&Yl &GS&gk&ci&Ctt&cl&ge&Gs~
+Long     &YT&Or&po&Ppi&pc&Oa&Yl &GS&gk&ci&Ctt&cl&ge&Gs~
+WFlags   take~
+Values   150 -1 -1 -1 2 0
+Stats    1 100000 10000 0 0
+Spells   'shield' 'sanctuary' 'armor'
+#ENDOBJECT
+
+#OBJECT
+Vnum     6807
+Keywords Wierd Tablet~
+Type     pill~
+Short    a Wierd Tablet~
+Long     A Wierd Tablet is here.~
+WFlags   take~
+Values   150 -1 -1 -1 0 0
+Stats    1 0 0 0 0
+Spells   'mask' 'shockshield' 'NONE'
+#ENDOBJECT
+
+#OBJECT
+Vnum     6899
+Keywords final object~
+Type     trash~
+Short    a final object~
+Long     A final object is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     6800
+Name     Colony X18999 Docking Bay~
+Sector   city~
+Flags    can_land can_fly docking~
+Desc     As you enter the colony you are greeted by strange folk that stick their
+tongues out at you. You seem to be very confused by their actions and
+decide to stay away from them. You also see some mobile suits lifting off
+into space. 
+~
+#EXIT
+Direction east~
+ToRoom    6802
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6801
+#ENDEXIT
+
+Reset O 0 10315 1 6800
+#ENDROOM
+
+#ROOM
+Vnum     6801
+Name     Colony Streets~
+Sector   city~
+Desc     You walk through the streets of X18999 you see many people rushing around
+to get somewhere.
+~
+#EXIT
+Direction north~
+ToRoom    6825
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6800
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6826
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6803
+#ENDEXIT
+
+Reset M 0 6814 20 6801
+#ENDROOM
+
+#ROOM
+Vnum     6802
+Name     Colony Streets~
+Sector   city~
+Desc     You walk through the streets of X18999 you see many people rushing around
+to get somewhere.
+~
+#EXIT
+Direction north~
+ToRoom    6827
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6804
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6828
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6800
+#ENDEXIT
+
+Reset M 0 6814 18 6802
+#ENDROOM
+
+#ROOM
+Vnum     6803
+Name     Colony Streets~
+Sector   city~
+Desc     You walk through the streets of X18999 you see many people rushing around
+to get somewhere.
+~
+#EXIT
+Direction east~
+ToRoom    6801
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6805
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6807
+#ENDEXIT
+
+Reset M 0 6814 25 6803
+Reset M 0 6814 25 6803
+Reset M 0 6814 25 6803
+Reset M 0 6814 25 6803
+Reset M 0 6814 25 6803
+Reset M 0 6814 25 6803
+#ENDROOM
+
+#ROOM
+Vnum     6804
+Name     Colony Streets~
+Sector   city~
+Desc     You walk through the streets of X18999 you see many people rushing around
+to get somewhere.
+~
+#EXIT
+Direction west~
+ToRoom    6802
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6808
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6811
+#ENDEXIT
+
+Reset M 0 6814 42 6804
+Reset M 0 6814 42 6804
+#ENDROOM
+
+#ROOM
+Vnum     6805
+Name     Colony Streets~
+Sector   city~
+#EXIT
+Direction northeast~
+ToRoom    6812
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6803
+#ENDEXIT
+
+Reset M 0 6814 2 6805
+#ENDROOM
+
+#ROOM
+Vnum     6806
+Name     Colony Streets~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6807
+Name     Colony Streets~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    6809
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6803
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6808
+Name     Colony Streets~
+Sector   city~
+Desc     You walk through the streets of X18999 you see many people rushing around
+to get somewhere.
+~
+#EXIT
+Direction north~
+ToRoom    6810
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6804
+#ENDEXIT
+
+Reset M 0 6814 16 6808
+#ENDROOM
+
+#ROOM
+Vnum     6809
+Name     Colony Streets~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    6813
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6832
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6807
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6831
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6810
+Name     Colony Streets~
+Sector   city~
+Desc     You walk through the streets of X18999 you see many people rushing around
+to get somewhere.
+~
+#EXIT
+Direction north~
+ToRoom    6814
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6808
+#ENDEXIT
+
+Reset M 0 6814 15 6810
+Reset M 0 6814 15 6810
+Reset M 0 6814 15 6810
+#ENDROOM
+
+#ROOM
+Vnum     6811
+Name     Colony Streets~
+Sector   city~
+#EXIT
+Direction northwest~
+ToRoom    6815
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6804
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6812
+Name     Colony Streets~
+Sector   city~
+#EXIT
+Direction northeast~
+ToRoom    6815
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6805
+#ENDEXIT
+
+Reset M 0 6814 27 6812
+Reset M 0 6814 27 6812
+#ENDROOM
+
+#ROOM
+Vnum     6813
+Name     Colony Streets~
+Sector   city~
+#EXIT
+Direction south~
+ToRoom    6809
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6820
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6814
+Name     Colony Streets~
+Sector   city~
+Desc     You walk through the streets of X18999 you see many people rushing around
+to get somewhere.
+~
+#EXIT
+Direction south~
+ToRoom    6810
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6821
+#ENDEXIT
+
+Reset M 0 6814 42 6814
+Reset M 0 6814 42 6814
+Reset M 0 6814 42 6814
+Reset M 0 6899 1 6814
+#ENDROOM
+
+#ROOM
+Vnum     6815
+Name     Colony X18999 Intersection~
+Sector   city~
+Desc     As you walk into the center of the colony you seem to be a little bit more
+frightened by the strange people staring at you. You look and see a sign
+on the wall, maybe you should take a look at it.
+ 
+&G&gType 'Look Sign'
+~
+#EXIT
+Direction east~
+ToRoom    6830
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6829
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6817
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6816
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6811
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6812
+#ENDEXIT
+
+Reset M 0 6814 34 6815
+Reset M 0 6814 34 6815
+Reset M 0 6814 34 6815
+Reset M 0 6814 34 6815
+Reset M 0 6814 34 6815
+Reset M 0 6814 34 6815
+Reset M 0 6814 34 6815
+#EXDESC
+ExDescKey    sign wall~
+ExDesc       &G&gThis is the center of Colony X18999. This is just to let you know that
+you wasted your time looking at this sign.  &R=&bP
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6816
+Name     Colony Streets~
+Sector   city~
+Desc     You walk through the streets of X18999 you see many people rushing around
+to get somewhere.
+~
+#EXIT
+Direction northwest~
+ToRoom    6818
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6815
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6817
+Name     Colony Streets~
+Sector   city~
+#EXIT
+Direction northeast~
+ToRoom    6819
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6815
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6818
+Name     Colony Streets~
+Sector   city~
+Desc     You walk through the streets of X18999 you see many people rushing around
+to get somewhere.
+~
+#EXIT
+Direction northwest~
+ToRoom    6820
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6816
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6819
+Name     Colony Streets~
+Sector   city~
+#EXIT
+Direction northeast~
+ToRoom    6821
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6817
+#ENDEXIT
+
+Reset M 0 6814 7 6819
+#ENDROOM
+
+#ROOM
+Vnum     6820
+Name     Colony Streets~
+Sector   city~
+Desc     You walk through the streets of X18999 you see many people rushing around
+to get somewhere.
+~
+#EXIT
+Direction east~
+ToRoom    6822
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6818
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6813
+#ENDEXIT
+
+Reset M 0 6814 42 6820
+Reset M 0 6814 42 6820
+Reset M 0 6814 42 6820
+Reset M 0 6814 42 6820
+Reset M 0 6814 42 6820
+Reset M 0 6814 42 6820
+Reset M 0 6814 42 6820
+#ENDROOM
+
+#ROOM
+Vnum     6821
+Name     Colony Streets~
+Sector   city~
+Desc     You walk through the streets of X18999 you see many people rushing around
+to get somewhere.
+~
+#EXIT
+Direction west~
+ToRoom    6823
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6814
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6819
+#ENDEXIT
+
+Reset M 0 6814 8 6821
+#ENDROOM
+
+#ROOM
+Vnum     6822
+Name     Colony Streets~
+Sector   city~
+Desc     You walk through the streets of X18999 you see many people rushing around
+to get somewhere.
+~
+#EXIT
+Direction east~
+ToRoom    6824
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6820
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6823
+Name     Colony Streets~
+Sector   city~
+Desc     You walk through the streets of X18999 you see many people rushing around
+to get somewhere.
+~
+#EXIT
+Direction north~
+ToRoom    6844
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6821
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6824
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6824
+Name     Colony X18999 Secondary Docking Bay~
+Sector   city~
+Desc     This is the Secondary Docking Bay. This is so the docking bays get crowded
+with mobile suits.
+~
+#EXIT
+Direction east~
+ToRoom    6823
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6822
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6825
+Name     Armor Shop~
+Sector   city~
+Flags    indoors~
+Desc     This seems to be a good place where you can get some nice armor. Armor
+helps you defend in battle and its always good to have.
+~
+#EXIT
+Direction south~
+ToRoom    6801
+#ENDEXIT
+
+Reset M 0 6800 1 6825
+  Reset G 1 6800 1
+  Reset G 1 6801 1
+  Reset G 1 6802 1
+#ENDROOM
+
+#ROOM
+Vnum     6826
+Name     Clothing Shop~
+Sector   city~
+Flags    indoors~
+Desc     You look around and seem many nice articles of clothing on the wall and a
+very odd looking shop keeper. Cloths are really for show not for armor, if
+you want some armor go north to the armor shop.
+~
+#EXIT
+Direction north~
+ToRoom    6801
+#ENDEXIT
+
+Reset M 0 6801 1 6826
+  Reset G 1 6803 1
+  Reset G 1 6804 1
+  Reset G 1 10303 1
+#ENDROOM
+
+#ROOM
+Vnum     6827
+Name     Colony Bank~
+Sector   city~
+Flags    indoors bank~
+Desc     You look around and see sevral large ATM Machines along the wall. Well
+looks like this colony has no need for bankers. 
+&G&gUse the "bank" command for banking.
+~
+#EXIT
+Direction south~
+ToRoom    6802
+#ENDEXIT
+
+Reset M 0 6814 19 6827
+#ENDROOM
+
+#ROOM
+Vnum     6828
+Name     A Hotel~
+Sector   city~
+Flags    indoors hotel~
+Desc     This seems to be a real nice place were you
+can
+&B'Save' and 'Quit'
+~
+#EXIT
+Direction north~
+ToRoom    6802
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6829
+Name     Weapon Shop~
+Sector   city~
+Flags    indoors~
+Desc     This is the Colonies main weapon shop, you see a gun rack and some sword
+hung up on the wall. You also see some other weapons in a glass case.
+~
+#EXIT
+Direction east~
+ToRoom    6815
+#ENDEXIT
+
+Reset M 0 6802 1 6829
+  Reset G 1 6805 1
+  Reset G 1 502 1
+  Reset G 1 52 1
+  Reset G 1 53 1
+  Reset G 1 54 1
+  Reset G 1 55 1
+  Reset G 1 56 1
+  Reset G 1 57 1
+  Reset G 1 58 1
+  Reset G 1 51 1
+#ENDROOM
+
+#ROOM
+Vnum     6830
+Name     A Colony Restaurant~
+Sector   city~
+Flags    indoors~
+Desc     This is a small restaurant in which you can order delicious food. You see a
+few people coming and going, but it also shows that this isn't the busiest
+of colonies to date.
+ 
+~
+#EXIT
+Direction west~
+ToRoom    6815
+#ENDEXIT
+
+Reset M 0 6803 1 6830
+  Reset G 1 508 1
+  Reset G 1 10313 1
+  Reset G 1 10314 1
+#ENDROOM
+
+#ROOM
+Vnum     6831
+Name     Training Area Levels 1-2~
+Sector   city~
+Flags    indoors~
+Desc     Training Level 1 - Combat Level 1
+Training Level 2 - Combat Level 5
+~
+#EXIT
+Direction north~
+ToRoom    6836
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6809
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6837
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6833
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6832
+Name     A Factory~
+Sector   city~
+Flags    indoors factory~
+Desc     This seems like a nice quiet place where you can craft some useful item.
+You need the equipment to make items first, check the clothing shop it has
+some fabric and a sewing kit you can use to make containers and some
+clothes.
+~
+#EXIT
+Direction west~
+ToRoom    6809
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6833
+Name     Training Area Levels 3-4~
+Sector   city~
+Flags    indoors~
+Desc     Training Level 3 - Combat Level 15
+Training Level 4 - Combat Level 35
+~
+#EXIT
+Direction north~
+ToRoom    6838
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6831
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6839
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6834
+Name     Training Area Levels 5-6~
+Sector   city~
+Flags    indoors safe~
+Desc     Training Level 5 - Combat LeveL 65
+Training Level 6 - Combat LeveL 95
+~
+#EXIT
+Direction north~
+ToRoom    6840
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6841
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6835
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6835
+Name     Training Area Levels 7-8~
+Sector   city~
+Flags    indoors safe~
+Desc     Training Level 7 - Combat LeveL 115
+Training Level 8 - Combat LeveL 155
+~
+#EXIT
+Direction north~
+ToRoom    6842
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6834
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6843
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6836
+Name     Training Level 1~
+Sector   city~
+#EXIT
+Direction south~
+ToRoom    6831
+#ENDEXIT
+
+Reset M 0 6810 1 6836
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6837
+Name     Training Level 2~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    6831
+#ENDEXIT
+
+Reset M 0 6811 1 6837
+#ENDROOM
+
+#ROOM
+Vnum     6838
+Name     Training Level 3~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction south~
+ToRoom    6833
+#ENDEXIT
+
+Reset M 0 6812 1 6838
+#ENDROOM
+
+#ROOM
+Vnum     6839
+Name     Training Level 4~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    6833
+#ENDEXIT
+
+Reset M 0 6813 1 6839
+#ENDROOM
+
+#ROOM
+Vnum     6840
+Name     Training Level 5~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction south~
+ToRoom    6834
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6841
+Name     Training Level 6~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    6834
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6842
+Name     Training Level 7~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction south~
+ToRoom    6835
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6843
+Name     Training Level 8~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    6835
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6844
+Name     Colony Streets~
+Sector   city~
+Flags    nomob~
+Desc     This street has many empty house on it, You see some for sale signs and
+some old boarded up houses along the streets. 
+~
+#EXIT
+Direction north~
+ToRoom    6845
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6851
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6823
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6852
+#ENDEXIT
+
+Reset M 0 6814 9 6844
+#ENDROOM
+
+#ROOM
+Vnum     6845
+Name     Colony Streets~
+Sector   city~
+Flags    nomob~
+Desc     This street has many empty house on it, You see some for sale signs and
+some old boarded up houses along the streets. 
+~
+#EXIT
+Direction north~
+ToRoom    6846
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6850
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6844
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6849
+#ENDEXIT
+
+Reset M 0 6814 10 6845
+#ENDROOM
+
+#ROOM
+Vnum     6846
+Name     Colony Streets~
+Sector   city~
+Flags    nomob~
+Desc     This street has many empty house on it, You see some for sale signs and
+some old boarded up houses along the streets. 
+~
+#EXIT
+Direction east~
+ToRoom    6848
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6845
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6847
+#ENDEXIT
+
+Reset M 0 6814 11 6846
+#ENDROOM
+
+#ROOM
+Vnum     6847
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction east~
+ToRoom    6846
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6848
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction west~
+ToRoom    6846
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6849
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+Owner    Doesntmatter~
+#EXIT
+Direction east~
+ToRoom    6845
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6850
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction west~
+ToRoom    6845
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6851
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home prototype~
+#EXIT
+Direction west~
+ToRoom    6844
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6852
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+Owner    Racor~
+#EXIT
+Direction east~
+ToRoom    6844
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6853
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6854
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6855
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6856
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6857
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6858
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6859
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6860
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6861
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6862
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6863
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6864
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6865
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6866
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6867
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6868
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6869
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6870
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6871
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6872
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6873
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6874
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6875
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6876
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6877
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6878
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6879
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6880
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6881
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6882
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6883
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6884
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6885
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6886
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6887
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6888
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6889
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6890
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6891
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6892
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6893
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6894
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6895
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6896
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6897
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6898
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6899
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ENDAREA

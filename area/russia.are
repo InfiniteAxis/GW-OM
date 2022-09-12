@@ -1,0 +1,2424 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         Russia~
+Author       Cray~
+Ranges       1 1007 1 1007
+Economy      0 620656732
+ResetMsg     You hear someone walking nearby...~
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       7500
+Keywords   first~
+Short      a newly created first~
+Long       Some god abandoned a newly created first here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       7546
+Keywords   Transporter Man~
+Short      A Transporter mam~
+Long       A Tall Man Transporting people here
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   sa Hello Welcome to Russia Colony
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7547
+Keywords   Bankteller~
+Short      Bankteller~
+Long       A Bankteller
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel stayarea nokill~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   sa Hello, Welcome to Russia National Bank. May i Help you
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7548
+Keywords   Russia Soldier~
+Short      Soldier~
+Long       A Russia Soldier, Standing here
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel stayarea~
+Stats1     0 290 0 -625 0 0
+Stats2     58 10 2900
+Stats3     29 4 2
+Stats4     0 0 0 58 58
+Attribs    18 10 8 18 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       7549
+Keywords   Kali~
+Short      Kali~
+Long       The Leader Of Russia Military, standing here
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 400 0 -900 0 0
+Stats2     80 10 4000
+Stats3     40 4 2
+Stats4     0 0 0 80 80
+Attribs    18 18 18 18 10 18 10
+Saves      0 0 0 0 0
+Attacks    punch~
+Defenses   dodge~
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   sa Hello. My name is Kali, Welcome to Russia Military
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7550
+Keywords   Mobile Suit:No Tolerance~
+Short      No Tolerance~
+Long       Mobile Suit:No Tolerance
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel droid~
+Stats1     0 500 0 -1150 0 0
+Stats2     100 10 5000
+Stats3     50 4 2
+Stats4     0 0 4 100 100
+Attribs    18 18 18 18 10 18 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       7551
+Keywords   Russia Recruits~
+Short      Recruit~
+Long       Recruit, standing here
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 279 0 -597 0 0
+Stats2     55 10 2790
+Stats3     27 4 2
+Stats4     0 0 0 55 55
+Attribs    15 15 13 10 10 8 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       7552
+Keywords   Nikki~
+Short      &PN&pi&rk&pk&Pi&C~
+Long       &PN&pi&rk&pk&Pi&w is here, serving customers.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   17 19 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       7553
+Keywords   Eurika~
+Short      &YE&Ou&Yr&Oi&Yk&Oa&C~
+Long       &YE&Ou&Yr&Oi&Yk&Oa&w is here selling candy.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       7554
+Keywords   Nurse Kayla~
+Short      &wN&Wu&wr&Ws&we &CK&ca&gy&Gl&Ca&C~
+Long       &wN&Wu&wr&Ws&we &CK&ca&gy&Gl&Ca&G is greeting the wounded.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   say Hey there $n, do you need any help? ^^_^^ 
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7555
+Keywords   Veronica~
+Short      &CV&ce&Cr&co&Cn&ci&Cc&ca&C~
+Long       &CV&ce&Cr&co&Cn&ci&Cc&ca&C is here selling drinks.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say Hi, May I sell you something?
+smile
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7556
+Keywords   Courtney~
+Short      &CC&Wo&Cu&Wr&Ct&Wn&Ce&Wy~
+Long       &CC&Wo&Cu&Wr&Ct&Wn&Ce&Wy is here in a model's pose.
+~
+Race       Canadian~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 300 0 -650 0 0
+Stats2     60 10 3000
+Stats3     30 4 2
+Stats4     0 0 0 60 60
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    kick~
+Defenses   dodge~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpmload 7556
+mpecho Cray's Mom Comes crawling out on her knees to please Leppy.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7557
+Keywords   Spiderman~
+Short      &RS&rp&bi&bd&re&Rr &BM&ba&Bn~
+Long       &RS&rp&bi&bd&re&Rr &BM&ba&Bn&w hangs upside down here looking for a challenge.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 400 0 -900 0 0
+Stats2     80 10 4000
+Stats3     40 4 2
+Stats4     0 0 0 80 80
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    kick~
+Defenses   dodge~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpmload 7557
+mpecho Spider Man swings in from around the corner for another round.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7558
+Keywords   Strife~
+Short      &CC&cl&bo&cu&Cd &zS&Wt&wri&B&Wf&ze ~
+Long       &CC&cl&bo&cu&Cd &zS&Wt&wri&B&Wf&ze&w stands here with his arms crossed.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 550 0 -1275 0 0
+Stats2     110 10 5500
+Stats3     55 4 2
+Stats4     0 0 0 110 110
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    punch~
+Defenses   dodge~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpmload 7558
+mpecho Cloud Strife quickly returns for another fight.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7559
+Keywords   Belzelga~
+Short      &zB&we&zl&wz&ze&wl&zg&wa ~
+Long       &zB&we&zl&wz&ze&wl&zg&wa&z stands here. 
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 700 0 -1650 0 0
+Stats2     140 10 7000
+Stats3     70 4 2
+Stats4     0 0 0 140 140
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    kick~
+Defenses   dodge~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpmload 7559
+mpecho Belzelga quickly returns for another fight.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7560
+Keywords   Goomba~
+Short      &GA &OG&Yo&Oo&Ym&Ob&Ya&C~
+Long       &GA &OG&Yo&Oo&Ym&Ob&Ya&G is bouncing up and down here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 4 0 90 25 0
+Stats2     0 10 40
+Stats3     0 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpmload 7560
+mpecho Another Goomba comes hopping out.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7561
+Keywords   Kirby~
+Short      &PK&pi&Pr&pb&Py&C~
+Long       &PK&pi&Pr&pb&Py&G is hovering here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Affected   blind invisible detect_magic~
+Stats1     0 27 0 32 50 0
+Stats2     5 10 270
+Stats3     2 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpmload 7561
+mpecho Another Kirby appears.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7562
+Keywords   Some Punk~
+Short      Some Punk~
+Long       Some Punk is here standing guard.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 250 0 -525 0 0
+Stats2     50 10 2500
+Stats3     25 4 2
+Stats4     0 0 0 50 50
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   say Oh crap dude, scared me there for a sec.
+say Thought you were the police trying to bust us!
+say Anyways, go on in, its all good.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7563
+Keywords   Task Force Member~
+Short      &GA &YT&Oa&Ys&Ok &GF&go&Gr&gc&Ge &BM&be&pmb&be&Br&c~
+Long       &GA &YT&Oa&Ys&Ok &GF&go&Gr&gc&Ge &BM&be&pmb&be&Br&w is patrolling here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_police_attack~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 500 0 -1150 0 0
+Stats2     100 10 5000
+Stats3     50 4 2
+Stats4     0 0 3 100 100
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    punch~
+Defenses   parry~
+#ENDMOBILE
+
+#MOBILE
+Vnum       7564
+Keywords   Ryoga~
+Short      &RR&ry&po&rg&Ra&C~
+Long       &RR&ry&po&rg&Ra&w is practicing his attacks.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 200 0 -400 75 0
+Stats2     40 10 2000
+Stats3     20 4 2
+Stats4     0 0 0 40 40
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    kick~
+Defenses   dodge~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpmload 7564
+mpecho Another Ryoga clone appears.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7565
+Keywords   Sweating Guard~
+Short      A Sweating Guard~
+Long       A Sweating Guard is here giving out warnings.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   say You'd be best not to run around here carelessly.
+say Especially if you're wanted on another colony!
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7566
+Keywords   Falzah~
+Short      &BF&Ca&bl&bz&Ca&Bh~
+Long       &BF&Ca&bl&bz&Ca&Bh&c stands here in his fighting stance.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 850 0 -2025 0 0
+Stats2     170 10 8500
+Stats3     85 4 2
+Stats4     0 0 0 170 170
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    punch~
+Defenses   dodge~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpmload 7566
+mpecho Falzah runs in from around the corner for another chance.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7567
+Keywords   Mighty Mouse~
+Short      &RM&Bi&rg&rh&Bt&Ry &wM&zo&wu&zs&we~
+Long       &RM&Bi&rg&rh&Bt&Ry &wM&zo&wu&zs&we&z is floating here waiting for his challenge.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 950 0 -2275 0 0
+Stats2     190 10 9500
+Stats3     95 4 2
+Stats4     0 0 0 190 190
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    punch~
+Defenses   dodge~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpmload 7567
+mpecho Mighty Mouse flies back in from above.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7568
+Keywords   Citizen~
+Short      citizen~
+Long       A colony citizen is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 1 0 0 5 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+VIPFlags   Russia~
+#ENDMOBILE
+
+#MOBILE
+Vnum       7570
+Keywords   Rokusho~
+Short      &zR&wo&B&Wk&wus&B&Wh&zo~
+Long       &zR&wo&B&Wk&wus&B&Wh&zo is standing here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc noquest nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 5 200 65
+Attribs    25 25 25 25 25 25 25
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  fight_prog~
+Arglist   15~
+Comlist   say Chanbara Sword Strike!!!
+mpecho Rokusho uses his &z&CC&ch&ba&Bnb&ba&cr&Ca &GS&gw&co&gr&Gd!
+mea $n &zR&wo&Wk&wus&Wh&zo's stab &Yh&Oi&Yt&Os &zyou! &b-&B< &C[&c6329&C]
+&B>&b-
+mpdamage $n 6500
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   say I won't go out so easily!
+emote &bb&Be&bg&Bi&bn&Bs&w to
+&Yg&Ol&Yo&Ow&P.&p.&P.
+say Med.... MEDAFORCE!!!!!!
+mea $n &zR&wo&Wk&wus&Wh&zo's &CM&ce&CD&ca&BF&bo&BR&bc&BE&w damages $n!
+&b-&B< &C[&c30000&C]
+&B>&b-
+mpdamage $n 30000
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7599
+Keywords   last~
+Short      a newly created last~
+Long       Some god abandoned a newly created last here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#OBJECT
+Vnum     7500
+Keywords first~
+Type     trash~
+Short    a first~
+Long     A first is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7501
+Keywords Picnic Table~
+Type     furniture~
+Short    a Picnic Table~
+Long     A Picnic Table is here.~
+Values   8 0 1 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7502
+Keywords a Big Mac~
+Type     food~
+Short    a Big Mac~
+Long     A Yummy Big Mac is here.~
+WFlags   take~
+Values   30 30 0 0 0 0
+Stats    1 9 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7503
+Keywords Pack of McNuggets~
+Type     food~
+Short    a Pack of McNuggets~
+Long     A Pack of McNuggets is here.~
+WFlags   take~
+Values   35 0 0 0 0 0
+Stats    1 10 1 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7504
+Keywords Sweet Tab~
+Type     trash~
+Short    &RA &YS&Ow&pe&Oe&Yt &PT&pa&Pb~
+Long     &RA &YS&Ow&pe&Oe&Yt &PT&pa&Pb&G was dropped here.~
+WFlags   take~
+Values   6 60 60 60 1 0
+Stats    1 500 50 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7505
+Keywords Neo-Sugar Pouch~
+Type     pill~
+Short    &CN&ce&Co&z-&BS&bu&Bg&ba&Br &RP&ro&pu&rc&Rh&w~
+Long     &CN&ce&Co&z-&BS&bu&Bg&ba&Br &RP&ro&pu&rc&Rh&G was dropped here.~
+WFlags   take~
+Values   6 -1 -1 -1 1 0
+Stats    1 600 60 0 0
+Spells   'NONE' 'NONE' 'NONE'
+#ENDOBJECT
+
+#OBJECT
+Vnum     7506
+Keywords Kool-Aid~
+Type     drinkcon~
+Short    A glass of Lemonaide flavored Kool-Aid~
+Long     A glass of Kool-Aid is sitting here.~
+WFlags   take~
+Values   40 40 6 0 0 0
+Stats    1 100 10 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7507
+Keywords Vanilla Coke~
+Type     drinkcon~
+Short    A glass of Vanilla Coke~
+Long     Some Vanilla Coke lies here.~
+WFlags   take~
+Values   40 40 15 0 0 0
+Stats    1 100 150 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7508
+Keywords Comfy Bed~
+Type     furniture~
+Short    a Comfy Bed~
+Long     A Comfy Bed is here.~
+Values   3 0 2 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7509
+Keywords Bean Bag Chairs~
+Type     furniture~
+Short    Bean Bag Chair~
+Long     A Few Bean Bag Chairs are on the ground.~
+Values   5 0 2 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7547
+Keywords Shades~
+Type     device~
+Short    Shades~
+Long     Shades~
+WFlags   take eyes~
+Values   200 2147483647 90000000 31 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7555
+Keywords cigarette~
+Type     trash~
+Short    a cigarette~
+Long     A cigarette is here.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7590
+Keywords Chanbara Sword~
+Type     weapon~
+Short    &CC&ch&ba&Bnb&ba&cr&Ca &GS&gw&co&gr&Gd~
+Long     &z&CC&ch&ba&Bnb&ba&cr&Ca &GS&gw&co&gr&Gd~
+Flags    deathrot~
+WFlags   wield~
+Values   100 10 95 2 2147483647 0
+Stats    1 0 0 0 0
+Affect       -1 -1 250000 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7599
+Keywords A Beautiful Blowup Woman~
+Type     trash~
+Short    Blowup Doll~
+Long     A Baeutiful Blowup Doll~
+Flags    nodrop inventory~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    A Beautiful Blowup Woman~
+ExDesc       A Blowup Doll that is used for Fucking,Oral, or Anal, 
+Hope You have a good time with it
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#ROOM
+Vnum     7500
+Name     Transport Pad: Moscow, Russia~
+Sector   city~
+Flags    docking~
+Desc     Welcome to Russia, one of the largest countries in the world. This is the
+capital city of Moscow. There are shuttles and small, private crafts are
+flying to and from the transport pad. Technicians scurry about with their
+duties, from refueling ships to directing them into the proper docking
+bays and running maintenance checks on the various ships. There is
+constant flurry of activity and various announcements are made in Russian
+and English on the incoming and outgoing flights as well as whic ports the
+shuttles were docking at and launching from.
+~
+#EXIT
+Direction north~
+ToRoom    7596
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    800
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7501
+Name     Russia Colony Streets~
+Sector   city~
+Desc     The Russian colony streets run north to south. Continue north to find out
+what this colony has to offer, or return south to exit.
+~
+#EXIT
+Direction north~
+ToRoom    7502
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7596
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7502
+Name     Russia Colony Streets~
+Sector   city~
+Desc     The Russian colony streets run north to south. Continue north to see what
+this colony has to offer, or return to your south to exit. An apartment
+building lies to your west.
+~
+#EXIT
+Direction north~
+ToRoom    7503
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7501
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7542
+Flags     isdoor~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7503
+Name     Russia Colony Streets~
+Sector   city~
+Desc     The Russian colony streets run north to south. Continue north to see what
+this colony has to offer, or return to the south to exit. A bank lies to
+the east.
+~
+#EXIT
+Direction north~
+ToRoom    7504
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7528
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7502
+#ENDEXIT
+
+Reset M 0 7568 3 7503
+Reset M 0 7568 3 7503
+#ENDROOM
+
+#ROOM
+Vnum     7504
+Name     Russia Colony Streets Crossways~
+Sector   city~
+Desc     Here the colony streets cross the path of a short dirt road. Contine north
+to explore the rest of the streets, south east to explore the dirt path,
+or return south to exit.
+~
+#EXIT
+Direction north~
+ToRoom    7506
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7503
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    7548
+#ENDEXIT
+
+Reset M 0 7568 1 7504
+Reset D 0 7504 0 0
+#ENDROOM
+
+#ROOM
+Vnum     7505
+Name     Russia Item Shop~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     7506
+Name     Russia Colony Streets~
+Sector   city~
+Desc     The Russian colony streets end here. A food court lies to your north,  a
+dirt road to your west, and the crossways to your south. The Russian
+colony streets continue to the east. 
+~
+#EXIT
+Direction north~
+ToRoom    7545
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7530
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7504
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7507
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7507
+Name     A Dirt Path~
+Sector   city~
+Desc     This dirt path seems to go nowhere, but who knows, it may be worth a trek
+for those curious minds.
+~
+#EXIT
+Direction east~
+ToRoom    7506
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7508
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7508
+Name     A Dirt Path~
+Sector   city~
+Desc     This dirt path has led you to a bridge that runs to the north. Odd, but
+worth a venture. 
+~
+#EXIT
+Direction north~
+ToRoom    7509
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7507
+#ENDEXIT
+
+Reset M 0 7568 6 7508
+Reset M 0 7568 6 7508
+Reset M 0 7568 6 7508
+#ENDROOM
+
+#ROOM
+Vnum     7509
+Name     A Bridge~
+Sector   city~
+Desc     The bridge continues south, and you can see a dirt path, possibly the same
+dirt path you have already traveled, it all looks the same...
+~
+#EXIT
+Direction north~
+ToRoom    7510
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7508
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7510
+Name     A Bridge~
+Sector   city~
+Desc     This old bridge continues south, or can lead you back to the grass by going
+north. 
+~
+#EXIT
+Direction north~
+ToRoom    7511
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7509
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7511
+Name     A Bridge~
+Sector   city~
+Desc     An old bridge, you see some odd looking bushes off to the west.
+Check out this strange foiliage, or contue south along the bridge.
+~
+#EXIT
+Direction north~
+ToRoom    7512
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7510
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7560
+Flags     hidden~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7512
+Name     A Dirt Road~
+Sector   city~
+Desc     This dirt road has led you to a bridge. Follow it south to see where it
+leads.
+~
+#EXIT
+Direction east~
+ToRoom    7513
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7511
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7513
+Name     Tall Grass~
+Sector   city~
+Flags    nomob~
+Desc     The grass is tall here, and you can barely find your way. Seems to be a
+road to the west though.
+~
+#EXIT
+Direction east~
+ToRoom    7514
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7512
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7514
+Name     Lake Front~
+Sector   city~
+Flags    nomob~
+Desc     &x            &w^^^^                   &Y@@@@@@@@@
+       &w^^^^       ^^^^            &Y@@@@@@@@@@@@@@@
+                            &Y@@@@@@@@@@@@@@@@@@             &w^^^^
+                           &Y@@@@@@@@@@@@@@@@@@@@
+ &B-=-=- -= -=-=-= -=-=-=-=- &r#################### &B-=-=-=- -=-=-=-=-=--=-
+ &b-         ==   -  =       &O"""""""""""""""""""" &b=       ==     --=
+ &B  =      ==      =- -- -=  &O""""""""""""" """"  &B=     -=-    = =-=  =--
+ &b  -  --     =         -      &O""""""  "" """    &b   =- - ==  =- -
+ &B-  -       - =      -           &O"" """"""  &B-      ==  -            -=
+ &b      =             -        =      =      =-   -=             =
+~
+#EXIT
+Direction east~
+ToRoom    7515
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7513
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7515
+Name     Tall Grass~
+Sector   city~
+Desc     Your path to the Lake Front has taken you through the grass, but do not
+fret! You can see it from here! Just continue to the west.
+~
+#EXIT
+Direction west~
+ToRoom    7514
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    7516
+#ENDEXIT
+
+Reset M 0 7568 8 7515
+Reset M 0 7568 8 7515
+#ENDROOM
+
+#ROOM
+Vnum     7516
+Name     Water Front Path~
+Sector   city~
+Desc     The path to the Lake Front continues to the northwest through the grass.
+It's quite a sight to see. 
+~
+#EXIT
+Direction northwest~
+ToRoom    7515
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    7517
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   heal~
+Comlist   mpat hologram mpforce hologram mpat kerepres mpdamage kerepres 30000
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     7517
+Name     Water Front Path~
+Sector   city~
+Desc     The path to the lake begins here and continues to the northwest. Follow it
+to see the spectacular view.
+~
+#EXIT
+Direction south~
+ToRoom    7530
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    7516
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7518
+Name     Tall Grass~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    7519
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7519
+Name     Tall Grass~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    7520
+Flags     isdoor secret hidden searchable~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7518
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7520
+Name     Russia Military Base~
+Sector   city~
+Desc     You enter A Highly Operated Military Office From Russia.
+~
+#EXIT
+Direction north~
+ToRoom    7521
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7522
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7519
+Flags     isdoor~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7521
+Name     Russia Factory~
+Sector   city~
+Flags    factory~
+Desc     You walk into a factory that has been made by the Russia soldiers not to
+long ago. You may practice your making of weapons and armor here
+~
+#EXIT
+Direction south~
+ToRoom    7520
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7522
+Name     Russia Hallway~
+Sector   city~
+Desc     You begin to walk the halls of the Military Base
+~
+#EXIT
+Direction north~
+ToRoom    7524
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7525
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7523
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7520
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7523
+Name     Military Testing Room~
+Sector   city~
+Desc     Here you see A Scientist testing on a Mobile Suit, You not want to disturb
+him of his testing
+~
+#EXIT
+Direction north~
+ToRoom    7522
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7524
+Name     Lounge~
+Sector   city~
+Flags    safe~
+Desc     Here you see the Lounge of the Soldiers and Scientist, they rest here and
+shoot the Bull awhile.
+~
+#EXIT
+Direction south~
+ToRoom    7522
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7525
+Name     Russia Hallway~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    7526
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7527
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7522
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7526
+Name     Weapon Shop~
+Sector   city~
+Desc     Not to far from you, you see a keeper selling weapons
+&B say Keeper to fetch him
+~
+#EXIT
+Direction south~
+ToRoom    7525
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7527
+Name     Military Office~
+Sector   city~
+Desc     You walk into the Office of the Superiors. They donot seem interested in
+you
+~
+#EXIT
+Direction west~
+ToRoom    7525
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7528
+Name     Bank of Russia~
+Sector   city~
+Flags    bank~
+Desc     The Bank of Russia can be used for all your banking needs while on this
+colony. Simply use your standard banking commands.
+~
+#EXIT
+Direction west~
+ToRoom    7503
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7529
+Name     Russia Armor Shop~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     7530
+Name     Russia Colony Streets~
+Sector   city~
+Desc     The streets here run east to west. A water front path lies to your north,
+or you can continue east along the streets.
+~
+#EXIT
+Direction north~
+ToRoom    7517
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7531
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7506
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7531
+Name     Russia Colony Streets~
+Sector   city~
+Desc     The colony streets continue no longer to the east. Instead, there is a
+nurses home there. To your north is Russia's famous Fun Fun Training
+Grounds. Fun Fun!
+~
+#EXIT
+Direction north~
+ToRoom    7532
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7547
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7530
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    7592
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7532
+Name     FunFun Training Grounds~
+Sector   city~
+Desc     Welcome to the main center of Russia's training ground. The technicians who
+created this system, based the Holo-Fighters off of Anime's and Video
+Games to increase the fun. The Holo-Fighters will repop upon death to
+decrease wait time.
+~
+#EXIT
+Direction north~
+ToRoom    7533
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7534
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7531
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7535
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    7540
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    7583
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    7536
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    7537
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    7538
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    7539
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7533
+Name     Difficulty: 1~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction south~
+ToRoom    7532
+#ENDEXIT
+
+Reset M 0 7560 1 7533
+#ENDROOM
+
+#ROOM
+Vnum     7534
+Name     Difficulty: 2~
+Sector   city~
+#EXIT
+Direction west~
+ToRoom    7532
+#ENDEXIT
+
+Reset M 0 7561 1 7534
+#ENDROOM
+
+#ROOM
+Vnum     7535
+Name     Difficulty: 3~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    7532
+#ENDEXIT
+
+Reset M 0 7564 1 7535
+#ENDROOM
+
+#ROOM
+Vnum     7536
+Name     Difficuly: 6~
+Sector   city~
+#EXIT
+Direction southwest~
+ToRoom    7532
+#ENDEXIT
+
+Reset M 0 7558 1 7536
+#ENDROOM
+
+#ROOM
+Vnum     7537
+Name     Difficuly: 7~
+Sector   city~
+#EXIT
+Direction southeast~
+ToRoom    7532
+#ENDEXIT
+
+Reset M 0 7559 1 7537
+#ENDROOM
+
+#ROOM
+Vnum     7538
+Name     Difficuly: 8~
+Sector   city~
+#EXIT
+Direction northwest~
+ToRoom    7532
+#ENDEXIT
+
+Reset M 0 7566 1 7538
+#ENDROOM
+
+#ROOM
+Vnum     7539
+Name     Difficuly: 9~
+Sector   city~
+#EXIT
+Direction northeast~
+ToRoom    7532
+#ENDEXIT
+
+Reset M 0 7567 1 7539
+#ENDROOM
+
+#ROOM
+Vnum     7540
+Name     Difficulty: 4~
+Sector   city~
+#EXIT
+Direction down~
+ToRoom    7532
+#ENDEXIT
+
+Reset M 0 7556 1 7540
+#ENDROOM
+
+#ROOM
+Vnum     7541
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction south~
+ToRoom    7542
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7542
+Name     An Apartment Building~
+Sector   city~
+Flags    nomob indoors~
+Desc     The Russian apartment complex, you can purchase a home here if you wish to
+take up residency on the Russian colony.
+~
+#EXIT
+Direction north~
+ToRoom    7541
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7502
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7544
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7543
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7543
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction east~
+ToRoom    7542
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7544
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction north~
+ToRoom    7542
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7545
+Name     Food Court~
+Sector   field~
+Desc     A food court, you see stores to satisfy all your hungers.
+~
+#EXIT
+Direction north~
+ToRoom    7599
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7597
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7506
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7598
+#ENDEXIT
+
+Reset O 0 7501 1 7545
+#ENDROOM
+
+#ROOM
+Vnum     7546
+Name     Russia Training Area~
+Sector   city~
+Flags    nomob safe~
+#EXIT
+Direction west~
+ToRoom    7513
+Flags     isdoor~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7547
+Name     Nurse Kayla's Home~
+Sector   city~
+Flags    indoors heal~
+Desc     Welcome to nurse Kayla's home. Her place is well decorated, even though it
+seems a bit unfurnished. She awaits young people who get hurt from
+training to fix them up. She loves her job, and the smiles on the peoples
+faces she helps, keeps her going.
+~
+#EXIT
+Direction west~
+ToRoom    7531
+#ENDEXIT
+
+Reset M 0 7554 1 7547
+#ENDROOM
+
+#ROOM
+Vnum     7548
+Name     A Short Dirt Path~
+Sector   city~
+Flags    nomob~
+Desc     This short dirt path seems to lead to an inn! Yes, you can see it to the
+southeast. It doesn't look too shabby either...
+~
+#EXIT
+Direction northwest~
+ToRoom    7504
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    7549
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7549
+Name     The Russian Inn~
+Sector   city~
+Flags    indoors hotel~
+Desc     The famous Russian Inn! Stay here for all your neccessary accomedations
+while on Russia. 
+~
+#EXIT
+Direction north~
+ToRoom    7550
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7551
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7552
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    7548
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7550
+Name     Hotel Room~
+Sector   city~
+Flags    indoors hotel~
+Desc     Russian hotel rooms come complete with comfy beds, standard in every room!
+~
+#EXIT
+Direction south~
+ToRoom    7549
+#ENDEXIT
+
+Reset O 0 7508 1 7550
+#ENDROOM
+
+#ROOM
+Vnum     7551
+Name     Hotel Room~
+Sector   city~
+Flags    indoors hotel~
+Desc     Russian hotel rooms come complete with comfy beds, standard in every
+room!
+~
+#EXIT
+Direction west~
+ToRoom    7549
+#ENDEXIT
+
+Reset O 0 7508 1 7551
+#ENDROOM
+
+#ROOM
+Vnum     7552
+Name     Hotel Room~
+Sector   city~
+Flags    indoors hotel~
+Desc     Russian hotel rooms come complete with comfy beds, standard in every
+room!
+~
+#EXIT
+Direction north~
+ToRoom    7549
+#ENDEXIT
+
+Reset O 0 7508 1 7552
+#ENDROOM
+
+#ROOM
+Vnum     7553
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     7554
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     7555
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     7556
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     7557
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     7558
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     7559
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     7560
+Name     Bushes~
+Sector   city~
+Flags    nomob nofloor~
+Desc     Ahh! the bushes are not near the ground, and you fall! Right down a strange
+hole! 
+~
+#EXIT
+Direction east~
+ToRoom    7511
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    7561
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7561
+Name     A Strange Hole~
+Sector   city~
+Flags    indoors~
+Desc     Odd, you seem to have stumbled upon some kind of hide out. The punk says
+its okay to enter, so maybe you should. Not like you have a choice...
+~
+#EXIT
+Direction south~
+ToRoom    7562
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset M 0 7562 1 7561
+Reset D 0 7561 2 1
+#ENDROOM
+
+#ROOM
+Vnum     7562
+Name     A Small Room~
+Sector   city~
+Flags    indoors~
+Desc     This small room seems to be the entrance to a much larger warehouse. Maybe
+you should continue in... 
+~
+#EXIT
+Direction north~
+ToRoom    7561
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7563
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7563
+Name     Warehouse~
+Sector   city~
+Flags    indoors~
+Desc     This warehouse is quite large, and you could easily get lost in here.
+Anyway, perhaps you should just wander around until you find something of
+interest. 
+~
+#EXIT
+Direction east~
+ToRoom    7564
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7566
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7562
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7564
+Name     Warehouse~
+Sector   city~
+Flags    indoors~
+Desc     Man, this warehouse is big. And where is that music coming from?
+~
+#EXIT
+Direction south~
+ToRoom    7565
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7563
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    7504
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7565
+Name     Warehouse~
+Sector   city~
+Flags    indoors~
+Desc     Man, this warehouse is big. And where is that music coming from?
+~
+#EXIT
+Direction north~
+ToRoom    7564
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7566
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7566
+Name     Warehouse~
+Sector   city~
+Flags    indoors~
+Desc     Man, this warehouse is big. And where is that music coming from?
+~
+#EXIT
+Direction north~
+ToRoom    7563
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7565
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7567
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7567
+Name     A Party Room~
+Sector   city~
+Flags    prototype~
+Desc     &C#        &P#&p#&P#&p#&P#&p#&P#&p#&P#&p#
+    &C#&c#       &P#&p#&P#&p#&P#&p#&P#&p#
+    &C#&c#&C#      &P#&p#&P#&p#&P#&p#&P#
+    &C#&c#&C#&c#     &P#&p#&P#&p#&P#&p#
+    &C#&c#&C#&c#&C#    &P#&p#&P#&p#&P#
+    &C#&c#&C#&c#&C#&c#   &P#&p#&P#&p#
+    &C#&c#&C#&c#&C#&c#&C#  &P#&p#&P#
+    &C#&c#&C#&c#&C#&c#&C#&c# &P#&p#
+    &C#&c#&C#&c#&C#&c#&C#&c#&C#&P#
+            &B#&G#&g#&G#&g#&G#&g#&G#&g#
+           &b#&B# &g#&G#&g#&G#&g#&G#&g#
+          &B#&b#&B#  &G#&g#&G#&g#&G#&g#
+         &b#&B#&b#&B#   &g#&G#&g#&G#&g#
+        &B#&b#&B#&b#&B#    &G#&g#&G#&g#
+       &b#&B#&b#&B#&b#&B#     &g#&G#&g#
+      &B#&b#&B#&b#&B#&b#&B#      &G#&g#
+     &b#&B#&b#&B#&b#&B#&b#&B#       &g#
+    &B#&b#&B#&b#&B#&b#&B#&b#&B#
+       &b#&B#&b#&B#&b#&B#
+          &B#&b#&B#
+           &b#
+~
+#EXIT
+Direction north~
+ToRoom    7566
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7568
+Name     The Real Party~
+Sector   city~
+Desc     This is the confined party/hang out room. The lights are quite dim, with
+only one exit, up the ladder to the warehouse. This is usually where all
+the partiers run to and hide from the police when they come searching to
+bust them down.
+~
+#EXIT
+Direction up~
+ToRoom    7565
+#ENDEXIT
+
+Reset O 0 7509 1 7568
+#ENDROOM
+
+#ROOM
+Vnum     7569
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     7570
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     7571
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     7572
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     7573
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     7574
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     7575
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     7576
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     7577
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     7578
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     7579
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     7580
+Name     Hidden Difficulty Chamber~
+Sector   city~
+Flags    nomob~
+Reset M 0 7570 1 7580
+  Reset E 1 7590 1 16
+#ENDROOM
+
+#ROOM
+Vnum     7581
+Name     Gundam Z: Cockpit~
+Sector   city~
+Flags    nomob~
+Desc     Times fly by and only The Z can past the the Times of Hate, To Noone that
+knows soon they will fear The Gundam
+Z
+~
+#ENDROOM
+
+#ROOM
+Vnum     7582
+Name     Hell's Entrance~
+Sector   city~
+Flags    nomob~
+Desc     You enter War's Hell Warrior, famous for battles, This suit is highly
+Dangerious, becareful of This Suit.
+To enter Cockpit,&B say, Cockpit
+~
+#ENDROOM
+
+#ROOM
+Vnum     7583
+Name     Difficulty: 5~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction up~
+ToRoom    7532
+#ENDEXIT
+
+Reset M 0 7557 1 7583
+#ENDROOM
+
+#ROOM
+Vnum     7584
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     7585
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     7586
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     7587
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     7588
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     7589
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     7590
+Name     Entrance of Red Dragon~
+Sector   city~
+Flags    nomob~
+Desc     From here you search the area of The Red Dragon, Have a Nice Time, and
+Cheers for Victory on
+here.
+~
+#ENDROOM
+
+#ROOM
+Vnum     7591
+Name     Void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     7592
+Name     Russian Hospital~
+Sector   city~
+Flags    nomob heal~
+Desc     You can heal your wounds here
+~
+#EXIT
+Direction down~
+ToRoom    7531
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7593
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     7594
+Name     Turret 2~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     7595
+Name     Turret2~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction east~
+ToRoom    7598
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7596
+Name     Security Office~
+Sector   city~
+Flags    indoors~
+Desc     This is a small customs office, a lone window is open, a fan is blowing in
+the corner, the heat is almost too much for the guard. He's simply here to
+warn you that wanted people have to watch out on this colony, as there are
+many police.
+~
+#EXIT
+Direction north~
+ToRoom    7501
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7500
+#ENDEXIT
+
+Reset M 0 7565 1 7596
+#ENDROOM
+
+#ROOM
+Vnum     7597
+Name     Drinks R Us~
+Sector   city~
+Desc     Yummy, drinks to ease those nasty periods of thirst!
+~
+#EXIT
+Direction west~
+ToRoom    7545
+#ENDEXIT
+
+Reset M 0 7555 1 7597
+  Reset G 1 7506 1
+  Reset G 1 7507 1
+#ENDROOM
+
+#ROOM
+Vnum     7598
+Name     Candy Store~
+Sector   city~
+Flags    nomob~
+Desc     Yummy, candy! Youve always had a sweet tooth... indulge yourself!
+~
+#EXIT
+Direction east~
+ToRoom    7545
+#ENDEXIT
+
+Reset M 0 7553 1 7598
+  Reset G 1 7504 1
+  Reset G 1 7505 1
+#ENDROOM
+
+#ROOM
+Vnum     7599
+Name     McDonalds~
+Sector   city~
+Flags    nomob~
+Desc     McDonalds on Russia serves the same things as it does anywhere else, so
+order away!
+~
+#EXIT
+Direction south~
+ToRoom    7545
+#ENDEXIT
+
+Reset M 0 7552 1 7599
+  Reset G 1 7503 1
+  Reset G 1 7502 1
+#ENDROOM
+
+#ENDAREA

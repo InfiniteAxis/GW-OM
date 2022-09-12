@@ -1,0 +1,1778 @@
+#AREA   {PROTO} Serek's area in progress~
+
+
+
+#AUTHOR Serek~
+
+#RANGES
+0 0 0 0
+$
+
+#FLAGS
+0
+
+#ECONOMY -1 999992000
+
+#MOBILES
+#6600
+base security guard~
+&wA &zB&Was&ze &CS&ce&Cc&cu&Cr&ci&Ct&cy &BG&bu&Bar&bd&w~
+&wA &zb&Was&ze &Cs&ce&Cc&cu&Cr&ci&Ct&cy &Bg&bu&Bar&bd&w stands here at attention.
+~
+~
+3 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+500 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 3
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Weapons are not allowed inside of the barraks.
+say Please put your weapons away, thank you.
+~
+|
+#6601
+dummy target~
+&wA &OD&Wum&Om&Wy &RT&wa&rr&wg&Re&wt~
+&wA &Od&Wum&Om&Wy &Rt&wa&rr&wg&Re&wt was posted here.
+~
+~
+201326595 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpmload 6601
+~
+|
+#6602
+kelly store manager~
+&PK&pell&Py &wthe &WS&wto&Wr&we Manager~
+&PK&pell&Py &wthe &Ws&wto&Wr&we manager stands here patiently.
+~
+~
+167772163 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 32 3
+0 0 0 0 0 0 0 0
+#6603
+Armor Store Manager~
+armor store manager~
+Armor store manager (temp)
+~
+~
+167772163 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 32 3
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#6600
+circular disc~
+&wA &Ws&zma&Wll &Gc&girc&Gul&gar &Cd&cis&Cc&w~
+&wA &Ws&zma&Wll &Gc&girc&Gul&gar &Cd&cis&Cc&w was setup here.~
+~
+13 1 0
+0 0 0 0
+1 0 0
+#6601
+sergeants bunk~
+&wThe &OSe&Yrg&Oean&Yt'&Os &wB&Wun&wk~
+&wThe &Ose&Yrg&Oean&Yt'&Os &wb&Wun&wk lays streched out here.~
+~
+12 0 0
+0 0 0 0
+1 0 0
+#6602
+para ordnance p12-45~
+&cP&war&ca &cO&wr&cdn&wanc&ce &wp&W12&w-&W45&w~
+&cP&war&ca &cO&wr&cdn&wanc&ce &wp&W12&w-&W45&w was dropped here.~
+~
+5 8192 8193
+100 10 50 6 500 500
+3 9000 900
+#6603
+large lunch pack~
+&wa large lunch pack~
+&wa large lunch pack was dropped here.~
+~
+19 8192 1
+60 60 0 0
+1 5 0
+#6604
+poly scout canteen ~
+&wa poly scout canteen~
+A poly scout canteen was dropped here.~
+~
+17 0 16385
+40 40 0 0
+1 9 0
+#6605
+an ammo clip~
+An Ammo Clip~
+An Ammo Clip was dropped here.~
+~
+57 0 1
+1000 1000 0 0
+1 200 20
+#0
+
+
+#ROOMS
+#6600
+Wasteland Earth~
+~
+0 1073741888 0 1 0
+D3
+~
+~
+0 -1 6601
+D7
+~
+~
+0 -1 6602
+S
+#6601
+Wandering Wasteland Earth~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 6602
+D1
+~
+~
+0 -1 6600
+S
+#6602
+Wandering Wasteland Earth~
+~
+0 1073741824 0 1 0
+D2
+~
+~
+0 -1 6601
+D7
+~
+~
+0 -1 6604
+D8
+~
+~
+0 -1 6600
+S
+#6603
+Wandering Wasteland Earth~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 6604
+D3
+~
+~
+0 -1 6605
+D9
+~
+~
+0 -1 6606
+S
+#6604
+Wandering Wasteland Earth~
+~
+0 1073741824 0 1 0
+D2
+~
+~
+0 -1 6603
+D8
+~
+~
+0 -1 6602
+D9
+~
+~
+0 -1 6605
+S
+#6605
+Wandering Wasteland Earth~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 6603
+D2
+~
+~
+0 -1 6606
+D3
+~
+~
+0 -1 6610
+D6
+~
+~
+0 -1 6604
+D7
+~
+~
+0 -1 6611
+S
+#6606
+Wandering Wasteland Earth~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 6605
+D2
+~
+~
+0 -1 6607
+D6
+~
+~
+0 -1 6603
+D9
+~
+~
+0 -1 6608
+S
+#6607
+Wandering Wasteland Earth~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 6606
+D3
+~
+~
+0 -1 6608
+D8
+~
+~
+0 -1 6612
+S
+#6608
+Wandering Wasteland Earth~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 6607
+D6
+~
+~
+0 -1 6606
+D7
+~
+~
+0 -1 6609
+S
+#6609
+Wandering Wasteland Earth~
+~
+0 1073741824 0 1 0
+D6
+~
+~
+0 -1 6610
+D8
+~
+~
+0 -1 6608
+S
+#6610
+Wandering Wasteland Earth~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 6611
+D1
+~
+~
+0 -1 6605
+D9
+~
+~
+0 -1 6609
+S
+#6611
+Wandering Wasteland Earth~
+~
+0 1073741824 0 1 0
+D2
+~
+~
+0 -1 6610
+D8
+~
+~
+0 -1 6605
+S
+#6612
+A Cleared Out Landing~
+Amongst the wastes lays a round fenced in cleared out landing. The ground
+here is soft like someone has been working around these parts of the
+wastelands.  In the center of the landing in clear sight is a small
+squared off cement block with a glowing circular disc in the center of it.
+Next to the circulare disc computer planted on posts with a small
+microphone for the password to be spoken into.
+~
+0 1073741824 0 1 0
+D7
+~
+~
+0 -1 6607
+E
+computer~
+&cIn red letters, displayed is:
+&rPlease say the &Rsecret &rpassword.
+~
+> speech_prog secret~
+mea $n &cThe circular disc grows brighter and you step in.
+mea $n You are blinded by a bright flash of light, and appear somewhere else.
+mer $n The circular disc grows brighter as $n steps in.
+mptransfer $n 6613
+mpat $n mpforce $n look
+mpat $n mer $n A bright flash blinds you, and $n appears through the portal.
+~
+|
+S
+#6613
+&zM&Wai&zn &RP&ror&Rt&ra&Rl &GR&goo&Gm&w~
+The same disc that was outside lays in the center of this large clean room.
+The walls have been made out of some reinforced metallic material, which
+have small lights embeded into them. This look like the legendary military
+base used for highly technologically advanced testing.
+~
+0 1073741824 0 1 0
+D6
+~
+~
+0 -1 6614
+D7
+~
+~
+0 -1 6617
+D8
+~
+~
+0 -1 6615
+D9
+~
+~
+0 -1 6616
+> speech_prog return~
+mea $n The circular disc grows brighter and you step in.
+mea $n You are blinded by a bright flash of light, and appear somewhere else.
+mer $n The circular disc grows brighter as $n steps in.
+mptransfer $n 6612
+mpat $n mpforce $n look
+mpat $n mer $n A bright flash blinds you, and $n appears through the portal.
+~
+|
+S
+#6614
+&wA &PP&po&Pr&pta&Pl &CR&coo&Cm&w~
+A round light bulb hangs from the center of the room providing just enough
+light to see the small portal that has been setup in the center of this
+large room.  A small sign hangs on a metallic post that hangs down from
+the side of the entrance to this room.
+~
+0 1073741824 0 1 0
+D9
+~
+~
+0 -1 6613
+E
+sign~
+&wThe sign hanged on the post reads:
+&cSay &C'&cactivate&C' &cto activate the portal.
+~
+> speech_prog activate~
+mea $n The circular disc grows brighter and you step in.
+mea $n You are blinded by a bright flash of light, and appear somewhere else.
+mer $n The circular disc grows brighter as $n steps in.
+mptransfer $n 6618
+mpat $n mpforce $n look
+mpat $n mer $n A bright flash blinds you, and $n appears through the portal.
+~
+|
+S
+#6615
+&wA &PP&po&Pr&pta&Pl &CR&coo&Cm&w~
+A round light bulb hangs from the center of the room providing just enough
+light to see the small portal that has been setup in the center of this
+large room.  A small sign hangs on a metallic post that hangs down from
+the side of the entrance to this room.
+~
+0 1073741824 0 1 0
+D7
+~
+~
+0 -1 6613
+E
+sign~
+&wThe sign hanged on the post reads:
+&cSay &C'&cactivate&C' &cto activate the portal.
+~
+> speech_prog activate~
+mea $n The circular disc grows brighter and you step in.
+mea $n You are blinded by a bright flash of light, and appear somewhere else.
+mer $n The circular disc grows brighter as $n steps in.
+mptransfer $n 6631
+mpat $n mpforce $n look
+mpat $n mer $n A bright flash blinds you, and $n appears through the portal.
+~
+|
+S
+#6616
+&wA &PP&po&Pr&pta&Pl &CR&coo&Cm&w~
+A round light bulb hangs from the center of the room providing just enough
+light to see the small portal that has been setup in the center of this
+large room.  A small sign hangs on a metallic post that hangs down from
+the side of the entrance to this room.
+~
+0 1073741824 0 1 0
+D6
+~
+~
+0 -1 6613
+E
+sign~
+&wThe sign hanged on the post reads:
+&cSay &C'&cactivate&C' &cto activate the portal.
+~
+> speech_prog activate~
+mea $n The circular disc grows brighter and you step in.
+mea $n You are blinded by a bright flash of light, and appear somewhere else.
+mer $n The circular disc grows brighter as $n steps in.
+mptransfer $n 6644
+mpat $n mpforce $n look
+mpat $n mer $n A bright flash blinds you, and $n appears through the portal.
+~
+|
+S
+#6617
+&wA &PP&po&Pr&pta&Pl &CR&coo&Cm&w~
+A round light bulb hangs from the center of the room providing just enough
+light to see the small portal that has been setup in the center of this
+large room.  A small sign hangs on a metallic post that hangs down from
+the side of the entrance to this room.
+~
+0 1073741824 0 1 0
+D8
+~
+~
+0 -1 6613
+E
+sign~
+&wThe sign hanged on the post reads:
+&cSay &C'&cactivate&C' &cto activate the portal.
+~
+> speech_prog activate~
+mea $n The circular disc grows brighter and you step in.
+mea $n You are blinded by a bright flash of light, and appear somewhere else.
+mer $n The circular disc grows brighter as $n steps in.
+mptransfer $n 6644
+mpat $n mpforce $n look
+mpat $n mer $n A bright flash blinds you, and $n appears through the portal.
+~
+|
+S
+#6618
+&wA &PP&po&Pr&pta&Pl &CR&coo&Cm&w~
+A round light bulb hangs from the center of the room providing just enough
+light to see the small portal that has been setup in the center of this
+large room.  A small sign hangs on a metallic post that hangs down from
+the side of the entrance to this room.
+~
+0 1073741824 0 1 0
+D8
+~
+~
+0 -1 6619
+E
+sign~
+&wThe sign hanged on the post reads:
+&cSay &C'&cactivate&C' &cto activate the portal.
+~
+> speech_prog activate~
+mea $n The circular disc grows brighter and you step in.
+mea $n You are blinded by a bright flash of light, and appear somewhere else.
+mer $n The circular disc grows brighter as $n steps in.
+mptransfer $n 6614
+mpat $n mpforce $n look
+mpat $n mer $n A bright flash blinds you, and $n appears through the portal.
+~
+> speech_prog activate~
+mea $n The circular disc grows brighter and you step in.
+mea $n You are blinded by a bright flash of light, and appear somewhere else.
+mer $n The circular disc grows brighter as $n steps in.
+mptransfer $n 6614
+mpat $n mpforce $n look
+mpat $n mer $n A bright flash blinds you, and $n appears through the portal.
+~
+|
+S
+#6619
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D7
+~
+~
+0 -1 6618
+D8
+~
+~
+0 -1 6620
+S
+#6620
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 6671
+D2
+~
+~
+0 -1 6621
+D7
+~
+~
+0 -1 6619
+S
+#6621
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 6620
+D6
+~
+~
+0 -1 6671
+D9
+~
+~
+0 -1 6622
+S
+#6622
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D2
+~
+~
+0 -1 6623
+D6
+~
+~
+0 -1 6621
+S
+#6623
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 6622
+D9
+~
+~
+0 -1 6624
+S
+#6624
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D6
+~
+~
+0 -1 6623
+D8
+~
+~
+0 -1 6625
+S
+#6625
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D2
+~
+~
+0 -1 6626
+D7
+~
+~
+0 -1 6624
+S
+#6626
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 6625
+D8
+~
+~
+0 -1 6627
+S
+#6627
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 6628
+D2
+~
+~
+0 -1 6629
+D7
+~
+~
+0 -1 6626
+S
+#6628
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 6633
+D3
+~
+~
+0 -1 6627
+D6
+~
+~
+0 -1 6632
+D9
+~
+~
+0 -1 6629
+S
+#6629
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 6627
+D6
+~
+~
+0 -1 6628
+D9
+~
+~
+0 -1 6630
+S
+#6630
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D6
+~
+~
+0 -1 6629
+D9
+~
+~
+0 -1 6631
+S
+#6631
+&wA &PP&po&Pr&pta&Pl &CR&coo&Cm&w~
+~
+0 1073741824 0 1 0
+D6
+~
+~
+0 -1 6630
+> speech_prog activate~
+mea $n The circular disc grows brighter and you step in.
+mea $n You are blinded by a bright flash of light, and appear somewhere else.
+mer $n The circular disc grows brighter as $n steps in.
+mptransfer $n 6615
+mpat $n mpforce $n look
+mpat $n mer $n A bright flash blinds you, and $n appears through the portal.
+~
+|
+S
+#6632
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 6634
+D2
+~
+~
+0 -1 6633
+D9
+~
+~
+0 -1 6628
+S
+#6633
+&zB&Was&ze &RF&rou&Rn&rta&Rin &CR&coo&Cm&w~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 6632
+D3
+~
+~
+0 -1 6628
+D6
+~
+~
+0 -1 6634
+S
+#6634
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 6635
+D3
+~
+~
+0 -1 6632
+D9
+~
+~
+0 -1 6633
+S
+#6635
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D3
+~
+~
+0 -1 6634
+D6
+~
+~
+0 -1 6648
+D8
+~
+~
+0 -1 6636
+S
+#6636
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 6637
+D7
+~
+~
+0 -1 6635
+S
+#6637
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 6638
+D3
+~
+~
+0 -1 6636
+S
+#6638
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 6645
+D3
+~
+~
+0 -1 6637
+D8
+~
+~
+0 -1 6639
+S
+#6639
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D2
+~
+~
+0 -1 6640
+D6
+~
+~
+0 -1 6651
+D7
+~
+~
+0 -1 6638
+D8
+~
+~
+0 -1 6641
+S
+#6640
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 6639
+D3
+~
+~
+0 -1 6642
+S
+#6641
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D7
+~
+~
+0 -1 6639
+D8
+~
+~
+0 -1 6644
+S
+#6642
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 6640
+D2
+~
+~
+0 -1 6672
+D3
+~
+~
+0 -1 6643
+S
+#6643
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 6642
+S
+#6644
+&wA &PP&po&Pr&pta&Pl &CR&coo&Cm&w~
+A round light bulb hangs from the center of the room providing just enough
+light to see the small portal that has been setup in the center of this
+large room.  A small sign hangs on a metallic post that hangs down from
+the side of the entrance to this room. 
+~
+0 1073741824 0 1 0
+D7
+~
+~
+0 -1 6641
+E
+sign~
+&wThe sign hanged on the post reads:
+&cSay &C'&cactivate&C' &cto activate the portal.
+~
+> speech_prog activate~
+mea $n The circular disc grows brighter and you step in.
+mea $n You are blinded by a bright flash of light, and appear somewhere else.
+mer $n The circular disc grows brighter as $n steps in.
+mptransfer $n 6617
+mpat $n mpforce $n look
+mpat $n mer $n A bright flash blinds you, and $n appears through the portal.
+~
+> speech_prog activate~
+mea $n The circular disc grows brighter and you step in.
+mea $n You are blinded by a bright flash of light, and appear somewhere else.
+mer $n The circular disc grows brighter as $n steps in.
+mptransfer $n 6616
+mpat $n mpforce $n look
+mpat $n mer $n A bright flash blinds you, and $n appears through the portal.
+~
+|
+S
+#6645
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 6646
+D1
+~
+~
+0 -1 6649
+D2
+~
+~
+0 -1 6638
+S
+#6646
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D2
+~
+~
+0 -1 6645
+D7
+~
+~
+0 -1 6647
+S
+#6647
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 6656
+D8
+~
+~
+0 -1 6646
+D9
+~
+~
+0 -1 6648
+S
+#6648
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D6
+~
+~
+0 -1 6647
+D9
+~
+~
+0 -1 6635
+S
+#6649
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 6650
+D3
+~
+~
+0 -1 6645
+S
+#6650
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 6653
+D1
+~
+~
+0 -1 6652
+D2
+~
+~
+0 -1 6651
+D3
+~
+~
+0 -1 6649
+S
+#6651
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 6650
+D9
+~
+~
+0 -1 6639
+S
+#6652
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 6683
+D3
+~
+~
+0 -1 6650
+S
+#6653
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 6654
+D2
+~
+~
+0 -1 6650
+S
+#6654
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 6655
+D2
+~
+~
+0 -1 6653
+S
+#6655
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 6673
+D2
+~
+~
+0 -1 6654
+D7
+~
+~
+0 -1 6658
+S
+#6656
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 6657
+D2
+~
+~
+0 -1 6647
+S
+#6657
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D2
+~
+~
+0 -1 6656
+D6
+~
+~
+0 -1 6660
+S
+#6658
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 6659
+D8
+~
+~
+0 -1 6655
+S
+#6659
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 6661
+D2
+~
+~
+0 -1 6658
+S
+#6660
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 6662
+D1
+~
+~
+0 -1 6659
+D9
+~
+~
+0 -1 6657
+S
+#6661
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741828 0 1 0
+D2
+~
+~
+0 -1 6659
+D3
+~
+~
+0 -1 6662
+D6
+~
+~
+0 -1 6663
+S
+#6662
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741828 0 1 0
+D0
+~
+~
+0 -1 6665
+D1
+~
+~
+0 -1 6661
+D2
+~
+~
+0 -1 6660
+D7
+~
+~
+0 -1 6666
+S
+#6663
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741828 0 1 0
+D6
+~
+~
+0 -1 6664
+D9
+~
+~
+0 -1 6661
+S
+#6664
+&wA &PP&po&Pr&pta&Pl &CR&coo&Cm&w~
+~
+0 1073741828 0 1 0
+D9
+~
+~
+0 -1 6663
+S
+#6665
+&zB&Was&ze &RF&rou&Rn&rta&Rin &CR&coo&Cm&w~
+~
+0 1073741828 0 1 0
+D2
+~
+~
+0 -1 6662
+D3
+~
+~
+0 -1 6666
+S
+#6666
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741828 0 1 0
+D1
+~
+~
+0 -1 6665
+D7
+~
+~
+0 -1 6667
+D8
+~
+~
+0 -1 6662
+S
+#6667
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741828 0 1 0
+D3
+~
+~
+0 -1 6668
+D8
+~
+~
+0 -1 6666
+S
+#6668
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741828 0 1 0
+D1
+~
+~
+0 -1 6667
+D2
+~
+~
+0 -1 6696
+D3
+~
+~
+0 -1 6669
+S
+#6669
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741828 0 1 0
+D1
+~
+~
+0 -1 6668
+D9
+~
+~
+0 -1 6670
+S
+#6670
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D6
+~
+~
+0 -1 6669
+D9
+~
+~
+0 -1 6671
+S
+#6671
+&wA &GW&gi&Gnd&gin&Gg &YC&Oor&Yrid&Oor&w~
+~
+0 1073741824 0 1 0
+D3
+~
+~
+0 -1 6620
+D6
+~
+~
+0 -1 6670
+D9
+~
+~
+0 -1 6621
+S
+#6672
+&zB&Was&ze &RF&rou&Rn&rta&Rin &CR&coo&Cm&w~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 6642
+S
+#6673
+&wE&Wnt&zer&win&Wg &CSl&ceep&Cin&cg &wQu&Wart&wers~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+3 -1 6674
+D3
+~
+~
+0 -1 6655
+S
+#6674
+&wMi&Wl&zit&War&wy &BB&bar&Brak&bs&w~
+~
+0 1073741828 0 1 0
+D0
+~
+~
+0 -1 6677
+D1
+~
+~
+0 -1 6675
+D2
+~
+~
+0 -1 6678
+D3
+~
+~
+3 -1 6673
+S
+#6675
+&wMi&Wl&zit&War&wy &BB&bar&Brak&bs&w~
+~
+0 1073741828 0 1 0
+D1
+~
+~
+0 -1 6676
+D3
+~
+~
+0 -1 6674
+S
+#6676
+&wMi&Wl&zit&War&wy &BB&bar&Brak&bs&w~
+~
+0 1073741828 0 1 0
+D0
+~
+~
+0 -1 6679
+D1
+~
+~
+0 -1 6681
+D2
+~
+~
+0 -1 6680
+D3
+~
+~
+0 -1 6675
+S
+#6677
+An Empty Bunk~
+~
+0 1075840004 0 1 0
+D2
+~
+~
+0 -1 6674
+S
+#6678
+An Empty Bunk~
+~
+0 1075840004 0 1 0
+D0
+~
+~
+0 -1 6674
+S
+#6679
+An Empty Bunk~
+~
+0 1075840004 0 1 0
+D2
+~
+~
+0 -1 6676
+S
+#6680
+An Empty Bunk~
+~
+0 1075840004 0 1 0
+D0
+~
+~
+0 -1 6676
+S
+#6681
+&wMi&Wl&zit&War&wy &BB&bar&Brak&bs&w~
+~
+0 1073741828 0 1 0
+D1
+~
+~
+0 -1 6682
+D3
+~
+~
+0 -1 6676
+S
+#6682
+&OSe&Yrg&Oean&Yt'&Os &wB&Wun&wk~
+The biggest and main bunk belongs to the sergeant. Here is where he can
+take a load off from his daily activities that he does through out the
+base.  A magical glow surrounds this place, forming a warm fuzzy feeling
+fill through  your body. 
+~
+0 1082130692 2 1 0
+D3
+~
+~
+0 -1 6681
+S
+#6683
+&wEn&Wte&zri&Wn&wg &CB&ca&Cse&c's &wG&Wy&wm~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+3 -1 6684
+D3
+~
+~
+0 -1 6652
+S
+#6684
+&wG&Wy&wm &OS&Wup&Opl&Wy &WS&wto&Wr&we~
+~
+0 1073741824 0 1 0
+D2
+~
+~
+0 -1 6685
+D3
+~
+~
+3 -1 6683
+S
+#6685
+&wA &GW&gid&Ge &WH&wal&Wlw&way~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 6684
+D1
+~
+~
+0 -1 6686
+S
+#6686
+&wA &GW&gid&Ge &WH&wal&Wlw&way~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 6687
+D2
+~
+~
+0 -1 6693
+D3
+~
+~
+0 -1 6685
+S
+#6687
+&wA &GW&gid&Ge &WH&wal&Wlw&way~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 6692
+D1
+~
+~
+0 -1 6688
+D3
+~
+~
+0 -1 6686
+S
+#6688
+&wA &GW&gid&Ge &WH&wal&Wlw&way~
+~
+0 1073741824 0 1 0
+D2
+~
+~
+0 -1 6689
+D3
+~
+~
+0 -1 6687
+S
+#6689
+&wA &GW&gid&Ge &WH&wal&Wlw&way~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 6688
+D8
+~
+~
+0 -1 6690
+D9
+~
+~
+0 -1 6691
+S
+#6690
+&wG&Wy&wm'&Ws Punching &wBag~
+~
+0 1073741824 0 1 0
+D7
+~
+~
+0 -1 6689
+S
+#6691
+&wG&Wy&wm'&Ws Punching &wBag~
+~
+0 1073741824 0 1 0
+D6
+~
+~
+0 -1 6689
+S
+#6692
+&wG&Wy&wm'&Ws Shooting &wRange~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+33554432 -1 6695
+D2
+~
+~
+0 -1 6687
+S
+#6693
+&wG&Wy&wm'&Ws Shooting &wRange~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 6686
+D2
+~
+~
+33554432 -1 6694
+S
+#6694
+&wA &RT&wa&rr&wg&Re&wt &WRoom~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+33554432 -1 6693
+S
+#6695
+&wA &RT&wa&rr&wg&Re&wt &WRoom~
+~
+0 1073741824 0 1 0
+D2
+~
+~
+33554432 -1 6692
+S
+#6696
+&CE&cnt&Cer&cin&Cg &WS&wu&Wp&wp&Wl&wy &YB&Or&Ya&On&Yc&Oh~
+~
+0 1073741828 0 1 0
+D0
+~
+~
+0 -1 6668
+D2
+~
+~
+3 -1 6698
+S
+#6697
+Armor Store Room~
+~
+0 1073741824 0 1 0
+D3
+~
+~
+0 -1 6698
+S
+#6698
+&CM&ci&Cl&ci&Ct&ca&Cr&cy &WS&wu&Wp&wp&Wl&wy &YB&Or&Ya&On&Yc&Oh~
+~
+0 1073741828 0 1 0
+D0
+~
+~
+3 -1 6696
+D1
+~
+~
+0 -1 6697
+D2
+~
+~
+0 -1 6699
+D3
+~
+~
+0 -1 6700
+S
+#6699
+Logistics Store Room~
+~
+0 1073741828 0 1 0
+D0
+~
+~
+0 -1 6698
+S
+#6700
+Weapons Store Room~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 6698
+S
+#6701
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#0
+
+
+#RESETS
+O 1 6600 1 6612
+O 1 6600 1 6613
+O 1 6600 1 6614
+O 1 6600 1 6615
+O 1 6600 1 6616
+O 1 6600 1 6617
+O 1 6600 1 6618
+O 1 6600 1 6631
+O 1 6600 1 6644
+O 1 6600 1 6664
+M 1 6600 3 6673
+D 0 6673 1 1
+D 0 6674 3 1
+O 1 6601 1 6682
+M 1 6600 3 6683
+D 0 6683 1 1
+M 1 6602 1 6684
+G 1 6603 1
+G 1 6604 1
+G 1 6605 1
+G 1 6602 1
+D 0 6684 3 1
+M 1 6601 2 6694
+M 1 6601 2 6695
+M 1 6600 3 6696
+D 0 6696 2 1
+D 0 6698 0 1
+S
+
+
+#SHOPS
+ 6602    0  0  0  0  0   120  90         0 23    ; &PK&pell&Py &wthe &WS&wto&Wr&we Manager
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+M  6600 spec_customs_weapons
+S
+
+
+#$

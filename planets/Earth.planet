@@ -1,0 +1,11 @@
+#PLANET
+Name         Earth~
+Filename     Earth.pnt~
+BaseValue    100000
+Flags        0
+PopSupport   100.000000
+Area         Earth.are~
+Area         Chicago.are~
+End
+
+#END

@@ -1,0 +1,13 @@
+#PLANET
+Name         Mars (New Earth)~
+Filename     Mars~
+BaseValue    1000000
+Flags        0
+PopSupport   50.000000
+GovernedBy   White Fang~
+Area         Korea.are~
+Area         Mars.are~
+Area         China.are~
+End
+
+#END

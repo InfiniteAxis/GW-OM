@@ -1,0 +1,2483 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         Clan Bases~
+Author       Akumaka~
+Ranges       1 1007 1 1007
+Economy      -2 382753273
+ResetMsg     A platoon of soldiers march by.~
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       2300
+Keywords   ESUN Jail Guard~
+Short      An ESUN Jail Guard~
+Long       An ESUN Jail Guard is here, guarding the door.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Affected   invisible detect_invis detect_magic~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   ESUN~
+Comlist   if clan ($n) == ESUN
+nod
+mpoload 2300
+unlock e
+open e
+mpjunk key
+else
+Say You are not authorized to enter.  
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   lockit~
+Comlist   if clan ($n) == ESUN
+nod
+mpoload 2300
+close e
+lock e
+mpjunk key
+else
+say You are not authorized to give this order.  
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       2301
+Keywords   ESUN Guard~
+Short      An ESUN Guard~
+Long       An ESUN Guard is here, looking for intruders.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Affected   invisible detect_invis detect_magic~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if clan ($n) == ESUN
+emote salutes smartly
+say Sir!
+else
+yell Your not allowed in here!
+mpkill $n
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       2302
+Keywords   ESUN Warrent Officer~
+Short      A Warrent Officer~
+Long       A Warrent Officer is here, handing out supplies.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 110 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       2303
+Keywords   Target~
+Short      Target~
+Long       A Target hangs on the wall.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel droid nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpmload 2303
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       2304
+Keywords   MC Jail Guard~
+Short      An MC Jail Guard~
+Long       An MC Jail Guard is here, guarding the door.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   MC~
+Comlist   if clan ($n) == Maganac Corps
+nod
+mpoload 2308
+unlock e
+open e
+mpjunk key
+else
+say You are not authorized to enter.
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   lockit~
+Comlist   if clan ($n) == Maganac Corps
+nod
+mpoload 2308
+close e
+lock e
+mpjunk key
+else
+say You are not authorized to give this order.  
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       2305
+Keywords   Maganac Core Armorer~
+Short      Maganac Armorer~
+Long       A Maganac Core Armorer is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Bodyparts  head heart brains guts hands feet eye~
+Immune     charm~
+ShopData   0 9 5 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       2306
+Keywords   Oz Guard~
+Short      Oz Guard~
+Long       Oz Guard stands here patrolling the base.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Affected   invisible detect_invis detect_magic~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if clan ($n) == Oz
+emote salutes smartly
+say Sir!
+else
+yell Your not allowed in here!
+mpkill $n
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       2307
+Keywords   Maganac Core Guard~
+Short      Maganac Core Guard~
+Long       A Maganac Core Guard stands here patrolling the base.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel nocorpse~
+Affected   invisible detect_invis detect_magic~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if clan ($n) == Maganac Corps
+emote salutes smartly
+else
+yell Hey!  Your not allowed in here!
+mpkill $n
+endif
+if sex ($n) == 1
+say Sir!
+else
+say Mam!
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       2308
+Keywords   Mercenary~
+Short      Mercenary~
+Long       A man is standing here dressed in military gear.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc~
+Affected   truesight~
+Stats1     0 1000 0 -2400 5000 0
+Stats2     200 10 2500000
+Stats3     1 1 1
+Stats4     0 0 8 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   parry~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   say So be it, but in the end you will be the hunted.
+mpoload 2302
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       2310
+Keywords   Lunch lady~
+Short      A lunch lady~
+Long       A lunch lady stands here waiting to hand you food and water.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Bodyparts  head arms legs heart brains guts hands feet fingers~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   burger ~
+Comlist   mpoload 508
+1
+give hamburger $n
+drop all
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   canteen~
+Comlist   mpoload 10314 1
+give canteen $n
+drop all
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       2311
+Keywords   An Oz Jail Guard~
+Short      An Oz Jail Guard~
+Long       An Oz Jail Guard stands here with the Key to the Jail.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Affected   invisible detect_invis detect_magic~
+Stats1     0 800 0 -1900 0 0
+Stats2     160 10 8000
+Stats3     80 4 2
+Stats4     0 0 0 160 160
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Bodyparts  head arms legs heart brains guts hands feet fingers~
+Defenses   parry dodge~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   lockit~
+Comlist   if clan ($n) == oz
+nod
+mpoload 2321
+close w
+lock w
+mpjunk key
+else
+say You are not authorized to give this order.
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   oz~
+Comlist   if clan ($n) == oz
+nod
+mpoload 2321
+unlock w
+open w
+mpjunk key
+else
+say You are not authorized to enter.
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       2312
+Keywords   Oz Armorer~
+Short      An Oz Armorer~
+Long       An Oz Armorer is standing here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   9 5 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       2313
+Keywords   White Fang Jail Guard~
+Short      White Fang Jail Guard~
+Long       A White Fang Jail Guard stands here guarding the door.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Affected   invisible detect_invis detect_magic~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   fang~
+Comlist   if clan ($n) == white fang
+nod
+mpoload 2313
+unlock e
+open e
+mpjunk key
+else
+say You are not authorized to enter.
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   lockit~
+Comlist   if clan ($n) == white fang
+nod
+mpoload 2313
+close e
+lock e
+mpjunk key
+else
+say You are not authorized to give this order.
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       2314
+Keywords   White Fang Armorer~
+Short      White Fang Armorer~
+Long       A White Fang Armorer is here making armor for White Fang members.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       2315
+Keywords   White Fang Guard~
+Short      White Fang Guard~
+Long       A White Fang Guard stands here patrolling the base.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Affected   invisible detect_invis detect_magic~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   if clan ($n) == White Fang
+emote salutes smartly
+say Sir!
+else
+yell Your not allowed in here!
+mpkill $n
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       2499
+Keywords   Final Mob~
+Short      a newly created Final Mob~
+Long       Some god abandoned a newly created Final Mob here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#OBJECT
+Vnum     2300
+Keywords ESUN Jail Key~
+Type     key~
+Short    ESUN Jail Key~
+Long     ESUN Jail Key~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2301
+Keywords ESUN Board~
+Type     trash~
+Short    An ESUN Message Board~
+Long     An ESUN Message Board~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2302
+Keywords Prototype Assault Rifle~
+Type     weapon~
+Short    &zX&w2&W6 &GA&gs&cs&Ca&cu&gl&Gt &CR&ci&gf&cl&Ce~
+Long     An advanced prototype weapon has been left here.~
+Flags    hum contraband~
+WFlags   take wield~
+Values   1100 100 20 6 500 500
+Stats    25 3000000 300000 0 0
+Affect       -1 -1 25 18 0
+Affect       -1 -1 35 19 0
+#MUDPROG
+Progtype  wear_prog~
+Arglist   100~
+Comlist   mpechoat $n As you take the weapon into your hands it begins to hum.
+mpechoaround $n As $n takes $s weapon into $s hands the weapon begins to hum.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  wear_prog~
+Arglist   100~
+Comlist   mpechoat $n As you take the weapon into your hands it begins to hum.
+mpechoaround $n As $n takes $s weapon into $s hands the weapon begins to hum.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  remove_prog~
+Arglist   100~
+Comlist   mpechoat $n As you take the weapon from your hands it stops humming.
+mpechoaround $n As $n takes $s weapon from $s hands the weapon stops humming.
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     2303
+Keywords X26 Clip~
+Type     ammo~
+Short    a X26 Clip~
+Long     A X26 Clip is here.~
+Values   500 500 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2305
+Keywords Water Fountain~
+Type     fountain~
+Short    a Water Fountain~
+Long     A Water Fountain is here.~
+Values   1000000 1000000 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2306
+Keywords Council Table~
+Type     furniture~
+Short    a Council Table~
+Long     A long council table is in the middle of the room.~
+Values   100 100 1 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2307
+Keywords Long Couch~
+Type     furniture~
+Short    A Long Couch~
+Long     A long couch is lining one wall.~
+Values   100 100 2 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2308
+Keywords MC Jail Key~
+Type     key~
+Short    An MC Jail Key~
+Long     An MC Jail Key~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2313
+Keywords White Fang Jail Key~
+Type     key~
+Short    White Fang Jail Key~
+Long     A White Fang Jail Key was dropped here.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2320
+Keywords council table~
+Type     furniture~
+Short    A council table~
+Long     There is a table meant to seat Oz Members here.~
+Values   75 75 1 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2321
+Keywords oz base jail key~
+Type     key~
+Short    an oz jail key~
+Long     A key to the oz base jail.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2322
+Keywords jail food for vendo~
+Type     food~
+Short    Jail Food~
+Long     A tray of food that looks absolutely disgusting.~
+Flags    prototype~
+WFlags   take~
+Values   45 45 75 50 50 0
+Stats    1 100 10 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2499
+Keywords Final Object~
+Type     trash~
+Short    a Final Object~
+Long     A Final Object is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     2300
+Name     ESUN Base Entrance~
+Sector   city~
+Flags    indoors~
+Desc     Welcome to Esun base. There are many Esun members and engineers walking
+back and forth through these narrow corridors. Going to their assigned
+areas or getting ready to go on a mission. If you are not a member of Esun
+and you have made it this far, it is recomended that you turn back now.
+~
+#EXIT
+Direction north~
+ToRoom    2301
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2324
+#ENDEXIT
+
+Reset M 0 2301 4 2300
+  Reset E 1 50 1 16
+#ENDROOM
+
+#ROOM
+Vnum     2301
+Name     ESUN Base Corridor~
+Sector   city~
+Flags    indoors~
+Desc     There are many Esun members and engineers walking back and forth through
+these narrow corridors. You can see on the faces of these Esun members
+that they are not looking for violence, but are ready for it.
+~
+#EXIT
+Direction north~
+ToRoom    2302
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2300
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2302
+Name     ESUN Base Corridor~
+Sector   city~
+Flags    indoors~
+Desc     There are many Esun members and engineers walking back and forth through
+these narrow corridors. You can see on the faces of these Esun members
+that they are not looking for violence, but are ready for it.
+~
+#EXIT
+Direction north~
+ToRoom    2303
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2301
+#ENDEXIT
+
+Reset M 0 2301 4 2302
+  Reset E 1 50 1 16
+#ENDROOM
+
+#ROOM
+Vnum     2303
+Name     ESUN Base South Intersection~
+Sector   city~
+Flags    indoors~
+Desc     There are many Esun members and engineers walking back and forth through
+these narrow corridors. You can see on the faces of these Esun members
+that they are not looking for violence, but are ready for it.
+~
+#EXIT
+Direction north~
+ToRoom    2312
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2304
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2302
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2308
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2304
+Name     ESUN Base Corridor~
+Sector   city~
+Flags    indoors~
+Desc     There are many Esun members and engineers walking back and forth through
+these narrow corridors. You can see on the faces of these Esun members
+that they are not looking for violence, but are ready for it.
+~
+#EXIT
+Direction east~
+ToRoom    2305
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2303
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2305
+Name     ESUN Base Corridor~
+Sector   city~
+Flags    indoors~
+Desc     There are many Esun members and engineers walking back and forth through
+these narrow corridors. You can see on the faces of these Esun members
+that they are not looking for violence, but are ready for it.
+~
+#EXIT
+Direction east~
+ToRoom    2306
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2304
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2306
+Name     ESUN Base Corridor~
+Sector   city~
+Flags    indoors~
+Desc     There are many Esun members and engineers walking back and forth through
+these narrow corridors. You can see on the faces of these Esun members
+that they are not looking for violence, but are ready for it.
+~
+#EXIT
+Direction east~
+ToRoom    2307
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2305
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2307
+Name     ESUN Base Corridor~
+Sector   city~
+Flags    indoors~
+Desc     There are many Esun members and engineers walking back and forth through
+these narrow corridors. You can see on the faces of these Esun members
+that they are not looking for violence, but are ready for it.
+~
+#EXIT
+Direction south~
+ToRoom    2329
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2306
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2308
+Name     ESUN Base Corridor~
+Sector   city~
+Flags    indoors~
+Desc     There are many Esun members and engineers walking back and forth through
+these narrow corridors. You can see on the faces of these Esun members
+that they are not looking for violence, but are ready for it.
+~
+#EXIT
+Direction east~
+ToRoom    2303
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2309
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2309
+Name     ESUN Base Corridor~
+Sector   city~
+Flags    indoors~
+Desc     There are many Esun members and engineers walking back and forth through
+these narrow corridors. You can see on the faces of these Esun members
+that they are not looking for violence, but are ready for it.
+~
+#EXIT
+Direction north~
+ToRoom    2326
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2308
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2310
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2310
+Name     ESUN Base Corridor~
+Sector   city~
+Flags    indoors~
+Desc     There are many Esun members and engineers walking back and forth through
+these narrow corridors. You can see on the faces of these Esun members
+that they are not looking for violence, but are ready for it.
+~
+#EXIT
+Direction east~
+ToRoom    2309
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2311
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2311
+Name     ESUN Base Corridor~
+Sector   city~
+Flags    indoors~
+Desc     There are many Esun members and engineers walking back and forth through
+these narrow corridors. You can see on the faces of these Esun members
+that they are not looking for violence, but are ready for it.
+~
+#EXIT
+Direction north~
+ToRoom    2325
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2310
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2312
+Name     ESUN Base Corridor~
+Sector   city~
+Flags    indoors~
+Desc     There are many Esun members and engineers walking back and forth through
+these narrow corridors. You can see on the faces of these Esun members
+that they are not looking for violence, but are ready for it.
+~
+#EXIT
+Direction north~
+ToRoom    2313
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2303
+#ENDEXIT
+
+Reset M 0 2301 4 2312
+  Reset E 1 50 1 16
+#ENDROOM
+
+#ROOM
+Vnum     2313
+Name     ESUN Base North Intersection~
+Sector   city~
+Flags    indoors~
+Desc     There are many Esun members and engineers walking back and forth through
+these narrow corridors. You can see on the faces of these Esun members
+that they are not looking for violence, but are ready for it.
+~
+#EXIT
+Direction east~
+ToRoom    2314
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2312
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2318
+#ENDEXIT
+
+Reset M 0 2301 4 2313
+  Reset E 1 50 1 16
+#ENDROOM
+
+#ROOM
+Vnum     2314
+Name     ESUN Base Corridor~
+Sector   city~
+Flags    indoors~
+Desc     There are many Esun members and engineers walking back and forth through
+these narrow corridors. You can see on the faces of these Esun members
+that they are not looking for violence, but are ready for it.
+~
+#EXIT
+Direction east~
+ToRoom    2315
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2313
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2315
+Name     ESUN Base Corridor~
+Sector   city~
+Flags    indoors~
+Desc     There are many Esun members and engineers walking back and forth through
+these narrow corridors. You can see on the faces of these Esun members
+that they are not looking for violence, but are ready for it.
+~
+#EXIT
+Direction north~
+ToRoom    2328
+Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2316
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2314
+#ENDEXIT
+
+Reset D 0 2315 0 1
+#ENDROOM
+
+#ROOM
+Vnum     2316
+Name     ESUN Base Corridor~
+Sector   city~
+Flags    indoors~
+Desc     There are many Esun members and engineers walking back and forth through
+these narrow corridors. You can see on the faces of these Esun members
+that they are not looking for violence, but are ready for it.
+~
+#EXIT
+Direction east~
+ToRoom    2317
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2315
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2317
+Name     ESUN Base Corridor~
+Sector   city~
+Flags    indoors~
+Desc     There are many Esun members and engineers walking back and forth through
+these narrow corridors. You can see on the faces of these Esun members
+that they are not looking for violence, but are ready for it.
+~
+#EXIT
+Direction south~
+ToRoom    2322
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2316
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2318
+Name     ESUN Base Corridor~
+Sector   city~
+Flags    indoors~
+Desc     There are many Esun members and engineers walking back and forth through
+these narrow corridors. You can see on the faces of these Esun members
+that they are not looking for violence, but are ready for it.
+~
+#EXIT
+Direction east~
+ToRoom    2313
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2319
+#ENDEXIT
+
+Reset M 0 2308 1 2318
+#ENDROOM
+
+#ROOM
+Vnum     2319
+Name     ESUN Base Corridor~
+Sector   city~
+Flags    indoors~
+Desc     There are many Esun members and engineers walking back and forth through
+these narrow corridors. You can see on the faces of these Esun members
+that they are not looking for violence, but are ready for it.
+~
+#EXIT
+Direction east~
+ToRoom    2318
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2320
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2320
+Name     ESUN Base Corridor~
+Sector   city~
+Flags    indoors~
+Desc     There are many Esun members and engineers walking back and forth through
+these narrow corridors. You can see on the faces of these Esun members
+that they are not looking for violence, but are ready for it.
+~
+#EXIT
+Direction north~
+ToRoom    2331
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2319
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2321
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2321
+Name     ESUN Base Corridor~
+Sector   city~
+Flags    indoors~
+Desc     There are many Esun members and engineers walking back and forth through
+these narrow corridors. You can see on the faces of these Esun members
+that they are not looking for violence, but are ready for it.
+~
+#EXIT
+Direction north~
+ToRoom    2327
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2320
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2322
+Name     ESUN Jail Entrance~
+Sector   city~
+Flags    indoors~
+Desc     Say ESUN to have the guard open the jail door. 
+Say Lockit to have the guard close the jail door. 
+~
+#EXIT
+Direction north~
+ToRoom    2317
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2323
+Key       2300
+Flags     isdoor closed locked bashproof~
+#ENDEXIT
+
+Reset M 0 2300 1 2322
+  Reset E 1 50 1 16
+Reset D 0 2322 1 2
+#ENDROOM
+
+#ROOM
+Vnum     2323
+Name     ESUN Jail~
+Sector   city~
+Flags    indoors norecall hotel~
+#EXIT
+Direction west~
+ToRoom    2322
+Flags     isdoor closed locked pickproof bashproof~
+#ENDEXIT
+
+Reset M 0 10365 19 2323
+Reset M 0 10365 19 2323
+Reset D 0 2323 3 2
+#ENDROOM
+
+#ROOM
+Vnum     2324
+Name     ESUN Base Docking Bay~
+Sector   city~
+Flags    indoors can_land can_fly docking~
+Desc     This is Esun's Docking Bay. Many engineers run through repairing and
+refueling all the ships and suits. It seems that once the suits are
+repaired and refueled they are moved east into the mobile suit hanger.
+~
+#EXIT
+Direction north~
+ToRoom    2300
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2332
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2325
+Name     ESUN Barracks~
+Sector   city~
+Flags    indoors bank hotel~
+#EXIT
+Direction south~
+ToRoom    2311
+#ENDEXIT
+
+Reset O 0 2301 1 2325
+Reset O 0 2305 1 2325
+Reset O 0 2307 1 2325
+#ENDROOM
+
+#ROOM
+Vnum     2326
+Name     ESUN Armory~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction south~
+ToRoom    2309
+#ENDEXIT
+
+Reset M 0 2302 1 2326
+#ENDROOM
+
+#ROOM
+Vnum     2327
+Name     ESUN Healing Chamber~
+Sector   city~
+Flags    indoors heal~
+#EXIT
+Direction south~
+ToRoom    2321
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2328
+Name     ESUN Council Room~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction south~
+ToRoom    2315
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset O 0 2306 1 2328
+Reset D 0 2328 2 1
+#ENDROOM
+
+#ROOM
+Vnum     2329
+Name     ESUN Rifle Range~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    2307
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2330
+Flags     window~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2330
+Name     ESUN Target Range~
+Sector   city~
+Flags    nomob indoors~
+Reset M 0 2303 1 2330
+#ENDROOM
+
+#ROOM
+Vnum     2331
+Name     ESUN Mess Hall~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction south~
+ToRoom    2320
+#ENDEXIT
+
+Reset M 0 10365 19 2331
+Reset M 0 10365 19 2331
+Reset M 0 10365 19 2331
+#ENDROOM
+
+#ROOM
+Vnum     2332
+Name     ESUN Mobile Suit Hanger~
+Sector   city~
+Flags    indoors~
+Desc     This is Esun's Mobile Suit Hanger. In here the ships and suits sit and
+await for their pilots to take them out again. As more and more ships and
+suits are moved into this room, you see the many skilled pilots that are
+in Esun.
+~
+#EXIT
+Direction west~
+ToRoom    2324
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2333
+Name     MC Base Docking Bay~
+Sector   city~
+Flags    indoors can_land can_fly~
+#EXIT
+Direction north~
+ToRoom    2334
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2356
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2334
+Name     MC Base Corridor~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    2335
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2333
+#ENDEXIT
+
+Reset M 0 2307 4 2334
+  Reset E 1 50 1 16
+Reset M 0 2307 4 2334
+  Reset E 1 50 1 16
+#ENDROOM
+
+#ROOM
+Vnum     2335
+Name     MC Base Corridor~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    2336
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2334
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2336
+Name     MC Base South Intersection~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    2337
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2339
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2335
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2343
+#ENDEXIT
+
+Reset M 0 2307 4 2336
+  Reset E 1 50 1 16
+#ENDROOM
+
+#ROOM
+Vnum     2337
+Name     MC Base Corridor~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    2338
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2336
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2338
+Name     MC Base North Intersection~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    2347
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2337
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2351
+#ENDEXIT
+
+Reset M 0 2307 4 2338
+  Reset E 1 50 1 16
+#ENDROOM
+
+#ROOM
+Vnum     2339
+Name     MC Base Corridor~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    2340
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2336
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2340
+Name     MC Base Corridor~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    2341
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2339
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2341
+Name     MC Base Corridor~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    2342
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2340
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2342
+Name     MC Base Corridor~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    2360
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2366
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2341
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2343
+Name     MC Base Corridor~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    2365
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2336
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2344
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2344
+Name     MC Base Corridor~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    2343
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2345
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2345
+Name     MC Base Corridor~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    2344
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2346
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2346
+Name     MC Base Corridor~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    2345
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2347
+Name     MC Base Corridor~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    2355
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2348
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2338
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2348
+Name     MC Base Corridor~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    2349
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2347
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2349
+Name     MC Base Corridor~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    2350
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2348
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2350
+Name     MC Base Corridor~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction south~
+ToRoom    2358
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2349
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2351
+Name     MC Base Corridor~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    2338
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2352
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2352
+Name     MC Base Corridor~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    2351
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2353
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2353
+Name     MC Base Corridor~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    2357
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2352
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2354
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2354
+Name     MC Base Corridor~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    2353
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2355
+Name     MC Council Room~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction south~
+ToRoom    2347
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2356
+Name     MC Mobile Suit Hanger~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction west~
+ToRoom    2333
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2357
+Name     MC Healing Chamber~
+Sector   city~
+Flags    indoors hotel heal~
+#EXIT
+Direction south~
+ToRoom    2353
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2358
+Name     MC Jail Entrance~
+Sector   city~
+Flags    indoors~
+Desc     To get the guard to unlock the jail cell say, 'MC'. To get him to lock the
+jail cell say, 'lockit'.
+~
+#EXIT
+Direction north~
+ToRoom    2350
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2359
+Key       2308
+Flags     isdoor closed locked bashproof~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2333
+Flags     isdoor closed hidden~
+#ENDEXIT
+
+Reset M 0 2304 1 2358
+Reset D 0 2358 1 2
+Reset D 0 2358 2 1
+#ENDROOM
+
+#ROOM
+Vnum     2359
+Name     MC Jail~
+Sector   city~
+Flags    indoors norecall hotel~
+#EXIT
+Direction west~
+ToRoom    2358
+Flags     isdoor closed locked pickproof bashproof~
+#ENDEXIT
+
+Reset M 0 10365 19 2359
+Reset D 0 2359 3 2
+#ENDROOM
+
+#ROOM
+Vnum     2360
+Name     MC Base Mess Hall~
+Sector   city~
+Flags    nomob indoors~
+Desc     Say 'Burger' for a Hamburger
+Say 'Canteen' for a Canteen
+~
+#EXIT
+Direction south~
+ToRoom    2342
+#ENDEXIT
+
+Reset M 0 2310 2 2360
+#ENDROOM
+
+#ROOM
+Vnum     2361
+Name     MC Base~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     2362
+Name     MC Base~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     2363
+Name     MC Base~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     2364
+Name     MC Base~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     2365
+Name     MC Armor Shop~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction south~
+ToRoom    2343
+#ENDEXIT
+
+Reset M 0 2305 1 2365
+#ENDROOM
+
+#ROOM
+Vnum     2366
+Name     MC Barracks~
+Sector   city~
+Flags    indoors bank hotel prototype~
+#EXIT
+Direction west~
+ToRoom    2342
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2370
+Name     Oz Landing Pad~
+Sector   city~
+Flags    nomob can_land can_fly docking~
+#EXIT
+Direction north~
+ToRoom    2371
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2393
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2371
+Name     Oz Base Corridor~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    2372
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2370
+#ENDEXIT
+
+Reset M 0 2306 4 2371
+  Reset E 1 50 1 16
+#ENDROOM
+
+#ROOM
+Vnum     2372
+Name     Oz Base Corridor~
+Sector   city~
+Flags    nomob indoors~
+#EXIT
+Direction north~
+ToRoom    2373
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2392
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2371
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2391
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2373
+Name     Oz Base Intersection~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    2374
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2383
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2372
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2384
+#ENDEXIT
+
+Reset M 0 2306 4 2373
+  Reset E 1 50 1 16
+#ENDROOM
+
+#ROOM
+Vnum     2374
+Name     Oz Base Corridor~
+Sector   city~
+Flags    nomob indoors~
+#EXIT
+Direction north~
+ToRoom    2375
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2373
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2375
+Name     Oz Base Intersection~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    2376
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2374
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2377
+#ENDEXIT
+
+Reset M 0 2306 4 2375
+  Reset E 1 50 1 16
+#ENDROOM
+
+#ROOM
+Vnum     2376
+Name     Oz Base Corridor~
+Sector   city~
+Flags    nomob indoors~
+#EXIT
+Direction east~
+ToRoom    2378
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2375
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2377
+Name     Oz Base Corridor~
+Sector   city~
+Flags    nomob indoors~
+#EXIT
+Direction east~
+ToRoom    2375
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2380
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2378
+Name     Oz Base Corridor~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    2379
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2376
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2379
+Name     Oz Barracks~
+Sector   city~
+Flags    nomob indoors bank hotel~
+Desc     This is the barracks of the Oz Base. Here you can rest relax and even
+withdraw money from the Bank Machine in the corner.
+~
+#EXIT
+Direction west~
+ToRoom    2378
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2380
+Name     Oz Base Corridor~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    2377
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2381
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2381
+Name     Oz Base Corridor~
+Sector   city~
+Flags    nomob indoors~
+Desc     To have the guard open the door, say 'oz'. To have the guard lock it again,
+say 'lockit'. 
+~
+#EXIT
+Direction east~
+ToRoom    2380
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2393
+Flags     isdoor closed hidden~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2382
+Key       2321
+Flags     isdoor closed locked bashproof~
+#ENDEXIT
+
+Reset M 0 2311 1 2381
+  Reset E 1 2306 1 16
+  Reset G 1 2306 1
+Reset D 0 2381 2 1
+Reset D 0 2381 3 2
+#ENDROOM
+
+#ROOM
+Vnum     2382
+Name     Oz Jail~
+Sector   city~
+Flags    nomob indoors hotel~
+#EXIT
+Direction east~
+ToRoom    2381
+Key       2321
+Flags     isdoor closed locked pickproof bashproof~
+#ENDEXIT
+
+Reset M 0 8002 4 2382
+Reset M 0 8002 4 2382
+Reset D 0 2382 1 2
+#ENDROOM
+
+#ROOM
+Vnum     2383
+Name     Oz Base Corridor~
+Sector   city~
+Flags    nomob indoors~
+#EXIT
+Direction east~
+ToRoom    2385
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2373
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2384
+Name     Oz Base Corridor~
+Sector   city~
+Flags    nomob indoors~
+#EXIT
+Direction east~
+ToRoom    2373
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2387
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2385
+Name     Oz Base Corridor~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    2386
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2383
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2386
+Name     Oz Base Mess Hall~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is the Oz Base's Mess hall. In order to serve you better the Lunch
+lady asks that you either say Burger or Canteen and she will provide you
+with food.
+~
+#EXIT
+Direction west~
+ToRoom    2385
+#ENDEXIT
+
+Reset M 0 2310 2 2386
+Reset O 0 10315 1 2386
+#ENDROOM
+
+#ROOM
+Vnum     2387
+Name     Oz Base Corridor~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    2389
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2384
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2390
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2388
+#ENDEXIT
+
+Reset M 0 2306 4 2387
+  Reset E 1 50 1 16
+#ENDROOM
+
+#ROOM
+Vnum     2388
+Name     Armor Shop~
+Sector   city~
+Flags    nomob indoors~
+#EXIT
+Direction east~
+ToRoom    2387
+#ENDEXIT
+
+Reset M 0 2312 1 2388
+#ENDROOM
+
+#ROOM
+Vnum     2389
+Name     Healing Chamber~
+Sector   city~
+Flags    nomob indoors heal~
+Desc     The Oz Base Healing Chamber is designed to help you heal faster. Along the
+walls are vials upon vials of curative liquids. 
+~
+#EXIT
+Direction south~
+ToRoom    2387
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2390
+Name     Council Room~
+Sector   city~
+Flags    nomob indoors~
+#EXIT
+Direction north~
+ToRoom    2387
+#ENDEXIT
+
+Reset O 0 2320 1 2390
+#ENDROOM
+
+#ROOM
+Vnum     2391
+Name     Rifle Range~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    2372
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2392
+Name     Firing Range~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction west~
+ToRoom    2372
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2393
+Name     Oz Mobile Suit Hangar~
+Sector   city~
+Flags    nomob indoors~
+#EXIT
+Direction west~
+ToRoom    2370
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2394
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     2395
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     2396
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     2397
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     2398
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     2399
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     2400
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     2450
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     2456
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     2480
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     2498
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     2499
+Name     Final Room~
+Sector   city~
+Flags    nomob~
+Reset M 0 2499 1 2499
+Reset O 0 2499 1 2499
+#ENDROOM
+
+#ENDAREA

@@ -1,0 +1,817 @@
+#AREA   {PROTO} Snake's area in progress~
+
+
+
+#AUTHOR Snake~
+
+#RANGES
+0 0 0 0
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 0
+
+#MOBILES
+#0
+
+
+#OBJECTS
+#3500
+Bed~
+A Bed~
+A Comfortable Bed is here, covered by a thick comforter~
+~
+12 0 0
+0 0 0 0
+1 0 0
+#3501
+Toilet~
+A Toilet~
+A Plush Toilet is on the ground~
+~
+12 0 0
+0 0 0 0
+1 0 0
+#3502
+Sink~
+A Sink~
+A Plain White Sink is here, placed against a wall~
+~
+12 0 0
+0 0 0 0
+1 0 0
+#3503
+Key to the Armory~
+a Key to the Armory~
+A Key to the Armory is here.~
+~
+18 128 1
+0 0 0 0
+1 0 0
+#3504
+Shower~
+A Shower~
+A plain colored shower is here, connected to a wall, and seems to be turned on with steaming water coming out.~
+~
+12 0 0
+0 0 0 0
+1 0 0
+#0
+
+
+#ROOMS
+#3500
+Landing Pad of Colony X55~
+Landing cradles are placed all along the main hanger area, and technicians
+seem to be busily fixing ships landed in them. A technician's office is to
+the south. A giant hatch is above you, with the stars and the sun visible.
+Men and women walk east and west to go to the different zones. The upper
+hatch opens and closes as ships and mobile suits land.
+~
+0 1073741828 1
+D1
+~
+~
+0 -1 3501
+D2
+~
+~
+0 -1 3523
+D3
+~
+~
+0 -1 3502
+S
+#3501
+East Zone Entrance~
+As you enter the East Zone, you can automatically see to the south that a
+giant window shows the stars and the sun. Giant plate lights cover the
+ceiling in this room, making it easy to see. Men and women walk to and
+from the west and north, going to the Landing Pad or the East Zone
+Hallways.
+~
+0 1073741828 1
+D0
+~
+~
+0 -1 3503
+D3
+~
+~
+0 -1 3500
+S
+#3502
+West Zone Entrance~
+~
+0 1073741828 1
+D0
+~
+~
+0 -1 3522
+D1
+~
+~
+0 -1 3500
+S
+#3503
+East Zone Hallway~
+A window on the eastern wall shows the outside, where the stars and a bit
+of the sun can be seen. To the west is also a window, which shows the West
+Zone area. Men and women walk from the north and south, illuminated by
+giant lights on the ceiling.
+~
+0 1073741828 1
+D0
+~
+~
+0 -1 3504
+D2
+~
+~
+0 -1 3501
+S
+#3504
+East Zone Intersection~
+Security guards walk from the east, and begin to patrol the colony. A store
+to the west seems to be selling items to be used in a factory. To the
+north and the south are the other hallways of the East Zone. A giant
+skylight shows the outside, and  light panels light the area.
+~
+0 1073741828 1
+D0
+~
+~
+0 -1 3507
+D1
+~
+~
+0 -1 3506
+D2
+~
+~
+0 -1 3503
+D3
+~
+~
+0 -1 3505
+S
+#3505
+Factory Store~
+~
+0 1073741828 1
+D1
+~
+~
+0 -1 3504
+S
+#3506
+Security Office~
+~
+0 1073741828 1
+D3
+~
+~
+0 -1 3504
+S
+#3507
+East Zone Hallway~
+~
+0 1073741828 1
+D2
+~
+~
+0 -1 3504
+D7
+~
+~
+0 -1 3508
+S
+#3508
+East Zone Hallway~
+~
+0 1073741828 1
+D3
+~
+~
+0 -1 3509
+D8
+~
+~
+0 -1 3507
+S
+#3509
+East Zone Intersection~
+~
+0 1073741828 1
+D0
+~
+~
+0 -1 3510
+D1
+~
+~
+0 -1 3508
+D2
+~
+~
+0 -1 3511
+D3
+~
+~
+0 -1 3512
+S
+#3510
+Medical Center~
+~
+0 1073741828 1
+D2
+~
+~
+0 -1 3509
+S
+#3511
+Advanced Weapon Shop~
+~
+0 1073741828 1
+D0
+~
+~
+0 -1 3509
+S
+#3512
+Center Section~
+~
+0 1073741828 1
+D0
+~
+~
+0 -1 3532
+D1
+~
+~
+0 -1 3509
+D3
+~
+~
+0 -1 3514
+D4
+~
+~
+0 -1 3513
+S
+#3513
+Training Section~
+~
+0 1073741828 1
+D0
+~
+~
+0 -1 3525
+D2
+~
+~
+0 -1 3524
+D5
+~
+~
+0 -1 3512
+S
+#3514
+West Zone Hallway~
+~
+0 1073741828 1
+D0
+~
+~
+0 -1 3516
+D1
+~
+~
+0 -1 3512
+D2
+~
+~
+0 -1 3517
+D3
+~
+~
+0 -1 3515
+S
+#3515
+West Zone Hallway~
+~
+0 1073741828 1
+D1
+~
+~
+0 -1 3514
+D9
+~
+~
+0 -1 3518
+S
+#3516
+Colony Hotel~
+~
+0 1073741828 1
+D2
+~
+~
+0 -1 3514
+S
+#3517
+Advanced Armor Shop~
+~
+0 1073741828 1
+D0
+~
+~
+0 -1 3514
+S
+#3518
+West Zone Hallway~
+~
+0 1073741828 1
+D2
+~
+~
+0 -1 3519
+D6
+~
+~
+0 -1 3515
+S
+#3519
+West Zone Intersection~
+~
+0 1073741828 1
+D0
+~
+~
+0 -1 3518
+D1
+~
+~
+0 -1 3520
+D2
+~
+~
+0 -1 3522
+D3
+~
+~
+0 -1 3521
+S
+#3520
+Clothing Shop~
+~
+0 1073741828 1
+D3
+~
+~
+0 -1 3519
+S
+#3521
+Colony Jail~
+~
+0 1073741828 1
+S
+#3522
+West Zone Hallway~
+~
+0 1073741828 1
+D0
+~
+~
+0 -1 3519
+D2
+~
+~
+0 -1 3502
+S
+#3523
+Colony Technician's Office~
+~
+0 1073741828 1
+D0
+~
+~
+0 -1 3500
+S
+#3524
+Armor Repair Area~
+~
+0 1073741828 1
+D0
+~
+~
+0 -1 3513
+S
+#3525
+Combat Training Area~
+~
+0 1073741828 1
+D0
+~
+~
+0 -1 3528
+D1
+~
+~
+0 -1 3529
+D2
+~
+~
+0 -1 3513
+D3
+~
+~
+0 -1 3530
+D4
+~
+~
+0 -1 3531
+D6
+~
+~
+0 -1 3526
+D7
+~
+~
+0 -1 3527
+S
+#3526
+Combat Level Four~
+~
+0 1073741828 1
+D9
+~
+~
+0 -1 3525
+S
+#3527
+Combat Level Five~
+~
+0 1073741828 1
+D8
+~
+~
+0 -1 3525
+S
+#3528
+Combat Level One~
+~
+0 1073741828 1
+D2
+~
+~
+0 -1 3525
+S
+#3529
+Combat Level Two~
+~
+0 1073741824 1
+D3
+~
+~
+0 -1 3525
+S
+#3530
+Combat Level Three~
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 3525
+S
+#3531
+Final Combat Level~
+~
+0 1073741824 1
+D5
+~
+~
+0 -1 3525
+S
+#3532
+Colony Residental Zone~
+~
+0 1073741828 1
+D0
+~
+~
+0 -1 3535
+D1
+~
+~
+0 -1 3534
+D2
+~
+~
+0 -1 3512
+D3
+~
+~
+0 -1 3533
+S
+#3533
+An Empty Home~
+~
+0 1075838980 1
+D1
+~
+~
+0 -1 3532
+S
+#3534
+An Empty Home~
+~
+0 1075838980 1
+D3
+~
+~
+0 -1 3532
+S
+#3535
+Colony Residental Zone~
+~
+0 1073741828 1
+D0
+~
+~
+0 -1 3538
+D1
+~
+~
+0 -1 3537
+D2
+~
+~
+0 -1 3532
+D3
+~
+~
+0 -1 3536
+S
+#3536
+An Empty Home~
+~
+0 1075838980 1
+D1
+~
+~
+0 -1 3535
+S
+#3537
+An Empty Home~
+~
+0 1075838980 1
+D3
+~
+~
+0 -1 3535
+S
+#3538
+Colony Residental Zone~
+~
+0 1073741828 1
+D0
+~
+~
+0 -1 3550
+D1
+~
+~
+0 -1 3540
+D2
+~
+~
+0 -1 3535
+D3
+~
+~
+0 -1 3539
+S
+#3539
+An Empty Home~
+~
+0 1075838980 1
+D1
+~
+~
+0 -1 3538
+S
+#3540
+An Empty Home~
+~
+0 1075838980 1
+D3
+~
+~
+0 -1 3538
+S
+#3541
+Solid Snake's Hideout~
+A long hallway seems to be leading to the north, with pictures of past war
+legends. A picture of the Iness Hell X in action is the major one, shown
+with its Mega Sniper Rifle and X-Sword. Also present are some pictures of
+other suits, such as the Wing Zero Custom, which Snake had the liberty of
+piloting once, long ago.
+~
+0 1075838980 1
+D0
+~
+~
+0 -1 3542
+D2
+~
+~
+0 -1 112
+S
+#3542
+Hideout Hallway~
+To the east is the armor room, where Snake keeps all of his armor, and a
+bathroom is to the west. To the north is the rest of the mansion. More
+pictures of the Iness Hell X are here, shown in various locations, and
+also shown on the day it was retired.
+~
+0 1073741836 1
+D0
+~
+~
+0 -1 3545
+D1
+~
+~
+7 3503 3544
+D2
+~
+~
+0 -1 3541
+D3
+~
+~
+0 -1 3543
+S
+#3543
+A Bathroom~
+Simply painted white, this guest bathroom has nothing more then a toilet
+and a sink .
+~
+0 1073741828 1
+D1
+~
+~
+0 -1 3542
+S
+#3544
+An Armor Room~
+~
+0 1073741828 1
+D3
+~
+~
+6 -1 3542
+S
+#3545
+Hideout Hallway~
+The final hallway of Snake's mansion contains entrances to his kitchen, his
+office, and his master bedroom. Pictures of his friends are around the
+area, as well as his past enemies.
+~
+0 1073741828 1
+D0
+~
+~
+0 -1 3548
+D1
+~
+~
+0 -1 3547
+D2
+~
+~
+0 -1 3542
+D3
+~
+~
+0 -1 3546
+S
+#3546
+Kitchen~
+A snack vendor is here, selling food to the different people who manage to
+wonder in here unharmed. Other then that, this room is bare.
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 3545
+S
+#3547
+Main Office~
+A desk sits in the center of the room, with a plush chair behind it, and a
+computer on top of it. Empty coffee mugs and plates of food are at one
+corner of it, and papers and building plans are at another.  A filing
+cabinate is in another corner of the room, filled with past files. A
+bookcase is in another corner, filled with different books. A water
+dispenser and couch are in another area, and a tv is on a stand up near
+the ceiling.
+~
+0 1073741824 1
+D3
+~
+~
+0 -1 3545
+S
+#3548
+Master Bedroom~
+A single window lights this room. A giant light, however, provides the
+light that this room needs. A giant bed sits against the north wall, and
+seems to be used often, as the sheets are ruffled up.  A dresser is
+against another wall, filled with Snake's normal clothing. To the east is
+Snake's master bathroom.
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 3549
+D2
+~
+~
+1 -1 3545
+S
+#3549
+Master Bathroom~
+A shower seems to be turned out, and seems to be set on hot. A sink is
+against another wall, and seems to be plain white. A toilet is also here.
+The room seems to be painted pure white.
+~
+0 1073741824 1
+D3
+~
+~
+0 -1 3548
+S
+#3550
+Floating in a void~
+~
+0 1073741824 1
+D2
+~
+~
+0 -1 3538
+S
+#3554
+Floating in a void~
+~
+0 1073741828 1
+S
+#0
+
+
+#RESETS
+D 0 3542 1 2
+O 1 3501 1 3543
+O 1 3502 1 3543
+O 1 6200 1 3544
+O 1 60 1 3544
+O 1 1100 1 3544
+O 1 609 1 3544
+O 1 631 1 3544
+O 1 628 1 3544
+O 1 608 1 3544
+M 1 6100 3 3546
+G 1 6106 1
+G 1 6108 1
+G 1 10314 1
+G 1 508 1
+G 1 1316 1
+G 1 2006 1
+G 1 10503 1
+G 1 1313 1
+G 1 1312 1
+G 1 1311 1
+O 1 2011 1 3547
+O 1 3500 1 3548
+D 0 3548 2 0
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

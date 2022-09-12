@@ -1,0 +1,701 @@
+#AREA   Court House~
+
+
+
+#AUTHOR Sangre~
+
+#RANGES
+0 1000 0 1005
+$
+
+#RESETMSG A police officer walks by, hauling in a criminal.~
+
+#FLAGS
+0 10
+
+#ECONOMY -2 384529833
+
+#MOBILES
+#7050
+courthouse security guard~
+A courthouse security guard~
+A courthouse security guard sits behind a desk here, watching security monitors.
+~
+The security guard's uniform is neatly creased and wrinkle free.  The black
+emblem of the LAW on it.  Worn on his head, a police hat rests. 
+~
+71 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+50 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 48 3
+0 0 0 0 0 0 0 0
+#7051
+colony security guard~
+A colony security guard~
+A colony security guard inspects the area here, watching intently.
+~
+The colony security guards uniform sticks to his body, wrinkles non
+existant on its black surface.  Worn on his head, a black hat, a star
+emblem emblazened on its surface. His hands are fitted into soft leather
+gloves, their surfacing glistening in the light.
+~
+3 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+50 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 48 3
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#7050
+sangre's trenchcoat~
+Sangre's black trenchcoat~
+Sangre's black trenchcoat lays here, waiting for its master.~
+~
+9 516 9 2
+150 0 0 0
+1 15000 1500
+#7051
+sangre's blade of righteousness~
+&RSangre's &Wblade of righteousness~
+&RSangre's &Wblade of righteousness lays here, waiting for its master.~
+~
+5 516 8193
+13 0 0 2 500 1000
+5 15000 1500
+#7052
+sangre's black combat boots~
+&RSangre's &WBlack combat boots~
+&RSangre's &WBlack combat boots lay here, waiting for their master.~
+~
+9 516 65
+150 0 0 0
+2 15000 1500
+#7053
+sangre's soft black pants~
+&RSangre's &Wsoft black pants~
+&RSangre's &Wsoft black pants lay here, waiting for their master.~
+~
+9 516 33
+0 0 0 0
+1 15000 1500
+#7054
+double belt of righteousness~
+&WThe double belt of Righteousness~
+&WThe double belt of Righteousness lays here, waiting for its master.~
+~
+15 516 2049
+1000 0 0 0
+2 15000 1500
+#7055
+a black undershirt~
+A black undershirt~
+A black undershirt lays here, crumpled and forgotten.~
+~
+9 516 9
+150 0 0 0
+1 15000 1500
+#7056
+sangre's bandana~
+&YSangre's &Wbandana~
+&YSangre's &Wbandana lays here, waiting for its master.~
+~
+9 516 17
+0 0 0 0
+1 0 0
+#7057
+bracer of righteousness~
+a bracer of righteousness~
+A bracer of righteousness is here.~
+~
+9 516 4097
+150 0 0 0
+1 150000 15000
+#7058
+sangre's black sunglasses~
+Sangre's sunglasses~
+Sangre's sunglasses rest here, glinting brightly.~
+~
+9 516 131073
+150 0 0 0
+1 15000 1500
+#7059
+jail keys~
+A jail key ring~
+A key ring filled with keys lay here on the ground, rusting.~
+~
+18 0 1
+0 0 0 0
+3 0 0
+#7060
+a wooden bench~
+A crude wooden bench~
+A crude wooden bench sits here against the wall.~
+~
+12 0 0
+0 0 0 0
+1 0 0
+E
+a wooden bench~
+A crude wooden bench rests against the wall, it's rotted wood barely able
+to hold the wait of the prisoners. 
+~
+#7061
+dilapidated bunk bed~
+A dilapidated bunk bed~
+A dilapidated bunk bed rests precariously against the wall here.~
+~
+12 0 0
+0 0 0 0
+1 0 0
+E
+dilapidated bunk bed~
+The bunk bed, made of crude metal, rests softly against the wall.  Shredded
+mattresses fill the expanse of their empty bunks. On the mattresses, human
+pee stains their surface. 
+~
+#7062
+security desk~
+The security desk~
+The security desk rests in the corner here, a guard sitting behind it.~
+~
+12 0 0
+0 0 0 0
+1 0 0
+E
+security desk~
+The black surface of the desk reflects the soft glow of the lamps above. 
+Behind it, security monitors hum quietly, being monitored constantly.
+~
+#7063
+courthouse terminal~
+A court house terminal~
+&RA Court House terminal rests here, humming.~
+~
+13 0 0
+0 0 0 0
+1 0 0
+E
+courthouse terminal~
+This terminal looks just like any normal terminal.  The edges are painted
+blue and its black screen waits for input.
+~
+#0
+
+
+#ROOMS
+#7050
+Stairs to the Courthouse~
+Marble steps lead up to the glistening white facad of the courthouse walls.
+ White french doors line the landing above, black marble framing it into
+the wall. Chipped white marble tiles cover the courthouse, specks
+glittering in the light.  Two bay windows protrude from the gleaming
+surface above, their windows opening onto the second floor. In the center
+of the stairs a large statue of the Courthouse's founder, Shinato Sangre,
+stands tall and at attention, holding a gavel in one hand.
+~
+0 1024 1
+D1
+~
+~
+0 7059 7052
+D3
+~
+~
+0 -1 503
+S
+#7051
+North Stairwell~
+Carved white marble stairs curve slowly along the walls of the lobby,
+glistening specks sparkling in the bright lights along the walls.  Oaken
+wood spindles sit along the edge of the stairs, holding a carved wood
+handleguide, and seperating the stairs fr om the rest of the room.
+Overhead lights inset into the ceiling spill downward, illuminating the
+stairs, and the beige walls along them.  A black wrought iron hand-guide
+sits four feet above the ground, curving upward to the landing above. On
+the walls, portraits of immortals hang neatly, most covered in a thin
+layer of chalky dust.  Small gold nameplates sit under them, reminding
+mortals of the next reality.
+~
+0 1032 1
+D2
+~
+~
+0 -1 7052
+D4
+~
+~
+0 -1 7065
+D5
+~
+~
+0 -1 7057
+S
+#7052
+Courthouse Lobby~
+Polished marble tiles cover the surface of the floor, their reflective
+surfaces glistening in the lights of the lobby.  The white french doors
+lead into the center of the room, where a black marble compass points
+north in the center of the room. High above a domed ceiling cases a
+painting of immense proportions, stars and planets glistening on its
+smooth surface.  Around the edges of it spotlights illuminate its paint.
+Stairwell's encompass the room both north and south, starting on the west,
+and following the curved walls east, their ornate wood moldings gleaming
+in the bright lights of the room. At the far end, near the entrance to the
+courtroom, a security desk sits two security guards, one watching the room
+as the other watches the security monitors.    &RA Courthouse terminal is
+here for you to contact the sheriffs.  If you use this for anything else,
+charges will be pressed.
+~
+0 1032 1
+D0
+~
+~
+0 -1 7051
+D1
+~
+~
+3 -1 7059
+D2
+~
+~
+0 -1 7053
+D3
+~
+~
+0 -1 7050
+S
+#7053
+South Stairwell~
+Carved white marble stairs curve slowly along the walls of the lobby,
+glistening specks sparkling in the bright lights along the walls.  Oaken
+wood spindles sit along the edge of the stairs, holding a carved wood
+handleguide, and seperating the stairs fr om the rest of the room.
+Overhead lights inset into the ceiling spill downward, illuminating the
+stairs, and the beige walls along them.  A black wrought iron hand-guide
+sits four feet above the ground, curving upward to the landing above. On
+the walls, portraits of immortals hang neatly, most covered in a thin
+layer of chalky dust.  Small gold nameplates sit under them, reminding
+mortals of the next reality. 
+~
+0 1032 1
+D0
+~
+~
+0 -1 7052
+D4
+~
+~
+0 -1 7067
+D5
+~
+~
+0 -1 7054
+S
+#7054
+South Stairwell~
+The white marble facad becomes a dank blank concrete wall as it lowers to
+the basement.  A few water stains purge the vapor barrier, emitting a
+musty humid enviroment. In the background a soft drip drop echoes off the
+walls, it's sound eminating from the halls.  Above a concrete ceiling
+spans from one wall to another, a small opening cut to create room for the
+stairwell from the main lobby.
+~
+0 1032 1
+D0
+~
+~
+0 -1 7058
+D4
+~
+~
+0 -1 7053
+S
+#7055
+Judge's Quarters~
+An elaborate wooden desk rests in the center of the room here, its wooden
+legs digging deep into the soft blue carpet. Behind the desk, a large book
+case to match that of the desk, rests against the wall.  It's shelves
+filled with books of all sorts, most relating to the law of the mud.
+Directly behind the desk, an indent in the book case reveals a waist haigh
+counter, filled with personal effects of the judge.  Above that, a picture
+of Judge Shinato Sangre, current Judge and Sheriff of gundam.
+~
+0 1032 1
+D0
+~
+~
+0 -1 7056
+D3
+~
+~
+39 7059 7059
+S
+#7056
+Jurer'S Quarters~
+A large metal table sits in the center of the room, filling quite a large
+floor area.  Soft leather chairs are crowded around its artistic surface.
+Along the walls waist high counters rest against the wall, platters of
+food sitting on their granite surface.  Two large windows on the north
+wall open onto the outside of the colony.
+~
+0 1032 1
+D2
+~
+~
+0 -1 7055
+S
+#7057
+North Stairwell~
+The white marble facad becomes a dank blank concrete wall as it lowers to
+the basement.  A few water stains purge the vapor barrier, emitting a
+musty humid enviroment. In the background a soft drip drop echoes off the
+walls, it's sound eminating from the halls.  Above a concrete ceiling
+spans from one wall to another, a small opening cut to create room for the
+stairwell from the main lobby.
+~
+0 1032 1
+D2
+~
+~
+0 -1 7058
+D4
+~
+~
+0 -1 7051
+S
+#7058
+Jail Checkpoint~
+Concrete slabs stand erect, forming the basis for the basement walls, their
+dank surfaces covered in water stains here and there.  Overhead a blank
+concrete ceiling spans from wall to wall, bare wires and bulbs hanging in
+the center. Along the walls wooden benches sit, a prisoner here and there
+sitting and resting waiting till his trial.  Blood marks dot the floors, a
+few other unidentifiable stains here and there.
+~
+0 1032 1
+D0
+~
+~
+0 -1 7057
+D1
+~
+~
+0 -1 7060
+D2
+~
+~
+0 -1 7054
+S
+#7059
+Courtroom~
+On the far wall, a large raised podium commands the room, two smaller
+podiums on either side of it.  The podium's oaken surface finished with a
+light glaze, reflects the light of the room.  On the two smaller podiums
+leather seats are apparent over their edges. Over the lip of the larger
+podium, the headrest of a large plush leather chair and a gavel are
+visible.  Along the northern wall, a few feet seperate of the podiums, a
+wooden box sits, twelve chairs filling its interiour. Leading from the
+western edge of the Jurer's box, a fence waist high heads to the south
+wall, segregating the spectators. Infront of the fence, two large tables
+sit on either side of the gate.  Two chairs resting behind the tables,
+cushions on each. A walkway leads down the center of the room from the
+entrance to the Judge's podium, a small gate opening the fence in the
+center of the room. Rows of pews extend from the wooden fence, back to the
+back wall, above a balcony to watch the proceedings as well holds rows of
+pews. 
+~
+0 1032 1
+D1
+~
+~
+33 7059 7055
+D3
+~
+~
+35 7059 7052
+S
+#7060
+Jail Hallway~
+Along the walls wooden benches sit, a prisoner here and there sitting and
+resting waiting till his trial.  Blood marks dot the floors, a few other
+unidentifiable stains here and there. Concrete slabs stand erect, forming
+the basis for the basement walls, their dank surfaces covered in water
+stains here and there.  Overhead a blank concrete ceiling spans from wall
+to wall, bare wires and bulbs hanging in the center. 
+~
+0 1032 1
+D1
+~
+~
+0 -1 7062
+D3
+~
+~
+0 -1 7058
+S
+#7061
+Jail Cell 1~
+Blank concrete slabs emerge from the floor, their soft surfaces glowing in
+the light of the single bulb.  A few water stains dot the walls, quite a
+large one dripping down from one corner. Along the back wall, an old bunk
+bed rests, its matresses ripped and dilapidated.  In the corner, close to
+the bunk bed, a toilet sits, overfilling with human vile. Along the side
+wall, a sink overfills with water and paper towels.
+~
+0 8455688 1
+D2
+~
+~
+1063 7059 7062
+S
+#7062
+Jail Lobby~
+Jail doors hang stiffly in their frames, concrete framing their black bars.
+ Towards the west wall, a small cluttered desk fits quite a chubby
+security guard, monitors surrounding him. From one of the jails a soft
+drip drop eminates, it's resounding echo bouncing off the blank concrete
+walls. The moans of imprisoned echo along with the dripping, their
+complaints of the conditions filling the air.
+~
+0 1032 1
+D0
+~
+~
+35 7059 7061
+D1
+~
+~
+35 7059 7064
+D2
+~
+~
+35 7059 7063
+D3
+~
+~
+0 -1 7060
+S
+#7063
+Jail Cell 3~
+Blank concrete slabs emerge from the floor, their soft surfaces glowing in
+the light of the single bulb.  A few water stains dot the walls, quite a
+large one dripping down from one corner. Along the back wall, an old bunk
+bed rests, its matresses ripped and dilapidated.  In the corner, close to
+the bunk bed, a toilet sits, overfilling with human vile. Along the side
+wall, a sink overfills with water and paper towels.
+~
+0 8455176 1
+D0
+~
+~
+39 7059 7062
+S
+#7064
+Jail Cell 2~
+redit desc Blank concrete slabs emerge from the floor, their soft surfaces
+glowing in the light of the single bulb.  A few water stains dot the
+walls, quite a large one dripping down from one corner. Along the back
+wall, an old bunk bed rests, its matresses ripped and dilapidated.  In the
+corner, close to the bunk bed, a toilet sits, overfilling with human vile.
+Along the side wall, a sink overfills with water and paper towels.
+~
+0 8455176 1
+D3
+~
+~
+39 7059 7062
+S
+#7065
+North Stairwell~
+The glistening white marble tiles of the lobby continue up to the ceiling,
+patterns forming it their edges.  The stairs, carved soft white marble,
+curve upward and attach to the admnistrative hallway landing. Along the
+edge of the stairs, a wooden railing follows the stairs, curving upward
+towards the landing.  Hanging on the walls pictures of the immortals of
+the game hang, dust collecting on their guilded frames.
+~
+0 1032 1
+D2
+~
+~
+0 -1 7066
+D5
+~
+~
+0 -1 7051
+S
+#7066
+Administration Hallway~
+The elaborate decor of the main level of the Courthouse melds into the
+simple and humble decorating of the administrative hallway.  Along the
+walls, white marble becomes blank painted tan.   Overhead soft lamps light
+the way, their glowing orbs inset into the ceiling.  Along the walls soft
+carved wooden benches sit, their molded seats beckoning to sit.
+~
+0 1032 1
+D0
+~
+~
+0 -1 7065
+D1
+~
+~
+0 -1 7068
+D2
+~
+~
+0 -1 7067
+S
+#7067
+South Stairwell~
+The glistening white marble tiles of the lobby continue up to the ceiling,
+patterns forming it their edges.  The stairs, carved soft white marble,
+curve upward and attach to the admnistrative hallway landing. Along the
+edge of the stairs, a wooden railing follows the stairs, curving upward
+towards the landing.  Hanging on the walls pictures of the immortals of
+the game hang, dust collecting on their guilded frames.
+~
+0 1032 1
+D0
+~
+~
+0 -1 7066
+D5
+~
+~
+0 -1 7053
+S
+#7068
+Administration Hallway~
+Overhead soft lamps light the way, their glowing orbs inset into the
+ceiling.  Along the walls soft carved wooden benches sit, their molded
+seats beckoning to sit. The elaborate decor of the main level of the
+Courthouse melds into the simple and humble decorating of the
+administrative hallway.  A soft tan paint covers the walls, its glossy
+surface reflecting the lamps.
+~
+0 1032 1
+D1
+~
+~
+0 -1 7070
+D3
+~
+~
+0 -1 7066
+S
+#7069
+Sheriff's Office~
+The humble surroundings of the sheriffs office envelope the room.  A desk
+sits in the center of the office, covered with papers from mortals. 
+Behind the desk a large book shelf spans across the back wall.  It's
+spacious shelves filled with books and personal effects of the sherriff.
+~
+0 1032 1
+D2
+~
+~
+0 -1 7070
+S
+#7070
+Administration Lobby~
+The elaborate decor of the main level of the Courthouse melds into the
+simple and humble decorating of the administrative hallway.  A soft tan
+paint covers the walls, its glossy surface reflecting the lamps. Overhead
+soft lamps light the way, their glowing orbs inset into the ceiling. 
+Along the walls soft carved wooden benches sit, their molded seats
+beckoning to sit.
+~
+0 1032 1
+D0
+~
+~
+0 -1 7069
+D1
+~
+~
+0 -1 7072
+D2
+~
+~
+0 -1 7071
+D3
+~
+~
+0 -1 7068
+S
+#7071
+Deputy's Office~
+The humble surroundings of the deputy's office envelope the room.  A desk
+sits in the center of the office, covered with papers from mortals. 
+Behind the desk a large book shelf spans across the back wall.  It's
+spacious shelves filled with books and personal effects of the deputy.
+~
+0 1032 1
+D0
+~
+~
+0 -1 7070
+S
+#7072
+Deputy's Office~
+The humble surroundings of the deputy's office envelope the room.  A desk
+sits in the center of the office, covered with papers from mortals. 
+Behind the desk a large book shelf spans across the back wall.  It's
+spacious shelves filled with books and personal effects of the deputy.
+~
+0 1032 1
+D3
+~
+~
+0 -1 7070
+S
+#0
+
+
+#RESETS
+M 1 7050 1 7052
+M 1 7051 1 7052
+O 1 7062 1 7052
+O 1 7063 1 7052
+D 0 7052 1 1
+D 0 7055 3 2
+D 0 7059 1 0
+D 0 7059 3 1
+O 1 7060 1 7060
+O 1 7061 1 7061
+D 0 7061 2 2
+D 0 7062 0 1
+D 0 7062 1 1
+D 0 7062 2 1
+O 1 7061 1 7063
+D 0 7063 0 2
+O 1 7061 1 7064
+D 0 7064 3 2
+O 1 7060 1 7068
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

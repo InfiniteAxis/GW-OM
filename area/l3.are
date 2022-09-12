@@ -1,0 +1,3095 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         Colony L3~
+Author       Hinzu~
+Ranges       1 1007 1 1007
+Economy      0 45402217
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       200
+Keywords   Class 2 Training Robot~
+Short      a Class 2 Training Robot~
+Long       A Class 2 Training Robot whirs and hums before you.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel droid~
+Stats1     0 40 0 0 60 0
+Stats2     8 10 400
+Stats3     4 4 2
+Stats4     0 0 0 8 8
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       201
+Keywords   Class 3 Training Droid~
+Short      a Class 3 Training Droid~
+Long       A Class 3 Training Droid buzzes and squeaks here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel droid~
+Stats1     0 100 0 -150 90 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       202
+Keywords   Class 4 Training Droid~
+Short      A Class 4 Training Droid~
+Long       A Class 4 Training Droid is here, humming quietly.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel droid~
+Stats1     0 155 0 -287 120 0
+Stats2     31 10 1550
+Stats3     15 4 2
+Stats4     0 0 0 31 31
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       203
+Keywords   Class 5 Training Android~
+Short      a Class 5 Training Android~
+Long       A Class 5 Training Android hums glows and hums quietly here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel droid~
+Stats1     0 300 0 -650 180 0
+Stats2     60 10 3000
+Stats3     30 4 2
+Stats4     0 0 0 60 60
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       204
+Keywords   Class 6 Training Android~
+Short      a Class 6 Training Android~
+Long       A Class 6 Training Android is here, with a glazed look.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel droid~
+Stats1     0 350 0 -775 210 0
+Stats2     70 10 3500
+Stats3     35 4 2
+Stats4     0 0 0 70 70
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       205
+Keywords   Class 7 Training Cyborg~
+Short      a Class 7 Training Cyborg~
+Long       A Class 7 Training Cyborg stands here, scowling at you.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 425 0 -962 240 0
+Stats2     85 10 4250
+Stats3     42 4 2
+Stats4     0 0 0 85 85
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       206
+Keywords   Class 8 Training Cyborg~
+Short      a Class 8 Cyborg~
+Long       A Class 8 Training Cyborg is here, scowling.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 501 0 300 250 0
+Stats2     100 10 5010
+Stats3     50 4 2
+Stats4     0 0 0 100 100
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       207
+Keywords   L3 Military Grunt~
+Short      an L3 Military Grunt~
+Long       An L3 Military Grunt stands here, guarding the entrance.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 500 0 -1150 0 0
+Stats2     100 10 5000
+Stats3     50 4 2
+Stats4     0 0 0 100 100
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+VIPFlags   L3~
+#MUDPROG
+Progtype  bribe_prog~
+Arglist   5000~
+Comlist   mpload 273 0
+unlock north
+open north
+mpmload 207
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       208
+Keywords   L3 Repairman~
+Short      an L3 Repairman~
+Long       An L3 Repairman is here, sharpening some old blades.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 100 0 -150 1000 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+VIPFlags   L3~
+RepairData 5 9 0 125 1 0 23
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpmload 208
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       209
+Keywords   Military Provisioner~
+Short      a newly created Military Provisioner~
+Long       Some god abandoned a newly created Military Provisioner here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 300 0 -650 0 0
+Stats2     60 10 3000
+Stats3     30 4 2
+Stats4     0 0 0 60 60
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+VIPFlags   L3~
+#ENDMOBILE
+
+#MOBILE
+Vnum       210
+Keywords   L3 Workshop Shopkeeper~
+Short      The L3 Engineering Shopkeeper~
+Long       The shopkeeper is waiting to take your order.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   blink
+say Oh, I didn't expect anyone to come here.
+say Well anyway, Welcome to Engineering Goods!
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       217
+Keywords   Augmented Combat Cyborg~
+Short      An Augmented Combat Cyborg~
+Long       An Oddly Augmented Combat Cyborg stares at you menacingly.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 500 0 -1150 0 0
+Stats2     100 10 5000
+Stats3     50 4 2
+Stats4     0 0 0 100 100
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       218
+Keywords   Null Dude, makeover.~
+Short      an L3 Military Grunt~
+Long       A dude who isnt finished
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 500 0 -1150 0 0
+Stats2     100 10 5000
+Stats3     50 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+VIPFlags   L3~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Open up~
+Comlist   if ispc($n)
+mpoload 273 0
+Say Nice doing business with ya, $n
+unlock south
+open south
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       219
+Keywords   Restaurant Waiter~
+Short      A Restaurant Waiter~
+Long       A Restaurant Waiter is here, seating customers and taking orders.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel nocorpse~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 17 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   order~
+Comlist   say Very well $n, here's your menu.
+mpoload 219
+mpoload 222
+mpoload 202
+mpoload 223
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       220
+Keywords   Bar Wench~
+Short      An L3 Bar Wench~
+Long       An L3 Bar Wench goes back and forth, serving half-drunken customers.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel nocorpse~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   booze~
+Comlist   say over on the counter, check the list again, $n
+mpoload 202
+mpoload 203
+mpoload 219
+mpoload 221
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       221
+Keywords   L3 Citizen~
+Short      citizen~
+Long       A colony citizen is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc~
+Stats1     0 15 0 62 50 0
+Stats2     3 10 150
+Stats3     1 4 2
+Stats4     0 0 0 3 3
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+VIPFlags   L3~
+#ENDMOBILE
+
+#MOBILE
+Vnum       222
+Keywords   An L3 Hotel Manager~
+Short      An L3 Hotel Manager~
+Long       An L3 Hotel Manager is here, waiting to give you a room.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel prototype~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       223
+Keywords   L3 Academy Trainer~
+Short      An L3 Academy Trainer~
+Long       An L3 Academy Trainer is here, cycling between reading books, and workout out.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel train~
+Stats1     0 250 0 -525 0 0
+Stats2     50 10 2500
+Stats3     25 4 2
+Stats4     0 0 0 50 50
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       224
+Keywords   Guard~
+Short      Customs Guard~
+Long       An L3 guard stands here looking through peoples belongings for weapons and drugs.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_customs_weapons~
+Specfun2    spec_customs_spice~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 700 0 -1650 0 0
+Stats2     140 10 7000
+Stats3     70 4 2
+Stats4     0 0 0 85 65
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    kick~
+Defenses   parry dodge~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   say Hello $n, We don't want any trouble here, so keep it clean.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       225
+Keywords   Dog~
+Short      Police Dog~
+Long       An L3 Police Dog is here sniffing people's bags in search of drugs.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_customs_spice~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 700 0 -1650 0 0
+Stats2     140 10 7000
+Stats3     70 4 2
+Stats4     0 0 0 85 65
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    kick~
+Defenses   parry dodge~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   emote Walks up to $n and sniffs him for drugs.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       226
+Keywords   Crooked Salesman~
+Short      A Crooked Salesman~
+Long       A Crooked Salesman is here smoking some weed.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       257
+Keywords   L3 Item Provisioner~
+Short      an L3 Item Provisioner~
+Long       An L3 Item Provisioner is here, shuffling through some drawers.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel nocorpse~
+Stats1     0 100 0 -150 1000 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   restock~
+Comlist   say "Oh...i'm sorry, give me a minute please."
+mpecho The Provisioner shuffles around, restocking.
+say "There ya go sweetie, all restocked."
+mpoload 500
+mpoload 2014
+mpoload 2015
+mpoload 2017
+mpoload 2018
+mpoload 2013
+mpoload 2020
+mpoload 2022
+mpoload 10424
+mpoload 2023
+mpoload 2021
+mpoload 2024
+mpoload 2025
+mpoload 2016
+mpoload 2026
+mpoload 10498
+mpoload 10313
+mpoload 10314
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       271
+Keywords   L3 Armorer~
+Short      an L3 Armorer~
+Long       An L3 Armorer is here, oiling some leather.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel nocorpse~
+Stats1     0 99 0 -147 1000 0
+Stats2     19 10 990
+Stats3     9 4 2
+Stats4     0 0 0 22 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   today?~
+Comlist   mpoload 201
+mpoload 204
+mpoload 205
+mpoload 206
+mpoload 501
+mpoload 503
+mpoload 504
+mpoload 505
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       272
+Keywords   L3 Weaponsmith~
+Short      an L3 Weaponsmith~
+Long       An L3 Weaponsmith is here, cleaning the barrel on a pistol.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel scavenger nocorpse~
+Stats1     0 100 0 -150 1000 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   shipment?~
+Comlist   mpoload 59
+mpoload 2000
+mpoload 2002
+mpoload 2007
+mpoload 6003
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       273
+Keywords   Minime~
+Short      &GM&gi&bn&gi&b-&GL&ge&bp&gp&Gy~
+Long       &GM&gi&bn&gi&b-&GL&ge&bp&gp&Gy&b stands here playing with himself.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel noquest~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   scream
+shin $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpmload 273
+mpecho And I shall call him... Mini-Leppy.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   casa~
+Comlist   if hasqbit($n) == 5
+say yeah you're a pimp, you can go..
+say Welcome to Casa de Leppy.
+mptransfer $n 107
+else
+say fuck you bitch, i may be 3 foot 9 but i got a 10 foot dick!
+say take your bitch ass on somewhere...
+mptransfer $n 106
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       285
+Keywords   Class 1 Training Robot~
+Short      a Class 1 Training Robot~
+Long       A Class 1 Training Robot sputters and sparks before you.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel droid~
+Stats1     0 12 0 70 30 0
+Stats2     2 10 120
+Stats3     1 4 2
+Stats4     0 0 0 2 2
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       299
+Keywords   last~
+Short      a newly created last~
+Long       Some god abandoned a newly created last here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#OBJECT
+Vnum     200
+Keywords Colony Balancing Mechanism~
+Type     trash~
+Short    The Colony Balancing Mechanism~
+Long     The Balancing Mechanism for Colony L3 is here, whirring and humming.~
+Flags    glow hum~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     201
+Keywords Black Trench Coat~
+Type     armor~
+Short    a black trench coat~
+Long     A black trench coat is lying here.~
+Flags    inventory~
+WFlags   take body~
+Values   75 75 0 0 0 0
+Stats    1 700 400000 0 32
+#ENDOBJECT
+
+#OBJECT
+Vnum     202
+Keywords beer~
+Type     drinkcon~
+Short    A bottle of Beer~
+Long     A bottle of Beer sits here.~
+WFlags   take~
+Values   5 5 1 0 0 0
+Stats    1 100 10 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     203
+Keywords Whiskey~
+Type     drinkcon~
+Short    A shot of Whiskey~
+Long     A shot of Whiskey sits here.~
+WFlags   take~
+Values   1 1 5 0 0 0
+Stats    1 175 17 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     204
+Keywords Black Wool Pants~
+Type     armor~
+Short    some black wool pants~
+Long     Some black wool pants are lying here.~
+Flags    inventory~
+WFlags   take legs~
+Values   27 27 0 0 0 0
+Stats    1 500 100 0 2
+#ENDOBJECT
+
+#OBJECT
+Vnum     205
+Keywords Black Cotton Shirt~
+Type     armor~
+Short    a black cotton shirt~
+Long     A black cotton shirt is lying here.~
+Flags    inventory~
+WFlags   take body~
+Values   35 35 0 0 0 0
+Stats    1 500 50 0 1
+#ENDOBJECT
+
+#OBJECT
+Vnum     206
+Keywords Black Leather Belt~
+Type     armor~
+Short    a black leather belt~
+Long     A black leather belt is lying here.~
+Flags    inventory~
+WFlags   take waist~
+Values   20 20 0 0 0 0
+Stats    1 400 40 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     207
+Keywords Pimp Cane~
+Type     weapon~
+Short    &wD&zi&wa&zm&wo&zn&wd &CS&ct&gu&Gd&gd&ce&Cd &RP&ri&Rm&rp &YC&Oa&Yn&Oe~
+Long     &wA &wD&zi&wa&zm&wo&zn&wd &CS&ct&gu&Gd&gd&ce&Cd &RP&ri&Rm&rp &YC&Oa&Yn&Oe&Y was dropped here.~
+Flags    glow hum contraband noinvoke augmented~
+WFlags   take wield~
+Values   12000 8860 2 2 999999 999999
+Stats    1 0 0 0 0
+Affect       -1 -1 300 18 0
+Affect       -1 -1 300 19 0
+Affect       -1 -1 100 48 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     218
+Keywords L3 Military Grunt~
+Type     trash~
+Short    a L3 Military Grunt~
+Long     A L3 Military Grunt is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     219
+Keywords Cup of Wine~
+Type     drinkcon~
+Short    A cup of Wine~
+Long     A cup of Wine sits here.~
+Flags    inventory~
+WFlags   take~
+Values   3 3 2 0 0 0
+Stats    1 50 35 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     220
+Keywords Bar Wench~
+Type     trash~
+Short    a Bar Wench~
+Long     A Bar Wench is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     221
+Keywords Tall Mug Black Coffee~
+Type     drinkcon~
+Short    A tall mug of black coffee~
+Long     A tall mug of Black Coffee sits here.~
+Flags    inventory~
+WFlags   take~
+Values   6 6 12 0 0 0
+Stats    1 75 7 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     222
+Keywords Juicy Red Lobster~
+Type     food~
+Short    A juicy Red Lobster~
+Long     A juicy Red Lobster is sitting here.~
+Flags    inventory~
+WFlags   take~
+Values   50 50 0 0 0 0
+Stats    2 20 50 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     223
+Keywords Buttered Bread~
+Type     food~
+Short    some buttered bread~
+Long     Some buttered bread is sitting here.~
+Flags    inventory~
+WFlags   take~
+Values   50 50 0 0 0 0
+Stats    2 20 12 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     224
+Keywords Spice~
+Type     spice~
+Short    a Spice~
+Long     A Spice is here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 1500 150 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     258
+Keywords a miniature mega particle cannon~
+Type     weapon~
+Short    a miniature mega particle cannon~
+Long     A miniature mega particle cannon lies here.~
+Flags    inventory~
+WFlags   take wield~
+Values   100 4 2 6 5000 5000
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     259
+Keywords gothic leather couch~
+Type     furniture~
+Short    &zA black leather couch~
+Long     &zA gothic style leather couch it here in the center of the far wall.~
+Values   5 5 2 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     260
+Keywords Pimp Hat~
+Type     armor~
+Short    &wA &YP&Oi&Ym&Op &wH&za&wt~
+Long     &wA &YP&Oi&Ym&Op &wH&za&wt&z was dropped here.~
+WFlags   take head~
+Values   99999 99999 2 2 99999 99999
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     261
+Keywords Versace Chain~
+Type     armor~
+Short    &zA &wP&zl&wa&zt&wi&zn&wu&zm &YV&Oe&Yr&Os&Ya&Oc&Ye &CC&ch&Ca&ci&Cn~
+Long     &zA &wP&zl&wa&zt&wi&zn&wu&zm &YV&Oe&Yr&Os&Ya&Oc&Ye &CC&ch&Ca&ci&Cn&c was dropped here.~
+WFlags   take neck~
+Values   99999 99999 2 2 99999 99999
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     262
+Keywords Versace Shirt~
+Type     armor~
+Short    &wA &YG&Oo&Yl&Od &GA&gn&Gd &wB&zl&wa&zc&wk &YV&Oe&Yr&Os&Ya&Oc&Ye &RD&rr&Re&rs&Rs &CS&ch&Ci&cr&Ct~
+Long     &wA &YG&Oo&Yl&Od &GA&gn&Gd &wB&zl&wa&zc&wk &YV&Oe&Yr&Os&Ya&Oc&Ye &RD&rr&Re&rs&Rs &CS&ch&Ci&cr&Ct&c was dropped here.~
+WFlags   take body~
+Values   99999 99999 2 2 99999 99999
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     263
+Keywords Polo Pants~
+Type     armor~
+Short    &wB&zl&wa&zc&wk &RP&ro&Rl&ro &CP&ca&Cn&ct&Cs~
+Long     &cA &GP&ga&Gi&gr &Po&pf &wB&zl&wa&zc&wk &RP&ro&Rl&ro &CP&ca&Cn&ct&Cs&c were dropped here.~
+WFlags   take legs~
+Values   99999 99999 2 2 99999 99999
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     264
+Keywords Timberland Boots~
+Type     armor~
+Short    &YT&Oi&Ym&Ob&Ye&Or&Yl&Oa&Yn&Od &YB&Oo&Yo&Ot&Ys~
+Long     &YA &OP&Ya&Oi&Yr &Oo&Yf &OT&Yi&Om&Yb&Oe&Yr&Ol&Ya&On&Yd &OB&Yo&Oo&Yt&Os&Y were dropped here.~
+WFlags   take feet~
+Values   99999 99999 2 2 99999 99999
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     265
+Keywords sewing kit~
+Type     thread~
+Short    a sewing kit~
+Long     A needle and thread lie here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 20 2 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     273
+Keywords ESUN Jail Key~
+Type     key~
+Short    ESUN Jail Key~
+Long     A key with the insignia of the ESUN is lying here.~
+WFlags   take~
+Values   1 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     299
+Keywords last~
+Type     trash~
+Short    a last~
+Long     A last is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     200
+Name     &zL&W3 &CS&Bt&Ca&cr &BP&Co&cr&Bt~
+Sector   city~
+Flags    nomob can_land can_fly docking~
+Desc     This is the L3 Colony Star Port, there are many mobile ships and suits
+coming and leaving here. Many engineers run from ship to ship repairing
+the damages that have been receive on the suits and refueling the fuel
+that they lost.
+~
+#EXIT
+Direction north~
+ToRoom    201
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     201
+Name     &zL&W3 Street~
+Sector   city~
+Desc     This is the beginning of the main street in L3. You see that there is a
+Customs guard here confiscating all weapons and drugs he finds, if you are
+smart you should not carry any.
+~
+#EXIT
+Direction north~
+ToRoom    202
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    200
+#ENDEXIT
+
+Reset M 0 224 1 201
+#ENDROOM
+
+#ROOM
+Vnum     202
+Name     &zL&W3 Street~
+Sector   city~
+Desc     The street keeps going further and further, and the beauty of this colony
+becomes clearer and clearer with each step you take.
+~
+#EXIT
+Direction north~
+ToRoom    209
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6310
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    201
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    203
+#ENDEXIT
+
+Reset M 0 221 100 202
+#ENDROOM
+
+#ROOM
+Vnum     203
+Name     Walkway~
+Sector   inside~
+Flags    nomob~
+Desc     The street keeps going further and further, and the beauty of this colony
+becomes clearer and clearer with each step you take.
+~
+#EXIT
+Direction northeast~
+ToRoom    288
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    202
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     204
+Name     Store Lobby~
+Sector   inside~
+Flags    indoors~
+Desc     This is L3's mini shopping center, here you can get weapons, armors, and
+all kinda of items. If you can't find what you need here, maybe you should
+just leave. 
+~
+#EXIT
+Direction north~
+ToRoom    212
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    207
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    206
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    205
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    299
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     205
+Name     Item Shop~
+Sector   inside~
+Flags    indoors~
+Desc     As you walk into the Provisioner's shop, you notice that the owner is a
+young woman, and she is shuffling through papers, and flirting with some
+customers.  You wonder if she has realized she hasn't even restocked her
+shelves.  Maybe you should ask her to Restock.
+~
+#EXIT
+Direction east~
+ToRoom    204
+#ENDEXIT
+
+Reset M 0 257 1 205
+  Reset G 1 2016 1
+  Reset G 1 2026 1
+  Reset G 1 2025 1
+  Reset G 1 2024 1
+  Reset G 1 2021 1
+  Reset G 1 2023 1
+  Reset G 1 10424 1
+  Reset G 1 2022 1
+  Reset G 1 2020 1
+  Reset G 1 2013 1
+  Reset G 1 2018 1
+  Reset G 1 2017 1
+  Reset G 1 2015 1
+  Reset G 1 2014 1
+  Reset G 1 500 1
+  Reset G 1 10498 1
+  Reset G 1 10314 1
+  Reset G 1 10313 1
+#ENDROOM
+
+#ROOM
+Vnum     206
+Name     Weapons Shop~
+Sector   inside~
+Flags    indoors~
+Desc     This is the L3 colony Weapons Shop.  The shopkeeper is an unfriendly old
+coot, but if you ask him about his Shipment, he just might sell to you.
+~
+#EXIT
+Direction north~
+ToRoom    204
+#ENDEXIT
+
+Reset M 0 272 1 206
+  Reset G 1 2000 1
+  Reset G 1 2002 1
+  Reset G 1 502 1
+  Reset G 1 2007 1
+#ENDROOM
+
+#ROOM
+Vnum     207
+Name     Armor Shop~
+Sector   inside~
+Flags    indoors~
+Desc     You are standing in what appears to be the L3 Colony Armory. Sometimes the
+shopkeeper forgets to put out his wares, so don't forget to ask him what's
+for sale Today. 
+~
+#EXIT
+Direction west~
+ToRoom    204
+#ENDEXIT
+
+Reset M 0 271 1 207
+  Reset G 1 204 1
+  Reset G 1 205 1
+  Reset G 1 206 1
+  Reset G 1 503 1
+  Reset G 1 504 1
+  Reset G 1 505 1
+  Reset G 1 201 1
+#ENDROOM
+
+#ROOM
+Vnum     208
+Name     Factory~
+Sector   inside~
+Flags    indoors silence factory~
+Desc     As you walk into the large factory you notice that it is so loud that you
+cant even hear yourself think. There are large fabrication machines here
+and they seem to be ready for use.
+~
+#EXIT
+Direction northwest~
+ToRoom    202
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     209
+Name     &zL&W3 Street~
+Sector   city~
+Desc     The street keeps going further and further, and the beauty of this colony
+becomes clearer and clearer with each step you take.
+~
+#EXIT
+Direction north~
+ToRoom    210
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    220
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    202
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    222
+#ENDEXIT
+
+Reset M 0 225 1 209
+#ENDROOM
+
+#ROOM
+Vnum     210
+Name     &zL&W3 Street~
+Sector   city~
+Desc     The street keeps going further and further, and the beauty of this colony
+becomes clearer and clearer with each step you take.
+~
+#EXIT
+Direction north~
+ToRoom    211
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    209
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    239
+#ENDEXIT
+
+Reset M 0 221 14 210
+Reset M 0 224 3 210
+#ENDROOM
+
+#ROOM
+Vnum     211
+Name     &zL&W3 Street~
+Sector   city~
+Desc     The street keeps going further and further, and the beauty of this colony
+becomes clearer and clearer with each step you take. 
+~
+#EXIT
+Direction north~
+ToRoom    267
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    212
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    210
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    223
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     212
+Name     &zL&W3 Street~
+Sector   city~
+Desc     The street keeps going further and further, and the beauty of this colony
+becomes clearer and clearer with each step you take.
+~
+#EXIT
+Direction east~
+ToRoom    213
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    204
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    211
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    268
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     213
+Name     L3 Residential Sector~
+Sector   city~
+Desc     This is the beginning of L3's best neighborhood. In here you will see some
+of the best homes still available to everyday people.
+~
+#EXIT
+Direction east~
+ToRoom    214
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    212
+#ENDEXIT
+
+Reset M 0 221 10 213
+Reset M 0 225 2 213
+#ENDROOM
+
+#ROOM
+Vnum     214
+Name     L3 Residential Sector~
+Sector   city~
+Desc     The homes here are in incredible condition, and the lawns are so freshly
+cut you can still smell the cut grass floating on the air.
+~
+#EXIT
+Direction east~
+ToRoom    215
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    213
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     215
+Name     L3 Residential Sector~
+Sector   city~
+Desc     The homes here are in incredible condition, and the lawns are so freshly
+cut you can still smell the cut grass floating on the air.
+~
+#EXIT
+Direction east~
+ToRoom    224
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    214
+#ENDEXIT
+
+Reset M 0 224 2 215
+#ENDROOM
+
+#ROOM
+Vnum     216
+Name     Sector 2~
+Sector   city~
+Desc     The general area is a very plain area, no color. Its just very cold
+like metal is. There is no emotion here just the cold steel. This
+walkway shows some of the true abilities of the human race.
+~
+#EXIT
+Direction northeast~
+ToRoom    217
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    215
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     217
+Name     Sector 2~
+Sector   city~
+Desc     The general area is a very plain area, no color. Its just very cold
+like metal is. There is no emotion here just the cold steel. This
+walkway shows some of the true abilities of the human race.
+~
+#EXIT
+Direction northeast~
+ToRoom    218
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    216
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     218
+Name     Sector 2~
+Sector   city~
+Desc     This is one of the Colony's few airlocks, there's only one reason for using
+this.  Awww...can't really be that bad, can it?  Well, if you REALLY wanna
+end it all, say Activate.  [Warning]: Doing so will KILL you.
+~
+#EXIT
+Direction southwest~
+ToRoom    217
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   activate~
+Comlist   mpdamage $n 30000
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     219
+Name     Le Grange Point~
+Sector   inside~
+Flags    nomob indoors~
+Desc     This is L3's Le Grange Point, where the balancing mechanism that controls
+the colony's stability is housed. 
+~
+Reset O 0 200 1 219
+#ENDROOM
+
+#ROOM
+Vnum     220
+Name     Hotel~
+Sector   inside~
+Flags    nomob indoors hotel~
+Desc     This is L3's most popular hotel. There are many visitors that come here
+from every colony to enjoy our first class treatment. To the south is our
+hotels bar where you can find all of the craziest people found on L3. If
+you go over there and ask, I'm sure you can get some beer.
+&BHere you can feel free to 'save' and 'quit' without worry.
+~
+#EXIT
+Direction south~
+ToRoom    221
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    209
+#ENDEXIT
+
+Reset M 0 222 1 220
+#ENDROOM
+
+#ROOM
+Vnum     221
+Name     Hotel Bar~
+Sector   inside~
+Flags    indoors~
+Desc     This is the L3 Bar, word has it the bar wench here knows a lot about people
+on this colony.  Maybe if you asked her who could be bribed... At first
+glance you don't see any liquor, maybe you should nag her about da booze.
+~
+#EXIT
+Direction north~
+ToRoom    220
+#ENDEXIT
+
+Reset M 0 220 1 221
+  Reset G 1 203 1
+  Reset G 1 202 1
+#MUDPROG
+Progtype  speech_prog~
+Arglist   bribed?~
+Comlist   mpechoat $n The Bar Wench whispers, "Military Grunt, 5000 credits."
+mpecho The Bar Wench scurries off to serve some customers.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     222
+Name     Restaurant~
+Sector   inside~
+Flags    indoors~
+Desc     This is the only restaurant on L3, but is nonetheless a rather classy
+place.  There are tables, chairs, candles, and just about any
+pointlessly gaudy thing in existence in this restaurant.  Just say you'd
+like to order, and the waiter will run right over with a menu for you.
+~
+#EXIT
+Direction east~
+ToRoom    209
+#ENDEXIT
+
+Reset M 0 219 1 222
+  Reset G 1 219 1
+  Reset G 1 222 1
+  Reset G 1 202 1
+  Reset G 1 223 1
+#ENDROOM
+
+#ROOM
+Vnum     223
+Name     Hospital~
+Sector   inside~
+Flags    indoors heal~
+Desc     There are dozens of nurses popping in and out of rooms, and you wonder if
+you will ever be seen.  Finally you decide you should just say heal.
+~
+#EXIT
+Direction east~
+ToRoom    211
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     224
+Name     L3 Residential Sector~
+Sector   city~
+Flags    nomob~
+Desc     The homes here are in incredible condition, and the lawns are so freshly
+cut you can still smell the cut grass floating on the air.
+~
+#EXIT
+Direction east~
+ToRoom    225
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    215
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     225
+Name     L3 Residential Sector~
+Sector   city~
+Desc     The homes here are in incredible condition, and the lawns are so freshly
+cut you can still smell the cut grass floating on the air.
+~
+#EXIT
+Direction east~
+ToRoom    226
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    224
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     226
+Name     L3 Residential Sector~
+Sector   city~
+Desc     The homes here are in incredible condition, and the lawns are so freshly
+cut you can still smell the cut grass floating on the air.
+~
+#EXIT
+Direction north~
+ToRoom    227
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    259
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    237
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    225
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     227
+Name     L3 Residential Sector~
+Sector   city~
+Desc     The homes here are in incredible condition, and the lawns are so freshly
+cut you can still smell the cut grass floating on the air. Maybe you
+should check and see if there are any homes here for sale.
+~
+#EXIT
+Direction north~
+ToRoom    228
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    260
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    226
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     228
+Name     L3 Residential Sector~
+Sector   city~
+Desc     The homes here are in incredible condition, and the lawns are so freshly
+cut you can still smell the cut grass floating on the air. Maybe you
+should check and see if there are any homes here for sale.
+~
+#EXIT
+Direction east~
+ToRoom    229
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    227
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     229
+Name     L3 Residential Sector~
+Sector   city~
+Desc     The homes here are in incredible condition, and the lawns are so freshly
+cut you can still smell the cut grass floating on the air. Maybe you
+should check and see if there are any homes here for sale.
+~
+#EXIT
+Direction east~
+ToRoom    230
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    262
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    228
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     230
+Name     L3 Residential Sector~
+Sector   city~
+Desc     The homes here are in incredible condition, and the lawns are so freshly
+cut you can still smell the cut grass floating on the air. Maybe you
+should check and see if there are any homes here for sale.
+~
+#EXIT
+Direction south~
+ToRoom    231
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    229
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     231
+Name     L3 Residential Sector~
+Sector   city~
+Desc     The homes here are in incredible condition, and the lawns are so freshly
+cut you can still smell the cut grass floating on the air. Maybe you
+should check and see if there are any homes here for sale. 
+~
+#EXIT
+Direction north~
+ToRoom    230
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    232
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    263
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     232
+Name     L3 Residential Sector~
+Sector   city~
+Desc     The homes here are in incredible condition, and the lawns are so freshly
+cut you can still smell the cut grass floating on the air. Maybe you
+should check and see if there are any homes here for sale.
+~
+#EXIT
+Direction north~
+ToRoom    231
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    233
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    264
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     233
+Name     L3 Residential Sector~
+Sector   city~
+Desc     The homes here are in incredible condition, and the lawns are so freshly
+cut you can still smell the cut grass floating on the air. Maybe you
+should check and see if there are any homes here for sale.
+~
+#EXIT
+Direction north~
+ToRoom    232
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    234
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    265
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     234
+Name     L3 Residential Sector~
+Sector   city~
+Desc     The homes here are in incredible condition, and the lawns are so freshly
+cut you can still smell the cut grass floating on the air. Maybe you
+should check and see if there are any homes here for sale.
+~
+#EXIT
+Direction north~
+ToRoom    233
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    235
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     235
+Name     L3 Residential Sector~
+Sector   city~
+Desc     The homes here are in incredible condition, and the lawns are so freshly
+cut you can still smell the cut grass floating on the air. Maybe you
+should check and see if there are any homes here for sale.
+~
+#EXIT
+Direction north~
+ToRoom    266
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    234
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    236
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     236
+Name     L3 Residential Sector~
+Sector   city~
+Desc     The homes here are in incredible condition, and the lawns are so freshly
+cut you can still smell the cut grass floating on the air. Maybe you
+should check and see if there are any homes here for sale.
+~
+#EXIT
+Direction north~
+ToRoom    237
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    235
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     237
+Name     L3 Residential Sector~
+Sector   city~
+Desc     The homes here are in incredible condition, and the lawns are so freshly
+cut you can still smell the cut grass floating on the air. Maybe you
+should check and see if there are any homes here for sale.
+~
+#EXIT
+Direction north~
+ToRoom    226
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    261
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    236
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     238
+Name     Sector 3~
+Sector   city~
+Desc     The general area is a very plain area, no color nor emotion. Its just
+very cold like metal is. There is no emotion here just the cold steel.
+This walkway shows some of the true abilities of the human race.
+~
+#EXIT
+Direction northwest~
+ToRoom    212
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    239
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     239
+Name     &zD&We&za&Wd &zE&Wn&zd~
+Sector   city~
+Flags    dark~
+Desc     The street comes to a sudden halt due to a large fence
+IT's damp and dark here making you feel uncomfortable.
+~
+#EXIT
+Direction east~
+ToRoom    210
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     240
+Name     Empty Space~
+Sector   inside~
+Flags    indoors~
+Desc     The street keeps going further and further, and the beauty of this colony
+becomes clearer and clearer with each step you take. 
+~
+#EXIT
+Direction west~
+ToRoom    241
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     241
+Name     Empty Space~
+Sector   inside~
+Flags    indoors~
+Desc     The street keeps going further and further, and the beauty of this colony
+becomes clearer and clearer with each step you take.
+~
+#EXIT
+Direction north~
+ToRoom    242
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    240
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    243
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    246
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     242
+Name     Empty Space~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction south~
+ToRoom    241
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     243
+Name     Empty Space~
+Sector   inside~
+Flags    indoors~
+Desc     This is the entrance to the gym, in the gym you can train your stats and
+become even stronger then you are now.
+~
+#EXIT
+Direction north~
+ToRoom    241
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    244
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     244
+Name     Empty Space~
+Sector   inside~
+Flags    indoors~
+Desc     This is the Academy Training Area, the buffed up super-nerd academy trainer
+can train you in any stat, and it's completely free.  It does, however,
+take awhile, and is not error-proof.
+~
+#EXIT
+Direction northwest~
+ToRoom    243
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     245
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     246
+Name     Empty Space~
+Sector   inside~
+Flags    indoors~
+Desc     The street keeps going further and further, and the beauty of this colony
+becomes clearer and clearer with each step you take.
+~
+#EXIT
+Direction north~
+ToRoom    248
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    241
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    247
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     247
+Name     Empty Space~
+Sector   inside~
+Flags    indoors~
+Desc     The street keeps going further and further, and the beauty of this colony
+becomes clearer and clearer with each step you take.
+~
+#EXIT
+Direction north~
+ToRoom    249
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    246
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    250
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     248
+Name     Empty Space~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction south~
+ToRoom    246
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     249
+Name     Empty Space~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction south~
+ToRoom    247
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     250
+Name     Empty Space~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    247
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     251
+Name     ESUN Base Entrance~
+Sector   city~
+Desc     This is the entrance to the L3 Military Base, the door is locked
+though, it's been said the grunt can be bribed for the right amount,
+perhaps you should ask around.
+~
+#EXIT
+Direction north~
+ToRoom    252
+Flags     isdoor closed pickproof~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    212
+#ENDEXIT
+
+Reset M 0 207 1 251
+  Reset G 1 273 1
+  Reset G 1 3 1
+#ENDROOM
+
+#ROOM
+Vnum     252
+Name     L3 Military Base~
+Sector   inside~
+Flags    indoors~
+Desc     Well, you bribed the security guard, and you're inside the base.  It'd be
+nice if you could get back out without being caught though, perhaps you
+can sneak out in a cab by hailing.
+~
+#EXIT
+Direction north~
+ToRoom    255
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    254
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    251
+Flags     isdoor closed pickproof~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    253
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    273
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     253
+Name     L3 Military Armory~
+Sector   inside~
+Flags    indoors~
+Desc     This is the L3 Military Armory, you can feel a slight breeze from above, it
+seems the whole colony is plagued with bad ventilation.
+~
+#EXIT
+Direction east~
+ToRoom    252
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    275
+Flags     isdoor hidden searchable~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     254
+Name     L3 Military Barracks~
+Sector   inside~
+Flags    indoors heal~
+Desc     This is the L3 Military Barracks, there are a few Nurse Droids wandering
+around, and they will come mend your wounds if you say 'heal'.
+~
+#EXIT
+Direction west~
+ToRoom    252
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     255
+Name     Training Sector Entrance~
+Sector   inside~
+Desc     In the background you can hear the loud screams and the soungds of individual
+combat. The smell of blood is dominant in the air, almost like someone has died
+recently. Are you really ready?
+~
+#EXIT
+Direction south~
+ToRoom    252
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    276
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     256
+Name     An Empty Office~
+Sector   city~
+Flags    indoors empty_home factory heal~
+Owner    Nemesis~
+#EXIT
+Direction northeast~
+ToRoom    106
+#ENDEXIT
+
+Reset M 0 5191 6 256
+#ENDROOM
+
+#ROOM
+Vnum     257
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     258
+Name     Repair Shop~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is the L3 Repairman's shop. He'll repair any weapon or piece of armor,
+for a price of course.  Which is 20% of the item's worth.
+~
+#EXIT
+Direction southeast~
+ToRoom    212
+#ENDEXIT
+
+Reset M 0 208 1 258
+#ENDROOM
+
+#ROOM
+Vnum     259
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors safe empty_home~
+#EXIT
+Direction west~
+ToRoom    226
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     260
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors safe empty_home~
+#EXIT
+Direction west~
+ToRoom    227
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     261
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors safe empty_home~
+#EXIT
+Direction west~
+ToRoom    237
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     262
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors empty_home~
+#EXIT
+Direction north~
+ToRoom    229
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     263
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors empty_home~
+#EXIT
+Direction east~
+ToRoom    231
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     264
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors empty_home~
+#EXIT
+Direction east~
+ToRoom    232
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     265
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors empty_home~
+#EXIT
+Direction east~
+ToRoom    233
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     266
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors empty_home~
+#EXIT
+Direction south~
+ToRoom    235
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     267
+Name     &zL&W3 &CS&Bt&Ca&cr &BP&Co&cr&Bt  &rB&pa&rn&Rk~
+Sector   inside~
+Flags    indoors bank~
+Desc     You are standing in the L3 First National Bank, clerks are running around
+frantically and you even see some armed guards carrying in bags.  Bank
+balance/withdraw/deposit for their respective purposes.
+~
+#EXIT
+Direction south~
+ToRoom    211
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     268
+Name     Back Alley~
+Sector   city~
+Flags    dark nomob indoors~
+Desc     The back alley is dark and cold, and it provides nothing as far as light.
+This Alley is so dark it seems to never end.
+~
+#EXIT
+Direction up~
+ToRoom    212
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    269
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     269
+Name     Back Alley~
+Sector   city~
+Flags    dark nomob~
+Desc     The back alley is dark and cold, and it provides nothing as far as light.
+This Alley is so dark it seems to never end.
+~
+#EXIT
+Direction up~
+ToRoom    268
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    270
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     270
+Name     Back Alley~
+Sector   city~
+Flags    dark nomob~
+Desc     The back alley is dark and cold, and it provides nothing as far as light.
+This Alley is so dark it seems to never end.
+~
+#EXIT
+Direction east~
+ToRoom    273
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    269
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     271
+Name     &wW&zo&rr&Rk&rs&zh&Wo&wp~
+Sector   city~
+Flags    indoors refinery factory~
+Desc     This is one of L3's Engineering Workshops, here you can take your time and
+make whatever it is you feel like.
+~
+#EXIT
+Direction northeast~
+ToRoom    292
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     272
+Name     &wW&zo&rr&Rk&rs&zh&Wo&wp~
+Sector   city~
+Flags    indoors refinery factory~
+Desc     This is one of L3's Engineering Workshops, here you can take your time and
+make whatever it is you feel like.
+~
+#EXIT
+Direction southeast~
+ToRoom    292
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     273
+Name     Back Alley~
+Sector   city~
+Flags    dark nomob indoors~
+Desc     This room is full of many boxes, all stacked up in different areas. You can
+feel a slight breeze coming from the roof, which is slightly odd given the
+area.  There is a faint smell of gunpowder and grease.  Maybe if you
+searched UP and around the area.
+~
+#EXIT
+Direction west~
+ToRoom    270
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    252
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     274
+Name     Ventilation Shaft~
+Sector   city~
+Flags    nomob indoors~
+Desc     As you climb up from the storage room, you find yourself
+in what appears to be one of the colonies' thousands of ventilation
+shafts.  To the south you can smell the odor of grease.
+~
+#EXIT
+Direction south~
+ToRoom    275
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    273
+Flags     isdoor pickproof~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     275
+Name     Ventilation Shaft~
+Sector   city~
+Flags    nomob indoors~
+Desc     Just as you are about to crawl further south, you notice
+a small ventilation grate almost directly under you.  The room
+below appears to be some sort of armory.
+~
+#EXIT
+Direction north~
+ToRoom    274
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    253
+Flags     isdoor pickproof~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     276
+Name     Military Combat Training Facility~
+Sector   city~
+Flags    nomob indoors~
+Desc     You are now standing in the L3 Military Training Sector.
+Be very careful in this area, as it is not meant for those
+without any combat training, and the robots here are extremely
+dangerous, and very real.
+Say 'Begin' to call for a battle trainer.
+~
+#EXIT
+Direction north~
+ToRoom    277
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    279
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    281
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    283
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    255
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    287
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    278
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    284
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    280
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    282
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     277
+Name     Training Area Alpha~
+Sector   city~
+Flags    indoors~
+Desc     The room is filled will the odor of blood and cybernetic fluids.
+There are dark red stains on the floor and stains of a deiierent
+color.
+~
+#EXIT
+Direction south~
+ToRoom    276
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Begin~
+Comlist   mpecho There is a hum, and a door opens.
+mpecho A Class 1 Robot steps out and scans you.
+mpmload 285
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     278
+Name     Training Area Beta~
+Sector   city~
+Flags    indoors~
+Desc     The room is filled will the odor of blood and cybernetic fluids.
+There are dark red stains on the floor and stains of a deiierent
+color.
+~
+#EXIT
+Direction southwest~
+ToRoom    276
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho With a hum and a whir, a Door slides open.
+mpecho A Class 2 Training Robot steps out and cranks gears.
+mpmload 200
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     279
+Name     Training Area Gamma~
+Sector   city~
+Flags    indoors~
+Desc     The room is filled will the odor of blood and cybernetic fluids.
+There are dark red stains on the floor and stains of a deiierent
+color.
+~
+#EXIT
+Direction west~
+ToRoom    276
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho a hatch on the far wall opens with a creak.
+mpecho A Class 3 Training Droid slides out and turns to you.
+mpmload 201
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     280
+Name     Training Area Delta~
+Sector   city~
+Flags    indoors~
+Desc     The room is filled will the odor of blood and cybernetic fluids.
+There are dark red stains on the floor and stains of a deiierent
+color.
+~
+#EXIT
+Direction northwest~
+ToRoom    276
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho With a swoosh, a thin, tall door opens before you.
+mpecho An agile Class 4 Droid steps out, and looks to you.
+mpmload 202
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     281
+Name     Training Area Epsilon~
+Sector   city~
+Flags    indoors~
+Desc     The room is filled will the odor of blood and cybernetic fluids.
+There are dark red stains on the floor and stains of a deiierent
+color.
+~
+#EXIT
+Direction north~
+ToRoom    276
+#ENDEXIT
+
+Reset M 0 203 1 281
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho With a flash, and a high-pitched screech, a door opens.
+mpecho a Class 5 Android steps out and and turns to you.
+mpmload 203
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     282
+Name     Training Area Zeta~
+Sector   city~
+Flags    indoors~
+Desc     The room is filled will the odor of blood and cybernetic fluids.
+There are dark red stains on the floor and stains of a deiierent
+color.
+~
+#EXIT
+Direction northeast~
+ToRoom    276
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho A door on the far wall slams open.
+mpecho A Class 6 android steps out of the doorframe.
+mpmload 204
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     283
+Name     Training Area Eta~
+Sector   city~
+Flags    indoors~
+Desc     The room is filled will the odor of blood and cybernetic fluids.
+There are dark red stains on the floor and stains of a deiierent
+color.
+~
+#EXIT
+Direction east~
+ToRoom    276
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho two double-doors on the far wall open up.
+mpecho A Class 7 Cyborg steps out and grins.
+mpmload 205
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     284
+Name     Training Area Theta~
+Sector   city~
+Flags    indoors~
+Desc     The room is filled will the odor of blood and cybernetic fluids.
+There are dark red stains on the floor and stains of a deiierent
+color.
+~
+#EXIT
+Direction southeast~
+ToRoom    276
+#ENDEXIT
+
+Reset M 0 206 1 284
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho A grate in the floor creaks open.
+mpecho A Class 8 Android leaps out of the grate.
+mpmload 206
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     285
+Name     &wW&zo&rr&Rk&rs&zh&Wo&wp~
+Sector   city~
+Flags    indoors refinery factory~
+Desc     This is one of L3's Engineering Workshops, here you can take your time and
+make whatever it is you feel like.
+~
+#EXIT
+Direction north~
+ToRoom    292
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     286
+Name     Engineering Goods~
+Sector   city~
+Flags    indoors~
+Desc     Here you will find the shopkeeper that will sell you everything that you'll
+need to make basic goods for Engineering. The store is a little dusty
+because hardly anyone ever comes to this place anymore.
+~
+#EXIT
+Direction up~
+ToRoom    292
+#ENDEXIT
+
+Reset M 0 210 1 286
+  Reset G 1 2010 1
+  Reset G 1 2027 1
+  Reset G 1 2013 1
+  Reset G 1 265 1
+#ENDROOM
+
+#ROOM
+Vnum     287
+Name     Advanced Training Room~
+Sector   city~
+Desc     This area is very dangerous, combat levels of 400 or under should beware
+fighting here alone.
+Say 'Test my Power' to begin the final test.
+~
+#EXIT
+Direction up~
+ToRoom    276
+#ENDEXIT
+
+Reset M 0 217 3 287
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Test my Power~
+Comlist   mpecho 3 Doors open up in front of you with a woosh.
+mpecho With a flash, 3 odd looking cyborgs step out.
+mpmload 217
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     288
+Name     Elevator~
+Sector   city~
+Flags    nomob~
+Desc     This is a very high classed elevator, it even have the fancy elevator
+music.
+&BTo go to the Engineering area type, 'Engineering'.
+~
+#EXIT
+Direction southwest~
+ToRoom    203
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   engineering~
+Comlist   mpechoat $n You have been taken to the Engineering Area.
+mpechoaround $n $n has just been taken to the engineering area.
+mptransfer $n 289
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     289
+Name     Elevator~
+Sector   city~
+Desc     This is a very high classed elevator, it even have the fancy elevator
+music.
+&BTo go to the Main area type, 'Main'.
+~
+#EXIT
+Direction east~
+ToRoom    290
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   main~
+Comlist   mpechoat $n You have been taken to the Main
+area.
+mpechoaround $n $n has just been taken to the Main area.
+mptransfer $n 288
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     290
+Name     A Short Hallway~
+Sector   city~
+Desc     From here you can hear all the engineers hard at work. If you move towards
+the sound you might be able to make some stuff of your own.
+~
+#EXIT
+Direction east~
+ToRoom    291
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    289
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     291
+Name     A Short Hallway~
+Sector   city~
+Desc     From here you can hear all the engineers hard at work. If you move towards
+the sound you might be able to make some stuff of your own
+~
+#EXIT
+Direction east~
+ToRoom    292
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    290
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     292
+Name     Hallway~
+Sector   city~
+Flags    indoors~
+Desc     There are sparks being shot into this room from every direction. Maybe if
+you pick an empty room you can avoid all the interruptions that the other
+engineers might cause for you.
+~
+#EXIT
+Direction north~
+ToRoom    293
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    295
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    285
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    291
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    298
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    286
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    294
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    272
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    296
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    271
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     293
+Name     &wW&zo&rr&Rk&rs&zh&Wo&wp~
+Sector   city~
+Flags    indoors refinery factory~
+Desc     This is one of L3's Engineering Workshops, here you can take your time and
+make whatever it is you feel like.
+~
+#EXIT
+Direction south~
+ToRoom    292
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     294
+Name     &wW&zo&rr&Rk&rs&zh&Wo&wp~
+Sector   city~
+Flags    indoors refinery factory~
+Desc     This is one of L3's Engineering Workshops, here you can take your time and
+make whatever it is you feel like
+~
+#EXIT
+Direction southwest~
+ToRoom    292
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     295
+Name     &wW&zo&rr&Rk&rs&zh&Wo&wp~
+Sector   city~
+Flags    indoors refinery factory~
+Desc     This is one of L3's Engineering Workshops, here you can take your time and
+make whatever it is you feel like.
+~
+#EXIT
+Direction west~
+ToRoom    292
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     296
+Name     &wW&zo&rr&Rk&rs&zh&Wo&wp~
+Sector   city~
+Flags    indoors refinery factory~
+Desc     This is one of L3's Engineering Workshops, here you can take your time and
+make whatever it is you feel like
+~
+#EXIT
+Direction northwest~
+ToRoom    292
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     297
+Name     Workshop~
+Sector   city~
+Flags    indoors refinery factory~
+Desc     This is one of L3's Engineering Workshops, here you can take your time and
+make whatever it is you feel like
+~
+#EXIT
+Direction north~
+ToRoom    292
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     298
+Name     &wW&zo&rr&Rk&rs&zh&Wo&wp~
+Sector   city~
+Flags    refinery factory~
+Desc     This is one of L3's Engineering Workshops, here you can take your time and
+make whatever it is you feel like
+~
+#EXIT
+Direction down~
+ToRoom    292
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     299
+Name     Illegal Shop~
+Sector   city~
+Flags    nomob~
+Desc     This store is not your typical store. It has some very strange
+items for sale. Do ya really wanna do business here?
+~
+#EXIT
+Direction down~
+ToRoom    204
+#ENDEXIT
+
+Reset M 0 226 1 299
+  Reset G 1 50 1
+  Reset G 1 224 1
+  Reset G 1 60 1
+#ENDROOM
+
+#ENDAREA

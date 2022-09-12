@@ -1,0 +1,46 @@
+#SYSTEM
+Highplayers    65
+Highplayertime Thu May 11 21:33:36 2006~
+Nameresolving  0
+Waitforauth    1
+Readallmail    102
+Readmailfree   101
+Writemailfree  1
+Takeothersmail 1005
+Muse           1001
+Think          1001
+Build          1001
+Log            1001
+Protoflag      1002
+Overridepriv   1003
+Msetplayer     0
+Stunplrvsplr   0
+Stunregular    0
+Damplrvsplr    33
+Damplrvsmob    75
+Dammobvsplr    80
+Dammobvsmob    103
+Forcepc        1001
+Guildoverseer  ~
+Guildadvisor   ~
+Maxignore	     6
+Hoursperday    24
+Daysperweek    7
+Dayspermonth   30
+Monthsperyear  12
+Daysperyear    360
+Saveflags      3069
+Savefreq       5
+Lotterynum     1289
+Lotteryweek    3594610
+Lotterytimer   7
+Leafcount      118
+Storagetimer   58445
+Jackpot        420000
+LastWinner     Cray~
+Newbie_purge	8
+Regular_purge	120
+Autopurge		1
+End
+
+#END

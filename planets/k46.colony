@@ -1,0 +1,15 @@
+#PLANET
+Name         Colony K46~
+Filename     k46.colony~
+BaseValue    100000
+Flags        0
+PopSupport   50.000000
+GovernedBy   Phoenix Rising~
+Area         k46.are~
+Area         Clanbase.are~
+Area         Korea.are~
+Area         Mars.are~
+Area         China.are~
+End
+
+#END

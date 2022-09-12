@@ -1,0 +1,560 @@
+#AREA   {PROTO} Taiyumi's area in progress~
+
+
+
+#AUTHOR Taiyumi~
+
+#RANGES
+0 0 0 0
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 470
+
+#MOBILES
+#8600
+Megan~
+Megan~
+The clerk is sitting behind the counter with a bored expression on her face.
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+eyebrow
+say You break it, you buy it, bub.
+emote snaps her gum.
+~
+> speech_prog p stock~
+mpoload 8611
+mpoload 8612
+mpoload 8613
+mpoload 8614
+say So, which do ya want, eh?
+~
+|
+#8601
+Ray~
+Ray~
+A drunk man is sitting in the corner, drooling on himself.
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+hiccup
+say Sshshooo, whHAt'shhh yyeeRR PpoIShonnn?
+hiccup
+drool 
+~
+> speech_prog p bourbon~
+mpoload 8600 
+say oOkayyy....wHEre's MYYyyy mmoNeyy?
+~
+> speech_prog p gold~
+mpoload 8601 
+say oOkayyy....wHEre's MYYyyy mmoNeyy?
+~
+> speech_prog jack~
+mpoload 8602
+say oOkayyy....wHEre's MYYyyy mmoNeyy?
+~
+> speech_prog bud~
+mpoload 8603
+say oOkayyy....wHEre's MYYyyy mmoNeyy?
+~
+> speech_prog fosters~
+mpoload 8604
+say oOkayyy....wHEre's MYYyyy mmoNeyy?
+~
+|
+#8602
+Ching~
+Ching~
+A lovely Chinese woman is here with a friendly smile on her face.
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+bow $n
+say Welcome. Please come in and enjoy our cuisine.
+smile
+~
+> speech_prog p menu~
+mpoload 8606
+mpoload 8607
+mpoload 8608
+mpoload 8609
+mpoload 8610
+say Here's the "list" of what we serve.
+bow
+~
+|
+#0
+
+
+#OBJECTS
+#8600
+Bourbon and Seven~
+Bourbon and Seven~
+A glass of Bourbon and Seven has been left here.~
+~
+17 0 16385
+5 5 8 0
+1 10 1
+#8601
+Gold Schlager~
+a shot of Gold Schlager~
+A shot of Gold Schlager was left here~
+~
+17 0 16385
+1 1 7 0
+1 10 1
+#8602
+Jack and Coke~
+Jack and Coke~
+A glass of Jack and Coke has been left here.~
+~
+17 0 16385
+5 5 5 0
+1 10 1
+#8603
+Budweiser~
+a bottle of Budweiser~
+A bottle of Budweiser has been left here.~
+~
+17 0 16385
+7 7 1 0
+1 7 0
+#8604
+Fosters~
+a frosty mug of Fosters~
+A frosty mug of Fosters was left here.~
+~
+17 0 16385
+6 6 3 0
+1 8 0
+#8605
+Drink Menu~
+The Drink Menu~
+The Drink Menu is hanging on the wall.~
+~
+45 0 0
+0 0 0 0
+1 0 0
+E
+Drink Menu~
+\\\\*////Drink Menu\\\\*////
+    *Bourbon and Seven*
+    *Jack and Coke*
+    *Gold Schlager*
+    *Budweiser*
+    *Fosters*
+~
+#8606
+rangoon~
+rangoon~
+A rangoon has been dropped here~
+~
+19 0 1
+1000 1000 0 0
+1 5 0
+#8607
+eggroll~
+an eggroll~
+An eggroll is here~
+~
+19 0 1
+1000 1000 0 0
+1 5 0
+#8608
+chow mein~
+Chow Mein~
+Some Chow Mein has been left here.~
+~
+19 0 1
+1000 1000 0 0
+1 10 1
+#8609
+sesame chicken~
+Sesame Chicken~
+Some Sesame Chicken is here~
+~
+19 0 1
+1000 1000 0 0
+1 10 1
+#8610
+wonton soup~
+Wonton Soup~
+Some Wonton Soup is here~
+~
+19 0 1
+1000 1000 0 0
+1 7 0
+#8611
+flashlight~
+a Souvenir Flashlight~
+A Souvenir Flashlight has been discarded here.~
+~
+1 0 16385
+0 0 1000 0
+1 15 1
+E
+flashlight~
+&BI &R<3 &PChicago &C!!!
+~
+#8612
+tshirt~
+a Souvenir Tshirt~
+A Souvenir Tshirt has been dropped here~
+~
+9 0 9
+20 20 0 0
+1 30 3
+E
+tshirt~
+&BI &R<3 &PChicago &C!!!
+~
+#8613
+toy shuttle~
+a Toy Shuttle~
+A Toy Shuttle has been left here~
+~
+13 0 1
+0 0 0 0
+1 15 1
+E
+toy shuttle~
+&BI &R<3 &PChicago &C!!!
+~
+#8614
+Chicago Bear~
+a Teddy Bear wearing a Chicago Tshirt~
+A Teddy Bear wearing a Chicago Tshirt is sitting here~
+~
+13 0 16385
+0 0 0 0
+1 35 3
+E
+Chicago Bear~
+&BI &R<3 &PChicago &C!!!
+~
+#8615
+atm machine~
+an ATM Machine~
+An ATM Machine sits in the corner.~
+~
+12 0 0
+0 0 0 0
+1 0 0
+#0
+
+
+#ROOMS
+#8600
+O'Hare Air and Spaceport, Air Terminal~
+You are standing in the Airport terminal of Chicago's famous O'Hare
+Airport. This terminal isn't used as much as the Spaceport terminal now
+that psace travel has become so popular. There are still people running
+around in a frenzy trying to make their flight on time, but not nearly as
+many as you can see in the other terminal.
+~
+0 1073741832 1
+D2
+~
+~
+0 -1 8601
+> speech_prog p korea~
+mpechoat $n You board a plane and take off for Korea.
+mpechoaround $n $n takes a flight to Korea.
+mptransfer $n 700
+~
+> speech_prog p rio~
+mpechoat $n You board a flight for Rio.
+mpechoaround $n $n takes a flight to Rio.
+mptransfer $n 913
+~
+> speech_prog p tokyo~
+mpechoat $n You board a flight for Tokyo.
+mpechoaround $n $n takes a flight to Tokyo.
+mptransfer $n 800
+~
+|
+S
+#8601
+Air Terminal Hallway~
+Near the Air Terminal, the crowd is thin, with few people rushing to their
+flights. It's peaceful and quiet aside from the random crying child. Since
+not many people use airplanes anymore the shops and restaurants here have
+closed down. All around there are payphones and vending machines, with the
+occasional virtual reality video game for bored children.
+~
+0 1073741832 1
+D0
+~
+~
+0 -1 8600
+D1
+~
+~
+0 -1 8603
+S
+#8602
+Space Terminal Hallway~
+In this building, the crowd is noticeably bigger. There are so many people
+trying to get through, that it's almost violent. The sounds of crying
+children and yelling parents can be heard from every direction. The
+vending machines, payphones and virtual reality massage parlors are still
+every few paces, but you can smell real food cooking, so there must be a
+restaurant nearby. 
+~
+0 1073741832 1
+D1
+~
+~
+0 -1 8605
+D3
+~
+~
+0 -1 8604
+S
+#8603
+Air Terminal Hallway~
+The crowd seems to thicken as people rush to catch their flights. Every few
+paces, there are vending machines and payphones as well as virtual reality
+booths that provide company for the lonely traveler. It's not very noisy
+here, unless you count the odd sounds coming from inside these booths. 
+Better not to ask....
+~
+0 1073741832 1
+D1
+~
+~
+0 -1 8604
+D3
+~
+~
+0 -1 8601
+S
+#8604
+Breezeway Between Terminals~
+This is a nice patio area that separates the two terminals. There are
+benches and trees and flowers here, with a fountain in the middle. It's
+the perfect place to sit and relax and watch the airplanes and shuttles
+come and go. It makes you forget all the pandemonium that's going on
+inside.
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 8602
+D2
+~
+~
+0 -1 8610
+D3
+~
+~
+0 -1 8603
+S
+#8605
+Space Terminal Hallway~
+Nearer to the Space Terminal, the crowd magically becomes so thick it's
+hard to get trhough. There isn't a free payphone, vending machine or
+virtual reality jaccuzzi to be seen anywhere. The smells of real cooked
+food wafts from the restaurant and pub, and you see overpriced souvenirs
+in the window of the little shop.
+~
+0 1073742088 1
+D0
+~
+~
+0 -1 8606
+D1
+~
+~
+0 -1 8608
+D2
+~
+~
+0 -1 8607
+D3
+~
+~
+0 -1 8602
+D4
+~
+~
+0 -1 8609
+S
+#8606
+O'Hare Air and Spaceport, Space Terminal~
+You are now standing in the hub of O'Hare. There are hundreds and hundreds
+of people waiting to catch a flight to one of the Colonies, or even back
+to Ruined Earth. You can see many ships lined up outside the huge,
+plexiglass windows, being prepared for launch. Every once in a while, you
+hear a disembodied voice announcing a flight.
+~
+0 1073741872 1
+D2
+~
+~
+0 -1 8605
+S
+#8607
+Ching's Chinese Cuisine~
+Following the delicious aromas that you could smell from the hallway, you
+find yourself in a tiny Chinese restaurant. There is a small goldfish pond
+with a fountain of Buddha in it as you walk in. The walls are crimson with
+gold dragons and Chinese symbols all over them. The atmosphere is dark and
+cozy and the waitresses are friendly and helpful.
+Just mention the Menu to Ching. She'll be glad to help you.
+~
+0 1073741832 1
+D0
+~
+~
+0 -1 8605
+S
+#8608
+Fine Gifts and More~
+As soon as you enter, you realize that this is truly a gift shop.
+Everything in the store is overpriced and useless. There are miniature
+space shuttles for kids to play with strewn around, and small Chicago shot
+glasses filling the shelves. Just about the only things that aren't over
+priced, are the airsick pills...and they're out of stock.
+Don't forget to ask Megan what she has in "Stock".
+~
+0 1073741832 1
+D3
+~
+~
+0 -1 8605
+S
+#8609
+Red-eye Bar~
+As you wander up the stairs in search of a good, strong drink, you find
+yourself in the rattiest dive you could possibly imagine. Completely
+opposite than the rest of O'Hare, the Red-eye Pub looks like it would be
+more at home in a dark alley than a spaceport. There are stains on the
+walls and cracks in the ceiling, and the barstools don't have any fabric
+left on them. The drunk sitting in the corner is loudly singing 99 Bottles
+of Beer on the Wall and sloshing his own beer onto the bar. This is just
+the sort of place to lose your pre-flight jitters.
+~
+0 1073741832 1
+D5
+~
+~
+0 -1 8605
+S
+#8610
+Footpath~
+This is the path to the parking lot. There are many trees and flowers along
+the path. Surprisingly, it's not crowded here, even though it seems to be
+the only way to get from the parking lot to the buildings. The birds
+chirping and the bees buzzing make this a very calm, serene place to be.
+However, the crowds inside the terminals are visible through the windows.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 8604
+D2
+~
+~
+0 -1 8611
+S
+#8611
+Parking Lot~
+There are cars everywhere. So many that you can't even see the end of the
+lot. Many people rush by you on their way to get to their flight, hauling
+screaming children and heavy baggage.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 8610
+S
+#8612
+Hyatt~
+This is the foyer of the grand Hyatt Hotel. There is a massive marble
+fountain of two mermaids entwined on a rock in the middle of this
+exquisite room. The chanadliers hanging from the ceiling cast a romantic
+light upon everything, and there is a friendly looking clerk standing
+behind the counter waiting to show you to your room.
+~
+0 1082130444 1
+S
+#8613
+Paradise Cove~
+This is the most expensive room in the hotel. There is a waterbed, a
+jaccuzzi and palm trees all over the room, giving it a Carribbean feel.
+The ceiling has a mirror that reflects the light from the lone chandelier,
+making the room slightly brighter than usual. For a more romantic
+atmosphere, there are shell shaped candle holders all over the room, and
+the sounds of the sea can be heard from speakers in the corners.
+~
+0 1082130444 1
+S
+#0
+
+
+#RESETS
+O 1 8615 1 8605
+M 1 8602 1 8607
+M 1 8600 1 8608
+G 1 8611 1
+G 1 8613 1
+G 1 8614 1
+G 1 8612 1
+M 1 8601 1 8609
+O 1 8605 1 8609
+M 1 811 1 861
+O 1 8615 1 861
+S
+
+
+#SHOPS
+ 8600    0  0  0  0  0   120  90         0 23    ; Megan
+ 8601    0  0  0  0  0   120  90         0 23    ; Ray
+ 8602    0  0  0  0  0   120  90         0 23    ; Ching
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

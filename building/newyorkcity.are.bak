@@ -1,0 +1,5143 @@
+#AREA   New York City~
+
+
+
+#AUTHOR Pathon~
+
+#RANGES
+1 1000 1 1000
+$
+
+#RESETMSG The Sounds of the City That Never Sleeps Echo All Around You.~
+
+#FLAGS
+0
+
+#ECONOMY -2 539399057
+
+#MOBILES
+#11002
+Customs Official~
+a Customs Official~
+A Customs Official is here, taking your shit.
+~
+~
+3 23 0 Z
+999 0 -2397 199d10+9990 99d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#11011
+wandering tourist~
+a Wandering Tourist~
+A Wandering Tourist is here.. wandering..
+~
+~
+1 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+25 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#11024
+tower security~
+The Tower Security Guard~
+The Tower Security Guard is standing here.
+~
+~
+3 23 0 Z
+999 0 -2397 199d10+9990 99d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#11028
+trader break~
+a Trader on his Break~
+A Trader on his Break is resting here.
+~
+~
+1 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+25 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#11036
+The Receptionist~
+The Receptionist~
+The Receptionist shouldn't be standing.
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Hello, $n, and Welcome to the Western Tower
+say of the World Trade Center. This Tower is used
+say primarily for the trading of stocks, but there
+say are other things here, too. If you'd like some
+say more information, just go ahead and say "Help Me."
+~
+> speech_prog help~
+say I can teach you about several things, Just
+say say, "Stocks", "Floors", or "Skywalk", for
+say Help with those.
+smile $n
+say I also know a few $gSecret$Gs.
+wink $n
+~
+> speech_prog secrets~
+say He he he. You really wanna know?..
+say Well, there're some hidden maintaince staircases..
+say Both of the entrances to them are here, on the first
+say floor.. The one against the western wall leads to the
+say basement, the one against the eastern wall heads to a few
+say hidden offices..
+~
+> speech_prog stocks~
+say Well, it's pretty simple.
+say On the second and third floors of this tower are where
+say all the stock trading in the world takes place. If you
+say manage to get a hold of some stocks, just look for the
+say stock certificate cashier on the fourth floor, he'll be
+say more than happy to pay you for your certificates.
+~
+> speech_prog floors~
+say Well, Instead of telling you, I'll show you.
+emote activates a holographic map display for $n.
+mea $n &x.       &z////\\\\\\\\\\
+mea $n &x.   &z////              \\\\\\\\\\
+mea $n &x.&z///                            \\\\\\\\\
+mea $n &x.&CFloor 6  &z| |  &cThe Observation Deck (Roof)
+mea $n &x.&g=========&z| |&g=============================
+mea $n &x.         &z| |
+mea $n &x.&CFloor 5  &z| |           &cThe Daycare Center
+mea $n &x.&g=========&z| |&g=============================
+mea $n &x.         &z| |
+mea $n &x.&CFloor 4  &z| |     &cThe Stockkeeping Offices
+mea $n &x.&g=========&z| |&g=============================
+mea $n &x.         &z| |
+mea $n &x.&CFloor 3  &z| |   &cThe Executive Trading Area
+mea $n &x.&g=========&z| |&g=============================
+mea $n &x.         &z| |
+mea $n &x.&CFloor 2  &z| |             &cThe Trading Pits
+mea $n &x.&g=========&z| |&g=============================
+mea $n &x.         &z| |
+mea $n &x.&CFloor 1  &z| |     &cThe Foyer (You are here)
+mea $n &x.&g=========&z| |&g=============================
+mea $n &x.&g=========================================
+emote shuts off the holographic display.
+say There ya go.
+wink $n
+~
+> speech_prog skywalk~
+say Well, the Skywalk is pretty simple really.
+say Whenever you're on the observation deck, (the roof),
+say You can say "Skywalk" to activate a holographic pathway
+say and walk to the observation deck of the eastern tower.
+smile $n
+~
+> rand_prog 100~
+sit desk
+~
+|
+#11046
+trader break~
+a Trader on his Break~
+A Trader on his Break is resting here.
+~
+~
+33554435 0 -1000 Z
+1000 0 -2400 200d10+15000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 48 2
+0 0 0 0 0 0 0 0
+> speech_prog p Let me borrow your key?~
+say Sure, I wouldn't mind.
+mpoload 11046
+give key $n
+~
+|
+#11052
+security officer~
+A Security Officer~
+A Security Officer is standing here.
+~
+~
+3 0 -1000 Z
+1000 0 -2400 200d10+15000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 48 2
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Hey Pal, how're ya?.. Sorry but the Tower is undergoing quite a bit of
+say Construction right now.. Try to come back in the future. We're still
+say Recovering from the Terrorist Attacks.
+~
+|
+#11055
+Security Officer~
+A Security Officer~
+A Security Officer is standing here.
+~
+~
+3 0 -1000 Z
+1000 0 -2400 200d10+15000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 48 2
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Hey there, $n. Sorry, but you aren't allowed in here unless you're
+say a trader.. But.. If you're really interested in getting in, I'll
+say Tell you a secret. I saw one of your arena fights once, And I have
+say to say, You were AWESOME!.. So I'm willing to hook you up with my
+say secret..
+~
+> speech_prog secret~
+say Well it's not a big secret, but if You walk around downstairs, there
+say Are tons of Trader's on breaks.. They all take turns in the pits..
+say If you ask politely, they'd probobly lend you their keycard.
+say Just say something like "Let me borrow your Key?"
+~
+|
+#11066
+pit overseer~
+The Pit Overseer~
+The Pit Overseer is standing here, watching the day's trading.
+~
+~
+3 0 -1000 Z
+1000 0 -2400 200d10+15000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 48 2
+0 0 0 0 0 0 0 0
+#11067
+Oranges Trader~
+&zan Oranges Trader~
+&za Man is here, frantically trading shares of Oranges.
+~
+~
+3 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+0 0
+8 8 0
+18 10 10 16 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+35 35 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpecho &zAnother Frenzied Trader rushes into the pits.
+mpmload 11067
+mpoload 11067
+~
+|
+#11072
+Soy Beans Trader~
+&za Soy-Beans Trader~
+&za Man is here, frantically trading shares of Soy-Beans.
+~
+~
+3 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+0 0
+8 8 0
+18 10 10 16 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpecho &zAnother Frenzied Trader rushes into the pits.
+mpmload 11072
+mpoload 11072
+~
+|
+#11078
+silver trader~
+&za Silver Trader~
+&za Man is here, frantically trading shares of Silver.
+~
+~
+3 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+0 0
+8 8 0
+18 10 10 16 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpecho &zAnother Frenzied Trader rushes into the pits.
+mpmload 11078
+mpoload 11078
+~
+|
+#11086
+Gold Trader~
+&za Gold Trader~
+&za Man is here, frantically trading shares of Gold.
+~
+~
+3 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+0 0
+8 8 0
+18 10 10 16 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpecho &zAnother Frenzied Trader rushes into the pits.
+mpmload 11086
+mpoload 11086
+~
+|
+#11089
+Charles Schwabb~
+Charles Schwabb~
+Charles Schwabb is here, looking through his briefcase.
+~
+~
+3 0 -1000 Z
+1000 0 -2400 200d10+15000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 48 2
+0 0 0 0 0 0 0 0
+> death_prog 65~
+mpoload 11088
+~
+|
+#11090
+Merril Lynch~
+Merril Lynch~
+Merril Lynch is here, Reviewing the day's profit.
+~
+~
+3 0 -1000 Z
+1000 0 -2400 200d10+15000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 2048 0 48 2
+0 0 0 0 0 0 0 0
+#11091
+Forbes~
+Forbes~
+Forbes is here, Reviewing the Top 20 list.
+~
+~
+3 0 -1000 Z
+1000 0 -2400 200d10+15000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 48 2
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+em raises an eyebrow as you enter.
+~
+|
+#11092
+paymobpayer~
+The Stock Cashier~
+Some god abandoned a newly created paymobpayer here.
+~
+~
+1 40 0 Z
+1 0 0 0d0+0 0d0+0
+1000 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#11093
+Stock Cashier~
+The Stock Cashier~
+The Stock Cashier is here, Rummaging through paperwork.
+~
+~
+33554435 40 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> act_prog give share cashier~
+if ovnuminv(11086)
+emote nods solemnly. 
+emote performs a transaction. 
+say A share of gold is currently valued at.. 2000 dollars. 
+mpjunk share
+mpmload 11092
+mpforce paymobpayer give 1000 dollar $n
+mppurge paymobpayer
+mpmload 11092
+mpforce paymobpayer give 1000 dollar $n
+mppurge paymobpayer
+say There you are, Please come again. 
+smile
+else
+if ovnuminv(11078)
+emote nods solemnly. 
+emote performs a transaction. 
+say A share of silver is currently valued at.. 1000 dollars. 
+mpjunk share
+mpmload 11092
+mpforce paymobpayer give 1000 dollar $n
+mppurge paymobpayer
+say There you are, Please come again.
+smile
+else
+if ovnuminv(11072)
+emote nods solemnly. 
+emote performs a transaction. 
+say A share of soy-beans is currently valued at.. 750 dollars. 
+mpjunk share
+mpmload 11092
+mpforce paymobpayer give 750 dollar $n
+mppurge paymobpayer
+say There you are, Please come again.
+smile
+else
+if ovnuminv(11067)
+emote nods solemnly.
+emote performs a transaction.
+say A share of oranges is currently valued at.. 500 dollars.
+mpjunk share
+mpmload 11092
+mpforce paymobpayer give 500 dollar $n
+mppurge paymobpayer
+say There you are, Please come again.
+smile
+endif
+endif
+~
+> greet_prog 100~
+em raises an eyebrow and looks up as you enter.
+say Would you like to cash in a stock certificate?
+say If so, Simply hand them to me and I'll make the transaction.
+~
+|
+#11094
+Construction Worker~
+A Construction Worker~
+A Construction Worker is here, Relaxing.
+~
+~
+3 0 -1000 Z
+1000 0 -2400 200d10+15000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 48 2
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Hey, sorry bud, can't go on the roof right now, You know, OSHA Rules.
+say No civilians allowed on the Job site while it's under construction.
+~
+|
+#11101
+wandering shopper~
+a wandering shopper~
+A wandering shopper is here.. wandering..
+~
+~
+1 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+25 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#11102
+man sheet metal~
+A Man in Sheet Metal~
+A Man in Sheet Metal is standing here
+~
+~
+3 0 -1000 Z
+1000 0 -2400 200d10+15000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 48 2
+0 0 0 0 0 0 0 0
+#11103
+Angry Store Owner~
+An Angry Store Owner~
+An Angry Store Owner is here, Swinging around a Golf-Club.
+~
+~
+3 0 -1000 Z
+1000 0 -2400 200d10+15000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 48 2
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+~
+|
+#11105
+naked old man~
+A Naked Old Man~
+A Naked Old Man stands behind the counter, barely covering his privates.
+~
+~
+3 0 -1000 Z
+1000 0 -2400 200d10+15000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 48 2
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+em laughs incessantly at your reaction to seeing him as you enter.
+say Clothes?! Who needs them! They just get in the way!
+~
+|
+#11108
+shady thug~
+&za Shady Thug~
+&za Shady Thug is chillin' here, He thinks he "Pwns".
+~
+~
+134217763 0 1000 Z
+1000 0 -2400 200d10+50000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#11109
+naked fat trench coat~
+a Naked Fat Man~
+A Naked Fat Man is here, Hiding under a Trench Coat.
+~
+~
+3 0 -1000 Z
+1000 0 -2400 200d10+15000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 48 2
+0 0 0 0 0 0 0 0
+#11110
+old woman~
+A Toothless Old Lady~
+A Toothless old woman is standing here, cackling oddly.
+~
+~
+3 0 -1000 Z
+1000 0 -2400 200d10+15000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 48 2
+0 0 0 0 0 0 0 0
+#11120
+foot soldier~
+a Foot Soldier~
+A Foot Soldier is here, stalking about.
+~
+~
+35 0 0 Z
+1000 0 -2400 200d10+850000 40d22+1000
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#11129
+splinter~
+&zSplinter~
+Splinter is here, meditating.
+~
+~
+3 0 -1000 Z
+1000 0 -2400 200d10+15000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 48 2
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Hello there, $n. I think Leonardo wanted to speak with you..
+~
+|
+#11130
+Leonardo~
+&gL&Ceonardo~
+Leonardo is here, Chillin' and practicing the Katana.
+~
+~
+3 0 -1000 Z
+1000 0 -2400 200d10+15000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 48 2
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Hey, What's up Dude?
+say I heard Shredder and Krang used some kind of warp gate to go to a
+say Space station in another dimension. If you bring me proof that
+say You killed them, I'd be glad to hook you up!
+~
+|
+#11131
+donatello~
+&gD&ponatello~
+Donatello is Here, working on some new gadgets.
+~
+~
+3 0 -1000 Z
+1000 0 -2400 200d10+15000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 48 2
+0 0 0 0 0 0 0 0
+#11132
+Raphael~
+&gR&raphael~
+Raphael is here, fast asleep.
+~
+~
+3 0 -1000 Z
+1000 0 -2400 200d10+15000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 48 2
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+mpecho Raphael snores loudly. ZzZZzZZZzZzzz.
+~
+> rand_prog 80~
+mpecho Raphael snores loudly. ZzZZzZZZzZzzz.
+~
+|
+#11133
+Michaelangelo~
+&gM&Oichaelangelo~
+Michaelangelo is here, pigging out on pizza!
+~
+~
+3 40 -1000 Z
+1000 0 -2400 200d10+15000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 48 2
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Sorry if I scared you earlier bro. No hard feelings okay?
+say Here, Take this!
+mpoload 11133
+give pizza $n
+~
+|
+#11134
+Cyborg~
+a Cyborg~
+A Cybernetic Organism is standing here, looking insanely powerful.
+~
+~
+3 552 -1000 Z
+1000 0 -2400 200d10+15000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 48 2
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say I Have some spare parts here..
+say I'd be willing to augment your legs.. for a price..
+~
+|
+#11136
+blonde girl~
+a Blonde Girl~
+A Sexy Blonde Girl in a tight white t-shirt stands here.
+~
+~
+3 0 -1000 Z
+1000 0 -2400 200d10+15000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 48 2
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Hey there.
+say We decided to open this shop to sell the tiny soaps and shampoos
+say That everyone usually steals, just so they could get a bunch to take home.
+smile
+say If you'd like a demonstration of the products,..
+say We could always take a shower together ^^_^^;
+wink
+~
+|
+#11137
+ritz bartender~
+The Ritz-Carlton Bartender~
+The Ritz-Carlton Bartender is here, Preparing a cup of "Java".
+~
+~
+3 0 -1000 Z
+1000 0 -2400 200d10+15000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 48 2
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+emote stirs a cup of coffee, and looks up.
+say What can I get ya?
+~
+|
+#11139
+receptionist~
+The Ritz-Carlton Receptionist~
+The Ritz-Carlton Receptionist is standing behind the counter with a bright smile.
+~
+~
+3 0 -1000 Z
+1000 0 -2400 200d10+15000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 48 2
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+if hasabit($n) == 4
+say Welcome back, $n, Your room is still paid for.
+else
+if hasqbit($n) == 4
+say Welcome back, $n, Your room is still paid for.
+else
+say Welcome to the Ritz-Carlton. You may purchase a day pass to the suites
+say for 500 dollars, or a lifetime pass for 100,000 dollars. Just give
+say The money to me when you want one.
+endif
+endif
+~
+> bribe_prog 100000~
+say Alrighty then, One lifetime pass.
+say I've informed the Guard, you're all set.
+mpqset $n 4
+~
+> bribe_prog 500~
+say Alrighty then, One daytime pass.
+say I've informed the Guard, you're all set.
+mpaset $n 4
+~
+|
+#11141
+Security Guard~
+A Security Guard~
+A Security Guard is standing here.
+~
+~
+3 0 -1000 Z
+1000 0 -2400 200d10+15000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 48 2
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+if hasabit($n) == 4
+say Welcome, $n. Go right ahead to the south.
+else
+if hasqbit($n) == 4
+say Welcome, $n. Go right ahead to the south.
+else
+say You aren't allowed in here until you pay the receptionist downstairs.
+mea $n The Guard chases you back into the elevator.
+mptransfer $n 11140
+endif
+endif
+~
+|
+#0
+
+
+#OBJECTS
+#11001
+rolex watch gold~
+&Ya golden Rolex watch~
+An extravagant golden watch has been left here.~
+~
+13 0 4097
+0 0 0 0
+1 0 0
+> wear_prog 100~
+mea $n You unclasp the coupling of the watch, and slip it over your
+mea $n wrist. It automatically clasp shut around your wrist, and softly
+mea $n begins to tick as it starts to keep the time.
+~
+> remove_prog 100~
+mea $n You tap the coupling of the watch three times, and it quietly
+mea $n unclasps from your wrist. You slip it over your hand, and put
+mea $n it in a soft velvet pouch.
+~
+|
+#11021
+Plaza Fountain~
+The Plaza Fountain~
+&BThe Plaza Fountain is here, Dancing Gloriously with Streams of Water.~
+~
+25 0 0
+-1 -1 45 0
+1 0 0
+#11036
+information desk~
+the center of a large, round information desk~
+A large, round information desk fills the center of the foyer.~
+~
+12 0 0
+10000 10000 1 0
+1 0 0
+#11046
+trader key card~
+a Trader's key card~
+A Trader's key card is lying here~
+~
+18 0 16385
+0 0 0 0
+1 0 0
+#11066
+yellow key card~
+&ca &Yyellow &ckey card~
+&ca &Yyellow &ckey card lies here.~
+~
+18 0 16385
+0 0 0 0
+1 0 0
+#11067
+Oranges Share Commodity~
+a Share of the "Oranges" Commodity~
+A Share of the "Oranges" Commodity is lying here.~
+~
+8 0 16385
+0 0 0 0
+1 0 0
+#11072
+share soy beans commodity~
+a Share of the "Soy-Beans" Commodity~
+A Share of the "Soy-Beans" Commodity is lying here.~
+~
+8 0 1
+0 0 0 0
+1 0 0
+#11078
+share silver commodity~
+a Share of the "Silver" Commodity~
+A Share of the "Silver" Commodity is lying here.~
+~
+8 0 16385
+0 0 0 0
+1 0 0
+#11086
+share gold commodity~
+a Share of the "Gold" Commodity~
+A Share of the "Gold" Commodity is lying here.~
+~
+8 0 16385
+0 0 0 0
+1 0 0
+#11088
+blue card key~
+&ca &Bblue &ccard key~
+&ca &Bblue &ccard key is lying here.~
+~
+18 0 16385
+0 0 0 0
+1 0 0
+#11089
+schwabb briefcase~
+Charles Schwabb's Briefcase~
+Charles Schwabb's Briefcase is here.~
+~
+15 0 16385
+200 0 0 0
+1 0 0
+#11090
+red card key~
+&ca &Rred &ccard key~
+&ca &Rred &ccard key is lying here.~
+~
+18 0 16385
+11089 0 0 0
+1 0 0
+#11092
+executive key card~
+the Executive Keycard~
+The Executive Keycard is lying here.~
+~
+18 0 16385
+0 0 0 0
+1 0 0
+#11100
+tiger eye charm~
+&za &RTi&rge&Rrs&z-&BE&by&Be &zCharm~
+A tiger's eye is laying here in the dust.~
+~
+9 8192 5
+75 75 0 0
+1 51000 5100
+A
+18 10
+A
+19 15
+A
+13 1000
+> wear_prog 100~
+mea $n You tie a small golden chain around your neck, with a single Tiger's
+mea $n Eye on it.
+~
+> remove_prog 100~
+mea $n You remove the charm, and tuck it away.
+~
+|
+#11101
+twist wrist~
+&za &YT&Ow&Yi&Os&Yt&O-&YT&Oi&Ye &OW&Yr&Oi&Ys&Ot&Y-&OT&Yi&Oe~
+A cheap ass twist-tie is lying here.~
+~
+9 0 4097
+40 40 0 0
+1 250000 25000
+A
+13 -100
+A
+14 1000
+A
+18 -65
+A
+19 -10
+> wear_prog 100~
+mea $n You tie a twist-tie around your wrist, and notice it's cutting
+mea $n The circulation to your hands! Ouch this sucks!
+mpdamage $n 5000
+mpechoaround $n $n Looks like an idiot, as they tie a twist tie on their wrist.
+~
+> rand_prog 40~
+mea $n The twist tie cuts off your circulation again..
+mpdamage $n 1000
+~
+> remove_prog 100~
+mea $n The twist tie absolutely refuses to be removed.
+mpdamage $n 2500
+mpecharound $n $n's twist tie refuses to be removed.
+mpforce $n wear twist
+~
+|
+#11102
+zip lock shirt~
+&zA &BZ&bi&Bp&z-&BL&bo&Bc&bk &zShirt~
+A Large Ziplock(tm) Bag lies here.~
+~
+9 0 9
+40 40 0 0
+1 250000 25000
+A
+13 -100
+A
+14 1000
+A
+18 -65
+A
+19 -10
+> wear_prog 100~
+mea $n You wear a Zip Lock bag. Feels stupid doesn't it?
+mpecharound $n $n Wears a Zip Lock (tm) bag. Let's point and laugh!
+~
+> remove_prog 100~
+mea $n a Zip-Lock Shirt says, "YOU SHALL NEVER BE RID OF MY FASHION!"
+mpecharound $n a Zip-Lock Shirt says, "YOU SHALL NEVER BE RID OF MY FASHION!"
+mpforce $n wear zip
+~
+|
+#11103
+anti gravity belt~
+&zan &CA&Wn&Ct&Wi&C-&WG&Cr&Wa&Cv&Wi&Ct&Wy &zBelt~
+An Anti-Gravity belt is lying here, humming softly.~
+~
+9 8194 2049
+50 50 0 0
+5 130000 13000
+E
+plate armour~
+This plate of armour will give you protection until you can find
+something better. 
+~
+A
+14 1000
+A
+2 2
+A
+17 20
+A
+26 524288
+A
+13 1000
+A
+18 8
+A
+19 14
+> wear_prog 100~
+mea $n _cya You strap the belt to your waist and press the button.
+mea $n _cya You suddenly feel weightless!
+mpechoaround $n _cya As $n straps his belt on and activates it, they begin
+mpechoaround $n _cya to levitate above the ground.
+~
+> remove_prog 100~
+mea $n _cya You deactivate the belt and slowly sink to the ground.
+mpechoaround $n _cya As $n deactivates the belt, they slowly sink to the ground
+~
+|
+#11104
+beam saber double~
+&za &RD&rouble&z-&RE&rdged &CBe&cam&Bsa&bb&cer~
+A large beamsaber is lying here, flickering.~
+~
+5 8193 8193
+1100 11 137 2
+1 135000 13500
+A
+18 20
+A
+19 5
+A
+19 10
+> wear_prog 100~
+mea $n _red You take hold of the beamsaber and press the button.
+mea $n _red Two destructive blades of energy emit from the ends of the saber.
+mpecharound $n _red $n takes hold of a beamsaber and presses the button.
+mpechoaround $n _red Two blades of energy emit from the ends of the saber.
+~
+> remove_prog 100~
+mea $n _red As you shut off the saber and tuck it away, the blades of
+mea $n _red energy flicker out of existance, and fade from view.
+mpechoaround $n _red As $n shuts off his saber and tucks it away, the blades
+mpechoaround $n _red of energy flicker out of existance, and fade away.
+~
+|
+#11105
+helmet gundam~
+&za &rHe&Rlm&ret &zResembling a &gG&cu&znd&ca&gm &zHead~
+A helmet resembling a gundam head is lying here.~
+~
+9 1 17
+60 60 0 0
+1 150000 15000
+A
+13 1000
+A
+31 3
+A
+18 10
+A
+19 10
+A
+18 5
+A
+19 5
+> wear_prog 100~
+mea $n _dgr As you place the large Gundanium helmet upon your head, its 
+mea $n _dgr actuality thrusters fire up and it seems nearly weightless. 
+mea $n _dgr The eyes of the helmet begin to glow with a menacing, soft, 
+mea $n _dgr strangely violent yellow color.
+mpechoaround $n _dgr As $n places a Gundanium helmet upon his head,
+mpechoaround $n _dgr the eyes of the helmet begin to glow a menacing,
+mpechoaround $n _dgr soft yellow color.
+~
+> remove_prog 100~
+mea $n _dgr As you attempt the pull the mystical helmet away from your
+mea $n _dgr Head, it refuses to let go. This helmet is one with you, and
+mea $n _dgr It takes alot of forcing to remove. You finallay manage to
+mea $n _dgr Sever the helmet from your head, though it leaves your face
+mea $n _dgr And Head scarred and torn.
+mpdamage $n 2500
+mpechoaround $n _dgr $n takes hold of his helmet and yanks hard. When the
+mpechoaround $n _dgr Mystical Relic finally releases his head, he has
+mpechoaround $n _dgr already suffered extreme pain.
+~
+> rand_prog 20~
+mea $n The Eyes of your Helmet glow a furious Yellow for a moment.
+mpechoaround $n The Eyes of $n's helmet glow a furious yellow for a moment.
+~
+|
+#11109
+vhs tape~
+a VHS Tape~
+A VHS tape lies in the dust here.~
+~
+8 0 16385
+0 0 0 0
+1 7 0
+#11110
+aura life~
+&zThe &GA&gu&Gr&ga &zof &CL&ci&Cf&ce~
+A strange wooden box lies here, engraved 'life'.~
+~
+1 8193 1
+0 0 -1 0
+1 103982 10398
+A
+13 1000
+A
+14 1000
+A
+31 3
+> wear_prog 100~
+mea $n _gre You unclasp the small wooden box labeled "Life", and open it.
+mea $n _gre A sweet, soft, green aura of life begins to surround you.
+mpechoaround $n _gre $n Unclasps a small wooden box labeled "Life," and
+mpecharound $n _gre Opens it. $n is bathed in sweet, soft green light.
+~
+> remove_prog 100~
+mea $n You frown sadly as you hold the box up, and your beloved aura
+mea $n once again drifts back into its place.
+mpechoaround $n frowns sadly as they return the aura of life to its box.
+~
+|
+#11130
+cloaking tiny personal pair device~
+&za tiny pair of Personal &BC&cl&Bo&ca&Bk&ci&Bn&cg &RDe&rvic&Res~
+A set of strange, tiny devices is laying here, sparking and sputtering.~
+~
+9 8194 65537
+55 55 0 0
+1 192001 19200
+A
+13 1000
+A
+18 12
+A
+19 8
+A
+26 2
+> wear_prog 100~
+mea $n You slowly clip the devices to your ears.
+mea $n They begin to spark to life, and generate a field, rendering you
+mea $n completely invisible to the naked eye.
+mpechoaround $n $n clips a pair of odd devices onto their eyes and
+mpechoaround $n vanishes without a trace.
+~
+> remove_prog 100~
+mea $n You unclasp the devices from your ears, and flicker back into
+mea $n existance again. The odd devices, no longer drawing power from
+mea $n your neural cortex, sputter, spark, and suddenly explode.
+mpechoaround $n $n removes the strange devices from their ears, which
+mpechoaround $n suddenly spark violently and explode.
+mpdamage $n 5000
+mpforce $n drop cloaking
+mpforce $n sacrifice cloaking
+~
+|
+#11131
+advanced matrix scanning glasses~
+&za pair of &RA&rd&Rv&ra&Rn&rc&Re&rd &BSca&bnn&Bing &gM&za&gt&zr&gi&zx &zSunglasses~
+A advanced matrix scanning glasses is here.~
+~
+9 8192 131073
+55 55 0 0
+1 193190 19319
+A
+13 600
+A
+14 -100
+A
+18 8
+A
+19 4
+A
+26 8
+A
+26 32
+> wear_prog 100~
+mea $n As you place the sunglasses over your eyes, they beep and suddenly
+mea $n begin to feed information directly into your retinas. You notice
+mea $n that quite a few things appear differently than before.
+mpechoaround $n As $n wears their sunglasses, they suddenly beep softly.
+~
+> remove_prog 100~
+mea $n After removing the sunglasses, you blink several times in an attempt
+mea $n to get used to normal vision again.
+mpechoaround $n $n removes their sunglasses, and blinks several times.
+~
+|
+#11133
+pizza~
+a Large Pizza~
+A Large Pizza is here, looking delicious.~
+~
+19 0 1
+50 50 0 0
+1 4 0
+#11134
+cybernetic implants~
+&BC&by&Bb&be&Br&bn&Be&bt&Bi&bc &zLeg &RI&rmplant&Rs~
+A cybernetic implants is here.~
+~
+9 8192 33
+75 75 0 0
+1 111029 11102
+A
+18 12
+A
+19 8
+A
+13 1000
+A
+14 1100
+A
+40 25
+> wear_prog 100~
+mea $n You rest the implants against your legs, and they immediately
+mea $n thread their way into your leg muscles.
+mpechoaround $n $n lets some implants inhabit his leg muscles..
+mpechoaround $n looks .. kinda painful.. though they look powerful now..
+~
+> remove_prog 100~
+mea $n You cut the implants out of your leg muscles, screaming in agony
+mea $n the entire time.
+mpechoaround $n $n cuts the implants from his legs, screaming in horror.
+mpdamage $n 10000
+~
+|
+#11136
+tiny soap~
+a tiny bar of soap~
+A tiny bar of soap is laying here.~
+~
+8 0 0
+0 0 0 0
+1 3 0
+#11137
+tiny shampoo~
+a tiny bottle of shampoo~
+A tiny bottle of shampoo is laying here.~
+~
+8 0 0
+0 0 0 0
+1 3 0
+#11138
+hot dog~
+a delicious hot-dog~
+A delicious hot-dog is here.~
+~
+19 8192 1
+50 50 0 0
+1 2 0
+#11139
+nachos~
+a huge basket of nachos~
+A huge basket of nachos is here.~
+~
+19 8192 1
+50 50 0 0
+1 3 0
+#11140
+coffee pudding~
+some coffee pudding~
+Some coffee pudding is here.~
+~
+19 8192 1
+50 50 0 0
+1 4 0
+#0
+
+
+#ROOMS
+#11001
+The John F. Kennedy International Spaceport~
+The floors of the spaceport are clean and well maintained, and the lighting
+is bright and adequate. Directly to the north of this entrance is a
+Security Gate, after which there is a large open foyer, littered with
+screens showing flight arrival and departure times, while off to the east
+is the lost baggae claim center. 
+say "Tokyo" to return.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11002
+D1
+~
+~
+0 -1 11003
+> speech_prog Tokyo~
+mea $n You are taken away to Tokyo.
+mptransfer $n 800
+mpat $n mpforce $n look
+~
+|
+S
+#11002
+Security Gate One~
+The security gate is a large steel-crafted metal detector, with small x-ray
+machines on either side. There is a sign in front of the gate asking that
+all metal objects be removed and places in a bin on one of the x-ray
+conveyer belts. A seperate sign clearly cites that all weaponry is banned
+from the Spaceport, and that violators will be prosecuted to the fullest
+extent of the law.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11005
+D2
+~
+~
+0 -1 11001
+S
+#11003
+Lost Baggage Claim Center~
+The room is littered with litterally hundreds of suitcases, briefcases,
+shoulderbags and various other sorts of luggage. Each of the shelves in
+the room has been packed far beyond capacity, and a tiny tag bearing the
+flight number the luggage was found unclaimed on is visibly attached to
+each of the bags. 
+~
+0 0 0 1 0
+D3
+~
+~
+0 -1 11001
+S
+#11004
+The John F. Kennedy International Spaceport~
+This is the large central section of the spaceport. The area is well lit,
+wide open, and quite well maintained. There are television screens
+littering the area, suspended from the ceiling that display arrival and
+departure times for various flights.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11007
+D1
+~
+~
+0 -1 11005
+S
+#11005
+The John F. Kennedy International Spaceport~
+This is the large central section of the spaceport. The area is well lit,
+wide open, and quite well maintained. There are television screens
+littering the area, suspended from the ceiling that display arrival and
+departure times for various flights.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11008
+D1
+~
+~
+0 -1 11006
+D2
+~
+~
+0 -1 11002
+D3
+~
+~
+0 -1 11004
+S
+#11006
+The John F. Kennedy International Spaceport~
+This is the large central section of the spaceport. The area is well lit,
+wide open, and quite well maintained. There are television screens
+littering the area, suspended from the ceiling that display arrival and
+departure times for various flights.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11009
+D3
+~
+~
+0 -1 11005
+S
+#11007
+The John F. Kennedy International Spaceport~
+This is the large central section of the spaceport. The area is well lit,
+wide open, and quite well maintained. There are television screens
+littering the area, suspended from the ceiling that display arrival and
+departure times for various flights.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11010
+D1
+~
+~
+0 -1 11008
+D2
+~
+~
+0 -1 11004
+S
+#11008
+The John F. Kennedy International Spaceport~
+This is the large central section of the spaceport. The area is well lit,
+wide open, and quite well maintained. There are television screens
+littering the area, suspended from the ceiling that display arrival and
+departure times for various flights.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11011
+D1
+~
+~
+0 -1 11009
+D2
+~
+~
+0 -1 11005
+D3
+~
+~
+0 -1 11007
+S
+#11009
+The John F. Kennedy International Spaceport~
+This is the large central section of the spaceport. The area is well lit,
+wide open, and quite well maintained. There are television screens
+littering the area, suspended from the ceiling that display arrival and
+departure times for various flights.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11012
+D2
+~
+~
+0 -1 11006
+D3
+~
+~
+0 -1 11008
+S
+#11010
+The John F. Kennedy International Spaceport~
+This is the large central section of the spaceport. The area is well lit,
+wide open, and quite well maintained. There are television screens
+littering the area, suspended from the ceiling that display arrival and
+departure times for various flights.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 11011
+D2
+~
+~
+0 -1 11007
+S
+#11011
+The John F. Kennedy International Spaceport~
+This is the large central section of the spaceport. The area is well lit,
+wide open, and quite well maintained. There are television screens
+littering the area, suspended from the ceiling that display arrival and
+departure times for various flights.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11013
+D1
+~
+~
+0 -1 11012
+D2
+~
+~
+0 -1 11008
+D3
+~
+~
+0 -1 11010
+S
+#11012
+The John F. Kennedy International Spaceport~
+This is the large central section of the spaceport. The area is well lit,
+wide open, and quite well maintained. There are television screens
+littering the area, suspended from the ceiling that display arrival and
+departure times for various flights.
+~
+0 0 0 1 0
+D2
+~
+~
+0 -1 11009
+D3
+~
+~
+0 -1 11011
+S
+#11013
+Security Gate Two~
+The security gate is a large steel-crafted metal detector, with small x-ray
+machines on either side. There is a sign in front of the gate asking that
+all metal objects be removed and places in a bin on one of the x-ray
+conveyer belts. A seperate sign clearly cites that all weaponry is banned
+from the Spaceport, and that violators will be prosecuted to the fullest
+extent of the law.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11014
+D2
+~
+~
+0 -1 11011
+S
+#11014
+Entrance to the John F. Kennedy Spaceport~
+This is a very plain entryway consisting of a revolving door.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11200
+D2
+~
+~
+0 -1 11013
+S
+#11015
+Hallway to the Western Terminals~
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 11007
+D3
+~
+~
+0 -1 11016
+S
+#11016
+Hallway to the Western Terminals~
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11017
+D1
+~
+~
+0 -1 11015
+S
+#11017
+The Western Terminal Foyer~
+~
+0 0 0 1 0
+D2
+~
+~
+0 -1 11016
+S
+#11018
+Hallway to the Eastern Terminals~
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 11019
+D3
+~
+~
+0 -1 11009
+S
+#11019
+Hallway to the Eastern Terminals~
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11020
+D3
+~
+~
+0 -1 11018
+S
+#11020
+The Eastern Terminal Foyer~
+~
+0 0 0 1 0
+D2
+~
+~
+0 -1 11019
+S
+#11021
+World Trade Center Plaza~
+In the center of the plaza is an enormous fountain, which is surrounded by
+comfortable looking park benches. On the East and the West sides of the
+plaza are entrances to the infamous "Twin Towers", or, New York City's
+great landmark, the World Trade Center. 
+~
+0 0 0 1 0
+D0
+~
+~
+2048 -1 11096
+D1
+~
+~
+0 -1 11023
+D2
+~
+~
+0 -1 11150
+D3
+~
+~
+0 -1 11022
+S
+#11022
+Entrance to the Western Tower~
+The Entrance way is quite simple, with a standard revolving door into
+the tower. To the north is a security checkpoint.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11024
+D1
+~
+~
+0 -1 11021
+S
+#11023
+Entrance to the Eastern Tower~
+The Entrance way is quite simple, with a standard revolving door into
+the tower. To the north is a security checkpoint.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11025
+D3
+~
+~
+0 -1 11021
+S
+#11024
+Western Tower Security Gate~
+This Security Checkpoint is very standard, with a simple set of metal
+detectors along with a few guards. To the north lies the foyer of the
+tower.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11027
+D2
+~
+~
+0 -1 11022
+S
+#11025
+Eastern Tower Security Gate~
+This Security Checkpoint is very standard, with a simple set of metal
+detectors along with a few guards.
+~
+0 1024 0 1 0
+D2
+~
+~
+0 -1 11023
+S
+#11026
+The First Floor Foyer - Western Tower~
+The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11030
+D1
+~
+~
+0 -1 11027
+D7
+~
+~
+0 -1 11029
+S
+#11027
+The First Floor Foyer - Western Tower~
+The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11031
+D1
+~
+~
+0 -1 11028
+D2
+~
+~
+0 -1 11024
+D3
+~
+~
+0 -1 11026
+S
+#11028
+The First Floor Foyer - Western Tower~
+The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11032
+D3
+~
+~
+0 -1 11027
+D6
+~
+~
+0 -1 11033
+S
+#11029
+The First Floor Foyer - Western Tower~
+The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11034
+D1
+~
+~
+0 -1 11030
+D8
+~
+~
+0 -1 11026
+S
+#11030
+The First Floor Foyer - Western Tower~
+The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11035
+D1
+~
+~
+0 -1 11031
+D2
+~
+~
+0 -1 11026
+D3
+~
+~
+0 -1 11029
+S
+#11031
+The First Floor Foyer - Western Tower~
+The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11036
+D1
+~
+~
+0 -1 11032
+D2
+~
+~
+0 -1 11027
+D3
+~
+~
+0 -1 11030
+S
+#11032
+The First Floor Foyer - Western Tower~
+The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11037
+D1
+~
+~
+0 -1 11033
+D2
+~
+~
+0 -1 11028
+D3
+~
+~
+0 -1 11031
+S
+#11033
+The First Floor Foyer - Western Tower~
+The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11038
+D3
+~
+~
+0 -1 11032
+D9
+~
+~
+0 -1 11028
+S
+#11034
+The First Floor Foyer - Western Tower~
+The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11039
+D1
+~
+~
+0 -1 11035
+D2
+~
+~
+0 -1 11029
+S
+#11035
+The First Floor Foyer - Western Tower~
+The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11040
+D1
+~
+~
+0 -1 11036
+D2
+~
+~
+0 -1 11030
+D3
+~
+~
+0 -1 11034
+S
+#11036
+The Information Desk - Western Tower~
+The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+0 1028 0 1 0
+D0
+~
+~
+0 -1 11041
+D1
+~
+~
+0 -1 11037
+D2
+~
+~
+0 -1 11031
+D3
+~
+~
+0 -1 11035
+S
+#11037
+The First Floor Foyer - Western Tower~
+The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11042
+D1
+~
+~
+0 -1 11038
+D2
+~
+~
+0 -1 11032
+D3
+~
+~
+0 -1 11036
+S
+#11038
+The First Floor Foyer - Western Tower~
+The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11043
+D2
+~
+~
+0 -1 11033
+D3
+~
+~
+0 -1 11037
+S
+#11039
+The First Floor Foyer - Western Tower~
+The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 11040
+D2
+~
+~
+0 -1 11034
+D6
+~
+~
+0 -1 11044
+S
+#11040
+The First Floor Foyer - Western Tower~
+The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11044
+D1
+~
+~
+0 -1 11041
+D2
+~
+~
+0 -1 11035
+D3
+~
+~
+0 -1 11039
+S
+#11041
+The First Floor Foyer - Western Tower~
+The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11045
+D1
+~
+~
+0 -1 11042
+D2
+~
+~
+0 -1 11036
+D3
+~
+~
+0 -1 11040
+S
+#11042
+The First Floor Foyer - Western Tower~
+The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11046
+D1
+~
+~
+0 -1 11043
+D2
+~
+~
+0 -1 11037
+D3
+~
+~
+0 -1 11041
+S
+#11043
+The First Floor Foyer - Western Tower~
+The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+0 0 0 1 0
+D2
+~
+~
+0 -1 11038
+D3
+~
+~
+0 -1 11042
+D7
+~
+~
+0 -1 11046
+S
+#11044
+The First Floor Foyer - Western Tower~
+The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 11045
+D2
+~
+~
+0 -1 11040
+D9
+~
+~
+0 -1 11039
+S
+#11045
+The First Floor Foyer - Western Tower~
+The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11047
+D1
+~
+~
+0 -1 11046
+D2
+~
+~
+0 -1 11041
+D3
+~
+~
+0 -1 11044
+S
+#11046
+The First Floor Foyer - Western Tower~
+The floor of the foyer is well polished and well maintained. The
+ceilings are at least thirty feet off the floor, and the lighting
+is very bright, giving the entire area a feel of being clean and
+open. There is an information desk towards the center of the foyer,
+and an elevator against the north wall.
+~
+0 1024 0 1 0
+D2
+~
+~
+0 -1 11042
+D3
+~
+~
+0 -1 11045
+D8
+~
+~
+0 -1 11043
+S
+#11047
+The Elevator - Western Tower~
+The Elevator is nothing more than a large, smooth titanium sphere. The
+bottom of the sphere has been made flat, to allow easier standing, but
+other than that, the rest remains completely round. There is a single
+word, written in exquisite italics against the wall of the sphere
+opposite the entrance, "&CActivate&z". The sphere is lit by a large white
+light that shines down from the center of the top of the sphere.
+~
+0 0 0 1 0
+D2
+~
+~
+0 -1 11045
+> speech_prog activate~
+mpechoaround $n _cya $n looks as if they're hearing voices.
+mea $n _red The sphere begins to echo sounds into your ears.
+mea $n _blu |     Say "Floor 1"     |
+mea $n _blu |     Say "Floor 2"     |
+mea $n _blu |     Say "Floor 3"     |
+mea $n _blu |     Say "Floor 4"     |
+mea $n _blu |     Say "Floor 5"     |
+mea $n _blu |     Say "Floor 6"     |
+mea $n _red The echos within the chamber cease.
+~
+> speech_prog p floor 2~
+mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11048
+~
+> speech_prog p floor 3~
+mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11049
+~
+> speech_prog p floor 4~
+mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11050
+~
+> speech_prog p floor 5~
+mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11051
+~
+> speech_prog p floor 6~
+mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11052
+~
+> speech_prog p floor 1~
+mpechoaround $n _red A Laser drops from the ceiling.
+mpechoaround $n _red The laser shoots $n for being an idiot.
+mea $n _blu *** Warning: You are already on Floor 1. ***
+mea $n _red A laser drops from the ceiling.
+mea $n _red The laser shoots you for being an idiot.
+mpdamage $n 2500
+~
+|
+S
+#11048
+The Elevator - Western Tower~
+The Elevator is nothing more than a large, smooth titanium sphere. The
+bottom of the sphere has been made flat, to allow easier standing, but
+other than that, the rest remains completely round. There is a single
+word, written in exquisite italics against the wall of the sphere
+opposite the entrance, "&CActivate&z". The sphere is lit by a large white
+light that shines down from the center of the top of the sphere.
+~
+0 4 0 1 0
+D2
+~
+~
+0 -1 11053
+> speech_prog activate~
+mpechoaround $n _cya $n looks as if they're hearing voices.
+mea $n _red The sphere begins to echo sounds into your ears.
+mea $n _blu |     Say "Floor 1"     |
+mea $n _blu |     Say "Floor 2"     |
+mea $n _blu |     Say "Floor 3"     |
+mea $n _blu |     Say "Floor 4"     |
+mea $n _blu |     Say "Floor 5"     |
+mea $n _blu |     Say "Floor 6"     |
+mea $n _red The echos within the chamber cease.
+~
+> speech_prog p floor 1~
+mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11047
+~
+> speech_prog p floor 3~
+mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11049
+~
+> speech_prog p floor 4~
+mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11050
+~
+> speech_prog p floor 5~
+mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11051
+~
+> speech_prog p floor 6~
+mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11052
+~
+> speech_prog p floor 2~
+mpechoaround $n _red A Laser drops from the ceiling.
+mpechoaround $n _red The laser shoots $n for being an idiot.
+mea $n _blu *** Warning: You are already on Floor 2. ***
+mea $n _red A laser drops from the ceiling.
+mea $n _red The laser shoots you for being an idiot.
+mpdamage $n 2500
+~
+|
+S
+#11049
+The Elevator - Western Tower~
+The Elevator is nothing more than a large, smooth titanium sphere. The
+bottom of the sphere has been made flat, to allow easier standing, but
+other than that, the rest remains completely round. There is a single
+word, written in exquisite italics against the wall of the sphere
+opposite the entrance, "&CActivate&z". The sphere is lit by a large white
+light that shines down from the center of the top of the sphere.
+~
+0 4 0 1 0
+D2
+~
+~
+0 -1 11087
+> speech_prog activate~
+mpechoaround $n _cya $n looks as if they're hearing voices.
+mea $n _red The sphere begins to echo sounds into your ears.
+mea $n _blu |     Say "Floor 1"     |
+mea $n _blu |     Say "Floor 2"     |
+mea $n _blu |     Say "Floor 3"     |
+mea $n _blu |     Say "Floor 4"     |
+mea $n _blu |     Say "Floor 5"     |
+mea $n _blu |     Say "Floor 6"     |
+mea $n _red The echos within the chamber cease.
+~
+> speech_prog p floor 1~
+mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11047
+~
+> speech_prog p floor 2~
+mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11048
+~
+> speech_prog p floor 4~
+mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11050
+~
+> speech_prog p floor 5~
+mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11051
+~
+> speech_prog p floor 6~
+mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11052
+~
+> speech_prog p floor 3~
+mpechoaround $n _red A Laser drops from the ceiling.
+mpechoaround $n _red The laser shoots $n for being an idiot.
+mea $n _blu *** Warning: You are already on Floor 3. ***
+mea $n _red A laser drops from the ceiling.
+mea $n _red The laser shoots you for being an idiot.
+mpdamage $n 2500
+~
+|
+S
+#11050
+The Elevator - Western Tower~
+The Elevator is nothing more than a large, smooth titanium sphere. The
+bottom of the sphere has been made flat, to allow easier standing, but
+other than that, the rest remains completely round. There is a single
+word, written in exquisite italics against the wall of the sphere
+opposite the entrance, "&CActivate&z". The sphere is lit by a large white
+light that shines down from the center of the top of the sphere.
+~
+0 4 0 1 0
+D2
+~
+~
+39 11092 11093
+> speech_prog activate~
+mpechoaround $n _cya $n looks as if they're hearing voices.
+mea $n _red The sphere begins to echo sounds into your ears.
+mea $n _blu |     Say "Floor 1"     |
+mea $n _blu |     Say "Floor 2"     |
+mea $n _blu |     Say "Floor 3"     |
+mea $n _blu |     Say "Floor 4"     |
+mea $n _blu |     Say "Floor 5"     |
+mea $n _blu |     Say "Floor 6"     |
+mea $n _red The echos within the chamber cease.
+~
+> speech_prog p floor 1~
+mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11047
+~
+> speech_prog p floor 2~
+mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11048
+~
+> speech_prog p floor 3~
+mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11049
+~
+> speech_prog p floor 5~
+mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11051
+~
+> speech_prog p floor 6~
+mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11052
+~
+> speech_prog p floor 4~
+mpechoaround $n _red A Laser drops from the ceiling.
+mpechoaround $n _red The laser shoots $n for being an idiot.
+mea $n _blu *** Warning: You are already on Floor 4. ***
+mea $n _red A laser drops from the ceiling.
+mea $n _red The laser shoots you for being an idiot.
+mpdamage $n 2500
+~
+|
+S
+#11051
+The Elevator - Western Tower~
+The Elevator is nothing more than a large, smooth titanium sphere. The
+bottom of the sphere has been made flat, to allow easier standing, but
+other than that, the rest remains completely round. There is a single
+word, written in exquisite italics against the wall of the sphere
+opposite the entrance, "&CActivate&z". The sphere is lit by a large white
+light that shines down from the center of the top of the sphere.
+~
+0 4 0 1 0
+D2
+~
+~
+0 -1 11165
+> speech_prog activate~
+mpechoaround $n _cya $n looks as if they're hearing voices.
+mea $n _red The sphere begins to echo sounds into your ears.
+mea $n _blu |     Say "Floor 1"     |
+mea $n _blu |     Say "Floor 2"     |
+mea $n _blu |     Say "Floor 3"     |
+mea $n _blu |     Say "Floor 4"     |
+mea $n _blu |     Say "Floor 5"     |
+mea $n _blu |     Say "Floor 6"     |
+mea $n _red The echos within the chamber cease.
+~
+> speech_prog p floor 1~
+mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11047
+~
+> speech_prog p floor 2~
+mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11048
+~
+> speech_prog p floor 3~
+mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11049
+~
+> speech_prog p floor 4~
+mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11050
+~
+> speech_prog p floor 6~
+mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11052
+~
+> speech_prog p floor 5~
+mpechoaround $n _red A Laser drops from the ceiling.
+mpechoaround $n _red The laser shoots $n for being an idiot.
+mea $n _blu *** Warning: You are already on Floor 5. ***
+mea $n _red A laser drops from the ceiling.
+mea $n _red The laser shoots you for being an idiot.
+mpdamage $n 2500
+~
+|
+S
+#11052
+The Elevator - Western Tower~
+The Elevator is nothing more than a large, smooth titanium sphere. The
+bottom of the sphere has been made flat, to allow easier standing, but
+other than that, the rest remains completely round. There is a single
+word, written in exquisite italics against the wall of the sphere
+opposite the entrance, "&CActivate&z". The sphere is lit by a large white
+light that shines down from the center of the top of the sphere.
+~
+0 4 0 1 0
+D2
+~
+~
+0 -1 11094
+> speech_prog activate~
+mpechoaround $n _cya $n looks as if they're hearing voices.
+mea $n _red The sphere begins to echo sounds into your ears.
+mea $n _blu |     Say "Floor 1"     |
+mea $n _blu |     Say "Floor 2"     |
+mea $n _blu |     Say "Floor 3"     |
+mea $n _blu |     Say "Floor 4"     |
+mea $n _blu |     Say "Floor 5"     |
+mea $n _blu |     Say "Floor 6"     |
+mea $n _red The echos within the chamber cease.
+~
+> speech_prog p floor 1~
+mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11047
+~
+> speech_prog p floor 2~
+mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11048
+~
+> speech_prog p floor 3~
+mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11049
+~
+> speech_prog p floor 4~
+mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11050
+~
+> speech_prog p floor 5~
+mpechoaround $n _dgr A soft green lightly quietly envelops $n.
+mpechoaround $n _dgr Slowly, $n fades out of existance before your eyes.
+mea $n _dgr A soft green light slowly envelops you.
+mea $n _dgr The light slowly penetrates your mind, and your body tingles.
+mea $n _dgr You slowly black out for a moment. When you awaken..
+mea $n _dgr .... Things are not as they were ...
+mptransfer $n 11051
+~
+> speech_prog p floor 6~
+mpechoaround $n _red A Laser drops from the ceiling.
+mpechoaround $n _red The laser shoots $n for being an idiot.
+mea $n _blu *** Warning: You are already on Floor 6. ***
+mea $n _red A laser drops from the ceiling.
+mea $n _red The laser shoots you for being an idiot.
+mpdamage $n 2500
+~
+|
+S
+#11053
+Entrance to the Trading Pits~
+This platform is slightly above the trading floor of the trading pits, and
+from here, numerous pits can be seen, hundreds of traders and runners are
+nearly wrestling to buy and sell commodities stocks in such a way that
+would produce the most profits.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11048
+D2
+~
+~
+0 -1 11055
+S
+#11054
+Between The Trading Pits~
+The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information. 
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 11056
+D2
+~
+~
+0 -1 11068
+S
+#11055
+Before The Trading Pits~
+The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information. A large doorway into the pits stands to the south.
+~
+0 1024 0 1 0
+D0
+~
+~
+0 -1 11053
+D2
+~
+~
+39 11046 11056
+S
+#11056
+Between The Trading Pits~
+The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information. 
+~
+0 0 0 1 0
+D0
+~
+~
+7 11046 11055
+D1
+~
+~
+0 -1 11057
+D2
+~
+~
+0 -1 11058
+D3
+~
+~
+0 -1 11054
+> speech_prog p let me out~
+mptransfer $n 11055
+~
+|
+S
+#11057
+Between The Trading Pits~
+The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information. 
+~
+0 0 0 1 0
+D2
+~
+~
+0 -1 11071
+D3
+~
+~
+0 -1 11056
+S
+#11058
+Between The Trading Pits~
+The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information. 
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11056
+D1
+~
+~
+0 -1 11071
+D2
+~
+~
+0 -1 11059
+D3
+~
+~
+0 -1 11068
+S
+#11059
+Between The Trading Pits~
+The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11058
+D1
+~
+~
+0 -1 11073
+D2
+~
+~
+0 -1 11062
+D3
+~
+~
+0 -1 11070
+S
+#11060
+Between The Trading Pits~
+The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11069
+D2
+~
+~
+0 -1 11076
+S
+#11061
+Between The Trading Pits~
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11070
+D1
+~
+~
+0 -1 11062
+S
+#11062
+Between The Trading Pits~
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11059
+D1
+~
+~
+0 -1 11063
+D2
+~
+~
+0 -1 11065
+D3
+~
+~
+0 -1 11061
+S
+#11063
+Between The Trading Pits~
+The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11073
+D1
+~
+~
+0 -1 11064
+D2
+~
+~
+0 -1 11077
+D3
+~
+~
+0 -1 11060
+S
+#11064
+Between The Trading Pits~
+The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11074
+D2
+~
+~
+0 -1 11082
+D3
+~
+~
+0 -1 11063
+S
+#11065
+Between The Trading Pits~
+The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information. 
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11062
+D1
+~
+~
+0 -1 11081
+D2
+~
+~
+0 -1 11066
+D3
+~
+~
+0 -1 11077
+S
+#11066
+Between The Trading Pits~
+The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information. 
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11065
+D1
+~
+~
+0 -1 11084
+D3
+~
+~
+0 -1 11080
+S
+#11067
+In the "Oranges" Pit~
+The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 11068
+D2
+~
+~
+0 -1 11069
+S
+#11068
+In the "Oranges" Pit~
+The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information. 
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11054
+D1
+~
+~
+0 -1 11058
+D2
+~
+~
+0 -1 11070
+D3
+~
+~
+0 -1 11067
+S
+#11069
+In the "Oranges" Pit~
+The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11067
+D1
+~
+~
+0 -1 11070
+D2
+~
+~
+0 -1 11060
+S
+#11070
+In the "Oranges" Pit~
+The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11068
+D1
+~
+~
+0 -1 11059
+D2
+~
+~
+0 -1 11061
+D3
+~
+~
+0 -1 11069
+S
+#11071
+In the "Soy Beans" Pit~
+The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information. 
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11057
+D1
+~
+~
+0 -1 11072
+D2
+~
+~
+0 -1 11073
+D3
+~
+~
+0 -1 11058
+S
+#11072
+In the "Soy Beans" Pit~
+~
+0 0 0 1 0
+D2
+~
+~
+0 -1 11074
+D3
+~
+~
+0 -1 11071
+S
+#11073
+In the "Soy Beans" Pit~
+The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11071
+D1
+~
+~
+0 -1 11074
+D2
+~
+~
+0 -1 11063
+D3
+~
+~
+0 -1 11059
+S
+#11074
+In the "Soy Beans" Pit~
+The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11072
+D2
+~
+~
+0 -1 11064
+D3
+~
+~
+0 -1 11073
+S
+#11075
+In the "Silver" Pit~
+The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 11076
+D2
+~
+~
+0 -1 11078
+S
+#11076
+In the "Silver" Pit~
+The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11060
+D1
+~
+~
+0 -1 11077
+D2
+~
+~
+0 -1 11079
+D3
+~
+~
+0 -1 11075
+S
+#11077
+In the "Silver" Pit~
+The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information. 
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 11065
+D2
+~
+~
+0 -1 11080
+D3
+~
+~
+0 -1 11076
+S
+#11078
+In the "Silver" Pit~
+The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information. 
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11075
+D1
+~
+~
+0 -1 11079
+S
+#11079
+In the "Silver" Pit~
+The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11076
+D1
+~
+~
+0 -1 11080
+D3
+~
+~
+0 -1 11078
+S
+#11080
+In the "Silver" Pit~
+The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information. 
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11077
+D1
+~
+~
+0 -1 11066
+D3
+~
+~
+0 -1 11079
+S
+#11081
+In the "Gold" Pit~
+The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11063
+D1
+~
+~
+0 -1 11082
+D2
+~
+~
+0 -1 11084
+D3
+~
+~
+0 -1 11065
+S
+#11082
+In the "Gold" Pit~
+The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11064
+D1
+~
+~
+0 -1 11083
+D2
+~
+~
+0 -1 11085
+D3
+~
+~
+0 -1 11081
+S
+#11083
+In the "Gold" Pit~
+The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information. 
+~
+0 0 0 1 0
+D2
+~
+~
+0 -1 11086
+D3
+~
+~
+0 -1 11082
+S
+#11084
+In the "Gold" Pit~
+The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information. 
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11081
+D1
+~
+~
+0 -1 11085
+D3
+~
+~
+0 -1 11066
+S
+#11085
+In the "Gold" Pit~
+The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information. 
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11082
+D1
+~
+~
+0 -1 11086
+D3
+~
+~
+0 -1 11084
+S
+#11086
+In the "Gold" Pit~
+The pits are probobly the most frantic place in the trade center. Hundreds
+of people are running full pace with their ties half untied, throwing
+shares and money around like they were pebbles. There are litterally
+thousands of TV screens and Computer monitors displaying all sorts of
+financial information.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11083
+D3
+~
+~
+0 -1 11085
+S
+#11087
+Entrance to the Executive Trading Area~
+The executive trading area is lavishly decorated with expensive carpets,
+solid oak floors, and marble walls.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11049
+D2
+~
+~
+39 11066 11088
+S
+#11088
+Hallway in the Executive Trading Area~
+The executive trading area is lavishly decorated with expensive carpets,
+solid oak floors, and marble walls.
+~
+0 0 0 1 0
+D0
+~
+~
+39 11066 11087
+D1
+~
+door~
+39 11090 11089
+D2
+~
+~
+0 -1 11091
+D3
+~
+~
+0 -1 11090
+S
+#11089
+Charles Schwabb's Office~
+Schwabb's office is absolutely immaculate, everything is expansive and
+built of the finest marble and precious metals. Everything, right down to
+the floor, shines.
+~
+0 0 0 1 0
+D3
+~
+door~
+39 11090 11088
+S
+#11090
+Merril Lynch's Office~
+Merril Lynch's office is neatly kept, with a beautiful oaken desk in  the
+center. Very few things are in the room, other than the soft leather chair
+and Laptop situated upon the desk.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 11088
+S
+#11091
+Hallway in the Executive Trading Area~
+The executive trading area is lavishly decorated with expensive carpets,
+solid oak floors, and marble walls.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11088
+D2
+~
+~
+39 11088 11092
+S
+#11092
+Forbes' Office~
+Forbes' Office is perhaps the simplest of them all. Very little is in the
+room, Except for a single black filing cabinet, a single metal desk, a
+single wooden chair, and a single laptop. It appears that this man prefers
+a relaxed and casual work environment to the cliche' extravagance.
+~
+0 0 0 1 0
+D0
+~
+~
+39 11088 11091
+S
+#11093
+The Stock Cashier's Office~
+The room is absolutely loaded with computer terminals, file cabinets, and
+loose paperwork. There is a safe in the back of the room, and a large
+counter seperating the entryway to the north from the rest of the gigantic
+office. It appears as if the expansive office takes up the entire floor of
+the trade center, And there are hundreds of people in the back handling
+transactions via phone and internet.
+~
+0 1280 0 1 0
+D0
+~
+~
+39 11092 11050
+S
+#11094
+A Large Barricade~
+There is a large barricade here, and it seems to be completey impenetrable.
+There are several construction workers beyond the barricade, apparently
+remodeling the rooftop of the Western Tower.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11052
+S
+#11095
+Beneath the Fountain~
+Now You've Done it.. You've managed to fall under the fountain. Better hope
+you can get back out of here the same way you came in, Or you might be
+here an awful long time.
+~
+0 0 0 1 0
+D4
+~
+~
+0 -1 11096
+D7
+~
+~
+2048 -1 11097
+S
+#11096
+In the World Trade Center Plaza~
+In the center of the plaza is an enormous fountain, which is surrounded by
+comfortable looking park benches. On the East and the West sides of the
+plaza are entrances to the infamous "Twin Towers", or, New York City's
+great landmark, the World Trade Center. 
+~
+0 0 0 1 0
+D2
+~
+~
+0 -1 11021
+D5
+~
+~
+2112 -1 11095
+S
+#11097
+An Access Ladder~
+This appears to be an Access Ladder of some sort.. Downward is nothing but
+Darkness. A wise person would immediately turn away. 
+~
+0 0 0 1 0
+D5
+~
+~
+0 -1 11098
+D8
+~
+~
+0 -1 11095
+S
+#11098
+Descending the Ladder~
+~
+0 0 0 1 0
+D4
+~
+~
+0 -1 11097
+D5
+~
+~
+0 -1 11099
+S
+#11099
+In The Sewers..~
+The sewers are dark, grimey, and disgusting.
+Not to mention, They smell like Feces.
+~
+0 1 0 1 0
+D0
+~
+~
+0 -1 11118
+D1
+~
+~
+0 -1 11111
+D2
+~
+~
+0 -1 11118
+D3
+~
+~
+0 -1 11117
+D4
+~
+~
+0 -1 11098
+S
+#11100
+Entrance to the Macy's Mall~
+Gazing into the entrance of a fairly stocked mall, there's  items for sale
+that could make you look good or simply keep you  alive. There are two
+floors to the establishment, so be sure  to visit all of them.
+~
+0 0 0 1 0
+D7
+~
+~
+0 -1 11101
+D8
+~
+~
+0 -1 11158
+S
+#11101
+First Floor Stores~
+On each wall is the entrance to a store selling various goods.  Whether
+it's clothes or sports equipment, the store owners  could care less. As
+long as they make a decent profit, they'd  even sell ketchup popsicles.
+~
+0 0 0 1 0
+D6
+~
+~
+0 -1 11102
+D7
+~
+~
+0 -1 11104
+D8
+~
+~
+0 -1 11100
+D9
+~
+~
+0 -1 11103
+S
+#11102
+Derelictere's~
+Someone would think that a clothes store would sell clothes... Well this
+store does sell clothes but it's not the usual kind of clothes. Boxes of
+trashbags and even some zip-bags line  the walls in "fancy" styles to
+catch a shoppers eye.
+~
+0 1024 0 1 0
+D9
+~
+~
+0 -1 11101
+S
+#11103
+Sports'n Stuff~
+It almost appears that the store has been robbed recently, but  there are
+still a few pieces of sporting equipment thrown about.  A golf club can be
+just as dangerous as a gun if thrown.
+~
+0 1024 0 1 0
+D6
+~
+~
+0 -1 11101
+S
+#11104
+Continuing through the mall~
+The mall appears to have been worn away through the years as the bustle of
+shoppers rushed in and out. The janitors have  apparently either quit or
+don't do their jobs as there is trash lying about in every corner.
+~
+0 0 0 1 0
+D4
+~
+~
+0 -1 11106
+D8
+~
+~
+0 -1 11101
+D9
+~
+~
+2048 -1 11105
+S
+#11105
+Futuristic Fashions~
+This store seems to be in great shape and it's easy to tell  why. Being
+that it was hidden in the first place, it is more difficult for burglars
+to just run in and grab anything.
+~
+0 1024 0 1 0
+D6
+~
+~
+0 -1 11104
+S
+#11106
+Second Floor Stairwell~
+The stairs under your feet are all chipped away and worn down by the
+constant stomping of feet on them as the shoppers make their way up and
+down them. The second floor has a few shops, but just as the first floor,
+they aren't the prettiest.
+~
+0 0 0 1 0
+D5
+~
+~
+0 -1 11104
+D8
+~
+~
+0 -1 11107
+S
+#11107
+Dead End Shops~
+This is the end of the top floor so it's either time to shop or go back the
+way you came. But perhaps shopping might be worth the time and effort. You
+could find something worth while.
+~
+0 0 0 1 0
+D6
+~
+~
+0 -1 11108
+D7
+~
+~
+0 -1 11106
+D8
+~
+~
+2048 -1 11110
+D9
+~
+~
+0 -1 11109
+S
+#11108
+Trades and Trash~
+This isn't really a shop, but some people have come here to throw away
+their unwanted garbage or possibly get money for it.
+~
+0 0 0 1 0
+D9
+~
+~
+0 -1 11107
+S
+#11109
+The 99-Censtore~
+An old porn store. Full of porn. Porn everywhere. Porn on the walls. Porn
+on the floor. Porn all around you. Porn Porn Porn. But there's only one
+tape left so get it while you can.
+~
+0 1024 0 1 0
+D6
+~
+~
+0 -1 11107
+S
+#11110
+A Charms Dealer~
+The shop smells of incense and a small monkey plays a tiny drum in the
+corner. An old woman stands behind a rusty, iron counter with strange
+objects infront of her on a  cushion-like display.
+~
+0 1024 0 1 0
+D7
+~
+~
+0 -1 11107
+S
+#11111
+In The Sewers..~
+The sewers are dark, grimey, and disgusting.
+Not to mention, They smell like Feces.
+~
+0 1 0 1 0
+D0
+~
+~
+0 -1 11112
+D1
+~
+~
+0 -1 11118
+D2
+~
+~
+0 -1 11118
+D3
+~
+~
+0 -1 11099
+S
+#11112
+In The Sewers..~
+The sewers are dark, grimey, and disgusting.
+Not to mention, They smell like Feces.
+~
+0 5 0 1 0
+D0
+~
+~
+0 -1 11111
+D1
+~
+~
+0 -1 11113
+D2
+~
+~
+0 -1 11111
+D3
+~
+~
+0 -1 11118
+S
+#11113
+In The Sewers..~
+The sewers are dark, grimey, and disgusting.
+Not to mention, They smell like Feces.
+~
+0 5 0 1 0
+D0
+~
+~
+0 -1 11114
+D1
+~
+~
+0 -1 11118
+D2
+~
+~
+0 -1 11111
+D3
+~
+~
+0 -1 11112
+S
+#11114
+In The Sewers..~
+The sewers are dark, grimey, and disgusting.
+Not to mention, They smell like Feces.
+~
+0 5 0 1 0
+D0
+~
+~
+0 -1 11118
+D1
+~
+~
+0 -1 11115
+D2
+~
+~
+0 -1 11113
+D3
+~
+~
+0 -1 11111
+S
+#11115
+In The Sewers..~
+The sewers are dark, grimey, and disgusting.
+Not to mention, They smell like Feces.
+~
+0 5 0 1 0
+D0
+~
+~
+0 -1 11116
+D1
+~
+~
+0 -1 11118
+D2
+~
+~
+0 -1 11111
+D3
+~
+~
+0 -1 11114
+S
+#11116
+In The Sewers..~
+The sewers are dark, grimey, and disgusting.
+Not to mention, They smell like Feces.
+~
+0 5 0 1 0
+D0
+~
+~
+0 -1 11112
+D1
+~
+~
+0 -1 11117
+D2
+~
+~
+0 -1 11115
+D3
+~
+~
+0 -1 11111
+D4
+~
+~
+0 -1 11134
+S
+#11117
+In The Sewers..~
+The sewers are dark, grimey, and disgusting.
+Not to mention, They smell like Feces.
+~
+0 1 0 1 0
+D0
+~
+~
+0 -1 11117
+D1
+~
+~
+0 -1 11099
+D2
+~
+~
+0 -1 11118
+D3
+~
+~
+0 -1 11117
+S
+#11118
+In The Sewers..~
+The sewers are dark, grimey, and disgusting.
+Not to mention, They smell like Feces.
+~
+0 1 0 1 0
+D0
+~
+~
+0 -1 11117
+D1
+~
+~
+0 -1 11119
+D2
+~
+~
+0 -1 11117
+D3
+~
+~
+0 -1 11118
+S
+#11119
+In The Sewers..~
+The sewers are dark, grimey, and disgusting.
+Not to mention, They smell like Feces.
+~
+0 1 0 1 0
+D0
+~
+~
+0 -1 11117
+D1
+~
+~
+0 -1 11118
+D2
+~
+~
+0 -1 11120
+D3
+~
+~
+0 -1 11118
+S
+#11120
+In The Sewers..~
+The sewers are dark, grimey, and disgusting.
+Not to mention, They smell like Feces.
+~
+0 1 0 1 0
+D0
+~
+~
+0 -1 11119
+D1
+~
+~
+0 -1 11117
+D2
+~
+~
+0 -1 11118
+D3
+~
+~
+0 -1 11121
+S
+#11121
+In The Sewers..~
+The sewers are dark, grimey, and disgusting.
+Not to mention, They smell like Feces.
+~
+0 1 0 1 0
+D0
+~
+~
+0 -1 11117
+D1
+~
+~
+0 -1 11120
+D2
+~
+~
+0 -1 11122
+D3
+~
+~
+0 -1 11118
+S
+#11122
+In The Sewers..~
+The sewers are dark, grimey, and disgusting.
+Not to mention, They smell like Feces.
+~
+0 1 0 1 0
+D0
+~
+~
+0 -1 11121
+D1
+~
+~
+0 -1 11123
+D2
+~
+~
+0 -1 11120
+D3
+~
+~
+0 -1 11119
+S
+#11123
+In The Sewers..~
+The sewers are dark, grimey, and disgusting.
+Not to mention, They smell like Feces.
+~
+0 1 0 1 0
+D0
+~
+~
+0 -1 11121
+D1
+~
+~
+0 -1 11118
+D2
+~
+~
+0 -1 11124
+D3
+~
+~
+0 -1 11122
+S
+#11124
+In The Sewers..~
+The sewers are dark, grimey, and disgusting.
+Not to mention, They smell like Feces.
+~
+0 1 0 1 0
+D0
+~
+~
+0 -1 11123
+D1
+~
+~
+0 -1 11120
+D2
+~
+~
+0 -1 11121
+D3
+~
+~
+0 -1 11125
+S
+#11125
+Entrance to a Strange Cave~
+The Sewer seems to come to an abrupt halt here, although there is a large
+whole in the wall. Perhaps it wouldn't be the safest idea to enter it.
+~
+0 1 0 1 0
+D0
+~
+~
+2048 -1 11126
+D1
+~
+~
+0 -1 11124
+D3
+~
+~
+0 -1 11118
+S
+#11126
+An Odd Seeming Dead End~
+The Alcove comes to an abrupt halt here, for some strange reason.
+The word "&CKawabunga!&z" is spray-painted upon the wall.
+~
+0 1 0 1 0
+D2
+~
+~
+0 -1 11125
+> speech_prog Kawabunga!~
+mea $n _dgr Turtle Power! .. Things are not as they were....
+mpechoaround $n _dgr $n vanishes in a strange cloud of Turtle Power!
+mptransfer $n 11127
+~
+|
+S
+#11127
+Entrance to the Teenage Mutant Ninja Turtles Lair~
+The cave is dank, and quiet, it almost seems as if you were being watched.
+Up ahead in there seems to be a small livingroom built in the sewer, with
+smaller rooms branching off of it.
+say "Turtle Power" to return.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11128
+> speech_prog p Turtle Power~
+mea $n _dgr You have been transported.
+mpechoaround $n _dgr $n has been transported.
+mptransfer $n 11126
+~
+|
+S
+#11128
+Within the TMNT Livingroom~
+The room is completely disorganized and cluttery. Pizza boxes, skateboards,
+and various weapons of the Ninjitsu arts are thrown everywhere. There
+seems to be four rooms branching off from this main chamber, in addition
+to the hallway which lies back to the south.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11129
+D1
+~
+~
+0 -1 11132
+D2
+~
+~
+0 -1 11127
+D3
+~
+~
+0 -1 11133
+D6
+~
+~
+0 -1 11131
+D7
+~
+~
+0 -1 11130
+> entry_prog 100~
+mpecho _dgr Michaelangelo drops down from above suddenly!
+mpecho Michaelangelo says, "Woa Dude! I Thought you were one of those foot"
+mpecho Michaelangelo says, "clan Assholes! Sorry if I scared you! Make"
+mpecho Michaelangelo says, "Yourself at home."
+mpecho _dgr Michaelangelo walks into his room.
+~
+|
+S
+#11129
+Splinter's Room~
+A Simple room for a Simple Rat-Man. Splinter's Room is quiet and free of
+objects, save a collection of staves, and a Ninjitsu scroll upon the wall.
+~
+0 0 0 1 0
+D2
+~
+~
+0 -1 11128
+S
+#11130
+Leonardo's Room~
+A set of sheathes hang from the wall on a hook, but the swords appear to be
+missing from them. A picture of a man-size turtle with a blue headband
+rests on a shabby wooden table across from a well-made bed.
+~
+0 0 0 1 0
+D8
+~
+~
+0 -1 11128
+S
+#11131
+Donatello's Lab~
+A bookshelf containing quite a few thick books is in the back corner
+surrounded by posters of famous intelligent scientists. A small wooden
+table that is supposed to resemble a counter stands in the back of the
+room with strange looking devices in it.
+~
+0 1024 0 1 0
+D9
+~
+~
+0 -1 11128
+S
+#11132
+Raphael's Room~
+A pair of sai are impaled into a nearby wooden desk, and a large radio sits
+in the far corner of the room but looks as if it were broken. A Futon is
+crammed between the desk and the wall.
+~
+0 1024 0 1 0
+D3
+~
+~
+0 -1 11128
+S
+#11133
+Michaelangelo's Room~
+Pizza boxes.. Everywhere.. Even the bed is made of old pizza boxes..
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 11128
+S
+#11134
+a Strange Alcove..~
+A small alcove in the ground, accessible from a broken down wall in the
+sewer system. The place seems a little too quiet, and there is a
+frightening man standing here, with metal all over his body.
+~
+0 1025 0 1 0
+D5
+~
+~
+0 -1 11116
+S
+#11135
+The Lobby of the Ritz-Carlton Hotel~
+A huge chandalier hangs about you in all of it's glory. It's made of almost
+over a thousand diamonds. A large counter in the back of the lobby has
+quite a few computers resting upon it, and the constant sound of an
+elevator door opening and closing. On each side of the lobby are shops.
+There is an atm machine in the corner of the room here, as well.
+~
+0 256 0 1 0
+D0
+~
+~
+0 -1 11138
+D1
+~
+~
+0 -1 11136
+D2
+~
+~
+0 -1 11164
+D3
+~
+~
+0 -1 11137
+D6
+~
+~
+0 -1 11139
+S
+#11136
+The Souvenier Soap Shop~
+A few shelves rest in the direct center of the room with quite a few little
+statues and souveniers to buy. Along the counter is a large statue of the
+Statue of Liberty for sale, but it looks to be quite expensive. There are
+also coffee mugs in cabinets and glass cases as well little crystalline
+figurines.
+~
+0 1024 0 1 0
+D3
+~
+~
+0 -1 11135
+S
+#11137
+The Ritz Cafe'~
+The aroma of freshly ground coffee and hot chocolate permeates all around
+you as though it were blanketing you in protection. A big hot-dog cooking
+machine as well as a nacho cart sits near the coffee makers and tables
+that line the walls. This room is very relaxing, and it seems as though
+you'd recover quite easy in such an environment.
+~
+0 1024 2 1 0
+D1
+~
+~
+0 -1 11135
+S
+#11138
+The Elevator~
+The walls almost appear to be lined with real gold, but upon greater
+inspection, it is definitely not. The floor is covered in a silk-quality
+crimson carpet. The ceiling on the other hand is made up of several
+mirrors.
+say "Up" to go up.
+~
+0 0 0 1 0
+D2
+~
+~
+0 -1 11135
+> speech_prog up~
+mea $n The Elevator begins to go upwards.
+mea $n ...
+mea $n ......
+mea $n .........
+mea $n ** Ding! **
+mptransfer $n 11140
+~
+|
+S
+#11139
+The Ritz Check-in Desk~
+A large computer monitor rests on top of  the counter before you, with a
+calculator  to it's side and a credit card swiper  just next to that. The
+counter is made of marble  and a golden railing rims it, curving slightly
+to  give it a circular look, although the  counter itself is actually
+flat.
+~
+0 1024 0 1 0
+D9
+~
+~
+0 -1 11135
+S
+#11140
+The Elevator~
+The walls almost appear to be lined with real gold, but upon greater
+inspection, it is definitely not. The floor is covered in a silk-quality
+crimson carpet. The ceiling on the other hand is made up of several
+mirrors.
+say "Down" to go back down.
+~
+0 0 0 1 0
+D2
+~
+~
+0 -1 11141
+> speech_prog down~
+mea $n The Elevator begins to go downwards.
+mea $n ...
+mea $n ......
+mea $n .........
+mea $n ** Ding! **
+mptransfer $n 11138
+~
+|
+S
+#11141
+Entrance to the Ritz-Carlton Suites~
+A lavishly decorated hallway of oak, marble, and gold. The crimson carpets
+feel very silky, and the lighting is provided by fancy chaneliers.
+~
+0 1024 0 1 0
+D0
+~
+~
+0 -1 11140
+D2
+~
+~
+0 -1 11142
+S
+#11142
+Between the Ritz-Carlton suites~
+A lavishly decorated hallway of oak, marble, and gold. The crimson
+carpets feel very silky, and the lighting is provided by fancy chaneliers.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11141
+D1
+~
+~
+0 -1 11146
+D2
+~
+~
+0 -1 11149
+D3
+~
+~
+0 -1 11145
+D6
+~
+~
+0 -1 11144
+D7
+~
+~
+0 -1 11143
+D8
+~
+~
+0 -1 11148
+D9
+~
+~
+0 -1 11147
+S
+#11143
+A Vacant Suite~
+~
+0 2097152 0 1 0
+D8
+~
+~
+0 -1 11142
+S
+#11144
+An Empty Apartment~
+~
+0 2097152 0 1 0
+D9
+~
+~
+0 -1 11142
+S
+#11145
+&bM&BS&z-&b1&B8&zE&Yx &bK&Ba&zm&bp&Bf&ze&br &BC&zu&bs&Bt&zo&bm &zH&Wa&zn&Wg&za&Wr&W~
+~
+0 1048576 0 1 0
+D1
+~
+~
+0 -1 11142
+S
+#11146
+An Empty Apartment~
+~
+0 2097152 0 1 0
+D3
+~
+~
+0 -1 11142
+S
+#11147
+An Empty Apartment~
+~
+0 2097152 0 1 0
+D6
+~
+~
+0 -1 11142
+S
+#11148
+&BL&punatic &BP&pandora~
+~
+0 1048576 0 1 0
+D7
+~
+~
+0 -1 11142
+S
+#11149
+The Complementary Suite~
+Theres a bed and a lamp along with other necessities  such as T.V. The
+carpet is made of shag, and it's pink.  This could possibly be the "love
+room" that every hotel has.  Hopefully they changed the sheets.
+~
+0 8388608 0 1 0
+D0
+~
+~
+0 -1 11142
+S
+#11150
+Wall Street~
+The roar of taxis passing by and the constant  passersby resemble that of a
+party. The street  is made of smoothed asphalt and the sidewalks  have
+very few cracks or weathering.  Streetlamps line the edge of the road to 
+light the way during the night, because even then, the city continues to
+bustle with commotion.
+~
+0 4 0 1 0
+D0
+~
+~
+0 -1 11021
+D3
+~
+~
+0 -1 11151
+S
+#11151
+Wall Street~
+The roar of taxis passing by and the constant  passersby resemble that of a
+party. The street  is made of smoothed asphalt and the sidewalks  have
+very few cracks or weathering.  Streetlamps line the edge of the road to 
+light the way during the night, because even then, the city continues to
+bustle with commotion.
+~
+0 4 0 1 0
+D1
+~
+~
+0 -1 11150
+D2
+~
+~
+0 -1 11152
+S
+#11152
+Wall Street~
+The roar of taxis passing by and the constant  passersby resemble that of a
+party. The street  is made of smoothed asphalt and the sidewalks  have
+very few cracks or weathering.  Streetlamps line the edge of the road to 
+light the way during the night, because even then, the city continues to
+bustle with commotion.
+~
+0 4 0 1 0
+D0
+~
+~
+0 -1 11151
+D2
+~
+~
+0 -1 11153
+S
+#11153
+Wall Street~
+The roar of taxis passing by and the constant  passersby resemble that of a
+party. The street  is made of smoothed asphalt and the sidewalks  have
+very few cracks or weathering.  Streetlamps line the edge of the road to 
+light the way during the night, because even then, the city continues to
+bustle with commotion.
+~
+0 4 0 1 0
+D0
+~
+~
+0 -1 11152
+D2
+~
+~
+0 -1 11200
+S
+#11154
+Broadway~
+The roar of taxis passing by and the constant  passersby resemble that of a
+party. The street  is made of smoothed asphalt and the sidewalks  have
+very few cracks or weathering.  Streetlamps line the edge of the road to 
+light the way during the night, because even then, the city continues to
+bustle with commotion.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 11200
+D3
+~
+~
+0 -1 11155
+S
+#11155
+Broadway~
+The roar of taxis passing by and the constant  passersby resemble that of a
+party. The street  is made of smoothed asphalt and the sidewalks  have
+very few cracks or weathering.  Streetlamps line the edge of the road to 
+light the way during the night, because even then, the city continues to
+bustle with commotion.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 11154
+D3
+~
+~
+0 -1 11156
+S
+#11156
+Broadway~
+The roar of taxis passing by and the constant  passersby resemble that of a
+party. The street  is made of smoothed asphalt and the sidewalks  have
+very few cracks or weathering.  Streetlamps line the edge of the road to 
+light the way during the night, because even then, the city continues to
+bustle with commotion.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 11155
+D7
+~
+~
+0 -1 11157
+S
+#11157
+Broadway~
+The roar of taxis passing by and the constant  passersby resemble that of a
+party. The street  is made of smoothed asphalt and the sidewalks  have
+very few cracks or weathering.  Streetlamps line the edge of the road to 
+light the way during the night, because even then, the city continues to
+bustle with commotion.
+~
+0 0 0 1 0
+D7
+~
+~
+0 -1 11158
+D8
+~
+~
+0 -1 11156
+S
+#11158
+Broadway~
+The roar of taxis passing by and the constant  passersby resemble that of a
+party. The street  is made of smoothed asphalt and the sidewalks  have
+very few cracks or weathering.  Streetlamps line the edge of the road to 
+light the way during the night, because even then, the city continues to
+bustle with commotion.
+~
+0 0 0 1 0
+D7
+~
+~
+0 -1 11100
+D8
+~
+~
+0 -1 11157
+S
+#11159
+Third Street~
+The roar of taxis passing by and the constant  passersby resemble that of a
+party. The street  is made of smoothed asphalt and the sidewalks  have
+very few cracks or weathering.  Streetlamps line the edge of the road to 
+light the way during the night, because even then, the city continues to
+bustle with commotion.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 11160
+D3
+~
+~
+0 -1 11200
+S
+#11160
+Third Street~
+The roar of taxis passing by and the constant  passersby resemble that of a
+party. The street  is made of smoothed asphalt and the sidewalks  have
+very few cracks or weathering.  Streetlamps line the edge of the road to 
+light the way during the night, because even then, the city continues to
+bustle with commotion.
+~
+0 0 0 1 0
+D3
+~
+~
+0 -1 11159
+D8
+~
+~
+0 -1 11161
+S
+#11161
+Third Street~
+The roar of taxis passing by and the constant  passersby resemble that of a
+party. The street  is made of smoothed asphalt and the sidewalks  have
+very few cracks or weathering.  Streetlamps line the edge of the road to 
+light the way during the night, because even then, the city continues to
+bustle with commotion.
+~
+0 0 0 1 0
+D7
+~
+~
+0 -1 11160
+D8
+~
+~
+0 -1 11162
+S
+#11162
+Third Street~
+The roar of taxis passing by and the constant  passersby resemble that of a
+party. The street  is made of smoothed asphalt and the sidewalks  have
+very few cracks or weathering.  Streetlamps line the edge of the road to 
+light the way during the night, because even then, the city continues to
+bustle with commotion.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 11163
+D7
+~
+~
+0 -1 11161
+S
+#11163
+Third Street~
+The roar of taxis passing by and the constant  passersby resemble that of a
+party. The street  is made of smoothed asphalt and the sidewalks  have
+very few cracks or weathering.  Streetlamps line the edge of the road to 
+light the way during the night, because even then, the city continues to
+bustle with commotion.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 11164
+D3
+~
+~
+0 -1 11162
+S
+#11164
+Third Street~
+The roar of taxis passing by and the constant  passersby resemble that of a
+party. The street  is made of smoothed asphalt and the sidewalks  have
+very few cracks or weathering.  Streetlamps line the edge of the road to 
+light the way during the night, because even then, the city continues to
+bustle with commotion.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11135
+D3
+~
+~
+0 -1 11163
+S
+#11165
+A Blocked off Entrance~
+A Large sign is here, reading:
+"We are very sorry for the inconvenience, but due to the construction
+ on the rooftop, the daycare is currently closed."
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 11051
+S
+#11200
+The Regional Transportation Center~
+This place is so enormous it's hard to describe. Basically say where You'd
+like to go, and they'll hook you up with either a taxi, subway, or a bus.
+ 
+say "Airport" For the Airport.
+say "Wall Street" For Wall Street.
+say "Third Street" For Third Street.
+say "Broadway" For Broadway.
+~
+0 4 0 1 0
+> speech_prog airport~
+mea $n A Taxi drives you to the Airport.
+mptransfer $n 11014
+~
+> speech_prog p wall street~
+mea $n A City Bus takes you to Wall Street.
+mptransfer $n 11153
+~
+> speech_prog broadway~
+mea $n the Subway takes you to Broadway.
+mptransfer $n 11154
+~
+> speech_prog p third street~
+mea $n A Taxi takes you to Third Street.
+mptransfer $n 11159
+~
+|
+S
+#0
+
+
+#RESETS
+M 1 11011 33 11001
+M 1 11002 2 11002
+M 1 11011 33 11002
+M 1 11011 33 11002
+M 1 11011 33 11004
+M 1 11011 33 11008
+M 1 11011 33 11008
+M 1 11011 33 11008
+M 1 11011 33 11011
+M 1 11011 33 11012
+M 1 11002 2 11013
+M 1 11011 33 11013
+M 1 11011 33 11013
+M 1 11011 33 11014
+O 1 11021 1 11021
+M 1 11028 14 11022
+M 1 11028 14 11023
+M 1 11024 1 11024
+M 1 11011 33 11024
+M 1 11052 1 11025
+M 1 11028 14 11027
+M 1 11028 14 11027
+M 1 11028 14 11027
+M 1 11028 14 11028
+M 1 11011 33 11028
+M 1 11101 10 11031
+M 1 11028 14 11035
+M 1 11028 14 11035
+M 1 11036 1 11036
+O 1 11036 1 11036
+M 1 11011 33 11037
+M 1 11011 33 11037
+M 1 11028 14 11038
+M 1 11011 33 11040
+M 1 11028 14 11042
+M 1 11011 33 11042
+M 1 11028 14 11043
+M 1 11046 1 11044
+E 1 11046 1 17
+M 1 11101 10 11044
+M 1 11011 33 11046
+M 1 11101 10 11046
+M 1 11101 10 11046
+M 1 11067 8 11067
+M 1 11067 8 11067
+M 1 11067 8 11068
+M 1 11067 8 11068
+M 1 11067 8 11069
+M 1 11067 8 11069
+M 1 11067 8 11070
+M 1 11067 8 11070
+M 1 11072 8 11071
+M 1 11072 8 11071
+M 1 11072 8 11072
+M 1 11072 8 11072
+M 1 11072 8 11073
+M 1 11072 8 11073
+M 1 11072 8 11074
+M 1 11072 8 11074
+M 1 11078 12 11075
+M 1 11078 12 11075
+M 1 11078 12 11076
+M 1 11078 12 11076
+M 1 11078 12 11077
+M 1 11078 12 11077
+M 1 11078 12 11078
+M 1 11078 12 11078
+M 1 11078 12 11079
+M 1 11078 12 11079
+M 1 11078 12 11080
+M 1 11078 12 11080
+M 1 11086 12 11081
+M 1 11086 12 11081
+M 1 11086 12 11082
+M 1 11086 12 11082
+M 1 11086 12 11083
+M 1 11086 12 11083
+M 1 11086 12 11084
+M 1 11086 12 11084
+M 1 11086 12 11085
+M 1 11086 12 11085
+M 1 11086 12 11086
+M 1 11086 12 11086
+D 0 11087 2 2
+D 0 11088 0 2
+D 0 11088 1 2
+M 1 11089 1 11089
+E 1 11089 1 17
+D 0 11089 3 2
+M 1 11090 1 11090
+E 1 11090 1 17
+D 0 11091 2 2
+M 1 11091 1 11092
+E 1 11092 1 17
+D 0 11092 0 2
+M 1 11094 1 11094
+M 1 11011 33 11095
+M 1 11011 33 11096
+M 1 11011 33 11096
+M 1 11011 33 11097
+M 1 11028 14 11097
+M 1 11102 1 11102
+G 1 11101 1
+G 1 11102 1
+M 1 11101 10 11102
+M 1 11103 1 11103
+O 1 10 1 11103
+P 0 3 1 10
+M 1 11105 1 11105
+G 1 11103 1
+G 1 11104 1
+G 1 11105 1
+M 1 11011 33 11107
+M 1 11101 10 11107
+M 1 11108 1 11108
+M 1 11011 33 11108
+M 1 11101 10 11108
+O 1 17 1 11108
+M 1 11109 1 11109
+G 1 11109 1
+M 1 11101 10 11109
+M 1 11101 10 11109
+M 1 11110 1 11110
+G 1 11110 1
+G 1 11100 1
+M 1 11120 28 11111
+M 1 11120 28 11111
+M 1 11120 28 11112
+M 1 11120 28 11112
+M 1 11120 28 11113
+M 1 11120 28 11113
+M 1 11120 28 11114
+M 1 11120 28 11114
+M 1 11120 28 11115
+M 1 11120 28 11115
+M 1 11120 28 11116
+M 1 11120 28 11116
+M 1 11120 28 11117
+M 1 11120 28 11117
+M 1 11028 14 11117
+M 1 11011 33 11117
+M 1 11120 28 11118
+M 1 11120 28 11118
+M 1 11011 33 11118
+M 1 11028 14 11118
+M 1 11120 28 11119
+M 1 11120 28 11119
+M 1 11120 28 11120
+M 1 11120 28 11120
+M 1 11120 28 11121
+M 1 11120 28 11121
+M 1 11120 28 11122
+M 1 11120 28 11122
+M 1 11120 28 11123
+M 1 11120 28 11123
+M 1 11120 28 11124
+M 1 11120 28 11124
+M 1 11129 1 11129
+M 1 11130 1 11130
+M 1 11131 1 11131
+G 1 11131 1
+G 1 11130 1
+M 1 11132 1 11132
+M 1 11133 1 11133
+M 1 11134 1 11134
+G 1 11134 1
+M 1 11136 1 11136
+G 1 11136 1
+G 1 11137 1
+M 1 11137 1 11137
+G 1 11139 1
+G 1 11140 1
+G 1 11138 1
+M 1 11139 1 11139
+G 1 3 1
+M 1 11011 33 11139
+M 1 11141 1 11141
+M 1 11011 33 11155
+M 1 11101 10 11158
+M 1 11011 33 11161
+M 1 11011 33 11164
+M 1 11011 33 11200
+M 1 11011 33 11200
+G 1 11088 1
+M 1 11093 1 11093
+D 0 11093 0 2
+D 0 11050 2 2
+M 1 11066 1 11066
+G 1 11066 1
+M 1 11055 1 11055
+D 0 11055 2 2
+D 0 11056 0 2
+S
+
+
+#SHOPS
+ 11102    0  0  0  0  0   120  90         0 23    ; A Man in Sheet Metal
+ 11105    0  0  0  0  0   120  90         0 23    ; A Naked Old Man
+ 11109    0  0  0  0  0   120  90         0 23    ; a Naked Fat Man
+ 11110    0  0  0  0  0   120  90         0 23    ; A Toothless Old Lady
+ 11131    0  0  0  0  0   120  90         0 23    ; &gD&ponatello
+ 11134    0  0  0  0  0   120  90         0 23    ; a Cyborg
+ 11136    0  0  0  0  0   120  90         0 23    ; a Blonde Girl
+ 11137    0  0  0  0  0   120  90         0 23    ; The Ritz-Carlton Bartender
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+M  11002 spec_police
+M  11002 spec_customs_weapons
+M  11024 spec_police
+M  11024 spec_customs_weapons
+S
+
+
+#$

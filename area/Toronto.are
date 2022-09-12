@@ -1,0 +1,3906 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         Toronto~
+Author       Cleo~
+Ranges       1 1007 1 1007
+Economy      -2 400227268
+ResetMsg     The sounds of cars speeding down the streets can be heard.~
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       1800
+Keywords   Mikhal~
+Short      Mikhal~
+Long       A shaggy looking man is here, sitting in a corner.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_thief~
+Specfun2    spec_janitor~
+Gender     male~
+Actflags   npc sentinel~
+Affected   invisible detect_evil detect_magic~
+Stats1     0 600 0 -1400 0 0
+Stats2     120 10 6000
+Stats3     60 4 2
+Stats4     0 0 0 120 120
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   say Hey man...
+cough
+grin
+say I can give you some bootleg films...
+cough
+say You can cash 'em in to a buddy of mine and he'll give you stuff.
+say All I need is something to give you the films on.
+say I can give you Kenshin, Evangelion or Love Hina.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   evangelion~
+Comlist   say So you want Shin Seiki Evangelion? Okay.
+mpforce $n give dvd-r mikhal
+if ovnuminv(1800)
+say Great! It'll take just a second!
+emote runs to the computer and puts the DVD-R disc in.
+mpjunk dvd-r
+emote comes back with a slim black case.
+mpoload 1801
+give copy $n
+whisper $n Here you go.
+whisper $n My pal is on Bloor St. Tell him that Mikhal sent you.
+else
+say You don't have anything for me to put the film on.
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   kenshin~
+Comlist   say So you want Rurouni Kenshin? Okay.
+mpforce $n give dvd-r mikhal
+if ovnuminv(1800)
+say Great! It'll take just a second!
+emote runs to the computer and puts the DVD-R disc in.
+mpjunk dvd-r
+emote comes back with a slim black case.
+mpoload 1802
+give copy $n
+whisper $n Here you go.
+whisper $n My pal is on Bloor St. Tell him that Mikhal sent you.
+else
+say You don't have anything for me to put the film on.
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   lovehina~
+Comlist   say So you want Love Hina? Okay.
+mpforce $n give dvd-r mikhal
+if ovnuminv(1800)
+say Great! It'll take just a second!
+emote runs to the computer and puts the DVD-R disc in.
+mpjunk dvd-r
+emote comes back with a slim black case.
+mpoload 1803
+give copy $n
+whisper $n Here you go.
+whisper $n My pal is on Bloor St. Tell him that Mikhal sent you.
+else
+say You don't have anything for me to put the film on.
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1801
+Keywords   An RCMP Officer~
+Short      An RCMP Officer~
+Long       An RCMP Officer stands here, watching carefully.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_customs_weapons~
+Specfun2    spec_police~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Affected   blind invisible detect_evil detect_magic~
+Stats1     0 999 0 -2397 0 0
+Stats2     199 10 9990
+Stats3     99 4 2
+Stats4     0 0 0 199 199
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1802
+Keywords   A homeless guy~
+Short      A homeless guy~
+Long       A homeless guy is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel wimpy~
+Stats1     0 35 0 12 0 0
+Stats2     7 10 350
+Stats3     3 4 2
+Stats4     0 0 0 7 7
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   grumble
+say Tch, look at me...
+say Out of a job, home and my wife ran off with the kids...
+sigh
+say I should've finished college.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1803
+Keywords   Chris~
+Short      Chris~
+Long       Chris the shopkeeper is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 214 0 -435 0 0
+Stats2     42 10 2140
+Stats3     21 4 2
+Stats4     0 0 0 42 42
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   66 64 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   say Sup $n? What can I get you?
+smile
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1804
+Keywords   An anonymous person~
+Short      An anonymous person~
+Long       An anonymous person is walking.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc wimpy~
+Stats1     0 30 0 25 5 0
+Stats2     6 10 300
+Stats3     3 4 2
+Stats4     0 0 0 6 6
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1805
+Keywords   A gangster~
+Short      A gangster~
+Long       A teenage punk is leaning against the wall, leering at everyone who passes.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 210 0 -425 0 0
+Stats2     42 10 2100
+Stats3     21 4 2
+Stats4     0 0 0 42 42
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    punch kick~
+Defenses   dodge~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   sneer $n
+grin $n
+say What's someone like you doin' in these parts of th' town, eh?
+laugh
+emote flashes his switchblade menacingly.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1806
+Keywords   Max~
+Short      Max~
+Long       A bartender stands behind the counter taking orders.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 215 0 -437 0 0
+Stats2     43 10 2150
+Stats3     21 4 2
+Stats4     0 0 0 43 43
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   17 0 0 0 0 100 50 0 23
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   say Hey there $n!
+if sex($n) == 1
+giggle
+wink $n
+say My name's Max, just so you know.
+else
+if sex($n) == 2
+say What can I get you?
+smile $n
+endif
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1807
+Keywords   Aleksander~
+Short      Aleksander~
+Long       An anonymous person is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  rand_prog~
+Arglist   1~
+Comlist   sigh
+emote ponders thoughtfully.
+say I wonder how Mikhal's doing...
+shrug
+sigh
+say I should catch up with him sometime soon...
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   'mikhal sent me.~
+Comlist   say Mikhal sent you? Mikhal Korushev?
+laugh
+say Well then, you must be talkin' to me for a reason, right?
+say So what do you have?
+say Better thank me...
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   evangelion~
+Comlist   say You have Shin Seiki Evangelion? Great!
+laugh
+say Hand it over!
+mpforce $n give copy aleksander
+if ovnuminv(1801)
+laugh
+say I knew Mikhal would come through!
+say Here's something for your trouble.
+mpoload 1812
+mpjunk copy
+give a-10 $n
+say Thanks a lot!
+else
+say What? You liar! Buzz off!
+growl
+give copy $n
+say You can keep your shit!
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   kenshin~
+Comlist   say You have Rurouni Kenshin? Great!
+laugh
+say Hand it over!
+mpforce $n give copy aleksander
+if ovnuminv(1802)
+laugh
+say I knew Mikhal would come through!
+say Here's something for your trouble.
+mpoload 1811
+mpjunk copy
+give sakabatou $n
+say Thanks a lot!
+else
+say What? You liar! Buzz off!
+growl
+give copy $n
+say You can keep your shit!
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   lovehina~
+Comlist   say You have Love Hina? Great!
+laugh
+say Hand it over!
+mpforce $n give copy aleksander
+if ovnuminv(1803)
+laugh
+say I knew Mikhal would come through!
+say Here's something for your trouble.
+mpoload 1814
+mpjunk copy
+give glasses $n
+say Thanks a lot!
+else
+say What? You liar! Buzz off!
+growl
+give copy $n
+say You can keep your shit!
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1808
+Keywords   A Police Officer~
+Short      A Police Officer~
+Long       A tall man is standing around here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_customs_weapons~
+Specfun2    spec_customs_smut~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 999 0 -2397 0 0
+Stats2     199 10 9990
+Stats3     99 4 2
+Stats4     0 0 0 199 199
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  speech_prog~
+Arglist   lot!~
+Comlist   say You're dead Aleksander!
+kill aleksander
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1809
+Keywords   Jason~
+Short      Jason~
+Long       A tall, blond shopkeeper is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 214 0 -435 0 0
+Stats2     42 10 2140
+Stats3     21 4 2
+Stats4     0 0 0 42 42
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   5 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   leer
+say What you want?
+say And hurry it up!
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1810
+Keywords   Trevor~
+Short      Trevor~
+Long       A teenager stands behind the counter taking orders from customers.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 55 0 -37 0 0
+Stats2     11 10 550
+Stats3     5 4 2
+Stats4     0 0 0 11 11
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   smile
+say Welcome to Angel Wing Cafe!
+say My name's Trevor.
+say What can I get you?
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1811
+Keywords   A Doorman~
+Short      A Doorman~
+Long       A polite looking man stands at the door, greeting people.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 75 0 -87 0 0
+Stats2     15 10 750
+Stats3     7 4 2
+Stats4     0 0 0 15 15
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   say Hello $n
+smile
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1812
+Keywords   A Receptionist~
+Short      A Receptionist~
+Long       A receptionist is here, going about with her duties.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 75 0 -87 0 0
+Stats2     15 10 750
+Stats3     7 4 2
+Stats4     0 0 0 15 15
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   bow
+say Welcome to College Park Apartments.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1813
+Keywords   Emily~
+Short      Emily~
+Long       A young sales representative is here, ready to help.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 214 0 -435 0 0
+Stats2     42 10 2140
+Stats3     21 4 2
+Stats4     0 0 0 42 42
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   say Welcome to Radio Shack.
+bow
+say My name is Emily.
+say How can I help you?
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1814
+Keywords   Victor~
+Short      Victor~
+Long       A tall brown haired man stands here, ready to take customers.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 44 0 -10 0 0
+Stats2     8 10 440
+Stats3     4 4 2
+Stats4     0 0 0 8 8
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   say Hello, and welcome to The Gap.
+say My name is Victor.
+smile
+say How may I help you?
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1815
+Keywords   Saria~
+Short      Saria~
+Long       A slim woman stands here, smiling.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 100 0 -150 200 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Resist     charm~
+Immune     charm~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   giggle
+say Hey! Welcome to The Underground!
+say The Underground is the hottest club in Toronto!
+say I'm Saria.
+smile
+bow
+say If you would like a private room, say "yes".
+giggle
+say You won't regret it.
+wink $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   yes~
+Comlist   giggle
+say Sooo...you wanna get 'freaky' eh?
+giggle
+say Well, that will be 80 dollars.
+smirk
+say It isn't free, you know.
+say Have a great time!
+say Open the door to the west.
+say Jess will take the money.
+smile
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1816
+Keywords   Jess~
+Short      Jess~
+Long       A young brunette stands here, smiling suggestively.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if goldamt ($n) >= 80
+mpforce $n give 80 dollars jess
+smile
+say Hey there.
+wink
+say The Underground offers a variety of services.
+say Girls, guys and drinks, primarily.
+smile
+say What would you like?
+else
+say You don't have enough money.
+mpforce $n east
+close e
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   michelle~
+Comlist   say Oh! Ms. Michelle
+bow michelle
+say Your guests are waiting for you.
+mptransfer michelle 1866
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   drinks~
+Comlist   smile
+say What drinks would you like?
+say I have a &Ybeer&c, &YHeineken's&c, and &Ytequila&c.
+say Tell me which one you want.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   girls~
+Comlist   giggle
+say You like those kinds of services, hmm?
+laugh
+say Well, I can introduce you to my best friend, Amy.
+wink $n
+mpmload 1818
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   guys~
+Comlist   giggle
+say Ooooh, I see.
+wink $n
+say Well, you can meet my good friend Josh.
+smile
+mpmload 1819
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   beer~
+Comlist   mpoload 1808
+say Please enjoy.
+smile $n
+give mug $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   heineken~
+Comlist   mpoload 1809
+say Please enjoy.
+smile $n
+give mug $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   garnet~
+Comlist   say Oh! Mistress Garnet
+bow garnet
+say Your guests are waiting for you
+mptransfer garnet 1866
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1817
+Keywords   Hisoka~
+Short      Hisoka~
+Long       A slim teenager stands here, frowning.
+~
+Race       Japanese~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel wimpy~
+Affected   blind invisible detect_evil~
+Stats1     -1000 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  speech_prog~
+Arglist   'yami no matsuei'~
+Comlist   ifname ($n) == Cleo
+follow Cleo
+smile
+ifname ($n) == Michelle
+follow Michelle
+smile
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1818
+Keywords   Amy~
+Short      Amy~
+Long       A slender, lithe woman is here, smiling seductively.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 1 0 97 0 0
+Stats2     0 10 10
+Stats3     0 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   ifispc ($n)
+ifsex ($n) == 1
+say Well well...
+smirk
+say I'm yours for the night, baby.
+say The name's Amy.
+smile
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  rand_prog~
+Arglist   5~
+Comlist   giggle
+say I can do anything you want me to babe.
+say You want a good fuck? I'll give you the best.
+smirk
+say I can show you lesbian action, if that's your kink.
+wink
+say So show me what you can do.
+smirk
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  rand_prog~
+Arglist   15~
+Comlist   nibble $r
+snuggle $r
+passion $r
+french $r
+cuddle $r
+caress $r
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1819
+Keywords   Josh~
+Short      Josh~
+Long       A tall, athletic looking young man is here, smirking.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   ifispc ($n) and ifsex ($n) == 2
+say Well, hey there baby.
+wink $n
+say The name's Josh.
+say I'm your man for the night.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  rand_prog~
+Arglist   2~
+Comlist   smirk
+say I'm ready for whatever you want.
+say If you're looking for a good fuck, I can be that man.
+wink
+say I can go both ways baby, if that's what turns you on.
+whisper $r Want me to show you just what I can do with my tongue?
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  rand_prog~
+Arglist   10~
+Comlist   caress $r
+fondle $r
+passion $r
+snuggle $r
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1820
+Keywords   Jen~
+Short      Jen~
+Long       A young female bartender is here, taking orders.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 214 0 -435 0 0
+Stats2     42 10 2140
+Stats3     21 4 2
+Stats4     0 0 0 42 42
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   say Hey there.
+wink
+say The name's Jen.
+say What would you like?
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1821
+Keywords   Tsuzuki~
+Short      Tsuzuki~
+Long       A handsome man is here smiling.
+~
+Race       Japanese~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Affected   blind invisible detect_evil~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  speech_prog~
+Arglist   'kurosaki hisoka'~
+Comlist   ifname ($n) == Cleo
+follow Cleo
+smile
+ifname ($n) == Michelle
+follow Michelle
+smile
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1822
+Keywords   Thomas~
+Short      Thomas~
+Long       A middle aged Canadian man is standing here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 214 0 -435 0 0
+Stats2     42 10 2140
+Stats3     21 4 2
+Stats4     0 0 0 42 42
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   say Hello there!
+smile
+say Welcome to the Quazar Game.
+say If you want to play, say &Yready&C.
+say &cIf you want to learn the rules of the game, say &Yrules.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   rules~
+Comlist   say The rules are very simple.
+say Your goal is to get the opposite team's flag.
+say There are two teams, &BBlue&C and &RRed&C.
+say You shoot the other team members to make your way to the flag.
+say Got it?
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   ready~
+Comlist   say Good luck!
+say Be careful though, the team members are very aggressive.
+if sex ($n) == 1
+say You are on the &RRed &cTeam. Go for the &BBlue &cTeam's flag.
+mptransfer $n 1873
+else
+say You are on the &BBlue &cTeam. Go for the &RRed &cTeam's flag.
+mptransfer $n 1873
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1823
+Keywords   A Blue Team Member~
+Short      A Blue Team Member~
+Long       A person is standing ready for action.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc stayarea wimpy nocorpse~
+Affected   truesight~
+Stats1     0 320 0 -700 0 0
+Stats2     64 10 3200
+Stats3     32 4 2
+Stats4     0 0 0 64 64
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if sex ($n) == 1
+if ispc ($n) == ispc
+say Hey you!
+kill $n
+else
+say You're not allowed here.
+kill red
+endif
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1824
+Keywords   A Red Team Member~
+Short      A Red Team Member~
+Long       A person is standing ready for action.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc nocorpse~
+Affected   invisible detect_evil detect_magic~
+Stats1     0 320 0 -700 100 0
+Stats2     64 10 3200
+Stats3     32 4 2
+Stats4     0 0 0 64 64
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if sex ($n) == 2
+if ispc ($n) == ispc
+say Hey you!
+kill $n
+else
+say You're not allowed here.
+kill blue
+endif
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1825
+Keywords   Jackie~
+Short      Jackie~
+Long       A middle aged woman is standing here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel~
+Affected   invisible detect_evil detect_magic~
+Stats1     0 214 0 -435 3000 0
+Stats2     42 10 2140
+Stats3     21 4 2
+Stats4     0 0 0 42 42
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   say Hello $n.
+mpforce $n give flag jackie
+if ovnuminv(1838)
+say Well done!
+give 200 dollars $n
+mpjunk flag
+else
+if ovnuminv(1839)
+say Well done!
+give 200 dollars $n
+mpjunk flag
+else
+say No flag?
+endif
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1899
+Keywords   last~
+Short      a newly created last~
+Long       Some god abandoned a newly created last here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#OBJECT
+Vnum     1800
+Keywords A DVD-R disc~
+Type     paper~
+Short    A DVD-R disc~
+Long     A DVD-R disc lies here.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 100 10 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1801
+Keywords A Copy of Shin Seiki Evangelion~
+Type     smut~
+Short    A Copy of Shin Seiki Evangelion~
+Long     A black DVD-R case is here with the words "EVANGELION" written on it.~
+Flags    contraband~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 2000 200 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1802
+Keywords A Copy of Rurouni Kenshin~
+Type     smut~
+Short    A Copy of Rurouni Kenshin~
+Long     A black DVD-R case is here with the words "KENSHIN" written on it.~
+Flags    contraband~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 2000 200 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1803
+Keywords A Copy of Love Hina~
+Type     smut~
+Short    A Copy of Love Hina~
+Long     A black DVD-R case is here with the words "LOVE HINA" written on it.~
+Flags    contraband~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 2000 200 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1804
+Keywords A Computer~
+Type     furniture~
+Short    A Computer~
+Long     A computer sits quietly here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    A Computer~
+ExDesc       HOTBURN v2.0
+ 
+File 1: H:\Movies\Rurouni Kenshin\Rurouni Kenshin OVA 1
+File 2: H:\Movies\Rurouni Kenshin\Rurouni Kenshin OVA 2
+File 3: H:\Movies\Rurouni Kenshin\Rurouni Kenshin OVA 3
+File 4: H:\Movies\Rurouni Kenshin\Rurouni Kenshin OVA 4
+File 5: H:\Movies\Evangelion\End of Evangelion: Death and Rebirth
+File 6: H:\Movies\Evangelion\End of Evangelion 1
+File 7: H:\Movies\Evangelion\End of Evangelion 2
+File 8: H:\Movies\Love Hina\Love Hina Christmas Special
+File 9: H:\Movies\Love Hina\Love Hina Spring Special
+ 
+ 
+      ADD        BURN       CLOSE     
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     1805
+Keywords A small packet of pills~
+Type     pill~
+Short    A small packet of LSD~
+Long     A small packet of colored pills is lying here.~
+Flags    contraband~
+WFlags   take hold~
+Values   10 -1 -1 -1 0 0
+Stats    1 650 65 0 0
+Spells   'poison' 'NONE' 'NONE'
+#ENDOBJECT
+
+#OBJECT
+Vnum     1806
+Keywords A Pipe~
+Type     _pipe~
+Short    A Pipe~
+Long     A small pipe has been left here.~
+WFlags   take hold~
+Values   5 15 0 0 0 0
+Stats    1 25 2 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1807
+Keywords A switchblade~
+Type     weapon~
+Short    A switchblade~
+Long     A wicked looking switchblade lies here.~
+Flags    contraband~
+WFlags   take wield~
+Values   12 5 10 2 0 0
+Stats    1 580 58 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1808
+Keywords A mug of Labatt Blue (TM)~
+Type     drinkcon~
+Short    A mug of Labatt Blue (TM)~
+Long     A mug of beer is sitting here.~
+WFlags   take~
+Values   15 15 2 0 0 0
+Stats    1 20 2 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1809
+Keywords A mug of Heineken (TM)~
+Type     drinkcon~
+Short    A mug of Heineken (TM)~
+Long     A mug of beer is sitting here.~
+WFlags   take~
+Values   10 10 7 0 0 0
+Stats    1 30 3 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1810
+Keywords A shot of tequila~
+Type     drinkcon~
+Short    A shot of tequila~
+Long     A shot glass filled with liquid sits here.~
+WFlags   take~
+Values   5 5 7 0 0 0
+Stats    1 10 1 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1811
+Keywords A Sakabatou~
+Type     weapon~
+Short    A Sakabatou~
+Long     A long sword encased in a scabbard is lying here.~
+Flags    contraband antievil inventory~
+WFlags   take wield~
+Values   1100 10 100 2 1000 1000
+Stats    3 50000 5000 0 0
+Affect       -1 -1 5 19 0
+Affect       -1 -1 3 1 0
+#EXDESC
+ExDescKey    A Sakabatou~
+ExDesc       This sakabatou is a reverse-edged katana, which means that the edge is on
+the opposite side in contrast to a real katana. It gleams quicksilver gray
+underneath the light.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     1812
+Keywords A-10 Nerve Connectors~
+Type     armor~
+Short    A-10 Nerve Connectors~
+Long     A set of odd looking head-gear is lying here.~
+Flags    inventory~
+WFlags   take head~
+Values   12 12 0 80 0 0
+Stats    1 50000 5000 0 0
+Affect       -1 -1 5 3 0
+Affect       -1 -1 -10 17 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1813
+Keywords Desert Eagle .357~
+Type     weapon~
+Short    Desert Eagle .357~
+Long     A polished handgun has been left here.~
+WFlags   take wield~
+Values   150 15 70 6 1000 1000
+Stats    1 20000 2000 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1814
+Keywords Keitarou's Glasses~
+Type     armor~
+Short    Keitarou's Glasses~
+Long     A pair of slim, rectangular glasses are here.~
+WFlags   take eyes~
+Values   15 15 0 0 0 0
+Stats    1 15000 1500 0 0
+Affect       -1 -1 5 25 0
+Affect       -1 -1 30 41 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1815
+Keywords SIG SAUER P220~
+Type     weapon~
+Short    SIG SAUER P220~
+Long     A sleek, jet-black handgun has been left here.~
+Flags    contraband~
+WFlags   take wield~
+Values   150 10 85 6 1000 1000
+Stats    1 15000 1500 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1816
+Keywords A plate of spareribs~
+Type     food~
+Short    A plate of spareribs~
+Long     A plate of delicious spareribs has been left here.~
+WFlags   take~
+Values   55 55 0 0 0 0
+Stats    1 15 1 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1817
+Keywords Map of Toronto~
+Type     book~
+Short    Map of Toronto~
+Long     A folded brochure with the word TORONTO written on it is here.~
+WFlags   take hold~
+Values   15 0 0 0 0 0
+Stats    1 5 0 0 0
+#EXDESC
+ExDescKey    map~
+ExDesc       MAP OF TORONTO
+                ******************************************  
+                *   |                                 |  *    N
+                *   |                                 |  *    |
+                *   |                                 |  *
+                *   | <- Jane St.                 CA  |  *
+                *   |                                 |  *
+                *   |          Bloor St.              |  *
+                * - | - - - - - - - - - - - - -- - -  |  *
+                *                                     |  *
+                *                        Yonge St. -> |  *
+                *                                     |  *
+                *                                 EC  |  *
+                *          Front St.     CN           |  *
+                * - - - - - - -  - - - - - -- - - - - |  *
+                *                                     |  *
+                ******************************************
+                    EC - Eaton Centre
+                    CN - CN Tower
+                    CA - College Park Apartments
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     1818
+Keywords Map of the Eaton Centre~
+Type     book~
+Short    Map of the Eaton Centre~
+Long     A folded paper with the words "EATON CENTRE" writte on it is here.~
+WFlags   take hold~
+Values   15 0 0 0 0 0
+Stats    1 5 0 0 0
+#EXDESC
+ExDescKey    map~
+ExDesc       MAP OF THE EATON CENTRE
+         **********************************
+         *   - - - - - - - - - - - - - -  *
+         *  |     AS         RS         | *
+         *  |   |- - - - - - - - - -|   | *
+         *  |   |                   |   | *
+         *  |   |- - - - - - - - - -|   | *
+         *  |FC                       E | *
+         *  |   |- - - - - - - - - -|   | *
+         *  |   |                   |   | *
+         *  |   |- - - - - - - - - -|   | *
+         *  |     G                  JA | *
+         *   - - - - - - - - - - - - - -  *
+         **********************************
+                 FC - Food Court
+                 AS - Army Surplus Store
+                 RS - Radio Shack
+                 JA - Japanese Antiques
+                  G - The Gap
+                  E - Entrance
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     1819
+Keywords HK USP Match 9mm~
+Type     weapon~
+Short    HK USP Match 9mm~
+Long     A smooth, stainless steel handgun lies here.~
+Flags    inventory~
+WFlags   take wield~
+Values   150 10 50 6 1000 1000
+Stats    1 25000 2500 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1820
+Keywords A navy blue T-shirt~
+Type     trash~
+Short    A &bnavy-blue&G T-shirt~
+Long     A &bnavy-blue&G garment is lying here.~
+WFlags   take body~
+Values   35 35 0 0 0 0
+Stats    1 20 2 0 0
+Affect       -1 -1 -20 17 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1821
+Keywords A pair of Jeans~
+Type     armor~
+Short    A pair of Jeans~
+Long     A pair of demin jeans are here.~
+WFlags   take legs~
+Values   80 80 0 0 0 0
+Stats    1 23 2 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1822
+Keywords A baseball hat~
+Type     trash~
+Short    A baseball hat~
+Long     A hat has been abandoned here.~
+WFlags   take head~
+Values   15 15 0 0 0 0
+Stats    1 15 1 0 0
+Affect       -1 -1 25 37 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1823
+Keywords A pair of fingerless gloves~
+Type     armor~
+Short    A pair of fingerless gloves~
+Long     A pair of odd gloves has been left here.~
+WFlags   take hands~
+Values   20 20 0 0 0 0
+Stats    1 14 1 0 0
+Affect       -1 -1 90 46 0
+Affect       -1 -1 90 51 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1824
+Keywords A leather jacket~
+Type     armor~
+Short    A leather jacket~
+Long     A leather jacket is lying here.~
+WFlags   take about~
+Values   50 50 0 0 0 0
+Stats    1 40 4 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1825
+Keywords A silver key~
+Type     key~
+Short    A silver key~
+Long     A small silver key is lying here.~
+Flags    inventory~
+WFlags   take hold~
+Values   1865 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1826
+Keywords A denim jean jacket~
+Type     armor~
+Short    A denim jean jacket~
+Long     A denim jacket is lying here in a heap.~
+WFlags   take about~
+Values   120 120 0 0 0 0
+Stats    1 50 5 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1827
+Keywords An orange sweater~
+Type     armor~
+Short    An orange sweater~
+Long     An orange sweater is lying here.~
+WFlags   take body~
+Values   80 80 0 0 0 0
+Stats    1 30 3 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1828
+Keywords A pair of sneakers~
+Type     armor~
+Short    A pair of sneakers~
+Long     A pair of shoes have been abandoned here.~
+WFlags   take feet~
+Values   50 50 0 0 0 0
+Stats    1 25 2 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1829
+Keywords A black leather couch~
+Type     furniture~
+Short    A black leather couch~
+Long     A comfortable black leather couch is sitting here.~
+Values   5 5 2 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1830
+Keywords fridge refridgerator~
+Type     container~
+Short    a refridgerator~
+Long     A large refridgerator sits here humming quietly.~
+Values   200 5 0 50 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    fridge~
+ExDesc       It is a large white refridgerator that hums
+quietly.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     1831
+Keywords A mug of Coors Light (TM)~
+Type     drinkcon~
+Short    A mug of Coors Light (TM)~
+Long     A mug of a refreshing Coors Light is sitting here.~
+Flags    inventory~
+WFlags   take~
+Values   15 15 2 0 0 0
+Stats    1 20 2 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1832
+Keywords A glass of Sex on the Beach~
+Type     drinkcon~
+Short    A glass of Sex on the Beach~
+Long     A glass of a mixed drink stands here.~
+Flags    inventory~
+WFlags   take~
+Values   15 15 8 0 0 0
+Stats    1 40 4 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1833
+Keywords A black trenchcoat~
+Type     armor~
+Short    A black trenchcoat~
+Long     A lump of black cloth is lying here.~
+WFlags   take about~
+Values   120 120 0 0 0 0
+Stats    1 100 10 0 2
+#ENDOBJECT
+
+#OBJECT
+Vnum     1834
+Keywords A pair of black trousers~
+Type     armor~
+Short    A pair of black trousers~
+Long     A pair of black pants have been abandoned here.~
+WFlags   take legs~
+Values   60 60 0 0 0 0
+Stats    1 70 7 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1835
+Keywords A white dress shirt~
+Type     armor~
+Short    A white dress shirt~
+Long     A white shirt has been left here by someone.~
+WFlags   take body~
+Values   80 80 0 0 0 0
+Stats    1 50 5 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1836
+Keywords A black blazer~
+Type     armor~
+Short    A black blazer~
+Long     A black jacket has been left here.~
+WFlags   take about~
+Values   90 90 0 0 0 0
+Stats    1 65 6 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1837
+Keywords A necktie~
+Type     armor~
+Short    A necktie~
+Long     A long scrap of cloth has been left here.~
+WFlags   take neck~
+Values   30 30 0 0 0 0
+Stats    1 15 1 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1838
+Keywords A Red Flag~
+Type     armor~
+Short    A &RRed &Gflag~
+Long     A red flag is lying here abandoned.~
+Flags    inventory~
+WFlags   take arms~
+Values   45 45 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  get_prog~
+Arglist   100~
+Comlist   if inroom($n) == 1884
+mpecho Game Over.
+mpecho &BBlue&w Team Wins.
+mptransfer $n 1886
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     1839
+Keywords A Blue flag~
+Type     armor~
+Short    A &BBlue &Gflag~
+Long     A blue flag is lying here abandoned.~
+Flags    inventory~
+WFlags   take arms~
+Values   45 45 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  get_prog~
+Arglist   100~
+Comlist   if inroom($n) == 1885
+mpecho Game Over.
+mpecho &RRed &wTeam Wins.
+mptransfer $n 1886
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     1840
+Keywords A Red Laser Blaster~
+Type     weapon~
+Short    A &RRed &GLaser Blaster~
+Long     A blaster painted red is lying here.~
+Flags    inventory~
+WFlags   take wield~
+Values   95 95 15 6 800 800
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1841
+Keywords A Blue Laser Blaster~
+Type     weapon~
+Short    A &BBlue &GLaser Blaster~
+Long     A blaster painted blue is lying here.~
+Flags    inventory~
+WFlags   take wield~
+Values   95 95 15 6 800 800
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1842
+Keywords A black bandanna~
+Type     armor~
+Short    A black bandanna~
+Long     A black cloth has been left here.~
+WFlags   take head~
+Values   85 70 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1899
+Keywords last~
+Type     trash~
+Short    a last~
+Long     A last is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     1800
+Name     Lester B. Pearson International Airport~
+Sector   inside~
+Flags    can_land can_fly~
+Desc     Welcome to Toronto, Canada! This is the internationa airport nearest to
+Toronto. The terminal is busy, but not overly so. There are people sitting
+in the seats reading a newspaper or doing other things. Outside, the sight
+of airplanes landing and taking off can be seen through the large
+wall-length windows. A control tower in the distance gives directions as
+to which strip to land or take off on. There are also technicians running
+about in their maintenance duties to the shuttles.
+~
+#EXIT
+Direction north~
+ToRoom    1801
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    800
+#ENDEXIT
+
+Reset M 0 1804 12 1800
+Reset M 0 1804 12 1800
+Reset M 0 1804 12 1800
+#MUDPROG
+Progtype  rand_prog~
+Arglist   5~
+Comlist   mpecho A voice over the PA system announces the incoming flights.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1801
+Name     Customs Centre~
+Sector   inside~
+Flags    indoors~
+Desc     This is where the passengers enter the actual airport terminal. People are
+lined up at the stations, getting their baggage and having them searched
+by the customs officers. There are people also submitting paperwork and
+all of this process is overseen by several RCMP officers for security.
+~
+#EXIT
+Direction north~
+ToRoom    1802
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1800
+#ENDEXIT
+
+Reset M 0 1801 1 1801
+Reset M 0 1804 12 1801
+Reset M 0 1804 12 1801
+#ENDROOM
+
+#ROOM
+Vnum     1802
+Name     Airport Entrace/Exit~
+Sector   city~
+Desc     This is the exit and entrance to the airport. A bus is always waiting to
+take people from here to various parts of the city. There are cars and
+taxis alike that are parallel parked along the marked lines. Charter buses
+and airport taxis come and go, dropping off people. It is busy with people
+here.
+ 
+&CSay 'jane st.' to go to Jane Street, the seedier part of town.
+Say 'bloor st.' to go to Bloor Street, the shopping district.
+Say 'yonge st.' to go to Yonge Street, the main part of Toronto.
+Say 'cn tower' to go to the CN Tower.
+~
+#EXIT
+Direction south~
+ToRoom    1801
+#ENDEXIT
+
+Reset M 0 1804 12 1802
+#MUDPROG
+Progtype  speech_prog~
+Arglist   jane~
+Comlist   mpechoat $n A TTC bus pulls up and takes you to Jane St.
+mptransfer $n 1803
+mpecho A TTC bus pulls up and $n gets on. It drives away.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   bloor~
+Comlist   mpechoat $n A TTC bus pulls up and takes you to Bloor St.
+mptransfer $n 1817
+mpecho A TTC bus pulls up and $n gets on. It drives away.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   yonge~
+Comlist   mpechoat $n A TTC bus pulls up and takes you to Yonge St.
+mptransfer $n 1827
+mpecho A TTC bus pulls up and $n gets on. It drives away.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   'cn tower'~
+Comlist   mpechoat $n A TTC bus pulls up and takes you to the CN Tower. 
+mptransfer $n 1857
+mpecho A TTC bus pulls up and $n gets on. It drives away.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1803
+Name     Jane St.~
+Sector   city~
+Desc     The streets here are less well kept than other parts of the city but the
+buildings are just as modern looking like the other parts of the city.
+There are people shuffling down the streets, but otherwise looks like just
+another part of Toronto. However, the other dealings that happen here that
+makes this part of the city not a safe place to hang around at night.
+~
+#EXIT
+Direction north~
+ToRoom    1804
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1814
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1809
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1804
+Name     Jane St.~
+Sector   city~
+Desc     As the street continues onward, the buildings seem slightly more run-down,
+but still clean looking. There is a sign to the east that says 'JUNK
+SHOP'. The sound of grumbling can be faintly heard in the west...
+~
+#EXIT
+Direction north~
+ToRoom    1805
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1808
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1803
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1807
+Flags     hidden~
+#ENDEXIT
+
+Reset M 0 1804 12 1804
+#ENDROOM
+
+#ROOM
+Vnum     1805
+Name     Jane St.~
+Sector   city~
+Desc     The stores here are mostly small shops selling various items, but none too
+much of interest. These streets are famous for gang fights and underground
+dealings, especially in weapons, bootleg items and drugs. There is a
+run-down building that can be seen in the east with a door.
+~
+#EXIT
+Direction east~
+ToRoom    1806
+Keywords  door~
+Flags     isdoor closed secret hidden~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1804
+#ENDEXIT
+
+Reset D 0 1805 1 1
+#ENDROOM
+
+#ROOM
+Vnum     1806
+Name     A darkened room~
+Sector   inside~
+Flags    dark nomob indoors~
+Desc     The windows here are boarded up and the faint trickles of light coming from
+the cracks of the boards is hardly enough to light the room. It is quite
+shabby and worn-down, with paint peeling off the walls. A computer sits
+quietly in the room, the only other source of light which is in the room.
+Perhaps by 'examining' the computer, you might find something of interest.
+~
+#EXIT
+Direction west~
+ToRoom    1805
+Keywords  door~
+Flags     isdoor closed pickproof~
+#ENDEXIT
+
+Reset M 0 1800 1 1806
+Reset O 0 1804 1 1806
+Reset D 0 1806 3 1
+#ENDROOM
+
+#ROOM
+Vnum     1807
+Name     A hidden alleyway~
+Sector   city~
+Desc     It is dark here unlike the lighted part of the street. From this point of
+view, the streets and the cars speeding by up and down the street can be
+heard. It reeks of garbage and other odours, and is very dirty here. The
+light becomes even more dim as the alley stretches onward.
+~
+#EXIT
+Direction east~
+ToRoom    1804
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1810
+#ENDEXIT
+
+Reset M 0 1802 1 1807
+#ENDROOM
+
+#ROOM
+Vnum     1808
+Name     A Junk Shop~
+Sector   inside~
+Flags    indoors~
+Desc     The junk shop here, despite the fact that it looks run down, is actually
+fairly clean and modern looking. The walls are slightly gray due to the
+old paint, but otherwise looks very clean. The shopkeeper is a young male
+who is polite and very helpful. Type 'list' to see what he has to offer.
+~
+#EXIT
+Direction west~
+ToRoom    1804
+#ENDEXIT
+
+Reset M 0 1803 1 1808
+  Reset G 1 2018 1
+  Reset G 1 10491 1
+  Reset G 1 1322 1
+  Reset G 1 10490 1
+  Reset G 1 6804 1
+  Reset G 1 2016 1
+  Reset G 1 2017 1
+  Reset G 1 2023 1
+  Reset G 1 2022 1
+  Reset G 1 2026 1
+  Reset G 1 10494 1
+#ENDROOM
+
+#ROOM
+Vnum     1809
+Name     An Old Factory~
+Sector   inside~
+Flags    indoors silence refinery factory~
+Desc     Large machines and other industrial machines are running efficiently here.
+This is the factory where workers spend their time to assemble objects and
+such from materials that can be purchased. It is silent in here as the air
+is tense with concentration. 
+~
+#EXIT
+Direction east~
+ToRoom    1803
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1810
+Name     A hidden alleyway~
+Sector   city~
+Flags    dark~
+Desc     It gets darker as the alleyway continues and from here, the faint sounds of
+talking and activies can be heard deeper in the alley. The walls here,
+from what faint parts of the wall can be seen, are cracked and covered in
+graffiti and red splashes that look suspiciously like blood. There are
+wrecked garbage cans and a large dumpster here that reeks of garbage,
+decay and other unpleasant odours.
+~
+#EXIT
+Direction east~
+ToRoom    1807
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1811
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1811
+Name     The end of an alleyway~
+Sector   city~
+Desc     This is the end of the alley, from the fact that there is a solid brick
+wall that shows that there is nowhere else to go than the way that was the
+entrance. The sounds of voices, drunken laughter and other sounds are
+louder. There is a door and a lean figure just by the door.
+~
+#EXIT
+Direction north~
+ToRoom    1812
+Keywords  door~
+Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1810
+#ENDEXIT
+
+Reset M 0 1805 1 1811
+  Reset E 1 1807 1 16
+Reset D 0 1811 0 1
+#ENDROOM
+
+#ROOM
+Vnum     1812
+Name     A seedy bar~
+Sector   inside~
+Flags    indoors~
+Desc     There are various people in here, sitting at tables or at the bar, drinking
+and laughing. From the looks of the people that are here, it is obvious
+that this bar is not visited by regular people. By the door, you can see a
+sign that says 'A Hole in the Wall'. What an odd name for a bar.
+~
+#EXIT
+Direction south~
+ToRoom    1811
+Keywords  door~
+Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1813
+#ENDEXIT
+
+Reset D 0 1812 2 1
+#ENDROOM
+
+#ROOM
+Vnum     1813
+Name     At the bar~
+Sector   inside~
+Flags    indoors~
+Desc     The bar looks run-down but clean and sturdy. There are people scattered the
+room, but the young woman that stands at the bar keeps a keen eye on all
+the patrons of the bar. The walls are painted sunlight orange and chestnut
+brown and gives a cozy feeling, despite the neighborhood it is in. Type
+'list' to see what the bartender offers.
+~
+#EXIT
+Direction east~
+ToRoom    1812
+#ENDEXIT
+
+Reset M 0 1806 1 1813
+  Reset G 1 1808 1
+  Reset G 1 1809 1
+  Reset G 1 1810 1
+#ENDROOM
+
+#ROOM
+Vnum     1814
+Name     Jane St.~
+Sector   city~
+Desc     The streets here seem more cleaner that the other parts of Jane street, but
+that is probably due to the fact that it is closer to the heart of
+Toronto, Bloor Street. You can see the large Eaton Centre shopping mall
+from here, and the bustle of downtown Toronto can be heard easily.
+~
+#EXIT
+Direction north~
+ToRoom    1803
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1815
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1815
+Name     Corner of Bloor Street and Jane Street~
+Sector   city~
+Desc     This is the intersection of Jane and Bloor, where the seedy parts of town
+merge into the hustle and bustle of downtown Toronto. Oddly, the buildings
+merge into the downtown scenery with ease. The streets are lined with
+parking meters and cars parked on either sides of the street, drastically
+narrowing down the room for cars to move. No wonder it is called downtown
+Toronto.  In the distance, you can see the stretch of the street that
+leads to the Eaton Centre, the biggest shopping mall in Toronto.
+~
+#EXIT
+Direction north~
+ToRoom    1814
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1816
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1802
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1816
+Name     Bloor St.~
+Sector   city~
+Desc     This is the heart of downtown, Bloor Street. Here is where downtown truly
+comes to life. With shops, restaurants, people and cars lining the
+streets, it is truly the bustle of this metropolis. Despite the bustle,
+there are several trees planted here and people riding on bikes travel the
+roads along with cars.
+~
+#EXIT
+Direction east~
+ToRoom    1817
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1815
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1817
+Name     Bloor St.~
+Sector   city~
+Desc     The street continues to strech, and the bustle becomes even more prominent
+as Bloor St. continues to stretch towards the Eaton Centre. The Eaton
+Centre is the largest shopping mall in Toronto and has many shops.
+~
+#EXIT
+Direction east~
+ToRoom    1818
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1816
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1818
+Name     Bloor St.~
+Sector   city~
+Desc     The street continues, and the streets are still lined with people, stores,
+and the noise level here is like any other congested downtown; loud. There
+are cars manoeuvering down the narrow streets and people on bicycles going
+up and down the street to wherever their destination is.
+~
+#EXIT
+Direction east~
+ToRoom    1820
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1821
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1817
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1819
+Name     Army Surplus Store~
+Sector   inside~
+Flags    nomob indoors~
+Desc     Walls of cement grey and the barred windows give this store a look of
+abandonment and wear. However, the shopkeeper has an assorted selection of
+arms, specializing in guns mostly. In the display cases, you can see 
+various weapons, ranging from assault rifles such as the Heckler and
+Koch's G36 model to handguns like the Desert Eagle, up to old-fashioned
+pistols such as the Colt P1840 model. Type 'list' to see what he has to
+offer.
+~
+#EXIT
+Direction south~
+ToRoom    1842
+#ENDEXIT
+
+Reset M 0 1809 1 1819
+  Reset G 1 1813 1
+  Reset G 1 2007 1
+  Reset G 1 1815 1
+  Reset G 1 1819 1
+#ENDROOM
+
+#ROOM
+Vnum     1820
+Name     Corner of Bloor Street and Yonge Street~
+Sector   city~
+Desc     This is the corner of Bloor Street and Yonge Street, where the real
+downtown begins. Yonge Street is one the longest streets in the world, and
+it stretches pretty far. Going down south on Yonge St. will lead you to
+the Eaton Centre, one of the larger malls in Toronto. Going north will
+lead you to a smaller apartment building.
+~
+#EXIT
+Direction north~
+ToRoom    1822
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1827
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1818
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1821
+Name     Angel Wings Cafe~
+Sector   inside~
+Flags    indoors~
+Desc     This is a very clean and lively cafe, and judging by the number of patrons
+here, it is a very popular cafe for college students. There is an
+attractive teen standing at the counter with a smile on his face, and
+people are scattered throughout the small cafe, enjoying the atmosphere
+and the food. Type 'list' to see what is available.
+~
+#EXIT
+Direction north~
+ToRoom    1818
+#ENDEXIT
+
+Reset M 0 1810 1 1821
+  Reset G 1 709 1
+  Reset G 1 1816 1
+#ENDROOM
+
+#ROOM
+Vnum     1822
+Name     Yonge St.~
+Sector   city~
+Desc     The sounds of downtown can be heard, but it seems that this area is
+quieter, despite the fact that it is a main road. People shuffle up and
+down the sidewalk and buildings surround the entire area. This is the city
+of Toronto, Ontario.
+~
+#EXIT
+Direction north~
+ToRoom    1823
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1820
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1823
+Name     Yonge St.~
+Sector   city~
+Desc     Up ahead, there is a medium sized building that looks very modern and
+recently built. The buildings give way to greenery and the area is now
+lined with trees and bushes. This is one of the finest residential areas
+in Toronto. 
+~
+#EXIT
+Direction north~
+ToRoom    1824
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1822
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1824
+Name     College Park Apartments~
+Sector   city~
+Desc     Welcome to College Park Apartments. This is one of the most expensive, yet
+finest residential areas of downtown Toronto. A large fountain is near the
+door and the smooth, paved circular roadway surrounds it. There are people
+walking in and out of the buildings occasionally, greeted by the doorman.
+&BSay 'return' to return to the airport.
+~
+#EXIT
+Direction north~
+ToRoom    1825
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1823
+#ENDEXIT
+
+Reset M 0 1811 1 1824
+#MUDPROG
+Progtype  speech_prog~
+Arglist   return~
+Comlist   mpechoat $n A TTC bus pulls up and takes you to the airport.
+mpechoaround $n A TTC bus pulls up and takes $n to the airport.
+mptransfer $n 1802
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1825
+Name     Lobby~
+Sector   inside~
+Flags    indoors~
+Desc     The marble floors here shine and gives off the feeling of luxury. There is
+a strip of carpet that leads to the hallway to the east. There is also a
+small lounge area that is furnished and looks very comfortable.
+~
+#EXIT
+Direction east~
+ToRoom    1826
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1824
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1828
+#ENDEXIT
+
+Reset M 0 1812 1 1825
+#ENDROOM
+
+#ROOM
+Vnum     1826
+Name     1st Floor Hallway~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction west~
+ToRoom    1825
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1827
+Name     Yonge St.~
+Sector   city~
+Desc     This direction leads deeper into downtown Toronto. The buildings are fairly
+medium sized, with individual stores lining the streets. There are cars
+zooming up and down the street, as well as turning into side streets or
+onto Bloor Street. There is also a subway entrance nearby. As the street
+continues, the Eaton Centre building is getting larger.
+~
+#EXIT
+Direction north~
+ToRoom    1820
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1829
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1828
+Name     Lounge~
+Sector   inside~
+Flags    indoors safe hotel~
+Desc     This lounge is not lavishly furnished, and despite the marble walls and the
+opulance of the building it gives off a feeling of cozyness and comfort.
+There are plush couches in the room and a coffee table, as well as a
+vending machine in the corner. Large, floor-to-ceiling windows gives a
+perfect view of the fountain outside, as well as the cityscape scenery.
+~
+#EXIT
+Direction east~
+ToRoom    1825
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1824
+Flags     window~
+#ENDEXIT
+
+Reset O 0 2029 1 1828
+#ENDROOM
+
+#ROOM
+Vnum     1829
+Name     Yonge St.~
+Sector   city~
+Desc     The atmosphere is filled with activity and life, and there are plenty of
+people milling up and down the streets. Teenagers, adults, children and
+seniors of all shapes, sizes and color can be seen around here. Toronto is
+known to be the most multicultural city in the world. By the looks of
+places like Korea Town, Little Italy, Chinatown and the Danforth Greek
+community, it is truly a city of diversity.
+~
+#EXIT
+Direction north~
+ToRoom    1827
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1830
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1888
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1830
+Name     Yonge St.~
+Sector   city~
+Desc     Just ahead is the large Eaton Centre, one of the biggest malls in Toronto.
+There are crowds of people walking in and out of the mall, and since it is
+in the heart of downtown, it attracts many people to come to the large
+mall. The variety of things that are available here is astounding and some
+of them are very rare.
+~
+#EXIT
+Direction north~
+ToRoom    1829
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1831
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1831
+Name     In Front of the Eaton Centre~
+Sector   city~
+Desc     This is the infamous Eaton Centre, started by a man named Timothy Eaton.
+Since then, it has prospered and is one of the oldest companies in the
+world, next to the Hudson's Bay Company. The glass doors give a good look
+into the interior of the mall, bustling with people and activity.
+~
+#EXIT
+Direction north~
+ToRoom    1830
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1832
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1832
+Name     Entrance to the Eaton Centre~
+Sector   inside~
+Flags    indoors~
+Desc     This is the gateway to the biggest shopping spree one can go on. With a
+variety of stores ranging from toys to antique Japanese weapons, the Eaton
+Centre is the prime shopping location. From here, the mall branches out in
+three directions, but all three directions lead back to the food court.
+~
+#EXIT
+Direction north~
+ToRoom    1833
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1831
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1835
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1834
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1833
+Name     In the Eaton Centre - North~
+Sector   inside~
+Flags    indoors~
+Desc     The ceiling is made of glass and there are models of Canadian geese that
+are hanging from the ceiling. To the left and right, there are shops with
+their windows displaying their merchandise, and people are milling about
+looking around. There is the sounds of water running from somewhere within
+the large building.
+~
+#EXIT
+Direction north~
+ToRoom    1836
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1832
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1834
+Name     In the Eaton Centre - West~
+Sector   inside~
+Flags    indoors~
+Desc     The ceiling is made of glass and there are models of Canadian geese that
+are hanging from the ceiling. To the left and right, there are shops with
+their windows displaying their merchandise, and people are milling about
+looking around. There is the sounds of water running from somewhere within
+the large building.
+~
+#EXIT
+Direction east~
+ToRoom    1832
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1852
+#ENDEXIT
+
+Reset M 0 1804 12 1834
+#ENDROOM
+
+#ROOM
+Vnum     1835
+Name     In the Eaton Centre - South~
+Sector   inside~
+Flags    indoors~
+Desc     The crowd of people is always overwhelming in this mall, seeing since it is
+in the heart of downtown Toronto. Various shops, such as the Gap, the Bay,
+Jean Machine, Pantorama and more are all here. As the vague orange and
+white marble hallways continue, the thriving activity and life in the mall
+ceases to stop.
+~
+#EXIT
+Direction north~
+ToRoom    1832
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1851
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1836
+Name     In the Eaton Centre - North~
+Sector   inside~
+Flags    indoors~
+Desc     The marble-like floor gleams underneath the natural and artificial lighting
+as people bustle up and down the hallway, occasionally stepping into a
+store to browse or stopping in front of the large glass windows to look.
+~
+#EXIT
+Direction north~
+ToRoom    1837
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1833
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1837
+Name     In the Eaton Centre - North~
+Sector   inside~
+Flags    indoors~
+Desc     There is a bend in the large hallway and the lines of stores continue.
+People occasionally stop to look into stores, and the milling crowds move
+up and down the hallway. The natural lighting from the glass ceiling cuts
+down on the cost of artificial lighting required.
+~
+#EXIT
+Direction south~
+ToRoom    1836
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1838
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1838
+Name     In the Eaton Centre - North~
+Sector   city~
+Desc     The almost endless lines of shops do not end here, but rather continues on
+infinitely. Up ahead, there are several signs of shops that can be seen,
+one of them is Radio Shack. There are people milling through the hallways
+of this vast mall.
+~
+#EXIT
+Direction east~
+ToRoom    1837
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1839
+#ENDEXIT
+
+Reset M 0 1804 12 1838
+#ENDROOM
+
+#ROOM
+Vnum     1839
+Name     In the Eaton Centre - North~
+Sector   inside~
+Flags    indoors~
+Desc     To the north, various technological gadgets can be seen on display as well
+as other electronic devices and games. The hallways of the mall are
+crowded with people.
+~
+#EXIT
+Direction north~
+ToRoom    1840
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1838
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1841
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1840
+Name     Radio Shack~
+Sector   inside~
+Flags    indoors~
+Desc     The brightly lit room here has walls after walls of merchandise. Ranging
+from computer games, magazines to computers and laptops, Radio Shack has
+all of the technological needs. The sales representative will be more than
+happy to help you out. Type 'list' to see what Radio Shack has to offer.
+~
+#EXIT
+Direction south~
+ToRoom    1839
+#ENDEXIT
+
+Reset M 0 1813 1 1840
+  Reset G 1 10424 1
+  Reset G 1 1800 1
+  Reset G 1 1100 1
+  Reset G 1 511 1
+#ENDROOM
+
+#ROOM
+Vnum     1841
+Name     In the Eaton Centre - North~
+Sector   inside~
+Flags    indoors~
+Desc     The crowd of people is always overwhelming in this mall, seeing since it is
+in the heart of downtown Toronto. Various shops, such as the Gap, the Bay,
+Jean Machine, Pantorama and more are all here. As the vague orange and
+white marble hallways continue, the thriving activity and life in the mall
+ceases to stop.
+~
+#EXIT
+Direction east~
+ToRoom    1839
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1842
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1842
+Name     In the Eaton Centre - North~
+Sector   inside~
+Flags    indoors~
+Desc     The ceiling is made of glass and there are models of Canadian geese that
+are hanging from the ceiling. To the left and right, there are shops with
+their windows displaying their merchandise, and people are milling about
+looking around. There is the sounds of water running from somewhere within
+the large building.
+~
+#EXIT
+Direction north~
+ToRoom    1819
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1841
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1843
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1843
+Name     In the Eaton Centre - North~
+Sector   inside~
+Flags    indoors~
+Desc     Up ahead, the hallway expands out into a large square, where various fast
+food restaurants can be seen. There are many people milling up and down
+the corridor and many of them are originating from the square up ahead.
+~
+#EXIT
+Direction east~
+ToRoom    1842
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1844
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1844
+Name     In the Eaton Centre - North~
+Sector   inside~
+Flags    indoors~
+Desc     The ceiling is made of glass and there are models of Canadian geese that
+are hanging from the ceiling. To the left and right, there are shops with
+their windows displaying their merchandise, and people are milling about
+looking around. There is the sounds of water running from somewhere within
+the large building.
+~
+#EXIT
+Direction north~
+ToRoom    1843
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1845
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1845
+Name     The Food Court~
+Sector   inside~
+Flags    indoors~
+Desc     This is the large food court, where many fast food restaurants are here.
+There are a large amount of people sitting at the stools and bars and at
+the tables, eating and talking. Various cleaning people go through the
+area cleaning up the garbage. And don't forget to say &Rthanks&z to the
+people before you go.
+~
+#EXIT
+Direction north~
+ToRoom    1844
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1854
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1846
+#ENDEXIT
+
+Reset M 0 1807 1 1845
+#MUDPROG
+Progtype  speech_prog~
+Arglist   dealer~
+Comlist   mpmload 1807
+mpecho Out of seemingly nowhere, a tall man appears.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   thanks~
+Comlist   mppurge alek
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1846
+Name     In the Eaton Centre - South~
+Sector   inside~
+Flags    indoors~
+Desc     The ceiling is made of glass and there are models of Canadian geese that
+are hanging from the ceiling. To the left and right, there are shops with
+their windows displaying their merchandise, and people are milling about
+looking around. There is the sounds of water running from somewhere within
+the large building.
+~
+#EXIT
+Direction north~
+ToRoom    1845
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1847
+#ENDEXIT
+
+Reset M 0 1804 12 1846
+#ENDROOM
+
+#ROOM
+Vnum     1847
+Name     In the Eaton Centre - South~
+Sector   inside~
+Flags    indoors~
+Desc     The crowd of people is always overwhelming in this mall, seeing since it is
+in the heart of downtown Toronto. Various shops, such as the Gap, the Bay,
+Jean Machine, Pantorama and more are all here. As the vague orange and
+white marble hallways continue, the thriving activity and life in the mall
+ceases to stop.
+~
+#EXIT
+Direction north~
+ToRoom    1846
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1848
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1848
+Name     In the Eaton Centre - South~
+Sector   inside~
+Flags    indoors~
+Desc     The almost endless lines of shops do not end here, but rather continues on
+infinitely. Up ahead, there are several signs of shops that can be seen,
+one of them is Radio Shack. There are people milling through the hallways
+of this vast mall.
+~
+#EXIT
+Direction east~
+ToRoom    1849
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1855
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1847
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1849
+Name     In the Eaton Centre - South~
+Sector   inside~
+Flags    indoors~
+Desc     The almost endless lines of shops do not end here, but rather continues on
+infinitely. Up ahead, there are several signs of shops that can be seen,
+one of them is Radio Shack. There are people milling through the hallways
+of this vast mall.
+~
+#EXIT
+Direction east~
+ToRoom    1850
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1848
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1850
+Name     In the Eaton Centre - South~
+Sector   inside~
+Flags    indoors~
+Desc     The ceiling is made of glass and there are models of Canadian geese that
+are hanging from the ceiling. To the left and right, there are shops with
+their windows displaying their merchandise, and people are milling about
+looking around. There is the sounds of water running from somewhere within
+the large building.
+~
+#EXIT
+Direction north~
+ToRoom    1851
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1856
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1849
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1851
+Name     In the Eaton Centre - South~
+Sector   inside~
+Flags    indoors~
+Desc     The marble-like floor gleams underneath the natural and artificial lighting
+as people bustle up and down the hallway, occasionally stepping into a
+store to browse or stopping in front of the large glass windows to look.
+~
+#EXIT
+Direction north~
+ToRoom    1835
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1850
+#ENDEXIT
+
+Reset M 0 1804 12 1851
+#ENDROOM
+
+#ROOM
+Vnum     1852
+Name     In the Eaton Centre - West~
+Sector   inside~
+Flags    indoors~
+Desc     The ceiling is made of glass and there are models of Canadian geese that
+are hanging from the ceiling. To the left and right, there are shops with
+their windows displaying their merchandise, and people are milling about
+looking around. There is the sounds of water running from somewhere within
+the large building.
+~
+#EXIT
+Direction east~
+ToRoom    1834
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1853
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1853
+Name     In the Eaton Centre - West~
+Sector   inside~
+Flags    indoors~
+Desc     From here, the crowd of people become a lot more crowded as the hall begins
+to open up to a large square. There are many people standing in lines and
+the faint aroma of various foods float in the air.  The shops line the
+halls as people browse or duck in and out of stores. There are children
+walking with the parents and teenagers hanging around with their friends.
+~
+#EXIT
+Direction east~
+ToRoom    1852
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1854
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1854
+Name     In the Eaton Centre - West~
+Sector   inside~
+Flags    indoors~
+Desc     From here, the crowd of people become a lot more crowded as the hall begins
+to open up to a large square. There are many people standing in lines and
+the faint aroma of various foods float in the air.  The shops line the
+halls as people browse or duck in and out of stores. There are children
+walking with the parents and teenagers hanging around with their friends.
+~
+#EXIT
+Direction east~
+ToRoom    1853
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1845
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1855
+Name     The Gap~
+Sector   inside~
+Flags    indoors~
+Desc     This is The Gap, one of the largest clothing chains in the world. There are
+a variety of clothes that are being sold here. There are racks and tables
+full of jeans, shirts, pants, skirts, dresses and other clothes here.
+Salespeople are going around to help customers. The room is painted a
+pristine white color and bright lighting gives it a very airy atmosphere.
+With colors jumping out from the clothes, as well as various subdued
+colors, it is a very pleasant place. Type 'list' to see what they have to
+offer.
+~
+#EXIT
+Direction north~
+ToRoom    1848
+#ENDEXIT
+
+Reset M 0 1814 1 1855
+  Reset G 1 1820 1
+  Reset G 1 1821 1
+  Reset G 1 1822 1
+  Reset G 1 1823 1
+  Reset G 1 1824 1
+  Reset G 1 1833 1
+  Reset G 1 1826 1
+  Reset G 1 1828 1
+#ENDROOM
+
+#ROOM
+Vnum     1856
+Name     Japanese Antiques~
+Sector   inside~
+Flags    indoors~
+Desc     This is the Japanese Antiques store. Although it used to be an very popular
+shop several years ago, the business was shut down because the shopkeeper
+was selling illegal weapons. However, the room is kept in a very pristine
+condition.
+~
+#EXIT
+Direction north~
+ToRoom    1850
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1857
+Name     The Entrance to the CN Tower~
+Sector   city~
+Desc     The room is large and naturally lit by the panoramic windows along the
+walls. People are milling in and out of the building, with some of them
+coming from the rotating restaurant upstairs. High above, there are glass
+panels in the large dome and one can only wonder what those glass panels
+are for.
+&BSay 'return' to return to the airport.
+~
+#EXIT
+Direction north~
+ToRoom    1858
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   return~
+Comlist   mpechoat $n A TTC bus pulls up to take you to the airport.
+mpechoaround $n A TTC bus pulls up to take $n to the airport.
+mptransfer $n 1802
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1858
+Name     In the CN Tower~
+Sector   inside~
+Flags    indoors~
+Desc     The CN Tower is the world's tallest freestanding building in the world.
+People from all over the world flock to Toronto to see this large
+building. Of course, it isn't as popular as one of the eight wonders of
+the world; Niagara Falls. From here, there is access to the Quazar game,
+the main attraction of the CN Tower.
+~
+#EXIT
+Direction south~
+ToRoom    1857
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    1859
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1859
+Name     Entrance to Quazar~
+Sector   inside~
+Flags    indoors safe~
+Desc     Welcome to the Quazar Game! This game is a very difficult training game.
+The objective will be explained by Thomas. The room is filled with
+equipment for Quazar players, and there is a doorway that leads to the
+Quazar game.
+~
+#EXIT
+Direction up~
+ToRoom    1858
+#ENDEXIT
+
+Reset M 0 1822 1 1859
+#ENDROOM
+
+#ROOM
+Vnum     1860
+Name     A hallway~
+Sector   inside~
+Flags    indoors~
+Desc     This hallway is pristine and very neat, with the walls painted a plain
+grey. Up ahead, loud music can be heard as well as people's voices. There
+are lights fixed into the walls that illumiate this short hallway.
+~
+#EXIT
+Direction north~
+ToRoom    1861
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    1856
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1861
+Name     Entrance to The Underground~
+Sector   inside~
+Flags    indoors~
+Desc     This is the entrance to The Underground, the hottest night club in Toronto.
+Loud music and cheerful voices can be heard from the Reception room. The
+entrance is free, but everything else probably isn't. 
+~
+#EXIT
+Direction north~
+ToRoom    1862
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1860
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1862
+Name     The Reception Room~
+Sector   inside~
+Flags    indoors~
+Desc     This is The Underground, the hottest teen night club in Toronto! Loud music
+is blaring from the speakers and the lighting is bright and pulsing, with
+smoke filtering the lights and giving it a smoky atmosphere. To the east
+is the Lounge where people can sit and relax, since the music isn't so
+loud. To the north is the bar and the dance floor, where people are
+mingling and drinking at the bar and at the tables scattered nearby the
+walls. The center of the room is dominated by the people dancing, and
+there is a stage in the corner next to the bar where professional dancers
+are performing. There is also a private room available for those who wish
+for privacy.
+~
+#EXIT
+Direction north~
+ToRoom    1864
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1863
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1861
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1865
+Flags     isdoor closed hidden~
+#ENDEXIT
+
+Reset M 0 1815 1 1862
+Reset D 0 1862 3 1
+#ENDROOM
+
+#ROOM
+Vnum     1863
+Name     The Lounge~
+Sector   inside~
+Flags    indoors~
+Desc     This is the lounge, where people can relax without the heady, fast-paced
+atmosphere of the actual club. Although the music can be heard loudly
+here, it is not as loud and pulsating as it would be at the main room.
+There are several couches in the room for people to sit on. The room is
+painted a subdued black with pictures and other items hanging on the
+walls. There is also signs of graffiti on one of the walls.
+~
+#EXIT
+Direction west~
+ToRoom    1862
+#ENDEXIT
+
+Reset O 0 1829 1 1863
+#ENDROOM
+
+#ROOM
+Vnum     1864
+Name     The Main Room~
+Sector   inside~
+Flags    indoors~
+Desc     This is the bar and the dance floor, where the people mingle and socialize.
+The Underground is a prestigious club that are known to those who truly
+seek a night club. People are dancing, the music is blaring and the
+dancers on the stage are all having a good time. The bar also serves a
+variety of beer and mixed drinks.
+~
+#EXIT
+Direction south~
+ToRoom    1862
+#ENDEXIT
+
+Reset M 0 1820 1 1864
+  Reset G 1 1831 1
+  Reset G 1 1808 1
+  Reset G 1 1809 1
+  Reset G 1 1810 1
+  Reset G 1 1832 1
+Reset M 0 1804 12 1864
+#ENDROOM
+
+#ROOM
+Vnum     1865
+Name     A Private Room~
+Sector   inside~
+Flags    indoors safe~
+Desc     This is a private room, where people can choose to have a bit of privacy or
+to sleep of a hangover for the night. There is also a young woman here,
+who serves drinks and can provide a connection with other services.  The
+room is painted a shade of navy blue, with a comfortable bed in the room
+as well.
+~
+#EXIT
+Direction east~
+ToRoom    1862
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset M 0 1816 1 1865
+Reset D 0 1865 1 1
+#ENDROOM
+
+#ROOM
+Vnum     1866
+Name     A Private Suite~
+Sector   inside~
+Flags    indoors safe~
+Desc     This is Cleo and Michelle's private suite, where they come and relax. They
+are the two owners of The Underground. The two young men in the room are
+Kurosaki Hisoka and Tsuzuki Asato. They are employed by Cleo and Michelle
+for entertainment and serving people. A large refridgerator sits in the
+room, as well as a comfortable black leather couch. Hisoka and Tsuzuki are
+lovers, and enjoy working here to entertain Cleo, Michelle and other
+guests that come here.
+~
+#EXIT
+Direction somewhere~
+ToRoom    1862
+Keywords  door~
+Flags     isdoor closed can_leave~
+#ENDEXIT
+
+Reset D 0 1866 10 1
+#ENDROOM
+
+#ROOM
+Vnum     1868
+Name     Inside the Quazar Maze~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    1869
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1872
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1869
+Name     Inside the Quazar Maze~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    1870
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1873
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1868
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1885
+#ENDEXIT
+
+Reset M 0 1823 6 1869
+  Reset E 1 1841 1 16
+#ENDROOM
+
+#ROOM
+Vnum     1870
+Name     Inside the Quazar Maze~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    1871
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1874
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1869
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1871
+Name     Inside the Quazar Maze~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    1875
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1870
+#ENDEXIT
+
+Reset M 0 1823 6 1871
+  Reset E 1 1841 1 16
+#ENDROOM
+
+#ROOM
+Vnum     1872
+Name     Inside the Quazar Maze~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    1873
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1876
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1868
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1873
+Name     Inside the Quazar Maze~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    1874
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1877
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1872
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1869
+#ENDEXIT
+
+Reset M 0 1823 6 1873
+  Reset E 1 1841 1 16
+#ENDROOM
+
+#ROOM
+Vnum     1874
+Name     Inside the Quazar Maze~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    1875
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1878
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1873
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1870
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1875
+Name     Inside the Quazar Maze~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    1879
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1874
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1871
+#ENDEXIT
+
+Reset M 0 1823 6 1875
+  Reset E 1 1841 1 16
+#ENDROOM
+
+#ROOM
+Vnum     1876
+Name     Inside the Quazar Maze~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    1877
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1880
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1872
+#ENDEXIT
+
+Reset M 0 1824 6 1876
+  Reset E 1 1840 1 16
+#ENDROOM
+
+#ROOM
+Vnum     1877
+Name     Inside the Quazar Maze~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    1878
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1881
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1876
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1873
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1878
+Name     Inside the Quazar Maze~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    1879
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1882
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1877
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1874
+#ENDEXIT
+
+Reset M 0 1823 6 1878
+  Reset E 1 1841 1 16
+#ENDROOM
+
+#ROOM
+Vnum     1879
+Name     Inside the Quazar Maze~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    1883
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1878
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1875
+#ENDEXIT
+
+Reset M 0 1824 6 1879
+  Reset E 1 1840 1 16
+#ENDROOM
+
+#ROOM
+Vnum     1880
+Name     Inside the Quazar Maze~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    1881
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1876
+#ENDEXIT
+
+Reset M 0 1824 6 1880
+  Reset E 1 1840 1 16
+#ENDROOM
+
+#ROOM
+Vnum     1881
+Name     Inside the Quazar Maze~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    1882
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1884
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1880
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1877
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1882
+Name     Inside the Quazar Maze~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    1883
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1881
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1878
+#ENDEXIT
+
+Reset M 0 1824 6 1882
+  Reset E 1 1840 1 16
+#ENDROOM
+
+#ROOM
+Vnum     1883
+Name     Inside the Quazar Maze~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction south~
+ToRoom    1882
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1879
+#ENDEXIT
+
+Reset M 0 1824 6 1883
+  Reset E 1 1840 1 16
+#ENDROOM
+
+#ROOM
+Vnum     1884
+Name     &RRed &CTeam's Base~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction west~
+ToRoom    1881
+#ENDEXIT
+
+Reset M 0 1824 6 1884
+  Reset E 1 1840 1 16
+Reset O 0 1838 1 1884
+#ENDROOM
+
+#ROOM
+Vnum     1885
+Name     &BBlue &CTeam's Base~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    1869
+#ENDEXIT
+
+Reset M 0 1823 6 1885
+  Reset E 1 1841 1 16
+Reset O 0 1839 1 1885
+#ENDROOM
+
+#ROOM
+Vnum     1886
+Name     Quazar Exit~
+Sector   inside~
+Flags    indoors~
+Desc     This is the exit room of the Quazar game. Upon winning the game, please
+proceed north to receive the prize.
+~
+#EXIT
+Direction north~
+ToRoom    1887
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1887
+Name     Equipment Room~
+Sector   inside~
+Flags    indoors safe~
+Desc     This is the Equipment Room, where Quazar players leave their equipment and
+can exit freely. The woman that stands here deals with the Quazar game's
+winners and also handles all of the equipment.
+~
+#EXIT
+Direction east~
+ToRoom    1859
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1886
+#ENDEXIT
+
+Reset M 0 1825 1 1887
+#ENDROOM
+
+#ROOM
+Vnum     1888
+Name     Royal Bank~
+Sector   inside~
+Flags    indoors bank~
+Desc     This is the bank, where people can deposit and withdraw money. There are
+several transaction machines along the walls as well as bank tellers
+servicing to people waiting in the lines. The room is lit fairly well with
+the large overhead lights.
+~
+#EXIT
+Direction east~
+ToRoom    1829
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1899
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ENDAREA

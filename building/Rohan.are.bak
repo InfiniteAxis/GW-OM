@@ -1,0 +1,156 @@
+#AREA   {PROTO} Rohan's area in progress~
+
+
+
+#AUTHOR Rohan~
+
+#RANGES
+0 0 0 0
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 0
+
+#MOBILES
+#6200
+Sanc Kingdom Guard~
+a newly created Sanc Kingdom Guard~
+A Sanc Kingdom Guard is here
+~
+~
+36933 0 1000 Z
+500 0 -1150 100d10+5000 50d4+2
+500 0
+8 8 0
+15 11 11 17 16 14 13
+0 0 0 0 0
+0 0 0 0 1 1 3
+100 100 0 0 0 0 16 3
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+grin $n
+say Hello and Welcome! You are now within the boarders of the Sanc
+Kingdom.
+bow
+say Please remove all weapons in this area.
+say Thank You and have a good day.
+bow
+~
+|
+#6201
+Azdheen~
+Azdheen the Dragon~
+Azdheen, Rohan's great dragon mount is here
+~
+~
+1349633 0 -1000 Z
+1000 0 -2400 200d10+10000 100d4+2
+100000 0
+8 8 1
+18 18 18 18 18 18 18
+30 30 30 30 30
+0 0 0 0 1 1 0
+200 200 0 0 1048576 0 55 3
+0 0 0 0 0 0 0 0
+> speech_prog stock~
+mpoload 257
+mpoload 258
+mpoload 258
+wear all
+bow $n
+say All set and ready sir!
+~
+|
+#0
+
+
+#OBJECTS
+#6200
+theif glove~
+A Pair of Gloves~
+A special glove was set down here~
+Slips on the glove~
+9 134218067 129
+1000 -10000 0 0
+1 50000000 5000000
+A
+53 120
+A
+35 200
+A
+41 100
+A
+40 110
+A
+48 110
+A
+36 100
+A
+37 100
+A
+50 100
+A
+1 10
+A
+25 10
+A
+2 10
+A
+3 10
+A
+4 10
+A
+5 10
+A
+33 120
+A
+37 120
+#6201
+A Rabid Panda~
+a A Rabid Panda~
+A A Rabid Panda is here.~
+~
+13 1073741824 0
+0 0 0 0
+1 0 0
+#0
+
+
+#ROOMS
+#6200
+blank~
+~
+0 1073741828 1
+S
+#6201
+A Hallway~
+~
+0 1073741824 1
+D2
+~
+~
+0 -1 6200
+S
+#0
+
+
+#RESETS
+M 1 6200 1 6200
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

@@ -1,0 +1,1567 @@
+#AREA   Colony O52~
+
+
+
+#AUTHOR Meteor~
+
+#RANGES
+0 1000 0 1000
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 27583262
+
+#MOBILES
+#2200
+Havok's Son~
+a newly created Havok's Son~
+Some god abandoned a newly created Havok's Son here.
+~
+~
+1 0 0 Z
+1005 0 -2412 201d10+10050 100d4+2
+1000000000 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+201 201 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#2201
+Weapon Shop Owner~
+Weapon Shop Owner~
+A Weapon Shop Owner Is Forging Blades From Stone
+~
+~
+33554435 0 0 Z
+1005 0 -2412 201d10+10050 100d4+2
+0 0
+8 8 0
+25 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+201 201 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog stock~
+mpoload 502
+mpoload 810
+mpoload 59
+~
+|
+#2202
+Armor Shop Owner~
+Armor Shop Owner~
+An Armor Shop Owner Is Carving Armor From Brick
+~
+~
+33554435 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog stock~
+mpoload 503
+mpoload 504
+mpoload 505
+mpoload 500
+mpoload 501
+mpoload 506
+~
+|
+#2203
+Item Shop Owner~
+Item Shop Owner~
+An Item Shop Owner Stands Behind The Counter Ready To Serve His Customers
+~
+~
+33554435 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog stock~
+mpoload 2014
+mpoload 2015
+mpoload 2017
+mpoload 2018
+mpoload 2020
+mpoload 2013
+mpoload 2021
+mpoload 2022
+mpoload 2023
+mpoload 2024
+mpoload 2025
+mpoload 2026
+mpoload 2016
+mpoload 10491
+mpoload 2014
+mpoload 511
+mpoload 1100
+~
+|
+#2204
+O52 Repairman~
+An O52 Repairman~
+An O52 Repairman is here, patching up some armor.
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#2205
+O53 Physical Trainer~
+O53 Physical Trainer~
+The O52 Physical Trainer is here, ready to help you.
+~
+~
+515 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+25 25 25 25 10 25 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog ~
+Say Hi $n! Welcome to the O52 Gym.
+say Type &Rtrain&W to see what stats you can train.
+say Type 'train <stat name>' to train a stat.
+~
+> greet_prog 1000~
+say Hi $n! Welcome to the O52 Gym.
+say Type &Rtrain&w to see what stats you can train.
+say Type 'train <stat name>' to train a stat.
+~
+|
+#2206
+Citizen~
+Citizen~
+A Citizen is walking by calmly.
+~
+~
+1 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#2200
+Havok's Head~
+Havok's Head~
+Havok's Head lies long forgotten~
+~
+13 0 1
+0 0 0 0
+1 0 0
+#2201
+Havok's Leg~
+Havok's Leg~
+Havok's Leg lies long forgotten~
+~
+13 0 1
+0 0 0 0
+1 0 0
+#2202
+Havok's Arm~
+Havok's Arm~
+Havok's Arm lies long forgotten~
+~
+13 0 1
+0 0 0 0
+1 0 0
+#2203
+Havok's Torso~
+Havok's Torso~
+Havok's Torso lies long forgotten~
+~
+13 0 1
+0 0 0 0
+1 0 0
+#2204
+Havok's Blaster~
+Havok's Blaster~
+Havok's Blaster lies long forgotten~
+~
+13 0 1
+0 0 0 0
+1 0 0
+#2205
+Havok's Body~
+Havok's Body~
+Havok's Body lies long forgotten~
+~
+13 0 1
+0 0 0 0
+1 0 0
+#2206
+Havok's Sword~
+Havok's Sword~
+Havok's Sword lies long forgotten~
+~
+13 0 1
+0 0 0 0
+1 0 0
+#2207
+Stone Blade~
+Stone Blade~
+A stone blade lies here absorbing sunlight~
+~
+5 8192 0
+0 0 0 0
+1 0 0
+#2208
+Brick Armor~
+Brick Armor~
+Brick Armor carved from the hardest brick on Earth lies here~
+~
+13 0 1
+0 0 0 0
+1 5489 548
+#2209
+Rock Axe~
+a Rock Axe~
+A Rock Axe is here.~
+~
+9 0 0
+0 0 0 0
+1 50000 5000
+#2210
+SMuggler~
+Smuggler~
+Smuggler~
+~
+5 16 8193
+0 0 0 0
+1 1 0
+#0
+
+
+#ROOMS
+#2200
+Primary Landing Pad of O52~
+This is the Primary Landing Pad on Colony o52.  There are people here in
+different sections of the colony each doing their own shopping, training,
+or just resting in their homes.  Many types of Ships and MS litter the
+Port.
+~
+0 52 1
+D0
+~
+~
+0 -1 2201
+D1
+~
+~
+0 -1 2202
+S
+#2201
+North of Primary Landing Pad~
+As the sound of engines slowly die away, a great colony comes into view. 
+People from all different planets come here to relax, train and work on
+raising their statistics.  Welcome to Colony O52.
+~
+0 0 1
+D0
+~
+~
+0 -1 2207
+D2
+~
+~
+0 -1 2200
+D3
+~
+~
+0 -1 2234
+S
+#2202
+Colony O52~
+A soft humming replaces the loud engines as you make way.  There is a faint
+image of a building with a cross on top as well as several ships landing
+and taking off due east.
+~
+0 0 1
+D1
+~
+~
+0 -1 2203
+D3
+~
+~
+0 -1 2200
+S
+#2203
+Colony O52~
+A soft humming replaces the loud engines as you make way.  There is a faint
+image of a building with a cross on top as well as several ships landing
+and taking off due east.
+~
+0 0 1
+D1
+~
+~
+0 -1 2204
+D3
+~
+~
+0 -1 2202
+S
+#2204
+Secondary Landing Pad of O52~
+This is the secondary landing pad where people who prefer to arrive
+silently land their planes.  This area is quite small compared to the
+primary area but quite big compared to you.
+~
+0 52 1
+D0
+~
+~
+0 -1 2205
+D2
+~
+~
+0 -1 2206
+D3
+~
+~
+0 -1 2203
+S
+#2205
+Church~
+A sudden burst of light blinds even those with goggles when they enter the
+holy sanctuary.  There are rows of seats leading forward.  In the front
+quite far from the door, a priest is giving out blessings that may help
+travelers in their adventures. Receiving a blessing from the priest is
+rare and people from all over the colony come to take advantage of this.  
+Say 'blessing' to be blessed by the priest
+~
+0 0 1
+D2
+~
+~
+0 -1 2204
+S
+#2206
+Turbolift~
+This is the Colony O52 Transit system.  Its an elevator like structure that
+transports you to wherever on the Colony you wish to go.  Just say where
+you want to go and you will be
+there.
+&BSay 'Main' to go to the Main Sector.
+&BSay 'Residence' to go to the Residence Sector.
+&BSay 'Skills' to go to the Skills Sector.
+&BSay 'Training' to go to the Training Sector.
+~
+0 4 1
+> speech_prog main~
+mpechoat $n You are taken to the Main Sector.
+mpechoaround $n $n is taken to the Main Sector.
+mptransfer $n 2204
+~
+> speech_prog Residence~
+mpechoat $n You are taken to the Residence Sector.
+mpechoaround $n $n is taken to the Residence Sector.
+mptransfer $n 2220
+~
+> speech_prog skills~
+mpechoat $n You are taken to the Skills Sector.
+mpechoaround $n $n is taken to the Skills Sector.
+mptransfer $n 2236
+~
+> speech_prog training~
+mpechoat $n You are taken to the Training Sector.
+mpechoaround $n $n is taken to the Training Sector.
+mptransfer $n 2246
+~
+|
+S
+#2207
+Colony O52~
+This street leads into the shops of O52.  The shops vary from Pet shops
+where they sell adorable monsters to Weapon shops selling dangerous
+weapons melted and perfected to make the sharbest blades.
+~
+0 0 1
+D0
+~
+~
+0 -1 2208
+D2
+~
+~
+0 -1 2201
+S
+#2208
+Comet Street~
+Comet Street looks like a welcome place.  There are people everywhere
+purchasing weapons, items, pets and armor.  There are shops lining down
+the street dissapearing from your view because there are so many.  The
+Hail Hotel can be seen straight ahead. 
+~
+0 0 1
+D0
+~
+~
+0 -1 2209
+D1
+~
+~
+0 -1 2211
+D2
+~
+~
+0 -1 2207
+D3
+~
+~
+0 -1 2212
+S
+#2209
+Comet Street~
+Comet Street looks like a welcome place.  There are people everywhere
+purchasing weapons, items, pets and armor.  There are shops lining down
+the street dissapearing from your view because there are so many.  The
+Hail Hotel can be seen straight ahead.
+~
+0 0 1
+D0
+~
+~
+0 -1 2210
+D1
+~
+~
+0 -1 2213
+D2
+~
+~
+0 -1 2208
+D3
+~
+~
+0 -1 2214
+S
+#2210
+Comet Street~
+Comet Street looks like a welcome place.  There are people everywhere
+purchasing weapons, items, pets and armor.  There are shops lining down
+the street dissapearing from your view because there are so many.  The
+Hail Hotel can be seen straight ahead.
+~
+0 0 1
+D0
+~
+~
+0 -1 2217
+D1
+~
+~
+0 -1 2215
+D2
+~
+~
+0 -1 2209
+D3
+~
+~
+0 -1 2216
+S
+#2211
+Vending Machine~
+Many people are seen here hanging around taking breaks.  The robot is
+handing out canteens and rations for those who are hungry and thirsty. 
+Taking a break seems like a good idea here before venturing onto the
+shops. 
+~
+0 0 0
+D3
+~
+~
+0 -1 2208
+S
+#2212
+Bank of Stones~
+The Bank of Stones.  Huge pillars hold up the design and it looks like a
+Roman temple except it is.. red.  It would be a good idea to keep your
+money in the bank so that you will be able to keep it safe from thieves
+and smugglers.
+~
+0 262408 0
+D1
+~
+~
+0 -1 2208
+S
+#2213
+Rock Weapon Shop~
+The Rock Weapon Shop features weapons that can slay enemies in a single
+blow but comes expensive because it is custom made.  There are sounds in
+the background of the owner hitting metal to stone to forge the sharpest
+longest lasting weapons. 
+&BSay 'stock' to restock the items.
+~
+0 1024 0
+D3
+~
+~
+0 -1 2209
+S
+#2214
+Stone Armor Shop~
+The Stone Armor Shop has armor that a man can only dream off.  They provide
+excellent defense as well as last quite a while.  The stone also helps
+keep the shape of the armor so the colors won't wear off after a while for
+all the fancy customers out there. 
+&BSay 'stock' to restock the items.
+~
+0 1024 0
+D1
+~
+~
+0 -1 2209
+S
+#2215
+Item Shop~
+This item shop has a customer's every day needs to create things as well as
+protect them while fighting.  Awards hang on every wall that the shop
+owner has gotten for managing the best item shop in this colony.
+&BSay 'stock' to restock the items.
+~
+0 1024 0
+D3
+~
+~
+0 -1 2210
+S
+#2216
+Pet Shop~
+Meteor's Pet Shop offers pets that can help in one's adventure such as dogs
+that bite your enemies ferociously to dragons that breathe fire on them
+and burn them to crisp. The price range is not ridiculously overpriced
+like the other Pet Shops so money will not be an object.  The only concern
+is that pets bought are treated with care and love.
+~
+0 1024 0
+D1
+~
+~
+0 -1 2210
+S
+#2217
+Stardust Hotel~
+Welcome to Stardust Hotel.  There are many travelers waery of their
+adventures that come here to rest their tired bones.  There are beds that
+the wanderers can sleep on made of the softest cloth on earth.  Taking a
+rest here seems like a good idea. 
+~
+0 8388616 0
+D2
+~
+~
+0 -1 2210
+S
+#2218
+Turbolift~
+This is the Colony O52 Transit system.  Its an elevator like structure that
+transports you to wherever on the Colony you wish to go.  Just say where
+you want to go and you will be there.
+&BSay 'Main' to go to the Main Sector.
+&BSay 'Residence' to go to the Residence Sector.
+&BSay 'Skills' to go to the Skills Sector.
+&BSay 'Training' to go to the Training Sector.
+~
+0 4 1
+> speech_prog main~
+mpechoat $n You are taken to the Main Sector.
+mpechoaround $n $n is taken to the Main Sector.
+mptransfer $n 2204
+~
+> speech_prog residence~
+mpechoat $n You are taken to the Residence Sector.
+mpechoaround $n $n is taken to the Residence Sector.
+mptransfer $n 2220
+~
+> speech_prog skills~
+mpechoat $n You are taken to the Skills Sector.
+mpechoaround $n $n is taken to the Skills Sector.
+mptransfer $n 2236
+~
+> speech_prog training~
+mpechoat $n You are taken to the Training Sector.
+mpechoaround $n $n is taken to the Training Sector.
+mptransfer $n 2246
+~
+|
+S
+#2219
+Residence Street~
+This street is full of houses bought and on sale.  The neighborhood seems
+peaceful and quiet and there the normal things any neighborhood would
+have.  Fire hydrants, stop signs, porn sto... wait.. not porn stores.
+~
+0 0 1
+D0
+~
+~
+0 -1 2226
+D1
+~
+~
+0 -1 2221
+D2
+~
+~
+0 -1 2227
+D3
+~
+~
+0 -1 2220
+S
+#2220
+Residence Street~
+This street is full of houses bought and on sale.  The neighborhood seems
+peaceful and quiet and there the normal things any neighborhood would
+have.  Fire hydrants, stop signs, porn sto... wait.. not porn stores.
+~
+0 0 1
+D0
+~
+~
+0 -1 2224
+D1
+~
+~
+0 -1 2219
+D2
+~
+~
+0 -1 2225
+D3
+~
+~
+0 -1 2206
+S
+#2221
+Residence Street~
+This street is full of houses bought and on sale.  The neighborhood seems
+peaceful and quiet and there the normal things any neighborhood would
+have.  Fire hydrants, stop signs, porn sto... wait.. not porn stores.
+~
+0 0 1
+D0
+~
+~
+0 -1 2228
+D1
+~
+~
+0 -1 2222
+D2
+~
+~
+0 -1 2229
+D3
+~
+~
+0 -1 2219
+S
+#2222
+Residence Street~
+This street is full of houses bought and on sale.  The neighborhood seems
+peaceful and quiet and there the normal things any neighborhood would
+have.  Fire hydrants, stop signs, porn sto... wait.. not porn stores.
+~
+0 0 1
+D0
+~
+~
+0 -1 2230
+D1
+~
+~
+0 -1 2223
+D2
+~
+~
+0 -1 2231
+D3
+~
+~
+0 -1 2221
+S
+#2223
+Residence Street~
+This street is full of houses bought and on sale.  The neighborhood seems
+peaceful and quiet and there the normal things any neighborhood would
+have.  Fire hydrants, stop signs, porn sto... wait.. not porn stores.
+~
+0 0 1
+D0
+~
+~
+0 -1 2232
+D2
+~
+~
+0 -1 2233
+D3
+~
+~
+0 -1 2222
+S
+#2224
+An Emtpy Apartment~
+~
+0 2098184 1
+D2
+~
+~
+0 -1 2220
+S
+#2225
+An Emtpy Apartment~
+~
+0 2098184 1
+D0
+~
+~
+0 -1 2220
+S
+#2226
+An Emtpy Apartment~
+~
+0 2098184 1
+D2
+~
+~
+0 -1 2219
+S
+#2227
+An Emtpy Apartment~
+~
+0 2098184 1
+D0
+~
+~
+0 -1 2219
+S
+#2228
+An Emtpy Apartment~
+~
+0 2098184 1
+D2
+~
+~
+0 -1 2221
+S
+#2229
+An Emtpy Apartment~
+~
+0 2098184 1
+D0
+~
+~
+0 -1 2221
+S
+#2230
+An Emtpy Apartment~
+~
+0 2098184 1
+D2
+~
+~
+0 -1 2222
+S
+#2231
+An Emtpy Apartment~
+~
+0 2098184 1
+D0
+~
+~
+0 -1 2222
+S
+#2232
+An Emtpy Apartment~
+~
+0 2098184 1
+D2
+~
+~
+0 -1 2223
+S
+#2233
+An Emtpy Apartment~
+~
+0 2098184 1
+D0
+~
+~
+0 -1 2223
+S
+#2234
+Repair Shop~
+This is the O52 Repairman's Shop.  A man is behind a counter patching up
+equipment and sharpening weapons for his customers.  He will repair any
+armor for a fee of 20% of the item's worth.  
+&BType 'repair all' to repair your items.
+~
+0 1032 1
+D1
+~
+~
+0 -1 2201
+S
+#2235
+Turbolift~
+This is the Colony O52 Transit system.  Its an elevator like structure that
+transports you to wherever on the Colony you wish to go.  Just say where
+you want to go and you will be there.
+&BSay 'Main' to go to the Main Sector.
+&BSay 'Residence' to go to the Residence Sector.
+&BSay 'Skills' to go to the Skills Sector.
+&BSay 'Training' to go to the Training Sector.
+~
+0 4 1
+> speech_prog main~
+mpechoat $n You are taken to the Main Sector.
+mpechoaround $n $n is taken to the Main Sector.
+mptransfer $n 2204
+~
+> speech_prog residence~
+mpechoat $n You are taken to the Residence Sector.
+mpechoaround $n $n is taken to the Residence Sector.
+mptransfer $n 2220
+~
+> speech_prog skills~
+mpechoat $n You are taken to the Skills Sector.
+mpechoaround $n $n is taken to the Skills Sector.
+mptransfer $n 2236
+~
+> speech_prog training~
+mpechoat $n You are taken to the Training Sector.
+mpechoaround $n $n is taken to the Training Sector.
+mptransfer $n 2246
+~
+|
+S
+#2236
+Skills Hallway~
+This Hallway branches off into different rooms where trainers teach
+students skills that they have been able to obtain by gaining levels in a
+certain field of experience. 
+~
+0 0 1
+D0
+~
+~
+0 -1 2237
+D2
+~
+~
+0 -1 2206
+S
+#2237
+Skills Hallway~
+This Hallway branches off into different rooms where trainers teach
+students skills that they have been able to obtain by gaining levels in a
+certain field of experience. 
+~
+0 0 1
+D0
+~
+~
+0 -1 2238
+D1
+~
+~
+0 -1 2240
+D2
+~
+~
+0 -1 2236
+D3
+~
+~
+0 -1 2241
+S
+#2238
+Skills Hallway~
+This Hallway branches off into different rooms where trainers teach
+students skills that they have been able to obtain by gaining levels in a
+certain field of experience. 
+~
+0 0 1
+D0
+~
+~
+0 -1 2239
+D1
+~
+~
+0 -1 2242
+D2
+~
+~
+0 -1 2237
+D3
+~
+~
+0 -1 2243
+S
+#2239
+Engineering Skills~
+An engineering trainer is in this room teaching students how to sew armor
+and create weapons to make them work to the best of their ability. On the
+wall are awards hanging that state how good of a teacher he is. 
+~
+0 1032 1
+D0
+~
+~
+0 -1 2244
+D2
+~
+~
+0 -1 2238
+S
+#2240
+Pilot Skills~
+A pilot trainer is in this room teaching students different skills that can
+help them fly better and more effectively.  On the wall are awards hanging
+that state how good of a teacher he is.
+~
+0 1032 1
+D3
+~
+~
+0 -1 2237
+S
+#2241
+Combat Skills~
+A combat trainer is in this room teaching students different tactic with
+weapons and how to use skills to become the best in the combat field.  On
+the wall are awards hanging that state how good of a teacher he is.
+~
+0 1032 1
+D1
+~
+~
+0 -1 2237
+S
+#2242
+Smuggling Skills~
+A smuggling trainer is in this room teaching students how to steal
+effectively without getting caught.  There are some students training to
+hide themselves to make themselves in the corner. On the wall are awards
+hanging that state how good of a teacher he is.
+~
+0 1032 1
+D3
+~
+~
+0 -1 2238
+S
+#2243
+Diplomacy Skills~
+A diplomacy trainer is in this room teaching students how to lead a mob or
+a clan without the people revolting.  There are rules posted on the wall
+on how to be a good leader. On the wall are awards hanging that state how
+good of a teacher he is.
+~
+0 1032 1
+D1
+~
+~
+0 -1 2238
+S
+#2244
+Factory~
+This is the factory of O52.  The room is very silent so people can
+concentrate while making their items.  The items required to make things
+can be bought at the item store in the shops section of the colony.
+~
+0 67175428 1
+D2
+~
+~
+0 -1 2239
+S
+#2245
+Turboboost~
+This is the Colony O52 Transit system.  Its an elevator like structure that
+transports you to wherever on the Colony you wish to go.  Just say where
+you want to go and you will be there.
+&BSay 'Main' to go to the Main Sector.
+Say 'Residence' to go to the Residence Sector.
+Say 'Skills' to go to the Skills Sector.
+Say 'Training' to go to the Training Sector.
+~
+0 4 1
+> speech_prog main~
+mpechoat $n You are taken to the Main Sector.
+mpechoaround $n $n is taken to the Main Sector.
+mptransfer $n 2204
+~
+> speech_prog residence~
+mpechoat $n You are taken to the Residence Sector.
+mpechoaround $n $n is taken to the Residence Sector.
+mptransfer $n 2220
+~
+> speech_prog skills~
+mpechoat $n You are taken to the Skills Sector.
+mpechoaround $n $n is taken to the Skills Sector.
+mptransfer $n 2236
+~
+> speech_prog training~
+mpechoat $n You are taken to the Training Sector.
+mpechoaround $n $n is taken to the Training Sector.
+mptransfer $n 2246
+~
+|
+S
+#2246
+Training Hallway~
+~
+0 0 1
+D0
+~
+~
+0 -1 2247
+D2
+~
+~
+0 -1 2206
+S
+#2247
+Training Hallway~
+~
+0 0 1
+D0
+~
+~
+0 -1 2248
+D1
+~
+~
+0 -1 2253
+D2
+~
+~
+0 -1 2246
+D3
+~
+~
+0 -1 2252
+S
+#2248
+Training Hallway~
+~
+0 0 1
+D0
+~
+~
+0 -1 2249
+D1
+~
+~
+0 -1 2264
+D2
+~
+~
+0 -1 2247
+D3
+~
+~
+0 -1 2254
+S
+#2249
+Training Hallway~
+~
+0 0 1
+D0
+~
+~
+0 -1 2250
+D2
+~
+~
+0 -1 2248
+S
+#2250
+Training Hallway~
+~
+0 0 1
+D0
+~
+~
+0 -1 2251
+D2
+~
+~
+0 -1 2249
+S
+#2251
+O52 Gym~
+~
+0 1032 1
+D2
+~
+~
+0 -1 2250
+S
+#2252
+Medical Center~
+~
+0 4 1
+D1
+~
+~
+0 -1 2247
+> speech_prog heal~
+mpechoat $n &BYou are healed by the skilled
+medics.
+mpechoaround $n &R$n is healed by the skilled medics.
+mprestore $n 30000
+~
+|
+S
+#2253
+Medical Center~
+~
+0 4 1
+D3
+~
+~
+0 -1 2247
+> speech_prog heal~
+mpechoat $n &BYou are healed by the skilled medics.
+mpechoaround $n &R$n is healed by the skilled medics.
+mprestore $n 30000
+~
+|
+S
+#2254
+Advanced Combat Training Center~
+&BSay 'Final' to go to the final level of the Advanced Combat Training.
+~
+0 0 1
+D0
+~
+~
+0 -1 2255
+D1
+~
+~
+0 -1 2248
+D2
+~
+~
+0 -1 2257
+D3
+~
+~
+0 -1 2256
+D4
+~
+~
+0 -1 2258
+D5
+~
+~
+0 -1 2259
+D6
+~
+~
+0 -1 2260
+D7
+~
+~
+0 -1 2261
+D8
+~
+~
+0 -1 2262
+D9
+~
+~
+0 -1 2263
+> speech_prog final~
+mpechoat $n You are taken to the Final Training Room for Advanced Combat.
+mpechoaround $n $n is taken to the Final Training Room for Advanced Combat.
+mptransfer $n 2275
+~
+|
+S
+#2255
+Training Room Level 11~
+The holograms in this level is suggested for players level 550 and above.
+&BSay 'Begin' to call for a Training Hologram.
+~
+0 0 1
+D2
+~
+~
+0 -1 2254
+S
+#2256
+Training Room Level 13~
+The holograms in this level is suggested for players level 650 and above.
+&BSay 'Begin' to call for a Training Hologram. 
+~
+0 0 1
+D1
+~
+~
+0 -1 2254
+S
+#2257
+Training Room Level 12~
+The holograms in this level is suggested for players level 600 and above.
+&BSay 'Begin' to call for a Training Hologram. 
+~
+0 0 1
+D0
+~
+~
+0 -1 2254
+S
+#2258
+Training Room Level 14~
+The holograms in this level is suggested for players level 700 and above.
+&BSay 'Begin' to call for a Training Hologram. 
+~
+0 0 1
+D5
+~
+~
+0 -1 2254
+S
+#2259
+Training Room Level 15~
+The holograms in this level is suggested for players level 750 and above.
+&BSay 'Begin' to call for a Training Hologram. 
+~
+0 0 1
+D4
+~
+~
+0 -1 2254
+S
+#2260
+Training Room Level 16~
+The holograms in this level is suggested for players level 800 and above.
+&BSay 'Begin' to call for a Training Hologram. 
+~
+0 0 1
+D9
+~
+~
+0 -1 2254
+S
+#2261
+Training Room Level 17~
+The holograms in this level is suggested for players level 850 and above.
+&BSay 'Begin' to call for a Training Hologram. 
+~
+0 0 1
+D8
+~
+~
+0 -1 2254
+S
+#2262
+Training Room Level 18~
+The holograms in this level is suggested for players level 900 and above.
+&BSay 'Begin' to call for a Training Hologram. 
+~
+0 0 1
+D7
+~
+~
+0 -1 2254
+S
+#2263
+Training Room Level 19~
+The holograms in this level is suggested for players level 950 and above.
+&BSay 'Begin' to call for a Training Hologram. 
+~
+0 0 1
+D6
+~
+~
+0 -1 2254
+S
+#2264
+Basic Combat Training Center~
+This is the core of the Basic Combat Training Center.  There are rooms
+branching off in each room that contains training holograms of different
+levels. 
+&BSay 'Final' to go to the final level of the Basic Combat Training.
+~
+0 0 1
+D0
+~
+~
+0 -1 2265
+D1
+~
+~
+0 -1 2266
+D2
+~
+~
+0 -1 2267
+D3
+~
+~
+0 -1 2248
+D4
+~
+~
+0 -1 2268
+D5
+~
+~
+0 -1 2269
+D6
+~
+~
+0 -1 2270
+D7
+~
+~
+0 -1 2271
+D8
+~
+~
+0 -1 2273
+D9
+~
+~
+0 -1 2272
+> speech_prog final~
+mpechoat $n You are taken to the Final Training Room for Basic Combat.
+mpechoaround $n $n is taken to the Final Training Room for Basic Combat.
+mptransfer $n 2274
+~
+|
+S
+#2265
+Training Room Level 1~
+The holograms in this level is suggested for players level 50 and above.
+&BSay 'Begin' to call for a Training Hologram. 
+~
+0 0 1
+D2
+~
+~
+0 -1 2264
+> speech_prog begin~
+mpechoat $n A hologram appears.
+mpmload 2207 1
+~
+|
+S
+#2266
+Training Room Level 2~
+The holograms in this level is suggested for players level 100 and above.
+&BSay 'Begin' to call for a Training Hologram.
+~
+0 0 1
+D3
+~
+~
+0 -1 2264
+> speech_prog begin~
+mpechoat $n A hologram appears.
+mpmload 2208 1
+~
+|
+S
+#2267
+Training Room Level 3~
+The holograms in this level is suggested for players level 150 and above.
+&BSay 'Begin' to call for a Training Hologram.
+~
+0 0 1
+D0
+~
+~
+0 -1 2264
+S
+#2268
+Training Room Level 4~
+The holograms in this level is suggested for players level 200 and above.
+&BSay 'Begin' to call for a Training Hologram.
+~
+0 0 1
+D5
+~
+~
+0 -1 2264
+S
+#2269
+Training Room Level 5~
+The holograms in this level is suggested for players level 250 and above.
+&BSay 'Begin' to call for a Training Hologram.
+~
+0 0 1
+D4
+~
+~
+0 -1 2264
+S
+#2270
+Training Room Level 6~
+The holograms in this level is suggested for players level 300 and above.
+&BSay 'Begin' to call for a Training Hologram.
+~
+0 0 1
+D9
+~
+~
+0 -1 2264
+S
+#2271
+Training Room Level 7~
+The holograms in this level is suggested for players level 350 and above.
+&BSay 'Begin' to call for a Training Hologram.
+~
+0 0 1
+D8
+~
+~
+0 -1 2264
+S
+#2272
+Training Room Level 9~
+The holograms in this level is suggested for players level 450 and above.
+&BSay 'Begin' to call for a Training Hologram.
+~
+0 0 1
+D6
+~
+~
+0 -1 2264
+S
+#2273
+Training Room Level 8~
+The holograms in this level is suggested for players level 400 and above.
+&BSay 'Begin' to call for a Training Hologram.
+~
+0 0 1
+D7
+~
+~
+0 -1 2264
+S
+#2274
+Final Training Room for Basic Combat~
+The holograms in this level is suggested for players level 500 and above.
+&BSay 'Begin' to call for a Training Hologram.
+~
+0 1073741824 1
+D5
+~
+~
+0 -1 2264
+S
+#2275
+Final Training Room for Advaned Combat.~
+The holograms in this level is suggested for players level 1000 and above.
+&BSay 'Begin' to call for a Training Hologram.
+~
+0 1073741824 1
+D5
+~
+~
+0 -1 2254
+S
+#2279
+Floating in a void~
+~
+0 1073741824 1
+S
+#2299
+Floating in a void~
+~
+0 1073741828 1
+S
+#0
+
+
+#RESETS
+M 1 723 2 2205
+M 1 10365 12 2211
+M 1 2204 1 2234
+M 1 514 4 2239
+M 1 513 4 2240
+M 1 512 4 2241
+M 1 516 4 2242
+M 1 517 4 2243
+M 1 2205 1 2251
+M 1 2 1 6
+M 1 2203 1 2215
+M 1 7292 1 7292
+G 1 59 1
+G 1 810 1
+G 1 10312 1
+G 1 502 1
+G 1 602 1
+G 1 2001 1
+G 1 810 1
+G 1 602 1
+M 1 2201 1 2213
+M 1 2202 1 2214
+G 1 503 1
+G 1 504 1
+G 1 505 1
+G 1 500 1
+G 1 501 1
+G 1 506 1
+S
+
+
+#SHOPS
+ 2201    0  0  0  0  0   120  90         0 23    ; Weapon Shop Owner
+ 2202    0  0  0  0  0   120  90         0 23    ; Armor Shop Owner
+ 2203    0  0  0  0  0   120  90         0 23    ; Item Shop Owner
+ 2204    0  0  0  0  0   120  90         0 23    ; An O52 Repairman
+0
+
+
+#REPAIRS
+ 2204    0  0  0         100   1         0 23    ; An O52 Repairman
+0
+
+
+#SPECIALS
+S
+
+
+#$

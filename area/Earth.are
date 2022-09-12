@@ -1,0 +1,13150 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         Earth~
+Author       Akumaka~
+Ranges       1 1007 1 1007
+Economy      -4 40032571
+ResetMsg     An ancient wind flies across the plains, plagued by the dead winter.~
+ResetFreq    5
+#ENDAREADATA
+
+#MOBILE
+Vnum       8000
+Keywords   city guard~
+Short      A City Guard~
+Long       A City Guard stands here, on the watch for mutants.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 500 0 -1150 0 0
+Stats2     100 10 5000
+Stats3     50 4 2
+Stats4     0 0 0 100 100
+Attribs    15 10 10 15 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if ispc ($n) == ispc
+Say Hello there.  I'd be careful if I were you.
+say The mutants are strong, and the clans are warring.
+say Especially watch for those giant lizards, the locals call 
+say them Dragons, and with good reason!
+else
+yell Damn Mutants!
+kill $n
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       8001
+Keywords   Prostitute~
+Short      A prostitute~
+Long       A prostitute stand here, wanting to show you a good time.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     -1000 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   say Hi there, wanna have a good time?
+wink $n
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       8002
+Keywords   Ration Dispenser~
+Short      A Ration Dispenser~
+Long       A Ration Dispenser leans against the wall here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel droid nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Ration~
+Comlist   emote hums and whirs
+mpoload 10313
+give ration $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   canteen~
+Comlist   emote hums and whirs
+mpoload 10314
+give canteen $n
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       8003
+Keywords   A scorpion clan woman~
+Short      A scorpion clan woman~
+Long       A scorpion clan woman is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc~
+Stats1     0 25 0 37 40 0
+Stats2     5 10 250
+Stats3     2 4 2
+Stats4     0 0 0 5 5
+Attribs    12 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       8004
+Keywords   scorpion clan man~
+Short      A scorpion clan man~
+Long       A scorpion clan man is here
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc~
+Stats1     0 50 0 -25 0 0
+Stats2     10 10 500
+Stats3     5 4 2
+Stats4     0 0 0 10 10
+Attribs    16 10 10 12 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       8005
+Keywords   ScorpionW~
+Short      A Scorpion clan warrior~
+Long       A Scorpion clan warrior is here, ready for a fight
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 100 0 -150 100 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    18 10 10 16 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if name ($n) == HawkW
+kill HawkW
+else
+nod
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       8006
+Keywords   HawkW~
+Short      A Hawk clan warrior~
+Long       A Hawk clan warrior is here, ready for a fight.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 100 0 -150 100 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    18 10 10 16 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if name ($n) == ScorpionW
+kill ScorpionW
+else
+nod
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       8007
+Keywords   Hawk clan woman~
+Short      A hawk clan woman~
+Long       A hawk clan woman is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc~
+Stats1     0 25 0 37 40 0
+Stats2     5 10 250
+Stats3     2 4 2
+Stats4     0 0 0 5 5
+Attribs    12 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       8008
+Keywords   Hawk clan man~
+Short      A hawk clan man~
+Long       A hawk clan man stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc~
+Stats1     0 50 0 -25 0 0
+Stats2     10 10 500
+Stats3     5 4 2
+Stats4     0 0 0 0 0
+Attribs    16 10 10 12 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       8009
+Keywords   Scorpion Clan Chief~
+Short      The Scorpion Clan Chief~
+Long       The Scorpion Clan Chief stands here, pondering over battle strategies.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 200 0 -400 0 0
+Stats2     40 10 2000
+Stats3     20 4 2
+Stats4     0 0 0 40 40
+Attribs    18 10 10 18 10 10 10
+Saves      0 0 0 0 0
+Attacks    kick~
+Defenses   parry~
+#ENDMOBILE
+
+#MOBILE
+Vnum       8010
+Keywords   Hawk Clan Chief~
+Short      The Hawk Clan Chief~
+Long       The Hawk Clan Chief stands here, pondering over battle strategies.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 200 0 -400 0 0
+Stats2     40 10 2000
+Stats3     20 4 2
+Stats4     0 0 0 40 40
+Attribs    18 10 10 18 10 10 10
+Saves      0 0 0 0 0
+Attacks    kick~
+Defenses   parry~
+#ENDMOBILE
+
+#MOBILE
+Vnum       8011
+Keywords   Clan Armorsmith~
+Short      The Clan Armorsmith~
+Long       The Clan Armorsmith is here, making some new armor for the warriors.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       8012
+Keywords   Clan Weaponsmith~
+Short      The Clan Weaponsmith~
+Long       The Clan Weaponsmith is here, forging new weapons for the warriors.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       8013
+Keywords   Giant Roach~
+Short      A Giant Roach~
+Long       A Giant Roach is here, scrounging for food.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 20 0 50 0 0
+Stats2     4 10 200
+Stats3     2 4 2
+Stats4     0 0 0 4 4
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    bite sting~
+#ENDMOBILE
+
+#MOBILE
+Vnum       8014
+Keywords   Giant Scorpion~
+Short      A giant scorpion~
+Long       A giant scorpion is here, waving it's tail about menacingly.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 50 0 -25 0 0
+Stats2     10 10 500
+Stats3     5 4 2
+Stats4     0 0 0 10 10
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    bite tail sting~
+Defenses   dodge~
+#ENDMOBILE
+
+#MOBILE
+Vnum       8015
+Keywords   Giant Hawk~
+Short      A giant hawk~
+Long       A giant hawk is here, circling menacingly.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 50 0 -25 0 0
+Stats2     10 10 500
+Stats3     5 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    bite claws~
+Defenses   dodge~
+#ENDMOBILE
+
+#MOBILE
+Vnum       8016
+Keywords   Stupid Snaek~
+Short      A Giant Snake~
+Long       A giant snake slithers by on the ground.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 70 0 -75 0 0
+Stats2     14 10 700
+Stats3     7 4 2
+Stats4     0 0 0 14 14
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    bite tail sting~
+#ENDMOBILE
+
+#MOBILE
+Vnum       8017
+Keywords   Dragon~
+Short      A dragon~
+Long       A dragon is here, roaring in a bloody rage!
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 1000 0 -30000 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    18 10 10 18 10 10 10
+Saves      0 0 0 0 0
+Defenses   parry dodge~
+#MUDPROG
+Progtype  rand_prog~
+Arglist   30~
+Comlist   roar
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       8599
+Keywords   last~
+Short      a newly created last~
+Long       Some god abandoned a newly created last here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#OBJECT
+Vnum     8000
+Keywords M16A4~
+Type     weapon~
+Short    an M16A4 Assault Rifle~
+Long     An M16A4 Assault Rifle has been carelessly left here.~
+WFlags   take wield~
+Values   1000 4 30 6 0 0
+Stats    1 1000 100 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     8001
+Keywords scorpion knife~
+Type     weapon~
+Short    A scorpion clan Knife~
+Long     A scorpion clan knife was left here~
+WFlags   take wield~
+Values   40 5 40 2 0 0
+Stats    1 500 50 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     8002
+Keywords scorpion blade~
+Type     weapon~
+Short    A scorpion clan blade~
+Long     A scorpion clan blade has been carelessly left here.~
+WFlags   take wield~
+Values   100 5 45 2 0 0
+Stats    1 1000 100 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     8003
+Keywords Scorpion bodyarmor~
+Type     armor~
+Short    Scorpion Bodyarmor~
+Long     Scorpion bodyarmor was left here.~
+WFlags   take body~
+Values   100 100 0 0 0 0
+Stats    1 2000 200 0 0
+Affect       -1 -1 100 17 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     8004
+Keywords hawk knife~
+Type     weapon~
+Short    A hawk clan knife~
+Long     A hawk clan knife was discarded here.~
+WFlags   take wield~
+Values   40 5 30 2 0 0
+Stats    1 500 50 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     8005
+Keywords hawk blade~
+Type     weapon~
+Short    A hawk clan blade~
+Long     A hawk clan blade was misplaced here.~
+WFlags   take wield~
+Values   100 5 40 2 0 0
+Stats    1 1000 100 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     8006
+Keywords Hawk bodyarmor~
+Type     armor~
+Short    Hawk bodyarmor~
+Long     A set of Hawk bodyarmor was left here.~
+WFlags   take body~
+Values   100 100 0 0 0 0
+Stats    1 2000 200 0 0
+Affect       -1 -1 110 17 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     8599
+Keywords last~
+Type     trash~
+Short    a last~
+Long     A last is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     8000
+Name     A Ruined Landing Pad~
+Sector   city~
+Flags    nomob can_land can_fly docking~
+Desc     This is one of the many old landing pads of Earth. There isn't much here, nor
+should there be, considering that Earth has been practically uninhabitable
+since Zechs crashed into Earth with the Libra. As you look closer at your
+surroundings you can see that Earth has been reduced to nothing but a barren
+wasteland.
+Say 'Chicago' to go to Chicago.
+~
+#EXIT
+Direction north~
+ToRoom    8001
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8006
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8008
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8011
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Chicago 100~
+Comlist   mea $n You arive by car.
+mptransfer $n 11400
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   hello~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     8001
+Name     In the ruins of a city~
+Sector   city~
+Flags    nomob~
+Desc     This road has been covered in the same ruins that have covered the earth.
+You should try and watch your step, alot of things here are no longer
+normal.
+~
+#EXIT
+Direction north~
+ToRoom    8002
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8004
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8000
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8002
+Name     In the ruins of a city~
+Sector   city~
+Flags    nomob~
+Desc     This road has been covered in the same ruins that have covered the earth.
+You should try and watch your step, alot of things here are no longer
+normal. 
+~
+#EXIT
+Direction north~
+ToRoom    8003
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8001
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8003
+Name     In the ruins of a city~
+Sector   city~
+Desc     You see a guard here and notice that there are a few people still here. He
+is here keeping all the creatures away from the landing pad. It may not be
+safe to go north from this point.
+~
+#EXIT
+Direction north~
+ToRoom    8128
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8002
+#ENDEXIT
+
+Reset M 0 8000 5 8003
+  Reset E 1 8000 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8004
+Name     In the ruins of a city~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction east~
+ToRoom    8005
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8001
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8005
+Name     In the ruins of a city~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    8135
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8004
+#ENDEXIT
+
+Reset M 0 8000 7 8005
+  Reset E 1 8000 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8006
+Name     In the ruins of a city~
+Sector   city~
+Flags    nomob~
+Desc     As you look around, you see that this planet was hit hard. The most
+movement you see here is the dirt being carried by the wind. Looking
+closer you see an old building to the south, but thats all you can see
+from here.
+~
+#EXIT
+Direction north~
+ToRoom    8477
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8007
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8000
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8007
+Name     Inside a ruined hotel~
+Sector   city~
+Flags    nomob indoors hotel~
+Desc     This is one of earth's most popular hotels, now reduced to ruins. Here you
+can still 'save' and 'quit' as you please.
+~
+#EXIT
+Direction north~
+ToRoom    8006
+#ENDEXIT
+
+Reset M 0 10365 21 8007
+#ENDROOM
+
+#ROOM
+Vnum     8008
+Name     In the ruins of a city~
+Sector   city~
+Flags    nomob~
+Desc     This road has been covered in the same ruins that have covered the earth.
+You should try and watch your step, alot of things here are no longer
+normal.
+~
+#EXIT
+Direction north~
+ToRoom    8000
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8009
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8009
+Name     In the ruins of a city~
+Sector   city~
+Flags    nomob~
+Desc     This road has been covered in the same ruins that have covered the earth.
+You should try and watch your step, alot of things here are no longer
+normal.
+~
+#EXIT
+Direction north~
+ToRoom    8008
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8010
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8010
+Name     In the ruins of a city~
+Sector   city~
+Desc     You see a guard here and notice that there are a few people still here. He
+is here keeping all the creatures away from the landing pad. It may not be
+safe to go south from this point.
+~
+#EXIT
+Direction north~
+ToRoom    8009
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8143
+#ENDEXIT
+
+Reset M 0 8000 4 8010
+  Reset E 1 8000 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8011
+Name     In the ruins of a city~
+Sector   city~
+Flags    nomob~
+Desc     This road has been covered in the same ruins that have covered the earth.
+You should try and watch your step, alot of things here are no longer
+normal.
+~
+#EXIT
+Direction east~
+ToRoom    8000
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8012
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8015
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8012
+Name     In the ruins of a city~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    8011
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8013
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8014
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8013
+Name     In the ruins of a city~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    8012
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8014
+Name     In the ruins of a city~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction east~
+ToRoom    8012
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8015
+Name     In the ruins of a city~
+Sector   city~
+Flags    nomob~
+Desc     This road has been covered in the same ruins that have covered the earth.
+You should try and watch your step, alot of things here are no longer
+normal.
+~
+#EXIT
+Direction east~
+ToRoom    8011
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8016
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8016
+Name     In the ruins of a city~
+Sector   city~
+Desc     You see a guard here and notice that there are a few people still here. He
+is here keeping all the creatures away from the landing pad. It may not be
+safe to go west from this point.
+~
+#EXIT
+Direction east~
+ToRoom    8015
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8134
+#ENDEXIT
+
+Reset M 0 8000 6 8016
+  Reset E 1 8000 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8017
+Name     In the ruins of a city~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     8018
+Name     In the ruins of a city~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     8019
+Name     In the ruins of a city~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    8009
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8020
+Name     Passing through the gates~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction east~
+ToRoom    8021
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8062
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8021
+Name     Inside the gates of Scorpion City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8022
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8023
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8020
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8022
+Name     On the streets of Scorpion City~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    8024
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8021
+#ENDEXIT
+
+Reset M 0 8005 8 8022
+  Reset E 1 8002 1 16
+  Reset E 1 8003 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8023
+Name     On the streets of Scorpion City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8021
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8027
+#ENDEXIT
+
+Reset M 0 8005 9 8023
+  Reset E 1 8002 1 16
+  Reset E 1 8003 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8024
+Name     On the streets of Scorpion City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8029
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8030
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8025
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8022
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8025
+Name     On the streets of Scorpion City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8024
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8032
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8027
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8026
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8026
+Name     A brothel~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction east~
+ToRoom    8025
+#ENDEXIT
+
+Reset M 0 8001 1 8026
+#ENDROOM
+
+#ROOM
+Vnum     8027
+Name     On the streets of Scorpion City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8025
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8033
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8028
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8023
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8028
+Name     A hotel~
+Sector   city~
+Flags    hotel~
+#EXIT
+Direction north~
+ToRoom    8027
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8029
+Name     Scorpion Armorsmith~
+Sector   city~
+#EXIT
+Direction south~
+ToRoom    8024
+#ENDEXIT
+
+Reset M 0 8011 1 8029
+  Reset G 1 8003 1
+Reset M 0 8005 180 8029
+  Reset E 1 8002 1 16
+  Reset E 1 8003 1 5
+Reset M 0 8005 180 8029
+  Reset E 1 8002 1 16
+  Reset E 1 8003 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8030
+Name     On the streets of Scorpion City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8031
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8035
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8032
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8024
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8031
+Name     Scorpion Weaponsmith~
+Sector   city~
+#EXIT
+Direction south~
+ToRoom    8030
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8032
+Name     On the streets of Scorpion City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8030
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8036
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8033
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8025
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8033
+Name     On the streets of Scorpion City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8032
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8037
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8034
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8027
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8034
+Name     A ration dispenser~
+Sector   city~
+Flags    nomob~
+Desc     Here is a dimly lit room with a rations dispenser leaned up against the wall.  
+Just Say "Ration" to have a ration dispensed to you.
+~
+#EXIT
+Direction north~
+ToRoom    8033
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8035
+Name     On the streets of Scorpion City~
+Sector   city~
+#EXIT
+Direction south~
+ToRoom    8036
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8030
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8036
+Name     On the streets of Scorpion City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8035
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8038
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8037
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8032
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8037
+Name     On the streets of Scorpion City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8036
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8033
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8038
+Name     Entrance to the Scorpion City Caverns~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction west~
+ToRoom    8036
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    8039
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8039
+Name     Underground in Scorpion City~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction west~
+ToRoom    8040
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    8038
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8040
+Name     Underground in Scorpion City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8041
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8039
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8042
+#ENDEXIT
+
+Reset M 0 8004 5 8040
+  Reset E 1 8001 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8041
+Name     Underground in Scorpion City~
+Sector   city~
+#EXIT
+Direction south~
+ToRoom    8040
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8047
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8042
+Name     Underground in Scorpion City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8040
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8043
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8043
+Name     Underground in Scorpion City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8045
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8042
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8044
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8053
+#ENDEXIT
+
+Reset M 0 8003 4 8043
+  Reset E 1 8001 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8044
+Name     A small home~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8043
+#ENDEXIT
+
+Reset M 0 8004 2 8044
+  Reset E 1 8001 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8045
+Name     Underground in Scorpion City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8047
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8046
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8043
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8046
+Name     A small home~
+Sector   city~
+#EXIT
+Direction west~
+ToRoom    8045
+#ENDEXIT
+
+Reset M 0 8004 3 8046
+  Reset E 1 8001 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8047
+Name     Underground in Scorpion City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8048
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8041
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8045
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8050
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8048
+Name     A small home~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction south~
+ToRoom    8047
+#ENDEXIT
+
+Reset M 0 8003 1 8048
+  Reset E 1 8001 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8049
+Name     A small home~
+Sector   city~
+#EXIT
+Direction south~
+ToRoom    8050
+#ENDEXIT
+
+Reset M 0 8004 4 8049
+  Reset E 1 8001 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8050
+Name     Underground in Scorpion City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8049
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8047
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8051
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8057
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8051
+Name     Underground in Scorpion City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8050
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8052
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8053
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8052
+Name     A small home~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction west~
+ToRoom    8051
+#ENDEXIT
+
+Reset M 0 8003 2 8052
+  Reset E 1 8001 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8053
+Name     Underground in Scorpion City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8051
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8043
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8054
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8055
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8054
+Name     A small home~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8053
+#ENDEXIT
+
+Reset M 0 8003 4 8054
+  Reset E 1 8001 1 16
+Reset M 0 8004 1 8054
+  Reset E 1 8001 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8055
+Name     Underground in Scorpion City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8056
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8053
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8056
+Name     Underground in Scorpion City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8057
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8055
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8058
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8057
+Name     Underground in Scorpion City~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    8050
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8056
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8058
+Name     A staircase~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction east~
+ToRoom    8056
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    8059
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8059
+Name     Underground~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction east~
+ToRoom    8060
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    8058
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8060
+Name     Before the Scorpion Chief~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction east~
+ToRoom    8061
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8059
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8061
+Name     Scorpion Chief's home~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction west~
+ToRoom    8060
+#ENDEXIT
+
+Reset M 0 8009 1 8061
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+  Reset E 1 8002 1 18
+#ENDROOM
+
+#ROOM
+Vnum     8062
+Name     Outside the gates of Scorpion City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8063
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8020
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8069
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8238
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8063
+Name     Outside of the walls of Scorpion City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8220
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8064
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8062
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8230
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8064
+Name     Outside of the walls of Scorpion City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8221
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8065
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8063
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8065
+Name     Outside of the walls of Scorpion City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8222
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8231
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8066
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8064
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8066
+Name     Outside of the walls of Scorpion City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8065
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8239
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8067
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8067
+Name     Outside of the walls of Scorpion City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8066
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8247
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8257
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8068
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8068
+Name     Outside of the walls of Scorpion City~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    8067
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8256
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8069
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8069
+Name     Outside of the walls of Scorpion City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8062
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8068
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8255
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8246
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8070
+Name     Outside the gates of Hawk City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8071
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8078
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8077
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8451
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8071
+Name     Outside the walls of Hawk City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8431
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8072
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8070
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8442
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8072
+Name     Outside the walls of Hawk City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8432
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8073
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8071
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8073
+Name     Outside the walls of Hawk City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8433
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8443
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8074
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8072
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8074
+Name     Outside the walls of Hawk City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8073
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8452
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8075
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8075
+Name     Outside the walls of Hawk City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8074
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8461
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8471
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8076
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8076
+Name     Outside the walls of Hawk City~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    8075
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8470
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8077
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8077
+Name     Outside the walls of Hawk City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8070
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8076
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8469
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8460
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8078
+Name     Passing through the gates~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction east~
+ToRoom    8476
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8070
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8079
+Name     The streets of Hawk City~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    8080
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8476
+#ENDEXIT
+
+Reset M 0 8006 190 8079
+  Reset E 1 8006 1 5
+  Reset E 1 8005 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8080
+Name     The streets of Hawk City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8081
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8090
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8082
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8079
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8081
+Name     Hawk City Weapon Shop~
+Sector   city~
+#EXIT
+Direction south~
+ToRoom    8080
+#ENDEXIT
+
+Reset M 0 8012 1 8081
+  Reset G 1 8004 1
+  Reset G 1 8005 1
+#ENDROOM
+
+#ROOM
+Vnum     8082
+Name     The streets of Hawk City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8080
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8089
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8083
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8084
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8083
+Name     The streets of Hawk City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8082
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8088
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8086
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8085
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8084
+Name     Hawk City Bar~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    8082
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8085
+Name     The streets of Hawk City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8476
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8083
+#ENDEXIT
+
+Reset M 0 8006 191 8085
+  Reset E 1 8006 1 5
+  Reset E 1 8005 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8086
+Name     A ration dispenser~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8083
+#ENDEXIT
+
+Reset M 0 8002 2 8086
+#ENDROOM
+
+#ROOM
+Vnum     8087
+Name     Hawk City Hotel~
+Sector   city~
+Flags    nomob hotel~
+#EXIT
+Direction north~
+ToRoom    8088
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8088
+Name     The streets of Hawk City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8089
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8094
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8087
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8083
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8089
+Name     The streets of Hawk City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8090
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8093
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8088
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8082
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8090
+Name     The streets of Hawk City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8091
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8092
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8089
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8080
+#ENDEXIT
+
+Reset M 0 8006 193 8090
+  Reset E 1 8006 1 5
+  Reset E 1 8005 1 16
+Reset M 0 8006 193 8090
+  Reset E 1 8006 1 5
+  Reset E 1 8005 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8091
+Name     Hawk City Armor Shop~
+Sector   city~
+#EXIT
+Direction south~
+ToRoom    8090
+#ENDEXIT
+
+Reset M 0 8011 2 8091
+  Reset G 1 8006 1
+#ENDROOM
+
+#ROOM
+Vnum     8092
+Name     The streets of Hawk City~
+Sector   city~
+#EXIT
+Direction south~
+ToRoom    8093
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8090
+#ENDEXIT
+
+Reset M 0 8006 194 8092
+  Reset E 1 8006 1 5
+  Reset E 1 8005 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8093
+Name     The streets of Hawk City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8092
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8095
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8094
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8089
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8094
+Name     The streets of Hawk City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8093
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8088
+#ENDEXIT
+
+Reset M 0 8006 195 8094
+  Reset E 1 8006 1 5
+  Reset E 1 8005 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8095
+Name     Entrace to the Hawk City Caverns~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction west~
+ToRoom    8093
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    8096
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8096
+Name     Underground in Hawk City~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction west~
+ToRoom    8097
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    8095
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8097
+Name     Underground in Hawk City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8098
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8096
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8099
+#ENDEXIT
+
+Reset M 0 8008 4 8097
+  Reset E 1 8004 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8098
+Name     Underground in Hawk City~
+Sector   city~
+#EXIT
+Direction south~
+ToRoom    8097
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8103
+#ENDEXIT
+
+Reset M 0 8008 3 8098
+  Reset E 1 8004 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8099
+Name     Underground in Hawk City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8097
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8100
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8100
+Name     Underground in Hawk City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8101
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8099
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8109
+#ENDEXIT
+
+Reset M 0 8008 5 8100
+  Reset E 1 8004 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8101
+Name     Underground in Hawk City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8103
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8102
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8100
+#ENDEXIT
+
+Reset M 0 8008 6 8101
+  Reset E 1 8004 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8102
+Name     A small home~
+Sector   city~
+#EXIT
+Direction west~
+ToRoom    8101
+#ENDEXIT
+
+Reset M 0 8007 3 8102
+  Reset E 1 8004 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8103
+Name     Underground in Hawk City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8104
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8098
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8101
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8106
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8104
+Name     A small home~
+Sector   city~
+#EXIT
+Direction south~
+ToRoom    8103
+#ENDEXIT
+
+Reset M 0 8007 1 8104
+  Reset E 1 8004 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8105
+Name     A small home~
+Sector   city~
+#EXIT
+Direction south~
+ToRoom    8106
+#ENDEXIT
+
+Reset M 0 8007 2 8105
+  Reset E 1 8004 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8106
+Name     Underground in Hawk City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8105
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8103
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8107
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8112
+#ENDEXIT
+
+Reset M 0 8008 2 8106
+  Reset E 1 8004 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8107
+Name     Underground in Hawk City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8106
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8108
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8109
+#ENDEXIT
+
+Reset M 0 8008 1 8107
+  Reset E 1 8004 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8108
+Name     A small home~
+Sector   city~
+#EXIT
+Direction west~
+ToRoom    8107
+#ENDEXIT
+
+Reset M 0 8007 4 8108
+  Reset E 1 8004 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8109
+Name     Underground in Hawk City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8107
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8100
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8110
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8110
+Name     Underground in Hawk City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8111
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8109
+#ENDEXIT
+
+Reset M 0 8007 5 8110
+  Reset E 1 8004 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8111
+Name     Underground in Hawk City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8112
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8110
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8113
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8112
+Name     Underground in Hawk City~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    8106
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8111
+#ENDEXIT
+
+Reset M 0 8008 7 8112
+  Reset E 1 8004 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8113
+Name     A staircase~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction east~
+ToRoom    8111
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    8114
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8114
+Name     Underground~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction east~
+ToRoom    8115
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    8113
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8115
+Name     Before the Hawk Chief~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction east~
+ToRoom    8116
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8114
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8116
+Name     Hawk Chief's Home~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction west~
+ToRoom    8115
+#ENDEXIT
+
+Reset M 0 8010 1 8116
+  Reset E 1 8006 1 5
+  Reset E 1 8005 1 16
+  Reset E 1 8005 1 18
+#ENDROOM
+
+#ROOM
+Vnum     8117
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    8118
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8121
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8118
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    8119
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8122
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8117
+#ENDEXIT
+
+Reset M 0 8017 10 8118
+#ENDROOM
+
+#ROOM
+Vnum     8119
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction south~
+ToRoom    8123
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8118
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8120
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    8121
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8126
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8121
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8117
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8122
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8127
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8120
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8122
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8118
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8123
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8128
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8121
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8123
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8119
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8124
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8129
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8122
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8124
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction south~
+ToRoom    8130
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8123
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8125
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    8126
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8132
+#ENDEXIT
+
+Reset M 0 8013 116 8125
+#ENDROOM
+
+#ROOM
+Vnum     8126
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8120
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8127
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8133
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8125
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8127
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8121
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8128
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8134
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8126
+#ENDEXIT
+
+Reset M 0 8013 115 8127
+#ENDROOM
+
+#ROOM
+Vnum     8128
+Name     Before a ruined city~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8122
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8129
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8003
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8127
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8129
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8123
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8130
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8135
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8128
+#ENDEXIT
+
+Reset M 0 8013 117 8129
+#ENDROOM
+
+#ROOM
+Vnum     8130
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8124
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8131
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8136
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8129
+#ENDEXIT
+
+Reset M 0 8013 118 8130
+#ENDROOM
+
+#ROOM
+Vnum     8131
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction south~
+ToRoom    8137
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8130
+#ENDEXIT
+
+Reset M 0 8013 119 8131
+#ENDROOM
+
+#ROOM
+Vnum     8132
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8125
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8133
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8140
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8231
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8133
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8126
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8134
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8141
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8132
+#ENDEXIT
+
+Reset M 0 8013 5 8133
+#ENDROOM
+
+#ROOM
+Vnum     8134
+Name     Before a ruined city~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8127
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8016
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8142
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8133
+#ENDEXIT
+
+Reset M 0 8013 5 8134
+#ENDROOM
+
+#ROOM
+Vnum     8135
+Name     Before a ruined city~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8129
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8136
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8144
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8005
+#ENDEXIT
+
+Reset M 0 8013 5 8135
+#ENDROOM
+
+#ROOM
+Vnum     8136
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8130
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8137
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8145
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8135
+#ENDEXIT
+
+Reset M 0 8013 5 8136
+#ENDROOM
+
+#ROOM
+Vnum     8137
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8131
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8146
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8136
+#ENDEXIT
+
+Reset M 0 8013 5 8137
+#ENDROOM
+
+#ROOM
+Vnum     8138
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    8139
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8149
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8139
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    8140
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8150
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8138
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8140
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8132
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8141
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8151
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8139
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8141
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8133
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8142
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8152
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8140
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8142
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8134
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8143
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8153
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8141
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8143
+Name     Before a ruined city~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8010
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8144
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8154
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8142
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8144
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8135
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8145
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8155
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8143
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8145
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8136
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8146
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8156
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8144
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8146
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8137
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8147
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8157
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8145
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8147
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    8148
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8158
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8146
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8148
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction south~
+ToRoom    8159
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8147
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8149
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8138
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8150
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8160
+#ENDEXIT
+
+Reset M 0 8016 22 8149
+#ENDROOM
+
+#ROOM
+Vnum     8150
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8139
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8151
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8161
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8149
+#ENDEXIT
+
+Reset M 0 8016 22 8150
+#ENDROOM
+
+#ROOM
+Vnum     8151
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8140
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8152
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8162
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8150
+#ENDEXIT
+
+Reset M 0 8016 22 8151
+#ENDROOM
+
+#ROOM
+Vnum     8152
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8141
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8153
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8163
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8151
+#ENDEXIT
+
+Reset M 0 8016 22 8152
+#ENDROOM
+
+#ROOM
+Vnum     8153
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8142
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8154
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8164
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8152
+#ENDEXIT
+
+Reset M 0 8013 115 8153
+Reset M 0 8016 22 8153
+#ENDROOM
+
+#ROOM
+Vnum     8154
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8143
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8155
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8165
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8153
+#ENDEXIT
+
+Reset M 0 8013 115 8154
+Reset M 0 8016 22 8154
+#ENDROOM
+
+#ROOM
+Vnum     8155
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8144
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8156
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8166
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8154
+#ENDEXIT
+
+Reset M 0 8013 115 8155
+Reset M 0 8016 22 8155
+#ENDROOM
+
+#ROOM
+Vnum     8156
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8145
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8157
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8167
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8155
+#ENDEXIT
+
+Reset M 0 8013 115 8156
+Reset M 0 8016 22 8156
+#ENDROOM
+
+#ROOM
+Vnum     8157
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8146
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8158
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8168
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8156
+#ENDEXIT
+
+Reset M 0 8013 115 8157
+Reset M 0 8016 22 8157
+#ENDROOM
+
+#ROOM
+Vnum     8158
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8147
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8159
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8169
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8157
+#ENDEXIT
+
+Reset M 0 8013 115 8158
+Reset M 0 8016 22 8158
+#ENDROOM
+
+#ROOM
+Vnum     8159
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8148
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8170
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8158
+#ENDEXIT
+
+Reset M 0 8013 115 8159
+Reset M 0 8016 22 8159
+#ENDROOM
+
+#ROOM
+Vnum     8160
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8149
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8161
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8171
+#ENDEXIT
+
+Reset M 0 8013 115 8160
+Reset M 0 8016 22 8160
+#ENDROOM
+
+#ROOM
+Vnum     8161
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8150
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8162
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8172
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8160
+#ENDEXIT
+
+Reset M 0 8013 115 8161
+Reset M 0 8013 115 8161
+Reset M 0 8016 22 8161
+#ENDROOM
+
+#ROOM
+Vnum     8162
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8151
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8163
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8173
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8161
+#ENDEXIT
+
+Reset M 0 8013 115 8162
+Reset M 0 8013 115 8162
+Reset M 0 8016 22 8162
+#ENDROOM
+
+#ROOM
+Vnum     8163
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8152
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8164
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8174
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8162
+#ENDEXIT
+
+Reset M 0 8013 115 8163
+Reset M 0 8013 115 8163
+Reset M 0 8016 22 8163
+#ENDROOM
+
+#ROOM
+Vnum     8164
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8153
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8165
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8175
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8163
+#ENDEXIT
+
+Reset M 0 8013 115 8164
+Reset M 0 8013 115 8164
+Reset M 0 8016 22 8164
+#ENDROOM
+
+#ROOM
+Vnum     8165
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8154
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8166
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8176
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8164
+#ENDEXIT
+
+Reset M 0 8013 115 8165
+Reset M 0 8013 115 8165
+Reset M 0 8016 22 8165
+#ENDROOM
+
+#ROOM
+Vnum     8166
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8155
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8167
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8177
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8165
+#ENDEXIT
+
+Reset M 0 8013 115 8166
+Reset M 0 8016 22 8166
+#ENDROOM
+
+#ROOM
+Vnum     8167
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8156
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8168
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8178
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8166
+#ENDEXIT
+
+Reset M 0 8013 115 8167
+Reset M 0 8016 22 8167
+#ENDROOM
+
+#ROOM
+Vnum     8168
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8157
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8169
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8179
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8167
+#ENDEXIT
+
+Reset M 0 8013 115 8168
+Reset M 0 8016 22 8168
+#ENDROOM
+
+#ROOM
+Vnum     8169
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8158
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8170
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8180
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8168
+#ENDEXIT
+
+Reset M 0 8013 115 8169
+Reset M 0 8016 22 8169
+#ENDROOM
+
+#ROOM
+Vnum     8170
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8159
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8181
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8169
+#ENDEXIT
+
+Reset M 0 8013 115 8170
+Reset M 0 8016 22 8170
+#ENDROOM
+
+#ROOM
+Vnum     8171
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8160
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8172
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8182
+#ENDEXIT
+
+Reset M 0 8013 43 8171
+#ENDROOM
+
+#ROOM
+Vnum     8172
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8161
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8173
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8183
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8171
+#ENDEXIT
+
+Reset M 0 8013 43 8172
+#ENDROOM
+
+#ROOM
+Vnum     8173
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8162
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8174
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8184
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8172
+#ENDEXIT
+
+Reset M 0 8013 43 8173
+#ENDROOM
+
+#ROOM
+Vnum     8174
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8163
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8175
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8185
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8173
+#ENDEXIT
+
+Reset M 0 8013 43 8174
+#ENDROOM
+
+#ROOM
+Vnum     8175
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8164
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8176
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8186
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8174
+#ENDEXIT
+
+Reset M 0 8013 43 8175
+#ENDROOM
+
+#ROOM
+Vnum     8176
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8165
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8177
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8187
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8175
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8177
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8166
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8178
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8188
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8176
+#ENDEXIT
+
+Reset M 0 8013 43 8177
+#ENDROOM
+
+#ROOM
+Vnum     8178
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8167
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8179
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8189
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8177
+#ENDEXIT
+
+Reset M 0 8013 43 8178
+#ENDROOM
+
+#ROOM
+Vnum     8179
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8168
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8180
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8190
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8178
+#ENDEXIT
+
+Reset M 0 8013 43 8179
+#ENDROOM
+
+#ROOM
+Vnum     8180
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8169
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8181
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8191
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8179
+#ENDEXIT
+
+Reset M 0 8013 43 8180
+#ENDROOM
+
+#ROOM
+Vnum     8181
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8170
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8192
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8180
+#ENDEXIT
+
+Reset M 0 8013 43 8181
+#ENDROOM
+
+#ROOM
+Vnum     8182
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8171
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8183
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8193
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8183
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8172
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8184
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8194
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8182
+#ENDEXIT
+
+Reset M 0 8013 43 8183
+#ENDROOM
+
+#ROOM
+Vnum     8184
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8173
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8185
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8195
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8183
+#ENDEXIT
+
+Reset M 0 8013 43 8184
+#ENDROOM
+
+#ROOM
+Vnum     8185
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8174
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8186
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8196
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8184
+#ENDEXIT
+
+Reset M 0 8013 43 8185
+#ENDROOM
+
+#ROOM
+Vnum     8186
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8175
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8187
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8197
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8185
+#ENDEXIT
+
+Reset M 0 8013 43 8186
+#ENDROOM
+
+#ROOM
+Vnum     8187
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8176
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8188
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8198
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8186
+#ENDEXIT
+
+Reset M 0 8013 43 8187
+#ENDROOM
+
+#ROOM
+Vnum     8188
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8177
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8189
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8199
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8187
+#ENDEXIT
+
+Reset M 0 8013 43 8188
+#ENDROOM
+
+#ROOM
+Vnum     8189
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8178
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8190
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8200
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8188
+#ENDEXIT
+
+Reset M 0 8013 43 8189
+#ENDROOM
+
+#ROOM
+Vnum     8190
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8179
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8191
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8201
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8189
+#ENDEXIT
+
+Reset M 0 8013 43 8190
+#ENDROOM
+
+#ROOM
+Vnum     8191
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8180
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8192
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8202
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8190
+#ENDEXIT
+
+Reset M 0 8013 43 8191
+#ENDROOM
+
+#ROOM
+Vnum     8192
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8181
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8203
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8191
+#ENDEXIT
+
+Reset M 0 8013 43 8192
+#ENDROOM
+
+#ROOM
+Vnum     8193
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8182
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8194
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8204
+#ENDEXIT
+
+Reset M 0 8013 43 8193
+#ENDROOM
+
+#ROOM
+Vnum     8194
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8183
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8195
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8205
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8193
+#ENDEXIT
+
+Reset M 0 8013 43 8194
+#ENDROOM
+
+#ROOM
+Vnum     8195
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8184
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8196
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8206
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8194
+#ENDEXIT
+
+Reset M 0 8013 43 8195
+#ENDROOM
+
+#ROOM
+Vnum     8196
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8185
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8197
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8207
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8195
+#ENDEXIT
+
+Reset M 0 8013 43 8196
+#ENDROOM
+
+#ROOM
+Vnum     8197
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8186
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8198
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8208
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8196
+#ENDEXIT
+
+Reset M 0 8013 43 8197
+#ENDROOM
+
+#ROOM
+Vnum     8198
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8187
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8199
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8209
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8197
+#ENDEXIT
+
+Reset M 0 8013 43 8198
+#ENDROOM
+
+#ROOM
+Vnum     8199
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8188
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8200
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8210
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8198
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8200
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8189
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8201
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8211
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8199
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8201
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8190
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8202
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8212
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8200
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8202
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8191
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8203
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8213
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8201
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8203
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8192
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8214
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8202
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8204
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8193
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8205
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8215
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8205
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8194
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8206
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8216
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8204
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8206
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8195
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8207
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8217
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8205
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8207
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8196
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8208
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8218
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8206
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8208
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8197
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8209
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8219
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8207
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8209
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8198
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8210
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8220
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8208
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8210
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8199
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8211
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8221
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8209
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8211
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8200
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8212
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8222
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8210
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8212
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8201
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8213
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8223
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8211
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8213
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8202
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8214
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8224
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8212
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8214
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8203
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8225
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8213
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8215
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8204
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8216
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8226
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8216
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8205
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8217
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8227
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8215
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8217
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8206
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8218
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8228
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8216
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8218
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8207
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8219
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8229
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8217
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8219
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8208
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8220
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8230
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8218
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8220
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8209
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8221
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8063
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8219
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8221
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8210
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8222
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8064
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8220
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8222
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8211
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8223
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8065
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8221
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8223
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    8224
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8231
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8222
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8224
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8212
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8225
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8232
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8223
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8225
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8213
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8233
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8224
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8226
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8215
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8227
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8234
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8227
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8216
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8228
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8235
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8226
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8228
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8217
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8229
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8236
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8227
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8229
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8218
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8230
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8237
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8228
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8230
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8219
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8063
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8238
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8229
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8231
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8223
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8232
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8239
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8065
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8232
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8224
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8233
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8240
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8231
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8233
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8225
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8241
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8232
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8234
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8226
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8235
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8242
+#ENDEXIT
+
+Reset M 0 8005 180 8234
+  Reset E 1 8002 1 16
+  Reset E 1 8003 1 5
+Reset M 0 8014 27 8234
+#ENDROOM
+
+#ROOM
+Vnum     8235
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8227
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8236
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8243
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8234
+#ENDEXIT
+
+Reset M 0 8005 180 8235
+  Reset E 1 8002 1 16
+  Reset E 1 8003 1 5
+Reset M 0 8014 27 8235
+#ENDROOM
+
+#ROOM
+Vnum     8236
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8228
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8237
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8244
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8235
+#ENDEXIT
+
+Reset M 0 8005 180 8236
+  Reset E 1 8002 1 16
+  Reset E 1 8003 1 5
+Reset M 0 8014 27 8236
+#ENDROOM
+
+#ROOM
+Vnum     8237
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8229
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8238
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8245
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8236
+#ENDEXIT
+
+Reset M 0 8005 180 8237
+  Reset E 1 8002 1 16
+  Reset E 1 8003 1 5
+Reset M 0 8014 27 8237
+#ENDROOM
+
+#ROOM
+Vnum     8238
+Name     Wandering Wasteland Earth~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    8230
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8062
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8246
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8237
+#ENDEXIT
+
+Reset M 0 8014 27 8238
+#ENDROOM
+
+#ROOM
+Vnum     8239
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8231
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8240
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8247
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8066
+#ENDEXIT
+
+Reset M 0 8005 180 8239
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8014 27 8239
+#ENDROOM
+
+#ROOM
+Vnum     8240
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8232
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8241
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8248
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8239
+#ENDEXIT
+
+Reset M 0 8005 180 8240
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8014 27 8240
+#ENDROOM
+
+#ROOM
+Vnum     8241
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8233
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8249
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8240
+#ENDEXIT
+
+Reset M 0 8005 180 8241
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8014 27 8241
+#ENDROOM
+
+#ROOM
+Vnum     8242
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8234
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8243
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8250
+#ENDEXIT
+
+Reset M 0 8005 180 8242
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8014 27 8242
+#ENDROOM
+
+#ROOM
+Vnum     8243
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8235
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8244
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8251
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8242
+#ENDEXIT
+
+Reset M 0 8005 180 8243
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8014 27 8243
+#ENDROOM
+
+#ROOM
+Vnum     8244
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8236
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8245
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8252
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8243
+#ENDEXIT
+
+Reset M 0 8005 180 8244
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8014 27 8244
+#ENDROOM
+
+#ROOM
+Vnum     8245
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8237
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8246
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8253
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8244
+#ENDEXIT
+
+Reset M 0 8005 180 8245
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8014 27 8245
+#ENDROOM
+
+#ROOM
+Vnum     8246
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8322
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8069
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8254
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8245
+#ENDEXIT
+
+Reset M 0 8005 180 8246
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8014 27 8246
+#ENDROOM
+
+#ROOM
+Vnum     8247
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8239
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8248
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8257
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8067
+#ENDEXIT
+
+Reset M 0 8005 180 8247
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8014 27 8247
+#ENDROOM
+
+#ROOM
+Vnum     8248
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8240
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8249
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8258
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8247
+#ENDEXIT
+
+Reset M 0 8005 180 8248
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8014 27 8248
+#ENDROOM
+
+#ROOM
+Vnum     8249
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8241
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8260
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8248
+#ENDEXIT
+
+Reset M 0 8005 180 8249
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8014 27 8249
+#ENDROOM
+
+#ROOM
+Vnum     8250
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8242
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8251
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8261
+#ENDEXIT
+
+Reset M 0 8005 180 8250
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8014 27 8250
+#ENDROOM
+
+#ROOM
+Vnum     8251
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8243
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8252
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8262
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8250
+#ENDEXIT
+
+Reset M 0 8005 180 8251
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8014 27 8251
+#ENDROOM
+
+#ROOM
+Vnum     8252
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8244
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8253
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8263
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8251
+#ENDEXIT
+
+Reset M 0 8005 180 8252
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8014 27 8252
+#ENDROOM
+
+#ROOM
+Vnum     8253
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8245
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8254
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8264
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8252
+#ENDEXIT
+
+Reset M 0 8005 158 8253
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8254
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8246
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8255
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8264
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8253
+#ENDEXIT
+
+Reset M 0 8005 180 8254
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8014 27 8254
+#ENDROOM
+
+#ROOM
+Vnum     8255
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8069
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8256
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8266
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8254
+#ENDEXIT
+
+Reset M 0 8005 180 8255
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8014 27 8255
+#ENDROOM
+
+#ROOM
+Vnum     8256
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8068
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8257
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8267
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8255
+#ENDEXIT
+
+Reset M 0 8005 180 8256
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8014 27 8256
+#ENDROOM
+
+#ROOM
+Vnum     8257
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8247
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8258
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8268
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8256
+#ENDEXIT
+
+Reset M 0 8005 180 8257
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8014 27 8257
+#ENDROOM
+
+#ROOM
+Vnum     8258
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8248
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8259
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8269
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8257
+#ENDEXIT
+
+Reset M 0 8005 180 8258
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8014 27 8258
+#ENDROOM
+
+#ROOM
+Vnum     8259
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8249
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8260
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8270
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8258
+#ENDEXIT
+
+Reset M 0 8005 180 8259
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8014 27 8259
+#ENDROOM
+
+#ROOM
+Vnum     8260
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8249
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8271
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8259
+#ENDEXIT
+
+Reset M 0 8005 180 8260
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8014 27 8260
+#ENDROOM
+
+#ROOM
+Vnum     8261
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8250
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8262
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8272
+#ENDEXIT
+
+Reset M 0 8005 183 8261
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8262
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8251
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8263
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8273
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8261
+#ENDEXIT
+
+Reset M 0 8005 183 8262
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8263
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8252
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8264
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8274
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8262
+#ENDEXIT
+
+Reset M 0 8005 183 8263
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8264
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8254
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8265
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8275
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8263
+#ENDEXIT
+
+Reset M 0 8005 183 8264
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8265
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    8266
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8276
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8264
+#ENDEXIT
+
+Reset M 0 8005 183 8265
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8266
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8255
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8267
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8277
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8265
+#ENDEXIT
+
+Reset M 0 8005 183 8266
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+#ENDROOM
+
+#ROOM
+Vnum     8267
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8256
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8268
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8278
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8266
+#ENDEXIT
+
+Reset M 0 8005 180 8267
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8267
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8268
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8257
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8269
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8279
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8267
+#ENDEXIT
+
+Reset M 0 8005 180 8268
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8268
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8269
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8258
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8270
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8280
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8268
+#ENDEXIT
+
+Reset M 0 8005 180 8269
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8269
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8270
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8259
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8271
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8281
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8269
+#ENDEXIT
+
+Reset M 0 8005 180 8270
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8270
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8271
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8260
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8282
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8270
+#ENDEXIT
+
+Reset M 0 8005 180 8271
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8271
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8272
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8261
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8273
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8283
+#ENDEXIT
+
+Reset M 0 8005 180 8272
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8272
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8273
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8262
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8274
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8284
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8272
+#ENDEXIT
+
+Reset M 0 8005 180 8273
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8273
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8274
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8263
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8275
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8285
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8273
+#ENDEXIT
+
+Reset M 0 8005 180 8274
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8274
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8275
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8264
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8276
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8286
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8274
+#ENDEXIT
+
+Reset M 0 8005 180 8275
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8275
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8276
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8265
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8277
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8287
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8275
+#ENDEXIT
+
+Reset M 0 8005 180 8276
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8276
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8277
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8266
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8278
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8288
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8276
+#ENDEXIT
+
+Reset M 0 8005 180 8277
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8277
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8278
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8267
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8279
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8289
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8277
+#ENDEXIT
+
+Reset M 0 8005 180 8278
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8278
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8279
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8268
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8280
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8290
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8278
+#ENDEXIT
+
+Reset M 0 8005 180 8279
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8279
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8280
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8269
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8281
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8291
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8279
+#ENDEXIT
+
+Reset M 0 8005 180 8280
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8280
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8281
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8270
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8282
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8292
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8280
+#ENDEXIT
+
+Reset M 0 8005 180 8281
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8281
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8282
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8271
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8293
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8281
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    8294
+#ENDEXIT
+
+Reset M 0 8005 180 8282
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8282
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8283
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8273
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8284
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8295
+#ENDEXIT
+
+Reset M 0 8005 180 8283
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8283
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8284
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8274
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8285
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8296
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8283
+#ENDEXIT
+
+Reset M 0 8005 180 8284
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8284
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8285
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8275
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8286
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8297
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8284
+#ENDEXIT
+
+Reset M 0 8005 180 8285
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8285
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8286
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8276
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8287
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8298
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8285
+#ENDEXIT
+
+Reset M 0 8005 180 8286
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8286
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8287
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8277
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8288
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8299
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8286
+#ENDEXIT
+
+Reset M 0 8005 180 8287
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8287
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8288
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8278
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8289
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8300
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8287
+#ENDEXIT
+
+Reset M 0 8005 180 8288
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8288
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8289
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8279
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8290
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8301
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8288
+#ENDEXIT
+
+Reset M 0 8005 180 8289
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8289
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8290
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8280
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8291
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8302
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8289
+#ENDEXIT
+
+Reset M 0 8005 180 8290
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8290
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8291
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8281
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8292
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8303
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8290
+#ENDEXIT
+
+Reset M 0 8017 10 8291
+#ENDROOM
+
+#ROOM
+Vnum     8292
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8282
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8293
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8304
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8291
+#ENDEXIT
+
+Reset M 0 8005 180 8292
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8292
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8293
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8282
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8294
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8305
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8292
+#ENDEXIT
+
+Reset M 0 8005 180 8293
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8293
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8294
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction south~
+ToRoom    8306
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8293
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    8282
+#ENDEXIT
+
+Reset M 0 8005 180 8294
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8294
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8295
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8283
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8296
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8307
+#ENDEXIT
+
+Reset M 0 8005 180 8295
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8295
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8296
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8284
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8297
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8308
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8295
+#ENDEXIT
+
+Reset M 0 8005 180 8296
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8296
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8297
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8285
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8298
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8309
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8296
+#ENDEXIT
+
+Reset M 0 8005 180 8297
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8297
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8298
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8286
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8299
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8310
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8297
+#ENDEXIT
+
+Reset M 0 8005 180 8298
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8298
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8299
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8287
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8300
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8311
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8298
+#ENDEXIT
+
+Reset M 0 8005 180 8299
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8299
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8300
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8288
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8301
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8312
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8299
+#ENDEXIT
+
+Reset M 0 8005 180 8300
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8300
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8301
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8289
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8302
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8313
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8300
+#ENDEXIT
+
+Reset M 0 8005 180 8301
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8301
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8302
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8290
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8303
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8314
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8301
+#ENDEXIT
+
+Reset M 0 8005 180 8302
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8302
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8303
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8291
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8304
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8315
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8302
+#ENDEXIT
+
+Reset M 0 8005 180 8303
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8303
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8304
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8292
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8305
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8316
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8303
+#ENDEXIT
+
+Reset M 0 8005 180 8304
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8304
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8305
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8293
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8306
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8317
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8304
+#ENDEXIT
+
+Reset M 0 8005 180 8305
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8305
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8306
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8294
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8318
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8305
+#ENDEXIT
+
+Reset M 0 8005 180 8306
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8306
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8307
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8295
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8308
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8319
+#ENDEXIT
+
+Reset M 0 8005 180 8307
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8307
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8308
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8296
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8309
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8320
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8307
+#ENDEXIT
+
+Reset M 0 8005 180 8308
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8308
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8309
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8297
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8310
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8321
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8308
+#ENDEXIT
+
+Reset M 0 8005 180 8309
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8309
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8310
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8298
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8311
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8322
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8309
+#ENDEXIT
+
+Reset M 0 8005 180 8310
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8310
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8311
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8299
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8312
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8323
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8310
+#ENDEXIT
+
+Reset M 0 8005 180 8311
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8311
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8312
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8300
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8313
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8324
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8311
+#ENDEXIT
+
+Reset M 0 8005 180 8312
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8312
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8313
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8301
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8314
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8325
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8312
+#ENDEXIT
+
+Reset M 0 8005 180 8313
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8313
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8314
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8302
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8315
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8326
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8313
+#ENDEXIT
+
+Reset M 0 8005 180 8314
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8314
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8315
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8303
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8316
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8327
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8314
+#ENDEXIT
+
+Reset M 0 8005 180 8315
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8315
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8316
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8304
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8317
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8328
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8315
+#ENDEXIT
+
+Reset M 0 8005 180 8316
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8316
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8317
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8305
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8318
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8329
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8316
+#ENDEXIT
+
+Reset M 0 8005 180 8317
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8317
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8318
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8306
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8340
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8317
+#ENDEXIT
+
+Reset M 0 8005 180 8318
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8318
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8319
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8307
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8320
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8341
+#ENDEXIT
+
+Reset M 0 8005 180 8319
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8319
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8320
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8308
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8321
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8342
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8319
+#ENDEXIT
+
+Reset M 0 8005 180 8320
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8320
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8321
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8309
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8322
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8345
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8320
+#ENDEXIT
+
+Reset M 0 8005 180 8321
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8321
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8322
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8310
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8323
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8346
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8321
+#ENDEXIT
+
+Reset M 0 8005 180 8322
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8322
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8323
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8311
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8324
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8347
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8322
+#ENDEXIT
+
+Reset M 0 8005 180 8323
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 195 8323
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8017 4 8323
+#ENDROOM
+
+#ROOM
+Vnum     8324
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8312
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8325
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8348
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8323
+#ENDEXIT
+
+Reset M 0 8005 180 8324
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 195 8324
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8017 4 8324
+#ENDROOM
+
+#ROOM
+Vnum     8325
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8313
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8326
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8349
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8324
+#ENDEXIT
+
+Reset M 0 8005 180 8325
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 195 8325
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8017 4 8325
+#ENDROOM
+
+#ROOM
+Vnum     8326
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8314
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8327
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8350
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8325
+#ENDEXIT
+
+Reset M 0 8005 180 8326
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 195 8326
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8017 4 8326
+#ENDROOM
+
+#ROOM
+Vnum     8327
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8315
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8328
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8351
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8326
+#ENDEXIT
+
+Reset M 0 8005 180 8327
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8327
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8328
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8316
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8329
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8352
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8327
+#ENDEXIT
+
+Reset M 0 8005 180 8328
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8328
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8329
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8317
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8340
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8353
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8328
+#ENDEXIT
+
+Reset M 0 8005 180 8329
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8329
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8330
+Name     Wandering Wasteland Earth~
+Sector   city~
+Flags    nomob~
+Reset M 0 8005 180 8330
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8330
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8331
+Name     Wandering Wasteland Earth~
+Sector   city~
+Flags    nomob~
+Reset M 0 8005 180 8331
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8331
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8332
+Name     Wandering Wasteland Earth~
+Sector   city~
+Flags    nomob~
+Reset M 0 8005 180 8332
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8332
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8333
+Name     Wandering Wasteland Earth~
+Sector   city~
+Flags    nomob~
+Reset M 0 8005 180 8333
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8333
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8334
+Name     Wandering Wasteland Earth~
+Sector   city~
+Flags    nomob~
+Reset M 0 8005 180 8334
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8334
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8335
+Name     Wandering Wasteland Earth~
+Sector   city~
+Flags    nomob~
+Reset M 0 8005 180 8335
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8335
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8336
+Name     Wandering Wasteland Earth~
+Sector   city~
+Flags    nomob~
+Reset M 0 8005 180 8336
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8336
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8337
+Name     Wandering Wasteland Earth~
+Sector   city~
+Flags    nomob~
+Reset M 0 8005 180 8337
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8337
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8338
+Name     Wandering Wasteland Earth~
+Sector   city~
+Flags    nomob~
+Reset M 0 8005 180 8338
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8338
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8339
+Name     Wandering Wasteland Earth~
+Sector   city~
+Flags    nomob~
+Reset M 0 8005 180 8339
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8339
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8340
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8318
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8354
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8329
+#ENDEXIT
+
+Reset M 0 8005 180 8340
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8340
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8341
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8319
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8342
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8355
+#ENDEXIT
+
+Reset M 0 8005 180 8341
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8341
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8342
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8320
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8345
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8356
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8341
+#ENDEXIT
+
+Reset M 0 8005 180 8342
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8342
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8343
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8321
+#ENDEXIT
+
+Reset M 0 8005 180 8343
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8343
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8344
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8322
+#ENDEXIT
+
+Reset M 0 8005 180 8344
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8344
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8345
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8323
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8346
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8357
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8342
+#ENDEXIT
+
+Reset M 0 8005 180 8345
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8345
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8346
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8324
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8347
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8358
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8345
+#ENDEXIT
+
+Reset M 0 8005 180 8346
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8346
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8347
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8325
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8348
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8359
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8346
+#ENDEXIT
+
+Reset M 0 8005 180 8347
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8347
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8348
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8324
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8349
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8360
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8347
+#ENDEXIT
+
+Reset M 0 8005 180 8348
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8348
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8349
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    8350
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8361
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8348
+#ENDEXIT
+
+Reset M 0 8005 180 8349
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8349
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8350
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8326
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8351
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8362
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8349
+#ENDEXIT
+
+Reset M 0 8005 180 8350
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8350
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8351
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8327
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8352
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8363
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8350
+#ENDEXIT
+
+Reset M 0 8005 180 8351
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8351
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8352
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8328
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8353
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8364
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8351
+#ENDEXIT
+
+Reset M 0 8005 180 8352
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8352
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8353
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8329
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8354
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8365
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8352
+#ENDEXIT
+
+Reset M 0 8005 180 8353
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8353
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8354
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8340
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8366
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8353
+#ENDEXIT
+
+Reset M 0 8005 180 8354
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8354
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8355
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8341
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8356
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8367
+#ENDEXIT
+
+Reset M 0 8005 180 8355
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8355
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8356
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8342
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8357
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8368
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8355
+#ENDEXIT
+
+Reset M 0 8005 180 8356
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8356
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8357
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8345
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8358
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8369
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8356
+#ENDEXIT
+
+Reset M 0 8005 180 8357
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8357
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8358
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8346
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8359
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8370
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8357
+#ENDEXIT
+
+Reset M 0 8005 180 8358
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8358
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8359
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8347
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8360
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8371
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8358
+#ENDEXIT
+
+Reset M 0 8005 180 8359
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8359
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8360
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8348
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8361
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8372
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8359
+#ENDEXIT
+
+Reset M 0 8005 180 8360
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8360
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8361
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8349
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8362
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8373
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8360
+#ENDEXIT
+
+Reset M 0 8005 180 8361
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8361
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8362
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8350
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8363
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8374
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8361
+#ENDEXIT
+
+Reset M 0 8005 180 8362
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8362
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8363
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8351
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8364
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8375
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8362
+#ENDEXIT
+
+Reset M 0 8005 180 8363
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8363
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8364
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8352
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8365
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8376
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8363
+#ENDEXIT
+
+Reset M 0 8005 180 8364
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8364
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8365
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8353
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8366
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8377
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8364
+#ENDEXIT
+
+Reset M 0 8005 180 8365
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8365
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8366
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8354
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8378
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8365
+#ENDEXIT
+
+Reset M 0 8005 180 8366
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8366
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8367
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8355
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8368
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8379
+#ENDEXIT
+
+Reset M 0 8005 180 8367
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8367
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8368
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8356
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8369
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8380
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8367
+#ENDEXIT
+
+Reset M 0 8005 180 8368
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8368
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8369
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8357
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8370
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8381
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8368
+#ENDEXIT
+
+Reset M 0 8005 180 8369
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8369
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8370
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8358
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8371
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8382
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8369
+#ENDEXIT
+
+Reset M 0 8005 180 8370
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8370
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8371
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8359
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8372
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8383
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8370
+#ENDEXIT
+
+Reset M 0 8005 180 8371
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8371
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8372
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8360
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8373
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8384
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8371
+#ENDEXIT
+
+Reset M 0 8005 180 8372
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8372
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8373
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8361
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8374
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8385
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8372
+#ENDEXIT
+
+Reset M 0 8005 180 8373
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8373
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8374
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8362
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8375
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8386
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8373
+#ENDEXIT
+
+Reset M 0 8005 180 8374
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8374
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8375
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8363
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8376
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8387
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8374
+#ENDEXIT
+
+Reset M 0 8005 180 8375
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8375
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8376
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8364
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8377
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8388
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8375
+#ENDEXIT
+
+Reset M 0 8005 180 8376
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8376
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8377
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8365
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8378
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8389
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8376
+#ENDEXIT
+
+Reset M 0 8005 180 8377
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8377
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8378
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8366
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8390
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8377
+#ENDEXIT
+
+Reset M 0 8005 180 8378
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8378
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8379
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8367
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8380
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8391
+#ENDEXIT
+
+Reset M 0 8005 180 8379
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8379
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8380
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8368
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8381
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8392
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8379
+#ENDEXIT
+
+Reset M 0 8005 180 8380
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8380
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8381
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8369
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8382
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8393
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8380
+#ENDEXIT
+
+Reset M 0 8005 180 8381
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8381
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8382
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8370
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8383
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8394
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8381
+#ENDEXIT
+
+Reset M 0 8005 180 8382
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8382
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8383
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8371
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8384
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8395
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8382
+#ENDEXIT
+
+Reset M 0 8005 180 8383
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8383
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8384
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8372
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8385
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8396
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8383
+#ENDEXIT
+
+Reset M 0 8005 180 8384
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8384
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8385
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8373
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8386
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8397
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8384
+#ENDEXIT
+
+Reset M 0 8005 180 8385
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 195 8385
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8017 9 8385
+#ENDROOM
+
+#ROOM
+Vnum     8386
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8374
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8387
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8398
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8385
+#ENDEXIT
+
+Reset M 0 8005 180 8386
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 195 8386
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8017 9 8386
+#ENDROOM
+
+#ROOM
+Vnum     8387
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8375
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8388
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8399
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8386
+#ENDEXIT
+
+Reset M 0 8005 180 8387
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 195 8387
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8017 9 8387
+#ENDROOM
+
+#ROOM
+Vnum     8388
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8376
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8389
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8400
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8387
+#ENDEXIT
+
+Reset M 0 8005 180 8388
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 195 8388
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8017 9 8388
+#ENDROOM
+
+#ROOM
+Vnum     8389
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8377
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8390
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8401
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8388
+#ENDEXIT
+
+Reset M 0 8005 180 8389
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 195 8389
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8017 9 8389
+#ENDROOM
+
+#ROOM
+Vnum     8390
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8378
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8402
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8389
+#ENDEXIT
+
+Reset M 0 8005 180 8390
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8390
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8391
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8379
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8392
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8403
+#ENDEXIT
+
+Reset M 0 8005 180 8391
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8391
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8392
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8380
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8393
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8404
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8391
+#ENDEXIT
+
+Reset M 0 8005 180 8392
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8392
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8393
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8381
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8394
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8405
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8392
+#ENDEXIT
+
+Reset M 0 8005 180 8393
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8393
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8394
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8382
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8395
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8406
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8393
+#ENDEXIT
+
+Reset M 0 8005 180 8394
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 189 8394
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+#ENDROOM
+
+#ROOM
+Vnum     8395
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8383
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8396
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8407
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8394
+#ENDEXIT
+
+Reset M 0 8005 180 8395
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 195 8395
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 115 8395
+#ENDROOM
+
+#ROOM
+Vnum     8396
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8384
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8397
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8408
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8395
+#ENDEXIT
+
+Reset M 0 8005 180 8396
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 195 8396
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 115 8396
+#ENDROOM
+
+#ROOM
+Vnum     8397
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8385
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8398
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8409
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8396
+#ENDEXIT
+
+Reset M 0 8005 180 8397
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 195 8397
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 115 8397
+#ENDROOM
+
+#ROOM
+Vnum     8398
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8386
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8399
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8410
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8397
+#ENDEXIT
+
+Reset M 0 8005 180 8398
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 195 8398
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 115 8398
+#ENDROOM
+
+#ROOM
+Vnum     8399
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8387
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8400
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8411
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8398
+#ENDEXIT
+
+Reset M 0 8005 180 8399
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 195 8399
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 115 8399
+#ENDROOM
+
+#ROOM
+Vnum     8400
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8388
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8401
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8412
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8399
+#ENDEXIT
+
+Reset M 0 8005 180 8400
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 195 8400
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 115 8400
+#ENDROOM
+
+#ROOM
+Vnum     8401
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8389
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8402
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8413
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8400
+#ENDEXIT
+
+Reset M 0 8005 180 8401
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 195 8401
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 115 8401
+#ENDROOM
+
+#ROOM
+Vnum     8402
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8390
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8414
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8401
+#ENDEXIT
+
+Reset M 0 8005 180 8402
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 195 8402
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 115 8402
+#ENDROOM
+
+#ROOM
+Vnum     8403
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8391
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8404
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8415
+#ENDEXIT
+
+Reset M 0 8005 180 8403
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 195 8403
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 115 8403
+#ENDROOM
+
+#ROOM
+Vnum     8404
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8392
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8405
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8416
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8403
+#ENDEXIT
+
+Reset M 0 8005 180 8404
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 195 8404
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 115 8404
+#ENDROOM
+
+#ROOM
+Vnum     8405
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8393
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8406
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8417
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8404
+#ENDEXIT
+
+Reset M 0 8005 180 8405
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 195 8405
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 115 8405
+#ENDROOM
+
+#ROOM
+Vnum     8406
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8394
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8407
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8418
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8405
+#ENDEXIT
+
+Reset M 0 8005 180 8406
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 195 8406
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 115 8406
+#ENDROOM
+
+#ROOM
+Vnum     8407
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8395
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8408
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8419
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8406
+#ENDEXIT
+
+Reset M 0 8005 180 8407
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 195 8407
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 115 8407
+#ENDROOM
+
+#ROOM
+Vnum     8408
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8396
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8409
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8420
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8407
+#ENDEXIT
+
+Reset M 0 8005 180 8408
+  Reset E 1 8003 1 5
+  Reset E 1 8002 1 16
+Reset M 0 8006 195 8408
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 115 8408
+#ENDROOM
+
+#ROOM
+Vnum     8409
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8397
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8410
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8421
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8408
+#ENDEXIT
+
+Reset M 0 8006 195 8409
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 115 8409
+#ENDROOM
+
+#ROOM
+Vnum     8410
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8398
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8411
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8422
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8409
+#ENDEXIT
+
+Reset M 0 8006 195 8410
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 115 8410
+#ENDROOM
+
+#ROOM
+Vnum     8411
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8399
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8412
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8423
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8410
+#ENDEXIT
+
+Reset M 0 8006 195 8411
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 115 8411
+#ENDROOM
+
+#ROOM
+Vnum     8412
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8400
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8413
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8424
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8411
+#ENDEXIT
+
+Reset M 0 8006 195 8412
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 115 8412
+#ENDROOM
+
+#ROOM
+Vnum     8413
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8401
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8414
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8425
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8412
+#ENDEXIT
+
+Reset M 0 8006 195 8413
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 115 8413
+#ENDROOM
+
+#ROOM
+Vnum     8414
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8402
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8426
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8413
+#ENDEXIT
+
+Reset M 0 8006 195 8414
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 115 8414
+#ENDROOM
+
+#ROOM
+Vnum     8415
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8403
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8416
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8427
+#ENDEXIT
+
+Reset M 0 8006 195 8415
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 115 8415
+Reset M 0 8016 46 8415
+#ENDROOM
+
+#ROOM
+Vnum     8416
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8404
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8417
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8428
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8415
+#ENDEXIT
+
+Reset M 0 8006 195 8416
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 115 8416
+Reset M 0 8016 46 8416
+#ENDROOM
+
+#ROOM
+Vnum     8417
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8405
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8418
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8429
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8416
+#ENDEXIT
+
+Reset M 0 8006 195 8417
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 115 8417
+Reset M 0 8016 46 8417
+#ENDROOM
+
+#ROOM
+Vnum     8418
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8406
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8419
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8430
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8417
+#ENDEXIT
+
+Reset M 0 8006 195 8418
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 115 8418
+Reset M 0 8016 46 8418
+#ENDROOM
+
+#ROOM
+Vnum     8419
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8407
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8420
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8431
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8418
+#ENDEXIT
+
+Reset M 0 8006 195 8419
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 115 8419
+Reset M 0 8016 46 8419
+#ENDROOM
+
+#ROOM
+Vnum     8420
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8408
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8421
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8432
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8419
+#ENDEXIT
+
+Reset M 0 8006 195 8420
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 115 8420
+Reset M 0 8016 46 8420
+#ENDROOM
+
+#ROOM
+Vnum     8421
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8409
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8422
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8433
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8420
+#ENDEXIT
+
+Reset M 0 8006 195 8421
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 115 8421
+Reset M 0 8016 46 8421
+#ENDROOM
+
+#ROOM
+Vnum     8422
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8410
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8423
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8434
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8421
+#ENDEXIT
+
+Reset M 0 8006 195 8422
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 115 8422
+Reset M 0 8016 46 8422
+#ENDROOM
+
+#ROOM
+Vnum     8423
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8411
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8424
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8435
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8422
+#ENDEXIT
+
+Reset M 0 8006 195 8423
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 115 8423
+Reset M 0 8016 46 8423
+#ENDROOM
+
+#ROOM
+Vnum     8424
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8412
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8425
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8436
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8423
+#ENDEXIT
+
+Reset M 0 8006 195 8424
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 115 8424
+Reset M 0 8016 46 8424
+#ENDROOM
+
+#ROOM
+Vnum     8425
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8413
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8426
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8437
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8424
+#ENDEXIT
+
+Reset M 0 8006 195 8425
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 115 8425
+Reset M 0 8016 46 8425
+#ENDROOM
+
+#ROOM
+Vnum     8426
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8414
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8438
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8425
+#ENDEXIT
+
+Reset M 0 8006 195 8426
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 115 8426
+Reset M 0 8016 46 8426
+#ENDROOM
+
+#ROOM
+Vnum     8427
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8415
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8428
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8439
+#ENDEXIT
+
+Reset M 0 8006 195 8427
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 114 8427
+Reset M 0 8016 46 8427
+Reset M 0 8015 30 8427
+#ENDROOM
+
+#ROOM
+Vnum     8428
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8416
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8429
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8440
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8427
+#ENDEXIT
+
+Reset M 0 8006 195 8428
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 114 8428
+Reset M 0 8016 46 8428
+Reset M 0 8015 30 8428
+#ENDROOM
+
+#ROOM
+Vnum     8429
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8417
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8430
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8441
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8428
+#ENDEXIT
+
+Reset M 0 8006 195 8429
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 114 8429
+Reset M 0 8016 46 8429
+Reset M 0 8015 30 8429
+#ENDROOM
+
+#ROOM
+Vnum     8430
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8418
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8431
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8442
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8429
+#ENDEXIT
+
+Reset M 0 8006 195 8430
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 114 8430
+Reset M 0 8016 46 8430
+Reset M 0 8015 30 8430
+#ENDROOM
+
+#ROOM
+Vnum     8431
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8419
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8432
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8071
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8430
+#ENDEXIT
+
+Reset M 0 8006 195 8431
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 114 8431
+Reset M 0 8016 46 8431
+Reset M 0 8015 30 8431
+#ENDROOM
+
+#ROOM
+Vnum     8432
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8420
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8433
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8072
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8431
+#ENDEXIT
+
+Reset M 0 8006 195 8432
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 114 8432
+Reset M 0 8016 46 8432
+Reset M 0 8015 30 8432
+#ENDROOM
+
+#ROOM
+Vnum     8433
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8421
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8434
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8073
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8432
+#ENDEXIT
+
+Reset M 0 8006 195 8433
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 114 8433
+Reset M 0 8016 46 8433
+Reset M 0 8015 30 8433
+#ENDROOM
+
+#ROOM
+Vnum     8434
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8422
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8435
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8443
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8433
+#ENDEXIT
+
+Reset M 0 8006 195 8434
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 114 8434
+Reset M 0 8016 46 8434
+Reset M 0 8015 30 8434
+#ENDROOM
+
+#ROOM
+Vnum     8435
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8423
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8436
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8444
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8434
+#ENDEXIT
+
+Reset M 0 8006 195 8435
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 114 8435
+Reset M 0 8016 46 8435
+Reset M 0 8015 30 8435
+#ENDROOM
+
+#ROOM
+Vnum     8436
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8424
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8437
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8445
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8435
+#ENDEXIT
+
+Reset M 0 8006 195 8436
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 114 8436
+Reset M 0 8016 46 8436
+Reset M 0 8015 30 8436
+#ENDROOM
+
+#ROOM
+Vnum     8437
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8425
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8438
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8446
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8436
+#ENDEXIT
+
+Reset M 0 8006 195 8437
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 114 8437
+Reset M 0 8016 46 8437
+Reset M 0 8015 30 8437
+#ENDROOM
+
+#ROOM
+Vnum     8438
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8426
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8447
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8437
+#ENDEXIT
+
+Reset M 0 8006 195 8438
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 114 8438
+Reset M 0 8016 46 8438
+Reset M 0 8015 30 8438
+#ENDROOM
+
+#ROOM
+Vnum     8439
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8427
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8440
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8448
+#ENDEXIT
+
+Reset M 0 8006 195 8439
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 114 8439
+Reset M 0 8015 30 8439
+#ENDROOM
+
+#ROOM
+Vnum     8440
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8428
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8441
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8449
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8439
+#ENDEXIT
+
+Reset M 0 8006 195 8440
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 114 8440
+Reset M 0 8015 30 8440
+#ENDROOM
+
+#ROOM
+Vnum     8441
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8429
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8442
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8450
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8440
+#ENDEXIT
+
+Reset M 0 8006 195 8441
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 114 8441
+Reset M 0 8015 30 8441
+#ENDROOM
+
+#ROOM
+Vnum     8442
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8430
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8071
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8451
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8441
+#ENDEXIT
+
+Reset M 0 8006 195 8442
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 114 8442
+Reset M 0 8015 30 8442
+#ENDROOM
+
+#ROOM
+Vnum     8443
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8434
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8444
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8452
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8073
+#ENDEXIT
+
+Reset M 0 8006 195 8443
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 114 8443
+Reset M 0 8015 30 8443
+#ENDROOM
+
+#ROOM
+Vnum     8444
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8435
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8445
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8453
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8443
+#ENDEXIT
+
+Reset M 0 8006 195 8444
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 114 8444
+Reset M 0 8015 30 8444
+#ENDROOM
+
+#ROOM
+Vnum     8445
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8436
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8446
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8454
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8444
+#ENDEXIT
+
+Reset M 0 8006 195 8445
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 114 8445
+Reset M 0 8015 30 8445
+#ENDROOM
+
+#ROOM
+Vnum     8446
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8437
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8447
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8455
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8445
+#ENDEXIT
+
+Reset M 0 8006 195 8446
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 114 8446
+Reset M 0 8015 30 8446
+#ENDROOM
+
+#ROOM
+Vnum     8447
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8438
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8456
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8446
+#ENDEXIT
+
+Reset M 0 8006 195 8447
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 114 8447
+Reset M 0 8015 30 8447
+#ENDROOM
+
+#ROOM
+Vnum     8448
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8439
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8449
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8457
+#ENDEXIT
+
+Reset M 0 8006 195 8448
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 114 8448
+Reset M 0 8015 30 8448
+#ENDROOM
+
+#ROOM
+Vnum     8449
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8440
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8450
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8458
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8448
+#ENDEXIT
+
+Reset M 0 8006 195 8449
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 114 8449
+Reset M 0 8015 30 8449
+#ENDROOM
+
+#ROOM
+Vnum     8450
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8441
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8451
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8459
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8449
+#ENDEXIT
+
+Reset M 0 8006 195 8450
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 114 8450
+Reset M 0 8015 30 8450
+#ENDROOM
+
+#ROOM
+Vnum     8451
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8442
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8070
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8460
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8450
+#ENDEXIT
+
+Reset M 0 8006 195 8451
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 114 8451
+Reset M 0 8015 30 8451
+#ENDROOM
+
+#ROOM
+Vnum     8452
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8443
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8453
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8461
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8074
+#ENDEXIT
+
+Reset M 0 8006 195 8452
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 114 8452
+Reset M 0 8015 30 8452
+#ENDROOM
+
+#ROOM
+Vnum     8453
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8444
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8454
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8462
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8452
+#ENDEXIT
+
+Reset M 0 8006 195 8453
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8013 114 8453
+Reset M 0 8015 30 8453
+#ENDROOM
+
+#ROOM
+Vnum     8454
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8445
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8455
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8463
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8453
+#ENDEXIT
+
+Reset M 0 8006 195 8454
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8015 30 8454
+#ENDROOM
+
+#ROOM
+Vnum     8455
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8446
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8456
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8464
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8454
+#ENDEXIT
+
+Reset M 0 8006 195 8455
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8015 30 8455
+#ENDROOM
+
+#ROOM
+Vnum     8456
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8447
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8465
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8455
+#ENDEXIT
+
+Reset M 0 8006 195 8456
+  Reset E 1 8005 1 16
+  Reset E 1 8006 1 5
+Reset M 0 8015 30 8456
+#ENDROOM
+
+#ROOM
+Vnum     8457
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8448
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8458
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    676
+#ENDEXIT
+
+Reset M 0 8013 119 8457
+#ENDROOM
+
+#ROOM
+Vnum     8458
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8449
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8459
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8466
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8457
+#ENDEXIT
+
+Reset M 0 8013 119 8458
+#ENDROOM
+
+#ROOM
+Vnum     8459
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8450
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8460
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8467
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8458
+#ENDEXIT
+
+Reset M 0 8013 119 8459
+#ENDROOM
+
+#ROOM
+Vnum     8460
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8451
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8077
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8468
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8459
+#ENDEXIT
+
+Reset M 0 8013 119 8460
+#ENDROOM
+
+#ROOM
+Vnum     8461
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8452
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8462
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8472
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8075
+#ENDEXIT
+
+Reset M 0 8013 119 8461
+#ENDROOM
+
+#ROOM
+Vnum     8462
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8453
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8463
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8473
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8461
+#ENDEXIT
+
+Reset M 0 8013 119 8462
+Reset M 0 8016 60 8462
+#ENDROOM
+
+#ROOM
+Vnum     8463
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8454
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8464
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8474
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8462
+#ENDEXIT
+
+Reset M 0 8016 60 8463
+#ENDROOM
+
+#ROOM
+Vnum     8464
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8455
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8465
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8475
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8463
+#ENDEXIT
+
+Reset M 0 8016 60 8464
+#ENDROOM
+
+#ROOM
+Vnum     8465
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8456
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8464
+#ENDEXIT
+
+Reset M 0 8016 60 8465
+#ENDROOM
+
+#ROOM
+Vnum     8466
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8458
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8467
+#ENDEXIT
+
+Reset M 0 8016 60 8466
+#ENDROOM
+
+#ROOM
+Vnum     8467
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8459
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8468
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8466
+#ENDEXIT
+
+Reset M 0 8016 60 8467
+#ENDROOM
+
+#ROOM
+Vnum     8468
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8460
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8469
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8467
+#ENDEXIT
+
+Reset M 0 8016 60 8468
+#ENDROOM
+
+#ROOM
+Vnum     8469
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8077
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8470
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8468
+#ENDEXIT
+
+Reset M 0 8016 60 8469
+#ENDROOM
+
+#ROOM
+Vnum     8470
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8076
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8471
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8469
+#ENDEXIT
+
+Reset M 0 8016 60 8470
+#ENDROOM
+
+#ROOM
+Vnum     8471
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8075
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8472
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8470
+#ENDEXIT
+
+Reset M 0 8016 60 8471
+#ENDROOM
+
+#ROOM
+Vnum     8472
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8461
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8473
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8471
+#ENDEXIT
+
+Reset M 0 8016 60 8472
+#ENDROOM
+
+#ROOM
+Vnum     8473
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8462
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8474
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8472
+#ENDEXIT
+
+Reset M 0 8016 60 8473
+#ENDROOM
+
+#ROOM
+Vnum     8474
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8463
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8475
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8473
+#ENDEXIT
+
+Reset M 0 8016 60 8474
+#ENDROOM
+
+#ROOM
+Vnum     8475
+Name     Wandering Wasteland Earth~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8464
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8474
+#ENDEXIT
+
+Reset M 0 8016 60 8475
+#ENDROOM
+
+#ROOM
+Vnum     8476
+Name     Inside the gates of Hawk City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8079
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8085
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8078
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8477
+Name     A Hospital~
+Sector   city~
+Flags    nomob safe heal~
+#EXIT
+Direction south~
+ToRoom    8006
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8478
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     8479
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     8480
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     8481
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     8482
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     8483
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     8484
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     8485
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     8486
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     8487
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     8488
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     8489
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     8490
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     8491
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     8492
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     8493
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     8494
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     8495
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     8496
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     8497
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     8498
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction south~
+ToRoom    8499
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8499
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    8498
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8500
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     8587
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     8588
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     8591
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     8594
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     8596
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     8597
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     8598
+Name     Floating in a void~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    8599
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8599
+Name     Floating in a void~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction south~
+ToRoom    8598
+#ENDEXIT
+
+#ENDROOM
+
+#ENDAREA

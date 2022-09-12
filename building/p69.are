@@ -1,0 +1,736 @@
+#AREA   Colony P69~
+
+
+
+#AUTHOR Magnus~
+
+#RANGES
+0 0 0 1000
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 6477574
+
+#MOBILES
+#7000
+Hologram~
+A Training Hologram~
+A Training Hologram is here, in a fighting stance.
+~
+~
+3 0 0 Z
+25 0 37 5d10+250 2d4+2
+3 0
+8 8 0
+15 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+5 5 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#7001
+Hologram~
+A Training Hologram~
+A Training Hologram is here, in a fighting stance.
+~
+~
+3 0 0 Z
+50 0 -25 10d10+500 5d4+2
+8 0
+8 8 0
+18 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+10 10 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#7002
+Hologram~
+A Training Hologram~
+A Training Hologram is here, in a fighting stance.
+~
+~
+3 0 0 Z
+75 0 -87 15d10+750 7d4+2
+15 0
+8 8 0
+18 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+15 15 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#7003
+hologram~
+A Training Hologram~
+A Training Hologram is here, in a fighting stance.
+~
+~
+3 0 0 Z
+150 0 -275 30d10+1500 15d4+2
+24 0
+8 8 0
+18 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+30 30 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#7004
+hologram~
+A Training Hologram~
+A Training Hologram is here, in a fighting stance.
+~
+~
+3 0 0 Z
+300 0 -650 60d10+3000 30d4+2
+30 0
+8 8 0
+18 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+60 60 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#7005
+hologram~
+A Training Hologram~
+A Training Hologram is here, in a fighting stance.
+~
+~
+3 0 0 Z
+325 0 -712 65d10+3250 32d4+2
+40 0
+8 8 0
+18 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+65 65 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#7006
+hologram~
+A Training Hologram~
+A Training Hologram is here, in a fighting stance.
+~
+~
+3 0 0 Z
+450 0 -1025 90d10+4500 45d4+2
+60 0
+8 8 0
+18 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+90 90 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#7007
+hologram~
+A Training Hologram~
+A Training Hologram is here, in a fighting stance.
+~
+~
+3 0 0 Z
+600 0 -1400 120d10+6000 60d4+2
+80 0
+8 8 0
+18 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+85 65 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#7008
+A restraunt Owner~
+A Restraunt Owner~
+A Restraunt Owner is here, ready to take your order.
+~
+~
+134217731 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+0 0
+8 8 0
+18 10 10 18 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+#7009
+Weapon Shopkeeper~
+A P69 Weapon Shopkeeper~
+A P69 Weapon Shopkeeper is here, makeing a new blade.
+~
+~
+134217731 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+#7010
+Armor Shopkeeper~
+A G42 Weapon Shopkeeper~
+A P69 Armor Shopkeeper is here, makeing new armor.
+~
+~
+134217731 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+#7011
+Item Shopkeeper~
+A P69 Item Shopkeeper~
+A P69 Item Shopkeeper is standing here, smiling at you.
+~
+~
+134217731 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#0
+
+
+#ROOMS
+#7000
+Colony P69 Landing Pad~
+This is the Main Landing Pad on Colony P69. The smell of exhaust fills the
+air, and the sound of Mobile Suits being worked on can be heard. Lined up
+along the sides of the hanger are various MS and trasports ready to take
+off.
+&BTo go to X19600 say "X19"
+&BTo go to K46 say "K46"
+~
+0 48 1
+D0
+~
+~
+0 -1 7001
+> speech_prog K46~
+mpechoat $n You board a shuttle to Colony K46
+mpechoaround $n $n boards a shuttle to Colony K46
+mptransfer $n 6000
+~
+> speech_prog X19~
+mpechoat $n You board a shuttle to Colony X19600
+mpechoaround $n $n boards a shuttle to Colony X19600
+mptransfer $n 600
+~
+|
+S
+#7001
+North Of The Landing Pad~
+This is Colony P69. The ground of this colony is made of pure metal. The
+colony was created from from parts of MS that have been destroyed. This
+colony is the only colony that does not have artificial air.
+~
+0 0 1
+D0
+~
+~
+0 -1 7002
+D2
+~
+~
+0 -1 7000
+S
+#7002
+Entering Colony P69~
+This is Colony P69. The ground of this colony is made of pure metal. The
+colony was created from from parts of MS that have been destroyed. This
+colony is the only colony that does not have artificial air.
+~
+0 0 1
+D0
+~
+~
+0 -1 7003
+D2
+~
+~
+0 -1 7001
+S
+#7003
+Colony P69 Main Sector~
+~
+0 0 1
+D0
+~
+~
+0 -1 7008
+D1
+~
+~
+0 -1 7028
+D2
+~
+~
+0 -1 7002
+D3
+~
+~
+0 -1 7022
+D6
+~
+~
+0 -1 7007
+D7
+~
+~
+0 -1 7006
+D8
+~
+~
+0 -1 7005
+D9
+~
+~
+0 -1 7004
+S
+#7004
+Colony P69 Hotel~
+~
+0 8388608 1
+D6
+~
+~
+0 -1 7003
+S
+#7005
+Colony P69 Bank~
+~
+0 1280 1
+D7
+~
+~
+0 -1 7003
+S
+#7006
+Factory~
+~
+0 67109888 1
+D8
+~
+~
+0 -1 7003
+S
+#7007
+Workshop~
+~
+0 67109888 1
+D9
+~
+~
+0 -1 7003
+S
+#7008
+Colony P69~
+~
+0 0 1
+D0
+~
+~
+0 -1 7009
+D2
+~
+~
+0 -1 7003
+S
+#7009
+Elevator~
+This is the Elevator system. Its basically a teleporter that transports you
+to the area you wish to
+goto.
+Say 'Train' to go to the Training Sector
+Say 'Shop' to go to the Shopping Sector
+~
+0 0 1
+D2
+~
+~
+0 -1 7008
+> speech_prog Train~
+mpechoat $n Welcome to Colony P69's Training Area.
+mpechoaround $n $n is teleported away.
+mptransfer $n 7010
+~
+> speech_prog Shop~
+mpechoat $n Welcome to Colony P68's Shopping Area.
+mpechoaround $n $n is teleported away.
+mptransfer $n 7024
+~
+|
+S
+#7010
+Colony P69~
+~
+0 0 1
+D2
+~
+~
+0 -1 7011
+D3
+~
+~
+0 -1 7023
+S
+#7011
+The entrance To The Training Area~
+~
+0 0 1
+D0
+~
+~
+0 -1 7010
+D1
+~
+~
+0 -1 7012
+S
+#7012
+Colony P69 Training Center~
+*Warning* This is a ADVANCED colony. The training levels are alot harder
+then you think.
+~
+0 0 1
+D0
+~
+~
+0 -1 7013
+D1
+~
+~
+0 -1 7015
+D2
+~
+~
+0 -1 7017
+D3
+~
+~
+0 -1 7011
+D4
+~
+~
+0 -1 7020
+D5
+~
+~
+0 -1 7021
+D6
+~
+~
+0 -1 7014
+D7
+~
+~
+0 -1 7019
+D8
+~
+~
+0 -1 7016
+D9
+~
+~
+0 -1 7018
+S
+#7013
+Colony P69 Training Room 1~
+Say 'Start' to start the training program
+~
+0 8 1
+D2
+~
+~
+0 -1 7012
+> speech_prog Start~
+mpecho The room changes and you are outside.
+mpecho A hologram pops up from the ground.
+mpmload 7000
+~
+|
+S
+#7014
+Colony P69 Training Room 2~
+Say 'Start' to start the training program
+~
+0 8 1
+D9
+~
+~
+0 -1 7012
+> speech_prog Start~
+mpecho The room changes and you are outside.
+mpecho A hologram pops up from the
+group
+mpmload 7001
+~
+|
+S
+#7015
+Colony P69 Training Room 3~
+Say 'Start' to start the training program
+~
+0 8 1
+D3
+~
+~
+0 -1 7012
+> speech_prog Start~
+mpecho The room changes and you are outside.
+mpecho A hologram pops up from the ground.
+mpmload 7002
+~
+|
+S
+#7016
+Colony P69 Training Room 4~
+Say 'Start' to start the training program
+~
+0 8 1
+D7
+~
+~
+0 -1 7012
+> speech_prog Start~
+mpecho The room changes and you are
+outside.
+mpecho A hologram pops up from the ground.
+mpmload 7003
+~
+|
+S
+#7017
+Colony P69 Training Room 5~
+Say 'Start' to start the training program 
+~
+0 0 1
+D0
+~
+~
+0 -1 7012
+> speech_prog Start~
+mpecho The room changes and you are outside
+mpecho A hologram pops up from the ground.
+mpmload 7004
+~
+|
+S
+#7018
+Colony P69 Training Room 6~
+Say 'Start' to start the training program 
+~
+0 8 1
+D6
+~
+~
+0 -1 7012
+> speech_prog Start~
+mpecho The room changes and you are outside.
+mpecho A hologram pops up from the ground.
+mpmload 7005
+~
+|
+S
+#7019
+Colony P69 Training Room 7~
+Say 'Start' to start the training program 
+~
+0 8 1
+D8
+~
+~
+0 -1 7012
+> speech_prog Start~
+mpecho The room changes and you are outside.
+mpecho A hologram pops up from the
+ground.
+mpmload 7006
+~
+|
+S
+#7020
+Colony P69 Training Room 8~
+Say 'Start' to start the training program 
+~
+0 8 1
+D5
+~
+~
+0 -1 7012
+> speech_prog Start~
+mpecho The room changes and you are outside.
+mpecho A hologram pops up from the ground.
+mpmload 7007
+~
+|
+S
+#7021
+Healing Room~
+Say 'restore' to be healed
+~
+0 8 1
+D4
+~
+~
+0 -1 7012
+> speech_prog restore~
+mpechoat $n &RA red light heals you.
+mpechoaround $n &b$n is healed by a red light.
+mprestore $n 30000
+~
+|
+S
+#7022
+Colony P69 Restraunt~
+~
+0 8 1
+D1
+~
+~
+0 -1 7003
+S
+#7023
+Elevator~
+Say 'Main' to go to the main sector
+Say 'Shop' to go to the shopping sector
+~
+0 0 1
+D1
+~
+~
+0 -1 7010
+> speech_prog Main~
+mpechoat $n Welcome to The Main
+Sector
+mpechoaround $n $n is teleported away
+mptransfer $n 7009
+~
+> speech_prog Shop~
+mpechoat $n Welcome to Colony P69's Shopping Area.
+mpechoaround $n $n is teleported away.
+mptransfer $n 7024
+~
+|
+S
+#7024
+Shopping Area~
+~
+0 0 1
+D0
+~
+~
+0 -1 7025
+D2
+~
+~
+0 -1 7026
+D3
+~
+~
+0 -1 7027
+S
+#7025
+Weapon Store~
+You Enter the store only to see that it is empty. As you walk up to the
+counter there is a sign that reads. "Sorry No Weapons"
+You enter the store only to see that it has a small selection. As you walk
+up to the counter there is a sign that reads. "We only have alittle so
+dont take to
+much"
+~
+0 0 1
+D2
+~
+~
+0 -1 7024
+S
+#7026
+Armor Store~
+You Enter the store only to see that it is empty. As you walk up to the
+counter there is a sign that reads. "Sorry No Armor"
+~
+0 0 1
+D0
+~
+~
+0 -1 7024
+S
+#7027
+Elevator~
+Say 'Main' to go to the Main sector
+Say 'Train' to go to the Training Sector
+~
+0 0 1
+D1
+~
+~
+0 -1 7024
+> speech_prog Main~
+mpechoat $n Welcome to Colony P68's Main Sector
+mpechoaround $n $n is teleported away.
+mptransfer $n 7009
+~
+> speech_prog Train~
+mpechoat $n Welcome to Colony P69's Training Area.
+mpechoaround $n $n is teleported away.
+mptransder $n 7010
+~
+|
+S
+#7028
+Item Shop~
+~
+0 1024 1
+D3
+~
+~
+0 -1 7003
+S
+#0
+
+
+#RESETS
+M 1 7008 1 7022
+G 1 508 1
+G 1 10314 1
+M 1 7009 1 7025
+G 1 600 1
+G 1 59 1
+G 1 502 1
+M 1 7010 1 7026
+G 1 6802 1
+G 1 10301 1
+M 1 7011 1 7028
+G 1 2014 1
+G 1 10494 1
+S
+
+
+#SHOPS
+ 7008    0  0  0  0  0   120  90         0 23    ; A Restraunt Owner
+ 7009    0  0  0  0  0   120  90         0 23    ; A P69 Weapon Shopkeeper
+ 7010    0  0  0  0  0   120  90         0 23    ; A G42 Weapon Shopkeeper
+ 7011    0  0  0  0  0   120  90         0 23    ; A P69 Item Shopkeeper
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

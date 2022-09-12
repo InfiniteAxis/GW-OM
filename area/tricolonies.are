@@ -1,0 +1,6792 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         TriColonies~
+Author       Tehtrana~
+Ranges       1 1007 1 1007
+Economy      -2 568224240
+ResetMsg     You hear cheers as an event in another part of the city goes on.~
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       1300
+Keywords   Shop Owner~
+Short      the shop owner~
+Long       The shop owner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel stayarea nocorpse~
+Stats1     0 100 0 -150 1000 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   stock~
+Comlist   mpat 10399 mpoload 1300
+mpat 10399 mpoload 1301
+mpat 10399 mpoload 1302
+mpat 10399 mpoload 1303
+mpat 10399 mpoload 1304
+mpat 10399 mpoload 1305
+mpat 10399 mpoload 1308
+mpecho The owner restocks his shelves.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1301
+Keywords   a mighty stallion horse~
+Short      a mighty stallion~
+Long       A mighty stallion is here stamping it's feet.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc mountable nokill~
+Stats1     0 50 0 -25 0 0
+Stats2     10 10 500
+Stats3     5 4 2
+Stats4     0 0 0 10 10
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1302
+Keywords   General Store owner~
+Short      the general store owner~
+Long       The General Store owner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel stayarea nocorpse~
+Stats1     0 100 0 -150 1000 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   1 5 9 15 0 120 20 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       1303
+Keywords   a jungle adder emerald green snake~
+Short      an emerald green adder~
+Long       An emerald green adder is dangling infront of you ready to strike.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 100 0 -150 15 0
+Stats2     20 10 1000
+Stats3     10 10 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Bodyparts  tail~
+Immune     poison~
+Attacks    bite~
+#MUDPROG
+Progtype  time_prog~
+Arglist   2~
+Comlist   mpat 1334 mpoload 1309
+wear all
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1304
+Keywords   zombie undead~
+Short      a zombie~
+Long       A zombie is here coming towards you.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 150 0 -275 30 0
+Stats2     30 10 1500
+Stats3     15 20 2
+Stats4     0 0 0 30 30
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1305
+Keywords   baby dragon~
+Short      a baby dragon~
+Long       A baby dragon is flying all around you.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 250 0 -525 0 0
+Stats2     50 10 2500
+Stats3     25 25 2
+Stats4     0 0 0 50 50
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1306
+Keywords   a beautiful siren~
+Short      a beautiful siren~
+Long       A beautiful siren is coming towards you.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 250 0 -525 0 0
+Stats2     50 10 2500
+Stats3     30 50 100
+Stats4     0 0 0 50 50
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1307
+Keywords   a trainer~
+Short      a trainer~
+Long       A trainer is here ready to help you out.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel train~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    18 18 18 18 18 18 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1308
+Keywords   a Waiter~
+Short      a Waiter~
+Long       A Waiter
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel stayarea nocorpse~
+Stats1     0 100 0 -150 1000 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   order~
+Comlist   mpat 10399 mpoload 1310
+mpat 10399 mpoload 1311
+mpat 10399 mpoload 1312
+mpat 10399 mpoload 1313
+mpecho The Taco Bell man turns around and yells for some more food.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1309
+Keywords   a waiter~
+Short      a waiter~
+Long       A waiter is here ready to take your order.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel nocorpse~
+Stats1     0 100 0 -150 150 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#ENDMOBILE
+
+#MOBILE
+Vnum       1310
+Keywords   Shop keeper~
+Short      a shop keeper~
+Long       A shop keeper is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel stayarea~
+Stats1     0 100 0 -150 1000 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     fire cold electricity energy blunt pierce slash acid poison drain sleep charm~
+ShopData   0 5 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       1311
+Keywords   hologram quatr~
+Short      A Hologram of Quatre ~
+Long       A hologram of Quatre R. Winner stands here
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 200 0 -400 100 0
+Stats2     40 10 2000
+Stats3     1 4 0
+Stats4     0 0 0 7 7
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    punch~
+Defenses   dodge~
+#ENDMOBILE
+
+#MOBILE
+Vnum       1312
+Keywords   A guard~
+Short      a guard~
+Long       A guard is here looking around.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_customs_weapons~
+Specfun2    spec_customs_spice~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 250 0 -525 100 0
+Stats2     50 10 2500
+Stats3     25 4 2
+Stats4     0 0 0 50 50
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1313
+Keywords   Terra woman manager~
+Short      Terra~
+Long       Terra the Hotel's Manager stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel stayarea nocorpse~
+Stats1     0 1000 0 -2400 100 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    bite punch kick~
+Defenses   parry dodge~
+ShopData   0 0 0 0 0 120 110 1 23
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if is pc($n)
+beam
+say Welcome!
+say I have 4 rooms to offer you.
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1314
+Keywords   a junkie~
+Short      a junkie~
+Long       A junkie is here taking some drugs.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc wimpy~
+Stats1     0 50 0 -25 0 0
+Stats2     10 10 500
+Stats3     5 4 2
+Stats4     0 0 0 10 10
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   78 0 0 0 0 300 110 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       1315
+Keywords   emerald green roan~
+Short      &G&gan Emerald Green Roan~
+Long       &G&gA beautiful emerald green roan is here stamping its feet.&G
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel mountable mounted~
+Stats1     0 450 0 -1025 0 0
+Stats2     90 10 4500
+Stats3     45 4 2
+Stats4     0 0 0 90 90
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1316
+Keywords   A drug dealer~
+Short      a drug dealer~
+Long       A drug dealer is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel stayarea~
+Stats1     0 100 0 -150 1000 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       1317
+Keywords   &C a dolphin~
+Short      a dolphin~
+Long       A dolphin is here swimming.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 50 0 -25 0 0
+Stats2     10 10 500
+Stats3     5 4 2
+Stats4     0 0 0 10 10
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1318
+Keywords   Jason~
+Short      Jason~
+Long       Jason is here making some food.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel stayarea~
+Stats1     0 100 0 -150 1000 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   order~
+Comlist   mpat 10399 mpoload 1313
+mpat 10399 mpoload 1316
+mpecho Jason gets some more food out.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1319
+Keywords   a black motorcycle~
+Short      &za shiny black motorcycle~
+Long       &zA shiny black motorcycle is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel mountable nokill~
+Stats1     1000 1 0 97 0 0
+Stats2     0 10 10
+Stats3     0 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1320
+Keywords   a cute kitten~
+Short      a cute kitten~
+Long       A cute kitten is here playing with some yarn.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc aggressive mountable~
+Stats1     -1000 500 0 -1150 5000 0
+Stats2     100 10 5000
+Stats3     50 100 2
+Stats4     0 0 0 100 100
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Bodyparts  claws tusks tailattack~
+Immune     magic~
+Attacks    bite claws~
+#ENDMOBILE
+
+#MOBILE
+Vnum       1321
+Keywords   an emerald green motorcycle~
+Short      &G&ga shiny emerald green motorcycle&G~
+Long       &G&gA shiny emerald green motorcycle is here.&G
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel mountable nokill~
+Stats1     1000 1 0 97 0 0
+Stats2     0 10 10
+Stats3     0 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1322
+Keywords   a light blue motorcycle~
+Short      &Ba shiny light blue motorcycle&B ~
+Long       &BA shiny light blue motorcycle is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel mountable nokill~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1323
+Keywords   a shiny dark red motorcycle~
+Short      &R&ra shiny dark red motorcycle~
+Long       &R&rA shiny dark red motorcycle is here.&R
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel mountable nokill~
+Stats1     1000 1 0 97 0 0
+Stats2     0 10 10
+Stats3     0 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1324
+Keywords   the training equipment~
+Short      the training equipment~
+Long       Many different training equipment are here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel train~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    18 18 18 18 18 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1325
+Keywords   A Suzuki Hayabusa 1300~
+Short      A Suzuki Hayabusa 1300~
+Long       A Suzuki Hayabusa 1300 in a slick navy blue color is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel mountable~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    18 18 18 18 18 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1326
+Keywords   wufei hologram~
+Short      A hologram of Wufei Chang~
+Long       A hologram of Wufei Chang stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel stayarea~
+Stats1     0 400 0 -900 100 0
+Stats2     80 10 4000
+Stats3     1 4 0
+Stats4     0 0 0 10 10
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    punch~
+Defenses   dodge~
+#ENDMOBILE
+
+#MOBILE
+Vnum       1327
+Keywords   Milliard hologram~
+Short      A hologram of Milliardo Peacecraft~
+Long       A hologram of Milliardo Peacecraft stands here
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel stayarea~
+Stats1     0 600 0 -1400 100 0
+Stats2     120 10 6000
+Stats3     1 4 2
+Stats4     0 0 0 15 15
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Bodyparts  head heart guts~
+Attacks    bite punch~
+Defenses   parry dodge~
+#ENDMOBILE
+
+#MOBILE
+Vnum       1328
+Keywords   une lady hologram~
+Short      A hologram of Lady Une~
+Long       A hologram of Lady Une stands here
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel stayarea~
+Stats1     0 800 0 -1900 500 0
+Stats2     160 10 8000
+Stats3     1 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    punch~
+Defenses   dodge~
+#ENDMOBILE
+
+#MOBILE
+Vnum       1329
+Keywords   noin lucrezia hologram~
+Short      A hologram of Lucrezia Noin~
+Long       A hologram of Lucrezia Noin stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel stayarea~
+Stats1     0 900 0 -2150 500 0
+Stats2     180 10 9000
+Stats3     1 4 2
+Stats4     0 0 0 18 18
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    punch~
+Defenses   dodge~
+#ENDMOBILE
+
+#MOBILE
+Vnum       1330
+Keywords   relena hologram~
+Short      A hologram of Relena Peacecraft~
+Long       A hologram of Relena Peacecraft stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel stayarea~
+Stats1     0 1000 0 -2400 500 0
+Stats2     50 500 20000
+Stats3     1 4 0
+Stats4     0 0 0 10 10
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    punch~
+#ENDMOBILE
+
+#MOBILE
+Vnum       1331
+Keywords   Customs guard~
+Short      A Customs guard~
+Long       A Customs guard stands here checking you for illegal goods.
+~
+Desc       As you enter the Customs check point for P2 you notice this guard means
+buisness. He is here to guarentee the saftey of all the occupants of this
+colony. Unlike F4 and S19, P2 is a peace loving clean and drug free
+environment. All young men and women on P2 aspire to be a customs officer
+so they may be able to dedicate their life to the peace of their beloved
+Colony.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_customs_weapons~
+Specfun2    spec_customs_spice~
+Gender     female~
+Actflags   npc sentinel stayarea~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Bodyparts  head arms legs heart brains guts hands~
+Attacks    bite punch kick~
+Defenses   parry dodge~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if is pc($n)
+say Welcome to Colony P2.
+say Please note we have a no weapon policy.
+say As well as a no drugs policy.
+say Enjoy Your stay on P2.
+else
+nod
+say Enjoy your stay sir.
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1332
+Keywords   drug dog~
+Short      A drug dog~
+Long       A drug dog is here sniffing you for drugs.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel stayarea~
+Affected   truesight~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Bodyparts  head arms legs brains guts hands~
+Attacks    bite~
+Defenses   parry dodge~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if is pc($n)
+bark
+emote sniffs your body for drugs.
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1333
+Keywords   weapons master~
+Short      A weapons master~
+Long       A nervous looking weapons master stands here eyeing you warily.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel stayarea nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    bite punch kick~
+Defenses   parry dodge~
+ShopData   5 0 0 0 0 120 110 6 18
+#ENDMOBILE
+
+#MOBILE
+Vnum       1334
+Keywords   Auguste the Armorer~
+Short      Auguste~
+Long       Auguste the Armorer stands here eyeing your clothing critically.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel stayarea nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    bite punch kick~
+Defenses   parry dodge~
+ShopData   9 78 0 0 0 120 70 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       1335
+Keywords   frida~
+Short      Frida ~
+Long       Frida the Waitress stands here waiting for your order
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel stayarea~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 110 1 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       1336
+Keywords   Giorgio~
+Short      Giorgio~
+Long       Giorgio the Italian waiter awaits your order.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel stayarea~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 100 1 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       1337
+Keywords   supply service droid~
+Short      a newly created supply service droid~
+Long       A supply service droid awaits your purchase.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel stayarea nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    bite punch kick~
+ShopData   0 0 0 0 0 120 100 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       1338
+Keywords   tourist~
+Short      A tourist~
+Long       A tourist is here wandering around with a camera in hand.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc stayarea~
+Stats1     0 250 0 -525 100 0
+Stats2     50 10 2500
+Stats3     25 4 2
+Stats4     0 0 3 10 10
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Bodyparts  head arms legs heart brains guts eye~
+Attacks    bite punch kick~
+Defenses   dodge~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   If is pc($n)
+emote takes a picture of a tree.
+say Lovely Colony isn't it?
+else 
+nod
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1339
+Keywords   Marie~
+Short      Marie~
+Long       A red haired saleswoman stands here waiting paitently.
+~
+Desc       Your eyes gaze upon a petite red haired woman who is here selling the
+lovely custom made marital items that she has purchased or made herself.
+She is a shrewd buisness woman with a tender heart for couples in love.
+ 
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 100 1 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   hello~
+Comlist   if is pc($n)
+say Pardonnez Moi.
+say I forgot to put out some things
+mpoload 1357 0
+mpoload 1358 0
+mpoload 1359 0
+mpoload 1361 0
+mpoload 1362 0
+mpoload 1363 0
+mpoload 1364 0
+mpoload 1365 0
+mpoload 1366 0
+mpoload 1367 0
+mpoload 1368 0
+mpoload 1370 0
+mpoload 1328 0
+mpoload 1335 0
+mpoload 10316 0
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1340
+Keywords   Zax~
+Short      &bA &BB&Go&cun&Gt&By &zM&Ca&Wst&Ce&zr&w~
+Long       &YT&Oh&Ye &BB&Go&cun&Gt&By &zM&Ca&Wst&Ce&zr&P is leaning against the wall.
+~
+Desc       You look this Bounty Hunter up and down and realize that he is far much
+more experienced than you realized. He is a master in Bounty Hunting and
+has set up an office for those who know how to find him in order to give
+them experience and knowledge for hunting as he once did.  A reminder of
+his past is present on his right cheek under his dark eyes. A long jagged
+scar now grey with age graces his face and his once dark hair is now
+streaked heavily with iron grey. His well muscled physique is the only
+thing that gives him a remotely young appearance.
+ 
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 700 0 -1650 0 0
+Stats2     140 10 7000
+Stats3     70 4 2
+Stats4     0 0 0 140 140
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   mpforce $n give sash Zax
+if ovnuminv(1345)
+tell $n You truely are a master $n!
+mpgain $n 3 300000
+mpjunk sash
+else
+if ovnuminv(3010)
+tell $n Not bad.
+mpgain $n 3 25000
+mpjunk sash
+else
+if ovnuminv(3011)
+tell $n You could do better...
+mpgain $n 3 5000
+mpjunk sash
+endif
+say Hello $n
+mpjunk sash
+endif
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1341
+Keywords   Citizen~
+Short      A Homeless Citizen~
+Long       A homeless citizen is here begging for change.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 1 0 0 5 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+VIPFlags   TriColonies~
+#ENDMOBILE
+
+#MOBILE
+Vnum       1355
+Keywords   SD519 Military Base Guard~
+Short      SD519 Military Base Guard~
+Long       A SD519 Guard is standing at his post.
+~
+Desc       Just your average every day military base guard. Nothing special what so
+ever about this one. Anyone can simply tell this is your every day
+military guard.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 250 0
+Stats2     200 10 245000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    punch kick~
+Defenses   dodge~
+#ENDMOBILE
+
+#MOBILE
+Vnum       1356
+Keywords   Danielle Hotel Waitress~
+Short      Danielle The Hotel Waitress~
+Long       Here stands the Hotel Waitress.
+~
+Desc       A young sexy woman, her eyes are green. Her hair is the darkest jet black.
+Her athletic figure is more then any man could every wish for. She is
+wearing a silk black shirt with tight black pants. Her name tag on her
+shirt says "Hello my name is: Danielle"
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nokill~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say Hello, thank you for coming to SD519 Military Base
+say Hotel, we enjoy your visit and hope you enjoy your stay.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1357
+Keywords   Leo Man~
+Short      Leo~
+Long       A young man stands behind the counter.
+~
+Desc       A young man stands behind the counter. His eyes are fire red with black and
+green hair. He doesnt seem like the other people on the base, but he seems
+to know what he is doing in the shop. He is wearing a green military
+jacket with green military pants. The name on his tag say Private Leo
+Darkwood.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nokill prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       1499
+Keywords   last~
+Short      a newly created last~
+Long       Some god abandoned a newly created last here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#OBJECT
+Vnum     1300
+Keywords Emerald Green Chestplate~
+Type     armor~
+Short    An &gemerald&w chestplate~
+Long     A chestplate made of &gemerald&w lies here.~
+Flags    inventory~
+WFlags   take body~
+Values   50 50 0 0 0 0
+Stats    10 23000 2300 0 3
+Affect       -1 -1 5 18 0
+Affect       -1 -1 5 19 0
+Affect       -1 -1 1000 13 0
+#EXDESC
+ExDescKey    plate armour~
+ExDesc       This plate of armour will give you protection until you can find
+something better. 
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     1301
+Keywords Emerald Green Leg Plates~
+Type     armor~
+Short    A pair of &gemerald&w leg plates~
+Long     A pair of legplate made of &gemerald&w lie here.~
+Flags    inventory~
+WFlags   take legs~
+Values   50 50 0 0 0 0
+Stats    10 23000 2300 0 3
+Affect       -1 -1 3 1 0
+Affect       -1 -1 2 2 0
+Affect       -1 -1 500 14 0
+Affect       -1 -1 500 13 0
+Affect       -1 -1 20 17 0
+#EXDESC
+ExDescKey    plate armour~
+ExDesc       This plate of armour will give you protection until you can find
+something better. 
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     1302
+Keywords Emerald Green Helmet~
+Type     armor~
+Short    An &gemerald&w helmet~
+Long     A helmet made of &gemerald&w lies here.~
+Flags    inventory~
+WFlags   take head~
+Values   50 50 0 0 0 0
+Stats    5 20000 2000 0 0
+Affect       -1 -1 2 4 0
+Affect       -1 -1 5 18 0
+Affect       -1 -1 2 3 0
+Affect       -1 -1 2 25 0
+#EXDESC
+ExDescKey    plate armour~
+ExDesc       This plate of armour will give you protection until you can find
+something better. 
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     1303
+Keywords Emerald Green Boots~
+Type     armor~
+Short    A pair of &gemerald&w boots~
+Long     A pair of boots made of &gemerald&w lie here.~
+Flags    inventory~
+WFlags   take feet~
+Values   50 50 0 0 0 0
+Stats    5 18000 2300 0 0
+Affect       -1 -1 1000 14 0
+Affect       -1 -1 2 2 0
+Affect       -1 -1 20 17 0
+Affect       -1 -1 524288 26 0
+#EXDESC
+ExDescKey    plate armour~
+ExDesc       This plate of armour will give you protection until you can find
+something better. 
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     1304
+Keywords Emerald Green Armguards~
+Type     armor~
+Short    A pair of &gemerald&w armguards~
+Long     A pair of armguards made of &gemerald&w lies here.~
+Flags    inventory~
+WFlags   take arms~
+Values   50 50 0 0 0 0
+Stats    5 15000 1500 0 0
+Affect       -1 -1 1000 13 0
+Affect       -1 -1 20 17 0
+#EXDESC
+ExDescKey    plate armour~
+ExDesc       This plate of armour will give you protection until you can find
+something better. 
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     1305
+Keywords An &gemerald &wtipped spear~
+Type     weapon~
+Short    An &gemerald &wtipped spear~
+Long     A spear with a curious &gemerald &Gtip lies here.~
+Flags    hum contraband inventory~
+WFlags   take wield~
+Values   50 10 9 11 900 900
+Stats    8 1000 13000 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1306
+Keywords a baby newborn child kid~
+Type     food~
+Short    a newborn baby~
+Long     A newborn baby is wrapped in a blanket and sleeping here.~
+WFlags   take hold~
+Values   80 12 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1307
+Keywords horse meat~
+Type     food~
+Short    a slab of horse meat~
+Long     A slab of horse meat is here~
+WFlags   take hold~
+Values   80 12 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1308
+Keywords emerald green kite shield~
+Type     armor~
+Short    An &gemerald&w kite shield~
+Long     A kite shield made of &gemerald&w lies here.~
+Flags    inventory~
+WFlags   take shield~
+Values   50 50 0 0 0 0
+Stats    2 10000 2300 0 2
+Affect       -1 -1 5 19 0
+Affect       -1 -1 5 18 0
+Affect       -1 -1 20 17 0
+#EXDESC
+ExDescKey    plate armour~
+ExDesc       This plate of armour will give you protection until you can find
+something better. 
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     1309
+Keywords a giant snake fang~
+Type     weapon~
+Short    a giant snake fang~
+Long     You see a giant snake fang here.~
+Flags    magic~
+WFlags   take wield~
+Values   12 5 7 2 0 0
+Stats    3 500 50 0 0
+Affect       -1 -1 2 18 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1310
+Keywords a chalupa~
+Type     food~
+Short    a chalupa~
+Long     A chalupa is here still wrapped.~
+Flags    inventory~
+WFlags   take hold~
+Values   50 12 0 0 0 0
+Stats    1 2 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1311
+Keywords a large dr. pepper~
+Type     drinkcon~
+Short    a large Dr. Pepper~
+Long     A large Dr. Pepper is here.~
+WFlags   take hold~
+Values   40 40 15 0 0 0
+Stats    1 5 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1312
+Keywords a personal sized pizza~
+Type     food~
+Short    a personal sized pizza~
+Long     A personal sized pizza is here in it's pan.~
+WFlags   take hold~
+Values   50 12 0 0 0 0
+Stats    1 2 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1313
+Keywords a large coca cola~
+Type     drinkcon~
+Short    a large Coca-Cola~
+Long     A large Coca-Cola is here.~
+WFlags   take hold~
+Values   40 40 15 0 0 0
+Stats    1 5 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1314
+Keywords some unrefined carnium~
+Type     rawspice~
+Short    a some unrefined carnium~
+Long     A some unrefined carnium is here.~
+WFlags   take~
+Values   0 10 0 0 0 0
+Stats    1 200 20 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1315
+Keywords a doll holding a miniature clock~
+Type     grenade~
+Short    A cute baby doll~
+Long     A cute baby doll is here holding a miniature clock.~
+WFlags   take hold~
+Values   150 300 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1316
+Keywords a deli sandwich~
+Type     food~
+Short    a deli sandwich~
+Long     A deli sandwich is here.~
+WFlags   take hold~
+Values   50 12 0 0 0 0
+Stats    1 2 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1317
+Keywords a ball of yarn~
+Type     grenade~
+Short    a ball of yarn~
+Long     A ball of yarn is here~
+WFlags   take hold~
+Values   300 800 0 0 0 0
+Stats    1 1200 120 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1318
+Keywords a fountain~
+Type     fountain~
+Short    a beautiful stone fountain~
+Long     A beautifully carved stone fountain is here.~
+Values   1000 1000 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1319
+Keywords a dimensional vortex~
+Type     container~
+Short    a dimensional vortex~
+Long     A dimensional vortex is here shifting reality.~
+WFlags   take about~
+Values   20 0 0 0 0 0
+Stats    1 5 0 0 0
+Affect       -1 -1 -5 17 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1320
+Keywords a light blue key~
+Type     key~
+Short    a light blue key~
+Long     A light blue key is here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1321
+Keywords superconductor~
+Type     superconductor~
+Short    A superconductor~
+Long     A superconductor is lying here.~
+Flags    inventory~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    2 20 10000 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1322
+Keywords duraplast~
+Type     duraplast~
+Short    some duraplast~
+Long     Some duraplast lies here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 100 10 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1323
+Keywords wool sweater~
+Type     armor~
+Short    A wool sweater~
+Long     A wool sweater lies here all warm and soft.~
+Flags    inventory~
+WFlags   take body~
+Values   20 20 0 0 0 0
+Stats    1 10000 50 0 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 10 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1324
+Keywords pair of leather pants~
+Type     armor~
+Short    A pair of leather pants~
+Long     A pair of leather pants lies here.~
+Flags    inventory~
+WFlags   take legs~
+Values   100 100 0 0 0 0
+Stats    1 10000 50 0 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 10 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1325
+Keywords shovel~
+Type     shovel~
+Short    A shovel~
+Long     A shovel lays here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 25 2 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1326
+Keywords token pouch~
+Type     container~
+Short    a token pouch~
+Long     A token pouch is here.~
+Flags    glow hum~
+WFlags   take hold~
+Values   1000 1000 1000 1000 1000 0
+Stats    1 100 10 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1327
+Keywords crystal token~
+Type     crystal~
+Short    a crystal token~
+Long     Good for your choice of personalized item. Ring, belt or chestplate~
+Flags    glow hum~
+WFlags   take~
+Values   4 0 0 0 0 0
+Stats    1 10000 1000 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1328
+Keywords gold ring~
+Type     armor~
+Short    a gold ring~
+Long     A gold ring is here.~
+WFlags   take finger~
+Values   75 75 0 0 0 0
+Stats    1 1000 100 0 0
+Affect       -1 -1 1000 13 0
+Affect       -1 -1 5 18 0
+Affect       -1 -1 5 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1329
+Keywords belt~
+Type     armor~
+Short    a belt~
+Long     A belt is here.~
+WFlags   take waist~
+Values   1000 1000 0 0 0 0
+Stats    1 1000 100 0 0
+Affect       -1 -1 1000 14 0
+Affect       -1 -1 5 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1330
+Keywords chest plate~
+Type     armor~
+Short    a chestplate~
+Long     A chestplate lies here~
+WFlags   take body~
+Values   1000 1000 0 0 0 0
+Stats    1 10000 1000 0 0
+Affect       -1 -1 5 18 0
+Affect       -1 -1 5 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1331
+Keywords wrist guard~
+Type     armor~
+Short    A wrist guard~
+Long     A wrist guard made of tooled leather is here.~
+Flags    inventory~
+WFlags   take wrist~
+Values   75 75 0 0 0 0
+Stats    1 10000 210 0 2
+Affect       -1 -1 20 17 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 10 19 0
+Affect       -1 -1 1 1 0
+Affect       -1 -1 1 2 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1332
+Keywords ear guards~
+Type     armor~
+Short    A pair of ornate ear guards~
+Long     A pair of finely crafted ear guards lay here.~
+Flags    inventory~
+WFlags   take ears~
+Values   75 75 0 0 0 0
+Stats    1 10000 250 0 3
+Affect       -1 -1 2 3 0
+Affect       -1 -1 3 4 0
+Affect       -1 -1 1 25 0
+Affect       -1 -1 20 17 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1333
+Keywords pair of black leather gloves~
+Type     armor~
+Short    a pair of black leather gloves~
+Long     A pair of black leather gloves is here.~
+Flags    inventory~
+WFlags   take hands~
+Values   40 40 0 0 0 0
+Stats    1 400 250 0 2
+#ENDOBJECT
+
+#OBJECT
+Vnum     1334
+Keywords an Archer's Longbow~
+Type     weapon~
+Short    an Archer's Longbow~
+Long     A heavy wooden longbow lies here.~
+Flags    inventory~
+WFlags   take wield~
+Values   40 100 1 9 900 900
+Stats    10 9000 210 0 0
+Affect       -1 -1 20 17 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1335
+Keywords ring of crystal~
+Type     armor~
+Short    A ring of crystal~
+Long     A ring made of gold with set crystals lies here.~
+Flags    inventory~
+WFlags   take finger~
+Values   75 75 0 0 0 0
+Stats    1 1600 160 0 0
+Affect       -1 -1 500 13 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 3 1 0
+Affect       -1 -1 2 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1336
+Keywords gold key~
+Type     key~
+Short    a gold key~
+Long     The gold key is for the gold room.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 1000 100 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1337
+Keywords gold bed~
+Type     furniture~
+Short    A Golden Bed~
+Long     A Lavishly Decorated Golden Bed lies here in the middle of the room.~
+Values   1000 1000 2 1000 1000 0
+Stats    1000 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1338
+Keywords silver key~
+Type     key~
+Short    a silver key~
+Long     A silver key is here.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 750 75 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1339
+Keywords blue key~
+Type     key~
+Short    a blue key~
+Long     A blue key is here.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 500 50 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1340
+Keywords green key~
+Type     key~
+Short    a green key~
+Long     A green key is here.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 250 25 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1341
+Keywords fish n chips~
+Type     food~
+Short    Fish n Chips~
+Long     Yummy looking fish and french fries wrapped in a newspaper.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 20 2 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1342
+Keywords french fries~
+Type     food~
+Short    Some french fries~
+Long     Some deep friend french cut potatoes wrapped in newspaper.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 10 1 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1343
+Keywords fried fish~
+Type     food~
+Short    Fried fish~
+Long     Batter dipped deep fried fish wrapped in newspaper.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 10 1 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1344
+Keywords fish sandwich~
+Type     food~
+Short    a fish sandwich~
+Long     A succulent fish sandwich wrapped in cellophane.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 10 1 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1345
+Keywords An Ambassador's sash~
+Type     armor~
+Short    An Ambassador's sash~
+Long     A bright red sash worn by Relena Peacecraft.~
+WFlags   take waist~
+Values   1 1 0 0 0 0
+Stats    1 25000 2500 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1346
+Keywords plate of meat raviolli~
+Type     food~
+Short    a plate of meat raviolli~
+Long     A plate of delicious beef raviolli with sauteed mushrooms and tomato sauce.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 220 22 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1347
+Keywords plate of lasagna~
+Type     food~
+Short    a plate of lasagna~
+Long     A hot plate of noodles layered in delicious tomato sauce and 4 creamy cheeses topped with pepperoni.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 120 12 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1348
+Keywords garlic breadsticks covered with mozerella~
+Type     food~
+Short    a garlic breadsticks covered with mozerella~
+Long     Crispy hot bread with garlic butter covered in a white cheese.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 50 5 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1349
+Keywords plate of shrimp scampi~
+Type     food~
+Short    a plate of shrimp scampi~
+Long     A steaming plate of shrimp in a rich sauce.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 250 25 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1350
+Keywords Fettuchini Alfredo~
+Type     food~
+Short    A plate of Fettuchini Alfredo~
+Long     Flat broad noodles in a creamy four cheese sauce topped with parmesan cheese.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 120 12 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1351
+Keywords glass of red wine~
+Type     drinkcon~
+Short    a glass of red wine~
+Long     A clear glass of rose red wine.~
+WFlags   take hold~
+Values   10 10 2 0 0 0
+Stats    1 150 15 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1352
+Keywords plate of chicken parmesan~
+Type     food~
+Short    a plate of chicken parmesan~
+Long     A plate of breaded chicken covered in tomato sauce and parmesan cheese.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 130 13 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1353
+Keywords bowl of Soupe Au Pisto~
+Type     food~
+Short    a bowl of Soupe Au Pisto~
+Long     A bowl of pea soup with a garlic and basil pesto.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 75 7 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1354
+Keywords loaf of warm bread~
+Type     food~
+Short    a loaf of warm bread~
+Long     A crusty hot loaf of itallian bread.~
+WFlags   take hold~
+Values   1000 1000 0 0 0 0
+Stats    1 50 5 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1355
+Keywords plate of spagetti and meatballs~
+Type     food~
+Short    a plate of spagetti and meatballs~
+Long     A plate of steaming spagetti covered in a tomato basil sauce with meatballs on top.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 200 20 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1356
+Keywords bolt cartridge~
+Type     bolt~
+Short    a bolt cartridge~
+Long     A bolt cartridge is here.~
+WFlags   take hold~
+Values   1000 5000 0 0 0 0
+Stats    1 400 40 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1357
+Keywords bouquet of roses~
+Type     treasure~
+Short    A bouquet of soft pink and white roses~
+Long     Made with the utmost care this bouquet of roses is lavishly full and beautiful.~
+WFlags   take hold~
+Values   250 250 0 0 0 0
+Stats    1 150 15 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1358
+Keywords a bow tie~
+Type     armor~
+Short    A black bow tie~
+Long     A blck bow tie meant to be worn with a tuxedo~
+WFlags   take neck~
+Values   19 19 0 0 0 0
+Stats    1 300 30 0 0
+Affect       -1 -1 1000 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1359
+Keywords pair of Ghillie Brogues~
+Type     armor~
+Short    a pair of Ghillie Brogues~
+Long     A pair of leather lace up shoes made for formal scottish dress.~
+Flags    inventory~
+WFlags   take feet~
+Values   75 75 0 0 0 0
+Stats    1 750 75 0 3
+Affect       -1 -1 4 2 0
+Affect       -1 -1 5 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1360
+Keywords sporran~
+Type     container~
+Short    a sporran~
+Long     A pouch that is worn decoratively about the waist meant to hang over a kilt~
+Flags    inventory~
+WFlags   take waist~
+Values   25 25 0 1000 0 0
+Stats    1 1500 150 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1361
+Keywords white dress shirt~
+Type     armor~
+Short    a white dress shirt~
+Long     A white shirt meant to be worn under a tuxedo jacket.~
+Flags    inventory~
+WFlags   take body~
+Values   75 75 0 0 0 0
+Stats    1 500 50 0 0
+Affect       -1 -1 4 5 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1362
+Keywords tuxedo jacket~
+Type     armor~
+Short    A tuxedo jacket~
+Long     A black jacket with tails meant to be worn as part of a tuxedo.~
+Flags    inventory~
+WFlags   take about~
+Values   75 75 0 0 0 0
+Stats    1 750 75 0 0
+Affect       -1 -1 5 18 0
+Affect       -1 -1 250 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1363
+Keywords scottish kilt~
+Type     armor~
+Short    A scottish kilt~
+Long     A kilt made of wool tartan lays here.~
+Flags    inventory~
+WFlags   take legs~
+Values   75 75 0 0 0 0
+Stats    1 1500 150 0 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 1000 13 0
+Affect       -1 -1 3 25 0
+Affect       -1 -1 3 2 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1364
+Keywords A wedding band~
+Type     armor~
+Short    A wedding band~
+Long     A ring of pure gold with the enscription Until death do we part on the inside.~
+Flags    inventory~
+WFlags   take finger~
+Values   75 75 0 0 0 0
+Stats    1 10000 1000 0 0
+Affect       -1 -1 5 19 0
+Affect       -1 -1 5 18 0
+Affect       -1 -1 500 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1365
+Keywords wedding gown~
+Type     armor~
+Short    A white wedding gown~
+Long     A dress of white gossamer silk, decorated in white pearls in a lavish Eve of my lady style.~
+Flags    inventory~
+WFlags   take body~
+Values   75 75 0 0 0 0
+Stats    1 10000 1000 0 0
+#EXDESC
+ExDescKey    wedding gown~
+ExDesc       This beautiful white gown was carefully custom tailored for you. Soft white
+pearls trim the delicate neckline as the long sleeves come to a delicate
+lacy point which covers the knuckle on your middle finger. The silk used
+to create it was of fine gossamer silk and it flows easily on a breeze but
+can be as cool or as warm as need be.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     1366
+Keywords garter ~
+Type     treasure~
+Short    a garter ~
+Long     A garter  is here.~
+Flags    inventory~
+WFlags   take legs~
+Values   75 75 500 0 0 0
+Stats    1 250 25 0 3
+#ENDOBJECT
+
+#OBJECT
+Vnum     1367
+Keywords pair of black dress pants~
+Type     armor~
+Short    a pair of black dress pants~
+Long     A pair of black dress pants meant to go with a suit jacket~
+Flags    inventory~
+WFlags   take legs~
+Values   75 75 0 0 0 0
+Stats    1 900 90 0 0
+Affect       -1 -1 5 1 0
+Affect       -1 -1 3 4 0
+Affect       -1 -1 4 2 0
+Affect       -1 -1 500 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1368
+Keywords rose red boutinere~
+Type     treasure~
+Short    A red rose boutinere~
+Long     A single red rose to be worn on the right side of a man's chest~
+Flags    inventory~
+WFlags   take body~
+Values   75 75 1000 0 0 0
+Stats    1 250 25 0 3
+#ENDOBJECT
+
+#OBJECT
+Vnum     1370
+Keywords bridal veil~
+Type     treasure~
+Short    a bridal veil~
+Long     A white thin veil made to be worn on the head of a lovely bride.~
+Flags    inventory~
+WFlags   take head~
+Values   75 75 500 0 0 0
+Stats    1 250 25 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1371
+Keywords General Tiger Lawless Coffin~
+Type     container~
+Short    Coffin of General Tiger Lawless~
+Long     The Coffin of General Tiger Lawless lies in the middle of the room.~
+Values   1000 1 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    General Tiger Lawless Coffin~
+ExDesc       A dirty old coffin of a long loved General. This coffin has seen the years
+come and go, but yet the fine craftmans ship of the coffin remains in
+perfect shape. The coffin is about 6' long and 4' wide. It has many
+military signs all over the fine wood work. 
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     1372
+Keywords Note~
+Type     treasure~
+Short    Note~
+Long     A misplaced note lies on the ground.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    Note~
+ExDesc       To find the General's prized pair of boots. Find the room that has 3
+window's, 2 doors, and a hidden room. Once you have found the hidden room
+say this message. "I call you great General Tiger Lawless to open the way
+to your hidden power."
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     1499
+Keywords last~
+Type     trash~
+Short    a last~
+Long     A last is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     1300
+Name     Colony S19 Landing Pad~
+Sector   city~
+Flags    can_land can_fly docking~
+Desc     The massive landing pad is lit brightly by hundreds of floating globes.
+There are ships taking off and landing everywhere and many people are
+obviously quite afraid they will be crushed underneath a shuttle. The
+landing pad is shaped in a giant circle and all along the edges are
+blinking red, green, and white lights. There is a plaque next to the ship
+purchasing machine. To read the plaque type look plaque.
+&BTo go to P2, say "P2"
+To go to F4, say "F4"
+~
+#EXIT
+Direction north~
+ToRoom    1301
+#ENDEXIT
+
+#EXDESC
+ExDescKey    plaque sign gold wood~
+ExDesc       S19, P2 and F4 also known as Tricolonies is an area created and based upon
+Gundam Wing the Anime. All rights are reserved to the copyrighters of the
+Anime. This area was created by Yosua and Tehtrana as a representation of
+the Anime's Tricolony. The Area created that you see before you belongs to
+this mud. All names used in the area are solely copyrighted to the
+creators of Gundam Wing and Gundam. Unless a liscense is obtained from the
+copyrighters of Gundam Wing and Gundam the names are hereby  free to use.
+~
+#ENDEXDESC
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   P2~
+Comlist   mea $n A TriColonies Shuttle takes you to the P2 Colony.
+mptransfer $n 1420
+mpecho $n leaves to P2.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1301
+Name     A Massive Corridor~
+Sector   city~
+Flags    indoors~
+Desc     This massive corridor is about 300 meters wide and is basically the main
+hallway in the colony. Above you is not a protective bubble or anything
+but a high ceiling that is made out of thick glass. There are citizens
+bustling about but there is plenty of room for everyone. There is a nice
+cool breeze of the air conditioner in here.
+~
+#EXIT
+Direction north~
+ToRoom    1302
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1300
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1302
+Name     A Massive Corridor~
+Sector   city~
+Flags    indoors~
+Desc     This massive corridor is about 300 meters wide and is basically the main
+hallway in the colony. Above you is not a protective bubble or anything
+but a high ceiling that is made out of thick glass. There are citizens
+bustling about but there is plenty of room for everyone. There is a nice
+cool breeze of the air conditioner in here.
+~
+#EXIT
+Direction north~
+ToRoom    1303
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1301
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1303
+Name     A Massive Corridor~
+Sector   city~
+Flags    indoors~
+Desc     This massive corridor is about 300 meters wide and is basically the main
+hallway in the colony. Above you is not a protective bubble or anything
+but a high ceiling that is made out of thick glass. There are citizens
+bustling about but there is plenty of room for everyone. There is a nice
+cool breeze of the air conditioner in here. You can hear loud noises
+coming from the north and you can see a peaceful street branching off to
+the east.
+~
+#EXIT
+Direction north~
+ToRoom    1304
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1305
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1302
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1304
+Name     S19 Courtyard~
+Sector   city~
+Flags    indoors~
+Desc     This is the S19 Courtyard. People come from all over the colony just to
+have a peaceful afternoon in the beautiful park here. The courtyard is
+very large and has a park roughly the size of football stadium in the
+center. There are no vehicles allowed in Colony S19 so footpaths will take
+you to all the surrounding shops.
+~
+#EXIT
+Direction north~
+ToRoom    1317
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1318
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1303
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1319
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    2066
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    1321
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    1320
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    1323
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    1322
+#ENDEXIT
+
+Reset M 0 1341 4 1304
+Reset M 0 1341 4 1304
+Reset M 0 1341 4 1304
+#ENDROOM
+
+#ROOM
+Vnum     1305
+Name     Montpelier Street~
+Sector   city~
+Flags    indoors~
+Desc     Montpelier Street is the main residential hallway in the colony. On both
+sides of the hallway are homes built into the walls of the colony with
+artificial yards and trees. You see many happy families sitting outside of
+their homes having a picnic or playing games.
+~
+#EXIT
+Direction north~
+ToRoom    1315
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1306
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1316
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1303
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1306
+Name     Montpelier Street~
+Sector   city~
+Flags    indoors~
+Desc     Montpelier Street is the main residential hallway in the colony. On both
+sides of the hallway are homes built into the walls of the colony with
+artificial yards and trees. You see many happy families sitting outside of
+their homes having a picnic or playing games.
+~
+#EXIT
+Direction north~
+ToRoom    1313
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1307
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1311
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1305
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1307
+Name     Montpelier Street~
+Sector   city~
+Flags    indoors~
+Desc     Montpelier Street is the main residential hallway in the colony. On both
+sides of the hallway are homes built into the walls of the colony with
+artificial yards and trees. You see many happy families sitting outside of
+their homes having a picnic or playing games.
+~
+#EXIT
+Direction north~
+ToRoom    1309
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1308
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1310
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1306
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1308
+Name     Chez Marie~
+Sector   city~
+Flags    indoors~
+Desc     You seem to have stumbled into a rather odd looking shop. Flowers of many
+hues lay around in neatly bunched bouquets. A mannequin in the corner
+wears a tuxedo. Hanging on the west wall is a beautiful wedding gown of
+gossamer silk. Looks like you stumbled into a Wedding shop. At the neat
+desk stands a tall lanky woman. She smiles politely and offers to show you
+her meager Wedding shop.  Available to you is a wide variety of rings,
+dresses and outfits for the man. 
+ 
+&CJust say &Rhello&C if Marie is missing anything and she will promptly get
+it for you. &w
+ 
+~
+#EXIT
+Direction west~
+ToRoom    1307
+#ENDEXIT
+
+Reset M 0 1339 1 1308
+  Reset G 1 1365 1
+  Reset G 1 1364 1
+  Reset G 1 1335 1
+  Reset G 1 1363 1
+  Reset G 1 1362 1
+  Reset G 1 1361 1
+  Reset G 1 1328 1
+  Reset G 1 10316 1
+  Reset G 1 1359 1
+  Reset G 1 1358 1
+  Reset G 1 1357 1
+  Reset G 1 1370 1
+  Reset G 1 1366 1
+  Reset G 1 1367 1
+  Reset G 1 1368 1
+#ENDROOM
+
+#ROOM
+Vnum     1309
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction south~
+ToRoom    1307
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1310
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction north~
+ToRoom    1307
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1311
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction north~
+ToRoom    1306
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1312
+Name     An Empty Home~
+Sector   city~
+Flags    nomob indoors empty_home~
+#ENDROOM
+
+#ROOM
+Vnum     1313
+Name     An Empty Apartment~
+Sector   city~
+Flags    indoors empty_home~
+Owner    Danie~
+#EXIT
+Direction south~
+ToRoom    1306
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1314
+Name     Sanctuary~
+Sector   city~
+Flags    indoors~
+Desc     Welcome to the Sanctuary.  Here you can be healed . Just say heal and you
+will be cleansed and your wounds treated.
+~
+#EXIT
+Direction southwest~
+ToRoom    1389
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1315
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+Owner    Gillmon~
+#EXIT
+Direction south~
+ToRoom    1305
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1316
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction north~
+ToRoom    1305
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1317
+Name     A Hallway~
+Sector   city~
+Flags    indoors~
+Desc     This hallway is much smaller that the main one but it is still a
+considerable size. It too has a large glass ceiling. There are many
+business people running in and out of the offices to the west and you can
+see a large blue tube, to the north, that must be the turbolift of the
+colony.
+~
+#EXIT
+Direction north~
+ToRoom    1329
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1304
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1325
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1318
+Name     General Store~
+Sector   city~
+Flags    indoors~
+Desc     You've entered a quaint but clean General Store. The gentleman behind the
+counter is here brushing off his wares, although there is no dust on them.
+He caters to a wide variety of things just ask him what he has to offer.
+~
+#EXIT
+Direction west~
+ToRoom    1304
+#ENDEXIT
+
+Reset M 0 1302 2 1318
+  Reset G 1 10314 1
+  Reset G 1 1331 1
+  Reset G 1 1316 1
+  Reset G 1 1307 1
+  Reset G 1 1354 1
+  Reset G 1 1325 1
+  Reset G 1 1324 1
+  Reset G 1 1323 1
+  Reset G 1 1332 1
+  Reset G 1 1313 1
+#ENDROOM
+
+#ROOM
+Vnum     1319
+Name     Armor and Weapon Store~
+Sector   city~
+Flags    indoors~
+Desc     There are weapons and armor all over the walls here. You can tell this shop
+specializes in green emerald equipment because it makes up most of the
+items here.
+&BSay, "Stock" to restock the shopkeeper.&C
+~
+#EXIT
+Direction east~
+ToRoom    1304
+#ENDEXIT
+
+Reset M 0 1310 3 1319
+  Reset G 1 1305 1
+  Reset G 1 1304 1
+  Reset G 1 1303 1
+  Reset G 1 1302 1
+  Reset G 1 1301 1
+  Reset G 1 1300 1
+  Reset G 1 1356 1
+#ENDROOM
+
+#ROOM
+Vnum     1320
+Name     Hospital~
+Sector   city~
+Flags    indoors heal~
+Desc     In the hospital there are many beds spread around where patients are
+sleeping peacefully as doctors work on them. The hospital is painted white
+and all of the doctors and nurses are in white uniforms too. There are
+some chairs in which you can sit in while you are waiting or you could
+ask for a heal from a nurse.
+~
+#EXIT
+Direction southeast~
+ToRoom    1304
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1321
+Name     Taco Bell/Pizza Hut~
+Sector   city~
+Flags    indoors~
+Desc     This quickly growing fast food franchais has placed itself here in the
+quiet Colony S19. There are tables spread around with chairs at each one
+and there is a counter at which you can order your food at. You see many
+busy civilians, working in the back, trying to make your meal as fast as
+possible. If they don't have any more food, just order some more. 
+~
+#EXIT
+Direction southwest~
+ToRoom    1304
+#ENDEXIT
+
+Reset M 0 1308 1 1321
+  Reset G 1 1313 1
+  Reset G 1 1311 1
+  Reset G 1 1310 1
+#ENDROOM
+
+#ROOM
+Vnum     1322
+Name     The S19 Hotel~
+Sector   city~
+Flags    indoors hotel~
+Desc     In the hotel there are many civilians going up to their rooms and people
+leaving too. You are in the main room where people come to talk and
+exchange news. There is a desk where you can check in for the night if you
+want.
+~
+#EXIT
+Direction northeast~
+ToRoom    1304
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    1324
+Flags     secret hidden~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1323
+Name     A Dimly Lit Room~
+Sector   city~
+Flags    dark nomob indoors bank~
+Desc     You can tell this dark and dusty room used to be a bank. In the corner you
+can see a dimly blinking ATM machine that still works. 
+~
+#EXIT
+Direction northwest~
+ToRoom    1304
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    1324
+Flags     secret hidden~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1324
+Name     A Hidden Alcove~
+Sector   city~
+Flags    indoors hotel~
+Desc     In this hidden alcove there are shelves lining the walls and there seem to
+be massive amounts of supplies hidden away for some unknown reason. The
+idea that you have stumbled onto such wonderful cache of weapons makes
+your mind boggle. There are rows and rows of weaponry but you can guess
+that they are guarded by security detectors... but maybe there are a few
+that aren't.
+~
+#EXIT
+Direction northeast~
+ToRoom    1323
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    1322
+#ENDEXIT
+
+Reset M 0 1341 7 1324
+Reset M 0 1341 7 1324
+Reset M 0 1341 7 1324
+#ENDROOM
+
+#ROOM
+Vnum     1325
+Name     An Apartment Complex~
+Sector   city~
+Flags    indoors~
+Desc     You've stepped into the lobby of an apartment complex. A small gentleman
+stands in the corner gazing at you expectantly hoping you'll purchase one.
+ 
+~
+#EXIT
+Direction north~
+ToRoom    1326
+Flags     can_enter~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1317
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1327
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1328
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1326
+Name     An Empty Apartment~
+Sector   city~
+Flags    indoors empty_home~
+Owner    Jefed~
+#EXIT
+Direction south~
+ToRoom    1325
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1327
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction north~
+ToRoom    1325
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1328
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+Owner    Mouse~
+#EXIT
+Direction east~
+ToRoom    1325
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1329
+Name     A Hallway~
+Sector   city~
+Flags    indoors~
+Desc     This hallway is much smaller that the main one but it is still a
+considerable size. It too has a large glass ceiling. There are many
+business people running in and out of the offices and you can see a large
+blue tube, to the north, that must be the turbolift of the colony.
+~
+#EXIT
+Direction north~
+ToRoom    1330
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1317
+#ENDEXIT
+
+Reset M 0 1341 1 1329
+#ENDROOM
+
+#ROOM
+Vnum     1330
+Name     The Turbolift~
+Sector   city~
+Flags    indoors~
+Desc     This is the Colony S19 Turbolift. In general this is a giant elevator that
+takes people to and from the different levels of the colony. You are on a
+small platform along with a few other people and there are many hundreds of
+platforms in the turbolift. There is a constant rush of wind as people are
+moving up and down levels. There is a voice recognition module near you.
+Just tell it whether you want to go up or down.
+~
+#EXIT
+Direction south~
+ToRoom    1329
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   down~
+Comlist   mea $n You are taken down a level.
+mptransfer $n 1331
+mpecho $n goes down a level.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   up~
+Comlist   mea $n You are taken up a level.
+mptransfer $n 1340
+mpecho $n goes up a level.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1331
+Name     The Turbolift~
+Sector   city~
+Flags    indoors~
+Desc     This is the Colony S19 Turbolift. In general this is a giant elevator that
+takes people to and from the different levels of the colony. You are on a
+small platform along with a few other people and there are many hundred of
+platforms in the turbolift. There is a constant rush of wind as people are
+moving up levels. There is a voice recognition module near you. Just tell
+the module whether you want to go up or down.
+~
+#EXIT
+Direction south~
+ToRoom    1332
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   up~
+Comlist   mea $n You are taken up a level.
+mptransfer $n 1330
+mpecho $n is taken up a level.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1332
+Name     A Brightly Lit Hallway~
+Sector   city~
+Flags    indoors~
+Desc     You are in a brightly lit hallway that is lined with glowing orbs much like
+the ones at the landing pad. There are combat fighters and soldiers
+heading to the training arena to work on their techniques and become more
+experienced.
+~
+#EXIT
+Direction north~
+ToRoom    1331
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1333
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1333
+Name     Training Arena~
+Sector   city~
+Flags    indoors~
+Desc     This is the Training Arena. It is a large round arena with four large doors
+on four different parts of the circle. The higher the level the harder the
+fights are. There is a large platform in the center of the arena that is
+used to take injured people down to the medical station. You could
+probably hop a ride onto it when you wanted. There is a large elevator
+heading up into the roof of the arena too.
+~
+#EXIT
+Direction north~
+ToRoom    1332
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    1339
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    1338
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    1336
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    1334
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    1337
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    1335
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1334
+Name     Level One~
+Sector   city~
+Flags    indoors~
+Desc     You enter the first door and find yourself in a totally different world.
+You are in a humid jungle and you can hardly see 20 feet in front of you
+because of the trees. Behind you is the large doorway back into the
+training arena. You suddenly hear a faint, soothing noise...
+&BSay, "Hiss" when you realize what the noise is.&C
+~
+#EXIT
+Direction southeast~
+ToRoom    1333
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   hiss~
+Comlist   mmpurge 1303
+mpecho You look up to see a giant snake dangling in front of you.
+mpmload 1303
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1335
+Name     Level Three~
+Sector   city~
+Flags    indoors~
+Desc     You find yourself in the sky... floating above the planet earth. The clouds
+blow by you and you feel a cool chill as they surround you. A loud
+screeching noise can be heard high above you. It sounds like it is coming
+towards you at a very fast speed.
+&BSay, "Airborn" to look up. &C
+~
+#EXIT
+Direction northeast~
+ToRoom    1333
+#ENDEXIT
+
+Reset M 0 1305 1 1335
+#MUDPROG
+Progtype  speech_prog~
+Arglist   airborn~
+Comlist   mmpurge 1305
+mpecho The clouds part and a large scaly creature is coming towards you.
+mpmload 1305
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1336
+Name     Level Two~
+Sector   city~
+Flags    indoors~
+Desc     You find yourself in an old bedroom of a dead mansion. The strong smell of
+decay is coming from all around you. You hear a slow thumping noise and
+suddenly the door bursts open. 
+&BSay, "Undead" to look at what burst through the door.
+~
+#EXIT
+Direction southwest~
+ToRoom    1333
+#ENDEXIT
+
+Reset M 0 1304 2 1336
+Reset M 0 1304 2 1336
+#MUDPROG
+Progtype  speech_prog~
+Arglist   undead~
+Comlist   mmpurge 1304
+mpecho A zombie emerges from the doorway.
+mpmload 1304
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1337
+Name     Level Four~
+Sector   city~
+Flags    indoors~
+Desc     You are thrust into a strange vortex as you gaze about you. The colors are
+all swirling together to create some strange united blend. There is a
+strange singing coming from just beyond your reach. Strange but sweet this
+song is. You feel a sudden hunger to find out what beautiful creature
+could sing such a lovely song.
+&BSay, "Music" to find out what is singing. &C
+~
+#EXIT
+Direction northwest~
+ToRoom    1333
+#ENDEXIT
+
+Reset M 0 1306 1 1337
+#MUDPROG
+Progtype  speech_prog~
+Arglist   music~
+Comlist   mmpurge 1306
+mpecho The vortex opens up and a siren comes charging out of it.
+mpmload 1306
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1338
+Name     Medic~
+Sector   city~
+Flags    indoors heal~
+Desc     This is the medical station. The large platform that brings down the injured
+is covered in white uniforms of medics trying to heal the wounds of the
+injured fighters. You could probably just grab a heal from the
+Bind-o-Matic machine.
+~
+#EXIT
+Direction up~
+ToRoom    1333
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1339
+Name     Trainer~
+Sector   city~
+Flags    indoors~
+Desc     This is the training room. There are rows and rows of heavy weight lifting
+machines all along the walls. There are book shelves and computers in the
+room too. There seems to be an area marked off for agility and dexterity
+excercises.
+~
+#EXIT
+Direction down~
+ToRoom    1333
+#ENDEXIT
+
+Reset M 0 1307 1 1339
+#ENDROOM
+
+#ROOM
+Vnum     1340
+Name     The Turbolift~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is the Colony S19 Turbolift. In general this is a giant elevator that
+takes people to and from the different levels of the colony. You are on a
+small platform along with a few other people and there are many hundred of
+platforms in the turbolift. There is a constant rush of wind as people are
+moving down levels. There is a voice recognition module near you. Just
+tell the module whether you want to go up or down.
+~
+#EXIT
+Direction north~
+ToRoom    1342
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1348
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1345
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1341
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   down~
+Comlist   mea $n You are taken down a level.
+mptransfer $n 1330
+mpecho $n goes down a level.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1341
+Name     The Library~
+Sector   city~
+Flags    indoors silence~
+Desc     The walls of the library are covered in shelves that are littered with
+books. It is so quiet in here you could hear a foot tapping from across
+the library. This is a place to come if you are tired of listening to the
+babbling of the galaxy and want to take a moment to do some studying.
+~
+#EXIT
+Direction east~
+ToRoom    1340
+#ENDEXIT
+
+Reset M 0 1301 2 1341
+#ENDROOM
+
+#ROOM
+Vnum     1342
+Name     Factory Shop~
+Sector   city~
+Flags    indoors~
+Desc     This is the factory shop. There are many shelves filled with items that you
+would need to engineer. A large man is running around trying to organize
+some new shipments that just came in.
+~
+#EXIT
+Direction east~
+ToRoom    1343
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1340
+#ENDEXIT
+
+Reset M 0 1310 3 1342
+  Reset G 1 2021 1
+  Reset G 1 2024 1
+  Reset G 1 2009 1
+  Reset G 1 2022 1
+  Reset G 1 1322 1
+  Reset G 1 10491 1
+  Reset G 1 1325 1
+  Reset G 1 2023 1
+  Reset G 1 10492 1
+  Reset G 1 2025 1
+  Reset G 1 1321 1
+  Reset G 1 2026 1
+#ENDROOM
+
+#ROOM
+Vnum     1343
+Name     Factory~
+Sector   city~
+Flags    nomob indoors refinery factory~
+Desc     This is the factory itself. It is a massive room with many dividers to
+section off areas for engineers to work peacefully. You go over to an
+empty stall and quickly clean off the workbench.
+~
+#EXIT
+Direction west~
+ToRoom    1342
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1344
+Name     Mender~
+Sector   city~
+Flags    indoors~
+Desc     There are many tables filled with cloth and pieces of metal spread all over
+tables in here. This is the Mender's room and a hired engineer will repair
+your clothes, armor, or weapons for a small fee. There are sparks flying
+everywhere as a few engineers are working on repairing a piece of titanium
+off of a Serpant.
+~
+#EXIT
+Direction north~
+ToRoom    1348
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1345
+Name     Horse Field~
+Sector   field~
+Flags    indoors nofloor~
+Desc     You are in a large artificial field of grass with many obstacles scattered
+around. There are horses grazing on the grass and a few riders training
+their horses on the course. The horses are the public's property and no
+one would mind if you took one for a ride. You hear a strange crying sound
+coming from underneath the ground. You think you can see a slope to the
+south.
+~
+#EXIT
+Direction north~
+ToRoom    1340
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1347
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1346
+#ENDEXIT
+
+Reset M 0 1301 2 1345
+Reset D 0 1345 1 0
+#ENDROOM
+
+#ROOM
+Vnum     1346
+Name     Trainer's Lounge~
+Sector   city~
+Flags    indoors hotel~
+Desc     This is where the horse trainers come when they are done with a days work.
+There are many comfortable sofas laid all around and many vending machines
+to give you a cool refreshment. There don't seem to be many people in here
+right now because most of them are out in the field training.
+~
+#EXIT
+Direction east~
+ToRoom    1345
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1347
+Name     A Stall~
+Sector   field~
+Flags    indoors~
+Desc     This is a horse stall and right now it seems to be empty. If you want you
+could leave your horse in here and if no one let it free it should stay.
+There is a hay pile in one corner and a large container of water in the
+other. There are soft mattresses for your horse to lay down on when it
+goes to sleep.
+~
+#EXIT
+Direction west~
+ToRoom    1345
+Flags     isdoor~
+#ENDEXIT
+
+Reset D 0 1347 3 0
+#ENDROOM
+
+#ROOM
+Vnum     1348
+Name     Repair Wing~
+Sector   city~
+Flags    indoors~
+Desc     This is the repair wing. People come here when their clothes are in need of
+patching, their armor is starting to break, or their weapons are either
+damaged or in need of some more ammunition. There are two rooms here, one
+for weapons to be recharged and another for clothes to be fixed.
+~
+#EXIT
+Direction east~
+ToRoom    1349
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1344
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1340
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1349
+Name     Charger~
+Sector   city~
+Flags    indoors~
+Desc     This is the charger's room. The Charger will place your weapon on a tray
+and send it through the charging machine which will refill all of your
+ammo. Sometimes it doesn't work so he also has some spare ammo cells that
+you can use to manually recharge your weapon.
+~
+#EXIT
+Direction west~
+ToRoom    1348
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1350
+Name     Floating in the void~
+Sector   city~
+Flags    nomob bank hotel heal docking~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   P2~
+Comlist   mea $n A TriColonies Shuttle takes you to the P2 Colony.
+mptransfer $n 1420
+mpecho $n leaves to P2.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   f4~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   s19~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   s19~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1351
+Name     Intersection of Mainstreet and Broadway~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction north~
+ToRoom    1353
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1352
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1352
+Name     Broadway~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction north~
+ToRoom    1351
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1354
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1353
+Name     Broadway~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction south~
+ToRoom    1351
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1354
+Name     &tS&tp&te&tn&tc&te&tr&t'&ts~
+Sector   city~
+Flags    prototype~
+Desc     This store is filled with many things. Things you wouldn't likely see
+anywhere else. There are many different off the wall items you can choose
+from. Each displayed on one of the four walls somewhere. The entire inside
+of the building is dark. Almost too dark to see what's going on around
+you. I'm sure if you ask the clerk they can give you a "list" of what they
+have for sale.
+~
+#EXIT
+Direction west~
+ToRoom    1352
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1355
+Name     SD519 Landing Bay~
+Sector   city~
+Flags    nomob can_land can_fly prototype~
+#EXIT
+Direction north~
+ToRoom    1356
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1356
+Name     North Street~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction north~
+ToRoom    1357
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1355
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1357
+Name     North Street~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction north~
+ToRoom    1358
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1356
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1358
+Name     SD519 Military Base~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction north~
+ToRoom    1359
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1357
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   1~
+Comlist   mea $n You are taken to level 1.
+mptransfer $n 1358
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   2~
+Comlist   mea $n You are taken to level 2.
+mptransfer $n 1365
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   3~
+Comlist   mea $n You are taken to level 3.
+mptransfer $n 1372
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   4~
+Comlist   mea $n You are taken to level 4.
+mptransfer $n 1379
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   5~
+Comlist   mea $n You are taken to level 5.
+mptransfer $n 1386
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1359
+Name     SD519 Guard Post~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction north~
+ToRoom    1380
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1360
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1358
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1379
+#ENDEXIT
+
+Reset M 0 1355 1 1359
+#ENDROOM
+
+#ROOM
+Vnum     1360
+Name     South Wall~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction east~
+ToRoom    1361
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1359
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1361
+Name     South Wall~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction east~
+ToRoom    1362
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1360
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1362
+Name     South Wall~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction east~
+ToRoom    1363
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1361
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   1~
+Comlist   mea $n You are taken to level 1.
+mptransfer $n 1362
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   2~
+Comlist   mea $n You are taken to level 2.
+mptransfer $n 1371
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   3~
+Comlist   mea $n You are taken to level 3.
+mptransfer $n 1378
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   4~
+Comlist   mea $n You are taken to level 4.
+mptransfer $n 1385
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   5~
+Comlist   mea $n You are taken to level 5.
+mptransfer $n 1392
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1363
+Name     Southeast Wall~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction north~
+ToRoom    1364
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1362
+#ENDEXIT
+
+Reset M 0 1355 5 1363
+#ENDROOM
+
+#ROOM
+Vnum     1364
+Name     East Wall~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction north~
+ToRoom    1365
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1363
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1365
+Name     East Wall~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction north~
+ToRoom    1366
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1364
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   1~
+Comlist   mea $n You are taken to level 1.
+mptransfer $n 1358
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   2~
+Comlist   mea $n You are taken to level 2.
+mptransfer $n 1365
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   3~
+Comlist   mea $n You are taken to level 3.
+mptransfer $n 1372
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   4~
+Comlist   mea $n You are taken to level 4.
+mptransfer $n 1379
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   5~
+Comlist   mea $n You are taken to level 5.
+mptransfer $n 1386
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1366
+Name     East Wall~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction north~
+ToRoom    1367
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1365
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1367
+Name     Northeast Wall~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction south~
+ToRoom    1366
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1368
+#ENDEXIT
+
+Reset M 0 1355 4 1367
+#ENDROOM
+
+#ROOM
+Vnum     1368
+Name     North Wall~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction east~
+ToRoom    1367
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1369
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1369
+Name     North Wall~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction north~
+ToRoom    1395
+Flags     hidden~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1368
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1370
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1370
+Name     North Wall~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction east~
+ToRoom    1369
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1371
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1371
+Name     North Wall~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction east~
+ToRoom    1370
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1372
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   1~
+Comlist   mea $n You are taken to level 1.
+mptransfer $n 1362
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   2~
+Comlist   mea $n You are taken to level 2.
+mptransfer $n 1371
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   3~
+Comlist   mea $n You are taken to level 3.
+mptransfer $n 1378
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   4~
+Comlist   mea $n You are taken to level 4.
+mptransfer $n 1385
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   5~
+Comlist   mea $n You are taken to level 5.
+mptransfer $n 1392
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1372
+Name     North Wall~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction east~
+ToRoom    1371
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1373
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   1~
+Comlist   mea $n You are taken to level 1.
+mptransfer $n 1358
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   2~
+Comlist   mea $n You are taken to level 2.
+mptransfer $n 1365
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   3~
+Comlist   mea $n You are taken to level 3.
+mptransfer $n 1372
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   4~
+Comlist   mea $n You are taken to level 4.
+mptransfer $n 1379
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   5~
+Comlist   mea $n You are taken to level 5.
+mptransfer $n 1386
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1373
+Name     North Wall~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction east~
+ToRoom    1372
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1374
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1374
+Name     Northwest Wall~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction east~
+ToRoom    1373
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1375
+#ENDEXIT
+
+Reset M 0 1355 3 1374
+#ENDROOM
+
+#ROOM
+Vnum     1375
+Name     West Wall~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction north~
+ToRoom    1374
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1376
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1376
+Name     Southwest Tower~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction north~
+ToRoom    1375
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1377
+#ENDEXIT
+
+Reset M 0 1355 2 1376
+#ENDROOM
+
+#ROOM
+Vnum     1377
+Name     South Wall~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction east~
+ToRoom    1378
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1376
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1378
+Name     South Wall~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction east~
+ToRoom    1379
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1377
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1379
+Name     South Wall~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction east~
+ToRoom    1359
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1378
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   1~
+Comlist   mea $n You are taken to level 1.
+mptransfer $n 1358
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   2~
+Comlist   mea $n You are taken to level 2.
+mptransfer $n 1365
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   3~
+Comlist   mea $n You are taken to level 3.
+mptransfer $n 1372
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   4~
+Comlist   mea $n You are taken to elvel 4.
+mptransfer $n 1379
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   5~
+Comlist   mea $n You are taken to level 5.
+mptransfer $n 1386
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1380
+Name     Inside SD519 Military Base~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction north~
+ToRoom    1383
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1382
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1359
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1381
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1381
+Name     Dirt Road~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction east~
+ToRoom    1380
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1387
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1382
+Name     Dirt Road~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction east~
+ToRoom    1389
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1380
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1383
+Name     Dirt Road~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction north~
+ToRoom    1384
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1380
+#ENDEXIT
+
+Reset M 0 1355 6 1383
+#ENDROOM
+
+#ROOM
+Vnum     1384
+Name     Dirt Road~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction east~
+ToRoom    1391
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1383
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1385
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1385
+Name     Dirt Road~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction east~
+ToRoom    1384
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1386
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   1~
+Comlist   mea $n You are taken to level 1.
+mptransfer $n 1362
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   2~
+Comlist   mea $n You are taken to level 2.
+mptransfer $n 1371
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   3~
+Comlist   mea $n You are taken to level 3.
+mptransfer $n 1378
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   4~
+Comlist   mea $n You are taken to level 4.
+mptransfer $n 1385
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   5~
+Comlist   mea $n You are taken to level 5.
+mptransfer $n 1392
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   1~
+Comlist   mea $n You are taken to level 1.
+mptransfer $n 1362
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   2~
+Comlist   mea $n You are taken to level 2.
+mptransfer $n 1371
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   3~
+Comlist   mea $n You are taken to level 3.
+mptransfer $n 1378
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   4~
+Comlist   mea $n You are taken to level 4.
+mptransfer $n 1385
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   5~
+Comlist   mea $n You are taken to level 5.
+mptransfer $n 1392
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1386
+Name     Leo's One Stop Shop~
+Sector   city~
+Flags    nomob safe prototype~
+#EXIT
+Direction east~
+ToRoom    1385
+#ENDEXIT
+
+Reset M 0 1357 1 1386
+#MUDPROG
+Progtype  speech_prog~
+Arglist   1~
+Comlist   mea $n You are taken to level 1.
+mptransfer $n 1358
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   2~
+Comlist   mea $n You are taken to level 2.
+mptransfer $n 1365
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   3~
+Comlist   mea $n You are taken to level 3.
+mptransfer $n 1372
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   4~
+Comlist   mea $n You are taken to level 4.
+mptransfer $n 1379
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   5~
+Comlist   mea $n You are taken to level 5.
+mptransfer $n 1386
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1387
+Name     Dirt Road~
+Sector   inside~
+Flags    prototype~
+#EXIT
+Direction east~
+ToRoom    1381
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1388
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   here~
+Comlist   mpmload 1311 200
+mpecho A holo-projector begins to hum.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1388
+Name     Training Transporter~
+Sector   inside~
+Flags    nomob prototype~
+#EXIT
+Direction east~
+ToRoom    1387
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1389
+Name     Dirt Road~
+Sector   inside~
+Flags    prototype~
+#EXIT
+Direction east~
+ToRoom    1390
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1382
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1390
+Name     SD519 Hotel~
+Sector   city~
+Flags    nomob safe hotel prototype~
+Desc     This hotel has really nothing special about it. A young women stands behind
+the front counter. The walls are a quite color with three windows in the
+room. There is a giant colorful rug laying in the middle of the floor. A
+door is to the north but has a "Do Not Enter" sign above it. The only
+other exit is to the west where you just came from.
+~
+#EXIT
+Direction east~
+ToRoom    1402
+Flags     hidden~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1389
+#ENDEXIT
+
+Reset M 0 1356 1 1390
+#MUDPROG
+Progtype  speech_prog~
+Arglist   queen~
+Comlist   mpmload 1330 1000
+mpecho A holo-projector begins to hum.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   none~
+Comlist   mpmload 1329 900
+mpecho A holo-projector begins to hum.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   one~
+Comlist   mpmload 1328 800
+mpecho A holo-projector begins to hum.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1391
+Name     Dirt Road~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction east~
+ToRoom    1392
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1384
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   peace~
+Comlist   mpmload 1327 600
+mpecho A holo-projector begins to hum.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1392
+Name     Dirt Road~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction east~
+ToRoom    1393
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1391
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   1~
+Comlist   mea $n You are taken to level 1.
+mptransfer $n 1362
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   2~
+Comlist   mea $n You are taken to level 2.
+mptransfer $n 1371
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   3~
+Comlist   mea $n You are taken to level 3.
+mptransfer $n 1378
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   4~
+Comlist   mea $n You are taken to level 4.
+mptransfer $n 1385
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   5~
+Comlist   mea $n You are taken to level 5.
+mptransfer $n 1392
+mpecho $n leaves the elevator.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1393
+Name     Dirt Road~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction east~
+ToRoom    1394
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1392
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1394
+Name     Amy's Ammo Supply~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction west~
+ToRoom    1393
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1395
+Name     Underground Tunnel~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction south~
+ToRoom    1369
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    1396
+Flags     hidden~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1396
+Name     Underground Tunnel~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction down~
+ToRoom    1397
+Flags     hidden~
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    1395
+#ENDEXIT
+
+Reset M 0 1310 4 1396
+  Reset G 1 2017 1
+  Reset G 1 2018 1
+  Reset G 1 2014 1
+  Reset G 1 2020 1
+  Reset G 1 2016 1
+  Reset G 1 2021 1
+  Reset G 1 2015 1
+  Reset G 1 10494 1
+Reset O 0 2014 1 1396
+#ENDROOM
+
+#ROOM
+Vnum     1397
+Name     Underground Tunnel~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction up~
+ToRoom    1396
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    1398
+Flags     hidden~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1398
+Name     Underground Crypt~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction down~
+ToRoom    1399
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    1397
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1399
+Name     Underground Crypt~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction north~
+ToRoom    1400
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    1398
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1400
+Name     Underground Crypt~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction north~
+ToRoom    1401
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1399
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1401
+Name     Underground Tomb~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction south~
+ToRoom    1400
+#ENDEXIT
+
+Reset O 0 1371 1 1401
+  Reset P 0 1372 1 1371
+#ENDROOM
+
+#ROOM
+Vnum     1402
+Name     Hidden Room~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction west~
+ToRoom    1390
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1403
+Name     West Wall~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction north~
+ToRoom    1402
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1404
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1404
+Name     West Wall~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction north~
+ToRoom    1403
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1405
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1405
+Name     Southwest Wall~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction north~
+ToRoom    1404
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1406
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1406
+Name     South Wall~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction east~
+ToRoom    1407
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1405
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1407
+Name     South Wall~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction east~
+ToRoom    1408
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1406
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1408
+Name     South Wall~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction east~
+ToRoom    1409
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1407
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1409
+Name     South Wall~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction east~
+ToRoom    1410
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1408
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1410
+Name     South Wall~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction east~
+ToRoom    1411
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1409
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1411
+Name     South Wall~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction east~
+ToRoom    1359
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1410
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1412
+Name     Floating in the void~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction north~
+ToRoom    1413
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1359
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1413
+Name     Floating in the void~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction south~
+ToRoom    1412
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1414
+Name     Floating in the void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     1415
+Name     Floating in the void~
+Sector   city~
+Flags    nomob empty_home prototype~
+#ENDROOM
+
+#ROOM
+Vnum     1416
+Name     Floating in the void~
+Sector   city~
+Flags    nomob empty_home prototype~
+#ENDROOM
+
+#ROOM
+Vnum     1417
+Name     Stardust Terrace~
+Sector   city~
+Flags    nomob indoors~
+Desc     You are on Stardust Terrace. All around you are beautiful trees and plants
+grown specifically for this colony. You cant help be feel at ease and
+peaceful here. Maybe it's something in the air or the fact that the air
+doesnt have the metallic tang of air fresheners and recycling units. You
+can stroll along this place forever.
+ 
+~
+#EXIT
+Direction north~
+ToRoom    1418
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1458
+#ENDEXIT
+
+Reset M 0 1332 5 1417
+#ENDROOM
+
+#ROOM
+Vnum     1418
+Name     Corner or Stardust Ter and Star Dr~
+Sector   city~
+Flags    nomob indoors~
+Desc     You are at the corner of Stardust Terrace and Star Drive. To the west Star
+Drive offers  a comfortable residential area. Back south is the terrace
+which leads back to the main road or the Blue Star Hotel. All along the
+road as with all the other roads is real trees, grown in artificial
+sunlight. 
+ 
+~
+#EXIT
+Direction south~
+ToRoom    1417
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1436
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1419
+Name     Stardust Terrace~
+Sector   city~
+Flags    nomob indoors hotel~
+Desc     You are on Stardust Terrace a well known Tourist rest spot. To the north is
+the Intersection and further north the residential area. To the South is
+the Famous Blue Star Hotel and rentable rooms. As with the other streets
+trees and plants grow alongside the streets in abundance.
+ 
+~
+#EXIT
+Direction north~
+ToRoom    1458
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1435
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1420
+Name     Colony P2 Landing Pad~
+Sector   city~
+Flags    nomob can_land can_fly docking~
+Desc     The massive landing pad is lit brightly by hundreds of floating globes.
+There are ships taking off and landing everywhere and many people are
+obviously quite afraid that they will be crushed underneath a shuttle. The
+landing pad is shaped in a giant circle and all along the edges are
+blinking red, green, and white lights.
+&BTo go to F4, say "F4"
+&BTo go to S19, say "S19"
+~
+#EXIT
+Direction south~
+ToRoom    1481
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   S19~
+Comlist   mea $n A TriColonies Shuttle takes you to the S19
+Colony.
+mptransfer $n 1300
+mpecho $n leaves to S19.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1421
+Name     Meteor Way~
+Sector   city~
+Flags    nomob~
+Desc     You're on Meteor Way, the colonies shop district.  To the east is the end
+of the road and the Armorer's back to the west is the intersection. To the
+north is a slightly darkened Weapons shop. As all the other streets this
+one is lined as well with living trees and plants grown in the artifical
+light.
+ 
+~
+#EXIT
+Direction north~
+ToRoom    1450
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1455
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1434
+#ENDEXIT
+
+Reset M 0 1312 8 1421
+Reset M 0 1312 8 1421
+#ENDROOM
+
+#ROOM
+Vnum     1422
+Name     End of Meteor Way~
+Sector   city~
+Flags    nomob~
+Desc     You've reached the end of Meteor Way. To the north is the local Armorer who
+carries a wide variety of equipment. Back to the west is the way you came.
+To the northeast is an elite set of homes. Along the road is lined with
+living trees and plants grown in the artifical sunlight. A soft breeze
+seems to be comming from the west.
+ 
+~
+#EXIT
+Direction north~
+ToRoom    1449
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1455
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    1475
+#ENDEXIT
+
+Reset M 0 1338 6 1422
+#ENDROOM
+
+#ROOM
+Vnum     1423
+Name     Intersection~
+Sector   city~
+Flags    nomob~
+Desc     You are on Meteor Way, the main street of Colony P2. Much of the colony
+branches off from Meteor Way into shorter street. At the very end of this
+street is the elevator which will take you to the part of the colony under
+construction. There are many civilians passing you and they seem to be
+hurrying home or to where ever they may be going. You are also at the
+intersection of Meteor Way and Supernova Street, the second longest street
+on the colony. 
+~
+#ENDROOM
+
+#ROOM
+Vnum     1424
+Name     Supernova Street~
+Sector   city~
+Flags    nomob~
+Desc     This is Supernova Street. It has many shops and other things all along it.
+This is the street where the most goes on. You can see many parents
+running in and out of shops buying things for their children. You can also
+hear lots of talking going on because many people meet here every day.
+~
+#ENDROOM
+
+#ROOM
+Vnum     1425
+Name     Bounty Hunting Office~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     1426
+Name     Factory Street~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     1427
+Name     P2 Factory Entrance~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     1428
+Name     Factory~
+Sector   city~
+Flags    refinery factory~
+Desc     you've entered a factory. Here you can create as you wish. things are well
+organized but cluttered. You see rows of benches holding other people's
+handy work. Back down is the Factory shop and the only exit out of here.
+ 
+~
+#EXIT
+Direction north~
+ToRoom    1429
+Flags     hidden~
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    1430
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1429
+Name     Factory Way~
+Sector   city~
+Desc     You are on Factory Way to the North is the Corner of Factory Way and
+Workshop Road. Back to the south is the Elevator which got you hear. As
+you proceed down the road the sound of metal hitting metal and people
+working attracts your attention. These roads are not lined with strees in
+fact the roads resemble more catwalks than roads.  
+ 
+~
+#EXIT
+Direction north~
+ToRoom    1468
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1443
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1430
+Name     Factory Shop~
+Sector   city~
+Flags    nomob~
+Desc     You've walked into the Factory Shop. The shop keeper is here with supplies
+for all your needs. Up is the Factory where you can create what you need.
+Back to the south is the road to the elevator you used to get here. The
+shop is neat and well kept and everything seems in its place.
+ 
+~
+#EXIT
+Direction south~
+ToRoom    1468
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    1428
+#ENDEXIT
+
+Reset M 0 1310 3 1430
+  Reset G 1 2022 1
+  Reset G 1 2020 1
+  Reset G 1 10494 1
+  Reset G 1 2021 1
+  Reset G 1 2018 1
+  Reset G 1 2014 1
+  Reset G 1 10490 1
+  Reset G 1 2016 1
+  Reset G 1 2017 1
+#ENDROOM
+
+#ROOM
+Vnum     1431
+Name     Workshop~
+Sector   city~
+Flags    nomob silence refinery factory~
+Desc     You have walked into an old workshop. All around pieces of junk and old
+projects lay about. The room fortunately is padded and no sound gets in or
+out. You think maybe you can work in here in peace. Back to the west is
+the supply shop and your way back to the elevator that got you here.
+ 
+~
+#EXIT
+Direction west~
+ToRoom    1461
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1432
+Name     Jason's Deli~
+Sector   city~
+Flags    nomob~
+Desc     There are many chairs here and a large counter at which you can order your
+food. You see Jason, the store's owner, making some sandwiches. Just
+"order" some more if he's out.
+~
+#EXIT
+Direction south~
+ToRoom    1453
+#ENDEXIT
+
+Reset M 0 1318 1 1432
+  Reset G 1 1313 1
+#ENDROOM
+
+#ROOM
+Vnum     1433
+Name     Supernova Street~
+Sector   city~
+Desc     You've just come through Customs and have walked onto Supernova Street. The
+street is the main street of the Colony. If you Continue along the street
+you will come to Meteor Way and Starfish Lane, both predigious streets in
+their own right.
+ 
+~
+#EXIT
+Direction north~
+ToRoom    1481
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1456
+#ENDEXIT
+
+Reset M 0 1338 6 1433
+#ENDROOM
+
+#ROOM
+Vnum     1434
+Name     Intersection of Meteor Way and Supernova St~
+Sector   city~
+Desc     You seem to have come to a large intersection on Supernova Street. As you
+look around you see Meteor Way heading off to the east and west. Meteor
+Way is well known for its shops both of legal and illegal goods. You cant
+help but take notice of a small unobtrusive elevator to the north. You
+cant help but wonder as to where it leads. Perhaps a ride on it will tell
+you.
+ 
+~
+#EXIT
+Direction north~
+ToRoom    1446
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1421
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1444
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1452
+#ENDEXIT
+
+Reset M 0 1338 6 1434
+Reset M 0 1338 6 1434
+#ENDROOM
+
+#ROOM
+Vnum     1435
+Name     Blue Star Hotel~
+Sector   city~
+Flags    nomob hotel~
+Desc     The Blue Star Hotel is famous in this colony for being safe, well lit and
+very clean. As you look around you see a young woman ushering people here
+and there. She appears to be  the owner or manager. Who knows maybe you
+should go up to her and ask. 
+ 
+~
+#EXIT
+Direction north~
+ToRoom    1419
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    1489
+#ENDEXIT
+
+Reset M 0 1313 1 1435
+  Reset G 1 1340 1
+  Reset G 1 1339 1
+  Reset G 1 1338 1
+  Reset G 1 1336 1
+#ENDROOM
+
+#ROOM
+Vnum     1436
+Name     Star Drive~
+Sector   city~
+Flags    nomob~
+Desc     This is a small residential street that has a many apartments on both sides
+of it. There are many people leaving and entering their apartments. You
+see a few of them haven't been bought yet.
+~
+#EXIT
+Direction north~
+ToRoom    1441
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1418
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1442
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1437
+#ENDEXIT
+
+Reset M 0 1312 8 1436
+Reset M 0 1312 8 1436
+#ENDROOM
+
+#ROOM
+Vnum     1437
+Name     Star Drive~
+Sector   city~
+Flags    nomob~
+Desc     This is a small residential street that has a many apartments on both sides
+of it. There are many people leaving and entering their apartments. You
+see a few of them haven't been bought yet.
+~
+#EXIT
+Direction north~
+ToRoom    1439
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1436
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1440
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1438
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1438
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob empty_home~
+#EXIT
+Direction east~
+ToRoom    1437
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1439
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob empty_home~
+#EXIT
+Direction south~
+ToRoom    1437
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1440
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob empty_home~
+#EXIT
+Direction north~
+ToRoom    1437
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1441
+Name     Old Refuge Building~
+Sector   city~
+Flags    nomob plr_home~
+#EXIT
+Direction south~
+ToRoom    1436
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1442
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob empty_home~
+#EXIT
+Direction north~
+ToRoom    1436
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1443
+Name     P2 Elevator~
+Sector   city~
+Flags    nomob~
+Desc     This is the Colony P2 Elevator. In general this is a large elevator that
+takes people to and from the different levels of the colony. You are in a
+decently sized elevator that is next to many other elevators. There is a
+voiec recognition module near you. Just say down to go down.
+~
+#EXIT
+Direction north~
+ToRoom    1429
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   down~
+Comlist   mea $n You go down.
+mptransfer $n 1444
+mpecho $n goes down.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1444
+Name     Factory Elevator~
+Sector   city~
+Flags    nomob~
+Desc     This is the Colony P2 Elevator. In general this is a large elevator that
+takes people to and from the different levels of the colony. You are in a
+decently sized elevator that is next to many other elevators. There is a
+voice recognition module near you. Just say up to go up.
+~
+#EXIT
+Direction north~
+ToRoom    1434
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   up~
+Comlist   mea $n You go up in the elevator.
+mptransfer $n 1443
+mpecho $n goes up.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     1445
+Name     Supernova Street~
+Sector   city~
+Desc     You are on Supernova street the main street of the colony. As you travel
+south along the road you notice there is no sign of trash or graffitti.
+There is a sweet scent of real trees growing along the sides of the road
+in the simulated sunlight. You cant help but wonder what is  so special
+about a Utopia. All around you walk children and happy families. Maybe
+it's just you but the over abundance of happiness is ready to make you
+sick.
+ 
+~
+#EXIT
+Direction north~
+ToRoom    1456
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1446
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1446
+Name     Supernova Street~
+Sector   city~
+Desc     You are on Supernova street the main street of the colony. As you travel
+south along the road you notice there is no sign of trash or graffitti.
+There is a sweet scent of real trees growing along the sides of the road
+in the simulated sunlight. You cant help but wonder what is  so special
+about a Utopia. All around you walk children and happy families. Maybe
+it's just you but the over abundance of happiness is ready to make you
+sick.
+ 
+~
+#EXIT
+Direction north~
+ToRoom    1445
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1434
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1447
+Name     Supernova Street~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    1446
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1448
+Name     General Store~
+Sector   city~
+Flags    nomob~
+Desc     You can sell most things here such as weapons, armor, and many items.
+~
+#EXIT
+Direction south~
+ToRoom    1452
+#ENDEXIT
+
+Reset M 0 1302 2 1448
+  Reset G 1 2009 1
+  Reset G 1 223 1
+  Reset G 1 10314 1
+  Reset G 1 1316 1
+  Reset G 1 1307 1
+#ENDROOM
+
+#ROOM
+Vnum     1449
+Name     Armor Shop~
+Sector   city~
+Flags    nomob~
+Desc     You've entered the Armorer's Shop. All around can be found tons of
+elaborate armor known through out the galaxy and even universe. This shop
+carries all kinda of exotic gear. All ranging from a simple gi to the
+widely sought Gundanium vest. Also the armorer sells other clothing which
+might pique your interest. Why not give it a try.
+ 
+~
+#EXIT
+Direction south~
+ToRoom    1422
+#ENDEXIT
+
+Reset M 0 1334 1 1449
+  Reset G 1 1324 1
+  Reset G 1 1323 1
+  Reset G 1 1308 1
+  Reset G 1 1300 1
+  Reset G 1 1301 1
+  Reset G 1 1302 1
+  Reset G 1 1303 1
+  Reset G 1 1304 1
+  Reset G 1 1331 1
+  Reset G 1 1332 1
+  Reset G 1 1333 1
+  Reset G 1 10316 1
+  Reset G 1 1332 1
+#ENDROOM
+
+#ROOM
+Vnum     1450
+Name     Weapon Shop~
+Sector   city~
+Flags    nomob~
+Desc     You've entered a dimly lit Weapons shop. Not much buisness is done here by
+the looks of it. The shelves are dusty and the cases seem clouded over. As
+you gaze around your eyes fall upon the weapons master and you note his
+list of weapons for sale is very wide indeed. He glances at you nervously
+then asks what will it be.
+ 
+~
+#EXIT
+Direction south~
+ToRoom    1421
+#ENDEXIT
+
+Reset M 0 1333 1 1450
+  Reset G 1 1334 1
+  Reset G 1 1305 1
+  Reset G 1 2000 1
+  Reset G 1 55 1
+  Reset G 1 52 1
+  Reset G 1 51 1
+  Reset G 1 6004 1
+  Reset G 1 60 1
+  Reset G 1 58 1
+  Reset G 1 57 1
+  Reset G 1 56 1
+  Reset G 1 54 1
+  Reset G 1 53 1
+  Reset G 1 50 1
+  Reset G 1 2007 1
+  Reset G 1 2017 1
+  Reset G 1 502 1
+#ENDROOM
+
+#ROOM
+Vnum     1451
+Name     Docks~
+Sector   city~
+Flags    nomob~
+Desc     You step out onto the Docks and are immediately assaulted by a myriad of
+sights sounds and smells. The overpowering reek of dead fish is
+immediately blocked by the sweet scent of the ocean air and the loud
+shouting if the fishermen making a living here tends to be drowned out by
+old fashion boats. Indeed a very mix of old and new.
+ 
+~
+#EXIT
+Direction south~
+ToRoom    1495
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1467
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    1488
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1452
+Name     Meteor Way~
+Sector   city~
+Flags    nomob~
+Desc     You are on Meteor Way, the colonies shopping district. To the north is the
+General Store. Back to the east is the intersection and to the West is the
+end of the street and two eating establishments. Along the street is trees
+and plants grown on the colony in the artifical sunlight. A cool breeze
+floats around with a hint of salt.
+ 
+~
+#EXIT
+Direction north~
+ToRoom    1448
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1434
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1453
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1453
+Name     End of Meteor Way~
+Sector   city~
+Flags    nomob~
+Desc     You are on Meteor Way, the colonies shopping district. To the north is
+Jason's Deli where Jason sells scrumptious deli style sandwiches and
+various deli related food products. To the South is Astralina's the
+Colonie's illustrious and only fancy restaurant. Back to the east is the
+way you come and the intersection leading to the Factory Elevator. Along
+the street is trees and plants grown on the colony in the artifical
+sunlight. 
+ 
+~
+#EXIT
+Direction north~
+ToRoom    1432
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1452
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1499
+#ENDEXIT
+
+Reset M 0 1332 5 1453
+#ENDROOM
+
+#ROOM
+Vnum     1454
+Name     Medstar Medical~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     1455
+Name     Meteor Way~
+Sector   city~
+Flags    nomob~
+Desc     You're on Meteor Way, the colonies shop district.  To the east is the end
+of the road and the Armorer's back to the west is the intersection. As all
+the other streets this one is lined as well with living trees and plants
+grown under th artifical sunlight.
+ 
+~
+#EXIT
+Direction east~
+ToRoom    1422
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1421
+#ENDEXIT
+
+Reset M 0 1332 5 1455
+#ENDROOM
+
+#ROOM
+Vnum     1456
+Name     Intersection of Starfish Ln and Supernova St~
+Sector   city~
+Desc     You've come to the intersection of Starfish and Supernova Continue to the
+South and you'll eventually come to Meteor Way. To the east and west is
+Starfish Lane. In the distance you can hear the sounds of  artifical waves
+crashing and the faint scent of sea water drifts to your nose.
+ 
+~
+#EXIT
+Direction north~
+ToRoom    1433
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1466
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1445
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1457
+#ENDEXIT
+
+Reset M 0 1312 8 1456
+#ENDROOM
+
+#ROOM
+Vnum     1457
+Name     Starfish Lane~
+Sector   city~
+Desc     You are on Starfish Lane. As you travel along you notice it looks like
+other places on this colony. Trees and plants in abundance. To the west
+you can buy yourself a home or rent a room from the Blue Star Hotel. To
+the east is back to the Main street. 
+ 
+~
+#EXIT
+Direction east~
+ToRoom    1456
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1458
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1458
+Name     Intersection of Starfish Ln and Stardust Ter~
+Sector   inside~
+Flags    indoors~
+Desc     You've reached the corner of Starfish Lane and Stardust Terrace. To the
+north you can see the peaks of well built homes. To the south you can hear
+the honking of Taxis as they drop their passengers off at the local hotel.
+ 
+~
+#EXIT
+Direction north~
+ToRoom    1417
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1457
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1419
+#ENDEXIT
+
+Reset M 0 1312 8 1458
+#ENDROOM
+
+#ROOM
+Vnum     1459
+Name     Workshop Road~
+Sector   city~
+Flags    indoors~
+Desc     You are on an old steel road that is rather rusty and unused. The clean up
+droids have given up taking care of it but it is still safe. The gundanium
+beneath it holds it secure. To the east is the workshop and the supply
+shop. Back west is the Corner of Factory Way and Workshop Road.
+ 
+~
+#EXIT
+Direction east~
+ToRoom    1460
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1468
+#ENDEXIT
+
+Reset D 0 1459 1 0
+#ENDROOM
+
+#ROOM
+Vnum     1460
+Name     Workshop Road~
+Sector   city~
+Flags    indoors~
+Desc     You are on Workshop Road. back to the west heads back the way you came. To
+the east is a large building housing a workshop and A supply shop for any
+necessary supplies whilst working there. The road is a bit rusted but it
+looks a bit more used than the back path.
+ 
+~
+#EXIT
+Direction east~
+ToRoom    1461
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1459
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1461
+Name     Supply Shop~
+Sector   city~
+Flags    indoors~
+Desc     You're in an old rusty supply shop. one Lone service droid is here selling
+supplies to those in need. To the east is the Workshop. Watch your step
+you dont want to trip over anything. Back to the west is the way you came.
+ 
+~
+#EXIT
+Direction east~
+ToRoom    1431
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1460
+#ENDEXIT
+
+Reset M 0 1337 1 1461
+  Reset G 1 10491 1
+  Reset G 1 1322 1
+  Reset G 1 10494 1
+  Reset G 1 65 1
+  Reset G 1 10490 1
+  Reset G 1 2021 1
+  Reset G 1 2022 1
+  Reset G 1 2024 1
+  Reset G 1 1321 1
+  Reset G 1 2026 1
+  Reset G 1 2016 1
+  Reset G 1 10487 1
+  Reset G 1 2023 1
+#ENDROOM
+
+#ROOM
+Vnum     1462
+Name     Hallway~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    1464
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1465
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1463
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1463
+Name     Stairway~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    1462
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1464
+Name     Storage Closet~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction south~
+ToRoom    1462
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1465
+Name     Guest Room~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    1462
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1466
+Name     Starfish Lane~
+Sector   city~
+Desc     You are on Starfish Lane. To the east you can smell the scent of fish and
+salt water. To the west is the main street which you came from. And all
+along the street you see new plants of every salt tolerating variety.
+Perhaps there is an ocean nearby?
+ 
+~
+#EXIT
+Direction east~
+ToRoom    1467
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1456
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1467
+Name     End of Starfish Lane~
+Sector   city~
+Desc     You've come to the end of Starfish lane and find that you are standing on a
+wharf. To the east is a set of docks and to your amazement there is a
+large man made ocean here with imported fish and sea creatures. Back to
+the west is towards the main street of the colony. Suprisingly there are
+no plants on this part of the road.
+ 
+~
+#EXIT
+Direction east~
+ToRoom    1451
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1466
+#ENDEXIT
+
+Reset M 0 1312 8 1467
+Reset M 0 1312 8 1467
+Reset D 0 1467 1 0
+#ENDROOM
+
+#ROOM
+Vnum     1468
+Name     Corner of Factory Wy and Workshop Rd~
+Sector   city~
+Flags    nomob~
+Desc     You are at the corner of Workshop Road and Factory Way. Continue north to
+the factory shop and the factory itself. If you wish for a quieter shop
+head to the Workshop to the East on Workshop Road.  The narrow roads here
+seem to be a bit slippery. You may  wish to be careful 
+ 
+~
+#EXIT
+Direction north~
+ToRoom    1430
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1459
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1429
+#ENDEXIT
+
+Reset D 0 1468 1 0
+#ENDROOM
+
+#ROOM
+Vnum     1469
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction south~
+ToRoom    1479
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1470
+Name     Floating in a void~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     1471
+Name     An Empty Apartment~
+Sector   city~
+Flags    indoors empty_home~
+#EXIT
+Direction east~
+ToRoom    1478
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1472
+Name     Floating in a void~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     1473
+Name     An Empty Apartment~
+Sector   city~
+Flags    indoors empty_home~
+Owner    Skaara~
+#EXIT
+Direction west~
+ToRoom    1477
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1474
+Name     Floating in a void~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     1475
+Name     Comet Road~
+Sector   city~
+Flags    nomob~
+Desc     You are on Comet Road. To the North is the entrance to the homes of the
+well to do tourists and residents of this colony. Back to the southwest is
+the End of Meteor way the area from which you just came. All along the
+road is lined with rose bushes a significant change from previous roads.
+Here the air smells sweet and fragrant. 
+ 
+~
+#EXIT
+Direction north~
+ToRoom    1476
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    1422
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1476
+Name     Entrance to Upper Class Homes~
+Sector   city~
+Flags    nomob~
+Desc     You stand in a rather large Courtyard. A large water fountain is in the
+middle spraying sweet clear water. The cobblestone road north leads to the
+homes. The road south leads back out of the area. As you breath deeply a
+soft breeze caresses your face carrying the scent of roses. 
+ 
+~
+#EXIT
+Direction north~
+ToRoom    1477
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1475
+#ENDEXIT
+
+Reset O 0 1318 1 1476
+#ENDROOM
+
+#ROOM
+Vnum     1477
+Name     A Cobblestone Road~
+Sector   city~
+Desc     You are on a cobblestone road leading to the luxurious homes belonging to
+the elite of the colony. All along the road roses of many hues line the
+area. Tender buds open to create a scent of delicate infusion lend a
+euphoria to the road. To the south is the entrance and the North leads to
+yet more homes. 
+ 
+~
+#EXIT
+Direction north~
+ToRoom    1478
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1473
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1476
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1478
+Name     A Cobblestone Road~
+Sector   city~
+Flags    nomob~
+Desc     You are on a cobblestone road leading to the luxurious homes belonging to
+the elite of the colony. All along the road roses of many hues line the
+area. Tender buds open to create a scent of delicate infusion lend a
+euphoria to the road. To the south is the entrance and the North leads to
+yet more homes.
+ 
+~
+#EXIT
+Direction north~
+ToRoom    1479
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1477
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1471
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1479
+Name     Cul De Sac~
+Sector   city~
+Flags    nomob~
+#EXIT
+Direction north~
+ToRoom    1469
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1478
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1480
+Name     Floating in a void~
+Sector   city~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     1481
+Name     Customs~
+Sector   city~
+Desc     Welcome to Colony P2. Please be advised you must check your baggage with
+the Customs officer before proceeding into the colony. This colony is a
+drug free zone as well as anti-weapons. All weapons and drugs will be
+confiscated. So be warned that you will not get them back. We like our
+citizens to be happy and drug free.
+ 
+~
+#EXIT
+Direction north~
+ToRoom    1420
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1433
+#ENDEXIT
+
+Reset M 0 1331 1 1481
+Reset M 0 1332 5 1481
+#ENDROOM
+
+#ROOM
+Vnum     1482
+Name     Shallows~
+Sector   water swim~
+Flags    nomob~
+Desc     As you pass the docks you find yourself wading in cool blue shallows. The
+water doesnt seem to get cold due to the fact it is temprature regulated
+by small heaters to prevent the fish from dying. The water feels great on
+your skin and the gentle lapping  of the waves is soothing.
+ 
+~
+#EXIT
+Direction south~
+ToRoom    1483
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1483
+Name     Shallows~
+Sector   water swim~
+Flags    nomob~
+Desc     As you pass the docks you find yourself wading in cool blue shallows. The
+water doesnt seem to get cold due to the fact it is temprature regulated
+by small heaters to prevent the fish from dying. The water feels great on
+your skin and the gentle lapping of the waves is soothing.
+ 
+~
+#EXIT
+Direction north~
+ToRoom    1482
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1488
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1484
+Name     Off in the Waves~
+Sector   water swim~
+Flags    nomob~
+Desc     You find yourself lazily swimming around. You cant help but feel awed as
+many different varieties of fish swim below you in the deep waters. You do
+believe you can float around here forever. Maybe this is why the original
+colonists chose to create such splendor. So you could get lost in it all.
+ 
+~
+#EXIT
+Direction east~
+ToRoom    1486
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1485
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1485
+Name     Beach Shoreline~
+Sector   water swim~
+Flags    nomob~
+#EXIT
+Direction east~
+ToRoom    1484
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1488
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1486
+Name     Ocean waters~
+Sector   water swim~
+Flags    nomob~
+Desc     You look all about you and see the shore not too far to the north. A calm
+serenity envelopes you as you swim along the ocean waves. The deep blue of
+the sea feels good against your skin. A defintely change from what you are
+used to on other colonies. 
+ 
+~
+#EXIT
+Direction north~
+ToRoom    1487
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1484
+#ENDEXIT
+
+Reset M 0 1317 1 1486
+#ENDROOM
+
+#ROOM
+Vnum     1487
+Name     Beach shoreline~
+Sector   water swim~
+Flags    nomob~
+Desc     You stand on the shoreline staring out at what appears to be endless blue
+water. Perhaps it is just you but this colony seems alot bigger than it
+shows. Perhaps a trip around the waters will show you if this is really as
+endless as it looks. As you look down you see a shell and smile. It
+defintely looks like earth.
+ 
+~
+#EXIT
+Direction south~
+ToRoom    1486
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1488
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1488
+Name     Under The Docks~
+Sector   water swim~
+Flags    nomob~
+Desc     You've gone down under the docks and as you stand underneath them you can
+hear the waves lap at the steady wooden posts. Shellfish hasnt become
+attached to the docks just yet but you can see the colonists created an
+almost perfect earth-like representation of an old dock. 
+ 
+~
+#EXIT
+Direction north~
+ToRoom    1485
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1487
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1483
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    1451
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1489
+Name     A Hallway~
+Sector   city~
+Flags    nomob~
+Desc     Welcome to the Blue Star Hotel's upper rooms. If you have purchased a key
+you may enter the rooms. All the locks are unpickable. So I wouldnt try
+doing that. Also enjoy the luxury of these deluxe rooms. The east door is
+a blue painted door leading to the blue room. The west door is painted
+green leading to of course the green room. To the south is the other 2
+fine rooms we offer the Gold and Silver rooms. Enjoy your stay with us.
+ 
+~
+#EXIT
+Direction north~
+ToRoom    1492
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    1490
+Key       1339
+Flags     isdoor pickproof~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1491
+Key       1340
+Flags     isdoor pickproof~
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    1435
+#ENDEXIT
+
+Reset D 0 1489 1 0
+Reset D 0 1489 3 0
+#ENDROOM
+
+#ROOM
+Vnum     1490
+Name     The Blue Room~
+Sector   city~
+Flags    nomob hotel~
+Desc     You've entered the Blue room. It is decorated well in blue. And as you look
+around you sense there is a nautical theme about this room. Perhaps the
+net in the corner of the room or the bed shaped like the bow of a ship
+give it away. Either way it looks comfortable.
+ 
+~
+#EXIT
+Direction west~
+ToRoom    1489
+Flags     isdoor~
+#ENDEXIT
+
+Reset D 0 1490 3 0
+#ENDROOM
+
+#ROOM
+Vnum     1491
+Name     The Green Room~
+Sector   inside~
+Flags    nomob hotel~
+Desc     Welcome to the Green room. Everything here is decorated with a forest
+motif. Around you you can see everything is just about decorated in
+well...Green. As you sit back and enjoy the room you notice as you look
+out the window in the room that all you see is tree tops. And you notice
+with a smile that the  room is quiet.
+ 
+~
+#EXIT
+Direction east~
+ToRoom    1489
+Key       1340
+Flags     isdoor~
+#ENDEXIT
+
+Reset D 0 1491 1 0
+#ENDROOM
+
+#ROOM
+Vnum     1492
+Name     A Hallway~
+Sector   city~
+Flags    nomob~
+Desc     You've come to the end of the Hallway and to the most elaborate rooms the
+hotel offers. To the west is a silver door leading to the silver room.
+Hope you enjoy your stay here at our humble hotel.
+ 
+~
+#EXIT
+Direction east~
+ToRoom    1493
+Key       1336
+Keywords  locked~
+Flags     isdoor closed locked~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1489
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1494
+Key       1338
+Flags     isdoor pickproof~
+#ENDEXIT
+
+Reset D 0 1492 1 2
+Reset D 0 1492 3 0
+#ENDROOM
+
+#ROOM
+Vnum     1493
+Name     The Gold Room.~
+Sector   city~
+Flags    nomob safe hotel~
+Desc     You've entered the Gold room of the hotel. This room is by far the most
+expensive of the rooms. As you can see everything is lavishly decorated in
+gold even the bed which lies in the corner. You look around and out a tiny
+window you can see the tree tops. This place is so peaceful. 
+ 
+~
+#EXIT
+Direction west~
+ToRoom    1492
+Key       1336
+Flags     isdoor~
+#ENDEXIT
+
+Reset O 0 1337 1 1493
+Reset D 0 1493 3 0
+#ENDROOM
+
+#ROOM
+Vnum     1494
+Name     The Silver Room~
+Sector   city~
+Flags    nomob hotel~
+Desc     You've entered the Silver room decorated very lavishly in silver and white.
+ A silver bed lies in the center of the room and you cant help but feel
+like royalty. As you gaze around you can see outside a tiny window and the
+tree tops of the surrounding area. 
+ 
+~
+#EXIT
+Direction east~
+ToRoom    1492
+Key       1338
+Flags     isdoor~
+#ENDEXIT
+
+Reset D 0 1494 1 0
+#ENDROOM
+
+#ROOM
+Vnum     1495
+Name     Fisherman's Wharf~
+Sector   city~
+Flags    nomob~
+Desc     You've managed to walk onto the Fisherman's Wharf. There are a few shops
+around here in which you can purchase things related to fish including
+gifts and souvenirs. The wharf is rather noisy with all the tourists
+walking about and you cant help but feel crowded out and claustrphobic
+even though you are in open air.
+ 
+~
+#EXIT
+Direction north~
+ToRoom    1451
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    1496
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1498
+#ENDEXIT
+
+Reset M 0 1332 5 1495
+#ENDROOM
+
+#ROOM
+Vnum     1496
+Name     Fisherman's Wharf~
+Sector   city~
+Flags    nomob~
+Desc     You've managed to walk onto the Fisherman's Wharf. There are a few shops
+around here in which you can purchase things related to fish including
+gifts and souvenirs. The wharf is rather noisy with all the tourists
+walking about and you cant help but feel crowded out and claustrphobic
+even though you are in open air.
+ 
+~
+#EXIT
+Direction north~
+ToRoom    1495
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    1497
+#ENDEXIT
+
+Reset M 0 1338 6 1496
+Reset M 0 1338 6 1496
+#ENDROOM
+
+#ROOM
+Vnum     1497
+Name     Fish N' Chips~
+Sector   city~
+Flags    nomob~
+Desc     You've entered a fish and chips shop. All arounf are old newspapers pasted
+on the walls. The scent of french fries and fried fish fills the air as
+well as the acid tang of vinager and ketchup. The food looks very
+delicious. Perhaps you should give it a try.
+ 
+~
+#EXIT
+Direction east~
+ToRoom    1496
+#ENDEXIT
+
+Reset M 0 1335 1 1497
+  Reset G 1 1313 1
+  Reset G 1 1311 1
+  Reset G 1 1341 1
+  Reset G 1 1342 1
+  Reset G 1 1344 1
+  Reset G 1 1343 1
+#ENDROOM
+
+#ROOM
+Vnum     1498
+Name     Souvenir Shop~
+Sector   city~
+Flags    nomob~
+Desc     You've wandered into a rather unusual shop. There are bits and pieces of
+coral and shells all around. And there are a wide variety of items made
+from shells including fans snow globes and other crazy decorative items.
+You even see t-shirts on a shelf saying "Fisherman's Wharf on Colony P2. A
+little piece of Earth in the Sky." Perhaps you might want to just walk on.
+There is a sign on the wall.
+ 
+~
+#EXIT
+Direction east~
+ToRoom    1495
+#ENDEXIT
+
+#EXDESC
+ExDescKey    sign~
+ExDesc       The small sign on the wall says, 'Gone Fishing'
+ 
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     1499
+Name     Astralina's~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is a very fancy restaurant. Astralina's is a fine Italian Ristorante.
+They serve all the fancy Italian dishes and even some  old world favorites
+like pizza and pasta. Just ask Giorgio for a menu or list of what is
+available and enjoy your fine dining experience .
+~
+#EXIT
+Direction north~
+ToRoom    1453
+#ENDEXIT
+
+Reset M 0 1336 1 1499
+  Reset G 1 1355 1
+  Reset G 1 1352 1
+  Reset G 1 1349 1
+  Reset G 1 1347 1
+  Reset G 1 1346 1
+  Reset G 1 1348 1
+  Reset G 1 1350 1
+  Reset G 1 1351 1
+  Reset G 1 1353 1
+  Reset G 1 1354 1
+#ENDROOM
+
+#ENDAREA

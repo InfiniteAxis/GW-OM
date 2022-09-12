@@ -1,0 +1,3686 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         Colony M9~
+Author       Malech~
+Ranges       1 1007 1 1007
+Economy      0 369111359
+ResetMsg     Loud music can be heard in the distance~
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       6200
+Keywords   M9 Colony Citizen~
+Short      A M9 Colony Citizen~
+Long       Standing here is a M9 Colony Citizen.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc~
+Stats1     0 25 0 37 25 0
+Stats2     5 10 250
+Stats3     2 4 2
+Stats4     0 0 0 5 5
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+VIPFlags   M9~
+#ENDMOBILE
+
+#MOBILE
+Vnum       6201
+Keywords   Hologram One~
+Short      A Level One Hologram~
+Long       A Level One hologram stands before you.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 75 0 -87 50 0
+Stats2     15 10 750
+Stats3     7 4 2
+Stats4     0 0 0 15 15
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6202
+Keywords   Hologram Two~
+Short      A level Two Hologram~
+Long       A Level Two Hologram stands before you.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 175 0 -337 100 0
+Stats2     35 10 1750
+Stats3     17 4 2
+Stats4     0 0 0 35 35
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6203
+Keywords   Hologram Three~
+Short      A Level Three Hologram~
+Long       A Level Three Hologram stands before you.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 275 0 -587 150 0
+Stats2     55 10 2750
+Stats3     27 4 2
+Stats4     0 0 0 55 55
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6204
+Keywords   Hologram Four~
+Short      A Level Four Hologram~
+Long       A Level Four Hologram stands before you.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 300 0 -650 200 0
+Stats2     60 10 3000
+Stats3     30 4 2
+Stats4     0 0 0 60 60
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6205
+Keywords   Hologram Five~
+Short      A Level Five Hologram~
+Long       A Level Five Hologram stands before you.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 375 0 -837 250 0
+Stats2     75 10 3750
+Stats3     37 4 2
+Stats4     0 0 0 75 75
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6206
+Keywords   Hologram Six~
+Short      A Level Six Hologram~
+Long       A Level Six Hologram stands in front of you.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 450 0 -1025 300 0
+Stats2     90 10 4500
+Stats3     45 4 2
+Stats4     0 0 0 90 90
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6207
+Keywords   Hologram Seven~
+Short      A Level Seven Hologram~
+Long       A Level Seven Hologram stands before you.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 525 0 -1212 350 0
+Stats2     105 10 5250
+Stats3     52 4 2
+Stats4     0 0 0 105 105
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6208
+Keywords   Hologram Eight~
+Short      A Level Eight Hologram~
+Long       A Level Eight Hologram stands before you.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 600 0 -1400 400 0
+Stats2     120 10 6000
+Stats3     60 4 2
+Stats4     0 0 0 120 120
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6209
+Keywords   Hologram Nine~
+Short      A Level Nine Hologram~
+Long       A Level Nine Hologram stands before you.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 675 0 -1587 450 0
+Stats2     135 10 6750
+Stats3     67 4 2
+Stats4     0 0 0 135 135
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6210
+Keywords   Hologram Ten~
+Short      A Level Ten Hologram~
+Long       A Level Ten Hologram stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 750 0 -1775 500 0
+Stats2     150 10 7500
+Stats3     75 4 2
+Stats4     0 0 0 150 150
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6211
+Keywords   Hot Topic Hot Chick~
+Short      Hot Topic's Hot Chick~
+Long       A Hot Topic's Girl is waiting on you.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   9 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p stock~
+Comlist   mpoload 6210
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   Say Welcome to Hot Topic's.
+say Please feel free to look at our most wanted stuff we have to sell.
+say To see our sale's list, all ya have to do is look at the list.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6212
+Keywords   Aries~
+Short      Aries~
+Long       A pretty young woman stands before you.
+~
+Desc       A young woman with Teal eyes and brown hair. She has a red ribbon in her
+hair. She is dressed in a full body pink dress. She has metal arm bands on
+her wrist. She is wearing brown work boots.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    20 10 10 20 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say Hello.
+curtsey
+say Welcome to my Armor Shop.
+say If you need anything just look at the list.
+smile
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6213
+Keywords   Gilgamesh~
+Short      Gilgamesh~
+Long       A man sits behind the counter, shining a sword.
+~
+Desc       Covered in a long red tatered cloak, he has horns coming out of his head
+with some kind of band holding up hair. He has 3 arms sticking out one
+side of his cloak and is dressed like an indian god. His face has some
+kind of paint on it. 
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    20 20 20 20 20 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say Welcome to my shop.
+say Please feel free to look around.
+say If you need anything, just look at the list.
+bow
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   real~
+Comlist   say To find the Real Gilgamesh.
+say All u have to do is say the name of the end of the world.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6214
+Keywords   Real Gilgamesh~
+Short      The Real Gilgamesh~
+Long       The Real Gilgamesh stands before you.
+~
+Desc       Covered in a long red tatered cloak, he has horns coming out of his head
+with some kind of band holding up hair. He has 3 arms sticking out one
+side of his cloak and is dressed like an indian god. His face has some
+kind of paint on it. 
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  act_prog~
+Arglist   give handle gilgamesh~
+Comlist   if ovnuminv(6202)
+smile
+say Thank you for returning the broken handle to the Apocalypse.
+say For your time i shall refurge the sword for you.
+emote turns around and starts to refurge the sword.
+say Ah! Its finshed, please enjoy it. Its a powerful weapon.
+mpjunk handle
+mpoload 6220
+drop apocalypse
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  rand_prog~
+Arglist   10~
+Comlist   Sigh
+Say Oh why did this have to happen to me... why did i lose the handle...
+say Only if someone could find the handle i would be able to remake the sword.
+sigh
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6215
+Keywords   Odin~
+Short      Odin~
+Long       The Great Lord Odin
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel secretive~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 1000000
+Stats3     100 4 2
+Stats4     0 0 0 85 65
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    punch kick~
+Defenses   parry dodge~
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say Welcome mortal.
+say You have made it this far, but can you best me to get the prize you seek?
+grin
+say Fight me to the death to win over the item you look for.
+evil
+say If you dare...
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mppurge 6231
+mpoload 6202 0
+mea $n I will return...
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6216
+Keywords   Tonberry~
+Short      Tonberry~
+Long       A deadly Tonberry wanders around.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc~
+Affected   detect_invis detect_hidden~
+Stats1     0 1000 0 -2400 500 0
+Stats2     200 10 250000
+Stats3     100 4 2
+Stats4     0 0 0 50 50
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6217
+Keywords   McDonalds Clerk~
+Short      A Mcdonalds Clerk~
+Long       A McDonalds Clerk Stands here taking orders.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel nokill~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    18 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   Say Hello and Welcome to McDonalds.
+Say How may I take your order?
+Smile
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Big~
+Comlist   mpoload 6204
+drop big
+say Thank you for coming to Mcdonalds.
+say We love to see you smile.
+smile
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   "Soft Drink"~
+Comlist   mpoload 6205
+drop soft
+say Thank you for coming to Mcdonalds.
+say We love to see you smile.
+smile
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   "Mc Chicken"~
+Comlist   mpoload 6206
+drop Mc
+say Thank you for coming to Mcdonalds.
+say We love to see you smile.
+smile
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   "Grilled Chicken"~
+Comlist   mpoload 6208
+drop Grilled
+say Thank you for coming to Mcdonalds.
+say We love to see you smile.
+smile
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   "Crispy Chicken"~
+Comlist   mpoload 6207
+drop crispy
+say Thank you for coming to Mcdonalds.
+say We love to see you smile.
+smile
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   "Mc Flurry"~
+Comlist   mpoload 6209
+drop mc
+say Thank you for coming to Mcdonalds.
+say We love to see you smile.
+smile
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   "Water"~
+Comlist   mpoload 603
+drop water
+say Thank you for coming to Mcdonalds.
+say We love to see you smile.
+smile
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6218
+Keywords   Crazy Eddie~
+Short      Crazy Eddie~
+Long       A man stands here screaming to the people in the store.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   Say WELCOME TO CRAZY EDDIE'S!!!
+say TAKE A LOOK AROUND AND FIND THE STUFF YOU NEED TO BUILD YOUR OWN STUFF!
+beam
+say Just look at the list.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6219
+Keywords   instructor~
+Short      A training instructor~
+Long       A training instructor stands here, giving pep talks to working students.
+~
+Desc       His whole body is jet black. He has big white eyes and red lips. He is
+wearing a Turban on top of his head with a blue jem in the center. He has
+golden bands around his arms and he is wearing a red colored jacket. He is
+wearing white pants and has a red cummerbund around his waist. On his feet
+he has red pointed slippers. Also he has a golden ear ring in each ear.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel train nokill~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    20 20 20 20 20 20 20
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6220
+Keywords   Weapons Guard~
+Short      A Weapons Guard~
+Long       A Weapons Guard stands here looking for smugglers.
+~
+Desc       Dressed in a Guards uniform, he stands about 5'9" and doesnt hold a smile.
+He seems to have his mind set on finding something or someone. With a
+night stick at his side he kinda looks intimidating.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_customs_weapons~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 500 0 -1150 0 0
+Stats2     100 10 50000
+Stats3     50 4 2
+Stats4     0 0 0 100 100
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpmload 6220
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6221
+Keywords   Drugs Guard~
+Short      A Drug Guard~
+Long       A Drug Guard stands here looking for smugglers.
+~
+Desc       She stands here in a officer uniform. With night stick in hand she gives
+off an intimidating look about her. Looking around the room she seems to
+be looking for drug smugglers.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_customs_spice~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 500 0 -1150 0 0
+Stats2     100 10 50000
+Stats3     50 4 2
+Stats4     0 0 0 100 100
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6222
+Keywords   Smugglers Hologram~
+Short      A Smugglers Hologram~
+Long       A Smugglers Hologram Stands here ready to fight.
+~
+Desc       Nothing much about this hologram, It was made to look like a robber with a
+knife at his side. 
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 350 0 -775 50 0
+Stats2     70 10 10000
+Stats3     35 4 2
+Stats4     0 0 0 70 70
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpmload 6222
+mpoload 6203
+mpecho A soft hum can be heard.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6223
+Keywords   Smuggler Shop Owner~
+Short      Smuggler Shop Owner~
+Long       The Smuggler Shop Owner sits behind the wire fence.
+~
+Desc       Standing behind a wired fence, there is a man that stands about 5'10". He
+is wearing a black sheert with white pants. He has glasses on his face,
+with a penic in his right hand. He has three rings on his left hand.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   5 77 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       6235
+Keywords   Mog~
+Short      &wM&Wo&wg~
+Long       &zA little &wwhite &zmoogle stands behind the counter dancing.&w
+~
+Desc       &zA little &wwhite &zmoogle, covered in fur. He stands about 4'7" and has
+little &Rred &zwings. He has a &Rred&z noise, and black eyes. He seems to
+be a spunky little thing. He is dancing to some music in the background.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say Welcome to my shop, Kupo.
+say Please feel free to look around, kupo.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6236
+Keywords   M9 Colony Citizen~
+Short      A M9 Colony Citizen~
+Long       Standing here is a M9 Colony Citizen.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc~
+Stats1     0 50 0 -25 25 0
+Stats2     10 10 500
+Stats3     5 4 2
+Stats4     0 0 0 10 10
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+VIPFlags   M9~
+#ENDMOBILE
+
+#MOBILE
+Vnum       6237
+Keywords   M9 Colony Citizen~
+Short      A M9 Colony Citizen~
+Long       Standing here is a M9 Colony Citizen.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc~
+Stats1     0 100 0 -150 25 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+VIPFlags   M9~
+#ENDMOBILE
+
+#MOBILE
+Vnum       6238
+Keywords   M9 Colony Citizen~
+Short      A M9 Colony Citizen~
+Long       Standing here is a M9 Colony Citizen.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc~
+Stats1     0 200 0 -400 25 0
+Stats2     40 10 2000
+Stats3     20 4 2
+Stats4     0 0 0 40 40
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+VIPFlags   M9~
+#ENDMOBILE
+
+#MOBILE
+Vnum       6239
+Keywords   M9 Colony Citizen~
+Short      A M9 Colony Citizen~
+Long       Standing here is a M9 Colony Citizen.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc~
+Stats1     0 400 0 -900 25 0
+Stats2     80 10 4000
+Stats3     40 4 2
+Stats4     0 0 0 80 80
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+VIPFlags   M9~
+#ENDMOBILE
+
+#MOBILE
+Vnum       6297
+Keywords   Head dealer~
+Short      a newly created Head dealer~
+Long       Some god abandoned a newly created Head dealer here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   8 8 8 8 8 120 8 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       6298
+Keywords   Smaug Scoyn Dragon Mount Pet~
+Short      Smaug~
+Long       Scoyn's loyal pet dragon Smaug is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc mountable~
+Affected   flying~
+Stats1     0 1000 0 -30000 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 85 65
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6299
+Keywords   Last Mob~
+Short      a newly created Last Mob~
+Long       Some god abandoned a newly created Last Mob here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#OBJECT
+Vnum     6200
+Keywords Bandana~
+Type     armor~
+Short    A Bandana~
+Long     A bandana lies on the ground in a pile~
+WFlags   head~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6201
+Keywords An M4 Automatic Rifle~
+Type     weapon~
+Short    An M4 Automatic Rifle~
+Long     An M4 Automatic Rifle lies on the ground~
+WFlags   take wield~
+Values   10 50 10 6 4000 4000
+Stats    1 1000 15000 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6202
+Keywords Handle Broken Sword~
+Type     treasure~
+Short    A handle to a broken sword~
+Long     A handle to a broken sword.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6203
+Keywords Smugglers Knife~
+Type     weapon~
+Short    A Smugglers Knife~
+Long     A smugglers knife was discarded here.~
+WFlags   take wield~
+Values   75 1 25 2 100 100
+Stats    1 50 5 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6204
+Keywords Big Mac~
+Type     food~
+Short    A Big Mac~
+Long     A Big Mac was droped here.~
+Flags    inventory~
+WFlags   take~
+Values   40 40 0 0 0 0
+Stats    1 5 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6205
+Keywords Soft Drink~
+Type     drinkcon~
+Short    A Soft Drink~
+Long     A Soft Drink was droped here.~
+Flags    inventory~
+WFlags   take~
+Values   5 5 0 0 0 0
+Stats    1 5 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6206
+Keywords Mc Chicken~
+Type     food~
+Short    Mc Chicken~
+Long     A Mc Chicken was discarded here.~
+Flags    inventory~
+WFlags   take~
+Values   20 20 0 0 0 0
+Stats    1 5 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6207
+Keywords Crispy Chicken~
+Type     food~
+Short    Crispy Chicken~
+Long     A Crispy Chicken sandwich was droped here.~
+Flags    inventory~
+WFlags   take~
+Values   15 15 0 0 0 0
+Stats    1 5 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6208
+Keywords Grilled Chicken~
+Type     food~
+Short    Grilled Chicken~
+Long     A Grilled Chicken sandwich was dropped here.~
+Flags    inventory~
+WFlags   take~
+Values   25 25 0 0 0 0
+Stats    1 5 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6209
+Keywords Mc Flurry~
+Type     drinkcon~
+Short    Mc Flurry~
+Long     A Mc Flurry was dropped here.~
+Flags    inventory~
+WFlags   take~
+Values   5 5 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6211
+Keywords Gothic Blue Skull Shirt~
+Type     armor~
+Short    &zA &BB&bl&Bu&be &zS&Wk&zu&Wl&zl &zG&Wo&zt&Wh&zi&Wc &zS&Wh&zi&Wr&zt~
+Long     A gothic shirt was discarded here.~
+WFlags   take body~
+Values   50 75 0 0 0 0
+Stats    1 3000 300 0 0
+Affect       -1 -1 5 18 0
+Affect       -1 -1 5 19 0
+#EXDESC
+ExDescKey    Gothic Blue Skull Shirt~
+ExDesc       &zA &RT&rr&Ri&rp&Rp &zShirt. On the front of the shirt is a &BB&bl&Bu&be
+&zSkull.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6212
+Keywords Gothic Tripp Shirt Red Skull~
+Type     armor~
+Short    &zA &RR&re&Rd &zS&Wk&zu&Wl&zl &WG&zo&Wt&zh&Wi&zc &WS&zh&Wi&zr&Wt~
+Long     A Gothic Tripp Shirt Red Skull is here.~
+WFlags   take body~
+Values   55 75 0 0 0 0
+Stats    1 3500 350 0 0
+Affect       -1 -1 5 19 0
+Affect       -1 -1 5 18 0
+Affect       -1 -1 500 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6216
+Keywords Buster Sword~
+Type     weapon~
+Short    &BB&bu&cs&ct&be&Br &BS&bw&co&br&Bd~
+Long     &zA large bladed sword was left behind.~
+WFlags   take wield~
+Values   1000 5 150 2 1000 1000
+Stats    5 35000 5000 0 0
+Affect       -1 -1 5 19 0
+Affect       -1 -1 5 18 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6217
+Keywords Gattling Gun~
+Type     weapon~
+Short    &zG&Wa&zt&Wt&zl&Wi&zn&Wg &zG&Wu&zn~
+Long     &zA discarded Gattling Gun remains here.~
+Flags    hum~
+WFlags   take wield~
+Values   75 125 9 6 5000 5000
+Stats    25 45000 4500 0 0
+Affect       -1 -1 35 18 0
+Affect       -1 -1 25 19 0
+Affect       -1 -1 750 13 0
+Affect       -1 -1 -100 14 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6218
+Keywords Dragoon Lance~
+Type     weapon~
+Short    &RD&rr&pa&Rg&po&ro&Rn &GL&ga&cn&gc&Ge~
+Long     &zA mystical &Bblue &zglowing lance was discarded here.~
+Flags    glow hum~
+WFlags   take wield~
+Values   1000 10 135 11 500 500
+Stats    3 95000 9500 0 0
+Affect       -1 -1 25 18 0
+Affect       -1 -1 50 19 0
+Affect       -1 -1 1500 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6219
+Keywords Ragnarok~
+Type     weapon~
+Short    &RR&ra&pg&rn&ra&pr&ro&Rk~
+Long     &zAn ancient weapon was discarded on the ground.~
+Flags    glow~
+WFlags   take wield~
+Values   1000 10 165 2 1500 1500
+Stats    2 750000 10000 0 0
+Affect       -1 -1 25 18 0
+Affect       -1 -1 25 19 0
+Affect       -1 -1 1000 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6220
+Keywords apocalypse~
+Type     weapon~
+Short    &RA&rp&Ro&rc&Ra&rl&Ry&rp&Rs&re~
+Long     &zA sword with great power was left lying on the ground.~
+Flags    glow hum contraband~
+WFlags   take wield~
+Values   1000 10 175 2 1000 1000
+Stats    1 0 0 0 0
+Affect       -1 -1 1500 13 0
+Affect       -1 -1 25 18 0
+Affect       -1 -1 25 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6230
+Keywords Chef Knife~
+Type     weapon~
+Short    A Chef Knife~
+Long     A Chef Knife is here.~
+Flags    contraband~
+WFlags   take wield~
+Values   75 1 1 2 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6231
+Keywords Odin's Sword~
+Type     weapon~
+Short    Odin's Sword~
+Long     A Odin's Sword is here.~
+WFlags   take wield~
+Values   75 1 50 2 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6234
+Keywords L.L.Bean Backpack~
+Type     container~
+Short    &wA &zL&w.&zL&w.&zB&we&za&wn &zB&wa&zc&wk&zp&wa&zc&wk~
+Long     &wA backpack was left here on the ground.~
+WFlags   take body~
+Values   150 1 0 75 0 0
+Stats    1 10000 10 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6235
+Keywords sewing kit~
+Type     thread~
+Short    &GM&g9 &GS&ge&cw&ci&gn&Gg &GK&gi&Gt~
+Long     &zA &GM&g9 &GS&ge&cw&ci&gn&Gg &GK&gi&Gt &zwas discarded here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 25 2 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6236
+Keywords Polyester~
+Type     fabric~
+Short    Polyester~
+Long     Some discarded Polyester is left here.~
+WFlags   take~
+Values   5 5 0 0 0 0
+Stats    1 15 1 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6237
+Keywords Cotton~
+Type     fabric~
+Short    Cotton~
+Long     Some discarded cotton was left here.~
+WFlags   take~
+Values   10 10 0 0 0 0
+Stats    1 35 2 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6238
+Keywords nylon~
+Type     fabric~
+Short    Nylon~
+Long     Some discarded Nylon is left here.~
+WFlags   take~
+Values   15 15 0 0 0 0
+Stats    1 50 5 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6239
+Keywords Fine Silk~
+Type     fabric~
+Short    Fine Silk~
+Long     Some discarded Fine Silk was left here.~
+WFlags   take~
+Values   20 20 0 0 0 0
+Stats    1 75 7 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6240
+Keywords Denim~
+Type     fabric~
+Short    Denim~
+Long     Some discarded Denim was left here.~
+WFlags   take~
+Values   25 25 0 0 0 0
+Stats    1 125 12 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6241
+Keywords Stat Sign~
+Type     trash~
+Short    A Small Sign~
+Long     A Small sign is driven into the ground with letters over it.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6242
+Keywords a small clip of ammunition ammo~
+Type     ammo~
+Short    a small clip of ammunition~
+Long     A small clip of ammunition lies discarded here.~
+WFlags   take~
+Values   500 0 0 0 0 0
+Stats    1 3000 300 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6260
+Keywords shard test~
+Type     trash~
+Short    a shard test~
+Long     A shard test is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6289
+Keywords shikon jewel shard case~
+Type     container~
+Short    &P[&p>&BS&bh&zik&bo&Bn &YJ&Oe&Ww&Oe&Yl &GS&gh&ca&gr&Gd&p &CC&ca&Cs&ce<&P]&t~
+Long     Scoyn left his bag of Shikon bits laying here.~
+Flags    dark antigood~
+Values   1000000 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6290
+Keywords gundanium elixir elixer restore~
+Type     restore~
+Short    &BG&bu&zn&Wd&Ba&Wn&zi&bu&Bm &GE&gl&cix&ge&Gr~
+Long     A glowing vial has been left here.~
+Flags    inventory~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 1000000 100000 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6291
+Keywords denim fabric~
+Type     fabric~
+Short    a piece of denim fabric~
+Long     A test cloth 2 is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 64
+#ENDOBJECT
+
+#OBJECT
+Vnum     6292
+Keywords cotton fabric~
+Type     fabric~
+Short    a piece of cotton fabric~
+Long     A test cloth 1 is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 32
+#ENDOBJECT
+
+#OBJECT
+Vnum     6293
+Keywords token bag singles~
+Type     container~
+Short    &CO&cp&be&Br&ga&Gt&gi&co&Cn &WM&we&zt&we&zo&Wr &GQ&gu&Oe&gs&Gt &RT&ro&pk&re&Rn&ps&D~
+Long     A token bag singles is here.~
+Values   1000000 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6294
+Keywords token bag 10s~
+Type     container~
+Short    &WS&wt&zac&wk&Ws &Ro&rf &Y[&O10&Y] &CO&cp&be&Br&ga&Gt&gi&co&Cn &WM&we&zt&we&zo&Wr &GQ&gu&Oe&gs&Gt &RT&ro&pk&re&Rn&ps&D~
+Long     A token bag 10s is here.~
+Values   1000000 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6295
+Keywords Token bag 100s~
+Type     container~
+Short    &WS&wt&zac&wk&Ws &Ro&rf &Y[&O100&Y] &CO&cp&be&Br&ga&Gt&gi&co&Cn &WM&we&zt&we&zo&Wr &GQ&gu&Oe&gs&Gt &RT&ro&pk&re&Rn&ps&D~
+Long     A bag 100 token stacks is here.~
+Values   1000000 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6296
+Keywords ball bawl sack Bawlsack~
+Type     container~
+Short    his bawlsack~
+Long     Scoyn has left his bawlsack here.~
+Flags    magic~
+WFlags   take~
+Values   1000000 0 0 100 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6297
+Keywords Mog Spear Light~
+Type     weapon~
+Short    &WM&wo&Wg&z'&ws &CS&cp&Be&ca&Cr &Wo&wf &wL&Ci&Bg&Ch&wt&w~
+Long     &WM&wo&Wg&z'&ws &CS&cp&Be&ca&Cr &Wo&wf &wL&Ci&Bg&Ch&wt&w has been placed on the ground.~
+WFlags   take wield~
+Values   1000 495 3 11 1000 1000
+Stats    25 550000 55000 0 0
+Affect       -1 -1 750 13 0
+Affect       -1 -1 30 18 0
+Affect       -1 -1 35 19 0
+Affect       -1 -1 -250 14 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6298
+Keywords Great Sword Darkness~
+Type     weapon~
+Short    &WT&wh&We &GG&gr&ce&ga&Gt &CS&cw&wo&cr&Cd &WO&wf &zD&Wa&zr&Wk&zn&We&zs&Ws&w~
+Long     &WT&wh&We &GG&gr&ce&ga&Gt &CS&cw&wo&cr&Cd &WO&wf &zD&Wa&zr&Wk&zn&We&zs&Ws &Wi&ws &Wh&we&Wr&we &Wo&wn &Wt&wh&We &Wg&wr&Wo&wu&Wn&wd&Wz.&w~
+Flags    glow~
+WFlags   take wield~
+Values   1000 500 3 2 1000 1000
+Stats    1 650000 65000 0 0
+Affect       -1 -1 500 13 0
+Affect       -1 -1 20 18 0
+Affect       -1 -1 30 19 0
+#MUDPROG
+Progtype  wear_prog~
+Arglist   100~
+Comlist   mea $n The sword begins to glow.
+mpechoaround $n The sword begins to glow as $n wields it.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  remove_prog~
+Arglist   100~
+Comlist   mea $n The swords glow disappears.
+mpechoaround $n The swords glow dissapears after $n removes it.
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6299
+Keywords Last Object~
+Type     trash~
+Short    a Last Object~
+Long     A Last Object is here.~
+Flags    prototype~
+WFlags   hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+Affect       -1 -1 5000 17 0
+#ENDOBJECT
+
+#ROOM
+Vnum     6200
+Name     &GM&g9 &zPrimary Hangar&D~
+Sector   inside~
+Flags    nomob can_land can_fly docking~
+Desc     An electronic banner overhead flashes welcoming everyone to M9.  Technicians
+can be seen doing repairs and refueling ships in the hangar with the ambient
+sound of plugs and hoses being connected and disconnected from the various
+ships and echoing through the vast space.  Looking towards the bay opening,
+the vastness of space as well as the coming and going of ships of all shapes
+and sizes can be seen giving off twinkles of light.  The whir of the air
+ducts circulating the air gives the docking bay a consistent hum.  The
+occasional scent of fuel and or lubricant wafts through the air on its way
+back through the ventilation system.  To the north are a pair of sliding
+doors separating the rest of the colony from the docking bay.
+~
+#EXIT
+Direction north~
+ToRoom    6201
+Flags     secret~
+#ENDEXIT
+
+Reset O 0 10315 1 6200
+#ENDROOM
+
+#ROOM
+Vnum     6201
+Name     &zColony &GM&g9 &zHallway~
+Sector   inside~
+Flags    indoors prototype~
+Desc     Walking along the metal corridor, port holes to the vastness of space offer
+a refreshing view with ships of all shapes and sizes going past them with
+varying amounts of lights on their hulls.  The lights in the ceiling leave
+little to the imagination; the metal floor stretches in both directions
+with the oscillating vents circulating the air, occasionally chilling those
+not yet acclimated to the colony's life support systems.  To the south is
+a pair of sliding doors leading to the primary hangar and to the north is
+an intersection with corridors leading in several directions.
+~
+#EXIT
+Direction north~
+ToRoom    6202
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6200
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6202
+Name     &zA Giant Hallway~
+Sector   inside~
+Flags    indoors prototype~
+Desc     This is the main intersection in this part of the colony.  The metal corridors
+lead in all different directions from here with lights and signs blinking
+and glowing with various names and titles of the surrounding areas.  Off to
+the north is a transporter with people coming and going to the other sections
+of the colony.  To the east, a bank with a large &Y$&z above the double doors
+and guards standing on either side.  Off to the west is the Shady Pines motel
+where weary travelers can recover in a comfortable bed and wake up to a
+complimentary continental breakfast.  To the Northwest is a man behind a
+counter protecting the almost constantly cycling storage containers as the
+owners come and go with their belongings.  To the south, the corridor extends
+towards a pair of doors that open and close revealing the hangar.
+~
+#EXIT
+Direction north~
+ToRoom    6205
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6203
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6201
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6204
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6299
+#ENDEXIT
+
+Reset M 0 6239 5 6202
+Reset M 0 6200 10 6202
+#ENDROOM
+
+#ROOM
+Vnum     6203
+Name     &GM&g9 &zInternational Bank~
+Sector   inside~
+Flags    indoors bank prototype~
+Desc     Now standing within the &GM&g9 &zInternation Bank, people come and go with
+ease to get there money or deposit it into there bank acconts. Bank telers
+are behind the counter helping anyone with there banking problems. People
+seem to enjoy using the banking system here and the people seem friendly.
+~
+#EXIT
+Direction west~
+ToRoom    6202
+#ENDEXIT
+
+Reset M 0 6239 5 6203
+#ENDROOM
+
+#ROOM
+Vnum     6204
+Name     &zShady Pines&D~
+Sector   inside~
+Flags    indoors hotel prototype~
+Desc     Upon entering the Shady Pines Motel, the doors close.  As patrons enter and
+exit, the doors continue to open and close.  A concierge stands behind the
+counter giving messages to guests, greeting and welcoming potential guests,
+and checking in and out those that opt to stay or need to depart as their
+journey sends them towards another destination.  Next to the counter is a
+bell boy waiting to help customers carry their luggage from the lobby to
+their room.  To the east through the door is the hustle and bustle of the
+main intersection in this part of M9.
+~
+#EXIT
+Direction east~
+ToRoom    6202
+#ENDEXIT
+
+Reset M 0 6239 5 6204
+#ENDROOM
+
+#ROOM
+Vnum     6205
+Name     &GM&g9 &zTransporter Room~
+Sector   inside~
+Flags    indoors prototype~
+Desc     Two signs point to two different areas of the colony; Residental, where
+everyone lives and the shops are located, and Training, where everyone
+trains in combat. It seems those are the only places you can go to,
+besides back to the landing pad.
+ 
+&BTo go to the training area, say '&Wtrain&B'.
+&BTo go to the residential area, say '&Whomes&B'.
+&BTo go to the commercial area, say '&Wshop&B'.
+~
+#EXIT
+Direction north~
+ToRoom    6224
+Flags     window~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6202
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6219
+Flags     window~
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6206
+Flags     window~
+#ENDEXIT
+
+Reset M 0 6239 5 6205
+Reset M 0 6239 5 6205
+#MUDPROG
+Progtype  speech_prog~
+Arglist   train~
+Comlist   mpechoat $n You have been taken to the Training Area.
+mpechoaround $n $n has been taken to the Training Area.
+mptransfer $n 6206
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   homes~
+Comlist   mpechoat $n You are taken to the Residential Area.
+mpechoaround $n $n is taken to the Residential Area.
+mptransfer $n 6224
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   shop~
+Comlist   mpechoat $n You have been taken to the Commercial Area.
+mpechoaround $n $n has been taken to the Commerical Area.
+mptransfer $n 6219
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6206
+Name     &zIntersection~
+Sector   inside~
+Flags    indoors prototype~
+Desc     Arrows point to the north and west. To the north reads 'Training Zone', and
+to the west is the Medical Bay, for those who have been injured. Very few
+walk out of the north as true champions, as it is a long and hard road to
+the top. 
+ 
+&BTo go to the main area, say '&Wmain&B'.&W
+~
+#EXIT
+Direction north~
+ToRoom    6208
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6261
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6251
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6207
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   main~
+Comlist   mpechoat $n You are taken to the Main Area.
+mptrans $n 6205
+mpecho $n is taken to the Main Area.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6207
+Name     &GM&g9 &zMedical Bay~
+Sector   inside~
+Flags    indoors prototype heal~
+Desc     Rows of cabinets cover one side of the room, while on the other there is a
+sink and some drawers taking up the space. There is a table in the middle
+of the room. A scanning machine sits next to it, used to scan all types of
+races for diseases and wounds.  
+~
+#EXIT
+Direction east~
+ToRoom    6206
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6208
+Name     &zA Steel Hallway~
+Sector   inside~
+Flags    indoors prototype~
+Desc     Lights above you illuminate the hallway. Arrows point to the north, and a
+sign above the northern entrance reads 'Training Zone'. To the south is
+the entrance to the training area.
+~
+#EXIT
+Direction north~
+ToRoom    6209
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6206
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6209
+Name     &GM&g9 &zTraining Center~
+Sector   inside~
+Flags    indoors prototype~
+Desc     Now standing in a well lit room.  You can see there are many different ways
+to choose from. The sound of weapons can be heard clashing together from
+all directions. There is a &Wsign &zthat floats in the middle of the room.
+~
+#EXIT
+Direction north~
+ToRoom    6210
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6211
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6208
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6212
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6217
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6218
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6213
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6214
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6215
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6216
+#ENDEXIT
+
+#EXDESC
+ExDescKey    sign~
+ExDesc       To go to the Final Training Level. All you have to do is say the words.
+"&BFinal&w" 
+~
+#ENDEXDESC
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   final~
+Comlist   mpechoat $n You are taken to the Final Training Level.
+mptransfer $n 6250
+mpecho $n is taken to the Final Training Level.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6210
+Name     &zTraining Level &CO&cn&Ce~
+Sector   inside~
+Flags    indoors prototype~
+Desc     This is the first training level. The room has been badly beating up from
+battles with the holograms. Bullet holes can be seen in the walls. Blood
+is slipped on the floor from mistakes people made that cost them thier
+lives.
+ 
+&BTo summon a hologram just say "&Gbegin&B"
+~
+#EXIT
+Direction south~
+ToRoom    6209
+#ENDEXIT
+
+Reset M 0 6201 1 6210
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho A hologram appears in front of you.
+mpmload 6201
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6211
+Name     &zTraining Level &GT&gw&Go~
+Sector   inside~
+Flags    indoors prototype~
+Desc     This is the second training level. There is battle scars all over this
+room. Bullets are seen in the walls here and cuts are made in the floor.
+Blood has been slipped here from holograms and other trainers downfall.
+ 
+&BTo summon a hologram just say "&GBegin&B".
+~
+#EXIT
+Direction west~
+ToRoom    6209
+#ENDEXIT
+
+Reset M 0 6202 1 6211
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho A hologram appears in front of you.
+mpmload 6202
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6212
+Name     &zTraining Level &RT&rh&Rr&re&Re~
+Sector   inside~
+Flags    indoors prototype~
+Desc     This is the third training level. Here many battles have come and gone by
+the look of the destruction in the room. Blood from fallen victims stain
+the floor. 
+ 
+&BTo summon a hologram say "&GBegin&B"
+~
+#EXIT
+Direction east~
+ToRoom    6209
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho A hologram appears before you.
+mpmload 6203
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6213
+Name     &zTraining Level &PS&pi&Px~
+Sector   inside~
+Flags    indoors prototype~
+Desc     This is Training Level Six. Many battle wounds scare the walls. Bullet
+holes mark the walls of miss fire. Blood stains the floor where people
+have died from mistakes they made in battle.
+ 
+&BTo summon a hologram say "&GBegin&B"
+~
+#EXIT
+Direction southwest~
+ToRoom    6209
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho A hologram appears in front of you.
+mpmload 6206
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6214
+Name     &zTraining Level &wS&We&wv&We&wn~
+Sector   inside~
+Flags    indoors prototype~
+Desc     This is Training Level Seven. Battle scares cover the walls of the room.
+Bullet holes are in the walls and blood covers the floor from falling
+warriors.
+ 
+&BTo summon a hologram say "&GBegin&B"
+~
+#EXIT
+Direction southeast~
+ToRoom    6209
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho A hologram appears in front of you.
+mpmload 6207
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6215
+Name     &zTraining Level &CE&ci&zg&ch&Ct~
+Sector   inside~
+Flags    indoors prototype~
+Desc     This is Training Level Eight. Battle scares covers the walls of the room.
+Bullet holes are in the walls and blood covers the floor from falling
+warriors. 
+ 
+&BTo summon a hologram just say "&GBegin&B"
+~
+#EXIT
+Direction northwest~
+ToRoom    6209
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho A hologram appears in front of you.
+mpmload 6208
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6216
+Name     &zTraining Level &GN&gi&Gn&ge~
+Sector   inside~
+Flags    indoors prototype~
+Desc     This is Training Level Nine. Battle scares covers the walls of the room.
+Bullet holes are in the walls and blood covers the floor from falling
+warriors.
+ 
+&BTo summon a hologram just say "&GBegin&B"
+~
+#EXIT
+Direction northeast~
+ToRoom    6209
+#ENDEXIT
+
+Reset M 0 6209 1 6216
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho A hologram appears in front of you.
+mpmload 6209
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6217
+Name     &zTraining Level &BF&bo&Bu&br~
+Sector   inside~
+Flags    indoors prototype~
+Desc     This is Training Level Four. The room has been scared by battles with
+holograms. Blood stains the floor of people losing there lives due to
+there mistakes. 
+ 
+&BTo summon a hologram say "&GBegin&B"
+~
+#EXIT
+Direction down~
+ToRoom    6209
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho A hologram appears in front of you.
+mpmload 6204
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6218
+Name     &zTraining Level &YF&Oi&Yv&Oe~
+Sector   inside~
+Flags    indoors prototype~
+Desc     This is Training Level Five. Many battle wounds scare the walls of the
+room. Bullet holes mark the walls of miss fire. Blood stains cover the
+floor where people have died. 
+ 
+&BTo summon a hologram say "&GBegin&B"
+~
+#EXIT
+Direction up~
+ToRoom    6209
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho A hologram appears in front of you.
+mpmload 6205
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6219
+Name     &GM&g9 &zCommercial Area~
+Sector   inside~
+Flags    indoors prototype~
+Desc     One road leads to the north, while at the end of the road is a dead end.
+Artifical lights flow down the street making it look like it is night
+time. People are walking the street, some with bags in their hands and
+others with food or some kind of object. People seem to be friendly as
+they walk alone the streets.
+ 
+To return to the main part of &GM&g9&z say "&wMain&z".
+~
+#EXIT
+Direction north~
+ToRoom    6220
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6205
+Flags     window~
+#ENDEXIT
+
+Reset M 0 6236 2 6219
+#MUDPROG
+Progtype  speech_prog~
+Arglist   main~
+Comlist   mpechoat $n You are taken to the Main Area.
+mptrans $n 6205
+mpecho $n is taken to the Main Area.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6220
+Name     &GM&g9 &zCommercial Area~
+Sector   inside~
+Flags    indoors prototype~
+Desc     People walk along the sidewalks, either by themselves or with friends or
+family, talking about events happening around the universe. The artificial
+sun shines brightly above you, and people seem to be having a fun time.
+Houses are all around this area, and to the north is an intersection.
+~
+#EXIT
+Direction north~
+ToRoom    6221
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6219
+#ENDEXIT
+
+Reset M 0 6238 2 6220
+Reset M 0 6236 2 6220
+Reset M 0 6200 10 6220
+#ENDROOM
+
+#ROOM
+Vnum     6221
+Name     &zAn Intersection~
+Sector   inside~
+Flags    indoors prototype~
+Desc     People stop at the 3 couners around the road, and there is one way south,
+and two ways east and west. Factories can be seen to the west, while the
+Shopping District is seen to the east. 
+~
+#EXIT
+Direction east~
+ToRoom    6222
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6220
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6223
+#ENDEXIT
+
+Reset M 0 6200 10 6221
+Reset M 0 6237 3 6221
+#ENDROOM
+
+#ROOM
+Vnum     6222
+Name     &GM&g9 &zShopping Complex~
+Sector   inside~
+Flags    indoors prototype~
+Desc     A sign on top of a pole reads 'Shopping District'. The smells of food and
+oil seem to be coming from the east. People walk in and out of stores with
+different items.
+~
+#EXIT
+Direction east~
+ToRoom    6239
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6221
+#ENDEXIT
+
+Reset M 0 6237 3 6222
+#ENDROOM
+
+#ROOM
+Vnum     6223
+Name     &GM&g9 &zFactory Area~
+Sector   inside~
+Flags    indoors prototype~
+Desc     Factory workers walk to and from this area, sweaty and dirty. They seem to
+have been working hard, as they all look tired out. To the west is the
+main area, where they were all working.
+~
+#EXIT
+Direction east~
+ToRoom    6221
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6249
+#ENDEXIT
+
+Reset M 0 6237 3 6223
+Reset M 0 6200 10 6223
+Reset M 0 6200 10 6223
+Reset M 0 6200 10 6223
+#ENDROOM
+
+#ROOM
+Vnum     6224
+Name     &GM&g9 &zResidental Sector~
+Sector   inside~
+Flags    indoors prototype~
+Desc     People seem to be walking to and from the north, where houses are visible.
+You can tell they're happy, because they all seem to be having a great
+time. To the north is the residential sector.
+ 
+&BTo go to the main area, say '&Wmain&B'.
+~
+#EXIT
+Direction north~
+ToRoom    6225
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6205
+Flags     window~
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   main~
+Comlist   mpechoat $n You are taken to the Main Area. 
+mptrans $n 6205
+mpecho $n is taken to the Main Area.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6225
+Name     &GM&g9 &zResidental Sector~
+Sector   inside~
+Flags    indoors prototype~
+Desc     People walk along the sidewalks, either by themselves or with friends or
+family, talking about events happening around the universe. The artificial
+sun shines brightly above you, and people seem to be having a fun time.
+Houses are all around this area, as well as to the north.
+~
+#EXIT
+Direction north~
+ToRoom    6228
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6226
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6224
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6227
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6226
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors empty_home prototype~
+Owner    Oracle~
+#EXIT
+Direction west~
+ToRoom    6225
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6227
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors empty_home prototype~
+Owner    Kayle~
+#EXIT
+Direction east~
+ToRoom    6225
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6228
+Name     &GM&g9 &zResidental Sector~
+Sector   inside~
+Flags    indoors prototype~
+Desc     People walk along the sidewalks, either by themselves or with friends or
+family, talking about events happening around the universe. The artificial
+sun shines brightly above you, and people seem to be having a fun time.
+Houses are all around this area, as well as to the north and south.
+~
+#EXIT
+Direction north~
+ToRoom    6231
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6229
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6225
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6230
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6229
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors empty_home prototype~
+Owner    Oracle~
+#EXIT
+Direction west~
+ToRoom    6228
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6230
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors empty_home prototype~
+Owner    Aristel~
+#EXIT
+Direction east~
+ToRoom    6228
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6231
+Name     &GM&g9 &zResidental Sector~
+Sector   inside~
+Flags    indoors prototype~
+Desc     People walk along the sidewalks, either by themselves or with friends or
+family, talking about events happening around the universe. The artificial
+sun shines brightly above you, and people seem to be having a fun time.
+Houses are all around this area, as well as to the south. This area seems
+to be a dead end.
+~
+#EXIT
+Direction north~
+ToRoom    6234
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6232
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6228
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6233
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6232
+Name     An Empty Apartment~
+Sector   inside~
+Flags    empty_home prototype~
+Owner    Scorpion~
+#EXIT
+Direction west~
+ToRoom    6231
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6233
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors prototype~
+Owner    Balthasar~
+#EXIT
+Direction east~
+ToRoom    6231
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6234
+Name     &GM&g9 &zResidental Sector~
+Sector   inside~
+Flags    indoors prototype~
+#EXIT
+Direction north~
+ToRoom    6238
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6237
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6231
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6236
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6235
+Name     M9 Hotel~
+Sector   inside~
+Flags    indoors hotel prototype~
+#EXIT
+Direction south~
+ToRoom    6205
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6236
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors private plr_home empty_home~
+Owner    Drega~
+#EXIT
+Direction east~
+ToRoom    6234
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6237
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors empty_home~
+Owner    Xano~
+#EXIT
+Direction west~
+ToRoom    6234
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6238
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors prototype~
+#EXIT
+Direction south~
+ToRoom    6234
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6239
+Name     &GM&g9 &zShoping Complex~
+Sector   inside~
+Flags    indoors~
+Desc     Weapons and armor seem to be located in this area, as people walk in and
+out of stores with new weapons and shiny armor. The weapons shop is to the
+south, and the armor shop is to the north. To the east are more stores.
+~
+#EXIT
+Direction north~
+ToRoom    6240
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6242
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6241
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6222
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6295
+Flags     hidden~
+#ENDEXIT
+
+Reset M 0 6200 10 6239
+#ENDROOM
+
+#ROOM
+Vnum     6240
+Name     &PA&pr&Pi&pe&Ps&z'&Ps &BA&br&cm&bo&Br &GS&gh&go&Gp~
+Sector   inside~
+Flags    nomob indoors prototype~
+Desc     Armor hangs from the walls all around the room. Display cases sit in the
+middle of the room, showing off rare armor. A counter is in the back of
+the store, and the shop owner is there, shining a pair of boots.
+~
+#EXIT
+Direction south~
+ToRoom    6239
+#ENDEXIT
+
+Reset M 0 6212 1 6240
+  Reset G 0 6290 1
+#ENDROOM
+
+#ROOM
+Vnum     6241
+Name     &wG&Wi&wl&Wg&wa&Wm&we&Ws&wh&z'&Ws &RW&re&pa&pp&ro&Rn &GC&ge&cn&ct&ge&Gr~
+Sector   inside~
+Flags    nomob indoors~
+Desc     Weapons are all over the place, and are hanging from the walls. Display
+cases show ancient weapons in the middle of the room. A counter is in the
+back, with the owner behind it, shining a sword. There is a picture above
+the owner of another person and the name "The Real Gilgamesh".
+~
+#EXIT
+Direction north~
+ToRoom    6239
+#ENDEXIT
+
+Reset M 0 6213 1 6241
+  Reset G 0 6216 1
+  Reset G 0 6218 1
+  Reset G 0 6219 1
+  Reset G 0 6217 1
+#MUDPROG
+Progtype  speech_prog~
+Arglist   stock~
+Comlist   mpmload 6019
+mpat 6019 mpoload 810
+mpat 6019 mpoload 600
+mpat 6019 mpoload 53
+mpat 6019 mpoload 50
+mpat 6019 mpoload 623
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Apocalypse~
+Comlist   mpechoaround $n $n is surounded in a beam of light.
+mpechoat $n A beam of light surounds your body.
+mptrans $n 6260
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6242
+Name     &GM&g9 &zShopping Complex~
+Sector   inside~
+Flags    indoors prototype~
+Desc     The smell of food seems to be getting closer and closer. People in this
+area seem to enjoy shopping at the new Hot Topic's store. Punk rockers and
+other types of odd looking people stand around talking with each other
+about the events of past. Also with the new opening of Victory Secret
+store to the north, it has attracted more and more people to this area.
+People dont seem to have and gurdge agaist each other. To the east is the
+end of the shopping district. 
+~
+#EXIT
+Direction north~
+ToRoom    6243
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6245
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6244
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6239
+#ENDEXIT
+
+Reset M 0 6200 10 6242
+#ENDROOM
+
+#ROOM
+Vnum     6243
+Name     &YMcDonalds~
+Sector   inside~
+Flags    nomob indoors~
+Desc     The smell of fast food lingers in the air, a man standing behind a counter
+is taking order for the people and serving them just as fast as they
+order. People are sitting down to eat there fast food. A person walks
+around cleaning up the tables for the next person to have a seat.
+ 
+The &YMenu&z is hanging above the clerks head.
+~
+#EXIT
+Direction south~
+ToRoom    6242
+#ENDEXIT
+
+Reset M 0 6217 1 6243
+  Reset G 0 6204 1
+  Reset G 0 6205 1
+#EXDESC
+ExDescKey    menu~
+ExDesc       Food
+-Big Mac
+-Mc Chicken
+-Crispy Chicken
+-Grilled Chicken
+ 
+Drinks
+-Soft Drink
+-Water
+-Mc Flurry
+ 
+Just tell the clerk what you would like to order.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6244
+Name     &RH&ro&Rt &RT&ro&Rp&ri&Rc~
+Sector   inside~
+Flags    nomob indoors prototype~
+Desc     The room is filled with Gothic, Punk, and other types of odd things people
+wouldnt normaly wear. The room is black and red brick to give off a gothic
+look. Punk rock music and other types of music is playing over the load
+speaker. There is a woman standing behind a counter waiting on any person
+brave enough to buy something from the store.
+~
+#EXIT
+Direction north~
+ToRoom    6242
+#ENDEXIT
+
+Reset M 0 6211 1 6244
+  Reset G 0 6212 1
+  Reset G 0 6211 1
+#ENDROOM
+
+#ROOM
+Vnum     6245
+Name     &zEnd of &GM&g9 &zShopping Complex~
+Sector   inside~
+Flags    indoors prototype~
+Desc     Guards stand around, trying to catch someone breaking a law. A mechanics
+store is to the north, where you can buy things to make other things. The
+security office is to the south, and the other stores are to the west.
+~
+#EXIT
+Direction north~
+ToRoom    6246
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6247
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6242
+#ENDEXIT
+
+Reset M 0 6200 10 6245
+Reset M 0 6238 2 6245
+#ENDROOM
+
+#ROOM
+Vnum     6246
+Name     &zCrazy Eddie's Engineering Center~
+Sector   inside~
+Flags    nomob indoors prototype~
+Desc     People look threw the junk here trying to find parts for what they need to
+build whatever they are working on. A man is standing behind a counter
+yelling for people to buy anything they need.  Rows of selves go alone the
+walls filled with parts and other things to build with. In the middle of
+the store is another row of selves. In the front of the store is the
+counter where the owner stands yelling at the top of his lungs.
+~
+#EXIT
+Direction south~
+ToRoom    6245
+#ENDEXIT
+
+Reset M 0 6218 1 6246
+  Reset G 0 6235 1
+  Reset G 0 6236 1
+  Reset G 0 6237 1
+  Reset G 0 6238 1
+  Reset G 0 6239 1
+  Reset G 0 6240 1
+  Reset G 0 6234 1
+#ENDROOM
+
+#ROOM
+Vnum     6247
+Name     &GM&g9 &zPolice Station~
+Sector   inside~
+Flags    nomob indoors~
+Desc     The sound of police scanners can be heard in the background. A police
+officer is asleep in the chair behind the counter. Offical documents and
+other papers are hanging on the walls. Pictures of run away children and
+missing people are on a builten board.
+~
+#EXIT
+Direction north~
+ToRoom    6245
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6248
+Flags     isdoor~
+#ENDEXIT
+
+Reset O 0 66 1 6247
+Reset D 0 6247 1 0
+#ENDROOM
+
+#ROOM
+Vnum     6248
+Name     &zJail Cell~
+Sector   inside~
+Flags    nomob indoors hotel prototype~
+Desc     &zA simple little jail cell for the trouble of &GM&g9&z. &zA bed on the
+right wall with a tolet on the left wall. A window with bars to the east
+with some carved writing under it.
+~
+#EXIT
+Direction east~
+ToRoom    6201
+Flags     window~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6247
+Flags     isdoor pickproof~
+#ENDEXIT
+
+Reset D 0 6248 3 0
+#EXDESC
+ExDescKey    writing~
+ExDesc       Odin
+~
+#ENDEXDESC
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   odin~
+Comlist   mptrans $n 6270
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6249
+Name     &GM&g9 &zFactory Work Shop~
+Sector   inside~
+Flags    indoors factory prototype~
+Desc     Tools and other items are all around the area. A factory assembly line is
+in the middle of the room, where workers are busily building things for
+other colonies. Men and women are working as hard as they can to finish.
+~
+#EXIT
+Direction east~
+ToRoom    6223
+#ENDEXIT
+
+Reset M 0 6200 10 6249
+#ENDROOM
+
+#ROOM
+Vnum     6250
+Name     &zTraining Level &RT&re&Rn~
+Sector   inside~
+Flags    nomob indoors prototype~
+Desc     This is Training Level Ten. Battle scares covers the walls of the room.
+Bullet holes are in the walls and blood covers the floor from falling
+warriors. 
+ 
+&BTo summon a hologram just say "&GBegin&B"
+~
+#EXIT
+Direction down~
+ToRoom    6209
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho A hologram appears in front of you.
+mpmload 6210
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6251
+Name     &zSteel Hallway~
+Sector   inside~
+Flags    indoors prototype~
+Desc     Lights above you illuminate the hallway. Arrows point to the north, and to
+the south. A sigh is hung above the southern entrance and reads "Skill
+Zone".
+~
+#EXIT
+Direction north~
+ToRoom    6206
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6252
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6252
+Name     &BS&bk&Bi&bl&Bl &RM&ra&Rs&rt&Re&rr &zTraining Area~
+Sector   inside~
+Flags    indoors prototype~
+#EXIT
+Direction north~
+ToRoom    6251
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6253
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6255
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6257
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6262
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6259
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6258
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6254
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6256
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6253
+Name     &GC&go&Gm&gb&Ga&gt &zSkill Area~
+Sector   inside~
+Flags    indoors prototype~
+#EXIT
+Direction west~
+ToRoom    6252
+#ENDEXIT
+
+Reset M 0 512 2 6253
+#ENDROOM
+
+#ROOM
+Vnum     6254
+Name     &WP&wi&Wl&wo&Wt&wi&Wn&wg &zSkill Area~
+Sector   inside~
+Flags    indoors prototype~
+#EXIT
+Direction northwest~
+ToRoom    6252
+#ENDEXIT
+
+Reset M 0 513 2 6254
+#ENDROOM
+
+#ROOM
+Vnum     6255
+Name     &CE&cn&Cg&ci&Cn&ce&Ce&cr&Ci&cn&Cg &zSkill Area~
+Sector   inside~
+Flags    indoors prototype~
+#EXIT
+Direction north~
+ToRoom    6252
+#ENDEXIT
+
+Reset M 0 2000 2 6255
+#ENDROOM
+
+#ROOM
+Vnum     6256
+Name     &YB&Oo&Yu&On&Yt&Oy &YH&Ou&Yn&Ot&Yi&On&Yg &zSkill Area~
+Sector   inside~
+Flags    indoors prototype~
+#EXIT
+Direction northeast~
+ToRoom    6252
+#ENDEXIT
+
+Reset M 0 515 2 6256
+#ENDROOM
+
+#ROOM
+Vnum     6257
+Name     &BD&bi&Bp&bl&Bo&bm&Ba&bc&By &zSkill Area~
+Sector   inside~
+Flags    indoors prototype~
+#EXIT
+Direction east~
+ToRoom    6252
+#ENDEXIT
+
+Reset M 0 517 2 6257
+#ENDROOM
+
+#ROOM
+Vnum     6258
+Name     &PL&pe&Pa&pd&Pe&pr&Ps&ph&Pi&pp &zSkill Area~
+Sector   inside~
+Flags    indoors prototype~
+#EXIT
+Direction southeast~
+ToRoom    6252
+#ENDEXIT
+
+Reset M 0 518 2 6258
+#ENDROOM
+
+#ROOM
+Vnum     6259
+Name     &RE&rs&Rp&ri&Ro&rn&Ra&rg&Re &zSkill Level~
+Sector   inside~
+Flags    indoors prototype~
+#EXIT
+Direction southwest~
+ToRoom    6252
+#ENDEXIT
+
+Reset M 0 529 2 6259
+#ENDROOM
+
+#ROOM
+Vnum     6260
+Name     &wG&Wi&wl&Wg&wa&Wm&we&Ws&wh&z'&Ws &BS&be&cc&cr&be&Bt &GR&go&go&Gm~
+Sector   inside~
+Flags    nomob indoors prototype~
+Desc     &zYou find your self in a room, a man is standing in front of
+a work table. You see he is smashing a hammer on red hot
+metal. Over on the west wall is a &Rf&ri&Rr&re&z place
+where several metal swords are resting. There are many types
+of hammers and swords all over the room, the heat from
+The &Rf&ri&Rr&re&z place seems to be so intense it
+could be the vary &Rf&ri&Rr&re&z&Rs&z of &rhell&z.
+~
+#EXIT
+Direction north~
+ToRoom    6241
+#ENDEXIT
+
+Reset M 0 6214 1 6260
+#MUDPROG
+Progtype  speech_prog~
+Arglist   100~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6261
+Name     &zAn &GA&gd&cv&Can&cc&ge&Gd&z Training Facility~
+Sector   inside~
+Flags    nomob indoors safe prototype~
+Desc     You step into a room full to the brim with the latest gymnastic and
+scholastic training equipment. You see students from all over the
+galaxy working hard on treadmills, benches, and at computers and
+desks. Maybe you should give the ol' brains and brawn a little
+workout?
+~
+#EXIT
+Direction west~
+ToRoom    6206
+#ENDEXIT
+
+Reset M 0 6219 1 6261
+Reset O 0 6241 1 6261
+#EXDESC
+ExDescKey    sign~
+ExDesc       &zTo train your self just type "&BTrain&z" the the stat you wish to train.
+These stats are -Str, Dex, Con, Int, Wis, and Cha-
+Remeber you can only train your stats up to what your race is.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6262
+Name     &BS&bm&Bu&bg&Bg&bl&Be&br&Bs &BS&bc&Bh&bo&Bo&bl~
+Sector   inside~
+Flags    indoors prototype~
+Desc     Standing in the Smugglers School, people walk around watching there own
+backs. People move quickly threw the halls to the next place they have to
+go. A man stands in the center of the room teaching people about how to
+use there smuggler skills.
+~
+#EXIT
+Direction north~
+ToRoom    6266
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6263
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6265
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6264
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6252
+#ENDEXIT
+
+Reset M 0 516 2 6262
+#ENDROOM
+
+#ROOM
+Vnum     6263
+Name     &BS&bm&Bu&bg&Bg&bl&Be&br&Bs &BD&br&Bu&bg &BP&bo&Bs&bt~
+Sector   inside~
+Flags    indoors prototype~
+Desc     People scatter around the room trying to hide the drugs they have on them.
+Pillers in the room allow some of them to get better at smuggling there
+goods. The people that are caught get there drugs taking away from them.
+~
+#EXIT
+Direction west~
+ToRoom    6262
+#ENDEXIT
+
+Reset M 0 6221 1 6263
+#ENDROOM
+
+#ROOM
+Vnum     6264
+Name     &BS&bm&Bu&bg&Bg&bl&Be&br&Bs &BW&be&Ba&bp&Bo&bn&Bs &BP&bo&Bs&bt~
+Sector   inside~
+Flags    indoors prototype~
+Desc     People walk past the guards here trying to hide the weapons they have on
+them. Some people get caught and they weapons they have are taken away.
+Pillers allow people to hide behind them to try and get better at
+smuggling their goods.
+~
+#EXIT
+Direction east~
+ToRoom    6262
+#ENDEXIT
+
+Reset M 0 6220 1 6264
+#ENDROOM
+
+#ROOM
+Vnum     6265
+Name     &BS&bm&Bu&bg&Bg&bl&Be&br&Bs &BS&bh&Bo&bp~
+Sector   inside~
+Flags    indoors prototype~
+Desc     A man stands behind a wired fence so he doesnt get attacked by the maddness
+from the smugglers who come in and try to sell him the smuggled weapons
+they were able to smuggle. A line of people stand here waiting there turn
+while others fight with each other to try and get in the front of the
+line.
+~
+#EXIT
+Direction north~
+ToRoom    6262
+#ENDEXIT
+
+Reset M 0 6223 1 6265
+  Reset G 0 6203 1
+#ENDROOM
+
+#ROOM
+Vnum     6266
+Name     &BS&bm&Bu&bg&Bg&bl&Be&br&Bs &BF&bi&Bg&bh&Bt&bi&Bn&bg &BA&br&Be&ba~
+Sector   inside~
+Flags    indoors prototype~
+Desc     People are fighting in this room to try and get free weapons from the
+holograms here. It seems to be an easy way to get weapons for smuggling.
+There is a hologram in the middle of the room and two on the sides where
+people seem to be fighting. The hologram in the center of the room seems
+to be open to anyone at this point in time.
+~
+#EXIT
+Direction south~
+ToRoom    6262
+#ENDEXIT
+
+Reset M 0 6222 1 6266
+#ENDROOM
+
+#ROOM
+Vnum     6270
+Name     Odin's Castle~
+Sector   inside~
+Flags    indoors prototype~
+Desc     Two large pillars stand side by side with room for a person to walk into.
+The sky here is amost black and gives off a dark omen. The grounds of the
+castle look to be in ruinings. It seems no one has lived here for many
+years. The stone work here has a blackish color to it. The wind seems to
+blow in most weird of ways.
+~
+#EXIT
+Direction north~
+ToRoom    6271
+#ENDEXIT
+
+Reset O 0 12 1 6270
+Reset O 0 6230 1 6270
+#ENDROOM
+
+#ROOM
+Vnum     6271
+Name     Hallway~
+Sector   inside~
+Flags    indoors prototype~
+Desc     Following the stone layed floor, the hallway here is layed with stones. The
+stones seem to have been around for many years to the point of never being
+fixed. Odd sounds come from the castle grounds, giving the settings an
+evil omen about the castle. 
+~
+#EXIT
+Direction north~
+ToRoom    6272
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6270
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6272
+Name     Grand Hall~
+Sector   inside~
+Flags    indoors prototype~
+Desc     Standing in a gaint hall, the dull color and odd smells give off that no
+one has lived here for many years. Time has taken its toll in this once
+great castle. Pills of junk and dust has gathered here in the room to make
+the castle lose its once majestic look. The door ways leading to the north
+and east have falling apart and seem to be unable to be passable to even
+the stongest of men.
+~
+#EXIT
+Direction south~
+ToRoom    6271
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6273
+#ENDEXIT
+
+Reset M 0 6216 4 6272
+  Reset E 0 6230 1 16
+Reset M 0 6216 4 6272
+  Reset E 0 6230 1 16
+Reset O 0 6230 1 6272
+#ENDROOM
+
+#ROOM
+Vnum     6273
+Name     Hallway~
+Sector   inside~
+Flags    indoors prototype~
+Desc     Following the stone layered floor, many cracks and chuncks of stone have
+falling off and seems to be unrepairable. Strange sounds seem to echo
+threw the halls of this great castle. A mist seems to slowly creep over
+the ground from the north, making an unsettling omen around the castle.
+~
+#EXIT
+Direction north~
+ToRoom    6275
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6272
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6274
+#ENDEXIT
+
+Reset M 0 6216 4 6273
+  Reset E 0 6230 1 16
+#ENDROOM
+
+#ROOM
+Vnum     6274
+Name     Court Yard~
+Sector   inside~
+Flags    indoors prototype~
+Desc     Sun light seems to poor into this room from the roof. The green garden
+gives this court yard a gental yet mystical aura. Water runs over the
+ground creating a stream threw the garden. Butter flys and birds can be
+heard in the area.
+~
+#EXIT
+Direction east~
+ToRoom    6273
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6275
+Name     Hallway~
+Sector   inside~
+Flags    indoors prototype~
+Desc     Following the stone layed floor, the hallway here is layed with stone. The
+stones seem to have been around for many years to the point of never being
+fixed. Odd sounds come from the castle grounds, giving the settings an
+evil omen about the castle. 
+~
+#EXIT
+Direction north~
+ToRoom    6276
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6273
+#ENDEXIT
+
+Reset M 0 6216 4 6275
+  Reset E 0 6230 1 16
+#ENDROOM
+
+#ROOM
+Vnum     6276
+Name     Odin's Throne Room~
+Sector   inside~
+Flags    nomob indoors prototype~
+Desc     A long rug goes from the entrance of this room to the center where a giant
+chair sits. In the shadows creatures can be heard whispering to each
+other. The walls seem have be falling apart and the floors are beyond
+repair.
+~
+#EXIT
+Direction north~
+ToRoom    6200
+Flags     isdoor hidden~
+#ENDEXIT
+
+Reset M 0 6215 1 6276
+  Reset E 0 6231 1 16
+Reset D 0 6276 0 0
+#ENDROOM
+
+#ROOM
+Vnum     6277
+Name     &zA Steel Hallway~
+Sector   inside~
+Flags    indoors prototype~
+Desc     Lights illuminate this whole area, and port windows show outside the
+colony. Transports and Mobile Suits fly past the windows, going to and
+from the colony. People walk northeast and southwest, going to do whatever
+they please. You can feel the cool air flying around you from the vents
+above.
+~
+#EXIT
+Direction northeast~
+ToRoom    6278
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6202
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6278
+Name     &zA Steel Hallway~
+Sector   inside~
+Flags    indoors prototype~
+Desc     Lights illuminate this whole area, ports windoes show outside the colony.
+Transports and Mobile Suits fly past the windoes, going to and from the
+colony. People walk southwest, going to do whatever they please. You can
+feel the cool air flying around from the vents above. A strange sounds
+comes from beneath your feet.
+~
+#EXIT
+Direction southwest~
+ToRoom    6277
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6279
+Name     &BC&Pa&Br&Pn&Bi&Pv&Ba&Pl &Bo&Pf &BC&Pa&Br&Pn&Ba&Pg&Be~
+Sector   inside~
+Flags    indoors prototype~
+Desc     Sounds of pain and suffering can be heard from all over the place. Freaky
+looking creatures wander around the area like zombie's. The freaky looking
+creatures move as tho driven by a force with unheard power. Blood drips
+off of cages and other demonic things.
+~
+#EXIT
+Direction north~
+ToRoom    6280
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6281
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6282
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6283
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6278
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6284
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6285
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6280
+Name     Out of Order~
+Sector   inside~
+Flags    indoors bank prototype~
+Desc     Mirrors cover this whole area, and all can be seen is a man standing in the
+center of the room. He stands facing the doorway with his left hand
+pointing down and right hand pointing up. The mirrors seem to flash with
+every scream that can be heard outside. Faces of people in horror seem to
+jump out at you threw the mirrors.
+~
+#EXIT
+Direction south~
+ToRoom    6279
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6202
+#ENDEXIT
+
+Reset M 0 6297 1 6280
+  Reset G 0 2035 1
+#ENDROOM
+
+#ROOM
+Vnum     6281
+Name     &RH&Wo&Ru&Ws&Re &Ro&Wf &RI&Wl&Rl&Wu&Rs&Wi&Ro&Wn&Rs~
+Sector   inside~
+Flags    indoors prototype~
+Desc     Mirror's hang on the walls of this room. Each mirror shows something
+different, but nothing the same. A man stands in the middle of the room
+with a wand in one hand and a crow purched on the other. The room has no
+color or any description to it, just a plan old room with wood walls and a
+carpet floor.
+~
+#EXIT
+Direction west~
+ToRoom    6279
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6282
+Name     &BT&Ch&Be &BR&Ca&Bv&Ce&Bn&Cs &BM&Ci&Br&Cr&Bo&Cr~
+Sector   inside~
+Flags    indoors prototype~
+Desc     A giant mirrow sits in the back of the room with a Ravan purched on top of
+it. A cloaked figure stands in the middle of the room, with his right hand
+out to you, and his palm facing up to the sky. This room has nothing
+special about it other then the mirror in the back with the raven on it.
+~
+#EXIT
+Direction north~
+ToRoom    6279
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6283
+Name     &RH&re&Rl&rl&Rs &RP&ri&Rt~
+Sector   inside~
+Flags    indoors prototype~
+Desc     A cloaked figure stands here. The room has all four walls with nothing on
+them and a wood floor with a giant hole in the center. Screams can be
+heard coming from the hole and the heat in the room is intense. The
+cloaked figure is holding his right hand out to you with his palm face
+down.
+~
+#EXIT
+Direction east~
+ToRoom    6279
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6284
+Name     &RT&Yh&Re &RS&Yh&Ra&Yg&Rg&Yy &RS&Yh&Ro&Yw~
+Sector   inside~
+Flags    indoors prototype~
+Desc     A giant sign hangs above the stage where two people are throwing fireballs
+back and forth to each other. On the right side of the stage is a desk
+with chairs sitting next to it. No one else is in the room but these two
+strange looking people.
+~
+#EXIT
+Direction southwest~
+ToRoom    6279
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6285
+Name     &GT&Ph&Ge &GJ&Po&Gk&Pe&Gr&Ps &GW&Pi&Gl&Pd~
+Sector   inside~
+Flags    indoors prototype~
+Desc     A game show is being taped by a camra man. He stands behind the camra, and
+films what happends to the people on the stage. Blood has been slipped on
+the stage and many weapons lay on the stage floor covered in blood. A
+person painted up like a clown jumps around on the stage and picks up a
+hatchet and throws it at the person spinning on the gaint wheel.
+~
+#EXIT
+Direction southeast~
+ToRoom    6279
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6286
+Name     &zHidden Pathway&w~
+Sector   inside~
+Flags    dark nomob~
+#EXIT
+Direction up~
+ToRoom    6202
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6287
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6287
+Name     &zHidden Pathway&w~
+Sector   inside~
+Flags    dark prototype~
+#EXIT
+Direction down~
+ToRoom    6288
+Flags     hidden~
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6286
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6288
+Name     &zUnderground Cove&w~
+Sector   inside~
+Flags    dark prototype~
+#EXIT
+Direction south~
+ToRoom    6289
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6287
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6289
+Name     &zLarge Underground Cave&w~
+Sector   inside~
+Flags    prototype~
+#EXIT
+Direction north~
+ToRoom    6288
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6290
+Name     An Old Apartment~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction north~
+ToRoom    6291
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6221
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6291
+Name     An Old Hallway~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction north~
+ToRoom    6292
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6290
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6292
+Name     An Old Hallway~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction north~
+ToRoom    6293
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6291
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6293
+Name     An Old Hallway~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction north~
+ToRoom    6294
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6292
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6294
+Name     Smoke Filled Room~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction north~
+ToRoom    6297
+Flags     hidden~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6293
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6295
+Name     &wM&Wo&wg&z'&ws &BS&be&cc&cr&be&Bt &RW&re&pa&pp&ro&Rn &GS&gh&go&Gp~
+Sector   city~
+Flags    nomob~
+Desc     &zWeapons hang on the walls of the room. In show cases more weapon's are on
+display. The floor has been layed with tile. It seems not many people know
+of this shop. A little white moogle, dances around behind the counter. A
+&Wsigh&z on the counter has small writing on it.
+~
+#EXIT
+Direction southeast~
+ToRoom    6239
+#ENDEXIT
+
+Reset M 0 6235 1 6295
+  Reset G 0 6298 1
+  Reset G 0 6297 1
+#ENDROOM
+
+#ROOM
+Vnum     6296
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6297
+Name     &RP&ra&pn&rd&Ro&rr&pa&r'&Rs &GB&go&Gx~
+Sector   city~
+Flags    nomob indoors safe nodropall nodrop prototype~
+Desc     Standinging in a void of nothing but seems to be space. Darkness covers all
+around and nothing can be seen far and wide. A person is floating here, he
+seems to be holding a box of some kind. A bright light is coming from the
+south and seems to be the sun it self. Little dots can be seen in the
+distance, they seem to be stars.
+~
+#EXIT
+Direction east~
+ToRoom    6200
+Flags     hidden~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6298
+Name     -=Null=-~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     6299
+Name     &GM&g9 &zStorage Center~
+Sector   city~
+Flags    nomob storage~
+Desc     This is the M9 transporter to the storage facility.  A man stands to the side
+guarding the transporter so that no two people go into the same storage
+facility.  There is a queue of people waiting to step onto the transporter
+and be taken to their personal storage unit.  As the next person in line steps
+onto the pad, they scan their thumb on the pad and are taken to their unit.
+Every once in a while someone tries to sneak into another person's storage unit
+
+For more information on how storage units work, type Help Storage.
+~
+#EXIT
+Direction southeast~
+ToRoom    6202
+#ENDEXIT
+
+#ENDROOM
+
+#ENDAREA

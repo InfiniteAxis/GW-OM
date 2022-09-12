@@ -1,0 +1,3385 @@
+#SKILL
+Name         reserved~
+Type         Spell
+Flags        0
+Minpos       8
+Dammsg       ~
+Wearoff      ???~
+Minlevel     101
+End
+
+#SKILL
+Name         affect mind~
+Type         Spell
+Flags        0
+Target       1
+Minpos       8
+Slot         7
+Rounds       12
+Guild        8
+Code         spell_charm_person
+Dammsg       ~
+Wearoff      You feel more self-confident.~
+Teachers     50 605~
+Minlevel     28
+End
+
+#SKILL
+Name         alertness~
+Type         Spell
+Flags        0
+Target       3
+Minpos       8
+Slot         102
+Rounds       15
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Wearoff      You are suddenly less alert.~
+Hitvict      You suddenly feel alert.~
+Hitroom      $N's eyes dart about the room in an alert manner.~
+Teachers     50 605~
+Affect       'l*15' 27 '1024' 0
+Minlevel     26
+End
+
+#SKILL
+Name         aqua breath~
+Type         Spell
+Flags        2097152
+Target       2
+Minpos       8
+Slot         236
+Rounds       12
+Code         spell_smaug
+Dammsg       ~
+Wearoff      Your lungs revert to their original state.~
+Hitchar      $N's lungs take on the ability to breathe water...~
+Hitvict      Your lungs take on the ability to breathe water...~
+Hitroom      $N's lungs take on the ability to breathe water...~
+Teachers     50 605~
+Affect       'l*23' 26 'aqua breath' 0
+Alignment   100
+Minlevel     101
+End
+
+#SKILL
+Name         armor~
+Type         Spell
+Flags        0
+Target       2
+Minpos       8
+Slot         1
+Rounds       12
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Wearoff      Your armor returns to its mundane value.~
+Hitchar      $N's armor begins to glow softly as it is enhanced by the Force.~
+Hitvict      Your armor begins to glow softly as it is enhanced by the Force.~
+Hitroom      $N's armor begins to glow softly as it is enhanced by the Force.~
+Teachers     50~
+Affect       'l*20' 17 '-20' 0
+Alignment   1001
+Minlevel     5
+End
+
+#SKILL
+Name         beauty~
+Type         Spell
+Flags        0
+Target       2
+Minpos       8
+Slot         226
+Rounds       12
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Wearoff      You stop enhancing yourself.~
+Hitchar      $N seems more jovial.~
+Hitvict      Drawing the Force, you change yourself to be more likeable.~
+Hitroom      $N suddenly seems like a much nicer person.~
+Teachers     50 605~
+Affect       'l*24' 25 '1+(l/17)' 0
+Alignment   1001
+Minlevel     6
+End
+
+#SKILL
+Name         blindness~
+Type         Spell
+Flags        0
+Target       1
+Minpos       7
+Slot         4
+Rounds       12
+Guild        8
+Code         (null)
+Dammsg       ~
+Wearoff      You can see again.~
+Teachers     605~
+Alignment   -1001
+Minlevel     10
+End
+
+#SKILL
+Name         choke~
+Type         Spell
+Flags        4
+Target       1
+Minpos       7
+Slot         63
+Rounds       12
+Guild        8
+Code         (null)
+Dammsg       spell~
+Wearoff      !Cause Critical!~
+Hitchar      Stretching out with the force you slowly choke your victim.~
+Hitvict      You feel a tight pressure around your throat.~
+Hitroom      $N begins to claw at $S throat.~
+Teachers     605~
+Alignment   -1001
+Minlevel     20
+End
+
+#SKILL
+Name         create fire~
+Type         Spell
+Flags        33554953
+Minpos       8
+Slot         85
+Rounds       12
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Wearoff      !Create Fire!~
+Hitchar      A small cloud of vaporous flame bursts forth before you.~
+Hitroom      A small cloud of vaporous flame bursts forth before $n.~
+Dice         L~
+Value        30
+Teachers     50 605~
+Minlevel     12
+End
+
+#SKILL
+Name         cure blindness~
+Type         Spell
+Flags        0
+Target       2
+Minpos       7
+Slot         14
+Rounds       12
+Guild        8
+Code         (null)
+Dammsg       ~
+Wearoff      !Cure Blindness!~
+Teachers     50~
+Alignment   1001
+Minlevel     8
+End
+
+#SKILL
+Name         cure critical~
+Type         Spell
+Flags        0
+Target       2
+Minpos       7
+Slot         15
+Rounds       12
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Wearoff      !Cure Critical!~
+Hitchar      You cure $N's critical wounds.~
+Hitvict      Your critical wounds close and your pain ebbs away.~
+Teachers     50~
+Affect       '' 13 '3d8+(l-6)' 0
+Alignment   1001
+Minlevel     18
+End
+
+#SKILL
+Name         cure light~
+Type         Spell
+Flags        0
+Target       2
+Minpos       7
+Slot         16
+Rounds       12
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Wearoff      Your ability to see in the dark fades away.~
+Hitchar      You cure $N's light wounds.~
+Hitvict      Your light wounds mend and your pain ebbs slightly.~
+Teachers     50~
+Affect       '' 13 '1d8+(l/3)' -1
+Alignment   1001
+Minlevel     2
+End
+
+#SKILL
+Name         cure poison~
+Type         Spell
+Flags        0
+Target       2
+Minpos       8
+Slot         43
+Rounds       12
+Guild        8
+Code         (null)
+Dammsg       ~
+Wearoff      !Cure Poison!~
+Teachers     50~
+Alignment   1001
+Minlevel     16
+End
+
+#SKILL
+Name         cure serious~
+Type         Spell
+Flags        0
+Target       2
+Minpos       7
+Slot         61
+Rounds       12
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Wearoff      !Cure Serious!~
+Hitchar      You cure $N's serious wounds.~
+Hitvict      Your serious wounds mend and your pain ebbs away.~
+Teachers     50~
+Affect       '' 13 '2d8+(l/2)' -1
+Alignment   1001
+Minlevel     10
+End
+
+#SKILL
+Name         detect darkness~
+Type         Spell
+Flags        0
+Target       3
+Minpos       8
+Slot         18
+Rounds       12
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Wearoff      You stop focusing on the Dark Side.~
+Hitvict      Traces of red outline all those who abuse the Force.~
+Hitroom      A tint of red appears in $N's eyes, mirroring his own vision.~
+Teachers     50~
+Affect       'l*24' 26 'detect evil' 0
+Alignment   1001
+Minlevel     5
+End
+
+#SKILL
+Name         detect force~
+Type         Spell
+Flags        0
+Target       3
+Minpos       8
+Slot         20
+Rounds       12
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Wearoff      The blue outlines disappear from your vision.~
+Hitvict      Traces of blue outline objects touched by the Force.~
+Hitroom      A tint of blue in $N's eyes mirrors $S own perception.~
+Teachers     50 605~
+Affect       'l*24' 26 'detect magic' -1
+Minlevel     5
+End
+
+#SKILL
+Name         detect intent~
+Type         Spell
+Flags        0
+Target       2
+Minpos       7
+Slot         58
+Rounds       12
+Guild        8
+Code         (null)
+Dammsg       ~
+Wearoff      !Know Alignment!~
+Teachers     50 605~
+Minlevel     8
+End
+
+#SKILL
+Name         detect masking~
+Type         Spell
+Flags        0
+Target       3
+Minpos       8
+Slot         19
+Rounds       12
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Wearoff      You no longer see invisible objects.~
+Hitvict      Your eyes fixate as they gain the ability to see the unseen.~
+Hitroom      $N's eyes fixate as they gain the ability to see the unseen.~
+Teachers     50 605~
+Affect       'l*24' 26 'detect invis' -1
+Minlevel     4
+End
+
+#SKILL
+Name         detect poison~
+Type         Spell
+Flags        0
+Target       4
+Minpos       8
+Slot         21
+Rounds       12
+Guild        8
+Code         (null)
+Dammsg       ~
+Wearoff      !Detect Poison!~
+Teachers     50 605~
+Minlevel     9
+End
+
+#SKILL
+Name         detect traps~
+Type         Spell
+Flags        0
+Target       3
+Minpos       8
+Slot         86
+Rounds       12
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Wearoff      You feel less aware of the dangers about you.~
+Hitvict      You suddenly grow aware of the dangers about you.~
+Hitroom      $N peers about the room, intent on finding all manner of danger.~
+Teachers     50 605~
+Affect       'l*24' 26 'detect traps' -1
+Minlevel     13
+End
+
+#SKILL
+Name         dispel dark~
+Type         Spell
+Flags        0
+Target       1
+Minpos       7
+Slot         22
+Rounds       12
+Guild        8
+Code         (null)
+Dammsg       dispel evil~
+Wearoff      !Dispel Evil!~
+Teachers     50~
+Alignment   1001
+Minlevel     21
+End
+
+#SKILL
+Name         dispel force~
+Type         Spell
+Flags        0
+Target       1
+Minpos       7
+Slot         59
+Rounds       12
+Guild        8
+Code         (null)
+Dammsg       ~
+Wearoff      !Dispel Magic!~
+Teachers     50 605~
+Minlevel     22
+End
+
+#SKILL
+Name         drain essence~
+Type         Spell
+Flags        4
+Target       1
+Minpos       7
+Slot         25
+Rounds       12
+Guild        8
+Code         (null)
+Dammsg       energy drain~
+Wearoff      !Energy Drain!~
+Teachers     50 605~
+Alignment   -1001
+Minlevel     27
+End
+
+#SKILL
+Name         dream~
+Type         Spell
+Flags        0
+Minpos       8
+Slot         233
+Rounds       12
+Guild        8
+Code         (null)
+Dammsg       ~
+Wearoff      !Dream!~
+Teachers     50 605~
+Minlevel     35
+End
+
+#SKILL
+Name         earthquake~
+Type         Spell
+Flags        0
+Minpos       7
+Slot         23
+Rounds       12
+Guild        8
+Code         (null)
+Dammsg       earthquake~
+Wearoff      !Earthquake!~
+Teachers     605~
+Alignment   -1001
+Minlevel     15
+End
+
+#SKILL
+Name         farsight~
+Type         Spell
+Flags        0
+Minpos       8
+Slot         222
+Rounds       12
+Guild        8
+Code         (null)
+Dammsg       ~
+Wearoff      !Farsight!~
+Teachers     50 605~
+Minlevel     33
+End
+
+#SKILL
+Name         fatigue~
+Type         Spell
+Flags        0
+Target       1
+Minpos       7
+Slot         103
+Rounds       15
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Wearoff      You no longer feel so sleepy.~
+Hitchar      $N suddenly appears very tired and drowsy.~
+Hitvict      You suddenly grow very tired and drowsy.~
+Hitroom      $N suddenly appears very tired and drowsy.~
+Immchar      Mysteriously, $N was not affected by your spell.~
+Teachers     605~
+Affect       'l*15' 29 '1024' -1
+Alignment   -1001
+Minlevel     46
+End
+
+#SKILL
+Name         feebleness~
+Type         Spell
+Flags        12582912
+Target       1
+Minpos       7
+Slot         107
+Rounds       10
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Wearoff      You no longer feel so feeble.~
+Hitchar      You lay a curse of feebleness upon $N.~
+Hitvict      You grow feeble from a powerful curse.~
+Hitroom      $n lays a curse of feebleness upon $N.~
+Immchar      $N is not affected by your spell.~
+Teachers     605~
+Affect       'l*19' 29 '512' -1
+Alignment   -1001
+Minlevel     80
+End
+
+#SKILL
+Name         fireball~
+Type         Spell
+Flags        1
+Target       1
+Minpos       7
+Slot         26
+Rounds       12
+Guild        8
+Code         spell_fireball
+Dammsg       fireball~
+Wearoff      !Fireball!~
+Teachers     605~
+Alignment   -1001
+Minlevel     18
+End
+
+#SKILL
+Name         flamestrike~
+Type         Spell
+Flags        1
+Target       1
+Minpos       7
+Slot         65
+Rounds       12
+Guild        8
+Code         (null)
+Dammsg       flamestrike~
+Wearoff      !Flamestrike!~
+Teachers     605~
+Alignment   -1001
+Minlevel     26
+End
+
+#SKILL
+Name         float~
+Type         Spell
+Flags        0
+Target       2
+Minpos       8
+Slot         292
+Rounds       18
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Wearoff      Your feet float slowly to the surface.~
+Hitchar      $N begins to float in mid-air...~
+Hitvict      You begin to float in mid-air...~
+Hitroom      $N begins to float in mid-air...~
+Teachers     50 605~
+Affect       'l*24' 26 'float' -1
+Minlevel     10
+End
+
+#SKILL
+Name         force blast wrath~
+Type         Spell
+Flags        12616076
+Minpos       7
+Slot         115
+Rounds       24
+Guild        8
+Code         spell_smaug
+Dammsg       spiritual wrath~
+Dice         44*W~
+Participants 3
+Components   V@43~
+Teachers     605~
+Affect       '6' 26 'blindness' 0
+Alignment   -1001
+Minlevel     50
+End
+
+#SKILL
+Name         force bolt~
+Type         Spell
+Flags        3
+Target       1
+Minpos       7
+Slot         30
+Rounds       12
+Guild        8
+Code         spell_lightning_bolt
+Dammsg       lightning bolt~
+Wearoff      !Lightning Bolt!~
+Teachers     605~
+Alignment   -1001
+Minlevel     27
+End
+
+#SKILL
+Name         force bubble~
+Type         Spell
+Flags        0
+Target       3
+Minpos       8
+Slot         224
+Rounds       12
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Wearoff      The shimmering shell and its protection from the Force fade away...~
+Hitvict      A shimmering translucent shell forms about you.~
+Hitroom      A shimmering translucent shell forms about $N.~
+Teachers     50~
+Affect       'l*24' 27 '2907151' -1
+Affect       'l*20' 17 '-80' -1
+Alignment   1001
+Minlevel     90
+End
+
+#SKILL
+Name         force funnel~
+Type         Spell
+Flags        0
+Target       1
+Minpos       7
+Slot         218
+Rounds       22
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Wearoff      The funnel of Force about you ceases to exist.~
+Hitchar      You erect a Force funnel about $N...~
+Hitvict      An aura surrounds you, channeling violent energies in your direction!~
+Hitroom      A Force funnel forms about $N...~
+Immchar      The Force funnel dissipates before it reaches $N.~
+Teachers     605~
+Affect       'l*23' 29 '8' -1
+Alignment   -1001
+Minlevel     43
+End
+
+#SKILL
+Name         force lightning~
+Type         Spell
+Flags        908
+Target       1
+Minpos       7
+Slot         303
+Rounds       8
+Guild        8
+Code         (null)
+Dammsg       Force Lightning~
+Wearoff      !WEAROFF!~
+Teachers     605~
+Alignment   -1001
+Minlevel     95
+End
+
+#SKILL
+Name         force shield~
+Type         Spell
+Flags        0
+Target       3
+Minpos       8
+Slot         217
+Rounds       22
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Wearoff      You are returned to the mundane energy continuum.~
+Hitvict      You fade from the mundane energy continuum.~
+Hitroom      A shield of Force divides $N from the mundane energy continuum.~
+Teachers     50~
+Affect       'l*24' 27 '1048576' -1
+Affect       'l*20' 17 '-50' -1
+Alignment   1001
+Minlevel     80
+End
+
+#SKILL
+Name         force sight~
+Type         Spell
+Flags        0
+Target       2
+Minpos       8
+Slot         77
+Rounds       18
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Wearoff      You no longer see in the dark.~
+Hitchar      $N's eyes dart about as they grow accustomed to Force sight.~
+Hitvict      Heat appears red through your eyes.~
+Hitroom      $N's eyes dart about as they grow accustomed to Force sight.~
+Teachers     50 605~
+Affect       'l*24' 26 'infravision' -1
+Minlevel     4
+End
+
+#SKILL
+Name         force spray~
+Type         Spell
+Flags        4
+Target       1
+Minpos       7
+Slot         62
+Rounds       12
+Guild        8
+Code         (null)
+Dammsg       spell~
+Wearoff      !Cause Light!~
+Teachers     605~
+Alignment   -1001
+Minlevel     2
+End
+
+#SKILL
+Name         forethought~
+Type         Spell
+Flags        0
+Target       2
+Minpos       8
+Slot         228
+Rounds       12
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Wearoff      Furrowing your brow, you sense the weight of wisdom leave you.~
+Hitchar      $N grows serious as wisdom takes root within $M.~
+Hitvict      The wisdom of the Force blossoms within you.~
+Hitroom      $N grows serious as wisdom takes root within $M.~
+Teachers     50~
+Affect       'l*24' 4 '1+(l/17)' -1
+Alignment   1001
+Minlevel     28
+End
+
+#SKILL
+Name         good fortune~
+Type         Spell
+Flags        0
+Target       2
+Minpos       8
+Slot         3
+Rounds       12
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Wearoff      The protection of the Force fades away.~
+Hitchar      You lay the blessing of the Force upon $N.~
+Hitvict      A powerful blessing is laid upon you.~
+Hitroom      $N beams as a powerful blessing is laid upon $M.~
+Teachers     50~
+Affect       'l*23' 18 'l/8' -1
+Affect       'l*23' 24 '-(l/8)' -1
+Alignment   999
+Minlevel     11
+End
+
+#SKILL
+Name         group masking~
+Type         Spell
+Flags        16777216
+Target       2
+Minpos       8
+Slot         69
+Rounds       24
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Wearoff      You are no longer masked.~
+Hitvict      You fade from existence.~
+Hitroom      $N fades from existence.~
+Teachers     50 605~
+Affect       'l*11' 26 'mass invis' -1
+Minlevel     43
+End
+
+#SKILL
+Name         hand of Darkness~
+Type         Spell
+Flags        908
+Target       1
+Minpos       7
+Slot         307
+Rounds       8
+Guild        8
+Code         (null)
+Dammsg       Hand of Chaos~
+Wearoff      !WEAROFF!~
+Teachers     605~
+Alignment   -1001
+Minlevel     56
+End
+
+#SKILL
+Name         harm~
+Type         Spell
+Flags        4
+Target       1
+Minpos       7
+Slot         27
+Rounds       12
+Guild        8
+Code         (null)
+Dammsg       harm spell~
+Wearoff      !Harm!~
+Teachers     605~
+Alignment   -1001
+Minlevel     26
+End
+
+#SKILL
+Name         heal~
+Type         Spell
+Flags        0
+Target       2
+Minpos       7
+Slot         28
+Rounds       12
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Wearoff      !Heal!~
+Hitchar      You lay a hand of healing upon $N.~
+Hitvict      A warm feeling fills your body.~
+Teachers     50~
+Affect       '' 13 '100' -1
+Alignment   1001
+Minlevel     30
+End
+
+#SKILL
+Name         heightened awareness~
+Type         Spell
+Flags        0
+Target       3
+Minpos       8
+Slot         44
+Rounds       12
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Wearoff      You feel less aware of your surroundings.~
+Hitvict      Your senses are heightened to those of an animal.~
+Hitroom      $N's senses are heightened to those of an animal.~
+Teachers     50 605~
+Affect       'l*24' 26 'detect hidden' 32
+Minlevel     15
+End
+
+#SKILL
+Name         illuminate~
+Type         Spell
+Flags        33554952
+Minpos       8
+Slot         57
+Rounds       12
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Wearoff      !Continual Light!~
+Hitchar      Shards of iridescent light collide to form a dazzling ball...~
+Hitroom      Shards of iridescent light collide to form a dazzling ball...~
+Dice         0~
+Value        21
+Teachers     50 605~
+Minlevel     4
+End
+
+#SKILL
+Name         inner fortress~
+Type         Spell
+Flags        0
+Target       3
+Minpos       8
+Slot         66
+Rounds       18
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Wearoff      You soften.~
+Hitvict      You steel yourself against pain.~
+Hitroom      $N's face hardens.~
+Teachers     50~
+Affect       'l*20' 13 'l*5' -1
+Affect       'l*20' 5 '5' -1
+Alignment   1001
+Minlevel     34
+End
+
+#SKILL
+Name         invade essence~
+Type         Spell
+Flags        4
+Target       1
+Minpos       7
+Slot         64
+Rounds       12
+Guild        8
+Code         (null)
+Dammsg       spell~
+Wearoff      !Cause Serious!~
+Teachers     605~
+Alignment   -1001
+Minlevel     10
+End
+
+#SKILL
+Name         know essence~
+Type         Spell
+Flags        0
+Minpos       8
+Slot         53
+Rounds       24
+Guild        8
+Code         (null)
+Dammsg       ~
+Wearoff      !Identify!~
+Teachers     50 605~
+Minlevel     20
+End
+
+#SKILL
+Name         mask~
+Type         Spell
+Flags        0
+Minpos       8
+Slot         29
+Rounds       12
+Guild        8
+Code         (null)
+Dammsg       ~
+Wearoff      You are no longer invisible.~
+Hitchar      $N fades from existence.~
+Hitvict      You fade from existence.~
+Hitroom      $N fades from existence.~
+Teachers     50 605~
+Affect       'l*11' 26 'invis' -1
+Minlevel     5
+End
+
+#SKILL
+Name         poison~
+Type         Spell
+Flags        268435456
+Target       1
+Minpos       8
+Slot         33
+Rounds       20
+Guild        8
+Code         (null)
+Dammsg       poison~
+Wearoff      You feel less sick.~
+Teachers     605~
+Alignment   -1001
+Minlevel     13
+End
+
+#SKILL
+Name         possess~
+Type         Spell
+Flags        0
+Minpos       8
+Slot         232
+Rounds       12
+Guild        8
+Code         (null)
+Dammsg       possess~
+Wearoff      You return to your body.~
+Teachers     605~
+Alignment   -1001
+Minlevel     100
+End
+
+#SKILL
+Name         protection from darkness~
+Type         Spell
+Flags        0
+Target       3
+Minpos       8
+Slot         34
+Rounds       12
+Code         spell_smaug
+Dammsg       ~
+Wearoff      You feel less protected from the Dark Side.~
+Hitvict      You are blessed with a protection from the Dark Side.~
+Hitroom      $N is blessed with a protection from the Dark Side.~
+Teachers     50~
+Affect       'l*10' 26 'protection' -1
+Alignment   1001
+Minlevel     12
+End
+
+#SKILL
+Name         refresh~
+Type         Spell
+Flags        0
+Target       2
+Minpos       8
+Slot         81
+Rounds       18
+Guild        8
+Code         spell_smaug
+Dammsg       refresh~
+Wearoff      !Refresh!~
+Hitchar      You allow blooming vitality to flow from you to $N.~
+Hitvict      Blooming vitality flows through you.~
+Teachers     50~
+Affect       '' 14 'l' -1
+Alignment   1001
+Minlevel     6
+End
+
+#SKILL
+Name         remove masking~
+Type         Spell
+Flags        0
+Minpos       8
+Slot         230
+Rounds       12
+Guild        8
+Code         (null)
+Dammsg       ~
+Wearoff      !Remove Invis!~
+Teachers     50 605~
+Minlevel     8
+End
+
+#SKILL
+Name         remove trap~
+Type         Spell
+Flags        0
+Minpos       8
+Slot         87
+Rounds       12
+Guild        8
+Code         (null)
+Dammsg       ~
+Wearoff      !Remove trap!~
+Teachers     50 605~
+Minlevel     29
+End
+
+#SKILL
+Name         restoration~
+Type         Spell
+Flags        29360128
+Minpos       7
+Slot         113
+Rounds       20
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Hitvict      A warm feeling flows through you.~
+Hitroom      A warm feeling flows through $N.~
+Participants 2
+Components   V@43~
+Teachers     50~
+Affect       '' 13 '200' -1
+Alignment   1001
+Minlevel     60
+End
+
+#SKILL
+Name         sanctuary~
+Type         Spell
+Flags        0
+Target       2
+Minpos       8
+Slot         36
+Rounds       12
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Wearoff      The luminous aura about your body fades away.~
+Hitchar      A luminous aura spreads slowly over $N's body.~
+Hitvict      A luminous aura spreads slowly over your body.~
+Hitroom      A luminous aura spreads slowly over $N's body.~
+Teachers     50~
+Affect       '(l*4)+30' 26 'sanctuary' -1
+Alignment   1001
+Minlevel     27
+End
+
+#SKILL
+Name         scorching surge~
+Type         Spell
+Flags        1
+Target       1
+Minpos       7
+Slot         296
+Rounds       12
+Guild        8
+Code         (null)
+Dammsg       scorching surge~
+Wearoff      !Scorching Surge!~
+Teachers     605~
+Alignment   -1001
+Minlevel     73
+End
+
+#SKILL
+Name         shield~
+Type         Spell
+Flags        0
+Target       2
+Minpos       8
+Slot         67
+Rounds       18
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Wearoff      Your force shield shimmers then fades away.~
+Hitchar      A force shield of shimmering blue surrounds $N.~
+Hitvict      A force shield of shimmering blue surrounds you.~
+Hitroom      A force shield of shimmering blue surrounds $N.~
+Teachers     50~
+Affect       'l*20' 17 '-50' 0
+Alignment   1001
+Minlevel     26
+End
+
+#SKILL
+Name         shocking grasp~
+Type         Spell
+Flags        3
+Target       1
+Minpos       7
+Slot         51
+Rounds       12
+Guild        8
+Code         (null)
+Dammsg       shocking grasp~
+Wearoff      !Shocking Grasp!~
+Teachers     605~
+Alignment   -1001
+Minlevel     14
+End
+
+#SKILL
+Name         shockshield~
+Type         Spell
+Flags        0
+Target       3
+Minpos       8
+Slot         89
+Rounds       12
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Wearoff      The torrents of cascading energy suddenly fade away.~
+Hitvict      Torrents of cascading energy form around you.~
+Hitroom      Torrents of cascading energy form around $N.~
+Teachers     605~
+Affect       '(l*3)+14' 26 'shockshield' 0
+Alignment   -1001
+Minlevel     72
+End
+
+#SKILL
+Name         sleep~
+Type         Spell
+Flags        268435456
+Minpos       8
+Slot         38
+Rounds       12
+Guild        8
+Code         (null)
+Dammsg       ~
+Wearoff      You feel less tired.~
+Teachers     50 605~
+Minlevel     24
+End
+
+#SKILL
+Name         slink~
+Type         Spell
+Flags        0
+Target       2
+Minpos       8
+Slot         205
+Rounds       12
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Wearoff      You suddenly feel less coordinated...~
+Hitchar      $N suddenly appears more agile...~
+Hitvict      You suddenly feel more nimble...~
+Hitroom      $N suddenly appears more agile...~
+Teachers     50~
+Affect       'l*24' 2 '1+(l/17)' -1
+Alignment   1001
+Minlevel     18
+End
+
+#SKILL
+Name         true sight~
+Type         Spell
+Flags        0
+Target       3
+Minpos       8
+Slot         235
+Rounds       12
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Wearoff      Your vision descends to the material plane.~
+Hitvict      Your vision is elevated to the highest plane.~
+Hitroom      $N's eyes begin to glow a soft white.~
+Teachers     50 605~
+Affect       'l-10' 26 'truesight' 0
+Minlevel     77
+End
+
+#SKILL
+Name         unravel defense~
+Type         Spell
+Flags        12582912
+Target       1
+Minpos       7
+Slot         110
+Rounds       15
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Wearoff      Your intricate defenses are restored to their original quality.~
+Hitchar      $N's eyes widen in fear as $S defenses are unravelled.~
+Hitvict      Your defenses are unravelled before your very eyes.~
+Hitroom      $N's eyes widen in fear as $S defenses are unravelled.~
+Immchar      Your spell has no effect upon $N.~
+Teachers     50 605~
+Affect       '(l*3)+25' 29 '8192' -1
+Affect       '(l*3)+25' 29 '1048576' -1
+Minlevel     66
+End
+
+#SKILL
+Name         ventriloquate~
+Type         Spell
+Flags        0
+Minpos       8
+Slot         41
+Rounds       12
+Guild        8
+Code         (null)
+Dammsg       ~
+Wearoff      !Ventriloquate!~
+Teachers     50 605~
+Minlevel     9
+End
+
+#SKILL
+Name         weaken~
+Type         Spell
+Flags        0
+Target       1
+Minpos       7
+Slot         68
+Rounds       12
+Guild        8
+Code         (null)
+Dammsg       spell~
+Wearoff      You feel stronger.~
+Teachers     605~
+Alignment   -1001
+Minlevel     3
+End
+
+#SKILL
+Name         acid~
+Type         Skill
+Flags        524288
+Minpos       8
+Rounds       12
+Guild        7
+LP           32
+Code         spell_null
+Dammsg       ~
+Wearoff      !Acid!~
+Teachers     529~
+Alignment   32
+Minlevel     32
+End
+
+#SKILL
+Name         acute_awarness~
+Type         Skill
+Flags        0
+Target       3
+Minpos       8
+Rounds       20
+Guild        3
+Code         spell_smaug
+Dammsg       ~
+Wearoff      Your focus wavers, and your senses dull to the hidden things around you.~
+Hitvict      You focus your senses to find those that would hide from you.~
+Misschar     You attempt to heighten your senses, but your mind grows weary and you fail.~
+Teachers     515~
+Affect       'l*5' 26 'detect hidden' 32
+Minlevel     50
+End
+
+#SKILL
+Name         acute_damage~
+Type         Skill
+Flags        0
+Target       3
+Minpos       8
+Rounds       20
+Guild        3
+Code         spell_smaug
+Dammsg       ~
+Wearoff      Your killing instinct fades.~
+Hitvict      You take aim for your opponent's vital spots, looking to land the killing blow.~
+Misschar     You try to increase your damage by aiming for weak spots, but forget them all!~
+Teachers     515~
+Affect       'l*10' 19 '2+(l/11)' 0
+Minlevel     99
+End
+
+#SKILL
+Name         add_patrol~
+Type         Skill
+Flags        0
+Minpos       8
+Rounds       12
+Guild        6
+Code         do_add_patrol
+Dammsg       ~
+Wearoff      !!~
+Teachers     518~
+Minlevel     50
+End
+
+#SKILL
+Name         aid~
+Type         Skill
+Flags        0
+Minpos       8
+Rounds       12
+Guild        5
+Code         do_aid
+Dammsg       ~
+Wearoff      !Aid!~
+Teachers     517~
+Minlevel     1
+End
+
+#SKILL
+Name         assassinate~
+Type         Skill
+Flags        0
+Minpos       8
+Rounds       16
+Code         spell_null
+Dammsg       ~
+Wearoff      !Assassinate!~
+Teachers     0~
+Minlevel     600
+End
+
+#SKILL
+Name         backlash~
+Type         Skill
+Flags        524288
+Minpos       8
+Rounds       12
+Guild        7
+LP           39
+Code         spell_null
+Dammsg       ~
+Wearoff      !Backlash!~
+Teachers     529~
+Minlevel     39
+End
+
+#SKILL
+Name         backstab~
+Type         Skill
+Flags        0
+Minpos       8
+Rounds       12
+Guild        3
+Code         do_backstab
+Dammsg       backstab~
+Wearoff      !Backstab!~
+Teachers     515~
+Minlevel     60
+End
+
+#SKILL
+Name         bash~
+Type         Skill
+Flags        0
+Target       1
+Minpos       7
+Rounds       8
+Guild        0
+Code         do_bash
+Dammsg       bash~
+Wearoff      !Bash!~
+Teachers     512~
+Minlevel     47
+End
+
+#SKILL
+Name         beamsabers~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        1
+Code         spell_null
+Dammsg       ~
+Wearoff      !done!~
+Teachers     513~
+Minlevel     10
+End
+
+#SKILL
+Name         bear~
+Type         Skill
+Flags        524288
+Minpos       8
+Rounds       12
+Guild        7
+LP           38
+Code         spell_null
+Dammsg       ~
+Wearoff      !Bear!~
+Teachers     529~
+Minlevel     38
+End
+
+#SKILL
+Name         beg~
+Type         Skill
+Flags        0
+Minpos       8
+Rounds       20
+Guild        4
+Code         do_beg
+Dammsg       ~
+Wearoff      !Beg!~
+Teachers     516~
+Minlevel     1
+End
+
+#SKILL
+Name         berserk~
+Type         Skill
+Flags        0
+Target       1
+Minpos       7
+Rounds       4
+Guild        0
+Code         do_berserk
+Dammsg       ~
+Wearoff      ???~
+Teachers     512~
+Minlevel     85
+End
+
+#SKILL
+Name         bite~
+Type         Skill
+Flags        0
+Target       1
+Rounds       8
+Guild        0
+Code         spell_null
+Dammsg       bite~
+Wearoff      !Bite!~
+Minlevel     1001
+End
+
+#SKILL
+Name         blackjack~
+Type         Skill
+Flags        0
+Minpos       5
+Rounds       8
+Guild        0
+Code         do_blackjack
+Dammsg       ~
+Wearoff      !done!~
+Teachers     512~
+Minlevel     300
+End
+
+#SKILL
+Name         blasta~
+Type         Skill
+Flags        0
+Target       1
+Rounds       8
+Guild        0
+Code         spell_null
+Dammsg       energy shot~
+Wearoff      !blasta!~
+Minlevel     1001
+End
+
+#SKILL
+Name         blastb~
+Type         Skill
+Flags        0
+Target       1
+Rounds       8
+Guild        0
+Code         spell_null
+Dammsg       dual shot~
+Wearoff      !blastb!~
+Minlevel     1001
+End
+
+#SKILL
+Name         blastc~
+Type         Skill
+Flags        0
+Target       1
+Rounds       8
+Guild        0
+Code         spell_null
+Dammsg       energy burst~
+Wearoff      !Bite!~
+Minlevel     1001
+End
+
+#SKILL
+Name         blastd~
+Type         Skill
+Flags        0
+Target       1
+Rounds       8
+Guild        0
+Code         spell_null
+Dammsg       Lvl 1 Charge~
+Wearoff      !blastb!~
+Minlevel     1001
+End
+
+#SKILL
+Name         blaste~
+Type         Skill
+Flags        0
+Target       1
+Rounds       8
+Guild        0
+Code         spell_null
+Dammsg       Lvl 2 Charge~
+Wearoff      !blaste!~
+Minlevel     1001
+End
+
+#SKILL
+Name         blastf~
+Type         Skill
+Flags        0
+Target       1
+Rounds       8
+Guild        0
+Code         spell_null
+Dammsg       Lvl 3 Charge~
+Wearoff      !blastf!~
+Minlevel     1001
+End
+
+#SKILL
+Name         blastg~
+Type         Skill
+Flags        0
+Target       1
+Rounds       8
+Guild        0
+Code         spell_null
+Dammsg       Lvl 4 Charge~
+Wearoff      !blastg!~
+Minlevel     1001
+End
+
+#SKILL
+Name         bomb~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        1
+Code         do_bomb
+Dammsg       ~
+Wearoff      !done!~
+Teachers     0~
+Minlevel     400
+End
+
+#SKILL
+Name         bribe~
+Type         Skill
+Flags        0
+Minpos       8
+Rounds       12
+Guild        5
+Code         do_bribe
+Dammsg       ~
+Wearoff      !!~
+Teachers     517~
+Minlevel     25
+End
+
+#SKILL
+Name         bulletweapons~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        1
+Code         spell_null
+Dammsg       ~
+Wearoff      !done!~
+Teachers     513~
+Minlevel     1
+End
+
+#SKILL
+Name         camset~
+Type         Skill
+Flags        524288
+Minpos       8
+Rounds       12
+Guild        7
+LP           5
+Code         do_camset
+Dammsg       ~
+Wearoff      !Setcam!~
+Teachers     529~
+Alignment   5
+Minlevel     5
+End
+
+#SKILL
+Name         capital ships~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        1
+Code         spell_null
+Dammsg       ~
+Wearoff      !done!~
+Teachers     513~
+Minlevel     90
+End
+
+#SKILL
+Name         circle~
+Type         Skill
+Flags        0
+Target       1
+Minpos       7
+Rounds       8
+Guild        3
+Code         do_circle
+Dammsg       circle~
+Wearoff      !Circle!~
+Teachers     515~
+Minlevel     150
+End
+
+#SKILL
+Name         claw~
+Type         Skill
+Flags        0
+Target       1
+Rounds       8
+Guild        0
+Code         spell_null
+Dammsg       claw~
+Wearoff      !Claw!~
+Minlevel     1001
+End
+
+#SKILL
+Name         climb~
+Type         Skill
+Flags        0
+Target       1
+Minpos       8
+Rounds       10
+Guild        4
+Code         do_climb
+Dammsg       climb~
+Wearoff      !climb!~
+Teachers     516~
+Minlevel     7
+End
+
+#SKILL
+Name         codebreak~
+Type         Skill
+Flags        524288
+Minpos       8
+Rounds       15
+Guild        7
+LP           45
+Code         do_codebreak
+Dammsg       ~
+Wearoff      !Codebreak!~
+Teachers     529~
+Alignment   45
+Minlevel     45
+End
+
+#SKILL
+Name         counter~
+Type         Skill
+Flags        0
+Guild        0
+Code         spell_null
+Dammsg       counter~
+Teachers     512~
+Minlevel     700
+End
+
+#SKILL
+Name         createdrug~
+Type         Skill
+Flags        524288
+Minpos       8
+Rounds       12
+Guild        7
+LP           51
+Code         do_createdrug
+Dammsg       ~
+Wearoff      !Createdrug!~
+Teachers     529~
+Alignment   51
+Minlevel     1001
+End
+
+#SKILL
+Name         createvoodoo~
+Type         Skill
+Flags        0
+Minpos       5
+Rounds       2
+Guild        2
+Code         do_createvoodoo
+Dammsg       ~
+Teachers     2000~
+Minlevel     500
+End
+
+#SKILL
+Name         detrap~
+Type         Skill
+Flags        0
+Minpos       6
+Rounds       24
+Guild        4
+Code         do_detrap
+Dammsg       ~
+Wearoff      !Detrap!~
+Teachers     516~
+Minlevel     32
+End
+
+#SKILL
+Name         dig~
+Type         Skill
+Flags        0
+Minpos       8
+Rounds       20
+Guild        4
+Code         do_dig
+Dammsg       ~
+Teachers     516~
+Minlevel     1
+End
+
+#SKILL
+Name         disguise~
+Type         Skill
+Flags        0
+Minpos       8
+Rounds       12
+Guild        4
+Code         do_disguise
+Dammsg       ~
+Wearoff      !disguise!~
+Teachers     516~
+Minlevel     120
+End
+
+#SKILL
+Name         dodge~
+Type         Skill
+Flags        0
+Minpos       7
+Guild        0
+Code         spell_null
+Dammsg       ~
+Wearoff      !Dodge!~
+Teachers     512~
+Minlevel     50
+End
+
+#SKILL
+Name         dominate~
+Type         Skill
+Flags        524288
+Target       1
+Minpos       8
+Rounds       12
+Guild        6
+Code         spell_charm_person
+Dammsg       ~
+Teachers     518~
+Minlevel     60
+End
+
+#SKILL
+Name         doorbash~
+Type         Skill
+Flags        0
+Minpos       8
+Rounds       24
+Guild        3
+Code         do_bashdoor
+Dammsg       bashdoor~
+Wearoff      !Bash Door!~
+Teachers     515~
+Minlevel     10
+End
+
+#SKILL
+Name         dropkick~
+Type         Skill
+Flags        0
+Target       1
+Minpos       7
+Guild        0
+Code         do_dropkick
+Dammsg       drop kick~
+Wearoff      !DropKick!~
+Teachers     512~
+Minlevel     150
+End
+
+#SKILL
+Name         dual wield~
+Type         Skill
+Flags        0
+Minpos       8
+Guild        0
+Code         spell_null
+Dammsg       ~
+Wearoff      !Dual Wield!~
+Teachers     512~
+Minlevel     27
+End
+
+#SKILL
+Name         elite_guard~
+Type         Skill
+Flags        0
+Minpos       8
+Rounds       12
+Guild        6
+Code         do_elite_guard
+Dammsg       ~
+Wearoff      !!~
+Teachers     518~
+Minlevel     130
+End
+
+#SKILL
+Name         energynet~
+Type         Skill
+Flags        524288
+Minpos       8
+Rounds       12
+Guild        7
+LP           37
+Code         spell_null
+Dammsg       ~
+Wearoff      !Energynet!~
+Teachers     529~
+Alignment   37
+Minlevel     37
+End
+
+#SKILL
+Name         enhanced damage~
+Type         Skill
+Flags        0
+Minpos       7
+Guild        0
+Code         spell_null
+Dammsg       ~
+Wearoff      !Enhanced Damage!~
+Teachers     512~
+Minlevel     10
+End
+
+#SKILL
+Name         fifth attack~
+Type         Skill
+Flags        0
+Minpos       7
+Guild        0
+Code         spell_null
+Dammsg       ~
+Wearoff      !Fifth Attack!~
+Teachers     512~
+Minlevel     250
+End
+
+#SKILL
+Name         firstaid~
+Type         Skill
+Flags        0
+Minpos       8
+Rounds       12
+Guild        5
+Code         do_first_aid
+Dammsg       ~
+Wearoff      !First Aid!~
+Teachers     517~
+Minlevel     1
+End
+
+#SKILL
+Name         focus strength~
+Type         Skill
+Flags        0
+Target       3
+Minpos       8
+Rounds       20
+Guild        3
+Code         spell_smaug
+Dammsg       ~
+Wearoff      Your focused strength subsides.~
+Hitvict      You tense your muscles viciously, drawing on your pure brute strength.~
+Misschar     You try to draw on your hidden strength, but fail.~
+Teachers     515~
+Affect       'l*10' 1 '2+(l/333)' 0
+Minlevel     100
+End
+
+#SKILL
+Name         fourth attack~
+Type         Skill
+Flags        0
+Minpos       7
+Guild        0
+Code         spell_null
+Dammsg       ~
+Wearoff      !Fourth Attack!~
+Teachers     512~
+Minlevel     150
+End
+
+#SKILL
+Name         fry~
+Type         Skill
+Flags        524288
+Minpos       8
+Rounds       15
+Guild        7
+LP           49
+Code         do_fry
+Dammsg       ~
+Wearoff      !Fry!~
+Teachers     529~
+Alignment   49
+Minlevel     49
+End
+
+#SKILL
+Name         gas~
+Type         Skill
+Flags        524288
+Minpos       8
+Rounds       15
+Guild        7
+LP           30
+Code         do_fry
+Dammsg       ~
+Wearoff      !Gas!~
+Teachers     529~
+Alignment   31
+Minlevel     30
+End
+
+#SKILL
+Name         gather_intelligence~
+Type         Skill
+Flags        0
+Minpos       8
+Rounds       12
+Guild        6
+Code         spell_null
+Dammsg       ~
+Wearoff      !!~
+Teachers     518~
+Minlevel     90
+End
+
+#SKILL
+Name         gemcutting~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        2
+Code         do_gemcutting
+Dammsg       ~
+Wearoff      !done!~
+Teachers     2000~
+Minlevel     50
+End
+
+#SKILL
+Name         gouge~
+Type         Skill
+Flags        0
+Minpos       7
+Rounds       10
+Guild        0
+Code         do_gouge
+Dammsg       gouge~
+Wearoff      !Gouge!~
+Teachers     512~
+Minlevel     30
+End
+
+#SKILL
+Name         grenades~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        0
+Code         spell_null
+Dammsg       ~
+Wearoff      !done!~
+Teachers     512~
+Minlevel     61
+End
+
+#SKILL
+Name         hack~
+Type         Skill
+Flags        524288
+Minpos       8
+Rounds       15
+Guild        7
+LP           25
+Code         do_hack
+Dammsg       ~
+Wearoff      !Hack!~
+Teachers     529~
+Alignment   25
+Minlevel     25
+End
+
+#SKILL
+Name         harden~
+Type         Skill
+Flags        0
+Target       3
+Minpos       8
+Rounds       20
+Guild        3
+Code         spell_smaug
+Dammsg       ~
+Wearoff      Your steeled muscles soften, leaving you more vulnerable.~
+Hitvict      You steel your muscles, hardening your body into an impenetrable shell.~
+Misschar     You attempt to harden your muscles for defense and fail.~
+Teachers     515~
+Affect       'l*7' 17 '-(l/5)' 0
+Minlevel     250
+End
+
+#SKILL
+Name         heavyenergy~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        1
+Code         spell_null
+Dammsg       ~
+Wearoff      !done!~
+Teachers     513~
+Minlevel     50
+End
+
+#SKILL
+Name         heightened accuracy~
+Type         Skill
+Flags        0
+Target       3
+Minpos       8
+Rounds       20
+Guild        3
+Code         spell_smaug
+Dammsg       ~
+Wearoff      Your mind clouds and your accuracy fades.~
+Hitvict      You clear your mind, enabling you to more swiftly strike your foe.~
+Misschar     You try to increase your accuracy, but can't seem to clear your mind.~
+Teachers     515~
+Affect       'l*10' 18 '2+(l/11)' 0
+Minlevel     85
+End
+
+#SKILL
+Name         hide~
+Type         Skill
+Flags        0
+Target       3
+Minpos       5
+Rounds       12
+Guild        4
+Code         spell_smaug
+Dammsg       ~
+Wearoff      You are no longer hidden.~
+Hitvict      You conceal yourself in the shadows.~
+Misschar     You attempt to hide yourself in the shadows, but fail.~
+Teachers     516~
+Affect       'l*23' 26 'hide' 65536
+Minlevel     160
+End
+
+#SKILL
+Name         hijack~
+Type         Skill
+Flags        0
+Minpos       8
+Rounds       12
+Guild        4
+Code         do_hijack
+Dammsg       ~
+Wearoff      !Hijack!~
+Teachers     516~
+Minlevel     250
+End
+
+#SKILL
+Name         hitall~
+Type         Skill
+Flags        0
+Minpos       8
+Rounds       12
+Guild        0
+Code         do_hitall
+Dammsg       hit~
+Wearoff      !HitAll!~
+Teachers     512~
+Minlevel     155
+End
+
+#SKILL
+Name         hyper elbow~
+Type         Skill
+Flags        4096
+Guild        0
+Code         spell_smaug
+Dammsg       ~
+Combo        LRL~
+Minlevel     1001
+End
+
+#SKILL
+Name         inner strength~
+Type         Skill
+Flags        0
+Target       3
+Minpos       8
+Rounds       20
+Guild        3
+Code         spell_smaug
+Dammsg       ~
+Wearoff      You lose your focus and open yourself to impact.~
+Hitvict      You buckle down, readying yourself for any force.~
+Misschar     You try to brace yourself, but can't get your footing.~
+Teachers     515~
+Affect       'l*10' 13 'l*10' 0
+Affect       'l*10' 5 '2+(l/333)' 0
+Minlevel     300
+End
+
+#SKILL
+Name         jail~
+Type         Skill
+Flags        0
+Minpos       8
+Rounds       12
+Guild        6
+Code         do_jail
+Dammsg       ~
+Wearoff      !!~
+Teachers     518~
+Minlevel     10
+End
+
+#SKILL
+Name         kick~
+Type         Skill
+Flags        0
+Target       1
+Minpos       7
+Rounds       8
+Guild        0
+Code         do_kick
+Dammsg       kick~
+Wearoff      !Kick!~
+Teachers     512~
+Minlevel     6
+End
+
+#SKILL
+Name         landcombat~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        1
+Code         spell_null
+Dammsg       ~
+Wearoff      !done!~
+Teachers     0~
+Minlevel     15
+End
+
+#SKILL
+Name         lightenergy~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        1
+Code         spell_null
+Dammsg       ~
+Wearoff      !done!~
+Teachers     513~
+Minlevel     25
+End
+
+#SKILL
+Name         limber~
+Type         Skill
+Flags        0
+Target       3
+Minpos       8
+Rounds       20
+Guild        3
+Code         spell_smaug
+Dammsg       ~
+Wearoff      Your muscles tense up, as you lose your swift movement.~
+Hitchar      You relax your muscles, becoming limber and agile.~
+Hitvict      You relax your muscles, becoming limber and more agile.~
+Misschar     You fail to loosen your muscles further.~
+Teachers     515~
+Affect       'l*10' 2 '2+(l/333)' 0
+Minlevel     90
+End
+
+#SKILL
+Name         lore~
+Type         Skill
+Flags        524288
+Minpos       8
+Rounds       12
+Guild        7
+LP           20
+Code         do_lore
+Dammsg       ~
+Wearoff      !Lore!~
+Teachers     529~
+Alignment   10
+Minlevel     20
+End
+
+#SKILL
+Name         mace~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        7
+LP           44
+Code         do_mace
+Dammsg       ~
+Wearoff      !Mace!~
+Teachers     529~
+Alignment   44
+Minlevel     44
+End
+
+#SKILL
+Name         makearmor~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        2
+Code         do_makearmor
+Dammsg       ~
+Wearoff      !done!~
+Teachers     2000~
+Minlevel     70
+End
+
+#SKILL
+Name         makeblade~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        2
+Code         do_makeblade
+Dammsg       ~
+Wearoff      !done!~
+Teachers     2000~
+Minlevel     1007
+End
+
+#SKILL
+Name         makeblaster~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        2
+Code         do_makeblaster
+Dammsg       ~
+Wearoff      !done!~
+Teachers     2000~
+Minlevel     95
+End
+
+#SKILL
+Name         makecamera~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        7
+LP           3
+Code         do_makecamera
+Dammsg       ~
+Wearoff      !done!~
+Teachers     529~
+Alignment   3
+Minlevel     3
+End
+
+#SKILL
+Name         makecomlink~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        2
+Code         do_makecomlink
+Dammsg       ~
+Wearoff      !done!~
+Teachers     2000~
+Minlevel     5
+End
+
+#SKILL
+Name         makecontainer~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        2
+Code         do_makecontainer
+Dammsg       ~
+Wearoff      !done!~
+Teachers     2000~
+Minlevel     1
+End
+
+#SKILL
+Name         makeflashlight~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        2
+Code         do_makelight
+Dammsg       ~
+Wearoff      !done!~
+Teachers     2000~
+Minlevel     10
+End
+
+#SKILL
+Name         makegrenade~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        2
+Code         do_makegrenade
+Dammsg       ~
+Wearoff      !done!~
+Teachers     2000~
+Minlevel     95
+End
+
+#SKILL
+Name         makejewelry~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        2
+Code         do_makejewelry
+Dammsg       ~
+Wearoff      !done!~
+Teachers     2000~
+Minlevel     80
+End
+
+#SKILL
+Name         makelandmine~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        2
+Code         do_makelandmine
+Dammsg       ~
+Wearoff      !done!~
+Teachers     2000~
+Minlevel     90
+End
+
+#SKILL
+Name         makeshield~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        2
+Code         do_makeshield
+Dammsg       ~
+Wearoff      !done!~
+Teachers     2000~
+Minlevel     60
+End
+
+#SKILL
+Name         makesweapon~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        1
+Code         do_makesweapon
+Dammsg       ~
+Wearoff      !done!~
+Teachers     513~
+Minlevel     200
+End
+
+#SKILL
+Name         mass_propeganda~
+Type         Skill
+Flags        0
+Minpos       8
+Rounds       12
+Guild        5
+Code         do_mass_propeganda
+Dammsg       ~
+Wearoff      !!~
+Teachers     517~
+Minlevel     200
+End
+
+#SKILL
+Name         meddle~
+Type         Skill
+Flags        0
+Guild        7
+LP           10
+Code         do_meddle
+Dammsg       ~
+Teachers     529~
+Alignment   10
+Minlevel     10
+End
+
+#SKILL
+Name         meditate~
+Type         Skill
+Flags        12582912
+Target       3
+Minpos       5
+Rounds       25
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Hitvict      You meditate peacefully, tuning yourself to the Force.~
+Missvict     You spend several minutes in deep concentration, but fail to find the Force.~
+Teachers     50 605~
+Affect       '' 12 'l' -1
+Minlevel     2
+End
+
+#SKILL
+Name         meleeweapons~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        1
+Code         spell_null
+Dammsg       ~
+Wearoff      !done!~
+Teachers     513~
+Minlevel     30
+End
+
+#SKILL
+Name         midships~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        1
+Code         spell_null
+Dammsg       ~
+Wearoff      !done!~
+Teachers     513~
+Minlevel     50
+End
+
+#SKILL
+Name         mine~
+Type         Skill
+Flags        0
+Minpos       8
+Rounds       12
+Guild        0
+Code         do_mine
+Dammsg       ~
+Wearoff      !mine!~
+Teachers     512~
+Minlevel     90
+End
+
+#SKILL
+Name         missileweapons~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        1
+Code         spell_null
+Dammsg       ~
+Wearoff      !done!~
+Teachers     513~
+Minlevel     10
+End
+
+#SKILL
+Name         mobilesuits~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        1
+Code         spell_null
+Dammsg       ~
+Wearoff      !done!~
+Teachers     513~
+Minlevel     1
+End
+
+#SKILL
+Name         mount~
+Type         Skill
+Flags        0
+Minpos       8
+Rounds       10
+Guild        0
+Code         do_mount
+Dammsg       ~
+Wearoff      !Search!~
+Teachers     512~
+Minlevel     7
+End
+
+#SKILL
+Name         navigation~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        1
+Code         spell_null
+Dammsg       ~
+Wearoff      !done!~
+Teachers     513~
+Minlevel     1
+End
+
+#SKILL
+Name         nightvision~
+Type         Skill
+Flags        0
+Target       3
+Minpos       8
+Rounds       5
+Guild        7
+LP           1
+Code         spell_smaug
+Dammsg       ~
+Wearoff      Your keen night sight dissipates.~
+Hitvict      You adjust your eyes sharply to see in the darkness.~
+Misschar     You try to adjust your eyes to see in the dark, but only get a headache...~
+Teachers     529~
+Affect       'l*23' 26 'infrared' 512
+Minlevel     1
+End
+
+#SKILL
+Name         offhand~
+Type         Skill
+Flags        0
+Minpos       7
+Guild        0
+Code         spell_null
+Dammsg       ~
+Wearoff      !Offhand!~
+Teachers     0~
+Minlevel     50
+End
+
+#SKILL
+Name         parry~
+Type         Skill
+Flags        0
+Minpos       7
+Guild        8
+Code         spell_null
+Dammsg       ~
+Wearoff      !Parry!~
+Teachers     50~
+Minlevel     25
+End
+
+#SKILL
+Name         pdart~
+Type         Skill
+Flags        524288
+Minpos       8
+Rounds       12
+Guild        7
+LP           33
+Code         spell_null
+Dammsg       ~
+Wearoff      !Pdart!~
+Teachers     529~
+Alignment   33
+Minlevel     33
+End
+
+#SKILL
+Name         pdust~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        7
+LP           40
+Code         do_pdust
+Dammsg       ~
+Wearoff      You feel less ill.~
+Teachers     529~
+Minlevel     40
+End
+
+#SKILL
+Name         peek~
+Type         Skill
+Flags        0
+Minpos       8
+Guild        4
+Code         spell_null
+Dammsg       ~
+Wearoff      !Peek!~
+Teachers     516~
+Minlevel     150
+End
+
+#SKILL
+Name         phase~
+Type         Skill
+Flags        524288
+Minpos       8
+Rounds       15
+Guild        7
+LP           50
+Code         do_phase
+Dammsg       ~
+Wearoff      !Phase!~
+Teachers     529~
+Alignment   50
+Minlevel     50
+End
+
+#SKILL
+Name         pick lock~
+Type         Skill
+Flags        0
+Minpos       8
+Rounds       12
+Guild        4
+Code         do_pick
+Dammsg       ~
+Wearoff      !Pick!~
+Teachers     516~
+Minlevel     40
+End
+
+#SKILL
+Name         pick ship lock~
+Type         Skill
+Flags        0
+Minpos       8
+Rounds       12
+Guild        4
+Code         do_pickshiplock
+Dammsg       ~
+Wearoff      !Pickshiplock!~
+Teachers     516~
+Minlevel     200
+End
+
+#SKILL
+Name         poison weapon~
+Type         Skill
+Flags        0
+Target       4
+Minpos       8
+Rounds       12
+Guild        3
+Code         do_poison_weapon
+Dammsg       poisonous concoction~
+Wearoff      !Poison Weapon!~
+Teachers     515~
+Minlevel     30
+End
+
+#SKILL
+Name         post guard~
+Type         Skill
+Flags        0
+Minpos       8
+Rounds       12
+Guild        6
+Code         do_postguard
+Dammsg       ~
+Wearoff      !post guard!~
+Teachers     518~
+Minlevel     50
+End
+
+#SKILL
+Name         propeganda~
+Type         Skill
+Flags        0
+Minpos       8
+Rounds       12
+Guild        5
+Code         do_propeganda
+Dammsg       ~
+Wearoff      !!~
+Teachers     517~
+Minlevel     50
+End
+
+#SKILL
+Name         punch~
+Type         Skill
+Flags        0
+Target       1
+Minpos       7
+Rounds       8
+Guild        0
+Code         do_punch
+Dammsg       punch~
+Wearoff      !Punch!~
+Teachers     512~
+Minlevel     30
+End
+
+#SKILL
+Name         reinforcements~
+Type         Skill
+Flags        0
+Minpos       8
+Rounds       12
+Guild        6
+Code         do_reinforcements
+Dammsg       ~
+Wearoff      !reinforcements!~
+Teachers     518~
+Minlevel     115
+End
+
+#SKILL
+Name         rescue~
+Type         Skill
+Flags        0
+Minpos       7
+Rounds       12
+Guild        0
+Code         do_rescue
+Dammsg       ~
+Wearoff      !Rescue!~
+Teachers     512~
+Minlevel     8
+End
+
+#SKILL
+Name         rub~
+Type         Skill
+Flags        0
+Minpos       8
+Rounds       12
+Guild        3
+Code         do_rub
+Dammsg       ~
+Wearoff      !Rub!~
+Teachers     515~
+Minlevel     150
+End
+
+#SKILL
+Name         rush~
+Type         Skill
+Flags        0
+Minpos       7
+Rounds       10
+Guild        0
+Code         do_rush
+Dammsg       rush~
+Wearoff      !Rush!~
+Teachers     512~
+Minlevel     600
+End
+
+#SKILL
+Name         sabotage~
+Type         Skill
+Flags        0
+Minpos       8
+Rounds       15
+Guild        7
+LP           18
+Code         do_sabotage
+Dammsg       ~
+Wearoff      !Sabotage!~
+Teachers     529~
+Alignment   18
+Minlevel     18
+End
+
+#SKILL
+Name         scan~
+Type         Skill
+Flags        0
+Minpos       8
+Rounds       12
+Guild        0
+Code         do_scan
+Dammsg       ~
+Wearoff      !Scan!~
+Teachers     512~
+Minlevel     1
+End
+
+#SKILL
+Name         scribe~
+Type         Skill
+Flags        0
+Target       4
+Minpos       8
+Rounds       12
+Code         do_scribe
+Dammsg       ~
+Wearoff      !Scribe!~
+Minlevel     1001
+End
+
+#SKILL
+Name         search~
+Type         Skill
+Flags        0
+Minpos       8
+Rounds       20
+Guild        4
+Code         do_search
+Dammsg       ~
+Wearoff      !Search!~
+Teachers     516~
+Minlevel     3
+End
+
+#SKILL
+Name         second attack~
+Type         Skill
+Flags        0
+Minpos       7
+Guild        0
+Code         spell_null
+Dammsg       ~
+Wearoff      !Second Attack!~
+Teachers     512~
+Minlevel     45
+End
+
+#SKILL
+Name         seduce~
+Type         Skill
+Flags        0
+Minpos       8
+Rounds       12
+Guild        5
+Code         do_seduce
+Dammsg       ~
+Wearoff      !!~
+Teachers     517~
+Minlevel     65
+End
+
+#SKILL
+Name         see masking~
+Type         Skill
+Flags        0
+Target       3
+Minpos       8
+Rounds       20
+Guild        3
+Code         spell_smaug
+Dammsg       ~
+Wearoff      Your senses dull as you can no longer detect the unseen.~
+Hitvict      You focus your senses in an effort to detect the unseen.~
+Misschar     You fail to become aware of the unseen things around you.~
+Teachers     515~
+Affect       'l*5' 26 'detect invis' 8
+Minlevel     60
+End
+
+#SKILL
+Name         sharpen~
+Type         Skill
+Flags        0
+Target       4
+Minpos       5
+Guild        3
+Code         do_sharpen
+Dammsg       ~
+Wearoff      !done!~
+Teachers     515~
+Minlevel     350
+End
+
+#SKILL
+Name         ship maintenance~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        2
+Code         spell_null
+Dammsg       ~
+Wearoff      !done!~
+Teachers     2000~
+Minlevel     25
+End
+
+#SKILL
+Name         ship systems~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        1
+Code         spell_null
+Dammsg       ~
+Wearoff      !done!~
+Teachers     513~
+Minlevel     1
+End
+
+#SKILL
+Name         slip~
+Type         Skill
+Flags        524288
+Minpos       8
+Rounds       15
+Guild        7
+LP           25
+Code         do_slip
+Dammsg       ~
+Wearoff      !Slip!~
+Teachers     529~
+Alignment   25
+Minlevel     25
+End
+
+#SKILL
+Name         smalltalk~
+Type         Skill
+Flags        0
+Minpos       8
+Rounds       15
+Guild        5
+Code         do_smalltalk
+Dammsg       ~
+Wearoff      !!~
+Teachers     517~
+Minlevel     1
+End
+
+#SKILL
+Name         sneak~
+Type         Skill
+Flags        0
+Target       3
+Minpos       8
+Rounds       1
+Guild        4
+Code         spell_smaug
+Dammsg       ~
+Wearoff      Your steps become less quiet, betraying your movements to others.~
+Hitvict      You attempt to move silently through the shadows.~
+Misschar     You attempt to silence your steps, but fail.~
+Teachers     516~
+Affect       'l*23' 26 'sneak' 32768
+Minlevel     50
+End
+
+#SKILL
+Name         snipe~
+Type         Skill
+Flags        0
+Minpos       8
+Rounds       12
+Guild        0
+Code         do_snipe
+Dammsg       ~
+Wearoff      !snipe!~
+Teachers     512~
+Minlevel     2
+End
+
+#SKILL
+Name         space combat 1~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        1
+Code         spell_null
+Dammsg       ~
+Wearoff      !done!~
+Teachers     513~
+Minlevel     40
+End
+
+#SKILL
+Name         space combat 2~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        1
+Code         spell_null
+Dammsg       ~
+Wearoff      !done!~
+Teachers     513~
+Minlevel     95
+End
+
+#SKILL
+Name         space combat 3~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        1
+Code         spell_null
+Dammsg       ~
+Wearoff      !done!~
+Teachers     513~
+Minlevel     150
+End
+
+#SKILL
+Name         spacemines~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        1
+Code         do_spacemine
+Dammsg       ~
+Wearoff      !done!~
+Teachers     0~
+Minlevel     350
+End
+
+#SKILL
+Name         special_forces~
+Type         Skill
+Flags        0
+Minpos       8
+Rounds       12
+Guild        6
+Code         spell_null
+Dammsg       ~
+Wearoff      !!~
+Teachers     518~
+Minlevel     175
+End
+
+#SKILL
+Name         spice refining~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        2
+Code         spell_null
+Dammsg       ~
+Wearoff      !done!~
+Teachers     2000~
+Minlevel     50
+End
+
+#SKILL
+Name         stalk~
+Type         Skill
+Flags        0
+Minpos       8
+Guild        3
+Code         do_stalk
+Dammsg       ~
+Wearoff      !Stalk!~
+Teachers     515~
+Minlevel     25
+End
+
+#SKILL
+Name         steal~
+Type         Skill
+Flags        0
+Minpos       8
+Rounds       24
+Guild        4
+Code         do_steal
+Dammsg       ~
+Wearoff      !Steal!~
+Teachers     516~
+Minlevel     20
+End
+
+#SKILL
+Name         strangle~
+Type         Skill
+Flags        0
+Target       1
+Minpos       7
+Rounds       8
+Guild        3
+Code         do_strangle
+Dammsg       strangle~
+Wearoff      !Strangle!~
+Teachers     0~
+Minlevel     151
+End
+
+#SKILL
+Name         stun~
+Type         Skill
+Flags        0
+Target       1
+Minpos       7
+Rounds       8
+Code         do_punch
+Dammsg       stun~
+Wearoff      You regain consciousness.~
+Teachers     32012 32011 412~
+Minlevel     1005
+End
+
+#SKILL
+Name         third attack~
+Type         Skill
+Flags        0
+Minpos       7
+Guild        0
+Code         spell_null
+Dammsg       ~
+Wearoff      !Third Attack!~
+Teachers     512~
+Minlevel     95
+End
+
+#SKILL
+Name         track~
+Type         Skill
+Flags        0
+Minpos       8
+Guild        3
+Code         do_track
+Dammsg       ~
+Wearoff      !Track!~
+Teachers     515~
+Minlevel     1
+End
+
+#SKILL
+Name         tractor beams~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        1
+Code         spell_null
+Dammsg       ~
+Wearoff      !done!~
+Teachers     513~
+Minlevel     35
+End
+
+#SKILL
+Name         trance~
+Type         Skill
+Flags        12582912
+Target       3
+Minpos       5
+Rounds       32
+Guild        8
+Code         spell_smaug
+Dammsg       ~
+Wearoff      !TRANCE!~
+Hitvict      You enter a peaceful trance, tuning yourself to the Force.~
+Missvict     You spend several minutes in a deep trance, but fail to find the Force.~
+Teachers     50 605~
+Affect       '' 12 '75' -1
+Minlevel     60
+End
+
+#SKILL
+Name         transform~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        1
+Code         spell_null
+Dammsg       ~
+Wearoff      !done!~
+Teachers     513~
+Minlevel     130
+End
+
+#SKILL
+Name         trap~
+Type         Skill
+Flags        524288
+Minpos       8
+Rounds       12
+Guild        7
+LP           30
+Code         do_trap
+Dammsg       ~
+Wearoff      !Trap!~
+Teachers     529~
+Alignment   30
+Minlevel     30
+End
+
+#SKILL
+Name         weapon systems~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        1
+Code         spell_null
+Dammsg       ~
+Wearoff      !done!~
+Teachers     513~
+Minlevel     1
+End
+
+#SKILL
+Name         zerosystem~
+Type         Skill
+Flags        0
+Minpos       5
+Guild        1
+Code         spell_null
+Dammsg       ~
+Wearoff      !done!~
+Teachers     513~
+Minlevel     500
+End
+
+#SKILL
+Name         bludgeons~
+Type         Weapon
+Flags        0
+Minpos       7
+Code         spell_null
+Dammsg       ~
+Wearoff      !Bludgeons!~
+Minlevel     1001
+End
+
+#SKILL
+Name         bow and arrows~
+Type         Weapon
+Flags        0
+Minpos       7
+Guild        0
+Code         spell_null
+Dammsg       ~
+Teachers     512~
+Minlevel     4
+End
+
+#SKILL
+Name         firearms~
+Type         Weapon
+Flags        0
+Minpos       7
+Guild        0
+Code         spell_null
+Dammsg       ~
+Wearoff      !Firearms!~
+Teachers     512~
+Minlevel     2
+End
+
+#SKILL
+Name         flexible arms~
+Type         Weapon
+Flags        0
+Minpos       7
+Code         spell_null
+Dammsg       ~
+Wearoff      !Flexible Arms!~
+Minlevel     1001
+End
+
+#SKILL
+Name         spears~
+Type         Weapon
+Flags        0
+Guild        0
+Code         spell_null
+Dammsg       ~
+Teachers     512~
+Minlevel     3
+End
+
+#SKILL
+Name         swords~
+Type         Weapon
+Flags        0
+Minpos       7
+Guild        0
+Code         spell_null
+Dammsg       ~
+Wearoff      !Swords!~
+Teachers     512~
+Minlevel     1
+End
+
+#SKILL
+Name         talonous arms~
+Type         Weapon
+Flags        0
+Minpos       7
+Code         spell_null
+Dammsg       ~
+Wearoff      !Talonous Arms!~
+Minlevel     101
+End
+
+#SKILL
+Name         common~
+Type         Tongue
+Flags        0
+Code         spell_null
+Dammsg       ~
+Wearoff      !Common!~
+Minlevel     1
+End
+
+#SKILL
+Name         sprint~
+Type         Skill
+Flags        0
+Guild        4
+Code         do_sprint
+Dammsg       !Sprint!~
+Minlevel     100
+Teachers     516~
+End
+
+#END

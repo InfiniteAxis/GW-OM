@@ -1,0 +1,4175 @@
+#AREA   MoonBase.are~
+
+
+
+#AUTHOR Kurama~
+
+#OWNED_BY None~
+
+#RANGES
+0 0 1 1000
+$
+
+#RESETMSG The guards switch positions and return to their posts.~
+
+#FLAGS
+0
+
+#ECONOMY 0 466186573
+
+#MOBILES
+#9301
+Moon Gate Guard~
+Moon Gate Guard~
+A guard is stand at attention here.
+~
+~
+134217731 0 0 Z
+999 0 -2397 200d50+14000 99d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+199 199 0 0 0 0 16 0
+0 0 0 0 0 0 0 0
+#9302
+Mad Scientist~
+A Mad Scientist~
+An insane scientist is wandering about here.
+~
+~
+3 0 0 Z
+800 0 -1900 160d10+9000 80d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+160 160 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9303
+Hallway Guard~
+Hallway Guard~
+A guard patrols the hallway here.
+~
+~
+134217761 0 0 Z
+1000 0 -2400 200d10+20000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9304
+Door Sentinel~
+Door Sentinel~
+A man is guarding the door here.
+~
+~
+134217763 0 0 Z
+1000 0 -2400 200d10+35000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9305
+Elite Moon Guard~
+Eilte Moon Guard~
+An elite guard patrols the area.
+~
+~
+1 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9306
+Neo~
+Neo~
+Neo is wandering about here.
+~
+~
+134217731 0 0 Z
+1000 0 -1400 200d10+375000 100d25+1000
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 65 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9307
+A swordsman~
+A swordsman~
+A man is walking about with a sword.
+~
+~
+134217763 0 0 Z
+1000 0 -2400 200d10+50000 25d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9308
+Moon Special Forces~
+Moon Special Forces~
+A special forces member is walking about here.
+~
+~
+134217763 0 0 Z
+1000 0 -2400 200d10+65000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9309
+Jail Cell Guard~
+Jail Cell Guard~
+A guard is guarding the jail cells here.
+~
+~
+134217763 0 0 Z
+1000 0 -2400 200d10+65000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9310
+Lonely Prisoner~
+Lonely Prisoner~
+A weeping prisoner is here.
+~
+~
+134217731 0 0 Z
+1000 0 -2400 200d10+30000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9311
+Brute Prisoner~
+Brute Prisoner~
+A mean prisoner is bully others around here.
+~
+~
+134217731 0 0 Z
+1000 0 -2400 200d10+40000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9312
+Captain of the Guards~
+Captain of the Guards~
+The captain is standing here.
+~
+~
+134217729 0 0 Z
+1000 0 -2400 200d10+150000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+say You'll never find the entrance to the Omega lab.
+say My death won't be in vain. Hah..ha..h....
+~
+|
+#9313
+Elite Sentinel~
+Elite Sentinel~
+An elite sentinel is patrolling the area.
+~
+~
+134217763 0 0 Z
+1000 0 -2400 200d10+60000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9314
+Dark Swordsman~
+Dark Swordsman~
+An evil person lurks about.
+~
+~
+134217763 0 0 Z
+1000 0 -2400 200d10+75000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9315
+A bounty hunter~
+A bounty hunter~
+A hunter is here collecting heads.
+~
+~
+134217731 0 0 Z
+1000 0 -2400 200d10+378000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9316
+a civilian~
+a civilian~
+A civilian is wandering about confused.
+~
+~
+1 0 0 Z
+1000 0 -2400 200d10+9999 100d4+2
+500 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9317
+Security Guard~
+Security Guard~
+A security guard is taking people's weapons here.
+~
+~
+1 0 0 Z
+1000 0 -2400 200d10+30000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9318
+Test Pilot~
+Test Pilot~
+A test pilot is fidgeting with a gadget here.
+~
+~
+1207959555 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9319
+Heero Yuy~
+Heero Yuy~
+Heero Yuy is standing here looking glum.
+~
+~
+3 0 0 Z
+1000 0 -2400 200d10+560000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 1~
+say You can beat me now, Lets try it again!
+mpmload 9361
+~
+|
+#9320
+Base Guard~
+Base Guard~
+A person is here guarding the base.
+~
+~
+134217763 0 0 Z
+1000 0 -2400 200d10+35000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9321
+Guard Robot~
+Guard Robot~
+A guard robot is here.
+~
+~
+134217763 0 0 Z
+1000 0 -2400 200d10+20000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9322
+Guard Cyborg~
+Guard Cyborg~
+A guard cyborg is here.
+~
+~
+134217763 0 0 Z
+1000 0 -2400 200d10+25000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9323
+Cyborg Sentinel~
+Cyborg Sentinel~
+A cyborg sentinel is resting here.
+~
+~
+134217763 0 0 Z
+1000 0 -2400 200d10+30000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9324
+Robot Sentinel~
+Robot Sentinel~
+A robot sentinel is standing here.
+~
+~
+134217763 0 0 Z
+1000 0 -2400 200d10+35000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9325
+Mech I~
+Mech I~
+A small sized machine is here.
+~
+~
+134217763 0 0 Z
+1000 0 -2400 200d10+85000 100d4+2
+0 0
+8 8 0
+24 10 10 24 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9326
+Mech II~
+Mech II~
+A medium sized machine is here.
+~
+~
+134217763 0 0 Z
+1000 0 -2400 200d10+90000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> all_greet_prog ~
+say Intruder Alert!
+~
+|
+#9327
+Mech III~
+Mech III~
+A large sized machine is here.
+~
+~
+134217763 0 0 Z
+1000 0 -2400 200d10+95000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9328
+Mech IV~
+Mech IV~
+A very large sized machine is here.
+~
+~
+134217763 0 0 Z
+1000 0 -2400 200d10+100000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9329
+Mech V~
+Mech V~
+A humongous mecha is stationed here.
+~
+~
+134217763 0 0 Z
+1000 0 -2400 200d10+120000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9330
+Grappler Bot~
+Grappler Bot~
+A funky looking robot is here.
+~
+~
+134217763 0 0 Z
+1000 0 -2400 200d10+95000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9331
+Combatant~
+Combatant~
+A man is here ready for battle.
+~
+~
+3 0 0 Z
+1000 0 -2400 200d10+25000 100d4+2
+1000 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9332
+Martial Artist~
+Martial Artist~
+Some guy is practicing kung-fu here.
+~
+~
+3 0 0 Z
+1000 0 -2400 200d10+35000 100d4+2
+1250 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9333
+Moon Soldier~
+Moon Soldier~
+A soldier is here prepared for war.
+~
+~
+134217731 0 0 Z
+1000 0 -2400 200d10+40000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9334
+Moon Warrior~
+Moon Warrior~
+A warrior is here prepared for war.
+~
+~
+134217731 0 0 Z
+1000 0 -2400 200d10+40000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9335
+Wounded Soldier~
+Wounded Soldier~
+A soldier is bleeding profusely on the ground here.
+~
+~
+3 0 0 Z
+1000 0 -2400 200d10+500 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9336
+Winged Demon~
+Winged Demon~
+A winged creature is flying around the area.
+~
+~
+33 0 0 Z
+1000 0 -2400 200d10+47500 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9337
+Winged Beast~
+Winged Beast~
+A winged beast is flying over your head.
+~
+~
+33 0 0 Z
+1000 0 -2400 200d10+55500 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9338
+Foul Beast~
+Foul Beast~
+A stinky critter is emitting strange gases here.
+~
+~
+3 0 0 Z
+1000 0 -2400 200d10+20000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9339
+Rift Walker~
+Rift Walker~
+A rift walker is wandering about.
+~
+~
+3 0 0 Z
+1 0 0 0d0+30000 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9340
+Green Dragon~
+Green Dragon~
+A green dragon is flying around here.
+~
+~
+134217763 0 0 Z
+1000 0 -2400 200d10+120000 100d75+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9341
+Red Dragon~
+Red Dragon~
+A red dragon is flying about here.
+~
+~
+134217729 0 0 Z
+1 0 0 0d0+122000 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9342
+Black Dragon~
+Black Dragon~
+A black dragon is flying about here.
+~
+~
+134217729 0 0 Z
+1 0 0 0d0+124000 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9343
+Silver Dragon~
+Silver Dragon~
+A silver dragon is flying about here.
+~
+~
+134217729 0 0 Z
+1 0 0 0d0+130000 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9344
+Gold Dragon~
+Gold Dragon~
+A gold dragon is flying about here.
+~
+~
+134217729 0 0 Z
+1 0 0 0d0+135000 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9345
+Drow~
+Drow~
+A very evil humanoid walks about here.
+~
+~
+1 0 0 Z
+1 0 0 0d0+75000 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9346
+Elf~
+Serian Elf~
+A very kind young elf walks about here.
+~
+~
+1 0 0 Z
+1 0 0 0d0+75000 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9347
+Ancient Organism~
+Ancient Organism~
+A weird looking creature lurks around here.
+~
+~
+1 0 0 Z
+1 0 0 0d0+80000 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9348
+Wounded Scientist~
+Wounded Scientist~
+A wounded scientist is bleeding profusely here.
+~
+~
+1 0 0 Z
+1000 0 -2400 200d10+500 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9349
+Dr. Grim~
+Dr. Grim~
+Dr. Grim is standing here.
+~
+~
+3 0 0 Z
+1000 0 -2400 200d10+55000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> all_greet_prog 100~
+say Hello there, $n. I don't know how you got here, but you should leave.
+say This place, Omega Lab, was supposed to be a lab to experiment on mutants.
+say We screw up however, big time.
+say We were doing fine until an mutant named Tyrael came along.
+say Tyrael got out of hand once we were through with him.
+say Hell, he's so damn powerful now that even Scythe can't kill him.
+say Feel free to wander if you must, but don't go too far.
+~
+|
+#9350
+Scythe~
+Scythe~
+Experimental soldier, Scythe, is standing here.
+~
+~
+3 0 0 Z
+1000 0 -2400 200d10+850000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9351
+Moon Base Armorer~
+Moon Base Armorer~
+The moon base armorer is here.
+~
+~
+134217731 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog stock~
+mpoload 9301
+mpoload 9303
+mpoload 9309
+mpoload 9318
+~
+|
+#9352
+Moon Base Weapon Smith~
+Moon Base Weapon Smith~
+The moon base weapon smith is here.
+~
+~
+134217731 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog stock~
+mpoload 9349
+~
+|
+#9353
+Moon Base Explosives Specialist~
+Moon Base Explosives Specialist~
+The moon base explosives specialist is here.
+~
+~
+134217731 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog stock~
+mpoload 9342
+mpoload 9343
+mpoload 9344
+mpoload 9345
+mpoload 9346
+mpoload 9347
+mpoload 9348
+~
+|
+#9354
+Head Collector~
+&zApprentice of &CW&wi&Wn&Cd~
+&zThe Apprentice of &CW&wi&Wn&Cd&z stands here.
+~
+~
+134217731 0 0 Z
+1000 0 -2400 200d10+100000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog stock~
+mpoload 9450
+~
+|
+#9355
+Tyrael~
+Tyrael~
+&RTyrael is in a fit of rage here.
+~
+~
+3 0 0 Z
+1000 0 -2400 200d10+1500000 100d4+1000
+0 0
+8 8 0
+24 10 10 24 24 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 2 2
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpoload 9355
+drop wings
+~
+> death_prog 50~
+mpoload 11506
+drop all
+~
+|
+#9356
+White Wolf~
+White Wolf~
+A white wolf is sitting here.
+~
+~
+134217731 0 0 Z
+1000 0 -2400 200d10+50000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9357
+Swordsmith~
+Swordsmith~
+A mutant swordsmith is here.
+~
+~
+134217731 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9358
+Mutant~
+Mutant~
+A mutant is here.
+~
+~
+3 0 0 Z
+1000 0 -2400 200d10+20000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9359
+Infantry~
+Infantry~
+A member of the infantry is here on guard.
+~
+~
+134217729 0 0 Z
+1000 0 -2400 200d10+40000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#9360
+Armor Smith~
+Armor Smith~
+An armor smith is here.
+~
+~
+134217731 0 0 Z
+1000 0 -2400 200d10+30000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog stock~
+mpoload 9306
+~
+|
+#9361
+Heero Yuy~
+Heero Yuy~
+Heero Yuy is standing here looking glum.
+~
+~
+134217731 0 0 Z
+1000 0 -2400 200d10+560000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 4~
+say You have proven to be a worthy opponent.
+mpoload 11502
+~
+|
+#9362
+Tyrael~
+Tyrael~
+&RTyrael is in a fit of rage here.
+~
+~
+134217731 0 0 Z
+1000 0 -2400 200d10+1500000 100d4+1000
+0 0
+8 8 0
+24 10 10 24 24 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 2 2
+0 0 0 0 0 0 0 0
+> death_prog 2~
+mpoload 11506
+~
+|
+#9450
+Tester~
+a newly created Tester~
+Some god abandoned a newly created Tester here.
+~
+~
+3 0 0 Z
+1 0 97 0d10+10 0d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#9301
+A Black Robe~
+&CA &zB&wl&za&wc&zk &BR&bo&Bb&be~
+A A Black Robe is here.~
+~
+9 0 1025 16
+50 30 0 0
+1 20000 2000
+A
+13 1000
+A
+18 3
+A
+19 3
+A
+40 50
+#9302
+A Black Helmet~
+&CA &zB&wl&za&wc&zk &BH&be&Bl&bm&Be&bt~
+A black helmet is lying on the ground.~
+~
+9 0 17
+50 25 0 0
+1 22000 2200
+A
+18 10
+A
+19 10
+A
+13 250
+#9303
+Black Sword~
+A &zBlack &CS&cw&Co&cr&Cd~
+A Black Sword is here.~
+~
+5 0 8193
+90 7 140 2 1000 1000
+1 16000 1600
+A
+18 5
+A
+19 5
+#9304
+Submachine Gun~
+&CS&cu&Cb&cm&Ca&cc&Ch&ci&Cn&ce &GG&gu&Gn~
+Someone dropped a submachine gun here.~
+~
+5 0 8193
+100 15 20 9 10000 10000
+1 0 0
+#9305
+Kodache~
+&RK&ro&Rd&ra&Rc&rh&Re~
+Someone left a short sword here.~
+~
+5 0 8193
+100 10 140 2 1000 1000
+1 22000 2200
+A
+18 5
+A
+19 17
+#9307
+Broad Sword~
+&BB&br&Bo&ba&Bd &CS&cw&Co&cr&Cd~
+A very long sword was dropped here.~
+~
+5 0 8193
+100 10 50 2 10000 10000
+1 0 0
+#9308
+Prism Dagger~
+&RA &PP&cr&pi&Cs&Pm &BD&ba&Bg&bg&Be&br~
+A Prism Dagger is here.~
+~
+5 0 8193
+100 10 151 2 1000 1000
+1 65000 6500
+A
+13 -5000
+A
+19 50
+A
+18 10
+#9309
+Prism Robe~
+&PP&pr&Pi&ps&Pm &CR&co&Cb&ce~
+A Prism Robe is here.~
+~
+13 1 1025
+100 100 0 0
+1 25000 2500
+A
+18 10
+A
+19 10
+A
+40 50
+#9310
+Crystal Sword~
+&RA &CC&cr&Cy&cs&Ct&ca&Cl &BS&bw&Bo&br&Bd~
+A sword made of crystal was dropped on the ground.~
+~
+5 0 8193
+100 10 150 2 1000 1000
+1 26000 2600
+A
+18 10
+A
+19 15
+#9313
+Chain Mesh~
+&WC&wh&Wa&wi&Wn &YM&Oe&Ys&Oh~
+Someone dropped some chain mesh here.~
+~
+9 0 9
+50 50 0 0
+1 65000 6500
+A
+13 1000
+A
+18 5
+A
+19 10
+#9314
+Chain Mail~
+&WC&w&Wh&wa&Wi&wn &BM&ba&Bi&bl~
+Someone dropped their chain mail here.~
+~
+9 0 9
+50 50 0 0
+1 67000 6700
+A
+18 5
+A
+19 5
+#9317
+Felt Cloak~
+&WF&we&Wl&wt &YC&Ol&Yo&Oa&Yk~
+A Felt Cloak is here.~
+~
+9 0 1025 128
+50 50 0 0
+1 80000 8000
+A
+18 10
+A
+19 10
+A
+13 500
+#9318
+Prism Brace~
+&PP&cr&pi&Cs&Pm &BB&br&Ba&bc&Be~
+A brace of extrordinary quality is here.~
+~
+9 0 4097
+75 75 0 0
+1 120000 12000
+A
+18 15
+A
+19 25
+A
+13 500
+#9319
+Mesh Boots~
+&YM&Oe&Ys&Oh &BB&bo&Bo&bt&Bs~
+Someone dropped a nice pair of boots here.~
+~
+9 8192 65 1
+50 50 0 0
+1 46000 4600
+A
+13 750
+A
+18 10
+A
+19 10
+#9320
+Heavy Greaves~
+&RH&re&Ra&rv&Ry &GG&gr&Ge&ga&Gv&ge&Gs~
+Someone dropped their greaves here.~
+~
+9 0 65 32
+50 50 0 0
+1 43000 4300
+A
+18 7
+A
+19 12
+#9321
+Steel Foot Spike~
+&WS&wt&We&we&Wl &GF&go&Go&gt &BS&bp&Bi&bk&Be~
+A Steel Foot Spike is here.~
+~
+9 0 65 128
+50 50 0 0
+1 44000 4400
+A
+13 750
+A
+18 10
+A
+19 5
+#9324
+Soldier Body Armor~
+A Soldier's Body Armor~
+Someone dropped a plated vest on the ground.~
+~
+9 0 9
+75 75 0 0
+1 0 0
+A
+26 65536
+A
+1 14
+A
+2 14
+A
+3 14
+A
+25 14
+A
+5 14
+A
+4 14
+#9325
+Metal Plating~
+&YMetal Plating~
+Some metal plating was left here.~
+~
+9 0 9
+75 75 0 0
+1 0 0
+A
+40 100
+A
+48 100
+A
+18 30
+A
+19 30
+#9326
+Machine Cannon~
+&WMachine Cannon~
+A mech's machine cannon was dropped here.~
+~
+5 0 8193
+75 5 95 6 1000 1000
+1 0 0
+#9327
+Rocket Cannon~
+&CRocket Cannon~
+A mech's rocket cannon was dropped here.~
+~
+5 0 8193
+75 5 100 6
+1 0 0
+#9328
+Plasma Cannon~
+&GPlasma Cannon~
+A mech's plasma cannon was dropped here.~
+~
+5 0 8193
+75 5 95 6
+1 0 0
+#9329
+Laser Cannon~
+&RL&ra&Rs&re&Rr &WC&wa&Wn&wn&Wo&wn~
+A mech's laser cannon was dropped here.~
+~
+5 0 8193
+50 10 130 6
+1 0 0
+#9330
+Blaster Cannon~
+&BA Blaster Cannon~
+A blaster cannon was left here.~
+~
+5 0 8193
+75 5 90 6
+1 0 0
+#9331
+Curved Scimitar~
+&CC&ru&Cr&Rv&Ce&rd &PS&gc&pi&Gm&Pi&gt&pa&Gr~
+A curved scimitar was thrown here.~
+~
+5 0 8193
+50 3 88 3
+1 0 0
+#9332
+Boomerang~
+&RA &zB&Bo&zo&Bm&ze&Br&za&Bn&zg~
+A boomerang was dropped here.~
+~
+5 0 8193
+50 10 145 4
+1 36000 3600
+A
+18 -25
+A
+19 -25
+A
+13 7500
+#9333
+Long Bow~
+&RA &GL&go&Gn&gg &YB&Oo&Yw~
+A long bow was thrown onto the ground.~
+~
+5 0 8193
+75 8 130 9
+1 28000 2800
+A
+18 7
+#9334
+Silver Dragon Scale Bow~
+&WS&wi&Wl&wv&We&wr &GD&gr&Ga&gg&Go&gn &BS&bc&Ba&bl&Be &zB&Co&zw~
+Someone dropped a beautifully crafted bow here.~
+~
+5 1 8193
+75 10 151 9
+1 120000 12000
+A
+18 25
+A
+19 25
+#9335
+Flail~
+&RA &Yflail~
+Someone dropped a flail here.~
+~
+5 0 8193
+55 1 1500 8
+1 16000 1600
+#9336
+Great Sword~
+&BA &GG&gr&Ge&ga&Gt &RS&rw&Ro&rr&Rd~
+A great sword is lying here.~
+~
+5 0 8193
+50 4 105 3
+1 0 0
+#9337
+Dragon Scale Mace~
+&GDragon &BScale &RMace~
+A mace has been flung here.~
+~
+5 0 8193
+55 8 145 8
+1 22000 2200
+#9338
+Angel Blade~
+&RA&rn&Rg&re&Rl &BB&bl&Ba&bd&Be~
+Tyrael's sword has been dropped here.~
+~
+5 3 8193
+75 10 33 2
+1 0 0
+#9339
+Grappler Arm~
+&RG&rr&Ra&rp&Rp&rl&Re&rr &GA&gr&Gm~
+A grappler bot's arm is lying here.~
+~
+5 0 8193
+50 2 78 8
+1 0 0
+#9340
+Machine Gun~
+&RA &BM&ba&Bc&bh&Bi&bn&Be &GG&gu&Gn~
+Someone dropped their machine gun here.~
+~
+5 0 8193
+40 3 99 6
+1 0 0
+#9342
+C-4~
+A package of C-4~
+A package of C-4 is laying here.~
+~
+82 0 16385
+10000 1 0 0
+1 4000 400
+#9344
+High-Powered Grenade~
+High-Powered Grenade~
+Someone dropped a roundish grenade here.~
+~
+82 0 16385
+12500 25 0 0
+1 7000 700
+#9345
+Frag Grenade~
+a frag grenade~
+A frag grenade was dropped here.~
+~
+82 0 16385
+8000 25 0 0
+1 5600 560
+#9346
+Pipe-bomb~
+a pipe-bomb~
+A pipe-bomb was dropped here.~
+~
+82 0 16385
+8000 25 0 0
+1 4000 400
+#9347
+Flashbang~
+a flashbang~
+A flashbang was dropped here.~
+~
+82 0 16385
+3500 25 0 0
+1 1500 150
+#9348
+Molotov Cocktail~
+a molotov cocktail~
+Someone dropped a cocktail here.~
+~
+82 0 16385
+40 25 4 0
+1 2000 200
+#9349
+Omega Edge~
+&RO&zm&Re&zg&Ra &YE&cd&Yg&ce~
+Someone dropped a rare sword here.~
+~
+5 0 8193
+10 2 40 1
+1 175000 17500
+A
+18 -15
+A
+19 -15
+A
+13 -5000
+#9355
+Tyrael's Wings~
+&YT&Oy&Yr&Oa&Ye&Ol&Y'&Os &CW&ci&Cn&cg&Cs~
+Tyrael's wings were dropped onto the floor.~
+~
+9 0 1025
+75 75 0 0
+1 0 0
+A
+18 15
+A
+19 15
+A
+13 1000
+#0
+
+
+#ROOMS
+#9301
+In front of the Moon Base~
+You stand here in front of the Moon Base. The base here seems to be quite
+large in size and very well protected.
+There are many guards walking about orders citizens what to do here.
+Say 'Moon' to return to the moon.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9302
+D3
+~
+Moon_Gate~
+1 -1 9303
+> speech_prog moon~
+mpechoat $n You are taken to the Moon by train.
+mpechoaround $n $n are taken to the Moon by train.
+mptransfer $n 1627
+~
+|
+S
+#9302
+A dead end~
+There is not much to see here other than the piles of ammunition. The ground
+here is very hard and dry and the seems to be air coming from somewhere.
+~
+0 4 0 1 0
+D1
+~
+~
+2056 -1 9373
+D2
+~
+~
+0 -1 9301
+S
+#9303
+Passed the Front Gate~
+You have gotten past the front gate and are now inside the base. How
+you got in here is a mystery, but be careful not to get spotted by guards.
+~
+0 0 0 1 0
+D1
+~
+~
+1 -1 9301
+D3
+~
+~
+0 -1 9304
+S
+#9304
+Mech Room I~
+This room is quite large and seems to be made of titanium all over.
+You think to yourself why is this room the way it is.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9306
+D1
+~
+~
+0 -1 9303
+D2
+~
+~
+0 -1 9305
+D3
+~
+~
+0 -1 9307
+S
+#9305
+In the Moon Base~
+This room isn't much to see. There seems to be some sort of materials
+lying about the room, they probably belong to a soldier.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9304
+S
+#9306
+In the Moon Base~
+This room isn't much to see. There seems to be some sort of materials
+lying about the room, they probably belong to a soldier.
+~
+0 0 0 1 0
+D2
+~
+~
+0 -1 9304
+S
+#9307
+In the Moon Base~
+This room isn't much to see. There seems to be some sort of materials
+lying about the room, they probably belong to a soldier.
+~
+0 4 0 1 0
+D0
+~
+~
+0 -1 9309
+D1
+~
+~
+0 -1 9304
+D3
+~
+~
+0 -1 9308
+S
+#9308
+Moon Base Barracks~
+This is the barracks where all the men sleep. Might not want to make
+too much noise in here.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9307
+S
+#9309
+Hallway~
+You now walk through a long hallway that leads to the innards of
+the moon base. Watch out for sentinels and hallway guards.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9310
+D2
+~
+~
+0 -1 9307
+S
+#9310
+Hallway~
+You now walk through a long hallway that leads to the innards of
+the moon base. Watch out for sentinels and hallway guards.
+~
+0 4 0 1 0
+D0
+~
+~
+0 -1 9311
+D2
+~
+~
+0 -1 9309
+S
+#9311
+Hallway~
+You now walk through a long hallway that leads to the innards of
+the moon base. Watch out for sentinels and hallway guards.
+~
+0 0 0 1 0
+D2
+~
+~
+0 -1 9310
+D3
+~
+~
+0 -1 9312
+S
+#9312
+Hallway~
+You now walk through a long hallway that leads to the innards of
+the moon base. Watch out for sentinels and hallway guards.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9313
+D1
+~
+~
+0 -1 9311
+D3
+~
+~
+0 -1 9315
+S
+#9313
+Hallway~
+You now walk through a long hallway that leads to the innards of
+the moon base. Watch out for sentinels and hallway guards.
+~
+0 0 0 1 0
+D2
+~
+~
+0 -1 9312
+D6
+~
+~
+2056 -1 9314
+S
+#9314
+Grenade Shop~
+This is the moon base grenade supply room. A man is here selling
+grenades to the soldiers.
+~
+0 1028 0 1 0
+D9
+~
+~
+0 -1 9313
+S
+#9315
+Hallway~
+You now walk through a long hallway that leads to the innards of
+the moon base. Watch out for sentinels and hallway guards.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9312
+D2
+~
+~
+0 -1 9316
+S
+#9316
+Hallway~
+You now walk through a long hallway that leads to the innards of
+the moon base. Watch out for sentinels and hallway guards.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9315
+D9
+~
+~
+0 -1 9317
+S
+#9317
+Hallway~
+You now walk through a long hallway that leads to the innards of
+the moon base. Watch out for sentinels and hallway guards.
+~
+0 0 0 1 0
+D2
+~
+~
+0 -1 9318
+D3
+~
+~
+0 -1 9326
+D6
+~
+~
+0 -1 9316
+S
+#9318
+Short Corridor~
+This corridor seems to be very short. It may lead to somewhere
+very interesting.
+~
+0 4 0 1 0
+D0
+~
+~
+0 -1 9317
+D2
+~
+~
+0 -1 9319
+S
+#9319
+Mech Room 2~
+This room is quite large and seems to be made of titanium all over.
+You think to yourself why is this room the way it is.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9318
+D2
+~
+~
+0 -1 9320
+S
+#9320
+Lab 1~
+This is Lab One, where all the non-threatening experiments are done
+This area isn't very large so you wonder how the scientist do their work.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9319
+D1
+~
+~
+0 -1 9322
+D2
+~
+~
+0 -1 9324
+D3
+~
+~
+0 -1 9321
+S
+#9321
+Lab 1~
+This is Lab One, where all the non-threatening experiments are done
+This area isn't very large so you wonder how the scientist do their work.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9320
+D2
+~
+~
+0 -1 9325
+S
+#9322
+Lab 1~
+This is Lab One, where all the non-threatening experiments are done
+This area isn't very large so you wonder how the scientist do their work.
+~
+0 0 0 1 0
+D2
+~
+~
+0 -1 9323
+D3
+~
+~
+0 -1 9320
+S
+#9323
+Lab 1~
+This is Lab One, where all the non-threatening experiments are done
+This area isn't very large so you wonder how the scientist do their work.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9322
+D3
+~
+~
+0 -1 9324
+S
+#9324
+Lab 1~
+This is Lab One, where all the non-threatening experiments are done
+This area isn't very large so you wonder how the scientist do their work.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9320
+D1
+~
+~
+0 -1 9323
+D3
+~
+~
+0 -1 9325
+S
+#9325
+Lab 1~
+This is Lab One, where all the non-threatening experiments are done
+This area isn't very large so you wonder how the scientist do their work.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9321
+D1
+~
+~
+0 -1 9324
+S
+#9326
+Hallway~
+You now walk through a long hallway that leads to the innards of
+the moon base. Watch out for sentinels and hallway guards.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9317
+D3
+~
+~
+0 -1 9327
+S
+#9327
+Hallway~
+You now walk through a long hallway that leads to the innards of
+the moon base. Watch out for sentinels and hallway guards.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9326
+D3
+~
+~
+0 -1 9328
+S
+#9328
+Hallway~
+You now walk through a long hallway that leads to the innards of
+the moon base. Watch out for sentinels and hallway guards.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9327
+D3
+~
+~
+0 -1 9329
+S
+#9329
+Hallway~
+You now walk through a long hallway that leads to the innards of
+the moon base. Watch out for sentinels and hallway guards.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9328
+D2
+~
+~
+0 -1 9330
+D3
+~
+~
+0 -1 9347
+S
+#9330
+Short Corridor~
+This corridor seems to be very short. It may lead to somewhere
+very interesting.
+~
+0 4 0 1 0
+D0
+~
+~
+0 -1 9329
+D2
+~
+~
+0 -1 9331
+S
+#9331
+Mech Room 3~
+This room is quite large and seems to be made of titanium all over.
+You think to yourself why is this room the way it is.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9330
+D2
+~
+~
+0 -1 9332
+S
+#9332
+Short Corridor~
+This corridor seems to be very short. It may lead to somewhere
+very interesting.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9331
+D3
+~
+~
+0 -1 9333
+S
+#9333
+Short Corridor~
+This room is quite large and seems to be made of titanium all over.
+You think to yourself why is this room the way it is.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9332
+D3
+~
+~
+0 -1 9334
+S
+#9334
+Mech Room 4~
+This corridor seems to be very short. It may lead to somewhere
+very interesting.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9333
+D3
+~
+~
+0 -1 9335
+S
+#9335
+Short Corridor~
+This room is quite large and seems to be made of titanium all over.
+You think to yourself why is this room the way it is.
+This corridor seems to be very short. It may lead to somewhere
+very interesting.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9334
+D3
+~
+~
+0 -1 9336
+S
+#9336
+Short Corridor~
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9335
+D3
+~
+~
+0 -1 9337
+S
+#9337
+Mech Room 5~
+This room is quite large and seems to be made of titanium all over.
+You think to yourself why is this room the way it is.
+This corridor seems to be very short. It may lead to somewhere
+very interesting.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9336
+D3
+~
+~
+0 -1 9338
+S
+#9338
+Short Corridor~
+This corridor seems to be very short. It may lead to somewhere
+very interesting.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9337
+D3
+~
+~
+0 -1 9339
+S
+#9339
+Before &YL&Oa&Yb &BT&bw&Bo~
+You are standing in the room that is right before Lab Two. This area is
+very clean and sterile, as the bacterial experiments are done in here.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9338
+D3
+~
+~
+0 -1 9340
+S
+#9340
+&YL&Oa&Yb &BT&bw&Bo~
+You are now in Lab Two, the cleanest Lab you have ever seen in your life
+This area is very strange and all sorts of organisms are being tested
+to determine if any new vaccines can be made.
+~
+0 8389636 2 1 0
+D0
+~
+~
+0 -1 9341
+D1
+~
+~
+0 -1 9339
+D2
+~
+~
+0 -1 9344
+D3
+~
+~
+0 -1 9450
+S
+#9341
+&YL&Oa&Yb &BT&bw&Bo~
+You are now in Lab Two, the cleanest Lab you have ever seen in your life.
+This area is very strange and all sorts of organisms are being tested
+to determine if any new vaccines can be made.
+~
+0 0 0 1 0
+D2
+~
+~
+0 -1 9340
+D3
+~
+~
+0 -1 9342
+S
+#9342
+&YL&Oa&Yb &BT&bw&Bo~
+You are now in Lab Two, the cleanest Lab you have ever seen in your life.
+This area is very strange and all sorts of organisms are being tested
+to determine if any new vaccines can be made.
+~
+0 1028 0 1 0
+D1
+~
+~
+0 -1 9341
+D2
+~
+~
+0 -1 9450
+D3
+~
+~
+0 -1 9343
+S
+#9343
+&YL&Oa&Yb &BT&bw&Bo~
+You are now in Lab Two, the cleanest Lab you have ever seen in your life.
+This area is very strange and all sorts of organisms are being tested
+to determine if any new vaccines can be made.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9342
+S
+#9344
+&YL&Oa&Yb &BT&bw&Bo~
+You are now in Lab Two, the cleanest Lab you have ever seen in your life.
+This area is very strange and all sorts of organisms are being tested
+to determine if any new vaccines can be made.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9340
+D3
+~
+~
+0 -1 9345
+S
+#9345
+&YL&Oa&Yb &BT&bw&Bo~
+You are now in Lab Two, the cleanest Lab you have ever seen in your life.
+This area is very strange and all sorts of organisms are being tested
+to determine if any new vaccines can be made.
+~
+0 1028 0 1 0
+D0
+~
+~
+0 -1 9450
+D1
+~
+~
+0 -1 9344
+D3
+~
+~
+0 -1 9346
+S
+#9346
+&YL&Oa&Yb &BT&bw&Bo~
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9345
+S
+#9347
+Long Corridor~
+This corridor is very long and seems to go on forever. Must be some
+sort of secret to navigate it.
+~
+0 16777220 0 1 0
+D1
+~
+~
+0 -1 9329
+D3
+~
+~
+0 -1 9348
+S
+#9348
+Long Corridor~
+This corridor is very long and seems to go on forever. Must be some
+sort of secret to navigate it.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9347
+D3
+~
+~
+0 -1 9349
+S
+#9349
+Long Corridor~
+This corridor is very long and seems to go on forever. Must be some
+sort of secret to navigate it.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9348
+D3
+~
+~
+0 -1 9350
+S
+#9350
+Long Corridor~
+This corridor is very long and seems to go on forever. Must be some
+sort of secret to navigate it.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9349
+D3
+~
+~
+0 -1 9351
+S
+#9351
+Long Corridor~
+This corridor is very long and seems to go on forever. Must be some
+sort of secret to navigate it.
+~
+0 0 0 1 0
+D0
+~
+~
+2056 -1 9353
+D1
+~
+~
+0 -1 9350
+D3
+~
+~
+0 -1 9352
+S
+#9352
+Long Corridor~
+This corridor is very long and seems to go on forever. Must be some
+sort of secret to navigate it.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9351
+D3
+~
+~
+0 -1 9348
+S
+#9353
+Secret Corridor~
+This corridor is different from the others, it is very dark. Must be
+like this for a reason.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9354
+D2
+~
+~
+0 -1 9351
+S
+#9354
+Secret Corridor~
+This corridor is different from the others, it is very dark. Must be
+like this for a reason.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9357
+D2
+~
+~
+0 -1 9353
+D3
+~
+~
+0 -1 9355
+S
+#9355
+Secret Corridor~
+This corridor is different from the others, it is very dark. Must be
+like this for a reason.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9356
+D1
+~
+~
+0 -1 9354
+S
+#9356
+&WW&we&Wa&wp&Wo&wn &YS&Oh&Yo&Op~
+Needing any weapons? Well here is the place to buy them. Some of the
+base's best weapons are sold in this here room.
+~
+0 1024 0 1 0
+D2
+~
+~
+0 -1 9355
+S
+#9357
+Secret Corridor~
+This corridor is different from the others, it is very dark. Must be
+like this for a reason.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9358
+D3
+~
+~
+0 -1 9354
+S
+#9358
+Secret Corridor~
+This corridor is different from the others, it is very dark. Must be
+like this for a reason.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9359
+D3
+~
+~
+0 -1 9357
+S
+#9359
+Secret Corridor~
+This corridor is different from the others, it is very dark. Must be
+like this for a reason.
+ 
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9360
+D2
+~
+~
+0 -1 9358
+S
+#9360
+Back Area~
+This is the back area of the base. It is very amazing that you have
+gotten this far and survived. Most intruders would have died.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9361
+D3
+~
+~
+0 -1 9359
+S
+#9361
+Back Area~
+This is the back area of the base. It is very amazing that you have
+gotten this far and survived. Most intruders would have died.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9362
+D3
+~
+~
+0 -1 9360
+S
+#9362
+Back Area~
+This is the back area of the base. It is very amazing that you have
+gotten this far and survived. Most intruders would have died.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9363
+D2
+~
+~
+0 -1 9361
+S
+#9363
+Back Area~
+This is the back area of the base. It is very amazing that you have
+gotten this far and survived. Most intruders would have died.
+~
+0 0 0 1 0
+D2
+~
+~
+0 -1 9362
+D6
+~
+~
+0 -1 9364
+S
+#9364
+Back Area~
+This is the back area of the base. It is very amazing that you have
+gotten this far and survived. Most intruders would have died.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9365
+D9
+~
+~
+0 -1 9363
+S
+#9365
+Back Area~
+This is the back area of the base. It is very amazing that you have
+gotten this far and survived. Most intruders would have died.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9366
+D3
+~
+~
+0 -1 9364
+S
+#9366
+Back Area~
+This is the back area of the base. It is very amazing that you have
+gotten this far and survived. Most intruders would have died.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9370
+D2
+~
+~
+2056 -1 9367
+D3
+~
+~
+0 -1 9365
+S
+#9367
+Hidden Room~
+You have found a hidden room. This area must have been put here for a
+good reason if it was hidden.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9366
+D2
+~
+~
+0 -1 9368
+S
+#9368
+Hidden Room~
+You have found a hidden room. This area must have been put here for a
+good reason if it was hidden.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9367
+D1
+~
+~
+2056 -1 9369
+S
+#9369
+&GA&gr&Gm&go&Gr &BS&bh&Bo&bp~
+This is the armor shop, soldiers stock up on good armors here before
+they go into battle and are never seen again.
+~
+0 1280 0 1 0
+D3
+~
+~
+0 -1 9368
+S
+#9370
+Back Area~
+This is the back area of the base. It is very amazing that you have
+gotten this far and survived. Most intruders would have died.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9371
+D3
+~
+~
+0 -1 9366
+S
+#9371
+Moon Base Jail~
+This area is very strange, it is not like other jails. Moans from men
+can be heard in the background.
+~
+0 0 0 1 0
+D1
+~
+~
+1 -1 9372
+D3
+~
+~
+0 -1 9370
+S
+#9372
+Moon Base Jail Cell~
+You must've been caught if you are in here. This is one of the cells
+that the soldiers keep intruders who survive in.
+~
+0 0 0 1 0
+D3
+~
+~
+1 -1 9371
+S
+#9373
+Hidden Alleyway~
+This area is very cool and moist. The air here seems to be blowing
+toward the east.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9374
+D3
+~
+~
+0 -1 9302
+S
+#9374
+Hidden Alleyway~
+This area is very cool and moist. The air here seems to be blowing
+toward the east.
+~
+0 0 0 1 0
+D2
+~
+~
+0 -1 9375
+D3
+~
+~
+0 -1 9373
+S
+#9375
+Hidden Alleyway~
+This area is very cool and moist. The air here seems to be blowing
+toward the east.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9374
+D1
+~
+~
+0 -1 9376
+S
+#9376
+Hidden Alleyway~
+This area is very cool and moist. The air here seems to be blowing
+toward the east.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9377
+D1
+~
+~
+0 -1 9380
+D3
+~
+~
+0 -1 9375
+S
+#9377
+Hidden Alleyway~
+This area is very cool and moist. The air here seems to be blowing
+toward the east.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9378
+D2
+~
+~
+0 -1 9376
+D3
+~
+~
+0 -1 9374
+S
+#9378
+Hidden Alleyway~
+This area is very cool and moist. The air here seems to be blowing
+toward the east.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9379
+D2
+~
+~
+0 -1 9377
+S
+#9379
+&zThe room of &CW&wi&Wn&Cd~
+This is the head collector's office. He gets pretty angry when people
+barge in unwelcomed.
+~
+0 1024 0 1 0
+D3
+~
+~
+0 -1 9378
+S
+#9380
+Hidden Alleyway~
+This area is very cool and moist. The air here seems to be blowing
+toward the east.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9381
+D3
+~
+~
+0 -1 9376
+S
+#9381
+Abandoned Storage Area~
+This place seems to have been abandoned many years ago. There
+are many empty crates all over the place here.
+~
+0 4 0 1 0
+D1
+~
+~
+0 -1 9383
+D3
+~
+~
+0 -1 9380
+S
+#9382
+&YR&Oo&Yo&Om&z of the &CW&wi&Wn&Cd~
+This place seems to have been abandoned many years ago. There
+are many empty crates all over the place here.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 500
+D1
+~
+~
+0 -1 6200
+D2
+~
+~
+0 -1 6000
+D3
+~
+~
+0 -1 8000
+D4
+~
+~
+0 -1 6800
+D5
+~
+~
+0 -1 807
+D6
+~
+~
+0 -1 1300
+D7
+~
+~
+0 -1 200
+D8
+~
+~
+0 -1 5100
+D9
+~
+~
+0 -1 4000
+S
+#9383
+Abandoned Storage Area~
+This place seems to have been abandoned many years ago. There
+are many empty crates all over the place here.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9385
+D3
+~
+~
+0 -1 9381
+D8
+~
+~
+0 -1 9384
+S
+#9384
+An Empty Apartment~
+This place seems to have been abandoned many years ago. There
+are many empty crates all over the place here.
+~
+0 2097152 0 1 200
+D7
+~
+~
+0 -1 9383
+S
+#9385
+Abandoned Storage Area~
+This place seems to have been abandoned many years ago. There
+are many empty crates all over the place here.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9386
+D2
+~
+~
+0 -1 9383
+S
+#9386
+Abandoned Storage Area~
+This place seems to have been abandoned many years ago. There
+are many empty crates all over the place here.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9387
+D2
+~
+~
+0 -1 9385
+S
+#9387
+Abandoned Storage Area~
+This place seems to have been abandoned many years ago. There
+are many empty crates all over the place here.
+~
+0 0 0 1 0
+D3
+~
+~
+0 -1 9386
+D6
+~
+~
+0 -1 9388
+S
+#9388
+Abandoned Storage Area~
+This place seems to have been abandoned many years ago. There
+are many empty crates all over the place here.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9389
+D8
+~
+~
+0 -1 9390
+D9
+~
+~
+0 -1 9387
+S
+#9389
+me~
+This place seems to have been abandoned many years ago. There
+are many empty crates all over the place here.
+~
+0 1048576 0 1 0
+D2
+~
+~
+0 -1 9388
+S
+#9390
+Abandoned Storage Area~
+This place seems to have been abandoned many years ago. There
+are many empty crates all over the place here.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9391
+D2
+~
+~
+0 -1 9392
+D7
+~
+~
+0 -1 9388
+S
+#9391
+An Empty Apartment~
+This place seems to have been abandoned many years ago. There
+are many empty crates all over the place here.
+~
+0 2097152 0 1 191
+D3
+~
+~
+0 -1 9390
+S
+#9392
+An Empty Apartment~
+This place seems to have been abandoned many years ago. There
+are many empty crates all over the place here.
+~
+0 2097152 0 1 189
+D0
+~
+~
+0 -1 9390
+S
+#9393
+&RP&ro&Rr&rt&Ra&rl &CR&co&Co&cm~
+This room has a wierd looking red portal in it.
+Say 'Return' to go back to the base.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9394
+D1
+~
+~
+0 -1 9396
+D2
+~
+~
+0 -1 9395
+> speech_prog return~
+mpechoat $n You walk through the &Rp&ro&Rr&rt&Ra&rl &cand return to base.
+mpechoaround $n $n walks through the &Rp&ro&Rr&rt&Ra&rl &cand returns to base.
+mptransfer $n 9450
+~
+> speech_prog Landing~
+mpechoat $n Here you go.
+mpechoaround $n $n was taken somewhere.
+mptransfer $n 9301
+~
+|
+S
+#9394
+Broken Down Lab~
+This room is tattered and beaten beyond all belief. It seems like
+a war went on in here. This roof is caving in a little.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9397
+D2
+~
+~
+0 -1 9393
+S
+#9395
+Broken Down Lab~
+This room is tattered and beaten beyond all belief. It seems like
+a war went on in here. This roof is caving in a little.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9393
+D1
+~
+~
+0 -1 9398
+S
+#9396
+Broken Down Lab~
+This room is tattered and beaten beyond all belief. It seems like
+a war went on in here. This roof is caving in a little.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9397
+D1
+~
+~
+0 -1 9399
+D2
+~
+~
+0 -1 9398
+D3
+~
+~
+0 -1 9393
+S
+#9397
+Broken Down Lab~
+This room is tattered and beaten beyond all belief. It seems like
+a war went on in here. This roof is caving in a little.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9400
+D2
+~
+~
+0 -1 9396
+D3
+~
+~
+0 -1 9394
+S
+#9398
+Broken Down Lab~
+This room is tattered and beaten beyond all belief. It seems like
+a war went on in here. This roof is caving in a little.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9396
+D1
+~
+~
+0 -1 9401
+D3
+~
+~
+0 -1 9395
+S
+#9399
+Broken Down Lab~
+This room is tattered and beaten beyond all belief. It seems like
+a war went on in here. This roof is caving in a little.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9400
+D1
+~
+~
+0 -1 9402
+D2
+~
+~
+0 -1 9401
+D3
+~
+~
+0 -1 9396
+S
+#9400
+Broken Down Lab~
+This room is tattered and beaten beyond all belief. It seems like
+a war went on in here. This roof is caving in a little.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9403
+D2
+~
+~
+0 -1 9399
+D3
+~
+~
+0 -1 9397
+S
+#9401
+Broken Down Lab~
+This room is tattered and beaten beyond all belief. It seems like
+a war went on in here. This roof is caving in a little.
+~
+0 4 0 1 0
+D0
+~
+~
+0 -1 9399
+D3
+~
+~
+0 -1 9398
+S
+#9402
+Broken Down Lab~
+This room is tattered and beaten beyond all belief. It seems like
+a war went on in here. This roof is caving in a little.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9403
+D1
+~
+~
+0 -1 9404
+D3
+~
+~
+0 -1 9399
+S
+#9403
+Broken Down Lab~
+This room is tattered and beaten beyond all belief. It seems like
+a war went on in here. This roof is caving in a little.
+~
+0 0 0 1 0
+D2
+~
+~
+0 -1 9402
+D3
+~
+~
+0 -1 9400
+S
+#9404
+Rocky Pathway~
+This path is very rocky and many boulders are blocking your path.
+~
+0 4 0 1 0
+D1
+~
+~
+0 -1 9405
+D3
+~
+~
+0 -1 9402
+S
+#9405
+Rocky Pathway~
+This path is very rocky and many boulders are blocking your path.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9406
+D3
+~
+~
+0 -1 9404
+S
+#9406
+Rocky Pathway~
+This path is very rocky and many boulders are blocking your path.
+~
+0 4 0 1 0
+D1
+~
+~
+0 -1 9407
+D3
+~
+~
+0 -1 9405
+S
+#9407
+&RB&ru&Rr&rn&Ri&rn&Rg &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Man is this place hot! You feel like you are burning up here.
+Maybe you should find a place to cool down and rest awhile.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9408
+D1
+~
+~
+0 -1 9409
+D3
+~
+~
+0 -1 9406
+S
+#9408
+&RB&ru&Rr&rn&Ri&rn&Rg &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9410
+D2
+~
+~
+0 -1 9407
+S
+#9409
+&RB&ru&Rr&rn&Ri&rn&Rg &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Man is this place hot! You feel like you are burning up here.
+Maybe you should find a place to cool down and rest awhile.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9410
+D1
+~
+~
+0 -1 9411
+D3
+~
+~
+0 -1 9407
+S
+#9410
+&RB&ru&Rr&rn&Ri&rn&Rg &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Man is this place hot! You feel like you are burning up here.
+Maybe you should find a place to cool down and rest awhile.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9412
+D2
+~
+~
+0 -1 9409
+D3
+~
+~
+0 -1 9408
+S
+#9411
+&RB&ru&Rr&rn&Ri&rn&Rg &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Man is this place hot! You feel like you are burning up here.
+Maybe you should find a place to cool down and rest awhile.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9412
+D1
+~
+~
+0 -1 9413
+D3
+~
+~
+0 -1 9409
+S
+#9412
+&RB&ru&Rr&rn&Ri&rn&Rg &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Man is this place hot! You feel like you are burning up here.
+Maybe you should find a place to cool down and rest awhile.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9414
+D2
+~
+~
+0 -1 9411
+D3
+~
+~
+0 -1 9410
+S
+#9413
+&RB&ru&Rr&rn&Ri&rn&Rg &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Man is this place hot! You feel like you are burning up here.
+Maybe you should find a place to cool down and rest awhile.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9414
+D1
+~
+~
+0 -1 9415
+D2
+~
+~
+0 -1 9417
+D3
+~
+~
+0 -1 9411
+S
+#9414
+&RB&ru&Rr&rn&Ri&rn&Rg &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Man is this place hot! You feel like you are burning up here.
+Maybe you should find a place to cool down and rest awhile.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9416
+D2
+~
+~
+0 -1 9413
+D3
+~
+~
+0 -1 9412
+S
+#9415
+&RB&ru&Rr&rn&Ri&rn&Rg &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Man is this place hot! You feel like you are burning up here.
+Maybe you should find a place to cool down and rest awhile.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9416
+D3
+~
+~
+0 -1 9413
+S
+#9416
+&RB&ru&Rr&rn&Ri&rn&Rg &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Man is this place hot! You feel like you are burning up here.
+Maybe you should find a place to cool down and rest awhile.
+~
+0 0 0 1 0
+D2
+~
+~
+0 -1 9415
+D3
+~
+~
+0 -1 9414
+S
+#9417
+&RB&ru&Rr&rn&Ri&rn&Rg &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Man is this place hot! You feel like you are burning up here.
+Maybe you should find a place to cool down and rest awhile.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9413
+D2
+~
+~
+0 -1 9418
+S
+#9418
+&RB&ru&Rr&rn&Ri&rn&Rg &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Man is this place hot! You feel like you are burning up here.
+Maybe you should find a place to cool down and rest awhile.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9417
+D1
+~
+~
+0 -1 9419
+S
+#9419
+&BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+0 4 0 1 0
+D1
+~
+~
+0 -1 9420
+D2
+~
+~
+0 -1 9422
+D3
+~
+~
+0 -1 9418
+S
+#9420
+&BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9423
+D2
+~
+~
+0 -1 9421
+D3
+~
+~
+0 -1 9419
+S
+#9421
+&BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9420
+D2
+~
+~
+0 -1 9425
+D3
+~
+~
+0 -1 9422
+S
+#9422
+&BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9419
+D1
+~
+~
+0 -1 9421
+S
+#9423
+&BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9424
+D3
+~
+~
+0 -1 9420
+S
+#9424
+&BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+0 0 0 1 0
+D3
+~
+~
+0 -1 9423
+S
+#9425
+&BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9421
+D1
+~
+~
+0 -1 9426
+S
+#9426
+&BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9427
+D2
+~
+~
+0 -1 9429
+D3
+~
+~
+0 -1 9425
+S
+#9427
+&BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+0 0 0 1 0
+D2
+~
+~
+0 -1 9428
+D3
+~
+~
+0 -1 9426
+S
+#9428
+&BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9427
+D2
+~
+~
+0 -1 9430
+D3
+~
+~
+0 -1 9429
+S
+#9429
+&BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9426
+D1
+~
+~
+0 -1 9428
+D2
+~
+~
+0 -1 9431
+S
+#9430
+&BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9428
+D2
+~
+~
+0 -1 9434
+D3
+~
+~
+0 -1 9431
+S
+#9431
+&BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9429
+D1
+~
+~
+0 -1 9430
+D2
+~
+~
+0 -1 9435
+D3
+~
+~
+0 -1 9432
+S
+#9432
+&BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9431
+D2
+~
+~
+0 -1 9436
+D3
+~
+~
+0 -1 9433
+S
+#9433
+&BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9432
+S
+#9434
+&BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9430
+D2
+~
+~
+0 -1 9439
+D3
+~
+~
+0 -1 9435
+S
+#9435
+&BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9431
+D1
+~
+~
+0 -1 9434
+D2
+~
+~
+0 -1 9438
+D3
+~
+~
+0 -1 9436
+S
+#9436
+&BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9432
+D1
+~
+~
+0 -1 9435
+D2
+~
+~
+0 -1 9437
+S
+#9437
+&BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9436
+D1
+~
+~
+0 -1 9438
+S
+#9438
+&BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9435
+D1
+~
+~
+0 -1 9439
+D3
+~
+~
+0 -1 9437
+S
+#9439
+&BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9434
+D1
+~
+~
+0 -1 9440
+D3
+~
+~
+0 -1 9438
+S
+#9440
+&BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+0 0 0 1 0
+D2
+~
+~
+0 -1 9441
+D3
+~
+~
+0 -1 9439
+S
+#9441
+&GM&gu&Gt&ga&Gn&Gt &PV&pi&Pl&pl&Pa&pg&Pe~
+This place looks very nice and quiet. A lot of mutants are
+roaming about here however. Keep your distance or things much get
+ugly real quick.
+~
+0 4 0 1 0
+D0
+~
+~
+0 -1 9440
+D2
+~
+~
+0 -1 9442
+S
+#9442
+&GM&gu&Gt&ga&Gn&Gt &PV&pi&Pl&pl&Pa&pg&Pe~
+This place looks very nice and quiet. A lot of mutants are
+roaming about here however. Keep your distance or things much get
+ugly real quick.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9441
+D2
+~
+~
+0 -1 9443
+D3
+~
+~
+0 -1 9445
+S
+#9443
+&GM&gu&Gt&ga&Gn&Gt &PV&pi&Pl&pl&Pa&pg&Pe~
+This place looks very nice and quiet. A lot of mutants are
+roaming about here however. Keep your distance or things much get
+ugly real quick.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9442
+D3
+~
+~
+0 -1 9444
+S
+#9444
+&GM&gu&Gt&ga&Gn&Gt &PV&pi&Pl&pl&Pa&pg&Pe~
+This place looks very nice and quiet. A lot of mutants are
+roaming about here however. Keep your distance or things much get
+ugly real quick.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9445
+D1
+~
+~
+0 -1 9443
+D3
+~
+~
+0 -1 9447
+S
+#9445
+&GM&gu&Gt&ga&Gn&Gt &PV&pi&Pl&pl&Pa&pg&Pe~
+This place looks very nice and quiet. A lot of mutants are
+roaming about here however. Keep your distance or things much get
+ugly real quick.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 9442
+D2
+~
+~
+0 -1 9444
+D3
+~
+~
+0 -1 9446
+S
+#9446
+&GM&gu&Gt&ga&Gn&Gt &PV&pi&Pl&pl&Pa&pg&Pe~
+This place looks very nice and quiet. A lot of mutants are
+roaming about here however. Keep your distance or things much get
+ugly real quick.
+~
+0 4 0 1 0
+D1
+~
+~
+0 -1 9445
+D2
+~
+~
+0 -1 9447
+D3
+~
+~
+0 -1 9448
+S
+#9447
+&GM&gu&Gt&ga&Gn&Gt &PV&pi&Pl&pl&Pa&pg&Pe~
+This place looks very nice and quiet. A lot of mutants are
+roaming about here however. Keep your distance or things much get
+ugly real quick.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9446
+D1
+~
+~
+0 -1 9444
+D3
+~
+~
+0 -1 9449
+S
+#9448
+&RA&rr&Rm&ro&Rr &CS&cm&Ci&ct&Ch&c'&Cs &BR&bo&Bo&bm~
+Here is the armor smith's shop where the armor smith makes all
+his shields, helms, armors, greaves and other accessories.
+~
+0 4 0 1 0
+D1
+~
+~
+0 -1 9446
+S
+#9449
+&RW&re&Ra&rp&Ro&rn &CS&cm&Ci&ct&Ch&c'&Cs &BR&bo&Bo&bm~
+Here is the weapon smith's shop where the mutant smithy makes all
+his swords maces and flails.
+~
+0 1028 0 1 0
+D1
+~
+~
+0 -1 9447
+S
+#9450
+&YL&Oa&Yb &BT&bw&Bo &RP&ro&Rr&rt&Ra&rl &CR&co&Co&cm~
+This room is very strange and a redish ooze is in an ovule
+shape on the wall. It seems to lead somewhere, maybe to another lab?
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 9342
+D1
+~
+~
+0 -1 9340
+D2
+~
+~
+0 -1 9345
+> speech_prog Omega~
+ispc
+mpechoat $n You slip through the secret entrance into the Omega Lab.
+mpechoaround $n $n disappears from the room through a secret entrance.
+mptransfer $n 9393
+mpechoat 9393 $n arrives through the secret entrance
+else
+mpechoat $n The door remains shut.
+Endif
+~
+|
+S
+#0
+
+
+#RESETS
+M 1 9301 2 9301
+E 1 9304 1 16
+E 1 9324 1 5
+M 1 9301 2 9301
+E 1 9304 1 16
+E 1 9324 1 5
+D 0 9301 3 0
+O 1 17 1 9302
+M 1 9304 1 9303
+E 1 9324 1 5
+E 1 9304 1 16
+D 0 9303 1 0
+M 1 9325 1 9304
+E 1 9325 1 5
+E 1 9330 1 16
+O 1 17 1 9304
+M 1 9320 4 9305
+E 1 9324 1 5
+E 1 9304 1 16
+M 1 9320 4 9305
+E 1 9324 1 5
+E 1 9304 1 16
+M 1 9320 4 9306
+E 1 9324 1 5
+E 1 9304 1 16
+M 1 9320 4 9307
+E 1 9304 1 16
+E 1 9324 1 5
+O 1 17 1 9308
+M 1 9303 4 9309
+E 1 9324 1 5
+M 1 9303 4 9312
+E 1 9324 1 5
+M 1 9321 1 9313
+E 1 9304 1 16
+M 1 9353 1 9314
+M 1 9326 1 9319
+E 1 9325 1 5
+E 1 9326 1 16
+M 1 9333 2 9320
+M 1 9302 3 9321
+M 1 9333 2 9322
+M 1 9334 2 9323
+M 1 9302 3 9324
+M 1 9302 3 9325
+M 1 9334 2 9325
+M 1 9303 4 9326
+E 1 9304 1 16
+E 1 9324 1 5
+M 1 9303 4 9329
+E 1 9324 1 5
+M 1 9327 1 9330
+E 1 9328 1 16
+E 1 9325 1 5
+M 1 9328 1 9334
+E 1 9325 1 5
+E 1 9327 1 16
+M 1 9329 1 9337
+E 1 9325 1 5
+E 1 9329 1 16
+M 1 9330 1 9339
+E 1 9339 1 16
+M 1 9306 1 9340
+E 1 9307 1 16
+E 1 9324 1 5
+M 1 9322 1 9347
+E 1 9304 1 16
+M 1 9323 1 9349
+E 1 9304 1 16
+M 1 9324 1 9350
+E 1 9304 1 16
+M 1 9307 1 9353
+E 1 9336 1 16
+M 1 9313 1 9354
+E 1 9324 1 5
+E 1 9304 1 16
+O 1 17 2 9355
+O 1 17 1 9355
+M 1 9352 1 9356
+G 1 9305 1
+G 1 9308 1
+G 1 9310 1
+G 1 9303 1
+M 1 9318 1 9364
+M 1 9308 1 9365
+E 1 9324 1 5
+E 1 9304 1 16
+M 1 9312 1 9367
+E 1 9324 1 5
+E 1 9331 1 16
+M 1 9351 1 9369
+M 1 9309 1 9371
+E 1 9304 1 16
+E 1 9324 1 5
+D 0 9371 1 0
+M 1 9310 1 9372
+M 1 9311 1 9372
+M 1 9319 1 9372
+D 0 9372 3 0
+M 1 9315 1 9374
+M 1 9314 1 9375
+E 1 9336 1 16
+M 1 9316 3 9375
+M 1 9316 3 9376
+M 1 9354 1 9379
+M 1 9316 3 9380
+M 1 9317 1 9382
+M 1 9359 6 9393
+E 1 9340 1 16
+M 1 9359 6 9393
+E 1 9340 1 16
+M 1 9359 6 9394
+E 1 9340 1 16
+M 1 9359 6 9395
+E 1 9340 1 16
+M 1 9350 1 9396
+M 1 9349 1 9396
+M 1 9359 6 9400
+E 1 9340 1 16
+M 1 9359 6 9402
+E 1 9340 1 16
+M 1 9335 1 9405
+M 1 9348 1 9405
+M 1 9336 4 9414
+M 1 9336 4 9417
+M 1 9336 4 9417
+M 1 9336 4 9418
+M 1 9341 1 9423
+M 1 9344 1 9424
+M 1 9337 5 9428
+M 1 9337 5 9432
+M 1 9343 1 9434
+M 1 9342 1 9435
+M 1 9337 5 9437
+M 1 9337 5 9438
+M 1 9340 1 9439
+M 1 9337 5 9439
+M 1 9338 1 9441
+M 1 9358 1 9441
+M 1 9339 1 9442
+M 1 9356 1 9443
+M 1 9347 2 9444
+M 1 9355 1 9446
+E 1 9338 1 16
+E 1 9338 1 18
+M 1 9347 2 9447
+M 1 9346 1 9447
+M 1 9345 1 9447
+M 1 9360 1 9448
+G 1 9311 1
+G 1 9312 1
+G 1 9313 1
+G 1 9314 1
+G 1 9317 1
+G 1 9319 1
+G 1 9320 1
+G 1 9321 1
+G 1 9322 1
+G 1 9323 1
+M 1 9357 1 9449
+G 1 9333 1
+G 1 9334 1
+G 1 9335 1
+G 1 9332 1
+G 1 9337 1
+O 1 17 1 9450
+S
+
+
+#SHOPS
+ 9351    0  0  0  0  0   120  90         0 23    ; Moon Base Armorer
+ 9352    0  0  0  0  0   120  90         0 23    ; Moon Base Weapon Smith
+ 9353    0  0  0  0  0   120  90         0 23    ; Moon Base Explosives Specialist
+ 9354    0  0  0  0  0   120  90         0 23    ; &zApprentice of &CW&wi&Wn&Cd
+ 9357    0  0  0  0  0   120  90         0 23    ; Swordsmith
+ 9360    0  0  0  0  0   120  90         0 23    ; Armor Smith
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

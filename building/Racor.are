@@ -1,0 +1,3083 @@
+#AREA   {PROTO} Racor's area in progress~
+
+
+
+#VERSION 1
+
+#AUTHOR Racor~
+
+#OWNED_BY None~
+
+#RANGES
+0 0 0 0
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 0
+
+#MOBILES
+#11561
+PSD Guy~
+PSD Guy~
+&zPSD &gGuy
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 95~
+~
+> greet_prog 95~
+poke $n
+say Have you seen my Dog?
+Say I seem to have lost the poor guy.
+~
+|
+#11562
+VBR Citizen~
+VBR Citizen~
+&gV&zB&rR &cCitizen &Y Wanders Here
+~
+~
+5 0 0 Z
+30 0 25 6d10+300 3d4+2
+2 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+6 6 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#11581
+&pLaura~
+Laura~
+&PLaura &O Stands Here Ready Yo Yake Your Order.
+~
+~
+67 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#11656
+Noisia~
+Noisia~
+&YNo&pi&Ys&pi&Ya &G Stands here with an &CAurora &Ghovering her &T
+~
+~
+67 6291498 0 Z
+1000 0 -2400 100d200+150000 100d4+2
+0 0
+8 8 2
+11 10 10 12 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 9
+200 200 0 0 0 0 49 2
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpecho You slice Noisia 's Finger off
+mpoload 11656
+~
+> greet_prog 100~
+say Hello my child. Please come in and learn your lesson!
+slap $n
+~
+|
+#11688
+rancid~
+&RR&ra&Rn&rc&Ri&rd~
+&RR&ra&Rn&rc&Ri&rd &YStands &OHere &GGlowing
+~
+~
+67 6291498 -1000 Z
+1000 0 -3000 2d10+200000 100d4+2
+5000 0
+8 8 1
+12 10 10 13 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 10
+85 65 0 0 0 0 48 1
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpecho &RYou &rCut Open the Chest of &RRa&r&Rn&rc&Ri&rd and Slice Out His Beating Heart
+mpoload 11688
+~
+|
+#11700
+Rock Gargoyle~
+&ORock Gargoyle~
+&OA Rock Gargoyle is slithering around here
+~
+&YA Wide Winged giant beast~
+33 4194306 0 Z
+1 0 0 15000d0+0 0d0+0
+0 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 3
+23 0 0 0 0 0 1 1
+0 0 0 0 0 0 0 0
+#11707
+Excision~
+&OEx&Ycision~
+&OEx&Ycision is standing here. He might have somethin you want.
+~
+~
+167772163 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+25 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#11743
+Voraid~
+Voraid~
+&CVor&caid &zStands here Broad &GShouldered
+~
+~
+3 6291498 0 Z
+1005 0 -4000 15d200+250000 50d60+62
+5000 0
+8 8 1
+18 10 10 16 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 15
+85 65 0 0 0 0 49 3
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say congratulations, I see you have overcome your fears and made it this far.
+say I'm not the one you truly seek. You seek the illuminati. However you will 
+say have to go through me first to reach him. He is the truly divine one!
+flex
+~
+> death_prog 100~
+mpecho &RYou Strike &CVor&caid &rdown with a final blow.
+mpecho &YYou notice a shinning cross &CVor&caid dropped.
+mpoload 11743
+~
+|
+#0
+
+
+#OBJECTS
+#11656
+Right finger of Noisia~
+&YNo&pi&Ys&pi&Ya &R's Right finger~
+&RA &r Finger &rlies &R here &rDri&Rpping &rwith &RB&rlood~
+~
+18 0 1 0
+11688 0 0 0 1 11688
+1 0 0
+#11688
+Heart of Rancid~
+&rHeart of &RR&ra&Rn&rc&Ri&rd &Rlies here beating~
+&rHeart of &RR&ra&Rn&rc&Ri&rd~
+~
+18 0 1 0
+0 0 0 0
+1 0 0
+#11700
+levin~
+&zL&Yevin~
+&YA Lightning Bolt is Lying Here~
+&YElectricity beings to zap everything as the &wLevin &z is wielded!~
+5 19 8193 0
+1000 25 100 2
+1 500000 50000
+A
+2 2
+A
+40 2
+A
+18 15
+A
+19 10
+A
+31 5
+A
+13 2000
+A
+19 15
+A
+19 0
+#11701
+Cloud Ring~
+&BClo&wud &wRi&Bng~
+&BA Cloud &wis lying here~
+&wA Cloud surrounds the &Bring as it is slipped on~
+9 3 3 0
+125 125 0 0
+1 425000 42500
+E
+Cloud Ring~
+~
+A
+18 18
+A
+1 1
+A
+1 1
+A
+14 100
+A
+19 18
+A
+4 5
+A
+13 150
+A
+13 350
+#11743
+Voraid's cross~
+&CVor&caid's &CCross~
+&CA special relic is lying here &ccarelessly ~
+~
+18 0 1 0
+0 0 0 0
+1 0 0
+#0
+
+
+#ROOMS
+#11561
+&gV&zB&rR-&Y1&O7 &CDocking Bay~
+&GThis is the legendary Docking Platform of &gV&zB&rR-&Y1&O7.
+&gAs you stand on this Platform. You feel a sense of
+&Greason. &YYou don't quite understand what this feeling is.
+&OBut you feel as if you are here for a reason. 
+~
+0 16 0 1 0 0 0 0
+D4
+~
+~
+0 -1 11562
+R M 1 11561 1 11561
+S
+#11562
+&gV&zB&rR-&Y1&O7 &CEntrance &cIntersection~
+&Y You are standing in the main Intersection of &gV&zB&rR- &Y1&O7
+&YIntercection. You can go north and find some shops. South West are apartment.
+This place is full of hidden secrets.
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11563
+D1
+~
+~
+0 -1 11582
+D3
+~
+~
+0 -1 11568
+D5
+~
+~
+0 -1 11561
+S
+#11563
+&gV&zB&rR-&Y1&O7 &CSecret &cStreet.~
+&YSecret street is lined with shadowed buildings dripping with a tinted &Gglow.
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11564
+D1
+~
+~
+0 -1 11583
+D2
+~
+~
+0 -1 11562
+D3
+~
+~
+0 -1 11569
+R M 1 11562 16 11563
+R M 1 11562 16 11563
+R M 1 11562 16 11563
+R M 1 11562 16 11563
+R M 1 11562 16 11563
+R O 0 10 1 11563
+S
+#11564
+&gV&zB&rR-&Y1&O7 &CSecret &cStreet.~
+&YSecret street is lined with shadowed buildings dripping with a tinted &Gglow.
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11565
+D2
+~
+~
+0 -1 11563
+S
+#11565
+&gV&zB&rR-&Y1&O7 &CSecret &cStreet.~
+&YSecret street is lined with shadowed buildings dripping with a tinted &Gglow.
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11566
+D2
+~
+~
+0 -1 11564
+S
+#11566
+&gV&zB&rR-&Y1&O7 &CSecret &cStreet.~
+&YSecret street is lined with shadowed buildings dripping with a tinted &Gglow.
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11567
+D2
+~
+~
+0 -1 11565
+S
+#11567
+&gV&zB&rR-&Y1&O7 &CSecret &cStreet.~
+&YSecret street is lined with shadowed buildings dripping with a tinted &Gglow.
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11744
+D1
+~
+~
+0 -1 11581
+D2
+~
+~
+0 -1 11566
+D3
+~
+~
+0 -1 11580
+R O 0 10315 1 11567
+S
+#11568
+&gV&zB&rR-&Y1&O7 &CSecret &cStreet.~
+&YSecret street is lined with shadowed buildings dripping with a tinted &Gglow.
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11569
+D1
+~
+~
+0 -1 11562
+S
+#11569
+&gV&zB&rR-&Y1&O7 &CSecret &cStreet.~
+&YSecret street is lined with shadowed buildings dripping with a tinted &Gglow.
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11563
+D2
+~
+~
+0 -1 11568
+D7
+~
+~
+0 -1 11570
+S
+#11570
+&gV&zB&rR-&Y1&O7 &CSecret &cStreet.~
+&YSecret street is lined with shadowed buildings dripping with a tinted &Gglow.
+~
+0 1073741824 0 1 0 0 0 0
+D7
+~
+~
+0 -1 11573
+D8
+~
+~
+0 -1 11569
+D9
+~
+~
+0 -1 11571
+S
+#11571
+&gV&zB&rR-&Y1&O7 &CSecret &cStreet.~
+&Y Walk Way to Apartment &OWay
+~
+0 1073741824 0 1 0 0 0 0
+D2
+~
+~
+0 -1 11572
+D6
+~
+~
+0 -1 11570
+S
+#11572
+&gV&zB&rR-&Y1&O7 &CApartments &YWay~
+&Y Walk Way to Apartment &OWay
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11571
+D2
+~
+~
+0 -1 11601
+S
+#11573
+&gV&zB&rR-&Y1&O7 &CSecret &cStreet.~
+&YSecret street is lined with shadowed buildings dripping with a tinted &Gglow.
+~
+0 1073741824 0 1 0 0 0 0
+D6
+~
+~
+0 -1 11574
+D7
+~
+~
+2115 -1 11600
+D8
+~
+~
+0 -1 11570
+S
+#11574
+&gV&zB&rR-&Y1&O7 &CSecret &cStreet.~
+&YSecret street is lined with shadowed buildings dripping with a tinted &Gglow.
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11575
+D9
+~
+~
+0 -1 11573
+S
+#11575
+&gV&zB&rR-&Y1&O7 &CSecret &cStreet.~
+&YSecret street is lined with shadowed buildings dripping with a tinted &Gglow.
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11576
+D2
+~
+~
+0 -1 11574
+S
+#11576
+&gV&zB&rR-&Y1&O7 &CSecret &cStreet.~
+&YSecret street is lined with shadowed buildings dripping with a tinted &Gglow.
+~
+0 1073741824 0 1 0 0 0 0
+D3
+~
+~
+0 -1 11575
+D8
+~
+~
+0 -1 11577
+S
+#11577
+&gV&zB&rR-&Y1&O7 &CSecret &cStreet.~
+&YSecret street is lined with shadowed buildings dripping with a tinted &Gglow.
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11578
+D7
+~
+~
+0 -1 11576
+D8
+~
+~
+0 -1 11579
+R M 1 11562 21 11577
+R M 1 11562 21 11577
+R M 1 11562 21 11577
+R M 1 11562 21 11577
+R M 1 11562 21 11577
+S
+#11578
+&gV&zB&rR-&Y1&O7 &CSecret &cStreet.~
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11566
+D3
+~
+~
+0 -1 11577
+S
+#11579
+&gV&zB&rR-&Y1&O7 &CSecret &cStreet.~
+&YSecret street is lined with shadowed buildings dripping with a tinted &Gglow.
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11565
+D7
+~
+~
+0 -1 11577
+S
+#11580
+&gV&zB&rR-&Y1&O7 &CHotel~
+&YHere is the VBR-17 Hotel where you can safely go to sleep and return.
+~
+0 8388620 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11567
+S
+#11581
+&gV&zB&rR-&Y1&O7 &C Restaurant~
+&Y You are standing in the &gV&zB&rR- &Y Restaurant where &pLaura &Ywill be right with you.
+~
+0 1024 0 1 0 0 0 0
+D3
+~
+~
+0 -1 11567
+R M 1 11581 1 11581
+  R G 0 10313 1
+  R G 0 2006 1
+  R G 0 10314 1
+S
+#11582
+&gV&zB&rR-&Y1&O7 &CSecret &cStreet.~
+&YSecret street is lined with shadowed buildings dripping with a tinted &Gglow.
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11583
+D3
+~
+~
+0 -1 11562
+S
+#11583
+&gV&zB&rR-&Y1&O7 &CSecret &cStreet~
+&YSecret street is lined with shadowed buildings dripping with a tinted &Gglow.
+~
+0 1073741824 0 1 0 0 0 0
+D2
+~
+~
+0 -1 11582
+D3
+~
+~
+0 -1 11563
+D6
+~
+~
+0 -1 11584
+S
+#11584
+&gV&zB&rR-&Y1&O7 &CSecret &cStreet~
+&YSecret street is lined with shadowed buildings dripping with a tinted &Gglow.
+~
+0 1073741824 0 1 0 0 0 0
+D6
+~
+~
+0 -1 11585
+D9
+~
+~
+0 -1 11583
+S
+#11585
+&gV&zB&rR-&Y1&O7 &CSecret &cStreet~
+&YSecret street is lined with shadowed buildings dripping with a tinted &Gglow.
+~
+0 1073741824 0 1 0 0 0 0
+D6
+~
+~
+0 -1 11586
+D9
+~
+~
+0 -1 11584
+S
+#11586
+&gV&zB&rR-&Y1&O7 &CSecret &cStreet~
+&YSecret street is lined with shadowed buildings dripping with a tinted &Gglow.
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11589
+D6
+~
+~
+2115 -1 11587
+D9
+~
+~
+0 -1 11585
+S
+#11587
+&gPath &Wof &GTotality~
+&GYou have entered the &gPath &G that will decide your resurrection!
+&YYou feel a &Cwar&rmth &Yin your heart. Knowing your path here
+&Cnever really does end. But Only Begins!
+~
+0 1073741828 0 1 0 0 0 0
+D4
+~
+~
+2048 -1 11745
+D5
+~
+~
+0 -1 11698
+D7
+~
+~
+2051 -1 11589
+D9
+~
+~
+2051 -1 11586
+S
+#11589
+&gV&zB&rR-&Y1&O7 &CSecret &cStreet~
+&YSecret street is lined with shadowed buildings dripping with a tinted &Gglow.
+~
+0 1073741824 0 1 0 0 0 0
+D2
+~
+~
+0 -1 11586
+D7
+~
+~
+0 -1 11590
+D8
+~
+~
+2051 -1 11587
+S
+#11590
+&gV&zB&rR-&Y1&O7 &CSecret &cStreet~
+&YSecret street is lined with shadowed buildings dripping with a tinted &Gglow.
+~
+0 1073741824 0 1 0 0 0 0
+D3
+~
+~
+0 -1 11591
+D8
+~
+~
+0 -1 11589
+S
+#11591
+&gV&zB&rR-&Y1&O7 &CSecret &cStreet~
+&YSecret street is lined with shadowed buildings dripping with a tinted &Gglow.
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11590
+D2
+~
+~
+0 -1 11592
+S
+#11592
+&gV&zB&rR-&Y1&O7 &CSecret &cStreet~
+&YSecret street is lined with shadowed buildings dripping with a tinted &Gglow.
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11591
+D1
+~
+~
+0 -1 11593
+S
+#11593
+&gV&zB&rR-&Y1&O7 &CSecret &cStreet~
+&YSecret street is lined with shadowed buildings dripping with a tinted &Gglow.
+~
+0 1073741824 0 1 0 0 0 0
+D2
+~
+~
+0 -1 11594
+D3
+~
+~
+0 -1 11592
+R M 1 11562 26 11593
+R M 1 11562 26 11593
+R M 1 11562 26 11593
+R M 1 11562 26 11593
+R M 1 11562 26 11593
+S
+#11594
+&gV&zB&rR-&Y1&O7 &CSecret &cStreet~
+&YSecret street is lined with shadowed buildings dripping with a tinted &Gglow.
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11593
+D3
+~
+~
+0 -1 11595
+S
+#11595
+&gV&zB&rR-&Y1&O7 &CSecret &cStreet~
+&YSecret street is lined with shadowed buildings dripping with a tinted &Gglow.
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11594
+D3
+~
+~
+0 -1 11596
+S
+#11596
+&gV&zB&rR-&Y1&O7 &CSecret &cStreet~
+&YSecret street is lined with shadowed buildings dripping with a tinted &Gglow.
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11595
+D2
+~
+~
+0 -1 11597
+S
+#11597
+&gV&zB&rR-&Y1&O7 &CSecret &cStreet~
+&YSecret street is lined with shadowed buildings dripping with a tinted &Gglow.
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11596
+D3
+~
+~
+0 -1 11598
+S
+#11598
+&gV&zB&rR-&Y1&O7 &CSecret &cStreet~
+&YSecret street is lined with shadowed buildings dripping with a tinted &Gglow.
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11599
+D1
+~
+~
+0 -1 11597
+S
+#11599
+&gV&zB&rR-&Y1&O7 &CSecret &cStreet~
+&YSecret street is lined with shadowed buildings dripping with a tinted &Gglow.
+~
+0 1073741824 0 1 0 0 0 0
+D2
+~
+~
+0 -1 11598
+D3
+~
+~
+0 -1 11565
+S
+#11600
+&GPat&gh &Gof &gTru&Gth~
+&GYou have entered the path of &gTru&Gth.
+&GYou look around at the darken walls. As you look closer through 
+the cracks in the accient wood.
+It seems there is a faint &Rr&red blood &Rsplatter on the wall.
+~
+0 1073741828 0 1 0 0 0 0
+D5
+~
+~
+0 -1 11619
+D8
+~
+~
+2051 -1 11573
+S
+#11601
+&gV&zB&rR-&Y1&O7 &CApartments &YWay~
+&YApartment &OWay
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11572
+D1
+~
+~
+0 -1 11612
+D2
+~
+~
+0 -1 11602
+D3
+~
+~
+0 -1 11613
+S
+#11602
+&gV&zB&rR-&Y1&O7 &CApartments &YWay~
+&YApartment &OWay
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11601
+D1
+~
+~
+0 -1 11611
+D2
+~
+~
+0 -1 11603
+D3
+~
+~
+0 -1 11614
+S
+#11603
+&gV&zB&rR-&Y1&O7 &CApartments &YWay~
+&YApartment &OWay
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11602
+D1
+~
+~
+0 -1 11610
+D2
+~
+~
+0 -1 11604
+D3
+~
+~
+0 -1 11615
+S
+#11604
+&gV&zB&rR-&Y1&O7 &CApartments &YWay~
+&YApartment &OWay
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11603
+D1
+~
+~
+0 -1 11609
+D2
+~
+~
+0 -1 11605
+D3
+~
+~
+0 -1 11616
+S
+#11605
+&gV&zB&rR-&Y1&O7 &CApartments &YWay~
+&YApartment &OWay
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11604
+D1
+~
+~
+0 -1 11608
+D2
+~
+~
+0 -1 11606
+D3
+~
+~
+0 -1 11617
+S
+#11606
+&gV&zB&rR-&Y1&O7 &CApartments &YWay~
+&YApartment &OWay
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11605
+D1
+~
+~
+0 -1 11607
+D3
+~
+~
+0 -1 11618
+S
+#11607
+&CEmtpy &gV&zB&rR-&Y1&O7 &YApartment~
+~
+0 1073741824 0 1 0 0 0 0
+D3
+~
+~
+0 -1 11606
+S
+#11608
+&CEmtpy &gV&zB&rR-&Y1&O7 &YApartment~
+~
+0 2097152 0 1 0 0 0 0
+D3
+~
+~
+0 -1 11605
+S
+#11609
+&CEmtpy &gV&zB&rR-&Y1&O7 &YApartment~
+~
+0 2097152 0 1 0 0 0 0
+D3
+~
+~
+0 -1 11604
+S
+#11610
+&CEmtpy &gV&zB&rR-&Y1&O7 &YApartment~
+~
+0 2097152 0 1 0 0 0 0
+D3
+~
+~
+0 -1 11603
+S
+#11611
+&CEmtpy &gV&zB&rR-&Y1&O7 &YApartment~
+~
+0 2097152 0 1 0 0 0 0
+D3
+~
+~
+0 -1 11602
+S
+#11612
+&CEmtpy &gV&zB&rR-&Y1&O7 &YApartment~
+~
+0 2097152 0 1 0 0 0 0
+D3
+~
+~
+0 -1 11601
+S
+#11613
+&CEmtpy &gV&zB&rR-&Y1&O7 &YApartment~
+~
+0 2097152 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11601
+S
+#11614
+&CEmtpy &gV&zB&rR-&Y1&O7 &YApartment~
+~
+0 2097152 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11602
+S
+#11615
+&CEmtpy &gV&zB&rR-&Y1&O7 &YApartment~
+~
+0 2097152 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11603
+S
+#11616
+&CEmtpy &gV&zB&rR-&Y1&O7 &YApartment~
+~
+0 2097152 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11604
+S
+#11617
+&CEmtpy &gV&zB&rR-&Y1&O7 &YApartment~
+~
+0 2097152 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11605
+S
+#11618
+&CEmtpy &gV&zB&rR-&Y1&O7 &YApartment~
+~
+0 1075838976 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11606
+S
+#11619
+&GPat&gh &Gof &gTru&Gth ~
+&GYou are walking through the path of truth. Here
+you will find your origin and your &RDe&rst&riny&R!
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11620
+S
+#11620
+&GPat&gh &Gof &gTru&Gth ~
+&GYou are walking through the path of truth. Here
+you will find your origin and your &RDe&rst&riny&R!
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11621
+D2
+~
+~
+0 -1 11619
+D3
+~
+~
+0 -1 11622
+S
+#11621
+&GPat&gh &Gof &gTru&Gth ~
+&GYou are walking through the path of truth. Here
+you will find your origin and your &RDe&rst&riny&R!
+~
+0 1073741824 0 1 0 0 0 0
+D2
+~
+~
+0 -1 11620
+S
+#11622
+&GPat&gh &Gof &gTru&Gth ~
+&GYou are walking through the path of truth. Here
+you will find your origin and your &RDe&rst&riny&R!
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11620
+D7
+~
+~
+0 -1 11623
+S
+#11623
+&GPat&gh &Gof &gTru&Gth ~
+&GYou are walking through the path of truth. Here
+you will find your origin and your &RDe&rst&riny&R!
+~
+0 1073741824 0 1 0 0 0 0
+D8
+~
+~
+0 -1 11622
+D9
+~
+~
+0 -1 11624
+S
+#11624
+&GPat&gh &Gof &gTru&Gth ~
+&GYou are walking through the path of truth. Here
+you will find your origin and your &RDe&rst&riny&R!
+~
+0 1073741824 0 1 0 0 0 0
+D2
+~
+~
+0 -1 11630
+D6
+~
+~
+0 -1 11623
+D9
+~
+~
+0 -1 11635
+S
+#11630
+&GPat&gh &Gof &gTru&Gth ~
+&GYou are walking through the path of truth. Here
+you will find your origin and your &RDe&rst&riny&R!
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11624
+D1
+~
+~
+0 -1 11631
+D2
+~
+~
+0 -1 11633
+D3
+~
+~
+0 -1 11635
+D8
+~
+~
+0 -1 11632
+D9
+~
+~
+0 -1 11634
+S
+#11631
+&GPat&gh &Gof &gTru&Gth ~
+&GYou are walking through the path of truth. Here
+you will find your origin and your &RDe&rst&riny&R!
+~
+0 1073741824 0 1 0 0 0 0
+D2
+~
+~
+0 -1 11632
+D3
+~
+~
+0 -1 11630
+D9
+~
+~
+0 -1 11633
+S
+#11632
+&GPat&gh &Gof &gTru&Gth ~
+&GYou are walking through the path of truth. Here
+you will find your origin and your &RDe&rst&riny&R!
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11631
+D3
+~
+~
+0 -1 11633
+D4
+~
+~
+2048 -1 11561
+D7
+~
+~
+0 -1 11630
+S
+#11633
+&GPat&gh &Gof &gTru&Gth ~
+&GYou are walking through the path of truth. Here
+you will find your origin and your &RDe&rst&riny&R!
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11630
+D1
+~
+~
+0 -1 11632
+D3
+~
+~
+0 -1 11634
+D6
+~
+~
+0 -1 11631
+D7
+~
+~
+0 -1 11635
+S
+#11634
+&GPat&gh &Gof &gTru&Gth ~
+&GYou are walking through the path of truth. Here
+you will find your origin and your &RDe&rst&riny&R!
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11635
+D1
+~
+~
+0 -1 11633
+D3
+~
+~
+0 -1 11637
+D6
+~
+~
+0 -1 11630
+D7
+~
+~
+0 -1 11636
+S
+#11635
+&GPat&gh &Gof &gTru&Gth ~
+&GYou are walking through the path of truth. Here
+you will find your origin and your &RDe&rst&riny&R!
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11630
+D2
+~
+~
+0 -1 11634
+D3
+~
+~
+0 -1 11636
+D6
+~
+~
+0 -1 11624
+D8
+~
+~
+0 -1 11633
+D9
+~
+~
+0 -1 11637
+S
+#11636
+&GPat&gh &Gof &gTru&Gth ~
+&GYou are walking through the path of truth. Here
+you will find your origin and your &RDe&rst&riny&R!
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11635
+D2
+~
+~
+0 -1 11637
+D3
+~
+~
+0 -1 11638
+D8
+~
+~
+0 -1 11634
+D9
+~
+~
+0 -1 11639
+S
+#11637
+&GPat&gh &Gof &gTru&Gth ~
+&GYou are walking through the path of truth. Here
+you will find your origin and your &RDe&rst&riny&R!
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11636
+D1
+~
+~
+0 -1 11634
+D3
+~
+~
+0 -1 11639
+D6
+~
+~
+0 -1 11635
+D7
+~
+~
+0 -1 11638
+S
+#11638
+&GPat&gh &Gof &gTru&Gth ~
+&GYou are walking through the path of truth. Here
+you will find your origin and your &RDe&rst&riny&R!
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11640
+D1
+~
+~
+0 -1 11636
+D2
+~
+~
+0 -1 11639
+D3
+~
+~
+0 -1 11653
+D8
+~
+~
+0 -1 11637
+D9
+~
+~
+0 -1 11654
+S
+#11639
+&GPat&gh &Gof &gTru&Gth ~
+&GYou are walking through the path of truth. Here
+you will find your origin and your &RDe&rst&riny&R!
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11638
+D1
+~
+~
+0 -1 11637
+D3
+~
+~
+0 -1 11654
+D6
+~
+~
+0 -1 11636
+D7
+~
+~
+0 -1 11653
+S
+#11640
+&GPat&gh &Oof &YInception~
+&GYou have entered the Path &Oof &YInception.
+&GThe walls are lined with a &ggreen goop.
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11641
+D2
+~
+~
+0 -1 11638
+S
+#11641
+&GPat&gh &Oof &YInception~
+&GYou have entered the Path &Oof &YInception.
+&GThe walls are lined with a &ggreen goop.
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11642
+D2
+~
+~
+0 -1 11640
+S
+#11642
+&GPat&gh &Oof &YInception~
+&GYou have entered the Path &Oof &YInception.
+&GThe walls are lined with a &ggreen goop.
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11643
+D2
+~
+~
+0 -1 11641
+S
+#11643
+&GPat&gh &Oof &YInception~
+&GYou have entered the Path &Oof &YInception.
+&GThe walls are lined with a &ggreen goop.
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11644
+D3
+~
+~
+0 -1 11642
+S
+#11644
+&GPat&gh &Oof &YInception~
+&GYou have entered the Path &Oof &YInception.
+&GThe walls are lined with a &ggreen goop.
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11645
+D3
+~
+~
+0 -1 11643
+S
+#11645
+&GPat&gh &Oof &YInception~
+&GYou have entered the Path &Oof &YInception.
+&GThe walls are lined with a &ggreen goop.
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11646
+D3
+~
+~
+0 -1 11644
+S
+#11646
+&GPat&gh &Oof &YInception~
+&GYou have entered the Path &Oof &YInception.
+&GThe walls are lined with a &ggreen goop.
+~
+0 1073741824 0 1 0 0 0 0
+D2
+~
+~
+0 -1 11645
+D3
+~
+~
+0 -1 11647
+S
+#11647
+&GPat&gh &Oof &YInception~
+&GYou have entered the Path &Oof &YInception.
+&GThe walls are lined with a &ggreen goop.
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11646
+D3
+~
+~
+0 -1 11648
+S
+#11648
+&GPat&gh &Oof &YInception~
+&GYou have entered the Path &Oof &YInception.
+&GThe walls are lined with a &ggreen goop.
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11649
+D1
+~
+~
+0 -1 11647
+S
+#11649
+&GPat&gh &Oof &YInception~
+&GYou have entered the Path &Oof &YInception.
+&GThe walls are lined with a &ggreen goop.
+~
+0 1073741824 0 1 0 0 0 0
+D2
+~
+~
+0 -1 11648
+D7
+~
+~
+0 -1 11650
+S
+#11650
+&GPat&gh &Oof &YInception~
+&GYou have entered the Path &Oof &YInception.
+&GThe walls are lined with a &ggreen goop.
+~
+0 1073741824 0 1 0 0 0 0
+D2
+~
+~
+0 -1 11651
+D8
+~
+~
+0 -1 11649
+S
+#11651
+&GPat&gh &Oof &YInception~
+&GYou have entered the Path &Oof &YInception.
+&GThe walls are lined with a &ggreen goop.
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11650
+D3
+~
+~
+0 -1 11652
+S
+#11652
+&GPat&gh &Oof &YInception~
+&GYou have entered the Path &Oof &YInception.
+&GThe walls are lined with a &ggreen goop.
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11651
+D2
+~
+~
+2051 -1 11656
+S
+#11653
+&GPat&gh &Gof &gTru&Gth ~
+&GYou are walking through the path of truth. Here
+you will find your origin and your &RDe&rst&riny&R!
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11638
+D2
+~
+~
+0 -1 11654
+D3
+~
+~
+0 -1 11657
+D8
+~
+~
+0 -1 11639
+D9
+~
+~
+0 -1 11655
+S
+#11654
+&GPat&gh &Gof &gTru&Gth ~
+&GYou are walking through the path of truth. Here
+you will find your origin and your &RDe&rst&riny&R!
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11646
+D1
+~
+~
+0 -1 11639
+D3
+~
+~
+0 -1 11655
+D6
+~
+~
+0 -1 11638
+D7
+~
+~
+0 -1 11657
+S
+#11655
+&GPat&gh &Gof &gTru&Gth ~
+&GYou are walking through the path of truth. Here
+you will find your origin and your &RDe&rst&riny&R!
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11657
+D1
+~
+~
+0 -1 11654
+D3
+~
+~
+0 -1 11659
+D6
+~
+~
+0 -1 11653
+D7
+~
+~
+0 -1 11658
+S
+#11656
+&YInception &ROrigins~
+&Y You have entered the Holder of the Origins of Life. She holds the key
+that holds your &RDestiny!
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+3 -1 11652
+R M 1 11656 1 11656
+R D 0 11656 0 1
+S
+#11657
+&GPat&gh &Gof &gTru&Gth ~
+&GYou are walking through the path of truth. Here
+you will find your origin and your &RDe&rst&riny&R!
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11653
+D2
+~
+~
+0 -1 11655
+D3
+~
+~
+0 -1 11658
+D8
+~
+~
+0 -1 11654
+D9
+~
+~
+0 -1 11659
+S
+#11658
+&GPat&gh &Gof &gTru&Gth ~
+&GYou are walking through the path of truth. Here
+you will find your origin and your &RDe&rst&riny&R!
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11657
+D2
+~
+~
+0 -1 11659
+D3
+~
+~
+0 -1 11661
+D8
+~
+~
+0 -1 11655
+D9
+~
+~
+0 -1 11660
+S
+#11659
+&GPat&gh &Gof &gTru&Gth ~
+&GYou are walking through the path of truth. Here
+you will find your origin and your &RDe&rst&riny&R!
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11658
+D1
+~
+~
+0 -1 11655
+D3
+~
+~
+0 -1 11660
+D6
+~
+~
+0 -1 11657
+D7
+~
+~
+0 -1 11661
+S
+#11660
+&GPat&gh &Gof &gTru&Gth ~
+&GYou are walking through the path of truth. Here
+you will find your origin and your &RDe&rst&riny&R!
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11661
+D1
+~
+~
+0 -1 11659
+D6
+~
+~
+0 -1 11658
+S
+#11661
+&GPat&gh &Gof &gTru&Gth ~
+&GYou are walking through the path of truth. Here
+you will find your origin and your &RDe&rst&riny&R!
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11662
+D1
+~
+~
+0 -1 11658
+D2
+~
+~
+0 -1 11660
+D8
+~
+~
+0 -1 11659
+S
+#11662
+&GPat&gh &Gof &rB&Rlo&rod~
+&RYou enter the &GPat&gh &Gof &rB&Rlo&rod.
+&RThe walls are dripping with blood. Your hate is growing stronger!
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11663
+D2
+~
+~
+0 -1 11661
+S
+#11663
+&GPat&gh &Gof &rB&Rlo&rod~
+&RYou enter the &GPat&gh &Gof &rB&Rlo&rod.
+&RThe walls are dripping with blood. Your hate is growing stronger!
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11664
+D2
+~
+~
+0 -1 11662
+S
+#11664
+&GPat&gh &Gof &rB&Rlo&rod~
+&RYou enter the &GPat&gh &Gof &rB&Rlo&rod.
+&RThe walls are dripping with blood. Your hate is growing stronger!
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11665
+D2
+~
+~
+0 -1 11663
+S
+#11665
+&GPat&gh &Gof &rB&Rlo&rod~
+&RYou enter the &GPat&gh &Gof &rB&Rlo&rod.
+&RThe walls are dripping with blood. Your hate is growing stronger!
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11666
+D2
+~
+~
+0 -1 11664
+S
+#11666
+&GPat&gh &Gof &rB&Rlo&rod~
+&RYou enter the &GPat&gh &Gof &rB&Rlo&rod.
+&RThe walls are dripping with blood. Your hate is growing stronger!
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11667
+D2
+~
+~
+0 -1 11665
+S
+#11667
+&GPat&gh &Gof &rB&Rlo&rod~
+&RYou enter the &GPat&gh &Gof &rB&Rlo&rod.
+&RThe walls are dripping with blood. Your hate is growing stronger!
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11668
+D2
+~
+~
+0 -1 11666
+S
+#11668
+&GPat&gh &Gof &rB&Rlo&rod~
+&RYou enter the &GPat&gh &Gof &rB&Rlo&rod.
+&RThe walls are dripping with blood. Your hate is growing stronger!
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11669
+D2
+~
+~
+0 -1 11667
+S
+#11669
+&GPat&gh &Gof &rB&Rlo&rod~
+&RYou enter the &GPat&gh &Gof &rB&Rlo&rod.
+&RThe walls are dripping with blood. Your hate is growing stronger!
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11670
+D2
+~
+~
+0 -1 11668
+S
+#11670
+&GPat&gh &Gof &rB&Rlo&rod~
+&RYou enter the &GPat&gh &Gof &rB&Rlo&rod.
+&RThe walls are dripping with blood. Your hate is growing stronger!
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11671
+D2
+~
+~
+0 -1 11669
+S
+#11671
+&GPat&gh &Gof &rB&Rlo&rod~
+&RYou enter the &GPat&gh &Gof &rB&Rlo&rod.
+&RThe walls are dripping with blood. Your hate is growing stronger!
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11672
+D2
+~
+~
+0 -1 11670
+S
+#11672
+&GPat&gh &Gof &rB&Rlo&rod~
+&RYou enter the &GPat&gh &Gof &rB&Rlo&rod.
+&RThe walls are dripping with blood. Your hate is growing stronger!
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11673
+D2
+~
+~
+0 -1 11671
+D4
+~
+~
+2048 -1 11561
+S
+#11673
+&GPat&gh &Gof &rB&Rlo&rod~
+&RYou enter the &GPat&gh &Gof &rB&Rlo&rod.
+&RThe walls are dripping with blood. Your hate is growing stronger!
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11674
+D3
+~
+~
+0 -1 11672
+S
+#11674
+&GPat&gh &Gof &rB&Rlo&rod~
+&RYou enter the &GPat&gh &Gof &rB&Rlo&rod.
+&RThe walls are dripping with blood. Your hate is growing stronger!
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11675
+D2
+~
+~
+0 -1 11676
+D3
+~
+~
+0 -1 11673
+S
+#11675
+&GPat&gh &Gof &rB&Rlo&rod~
+&RYou enter the &GPat&gh &Gof &rB&Rlo&rod.
+&RThe walls are dripping with blood. Your hate is growing stronger!
+~
+0 1073741824 0 1 0 0 0 0
+D3
+~
+~
+0 -1 11674
+S
+#11676
+&GPat&gh &Gof &rB&Rlo&rod~
+&RYou enter the &GPat&gh &Gof &rB&Rlo&rod.
+&RThe walls are dripping with blood. Your hate is growing stronger!
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11674
+D2
+~
+~
+0 -1 11677
+S
+#11677
+&GPat&gh &Gof &rB&Rlo&rod~
+&RYou enter the &GPat&gh &Gof &rB&Rlo&rod.
+&RThe walls are dripping with blood. Your hate is growing stronger!
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11676
+D2
+~
+~
+0 -1 11678
+S
+#11678
+&GPat&gh &Gof &rB&Rlo&rod~
+&RYou enter the &GPat&gh &Gof &rB&Rlo&rod.
+&RThe walls are dripping with blood. Your hate is growing stronger!
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11677
+D2
+~
+~
+0 -1 11679
+S
+#11679
+&GPat&gh &Gof &rB&Rlo&rod~
+&RYou enter the &GPat&gh &Gof &rB&Rlo&rod.
+&RThe walls are dripping with blood. Your hate is growing stronger!
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11678
+D2
+~
+~
+0 -1 11680
+S
+#11680
+&GPat&gh &Gof &rB&Rlo&rod~
+&RYou enter the &GPat&gh &Gof &rB&Rlo&rod.
+&RThe walls are dripping with blood. Your hate is growing stronger!
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11679
+D1
+~
+~
+0 -1 11681
+S
+#11681
+&GPat&gh &Gof &rB&Rlo&rod~
+&RYou enter the &GPat&gh &Gof &rB&Rlo&rod.
+&RThe walls are dripping with blood. Your hate is growing stronger!
+~
+0 1073741824 0 1 0 0 0 0
+D3
+~
+~
+0 -1 11680
+D6
+~
+~
+0 -1 11682
+S
+#11682
+&GPat&gh &Gof &rB&Rlo&rod~
+&RYou enter the &GPat&gh &Gof &rB&Rlo&rod.
+&RThe walls are dripping with blood. Your hate is growing stronger!
+~
+0 1073741824 0 1 0 0 0 0
+D6
+~
+~
+0 -1 11683
+D9
+~
+~
+0 -1 11681
+S
+#11683
+&GPat&gh &Gof &rB&Rlo&rod~
+&RYou enter the &GPat&gh &Gof &rB&Rlo&rod.
+&RThe walls are dripping with blood. Your hate is growing stronger!
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11684
+D9
+~
+~
+0 -1 11682
+S
+#11684
+&GPat&gh &Gof &rB&Rlo&rod~
+&RYou enter the &GPat&gh &Gof &rB&Rlo&rod.
+&RThe walls are dripping with blood. Your hate is growing stronger!
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11685
+D2
+~
+~
+0 -1 11683
+S
+#11685
+&GPat&gh &Gof &rB&Rlo&rod~
+&RYou enter the &GPat&gh &Gof &rB&Rlo&rod.
+&RThe walls are dripping with blood. Your hate is growing stronger!
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11686
+D2
+~
+~
+0 -1 11684
+S
+#11686
+&GPat&gh &Gof &rB&Rlo&rod~
+&RYou enter the &GPat&gh &Gof &rB&Rlo&rod.
+&RThe walls are dripping with blood. Your hate is growing stronger!
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11687
+D3
+~
+~
+0 -1 11685
+S
+#11687
+&GPat&gh &Gof &rB&Rlo&rod~
+&RYou enter the &GPat&gh &Gof &rB&Rlo&rod.
+&RThe walls are dripping with blood. Your hate is growing stronger!
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+gate~
+8390695 11656 11688
+D3
+~
+~
+0 -1 11686
+S
+#11688
+&rTr&Rue &rB&Rlo&rod~
+&RHere is the holding area of &RR&ra&Rn&rc&Ri&rd &R the holder of this
+forsaken Bloody soaked Place
+~
+0 1073741824 0 1 0 0 0 0
+D3
+~
+~
+5 -1 11687
+D5
+~
+~
+2048 -1 11689
+R M 1 11688 1 11688
+R D 0 11688 3 0
+S
+#11689
+&GPat&gh &Gof &gTru&Gth &zReturn~
+&GYou have entered into the return or your &YDestiny!
+~
+0 1073741824 0 1 0 0 0 0
+D5
+~
+~
+0 -1 11632
+S
+#11690
+Floating in a void~
+~
+0 1073741828 0 1 0 0 0 0
+S
+#11698
+&gPath &Wof &GTotality &YRock &OLedge~
+&YAs you walk along the steep &OLedge &Yyour heart
+&Yis at a slow rhythm. You have a small chip on your
+&Oshoulder don't you?
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11699
+D4
+~
+~
+2048 -1 11587
+S
+#11699
+&gPath &Wof &GTotality &YRock &OLedge~
+&YAs you walk along the steep &OLedge &Yyour heart
+&Yis at a slow rhythm. You have a small chip on your
+&Oshoulder don't you?
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11700
+D3
+~
+~
+0 -1 11698
+S
+#11700
+&gPath &Wof &GTotality &YRock &OLedge~
+&YAs you walk along the steep &OLedge &Yyour heart
+&Yis at a slow rhythm. You have a small chip on your
+&Oshoulder don't you?
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11701
+D3
+~
+~
+0 -1 11699
+R M 1 11700 5 11700
+R M 1 11700 5 11700
+R M 1 11700 5 11700
+R M 1 11700 5 11700
+R M 1 11700 5 11700
+S
+#11701
+&gPath &Wof &GTotality &YRock &OLedge~
+&YAs you walk along the steep &OLedge &Yyour heart
+&Yis at a slow rhythm. You have a small chip on your
+&Oshoulder don't you?
+~
+0 1073741824 0 1 0 0 0 0
+D2
+~
+~
+0 -1 11702
+D3
+~
+~
+0 -1 11700
+S
+#11702
+&gPath &Wof &GTotality &YRock &OLedge~
+&YAs you walk along the steep &OLedge &Yyour heart
+&Yis at a slow rhythm. You have a small chip on your
+&Oshoulder don't you?
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11701
+D9
+~
+~
+0 -1 11703
+S
+#11703
+&gPath &Wof &GTotality &YRock &OLedge~
+&YAs you walk along the steep &OLedge &Yyour heart
+&Yis at a slow rhythm. You have a small chip on your
+&Oshoulder don't you?
+~
+0 1073741824 0 1 0 0 0 0
+D6
+~
+~
+0 -1 11702
+D8
+~
+~
+0 -1 11704
+S
+#11704
+&gPath &Wof &GTotality &YRock &OLedge~
+&YAs you walk along the steep &OLedge &Yyour heart
+&Yis at a slow rhythm. You have a small chip on your
+&Oshoulder don't you?
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+2051 -1 11705
+D2
+~
+~
+0 -1 11708
+D7
+~
+~
+0 -1 11703
+S
+#11705
+&gPath &Wof &GTotallity &YRock &OLedge~
+&GYou have entered the Totality &wS&Wh&wo&Wp
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11706
+D2
+~
+~
+2051 -1 11704
+S
+#11706
+&YBefore &OThe&GTotality &wS&zh&wo&zp~
+&GYou have entered the Totality &wS&Wh&wo&Wp
+~
+0 1073741824 0 1 0 0 0 0
+D3
+~
+~
+0 -1 11705
+D6
+~
+~
+0 -1 11707
+S
+#11707
+&GTotality &wS&zh&wo&zp~
+&gThis is the &GTotality &wS&Wh&wo&Wp
+~
+0 1024 0 1 0 0 0 0
+D9
+~
+~
+0 -1 11706
+R M 1 11707 1 11707
+  R G 0 2302 1
+S
+#11708
+&gPath &Wof &GTotality &YRock &OLedge~
+&YAs you walk along the steep &OLedge &Yyour heart
+&Yis at a slow rhythm. You have a small chip on your
+&Oshoulder don't you?
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11704
+D2
+~
+~
+0 -1 11709
+S
+#11709
+&gPath &Wof &GTotality &YRock &OLedge~
+&YAs you walk along the steep &OLedge &Yyour heart
+&Yis at a slow rhythm. You have a small chip on your
+&Oshoulder don't you?
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11708
+D2
+~
+~
+0 -1 11710
+S
+#11710
+&gPath &Wof &GTotality &YRock &OLedge~
+&YAs you walk along the steep &OLedge &Yyour heart
+&Yis at a slow rhythm. You have a small chip on your
+&Oshoulder don't you?
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11709
+D2
+~
+~
+0 -1 11711
+S
+#11711
+&gPath &Wof &GTotality &YRock &OLedge~
+&YAs you walk along the steep &OLedge &Yyour heart
+&Yis at a slow rhythm. You have a small chip on your
+&Oshoulder don't you?
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11710
+D2
+~
+~
+0 -1 11712
+D3
+~
+~
+0 -1 11713
+R M 1 11700 19 11711
+R M 1 11700 19 11711
+R M 1 11700 19 11711
+R M 1 11700 19 11711
+R M 1 11700 19 11711
+S
+#11712
+&gPath &Wof &GTotality &YRock &OLedge~
+&YAs you walk along the steep &OLedge &Yyour heart
+&Yis at a slow rhythm. You have a small chip on your
+&Oshoulder don't you?
+~
+0 4 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11711
+D4
+~
+~
+2048 -1 11561
+S
+#11713
+&gPath &Wof &GTotality &YRock &OLedge~
+&YAs you walk along the steep &OLedge &Yyour heart
+&Yis at a slow rhythm. You have a small chip on your
+&Oshoulder don't you?
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11711
+D2
+~
+~
+2051 -1 11714
+D3
+~
+~
+0 -1 11724
+S
+#11714
+&gPath &zof &GTotality &rExc&Rision~
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+3 -1 11713
+D2
+~
+~
+0 -1 11715
+S
+#11715
+&gPath &zof &GTotality &rExc&Rision~
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11714
+D2
+~
+~
+0 -1 11716
+S
+#11716
+&gPath &zof &GTotality &rExc&Rision~
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11715
+D2
+~
+~
+0 -1 11717
+S
+#11717
+&gPath &zof &GTotality &rExc&Rision~
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11716
+D2
+~
+~
+0 -1 11718
+S
+#11718
+&gPath &zof &GTotality &rExc&Rision~
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11717
+D3
+~
+~
+0 -1 11719
+S
+#11719
+&gPath &zof &GTotality &rExc&Rision~
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11720
+D1
+~
+~
+0 -1 11718
+S
+#11720
+&gPath &zof &GTotality &rExc&Rision~
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11721
+D2
+~
+~
+0 -1 11719
+S
+#11721
+&gPath &zof &GTotality &rExc&Rision~
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11722
+D2
+~
+~
+0 -1 11720
+S
+#11722
+&gPath &zof &GTotality &rExc&Rision~
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11723
+D2
+~
+~
+0 -1 11721
+S
+#11723
+&gTotality &rExc&Rision~
+~
+0 1073741824 0 1 0 0 0 0
+D2
+~
+~
+0 -1 11722
+S
+#11724
+&gPath &Wof &GTotality &YRock &OLedge~
+&YAs you walk along the steep &OLedge &Yyour heart
+&Yis at a slow rhythm. You have a small chip on your
+&Oshoulder don't you?
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11713
+D3
+~
+~
+0 -1 11725
+S
+#11725
+&gPath &Wof &GTotality &YRock &OLedge~
+&YAs you walk along the steep &OLedge &Yyour heart
+&Yis at a slow rhythm. You have a small chip on your
+&Oshoulder don't you?
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11726
+D1
+~
+~
+0 -1 11724
+S
+#11726
+&gPath &Wof &GTotality &YRock &OLedge~
+&YAs you walk along the steep &OLedge &Yyour heart
+&Yis at a slow rhythm. You have a small chip on your
+&Oshoulder don't you?
+~
+0 4 0 1 0 0 0 0
+D2
+~
+~
+0 -1 11725
+D4
+~
+~
+2048 -1 11727
+S
+#11727
+&gPath &Wof &GTotality &Cilluminati~
+&CYou begin to descend onto your final steps. You notice the walls 
+&Care a bright reflection of yourself. With each step there beginnings 
+&Ca ringing in your ear. Your eyes being to be unbearable to keep open.
+&C You are witnessing the Illuminati
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11728
+D5
+~
+~
+0 -1 11726
+S
+#11728
+&gPath &Wof &GTotality &Cilluminati~
+&CYou begin to descend onto your final steps. You notice the walls 
+&Care a bright reflection of yourself. With each step there beginnings 
+&Ca ringing in your ear. Your eyes being to be unbearable to keep open.
+&C You are witnessing the Illuminati
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11729
+D2
+~
+~
+0 -1 11727
+S
+#11729
+&gPath &Wof &GTotality &Cilluminati~
+&CYou begin to descend onto your final steps. You notice the walls 
+&Care a bright reflection of yourself. With each step there beginnings 
+&Ca ringing in your ear. Your eyes being to be unbearable to keep open.
+&C You are witnessing the Illuminati
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11730
+D3
+~
+~
+0 -1 11728
+S
+#11730
+&gPath &Wof &GTotality &Cilluminati~
+&CYou begin to descend onto your final steps. You notice the walls 
+&Care a bright reflection of yourself. With each step there beginnings 
+&Ca ringing in your ear. Your eyes being to be unbearable to keep open.
+&C You are witnessing the Illuminati
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11731
+D3
+~
+~
+0 -1 11729
+S
+#11731
+&gPath &Wof &GTotality &Cilluminati~
+&CYou begin to descend onto your final steps. You notice the walls 
+&Care a bright reflection of yourself. With each step there beginnings 
+&Ca ringing in your ear. Your eyes being to be unbearable to keep open.
+&C You are witnessing the Illuminati
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11732
+D3
+~
+~
+0 -1 11730
+S
+#11732
+&gPath &Wof &GTotality &Cilluminati~
+&CYou begin to descend onto your final steps. You notice the walls 
+&Care a bright reflection of yourself. With each step there beginnings 
+&Ca ringing in your ear. Your eyes being to be unbearable to keep open.
+&C You are witnessing the Illuminati
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11733
+D3
+~
+~
+0 -1 11731
+S
+#11733
+&gPath &Wof &GTotality &Cilluminati~
+&CYou begin to descend onto your final steps. You notice the walls 
+&Care a bright reflection of yourself. With each step there beginnings 
+&Ca ringing in your ear. Your eyes being to be unbearable to keep open.
+&C You are witnessing the Illuminati
+~
+0 1073741824 0 1 0 0 0 0
+D2
+~
+~
+0 -1 11732
+D7
+~
+~
+0 -1 11734
+S
+#11734
+&gPath &Wof &GTotality &Cilluminati~
+&CYou begin to descend onto your final steps. You notice the walls 
+&Care a bright reflection of yourself. With each step there beginnings 
+&Ca ringing in your ear. Your eyes being to be unbearable to keep open.
+&C You are witnessing the Illuminati
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11735
+D8
+~
+~
+0 -1 11733
+S
+#11735
+&gPath &Wof &GTotality &Cilluminati~
+&CYou begin to descend onto your final steps. You notice the walls 
+&Care a bright reflection of yourself. With each step there beginnings 
+&Ca ringing in your ear. Your eyes being to be unbearable to keep open.
+&C You are witnessing the Illuminati
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11736
+D2
+~
+~
+0 -1 11734
+S
+#11736
+&gPath &Wof &GTotality &Cilluminati~
+&CYou begin to descend onto your final steps. You notice the walls 
+&Care a bright reflection of yourself. With each step there beginnings 
+&Ca ringing in your ear. Your eyes being to be unbearable to keep open.
+&C You are witnessing the Illuminati
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11737
+D2
+~
+~
+0 -1 11735
+S
+#11737
+&gPath &Wof &GTotality &Cilluminati~
+&CYou begin to descend onto your final steps. You notice the walls 
+&Care a bright reflection of yourself. With each step there beginnings 
+&Ca ringing in your ear. Your eyes being to be unbearable to keep open.
+&C You are witnessing the Illuminati
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11738
+D2
+~
+~
+0 -1 11736
+S
+#11738
+&gPath &Wof &GTotality &Cilluminati~
+&CYou begin to descend onto your final steps. You notice the walls 
+&Care a bright reflection of yourself. With each step there beginnings 
+&Ca ringing in your ear. Your eyes being to be unbearable to keep open.
+&C You are witnessing the Illuminati
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+gate~
+2049 11688 11739
+D2
+~
+~
+0 -1 11737
+S
+#11739
+&gPath &Wof &GTotality &Cilluminati~
+&CYou begin to descend onto your final steps. You notice the walls 
+&Care a bright reflection of yourself. With each step there beginnings 
+&Ca ringing in your ear. Your eyes being to be unbearable to keep open.
+&C You are witnessing the Illuminati
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11740
+D2
+~
+~
+0 -1 11738
+S
+#11740
+&gPath &Wof &GTotality &Cilluminati~
+&CYou begin to descend onto your final steps. You notice the walls 
+&Care a bright reflection of yourself. With each step there beginnings 
+&Ca ringing in your ear. Your eyes being to be unbearable to keep open.
+&C You are witnessing the Illuminati
+~
+0 1073741824 0 1 0 0 0 0
+D0
+~
+~
+0 -1 11741
+D2
+~
+~
+0 -1 11739
+S
+#11741
+&gPath &Wof &GTotality &Cilluminati~
+&CYou begin to descend onto your final steps. You notice the walls 
+&Care a bright reflection of yourself. With each step there beginnings 
+&Ca ringing in your ear. Your eyes being to be unbearable to keep open.
+&C You are witnessing the Illuminati
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11742
+D2
+~
+~
+0 -1 11740
+S
+#11742
+&gPath &Wof &GTotality &Cilluminati~
+&CYou begin to descend onto your final steps. You notice the walls 
+&Care a bright reflection of yourself. With each step there beginnings 
+&Ca ringing in your ear. Your eyes being to be unbearable to keep open.
+&C You are witnessing the Illuminati
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 11743
+D3
+~
+~
+0 -1 11741
+S
+#11743
+&GTotality &Cilluminati~
+&CYou enter the Illuminati. As you look around, you notice lots of statues in the
+&Croom. They all are &Yglowing. &CYour heart beings skipping beats. The future is
+&Cinevitable. You have challenged the Illuminati! 
+~
+0 1073741824 0 1 0 0 0 0
+D3
+~
+~
+0 -1 11742
+R M 1 11743 1 11743
+S
+#11744
+&gV&zB&rR-&Y1&O7 &CBank~
+&Y You are standing In The Bank of &gV&zB&rR-&Y1&O7
+~
+0 256 0 1 0 0 0 0
+D2
+~
+~
+0 -1 11567
+S
+#11745
+&gV&zB&rR-&Y1&O7 &GHospital~
+&YYou are standing in a cold damp hospital. The Walls are lined with mold and dew
+~
+0 4&1 0 1 0 0 0 0
+D5
+~
+~
+0 -1 11587
+S
+#0
+
+
+#SHOPS
+ 11581    0  0  0  0  0   120  90         0 23    ; Laura
+ 11707    0  0  0  0  0   120  90         0 23    ; &OEx&Ycision
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

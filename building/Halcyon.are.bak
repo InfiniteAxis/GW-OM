@@ -1,0 +1,229 @@
+#AREA   {PROTO} Halcyon's area in progress~
+
+
+
+#AUTHOR Halcyon~
+
+#OWNED_BY None~
+
+#RANGES
+0 0 0 0
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 0
+
+#MOBILES
+#4200
+mobile~
+a newly created mobile~
+Some god abandoned a newly created mobile here.
+~
+~
+1073741825 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#4299
+mobile~
+a newly created mobile~
+Some god abandoned a newly created mobile here.
+~
+~
+1073741825 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#4200
+object~
+a object~
+A object is here.~
+~
+13 1073741824 0
+0 0 0 0
+1 0 0
+#4299
+object~
+a object~
+A object is here.~
+~
+13 1073741824 0
+0 0 0 0
+1 0 0
+#0
+
+
+#ROOMS
+#4200
+Ticket Booth~
+You find yourself in front of the Ticket Booth for the Intergalactic Hall of
+Shame. Strange decorations hang from the walls around you, and in the center of
+the room stands the very small ticket booth itself, likely no more than a
+couple meters wide and long. It would seem that the workers are the tiniest
+bit claustrophobic, and so they never actually man the booth, but rather stand
+outside of it greeting guests.
+~
+0 1073741900 0 0 0
+D7
+~
+~
+0 -1 4201
+S
+#4201
+The Intergalactic Hall of Shame~
+As you wander through the Halls of Shame, you can't help noticing the
+bizarre decor... Strange murals of beings you can only surmise must be
+gods passing judgement on strange, deformed beings while followers of the
+assumed faith all point and laugh, and odd paintings portraying unfortunate
+beings with their heads lodged in their anal cavities. What sick mind
+could have possibly conceived of such a sanity-forsaken place?
+~
+0 1073741836 0 0 0
+D0
+~
+~
+0 -1 4202
+D8
+~
+~
+0 -1 4200
+S
+#4202
+A Split Path~
+You stand faced with three branches of this sadistic sanctuary of the
+stupid... To the northeast, you can make out the faint noise of bugs
+scurrying about. To the north, you see poor souls standing in an auditorium
+in front of a crowd, shouting out letters in no particular pattern that you
+can ascertain. As you focus your gaze upon the northwest halls to identify
+what it might be exhibiting, you get this strange feeling that your I.Q.
+is dropping rapidly just trying to comprehend the wild actions of the
+strangely-dressed fellows. You shake your head rapidly, somehow managing
+to free yourself of the creeping ignorance.
+~
+0 1073741836 0 0 0
+D2
+~
+~
+0 -1 4201
+D6
+~
+~
+0 -1 4203
+S
+#4203
+The Corridors of Cockroaches~
+...Roaches everywhere. The moment you step into the hall, you squash a
+single, disgusting bug beneath your foot. In the instant you remove that
+single bug from the semi-sentient mortal coil, another spawns before your
+very eyes and scurries off. These are the Corridors of Cockroaches, where
+the images of those that quite simply wouldn't die are preserved in all
+their nuclear-holocaust-surviving splendor.
+~
+0 1073741836 0 0 0
+D6
+~
+~
+0 -1 4205
+D7
+~
+~
+0 -1 4204
+D8
+~
+~
+0 -1 4206
+D9
+~
+~
+0 -1 4202
+S
+#4204
+The Siblings' Shrine~
+This is the conjoined shrine of the brother-and-sister duo Aristel and Lokita.
+In the eastern corner, you see a deformed hologram of a strange young man,
+laughing for no obvious reason as you stare at him in bewilderment. In the
+western corner, you see only a hologram of what appears to be a large mass
+of a strange, gooey white substance, with only a few outstanding features
+to betray the mass as concealing a female.
+~
+0 1073741836 0 0 0
+D8
+~
+~
+0 -1 4203
+S
+#4205
+Gheed's Gallery~
+Okay, you may occasionally find yourself feeling bad for one, but let's just
+face it... Emos suck. Can't live with 'em, can't lay next to them as they cry
+themselves to sleep. This is the private viewing gallery of Gheed, originally
+going by the name of "Mike." You hear pained sobs from every direction...
+That's cutting edge technology for you. As you try to drown out the miserable
+blubberings of this poor sap, you notice the hologram of Gheed himself in the
+corner.
+~
+0 1073741836 0 0 0
+D9
+~
+~
+0 -1 4203
+S
+#4206
+Maldar's Mausoleum~
+Before you stands the macabre gravesite of Maldar, A.K.A. Gunther. There's
+no less than a dozen statues here, showcasing his many reincarnations, which
+were slightly less inspired each time he came back. Examining one of the
+plaques beneath the statues, you see the name "Radlam." You can't even begin
+to imagine what manner of cranial trauma could have caused such a blatant lack
+of creativity. A hologram of Maldar stands here in front of the center statue,
+seemingly completely oblivious to your presence... This would be normal for
+a hologram, and yet somehow, he seems even more oblivious than you'd expect
+him to.
+~
+0 1073741836 0 0 0
+D7
+~
+~
+0 -1 4203
+S
+#4299
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#0
+
+
+#RESETS
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

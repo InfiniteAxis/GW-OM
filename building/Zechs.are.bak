@@ -1,0 +1,90 @@
+#AREA   {PROTO} Zechs's area in progress~
+
+
+
+#AUTHOR Zechs~
+
+#RANGES
+0 0 0 0
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 0
+
+#MOBILES
+#6300
+Black Kawasaki Ninja~
+a Black Kawasaki Ninja.~
+A Black Kawasaki Ninja is here.
+~
+~
+262147 0 0 Z
+1 0 -1 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#6301
+HK-5 assault rifle~
+a newly created HK-5 assault rifle~
+Some god abandoned a newly created HK-5 assault rifle here.
+~
+~
+1073741825 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#6301
+HK-5 assault rifle~
+a HK-5 assault rifle~
+a HK-5 assault rifle is here~
+~
+5 0 8193
+100 8 3 6 2000 2000
+1 0 0
+#6302
+an HK-5 ammo clip~
+a HK-5 ammo~
+an ammo clip is here~
+~
+57 0 1
+2000 2000 0 0
+1 0 0
+#0
+
+
+#ROOMS
+#0
+
+
+#RESETS
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

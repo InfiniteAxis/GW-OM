@@ -1,0 +1,67 @@
+#AREA   {PROTO} Edge's area in progress~
+
+
+
+#VERSION 1
+
+#AUTHOR Edge~
+
+#OWNED_BY None~
+
+#RANGES
+0 0 0 0
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 0
+
+#MOBILES
+#0
+
+
+#OBJECTS
+#0
+
+
+#ROOMS
+#10000
+&z:The Landing Pad of &RN&We&Bw &RA&rm&We&wr&Wi&bc&Ba&z:~
+&z:&wIt is a scene of beauty here on the enormous Landing Pad of New America.
+All around you various ships, and Mech Suits are landing, and taking off.
+A huge, well armored area off to the right has a few &YG&Ou&Yn&Od&Ya&Om&Ys &win it.
+You cant make out much about whats being done to them but there still cool!
+Before you lays the imacculate city of New &RA&rm&We&wr&Wi&bc&Ba&z:
+~
+0 1073741824 0 1 0 0 0 0
+D1
+~
+~
+0 -1 10001
+S
+#10001
+&zStanding before a~
+~
+0 1073741824 0 1 0 0 0 0
+D3
+~
+~
+0 -1 10000
+S
+#0
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

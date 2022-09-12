@@ -1,0 +1,872 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         Mobile Suits~
+Author       Antonio~
+Ranges       1 1007 1 1007
+Economy      0 6250000
+ResetFreq    500
+#ENDAREADATA
+
+#MOBILE
+Vnum       2100
+Keywords   first~
+Short      a newly created first~
+Long       Some god abandoned a newly created first here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       2199
+Keywords   last~
+Short      a newly created last~
+Long       Some god abandoned a newly created last here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#OBJECT
+Vnum     2100
+Keywords first~
+Type     trash~
+Short    a first~
+Long     A first is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2199
+Keywords last~
+Type     trash~
+Short    a last~
+Long     A last is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     2100
+Name     OZ-06MS Leo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This is the cockpit of the  basic, all purpose Leo Mobile Suit. You see
+many different controls and buttons, Only a good pilot would know what
+to do.
+~
+#ENDROOM
+
+#ROOM
+Vnum     2101
+Name     OZ-06MS Leo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This is the cockpit of the  basic, all purpose Leo Mobile Suit. You see
+many different controls and buttons, Only a good pilot would know what
+to do.
+~
+#ENDROOM
+
+#ROOM
+Vnum     2102
+Name     OZ-06MS Leo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This is the cockpit of the  basic, all purpose Leo Mobile Suit. You see
+many different controls and buttons, Only a good pilot would know what
+to do.
+~
+#ENDROOM
+
+#ROOM
+Vnum     2103
+Name     OZ-06MS Leo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This is the cockpit of the  basic, all purpose Leo Mobile Suit. You see
+many different controls and buttons, Only a good pilot would know what
+to do.
+~
+#ENDROOM
+
+#ROOM
+Vnum     2104
+Name     OZ-06MS Leo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This is the cockpit of the  basic, all purpose Leo Mobile Suit. You see
+many different controls and buttons, Only a good pilot would know what
+to do.
+~
+#ENDROOM
+
+#ROOM
+Vnum     2105
+Name     OZ-06MS Leo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This is the cockpit of the  basic, all purpose Leo Mobile Suit. You see
+many different controls and buttons, Only a good pilot would know what
+to do.
+~
+#ENDROOM
+
+#ROOM
+Vnum     2106
+Name     OZ-06MS Leo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This is the cockpit of the  basic, all purpose Leo Mobile Suit. You see
+many different controls and buttons, Only a good pilot would know what
+to do.
+~
+#ENDROOM
+
+#ROOM
+Vnum     2107
+Name     OZ-06MS Leo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This is the cockpit of the  basic, all purpose Leo Mobile Suit. You see
+many different controls and buttons, Only a good pilot would know what
+to do.
+~
+#ENDROOM
+
+#ROOM
+Vnum     2108
+Name     OZ-06MS Leo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This is the cockpit of the  basic, all purpose Leo Mobile Suit. You see
+many different controls and buttons, Only a good pilot would know what
+to do.
+~
+#ENDROOM
+
+#ROOM
+Vnum     2109
+Name     OZ-06MS Leo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This is the cockpit of the  basic, all purpose Leo Mobile Suit. You see
+many different controls and buttons, Only a good pilot would know what
+to do.
+~
+#ENDROOM
+
+#ROOM
+Vnum     2110
+Name     OZ-06MS Leo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This is the cockpit of the  basic, all purpose Leo Mobile Suit. You see
+many different controls and buttons, Only a good pilot would know what
+to do.
+~
+#ENDROOM
+
+#ROOM
+Vnum     2111
+Name     OZ-06MS Leo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This is the cockpit of the  basic, all purpose Leo Mobile Suit. You see
+many different controls and buttons, Only a good pilot would know what
+to do.
+~
+#ENDROOM
+
+#ROOM
+Vnum     2112
+Name     OZ-06MS Leo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This is the cockpit of the  basic, all purpose Leo Mobile Suit. You see
+many different controls and buttons, Only a good pilot would know what
+to do.
+~
+#ENDROOM
+
+#ROOM
+Vnum     2113
+Name     OZ-06MS Leo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This is the cockpit of the  basic, all purpose Leo Mobile Suit. You see
+many different controls and buttons, Only a good pilot would know what
+to do.
+~
+#ENDROOM
+
+#ROOM
+Vnum     2114
+Name     OZ-06MS Leo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This is the cockpit of the  basic, all purpose Leo Mobile Suit. You see
+many different controls and buttons, Only a good pilot would know what
+to do.
+~
+#ENDROOM
+
+#ROOM
+Vnum     2115
+Name     OZ-06MS Leo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This is the cockpit of the  basic, all purpose Leo Mobile Suit. You see
+many different controls and buttons, Only a good pilot would know what
+to do.
+~
+#ENDROOM
+
+#ROOM
+Vnum     2116
+Name     OZ-06MS Leo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This is the cockpit of the  basic, all purpose Leo Mobile Suit. You see
+many different controls and buttons, Only a good pilot would know what
+to do.
+~
+#ENDROOM
+
+#ROOM
+Vnum     2117
+Name     OZ-06MS Leo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This is the cockpit of the  basic, all purpose Leo Mobile Suit. You see
+many different controls and buttons, Only a good pilot would know what
+to do.
+~
+#ENDROOM
+
+#ROOM
+Vnum     2118
+Name     OZ-06MS Leo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This is the cockpit of the  basic, all purpose Leo Mobile Suit. You see
+many different controls and buttons, Only a good pilot would know what
+to do.
+~
+#ENDROOM
+
+#ROOM
+Vnum     2119
+Name     OZ-06MS Leo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This is the cockpit of the  basic, all purpose Leo Mobile Suit. You see
+many different controls and buttons, Only a good pilot would know what
+to do.
+~
+#ENDROOM
+
+#ROOM
+Vnum     2120
+Name     OZ-06MS Leo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This is the cockpit of the  basic, all purpose Leo Mobile Suit. You see
+many different controls and buttons, Only a good pilot would know what
+to do.
+~
+#ENDROOM
+
+#ROOM
+Vnum     2121
+Name     OZ-06MS Leo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This is the cockpit of the  basic, all purpose Leo Mobile Suit. You see
+many different controls and buttons, Only a good pilot would know what
+to do.
+~
+#ENDROOM
+
+#ROOM
+Vnum     2122
+Name     OZ-06MS Leo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This is the cockpit of the  basic, all purpose Leo Mobile Suit. You see
+many different controls and buttons, Only a good pilot would know what
+to do.
+~
+#ENDROOM
+
+#ROOM
+Vnum     2123
+Name     OZ-06MS Leo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This is the cockpit of the  basic, all purpose Leo Mobile Suit. You see
+many different controls and buttons, Only a good pilot would know what
+to do.
+~
+#ENDROOM
+
+#ROOM
+Vnum     2124
+Name     OZ-06MS Leo Commander Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This is the cockpit of the Commander Spec, all purpose Leo Mobile Suit.
+You see many different controls and buttons, Only a good pilot would
+know what to do.
+~
+#ENDROOM
+
+#ROOM
+Vnum     2125
+Name     Aries Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2126
+Name     Aries Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2127
+Name     Aries Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2128
+Name     Aries Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2129
+Name     Aries Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2130
+Name     Aries Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2131
+Name     Aries Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2132
+Name     Aries Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2133
+Name     Aries Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2134
+Name     Aries Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2135
+Name     Aries Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2136
+Name     Aries Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2137
+Name     Aries Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2138
+Name     Aries Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2139
+Name     Aries Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2140
+Name     Aries Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2141
+Name     Aries Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2142
+Name     Aries Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2143
+Name     Aries Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2144
+Name     Aries Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2145
+Name     Aries Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2146
+Name     Aries Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2147
+Name     Aries Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2148
+Name     Aries Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2149
+Name     Aries Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2150
+Name     Taurus Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2151
+Name     Taurus Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2152
+Name     Taurus Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2153
+Name     Taurus Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2154
+Name     Taurus Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2155
+Name     Taurus Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2156
+Name     Taurus Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2157
+Name     Taurus Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2158
+Name     Taurus Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2159
+Name     Taurus Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2160
+Name     Taurus Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2161
+Name     Taurus Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2162
+Name     Taurus Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2163
+Name     Taurus Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2164
+Name     Taurus Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2165
+Name     Taurus Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2166
+Name     Taurus Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2167
+Name     Taurus Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2168
+Name     Taurus Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2169
+Name     Taurus Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2170
+Name     Taurus Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2171
+Name     Taurus Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2172
+Name     Taurus Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2173
+Name     Taurus Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2174
+Name     Taurus Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2175
+Name     Serpent Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2176
+Name     Serpent Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2177
+Name     Serpent Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2178
+Name     Serpent Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2179
+Name     Serpent Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2180
+Name     Serpent Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2181
+Name     Serpent Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2182
+Name     Serpent Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2183
+Name     Serpent Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2184
+Name     Serpent Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2185
+Name     Serpent Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2186
+Name     Serpent Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2187
+Name     Serpent Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2188
+Name     Serpent Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2189
+Name     Serpent Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2190
+Name     Serpent Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2191
+Name     Serpent Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2192
+Name     Serpent Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2193
+Name     Serpent Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2194
+Name     Serpent Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2195
+Name     Serpent Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2196
+Name     Serpent Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2197
+Name     Serpent Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2198
+Name     Serpent Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     2199
+Name     Serpent Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Reset O 0 10313 1 2199
+#ENDROOM
+
+#ENDAREA

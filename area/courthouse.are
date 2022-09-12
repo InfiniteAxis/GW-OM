@@ -1,0 +1,968 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         Court House~
+Author       Sangre~
+Ranges       1 1007 1 1007
+Economy      -2 384165083
+ResetMsg     A police officer walks by, hauling in a criminal.~
+ResetFreq    10
+#ENDAREADATA
+
+#MOBILE
+Vnum       7000
+Keywords   first~
+Short      a newly created first~
+Long       Some god abandoned a newly created first here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       7050
+Keywords   courthouse security guard~
+Short      A courthouse security guard~
+Long       A courthouse security guard sits behind a desk here, watching security monitors.
+~
+Desc       The security guard's uniform is neatly creased and wrinkle free.  The black
+emblem of the LAW on it.  Worn on his head, a police hat rests. 
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel scavenger stayarea~
+Stats1     0 1000 0 -2400 50 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    punch kick~
+Defenses   parry dodge~
+#ENDMOBILE
+
+#MOBILE
+Vnum       7051
+Keywords   colony security guard~
+Short      A colony security guard~
+Long       A colony security guard inspects the area here, watching intently.
+~
+Desc       The colony security guards uniform sticks to his body, wrinkles non
+existant on its black surface.  Worn on his head, a black hat, a star
+emblem emblazened on its surface. His hands are fitted into soft leather
+gloves, their surfacing glistening in the light.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 50 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    punch kick~
+Defenses   parry dodge~
+#ENDMOBILE
+
+#MOBILE
+Vnum       7099
+Keywords   last~
+Short      a newly created last~
+Long       Some god abandoned a newly created last here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#OBJECT
+Vnum     7000
+Keywords first~
+Type     trash~
+Short    a first~
+Long     A first is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7050
+Keywords sangre's trenchcoat~
+Type     armor~
+Short    Sangre's black trenchcoat~
+Long     Sangre's black trenchcoat lays here, waiting for its master.~
+Flags    dark antigood~
+WFlags   take body~
+Values   150 0 0 0 0 0
+Stats    1 15000 1500 0 2
+#ENDOBJECT
+
+#OBJECT
+Vnum     7051
+Keywords sangre's blade of righteousness~
+Type     weapon~
+Short    &RSangre's &Wblade of righteousness~
+Long     &RSangre's &Wblade of righteousness lays here, waiting for its master.~
+Flags    dark antigood~
+WFlags   take wield~
+Values   13 0 0 2 500 1000
+Stats    5 15000 1500 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7052
+Keywords sangre's black combat boots~
+Type     armor~
+Short    &RSangre's &WBlack combat boots~
+Long     &RSangre's &WBlack combat boots lay here, waiting for their master.~
+Flags    dark antigood~
+WFlags   take feet~
+Values   150 0 0 0 0 0
+Stats    2 15000 1500 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7053
+Keywords sangre's soft black pants~
+Type     armor~
+Short    &RSangre's &Wsoft black pants~
+Long     &RSangre's &Wsoft black pants lay here, waiting for their master.~
+Flags    dark antigood~
+WFlags   take legs~
+Values   0 0 0 0 0 0
+Stats    1 15000 1500 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7054
+Keywords double belt of righteousness~
+Type     container~
+Short    &WThe double belt of Righteousness~
+Long     &WThe double belt of Righteousness lays here, waiting for its master.~
+Flags    dark antigood~
+WFlags   take waist~
+Values   1000 0 0 0 0 0
+Stats    2 15000 1500 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7055
+Keywords a black undershirt~
+Type     armor~
+Short    A black undershirt~
+Long     A black undershirt lays here, crumpled and forgotten.~
+Flags    dark antigood~
+WFlags   take body~
+Values   150 0 0 0 0 0
+Stats    1 15000 1500 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7056
+Keywords sangre's bandana~
+Type     armor~
+Short    &YSangre's &Wbandana~
+Long     &YSangre's &Wbandana lays here, waiting for its master.~
+Flags    dark antigood~
+WFlags   take head~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7057
+Keywords bracer of righteousness~
+Type     armor~
+Short    a bracer of righteousness~
+Long     A bracer of righteousness is here.~
+Flags    dark antigood~
+WFlags   take wrist~
+Values   150 0 0 0 0 0
+Stats    1 150000 15000 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7058
+Keywords sangre's black sunglasses~
+Type     armor~
+Short    Sangre's sunglasses~
+Long     Sangre's sunglasses rest here, glinting brightly.~
+Flags    dark antigood~
+WFlags   take eyes~
+Values   150 0 0 0 0 0
+Stats    1 15000 1500 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7059
+Keywords jail keys~
+Type     key~
+Short    A jail key ring~
+Long     A key ring filled with keys lay here on the ground, rusting.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    3 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7060
+Keywords a wooden bench~
+Type     furniture~
+Short    A crude wooden bench~
+Long     A crude wooden bench sits here against the wall.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    a wooden bench~
+ExDesc       A crude wooden bench rests against the wall, it's rotted wood barely able
+to hold the wait of the prisoners. 
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     7061
+Keywords dilapidated bunk bed~
+Type     furniture~
+Short    A dilapidated bunk bed~
+Long     A dilapidated bunk bed rests precariously against the wall here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    dilapidated bunk bed~
+ExDesc       The bunk bed, made of crude metal, rests softly against the wall.  Shredded
+mattresses fill the expanse of their empty bunks. On the mattresses, human
+pee stains their surface. 
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     7062
+Keywords security desk~
+Type     furniture~
+Short    The security desk~
+Long     The security desk rests in the corner here, a guard sitting behind it.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    security desk~
+ExDesc       The black surface of the desk reflects the soft glow of the lamps above. 
+Behind it, security monitors hum quietly, being monitored constantly.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     7063
+Keywords courthouse terminal~
+Type     trash~
+Short    A court house terminal~
+Long     &RA Court House terminal rests here, humming.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    courthouse terminal~
+ExDesc       This terminal looks just like any normal terminal.  The edges are painted
+blue and its black screen waits for input.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     7099
+Keywords last~
+Type     trash~
+Short    a last~
+Long     A last is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     7000
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     7050
+Name     Stairs to the Courthouse~
+Sector   city~
+Flags    safe~
+Desc     Marble steps lead up to the glistening white facad of the courthouse walls.
+ White french doors line the landing above, black marble framing it into
+the wall. Chipped white marble tiles cover the courthouse, specks
+glittering in the light.  Two bay windows protrude from the gleaming
+surface above, their windows opening onto the second floor. In the center
+of the stairs a large statue of the Courthouse's founder, Shinato Sangre,
+stands tall and at attention, holding a gavel in one hand.
+~
+#EXIT
+Direction east~
+ToRoom    7052
+Key       7059
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    503
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7051
+Name     North Stairwell~
+Sector   city~
+Flags    indoors safe~
+Desc     Carved white marble stairs curve slowly along the walls of the lobby,
+glistening specks sparkling in the bright lights along the walls.  Oaken
+wood spindles sit along the edge of the stairs, holding a carved wood
+handleguide, and seperating the stairs fr om the rest of the room.
+Overhead lights inset into the ceiling spill downward, illuminating the
+stairs, and the beige walls along them.  A black wrought iron hand-guide
+sits four feet above the ground, curving upward to the landing above. On
+the walls, portraits of immortals hang neatly, most covered in a thin
+layer of chalky dust.  Small gold nameplates sit under them, reminding
+mortals of the next reality.
+~
+#EXIT
+Direction south~
+ToRoom    7052
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    7065
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    7057
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7052
+Name     Courthouse Lobby~
+Sector   city~
+Flags    indoors safe~
+Desc     Polished marble tiles cover the surface of the floor, their reflective
+surfaces glistening in the lights of the lobby.  The white french doors
+lead into the center of the room, where a black marble compass points
+north in the center of the room. High above a domed ceiling cases a
+painting of immense proportions, stars and planets glistening on its
+smooth surface.  Around the edges of it spotlights illuminate its paint.
+Stairwell's encompass the room both north and south, starting on the west,
+and following the curved walls east, their ornate wood moldings gleaming
+in the bright lights of the room. At the far end, near the entrance to the
+courtroom, a security desk sits two security guards, one watching the room
+as the other watches the security monitors.    &RA Courthouse terminal is
+here for you to contact the sheriffs.  If you use this for anything else,
+charges will be pressed.
+~
+#EXIT
+Direction north~
+ToRoom    7051
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7059
+Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7053
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7050
+#ENDEXIT
+
+Reset M 0 7050 1 7052
+Reset M 0 7051 1 7052
+Reset O 0 7062 1 7052
+Reset D 0 7052 1 1
+#ENDROOM
+
+#ROOM
+Vnum     7053
+Name     South Stairwell~
+Sector   city~
+Flags    indoors safe~
+Desc     Carved white marble stairs curve slowly along the walls of the lobby,
+glistening specks sparkling in the bright lights along the walls.  Oaken
+wood spindles sit along the edge of the stairs, holding a carved wood
+handleguide, and seperating the stairs fr om the rest of the room.
+Overhead lights inset into the ceiling spill downward, illuminating the
+stairs, and the beige walls along them.  A black wrought iron hand-guide
+sits four feet above the ground, curving upward to the landing above. On
+the walls, portraits of immortals hang neatly, most covered in a thin
+layer of chalky dust.  Small gold nameplates sit under them, reminding
+mortals of the next reality. 
+~
+#EXIT
+Direction north~
+ToRoom    7052
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    7067
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    7054
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7054
+Name     South Stairwell~
+Sector   city~
+Flags    indoors safe~
+Desc     The white marble facad becomes a dank blank concrete wall as it lowers to
+the basement.  A few water stains purge the vapor barrier, emitting a
+musty humid enviroment. In the background a soft drip drop echoes off the
+walls, it's sound eminating from the halls.  Above a concrete ceiling
+spans from one wall to another, a small opening cut to create room for the
+stairwell from the main lobby.
+~
+#EXIT
+Direction north~
+ToRoom    7058
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    7053
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7055
+Name     Judge's Quarters~
+Sector   city~
+Flags    indoors safe~
+Desc     An elaborate wooden desk rests in the center of the room here, its wooden
+legs digging deep into the soft blue carpet. Behind the desk, a large book
+case to match that of the desk, rests against the wall.  It's shelves
+filled with books of all sorts, most relating to the law of the mud.
+Directly behind the desk, an indent in the book case reveals a waist haigh
+counter, filled with personal effects of the judge.  Above that, a picture
+of Judge Shinato Sangre, current Judge and Sheriff of gundam.
+~
+#EXIT
+Direction north~
+ToRoom    7056
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7059
+Key       7059
+Flags     isdoor closed locked pickproof~
+#ENDEXIT
+
+Reset D 0 7055 3 2
+#ENDROOM
+
+#ROOM
+Vnum     7056
+Name     Jurer'S Quarters~
+Sector   city~
+Flags    indoors safe~
+Desc     A large metal table sits in the center of the room, filling quite a large
+floor area.  Soft leather chairs are crowded around its artistic surface.
+Along the walls waist high counters rest against the wall, platters of
+food sitting on their granite surface.  Two large windows on the north
+wall open onto the outside of the colony.
+~
+#EXIT
+Direction south~
+ToRoom    7055
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7057
+Name     North Stairwell~
+Sector   city~
+Flags    indoors safe~
+Desc     The white marble facad becomes a dank blank concrete wall as it lowers to
+the basement.  A few water stains purge the vapor barrier, emitting a
+musty humid enviroment. In the background a soft drip drop echoes off the
+walls, it's sound eminating from the halls.  Above a concrete ceiling
+spans from one wall to another, a small opening cut to create room for the
+stairwell from the main lobby.
+~
+#EXIT
+Direction south~
+ToRoom    7058
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    7051
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7058
+Name     Jail Checkpoint~
+Sector   city~
+Flags    indoors safe~
+Desc     Concrete slabs stand erect, forming the basis for the basement walls, their
+dank surfaces covered in water stains here and there.  Overhead a blank
+concrete ceiling spans from wall to wall, bare wires and bulbs hanging in
+the center. Along the walls wooden benches sit, a prisoner here and there
+sitting and resting waiting till his trial.  Blood marks dot the floors, a
+few other unidentifiable stains here and there.
+~
+#EXIT
+Direction north~
+ToRoom    7057
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7060
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7054
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7059
+Name     Courtroom~
+Sector   city~
+Flags    indoors safe~
+Desc     On the far wall, a large raised podium commands the room, two smaller
+podiums on either side of it.  The podium's oaken surface finished with a
+light glaze, reflects the light of the room.  On the two smaller podiums
+leather seats are apparent over their edges. Over the lip of the larger
+podium, the headrest of a large plush leather chair and a gavel are
+visible.  Along the northern wall, a few feet seperate of the podiums, a
+wooden box sits, twelve chairs filling its interiour. Leading from the
+western edge of the Jurer's box, a fence waist high heads to the south
+wall, segregating the spectators. Infront of the fence, two large tables
+sit on either side of the gate.  Two chairs resting behind the tables,
+cushions on each. A walkway leads down the center of the room from the
+entrance to the Judge's podium, a small gate opening the fence in the
+center of the room. Rows of pews extend from the wooden fence, back to the
+back wall, above a balcony to watch the proceedings as well holds rows of
+pews. 
+~
+#EXIT
+Direction east~
+ToRoom    7055
+Key       7059
+Flags     isdoor pickproof~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7052
+Key       7059
+Flags     isdoor closed pickproof~
+#ENDEXIT
+
+Reset D 0 7059 1 0
+Reset D 0 7059 3 1
+#ENDROOM
+
+#ROOM
+Vnum     7060
+Name     Jail Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     Along the walls wooden benches sit, a prisoner here and there sitting and
+resting waiting till his trial.  Blood marks dot the floors, a few other
+unidentifiable stains here and there. Concrete slabs stand erect, forming
+the basis for the basement walls, their dank surfaces covered in water
+stains here and there.  Overhead a blank concrete ceiling spans from wall
+to wall, bare wires and bulbs hanging in the center. 
+~
+#EXIT
+Direction east~
+ToRoom    7062
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7058
+#ENDEXIT
+
+Reset O 0 7060 1 7060
+#ENDROOM
+
+#ROOM
+Vnum     7061
+Name     Jail Cell 1~
+Sector   city~
+Flags    indoors safe hotel~
+Desc     Blank concrete slabs emerge from the floor, their soft surfaces glowing in
+the light of the single bulb.  A few water stains dot the walls, quite a
+large one dripping down from one corner. Along the back wall, an old bunk
+bed rests, its matresses ripped and dilapidated.  In the corner, close to
+the bunk bed, a toilet sits, overfilling with human vile. Along the side
+wall, a sink overfills with water and paper towels.
+~
+#EXIT
+Direction south~
+ToRoom    7062
+Key       7059
+Flags     isdoor closed locked pickproof nopassdoor~
+#ENDEXIT
+
+Reset O 0 7061 1 7061
+Reset D 0 7061 2 2
+#ENDROOM
+
+#ROOM
+Vnum     7062
+Name     Jail Lobby~
+Sector   city~
+Flags    indoors safe~
+Desc     Jail doors hang stiffly in their frames, concrete framing their black bars.
+ Towards the west wall, a small cluttered desk fits quite a chubby
+security guard, monitors surrounding him. From one of the jails a soft
+drip drop eminates, it's resounding echo bouncing off the blank concrete
+walls. The moans of imprisoned echo along with the dripping, their
+complaints of the conditions filling the air.
+~
+#EXIT
+Direction north~
+ToRoom    7061
+Key       7059
+Flags     isdoor closed pickproof~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7064
+Key       7059
+Flags     isdoor closed pickproof~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7063
+Key       7059
+Flags     isdoor closed pickproof~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7060
+#ENDEXIT
+
+Reset D 0 7062 0 1
+Reset D 0 7062 1 1
+Reset D 0 7062 2 1
+#ENDROOM
+
+#ROOM
+Vnum     7063
+Name     Jail Cell 3~
+Sector   city~
+Flags    indoors safe silence hotel~
+Desc     Blank concrete slabs emerge from the floor, their soft surfaces glowing in
+the light of the single bulb.  A few water stains dot the walls, quite a
+large one dripping down from one corner. Along the back wall, an old bunk
+bed rests, its matresses ripped and dilapidated.  In the corner, close to
+the bunk bed, a toilet sits, overfilling with human vile. Along the side
+wall, a sink overfills with water and paper towels.
+~
+#EXIT
+Direction north~
+ToRoom    7062
+Key       7059
+Flags     isdoor closed locked pickproof~
+#ENDEXIT
+
+Reset O 0 7061 1 7063
+Reset D 0 7063 0 2
+#ENDROOM
+
+#ROOM
+Vnum     7064
+Name     Jail Cell 2~
+Sector   city~
+Flags    indoors safe silence hotel~
+Desc     redit desc Blank concrete slabs emerge from the floor, their soft surfaces
+glowing in the light of the single bulb.  A few water stains dot the
+walls, quite a large one dripping down from one corner. Along the back
+wall, an old bunk bed rests, its matresses ripped and dilapidated.  In the
+corner, close to the bunk bed, a toilet sits, overfilling with human vile.
+Along the side wall, a sink overfills with water and paper towels.
+~
+#EXIT
+Direction west~
+ToRoom    7062
+Key       7059
+Flags     isdoor closed locked pickproof~
+#ENDEXIT
+
+Reset O 0 7061 1 7064
+Reset D 0 7064 3 2
+#ENDROOM
+
+#ROOM
+Vnum     7065
+Name     North Stairwell~
+Sector   city~
+Flags    indoors safe~
+Desc     The glistening white marble tiles of the lobby continue up to the ceiling,
+patterns forming it their edges.  The stairs, carved soft white marble,
+curve upward and attach to the admnistrative hallway landing. Along the
+edge of the stairs, a wooden railing follows the stairs, curving upward
+towards the landing.  Hanging on the walls pictures of the immortals of
+the game hang, dust collecting on their guilded frames.
+~
+#EXIT
+Direction south~
+ToRoom    7066
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    7051
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7066
+Name     Administration Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     The elaborate decor of the main level of the Courthouse melds into the
+simple and humble decorating of the administrative hallway.  Along the
+walls, white marble becomes blank painted tan.   Overhead soft lamps light
+the way, their glowing orbs inset into the ceiling.  Along the walls soft
+carved wooden benches sit, their molded seats beckoning to sit.
+~
+#EXIT
+Direction north~
+ToRoom    7065
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7068
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7067
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7067
+Name     South Stairwell~
+Sector   city~
+Flags    indoors safe~
+Desc     The glistening white marble tiles of the lobby continue up to the ceiling,
+patterns forming it their edges.  The stairs, carved soft white marble,
+curve upward and attach to the admnistrative hallway landing. Along the
+edge of the stairs, a wooden railing follows the stairs, curving upward
+towards the landing.  Hanging on the walls pictures of the immortals of
+the game hang, dust collecting on their guilded frames.
+~
+#EXIT
+Direction north~
+ToRoom    7066
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    7053
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7068
+Name     Administration Hallway~
+Sector   city~
+Flags    indoors safe~
+Desc     Overhead soft lamps light the way, their glowing orbs inset into the
+ceiling.  Along the walls soft carved wooden benches sit, their molded
+seats beckoning to sit. The elaborate decor of the main level of the
+Courthouse melds into the simple and humble decorating of the
+administrative hallway.  A soft tan paint covers the walls, its glossy
+surface reflecting the lamps.
+~
+#EXIT
+Direction east~
+ToRoom    7070
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7066
+#ENDEXIT
+
+Reset O 0 7060 1 7068
+#ENDROOM
+
+#ROOM
+Vnum     7069
+Name     Sheriff's Office~
+Sector   city~
+Flags    indoors safe~
+Desc     The humble surroundings of the sheriffs office envelope the room.  A desk
+sits in the center of the office, covered with papers from mortals. 
+Behind the desk a large book shelf spans across the back wall.  It's
+spacious shelves filled with books and personal effects of the sherriff.
+~
+#EXIT
+Direction south~
+ToRoom    7070
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7070
+Name     Administration Lobby~
+Sector   city~
+Flags    indoors safe~
+Desc     The elaborate decor of the main level of the Courthouse melds into the
+simple and humble decorating of the administrative hallway.  A soft tan
+paint covers the walls, its glossy surface reflecting the lamps. Overhead
+soft lamps light the way, their glowing orbs inset into the ceiling. 
+Along the walls soft carved wooden benches sit, their molded seats
+beckoning to sit.
+~
+#EXIT
+Direction north~
+ToRoom    7069
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7072
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7071
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7068
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7071
+Name     Deputy's Office~
+Sector   city~
+Flags    indoors safe~
+Desc     The humble surroundings of the deputy's office envelope the room.  A desk
+sits in the center of the office, covered with papers from mortals. 
+Behind the desk a large book shelf spans across the back wall.  It's
+spacious shelves filled with books and personal effects of the deputy.
+~
+#EXIT
+Direction north~
+ToRoom    7070
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7072
+Name     Deputy's Office~
+Sector   city~
+Flags    indoors safe~
+Desc     The humble surroundings of the deputy's office envelope the room.  A desk
+sits in the center of the office, covered with papers from mortals. 
+Behind the desk a large book shelf spans across the back wall.  It's
+spacious shelves filled with books and personal effects of the deputy.
+~
+#EXIT
+Direction west~
+ToRoom    7070
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7073
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     7074
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     7075
+Name     Floating in a void~
+Sector   city~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     7099
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ENDAREA

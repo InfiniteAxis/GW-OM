@@ -1,0 +1,14 @@
+#PLANET
+Name         Colony L3~
+Filename     L3.plt~
+BaseValue    500000
+Flags        0
+PopSupport   50.000000
+GovernedBy   RAID~
+Area         l3.are~
+Area         Korea.are~
+Area         Mars.are~
+Area         China.are~
+End
+
+#END

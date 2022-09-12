@@ -1,0 +1,2850 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         New Saturn~
+Author       Brodie~
+Ranges       1 1007 1 1007
+Economy      -2 356222191
+ResetMsg     One of the 16 moons of Saturn passes across the sky.~
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       4000
+Keywords   first~
+Short      a newly created first~
+Long       Some god abandoned a newly created first here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       4050
+Keywords   a New Saturn citizen~
+Short      a citizen of New Saturn~
+Long       A New Saturn citizen walks past you hurredly.
+~
+Race       American~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc~
+Stats1     1000 900 0 300 100 0
+Stats2     180 10 9000
+Stats3     90 4 2
+Stats4     0 0 2 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       4051
+Keywords   A tall businessman~
+Short      A tall businessman~
+Long       A tall businessman passes you on his daily commute.
+~
+Race       American~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc~
+Stats1     0 950 0 -100 100 0
+Stats2     190 10 9500
+Stats3     95 4 2
+Stats4     0 0 3 50 50
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    punch~
+#ENDMOBILE
+
+#MOBILE
+Vnum       4052
+Keywords   A Red gang member~
+Short      a member of the Reds gang~
+Long       A punk kid dressed in all red struts passed you.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc~
+Stats1     0 1000 0 -500 250 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 3 50 50
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Defenses   dodge~
+#ENDMOBILE
+
+#MOBILE
+Vnum       4053
+Keywords   A Blackjack gang member~
+Short      a member of the Blackjack gang~
+Long       A young punk walks by, decked out in all black.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc~
+Stats1     0 1000 0 -400 250 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 3 50 50
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Defenses   dodge~
+#ENDMOBILE
+
+#MOBILE
+Vnum       4054
+Keywords   a young mother~
+Short      A young mother~
+Long       A young mother stands about, searching for her child.
+~
+Race       American~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc~
+Stats1     0 900 0 -100 100 0
+Stats2     180 10 9000
+Stats3     90 4 2
+Stats4     0 0 2 25 25
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       4055
+Keywords   Lita the Cantina bartender~
+Short      Lita the Cantina bartender~
+Long       Lita the Cantina bartender is here chatting while she serves drinks.
+~
+Race       American~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p more~
+Comlist   mpoload 202
+mpoload 203
+mpoload 807
+mpoload 1351
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       4056
+Keywords   Tyrone~
+Short      Tyrone~
+Long       Tyrone is here for all your narcotics needs.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p drugs~
+Comlist   mpoload 5100
+mpoload 5101
+mpoload 5102
+mpoload 5103
+mpoload 4001
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       4057
+Keywords   Silent Bob~
+Short      Silent Bob~
+Long       &BA short, tubby man stands here &Gs&gi&Gl&ge&Gn&gt&Gl&gy.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 450 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 5 50 50
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   1~
+Comlist   mpmload 4070
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       4058
+Keywords   Jay~
+Short      Jay~
+Long       &RJ&ra&Ry &Bstands here, stoned and wreaking &Yh&Oa&Yv&Oo&Yc!
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 450 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 5 50 50
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   25~
+Comlist   mpoinvoke 10731
+who
+users
+multi
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       4059
+Keywords   Bill~
+Short      Bill, the toy salesman~
+Long       Bill is behind the counter ready to check you out when you are done shopping.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       4060
+Keywords   Kurt~
+Short      Kurt the starbucks cashier~
+Long       Kurt stands at the register waiting for you to pay for your coffee.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       4061
+Keywords   Shannon~
+Short      Fashionable Male's manager~
+Long       Shannon the manager stands waiting to help you.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p stock~
+Comlist   mpoload 4005
+mpoload 4006
+mpoload 4007
+say sorry, let me get some from the backroom.
+emote replaces the missing items on the shelf.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       4062
+Keywords   Stan Lee~
+Short      Stan Lee~
+Long       Stan Lee stands here signing autographs.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   smile $n
+say Sorry, we aren't selling comics today.
+say Would you like an autograph instead?
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p yes~
+Comlist   mpoload 4004
+say Here's an autograph, true believer!
+give auto $n
+smile $n
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       4063
+Keywords   Barbara~
+Short      Barbara the pet salesperson~
+Long       Barbara is here to assist you in choosing a pet.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       4064
+Keywords   Rodney~
+Short      Rodney the cookie stand operator~
+Long       Rodney mans the cookie stand as you look through the baked goodies.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       4065
+Keywords   Rene~
+Short      Rene, owner of Popular Girl~
+Long       Rene attends to the customers behind the counter.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       4066
+Keywords   Katie~
+Short      Katie the Chik-fil-A worker~
+Long       Katie stands ready to take your order.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       4067
+Keywords   Josh~
+Short      Josh the Burger King employee~
+Long       Josh waits for you to order your meal.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       4068
+Keywords   tony2~
+Short      Tony the pizza maker~
+Long       Tony stands behind the counter rolling out dough.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       4069
+Keywords   Tank~
+Short      Tank the body builder~
+Long       Tank is here pumping iron.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel train~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    18 18 18 18 18 18 18
+Saves      0 0 0 0 0
+Immune     charm~
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   smile $n
+say Would you like to get pumped up?
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       4070
+Keywords   Silent Bob~
+Short      Silent Bob~
+Long       &BA short, tubby man stands here &Gs&gi&Gl&ge&Gn&gt&Gl&gy.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 450 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 5 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   2~
+Comlist   mpoload 11513
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       4099
+Keywords   last~
+Short      a newly created last~
+Long       Some god abandoned a newly created last here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#OBJECT
+Vnum     4000
+Keywords A blindfold~
+Type     armor~
+Short    a black blindfold~
+Long     A black blindfold has been carelessly dropped.~
+WFlags   take eyes~
+Values   50 50 0 0 0 0
+Stats    1 500 50 0 0
+Affect       -1 -1 1 26 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     4001
+Keywords Marijuana~
+Type     rawspice~
+Short    a baggie of marijuana~
+Long     A baggie of green herbs lies here.~
+WFlags   take~
+Values   0 5 0 0 0 0
+Stats    1 1000 100 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     4002
+Keywords Sword of Omens~
+Type     weapon~
+Short    The Sword of Omens~
+Long     A short sword lies here, the hilt glittering with a beautiful red stone.~
+Flags    hum contraband inventory~
+WFlags   take wield~
+Values   12 10 150 2 1000 1000
+Stats    5 22000 2200 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     4003
+Keywords Cobra Commando Custom Magnum~
+Type     weapon~
+Short    C.C. Custom Mag~
+Long     A beautiful custom magnum is here.~
+Flags    contraband~
+WFlags   take wield~
+Values   1000 10 125 6 5000 5000
+Stats    1 15000 1500 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     4004
+Keywords Stan Lee's autograph~
+Type     treasure~
+Short    Stan Lee's autograph~
+Long     A photograph of Spiderman bearing the signature of Stan Lee is here.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+Affect       -1 -1 33554432 26 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     4005
+Keywords Men's Casual Blazer~
+Type     armor~
+Short    a casual blazer~
+Long     A men's casual blazer is laying here.~
+WFlags   take about~
+Values   50 50 0 0 0 0
+Stats    2 5000 500 0 16
+#ENDOBJECT
+
+#OBJECT
+Vnum     4006
+Keywords Docker's dress casuals~
+Type     armor~
+Short    Docker's dress casuals~
+Long     A pair of men's dress casuals is neatly folded here.~
+WFlags   take legs~
+Values   50 50 0 0 0 0
+Stats    1 5000 500 0 16
+#ENDOBJECT
+
+#OBJECT
+Vnum     4007
+Keywords Doc Marten boots~
+Type     armor~
+Short    Doc Marten boots~
+Long     A pair of thick leather boots is here.~
+WFlags   take feet~
+Values   50 50 0 0 0 0
+Stats    1 3000 300 0 16
+#ENDOBJECT
+
+#OBJECT
+Vnum     4008
+Keywords The little black dress~
+Type     armor~
+Short    a little black dress~
+Long     A little black dress has been discarded here.~
+WFlags   take body~
+Values   50 50 0 0 0 0
+Stats    1 4000 400 0 8
+#EXDESC
+ExDescKey    The little black dress~
+ExDesc       The perfect little black dress for whatever
+occasion.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     4009
+Keywords silk hosiery~
+Type     armor~
+Short    silk panty hose~
+Long     A wad of silk hosiery is here.~
+WFlags   take legs~
+Values   50 50 0 0 0 0
+Stats    1 1000 100 0 32
+#EXDESC
+ExDescKey    silk hosiery~
+ExDesc       A pair of new silk hosiery. These are best worn if you didn't feel like
+shaving tonight for that special event, and will accent that black dress
+nicely.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     4010
+Keywords stiletto heeled shoes~
+Type     armor~
+Short    a pair of stiletto heels~
+Long     A pair of 6 inch heeled formal shoes are here.~
+WFlags   take feet~
+Values   50 50 0 0 0 0
+Stats    1 2050 205 0 16
+#ENDOBJECT
+
+#OBJECT
+Vnum     4011
+Keywords red satin panties~
+Type     armor~
+Short    a pair of red satin panties~
+Long     A pair of red satin panties has been discarded here carelessly.~
+WFlags   take waist~
+Values   50 25 0 0 0 0
+Stats    1 1500 150 0 16
+#EXDESC
+ExDescKey    red satin panties~
+ExDesc       Ooooo. A beautiful and sexy pair of satin panties. For those women hoping
+to score big, or just for guys with strange fetishes, this is the perfect
+garment for you.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     4012
+Keywords tall cappuccino~
+Type     drinkcon~
+Short    a tall Cappuccino~
+Long     A Starbucks cup is here creating a strong coffee smell.~
+WFlags   take hold~
+Values   25 25 12 0 0 0
+Stats    1 20 2 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     4013
+Keywords grande latte~
+Type     drinkcon~
+Short    a grande Latte~
+Long     A big Starbucks cup is here, filling the air with the smell of coffee.~
+WFlags   take hold~
+Values   50 50 12 0 0 0
+Stats    1 40 4 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     4014
+Keywords venti frappuccino~
+Type     drinkcon~
+Short    a venti Frappuccino~
+Long     A rather large Starbucks cup is here, still cold from the liquid in it.~
+WFlags   take hold~
+Values   100 100 12 0 0 0
+Stats    2 75 7 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     4015
+Keywords chicken sandwich~
+Type     food~
+Short    a chicken sandwich~
+Long     A chicken sandwich lies here.~
+WFlags   take~
+Values   50 50 0 0 0 0
+Stats    1 10 1 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     4016
+Keywords waffle fries~
+Type     food~
+Short    waffle fries~
+Long     A cardboard box of waffle fries has been left here.~
+WFlags   take~
+Values   25 25 0 0 0 0
+Stats    1 5 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     4017
+Keywords cup of pepsi~
+Type     drinkcon~
+Short    a cup of Pepsi~
+Long     A Pepsi cup with the BK logo has been dropped here.~
+WFlags   take hold~
+Values   35 35 15 0 0 0
+Stats    1 10 1 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     4018
+Keywords Whopper sandwich~
+Type     food~
+Short    a Burger King Whopper~
+Long     A Burger King sandwich is wrapped up here.~
+WFlags   take hold~
+Values   50 50 0 0 0 0
+Stats    1 15 1 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     4019
+Keywords Burger King fries~
+Type     food~
+Short    Burger King fries~
+Long     A package of Burger King fries is here.~
+WFlags   take~
+Values   20 20 0 0 0 0
+Stats    1 5 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     4020
+Keywords slice of pepperoni pizza~
+Type     food~
+Short    a slice of pepperoni pizza~
+Long     A slice of pizza has been discarded in the dirt.~
+WFlags   take hold~
+Values   50 50 0 0 0 0
+Stats    1 15 1 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     4021
+Keywords italian cream soda~
+Type     drinkcon~
+Short    an Italian cream soda~
+Long     An Italian cream soda bottle has been dropped here.~
+WFlags   take hold~
+Values   50 50 15 0 0 0
+Stats    2 30 3 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     4022
+Keywords chocolate pretzels~
+Type     food~
+Short    a bag of chocolate pretzels~
+Long     A bag of chocolate pretzels is here, melting.~
+WFlags   take~
+Values   20 20 0 0 0 0
+Stats    1 10 1 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     4023
+Keywords giant chocolate chip cookie~
+Type     food~
+Short    a giant chocolate chip cookie~
+Long     A giant chocolate chip cookie has been dropped here.~
+Flags    inventory~
+WFlags   take hold~
+Values   100 100 0 0 0 0
+Stats    10 50 5 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     4024
+Keywords flowing trench coat~
+Type     armor~
+Short    a long black trench coat~
+Long     A long flowing black trench coat is lying neglected here.~
+WFlags   take about~
+Values   50 50 0 0 0 0
+Stats    1 100 10 0 64
+#ENDOBJECT
+
+#OBJECT
+Vnum     4025
+Keywords baseball bat~
+Type     weapon~
+Short    a baseball bat~
+Long     A black aluminum baseball bat lies here.~
+WFlags   take wield~
+Values   5000 10 100 7 100000 100000
+Stats    10 100 10 0 0
+Affect       -1 -1 10 1 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     4099
+Keywords last~
+Type     trash~
+Short    a last~
+Long     A last is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     4000
+Name     The Cantina~
+Sector   inside~
+Flags    nomob indoors~
+Desc     A nice, quit pub, filled with customers chatting about their mobilesuit
+exploits in space. A bar is available for your alcohol or food needs, but
+be careful! It's not safe to drink and fly.
+&BType "&wlist&B" to view the wares.
+~
+#EXIT
+Direction north~
+ToRoom    4001
+#ENDEXIT
+
+Reset M 0 4055 1 4000
+  Reset G 1 202 1
+  Reset G 1 203 1
+  Reset G 1 807 1
+  Reset G 1 1351 1
+#ENDROOM
+
+#ROOM
+Vnum     4001
+Name     Parking Garage of New Saturn~
+Sector   inside~
+Flags    nomob can_land can_fly docking~
+Desc     Welcome to the New Saturn parking facility. The upper level is for
+interplanetary vessels, while land vehicles are parked downstairs. This
+planet was colonized by the United States, and the American influence is
+omnipresent. The walls are dirty and sprayed with graffiti, and this area
+is very similar to that of a large American city. Tall buildings rise all
+around, and the area is bustling with people.  To the north is a stairway
+which leads to the streets below.
+~
+#EXIT
+Direction north~
+ToRoom    4002
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    4000
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4002
+Name     A Stairwell~
+Sector   inside~
+Flags    indoors~
+Desc     This stairwell connects the raised parking garage to the streets below.
+Considering how busy of a city this is, you literally have to push your
+way down the stairs. People crowd the steps, commuting from their homes or
+offices. Just past here is the street, which is by no means empty, but at
+least there is some room to breathe.
+~
+#EXIT
+Direction south~
+ToRoom    4001
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    4003
+Desc      The Stairs
+~
+Keywords  The Stairs~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4003
+Name     Streets of New Saturn~
+Sector   city~
+Desc     The streets of New Saturn are busy, but this far south, the crowd thins
+slightly. Visible to the north is thicker pedestrian traffic and taller
+buildings, as well as looking a bit more interesting. Perhaps going north
+would be the best option.
+~
+#EXIT
+Direction north~
+ToRoom    4004
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    4002
+#ENDEXIT
+
+Reset M 0 4050 16 4003
+#ENDROOM
+
+#ROOM
+Vnum     4004
+Name     Streets of New Saturn~
+Sector   city~
+Desc     The streets of New Saturn are busy, but this far south, the crowd thins
+slightly. Visible to the north is thicker pedestrian traffic and taller
+buildings, as well as looking a bit more interesting. Perhaps going north
+would be the best option.
+~
+#EXIT
+Direction north~
+ToRoom    4005
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    4003
+#ENDEXIT
+
+Reset M 0 4050 16 4004
+#ENDROOM
+
+#ROOM
+Vnum     4005
+Name     Streets of New Saturn~
+Sector   city~
+Desc     This area of the street has exits going to the east and the west. Down the
+sidewalk to east, you can make out the outline of a building a few blocks
+away. However, the view down the western alley is not quite visible. It
+looks a litle dangerous, but you hear voices down that way, so there must
+be someone there. 
+~
+#EXIT
+Direction north~
+ToRoom    4006
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    4046
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    4004
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4047
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4006
+Name     Streets of New Saturn~
+Sector   city~
+Desc     Almost to the downtown area, you make out a building a few blocks north
+that resembles a bus terminal. Behind it, there are large crowds and tall
+buildings, and it looks interesting. Continue north to explore downtown,
+or south to return to the Interstellar parking garage.
+~
+#EXIT
+Direction north~
+ToRoom    4007
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    4005
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4007
+Name     Streets of New Saturn~
+Sector   city~
+Desc     Entering the downtown area, you see a Bus Terminal to the north. Perhaps
+you can use that to travel to other areas, or just bypass it to explore
+the rest of downtown.
+~
+#EXIT
+Direction north~
+ToRoom    4008
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    4006
+#ENDEXIT
+
+Reset M 0 4050 16 4007
+#ENDROOM
+
+#ROOM
+Vnum     4008
+Name     Bus Terminal~
+Sector   city~
+Flags    nomob indoors~
+Desc     The center of the city of New Saturn, this bus terminal has routes which
+lead to the other areas of the city. There is a mall on the eastern side
+of town, and a subsidized housing complex on the south-west side. To go to
+these areas, Simply: 
+&BSay "&wMall&B" to go to the mall.
+~
+#EXIT
+Direction east~
+ToRoom    4009
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    4007
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   mall~
+Comlist   mpechoat $n Next stop, New Saturn Mall!
+mpechoaround $n $n&n boards a bus to the New Saturn Mall.
+mptransfer $n 4051
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     4009
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction east~
+ToRoom    4010
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4008
+#ENDEXIT
+
+Reset M 0 4050 16 4009
+#ENDROOM
+
+#ROOM
+Vnum     4010
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction east~
+ToRoom    4011
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4009
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4011
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction east~
+ToRoom    4012
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4010
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4012
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction north~
+ToRoom    4013
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4011
+#ENDEXIT
+
+Reset M 0 4050 16 4012
+#ENDROOM
+
+#ROOM
+Vnum     4013
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction north~
+ToRoom    4014
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    4012
+#ENDEXIT
+
+Reset M 0 4052 6 4013
+Reset M 0 4053 5 4013
+#ENDROOM
+
+#ROOM
+Vnum     4014
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction north~
+ToRoom    4015
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    4013
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4015
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction south~
+ToRoom    4014
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4016
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4016
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction east~
+ToRoom    4015
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4017
+#ENDEXIT
+
+Reset M 0 4053 5 4016
+#ENDROOM
+
+#ROOM
+Vnum     4017
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction east~
+ToRoom    4016
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    4042
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4018
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4018
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction east~
+ToRoom    4017
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4019
+#ENDEXIT
+
+Reset M 0 4051 8 4018
+#ENDROOM
+
+#ROOM
+Vnum     4019
+Name     Downtown~
+Sector   city~
+Desc     Finally, something that looks decent in this pit of urban decay. The hotel
+to your north looks pretty lavishly decorated, and perhaps would be a
+great nights stay. Maybe a person like yourself would like to stay there
+for a while and relax. 
+~
+#EXIT
+Direction north~
+ToRoom    4050
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    4018
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4020
+#ENDEXIT
+
+Reset M 0 4050 16 4019
+#ENDROOM
+
+#ROOM
+Vnum     4020
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction east~
+ToRoom    4019
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4021
+#ENDEXIT
+
+Reset M 0 4052 6 4020
+#ENDROOM
+
+#ROOM
+Vnum     4021
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction east~
+ToRoom    4020
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    4038
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4022
+#ENDEXIT
+
+Reset M 0 4052 6 4021
+Reset M 0 4050 16 4021
+#ENDROOM
+
+#ROOM
+Vnum     4022
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction east~
+ToRoom    4021
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4023
+#ENDEXIT
+
+Reset M 0 4050 16 4022
+Reset M 0 4052 6 4022
+#ENDROOM
+
+#ROOM
+Vnum     4023
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction east~
+ToRoom    4022
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    4024
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4024
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction north~
+ToRoom    4023
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    4025
+#ENDEXIT
+
+Reset M 0 4051 8 4024
+Reset M 0 4050 16 4024
+#ENDROOM
+
+#ROOM
+Vnum     4025
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction north~
+ToRoom    4024
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    4026
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4026
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction north~
+ToRoom    4025
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    4027
+#ENDEXIT
+
+Reset M 0 4050 16 4026
+#ENDROOM
+
+#ROOM
+Vnum     4027
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction east~
+ToRoom    4028
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4026
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4028
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction north~
+ToRoom    4030
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    4029
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4027
+#ENDEXIT
+
+Reset M 0 4053 6 4028
+#ENDROOM
+
+#ROOM
+Vnum     4029
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction west~
+ToRoom    4028
+#ENDEXIT
+
+Reset M 0 4050 16 4029
+Reset M 0 4052 7 4029
+#ENDROOM
+
+#ROOM
+Vnum     4030
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction east~
+ToRoom    4032
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    4028
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4031
+#ENDEXIT
+
+Reset M 0 4050 16 4030
+#ENDROOM
+
+#ROOM
+Vnum     4031
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction east~
+ToRoom    4030
+#ENDEXIT
+
+Reset M 0 4053 5 4031
+#ENDROOM
+
+#ROOM
+Vnum     4032
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction north~
+ToRoom    4039
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    4033
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4030
+#ENDEXIT
+
+Reset M 0 4051 8 4032
+#ENDROOM
+
+#ROOM
+Vnum     4033
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction east~
+ToRoom    4034
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4032
+#ENDEXIT
+
+Reset M 0 4051 8 4033
+Reset M 0 4053 5 4033
+#ENDROOM
+
+#ROOM
+Vnum     4034
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction north~
+ToRoom    4041
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    4035
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4033
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4035
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction east~
+ToRoom    4036
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4034
+#ENDEXIT
+
+Reset M 0 4054 3 4035
+Reset M 0 4050 16 4035
+#ENDROOM
+
+#ROOM
+Vnum     4036
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction west~
+ToRoom    4035
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4037
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction east~
+ToRoom    4038
+#ENDEXIT
+
+Reset M 0 4053 5 4037
+Reset M 0 4051 8 4037
+#ENDROOM
+
+#ROOM
+Vnum     4038
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction north~
+ToRoom    4021
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    4039
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4037
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4039
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction east~
+ToRoom    4040
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    4032
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4038
+#ENDEXIT
+
+Reset M 0 4051 8 4039
+Reset M 0 4051 8 4039
+Reset M 0 4052 6 4039
+#ENDROOM
+
+#ROOM
+Vnum     4040
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction east~
+ToRoom    4041
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4039
+#ENDEXIT
+
+Reset M 0 4054 3 4040
+Reset M 0 4050 16 4040
+#ENDROOM
+
+#ROOM
+Vnum     4041
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction east~
+ToRoom    4042
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    4034
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4040
+#ENDEXIT
+
+Reset M 0 4054 3 4041
+#ENDROOM
+
+#ROOM
+Vnum     4042
+Name     Downtown~
+Sector   city~
+Desc     The downtown area of the city, tall buildings and busy citizens surround
+you on every side. Businessmen, mothers and their children, and even just
+punk kids wander the streets on the way to their respective destinations.
+They look pretty strong, especially the kids. They appear to all dress the
+same, and their colors suggest they possibly are gang members. Better
+watch it around them.
+~
+#EXIT
+Direction north~
+ToRoom    4017
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    4043
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4041
+#ENDEXIT
+
+Reset M 0 4052 6 4042
+#ENDROOM
+
+#ROOM
+Vnum     4043
+Name     New Saturn Hospital~
+Sector   city~
+Flags    nomob heal~
+Desc     Deep in the heart of downtown, the New Saturn Hospital. Here you can heal
+the wounds caused by the gangs wondering the city streets.
+~
+#EXIT
+Direction west~
+ToRoom    4042
+#ENDEXIT
+
+Reset M 0 4050 16 4043
+#ENDROOM
+
+#ROOM
+Vnum     4044
+Name     First New Saturn Bank~
+Sector   city~
+Flags    nomob indoors bank~
+Desc     The Bank of New Saturn, you can use this facility to deposit, withdraw, or
+transfer your bank funds. It's wise to store extra money here, because an
+untimely death could lead to loss of funds, and bank interest could be an
+immense help if you are saving up your money for a mobile suit.
+~
+#EXIT
+Direction west~
+ToRoom    4045
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4045
+Name     A Sidewalk~
+Sector   city~
+Desc     Lush green artificial grass surrounds the sidewalk which apparently leads
+to the colony bank. It's edifice is visible a block or so to your east. If
+you have some spare cash, it would be wise to deposit it.
+~
+#EXIT
+Direction east~
+ToRoom    4044
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4046
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4046
+Name     A Sidewalk~
+Sector   city~
+Desc     Lush green artificial grass surrounds the sidewalk which apparently leads
+to the colony bank. It's edifice is visible a block or so to your east. If
+you have some spare cash, it would be wise to deposit it.
+~
+#EXIT
+Direction north~
+ToRoom    4084
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    4045
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4005
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4047
+Name     Alleyway~
+Sector   city~
+Desc     This alley is somewhat frightening. If it were not for the fact that there
+are obviously others down here from the voices, a person would have to be
+insane to venture it. Perhaps the fear is worth what awaits one brave
+enough to journey this dark alley.
+~
+#EXIT
+Direction east~
+ToRoom    4005
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4048
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4048
+Name     Alleyway~
+Sector   city~
+Desc     Still dark, but to the west you can make out the sillouette of a tall
+gentleman leaning against the wall, talking to one of his associates. Is
+he friend or foe? Why don't you go see for yourself.
+~
+#EXIT
+Direction east~
+ToRoom    4047
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4049
+#ENDEXIT
+
+Reset M 0 4050 13 4048
+Reset M 0 4052 8 4048
+Reset M 0 4053 5 4048
+#ENDROOM
+
+#ROOM
+Vnum     4049
+Name     Dead End~
+Sector   city~
+Desc     A chain link fence prohibits movement farther west, however this dead end
+is not a total loss. Tyrone is here, and he's got the goods. Good thing
+there isn't a cop around.
+&BIf you are in the need for drugs, type "&wlist&B."
+&BIf he seems to be out of something, ask for "&wdrugs&B."
+~
+#EXIT
+Direction east~
+ToRoom    4048
+#ENDEXIT
+
+Reset M 0 4056 1 4049
+  Reset G 1 5101 1
+  Reset G 1 5102 1
+  Reset G 1 5100 1
+  Reset G 1 4001 1
+#ENDROOM
+
+#ROOM
+Vnum     4050
+Name     The Capitol Hotel~
+Sector   city~
+Flags    nomob indoors hotel~
+Desc     Nestled on the northern edge of the city is the once beautiful and
+luxurious Capitol Hotel. This hotel once made host to the most prestigous
+visitors to Saturn, but now is more than showing signs of urban decay.
+It's still quite fancy, but is taking on the appearace of the city around
+it  dirty, dark, and somewhat decrepid. No matter, it will serve your
+purpose well if you just want to spend the night here.
+~
+#EXIT
+Direction south~
+ToRoom    4019
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4051
+Name     Entrance to the New Saturn Mall~
+Sector   inside~
+Desc     The doorway to the edifice of commerce in the community, the local mall.
+People come and go through the clear glass doorways either carrying bags
+of purchases or looking eager to shop. This mall is interplanetarily known
+for its good merchandise and great bargains, and it would probably be wise
+to check it out.
+&BTo return to downtown, simply say "&wDowntown&B."
+~
+#EXIT
+Direction north~
+ToRoom    4052
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p downtown~
+Comlist   mpechoat $n Next stop, Downtown area!
+mpechoaround $n boards a bus to Downtown New Saturn.
+mptransfer $n 4008
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     4052
+Name     Main Court~
+Sector   inside~
+Desc     The main court of the mall where people enter and exit, there doesn't seem
+to be much shopping to be done here. Better continue on to the two lower
+floors.
+~
+#EXIT
+Direction south~
+ToRoom    4051
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    4054
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4053
+Name     Up Escalator~
+Sector   inside~
+Desc     This escalator returns to the main court and exit to the mall. Be careful,
+however: accidents have occured in times past on escalators. Treat it with
+utmost respect and use caution to avoid the area between the moving stairs
+when riding it.
+~
+#EXIT
+Direction west~
+ToRoom    4062
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    4052
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4054
+Name     Down Escalator~
+Sector   inside~
+Desc     This escalator leads down to mid-level of the mall. Be careful, however:
+accidents have occured in times past on escalators. Treat it with utmost
+respect and use caution to avoid the area between the moving stairs when
+riding it. 
+~
+#EXIT
+Direction east~
+ToRoom    4055
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4055
+Name     Mid-level~
+Sector   inside~
+Desc     The Mid-Level of the mall, this is where the shops are located. The
+entrance/exit to the mall is up one level, and the food court is located
+down a level.
+~
+#EXIT
+Direction north~
+ToRoom    4056
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    4064
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4054
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4056
+Name     Mid-level~
+Sector   inside~
+Desc     The Mid-Level of the mall, this is where the shops are located. The
+entrance/exit to the mall is up one level, and the food court is located
+down a level.
+~
+#EXIT
+Direction south~
+ToRoom    4055
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4058
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4057
+Name     The Backroom~
+Sector   inside~
+Desc     You've stumbled into the backroom of the Fashionable Male. How did these
+too stoners get back here though? Wow, check out that bat in his hand...
+these two look dangerous!
+~
+#EXIT
+Direction west~
+ToRoom    4079
+#ENDEXIT
+
+Reset M 0 4058 1 4057
+  Reset E 1 4025 1 16
+Reset M 0 4057 1 4057
+  Reset E 1 4024 1 12
+#ENDROOM
+
+#ROOM
+Vnum     4058
+Name     Mid-level~
+Sector   inside~
+Desc     The Mid-Level of the mall, this is where the shops are located. The
+entrance/exit to the mall is up one level, and the food court is located
+down a level.
+~
+#EXIT
+Direction east~
+ToRoom    4056
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4059
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4059
+Name     Mid-level~
+Sector   inside~
+Desc     The Mid-Level of the mall, this is where the shops are located. The
+entrance/exit to the mall is up one level, and the food court is located
+down a level. There is a toy shop to the north, and a men's clothing store
+to the south.
+~
+#EXIT
+Direction north~
+ToRoom    4078
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    4058
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    4079
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4060
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4060
+Name     Mid-level~
+Sector   inside~
+Desc     The Mid-Level of the mall, this is where the shops are located. The
+entrance/exit to the mall is up one level, and the food court is located
+down a level.
+~
+#EXIT
+Direction east~
+ToRoom    4059
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4061
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4061
+Name     Mid-level~
+Sector   inside~
+Desc     The Mid-Level of the mall, this is where the shops are located. The
+entrance/exit to the mall is up one level, and the food court is located
+down a level.
+~
+#EXIT
+Direction east~
+ToRoom    4060
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    4062
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4062
+Name     Mid-level~
+Sector   inside~
+Desc     The Mid-Level of the mall, this is where the shops are located. The
+entrance/exit to the mall is up one level, and the food court is located
+down a level. You can return to the entrance/exit by using the escalator
+to the east.
+~
+#EXIT
+Direction north~
+ToRoom    4061
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    4053
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    4063
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4063
+Name     Mid-level~
+Sector   inside~
+Desc     The Mid-Level of the mall, this is where the shops are located. The
+entrance/exit to the mall is up one level, and the food court is located
+down a level. There is a comic store the the east, and a women's clothing
+store the the west.
+~
+#EXIT
+Direction north~
+ToRoom    4062
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    4083
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4082
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4064
+Name     Mid-level~
+Sector   inside~
+Desc     The Mid-Level of the mall, this is where the shops are located. The
+entrance/exit to the mall is up one level, and the food court is located
+down a level. There is a cookie stand to the east, and a pet store to the
+west. Also, continue down to see the eateries.
+~
+#EXIT
+Direction north~
+ToRoom    4055
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    4081
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4080
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    4065
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4065
+Name     Down Escalator~
+Sector   inside~
+Desc     This escalator leads down to the lower level of the mall containing the
+food court. Be careful, however: accidents have occured in times past on
+escalators. Treat it with utmost respect and use caution to avoid the area
+between the moving stairs when riding it.
+~
+#EXIT
+Direction south~
+ToRoom    4066
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4066
+Name     Lower level~
+Sector   inside~
+Desc     The lower level of the mall, there isn't much here but eateries. If you
+wish to eat, continue toward the food court, if not, go past it to the up
+escalator and return to mid-level.
+~
+#EXIT
+Direction north~
+ToRoom    4065
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    4067
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4067
+Name     Lower level~
+Sector   inside~
+Desc     The lower level of the mall, there isn't much here but eateries. If you
+wish to eat, continue toward the food court, if not, go past it to the up
+escalator and return to mid-level.
+~
+#EXIT
+Direction north~
+ToRoom    4066
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    4068
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4068
+Name     Lower level~
+Sector   inside~
+Desc     The lower level of the mall, there isn't much here but eateries. If you
+wish to eat, continue toward the food court, if not, go past it to the up
+escalator and return to mid-level.
+~
+#EXIT
+Direction west~
+ToRoom    4067
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    4069
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4069
+Name     The Food Court~
+Sector   inside~
+Desc     The food court of the mall, there are fine eateries in all directions!
+Enjoy a nice burger, chicken sandwhich, slice of pizza, or a fabulous cup
+of coffee for you international types.
+~
+#EXIT
+Direction north~
+ToRoom    4074
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    4076
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    4075
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4077
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    4070
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    4068
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4070
+Name     Lower level~
+Sector   inside~
+Desc     The lower level of the mall, there isn't much here but eateries. If you
+wish to eat, go back toward the food court, if not, continue to the up
+escalator and return to mid-level.
+~
+#EXIT
+Direction east~
+ToRoom    4071
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    4069
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4071
+Name     Lower level~
+Sector   inside~
+Desc     The lower level of the mall, there isn't much here but eateries. If you
+wish to eat, go back toward the food court, if not, continue to the up
+escalator and return to mid-level.
+~
+#EXIT
+Direction north~
+ToRoom    4072
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    4070
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4072
+Name     Lower level~
+Sector   inside~
+Desc     The lower level of the mall, there isn't much here but eateries. If you
+wish to eat, go back toward the food court, if not, continue to the up
+escalator and return to mid-level.
+~
+#EXIT
+Direction north~
+ToRoom    4073
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    4071
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4073
+Name     Up Escalator~
+Sector   inside~
+Desc     This escalator leads upward back to the mid-level of the mall containing
+the shops. Be careful, however: accidents have occured in times past on
+escalators. Treat it with utmost respect and use caution to avoid the area
+between the moving stairs when riding it.
+~
+#EXIT
+Direction south~
+ToRoom    4072
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    4063
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4074
+Name     Starbucks~
+Sector   inside~
+Desc     Seattle's own, Starbucks coffee! The best mix of commerce and college
+students in one room you have ever seen. How could such a
+commercialization of java become so popular, you wonder. Oh well, its darn
+good!
+~
+#EXIT
+Direction south~
+ToRoom    4069
+#ENDEXIT
+
+Reset M 0 4060 1 4074
+  Reset G 1 4012 1
+  Reset G 1 4013 1
+  Reset G 1 4014 1
+#ENDROOM
+
+#ROOM
+Vnum     4075
+Name     Chik-fil-A~
+Sector   inside~
+Desc     They didn't event the chicken,  just the chicken sandwich, a sign says.
+Mmm... chicken. What wonderful sustanance. Finger lickin' good stuff,
+especially after a hard day of space travel.
+~
+#EXIT
+Direction north~
+ToRoom    4069
+#ENDEXIT
+
+Reset M 0 4066 1 4075
+  Reset G 1 4016 1
+  Reset G 1 4015 1
+#ENDROOM
+
+#ROOM
+Vnum     4076
+Name     Burger King~
+Sector   inside~
+Desc     Where a Kid can be a Kid. Who wants to be a kid, you want some grub! Order
+a whopper and a biggie-sized cola to quench that thirst and appetite.
+~
+#EXIT
+Direction west~
+ToRoom    4069
+#ENDEXIT
+
+Reset M 0 4067 1 4076
+  Reset G 1 4017 1
+  Reset G 1 4019 1
+  Reset G 1 4018 1
+#ENDROOM
+
+#ROOM
+Vnum     4077
+Name     Sbarro's~
+Sector   inside~
+Desc     Not in the mood for that American food? Go Italian! A nice big slice of
+pizza should hit the spot nicely if hunger is what pains you.
+~
+#EXIT
+Direction east~
+ToRoom    4069
+#ENDEXIT
+
+Reset M 0 4068 1 4077
+  Reset G 1 4020 1
+  Reset G 1 4021 1
+#ENDROOM
+
+#ROOM
+Vnum     4078
+Name     Buy-Me Toys~
+Sector   inside~
+Desc     This may be a toy store, but from the looks of it, these toys are not toys
+at all! Very deadly looking weapons, not something you should let your
+kids play with for sure! Oh well, maybe they will be fun for you to 'play'
+with while you are out bountying those lawbreaking types.
+~
+#EXIT
+Direction south~
+ToRoom    4059
+#ENDEXIT
+
+Reset M 0 4059 1 4078
+  Reset G 1 4003 1
+  Reset G 1 4002 1
+#ENDROOM
+
+#ROOM
+Vnum     4079
+Name     The Fashionable Male~
+Sector   inside~
+Desc     A men's casual store, the clothing here seems to be mostly what you would
+consider 'upscale wannabe,' but the merchandise doesn't look too bad. You
+can pick up a nice outfit for a night on the town with the ladies, or out
+clubbin' or bar hopping with your buds.
+~
+#EXIT
+Direction north~
+ToRoom    4059
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    4057
+Flags     hidden~
+#ENDEXIT
+
+Reset M 0 4061 1 4079
+  Reset G 1 4007 1
+  Reset G 1 4005 1
+  Reset G 1 4006 1
+#ENDROOM
+
+#ROOM
+Vnum     4080
+Name     Tank's Gym~
+Sector   inside~
+Desc     You have entered Tank's Gym. Prepare to get pumped up! In this room you can
+train up your stats, improve your strength, speed, or whatever else you
+may need improvement in.
+~
+#EXIT
+Direction east~
+ToRoom    4064
+#ENDEXIT
+
+Reset M 0 4069 1 4080
+#ENDROOM
+
+#ROOM
+Vnum     4081
+Name     Time for Cookies~
+Sector   inside~
+Desc     You think to yourself, 'a food store, shouldn't it be on the food court?'
+and then you realize: just because it's an eatery doesn't mean it belongs
+on the food court. It's simply an autonomous unit for mid-mall snaking.
+Get the pretzels, they are exquisite.
+~
+#EXIT
+Direction west~
+ToRoom    4064
+#ENDEXIT
+
+Reset M 0 4064 1 4081
+  Reset G 1 4022 1
+  Reset G 1 4023 1
+#ENDROOM
+
+#ROOM
+Vnum     4082
+Name     Popular Girl~
+Sector   inside~
+Desc     This is a lovely little shop for girls. There is beautiful sexy lingerie,
+as well as some stylish fashions. Perfect for a date this Saturday with
+that special guy, or just hanging out shopping with your girl friends!
+~
+#EXIT
+Direction east~
+ToRoom    4063
+#ENDEXIT
+
+Reset M 0 4065 1 4082
+  Reset G 1 4008 1
+  Reset G 1 4009 1
+  Reset G 1 4010 1
+  Reset G 1 4011 1
+#ENDROOM
+
+#ROOM
+Vnum     4083
+Name     Comic Toast~
+Sector   inside~
+Desc     This place is crowded! Apparently Stan Lee is here signing autographs. It's
+drawing quite a crowd. Too bad that you can't get comics though. You can
+still get an autograph from The Man himself, however. 
+~
+#EXIT
+Direction west~
+ToRoom    4063
+#ENDEXIT
+
+Reset M 0 4062 1 4083
+#ENDROOM
+
+#ROOM
+Vnum     4084
+Name     A Flower Stand~
+Sector   city~
+Desc     This is a small flower stand that a little girl made to sell her flowers.
+It stands a few feet from the sidewalk in the grass surrounded by flowers
+that the little girl has gathered.
+~
+#EXIT
+Direction south~
+ToRoom    4046
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     4099
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ENDAREA

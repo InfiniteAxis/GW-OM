@@ -1,0 +1,1913 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         Mexico~
+Author       Debaser~
+Ranges       1 1007 1 1007
+Economy      0 165632857
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       10600
+Keywords   A Mexican Customs Officer~
+Short      A Mexican customs officer~
+Long       A Mexican customs officer stands here on alert.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_customs_weapons~
+Gender     nonbinary~
+Actflags   npc sentinel stayarea~
+Stats1     0 999 0 -2397 0 0
+Stats2     199 10 9990
+Stats3     99 4 2
+Stats4     0 0 0 199 199
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Bodyparts  head arms legs heart brains guts hands~
+Attacks    bite punch kick~
+Defenses   parry dodge~
+#ENDMOBILE
+
+#MOBILE
+Vnum       10601
+Keywords   A Drunken Mexican~
+Short      A Drunken Mexican~
+Long       A Drunken mexican stumbles about.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 10 0 75 0 0
+Stats2     2 10 100
+Stats3     1 4 2
+Stats4     0 0 0 2 2
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Bodyparts  head arms legs heart brains guts hands~
+Attacks    kick~
+Defenses   dodge~
+#ENDMOBILE
+
+#MOBILE
+Vnum       10602
+Keywords   An Ugly Mexican Armorer~
+Short      an Ugly Mexican Armorer~
+Long       An Ugly mexican armorer stands here selling some armor.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel stayarea nocorpse~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     fire cold electricity energy blunt pierce slash acid poison drain sleep charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       10603
+Keywords   A Young Female Shop Keeper~
+Short      A Young Female Shop Keeper~
+Long       A Young female shop keeper stands here patiently.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel stayarea nocorpse~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     fire cold electricity energy blunt pierce slash acid poison drain sleep~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       10604
+Keywords   A Mexican Weaponsmith~
+Short      a Mexican Weaponsmith~
+Long       A Mexican weaponsmith stands here selling weapons.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel stayarea nocorpse~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     fire cold electricity energy blunt pierce slash acid poison drain sleep~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       10605
+Keywords   A Young Mexican Waiter~
+Short      a Young Mexican Waiter~
+Long       A Young Mexican Waiter stands here patiently.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel stayarea nocorpse~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     fire cold electricity energy blunt pierce slash acid poison drain sleep~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       10606
+Keywords   An Ugly Mexican~
+Short      an Ugly Mexican~
+Long       An Ugly Mexican stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel stayarea nocorpse~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     fire cold electricity energy blunt pierce slash acid poison drain sleep~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       10607
+Keywords   An Old Mexican~
+Short      An Old Mexican~
+Long       An Old Mexican stands here patiently.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel stayarea nocorpse~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     fire cold electricity energy blunt pierce slash acid poison drain sleep~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       10608
+Keywords   Hologram Level 1 (mexico)~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1 0 97 10 0
+Stats2     0 10 10
+Stats3     0 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       10609
+Keywords   Hologram Level 2 (mexico)~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 77 0 -92 15 0
+Stats2     15 10 770
+Stats3     7 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       10610
+Keywords   Hologram Level 3 (mexico)~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 240 0 -500 20 0
+Stats2     48 10 2400
+Stats3     24 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       10611
+Keywords   Hologram Level 4 (mexico)~
+Short      a hologram~
+Long       A hologram stands ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 560 0 -1300 25 0
+Stats2     112 10 5600
+Stats3     56 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       10612
+Keywords   Hologram Level 5 (mexico)~
+Short      a hologram~
+Long       A hologram stands ready for combat.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 784 0 -1860 50 0
+Stats2     156 10 7840
+Stats3     78 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       10699
+Keywords   last~
+Short      a newly created last~
+Long       Some god abandoned a newly created last here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#OBJECT
+Vnum     10600
+Keywords A Rusted Plow~
+Type     weapon~
+Short    &wA &YRu&Ost&We&Yd &WP&wl&Wo&ww&x~
+Long     &wA &YRu&Ost&We&Yd &WP&wl&Wo&ww was misplaced here.&x~
+Flags    contraband inventory~
+WFlags   take wield~
+Values   1100 8 150 2 1000 0
+Stats    1 19000 1900 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10601
+Keywords An Old T-Shirt~
+Type     armor~
+Short    an Old T-Shirt~
+Long     An old t-shirt was misplaced here.~
+WFlags   take body~
+Values   10 10 0 0 0 0
+Stats    1 200 20 0 0
+Affect       -1 -1 2 18 0
+Affect       -1 -1 2 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10602
+Keywords Spanish 7x57mm Mauser Model 1893~
+Type     weapon~
+Short    &wSp&Wa&wn&Wish &w7x57mm &YM&Oa&Yu&Os&Ye&Or~
+Long     &wA &wSp&Wa&wn&Wish &w7x57mm &YM&Oa&Yu&Os&Ye&Or &wwas placed here.~
+Flags    contraband inventory~
+WFlags   take wield~
+Values   150 15 55 6 1000 0
+Stats    1 37000 3700 0 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 5 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10603
+Keywords Three Crowns Shield~
+Type     armor~
+Short    &wThree &YCr&Oown&Ys &wShield&G~
+Long     A shield with three crowns embedded into it lays here.~
+Flags    inventory~
+WFlags   take shield~
+Values   150 150 0 0 0 0
+Stats    2 21000 2100 0 0
+Affect       -1 -1 8 18 0
+Affect       -1 -1 8 19 0
+#EXDESC
+ExDescKey    plate armour~
+ExDesc       This plate of armour will give you protection until you can find
+something better. 
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     10604
+Keywords Legendary Scroll~
+Type     treasure~
+Short    &wA Legendary Scroll~
+Long     A Legendary Scroll floats about.~
+Flags    glow~
+WFlags   take protofloating~
+Values   0 0 0 0 0 0
+Stats    1 30000 3000 0 0
+Affect       -1 -1 1000 13 0
+Affect       -1 -1 -100 17 0
+Affect       -1 -1 15 18 0
+Affect       -1 -1 15 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10605
+Keywords Leather Armguards~
+Type     armor~
+Short    &wA set of &Wl&zea&Wt&zh&Wer &Carm&cgu&Card&cs&w~
+Long     &wA set of &Wl&zea&Wt&zh&Wer &Carm&cgu&Card&cs&w were placed here.~
+Flags    inventory~
+WFlags   take arms~
+Values   60 60 0 0 0 0
+Stats    5 19000 1900 0 1
+Affect       -1 -1 1000 13 0
+Affect       -1 -1 5 18 0
+#EXDESC
+ExDescKey    plate armour~
+ExDesc       This plate of armour will give you protection until you can find
+something better. 
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     10606
+Keywords Golden Armguards~
+Type     armor~
+Short    &wA Pair of &YGolden Plated&w Armguards~
+Long     &wA Set of &YGold Plated &warmguards were placed here.~
+Flags    inventory~
+WFlags   take arms~
+Values   100 100 0 0 0 0
+Stats    5 22000 2200 0 2
+Affect       -1 -1 1000 13 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 10 19 0
+Affect       -1 -1 -25 17 0
+#EXDESC
+ExDescKey    plate armour~
+ExDesc       This plate of armour will give you protection until you can find
+something better. 
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     10607
+Keywords 14-karat gold Poesy ring~
+Type     armor~
+Short    &wa &YGold &CPo&ce&Cs&cy &wring~
+Long     &wa &YGold &CPo&ce&Cs&cy &wring was placed here.~
+Flags    inventory~
+WFlags   take finger~
+Values   75 75 0 0 0 0
+Stats    1 11000 1100 0 0
+Affect       -1 -1 600 13 0
+Affect       -1 -1 8 18 0
+Affect       -1 -1 8 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10608
+Keywords Rusted .22 Pistol~
+Type     weapon~
+Short    &wa Rusted .22 Pistol~
+Long     &wA Rusted .22 caliber pistol was misplaced here.~
+Flags    inventory~
+WFlags   take wield~
+Values   0 15 30 6 1000 1000
+Stats    6 14000 1400 0 0
+Affect       -1 -1 5 18 0
+Affect       -1 -1 5 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10609
+Keywords A Diamond Necklace~
+Type     armor~
+Short    &wA &CD&ci&wa&Cm&won&cd &wNecklace~
+Long     &wA &CD&ci&wa&Cm&won&cd &wNecklace was droped here.~
+WFlags   take neck~
+Values   35 35 0 0 0 0
+Stats    1 14500 1450 0 0
+Affect       -1 -1 1000 13 0
+Affect       -1 -1 1000 14 0
+Affect       -1 -1 5 18 0
+Affect       -1 -1 5 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     10699
+Keywords last~
+Type     trash~
+Short    a last~
+Long     A last is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     10600
+Name     Mexico's Transport Pad~
+Sector   city~
+Flags    nomob~
+Desc     Welcome to Mexico. Around you are many Mexicans in small groups talking in
+fast spanish among themselves. A foul body odor smell hits you, comming from
+various groups of Mexicans. Small shuttles and private suits are flying back
+and forth around the transport pad in a hurry. Interpreters stand by,
+translating from english to spanish, and from spanish to english.
+~
+#EXIT
+Direction north~
+ToRoom    10601
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    800
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10601
+Name     Mexico's Customs Office~
+Sector   city~
+Desc     Welcome to Mexico Colony. Here is where all weapons and drugs are checked for
+to prevent smuggling. All weapons and drugs will be confiscated.
+~
+#EXIT
+Direction north~
+ToRoom    10602
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10600
+#ENDEXIT
+
+Reset M 0 10600 1 10601
+#ENDROOM
+
+#ROOM
+Vnum     10602
+Name     Mexico Colony Streets~
+Sector   city~
+Desc     These are Mexico's Colony Streets. Many drunk Mexicans stumble around after
+getting drunk from the local bars. A foul odor lingers around the streets 
+of this colony.
+~
+#EXIT
+Direction north~
+ToRoom    10605
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10601
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    10604
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    10603
+#ENDEXIT
+
+Reset M 0 10601 12 10602
+#ENDROOM
+
+#ROOM
+Vnum     10603
+Name     Mexico Colony Streets~
+Sector   city~
+Desc     These are Mexico's Colony Streets. Many drunk Mexicans stumble around after
+getting drunk from the local bars. A foul odor lingers around the streets 
+of this colony.
+~
+#EXIT
+Direction north~
+ToRoom    10623
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10606
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    10602
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10604
+Name     Mexico Colony Streets~
+Sector   city~
+Desc     These are Mexico's Colony Streets. Many drunk Mexicans stumble around after
+getting drunk from the local bars. A foul odor lingers around the streets 
+of this colony.
+~
+#EXIT
+Direction north~
+ToRoom    10613
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    10602
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10605
+Name     Mexico Colony Streets~
+Sector   city~
+Desc     These are Mexico's Colony Streets. Many drunk Mexicans stumble around after
+getting drunk from the local bars. A foul odor lingers around the streets 
+of this colony.
+~
+#EXIT
+Direction north~
+ToRoom    10618
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10602
+#ENDEXIT
+
+Reset M 0 10601 12 10605
+#ENDROOM
+
+#ROOM
+Vnum     10606
+Name     Mexico's Residential Area~
+Sector   city~
+Desc     This is Mexico's Residential Area. Empty apartments line the streets of
+this colony street. The smell here is not as strong as the odor comming
+from the streets nearby, but loud music can be heard from various
+apartments.
+~
+#EXIT
+Direction north~
+ToRoom    10611
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10603
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10612
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10607
+#ENDEXIT
+
+Reset M 0 10601 12 10606
+#ENDROOM
+
+#ROOM
+Vnum     10607
+Name     Mexico's Residential Area~
+Sector   city~
+Desc     This is Mexico's Residential Area. Empty apartments line the streets of
+this colony street. The smell here is not as strong as the odor comming
+from the streets nearby, but loud music can be heard from various
+apartments.
+~
+#EXIT
+Direction north~
+ToRoom    10608
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10606
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10610
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10609
+#ENDEXIT
+
+Reset M 0 10601 12 10607
+#ENDROOM
+
+#ROOM
+Vnum     10608
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction south~
+ToRoom    10607
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10609
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction east~
+ToRoom    10607
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10610
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction north~
+ToRoom    10607
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10611
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction south~
+ToRoom    10606
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10612
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction north~
+ToRoom    10606
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10613
+Name     Mexico Colony Streets~
+Sector   city~
+Desc     These are Mexico's Colony Streets. Many drunk Mexicans stumble around after
+getting drunk from the local bars. A foul odor lingers around the streets 
+of this colony.
+~
+#EXIT
+Direction east~
+ToRoom    10614
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10604
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10614
+Name     Mexico Colony Streets~
+Sector   city~
+Desc     These are Mexico's Colony Streets. Many drunk Mexicans stumble around after
+getting drunk from the local bars. A foul odor lingers around the streets 
+of this colony.
+~
+#EXIT
+Direction north~
+ToRoom    10615
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10616
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10613
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10615
+Name     The Bank of Mexico~
+Sector   city~
+Flags    indoors bank~
+Desc     Here is the big famous Bank Of Mexico. The center of it forms up in a big 
+gold dome, supported by large golden pillars, where a single crystal 
+chandelier hangs from. Towards the back of the bank, stand several bank 
+attendants ready to make any bank transactions.
+~
+#EXIT
+Direction south~
+ToRoom    10614
+#ENDEXIT
+
+Reset M 0 10601 12 10615
+#ENDROOM
+
+#ROOM
+Vnum     10616
+Name     Mexico Colony Streets~
+Sector   city~
+Desc     These are Mexico's Colony Streets. Many drunk Mexicans stumble around after
+getting drunk from the local bars. A foul odor lingers around the streets 
+of this colony.
+~
+#EXIT
+Direction north~
+ToRoom    10617
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10614
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10617
+Name     Mexico's Grand Hotel~
+Sector   city~
+Flags    indoors hotel~
+Desc     This is a large hotel, run down hotel, with a foul odor comming from the 
+rooms above. Loud noise fills the halls and lobby as mexicans party 
+upstairs in their room.
+~
+#EXIT
+Direction south~
+ToRoom    10616
+#ENDEXIT
+
+Reset M 0 10601 12 10617
+#ENDROOM
+
+#ROOM
+Vnum     10618
+Name     Mexico Colony Streets~
+Sector   city~
+Desc     These are Mexico's Colony Streets. Many drunk Mexicans stumble around after
+getting drunk from the local bars. A foul odor lingers around the streets 
+of this colony.
+~
+#EXIT
+Direction north~
+ToRoom    10619
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10605
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10619
+Name     Mexico Colony Streets~
+Sector   city~
+Desc     These are Mexico's Colony Streets. Many drunk Mexicans stumble around after
+getting drunk from the local bars. A foul odor lingers around the streets 
+of this colony.
+~
+#EXIT
+Direction south~
+ToRoom    10618
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10620
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    10625
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    10621
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10620
+Name     Mexico's Transit System~
+Sector   city~
+Flags    nomob indoors no_drive~
+Desc     &BSay 'Train' to get to Mexico's Training Center.&x
+&BSay 'Main' to get to Mexico's Colony Streets.
+&BSay 'Shop' to get to Mexico's Colony Shopping Center.
+~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   train~
+Comlist   mpechoat $n You are taken there.
+mpechoaround $n $n is taken away.
+mptransfer $n 10639
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   main~
+Comlist   mpechoat $n You are taken there.
+mpechoaround $n $n is taken away.
+mptransfer $n 10619
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   shop~
+Comlist   mpechoat $n You are taken there.
+mpechoaround $n $n is taken away.
+mptransfer $n 10647
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     10621
+Name     Mexico Colony Streets~
+Sector   city~
+Desc     These are Mexico's Colony Streets. Many drunk Mexicans stumble around after
+getting drunk from the local bars. A foul odor lingers around the streets 
+of this colony.
+~
+#EXIT
+Direction southeast~
+ToRoom    10619
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    10622
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10622
+Name     Mexico Colony Streets~
+Sector   city~
+Desc     These are Mexico's Colony Streets. Many drunk Mexicans stumble around after
+getting drunk from the local bars. A foul odor lingers around the streets 
+of this colony.
+~
+#EXIT
+Direction south~
+ToRoom    10624
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    10621
+#ENDEXIT
+
+Reset M 0 10601 12 10622
+#ENDROOM
+
+#ROOM
+Vnum     10623
+Name     Mexico Colony Streets~
+Sector   city~
+Desc     These are Mexico's Colony Streets. Many drunk Mexicans stumble around after
+getting drunk from the local bars. A foul odor lingers around the streets 
+of this colony.
+~
+#EXIT
+Direction north~
+ToRoom    10624
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10603
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10624
+Name     Mexico Colony Streets~
+Sector   city~
+Desc     These are Mexico's Colony Streets. Many drunk Mexicans stumble around after
+getting drunk from the local bars. A foul odor lingers around the streets 
+of this colony.
+~
+#EXIT
+Direction north~
+ToRoom    10622
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10623
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10625
+Name     &WA &YDi&Or&Yt &WPath~
+Sector   city~
+Desc     This is a small dirt path that seems to lead to nowhere..
+~
+#EXIT
+Direction southeast~
+ToRoom    10626
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    10619
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10626
+Name     &WA &YDi&Or&Yt &WPath~
+Sector   city~
+Desc     This is a small dirt path that seems to lead to nowhere..
+~
+#EXIT
+Direction east~
+ToRoom    10627
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    10625
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10627
+Name     &WA &YDi&Or&Yt &WPath~
+Sector   city~
+Desc     This is a small dirt path that seems to lead to nowhere..
+~
+#EXIT
+Direction west~
+ToRoom    10626
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    10628
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10628
+Name     &WA &YDi&Or&Yt &WPath~
+Sector   city~
+Desc     This is a small dirt path that seems to lead to nowhere..
+~
+#EXIT
+Direction north~
+ToRoom    10629
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    10627
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10629
+Name     &WEntering A &wR&Wi&wce &WPicking &YF&Oi&Ye&Ol&Yd ~
+Sector   city~
+Desc     This is a small dirt path that seems to lead to nowhere..
+~
+#EXIT
+Direction north~
+ToRoom    10630
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10628
+#ENDEXIT
+
+Reset M 0 10601 12 10629
+Reset M 0 10601 12 10629
+#ENDROOM
+
+#ROOM
+Vnum     10630
+Name     &wR&Wi&wce &WPicking &YF&Oi&Ye&Ol&Yd ~
+Sector   city~
+Desc     This is where most of the local colonists make money by picking rice. Large
+rice fields take up most of the colony spaces. These fields are full of
+rats and seem disease infected.
+~
+#EXIT
+Direction north~
+ToRoom    10634
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10631
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10629
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10632
+#ENDEXIT
+
+Reset M 0 10601 12 10630
+#ENDROOM
+
+#ROOM
+Vnum     10631
+Name     &wR&Wi&wce &WPicking &YF&Oi&Ye&Ol&Yd ~
+Sector   city~
+Desc     This is where most of the local colonists make money by picking rice. Large
+rice fields take up most of the colony spaces. These fields are full of
+rats and seem disease infected.
+~
+#EXIT
+Direction north~
+ToRoom    10633
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10630
+#ENDEXIT
+
+Reset M 0 10601 12 10631
+#ENDROOM
+
+#ROOM
+Vnum     10632
+Name     &wR&Wi&wce &WPicking &YF&Oi&Ye&Ol&Yd ~
+Sector   city~
+Desc     This is where most of the local colonists make money by picking rice. Large
+rice fields take up most of the colony spaces. These fields are full of
+rats and seem disease infected.
+~
+#EXIT
+Direction north~
+ToRoom    10635
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10630
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10633
+Name     &wR&Wi&wce &WPicking &YF&Oi&Ye&Ol&Yd ~
+Sector   city~
+Desc     This is where most of the local colonists make money by picking rice. Large
+rice fields take up most of the colony spaces. These fields are full of
+rats and seem disease infected.
+~
+#EXIT
+Direction north~
+ToRoom    10636
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10631
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10634
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10634
+Name     &wR&Wi&wce &WPicking &YF&Oi&Ye&Ol&Yd ~
+Sector   city~
+Desc     This is where most of the local colonists make money by picking rice. Large
+rice fields take up most of the colony spaces. These fields are full of
+rats and seem disease infected.
+~
+#EXIT
+Direction north~
+ToRoom    10637
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10633
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10630
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10635
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10635
+Name     &wR&Wi&wce &WPicking &YF&Oi&Ye&Ol&Yd ~
+Sector   city~
+Desc     This is where most of the local colonists make money by picking rice. Large
+rice fields take up most of the colony spaces. These fields are full of
+rats and seem disease infected.
+~
+#EXIT
+Direction north~
+ToRoom    10638
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10634
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10632
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10636
+Name     &wR&Wi&wce &WPicking &YF&Oi&Ye&Ol&Yd ~
+Sector   city~
+Desc     This is where most of the local colonists make money by picking rice. Large
+rice fields take up most of the colony spaces. These fields are full of
+rats and seem disease infected.
+~
+#EXIT
+Direction south~
+ToRoom    10633
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10637
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10637
+Name     &wR&Wi&wce &WPicking &YF&Oi&Ye&Ol&Yd ~
+Sector   city~
+Desc     This is where most of the local colonists make money by picking rice. Large
+rice fields take up most of the colony spaces. These fields are full of
+rats and seem disease infected.
+~
+#EXIT
+Direction east~
+ToRoom    10636
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10634
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10638
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10638
+Name     &wR&Wi&wce &WPicking &YF&Oi&Ye&Ol&Yd ~
+Sector   city~
+Desc     This is where most of the local colonists make money by picking rice. Large
+rice fields take up most of the colony spaces. These fields are full of
+rats and seem disease infected.
+~
+#EXIT
+Direction east~
+ToRoom    10637
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10635
+#ENDEXIT
+
+Reset M 0 10601 12 10638
+#ENDROOM
+
+#ROOM
+Vnum     10639
+Name     Mexico Colony Training Facility~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    10620
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10649
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    10646
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10640
+Name     Combat Training Facility~
+Sector   city~
+Desc     There is Mexico's combat training facility. Here is where you can train 
+your combat kills at various levels. There are currently five different 
+levels that branch off from this large circular room.
+~
+#EXIT
+Direction north~
+ToRoom    10646
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10641
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10642
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10643
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    10644
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    10645
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10641
+Name     Training Room Level 1~
+Sector   city~
+Desc     Say '&BBegin&z' to load up a hologram.
+~
+#EXIT
+Direction west~
+ToRoom    10640
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho A hologram appears.
+mpmload 10608 1
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     10642
+Name     Training Room Level 2~
+Sector   city~
+Desc     Say '&BBegin&z' to load up a hologram.
+~
+#EXIT
+Direction north~
+ToRoom    10640
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho A hologram appears.
+mpmload 10609 1
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     10643
+Name     Training Room Level 3~
+Sector   city~
+Desc     Say '&BBegin&z' to load up a hologram.
+~
+#EXIT
+Direction east~
+ToRoom    10640
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho A hologram appears.
+mpmload 10610 1
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     10644
+Name     Training Room Level 4~
+Sector   city~
+Desc     Say '&BBegin&z' to load up a hologram.
+~
+#EXIT
+Direction down~
+ToRoom    10640
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho A hologram appears.
+mpmload 10611 1
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     10645
+Name     Training Room Level 5~
+Sector   city~
+Desc     Say '&BBegin&z' to load up a hologram.
+~
+#EXIT
+Direction up~
+ToRoom    10640
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho A hologram appears.
+mpmload 10612 1
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     10646
+Name     Entering Training Facility~
+Sector   city~
+#EXIT
+Direction south~
+ToRoom    10640
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    10639
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10647
+Name     Mexico Colony Shopping Center~
+Sector   city~
+Desc     This is Mexico's Shopping Distric. People are rushing in and out of stores 
+in a hurry. The foul odor from before still lingers bout the streets of 
+this colony.
+~
+#EXIT
+Direction west~
+ToRoom    10620
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    10648
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    10655
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10648
+Name     Mexico's Shopping District~
+Sector   city~
+Desc     This is Mexico's Shopping Distric. People are rushing in and out of stores 
+in a hurry. The foul odor from before still lingers bout the streets of 
+this colony.
+~
+#EXIT
+Direction east~
+ToRoom    10650
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    10647
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10649
+Name     Healing Center~
+Sector   city~
+Flags    heal~
+Desc     This is a small room, with several rows of bed with people who have
+overdone there workout with the holograms. There is space for you to heal
+here, and the nurses seem welcoming.
+~
+#EXIT
+Direction north~
+ToRoom    10639
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10650
+Name     Mexico's Shopping District~
+Sector   city~
+Desc     This is Mexico's Shopping Distric. People are rushing in and out of stores 
+in a hurry. The foul odor from before still lingers bout the streets of 
+this colony.
+~
+#EXIT
+Direction west~
+ToRoom    10648
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    10651
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10651
+Name     Mexico's Shopping District~
+Sector   city~
+Desc     This is Mexico's Shopping Distric. People are rushing in and out of stores 
+in a hurry. The foul odor from before still lingers bout the streets of 
+this colony.
+~
+#EXIT
+Direction north~
+ToRoom    10664
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10652
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    10660
+Flags     hidden~
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    10650
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10652
+Name     Mexico's Shopping District~
+Sector   city~
+Desc     This is Mexico's Shopping Distric. People are rushing in and out of stores 
+in a hurry. The foul odor from before still lingers bout the streets of 
+this colony.
+~
+#EXIT
+Direction north~
+ToRoom    10651
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10658
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10653
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    10659
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10653
+Name     Mexico's Shopping District~
+Sector   city~
+Desc     This is Mexico's Shopping Distric. People are rushing in and out of stores 
+in a hurry. The foul odor from before still lingers bout the streets of 
+this colony.
+~
+#EXIT
+Direction north~
+ToRoom    10652
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    10657
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    10656
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    10654
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10654
+Name     Mexico's Shopping District~
+Sector   city~
+Desc     This is Mexico's Shopping Distric. People are rushing in and out of stores 
+in a hurry. The foul odor from before still lingers bout the streets of 
+this colony.
+~
+#EXIT
+Direction west~
+ToRoom    10655
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    10653
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10655
+Name     Mexico's Shopping District~
+Sector   city~
+Desc     This is Mexico's Shopping Distric. People are rushing in and out of stores 
+in a hurry. The foul odor from before still lingers bout the streets of 
+this colony.
+~
+#EXIT
+Direction east~
+ToRoom    10654
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    10647
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10656
+Name     Item Shop~
+Sector   city~
+Desc     The air here is cleaner than most other shops in this district. There is a 
+young female shop keeper here tending to the items of the shop. The items 
+are stocked neatly on the shelves. This is one of the cleanest shops in the 
+Mexico Colony.
+~
+#EXIT
+Direction north~
+ToRoom    10653
+#ENDEXIT
+
+Reset M 0 10603 1 10656
+  Reset G 1 10424 1
+  Reset G 1 2007 1
+  Reset G 1 2017 1
+#ENDROOM
+
+#ROOM
+Vnum     10657
+Name     Armor Shop~
+Sector   city~
+Desc     The air in this shop is musty, and a foul order comes of the armorer. Armor
+that you could call junk, lay around covered in dust on large round wooden 
+tables.
+~
+#EXIT
+Direction west~
+ToRoom    10653
+#ENDEXIT
+
+Reset M 0 10602 1 10657
+  Reset G 1 10601 1
+  Reset G 1 10609 1
+#ENDROOM
+
+#ROOM
+Vnum     10658
+Name     Weapon's Shop~
+Sector   city~
+Desc     You enter a small round shop with weapons stacked upon small wooden 
+shelves. The ordor from the street is still strong here. The shop owner 
+stands on one side of the shop watching over his weapons and looking for 
+thieves.
+~
+#EXIT
+Direction west~
+ToRoom    10652
+#ENDEXIT
+
+Reset M 0 10604 1 10658
+  Reset G 1 10600 1
+  Reset G 1 10602 1
+  Reset G 1 10608 1
+#ENDROOM
+
+#ROOM
+Vnum     10659
+Name     Local Restaurant~
+Sector   city~
+Desc     This is a local fast room restaurant. There are large round wooden tables 
+spread around with a couple of chairs around them. There is one single 
+waiter serving the people of this small restaurant.
+~
+#EXIT
+Direction east~
+ToRoom    10652
+#ENDEXIT
+
+Reset M 0 10605 1 10659
+  Reset G 1 4017 1
+  Reset G 1 10504 1
+#ENDROOM
+
+#ROOM
+Vnum     10660
+Name     Dark Hidden Path~
+Sector   city~
+Flags    dark~
+Desc     This is a dark hidden secret passage. The odor here is almost unbearable.
+~
+#EXIT
+Direction east~
+ToRoom    10661
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    10651
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10661
+Name     Dark Hidden Path~
+Sector   city~
+Flags    dark~
+Desc     This is a dark hidden secret passage. The odor here is almost unbearable.
+~
+#EXIT
+Direction west~
+ToRoom    10660
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    10662
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10662
+Name     Dark Hidden Path~
+Sector   city~
+Flags    dark~
+Desc     This is a dark hidden secret passage. The odor here is almost unbearable.
+~
+#EXIT
+Direction east~
+ToRoom    10663
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    10661
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10663
+Name     Mexican Black Market~
+Sector   city~
+Flags    dark~
+Desc     This is a small opening between the buildings in Mexico's Shopping 
+District. Here stands an ugly fat Mexican wearing a long trench coat, with 
+various drugs and stolen material laying around him.
+~
+#EXIT
+Direction west~
+ToRoom    10662
+#ENDEXIT
+
+Reset M 0 10606 1 10663
+#ENDROOM
+
+#ROOM
+Vnum     10664
+Name     Mexico's Shopping District~
+Sector   city~
+Desc     This is Mexico's Shopping Distric. People are rushing in and out of stores 
+in a hurry. The foul odor from before still lingers bout the streets of 
+this colony.
+~
+#EXIT
+Direction south~
+ToRoom    10651
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    10665
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     10665
+Name     Mexico's Medieval Shop~
+Sector   city~
+Desc     The lights here are turned down dim. Medieval shields and suits of armor
+decorate the walls of this shop. The shop keeper is here with a rag 
+polishing the centuries old treasure.
+~
+#EXIT
+Direction southwest~
+ToRoom    10664
+#ENDEXIT
+
+Reset M 0 10607 1 10665
+  Reset G 1 10603 1
+  Reset G 1 10604 1
+  Reset G 1 10605 1
+  Reset G 1 10606 1
+  Reset G 1 10607 1
+#ENDROOM
+
+#ROOM
+Vnum     10670
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     10699
+Name     Falling in Air~
+Sector   city~
+Flags    nomob nofloor~
+#ENDROOM
+
+#ENDAREA

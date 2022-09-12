@@ -1,0 +1,1086 @@
+#AREA   {PROTO} Vlad's area in progress~
+
+
+
+#AUTHOR Vlad~
+
+#RANGES
+0 0 0 0
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 0
+
+#MOBILES
+#400
+A White Belt~
+A White Belt~
+A White Belt stands here practicing basic poom sae
+~
+~
+3 0 100 Z
+10 0 75 2d10+100 1d4+2
+10 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+2 2 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+#401
+A Yellow Belt~
+A Yellow Belt~
+A Yellow Belt stands here practicing advanced poom sae
+~
+~
+3 0 100 Z
+20 0 50 4d10+200 2d4+2
+20 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+4 4 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+#402
+An Orange Belt~
+An Orange Belt~
+An Orange Belt stands here doing basic flips and rolling
+~
+~
+3 0 100 Z
+30 0 25 6d10+300 3d4+2
+30 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+6 6 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+#403
+A Green Belt~
+A Green Belt~
+A Green Belt stands here doing advanced rolling
+~
+~
+3 0 100 Z
+40 0 0 8d10+400 4d4+2
+40 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+8 8 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#0
+
+
+#ROOMS
+#400
+Deh Han Min Guk Do Jang~
+A strange odor drifts around the room which cannot be mistaken for the
+smell of sweat from the students that train hard in this Do Jang to become
+future Teh Kwon Do masters.  There are four different floors and each
+floor has different colored belts training.  There are sounds of students
+kyanging at the same time and making the whole do jang rumble.  Caution
+should be taken here.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 401
+D1
+~
+~
+0 -1 407
+S
+#401
+Deh Han Min Guk Do Jang~
+A strange odor drifts around the room which cannot be mistaken for the
+smell of sweat from the students that train hard in this Do Jang to become
+future Teh Kwon Do masters.  There are four different floors and each
+floor has different colored belts training.  There are sounds of students
+kyanging at the same time and making the whole do jang rumble.  Caution
+should be taken here.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 402
+D1
+~
+~
+0 -1 406
+D2
+~
+~
+0 -1 400
+S
+#402
+Deh Han Min Guk Do Jang~
+A strange odor drifts around the room which cannot be mistaken for the
+smell of sweat from the students that train hard in this Do Jang to become
+future Teh Kwon Do masters.  There are four different floors and each
+floor has different colored belts training.  There are sounds of students
+kyanging at the same time and making the whole do jang rumble.  Caution
+should be taken here.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 403
+D1
+~
+~
+0 -1 405
+D2
+~
+~
+0 -1 401
+S
+#403
+Deh Han Min Guk Do Jang~
+A strange odor drifts around the room which cannot be mistaken for the
+smell of sweat from the students that train hard in this Do Jang to become
+future Teh Kwon Do masters.  There are four different floors and each
+floor has different colored belts training.  There are sounds of students
+kyanging at the same time and making the whole do jang rumble.  Caution
+should be taken here.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 422
+D1
+~
+~
+0 -1 404
+D2
+~
+~
+0 -1 402
+D3
+~
+~
+0 -1 423
+S
+#404
+Deh Han Min Guk Do Jang~
+A strange odor drifts around the room which cannot be mistaken for the
+smell of sweat from the students that train hard in this Do Jang to become
+future Teh Kwon Do masters.  There are four different floors and each
+floor has different colored belts training.  There are sounds of students
+kyanging at the same time and making the whole do jang rumble.  Caution
+should be taken here.
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 408
+D2
+~
+~
+0 -1 405
+D3
+~
+~
+0 -1 403
+S
+#405
+Deh Han Min Guk Do Jang~
+A strange odor drifts around the room which cannot be mistaken for the
+smell of sweat from the students that train hard in this Do Jang to become
+future Teh Kwon Do masters.  There are four different floors and each
+floor has different colored belts training.  There are sounds of students
+kyanging at the same time and making the whole do jang rumble.  Caution
+should be taken here.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 404
+D1
+~
+~
+0 -1 409
+D2
+~
+~
+0 -1 406
+D3
+~
+~
+0 -1 402
+S
+#406
+Deh Han Min Guk Do Jang~
+A strange odor drifts around the room which cannot be mistaken for the
+smell of sweat from the students that train hard in this Do Jang to become
+future Teh Kwon Do masters.  There are four different floors and each
+floor has different colored belts training.  There are sounds of students
+kyanging at the same time and making the whole do jang rumble.  Caution
+should be taken here.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 405
+D1
+~
+~
+0 -1 410
+D2
+~
+~
+0 -1 407
+D3
+~
+~
+0 -1 401
+S
+#407
+Deh Han Min Guk Do Jang~
+A strange odor drifts around the room which cannot be mistaken for the
+smell of sweat from the students that train hard in this Do Jang to become
+future Teh Kwon Do masters.  There are four different floors and each
+floor has different colored belts training.  There are sounds of students
+kyanging at the same time and making the whole do jang rumble.  Caution
+should be taken here.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 406
+D1
+~
+~
+0 -1 411
+D2
+~
+~
+0 -1 416
+D3
+~
+~
+0 -1 400
+S
+#408
+Deh Han Min Guk Do Jang~
+A strange odor drifts around the room which cannot be mistaken for the
+smell of sweat from the students that train hard in this Do Jang to become
+future Teh Kwon Do masters.  There are four different floors and each
+floor has different colored belts training.  There are sounds of students
+kyanging at the same time and making the whole do jang rumble.  Caution
+should be taken here.
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 412
+D2
+~
+~
+0 -1 409
+D3
+~
+~
+0 -1 404
+S
+#409
+Deh Han Min Guk Do Jang~
+A strange odor drifts around the room which cannot be mistaken for the
+smell of sweat from the students that train hard in this Do Jang to become
+future Teh Kwon Do masters.  There are four different floors and each
+floor has different colored belts training.  There are sounds of students
+kyanging at the same time and making the whole do jang rumble.  Caution
+should be taken here.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 408
+D1
+~
+~
+0 -1 413
+D2
+~
+~
+0 -1 410
+D3
+~
+~
+0 -1 405
+S
+#410
+Deh Han Min Guk Do Jang~
+A strange odor drifts around the room which cannot be mistaken for the
+smell of sweat from the students that train hard in this Do Jang to become
+future Teh Kwon Do masters.  There are four different floors and each
+floor has different colored belts training.  There are sounds of students
+kyanging at the same time and making the whole do jang rumble.  Caution
+should be taken here.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 409
+D1
+~
+~
+0 -1 414
+D2
+~
+~
+0 -1 411
+D3
+~
+~
+0 -1 406
+S
+#411
+Deh Han Min Guk Do Jang~
+A strange odor drifts around the room which cannot be mistaken for the
+smell of sweat from the students that train hard in this Do Jang to become
+future Teh Kwon Do masters.  There are four different floors and each
+floor has different colored belts training.  There are sounds of students
+kyanging at the same time and making the whole do jang rumble.  Caution
+should be taken here.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 410
+D1
+~
+~
+0 -1 415
+D3
+~
+~
+0 -1 407
+S
+#412
+Deh Han Min Guk Do Jang~
+A strange odor drifts around the room which cannot be mistaken for the
+smell of sweat from the students that train hard in this Do Jang to become
+future Teh Kwon Do masters.  There are four different floors and each
+floor has different colored belts training.  There are sounds of students
+kyanging at the same time and making the whole do jang rumble.  Caution
+should be taken here. Up leads to a more advanced floor
+~
+0 1073741824 1
+D2
+~
+~
+0 -1 413
+D3
+~
+~
+0 -1 408
+D4
+~
+~
+0 -1 438
+S
+#413
+Deh Han Min Guk Do Jang~
+A strange odor drifts around the room which cannot be mistaken for the
+smell of sweat from the students that train hard in this Do Jang to become
+future Teh Kwon Do masters.  There are four different floors and each
+floor has different colored belts training.  There are sounds of students
+kyanging at the same time and making the whole do jang rumble.  Caution
+should be taken here.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 412
+D2
+~
+~
+0 -1 414
+D3
+~
+~
+0 -1 409
+S
+#414
+Deh Han Min Guk Do Jang~
+A strange odor drifts around the room which cannot be mistaken for the
+smell of sweat from the students that train hard in this Do Jang to become
+future Teh Kwon Do masters.   There are four different floors and each
+floor has different colored belts training.  There are sounds of students
+kyanging at the same time and making the whole do jang rumble.  Caution
+should be taken here.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 413
+D2
+~
+~
+0 -1 415
+D3
+~
+~
+0 -1 410
+S
+#415
+Deh Han Min Guk Do Jang~
+A strange odor drifts around the room which cannot be mistaken for the
+smell of sweat from the students that train hard in this Do Jang to become
+future Teh Kwon Do masters.  There are four different floors and each
+floor has different colored belts training.  There are sounds of students
+kyanging at the same time and making the whole do jang rumble.  Caution
+should be taken here.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 414
+D3
+~
+~
+0 -1 411
+S
+#416
+Road to a Deh Han Min Goku Do Jang~
+This road leads to the best and only Teh Kwon Do Do Jang in the world, the
+Deh Han Min Guk Do Jang.  From the distance, there are sounds of many
+students learning and practicing their pum sae and cha gi.  On the top of
+the building is a banner that states "Come one, come all to the one and
+only Teh Kwon Do Do Jang.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 407
+D2
+~
+~
+0 -1 417
+S
+#417
+Road to a Deh Han Min Goku Do Jang~
+This road leads to the best and only Teh Kwon Do Do Jang in the world, the
+Deh Han Min Guk Do Jang.  From the distance, there are sounds of many
+students learning and practicing their pum sae and cha gi.  On the top of
+the building is a banner that states "Come one, come all to the one and
+only Teh Kwon Do Do Jang.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 416
+S
+#418
+Deh Han Min Guk Do Jang~
+A strange odor drifts around the room which cannot be mistaken for the
+smell of sweat from the students that train hard in this Do Jang to become
+future Teh Kwon Do masters.  There are four differe floors and each floor
+has different colored belts training.  There are sounds of students
+kyanging at the same time and making the whole do jang rumble.  Caution
+should be taken here. Down leads to a more basic floor.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 427
+D3
+~
+~
+0 -1 419
+D5
+~
+~
+0 -1 442
+S
+#419
+Deh Han Min Guk Do Jang~
+A strange odor drifts around the room which cannot be mistaken for the
+smell of sweat from the students that train hard in this Do Jang to become
+future Teh Kwon Do masters.  There are four differe floors and each floor
+has different colored belts training.  There are sounds of students
+kyanging at the same time and making the whole do jang rumble.  Caution
+should be taken here.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 426
+D1
+~
+~
+0 -1 418
+D3
+~
+~
+0 -1 420
+S
+#420
+Deh Han Min Guk Do Jang~
+A strange odor drifts around the room which cannot be mistaken for the
+smell of sweat from the students that train hard in this Do Jang to become
+future Teh Kwon Do masters.  There are four differe floors and each floor
+has different colored belts training.  There are sounds of students
+kyanging at the same time and making the whole do jang rumble.  Caution
+should be taken here.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 425
+D1
+~
+~
+0 -1 419
+D3
+~
+~
+0 -1 421
+S
+#421
+Deh Han Min Guk Do Jang~
+A strange odor drifts around the room which cannot be mistaken for the
+smell of sweat from the students that train hard in this Do Jang to become
+future Teh Kwon Do masters.  There are four differe floors and each floor
+has different colored belts training.  There are sounds of students
+kyanging at the same time and making the whole do jang rumble.  Caution
+should be taken here.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 424
+D1
+~
+~
+0 -1 420
+S
+#422
+A Healing Sauna~
+As the door opens, steam escapes and the trainers urge the person who
+opened the door to shut it tight.  There are people nude except a towel
+laid about their legs and they have a relaxed face taped on. In the corner
+is a pile of coal with a bucket of water near it.  
+&BSay 'heal' to relax and let the steam take its course.
+~
+0 1073741824 1
+D2
+~
+~
+0 -1 403
+> speech_prog heal~
+mpechoat $n &BYou are healed by the refreshing air in the Sauna
+mpechoaround $n $n &Ris healed by the refreshing air in the Sauna
+mprestore $n 30000
+~
+|
+S
+#423
+A Healing Sauna~
+As the door opens, steam escapes and the trainers urge the person who
+opened the door to shut it tight.  There are people nude except a towel
+laid about their legs and they have a relaxed face taped on. In the corner
+is a pile of coal with a bucket of water near it.   
+&BSay 'heal' to relax and let the steam take its course.
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 403
+> speech_prog heal~
+mpechoat $n &BYou are healed by the refreshing air in the Sauna
+mpechoaround $n $n &Ris healed by the refreshing air in the Sauna
+mprestore $n 30000
+~
+|
+S
+#424
+Deh Han Min Guk Do Jang~
+A strange odor drifts around the room which cannot be mistaken for the
+smell of sweat from the students that train hard in this Do Jang to become
+future Teh Kwon Do masters.  There are four differe floors and each floor
+has different colored belts training.  There are sounds of students
+kyanging at the same time and making the whole do jang rumble.  Caution
+should be taken here.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 428
+D1
+~
+~
+0 -1 425
+D2
+~
+~
+0 -1 421
+S
+#425
+Deh Han Min Guk Do Jang~
+A strange odor drifts around the room which cannot be mistaken for the
+smell of sweat from the students that train hard in this Do Jang to become
+future Teh Kwon Do masters.  There are four differe floors and each floor
+has different colored belts training.  There are sounds of students
+kyanging at the same time and making the whole do jang rumble.  Caution
+should be taken here.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 429
+D1
+~
+~
+0 -1 426
+D2
+~
+~
+0 -1 420
+D3
+~
+~
+0 -1 424
+S
+#426
+Deh Han Min Guk Do Jang~
+A strange odor drifts around the room which cannot be mistaken for the
+smell of sweat from the students that train hard in this Do Jang to become
+future Teh Kwon Do masters.  There are four differe floors and each floor
+has different colored belts training.  There are sounds of students
+kyanging at the same time and making the whole do jang rumble.  Caution
+should be taken here.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 430
+D1
+~
+~
+0 -1 427
+D2
+~
+~
+0 -1 419
+D3
+~
+~
+0 -1 425
+S
+#427
+Deh Han Min Guk Do Jang~
+A strange odor drifts around the room which cannot be mistaken for the
+smell of sweat from the students that train hard in this Do Jang to become
+future Teh Kwon Do masters.  There are four differe floors and each floor
+has different colored belts training.  There are sounds of students
+kyanging at the same time and making the whole do jang rumble.  Caution
+should be taken here.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 431
+D2
+~
+~
+0 -1 418
+D3
+~
+~
+0 -1 426
+S
+#428
+Deh Han Min Guk Do Jang~
+A strange odor drifts around the room which cannot be mistaken for the
+smell of sweat from the students that train hard in this Do Jang to become
+future Teh Kwon Do masters.  There are four differe floors and each floor
+has different colored belts training.  There are sounds of students
+kyanging at the same time and making the whole do jang rumble.  Caution
+should be taken here.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 432
+D1
+~
+~
+0 -1 429
+D2
+~
+~
+0 -1 424
+S
+#429
+Deh Han Min Guk Do Jang~
+A strange odor drifts around the room which cannot be mistaken for the
+smell of sweat from the students that train hard in this Do Jang to become
+future Teh Kwon Do masters.  There are four differe floors and each floor
+has different colored belts training.  There are sounds of students
+kyanging at the same time and making the whole do jang rumble.  Caution
+should be taken here.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 433
+D1
+~
+~
+0 -1 430
+D2
+~
+~
+0 -1 425
+D3
+~
+~
+0 -1 428
+S
+#430
+Deh Han Min Guk Do Jang~
+A strange odor drifts around the room which cannot be mistaken for the
+smell of sweat from the students that train hard in this Do Jang to become
+future Teh Kwon Do masters.  There are four differe floors and each floor
+has different colored belts  training.  There are sounds of students
+kyanging at the same time and making the whole do jang rumble.  Caution
+should be taken here.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 434
+D1
+~
+~
+0 -1 431
+D2
+~
+~
+0 -1 426
+D3
+~
+~
+0 -1 429
+S
+#431
+Deh Han Min Guk Do Jang~
+A strange odor drifts around the room which cannot be mistaken for the
+smell of sweat from the students that train hard in this Do Jang to become
+future Teh Kwon Do masters.  There are four differe floors and each floor
+has different colored belts training.  There are sounds of students
+kyanging at the same time and making the whole do jang rumble.  Caution
+should be taken here.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 435
+D2
+~
+~
+0 -1 427
+D3
+~
+~
+0 -1 430
+S
+#432
+Deh Han Min Guk Do Jang~
+A strange odor drifts around the room which cannot be mistaken for the
+smell of sweat from the students that train hard in this Do Jang to become
+future Teh Kwon Do masters.  There are four differe floors and each floor
+has different colored belts training.  There are sounds of students
+kyanging at the same time and making the whole do jang rumble.  Caution
+should be taken here.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 436
+D1
+~
+~
+0 -1 433
+D2
+~
+~
+0 -1 428
+D3
+~
+~
+0 -1 437
+S
+#433
+Deh Han Min Guk Do Jang~
+A strange odor drifts around the room which cannot be mistaken for the
+smell of sweat from the students that train hard in this Do Jang to become
+future Teh Kwon Do masters.  There are four differe floors and each floor
+has different colored belts training.  There are sounds of students
+kyanging at the same time and making the whole do jang rumble.  Caution
+should be taken here.
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 434
+D2
+~
+~
+0 -1 429
+D3
+~
+~
+0 -1 432
+S
+#434
+Deh Han Min Guk Do Jang~
+A strange odor drifts around the room which cannot be mistaken for the
+smell of sweat from the students that train hard in this Do Jang to become
+future Teh Kwon Do masters.  There are four differe floors and each floor
+has different colored belts training.  There are sounds of students
+kyanging at the same time and making the whole do jang rumble.  Caution
+should be taken here.
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 435
+D2
+~
+~
+0 -1 430
+D3
+~
+~
+0 -1 433
+S
+#435
+Deh Han Min Guk Do Jang~
+A strange odor drifts around the room which cannot be mistaken for the
+smell of sweat from the students that train hard in this Do Jang to become
+future Teh Kwon Do masters.  THere are four different floors and each
+floor has different colored belts training.  There are sounds of students
+kyanging at the same time and making the whole do jang rumble. Caution
+should be taken here.
+~
+0 1073741824 1
+D2
+~
+~
+0 -1 431
+D3
+~
+~
+0 -1 434
+D4
+~
+~
+0 -1 443
+S
+#436
+A Healing Sauna~
+As the door opens, steam escpaes and the trainers urge the person who
+opened the door to shut it tight.  THere are people nude except a towel
+laid about their legs and they have a relaxed face taped on. In the corner
+is a pile of coal with a bucket of water near it. 
+&BSay 'heal' to relax and let the steam take its course.
+~
+0 1073741824 1
+D2
+~
+~
+0 -1 432
+> speech_prog heal~
+mpechoat $n &BYou are healed by the refreshing air in the Sauna
+mpechoaround $n $n &Ris healed by the refreshing air in the Sauna
+mprestore $n 30000
+~
+|
+S
+#437
+A Healing Sauna~
+As the door opens, steam escpaes and the trainers urge the person who
+opened the door to shut it tight.  THere are people nude except a towel
+laid about their legs and they have a relaxed face taped on. In the corner
+is a pile of coal with a bucket of water near it. 
+&BSay 'heal' to relax and let the steam take its course.
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 432
+> speech_prog heal~
+mpechoat $n &BYou are healed by the refreshing air in the Sauna
+mpechoaround $n $n &Ris healed by the refreshing air in the Sauna
+mprestore $n 30000
+~
+|
+S
+#438
+A Spiral Staircase~
+This is a spiral staircase that goes around and around and leads up to the
+second floor.  There are railings on the side that can be held up for
+support.  Many visitors go up and down the stairs to watch the students
+practice. 
+~
+0 1073741828 1
+D0
+~
+~
+0 -1 439
+D5
+~
+~
+0 -1 412
+S
+#439
+A Spiral Staircase~
+This is a spiral staircase that goes around and around and leads up to the
+second floor.  There are railings on the side that can be held up for
+support.  Many visitors go up and down the stairs to watch the students
+practice.
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 440
+D2
+~
+~
+0 -1 438
+S
+#440
+A Spiral Staircase~
+This is a spiral staircase that goes around and around and leads up to the
+second floor.  There are railings on the side that can be held up for
+support.  Many visitors go up and down the stairs to watch the students
+practice.
+~
+0 1073741824 1
+D2
+~
+~
+0 -1 441
+D3
+~
+~
+0 -1 439
+S
+#441
+A Spiral Staircase~
+This is a spiral staircase that goes around and around and leads up to the
+second floor.  There are railings on the side that can be held up for
+support.  Many visitors go up and down the stairs to watch the students
+practice. 
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 440
+D3
+~
+~
+0 -1 442
+S
+#442
+A Spiral Staircase~
+This is a spiral staircase that goes around and around and leads up to the
+second floor.  There are railings on the side that can be held up for
+support.  Many visitors go up and down the stairs to watch the students
+practice. 
+~
+0 1073741828 1
+D1
+~
+~
+0 -1 441
+D4
+~
+~
+0 -1 418
+S
+#443
+A Spiral Staircase~
+This is a spiral staircase that goes around and around and leads up to the
+second floor.  There are railings on the side that can be held up for
+support.  Many visitors go up and down the stairs to watch the students
+practice.
+~
+0 1073741824 1
+D5
+~
+~
+0 -1 435
+S
+#0
+
+
+#RESETS
+M 1 400 1 406
+M 1 401 1 409
+M 1 403 1 430
+M 1 402 1 425
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

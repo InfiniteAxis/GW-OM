@@ -1,0 +1,3263 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         Colony G42~
+Author       Akumaka~
+Ranges       1 1007 1 1007
+Economy      0 770647132
+ResetMsg     You hear children playing in the distance.~
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       500
+Keywords   A G42 Item Shopkeeper~
+Short      A G42 Item Shopkeeper~
+Long       A G42 Item Shopkeeper is standing here, smiling at you.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       501
+Keywords   A G42 Weapon Shopkeeper~
+Short      A G42 Weapon Shopkeeper~
+Long       A G42 Weapon Shopkeeper is here, making a new blade.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   5 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       502
+Keywords   A G42 Armor Shopkeeper~
+Short      A G42 Armor Shopkeeper~
+Long       A G42 Armor Shopkeeper is here, patching up some armor.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   9 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       503
+Keywords   A Level 1 Training Hologram~
+Short      A Training Hologram~
+Long       A Training Hologram is here, in a fighting stance.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     -1000 10 0 75 5 0
+Stats2     2 10 100
+Stats3     1 4 2
+Stats4     0 0 0 2 2
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       504
+Keywords   A Level 2 Training Hologram~
+Short      A Training Hologram~
+Long       A Training Hologram is here, in a fighting stance.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     1000 24 0 40 10 0
+Stats2     4 10 240
+Stats3     2 4 2
+Stats4     0 0 0 4 4
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       505
+Keywords   A Level 3 Training Hologram~
+Short      A Training Hologram~
+Long       A Training Hologram is here, in a fighting stance.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 39 0 2 15 0
+Stats2     7 10 390
+Stats3     3 4 2
+Stats4     0 0 0 7 7
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       506
+Keywords   A Level 4 Training Hologram~
+Short      A Training Hologram~
+Long       A Training Hologram is here, in a fighting stance.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 100 0 -150 30 0
+Stats2     1 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       507
+Keywords   A Level 5 Training Hologram~
+Short      A Training Hologram~
+Long       A Training Hologram is here, in a fighting stance.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 155 0 -287 50 0
+Stats2     31 10 1550
+Stats3     15 4 2
+Stats4     0 0 0 31 31
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       508
+Keywords   A Level 6 Training Hologram~
+Short      A Training Hologram~
+Long       A Training Hologram is here, in a fighting stance.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 290 0 -625 40 0
+Stats2     58 10 2900
+Stats3     29 4 2
+Stats4     0 0 0 58 58
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       509
+Keywords   A Level 7 Training Hologram~
+Short      A Training Hologram~
+Long       A Training Hologram is here, in a fighting stance.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 350 0 -775 45 0
+Stats2     70 10 3500
+Stats3     35 4 2
+Stats4     0 0 0 70 70
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       510
+Keywords   A Level 8 Training Hologram~
+Short      A Training Hologram~
+Long       A Training Hologram is here, in a fighting stance.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 500 0 -1150 45 0
+Stats2     100 10 5000
+Stats3     50 4 2
+Stats4     0 0 0 100 100
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       511
+Keywords   A restaurant owner~
+Short      A Restaurant Owner~
+Long       A Restaurant Owner is here, ready to take your order.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    18 10 10 18 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       512
+Keywords   A Combat Trainer~
+Short      A Combat Trainer~
+Long       A Combat Trainer is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel practice~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       513
+Keywords   A Pilot Trainer~
+Short      A Pilot Trainer~
+Long       A Pilot Trainer is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel practice~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       514
+Keywords   An Engineering Trainer~
+Short      An Engineering Trainer~
+Long       An Engineering Trainer is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel practice~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       515
+Keywords   A Bounty Hunting Trainer~
+Short      A Bounty Hunting Trainer~
+Long       A Bounty Hunting Trainer is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel practice~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       516
+Keywords   A Smuggling Trainer~
+Short      A Smuggling Trainer~
+Long       A Smuggling Trainer is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel practice~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       517
+Keywords   A Diplomacy Trainer~
+Short      A Diplomacy Trainer~
+Long       A Diplomacy Trainer is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel practice~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       518
+Keywords   A Leadership Trainer~
+Short      A Leadership Trainer~
+Long       A Leadership Trainer is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel practice~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       519
+Keywords   A Level 9 Training Hologram~
+Short      A Training Hologram~
+Long       A Training Hologram is here, in a fighting stance.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 550 0 -1275 50 0
+Stats2     110 10 5500
+Stats3     55 4 2
+Stats4     0 0 0 110 110
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       520
+Keywords   A Level 10 Training Hologram~
+Short      A Training Hologram~
+Long       A Training Hologram is here, in a fighting stance.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 600 0 -1400 55 0
+Stats2     120 10 6000
+Stats3     60 4 2
+Stats4     0 0 0 120 120
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       521
+Keywords   A Level 11 Training Hologram~
+Short      A Training Hologram~
+Long       A Training Hologram is here, in a fighting stance.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 630 0 -1475 65 0
+Stats2     126 10 6300
+Stats3     63 4 2
+Stats4     0 0 0 126 126
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       522
+Keywords   A Level 12 Training Hologram~
+Short      A Training Hologram~
+Long       A Training Hologram is here, in a fighting stance.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 700 0 -1650 78 0
+Stats2     140 10 7000
+Stats3     70 4 2
+Stats4     0 0 0 140 140
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       523
+Keywords   A Level 13 Training Hologram~
+Short      A Training Hologram~
+Long       A Training Hologram is here, in a fighting stance.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 750 0 -1775 90 0
+Stats2     150 10 7500
+Stats3     75 4 2
+Stats4     0 0 0 150 150
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       524
+Keywords   A Level 14 Training Hologram~
+Short      A Training Hologram~
+Long       A Training Hologram is here, in a fighting stance.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 800 0 -1900 100 0
+Stats2     160 10 8000
+Stats3     80 4 2
+Stats4     0 0 0 160 160
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       525
+Keywords   A Level 15 Training Hologram~
+Short      A Training Hologram~
+Long       A Training Hologram is here, in a fighting stance.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 150 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       526
+Keywords   Zoot~
+Short      Zoot~
+Long       A person is walking quickly by, hiding his face.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc~
+Stats1     0 20 0 50 0 0
+Stats2     4 10 200
+Stats3     2 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpecho &rZoot's head is cut from his body.&g
+mpoload 2031
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  death_prog~
+Arglist   6~
+Comlist   mpmload 2020
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       527
+Keywords   Dog~
+Short      a dog~
+Long       A stray dog wanders around
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_fido~
+Gender     nonbinary~
+Actflags   npc scavenger~
+Stats1     0 1 0 0 0 0
+Stats2     1 1 499
+Stats3     2 10 50
+Stats4     0 0 5 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+VIPFlags   G42~
+#MUDPROG
+Progtype  death_prog~
+Arglist   1~
+Comlist   mpmload 528
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       528
+Keywords   Dog~
+Short      a dog~
+Long       A stray dog wanders around
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_fido~
+Gender     nonbinary~
+Actflags   npc scavenger~
+Stats1     0 1 0 0 0 0
+Stats2     1 1 499
+Stats3     2 10 50
+Stats4     0 0 5 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   25~
+Comlist   mpoload 11508
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       529
+Keywords   An Espionage Trainer~
+Short      An Espionage Trainer~
+Long       An Espionage Trainer is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel practice~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       530
+Keywords   Citizen~
+Short      citizen~
+Long       A colony citizen is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 1 0 0 5 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+VIPFlags   G42~
+#ENDMOBILE
+
+#MOBILE
+Vnum       540
+Keywords   Pride~
+Short      &BP&br&Wi&bd&Be&w~
+Long       &BP&br&Wi&bd&Be&w is casually walking around.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_homunculus~
+Gender     male~
+Actflags   npc noassist~
+Affected   invisible hide truesight~
+Stats1     0 1000 0 -2400 250000 0
+Stats2     200 10 2500000
+Stats3     1 1 1
+Stats4     0 0 4 85 65
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   parry~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   say I'll.. be.. back.. Homunculus... can't die...
+mpoload 93
+mpnothing Log: $n just killed Pride.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       599
+Keywords   last~
+Short      a newly created last~
+Long       Some god abandoned a newly created last here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#OBJECT
+Vnum     500
+Keywords Health Band~
+Type     armor~
+Short    A health band~
+Long     A health band is folded up here.~
+WFlags   take neck~
+Values   50 50 0 0 0 0
+Stats    1 1000 100 0 0
+Affect       -1 -1 600 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     502
+Keywords A Gundanium Blade~
+Type     weapon~
+Short    A Gundanium Blade~
+Long     A strong looking blade is lying here.~
+Flags    glow hum inventory~
+WFlags   take wield~
+Values   0 10 150 3 0 0
+Stats    1 20000 500000 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     503
+Keywords A Black Pilot Jacket~
+Type     armor~
+Short    A Black Pilot Jacket~
+Long     A Black Pilot Jacket is folded up here.~
+Flags    inventory~
+WFlags   take body~
+Values   25 25 0 0 0 0
+Stats    1 1000 800 0 16
+#ENDOBJECT
+
+#OBJECT
+Vnum     504
+Keywords A Pair of Black Pilot Pants~
+Type     armor~
+Short    A Pair of Black Pilot Pants~
+Long     A Pair of Black Pilot Pants are folded up here.~
+Flags    inventory~
+WFlags   take legs~
+Values   20 20 0 0 0 0
+Stats    1 500 500 0 2
+#ENDOBJECT
+
+#OBJECT
+Vnum     505
+Keywords A Black Pilot Helmet~
+Type     armor~
+Short    A Black Pilot Helmet~
+Long     A Black Pilot Helmet is lying here.~
+Flags    inventory~
+WFlags   take head~
+Values   30 30 0 0 0 0
+Stats    1 200 200 0 6
+#ENDOBJECT
+
+#OBJECT
+Vnum     506
+Keywords A Pilot Brace~
+Type     armor~
+Short    A Black Pilot Brace~
+Long     A Black Pilot Brace is lying here.~
+Flags    glow hum~
+WFlags   take wrist~
+Values   75 75 0 0 0 0
+Stats    1 120000 60000 0 0
+Affect       -1 -1 25 18 0
+Affect       -1 -1 10 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     508
+Keywords A Hamburger~
+Type     food~
+Short    A Hamburger~
+Long     A Hamburger~
+WFlags   take~
+Values   40 40 0 0 0 0
+Stats    1 10 1 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     509
+Keywords A Skill Sign~
+Type     trash~
+Short    A Skill Sign~
+Long     A Skill Sign is here, maybe you should read it.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    A Skill Sign~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    A Skill Sign~
+ExDesc       ADD_PATROL ELITE_GUARD GATHER_INTELLIGENCE GEMCUTTING MASS_PROPEGANDA
+SCRIBE SEDUCE SPECIAL_FORCES
+These commands are not curently in operation.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    A Skill Sign~
+ExDesc       ADD_PATROL ELITE_GUARD GATHER_INTELLIGENCE GEMCUTTING MASS_PROPEGANDA
+SCRIBE SEDUCE SPECIAL_FORCES 
+These commands are not curently in operation.
+~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    A Skill Sign~
+#ENDEXDESC
+
+#EXDESC
+ExDescKey    A Skill Sign~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     510
+Keywords A Large Chest~
+Type     container~
+Short    A Large Chest~
+Long     A Large Chest is here.~
+Values   100000 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     511
+Keywords A Headset~
+Type     armor~
+Short    A Headset~
+Long     A Headset comlink is lying on the ground here.~
+WFlags   take ears~
+Values   13 13 0 0 0 0
+Stats    1 100 10 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     513
+Keywords Infrared Goggles~
+Type     armor~
+Short    Infrared Goggles~
+Long     A pair of goggles was misplaced here.~
+Flags    inventory~
+WFlags   take eyes~
+Values   30 30 0 0 0 0
+Stats    1 10000 1000 0 0
+Affect       -1 -1 32 26 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     520
+Keywords ]Anima Relic[ Asher~
+Type     armor~
+Short    &w]&zA&cn&Ci&cm&za &CR&ce&zl&ci&Cc&w[ &RA&rs&ph&re&Rr~
+Long     An ancient relic is laying here.~
+Flags    glow~
+WFlags   take relic~
+Values   200 200 0 0 0 0
+Stats    1 0 0 0 0
+Affect       -1 -1 1000 18 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     599
+Keywords last~
+Type     trash~
+Short    a last~
+Long     A last is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     500
+Name     Colony G42 Primary Landing Pad~
+Sector   city~
+Flags    can_land can_fly docking~
+Desc     This is the Primary Landing Pad on Colony G42. The smell of exhaust fills
+the air, and the sound of MS walking around and being worked on can be
+heard. Lined up along the sides of the hangar are various MS and ships of
+all different types.
+&BTo go to R28, say R28.
+~
+#EXIT
+Direction north~
+ToRoom    501
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    2
+#ENDEXIT
+
+Reset O 0 10315 1 500
+#MUDPROG
+Progtype  speech_prog~
+Arglist   r28~
+Comlist   mpechoat $n Welcome to Colony R28.   
+mpechoaround $n $n boards a shuttle to Colony R28.  
+mptransfer $n 2000
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     501
+Name     North of a Landing Pad~
+Sector   city~
+Desc     This is Colony G42. The ground on this colony is real terra dirt brought
+from earth to create the most earthlike colony ever. Real plants and
+animals reside in the colony as well as the normal Colonists.
+~
+#EXIT
+Direction north~
+ToRoom    502
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    500
+#ENDEXIT
+
+Reset M 0 527 1 501
+#ENDROOM
+
+#ROOM
+Vnum     502
+Name     Entering Colony G42~
+Sector   city~
+Desc     This is Colony G42. The ground on this colony is real terra dirt brought
+from earth to create the most earthlike colony ever. Real plants and
+animals reside in the colony as well as the normal Colonists.
+~
+#EXIT
+Direction north~
+ToRoom    503
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    501
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     503
+Name     Colony G42~
+Sector   city~
+Desc     This is Colony G42. The ground on this colony is real terra dirt brought
+from earth to create the most earthlike colony ever. Real plants and
+animals reside in the colony as well as the normal Colonists.
+~
+#EXIT
+Direction north~
+ToRoom    515
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    502
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2200
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    504
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    512
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     504
+Name     Colony G42~
+Sector   city~
+Desc     This is Colony G42. The ground on this colony is real terra dirt brought
+from earth to create the most earthlike colony ever. Real plants and
+animals reside in the colony as well as the normal Colonists.
+~
+#EXIT
+Direction northeast~
+ToRoom    505
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    503
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     505
+Name     Colony G42~
+Sector   city~
+Desc     This is Colony G42. The ground on this colony is real terra dirt brought
+from earth to create the most earthlike colony ever. Real plants and
+animals reside in the colony as well as the normal Colonists.
+~
+#EXIT
+Direction north~
+ToRoom    506
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    504
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     506
+Name     Colony G42~
+Sector   city~
+Desc     This is Colony G42. The ground on this colony is real terra dirt brought
+from earth to create the most earthlike colony ever. Real plants and
+animals reside in the colony as well as the normal Colonists.
+~
+#EXIT
+Direction south~
+ToRoom    505
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    507
+#ENDEXIT
+
+Reset M 0 530 1 506
+#ENDROOM
+
+#ROOM
+Vnum     507
+Name     Colony G42~
+Sector   city~
+Desc     This is Colony G42. The ground on this colony is real terra dirt brought
+from earth to create the most earthlike colony ever. Real plants and
+animals reside in the colony as well as the normal Colonists.
+~
+#EXIT
+Direction northwest~
+ToRoom    508
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    506
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     508
+Name     Colony G42~
+Sector   city~
+Desc     This is Colony G42. The ground on this colony is real terra dirt brought
+from earth to create the most earthlike colony ever. Real plants and
+animals reside in the colony as well as the normal Colonists.
+~
+#EXIT
+Direction south~
+ToRoom    513
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    507
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    509
+#ENDEXIT
+
+Reset M 0 530 3 508
+Reset M 0 530 3 508
+#ENDROOM
+
+#ROOM
+Vnum     509
+Name     Colony G42~
+Sector   city~
+Desc     This is Colony G42. The ground on this colony is real terra dirt brought
+from earth to create the most earthlike colony ever. Real plants and
+animals reside in the colony as well as the normal Colonists.
+~
+#EXIT
+Direction northeast~
+ToRoom    508
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    510
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     510
+Name     Colony G42~
+Sector   city~
+Desc     This is Colony G42. The ground on this colony is real terra dirt brought
+from earth to create the most earthlike colony ever. Real plants and
+animals reside in the colony as well as the normal Colonists.
+~
+#EXIT
+Direction south~
+ToRoom    511
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    509
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     511
+Name     Colony G42~
+Sector   city~
+Desc     This is Colony G42. The ground on this colony is real terra dirt brought
+from earth to create the most earthlike colony ever. Real plants and
+animals reside in the colony as well as the normal Colonists.
+~
+#EXIT
+Direction north~
+ToRoom    510
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    512
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     512
+Name     Colony G42~
+Sector   city~
+Desc     This is Colony G42. The ground on this colony is real terra dirt brought
+from earth to create the most earthlike colony ever. Real plants and
+animals reside in the colony as well as the normal Colonists.
+~
+#EXIT
+Direction northwest~
+ToRoom    511
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    503
+#ENDEXIT
+
+Reset M 0 540 1 512
+#ENDROOM
+
+#ROOM
+Vnum     513
+Name     Colony G42 Main Sector~
+Sector   city~
+Desc     This is the Colony G42 Main Sector. Here, travelers may rest in the hotel,
+stop in at the bank, and get a bite to eat in the cafe. Tall buildings
+surround each side of the well-kept street.
+~
+#EXIT
+Direction north~
+ToRoom    508
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    514
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    519
+Flags     nomob~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     514
+Name     Colony G42 Main Sector~
+Sector   city~
+Desc     This is the Colony G42 Main Sector. Here, travelers may rest in the hotel,
+stop in at the bank, and get a bite to eat in the cafe. Tall buildings
+surround each side of the well-kept street.
+~
+#EXIT
+Direction north~
+ToRoom    513
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    517
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    515
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    518
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     515
+Name     Colony G42 Main Sector~
+Sector   city~
+Desc     This is the Colony G42 Main Sector. Here, travelers may rest in the hotel,
+stop in at the bank, and get a bite to eat in the cafe. Tall buildings
+surround each side of the well-kept street.
+~
+#EXIT
+Direction north~
+ToRoom    514
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    516
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    503
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     516
+Name     Colony G42 Hotel~
+Sector   city~
+Flags    indoors hotel~
+Desc     This is the G42 Hotel, where you can save and rest. There are other
+accommodations here for travelers and people alike to rest their weary
+bones.
+~
+#EXIT
+Direction west~
+ToRoom    515
+#ENDEXIT
+
+Reset O 0 10414 1 516
+#ENDROOM
+
+#ROOM
+Vnum     517
+Name     Colony G42 Bank~
+Sector   city~
+Flags    indoors bank~
+Desc     This is the Colony G42 Bank. The white marble pillars extend from the floor
+to the domed ceiling. It is disgustingly clean, and the teller waits for
+you in the back. 
+~
+#EXIT
+Direction west~
+ToRoom    514
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     518
+Name     Colony G42 Restaurant~
+Sector   city~
+Flags    indoors~
+Desc     This is the Colony G42 Restaurant. There are small tables and chairs for a
+person to sit and refresh themselves. The smell of hamburgers wafts in
+from the kitchen.
+~
+#EXIT
+Direction east~
+ToRoom    514
+#ENDEXIT
+
+Reset M 0 511 1 518
+  Reset G 1 10314 1
+  Reset G 1 508 1
+#ENDROOM
+
+#ROOM
+Vnum     519
+Name     Colony G42 Transit System~
+Sector   city~
+Flags    nomob indoors no_drive~
+Desc     The station's walls are lined with metal. The constant hustle and bustle of
+travelers making their way on and off the trains fill the room. A round
+tunnel leads to the west. Trains constantly zip in and out, getting their
+passengers to other parts of the colony. On the eastern wall a large
+display shows the arrivals and departures of all the trains.
+On a smaller display, the instructions for boarding are listed.
+ 
+&BSay 'Main' to go to the Main Sector.
+ 
+&BSay 'Shop' to go to the Commercial Sector.
+ 
+&BSay 'Train' to go to the Training/Residential Sector.
+~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   main~
+Comlist   mpechoat $n You are taken to the Main Sector.
+mpechoaround $n $n is taken to the Main Sector.
+mptransfer $n 513
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Shop~
+Comlist   mpechoat $n You are taken to the Commercial Sector.
+mpechoaround $n $n is taken to the Commercial Sector.
+mptransfer $n 532
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Train~
+Comlist   mpechoat $n You are taken to the Training Sector.
+mpechoaround $n $n is taken to the Training Sector.
+mptransfer $n 539
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     520
+Name     Colony G42 Secondary Landing Pad~
+Sector   city~
+Flags    nomob can_land can_fly docking~
+Desc     This is the Secondary Landing Pad on Colony G42. The smell of exhaust fills
+the air, and the sound of MS walking around and being worked on can be
+heard. Lined up along the sides of the hanger are various MS and Ships of
+all different types.
+~
+#EXIT
+Direction north~
+ToRoom    521
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     521
+Name     Colony G42~
+Sector   city~
+Desc     This is Colony G42. The ground on this colony is real terra dirt brought
+from earth to create the most earthlike colony ever. Real plants and
+animals reside in the colony as well as the normal Colonists.
+~
+#EXIT
+Direction north~
+ToRoom    522
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    520
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     522
+Name     Colony G42~
+Sector   city~
+Desc     This is Colony G42. The ground on this colony is real terra dirt brought
+from earth to create the most earthlike colony ever. Real plants and
+animals reside in the colony as well as the normal Colonists.
+~
+#EXIT
+Direction north~
+ToRoom    534
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    521
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    523
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    531
+#ENDEXIT
+
+Reset M 0 526 1 522
+#ENDROOM
+
+#ROOM
+Vnum     523
+Name     Colony G42~
+Sector   city~
+Desc     This is Colony G42. The ground on this colony is real terra dirt brought
+from earth to create the most earthlike colony ever. Real plants and
+animals reside in the colony as well as the normal Colonists.
+~
+#EXIT
+Direction northeast~
+ToRoom    524
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    522
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     524
+Name     Colony G42~
+Sector   city~
+Desc     This is Colony G42. The ground on this colony is real terra dirt brought
+from earth to create the most earthlike colony ever. Real plants and
+animals reside in the colony as well as the normal Colonists.
+~
+#EXIT
+Direction north~
+ToRoom    525
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    523
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     525
+Name     Colony G42~
+Sector   city~
+Desc     This is Colony G42. The ground on this colony is real terra dirt brought
+from earth to create the most earthlike colony ever. Real plants and
+animals reside in the colony as well as the normal Colonists.
+~
+#EXIT
+Direction south~
+ToRoom    524
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    526
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     526
+Name     Colony G42~
+Sector   city~
+Desc     This is Colony G42. The ground on this colony is real terra dirt brought
+from earth to create the most earthlike colony ever. Real plants and
+animals reside in the colony as well as the normal Colonists.
+~
+#EXIT
+Direction northwest~
+ToRoom    527
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    525
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     527
+Name     Colony G42~
+Sector   city~
+Desc     This is Colony G42. The ground on this colony is real terra dirt brought
+from earth to create the most earthlike colony ever. Real plants and
+animals reside in the colony as well as the normal Colonists.
+~
+#EXIT
+Direction south~
+ToRoom    532
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    526
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    528
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     528
+Name     Colony G42~
+Sector   city~
+Desc     This is Colony G42. The ground on this colony is real terra dirt brought
+from earth to create the most earthlike colony ever. Real plants and
+animals reside in the colony as well as the normal Colonists.
+~
+#EXIT
+Direction northeast~
+ToRoom    527
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    529
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     529
+Name     Colony G42~
+Sector   city~
+Desc     This is Colony G42. The ground on this colony is real terra dirt brought
+from earth to create the most earthlike colony ever. Real plants and
+animals reside in the colony as well as the normal Colonists.
+~
+#EXIT
+Direction south~
+ToRoom    530
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    528
+#ENDEXIT
+
+Reset M 0 530 7 529
+Reset M 0 530 7 529
+#ENDROOM
+
+#ROOM
+Vnum     530
+Name     Colony G42~
+Sector   city~
+Desc     This is Colony G42. The ground on this colony is real terra dirt brought
+from earth to create the most earthlike colony ever. Real plants and
+animals reside in the colony as well as the normal Colonists.
+~
+#EXIT
+Direction north~
+ToRoom    529
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    531
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     531
+Name     Colony G42~
+Sector   city~
+Desc     This is Colony G42. The ground on this colony is real terra dirt brought
+from earth to create the most earthlike colony ever. Real plants and
+animals reside in the colony as well as the normal Colonists.
+~
+#EXIT
+Direction northwest~
+ToRoom    530
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    522
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     532
+Name     Colony G42 Commercial Sector~
+Sector   city~
+Desc     This is the shopping district of G42. The streets are teeming with people
+doing their shopping and running errands. You can find many useful items
+in this sector if you go into the right store.
+~
+#EXIT
+Direction north~
+ToRoom    527
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    533
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    519
+#ENDEXIT
+
+Reset O 0 10315 1 532
+#ENDROOM
+
+#ROOM
+Vnum     533
+Name     Colony G42 Commercial Sector~
+Sector   city~
+Desc     This is the shopping district of G42. the streets are teeming with people
+doing their shopping and running errands. You can find many useful items
+in this sector if you go into the right store.
+~
+#EXIT
+Direction north~
+ToRoom    532
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    536
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    534
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    537
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     534
+Name     Colony G42 Commercial Sector~
+Sector   city~
+Desc     This is the shopping district of G42. The streets are teeming with people
+doing their shopping and running errands. You can find many useful items
+in this sector if you go into the right store.
+~
+#EXIT
+Direction north~
+ToRoom    533
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    535
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    522
+#ENDEXIT
+
+Reset O 0 10315 1 534
+#ENDROOM
+
+#ROOM
+Vnum     535
+Name     Colony G42 Item Shop~
+Sector   city~
+Flags    nomob indoors~
+Desc     All the surfaces in this shop are covered in...stuff. Items ranging from
+useless junk to priceless supplies are sold here. Everything is good
+quality, contrary to what the state of the shop may suggest. 
+~
+#EXIT
+Direction west~
+ToRoom    534
+#ENDEXIT
+
+Reset M 0 500 1 535
+  Reset G 0 500 1
+  Reset G 0 511 1
+  Reset G 0 10491 1
+  Reset G 0 10424 1
+  Reset G 0 513 1
+  Reset G 0 10311 1
+Reset O 0 25 1 535
+#ENDROOM
+
+#ROOM
+Vnum     536
+Name     Colony G42 Weapon Shop~
+Sector   city~
+Flags    nomob indoors safe~
+Desc     There are many finely crafted weapons lining the walls of this small shop.
+Behind the counter is an array of tools used for fashioning different
+types of weapons. Everything for sale here is good quality and made from
+the finest materials.
+~
+#EXIT
+Direction west~
+ToRoom    533
+#ENDEXIT
+
+Reset M 0 501 1 536
+  Reset G 1 502 1
+  Reset G 1 59 1
+#ENDROOM
+
+#ROOM
+Vnum     537
+Name     Colony G42 Armor Shop~
+Sector   city~
+Flags    nomob indoors safe~
+Desc     Racks of clothing and armor fill this small shop. Behind the counter are
+many rolls of cloth and various other supplies used to make armor. The
+armor here is well made and sturdy, well suited for the novice fighter  or
+the seasoned warrior.
+~
+#EXIT
+Direction east~
+ToRoom    533
+#ENDEXIT
+
+Reset M 0 502 1 537
+  Reset G 1 504 1
+  Reset G 1 505 1
+  Reset G 1 503 1
+  Reset G 1 506 1
+#ENDROOM
+
+#ROOM
+Vnum     538
+Name     Colony G42 Auxilary Pad~
+Sector   city~
+Flags    nomob can_land can_fly docking~
+Desc     This is the Auxiliary Landing Pad on Colony G42. The smell of exhaust fills
+the air, and the sound of MS walking around and being worked on can be
+heard. Lined up along the sides of the hanger are various MS and Ships of
+all different types.
+~
+#EXIT
+Direction north~
+ToRoom    539
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    551
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    581
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    592
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     539
+Name     Colony G42 Residential Sector~
+Sector   city~
+Flags    nomob~
+Desc     This is Colony G42's Residential Sector. You can see that the turf around
+the houses is real terra dirt, and the grass growing there is equally
+real. You can even see children playing in the distance.
+~
+#EXIT
+Direction north~
+ToRoom    540
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    545
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    538
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    519
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     540
+Name     Colony G42 Residential Sector~
+Sector   city~
+Flags    nomob~
+Desc     This is Colony G42's Residential Sector. You can see that the turf around
+the houses is real terra dirt, and the grass growing there is equally
+real. You can even see children playing in the distance.
+~
+#EXIT
+Direction north~
+ToRoom    541
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    544
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    539
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    543
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     541
+Name     Colony G42 Residential Sector~
+Sector   city~
+Flags    nomob~
+Desc     This is Colony G42's Residential Sector. You can see that the turf around
+the houses is real terra dirt, and the grass growing there is equally
+real. You can even see children playing in the distance.
+~
+#EXIT
+Direction north~
+ToRoom    542
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    546
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    540
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    547
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     542
+Name     Colony G42 Residential Sector~
+Sector   city~
+Flags    nomob~
+Desc     This is Colony G42's Residential Sector. You can see that the turf around
+the houses is real terra dirt, and the grass growing there is equally
+real. You can even see children playing in the distance.
+~
+#EXIT
+Direction north~
+ToRoom    549
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    550
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    541
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    548
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     543
+Name     An Empty Apartment~
+Sector   city~
+Flags    empty_home~
+Owner    Oracle~
+#EXIT
+Direction east~
+ToRoom    540
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     544
+Name     An Empty Apartment~
+Sector   city~
+Flags    empty_home~
+Owner    Arcturis~
+#EXIT
+Direction west~
+ToRoom    540
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     545
+Name     An Empty Apartment~
+Sector   city~
+Flags    empty_home~
+Owner    Runem~
+#EXIT
+Direction west~
+ToRoom    539
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     546
+Name     An Empty Apartment~
+Sector   city~
+Flags    empty_home~
+Owner    Kowe~
+#EXIT
+Direction west~
+ToRoom    541
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     547
+Name     An Empty Apartment~
+Sector   inside~
+Flags    empty_home~
+Owner    Oracle~
+#EXIT
+Direction east~
+ToRoom    541
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     548
+Name     An Empty Apartment~
+Sector   city~
+Flags    indoors empty_home~
+Owner    Oracle~
+#EXIT
+Direction east~
+ToRoom    542
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     549
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+Owner    Oracle~
+#EXIT
+Direction south~
+ToRoom    542
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     550
+Name     An Empty Apartment~
+Sector   city~
+Flags    empty_home~
+Owner    Kowe~
+#EXIT
+Direction west~
+ToRoom    542
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     551
+Name     Colony G42 Training Sector~
+Sector   city~
+Flags    nomob~
+Desc     This is the Colony G42 Combat Training Center. The sounds of battle can be
+heard filling the air. You can see soldiers walking about with weapons
+ready as they wait to use the training facilities.
+~
+#EXIT
+Direction north~
+ToRoom    553
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    555
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    557
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    538
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    559
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    561
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    554
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    552
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    556
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    558
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     552
+Name     Colony G42 Training Level 7~
+Sector   city~
+Flags    nomob~
+Desc     This is a square, grey room. The walls are covered with scratches,
+bullet holes, and blast marks from the hours of diligent training that this
+room has seen. There is a red circle in the middle of the room where the
+hologram will appear when summoned. One must only say &BBegin&z to start
+the program.
+~
+#EXIT
+Direction southeast~
+ToRoom    551
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Begin~
+Comlist   mpecho You hear the hum of a projector.
+mpecho A Hologram appears in the circle.
+mpmload 509
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     553
+Name     Colony G42 Training Level 1~
+Sector   city~
+Flags    nomob~
+Desc     This is a square, grey room. The walls are covered with scratches,
+bullet holes, and blast marks from the hours of diligent training that this
+room has seen. There is a red circle in the middle of the room where the
+hologram will appear when summoned. One must only say &BBegin&z to start
+the program.
+~
+#EXIT
+Direction south~
+ToRoom    551
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Begin~
+Comlist   mpecho You hear the hum of a projector.
+mpecho A Hologram appears in the circle.
+mpmload 503
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     554
+Name     Colony G42 Training Level 6~
+Sector   city~
+Flags    nomob~
+Desc     This is a square, grey room. The walls are covered with scratches,
+bullet holes, and blast marks from the hours of diligent training that this
+room has seen. There is a red circle in the middle of the room where the
+hologram will appear when summoned. One must only say &BBegin&z to start
+the program.
+~
+#EXIT
+Direction southwest~
+ToRoom    551
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Begin~
+Comlist   mpecho You hear the hum of a projector.
+mpecho A Hologram appears in the circle.
+mpmload 508
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     555
+Name     Colony G42 Training Level 2~
+Sector   city~
+Flags    nomob~
+Desc     This is a square, grey room. The walls are covered with scratches,
+bullet holes, and blast marks from the hours of diligent training that this
+room has seen. There is a red circle in the middle of the room where the
+hologram will appear when summoned. One must only say &BBegin&z to start
+the program.
+~
+#EXIT
+Direction west~
+ToRoom    551
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Begin~
+Comlist   mpecho You hear the hum of a projector.
+mpecho A Hologram appears in the circle.
+mpmload 504
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     556
+Name     Colony G42 Training Level 8~
+Sector   city~
+Flags    nomob~
+Desc     This is a square, grey room. The walls are covered with scratches,
+bullet holes, and blast marks from the hours of diligent training that this
+room has seen. There is a red circle in the middle of the room where the
+hologram will appear when summoned. One must only say &BBegin&z to start
+the program.
+~
+#EXIT
+Direction northwest~
+ToRoom    551
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Begin~
+Comlist   mpecho You hear the hum of a projector.
+mpecho A Hologram appears in the circle.
+mpmload 510
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     557
+Name     Colony G42 Training Level 3~
+Sector   city~
+Flags    nomob~
+Desc     This is a square, grey room. The walls are covered with scratches,
+bullet holes, and blast marks from the hours of diligent training that this
+room has seen. There is a red circle in the middle of the room where the
+hologram will appear when summoned. One must only say &BBegin&z to start
+the program.
+~
+#EXIT
+Direction north~
+ToRoom    551
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Begin~
+Comlist   mpecho You hear the hum of a projector.
+mpecho A Hologram appears in the circle.
+mpmload 505
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     558
+Name     Colony G42 Medical Center~
+Sector   city~
+Flags    nomob heal~
+Desc     This is the Colony G42 Medical Center. There are many regenerative tanks
+lining the walls, as well as beds for the less critically injured. The
+wounds that can be seen range from small scratches to nearly fatal wounds.
+The holograms, it appears, are very realistic.
+~
+#EXIT
+Direction northeast~
+ToRoom    551
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     559
+Name     Colony G42 Training Level 4~
+Sector   city~
+Flags    nomob~
+Desc     This is a square, grey room. The walls are covered with scratches,
+bullet holes, and blast marks from the hours of diligent training that this
+room has seen. There is a red circle in the middle of the room where the
+hologram will appear when summoned. One must only say &BBegin&z to start
+the program.
+~
+#EXIT
+Direction down~
+ToRoom    551
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Begin~
+Comlist   mpecho You hear the hum of a projector.
+mpecho A Hologram appears in the circle.
+mpmload 506
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     560
+Name     Colony G42 Factory~
+Sector   city~
+Flags    indoors safe silence factory~
+Desc     This is the factory on G42. There are many tools here for the sole purpose
+of making items. The room is deathly quiet so everyone can concentrate. A
+person can buy resources to make items across the street at the item shop.
+~
+#EXIT
+Direction east~
+ToRoom    534
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     561
+Name     Colony G42 Training Level 5~
+Sector   city~
+Desc     This is a square, grey room. The walls are covered with scratches,
+bullet holes, and blast marks from the hours of diligent training that this
+room has seen. There is a red circle in the middle of the room where the
+hologram will appear when summoned. One must only say &BBegin&z to start
+the program.
+~
+#EXIT
+Direction up~
+ToRoom    551
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Begin~
+Comlist   mpecho You hear the hum of a projector.
+mpecho A Hologram appears in the circle.
+mpmload 507
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     562
+Name     Colony G42 Arena Entrance~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     This is the registration booth for the challenge arena. Say the number you
+wish to be and it will be so. This arena is for those who wish to fight
+one another to the death.
+&BSay First to be the first combatant.
+Say Second to be the second combatant.
+&RNOTE - ONCE YOU ENTER THE ARENA THERE IS NO WAY OUT UNLESS AN IMMORTAL
+ASSISTS YOU
+~
+#EXIT
+Direction down~
+ToRoom    538
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   First~
+Comlist   mpecho $n is the first combatent.
+mptransfer $n 580
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Second~
+Comlist   mpecho $n is the second combatent.
+mptransfer $n 563
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     563
+Name     Combatant Two's Chamber~
+Sector   city~
+Flags    indoors~
+Desc     This is a lavishly furnished room where a combatant waits for there turn in
+the arena.
+&BSay Heal to be healed.
+~
+#EXIT
+Direction northeast~
+ToRoom    564
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   heal~
+Comlist   mprestore $n 30000
+mpechoat $n You are healed
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     564
+Name     Edge of the Arena~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    565
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    571
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    570
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     565
+Name     Edge of the Arena~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    566
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    570
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    564
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     566
+Name     Edge of the Arena~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    567
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    569
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    565
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     567
+Name     Edge of the Arena~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    568
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    566
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    569
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     568
+Name     Edge of the Arena~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    575
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    569
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    567
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     569
+Name     The Combat Arena~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    568
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    574
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    570
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    566
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    567
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     570
+Name     The Combat Arena~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    569
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    573
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    571
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    565
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    564
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     571
+Name     Edge of the Arena~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    570
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    572
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    564
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     572
+Name     Edge of the Arena~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    573
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    579
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    571
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     573
+Name     The Combat Arena~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    574
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    578
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    572
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    570
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    579
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     574
+Name     The Combat Arena~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    575
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    577
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    573
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    569
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    576
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     575
+Name     Edge of the Arena~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    576
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    574
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    568
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     576
+Name     Edge of the Arena~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction south~
+ToRoom    577
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    575
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    574
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     577
+Name     Edge of the Arena~
+Sector   city~
+Flags    indoors spacecraft~
+#EXIT
+Direction north~
+ToRoom    576
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    578
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    574
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     578
+Name     Edge of the Arena~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    577
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    579
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    573
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     579
+Name     Edge of the Arena~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    578
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    572
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    573
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     580
+Name     Combatant One's Chamber~
+Sector   city~
+Flags    indoors~
+Desc     This is a lavishly furnished room where a combatant waits for there turn in
+the arena.
+&BSay Heal to be healed.
+~
+#EXIT
+Direction southwest~
+ToRoom    576
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   heal~
+Comlist   mprestore $n 30000
+mpechoat $n You are healed
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     581
+Name     Entrance to the Hall of Skills~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is the Hall of Skills. It is a long, lavishly decorated hallway with
+many, many doors. You can learn all different types of skills here. 
+~
+#EXIT
+Direction north~
+ToRoom    538
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    582
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     582
+Name     The Hall of Skills~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is the Hall of Skills. It is a long, lavishly decorated hallway with
+many, many doors. You can learn all different types of skills here. 
+~
+#EXIT
+Direction north~
+ToRoom    581
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    584
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    585
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    583
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     583
+Name     Combat Skills~
+Sector   city~
+Flags    nomob indoors~
+Desc     This large room has walls as lavishly decorated as the hallway. Racks of
+weapons line one wall while the rest of the room is filled with training
+dummies. This would be a great place to &Ypractice&z combat skills.
+~
+#EXIT
+Direction east~
+ToRoom    582
+#ENDEXIT
+
+Reset M 0 512 1 583
+#ENDROOM
+
+#ROOM
+Vnum     584
+Name     Pilot Skills~
+Sector   city~
+Flags    nomob indoors~
+Desc     This large room has walls as lavishly decorated as the hallway. There are 
+posters of various mobile suit types hung around the room. Taking up a fairly
+large amount of space, a mock cockpit lies in the center of the room.
+This would be a great place to &Ypractice&z piloting skills.
+~
+#EXIT
+Direction west~
+ToRoom    582
+#ENDEXIT
+
+Reset M 0 513 1 584
+#ENDROOM
+
+#ROOM
+Vnum     585
+Name     The Hall of Skills~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is the Hall of Skills. It is a long, lavishly decorated hallway with
+many, many doors. You can learn all different types of skills here. 
+~
+#EXIT
+Direction north~
+ToRoom    582
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    587
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    588
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    586
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     586
+Name     Espionage Skills~
+Sector   city~
+Flags    nomob indoors safe~
+#EXIT
+Direction east~
+ToRoom    585
+#ENDEXIT
+
+Reset M 0 529 1 586
+#ENDROOM
+
+#ROOM
+Vnum     587
+Name     Bounty Hunting Skills~
+Sector   city~
+Flags    nomob indoors~
+#EXIT
+Direction west~
+ToRoom    585
+#ENDEXIT
+
+Reset M 0 515 1 587
+#ENDROOM
+
+#ROOM
+Vnum     588
+Name     The Hall of Skills~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is the Hall of Skills. It is a long, lavishly decorated hallway with
+many, many doors. You can learn all different types of skills here. 
+~
+#EXIT
+Direction north~
+ToRoom    585
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    590
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    591
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    589
+#ENDEXIT
+
+Reset O 0 509 1 588
+#ENDROOM
+
+#ROOM
+Vnum     589
+Name     Smuggling Skills~
+Sector   city~
+Flags    nomob indoors~
+Desc     This large room is more shadowed than the rest of the hall. There are 
+various training dummies around dressed in various fasions. Also there are
+many locks, traps and even a ship hatch laying around just waiting for someone
+to come along and &Ypractice&z smuggling skills with them.
+~
+#EXIT
+Direction east~
+ToRoom    588
+#ENDEXIT
+
+Reset M 0 516 1 589
+#ENDROOM
+
+#ROOM
+Vnum     590
+Name     Diplomacy Skills~
+Sector   city~
+Flags    nomob indoors~
+Desc     This room is decorated a little less grandly than the nearby leadership
+training room. A small podium rests towards the back for the trainer to give 
+lecutres on diplomatic skills. This would be a good place to &Ypractice&z though.
+~
+#EXIT
+Direction west~
+ToRoom    588
+#ENDEXIT
+
+Reset M 0 517 1 590
+#ENDROOM
+
+#ROOM
+Vnum     591
+Name     Leadership Skills~
+Sector   city~
+Flags    nomob indoors~
+Desc     This room is decorated more grandly than the others. A small podium rests
+towards the back for the trainer to give lecutres on Leadership skills. This
+would be a good place to &Ypractice&z though.
+~
+#EXIT
+Direction north~
+ToRoom    588
+#ENDEXIT
+
+Reset M 0 518 1 591
+#ENDROOM
+
+#ROOM
+Vnum     592
+Name     Colony G42 Advanced Combat Training Sector~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is the Colony G42 Advanced Combat Training Center. The sounds of
+battle can be heard filling the air. You can see soldiers walking about
+with weapons ready as they wait to use the training facilities.
+~
+#EXIT
+Direction north~
+ToRoom    594
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    538
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    598
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    596
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    593
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    595
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    599
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    597
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     593
+Name     Colony G42 Training Level 12~
+Sector   city~
+Flags    indoors~
+Desc     This is a square, grey room. The walls are covered with scratches,
+bullet holes, and blast marks from the hours of diligent training that this
+room has seen. There is a red circle in the middle of the room where the
+hologram will appear when summoned. One must only say &BBegin&z to start
+the program.
+~
+#EXIT
+Direction southwest~
+ToRoom    592
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho You hear the hum of a projector.
+mpecho A Hologram appears in the circle.
+mpmload 522
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     594
+Name     Colony G42 Training Level 9~
+Sector   city~
+Flags    indoors~
+Desc     This is a square, grey room. The walls are covered with scratches,
+bullet holes, and blast marks from the hours of diligent training that this
+room has seen. There is a red circle in the middle of the room where the
+hologram will appear when summoned. One must only say &BBegin&z to start
+the program.
+~
+#EXIT
+Direction south~
+ToRoom    592
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho You hear the hum of a projector.
+mpecho A Hologram appears in the circle.
+mpmload 519
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     595
+Name     Colony G42 Training Level 13~
+Sector   city~
+Flags    indoors~
+Desc     This is a square, grey room. The walls are covered with scratches,
+bullet holes, and blast marks from the hours of diligent training that this
+room has seen. There is a red circle in the middle of the room where the
+hologram will appear when summoned. One must only say &BBegin&z to start
+the program.
+~
+#EXIT
+Direction southeast~
+ToRoom    592
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho You hear the hum of a projector.
+mpecho A Hologram appears in the circle.
+mpmload 523
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     596
+Name     Colony G42 Training Level 11~
+Sector   city~
+Flags    indoors~
+Desc     This is a square, grey room. The walls are covered with scratches,
+bullet holes, and blast marks from the hours of diligent training that this
+room has seen. There is a red circle in the middle of the room where the
+hologram will appear when summoned. One must only say &BBegin&z to start
+the program.
+~
+#EXIT
+Direction east~
+ToRoom    592
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho You hear the hum of a projector.
+mpecho A Hologram appears in the circle.
+mpmload 521
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     597
+Name     Colony G42 Training Level 15~
+Sector   city~
+Flags    indoors~
+Desc     This is a square, grey room. The walls are covered with scratches,
+bullet holes, and blast marks from the hours of diligent training that this
+room has seen. There is a red circle in the middle of the room where the
+hologram will appear when summoned. One must only say &BBegin&z to start
+the program.
+~
+#EXIT
+Direction northeast~
+ToRoom    592
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho You hear the hum of a projector.
+mpecho A Hologram appears in the circle.
+mpmload 525
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     598
+Name     Colony G42 Training Level 10~
+Sector   city~
+Flags    indoors~
+Desc     This is a square, grey room. The walls are covered with scratches,
+bullet holes, and blast marks from the hours of diligent training that this
+room has seen. There is a red circle in the middle of the room where the
+hologram will appear when summoned. One must only say &BBegin&z to start
+the program.
+~
+#EXIT
+Direction north~
+ToRoom    592
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho You hear the hum of a projector.
+mpecho A Hologram appears in the circle.
+mpmload 520
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     599
+Name     Colony G42 Training Level 14~
+Sector   city~
+Flags    indoors~
+Desc     This is a square, grey room. The walls are covered with scratches,
+bullet holes, and blast marks from the hours of diligent training that this
+room has seen. There is a red circle in the middle of the room where the
+hologram will appear when summoned. One must only say &BBegin&z to start
+the program.
+~
+#EXIT
+Direction northwest~
+ToRoom    592
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho You hear the hum of a projector.
+mpecho A Hologram appears in the circle.
+mpmload 524
+~
+#ENDPROG
+
+#ENDROOM
+
+#ENDAREA

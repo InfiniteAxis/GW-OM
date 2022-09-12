@@ -1,0 +1,920 @@
+#AREA   {PROTO} Hakavay's area in progress~
+
+
+
+#AUTHOR Hakavay~
+
+#RANGES
+0 0 0 0
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 0
+
+#MOBILES
+#11700
+Droid Helper~
+a newly created Droid Helper~
+Some god abandoned a newly created Droid Helper here.
+~
+~
+1073741825 0 0 Z
+1 0 97 0d10+10 0d4+2
+5000 0
+8 8 0
+1 18 18 1 18 18 18
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> entry_prog 100~
+say Hello master!
+~
+|
+#11706
+Questmaster's Secretary~
+Questmaster's Secretary~
+Questmaster's Secretary
+~
+~
+67 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> all_greet_prog 1000~
+say Hello, welcome to the Questmaster Society.
+say Is this your first time here?
+~
+> speech_prog yes~
+say Well then, here is how things work...
+say Each job requires certain skills and experiences.
+say There are a wide variety of jobs to participate in.
+say Each 'questmaster' has many jobs that they would like to be
+say completed.
+say You should be polite, for they have to pay an expensive bills...
+say Because they need help in finding people like you to go help them.
+emote ponders.
+ 
+say Our services also include their safety...from...
+say People that may disagree with some parts of the job...
+say So please be nice. Oh yes, about our doorsystem.
+say The doorsystem is reinforced with the toughest
+metal.
+say Each door requires a keycode to get in. I give you those codes
+when
+say you ask for a specific job.
+emote ponders.
+say One more thing...
+say Make sure you remind them which job you want to have.
+say Some of our questmasters have multiple job offerings.
+emote smiles.
+~
+> speech_prog no~
+say Well then, which job are you interested in?
+~
+> act_prog smile~
+say Well then, which job are you interested in?
+~
+> speech_prog recon~
+mea $n You see the secretary look at her database.
+mea $n She looks up at you after awhile and smiles.
+say Recon? Ah yes...Doctor Hortan will see you now.
+mea $n You see her take a key from a drawer.
+mpoload 11719 1
+drop key
+say Here is the keycode to get into her office, g'luck.
+emote smiles at you.
+mea $n You look at the key she drops on her desk.
+mpforce $n get key
+~
+|
+#11713
+In-N-Out Worker~
+In-N-Out Worker~
+In-N-Out Worker
+~
+~
+67 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#11719
+Doctor Van Hortan~
+Doctor Van Hortan~
+Doctor Van Hortan
+~
+~
+67 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 2
+18 18 18 18 18 18 18
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> all_greet_prog 1000~
+say Hello, what can I do for you?
+~
+> speech_prog recon~
+say Oh, so you have heard about my little job.
+say Let's see here, let me bring up your records...
+profile.
+mea $n You hear her type as she brings up your
+profile.
+mea $n In a few seconds, she looks at you.
+if level($n) >= 100
+say Well, it looks like you are qualified...
+else
+ say Sorry, you do not seem to be qualified
+enough.
+say Come back when you are...
+say ...Able enough to tackle this job.
+endif
+~
+|
+#11720
+Dave Rameriez~
+Dave Rameriez~
+Dave Rameriez
+~
+~
+67 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> all_greet_prog 1000~
+say Hello there and thank you for coming.
+say I see you are interested in my courier job.
+say Yes it is very simple and...safe.
+mea $n He looks you up and down and starts to type on his
+computer.
+say This should only take a second.
+mea $n You see him repeatedly nod and look at you.
+if level($n) >= 500
+say Well, it looks like you are able to work for me.
+emote grins at you and quickly returns to his dull face.
+else
+say Hmm...Sorry, but it seems like you aren't meeting my standards.
+say Sorry, perhaps you can still help me...when you've gained more...
+say ...Experience...
+emote grimaces.
+endif
+~
+|
+#0
+
+
+#OBJECTS
+#11700
+Mechanical Cube~
+Mechanical Cube~
+Mechanical Cube~
+~
+8 1074012483 16385
+0 0 0 0
+1 0 0
+> drop_prog 100~
+mpmload 11700 1000
+mpecho You see the cube turn into a droid!
+~
+|
+#11706
+list~
+Job listings~
+A list tacked on the wall.~
+~
+8 0 0
+0 0 0 0
+1 0 0
+E
+a A list tacked on the wall.~
+Job Offerings:
+ 
+1. Reconaissence Work --------------- Doctor Van Hortan
+~
+E
+a A list tacked on the wall.~
+Job Offerings:
+1. Reconnaissance ---- Dr. Van
+Hortan
+~
+#11719
+Hortan's Key~
+Hortan's Key~
+Hortan's Key~
+~
+18 0 16385
+0 0 0 0
+1 0 0
+#0
+
+
+#ROOMS
+#11700
+Launch Pad~
+~
+0 1073741852 1
+D1
+~
+~
+0 -1 11701
+S
+#11701
+Corridor~
+~
+0 1073741836 1
+D0
+~
+~
+0 -1 11702
+D1
+~
+~
+0 -1 11704
+D2
+~
+~
+0 -1 11703
+D3
+~
+~
+0 -1 11700
+S
+#11702
+Adventures Resting Area~
+~
+0 1082131468 1
+D2
+~
+~
+0 -1 11701
+S
+#11703
+Food Court~
+~
+0 1073741836 1
+D0
+~
+~
+0 -1 11701
+D1
+~
+~
+0 -1 11737
+S
+#11704
+Hallway~
+~
+0 1073741836 1
+D0
+~
+~
+0 -1 11705
+D2
+~
+~
+0 -1 11706
+D3
+~
+~
+0 -1 11701
+S
+#11705
+Elevator~
+&BSay 'List' for the list of levels available.
+~
+0 1073741836 1
+> speech_prog list~
+mpechoat $n Level 1 - Lobby
+mpechoat $n Level 2 - Quarters
+mpechoat $n Level 3 - Shops
+mpechoat $n Level 4 - Questmasters
+~
+> speech_prog 1~
+mptransfer $n 11704
+~
+> speech_prog 2~
+mptransfer $n 11707
+~
+> speech_prog 3~
+mptransfer $n 11708
+~
+> speech_prog 4~
+mptransfer $n 11709
+~
+> all_greet_prog 1000~
+mpa mpa $n Hello, say list for a complete list of levels.
+mpa $n Then, please select a level to travel to.
+~
+|
+S
+#11706
+Information Room~
+~
+0 1073741832 1
+D0
+~
+~
+0 -1 11704
+S
+#11707
+Level 2 - Quarters~
+~
+0 1073741828 1
+D0
+~
+~
+0 -1 11705
+S
+#11708
+Level 3 - Shops~
+~
+0 1073741836 1
+D0
+~
+~
+0 -1 11705
+S
+#11709
+Level 4 - Questmasters~
+~
+0 1073741836 1
+D0
+~
+~
+0 -1 11705
+D1
+~
+~
+0 -1 11718
+D3
+~
+~
+0 -1 11710
+S
+#11710
+Turn in the Hallway~
+~
+0 1073741836 1
+D0
+~
+~
+0 -1 11711
+D1
+~
+~
+0 -1 11709
+D4
+~
+~
+0 -1 11731
+S
+#11711
+Long Hallway~
+~
+0 1073741836 1
+D0
+~
+~
+0 -1 11712
+D2
+~
+~
+0 -1 11710
+S
+#11712
+Long Hallway~
+~
+0 1073741836 1
+D0
+~
+~
+0 -1 11713
+D1
+~
+~
+0 -1 11727
+D2
+~
+~
+0 -1 11711
+D3
+~
+~
+0 -1 11726
+S
+#11713
+Turn in the Hallway~
+~
+0 1073741836 1
+D0
+~
+~
+0 -1 11720
+D1
+~
+~
+0 -1 11714
+D2
+~
+~
+0 -1 11712
+D7
+~
+~
+39 11719 11719
+S
+#11714
+Short Hallway~
+~
+0 1073741828 1
+D0
+~
+~
+0 -1 11721
+D1
+~
+~
+0 -1 11715
+D3
+~
+~
+0 -1 11713
+S
+#11715
+Turn in the Hallway~
+~
+0 1073741836 1
+D0
+~
+~
+0 -1 11728
+D1
+~
+~
+0 -1 11723
+D2
+~
+~
+0 -1 11716
+D3
+~
+~
+0 -1 11714
+D6
+~
+~
+0 -1 11722
+S
+#11716
+Long Hallway~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 11715
+D1
+~
+~
+0 -1 11724
+D2
+~
+~
+0 -1 11717
+D3
+~
+~
+0 -1 11725
+S
+#11717
+Long Hallway~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 11716
+D1
+~
+~
+0 -1 11729
+D2
+~
+~
+0 -1 11718
+D3
+~
+~
+0 -1 11730
+S
+#11718
+Turn in the Hallway~
+~
+0 1073741832 1
+D0
+~
+~
+0 -1 11717
+D3
+~
+~
+0 -1 11709
+S
+#11719
+Corner Office - Questmaster #1~
+~
+0 1073741832 1
+D8
+~
+~
+8388647 11719 11713
+S
+#11720
+Corner/Hallway Office - Questmaster #2~
+~
+0 1073741832 1
+D2
+~
+~
+0 -1 11713
+S
+#11721
+Hallway Office - Questmaster #3~
+~
+0 1073741832 1
+D2
+~
+~
+0 -1 11714
+S
+#11722
+Corner Office - Questmaster #5~
+~
+0 1073741832 1
+D9
+~
+~
+0 -1 11715
+S
+#11723
+Corner/Hallway Office - Questmaster #6~
+~
+0 1073741832 1
+D3
+~
+~
+0 -1 11715
+S
+#11724
+Hallway Office - Questmaster #7~
+~
+0 1073741832 1
+D3
+~
+~
+0 -1 11716
+S
+#11725
+Hallway Office - Questmaster #8~
+~
+0 1073741832 1
+D1
+~
+~
+0 -1 11716
+S
+#11726
+Storeage Room #1~
+~
+0 1073741832 1
+D1
+~
+~
+0 -1 11712
+S
+#11727
+Storeage Room #2~
+~
+0 1073741832 1
+D3
+~
+~
+0 -1 11712
+S
+#11728
+Corner/Hallway Office - Questmaster #4~
+~
+0 1073741832 1
+D2
+~
+~
+0 -1 11715
+S
+#11729
+Hallway Office - Questmaster #8~
+~
+0 1073741832 1
+D3
+~
+~
+0 -1 11717
+S
+#11730
+Hallway Office - Questmaster #9~
+~
+0 1073741832 1
+D1
+~
+~
+0 -1 11717
+S
+#11731
+Staircase to Observation Deck~
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 11732
+D5
+~
+~
+0 -1 11710
+S
+#11732
+Southwest Observation Deck~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 11733
+D1
+~
+~
+0 -1 11734
+D3
+~
+~
+0 -1 11731
+D6
+~
+~
+0 -1 11735
+S
+#11733
+Northwest Observation Deck~
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 11735
+D2
+~
+~
+0 -1 11732
+D8
+~
+~
+0 -1 11734
+S
+#11734
+Southeast Observation Deck~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 11735
+D3
+~
+~
+0 -1 11732
+D7
+~
+~
+0 -1 11733
+S
+#11735
+Northeast Observation Deck~
+~
+0 1073741824 1
+D2
+~
+~
+0 -1 11734
+D3
+~
+~
+0 -1 11733
+D9
+~
+~
+0 -1 11732
+S
+#11736
+Pepsi Future World~
+~
+0 1073742860 1
+S
+#11737
+In-N-Out~
+~
+0 1073742860 1
+D3
+~
+~
+0 -1 11703
+S
+#11738
+Taco Bell~
+~
+0 1073742860 1
+S
+#11739
+Floating in a void~
+~
+0 1073741828 1
+S
+#11740
+Enterance of the Building~
+~
+0 1073741828 1
+D0
+~
+~
+0 -1 11741
+S
+#11741
+Large Reception Area~
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 11742
+D2
+~
+~
+0 -1 11740
+D3
+~
+~
+0 -1 11743
+S
+#11742
+East Elevator~
+~
+0 1073741828 1
+S
+#11743
+West Elevator~
+say "List" for a list of options.
+~
+0 1073741828 1
+> speech_prog list~
+mea $n Upper Level - Offices
+mea $n Middle Level - Labratories
+mea $n Lower Level - Research Departments
+~
+> speech_prog upper~
+mptransfer $n 11746
+~
+|
+S
+#11744
+Hallway~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 11747
+D1
+~
+~
+0 -1 11745
+D2
+~
+~
+0 -1 11748
+S
+#11745
+Hallway~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 11750
+D1
+~
+~
+0 -1 11746
+D2
+~
+~
+0 -1 11749
+D3
+~
+~
+0 -1 11744
+S
+#11746
+Hallway~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 11751
+D1
+~
+~
+0 -1 11743
+D2
+~
+~
+0 -1 11752
+D3
+~
+~
+0 -1 11745
+S
+#11747
+Kuizko's Office~
+~
+0 1073741824 1
+D2
+~
+~
+0 -1 11744
+S
+#11748
+Takiashi's Office~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 11744
+S
+#11749
+Yamamotata's Office~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 11745
+S
+#11750
+Raynessi's Office~
+~
+0 1073741824 1
+D2
+~
+~
+0 -1 11745
+S
+#0
+
+
+#RESETS
+S
+
+
+#SHOPS
+ 11713    0  0  0  0  0   120  90         0 23    ; In-N-Out Worker
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

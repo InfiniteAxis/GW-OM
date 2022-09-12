@@ -1,0 +1,559 @@
+#AREA   {PROTO} Trowa's area in progress~
+
+
+
+#AUTHOR Trowa~
+
+#RANGES
+0 0 0 0
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 0
+
+#MOBILES
+#3100
+Colony Nurse~
+A Bouncy Colony Nurse~
+A Bouncy Colony Nurse is here treating wounds.
+~
+~
+3 0 0 Z
+50 0 -25 10d10+500 5d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+10 10 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog heal~
+nod
+say There you go $n ^^_^^
+mprestore $n 30000
+~
+|
+#3101
+An Old Hermit~
+An Old Hermit~
+An Old Hermit is here begging for change.
+~
+~
+134217731 40 0 Z
+100 0 -150 20d10+1000 10d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+20 20 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> bribe_prog 5000000~
+if ispc($n)
+     say Thank you $n.
+     mpoload 3100
+     give flame $n
+    else
+     say Not my favorite number...
+     frown
+   endif
+~
+> greet_prog 100~
+sigh
+say Will anyone ever give me my favorite number??
+~
+|
+#3102
+Chocobo~
+A &YC&Oh&Yo&Oc&Yo&Ob&Yo&w~
+A &YC&Oh&Yo&Oc&Yo&Ob&Yo&P is here pecking at the ground
+~
+~
+262145 0 0 Z
+75 0 -87 15d10+750 7d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+15 15 0 0 0 0 3 0
+0 0 0 0 0 0 0 0
+#3103
+Blue Chocobo~
+A &BB&bl&Bu&be &YC&Oh&Yo&Oc&Yo&Ob&Yo&P&w~
+A &BB&bl&Bu&be &YC&Oh&Yo&Oc&Yo&Ob&Yo&P is looking at you with a wierd expression.
+~
+~
+262147 0 0 Z
+125 0 -212 25d10+1250 12d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+25 25 0 0 0 0 3 0
+0 0 0 0 0 0 0 0
+#3104
+Green Chocobo~
+A &GG&gr&Ge&ge&Gn &YC&Oh&Yo&Oc&Yo&Ob&Yo&w~
+A &GG&gr&Ge&ge&Gn &YC&Oh&Yo&Oc&Yo&Ob&Yo&P is making wierd noises at you.
+~
+~
+262147 0 0 Z
+168 0 -320 33d10+1680 16d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+33 33 0 0 0 0 3 1
+0 0 0 0 0 0 0 0
+#3105
+A Black Chocobo~
+A &zB&Wl&za&Wc&zk &YC&Oh&Yo&Oc&Yo&Ob&Yo&w~
+A &zB&Wl&za&Wc&zk &YC&Oh&Yo&Oc&Yo&Ob&Yo&P is here staring blankly at you.
+~
+~
+262147 0 0 Z
+210 0 -425 42d10+2100 21d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 3
+42 42 0 0 0 0 3 1
+0 0 0 0 0 0 0 0
+#3106
+A Gold Chocobo~
+A &YG&Oo&Yl&Od &YC&Oh&Yo&Oc&Yo&Ob&Yo&w~
+A &YG&Oo&Yl&Od &YC&Oh&Yo&Oc&Yo&Ob&Yo&P is glowing brightly.
+~
+~
+262147 67108864 0 Z
+300 0 -650 60d10+3000 30d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 4
+60 60 0 0 0 0 3 3
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#3100
+Ra-Seru Flame~
+&CR&ca&z-&BS&be&Pr&pu &RF&rl&pa&rm&Re&G~
+&CR&ca&z-&BS&be&Pr&pu &RF&rl&pa&rm&Re&G~
+~
+1 0 16385
+1000 1000 0 0
+1 6000000 600000
+A
+1 5
+A
+2 2
+A
+18 2
+A
+19 2
+#3101
+Zora's Flippers~
+&GZ&co&Gr&ca&G'&cs &BF&Cl&ci&bpp&ce&Cr&Bs&G~
+&GZ&co&Gr&ca&G'&cs &BF&Cl&ci&bpp&ce&Cr&Bs&G~
+~
+9 0 65
+60 60 0 0
+1 5000000 500000
+A
+13 250
+A
+31 1
+A
+19 3
+A
+17 -50
+#3102
+Takato's Goggles~
+&YT&Ga&gka&Gt&Yo&g'&Gs &CG&zo&cg&Cg&cl&ze&Cs&G~
+&YT&Ga&gka&Gt&Yo&g'&Gs &CG&zo&cg&Cg&cl&ze&Cs&G~
+~
+9 0 131073
+50 50 0 0
+1 5000000 500000
+A
+25 2
+A
+17 -50
+A
+14 300
+#0
+
+
+#ROOMS
+#3100
+&BN95 Landing Pad&W~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 3101
+D3
+~
+~
+0 -1 3121
+S
+#3101
+&BEntrance to the Colony&W~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 3102
+D2
+~
+~
+0 -1 3100
+S
+#3102
+&BThree Way Path&W~
+~
+0 1073741824 1
+D2
+~
+~
+0 -1 3101
+D3
+~
+~
+0 -1 3103
+S
+#3103
+&BA Well Used Path&W~
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 3102
+D3
+~
+~
+0 -1 3104
+S
+#3104
+&BA Well Used Path&W~
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 3103
+D3
+~
+~
+0 -1 3105
+S
+#3105
+&BA Bend in the Road&W~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 3106
+D1
+~
+~
+0 -1 3104
+S
+#3106
+&BBefore the Training Center&W~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 3107
+D2
+~
+~
+0 -1 3105
+S
+#3107
+&BTraining Center Complex&W~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 3108
+D1
+~
+~
+0 -1 3115
+D2
+~
+~
+0 -1 3106
+D3
+~
+~
+0 -1 3109
+S
+#3108
+&BHealing Chamber&W~
+~
+0 1073742848 1
+D2
+~
+~
+0 -1 3107
+S
+#3109
+&BBeginner Section&W~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 3110
+D1
+~
+~
+0 -1 3107
+D2
+~
+~
+0 -1 3112
+D3
+~
+~
+0 -1 3111
+D4
+~
+~
+0 -1 3113
+D5
+~
+~
+0 -1 3114
+S
+#3110
+&BTraining Room 1&W~
+~
+0 1073741824 1
+D2
+~
+~
+0 -1 3109
+> speech_prog yellow~
+mpmload 3102
+mpforce chocobo emote pecks at you, ready to fight!
+~
+|
+S
+#3111
+&BTraining Room 3&W~
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 3109
+> speech_prog green~
+mpmload 3104
+mpforce chocobo emote lets out a loud, "WARK!"
+~
+|
+S
+#3112
+&BTraining Room 2&W~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 3109
+> speech_prog blue~
+mpmload 3103
+mpforce chocobo emote flaps its short wings and glares at
+you.
+~
+|
+S
+#3113
+&BTraining Room 4&W~
+~
+0 1073741824 1
+D5
+~
+~
+0 -1 3109
+> speech_prog black~
+mpmload 3105
+mpforce chocobo emote flaps its wings angrily at you.
+~
+|
+S
+#3114
+&BTraining Room 5&W~
+~
+0 1073741824 1
+D4
+~
+~
+0 -1 3109
+> speech_prog gold~
+mpmload 3106
+mpforce chocobo emote glows with a shiny aura.
+~
+|
+S
+#3115
+&BAdvanced Section&W~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 3116
+D1
+~
+~
+0 -1 3117
+D2
+~
+~
+0 -1 3118
+D3
+~
+~
+0 -1 3107
+D4
+~
+~
+0 -1 3119
+D5
+~
+~
+0 -1 3120
+S
+#3116
+&BTraining Room 1&W~
+~
+0 1073741824 1
+D2
+~
+~
+0 -1 3115
+S
+#3117
+&BTraining Room 2&W~
+~
+0 1073741824 1
+D3
+~
+~
+0 -1 3115
+S
+#3118
+&BTraining Room 3&W~
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 3115
+S
+#3119
+&BTraining Room 4&W~
+~
+0 1073741824 1
+D5
+~
+~
+0 -1 3115
+S
+#3120
+&BTraining Room 5&W~
+~
+0 1073741824 1
+D4
+~
+~
+0 -1 3115
+S
+#3121
+&BA Dusty Trail&W~
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 3100
+D3
+~
+~
+0 -1 3122
+S
+#3122
+&BA Dusty Trail&W~
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 3121
+D3
+~
+~
+0 -1 3123
+S
+#3123
+&BA Dusty Trail&W~
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 3122
+D3
+~
+~
+0 -1 3124
+S
+#3124
+&BAn Old Hermits Home&W~
+~
+0 1073742848 1
+D1
+~
+~
+0 -1 3123
+S
+#0
+
+
+#RESETS
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

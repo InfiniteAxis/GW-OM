@@ -1,0 +1,563 @@
+#AREA   Virgos and other Suits~
+
+
+
+#AUTHOR Antonio~
+
+#RANGES
+0 0 0 1000
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 6250100
+
+#MOBILES
+#0
+
+
+#OBJECTS
+#6500
+testitem~
+a testitem~
+A testitem is here.~
+~
+13 0 0
+0 0 0 0
+1 0 0
+#0
+
+
+#ROOMS
+#6500
+Virgo Cockpit~
+~
+0 536870916 0 1 0
+S
+#6501
+Virgo Cockpit~
+~
+0 536870916 0 1 0
+S
+#6502
+Virgo Cockpit~
+~
+0 536870916 0 1 0
+S
+#6503
+Virgo Cockpit~
+~
+0 536870916 0 1 0
+S
+#6504
+Virgo Cockpit~
+~
+0 536870916 0 1 0
+S
+#6505
+Virgo Cockpit~
+~
+0 536870916 0 1 0
+S
+#6506
+Virgo Cockpit~
+~
+0 536870916 0 1 0
+S
+#6507
+Virgo Cockpit~
+~
+0 536870916 0 1 0
+S
+#6508
+Virgo Cockpit~
+~
+0 536870916 0 1 0
+S
+#6509
+Virgo Cockpit~
+~
+0 536870916 0 1 0
+S
+#6510
+Virgo Cockpit~
+~
+0 536870916 0 1 0
+S
+#6511
+Virgo Cockpit~
+~
+0 536870916 0 1 0
+S
+#6512
+Virgo Cockpit~
+~
+0 536870916 0 1 0
+S
+#6513
+Virgo Cockpit~
+~
+0 536870916 0 1 0
+S
+#6514
+Virgo Cockpit~
+~
+0 536870916 0 1 0
+S
+#6515
+Virgo Cockpit~
+~
+0 536870916 0 1 0
+S
+#6516
+Virgo Cockpit~
+~
+0 536870916 0 1 0
+S
+#6517
+Virgo Cockpit~
+~
+0 536870916 0 1 0
+S
+#6518
+Virgo Cockpit~
+~
+0 536870916 0 1 0
+S
+#6519
+Virgo Cockpit~
+~
+0 536870916 0 1 0
+S
+#6520
+Virgo Cockpit~
+~
+0 536870916 0 1 0
+S
+#6521
+Virgo Cockpit~
+~
+0 536870916 0 1 0
+S
+#6522
+Virgo Cockpit~
+~
+0 536870916 0 1 0
+S
+#6523
+Virgo Cockpit~
+~
+0 536870916 0 1 0
+S
+#6524
+Virgo Cockpit~
+~
+0 536870916 0 1 0
+S
+#6525
+Wing Gundam Cockpit~
+~
+0 4 0 1 0
+S
+#6526
+Gundam: Deathscythe Cockpit~
+~
+0 536870916 0 1 0
+S
+#6527
+Gundam: Heavyarms Cockpit~
+~
+0 536870916 0 1 0
+S
+#6528
+Shen-long Gundam Cockpit~
+~
+0 536870916 0 1 0
+S
+#6529
+Tallgeese Cockpit~
+~
+0 536870916 0 1 0
+S
+#6530
+Gundam: Epyon Cockpit~
+~
+0 536870916 0 1 0
+S
+#6531
+Vayeate Cockpit~
+~
+0 536870916 0 1 0
+S
+#6532
+Mercurius Cockpit~
+~
+0 536870916 0 1 0
+S
+#6533
+Maganac Cockpit~
+~
+0 536870916 0 1 0
+S
+#6534
+Maganac Cockpit~
+~
+0 536870916 0 1 0
+S
+#6535
+Maganac Cockpit~
+~
+0 536870916 0 1 0
+S
+#6536
+Maganac Cockpit~
+~
+0 536870916 0 1 0
+S
+#6537
+Maganac Cockpit~
+~
+0 536870916 0 1 0
+S
+#6538
+Maganac Cockpit~
+~
+0 536870916 0 1 0
+S
+#6539
+Maganac Cockpit~
+~
+0 536870916 0 1 0
+S
+#6540
+Gundam: Sandrock Cockpit~
+~
+0 536870916 0 1 0
+S
+#6541
+Public Shuttle Cockpit~
+~
+0 536870916 0 1 0
+S
+#6542
+Public Shuttle Cockpit~
+~
+0 536870916 0 1 0
+S
+#6543
+Public Shuttle Cockpit~
+~
+0 536870916 0 1 0
+S
+#6544
+Public Shuttle Cockpit~
+~
+0 536870916 0 1 0
+S
+#6545
+Public Shuttle Cockpit~
+~
+0 536870916 0 1 0
+S
+#6546
+Public Shuttle Cockpit~
+~
+0 536870916 0 1 0
+S
+#6547
+Public Shuttle Cockpit~
+~
+0 536870916 0 1 0
+S
+#6548
+Public Shuttle Cockpit~
+~
+0 536870916 0 1 0
+S
+#6549
+Public Shuttle Cockpit~
+~
+0 536870916 0 1 0
+S
+#6550
+Public Shuttle Cockpit~
+~
+0 536870916 0 1 0
+S
+#6551
+Public Shuttle Cockpit~
+~
+0 536870916 0 1 0
+S
+#6552
+Maganac Cockpit~
+~
+0 536870916 0 1 0
+S
+#6553
+WF Maurader Cockpit~
+~
+0 536870916 0 1 0
+S
+#6554
+WF Maurader Cockpit~
+~
+0 536870916 0 1 0
+S
+#6555
+WF Maurader Cockpit~
+~
+0 536870916 0 1 0
+S
+#6556
+WF Maurader Cockpit~
+~
+0 536870916 0 1 0
+S
+#6557
+WF Maurader Cockpit~
+~
+0 536870916 0 1 0
+S
+#6558
+WF Maurader Cockpit~
+~
+0 536870916 0 1 0
+S
+#6559
+WF Maurader WF07 Cockpit~
+~
+0 536870916 0 1 0
+S
+#6560
+WF Maurader Cockpit~
+~
+0 536870916 0 1 0
+S
+#6561
+Holosuit Chamber~
+For usage of this Suit, please read HELP HOLOSUIT
+~
+0 536870916 0 1 0
+S
+#6562
+Holosuit Chamber~
+For usage of this Suit, please read HELP HOLOSUIT
+~
+0 536870916 0 1 0
+S
+#6563
+Holosuit Chamber~
+For usage of this Suit, please read HELP HOLOSUIT
+~
+0 536870916 0 1 0
+S
+#6564
+Holosuit Chamber~
+For usage of this Suit, please read HELP HOLOSUIT
+~
+0 536870916 0 1 0
+S
+#6565
+Holosuit Chamber~
+For usage of this Suit, please read HELP HOLOSUIT
+~
+0 536870916 0 1 0
+S
+#6566
+Holosuit Chamber~
+For usage of this Suit, please read HELP HOLOSUIT
+~
+0 536870916 0 1 0
+S
+#6567
+Holosuit Chamber~
+For usage of this Suit, please read HELP HOLOSUIT
+~
+0 536870916 0 1 0
+S
+#6568
+Holosuit Chamber~
+For usage of this Suit, please read HELP HOLOSUIT
+~
+0 536870916 0 1 0
+S
+#6569
+Holosuit Chamber~
+For usage of this Suit, please read HELP HOLOSUIT
+~
+0 536870916 0 1 0
+S
+#6570
+Holosuit Chamber~
+For usage of this Suit, please read HELP HOLOSUIT
+~
+0 536870916 0 1 0
+S
+#6571
+Oz Quickfire Cockpit~
+~
+0 536870916 0 1 0
+S
+#6572
+Oz Quickfire Cockpit~
+~
+0 536870916 0 1 0
+S
+#6573
+Oz Quickfire Cockpit~
+~
+0 536870916 0 1 0
+S
+#6574
+Oz Quickfire Cockpit~
+~
+0 536870916 0 1 0
+S
+#6575
+Oz Quickfire Cockpit~
+~
+0 536870916 0 1 0
+S
+#6576
+Oz Quickfire Cockpit~
+~
+0 536870916 0 1 0
+S
+#6577
+Oz Quickfire Cockpit~
+~
+0 536870916 0 1 0
+S
+#6578
+Oz Quickfire Cockpit~
+~
+0 536870916 0 1 0
+S
+#6579
+ESUN Peacekeeper Cockpit~
+~
+0 536870916 0 1 0
+S
+#6580
+ESUN Peacekeeper Cockpit~
+~
+0 536870916 0 1 0
+S
+#6581
+ESUN Peacekeeper Cockpit~
+~
+0 536870916 0 1 0
+S
+#6582
+ESUN Peacekeeper Cockpit~
+~
+0 536870916 0 1 0
+S
+#6583
+ESUN Peacekeeper Cockpit~
+~
+0 536870916 0 1 0
+S
+#6584
+ESUN Peacekeeper Cockpit~
+~
+0 536870916 0 1 0
+S
+#6585
+ESUN Peacekeeper Cockpit~
+~
+0 536870916 0 1 0
+S
+#6586
+ESUN Peacekeeper Cockpit~
+~
+0 536870916 0 1 0
+S
+#6587
+Gundam: Altron Cockpit~
+~
+0 536870916 0 1 0
+S
+#6588
+Wing Gundam Zero Cockpit~
+~
+0 536870916 0 1 0
+S
+#6589
+Tallgeese II Cockpit~
+~
+0 536870916 0 1 0
+S
+#6590
+Tallgeese III Cockpit~
+~
+0 536870916 0 1 0
+S
+#6591
+Gundam: Deathscythe HELL Cockpit~
+~
+0 536870916 0 1 0
+S
+#6592
+Gundam: Epyon Custom Cockpit~
+~
+0 536870916 0 1 0
+S
+#6593
+Floating in a void~
+~
+0 536870916 0 1 0
+S
+#6594
+Floating in a void~
+~
+0 536870916 0 1 0
+S
+#6595
+Floating in a void~
+~
+0 536870916 0 1 0
+S
+#6596
+Floating in a void~
+~
+0 536870916 0 1 0
+S
+#6597
+Floating in a void~
+~
+0 536870916 0 1 0
+S
+#6598
+Floating in a void~
+~
+0 536870916 0 1 0
+S
+#6599
+Floating in a void~
+~
+0 536870916 0 1 0
+S
+#0
+
+
+#RESETS
+O 1 6500 1 6599
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

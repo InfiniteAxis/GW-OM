@@ -1,0 +1,14 @@
+#PLANET
+Name         Colony G42~
+Filename     g42.planet~
+BaseValue    1000000
+Flags        0
+PopSupport   50.000000
+Imports       1 0 0 0 0 0 0 0 0 0
+Exports       0 0 1 0 0 0 0 0 0 0
+GovernedBy   Phoenix Rising~
+Area         G42.are~
+Area         gwacademy.are~
+End
+
+#END

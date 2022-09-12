@@ -1,0 +1,1594 @@
+#AREA   {PROTO} Tyrel's area in progress~
+
+
+
+#AUTHOR Tyrel~
+
+#RANGES
+0 0 0 0
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 12410
+
+#MOBILES
+#400
+A Guard~
+A guard~
+A Guard is posted here.
+~
+The guard has blonde hair and blue eyes. He has a very stern look. ~
+1073741827 0 0 Z
+60 0 -50 12d10+600 6d4+2
+0 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+10 20 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#401
+A Petshop Owner~
+A Petshop Owner~
+A Petshop Owner is standing here ready to assist you.
+~
+~
+1073741825 0 0 Z
+200 0 -400 40d10+2000 20d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+40 40 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#402
+Tom~
+Tom~
+Tom is standing here ready to assist.
+~
+~
+1073741825 0 0 Z
+200 0 -400 40d10+2000 20d4+2
+0 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+40 40 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#403
+A Cat~
+A Cat~
+A cat is prowling around here.
+~
+~
+1073742081 0 0 Z
+20 0 50 4d10+200 2d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+4 4 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#404
+A Dog~
+A Dog~
+A dog is walking around here.
+~
+~
+1073742081 0 0 Z
+20 0 50 4d10+200 2d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+4 4 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#405
+A Bird~
+A Bird~
+A bird is flying around here.
+~
+~
+1073742081 0 0 Z
+20 0 50 4d10+200 2d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+4 4 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#406
+A Petshop Owner~
+A Petshop Owner~
+A petshop owner is here ready to assist you in choosing the right pet.
+~
+~
+1073741827 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#407
+A Hologram~
+A Hologram~
+A Hologram is ready to battle.
+~
+~
+3 0 0 Z
+7 0 82 1d10+70 0d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+1 1 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#408
+A Hologram~
+A Hologram~
+A hologram stands here ready to fight.
+~
+~
+3 0 0 Z
+25 0 37 5d10+250 2d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+5 5 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#409
+A Hologram~
+A Hologram~
+A hologram stands here ready to fight.
+~
+~
+3 0 0 Z
+50 0 -25 10d10+500 5d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+10 10 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#410
+A Hologram~
+A Hologram~
+A hologram is ready to fight.
+~
+~
+1 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#411
+A Hologram~
+A Hologram~
+A hologram is ready to battle.
+~
+~
+3 0 0 Z
+95 0 -137 19d10+950 9d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+19 19 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#412
+A Hologram~
+A Hologram~
+A hologram stands ready to battle.
+~
+~
+1 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#413
+A Hologram~
+A Hologram~
+A hologram is standing ready to battle.
+~
+~
+1 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#414
+A Weaponshop Owner~
+A Weaponshop Owner~
+A weaponshop owner is awaiting your choice.
+~
+~
+3 0 0 Z
+500 0 -1150 100d10+5000 50d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+100 100 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#415
+An Armorshop Owner~
+Armorshop Owner~
+An armorshop owner stands ready to assist you.
+~
+~
+3 0 0 Z
+500 0 -1150 100d10+5000 50d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+100 100 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#416
+A Shopkeeper~
+Shopkeeper~
+A Shopkeeper is here, waiting to help you.
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#417
+A Hotel Manager~
+Hotel Manager~
+A hotel manager is here, typing on the computer.
+~
+~
+1 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#418
+Sally~
+Sally~
+Sally is here taking orders.
+~
+~
+3 0 0 Z
+500 0 -1150 100d10+5000 50d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+100 100 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#419
+A Sneaky Man~
+Man~
+A sneaky man is sneaking around here.
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#400
+bag of Skittles~
+A bag of Skittles~
+A bag of Skittles has been thrown down here.~
+~
+19 1073741824 1
+0 0 0 0
+1 12 1
+#402
+A Toilet~
+Toilet~
+A toilet is here waiting to be used.~
+~
+13 0 1
+0 0 0 0
+1 0 0
+#403
+A Grill~
+Grill~
+A grill is here.~
+~
+13 0 0
+0 0 0 0
+1 0 0
+#406
+A Dragon Cape~
+A Dragon Cape~
+A dragon cape is laying here.~
+~
+9 0 0
+100 45 0 0
+1 0 0
+#407
+Some Dragon Boots~
+Some Dragon Boots~
+A Dragon Boots is here.~
+~
+13 1073741824 0
+0 0 0 0
+1 0 0
+#408
+model of p3~
+A model kit of Colony P3~
+A model kit of Colony P3 lies on the floor.~
+~
+13 0 0
+0 0 0 0
+1 1000 100
+#409
+p3 map~
+A map of Colony P3~
+A "helpful" map of Colony P3 is crumpled on the floor.~
+~
+13 0 0
+0 0 0 0
+1 1000 100
+#410
+p3 postcard~
+A postcard from Colony P3~
+A postcard from Colony P3 lies on the floor.~
+~
+13 0 0
+0 0 0 0
+1 100 10
+#411
+An ID~
+An ID~
+An ID has been misplaced here.~
+~
+13 1073741824 16385
+0 0 0 0
+1 5000 500
+#471
+A Bed~
+A Bed~
+A Bed has been placed here~
+You sleep on the bed.~
+13 0 1
+0 0 0 0
+1 0 0
+#499
+couch sofa~
+a couch~
+A large sofa is here.~
+~
+12 0 0
+0 0 0 0
+1 0 0
+#0
+
+
+#ROOMS
+#400
+V9 Docking Bay~
+There are flashing lights everywhere. People are rushing from every
+direction to get to their ships. Tiny little repair droids are scurring
+about trying to repair everything. There is a large blast door parting
+space from the bay.  There are raised pads signaling the ships where to
+land.
+~
+0 56 1
+D0
+~
+~
+0 -1 401
+S
+#401
+Walkway~
+The floor is made of steel. The walls are a silverish color and look to be
+fairly new. The sound of ships is loud here. The smell of oil and
+spacecraft fuel fills the air.
+~
+0 12 1
+D0
+~
+~
+0 -1 402
+D2
+~
+~
+0 -1 400
+S
+#402
+Fourway Intersection~
+This is the Merchant St. and Hobby St. cross way. North is the residential
+area. There is the noise of rushing feet as people scurry about going form
+one place to another. The rode is paved with gold, it looks like it must
+have cost alot to pave it. There is an artificial sun shining in the sky.
+~
+0 8 1
+D0
+~
+~
+0 -1 404
+D1
+~
+~
+0 -1 405
+D2
+~
+~
+0 -1 401
+D3
+~
+~
+0 -1 403
+S
+#403
+Merchant Street~
+This street is full of rushing people. Merchants are selling their wares
+almost everywhere. Shop owners have set up little stands everywhere. It
+looks like this street goes on for a little way and then comes into a
+circle. The artificial sun is beaming down on everything and everyone.
+~
+0 8 1
+D0
+~
+~
+0 -1 430
+D1
+~
+~
+0 -1 402
+D3
+~
+~
+0 -1 447
+S
+#404
+Hobby Street~
+This is the residential street. Up and down the street are houses that have
+been either bought or sold. All the houses are one story and have a
+beautiful lawn. There are large oak trees growning on the side of the rode
+right next to the sidewalk. Some of the houses have little flower beds all
+ready for the owner to plant some flowers in them.
+~
+0 8 1
+D0
+~
+~
+0 -1 406
+D2
+~
+~
+0 -1 402
+S
+#405
+Merchant Street~
+This street is full of rushing people. Merchants are selling their wares
+almost everywhere. Shop owners have set up little stands everywhere. It
+looks like this street goes on for a little way and then comes into a
+circle. The artificial sun is beaming down on everything and everyone.
+~
+0 8 1
+D1
+~
+~
+0 -1 407
+D3
+~
+~
+0 -1 402
+S
+#406
+Hobby Street~
+This is the residential street. Up and down the street are houses that have
+been either bought or sold. All the houses are one story and have a
+beautiful lawn. Ther are large oak trees growing on the side of the road
+right next to the sidewalk. Some of the houses have little flower beds all
+ready for thw owner to plant some flowers in them.
+~
+0 8 1
+D0
+~
+~
+0 -1 408
+D1
+~
+~
+0 -1 418
+D2
+~
+~
+0 -1 404
+D3
+~
+~
+0 -1 416
+S
+#407
+Merchant Street~
+This street is full of rushing people. Merchants are selling their wares
+almost everywhere. Shop owners have set up little stands everywhere. It
+looks like this street goes on for a little way and then comes into a
+circle. The artificial sun is beaming down on everything and everyone.
+~
+0 12 1
+D1
+~
+~
+0 -1 419
+D3
+~
+~
+0 -1 405
+S
+#408
+Hobby Street~
+This is the residential street. Up and down the street are houses that have
+been either bought or sold. All the houses are one story and have a
+beautiful lawn. Ther are large oak trees growing on the side of the road
+right next to the sidewalk. Some of the houses have little flower beds all
+ready for thw owner to plant some flowers in them.
+~
+0 8 1
+D0
+~
+~
+0 -1 409
+D1
+~
+~
+0 -1 415
+D2
+~
+~
+0 -1 406
+D3
+~
+~
+0 -1 417
+S
+#409
+Hobby Street~
+This is the residential street. Up and down the street are houses that have
+been either bought or sold. All the houses are one story and have a
+beautiful lawn. Ther are large oak trees growing on the side of the road
+right next to the sidewalk. Some of the houses have little flower beds all
+ready for thw owner to plant some flowers in them.
+~
+0 8 1
+D0
+~
+~
+0 -1 410
+D1
+~
+~
+0 -1 414
+D2
+~
+~
+0 -1 408
+D3
+~
+~
+0 -1 413
+S
+#410
+Hobby Street~
+This is the residential street. Up and down the street are houses that have
+been either bought or sold. All the houses are one story and have a
+beautiful lawn. Ther are large oak trees growing on the side of the road
+right next to the sidewalk. Some of the houses have little flower beds all
+ready for thw owner to plant some flowers in them.
+ 
+&bSay the secret password to get to somewhere special.&w
+~
+0 8 1
+D1
+~
+~
+0 -1 412
+D2
+~
+~
+0 -1 409
+D3
+~
+~
+0 -1 411
+> speech_prog Dragon~
+mpecho You were right! Please pass through.
+mptransfer $n 476
+~
+|
+S
+#411
+Empty House~
+~
+0 2098188 1
+D1
+~
+~
+0 -1 410
+S
+#412
+Empty House~
+~
+0 2098188 1
+D3
+~
+~
+0 -1 410
+S
+#413
+Empty House~
+~
+0 2098188 1
+D1
+~
+~
+0 -1 409
+S
+#414
+Empty House~
+~
+0 2098188 1
+D3
+~
+~
+0 -1 409
+S
+#415
+Empty House~
+~
+0 2098188 1
+D3
+~
+~
+0 -1 408
+S
+#416
+Empty House~
+~
+0 2098188 1
+D1
+~
+~
+0 -1 406
+S
+#417
+Empty House~
+~
+0 2098188 1
+D1
+~
+~
+0 -1 408
+S
+#418
+Empty House~
+~
+0 2098188 1
+D3
+~
+~
+0 -1 406
+S
+#419
+Merchant Street~
+This street is full of rushing people. Merchants are selling their wares
+almost everywhere. Shop owners have set up little stands everywhere. It
+looks like this street goes on for a little way and then comes into a
+circle. The artificial sun is beaming down on everything and everyone.
+~
+0 12 1
+D1
+~
+~
+0 -1 420
+D3
+~
+~
+0 -1 407
+S
+#420
+Merchant Street~
+This street is full of rushing people. Merchants are selling their wares
+almost everywhere. Shop owners have set up little stands everywhere. It
+looks like this street goes on for a little way and then comes into a
+circle. The artificial sun is beaming down on everything and everyone.
+~
+0 8 1
+D3
+~
+~
+0 -1 419
+D6
+~
+~
+0 -1 426
+D7
+~
+~
+0 -1 421
+S
+#421
+Merchant Circle~
+This is the space station's main shopping center. The amount of people
+rushing about to buy stuff is unbelievable. This time there are shops set
+up on the side of the road instead of little stands. A stray dog is
+running around looking for stuff to nibble on, must be hungry. There are a
+bunch of shopping bags just thrown about. People here must not be very
+neat and tidy.
+~
+0 8 1
+D0
+~
+~
+0 -1 422
+D3
+~
+~
+0 -1 450
+D8
+~
+~
+0 -1 420
+S
+#422
+Merchant Circle~
+This is the space station's main shopping center. The amount of people
+rushing about to buy stuff is unbelievable. This time there are shops set
+up on the side of the road instead of little stands. A stray dog is
+running around looking for stuff to nibble on, must be hungry. There are a
+bunch of shopping bags just thrown about. People here must not be very
+neat and tidy.
+~
+0 8 1
+D1
+~
+~
+0 -1 445
+D2
+~
+~
+0 -1 421
+D3
+~
+~
+0 -1 446
+D7
+~
+~
+0 -1 423
+S
+#423
+Merchant Circle~
+This is the space station's main shopping center. The amount of people
+rushing about to buy stuff is unbelievable. This time there are shops set
+up on the side of the road instead of little stands. A stray dog is
+running around looking for stuff to nibble on, must be hungry. There are a
+bunch of shopping bags just thrown about. People here must not be very
+neat and tidy.
+~
+0 8 1
+D0
+~
+~
+0 -1 442
+D1
+~
+~
+0 -1 424
+D2
+~
+~
+0 -1 443
+D8
+~
+~
+0 -1 422
+S
+#424
+Merchant Circle~
+This is the space station's main shopping center. The amount of people
+rushing about to buy stuff is unbelievable. This time there are shops set
+up on the side of the road instead of little stands. A stray dog is
+running around looking for stuff to nibble on, must be hungry. There are a
+bunch of shopping bags just thrown about. People here must not be very
+neat and tidy.
+~
+0 8 1
+D0
+~
+~
+0 -1 440
+D2
+~
+~
+0 -1 441
+D3
+~
+~
+0 -1 423
+D8
+~
+~
+0 -1 425
+S
+#425
+Merchant Circle~
+This is the space station's main shopping center. The amount of people
+rushing about to buy stuff is unbelievable. This time there are shops set
+up on the side of the road instead of little stands.A stray dog is running
+around looking for stuff to nibble  This is the space station's main
+shopping center. The amount of people rushing about to buy stuff is
+unbelievable. This time there are shops set up on the side of the road
+instead of little stands. A stray dog is running around looking for stuff
+to nibble on, must be hungry. There are a bunch of shopping bags just
+thrown about. People here must not be very neat and tidy.
+~
+0 8 1
+D1
+~
+~
+0 -1 439
+D2
+~
+~
+0 -1 426
+D3
+~
+~
+0 -1 498
+D7
+~
+~
+0 -1 424
+S
+#426
+Merchant Circle~
+This is the space station's main shopping center. The amount of people
+rushing about to buy stuff is unbelievable. This time there are shops set
+up on the side of the road instead of little stands. A stray dog is
+running around looking for stuff to nibble on, must be hungry. There are a
+bunch of shopping bags just thrown about. People here must not be very
+neat and tidy.
+~
+0 8 1
+D0
+~
+~
+0 -1 425
+D1
+~
+~
+0 -1 427
+D3
+~
+~
+0 -1 429
+D9
+~
+~
+0 -1 420
+S
+#427
+Pet Shop~
+This is the station's pet store. You can get all kinds of pets here. They
+are fun to play with and fun to take care of. There are posters of exotic
+birds all over the walls. The noise of animals is almost unbelievable, how
+does the clerk stand it? 
+~
+0 5128 1
+D3
+~
+~
+0 -1 426
+S
+#428
+Pet Shop Storage~
+This is the pet shop storage room.
+~
+0 1073741836 1
+S
+#429
+Tom's Tools~
+This is the shop that sells all the main tools in the station.  There are
+posters all over the walls of hammers and wrenches. There are shelves on
+the walls that are holding up batteries and other stuff. Tom is standing
+behind the counter ready to assist anyone.
+~
+0 4 1
+D1
+~
+~
+0 -1 426
+S
+#430
+Trip Lane~
+This is the street leading to the training area. Lots of people train in
+that area, so there is trash everywhere. Light poles have been placed into
+the ground, but look to be unused because of the artificial sun. There are
+grunts and screams coming from up ahead, the training center. There are
+large oak trees scattered about along the sidewalk, with squirrels running
+about in them looking for acorns, kinda awkward.
+~
+0 4 1
+D0
+~
+~
+0 -1 431
+D2
+~
+~
+0 -1 403
+S
+#431
+Trip Lane~
+This is the street leading to the training area. Lots of people train in
+that area, so there is trash everywhere. Light poles have been placed into
+the ground, but look to be unused because of the artificial sun. There are
+grunts and screams coming from up ahead, the training center.  There are
+large oak trees scattered about along the sidewalk, with squirrels running
+about in them looking for acorns, kinda awkward.
+ 
+ 
+&BSay "Begin" to activate training stations.&w
+~
+0 0 1
+D0
+~
+~
+0 -1 434
+D1
+~
+~
+0 -1 433
+D2
+~
+~
+0 -1 430
+D3
+~
+~
+0 -1 432
+D6
+~
+~
+0 -1 436
+D7
+~
+~
+0 -1 435
+D8
+~
+~
+0 -1 438
+D9
+~
+~
+0 -1 437
+S
+#432
+Training Stage 3~
+This is the level 3 training room. There are powerful people in here
+kicking holograms to pieces. There is a panel on the wall that looks to be
+of no use. The holograms are waiting, go kick some butt.
+~
+0 0 1
+D1
+~
+~
+0 -1 431
+> speech_prog begin~
+mpmload 409
+mpecho A hologram appears out of nowhere.
+~
+|
+S
+#433
+Training Stage 2~
+This is the level 2 training room. People who have mastered level 1 are
+training here. Be aware that these guys are harder than level 1 and can
+kill easier, be careful. 
+~
+0 0 1
+D3
+~
+~
+0 -1 431
+> speech_prog begin~
+mpmload 408
+mpecho A hologram comes in from a hole in the wall.
+~
+|
+S
+#434
+Training Stage 1~
+This is the level 1 training room. Most of the newbies train here. These
+guys are not really tough, but be careful newbies, it is possible you can
+get killed. 
+~
+0 0 1
+D2
+~
+~
+0 -1 431
+> speech_prog begin~
+mpmload 407
+mpecho A hologram comes in ready to fight.
+~
+|
+S
+#435
+Training Stage 5~
+This is level 5. These are very powerful, don't underestimate them. There
+is only one man here, but he is defeating every hologram he sees. Now
+there are two panels on the wall, but it seems to have no use still.
+~
+0 0 1
+D8
+~
+~
+0 -1 431
+> speech_prog begin~
+mpmload 411
+mpecho A hologram appears out of nowhere.
+~
+|
+S
+#436
+Training Stage 4~
+This is stage 4. Lots of powerful people are here practicing there moves on
+soem holograms. There is another panel on the wall that looks to be of no
+use. These shouldn't be underestimated, they are powerful. Be careful.
+~
+0 0 1
+D9
+~
+~
+0 -1 431
+> speech_prog begin~
+mpmload 410
+mpecho A hologram appears out of nowhere.
+~
+|
+S
+#437
+Training Stage 6~
+This is stage 6. These are unbelievably powerful. There is yet another
+panel no the wall, but this time this one is blinking. There is a man in
+here, but he is fighting a loosing battle. 
+~
+0 0 1
+D6
+~
+~
+0 -1 431
+> speech_prog begin~
+mpmload 412
+mpecho A hologram comes in ready to fight.
+~
+|
+S
+#438
+Training Stage 7~
+This is stage 7. VERY POWERFUL, do not try to go for this is you are under
+level 100. There is a man lying dead here, looks to have been bashed in
+the head by some kind of might force, better keep your eye open.
+~
+0 0 1
+D7
+~
+~
+0 -1 431
+> speech_prog begin~
+mpmload 413
+mpecho A hologram comes in ready to fight.
+~
+|
+S
+#439
+V9 Factory~
+This is the colony factory. This is where engineers can make their own
+bags, flashlights, etc. There is an engineer here hard at work on a sword.
+This a no talking so, so that means you can't talk.
+~
+0 1073808384 1
+D3
+~
+~
+0 -1 425
+S
+#440
+V9 Weapon Shop~
+This is the V9 weapon shop. Right now they only sell blasters, but they are
+working no getting a shipment of new blades in soon. There are people
+walking around the store checking out the new blasters, some are talking
+to the clerk. There are toy blasters in the corner for little kids.
+~
+0 1028 1
+D2
+~
+~
+0 -1 424
+S
+#441
+V9 Armor Shop~
+This is the V9 armor shop. They specilize in piloting outfits, but they
+have some other clothing to sell. There are people walking from the weapon
+shop to the armor shop. There are children running around asking their
+parents for new clothes. The clerk looks pretty happy, with all of his
+customers buying his merchandise.
+~
+0 1024 1
+D0
+~
+~
+0 -1 424
+S
+#442
+V9 Strip Bar~
+~
+0 1024 1
+D0
+~
+~
+0 -1 459
+D2
+~
+~
+0 -1 423
+S
+#443
+The Red Hotel~
+This is the colony's hotel. It is in a very high quality and has a plaque
+hanging on the wall that says the hotel was givin four stars. The hotel
+manager is happy to help anyone who has a question. There is a sign on the
+wall that says "Have a great stay". 
+~
+0 8389632 1
+D0
+~
+~
+0 -1 423
+D2
+~
+~
+0 -1 444
+S
+#444
+Hotel Room~
+This is the bedroom for the hotel. There are many beds, this room is the
+only one. There will be more rooms added on later, as the sign states. The
+beds look very comfotable. The pillows are feather and have silk covers no
+them, so as the bed.
+~
+0 8389632 1
+D0
+~
+~
+0 -1 443
+S
+#445
+V9 Bar and Grill~
+This is the colony's best place to eat. The supply ship got blown up on its
+way here, so supplies are low. Sally is here takeing orders and giving
+food to people. There is a wonderful smell coming from the inside of the
+kitchen. 
+~
+0 1073741836 1
+D3
+~
+~
+0 -1 422
+S
+#446
+V9 Bank~
+This is the colony's bank. There are papers scattered all about the room.
+On the back wall there is an ATM machine for getting money. There are a
+couple people at the front desk complaining aobut something. There is a
+sign on the window that states: ATM Here! 
+~
+0 1280 1
+D1
+~
+~
+0 -1 422
+S
+#447
+Jail Lobby~
+This is the lobby for the jail. There is only one cell, because there are
+not many crimes here. There is a couch in the corner for visitors to rest
+on. There is a water fountain on the wall for people to drink. The desk in
+the middle of the room has not been used in a while, there is a doughnut
+on it, but it looks like it was laid there some time earlier today and
+someone is coming back for it.
+~
+0 12 1
+D0
+~
+~
+0 -1 448
+D1
+~
+~
+0 -1 403
+S
+#448
+Jail Cell~
+This is the cell. There are markings all over the wall of past criminals
+cutting the number of days into the walls with an unknown object. There is
+a toilet in the corner and a bunk bed with white sheets against the wall.
+There is a window in the back that overlooks the prison courtyard.
+~
+0 262156 1
+D0
+~
+~
+33554432 -1 449
+S
+#449
+Prison Courtyard~
+This is the prison courtyard. To bad you can't come here, lot's of people
+are playing basketball here, but guards are watching. You can see large
+concrete walls surrounding the courtyard. There are guardhouses on top of
+every corner that the wall takes. This place has well alert guards.
+~
+0 0 1
+D2
+~
+~
+0 -1 448
+S
+#450
+Back Alley~
+This is the back alley from the merchant circle. It is said weird stuff
+happens here. maybe you should be careful. There is the sound of a cat
+purring on a fence post.  
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 421
+D3
+~
+~
+0 -1 451
+S
+#451
+Back Alley~
+This is the back alley from the merchant circle. It is said weird stuff
+happens here. maybe you should be careful. There is the sound of a cat
+purring on a fence post. 
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 450
+D3
+~
+~
+0 -1 452
+S
+#452
+Back Alley~
+  This is the back alley from the merchant circle. It is said weird stuff
+happens here. maybe you should be careful. There is the sound of a cat
+purring on a fence post. 
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 451
+D3
+~
+~
+0 -1 453
+S
+#453
+Back Alley~
+This is the back alley from the merchant circle. It is said weird stuff
+happens here. maybe you should be careful. There is the sound of a cat
+purring on a fence post. 
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 452
+D3
+~
+~
+0 -1 454
+S
+#454
+Back Alley~
+This is the back alley from the merchant circle. It is said weird stuff
+happens here. maybe you should be careful. There is the sound of a cat
+purring on a fence post. 
+~
+0 1073741824 1
+D1
+~
+~
+0 -1 453
+S
+#459
+Floating in a void~
+~
+0 1073741824 1
+D2
+~
+~
+0 -1 442
+S
+#470
+Party Room~
+This is the room where Tyrel holds all of his parties. There is a big table
+in the middle with alot of drinks on it. To the north is Tyrel's bedroom.
+To the east is Tyrel's bathroom. To the west is Tyrel's porch, and to the
+south is the driveway.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 471
+D1
+~
+~
+0 -1 472
+D2
+~
+~
+0 -1 474
+D3
+~
+~
+0 -1 473
+S
+#471
+Bedroom~
+This is Tyrel's bedroom. There is a bed here where he sleeps on. The sheets
+are made of a golden silk and the pillows are super fluffy. There is a
+window that shows Tyrel's porch. 
+~
+0 1073741824 1
+D2
+~
+~
+0 -1 470
+S
+#472
+Bathroom~
+This is the bathroom, you can guess what Tyrel does in here. There is a red
+sink connected to the wall. There is a mirror above the sink. The toilet
+looks high powered. It is motion activated and has a built-in T3 modem/TV.
+~
+0 1073741824 1
+D3
+~
+~
+0 -1 470
+S
+#473
+Porch~
+This is Tyrel's porch. He holds his cook-outs here, he also has a hot tub
+sitting in the middle of the porch. There is a table with a set of 6
+chairs ging around it. The sun is beating down on the table. There is the
+sound of birds blowing in from the forest.
+~
+0 0 1
+D1
+~
+~
+0 -1 470
+S
+#474
+Driveway~
+This is the driveway to exit Tyrel's house. There are trees parallel to the
+driveway and there are birds chirping from them. The driveway is paved in
+gold and looks to be fairly new, this house must have cost alot to build.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 470
+D2
+~
+~
+0 -1 475
+S
+#475
+Driveway~
+This is the driveway to exit Tyrel's house. There are trees parallel to the
+driveway and there are birds chirping from them. The driveway is paved in
+gold and looks to be fairly new, this house must have cost alot to build.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 474
+D2
+~
+~
+0 -1 476
+S
+#476
+Driveway~
+This is the driveway to exit Tyrel's house. There are trees parallel to the
+driveway and there are birds chirping from them. The driveway is paved in
+gold and looks to be fairly new, this house must have cost alot to build.
+Say "leave" to go back to the R28 landing pad.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 475
+> speech_prog leave~
+mptransfer $n 2000
+~
+|
+S
+#498
+V9 Refinery~
+This is the colony refinery. This is where people can refine drugs, mostly
+used by hippies. There is some machines here that look to be used
+everyday. There is a strange smell coming from somewhere in the room,
+wonder what is it? 
+~
+0 1107296268 1
+D1
+~
+~
+0 -1 425
+S
+#499
+Tyrel's Office~
+~
+0 10485768 1
+D8
+~
+~
+0 -1 106
+S
+#0
+
+
+#RESETS
+M 1 403 1 428
+M 1 404 1 428
+M 1 405 1 428
+M 1 402 1 429
+G 1 2016 1
+G 1 2026 1
+G 1 2025 1
+G 1 2024 1
+G 1 2023 1
+G 1 2022 1
+G 1 2021 1
+G 1 2020 1
+G 1 2014 1
+G 1 2013 1
+G 1 2015 1
+G 1 2018 1
+G 1 2017 1
+M 1 406 1 427
+O 1 402 1 472
+O 1 471 1 471
+O 1 403 1 473
+M 1 408 1 433
+O 1 10 1 436
+O 1 10 1 436
+O 1 10 1 435
+O 1 10 1 435
+M 1 413 1 438
+M 1 407 1 434
+M 1 416 1 442
+G 1 408 1
+G 1 409 1
+G 1 410 1
+G 1 10314 1
+G 1 400 1
+M 1 418 1 445
+G 1 508 1
+G 1 202 1
+M 1 414 1 440
+G 1 6004 1
+G 1 60 1
+G 1 58 1
+G 1 57 1
+G 1 56 1
+G 1 55 1
+G 1 54 1
+G 1 53 1
+G 1 52 1
+G 1 51 1
+G 1 50 1
+G 1 6004 1
+M 1 415 1 441
+G 1 505 1
+G 1 504 1
+G 1 503 1
+G 1 501 1
+G 1 205 1
+G 1 6002 1
+G 1 204 1
+M 1 417 1 443
+M 1 419 1 454
+G 1 411 1
+S
+
+
+#SHOPS
+ 401    0  0  0  0  0   120  90         0 23    ; A Petshop Owner
+ 402    0  0  0  0  0   120  90         0 23    ; Tom
+ 414    0  0  0  0  0   120  90         0 23    ; A Weaponshop Owner
+ 415    0  0  0  0  0   120  90         0 23    ; Armorshop Owner
+ 416    0  0  0  0  0   120  90         0 23    ; Shopkeeper
+ 417    0  0  0  0  0   120  90         0 23    ; Hotel Manager
+ 418    0  0  0  0  0   120  90         0 23    ; Sally
+ 419    0  0  0  0  0   120  90         0 23    ; Man
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

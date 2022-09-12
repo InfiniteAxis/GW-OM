@@ -1,0 +1,2265 @@
+#AREA   {PROTO} Cecia's area in progress~
+
+
+
+#AUTHOR Cecia~
+
+#RANGES
+0 0 0 0
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 0
+
+#MOBILES
+#0
+
+
+#OBJECTS
+#5200
+Silver Keycard~
+&WA &wS&Wi&wl&Wv&we&Wr &wK&We&wy&Wc&wa&Wr&wd~
+A Silver Card lays on the ground~
+~
+18 1073741824 1
+0 0 0 0
+1 0 0
+#0
+
+
+#ROOMS
+#5200
+Sank Kingdom Public Airport~
+A large white shimmering castle reaches up to the clouds as it blends with
+the sun. Along the road to the north leading to this castle is a small
+complex built into the hill with a few people walking about as they walk
+back and forth between the castle and the hill. A plane lands as it glides
+down the runway between the flashing lights and looking back out to the
+west you see the sparkling ocean as the beams from the sun dance across
+the rolling waves. A cold breeze blows in from the south as you notice a
+mountain pass leading through the mountains down south but you are
+distracted by some people talking and others traveling east down a small
+dirt road to a small village and some other buildings. The grass and trees
+sway with the wind giving you a sense of inner peace. 
+~
+0 1073741824 0 1 0
+D7
+~
+~
+0 -1 5201
+D8
+~
+~
+0 -1 5217
+D9
+~
+~
+0 -1 5253
+S
+#5201
+Along the Sparkling Ocean~
+The ocean sparkles as the rays of sun dance off the waves and the cool
+winds from over the ocean blow back at you cooling you from the hot rays
+of the sun. The castle is closer now and you can see the people walking
+back and forth as some people in uniforms patrol the area as they guard
+something. The path you are walking on is hard, almost like metal but
+different. A few light posts post are along the side of the path.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5202
+D8
+~
+~
+0 -1 5200
+S
+#5202
+Next to a Humming Elevator~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+1 -1 5203
+D2
+~
+~
+0 -1 5201
+D7
+~
+~
+0 -1 5204
+S
+#5203
+Elevator~
+~
+0 1073741836 0 1 0
+> speech_prog base 100~
+if ispc($n)
+mpecho &CThe elevator moves and the wires rattle.
+mea $n You step off the elevator as it comes to your stop.
+mer $n $n steps off the elevator.
+mptransfer $n 5321
+mpat 5321 mer $n walks off the elevator.
+mpat 5321 mpforce $n look
+else
+endif
+~
+> speech_prog ground 100~
+if ispc($n)
+mpecho &CThe elevator moves and the wires rattle.
+mea $n &CYou step off the elevator as it comes to your stop.
+mer $n &C$n steps off the elevator.
+mptransfer $n 5202
+mpat 5202 mer &C$n walks out of the elevator.
+mpat 5202 mpforce $n look
+else
+endif
+~
+|
+S
+#5204
+Along the Sparkling Ocean~
+The ocean sparkles as the rays of sun dance off the waves and the cool
+winds from over the ocean blow back at you cooling you from the hot rays
+of the sun. The castle is closer now and you can see the people walking
+back and forth as some people in uniforms patrol the area as they guard
+something. The path you are walking on is hard, almost like metal but
+different. A few light posts post are along the side of the path.
+~
+0 1073741824 0 1 0
+D7
+~
+~
+0 -1 5205
+D8
+~
+~
+0 -1 5202
+S
+#5205
+Before a Castle~
+~
+0 1073741824 0 1 0
+D3
+~
+~
+0 -1 5206
+D8
+~
+~
+0 -1 5204
+S
+#5206
+The Gate Guardhouse~
+~
+0 1073741824 0 1 0
+D0
+~
+Gate~
+8388647 5200 5207
+D1
+~
+~
+0 -1 5205
+S
+#5207
+A Large White Oval Entrance Corridor~
+~
+0 1073741832 0 1 0
+D0
+~
+~
+0 -1 5208
+D2
+~
+Gate~
+8388647 5200 5206
+S
+#5208
+Main Ball Room~
+~
+0 1073741832 0 1 0
+D0
+~
+~
+0 -1 5209
+D2
+~
+~
+0 -1 5207
+S
+#5209
+A Quiet Corridor~
+~
+0 1073741832 0 1 0
+D0
+~
+~
+1 -1 5216
+D1
+~
+~
+0 -1 5213
+D2
+~
+~
+0 -1 5208
+D3
+~
+~
+0 -1 5210
+S
+#5210
+A Wide White Corridor~
+~
+0 1073741832 0 1 0
+D1
+~
+~
+0 -1 5209
+D3
+~
+~
+0 -1 5211
+S
+#5211
+A Wide White Corridor~
+~
+0 1073741832 0 1 0
+D0
+~
+~
+0 -1 5212
+D1
+~
+~
+0 -1 5210
+S
+#5212
+A Elaborate Music Room~
+~
+0 1073741832 0 1 0
+D2
+~
+~
+0 -1 5211
+S
+#5213
+A Wide White Corridor~
+~
+0 1073741832 0 1 0
+D1
+~
+~
+0 -1 5214
+D3
+~
+~
+0 -1 5209
+S
+#5214
+A Wide White Corridor~
+~
+0 1073741832 0 1 0
+D0
+~
+~
+0 -1 5215
+D3
+~
+~
+0 -1 5213
+S
+#5215
+A Great Dinning Hall~
+~
+0 1073741832 0 1 0
+D2
+~
+~
+0 -1 5214
+S
+#5216
+A Golden Elevator~
+~
+0 1073741836 0 1 0
+S
+#5217
+A Dirt Road~
+The sun beating down on the side of your face as you walk down the dusty
+dirt road. The wind makes a few small spirals in the dirt and makes the
+grass slowly sway back and forth as the wind shifts directions. A few
+people pass you walking clamly down the road enjoying the day, you can see
+the town coming into veiw and the busy people in the town can be heard
+better with every footstep.
+~
+0 1073741828 0 1 0
+D1
+~
+~
+0 -1 5218
+D7
+~
+~
+0 -1 5200
+S
+#5218
+A Dirt Road~
+The sun beating down on the side of your face as you walk down the dusty
+dirt road. The wind makes a few small spirals in the dirt and makes the
+grass slowly sway back and forth as the wind shifts directions. A few
+people pass you walking clamly down the road enjoying the day, you can see
+the town coming into veiw and the busy people in the town can be heard
+better with every footstep.
+~
+0 1073741828 0 1 0
+D1
+~
+~
+0 -1 5219
+D3
+~
+~
+0 -1 5217
+S
+#5219
+On a Dirt Road just outside a Village~
+As the dust clouds settle more by the town from the large buildings
+breaking the wind you can now hear all the people chattering as they move
+on with their busy lives. People walk up and down the street in front of
+you and a few childern ride their bikes dinging little bells on the handle
+bars. A few birds chirp in a tree on the south side of the road as they
+are fed by their mother.
+~
+0 1073741828 0 1 0
+D1
+~
+~
+0 -1 5220
+D3
+~
+~
+0 -1 5218
+S
+#5220
+Providence Road~
+A small dusty village street, one of the few places left that are this
+calming and peaceful. There are a few buildings that are higher then the
+others but they are all mainly clean and well kept.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5221
+D2
+~
+~
+0 -1 5222
+D3
+~
+~
+0 -1 5219
+S
+#5221
+Intersection Dream Street/Providence Road~
+The streets part here moving in different directions and a few street
+lights have been placed on the corners. The road is dirt and rocks and
+fairly well packed down. The buildings about at most three stories high
+and all of them are well kept.
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 5239
+D2
+~
+~
+0 -1 5220
+D7
+~
+~
+0 -1 5244
+S
+#5222
+Providence Road~
+A small dusty village street, one of the few places left that are this
+calming and peaceful. There are a few buildings that are higher then the
+others but they are all mainly clean and well kept.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5220
+D2
+~
+~
+0 -1 5223
+S
+#5223
+Intersection Providence Road/Melby Court~
+The streets part here moving in different directions and a few street
+lights have been placed on the corners. The road is dirt and rocks and
+fairly well packed down. The buildings about at most three stories high
+and all of them are well kept.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5222
+D1
+~
+~
+0 -1 5240
+D2
+~
+~
+0 -1 5224
+S
+#5224
+Providence Road~
+A small dusty village street, one of the few places left that are this
+calming and peaceful. There are a few buildings that are higher then the
+others but they are all mainly clean and well kept.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5223
+D2
+~
+~
+0 -1 5225
+S
+#5225
+Intersection Providence Road/Star Avenue~
+The streets part here moving in different directions and a few street
+lights have been placed on the corners. The road is dirt and rocks and
+fairly well packed down. The buildings about at most three stories high
+and all of them are well kept.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5224
+D1
+~
+~
+0 -1 5226
+S
+#5226
+Star Avenue~
+A small dusty village street, one of the few places left that are this
+calming and peaceful. There are a few buildings that are higher then the
+others but they are all mainly clean and well kept.
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 5227
+D3
+~
+~
+0 -1 5225
+S
+#5227
+Star Avenue~
+A small dusty village street, one of the few places left that are this
+calming and peaceful. There are a few buildings that are higher then the
+others but they are all mainly clean and well kept.
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 5228
+D3
+~
+~
+0 -1 5226
+S
+#5228
+Star Avenue~
+A small dusty village street, one of the few places left that are this
+calming and peaceful. There are a few buildings that are higher then the
+others but they are all mainly clean and well kept.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5252
+D1
+~
+~
+0 -1 5229
+D3
+~
+~
+0 -1 5227
+S
+#5229
+Star Avenue~
+A small dusty village street, one of the few places left that are this
+calming and peaceful. There are a few buildings that are higher then the
+others but they are all mainly clean and well kept.
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 5230
+D3
+~
+~
+0 -1 5228
+S
+#5230
+Intersection Star Avenue/Eddy Lane~
+The streets part here moving in different directions and a few street
+lights have been placed on the corners. The road is dirt and rocks and
+fairly well packed down. The buildings about at most three stories high
+and all of them are well kept.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5231
+D3
+~
+~
+0 -1 5229
+S
+#5231
+Eddy Lane~
+A small dusty village street, one of the few places left that are this
+calming and peaceful. There are a few buildings that are higher then the
+others but they are all mainly clean and well kept.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5232
+D2
+~
+~
+0 -1 5230
+S
+#5232
+Intersection Melby Court/Eddy Lane~
+The streets part here moving in different directions and a few street
+lights have been placed on the corners. The road is dirt and rocks and
+fairly well packed down. The buildings about at most three stories high
+and all of them are well kept.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5233
+D2
+~
+~
+0 -1 5231
+D3
+~
+~
+0 -1 5243
+S
+#5233
+Eddy Lane~
+A small dusty village street, one of the few places left that are this
+calming and peaceful. There are a few buildings that are higher then the
+others but they are all mainly clean and well kept.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5234
+D1
+~
+~
+0 -1 5247
+D2
+~
+~
+0 -1 5232
+S
+#5234
+Eddy Lane~
+A small dusty village street, one of the few places left that are this
+calming and peaceful. There are a few buildings that are higher then the
+others but they are all mainly clean and well kept.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5235
+D2
+~
+~
+0 -1 5233
+D3
+~
+~
+0 -1 5246
+S
+#5235
+Intersection Eddy Lane/Dream Street~
+The streets part here moving in different directions and a few street
+lights have been placed on the corners. The road is dirt and rocks and
+fairly well packed down. The buildings about at most three stories high
+and all of them are well kept.
+~
+0 1073741824 0 1 0
+D2
+~
+~
+0 -1 5234
+D3
+~
+~
+0 -1 5236
+S
+#5236
+Dream Street~
+A small dusty village street, one of the few places left that are this
+calming and peaceful. There are a few buildings that are higher then the
+others but they are all mainly clean and well kept.
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 5235
+D2
+~
+~
+0 -1 5246
+D3
+~
+~
+0 -1 5237
+S
+#5237
+Dream Street~
+A small dusty village street, one of the few places left that are this
+calming and peaceful. There are a few buildings that are higher then the
+others but they are all mainly clean and well kept.
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 5236
+D3
+~
+~
+0 -1 5238
+S
+#5238
+Dream Street~
+A small dusty village street, one of the few places left that are this
+calming and peaceful. There are a few buildings that are higher then the
+others but they are all mainly clean and well kept.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5245
+D1
+~
+~
+0 -1 5237
+D3
+~
+~
+0 -1 5239
+S
+#5239
+Dream Street~
+A small dusty village street, one of the few places left that are this
+calming and peaceful. There are a few buildings that are higher then the
+others but they are all mainly clean and well kept.
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 5238
+D3
+~
+~
+0 -1 5221
+S
+#5240
+Melby Court~
+A small dusty village street, one of the few places left that are this
+calming and peaceful. There are a few buildings that are higher then the
+others but they are all mainly clean and well kept.
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 5241
+D2
+~
+~
+0 -1 5251
+D3
+~
+~
+0 -1 5223
+S
+#5241
+Melby Court~
+A small dusty village street, one of the few places left that are this
+calming and peaceful. There are a few buildings that are higher then the
+others but they are all mainly clean and well kept.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5250
+D1
+~
+~
+0 -1 5242
+D3
+~
+~
+0 -1 5240
+S
+#5242
+Melby Court~
+A small dusty village street, one of the few places left that are this
+calming and peaceful. There are a few buildings that are higher then the
+others but they are all mainly clean and well kept.
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 5243
+D2
+~
+~
+0 -1 5249
+D3
+~
+~
+0 -1 5241
+S
+#5243
+Melby Court~
+A small dusty village street, one of the few places left that are this
+calming and peaceful. There are a few buildings that are higher then the
+others but they are all mainly clean and well kept.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5248
+D1
+~
+~
+0 -1 5232
+D3
+~
+~
+0 -1 5242
+S
+#5244
+Hotel~
+~
+0 1082130440 0 1 0
+D8
+~
+~
+0 -1 5221
+S
+#5245
+Jr Armor Supply~
+~
+0 1073741832 0 1 0
+D2
+~
+~
+0 -1 5238
+S
+#5246
+Corner Dairy Queen~
+~
+0 1073741832 0 1 0
+D0
+~
+~
+0 -1 5236
+D1
+~
+~
+0 -1 5234
+S
+#5247
+Local Convenience Store~
+~
+0 1073741832 0 1 0
+D3
+~
+~
+0 -1 5233
+S
+#5248
+An Empty Apartment~
+~
+0 1075838984 0 1 0
+D2
+~
+~
+0 -1 5243
+S
+#5249
+An Empty Apartment~
+~
+0 1075838984 0 1 0
+D0
+~
+~
+0 -1 5242
+S
+#5250
+An Empty Apartment~
+~
+0 1075838984 0 1 0
+D2
+~
+~
+0 -1 5241
+S
+#5251
+An Empty Apartment~
+~
+0 1075838988 0 1 0
+D0
+~
+~
+0 -1 5240
+S
+#5252
+Small Vine Covered Bank~
+~
+0 1073741836 0 1 0
+D2
+~
+~
+0 -1 5228
+S
+#5253
+&WO&Ru&rt&Rl&Wa&Rw &rM&Ro&Wu&Rn&rt&Ra&Wi&Rn &rP&Ra&Ws&Rs~
+A cold rocky trail at the base of the two mountains that have been slowly
+worn away over time by a small creek that runs under your feet through the
+rocks. The wind blows through from the west from up upon the mountain
+peeks. The name of this trail was made by the small town to the north that
+was raided by outlaws that ran through this pass out to the desert to
+escape capture and to hide.
+~
+0 1073741828 0 1 0
+D2
+~
+~
+0 -1 5254
+D6
+~
+~
+0 -1 5200
+S
+#5254
+&WO&Ru&rt&Rl&Wa&Rw &rM&Ro&Wu&Rn&rt&Ra&Wi&Rn &rP&Ra&Ws&Rs~
+A cold rocky trail at the base of the two mountains that have been slowly
+worn away over time by a small creek that runs under your feet through the
+rocks. The wind blows through from the west from up upon the mountain
+peeks. The name of this trail was made by the small town to the north that
+was raided by outlaws that ran through this pass out to the desert to
+escape capture and to hide.
+~
+0 1073741828 0 1 0
+D0
+~
+~
+0 -1 5253
+D2
+~
+~
+0 -1 5255
+S
+#5255
+&WO&Ru&rt&Rl&Wa&Rw &rM&Ro&Wu&Rn&rt&Ra&Wi&Rn &rP&Ra&Ws&Rs~
+A cold rocky trail at the base of the two mountains that have been slowly
+worn away over time by a small creek that runs under your feet through the
+rocks. The wind blows through from the west from up upon the mountain
+peeks. The name of this trail was made by the small town to the north that
+was raided by outlaws that ran through this pass out to the desert to
+escape capture and to hide.
+~
+0 1073741828 0 1 0
+D0
+~
+~
+0 -1 5254
+D2
+~
+~
+0 -1 5256
+S
+#5256
+&WO&Ru&rt&Rl&Wa&Rw &rM&Ro&Wu&Rn&rt&Ra&Wi&Rn &rP&Ra&Ws&Rs~
+A cold rocky trail at the base of the two mountains that have been slowly
+worn away over time by a small creek that runs under your feet through the
+rocks. The wind blows through from the west from up upon the mountain
+peeks. The name of this trail was made by the small town to the north that
+was raided by outlaws that ran through this pass out to the desert to
+escape capture and to hide.
+~
+0 1073741828 0 1 0
+D0
+~
+~
+0 -1 5255
+D9
+~
+~
+0 -1 5257
+S
+#5257
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741824 0 1 0
+D2
+~
+~
+0 -1 5258
+D6
+~
+~
+0 -1 5256
+S
+#5258
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5257
+D2
+~
+~
+0 -1 5262
+D3
+~
+~
+0 -1 5259
+S
+#5259
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 5258
+D2
+~
+~
+0 -1 5260
+S
+#5260
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5259
+D1
+~
+~
+0 -1 5262
+D3
+~
+~
+0 -1 5261
+S
+#5261
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741828 0 1 0
+D1
+~
+~
+0 -1 5260
+S
+#5262
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741828 0 1 0
+D0
+~
+~
+0 -1 5258
+D1
+~
+~
+0 -1 5263
+D2
+~
+~
+0 -1 5264
+D3
+~
+~
+0 -1 5260
+S
+#5263
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741828 0 1 0
+D3
+~
+~
+0 -1 5262
+S
+#5264
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741828 0 1 0
+D0
+~
+~
+0 -1 5262
+D2
+~
+~
+0 -1 5265
+S
+#5265
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741828 0 1 0
+D0
+~
+~
+0 -1 5264
+D2
+~
+~
+0 -1 5266
+S
+#5266
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741828 0 1 0
+D0
+~
+~
+0 -1 5265
+D1
+~
+~
+0 -1 5295
+D2
+~
+~
+0 -1 5297
+D3
+~
+~
+0 -1 5267
+S
+#5267
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741828 0 1 0
+D1
+~
+~
+0 -1 5266
+D3
+~
+~
+0 -1 5268
+S
+#5268
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741828 0 1 0
+D1
+~
+~
+0 -1 5267
+D2
+~
+~
+0 -1 5269
+D3
+~
+~
+0 -1 5283
+S
+#5269
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741828 0 1 0
+D0
+~
+~
+0 -1 5268
+D2
+~
+~
+0 -1 5270
+S
+#5270
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741828 0 1 0
+D0
+~
+~
+0 -1 5269
+D9
+~
+~
+0 -1 5271
+S
+#5271
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741828 0 1 0
+D6
+~
+~
+0 -1 5270
+D7
+~
+~
+0 -1 5280
+D9
+~
+~
+0 -1 5272
+S
+#5272
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741828 0 1 0
+D2
+~
+~
+0 -1 5273
+D6
+~
+~
+0 -1 5271
+S
+#5273
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741828 0 1 0
+D0
+~
+~
+0 -1 5272
+D1
+~
+~
+0 -1 5275
+D3
+~
+~
+0 -1 5274
+S
+#5274
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741828 0 1 0
+D1
+~
+~
+0 -1 5273
+S
+#5275
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741828 0 1 0
+D1
+~
+~
+0 -1 5276
+D3
+~
+~
+0 -1 5273
+S
+#5276
+&YR&Oo&Yc&Ok&Yy &OG&Yr&Oo&Yu&On&Yd~
+&OThe ground is rocky and a few larger rocks sit to the east as parts of
+them show out above the sand. They form a rather large circle that give
+some protection from the windy desert, a small split in the rocks opens to
+the east about two feet wide and less at some points.
+~
+0 1073741828 0 1 0
+D1
+~
+~
+0 -1 5277
+D3
+~
+~
+0 -1 5275
+S
+#5277
+&RA &rC&Ri&rr&Rc&ru&Rl&ra&Rr &rF&Ri&rr&Re &rP&Ri&rt~
+A large kind of oval area with a large ring of stones in the center along
+with two tents that have been pitched to the north and south of the fire.
+A few bags and bones of things that have been eaten here lay on the
+ground, most covered by sand. The wind howls over the top of the rocks and
+kicks up sand when the angle is just right.
+~
+0 1073741892 0 1 0
+D0
+~
+~
+0 -1 5278
+D2
+~
+~
+0 -1 5279
+D3
+~
+~
+0 -1 5276
+S
+#5278
+Inside a Leather Tent~
+A small tent ment for one or two people with a single cot on the right side
+of the tent along with a few bags on the other side but nothing of
+interest. A lantern hangs on a stick that holds up the enter of the tent.
+On the cot two animal skins lay bunched together.
+~
+0 1082130436 0 1 0
+D2
+~
+~
+0 -1 5277
+S
+#5279
+Inside a Leather Tent~
+A small tent ment for one or two people with a single cot on the right side
+of the tent along with a few bags on the other side but nothing of
+interest. A lantern hangs on a stick that holds up the enter of the tent.
+On the cot two animal skins lay bunched together.
+~
+0 1082130436 0 1 0
+D0
+~
+~
+0 -1 5277
+S
+#5280
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741828 0 1 0
+D0
+~
+~
+0 -1 5281
+D8
+~
+~
+0 -1 5271
+S
+#5281
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741828 0 1 0
+D0
+~
+~
+0 -1 5282
+D2
+~
+~
+0 -1 5280
+D3
+~
+~
+0 -1 5285
+S
+#5282
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741828 0 1 0
+D1
+~
+~
+0 -1 5283
+D2
+~
+~
+0 -1 5281
+S
+#5283
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741828 0 1 0
+D0
+~
+~
+0 -1 5284
+D1
+~
+~
+0 -1 5268
+D3
+~
+~
+0 -1 5282
+S
+#5284
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741828 0 1 0
+D2
+~
+~
+0 -1 5283
+S
+#5285
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741828 0 1 0
+D1
+~
+~
+0 -1 5281
+D7
+~
+~
+0 -1 5286
+S
+#5286
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741828 0 1 0
+D6
+~
+~
+0 -1 5290
+D8
+~
+~
+0 -1 5285
+D9
+~
+~
+0 -1 5287
+S
+#5287
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741828 0 1 0
+D3
+~
+~
+0 -1 5288
+D6
+~
+~
+0 -1 5286
+S
+#5288
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741828 0 1 0
+D1
+~
+~
+0 -1 5287
+D3
+~
+~
+0 -1 5289
+S
+#5289
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741828 0 1 0
+D1
+~
+~
+0 -1 5288
+S
+#5290
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741828 0 1 0
+D0
+~
+~
+0 -1 5291
+D9
+~
+~
+0 -1 5286
+S
+#5291
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741828 0 1 0
+D2
+~
+~
+0 -1 5290
+D3
+~
+~
+0 -1 5292
+S
+#5292
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741828 0 1 0
+D0
+~
+~
+0 -1 5293
+D1
+~
+~
+0 -1 5291
+S
+#5293
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741828 0 1 0
+D2
+~
+~
+0 -1 5292
+D3
+~
+~
+0 -1 5294
+S
+#5294
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741828 0 1 0
+D1
+~
+~
+0 -1 5293
+S
+#5295
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741824 0 1 0
+D2
+~
+~
+0 -1 5296
+D3
+~
+~
+0 -1 5266
+S
+#5296
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5295
+D1
+~
+~
+0 -1 5298
+D2
+~
+~
+0 -1 5299
+D3
+~
+~
+0 -1 5297
+S
+#5297
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5266
+D1
+~
+~
+0 -1 5296
+S
+#5298
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 5309
+D3
+~
+~
+0 -1 5296
+S
+#5299
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5296
+D2
+~
+~
+0 -1 5300
+S
+#5300
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5299
+D1
+~
+~
+0 -1 5301
+D2
+~
+~
+0 -1 5303
+S
+#5301
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741824 0 1 0
+D2
+~
+~
+0 -1 5302
+D3
+~
+~
+0 -1 5300
+S
+#5302
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5301
+D2
+~
+~
+0 -1 5304
+D3
+~
+~
+0 -1 5303
+S
+#5303
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5300
+D1
+~
+~
+0 -1 5302
+S
+#5304
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5302
+D2
+~
+~
+0 -1 5305
+S
+#5305
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5304
+D1
+~
+~
+0 -1 5306
+S
+#5306
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 5307
+D3
+~
+~
+0 -1 5305
+S
+#5307
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5308
+D3
+~
+~
+0 -1 5306
+S
+#5308
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741824 0 1 0
+D2
+~
+~
+0 -1 5307
+S
+#5309
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5310
+D1
+~
+~
+0 -1 5316
+D3
+~
+~
+0 -1 5298
+S
+#5310
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5311
+D2
+~
+~
+0 -1 5309
+S
+#5311
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 5312
+D2
+~
+~
+0 -1 5310
+S
+#5312
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 5313
+D3
+~
+~
+0 -1 5311
+S
+#5313
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741824 0 1 0
+D2
+~
+~
+0 -1 5314
+D3
+~
+~
+0 -1 5312
+S
+#5314
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5313
+D2
+~
+~
+0 -1 5315
+S
+#5315
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5314
+D2
+~
+~
+0 -1 5317
+D3
+~
+~
+0 -1 5316
+S
+#5316
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 5315
+D3
+~
+~
+0 -1 5309
+S
+#5317
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5315
+D1
+~
+~
+0 -1 5318
+S
+#5318
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741824 0 1 0
+D2
+~
+~
+0 -1 5319
+D3
+~
+~
+0 -1 5317
+S
+#5319
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5318
+D1
+~
+~
+0 -1 5320
+S
+#5320
+&YA &YE&On&Yd&Yl&Oe&Ys&Os &YS&Oa&Yn&Od&Yy &YD&Oe&Ys&Oe&Yr&Ot~
+&OMiles and miles of endless desert, a man could get lost out here and
+never find his way home. The wind houls as it blows up sand and the sun
+slowly cooks everything on the hot burning ground.
+~
+0 1073741824 0 1 0
+D3
+~
+~
+0 -1 5319
+S
+#5321
+A Small Corridor~
+~
+0 1073741828 0 1 0
+D0
+~
+~
+0 -1 5322
+D2
+~
+~
+0 -1 5327
+D3
+~
+~
+0 -1 5203
+S
+#5322
+A Small Corridor~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5323
+D2
+~
+~
+0 -1 5321
+S
+#5323
+A Small Corridor~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5324
+D1
+~
+~
+0 -1 5325
+D2
+~
+~
+0 -1 5322
+D3
+~
+~
+0 -1 5326
+S
+#5324
+Barrack's Bunks~
+~
+0 1073741824 0 1 0
+D2
+~
+~
+0 -1 5323
+S
+#5325
+Barrack's Bunks~
+~
+0 1073741824 0 1 0
+D3
+~
+~
+0 -1 5323
+S
+#5326
+Barrack's Bunks~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 5323
+S
+#5327
+A Small Corridor~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5321
+D2
+~
+~
+0 -1 5328
+S
+#5328
+A Small Corridor~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 5327
+D1
+~
+~
+0 -1 5329
+S
+#5329
+Floating in a void~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 5330
+D3
+~
+~
+0 -1 5328
+S
+#5330
+Floating in a void~
+~
+0 1073741824 0 1 0
+D3
+~
+~
+0 -1 5329
+S
+#5331
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#5332
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#5333
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#5334
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#5335
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#5336
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#5337
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#5338
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#5339
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#5340
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#5341
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#5342
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#5343
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#5344
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#5345
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#5346
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#5347
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#5348
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#5349
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#5350
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#0
+
+
+#RESETS
+D 0 5207 2 2
+D 0 5206 0 2
+D 0 5202 1 1
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

@@ -1,0 +1,491 @@
+#AREA   {PROTO} Kalibar's area in progress~
+
+
+
+#AUTHOR Kalibar~
+
+#RANGES
+0 0 0 0
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 0
+
+#MOBILES
+#0
+
+
+#OBJECTS
+#0
+
+
+#ROOMS
+#11501
+An old dusty landing pad~
+The landing pad is old, and looks like it hasn't been used in quite a long
+time. Yet there are still people moving around and ships flying in left
+and right. There are footprints on the ground, rather large footprints
+that would seem as though there was a mess of a battle that took place
+here at one time. No one around here seems to be making eye contact with
+anyone. They all just keep walking by as though no one else exists.
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 11502
+D1
+~
+~
+0 -1 11505
+D2
+~
+~
+0 -1 11507
+D3
+~
+~
+0 -1 11509
+D6
+~
+~
+0 -1 11504
+D7
+~
+~
+0 -1 11510
+D8
+~
+~
+0 -1 11506
+D9
+~
+~
+0 -1 11508
+S
+#11502
+Path to the town~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 11503
+D2
+~
+~
+0 -1 11501
+S
+#11503
+A fork in the road~
+~
+0 1073741824 0 1 0
+D2
+~
+~
+0 -1 11502
+D7
+~
+~
+0 -1 11511
+S
+#11504
+Walking down the sidewalk~
+~
+0 1073741824 0 1 0
+D9
+~
+~
+0 -1 11501
+S
+#11505
+Walking the streets~
+~
+0 1073741824 0 1 0
+D3
+~
+~
+0 -1 11501
+S
+#11506
+A beaten Path~
+~
+0 1073741824 0 1 0
+D7
+~
+~
+0 -1 11501
+S
+#11507
+Airport Security~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 11501
+S
+#11508
+A small trail~
+~
+0 1073741824 0 1 0
+D6
+~
+~
+0 -1 11501
+S
+#11509
+Walking the streets~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 11501
+S
+#11510
+Off into the desert~
+~
+0 1073741824 0 1 0
+D8
+~
+~
+0 -1 11501
+S
+#11511
+A stone path~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 11512
+D8
+~
+~
+0 -1 11503
+S
+#11512
+Before the large Tavern~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 11515
+D2
+~
+~
+0 -1 11511
+D3
+~
+~
+0 -1 11513
+S
+#11513
+Along the Tavern wall~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 11512
+D3
+~
+~
+0 -1 11514
+S
+#11514
+End of the front wall~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 11513
+D9
+~
+~
+0 -1 11517
+S
+#11515
+Along the tavern wall~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 11516
+D3
+~
+~
+0 -1 11512
+S
+#11516
+End of the front wall~
+~
+0 1073741824 0 1 0
+D3
+~
+~
+0 -1 11515
+S
+#11517
+Into the open yard~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 11518
+D2
+~
+~
+0 -1 11520
+D3
+~
+~
+0 -1 11521
+D6
+~
+~
+0 -1 11514
+S
+#11518
+The open yard~
+~
+0 1073741824 0 1 0
+D2
+~
+~
+0 -1 11519
+D3
+~
+~
+0 -1 11517
+S
+#11519
+Continueing through the open yard~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 11518
+D2
+~
+~
+0 -1 11523
+D3
+~
+~
+0 -1 11520
+D9
+~
+~
+0 -1 11524
+S
+#11520
+in the open yard~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 11517
+D1
+~
+~
+0 -1 11519
+D2
+~
+~
+0 -1 11524
+D8
+~
+~
+0 -1 11523
+S
+#11521
+The open yard~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 11517
+D3
+~
+~
+0 -1 11522
+S
+#11522
+An open yard~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 11521
+S
+#11523
+In the open yard~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 11519
+D2
+~
+~
+0 -1 11527
+D3
+~
+~
+0 -1 11524
+D7
+~
+~
+0 -1 11520
+D9
+~
+~
+0 -1 11525
+S
+#11524
+Edge of the lake~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 11520
+D1
+~
+~
+0 -1 11523
+D2
+~
+~
+0 -1 11525
+D6
+~
+~
+0 -1 11519
+D8
+~
+~
+0 -1 11527
+S
+#11525
+Along the waters edge~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 11524
+D1
+~
+~
+0 -1 11527
+D2
+~
+~
+0 -1 11526
+D6
+~
+~
+0 -1 11523
+D8
+~
+~
+0 -1 11528
+S
+#11526
+Along the waters edge~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 11525
+D1
+~
+~
+0 -1 11528
+D6
+~
+~
+0 -1 11527
+S
+#11527
+The open yard~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 11523
+D2
+~
+~
+0 -1 11528
+D3
+~
+~
+0 -1 11525
+D7
+~
+~
+0 -1 11524
+D9
+~
+~
+0 -1 11526
+S
+#11528
+The open yard~
+~
+0 1073741824 0 1 0
+D0
+~
+~
+0 -1 11527
+D3
+~
+~
+0 -1 11526
+D7
+~
+~
+0 -1 11525
+S
+#11700
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#0
+
+
+#RESETS
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

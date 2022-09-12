@@ -1,0 +1,5218 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         Moon Base~
+Author       Kurama~
+Ranges       1 1007 1 1007
+Economy      0 647415353
+ResetMsg     The guards switch positions and return to their posts.~
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       9301
+Keywords   Moon Gate Guard~
+Short      Moon Gate Guard~
+Long       A guard is stand at attention here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 999 0 -2397 0 0
+Stats2     200 50 14000
+Stats3     99 4 2
+Stats4     0 0 0 199 199
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    punch~
+#ENDMOBILE
+
+#MOBILE
+Vnum       9302
+Keywords   Mad Scientist~
+Short      A Mad Scientist~
+Long       An insane scientist is wandering about here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 800 0 -1900 0 0
+Stats2     160 10 9000
+Stats3     80 4 2
+Stats4     0 0 0 160 160
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9303
+Keywords   Hallway Guard~
+Short      Hallway Guard~
+Long       A guard patrols the hallway here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc aggressive nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 20000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9304
+Keywords   Door Sentinel~
+Short      Door Sentinel~
+Long       A man is guarding the door here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel aggressive nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 35000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9305
+Keywords   Elite Moon Guard~
+Short      Eilte Moon Guard~
+Long       An elite guard patrols the area.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9306
+Keywords   Neo~
+Short      Neo~
+Long       Neo is wandering about here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -1400 0 0
+Stats2     200 10 375000
+Stats3     100 25 1000
+Stats4     0 0 0 200 65
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9307
+Keywords   A swordsman~
+Short      A swordsman~
+Long       A man is walking about with a sword.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel aggressive nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 50000
+Stats3     25 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9308
+Keywords   Moon Special Forces~
+Short      Moon Special Forces~
+Long       A special forces member is walking about here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel aggressive nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 65000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9309
+Keywords   Jail Cell Guard~
+Short      Jail Cell Guard~
+Long       A guard is guarding the jail cells here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel aggressive nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 65000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9310
+Keywords   Lonely Prisoner~
+Short      Lonely Prisoner~
+Long       A weeping prisoner is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 30000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9311
+Keywords   Brute Prisoner~
+Short      Brute Prisoner~
+Long       A mean prisoner is bully others around here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 40000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9312
+Keywords   Captain of the Guards~
+Short      Captain of the Guards~
+Long       The captain is standing here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 150000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   say You'll never find the entrance to the Omega lab.
+say My death won't be in vain. Hah..ha..h....
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9313
+Keywords   Elite Sentinel~
+Short      Elite Sentinel~
+Long       An elite sentinel is patrolling the area.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel aggressive nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 60000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9314
+Keywords   Dark Swordsman~
+Short      Dark Swordsman~
+Long       An evil person lurks about.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel aggressive nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 75000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9315
+Keywords   A bounty hunter~
+Short      A bounty hunter~
+Long       A hunter is here collecting heads.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 378000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9316
+Keywords   a civilian~
+Short      a civilian~
+Long       A civilian is wandering about confused.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 1000 0 -2400 500 0
+Stats2     200 10 9999
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9317
+Keywords   Security Guard~
+Short      Security Guard~
+Long       A security guard is taking people's weapons here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 30000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9318
+Keywords   Test Pilot~
+Short      Test Pilot~
+Long       A test pilot is fidgeting with a gadget here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9319
+Keywords   Heero Yuy~
+Short      Heero Yuy~
+Long       Heero Yuy is standing here looking glum.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel noquest~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 560000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   1~
+Comlist   say You can beat me now, Lets try it again!
+mpmload 9361
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9320
+Keywords   Base Guard~
+Short      Base Guard~
+Long       A person is here guarding the base.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel aggressive nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 35000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9321
+Keywords   Guard Robot~
+Short      Guard Robot~
+Long       A guard robot is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel aggressive nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 20000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9322
+Keywords   Guard Cyborg~
+Short      Guard Cyborg~
+Long       A guard cyborg is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel aggressive nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 25000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9323
+Keywords   Cyborg Sentinel~
+Short      Cyborg Sentinel~
+Long       A cyborg sentinel is resting here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel aggressive nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 30000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9324
+Keywords   Robot Sentinel~
+Short      Robot Sentinel~
+Long       A robot sentinel is standing here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel aggressive nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 35000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9325
+Keywords   Mech I~
+Short      Mech I~
+Long       A small sized machine is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel aggressive nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 85000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    24 10 10 24 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9326
+Keywords   Mech II~
+Short      Mech II~
+Long       A medium sized machine is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel aggressive nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 90000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9327
+Keywords   Mech III~
+Short      Mech III~
+Long       A large sized machine is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel aggressive nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 95000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9328
+Keywords   Mech IV~
+Short      Mech IV~
+Long       A very large sized machine is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel aggressive nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 100000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9329
+Keywords   Mech V~
+Short      Mech V~
+Long       A humongous mecha is stationed here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel aggressive nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 120000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9330
+Keywords   Grappler Bot~
+Short      Grappler Bot~
+Long       A funky looking robot is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel aggressive nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 95000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9331
+Keywords   Combatant~
+Short      Combatant~
+Long       A man is here ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 1000 0
+Stats2     200 10 25000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9332
+Keywords   Martial Artist~
+Short      Martial Artist~
+Long       Some guy is practicing kung-fu here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 1250 0
+Stats2     200 10 35000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9333
+Keywords   Moon Soldier~
+Short      Moon Soldier~
+Long       A soldier is here prepared for war.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 40000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9334
+Keywords   Moon Warrior~
+Short      Moon Warrior~
+Long       A warrior is here prepared for war.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 40000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9335
+Keywords   Wounded Soldier~
+Short      Wounded Soldier~
+Long       A soldier is bleeding profusely on the ground here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 500
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9336
+Keywords   Winged Demon~
+Short      Winged Demon~
+Long       A winged creature is flying around the area.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 47500
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9337
+Keywords   Winged Beast~
+Short      Winged Beast~
+Long       A winged beast is flying over your head.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 55500
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9338
+Keywords   Foul Beast~
+Short      Foul Beast~
+Long       A stinky critter is emitting strange gases here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 20000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9339
+Keywords   Rift Walker~
+Short      Rift Walker~
+Long       A rift walker is wandering about.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 30000
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9340
+Keywords   Green Dragon~
+Short      Green Dragon~
+Long       A green dragon is flying around here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel aggressive nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 120000
+Stats3     100 75 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9341
+Keywords   Red Dragon~
+Short      Red Dragon~
+Long       A red dragon is flying about here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 122000
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9342
+Keywords   Black Dragon~
+Short      Black Dragon~
+Long       A black dragon is flying about here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 124000
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9343
+Keywords   Silver Dragon~
+Short      Silver Dragon~
+Long       A silver dragon is flying about here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 130000
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9344
+Keywords   Gold Dragon~
+Short      Gold Dragon~
+Long       A gold dragon is flying about here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 135000
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9345
+Keywords   Drow~
+Short      Drow~
+Long       A very evil humanoid walks about here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 75000
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9346
+Keywords   Elf~
+Short      Serian Elf~
+Long       A very kind young elf walks about here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 75000
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9347
+Keywords   Ancient Organism~
+Short      Ancient Organism~
+Long       A weird looking creature lurks around here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 80000
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9348
+Keywords   Wounded Scientist~
+Short      Wounded Scientist~
+Long       A wounded scientist is bleeding profusely here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 500
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9349
+Keywords   Dr. Grim~
+Short      Dr. Grim~
+Long       Dr. Grim is standing here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 55000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   say Hello there, $n. I don't know how you got here, but you should leave.
+say This place, Omega Lab, was supposed to be a lab to experiment on mutants.
+say We screw up however, big time.
+say We were doing fine until an mutant named Tyrael came along.
+say Tyrael got out of hand once we were through with him.
+say Hell, he's so damn powerful now that even Scythe can't kill him.
+say Feel free to wander if you must, but don't go too far.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9350
+Keywords   Scythe~
+Short      Scythe~
+Long       Experimental soldier, Scythe, is standing here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 850000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9351
+Keywords   Moon Base Armorer~
+Short      Moon Base Armorer~
+Long       The moon base armorer is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   stock~
+Comlist   mpoload 9301
+mpoload 9303
+mpoload 9309
+mpoload 9318
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9352
+Keywords   Moon Base Weapon Smith~
+Short      Moon Base Weapon Smith~
+Long       The moon base weapon smith is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   stock~
+Comlist   mpoload 9349
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9353
+Keywords   Moon Base Explosives Specialist~
+Short      Moon Base Explosives Specialist~
+Long       The moon base explosives specialist is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   stock~
+Comlist   mpoload 9342
+mpoload 9343
+mpoload 9344
+mpoload 9345
+mpoload 9346
+mpoload 9347
+mpoload 9348
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9354
+Keywords   Head Collector~
+Short      &zApprentice of &CW&wi&Wn&Cd~
+Long       &zThe Apprentice of &CW&wi&Wn&Cd&z stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 100000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   stock~
+Comlist   mpoload 9450
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9355
+Keywords   Tyrael~
+Short      Tyrael~
+Long       &RTyrael is in a fit of rage here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 1500000
+Stats3     100 4 1000
+Stats4     0 0 0 200 200
+Attribs    24 10 10 24 24 10 10
+Saves      0 0 0 0 0
+Attacks    claws~
+Defenses   dodge~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpoload 9355
+drop wings
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  death_prog~
+Arglist   50~
+Comlist   mpoload 11506
+drop all
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9356
+Keywords   White Wolf~
+Short      White Wolf~
+Long       A white wolf is sitting here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 50000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9357
+Keywords   Swordsmith~
+Short      Swordsmith~
+Long       A mutant swordsmith is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       9358
+Keywords   Mutant~
+Short      Mutant~
+Long       A mutant is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 20000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9359
+Keywords   Infantry~
+Short      Infantry~
+Long       A member of the infantry is here on guard.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 40000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9360
+Keywords   Armor Smith~
+Short      Armor Smith~
+Long       An armor smith is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 30000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   stock~
+Comlist   mpoload 9306
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9361
+Keywords   Heero Yuy~
+Short      Heero Yuy~
+Long       Heero Yuy is standing here looking glum.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 560000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   4~
+Comlist   say You have proven to be a worthy opponent.
+mpoload 11502
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9362
+Keywords   Tyrael~
+Short      Tyrael~
+Long       &RTyrael is in a fit of rage here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 1500000
+Stats3     100 4 1000
+Stats4     0 0 0 0 0
+Attribs    24 10 10 24 24 10 10
+Saves      0 0 0 0 0
+Attacks    claws~
+Defenses   dodge~
+#MUDPROG
+Progtype  death_prog~
+Arglist   2~
+Comlist   mpoload 11506
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       9363
+Keywords   Shopkeeper~
+Short      &BJ&zimmy~
+Long       &BJ&zimmy &wis here looking kinda nervous.
+~
+Race       American~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    25 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       9450
+Keywords   Tester~
+Short      a newly created Tester~
+Long       Some god abandoned a newly created Tester here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1 0 97 0 0
+Stats2     0 10 10
+Stats3     0 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       9499
+Keywords   last~
+Short      a newly created last~
+Long       Some god abandoned a newly created last here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#OBJECT
+Vnum     9301
+Keywords A Black Robe~
+Type     armor~
+Short    &CA &zB&wl&za&wc&zk &BR&bo&Bb&be~
+Long     A A Black Robe is here.~
+WFlags   take about~
+Values   50 30 0 0 0 0
+Stats    1 20000 2000 0 16
+Affect       -1 -1 1000 13 0
+Affect       -1 -1 3 18 0
+Affect       -1 -1 3 19 0
+Affect       -1 -1 0 40 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9302
+Keywords A Black Helmet~
+Type     armor~
+Short    &CA &zB&wl&za&wc&zk &BH&be&Bl&bm&Be&bt~
+Long     A black helmet is lying on the ground.~
+WFlags   take head~
+Values   50 25 0 0 0 0
+Stats    1 22000 2200 0 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 10 19 0
+Affect       -1 -1 250 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9303
+Keywords Black Sword~
+Type     weapon~
+Short    A &zBlack &CS&cw&Co&cr&Cd~
+Long     A Black Sword is here.~
+WFlags   take wield~
+Values   90 7 140 2 1000 1000
+Stats    1 16000 1600 0 0
+Affect       -1 -1 5 18 0
+Affect       -1 -1 5 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9304
+Keywords Submachine Gun~
+Type     weapon~
+Short    &CS&cu&Cb&cm&Ca&cc&Ch&ci&Cn&ce &GG&gu&Gn~
+Long     Someone dropped a submachine gun here.~
+WFlags   take wield~
+Values   100 15 20 9 10000 10000
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9305
+Keywords Kodache~
+Type     weapon~
+Short    &RK&ro&Rd&ra&Rc&rh&Re~
+Long     Someone left a short sword here.~
+WFlags   take wield~
+Values   100 10 140 2 1000 1000
+Stats    1 22000 2200 0 0
+Affect       -1 -1 5 18 0
+Affect       -1 -1 17 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9307
+Keywords Broad Sword~
+Type     weapon~
+Short    &BB&br&Bo&ba&Bd &CS&cw&Co&cr&Cd~
+Long     A very long sword was dropped here.~
+WFlags   take wield~
+Values   100 10 50 2 10000 10000
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9308
+Keywords Prism Dagger~
+Type     weapon~
+Short    &RA &PP&cr&pi&Cs&Pm &BD&ba&Bg&bg&Be&br~
+Long     A Prism Dagger is here.~
+WFlags   take wield~
+Values   100 10 151 2 1000 1000
+Stats    1 65000 6500 0 0
+Affect       -1 -1 -5000 13 0
+Affect       -1 -1 50 19 0
+Affect       -1 -1 10 18 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9309
+Keywords Prism Robe~
+Type     trash~
+Short    &PP&pr&Pi&ps&Pm &CR&co&Cb&ce~
+Long     A Prism Robe is here.~
+Flags    glow~
+WFlags   take about~
+Values   100 100 0 0 0 0
+Stats    1 25000 2500 0 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 10 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9310
+Keywords Crystal Sword~
+Type     weapon~
+Short    &RA &CC&cr&Cy&cs&Ct&ca&Cl &BS&bw&Bo&br&Bd~
+Long     A sword made of crystal was dropped on the ground.~
+WFlags   take wield~
+Values   100 10 150 2 1000 1000
+Stats    1 26000 2600 0 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 15 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9313
+Keywords Chain Mesh~
+Type     armor~
+Short    &WC&wh&Wa&wi&Wn &YM&Oe&Ys&Oh~
+Long     Someone dropped some chain mesh here.~
+WFlags   take body~
+Values   50 50 0 0 0 0
+Stats    1 65000 6500 0 0
+Affect       -1 -1 1000 13 0
+Affect       -1 -1 5 18 0
+Affect       -1 -1 10 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9314
+Keywords Chain Mail~
+Type     armor~
+Short    &WC&w&Wh&wa&Wi&wn &BM&ba&Bi&bl~
+Long     Someone dropped their chain mail here.~
+WFlags   take body~
+Values   50 50 0 0 0 0
+Stats    1 67000 6700 0 0
+Affect       -1 -1 5 18 0
+Affect       -1 -1 5 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9317
+Keywords Felt Cloak~
+Type     armor~
+Short    &WF&we&Wl&wt &YC&Ol&Yo&Oa&Yk~
+Long     A Felt Cloak is here.~
+Flags    inventory~
+WFlags   take about~
+Values   50 50 0 0 0 0
+Stats    1 80000 8000 0 128
+Affect       -1 -1 10 18 0
+Affect       -1 -1 10 19 0
+Affect       -1 -1 500 13 0
+Affect       -1 -1 65536 26 0
+Affect       -1 -1 32768 26 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9318
+Keywords Prism Brace~
+Type     armor~
+Short    &PP&cr&pi&Cs&Pm &BB&br&Ba&bc&Be~
+Long     A brace of extrordinary quality is here.~
+WFlags   take wrist~
+Values   75 75 0 0 0 0
+Stats    1 120000 12000 0 0
+Affect       -1 -1 15 18 0
+Affect       -1 -1 25 19 0
+Affect       -1 -1 500 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9319
+Keywords Mesh Boots~
+Type     armor~
+Short    &YM&Oe&Ys&Oh &BB&bo&Bo&bt&Bs~
+Long     Someone dropped a nice pair of boots here.~
+Flags    inventory~
+WFlags   take feet~
+Values   50 50 0 0 0 0
+Stats    1 46000 4600 0 1
+Affect       -1 -1 750 13 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 10 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9320
+Keywords Heavy Greaves~
+Type     armor~
+Short    &RH&re&Ra&rv&Ry &GG&gr&Ge&ga&Gv&ge&Gs~
+Long     Someone dropped their greaves here.~
+WFlags   take feet~
+Values   50 50 0 0 0 0
+Stats    1 43000 4300 0 32
+Affect       -1 -1 7 18 0
+Affect       -1 -1 12 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9321
+Keywords Steel Foot Spike~
+Type     armor~
+Short    &WS&wt&We&we&Wl &GF&go&Go&gt &BS&bp&Bi&bk&Be~
+Long     A Steel Foot Spike is here.~
+WFlags   take feet~
+Values   50 50 0 0 0 0
+Stats    1 44000 4400 0 128
+Affect       -1 -1 750 13 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 5 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9324
+Keywords Soldier Body Armor~
+Type     armor~
+Short    A Soldier's Body Armor~
+Long     Someone dropped a plated vest on the ground.~
+WFlags   take body~
+Values   75 75 0 0 0 0
+Stats    1 0 0 0 0
+Affect       -1 -1 65536 26 0
+Affect       -1 -1 14 1 0
+Affect       -1 -1 14 2 0
+Affect       -1 -1 14 3 0
+Affect       -1 -1 14 25 0
+Affect       -1 -1 14 5 0
+Affect       -1 -1 14 4 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9325
+Keywords Metal Plating~
+Type     armor~
+Short    &YMetal Plating~
+Long     Some metal plating was left here.~
+WFlags   take body~
+Values   75 75 0 0 0 0
+Stats    1 0 0 0 0
+Affect       -1 -1 100 40 0
+Affect       -1 -1 100 48 0
+Affect       -1 -1 30 18 0
+Affect       -1 -1 30 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9326
+Keywords Machine Cannon~
+Type     weapon~
+Short    &WMachine Cannon~
+Long     A mech's machine cannon was dropped here.~
+WFlags   take wield~
+Values   75 5 95 6 1000 1000
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9327
+Keywords Rocket Cannon~
+Type     weapon~
+Short    &CRocket Cannon~
+Long     A mech's rocket cannon was dropped here.~
+WFlags   take wield~
+Values   75 5 100 6 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9328
+Keywords Plasma Cannon~
+Type     weapon~
+Short    &GPlasma Cannon~
+Long     A mech's plasma cannon was dropped here.~
+WFlags   take wield~
+Values   75 5 95 6 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9329
+Keywords Laser Cannon~
+Type     weapon~
+Short    &RL&ra&Rs&re&Rr &WC&wa&Wn&wn&Wo&wn~
+Long     A mech's laser cannon was dropped here.~
+WFlags   take wield~
+Values   50 10 130 6 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9330
+Keywords Blaster Cannon~
+Type     weapon~
+Short    &BA Blaster Cannon~
+Long     A blaster cannon was left here.~
+WFlags   take wield~
+Values   75 5 90 6 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9331
+Keywords Curved Scimitar~
+Type     weapon~
+Short    &CC&ru&Cr&Rv&Ce&rd &PS&gc&pi&Gm&Pi&gt&pa&Gr~
+Long     A curved scimitar was thrown here.~
+WFlags   take wield~
+Values   50 3 88 3 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9332
+Keywords Boomerang~
+Type     weapon~
+Short    &RA &zB&Bo&zo&Bm&ze&Br&za&Bn&zg~
+Long     A boomerang was dropped here.~
+WFlags   take wield~
+Values   50 10 145 4 0 0
+Stats    1 36000 3600 0 0
+Affect       -1 -1 -25 18 0
+Affect       -1 -1 -25 19 0
+Affect       -1 -1 7500 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9333
+Keywords Long Bow~
+Type     weapon~
+Short    &RA &GL&go&Gn&gg &YB&Oo&Yw~
+Long     A long bow was thrown onto the ground.~
+WFlags   take wield~
+Values   75 8 130 9 0 0
+Stats    1 28000 2800 0 0
+Affect       -1 -1 7 18 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9334
+Keywords Silver Dragon Scale Bow~
+Type     weapon~
+Short    &WS&wi&Wl&wv&We&wr &GD&gr&Ga&gg&Go&gn &BS&bc&Ba&bl&Be &zB&Co&zw~
+Long     Someone dropped a beautifully crafted bow here.~
+Flags    glow~
+WFlags   take wield~
+Values   75 10 151 9 0 0
+Stats    1 120000 12000 0 0
+Affect       -1 -1 25 18 0
+Affect       -1 -1 25 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9335
+Keywords Flail~
+Type     weapon~
+Short    &RA &Yflail~
+Long     Someone dropped a flail here.~
+WFlags   take wield~
+Values   55 1 1500 8 0 0
+Stats    1 16000 1600 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9336
+Keywords Great Sword~
+Type     weapon~
+Short    &BA &GG&gr&Ge&ga&Gt &RS&rw&Ro&rr&Rd~
+Long     A great sword is lying here.~
+WFlags   take wield~
+Values   50 4 105 3 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9337
+Keywords Dragon Scale Mace~
+Type     weapon~
+Short    &GDragon &BScale &RMace~
+Long     A mace has been flung here.~
+WFlags   take wield~
+Values   55 8 145 8 0 0
+Stats    1 22000 2200 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9338
+Keywords Angel Blade~
+Type     weapon~
+Short    &RA&rn&Rg&re&Rl &BB&bl&Ba&bd&Be~
+Long     Tyrael's sword has been dropped here.~
+Flags    glow hum~
+WFlags   take wield~
+Values   75 10 33 2 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9339
+Keywords Grappler Arm~
+Type     weapon~
+Short    &RG&rr&Ra&rp&Rp&rl&Re&rr &GA&gr&Gm~
+Long     A grappler bot's arm is lying here.~
+WFlags   take wield~
+Values   50 2 78 8 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9340
+Keywords Machine Gun~
+Type     weapon~
+Short    &RA &BM&ba&Bc&bh&Bi&bn&Be &GG&gu&Gn~
+Long     Someone dropped their machine gun here.~
+WFlags   take wield~
+Values   40 3 99 6 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9342
+Keywords C-4~
+Type     grenade~
+Short    A package of C-4~
+Long     A package of C-4 is laying here.~
+WFlags   take hold~
+Values   10000 1 0 0 0 0
+Stats    1 4000 400 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9344
+Keywords High-Powered Grenade~
+Type     grenade~
+Short    High-Powered Grenade~
+Long     Someone dropped a roundish grenade here.~
+WFlags   take hold~
+Values   12500 25 0 0 0 0
+Stats    1 7000 700 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9345
+Keywords Frag Grenade~
+Type     grenade~
+Short    a frag grenade~
+Long     A frag grenade was dropped here.~
+WFlags   take hold~
+Values   8000 25 0 0 0 0
+Stats    1 5600 560 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9346
+Keywords Pipe-bomb~
+Type     grenade~
+Short    a pipe-bomb~
+Long     A pipe-bomb was dropped here.~
+WFlags   take hold~
+Values   8000 25 0 0 0 0
+Stats    1 4000 400 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9347
+Keywords Flashbang~
+Type     grenade~
+Short    a flashbang~
+Long     A flashbang was dropped here.~
+WFlags   take hold~
+Values   3500 25 0 0 0 0
+Stats    1 1500 150 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9348
+Keywords Molotov Cocktail~
+Type     grenade~
+Short    a molotov cocktail~
+Long     Someone dropped a cocktail here.~
+WFlags   take hold~
+Values   40 25 4 0 0 0
+Stats    1 2000 200 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9349
+Keywords Omega Edge~
+Type     weapon~
+Short    &RO&zm&Re&zg&Ra &YE&cd&Yg&ce~
+Long     Someone dropped a rare sword here.~
+WFlags   take wield~
+Values   10 2 40 1 0 0
+Stats    1 175000 17500 0 0
+Affect       -1 -1 -15 18 0
+Affect       -1 -1 -15 19 0
+Affect       -1 -1 -5000 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9355
+Keywords Tyrael's Wings~
+Type     armor~
+Short    &YT&Oy&Yr&Oa&Ye&Ol&Y'&Os &CW&ci&Cn&cg&Cs~
+Long     Tyrael's wings were dropped onto the floor.~
+WFlags   take about~
+Values   75 75 0 0 0 0
+Stats    1 0 0 0 0
+Affect       -1 -1 15 18 0
+Affect       -1 -1 15 19 0
+Affect       -1 -1 1000 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     9499
+Keywords last~
+Type     trash~
+Short    a last~
+Long     A last is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     9301
+Name     In front of the Moon Base~
+Sector   city~
+Desc     You stand here in front of the Moon Base. The base here seems to be quite
+large in size and very well protected.
+There are many guards walking about orders citizens what to do here.
+Say 'Moon' to return to the moon.
+~
+#EXIT
+Direction north~
+ToRoom    9302
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9303
+Keywords  Moon_Gate~
+Flags     isdoor~
+#ENDEXIT
+
+Reset M 0 9301 2 9301
+  Reset E 1 9304 1 16
+  Reset E 1 9324 1 5
+Reset M 0 9301 2 9301
+  Reset E 1 9304 1 16
+  Reset E 1 9324 1 5
+Reset D 0 9301 3 0
+#MUDPROG
+Progtype  speech_prog~
+Arglist   moon~
+Comlist   mpechoat $n You are taken to the Moon by train.
+mpechoaround $n $n are taken to the Moon by train.
+mptransfer $n 1627
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     9302
+Name     A dead end~
+Sector   city~
+Flags    nomob~
+Desc     There is not much to see here other than the piles of ammunition. The ground
+here is very hard and dry and the seems to be air coming from somewhere.
+~
+#EXIT
+Direction east~
+ToRoom    9373
+Flags     secret hidden~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9301
+#ENDEXIT
+
+Reset O 0 17 1 9302
+#ENDROOM
+
+#ROOM
+Vnum     9303
+Name     Passed the Front Gate~
+Sector   city~
+Desc     You have gotten past the front gate and are now inside the base. How
+you got in here is a mystery, but be careful not to get spotted by guards.
+~
+#EXIT
+Direction east~
+ToRoom    9301
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9304
+#ENDEXIT
+
+Reset M 0 9304 1 9303
+  Reset E 1 9324 1 5
+  Reset E 1 9304 1 16
+Reset D 0 9303 1 0
+#ENDROOM
+
+#ROOM
+Vnum     9304
+Name     Mech Room I~
+Sector   city~
+Desc     This room is quite large and seems to be made of titanium all over.
+You think to yourself why is this room the way it is.
+~
+#EXIT
+Direction north~
+ToRoom    9306
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9303
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9305
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9307
+#ENDEXIT
+
+Reset M 0 9325 1 9304
+  Reset E 1 9325 1 5
+  Reset E 1 9330 1 16
+Reset O 0 17 1 9304
+#ENDROOM
+
+#ROOM
+Vnum     9305
+Name     In the Moon Base~
+Sector   city~
+Desc     This room isn't much to see. There seems to be some sort of materials
+lying about the room, they probably belong to a soldier.
+~
+#EXIT
+Direction north~
+ToRoom    9304
+#ENDEXIT
+
+Reset M 0 9320 4 9305
+  Reset E 1 9324 1 5
+  Reset E 1 9304 1 16
+Reset M 0 9320 4 9305
+  Reset E 1 9324 1 5
+  Reset E 1 9304 1 16
+#ENDROOM
+
+#ROOM
+Vnum     9306
+Name     In the Moon Base~
+Sector   city~
+Desc     This room isn't much to see. There seems to be some sort of materials
+lying about the room, they probably belong to a soldier.
+~
+#EXIT
+Direction south~
+ToRoom    9304
+#ENDEXIT
+
+Reset M 0 9320 4 9306
+  Reset E 1 9324 1 5
+  Reset E 1 9304 1 16
+#ENDROOM
+
+#ROOM
+Vnum     9307
+Name     In the Moon Base~
+Sector   city~
+Flags    nomob~
+Desc     This room isn't much to see. There seems to be some sort of materials
+lying about the room, they probably belong to a soldier.
+~
+#EXIT
+Direction north~
+ToRoom    9309
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9304
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9308
+#ENDEXIT
+
+Reset M 0 9320 4 9307
+  Reset E 1 9304 1 16
+  Reset E 1 9324 1 5
+#ENDROOM
+
+#ROOM
+Vnum     9308
+Name     Moon Base Barracks~
+Sector   city~
+Desc     This is the barracks where all the men sleep. Might not want to make
+too much noise in here.
+~
+#EXIT
+Direction east~
+ToRoom    9307
+#ENDEXIT
+
+Reset O 0 17 1 9308
+#ENDROOM
+
+#ROOM
+Vnum     9309
+Name     Hallway~
+Sector   city~
+Desc     You now walk through a long hallway that leads to the innards of
+the moon base. Watch out for sentinels and hallway guards.
+~
+#EXIT
+Direction north~
+ToRoom    9310
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9307
+#ENDEXIT
+
+Reset M 0 9303 4 9309
+  Reset E 1 9324 1 5
+#ENDROOM
+
+#ROOM
+Vnum     9310
+Name     Hallway~
+Sector   city~
+Flags    nomob~
+Desc     You now walk through a long hallway that leads to the innards of
+the moon base. Watch out for sentinels and hallway guards.
+~
+#EXIT
+Direction north~
+ToRoom    9311
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9309
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9311
+Name     Hallway~
+Sector   city~
+Desc     You now walk through a long hallway that leads to the innards of
+the moon base. Watch out for sentinels and hallway guards.
+~
+#EXIT
+Direction south~
+ToRoom    9310
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9312
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9312
+Name     Hallway~
+Sector   city~
+Desc     You now walk through a long hallway that leads to the innards of
+the moon base. Watch out for sentinels and hallway guards.
+~
+#EXIT
+Direction north~
+ToRoom    9313
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9311
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9315
+#ENDEXIT
+
+Reset M 0 9303 4 9312
+  Reset E 1 9324 1 5
+#ENDROOM
+
+#ROOM
+Vnum     9313
+Name     Hallway~
+Sector   city~
+Desc     You now walk through a long hallway that leads to the innards of
+the moon base. Watch out for sentinels and hallway guards.
+~
+#EXIT
+Direction south~
+ToRoom    9312
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    9314
+Flags     secret hidden~
+#ENDEXIT
+
+Reset M 0 9321 1 9313
+  Reset E 1 9304 1 16
+#ENDROOM
+
+#ROOM
+Vnum     9314
+Name     Grenade Shop~
+Sector   city~
+Flags    nomob safe~
+Desc     This is the moon base grenade supply room. A man is here selling
+grenades to the soldiers.
+~
+#EXIT
+Direction southwest~
+ToRoom    9313
+#ENDEXIT
+
+Reset M 0 9353 1 9314
+#ENDROOM
+
+#ROOM
+Vnum     9315
+Name     Hallway~
+Sector   city~
+Desc     You now walk through a long hallway that leads to the innards of
+the moon base. Watch out for sentinels and hallway guards.
+~
+#EXIT
+Direction east~
+ToRoom    9312
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9316
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9316
+Name     Hallway~
+Sector   city~
+Desc     You now walk through a long hallway that leads to the innards of
+the moon base. Watch out for sentinels and hallway guards.
+~
+#EXIT
+Direction north~
+ToRoom    9315
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    9317
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9317
+Name     Hallway~
+Sector   city~
+Desc     You now walk through a long hallway that leads to the innards of
+the moon base. Watch out for sentinels and hallway guards.
+~
+#EXIT
+Direction south~
+ToRoom    9318
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9326
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    9316
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9318
+Name     Short Corridor~
+Sector   city~
+Flags    nomob~
+Desc     This corridor seems to be very short. It may lead to somewhere
+very interesting.
+~
+#EXIT
+Direction north~
+ToRoom    9317
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9319
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9319
+Name     Mech Room 2~
+Sector   city~
+Desc     This room is quite large and seems to be made of titanium all over.
+You think to yourself why is this room the way it is.
+~
+#EXIT
+Direction north~
+ToRoom    9318
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9320
+#ENDEXIT
+
+Reset M 0 9326 1 9319
+  Reset E 1 9325 1 5
+  Reset E 1 9326 1 16
+#ENDROOM
+
+#ROOM
+Vnum     9320
+Name     Lab 1~
+Sector   city~
+Desc     This is Lab One, where all the non-threatening experiments are done
+This area isn't very large so you wonder how the scientist do their work.
+~
+#EXIT
+Direction north~
+ToRoom    9319
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9322
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9324
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9321
+#ENDEXIT
+
+Reset M 0 9333 2 9320
+#ENDROOM
+
+#ROOM
+Vnum     9321
+Name     Lab 1~
+Sector   city~
+Desc     This is Lab One, where all the non-threatening experiments are done
+This area isn't very large so you wonder how the scientist do their work.
+~
+#EXIT
+Direction east~
+ToRoom    9320
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9325
+#ENDEXIT
+
+Reset M 0 9302 3 9321
+#ENDROOM
+
+#ROOM
+Vnum     9322
+Name     Lab 1~
+Sector   city~
+Desc     This is Lab One, where all the non-threatening experiments are done
+This area isn't very large so you wonder how the scientist do their work.
+~
+#EXIT
+Direction south~
+ToRoom    9323
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9320
+#ENDEXIT
+
+Reset M 0 9333 2 9322
+#ENDROOM
+
+#ROOM
+Vnum     9323
+Name     Lab 1~
+Sector   city~
+Desc     This is Lab One, where all the non-threatening experiments are done
+This area isn't very large so you wonder how the scientist do their work.
+~
+#EXIT
+Direction north~
+ToRoom    9322
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9324
+#ENDEXIT
+
+Reset M 0 9334 2 9323
+#ENDROOM
+
+#ROOM
+Vnum     9324
+Name     Lab 1~
+Sector   city~
+Desc     This is Lab One, where all the non-threatening experiments are done
+This area isn't very large so you wonder how the scientist do their work.
+~
+#EXIT
+Direction north~
+ToRoom    9320
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9323
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9325
+#ENDEXIT
+
+Reset M 0 9302 3 9324
+#ENDROOM
+
+#ROOM
+Vnum     9325
+Name     Lab 1~
+Sector   city~
+Desc     This is Lab One, where all the non-threatening experiments are done
+This area isn't very large so you wonder how the scientist do their work.
+~
+#EXIT
+Direction north~
+ToRoom    9321
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9324
+#ENDEXIT
+
+Reset M 0 9302 3 9325
+Reset M 0 9334 2 9325
+#ENDROOM
+
+#ROOM
+Vnum     9326
+Name     Hallway~
+Sector   city~
+Desc     You now walk through a long hallway that leads to the innards of
+the moon base. Watch out for sentinels and hallway guards.
+~
+#EXIT
+Direction east~
+ToRoom    9317
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9327
+#ENDEXIT
+
+Reset M 0 9303 4 9326
+  Reset E 1 9304 1 16
+  Reset E 1 9324 1 5
+#ENDROOM
+
+#ROOM
+Vnum     9327
+Name     Hallway~
+Sector   city~
+Desc     You now walk through a long hallway that leads to the innards of
+the moon base. Watch out for sentinels and hallway guards.
+~
+#EXIT
+Direction east~
+ToRoom    9326
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9328
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9328
+Name     Hallway~
+Sector   city~
+Desc     You now walk through a long hallway that leads to the innards of
+the moon base. Watch out for sentinels and hallway guards.
+~
+#EXIT
+Direction east~
+ToRoom    9327
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9329
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9329
+Name     Hallway~
+Sector   city~
+Desc     You now walk through a long hallway that leads to the innards of
+the moon base. Watch out for sentinels and hallway guards.
+~
+#EXIT
+Direction east~
+ToRoom    9328
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9330
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9347
+#ENDEXIT
+
+Reset M 0 9303 4 9329
+  Reset E 1 9324 1 5
+#ENDROOM
+
+#ROOM
+Vnum     9330
+Name     Short Corridor~
+Sector   city~
+Flags    nomob~
+Desc     This corridor seems to be very short. It may lead to somewhere
+very interesting.
+~
+#EXIT
+Direction north~
+ToRoom    9329
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9331
+#ENDEXIT
+
+Reset M 0 9327 1 9330
+  Reset E 1 9328 1 16
+  Reset E 1 9325 1 5
+#ENDROOM
+
+#ROOM
+Vnum     9331
+Name     Mech Room 3~
+Sector   city~
+Desc     This room is quite large and seems to be made of titanium all over.
+You think to yourself why is this room the way it is.
+~
+#EXIT
+Direction north~
+ToRoom    9330
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9332
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9332
+Name     Short Corridor~
+Sector   city~
+Desc     This corridor seems to be very short. It may lead to somewhere
+very interesting.
+~
+#EXIT
+Direction north~
+ToRoom    9331
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9333
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9333
+Name     Short Corridor~
+Sector   city~
+Desc     This room is quite large and seems to be made of titanium all over.
+You think to yourself why is this room the way it is.
+~
+#EXIT
+Direction east~
+ToRoom    9332
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9334
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9334
+Name     Mech Room 4~
+Sector   city~
+Desc     This corridor seems to be very short. It may lead to somewhere
+very interesting.
+~
+#EXIT
+Direction east~
+ToRoom    9333
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9335
+#ENDEXIT
+
+Reset M 0 9328 1 9334
+  Reset E 1 9325 1 5
+  Reset E 1 9327 1 16
+#ENDROOM
+
+#ROOM
+Vnum     9335
+Name     Short Corridor~
+Sector   city~
+Desc     This room is quite large and seems to be made of titanium all over.
+You think to yourself why is this room the way it is.
+This corridor seems to be very short. It may lead to somewhere
+very interesting.
+~
+#EXIT
+Direction east~
+ToRoom    9334
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9336
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9336
+Name     Short Corridor~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    9335
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9337
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9337
+Name     Mech Room 5~
+Sector   city~
+Desc     This room is quite large and seems to be made of titanium all over.
+You think to yourself why is this room the way it is.
+This corridor seems to be very short. It may lead to somewhere
+very interesting.
+~
+#EXIT
+Direction east~
+ToRoom    9336
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9338
+#ENDEXIT
+
+Reset M 0 9329 1 9337
+  Reset E 1 9325 1 5
+  Reset E 1 9329 1 16
+#ENDROOM
+
+#ROOM
+Vnum     9338
+Name     Short Corridor~
+Sector   city~
+Desc     This corridor seems to be very short. It may lead to somewhere
+very interesting.
+~
+#EXIT
+Direction east~
+ToRoom    9337
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9339
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9339
+Name     Before &YL&Oa&Yb &BT&bw&Bo~
+Sector   city~
+Desc     You are standing in the room that is right before Lab Two. This area is
+very clean and sterile, as the bacterial experiments are done in here.
+~
+#EXIT
+Direction east~
+ToRoom    9338
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9340
+#ENDEXIT
+
+Reset M 0 9330 1 9339
+  Reset E 1 9339 1 16
+#ENDROOM
+
+#ROOM
+Vnum     9340
+Name     &YL&Oa&Yb &BT&bw&Bo~
+Sector   city~
+Flags    nomob safe hotel heal~
+Desc     You are now in Lab Two, the cleanest Lab you have ever seen in your life
+This area is very strange and all sorts of organisms are being tested
+to determine if any new vaccines can be made.
+~
+#EXIT
+Direction north~
+ToRoom    9341
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9339
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9344
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9450
+#ENDEXIT
+
+Reset M 0 9306 1 9340
+  Reset E 1 9307 1 16
+  Reset E 1 9324 1 5
+#ENDROOM
+
+#ROOM
+Vnum     9341
+Name     &YL&Oa&Yb &BT&bw&Bo~
+Sector   city~
+Desc     You are now in Lab Two, the cleanest Lab you have ever seen in your life.
+This area is very strange and all sorts of organisms are being tested
+to determine if any new vaccines can be made.
+~
+#EXIT
+Direction south~
+ToRoom    9340
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9342
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9342
+Name     &YL&Oa&Yb &BT&bw&Bo~
+Sector   city~
+Flags    nomob safe~
+Desc     You are now in Lab Two, the cleanest Lab you have ever seen in your life.
+This area is very strange and all sorts of organisms are being tested
+to determine if any new vaccines can be made.
+~
+#EXIT
+Direction east~
+ToRoom    9341
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9450
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9343
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9343
+Name     &YL&Oa&Yb &BT&bw&Bo~
+Sector   city~
+Desc     You are now in Lab Two, the cleanest Lab you have ever seen in your life.
+This area is very strange and all sorts of organisms are being tested
+to determine if any new vaccines can be made.
+~
+#EXIT
+Direction east~
+ToRoom    9342
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9344
+Name     &YL&Oa&Yb &BT&bw&Bo~
+Sector   city~
+Desc     You are now in Lab Two, the cleanest Lab you have ever seen in your life.
+This area is very strange and all sorts of organisms are being tested
+to determine if any new vaccines can be made.
+~
+#EXIT
+Direction north~
+ToRoom    9340
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9345
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9345
+Name     &YL&Oa&Yb &BT&bw&Bo~
+Sector   city~
+Flags    nomob safe~
+Desc     You are now in Lab Two, the cleanest Lab you have ever seen in your life.
+This area is very strange and all sorts of organisms are being tested
+to determine if any new vaccines can be made.
+~
+#EXIT
+Direction north~
+ToRoom    9450
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9344
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9346
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9346
+Name     &YL&Oa&Yb &BT&bw&Bo~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    9345
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9347
+Name     Long Corridor~
+Sector   city~
+Flags    nomob nofloor~
+Desc     This corridor is very long and seems to go on forever. Must be some
+sort of secret to navigate it.
+~
+#EXIT
+Direction east~
+ToRoom    9329
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9348
+#ENDEXIT
+
+Reset M 0 9322 1 9347
+  Reset E 1 9304 1 16
+#ENDROOM
+
+#ROOM
+Vnum     9348
+Name     Long Corridor~
+Sector   city~
+Desc     This corridor is very long and seems to go on forever. Must be some
+sort of secret to navigate it.
+~
+#EXIT
+Direction east~
+ToRoom    9347
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9349
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9349
+Name     Long Corridor~
+Sector   city~
+Desc     This corridor is very long and seems to go on forever. Must be some
+sort of secret to navigate it.
+~
+#EXIT
+Direction east~
+ToRoom    9348
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9350
+#ENDEXIT
+
+Reset M 0 9323 1 9349
+  Reset E 1 9304 1 16
+#ENDROOM
+
+#ROOM
+Vnum     9350
+Name     Long Corridor~
+Sector   city~
+Desc     This corridor is very long and seems to go on forever. Must be some
+sort of secret to navigate it.
+~
+#EXIT
+Direction east~
+ToRoom    9349
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9351
+#ENDEXIT
+
+Reset M 0 9324 1 9350
+  Reset E 1 9304 1 16
+#ENDROOM
+
+#ROOM
+Vnum     9351
+Name     Long Corridor~
+Sector   city~
+Desc     This corridor is very long and seems to go on forever. Must be some
+sort of secret to navigate it.
+~
+#EXIT
+Direction north~
+ToRoom    9353
+Flags     secret hidden~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9350
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9352
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9352
+Name     Long Corridor~
+Sector   city~
+Desc     This corridor is very long and seems to go on forever. Must be some
+sort of secret to navigate it.
+~
+#EXIT
+Direction east~
+ToRoom    9351
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9348
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9353
+Name     Secret Corridor~
+Sector   city~
+Desc     This corridor is different from the others, it is very dark. Must be
+like this for a reason.
+~
+#EXIT
+Direction north~
+ToRoom    9354
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9351
+#ENDEXIT
+
+Reset M 0 9307 1 9353
+  Reset E 1 9336 1 16
+#ENDROOM
+
+#ROOM
+Vnum     9354
+Name     Secret Corridor~
+Sector   city~
+Desc     This corridor is different from the others, it is very dark. Must be
+like this for a reason.
+~
+#EXIT
+Direction east~
+ToRoom    9357
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9353
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9355
+#ENDEXIT
+
+Reset M 0 9313 1 9354
+  Reset E 1 9324 1 5
+  Reset E 1 9304 1 16
+#ENDROOM
+
+#ROOM
+Vnum     9355
+Name     Secret Corridor~
+Sector   city~
+Desc     This corridor is different from the others, it is very dark. Must be
+like this for a reason.
+~
+#EXIT
+Direction north~
+ToRoom    9356
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9354
+#ENDEXIT
+
+Reset O 0 17 2 9355
+Reset O 0 17 1 9355
+#ENDROOM
+
+#ROOM
+Vnum     9356
+Name     &WW&we&Wa&wp&Wo&wn &YS&Oh&Yo&Op~
+Sector   city~
+Flags    safe~
+Desc     Needing any weapons? Well here is the place to buy them. Some of the
+base's best weapons are sold in this here room.
+~
+#EXIT
+Direction south~
+ToRoom    9355
+#ENDEXIT
+
+Reset M 0 9352 1 9356
+  Reset G 1 9305 1
+  Reset G 1 9308 1
+  Reset G 1 9310 1
+  Reset G 1 9303 1
+#ENDROOM
+
+#ROOM
+Vnum     9357
+Name     Secret Corridor~
+Sector   city~
+Desc     This corridor is different from the others, it is very dark. Must be
+like this for a reason.
+~
+#EXIT
+Direction east~
+ToRoom    9358
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9354
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9358
+Name     Secret Corridor~
+Sector   city~
+Desc     This corridor is different from the others, it is very dark. Must be
+like this for a reason.
+~
+#EXIT
+Direction north~
+ToRoom    9359
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9357
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9359
+Name     Secret Corridor~
+Sector   city~
+Desc     This corridor is different from the others, it is very dark. Must be
+like this for a reason.
+ 
+~
+#EXIT
+Direction east~
+ToRoom    9360
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9358
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9360
+Name     Back Area~
+Sector   city~
+Desc     This is the back area of the base. It is very amazing that you have
+gotten this far and survived. Most intruders would have died.
+~
+#EXIT
+Direction east~
+ToRoom    9361
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9359
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9361
+Name     Back Area~
+Sector   city~
+Desc     This is the back area of the base. It is very amazing that you have
+gotten this far and survived. Most intruders would have died.
+~
+#EXIT
+Direction north~
+ToRoom    9362
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9360
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9362
+Name     Back Area~
+Sector   city~
+Desc     This is the back area of the base. It is very amazing that you have
+gotten this far and survived. Most intruders would have died.
+~
+#EXIT
+Direction north~
+ToRoom    9363
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9361
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9363
+Name     Back Area~
+Sector   city~
+Desc     This is the back area of the base. It is very amazing that you have
+gotten this far and survived. Most intruders would have died.
+~
+#EXIT
+Direction south~
+ToRoom    9362
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    9364
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9364
+Name     Back Area~
+Sector   city~
+Desc     This is the back area of the base. It is very amazing that you have
+gotten this far and survived. Most intruders would have died.
+~
+#EXIT
+Direction east~
+ToRoom    9365
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    9363
+#ENDEXIT
+
+Reset M 0 9318 1 9364
+#ENDROOM
+
+#ROOM
+Vnum     9365
+Name     Back Area~
+Sector   city~
+Desc     This is the back area of the base. It is very amazing that you have
+gotten this far and survived. Most intruders would have died.
+~
+#EXIT
+Direction east~
+ToRoom    9366
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9364
+#ENDEXIT
+
+Reset M 0 9308 1 9365
+  Reset E 1 9324 1 5
+  Reset E 1 9304 1 16
+#ENDROOM
+
+#ROOM
+Vnum     9366
+Name     Back Area~
+Sector   city~
+Desc     This is the back area of the base. It is very amazing that you have
+gotten this far and survived. Most intruders would have died.
+~
+#EXIT
+Direction east~
+ToRoom    9370
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9367
+Flags     secret hidden~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9365
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9367
+Name     Hidden Room~
+Sector   city~
+Desc     You have found a hidden room. This area must have been put here for a
+good reason if it was hidden.
+~
+#EXIT
+Direction north~
+ToRoom    9366
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9368
+#ENDEXIT
+
+Reset M 0 9312 1 9367
+  Reset E 1 9324 1 5
+  Reset E 1 9331 1 16
+#ENDROOM
+
+#ROOM
+Vnum     9368
+Name     Hidden Room~
+Sector   city~
+Desc     You have found a hidden room. This area must have been put here for a
+good reason if it was hidden.
+~
+#EXIT
+Direction north~
+ToRoom    9367
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9369
+Flags     secret hidden~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9369
+Name     &GA&gr&Gm&go&Gr &BS&bh&Bo&bp~
+Sector   city~
+Flags    bank safe~
+Desc     This is the armor shop, soldiers stock up on good armors here before
+they go into battle and are never seen again.
+~
+#EXIT
+Direction west~
+ToRoom    9368
+#ENDEXIT
+
+Reset M 0 9351 1 9369
+  Reset G 0 9309 1
+  Reset G 0 9301 1
+  Reset G 0 9302 1
+#ENDROOM
+
+#ROOM
+Vnum     9370
+Name     Back Area~
+Sector   city~
+Desc     This is the back area of the base. It is very amazing that you have
+gotten this far and survived. Most intruders would have died.
+~
+#EXIT
+Direction east~
+ToRoom    9371
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9366
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9371
+Name     Moon Base Jail~
+Sector   city~
+Desc     This area is very strange, it is not like other jails. Moans from men
+can be heard in the background.
+~
+#EXIT
+Direction east~
+ToRoom    9372
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9370
+#ENDEXIT
+
+Reset M 0 9309 1 9371
+  Reset E 1 9304 1 16
+  Reset E 1 9324 1 5
+Reset D 0 9371 1 0
+#ENDROOM
+
+#ROOM
+Vnum     9372
+Name     Moon Base Jail Cell~
+Sector   city~
+Desc     You must've been caught if you are in here. This is one of the cells
+that the soldiers keep intruders who survive in.
+~
+#EXIT
+Direction west~
+ToRoom    9371
+Flags     isdoor~
+#ENDEXIT
+
+Reset M 0 9310 1 9372
+Reset M 0 9311 1 9372
+Reset M 0 9319 1 9372
+Reset D 0 9372 3 0
+#ENDROOM
+
+#ROOM
+Vnum     9373
+Name     Hidden Alleyway~
+Sector   city~
+Desc     This area is very cool and moist. The air here seems to be blowing
+toward the east.
+~
+#EXIT
+Direction east~
+ToRoom    9374
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9302
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9374
+Name     Hidden Alleyway~
+Sector   city~
+Desc     This area is very cool and moist. The air here seems to be blowing
+toward the east.
+~
+#EXIT
+Direction south~
+ToRoom    9375
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9373
+#ENDEXIT
+
+Reset M 0 9315 1 9374
+#ENDROOM
+
+#ROOM
+Vnum     9375
+Name     Hidden Alleyway~
+Sector   city~
+Desc     This area is very cool and moist. The air here seems to be blowing
+toward the east.
+~
+#EXIT
+Direction north~
+ToRoom    9374
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9376
+#ENDEXIT
+
+Reset M 0 9314 1 9375
+  Reset E 1 9336 1 16
+Reset M 0 9316 3 9375
+#ENDROOM
+
+#ROOM
+Vnum     9376
+Name     Hidden Alleyway~
+Sector   city~
+Desc     This area is very cool and moist. The air here seems to be blowing
+toward the east.
+~
+#EXIT
+Direction north~
+ToRoom    9377
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9380
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9375
+#ENDEXIT
+
+Reset M 0 9316 3 9376
+#ENDROOM
+
+#ROOM
+Vnum     9377
+Name     Hidden Alleyway~
+Sector   city~
+Desc     This area is very cool and moist. The air here seems to be blowing
+toward the east.
+~
+#EXIT
+Direction north~
+ToRoom    9378
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9376
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9374
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9378
+Name     Hidden Alleyway~
+Sector   city~
+Desc     This area is very cool and moist. The air here seems to be blowing
+toward the east.
+~
+#EXIT
+Direction east~
+ToRoom    9379
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9377
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9379
+Name     &zThe room of &CW&wi&Wn&Cd~
+Sector   city~
+Flags    safe~
+Desc     This is the head collector's office. He gets pretty angry when people
+barge in unwelcomed.
+~
+#EXIT
+Direction west~
+ToRoom    9378
+#ENDEXIT
+
+Reset M 0 9354 1 9379
+#ENDROOM
+
+#ROOM
+Vnum     9380
+Name     Hidden Alleyway~
+Sector   city~
+Desc     This area is very cool and moist. The air here seems to be blowing
+toward the east.
+~
+#EXIT
+Direction east~
+ToRoom    9381
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9376
+#ENDEXIT
+
+Reset M 0 9316 3 9380
+#ENDROOM
+
+#ROOM
+Vnum     9381
+Name     Abandoned Storage Area~
+Sector   city~
+Flags    nomob~
+Desc     This place seems to have been abandoned many years ago. There
+are many empty crates all over the place here.
+~
+#EXIT
+Direction east~
+ToRoom    9383
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9380
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9382
+Name     &YR&Oo&Yo&Om&z of the &CW&wi&Wn&Cd~
+Sector   city~
+Flags    nomob~
+Desc     This place seems to have been abandoned many years ago. There
+are many empty crates all over the place here.
+~
+Reset M 0 9317 1 9382
+#ENDROOM
+
+#ROOM
+Vnum     9383
+Name     Abandoned Storage Area~
+Sector   city~
+Desc     This place seems to have been abandoned many years ago. There
+are many empty crates all over the place here.
+~
+#EXIT
+Direction north~
+ToRoom    9385
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9381
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    9384
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9384
+Name     An Empty Apartment~
+Sector   city~
+Flags    empty_home~
+Desc     This place seems to have been abandoned many years ago. There
+are many empty crates all over the place here.
+~
+#EXIT
+Direction northwest~
+ToRoom    9383
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9385
+Name     Abandoned Storage Area~
+Sector   city~
+Desc     This place seems to have been abandoned many years ago. There
+are many empty crates all over the place here.
+~
+#EXIT
+Direction north~
+ToRoom    9386
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9383
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9386
+Name     Abandoned Storage Area~
+Sector   city~
+Desc     This place seems to have been abandoned many years ago. There
+are many empty crates all over the place here.
+~
+#EXIT
+Direction east~
+ToRoom    9387
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9385
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9387
+Name     Abandoned Storage Area~
+Sector   city~
+Desc     This place seems to have been abandoned many years ago. There
+are many empty crates all over the place here.
+~
+#EXIT
+Direction west~
+ToRoom    9386
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    9388
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9388
+Name     Abandoned Storage Area~
+Sector   city~
+Desc     This place seems to have been abandoned many years ago. There
+are many empty crates all over the place here.
+~
+#EXIT
+Direction north~
+ToRoom    9389
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    9390
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    9387
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9389
+Name     An Empty Apartment~
+Sector   city~
+Flags    empty_home~
+Desc     This place seems to have been abandoned many years ago. There
+are many empty crates all over the place here.
+~
+#EXIT
+Direction south~
+ToRoom    9388
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9390
+Name     Abandoned Storage Area~
+Sector   city~
+Desc     This place seems to have been abandoned many years ago. There
+are many empty crates all over the place here.
+~
+#EXIT
+Direction east~
+ToRoom    9391
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9392
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    9388
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9391
+Name     An Empty Apartment~
+Sector   city~
+Flags    empty_home~
+Desc     This place seems to have been abandoned many years ago. There
+are many empty crates all over the place here.
+~
+#EXIT
+Direction west~
+ToRoom    9390
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9392
+Name     An Empty Apartment~
+Sector   city~
+Flags    empty_home~
+Desc     This place seems to have been abandoned many years ago. There
+are many empty crates all over the place here.
+~
+#EXIT
+Direction north~
+ToRoom    9390
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9393
+Name     &RP&ro&Rr&rt&Ra&rl &CR&co&Co&cm~
+Sector   city~
+Desc     This room has a wierd looking red portal in it.
+Say 'Return' to go back to the base.
+~
+#EXIT
+Direction north~
+ToRoom    9394
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9396
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9395
+#ENDEXIT
+
+Reset M 0 9359 6 9393
+  Reset E 1 9340 1 16
+Reset M 0 9359 6 9393
+  Reset E 1 9340 1 16
+#MUDPROG
+Progtype  speech_prog~
+Arglist   return~
+Comlist   mpechoat $n You walk through the &Rp&ro&Rr&rt&Ra&rl &cand return to base.
+mpechoaround $n $n walks through the &Rp&ro&Rr&rt&Ra&rl &cand returns to base.
+mptransfer $n 9450
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Landing~
+Comlist   mpechoat $n Here you go.
+mpechoaround $n $n was taken somewhere.
+mptransfer $n 9301
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     9394
+Name     Broken Down Lab~
+Sector   city~
+Desc     This room is tattered and beaten beyond all belief. It seems like
+a war went on in here. This roof is caving in a little.
+~
+#EXIT
+Direction east~
+ToRoom    9397
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9393
+#ENDEXIT
+
+Reset M 0 9359 6 9394
+  Reset E 1 9340 1 16
+#ENDROOM
+
+#ROOM
+Vnum     9395
+Name     Broken Down Lab~
+Sector   city~
+Desc     This room is tattered and beaten beyond all belief. It seems like
+a war went on in here. This roof is caving in a little.
+~
+#EXIT
+Direction north~
+ToRoom    9393
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9398
+#ENDEXIT
+
+Reset M 0 9359 6 9395
+  Reset E 1 9340 1 16
+#ENDROOM
+
+#ROOM
+Vnum     9396
+Name     Broken Down Lab~
+Sector   city~
+Desc     This room is tattered and beaten beyond all belief. It seems like
+a war went on in here. This roof is caving in a little.
+~
+#EXIT
+Direction north~
+ToRoom    9397
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9399
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9398
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9393
+#ENDEXIT
+
+Reset M 0 9350 1 9396
+Reset M 0 9349 1 9396
+#ENDROOM
+
+#ROOM
+Vnum     9397
+Name     Broken Down Lab~
+Sector   city~
+Desc     This room is tattered and beaten beyond all belief. It seems like
+a war went on in here. This roof is caving in a little.
+~
+#EXIT
+Direction east~
+ToRoom    9400
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9396
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9394
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9398
+Name     Broken Down Lab~
+Sector   city~
+Desc     This room is tattered and beaten beyond all belief. It seems like
+a war went on in here. This roof is caving in a little.
+~
+#EXIT
+Direction north~
+ToRoom    9396
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9401
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9395
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9399
+Name     Broken Down Lab~
+Sector   city~
+Desc     This room is tattered and beaten beyond all belief. It seems like
+a war went on in here. This roof is caving in a little.
+~
+#EXIT
+Direction north~
+ToRoom    9400
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9402
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9401
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9396
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9400
+Name     Broken Down Lab~
+Sector   city~
+Desc     This room is tattered and beaten beyond all belief. It seems like
+a war went on in here. This roof is caving in a little.
+~
+#EXIT
+Direction east~
+ToRoom    9403
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9399
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9397
+#ENDEXIT
+
+Reset M 0 9359 6 9400
+  Reset E 1 9340 1 16
+#ENDROOM
+
+#ROOM
+Vnum     9401
+Name     Broken Down Lab~
+Sector   city~
+Flags    nomob~
+Desc     This room is tattered and beaten beyond all belief. It seems like
+a war went on in here. This roof is caving in a little.
+~
+#EXIT
+Direction north~
+ToRoom    9399
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9398
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9402
+Name     Broken Down Lab~
+Sector   city~
+Desc     This room is tattered and beaten beyond all belief. It seems like
+a war went on in here. This roof is caving in a little.
+~
+#EXIT
+Direction north~
+ToRoom    9403
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9404
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9399
+#ENDEXIT
+
+Reset M 0 9359 6 9402
+  Reset E 1 9340 1 16
+#ENDROOM
+
+#ROOM
+Vnum     9403
+Name     Broken Down Lab~
+Sector   city~
+Desc     This room is tattered and beaten beyond all belief. It seems like
+a war went on in here. This roof is caving in a little.
+~
+#EXIT
+Direction south~
+ToRoom    9402
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9400
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9404
+Name     Rocky Pathway~
+Sector   city~
+Flags    nomob~
+Desc     This path is very rocky and many boulders are blocking your path.
+~
+#EXIT
+Direction east~
+ToRoom    9405
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9402
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9405
+Name     Rocky Pathway~
+Sector   city~
+Desc     This path is very rocky and many boulders are blocking your path.
+~
+#EXIT
+Direction east~
+ToRoom    9406
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9404
+#ENDEXIT
+
+Reset M 0 9335 1 9405
+Reset M 0 9348 1 9405
+#ENDROOM
+
+#ROOM
+Vnum     9406
+Name     Rocky Pathway~
+Sector   city~
+Flags    nomob~
+Desc     This path is very rocky and many boulders are blocking your path.
+~
+#EXIT
+Direction north~
+ToRoom    9451
+Flags     secret hidden~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9407
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9405
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9407
+Name     &RB&ru&Rr&rn&Ri&rn&Rg &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Desc     Man is this place hot! You feel like you are burning up here.
+Maybe you should find a place to cool down and rest awhile.
+~
+#EXIT
+Direction north~
+ToRoom    9408
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9409
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9406
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9408
+Name     &RB&ru&Rr&rn&Ri&rn&Rg &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    9410
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9407
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9409
+Name     &RB&ru&Rr&rn&Ri&rn&Rg &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Desc     Man is this place hot! You feel like you are burning up here.
+Maybe you should find a place to cool down and rest awhile.
+~
+#EXIT
+Direction north~
+ToRoom    9410
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9411
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9407
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9410
+Name     &RB&ru&Rr&rn&Ri&rn&Rg &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Desc     Man is this place hot! You feel like you are burning up here.
+Maybe you should find a place to cool down and rest awhile.
+~
+#EXIT
+Direction east~
+ToRoom    9412
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9409
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9408
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9411
+Name     &RB&ru&Rr&rn&Ri&rn&Rg &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Desc     Man is this place hot! You feel like you are burning up here.
+Maybe you should find a place to cool down and rest awhile.
+~
+#EXIT
+Direction north~
+ToRoom    9412
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9413
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9409
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9412
+Name     &RB&ru&Rr&rn&Ri&rn&Rg &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Desc     Man is this place hot! You feel like you are burning up here.
+Maybe you should find a place to cool down and rest awhile.
+~
+#EXIT
+Direction east~
+ToRoom    9414
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9411
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9410
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9413
+Name     &RB&ru&Rr&rn&Ri&rn&Rg &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Desc     Man is this place hot! You feel like you are burning up here.
+Maybe you should find a place to cool down and rest awhile.
+~
+#EXIT
+Direction north~
+ToRoom    9414
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9415
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9417
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9411
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9414
+Name     &RB&ru&Rr&rn&Ri&rn&Rg &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Desc     Man is this place hot! You feel like you are burning up here.
+Maybe you should find a place to cool down and rest awhile.
+~
+#EXIT
+Direction east~
+ToRoom    9416
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9413
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9412
+#ENDEXIT
+
+Reset M 0 9336 4 9414
+#ENDROOM
+
+#ROOM
+Vnum     9415
+Name     &RB&ru&Rr&rn&Ri&rn&Rg &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Desc     Man is this place hot! You feel like you are burning up here.
+Maybe you should find a place to cool down and rest awhile.
+~
+#EXIT
+Direction north~
+ToRoom    9416
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9413
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9416
+Name     &RB&ru&Rr&rn&Ri&rn&Rg &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Desc     Man is this place hot! You feel like you are burning up here.
+Maybe you should find a place to cool down and rest awhile.
+~
+#EXIT
+Direction south~
+ToRoom    9415
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9414
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9417
+Name     &RB&ru&Rr&rn&Ri&rn&Rg &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Desc     Man is this place hot! You feel like you are burning up here.
+Maybe you should find a place to cool down and rest awhile.
+~
+#EXIT
+Direction north~
+ToRoom    9413
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9418
+#ENDEXIT
+
+Reset M 0 9336 4 9417
+Reset M 0 9336 4 9417
+#ENDROOM
+
+#ROOM
+Vnum     9418
+Name     &RB&ru&Rr&rn&Ri&rn&Rg &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Desc     Man is this place hot! You feel like you are burning up here.
+Maybe you should find a place to cool down and rest awhile.
+~
+#EXIT
+Direction north~
+ToRoom    9417
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9419
+#ENDEXIT
+
+Reset M 0 9336 4 9418
+#ENDROOM
+
+#ROOM
+Vnum     9419
+Name     &BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Flags    nomob~
+Desc     Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+#EXIT
+Direction east~
+ToRoom    9420
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9422
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9418
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9420
+Name     &BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Desc     Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+#EXIT
+Direction east~
+ToRoom    9423
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9421
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9419
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9421
+Name     &BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Desc     Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+#EXIT
+Direction north~
+ToRoom    9420
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9425
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9422
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9422
+Name     &BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Desc     Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+#EXIT
+Direction north~
+ToRoom    9419
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9421
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9423
+Name     &BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Desc     Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+#EXIT
+Direction east~
+ToRoom    9424
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9420
+#ENDEXIT
+
+Reset M 0 9341 1 9423
+#ENDROOM
+
+#ROOM
+Vnum     9424
+Name     &BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Desc     Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+#EXIT
+Direction west~
+ToRoom    9423
+#ENDEXIT
+
+Reset M 0 9344 1 9424
+#ENDROOM
+
+#ROOM
+Vnum     9425
+Name     &BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Desc     Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+#EXIT
+Direction north~
+ToRoom    9421
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9426
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9426
+Name     &BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Desc     Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+#EXIT
+Direction east~
+ToRoom    9427
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9429
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9425
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9427
+Name     &BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Desc     Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+#EXIT
+Direction south~
+ToRoom    9428
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9426
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9428
+Name     &BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Desc     Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+#EXIT
+Direction north~
+ToRoom    9427
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9430
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9429
+#ENDEXIT
+
+Reset M 0 9337 5 9428
+#ENDROOM
+
+#ROOM
+Vnum     9429
+Name     &BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Desc     Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+#EXIT
+Direction north~
+ToRoom    9426
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9428
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9431
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9430
+Name     &BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Desc     Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+#EXIT
+Direction north~
+ToRoom    9428
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9434
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9431
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9431
+Name     &BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Desc     Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+#EXIT
+Direction north~
+ToRoom    9429
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9430
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9435
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9432
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9432
+Name     &BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Desc     Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+#EXIT
+Direction east~
+ToRoom    9431
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9436
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9433
+#ENDEXIT
+
+Reset M 0 9337 5 9432
+#ENDROOM
+
+#ROOM
+Vnum     9433
+Name     &BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Desc     Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+#EXIT
+Direction east~
+ToRoom    9432
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9434
+Name     &BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Desc     Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+#EXIT
+Direction north~
+ToRoom    9430
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9439
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9435
+#ENDEXIT
+
+Reset M 0 9343 1 9434
+#ENDROOM
+
+#ROOM
+Vnum     9435
+Name     &BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Desc     Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+#EXIT
+Direction north~
+ToRoom    9431
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9434
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9438
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9436
+#ENDEXIT
+
+Reset M 0 9342 1 9435
+#ENDROOM
+
+#ROOM
+Vnum     9436
+Name     &BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Desc     Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+#EXIT
+Direction north~
+ToRoom    9432
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9435
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9437
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9437
+Name     &BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Desc     Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+#EXIT
+Direction north~
+ToRoom    9436
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9438
+#ENDEXIT
+
+Reset M 0 9337 5 9437
+#ENDROOM
+
+#ROOM
+Vnum     9438
+Name     &BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Desc     Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+#EXIT
+Direction north~
+ToRoom    9435
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9439
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9437
+#ENDEXIT
+
+Reset M 0 9337 5 9438
+#ENDROOM
+
+#ROOM
+Vnum     9439
+Name     &BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Desc     Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+#EXIT
+Direction north~
+ToRoom    9434
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9440
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9438
+#ENDEXIT
+
+Reset M 0 9340 1 9439
+Reset M 0 9337 5 9439
+#ENDROOM
+
+#ROOM
+Vnum     9440
+Name     &BF&br&Bo&bz&Be&bn &WW&wa&Ws&wt&We&wl&Wa&wn&Wd~
+Sector   city~
+Desc     Phew! This place is cold as ice. You might freeze to death here.
+Might want to be careful how long you stay here.
+~
+#EXIT
+Direction south~
+ToRoom    9441
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9439
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9441
+Name     &GM&gu&Gt&ga&Gn&Gt &PV&pi&Pl&pl&Pa&pg&Pe~
+Sector   city~
+Flags    nomob~
+Desc     This place looks very nice and quiet. A lot of mutants are
+roaming about here however. Keep your distance or things much get
+ugly real quick.
+~
+#EXIT
+Direction north~
+ToRoom    9440
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9442
+#ENDEXIT
+
+Reset M 0 9338 1 9441
+Reset M 0 9358 1 9441
+#ENDROOM
+
+#ROOM
+Vnum     9442
+Name     &GM&gu&Gt&ga&Gn&Gt &PV&pi&Pl&pl&Pa&pg&Pe~
+Sector   city~
+Desc     This place looks very nice and quiet. A lot of mutants are
+roaming about here however. Keep your distance or things much get
+ugly real quick.
+~
+#EXIT
+Direction north~
+ToRoom    9441
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9443
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9445
+#ENDEXIT
+
+Reset M 0 9339 1 9442
+#ENDROOM
+
+#ROOM
+Vnum     9443
+Name     &GM&gu&Gt&ga&Gn&Gt &PV&pi&Pl&pl&Pa&pg&Pe~
+Sector   city~
+Desc     This place looks very nice and quiet. A lot of mutants are
+roaming about here however. Keep your distance or things much get
+ugly real quick.
+~
+#EXIT
+Direction north~
+ToRoom    9442
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9444
+#ENDEXIT
+
+Reset M 0 9356 1 9443
+#ENDROOM
+
+#ROOM
+Vnum     9444
+Name     &GM&gu&Gt&ga&Gn&Gt &PV&pi&Pl&pl&Pa&pg&Pe~
+Sector   city~
+Desc     This place looks very nice and quiet. A lot of mutants are
+roaming about here however. Keep your distance or things much get
+ugly real quick.
+~
+#EXIT
+Direction north~
+ToRoom    9445
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9443
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9447
+#ENDEXIT
+
+Reset M 0 9347 2 9444
+#ENDROOM
+
+#ROOM
+Vnum     9445
+Name     &GM&gu&Gt&ga&Gn&Gt &PV&pi&Pl&pl&Pa&pg&Pe~
+Sector   city~
+Desc     This place looks very nice and quiet. A lot of mutants are roaming about
+here, however, so you better keep your distance or things might get ugly
+real quick.
+~
+#EXIT
+Direction east~
+ToRoom    9442
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9444
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9446
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9446
+Name     &GM&gu&Gt&ga&Gn&Gt &PV&pi&Pl&pl&Pa&pg&Pe~
+Sector   city~
+Flags    nomob~
+Desc     This place looks very nice and quiet. A lot of mutants are
+roaming about here however. Keep your distance or things much get
+ugly real quick.
+~
+#EXIT
+Direction east~
+ToRoom    9445
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9447
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9448
+#ENDEXIT
+
+Reset M 0 9355 1 9446
+  Reset E 1 9338 1 16
+  Reset E 1 9338 1 18
+#ENDROOM
+
+#ROOM
+Vnum     9447
+Name     &GM&gu&Gt&ga&Gn&Gt &PV&pi&Pl&pl&Pa&pg&Pe~
+Sector   city~
+Desc     This place looks very nice and quiet. A lot of mutants are
+roaming about here however. Keep your distance or things much get
+ugly real quick.
+~
+#EXIT
+Direction north~
+ToRoom    9446
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9444
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    9449
+#ENDEXIT
+
+Reset M 0 9347 2 9447
+Reset M 0 9346 1 9447
+Reset M 0 9345 1 9447
+#ENDROOM
+
+#ROOM
+Vnum     9448
+Name     &RA&rr&Rm&ro&Rr &CS&cm&Ci&ct&Ch&c'&Cs &BR&bo&Bo&bm~
+Sector   city~
+Flags    nomob~
+Desc     Here is the armor smith's shop where the armor smith makes all
+his shields, helms, armors, greaves and other accessories.
+~
+#EXIT
+Direction east~
+ToRoom    9446
+#ENDEXIT
+
+Reset M 0 9360 1 9448
+  Reset G 1 9313 1
+  Reset G 1 9314 1
+  Reset G 1 9317 1
+  Reset G 1 9319 1
+  Reset G 1 9320 1
+  Reset G 1 9321 1
+#ENDROOM
+
+#ROOM
+Vnum     9449
+Name     &RW&re&Ra&rp&Ro&rn &CS&cm&Ci&ct&Ch&c'&Cs &BR&bo&Bo&bm~
+Sector   city~
+Flags    nomob safe~
+Desc     Here is the weapon smith's shop where the mutant smithy makes all
+his swords maces and flails.
+~
+#EXIT
+Direction east~
+ToRoom    9447
+#ENDEXIT
+
+Reset M 0 9357 1 9449
+  Reset G 1 9333 1
+  Reset G 1 9334 1
+  Reset G 1 9335 1
+  Reset G 1 9332 1
+  Reset G 1 9337 1
+#ENDROOM
+
+#ROOM
+Vnum     9450
+Name     &YL&Oa&Yb &BT&bw&Bo &RP&ro&Rr&rt&Ra&rl &CR&co&Co&cm~
+Sector   city~
+Desc     This room is very strange and a redish ooze is in an ovule
+shape on the wall. It seems to lead somewhere, maybe to another lab?
+~
+#EXIT
+Direction north~
+ToRoom    9342
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    9340
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    9345
+#ENDEXIT
+
+Reset O 0 17 1 9450
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Omega~
+Comlist   if ispc($n)
+mpechoat $n You slip through the secret entrance into the Omega Lab.
+mpechoaround $n $n disappears from the room through a secret entrance.
+mptransfer $n 9393
+mpechoat 9393 $n arrives through the secret entrance
+else
+mpechoat $n The door remains shut.
+Endif
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     9451
+Name     &GM&zega&GC&zorp &BW&zeaponry~
+Sector   city~
+Flags    prototype~
+#EXIT
+Direction south~
+ToRoom    9406
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     9499
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ENDAREA

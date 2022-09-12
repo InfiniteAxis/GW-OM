@@ -1,0 +1,1172 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         Virgos and other Suits~
+Author       Antonio~
+Ranges       1 1007 1 1007
+Economy      0 6250100
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       6500
+Keywords   first~
+Short      a newly created first~
+Long       Some god abandoned a newly created first here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6599
+Keywords   last~
+Short      a newly created last~
+Long       Some god abandoned a newly created last here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#OBJECT
+Vnum     6500
+Keywords testitem~
+Type     trash~
+Short    a testitem~
+Long     A testitem is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6599
+Keywords last~
+Type     trash~
+Short    a last~
+Long     A last is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     6500
+Name     Virgo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6501
+Name     Virgo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6502
+Name     Virgo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6503
+Name     Virgo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6504
+Name     Virgo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6505
+Name     Virgo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6506
+Name     Virgo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6507
+Name     Virgo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6508
+Name     Virgo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6509
+Name     Virgo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6510
+Name     Virgo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6511
+Name     Virgo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6512
+Name     Virgo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6513
+Name     Virgo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6514
+Name     Virgo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6515
+Name     Virgo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6516
+Name     Virgo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6517
+Name     Virgo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6518
+Name     Virgo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6519
+Name     Virgo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6520
+Name     Virgo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6521
+Name     Virgo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6522
+Name     Virgo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6523
+Name     Virgo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6524
+Name     Virgo Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6525
+Name     Wing Gundam Cockpit~
+Sector   city~
+Flags    nomob~
+Desc     &x.                       &w_______________________
+&x.                      &w/   &C_________________   &w\
+&x.                     &w/&C/| |                 &C| |\&w\
+&x.                    &w/&C/ | | &g-      &G|      &g- &C| | \&w\
+&x.                   &w/&C/  | | &g-      &G|      &g- &C| |  \&w\
+&x.                  &w/&C/   | + &g- &G<---(+)---> &g- &C+ |   \&w\
+&x.                 &w/&C/    | | &g-      &G|      &g- &C| |    \&w\
+&x.                &w/&C/  &G|  &C| | &g-      &G|      &g- &C| |  &G|  &C\&w\
+&x.               &w|&C|   &G|/ &C| |_________________| | &G\|   &C|&w|
+&x.               &w|&C|  &G/|  &C/ &w___________________ &C\  &G|\  &C|&w|
+&x.               &w|&C|   &G| &C/ &w/&z________&O[&Y+&O]&z________&w\ &C\ &G|   &C|&w|
+&x.               &w|&C|    / &w/ | &z_[&R+&z]&Y[]&r=&p-&r=&Y[]&z[&R+&z]_ &w| \ &C\    &C|&w|
+&x.               &w|&C|   / &w/ /&W|&z===&W|&r]&z( &G(&g+&G) &z)&r[&W|&z===&W|&w\ \ &C\   |&w|
+&x.               &w|&C|  / &w/ / &z/      &z\&w-&O8&w-&z/      &z\ &w\ \ &C\  |&w|
+&x.               &w|&C| / &w/ / &Y=        &z\_/        &Y= &w\ \ &C\ &C|&w|
+&x.               &w|&C|/ &w/ / &z\/                   \/ &w\ \ &C\&C|&w|
+~
+#ENDROOM
+
+#ROOM
+Vnum     6526
+Name     Gundam: Deathscythe Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     &x.                       &w_______________________
+&x.                      &w/   &C_________________   &w\
+&x.                     &w/&C/| |                 &C| |\&w\
+&x.                    &w/&C/ | | &g-      &G|      &g- &C| | \&w\
+&x.                   &w/&C/  | | &g-      &G|      &g- &C| |  \&w\
+&x.                  &w/&C/   | + &g- &G<---(+)---> &g- &C+ |   \&w\
+&x.                 &w/&C/    | | &g-      &G|      &g- &C| |    \&w\
+&x.                &w/&C/  &G|  &C| | &g-      &G|      &g- &C| |  &G|  &C\&w\
+&x.               &w|&C|   &G|/ &C| |_________________| | &G\|   &C|&w|
+&x.               &w|&C|  &G/|  &C/ &w___________________ &C\  &G|\  &C|&w|
+&x.               &w|&C|   &G| &C/ &w/&z________&O[&Y+&O]&z________&w\ &C\ &G|   &C|&w|
+&x.               &w|&C|    / &w/ | &z_[&R+&z]&Y[]&r=&p-&r=&Y[]&z[&R+&z]_ &w| \ &C\    &C|&w|
+&x.               &w|&C|   / &w/ /&W|&z===&W|&r]&z( &G(&g+&G) &z)&r[&W|&z===&W|&w\ \ &C\   |&w|
+&x.               &w|&C|  / &w/ / &z/      &z\&w-&O8&w-&z/      &z\ &w\ \ &C\  |&w|
+&x.               &w|&C| / &w/ / &Y=        &z\_/        &Y= &w\ \ &C\ &C|&w|
+&x.               &w|&C|/ &w/ / &z\/                   \/ &w\ \ &C\&C|&w|
+~
+#ENDROOM
+
+#ROOM
+Vnum     6527
+Name     Gundam: Heavyarms Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     &x.                       &w_______________________
+&x.                      &w/   &C_________________   &w\
+&x.                     &w/&C/| |                 &C| |\&w\
+&x.                    &w/&C/ | | &g-      &G|      &g- &C| | \&w\
+&x.                   &w/&C/  | | &g-      &G|      &g- &C| |  \&w\
+&x.                  &w/&C/   | + &g- &G<---(+)---> &g- &C+ |   \&w\
+&x.                 &w/&C/    | | &g-      &G|      &g- &C| |    \&w\
+&x.                &w/&C/  &G|  &C| | &g-      &G|      &g- &C| |  &G|  &C\&w\
+&x.               &w|&C|   &G|/ &C| |_________________| | &G\|   &C|&w|
+&x.               &w|&C|  &G/|  &C/ &w___________________ &C\  &G|\  &C|&w|
+&x.               &w|&C|   &G| &C/ &w/&z________&O[&Y+&O]&z________&w\ &C\ &G|   &C|&w|
+&x.               &w|&C|    / &w/ | &z_[&R+&z]&Y[]&r=&p-&r=&Y[]&z[&R+&z]_ &w| \ &C\    &C|&w|
+&x.               &w|&C|   / &w/ /&W|&z===&W|&r]&z( &G(&g+&G) &z)&r[&W|&z===&W|&w\ \ &C\   |&w|
+&x.               &w|&C|  / &w/ / &z/      &z\&w-&O8&w-&z/      &z\ &w\ \ &C\  |&w|
+&x.               &w|&C| / &w/ / &Y=        &z\_/        &Y= &w\ \ &C\ &C|&w|
+&x.               &w|&C|/ &w/ / &z\/                   \/ &w\ \ &C\&C|&w|
+~
+#ENDROOM
+
+#ROOM
+Vnum     6528
+Name     Shen-long Gundam Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     &x.                       &w_______________________
+&x.                      &w/   &C_________________   &w\
+&x.                     &w/&C/| |                 &C| |\&w\
+&x.                    &w/&C/ | | &g-      &G|      &g- &C| | \&w\
+&x.                   &w/&C/  | | &g-      &G|      &g- &C| |  \&w\
+&x.                  &w/&C/   | + &g- &G<---(+)---> &g- &C+ |   \&w\
+&x.                 &w/&C/    | | &g-      &G|      &g- &C| |    \&w\
+&x.                &w/&C/  &G|  &C| | &g-      &G|      &g- &C| |  &G|  &C\&w\
+&x.               &w|&C|   &G|/ &C| |_________________| | &G\|   &C|&w|
+&x.               &w|&C|  &G/|  &C/ &w___________________ &C\  &G|\  &C|&w|
+&x.               &w|&C|   &G| &C/ &w/&z________&O[&Y+&O]&z________&w\ &C\ &G|   &C|&w|
+&x.               &w|&C|    / &w/ | &z_[&R+&z]&Y[]&r=&p-&r=&Y[]&z[&R+&z]_ &w| \ &C\    &C|&w|
+&x.               &w|&C|   / &w/ /&W|&z===&W|&r]&z( &G(&g+&G) &z)&r[&W|&z===&W|&w\ \ &C\   |&w|
+&x.               &w|&C|  / &w/ / &z/      &z\&w-&O8&w-&z/      &z\ &w\ \ &C\  |&w|
+&x.               &w|&C| / &w/ / &Y=        &z\_/        &Y= &w\ \ &C\ &C|&w|
+&x.               &w|&C|/ &w/ / &z\/                   \/ &w\ \ &C\&C|&w|
+~
+#ENDROOM
+
+#ROOM
+Vnum     6529
+Name     Tallgeese Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     &x.                       &w_______________________
+&x.                      &w/   &C_________________   &w\
+&x.                     &w/&C/| |                 &C| |\&w\
+&x.                    &w/&C/ | | &g-      &G|      &g- &C| | \&w\
+&x.                   &w/&C/  | | &g-      &G|      &g- &C| |  \&w\
+&x.                  &w/&C/   | + &g- &G<---(+)---> &g- &C+ |   \&w\
+&x.                 &w/&C/    | | &g-      &G|      &g- &C| |    \&w\
+&x.                &w/&C/  &G|  &C| | &g-      &G|      &g- &C| |  &G|  &C\&w\
+&x.               &w|&C|   &G|/ &C| |_________________| | &G\|   &C|&w|
+&x.               &w|&C|  &G/|  &C/ &w___________________ &C\  &G|\  &C|&w|
+&x.               &w|&C|   &G| &C/ &w/&z________&O[&Y+&O]&z________&w\ &C\ &G|   &C|&w|
+&x.               &w|&C|    / &w/ | &z_[&R+&z]&Y[]&r=&p-&r=&Y[]&z[&R+&z]_ &w| \ &C\    &C|&w|
+&x.               &w|&C|   / &w/ /&W|&z===&W|&r]&z( &G(&g+&G) &z)&r[&W|&z===&W|&w\ \ &C\   |&w|
+&x.               &w|&C|  / &w/ / &z/      &z\&w-&O8&w-&z/      &z\ &w\ \ &C\  |&w|
+&x.               &w|&C| / &w/ / &Y=        &z\_/        &Y= &w\ \ &C\ &C|&w|
+&x.               &w|&C|/ &w/ / &z\/                   \/ &w\ \ &C\&C|&w|
+~
+#ENDROOM
+
+#ROOM
+Vnum     6530
+Name     Gundam: Epyon Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     &x.                       &w_______________________
+&x.                      &w/   &C_________________   &w\
+&x.                     &w/&C/| |                 &C| |\&w\
+&x.                    &w/&C/ | | &R-      &r|      &R- &C| | \&w\
+&x.                   &w/&C/  | | &R-      &r|      &R- &C| |  \&w\
+&x.                  &w/&C/   | + &R- &r<---(+)---> &R- &C+ |   \&w\
+&x.                 &w/&C/    | | &R-      &r|      &R- &C| |    \&w\
+&x.                &w/&C/  &r|  &C| | &R-      &r|      &R- &C| |  &r|  &C\&w\
+&x.               &w|&C|   &r|/ &C| |_________________| | &r\|   &C|&w|
+&x.               &w|&C|  &r/|  &C/ &w___________________ &C\  &r|\  &C|&w|
+&x.               &w|&C|   &r| &C/ &w/&z________&O[&Y+&O]&z________&w\ &C\ &r|   &C|&w|
+&x.               &w|&C|    / &w/ /&z_&O[&R+&O]&p[]&z/ &g^ &z\&p[]&O[&R+&O]&z_&w\ \ &C\    &C|&w|
+&x.               &w|&C|   / &w/ /&W|&z===&W|&r]&z(&g<&G(+)&g>&z)&r[&W|&z===&W|&w\ \ &C\   |&w|
+&x.               &w|&C|  / &w/ / &z/      &z\ &gv &z/      &z\ &w\ \ &C\  |&w|
+&x.               &w|&C| / &w/ / &Y=        &z\_/        &Y= &w\ \ &C\ |&w|
+&x.               &w|&C|/ &w/ / &z\/         &r0         &z\/ &w\ \ &C\|&w|
+~
+#ENDROOM
+
+#ROOM
+Vnum     6531
+Name     Vayeate Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     &x.                       &w_______________________
+&x.                      &w/   &C_________________   &w\
+&x.                     &w/&C/| |                 &C| |\&w\
+&x.                    &w/&C/ | | &g-      &G|      &g- &C| | \&w\
+&x.                   &w/&C/  | | &g-      &G|      &g- &C| |  \&w\
+&x.                  &w/&C/   | + &g- &G<---(+)---> &g- &C+ |   \&w\
+&x.                 &w/&C/    | | &g-      &G|      &g- &C| |    \&w\
+&x.                &w/&C/  &G|  &C| | &g-      &G|      &g- &C| |  &G|  &C\&w\
+&x.               &w|&C|   &G|/ &C| |_________________| | &G\|   &C|&w|
+&x.               &w|&C|  &G/|  &C/ &w___________________ &C\  &G|\  &C|&w|
+&x.               &w|&C|   &G| &C/ &w/&z________&O[&Y+&O]&z________&w\ &C\ &G|   &C|&w|
+&x.               &w|&C|    / &w/ | &z_[&R+&z]&Y[]&r=&p-&r=&Y[]&z[&R+&z]_ &w| \ &C\    &C|&w|
+&x.               &w|&C|   / &w/ /&W|&z===&W|&r]&z( &G(&g+&G) &z)&r[&W|&z===&W|&w\ \ &C\   |&w|
+&x.               &w|&C|  / &w/ / &z/      &z\&w-&O8&w-&z/      &z\ &w\ \ &C\  |&w|
+&x.               &w|&C| / &w/ / &Y=        &z\_/        &Y= &w\ \ &C\ &C|&w|
+&x.               &w|&C|/ &w/ / &z\/                   \/ &w\ \ &C\&C|&w|
+~
+#ENDROOM
+
+#ROOM
+Vnum     6532
+Name     Mercurius Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     &x.                       &w_______________________
+&x.                      &w/   &C_________________   &w\
+&x.                     &w/&C/| |                 &C| |\&w\
+&x.                    &w/&C/ | | &g-      &G|      &g- &C| | \&w\
+&x.                   &w/&C/  | | &g-      &G|      &g- &C| |  \&w\
+&x.                  &w/&C/   | + &g- &G<---(+)---> &g- &C+ |   \&w\
+&x.                 &w/&C/    | | &g-      &G|      &g- &C| |    \&w\
+&x.                &w/&C/  &G|  &C| | &g-      &G|      &g- &C| |  &G|  &C\&w\
+&x.               &w|&C|   &G|/ &C| |_________________| | &G\|   &C|&w|
+&x.               &w|&C|  &G/|  &C/ &w___________________ &C\  &G|\  &C|&w|
+&x.               &w|&C|   &G| &C/ &w/&z________&O[&Y+&O]&z________&w\ &C\ &G|   &C|&w|
+&x.               &w|&C|    / &w/ | &z_[&R+&z]&Y[]&r=&p-&r=&Y[]&z[&R+&z]_ &w| \ &C\    &C|&w|
+&x.               &w|&C|   / &w/ /&W|&z===&W|&r]&z( &G(&g+&G) &z)&r[&W|&z===&W|&w\ \ &C\   |&w|
+&x.               &w|&C|  / &w/ / &z/      &z\&w-&O8&w-&z/      &z\ &w\ \ &C\  |&w|
+&x.               &w|&C| / &w/ / &Y=        &z\_/        &Y= &w\ \ &C\ &C|&w|
+&x.               &w|&C|/ &w/ / &z\/                   \/ &w\ \ &C\&C|&w|
+~
+#ENDROOM
+
+#ROOM
+Vnum     6533
+Name     Maganac Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6534
+Name     Maganac Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6535
+Name     Maganac Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6536
+Name     Maganac Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6537
+Name     Maganac Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6538
+Name     Maganac Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6539
+Name     Maganac Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6540
+Name     Gundam: Sandrock Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     &x.                       &w_______________________
+&x.                      &w/   &C_________________   &w\
+&x                      &w/&C/| |                 &C| |\&w\
+&x.                    &w/&C/ | | &g-      &G|      &g- &C| | \&w\
+&x.                   &w/&C/  | | &g-      &G|      &g- &C| |  \&w\
+&x.                  &w/&C/   | + &g- &G<---(+)---> &g- &C+ |   \&w\
+&x.                 &w/&C/    | | &g-      &G|      &g- &C| |    \&w\
+&x.                &w/&C/  &G|  &C| | &g-      &G|      &g- &C| |  &G|  &C\&w\
+&x.               &w|&C|   &G|/ &C| |_________________| | &G\|   &C|&w|
+&x.               &w|&C|  &G/|  &C/ &w___________________ &C\  &G|\  &C|&w|
+&x.               &w|&C|   &G| &C/ &w/&z________&O[&Y+&O]&z________&w\ &C\ &G|   &C|&w|
+&x.               &w|&C|    / &w/ /&z_&O[&R+&O]&Y[]&z/ &g^ &z\&Y[]&O[&R+&O]&z_&w\ \ &C\    &C|&w|
+&x.               &w|&C|   / &w/ /&W|&z===&W|&r]&z(&g<&G(+)&g>&z)&r[&W|&z===&W|&w\ \ &C\   |&w|
+&x.               &w|&C|  / &w/ / &z/      &z\ &gv &z/      &z\ &w\ \ &C\  |&w|
+&x.               &w|&C| / &w/ / &Y=        &z\_/        &Y= &w\ \ &C\ |&w|
+&x.               &w|&C|/ &w/ / &z\/         &O0         &z\/ &w\ \ &C\|&w|
+~
+#ENDROOM
+
+#ROOM
+Vnum     6541
+Name     Public Shuttle Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     &x.&z                _________________
+             /| |Public Suit: 6541| |\
+            / | |                 | | \
+           /  | |       -|-       | |  \
+          /   | |                 | |   \
+         / |/ | |_________________| | \| \
+        | /|  /                     \  |\ |
+        |    /                       \    |
+        |   /                         \   |
+        |  /                           \  |
+        | /                             \ |
+        |/                               \|
+~
+#ENDROOM
+
+#ROOM
+Vnum     6542
+Name     Public Shuttle Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     &x.&z                _________________
+             /| |Public Suit: 6542| |\
+            / | |                 | | \
+           /  | |       -|-       | |  \
+          /   | |                 | |   \
+         / |/ | |_________________| | \| \
+        | /|  /                     \  |\ |
+        |    /                       \    |
+        |   /                         \   |
+        |  /                           \  |
+        | /                             \ |
+        |/                               \|
+~
+#ENDROOM
+
+#ROOM
+Vnum     6543
+Name     Public Shuttle Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     &x.&z                _________________
+             /| |Public Suit: 6543| |\
+            / | |                 | | \
+           /  | |       -|-       | |  \
+          /   | |                 | |   \
+         / |/ | |_________________| | \| \
+        | /|  /                     \  |\ |
+        |    /                       \    |
+        |   /                         \   |
+        |  /                           \  |
+        | /                             \ |
+        |/                               \|
+~
+#ENDROOM
+
+#ROOM
+Vnum     6544
+Name     Public Shuttle Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     &x.&z                _________________
+             /| |Public Suit: 6544| |\
+            / | |                 | | \
+           /  | |       -|-       | |  \
+          /   | |                 | |   \
+         / |/ | |_________________| | \| \
+        | /|  /                     \  |\ |
+        |    /                       \    |
+        |   /                         \   |
+        |  /                           \  |
+        | /                             \ |
+        |/                               \|
+~
+#ENDROOM
+
+#ROOM
+Vnum     6545
+Name     Public Shuttle Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     &x.&z                _________________
+             /| |Public Suit: 6545| |\
+            / | |                 | | \
+           /  | |       -|-       | |  \
+          /   | |                 | |   \
+         / |/ | |_________________| | \| \
+        | /|  /                     \  |\ |
+        |    /                       \    |
+        |   /                         \   |
+        |  /                           \  |
+        | /                             \ |
+        |/                               \|
+~
+#ENDROOM
+
+#ROOM
+Vnum     6546
+Name     Public Shuttle Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     &x.&z                _________________
+             /| |Public Suit: 6546| |\
+            / | |                 | | \
+           /  | |       -|-       | |  \
+          /   | |                 | |   \
+         / |/ | |_________________| | \| \
+        | /|  /                     \  |\ |
+        |    /                       \    |
+        |   /                         \   |
+        |  /                           \  |
+        | /                             \ |
+        |/                               \|
+~
+#ENDROOM
+
+#ROOM
+Vnum     6547
+Name     Public Shuttle Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     &x.&z                _________________
+             /| |Public Suit: 6547| |\
+            / | |                 | | \
+           /  | |       -|-       | |  \
+          /   | |                 | |   \
+         / |/ | |_________________| | \| \
+        | /|  /                     \  |\ |
+        |    /                       \    |
+        |   /                         \   |
+        |  /                           \  |
+        | /                             \ |
+        |/                               \|
+~
+#ENDROOM
+
+#ROOM
+Vnum     6548
+Name     Public Shuttle Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     &x.&z                _________________
+             /| |Public Suit: 6548| |\
+            / | |                 | | \
+           /  | |       -|-       | |  \
+          /   | |                 | |   \
+         / |/ | |_________________| | \| \
+        | /|  /                     \  |\ |
+        |    /                       \    |
+        |   /                         \   |
+        |  /                           \  |
+        | /                             \ |
+        |/                               \|
+~
+#ENDROOM
+
+#ROOM
+Vnum     6549
+Name     Public Shuttle Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     &x.&z                _________________
+             /| |Public Suit: 6549| |\
+            / | |                 | | \
+           /  | |       -|-       | |  \
+          /   | |                 | |   \
+         / |/ | |_________________| | \| \
+        | /|  /                     \  |\ |
+        |    /                       \    |
+        |   /                         \   |
+        |  /                           \  |
+        | /                             \ |
+        |/                               \|
+~
+#ENDROOM
+
+#ROOM
+Vnum     6550
+Name     Public Shuttle Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     &x.&z                _________________
+             /| |Public Suit: 6550| |\
+            / | |                 | | \
+           /  | |       -|-       | |  \
+          /   | |                 | |   \
+         / |/ | |_________________| | \| \
+        | /|  /                     \  |\ |
+        |    /                       \    |
+        |   /                         \   |
+        |  /                           \  |
+        | /                             \ |
+        |/                               \|
+~
+#ENDROOM
+
+#ROOM
+Vnum     6551
+Name     Public Shuttle Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     &x.&z                _________________
+             /| |Public Suit: 6551| |\
+            / | |                 | | \
+           /  | |       -|-       | |  \
+          /   | |                 | |   \
+         / |/ | |_________________| | \| \
+        | /|  /                     \  |\ |
+        |    /                       \    |
+        |   /                         \   |
+        |  /                           \  |
+        | /                             \ |
+        |/                               \|
+~
+#ENDROOM
+
+#ROOM
+Vnum     6552
+Name     Maganac Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6553
+Name     WF Maurader Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6554
+Name     WF Maurader Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6555
+Name     WF Maurader Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6556
+Name     WF Maurader Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6557
+Name     WF Maurader Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6558
+Name     WF Maurader Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6559
+Name     WF Marauder Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6560
+Name     WF Maurader Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6561
+Name     Holosuit Chamber~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     For usage of this Suit, please read HELP HOLOSUIT
+~
+#ENDROOM
+
+#ROOM
+Vnum     6562
+Name     Holosuit Chamber~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     For usage of this Suit, please read HELP HOLOSUIT
+~
+#ENDROOM
+
+#ROOM
+Vnum     6563
+Name     Holosuit Chamber~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     For usage of this Suit, please read HELP HOLOSUIT
+~
+#ENDROOM
+
+#ROOM
+Vnum     6564
+Name     Holosuit Chamber~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     For usage of this Suit, please read HELP HOLOSUIT
+~
+#ENDROOM
+
+#ROOM
+Vnum     6565
+Name     Holosuit Chamber~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     For usage of this Suit, please read HELP HOLOSUIT
+~
+#ENDROOM
+
+#ROOM
+Vnum     6566
+Name     Holosuit Chamber~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     For usage of this Suit, please read HELP HOLOSUIT
+~
+#ENDROOM
+
+#ROOM
+Vnum     6567
+Name     Holosuit Chamber~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     For usage of this Suit, please read HELP HOLOSUIT
+~
+#ENDROOM
+
+#ROOM
+Vnum     6568
+Name     Holosuit Chamber~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     For usage of this Suit, please read HELP HOLOSUIT
+~
+#ENDROOM
+
+#ROOM
+Vnum     6569
+Name     Holosuit Chamber~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     For usage of this Suit, please read HELP HOLOSUIT
+~
+#ENDROOM
+
+#ROOM
+Vnum     6570
+Name     Holosuit Chamber~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     For usage of this Suit, please read HELP HOLOSUIT
+~
+#ENDROOM
+
+#ROOM
+Vnum     6571
+Name     Oz Quickfire Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6572
+Name     Oz Quickfire Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6573
+Name     Oz Quickfire Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6574
+Name     Oz Quickfire Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6575
+Name     Oz Quickfire Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6576
+Name     Oz Quickfire Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6577
+Name     Oz Quickfire Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6578
+Name     Oz Quickfire Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6579
+Name     ESUN Peacekeeper Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6580
+Name     ESUN Peacekeeper Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6581
+Name     ESUN Peacekeeper Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6582
+Name     ESUN Peacekeeper Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6583
+Name     ESUN Peacekeeper Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6584
+Name     ESUN Peacekeeper Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6585
+Name     ESUN Peacekeeper Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6586
+Name     ESUN Peacekeeper Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6587
+Name     Gundam: Altron Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     &x.                       &w_______________________
+&x.                      &w/   &C_________________   &w\
+&x.                     &w/&C/| |                 &C| |\&w\
+&x.                    &w/&C/ | | &g-      &G|      &g- &C| | \&w\
+&x.                   &w/&C/  | | &g-      &G|      &g- &C| |  \&w\
+&x.                  &w/&C/   | + &g- &G<---(+)---> &g- &C+ |   \&w\
+&x.                 &w/&C/    | | &g-      &G|      &g- &C| |    \&w\
+&x.                &w/&C/  &G|  &C| | &g-      &G|      &g- &C| |  &G|  &C\&w\
+&x.               &w|&C|   &G|/ &C| |_________________| | &G\|   &C|&w|
+&x.               &w|&C|  &G/|  &C/ &w___________________ &C\  &G|\  &C|&w|
+&x.               &w|&C|   &G| &C/ &w/&z________&O[&Y+&O]&z________&w\ &C\ &G|   &C|&w|
+&x.               &w|&C|    / &w/ | &z_[&R+&z]&Y[]&r=&p-&r=&Y[]&z[&R+&z]_ &w| \ &C\    &C|&w|
+&x.               &w|&C|   / &w/ /&W|&z===&W|&r]&z( &G(&g+&G) &z)&r[&W|&z===&W|&w\ \ &C\   |&w|
+&x.               &w|&C|  / &w/ / &z/      &z\&w-&O8&w-&z/      &z\ &w\ \ &C\  |&w|
+&x.               &w|&C| / &w/ / &Y=        &z\_/        &Y= &w\ \ &C\ &C|&w|
+&x.               &w|&C|/ &w/ / &z\/                   \/ &w\ \ &C\&C|&w|
+~
+#ENDROOM
+
+#ROOM
+Vnum     6588
+Name     Wing Gundam Zero Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     &x.                       &w_______________________
+&x.                      &w/   &C_________________   &w\
+&x                      &w/&C/| |                 &C| |\&w\
+&x.                    &w/&C/ | | &g-      &G|      &g- &C| | \&w\
+&x.                   &w/&C/  | | &g-      &G|      &g- &C| |  \&w\
+&x.                  &w/&C/   | + &g- &G<---(+)---> &g- &C+ |   \&w\
+&x.                 &w/&C/    | | &g-      &G|      &g- &C| |    \&w\
+&x.                &w/&C/  &G|  &C| | &g-      &G|      &g- &C| |  &G|  &C\&w\
+&x.               &w|&C|   &G|/ &C| |_________________| | &G\|   &C|&w|
+&x.               &w|&C|  &G/|  &C/ &w___________________ &C\  &G|\  &C|&w|
+&x.               &w|&C|   &G| &C/ &w/&z________&O[&Y+&O]&z________&w\ &C\ &G|   &C|&w|
+&x.               &w|&C|    / &w/ /&z_&O[&R+&O]&Y[]&z/ &g^ &z\&Y[]&O[&R+&O]&z_&w\ \ &C\    &C|&w|
+&x.               &w|&C|   / &w/ /&W|&z===&W|&r]&z(&g<&G(+)&g>&z)&r[&W|&z===&W|&w\ \ &C\   |&w|
+&x.               &w|&C|  / &w/ / &z/      &z\ &gv &z/      &z\ &w\ \ &C\  |&w|
+&x.               &w|&C| / &w/ / &Y=        &z\_/        &Y= &w\ \ &C\ |&w|
+&x.               &w|&C|/ &w/ / &z\/         &O0         &z\/ &w\ \ &C\|&w|
+~
+#ENDROOM
+
+#ROOM
+Vnum     6589
+Name     Tallgeese II Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     &x.                       &w_______________________
+&x.                      &w/   &C_________________   &w\
+&x.                     &w/&C/| |                 &C| |\&w\
+&x.                    &w/&C/ | | &g-      &G|      &g- &C| | \&w\
+&x.                   &w/&C/  | | &g-      &G|      &g- &C| |  \&w\
+&x.                  &w/&C/   | + &g- &G<---(+)---> &g- &C+ |   \&w\
+&x.                 &w/&C/    | | &g-      &G|      &g- &C| |    \&w\
+&x.                &w/&C/  &G|  &C| | &g-      &G|      &g- &C| |  &G|  &C\&w\
+&x.               &w|&C|   &G|/ &C| |_________________| | &G\|   &C|&w|
+&x.               &w|&C|  &G/|  &C/ &w___________________ &C\  &G|\  &C|&w|
+&x.               &w|&C|   &G| &C/ &w/&z________&O[&Y+&O]&z________&w\ &C\ &G|   &C|&w|
+&x.               &w|&C|    / &w/ | &z_[&R+&z]&Y[]&r=&p-&r=&Y[]&z[&R+&z]_ &w| \ &C\    &C|&w|
+&x.               &w|&C|   / &w/ /&W|&z===&W|&r]&z( &G(&g+&G) &z)&r[&W|&z===&W|&w\ \ &C\   |&w|
+&x.               &w|&C|  / &w/ / &z/      &z\&w-&O8&w-&z/      &z\ &w\ \ &C\  |&w|
+&x.               &w|&C| / &w/ / &Y=        &z\_/        &Y= &w\ \ &C\ &C|&w|
+&x.               &w|&C|/ &w/ / &z\/                   \/ &w\ \ &C\&C|&w|
+~
+#ENDROOM
+
+#ROOM
+Vnum     6590
+Name     Tallgeese III Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     &x.                       &w_______________________
+&x.                      &w/   &C_________________   &w\
+&x                      &w/&C/| |                 &C| |\&w\
+&x.                    &w/&C/ | | &g-      &G|      &g- &C| | \&w\
+&x.                   &w/&C/  | | &g-      &G|      &g- &C| |  \&w\
+&x.                  &w/&C/   | + &g- &G<---(+)---> &g- &C+ |   \&w\
+&x.                 &w/&C/    | | &g-      &G|      &g- &C| |    \&w\
+&x.                &w/&C/  &G|  &C| | &g-      &G|      &g- &C| |  &G|  &C\&w\
+&x.               &w|&C|   &G|/ &C| |_________________| | &G\|   &C|&w|
+&x.               &w|&C|  &G/|  &C/ &w___________________ &C\  &G|\  &C|&w|
+&x.               &w|&C|   &G| &C/ &w/&z________&O[&Y+&O]&z________&w\ &C\ &G|   &C|&w|
+&x.               &w|&C|    / &w/ /&z_&O[&R+&O]&Y[]&z/ &g^ &z\&Y[]&O[&R+&O]&z_&w\ \ &C\    &C|&w|
+&x.               &w|&C|   / &w/ /&W|&z===&W|&r]&z(&g<&G(+)&g>&z)&r[&W|&z===&W|&w\ \ &C\   |&w|
+&x.               &w|&C|  / &w/ / &z/      &z\ &gv &z/      &z\ &w\ \ &C\  |&w|
+&x.               &w|&C| / &w/ / &Y=        &z\_/        &Y= &w\ \ &C\ |&w|
+&x.               &w|&C|/ &w/ / &z\/         &O0         &z\/ &w\ \ &C\|&w|
+~
+#ENDROOM
+
+#ROOM
+Vnum     6591
+Name     Gundam: Deathscythe Hell Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     &x.                       &w_______________________
+&x.                      &w/   &C_________________   &w\
+&x.                     &w/&C/| |                 &C| |\&w\
+&x.                    &w/&C/ | | &g-      &G|      &g- &C| | \&w\
+&x.                   &w/&C/  | | &g-      &G|      &g- &C| |  \&w\
+&x.                  &w/&C/   | + &g- &G<---(+)---> &g- &C+ |   \&w\
+&x.                 &w/&C/    | | &g-      &G|      &g- &C| |    \&w\
+&x.                &w/&C/  &G|  &C| | &g-      &G|      &g- &C| |  &G|  &C\&w\
+&x.               &w|&C|   &G|/ &C| |_________________| | &G\|   &C|&w|
+&x.               &w|&C|  &G/|  &C/ &w___________________ &C\  &G|\  &C|&w|
+&x.               &w|&C|   &G| &C/ &w/&z________&O[&Y+&O]&z________&w\ &C\ &G|   &C|&w|
+&x.               &w|&C|    / &w/ | &z_[&R+&z]&Y[]&r=&p-&r=&Y[]&z[&R+&z]_ &w| \ &C\    &C|&w|
+&x.               &w|&C|   / &w/ /&W|&z===&W|&r]&z( &G(&g+&G) &z)&r[&W|&z===&W|&w\ \ &C\   |&w|
+&x.               &w|&C|  / &w/ / &z/      &z\&w-&O8&w-&z/      &z\ &w\ \ &C\  |&w|
+&x.               &w|&C| / &w/ / &Y=        &z\_/        &Y= &w\ \ &C\ &C|&w|
+&x.               &w|&C|/ &w/ / &z\/                   \/ &w\ \ &C\&C|&w|
+~
+#ENDROOM
+
+#ROOM
+Vnum     6592
+Name     Gundam: Epyon Custom Cockpit~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6593
+Name     Floating in a void~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6594
+Name     Floating in a void~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6595
+Name     Gundam: Infinite Justice~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6596
+Name     Floating in a void~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6597
+Name     Floating in a void~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6598
+Name     Floating in a void~
+Sector   city~
+Flags    nomob spacecraft~
+#ENDROOM
+
+#ROOM
+Vnum     6599
+Name     Floating in a void~
+Sector   city~
+Flags    nomob spacecraft~
+Reset O 0 6500 1 6599
+#ENDROOM
+
+#ENDAREA

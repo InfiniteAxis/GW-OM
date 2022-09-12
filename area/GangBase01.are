@@ -1,0 +1,419 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         GangBase01~
+Author       Kamorov~
+Ranges       1 1007 1 1007
+Economy      0 6250000
+ResetFreq    15
+Flags        base~
+#ENDAREADATA
+
+#MOBILE
+Vnum       8600
+Keywords   first~
+Short      a newly created first~
+Long       Some god abandoned a newly created first here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       8699
+Keywords   last~
+Short      a newly created last~
+Long       Some god abandoned a newly created last here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#OBJECT
+Vnum     8600
+Keywords first~
+Type     trash~
+Short    a first~
+Long     A first is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     8699
+Keywords last~
+Type     trash~
+Short    a last~
+Long     A last is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     8600
+Name     Before Entrance~
+Sector   city~
+Flags    base~
+#EXIT
+Direction west~
+ToRoom    8601
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8601
+Name     Entrance~
+Sector   city~
+Flags    base~
+#EXIT
+Direction north~
+ToRoom    8602
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8600
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8602
+Name     After Entrance~
+Sector   city~
+Flags    base~
+#EXIT
+Direction north~
+ToRoom    8603
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8601
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8603
+Name     Center of the Base~
+Sector   city~
+Flags    base~
+#EXIT
+Direction north~
+ToRoom    8618
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8604
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8602
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8607
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    8619
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8604
+Name     Floating in a void~
+Sector   city~
+Flags    base~
+#EXIT
+Direction east~
+ToRoom    8605
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8603
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8605
+Name     Floating in a void~
+Sector   city~
+Flags    base~
+#EXIT
+Direction south~
+ToRoom    8606
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8604
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8606
+Name     Jail~
+Sector   city~
+Flags    base~
+#EXIT
+Direction north~
+ToRoom    8605
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8607
+Name     Floating in a void~
+Sector   city~
+Flags    base~
+#EXIT
+Direction north~
+ToRoom    8608
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8603
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8609
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8608
+Name     Supplies~
+Sector   city~
+Flags    base~
+#EXIT
+Direction south~
+ToRoom    8607
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8609
+Name     Floating in a void~
+Sector   city~
+Flags    base~
+#EXIT
+Direction east~
+ToRoom    8607
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8610
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8610
+Name     Floating in a void~
+Sector   city~
+Flags    base~
+#EXIT
+Direction north~
+ToRoom    8611
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8609
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    8612
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8611
+Name     Floating in a void~
+Sector   city~
+Flags    base~
+#EXIT
+Direction south~
+ToRoom    8610
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    8613
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8612
+Name     Meeting Room~
+Sector   city~
+Flags    base~
+#EXIT
+Direction northeast~
+ToRoom    8610
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8613
+Name     Floating in a void~
+Sector   city~
+Flags    base~
+#EXIT
+Direction east~
+ToRoom    8614
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    8611
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8614
+Name     Floating in a void~
+Sector   city~
+Flags    base~
+#EXIT
+Direction north~
+ToRoom    8615
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    8616
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    8613
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8615
+Name     Leaders Office~
+Sector   city~
+Flags    base~
+#EXIT
+Direction south~
+ToRoom    8614
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8616
+Name     Floating in a void~
+Sector   city~
+Flags    base~
+#EXIT
+Direction west~
+ToRoom    8614
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    8617
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8617
+Name     Floating in a void~
+Sector   city~
+Flags    base~
+#EXIT
+Direction south~
+ToRoom    8618
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    8616
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8618
+Name     Floating in a void~
+Sector   city~
+Flags    base~
+#EXIT
+Direction north~
+ToRoom    8617
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    8603
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8619
+Name     Control Room~
+Sector   city~
+Flags    base capture~
+#EXIT
+Direction up~
+ToRoom    8603
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     8699
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ENDAREA

@@ -1,0 +1,960 @@
+#AREA   {PROTO} Xeo's area in progress~
+
+
+
+#AUTHOR Xeo~
+
+#RANGES
+0 0 0 0
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 0
+
+#MOBILES
+#1800
+X01 Repair Shop Owner~
+An X01 Repair Shop Owner~
+The X01 Repair Shop Owner is here, repairing a blaster
+~
+~
+3 0 0 Z
+750 0 -1775 150d10+7500 75d4+2
+0 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+150 150 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#1801
+Gang Member~
+a newly created Gang Members~
+Some god abandoned a newly created Gang Members here.
+~
+~
+1073741825 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#1802
+The Gang Leader~
+a newly created The Gang Leader~
+Some god abandoned a newly created The Gang Leader here.
+~
+~
+1073741825 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#1803
+An Illegal Gun Shop Owner~
+a newly created An Illegal Gun Shop Owner~
+Some god abandoned a newly created An Illegal Gun Shop Owner here.
+~
+~
+1073741825 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#1804
+Tattoo Parlor Owner~
+a newly created Tattoo Parlor Owner~
+Some god abandoned a newly created Tattoo Parlor Owner here.
+~
+~
+1073741825 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#1805
+A Contraband Shop Owner~
+a newly created A Contraband Shop Owner~
+Some god abandoned a newly created A Contraband Shop Owner here.
+~
+~
+1073741825 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#1806
+Primal~
+Primal~
+Primal has Returned
+~
+~
+3 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+0 0
+8 8 0
+24 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#0
+
+
+#ROOMS
+#1800
+Colony X01 Intersection~
+Giant lights seem to light this whole area, yet very few seem to be around
+the area. Ships can be seen landing to the south. To the northeast is the
+Outer Slums, where the trash of the colony lives, to the northwest is the
+residental area, where everyone  seems to live, and to the north there
+seems to be shops.
+~
+0 1073741832 1
+D0
+~
+~
+0 -1 1801
+D2
+~
+~
+0 -1 1824
+D6
+~
+~
+0 -1 1802
+D7
+~
+~
+0 -1 1803
+S
+#1801
+Inner Colony ~
+A giant sign hangs on top of a pole, and says 'Shopping District' in large
+bold letters. People walk north and south, either carrying nothing or
+newly bought items. Both adult and child alike seem to be having fun.
+~
+0 1073741832 1
+D0
+~
+~
+0 -1 1804
+D2
+~
+~
+0 -1 1800
+S
+#1802
+Outer Slums~
+Right away you can tell this isn't exactly a friendly neighborhood. Spent
+clips, beer bottles, and burned out joints can be seen all over the place.
+Junkies move from one shadow to another, and a drug dealer can be seen
+easily. Homeless people walk from one place to another, shoving along
+boxes and shopping carts. The artificial sun barely shines on this place,
+because it is so dark and gloomy.
+~
+0 1073741832 1
+D6
+~
+~
+0 -1 1817
+D9
+~
+~
+0 -1 1800
+S
+#1803
+Residental Area~
+Beautiful colony houses are located all down this street, with smiling
+people and happy families living next to each other. Expensive cars and
+hoverscooters can be seen flying up and down the street. Young kids can be
+seen having fun with their friends, with the artificial sun glowing down
+onto them.
+~
+0 1073741832 1
+D1
+~
+~
+0 -1 1825
+D3
+~
+~
+0 -1 1826
+D7
+~
+~
+0 -1 1827
+D8
+~
+~
+0 -1 1800
+S
+#1804
+Inner Colony Streetway~
+~
+0 1073741836 1
+D0
+~
+~
+0 -1 1807
+D1
+~
+~
+0 -1 1806
+D2
+~
+~
+0 -1 1801
+D3
+~
+~
+0 -1 1805
+S
+#1805
+A Blaster Shop~
+~
+0 1073741836 1
+D1
+~
+~
+0 -1 1804
+S
+#1806
+An Explosives Shop~
+~
+0 1073741836 1
+D3
+~
+~
+0 -1 1804
+S
+#1807
+The Inner Streetway~
+~
+0 1073741836 1
+D0
+~
+~
+0 -1 1810
+D1
+~
+~
+0 -1 1808
+D2
+~
+~
+0 -1 1804
+D3
+~
+~
+0 -1 1809
+S
+#1808
+A Sword Shop~
+~
+0 1073741836 1
+D3
+~
+~
+0 -1 1807
+S
+#1809
+A Close-Combat Shop~
+~
+0 1073741836 1
+D1
+~
+~
+0 -1 1807
+S
+#1810
+The Inner Streetway~
+~
+0 1073741836 1
+D0
+~
+~
+0 -1 1813
+D1
+~
+~
+0 -1 1811
+D2
+~
+~
+0 -1 1807
+D3
+~
+~
+0 -1 1812
+S
+#1811
+A Light Armor Shop~
+~
+0 1073741836 1
+D3
+~
+~
+0 -1 1810
+S
+#1812
+A Heavy Armor Shop~
+~
+0 1073741836 1
+D1
+~
+~
+0 -1 1810
+S
+#1813
+End of the Inner Streeway~
+~
+0 1073741836 1
+D0
+~
+~
+0 -1 1814
+D1
+~
+~
+0 -1 1815
+D2
+~
+~
+0 -1 1810
+D3
+~
+~
+0 -1 1816
+S
+#1814
+A Fancy Restaruant~
+~
+0 1073741836 1
+D2
+~
+~
+0 -1 1813
+S
+#1815
+A Clothing Shop~
+~
+0 1073741836 1
+D3
+~
+~
+0 -1 1813
+S
+#1816
+A Shoe Store~
+~
+0 1073741836 1
+D1
+~
+~
+0 -1 1813
+S
+#1817
+Outer Slums~
+Right away you can tell this isn't exactly a friendly neighborhood. Spent
+clips, beer bottles, and burned out joints can be seen all over the place.
+Junkies move from one shadow to another, and a drug dealer can be seen
+easily. Homeless people walk from one place to another, shoving along
+boxes and shopping carts. The artificial sun barely shines on this place,
+because it is so dark and gloomy. It seems some sort of spice shop is to
+the north, but the shop itself doesn't look like it's good and friendly.
+~
+0 1073741836 1
+D0
+~
+~
+0 -1 1818
+D6
+~
+~
+0 -1 1819
+D9
+~
+~
+0 -1 1802
+S
+#1818
+A Contraband Spice Shop~
+~
+0 1073741836 1
+D2
+~
+~
+0 -1 1817
+S
+#1819
+Outer Slums~
+Right away you can tell this isn't exactly a friendly neighborhood. Spent
+clips, beer bottles, and burned out joints can be seen all over the place.
+Junkies move from one shadow to another, and a drug dealer can be seen
+easily. Homeless people walk from one place to another, shoving along
+boxes and shopping carts. The artificial sun barely shines on this place,
+because it is so dark and gloomy. A tattoo parlor is to the north, but it
+doesn't look very sanitary.
+~
+0 1073741836 1
+D0
+~
+~
+0 -1 1820
+D6
+~
+~
+0 -1 1821
+D9
+~
+~
+0 -1 1817
+S
+#1820
+A Tattoo Parlor~
+~
+0 1073741836 1
+D2
+~
+~
+0 -1 1819
+S
+#1821
+End of the Slums~
+Right away you can tell this isn't exactly a friendly neighborhood. Spent
+clips, beer bottles, and burned out joints can be seen all over the place.
+Junkies move from one shadow to another, and a drug dealer can be seen
+easily. Homeless people walk from one place to another, shoving along
+boxes and shopping carts. The artificial sun barely shines on this place,
+because it is so dark and gloomy. A gang hideout is to the south, and an
+illegal gun shop is to the north.
+~
+0 1073741832 1
+D0
+~
+~
+0 -1 1823
+D2
+~
+~
+0 -1 1822
+D9
+~
+~
+0 -1 1819
+S
+#1822
+A Gang Hideout~
+~
+0 1073741832 1
+D0
+~
+~
+0 -1 1821
+D2
+~
+~
+0 -1 1851
+S
+#1823
+A Gun Shop~
+~
+0 1073741832 1
+D2
+~
+~
+0 -1 1821
+S
+#1824
+Colony X01 Landing Pad~
+Large landing platforms are up against the walls, with a few hanging from
+the ceiling and hooked onto the wall itself. A huge decompression chamber
+is on the ceiling, so when suits and ships come in for a landing, they are
+decompressed in safely.  Giant tools are all over the place, and suit
+repair stations are set up around the area, making minor repairs quick and
+easy. Six giant lights illuminate this whole room, and the only outside
+view is through the decompression chamber. To the north is an
+intersection, which seems to lead to the rest of the colonies.
+~
+0 1073741880 1
+D0
+~
+~
+0 -1 1800
+S
+#1825
+An Empty Home~
+~
+0 1075838988 1
+D3
+~
+~
+0 -1 1803
+S
+#1826
+An Empty Home~
+~
+0 1075838988 1
+D1
+~
+~
+0 -1 1803
+S
+#1827
+Residental Area~
+Beautiful colony houses are located all down this street, with smiling
+people and happy families living next to each other. Expensive cars and
+hoverscooters can be seen flying up and down the street. Young kids can be
+seen having fun with their friends, with the artificial sun glowing down
+onto them.
+~
+0 1073741836 1
+D1
+~
+~
+0 -1 1828
+D3
+~
+~
+0 -1 1829
+D7
+~
+~
+0 -1 1830
+D8
+~
+~
+0 -1 1803
+S
+#1828
+An Empty Home~
+~
+0 1075838988 1
+D3
+~
+~
+0 -1 1827
+S
+#1829
+An Empty Home~
+~
+0 1075838988 1
+D1
+~
+~
+0 -1 1827
+S
+#1830
+Residental Area~
+Beautiful colony houses are located all down this street, with smiling
+people and happy families living next to each other. Expensive cars and
+hoverscooters can be seen flying up and down the street. Young kids can be
+seen having fun with their friends, with the artificial sun glowing down
+onto them.
+~
+0 1073741836 1
+D1
+~
+~
+0 -1 1831
+D3
+~
+~
+0 -1 1832
+D7
+~
+~
+0 -1 1833
+D8
+~
+~
+0 -1 1827
+S
+#1831
+An Empty Home~
+~
+0 1075838988 1
+D3
+~
+~
+0 -1 1830
+S
+#1832
+An Empty Home~
+~
+0 1075838988 1
+D1
+~
+~
+0 -1 1830
+S
+#1833
+Residental Area~
+Beautiful colony houses are located all down this street, with smiling
+people and happy families living next to each other. Expensive cars and
+hoverscooters can be seen flying up and down the street. Young kids can be
+seen having fun with their friends, with the artificial sun glowing down
+onto them. The training zone can be seen to the northwest.
+~
+0 1073741836 1
+D0
+~
+~
+0 -1 1836
+D1
+~
+~
+0 -1 1834
+D3
+~
+~
+0 -1 1835
+D7
+~
+~
+0 -1 1837
+D8
+~
+~
+0 -1 1830
+S
+#1834
+An Empty Home~
+~
+0 1075838988 1
+D3
+~
+~
+0 -1 1833
+S
+#1835
+An Empty Home~
+~
+0 1075838988 1
+D1
+~
+~
+0 -1 1833
+S
+#1836
+An Empty Home~
+~
+0 1075838988 1
+D2
+~
+~
+0 -1 1833
+S
+#1837
+Training Area~
+Unlike the residental area, the training area is darker, and the people
+aren't as happy. Hardened fighters come here to train their combat skills,
+and newbie fighters come as well. A medical center is to the east, for
+those who get injured. To the south is the weapon repair center, where
+damaged weapons can be repaired instead of destoryed. A hotel is to the
+west. The training center itself is to the north .
+~
+0 1073741836 1
+D0
+~
+~
+0 -1 1839
+D1
+~
+~
+0 -1 1841
+D2
+~
+~
+0 -1 1838
+D3
+~
+~
+0 -1 1840
+D8
+~
+~
+0 -1 1833
+S
+#1838
+Weapon Repair Center~
+Older models of blasters and swords hang from the walls. In the back of the
+room is a workbench with a tool chest close to it. A pegboard is on the
+wall behind the workbench, and is covered with every kind of tool
+imaginable. The shopkeeper/weapon's repair specialist is sitting behind
+the workbench, repairing an old blaster and humming a tune while he works.
+He looks up and smiles as you walk in, and then goes back to work.
+~
+0 1073742860 1
+D0
+~
+~
+0 -1 1837
+S
+#1839
+Combat Training Area~
+~
+0 1073741836 1
+D0
+~
+~
+0 -1 1844
+D1
+~
+~
+0 -1 1842
+D2
+~
+~
+0 -1 1837
+D3
+~
+~
+0 -1 1843
+D4
+~
+~
+0 -1 1848
+D5
+~
+~
+0 -1 1849
+D6
+~
+~
+0 -1 1850
+D7
+~
+~
+0 -1 1845
+D8
+~
+~
+0 -1 1846
+D9
+~
+~
+0 -1 1847
+S
+#1840
+X01 Hotel~
+Comfortable beds and couches take up most of the space in this small,
+one-roomed hotel. A single tv is in the upper right corner, and looks like
+it has never been turned on. A few people are here, napping, but for the
+most part, the place is empty.
+&bType 'save' and 'quit' to leave the mud safely.
+~
+0 1082131468 1
+D1
+~
+~
+0 -1 1837
+S
+#1841
+Health Recovery Center~
+Trained medics work around the clock to heal the injured, or save those
+about to die. The center itself is kept extremely clean, so disease won't
+spread. Medical cabinates are hung from the wall, and a medical table is
+in the middle of the room. 
+&bSay 'Heal' to be healed by the medics
+~
+0 1073741832 1
+D3
+~
+~
+0 -1 1837
+> speech_prog Heal~
+Mpechoat $n You are healed by the skilled
+medics.
+mpechoaround $n $n is healed by the skilled
+medics.
+mprestore $n 30000
+~
+|
+S
+#1842
+Level Two~
+~
+0 1073741832 1
+D3
+~
+~
+0 -1 1839
+S
+#1843
+Level Three~
+~
+0 1073741832 1
+D1
+~
+~
+0 -1 1839
+S
+#1844
+Level One~
+~
+0 1073741832 1
+D2
+~
+~
+0 -1 1839
+S
+#1845
+Level Five~
+~
+0 1073741832 1
+D8
+~
+~
+0 -1 1839
+S
+#1846
+Level Six~
+~
+0 1073741832 1
+D7
+~
+~
+0 -1 1839
+S
+#1847
+Level Seven~
+~
+0 1073741832 1
+D6
+~
+~
+0 -1 1839
+S
+#1848
+Final Level~
+~
+0 1073741832 1
+D5
+~
+~
+0 -1 1839
+S
+#1849
+Level Eight~
+~
+0 1073741832 1
+D4
+~
+~
+0 -1 1839
+S
+#1850
+Level Four~
+~
+0 1073741832 1
+D9
+~
+~
+0 -1 1839
+S
+#1851
+Floating in a void~
+~
+0 1073741828 1
+D0
+~
+~
+0 -1 1822
+S
+#1852
+Floating in a void~
+~
+0 1073741828 1
+S
+#1853
+Floating in a void~
+~
+0 1073741828 1
+S
+#1854
+Floating in a void~
+~
+0 1073741828 1
+S
+#1855
+The Arena~
+~
+0 1073741828 1
+S
+#1856
+The Final Arena~
+Millions of fans sit here, awaiting the final fight between Meteor and Xeo.
+Both fighters stand ready, even though Xeo easily outmatches Meteor. The
+fight is about to begin.
+~
+0 1073741828 1
+S
+#1857
+Floating in a void~
+~
+0 1073741828 1
+S
+#1858
+Floating in a void~
+~
+0 1073741828 1
+S
+#1859
+Floating in a void~
+~
+0 1073741828 1
+S
+#1860
+Floating in a void~
+~
+0 1073741828 1
+S
+#0
+
+
+#RESETS
+M 1 1800 1 1838
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+ 1800    5  0  0         100   1         0 23    ; An X01 Repair Shop Owner
+0
+
+
+#SPECIALS
+S
+
+
+#$

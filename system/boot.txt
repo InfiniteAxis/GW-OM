@@ -1,0 +1,12 @@
+[*****] BOOT: ---------------------[ Boot Log ]--------------------
+[*****] BOOT: load_room_reset: limbo.are (1) 'M': mobile 2029 doesn't exist.
+[*****] BOOT: load_room_reset: gundamw.are (1) 'M': mobile 5191 doesn't exist.
+[*****] BOOT: load_room_reset: gundamw.are (1) 'M': mobile 5191 doesn't exist.
+[*****] BOOT: load_room_reset: gundamw.are (1) 'D': exit 3 not door.
+[*****] BOOT: load_room_reset: gundamw.are (1) 'M': mobile 5191 doesn't exist.
+[*****] BOOT: load_room_reset: gundamw.are (1) 'O': object 2029 doesn't exist.
+[*****] BOOT: load_room_reset: gundamw.are (1) 'M': mobile 274 doesn't exist.
+[*****] BOOT: load_room_reset: gundamw.are (1) 'O': object 259 doesn't exist.
+[*****] BOOT: load_room_reset: gundamw.are (1) 'M': mobile 5191 doesn't exist.
+[*****] BOOT: load_room_reset: z64.are (1) 'G': object 6290 doesn't exist.
+[*****] BOOT: load_room_reset: Toronto.are (1) 'G': object 1100 doesn't exist.

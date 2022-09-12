@@ -1,0 +1,6200 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         MO-III Resource Satellite~
+Author       Kayle~
+Ranges       0 0 1 1007
+Economy      0 4792300
+ResetMsg     A voice on the loudspeaker declares the changing of the guard.~
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       7600
+Keywords   cook mess hall mo3~
+Short      The Mess Hall Lady~
+Long       The Mess Hall Lady stands here, feeding the soldiers.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       7601
+Keywords   Quatre Raberba Winner~
+Short      Quatre~
+Long       Quatre Raberba Winner sits here awaiting the signal to launch from Rashid.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 500 0
+Stats2     200 10 1000000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 24 10 10 24
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   dodge~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   say Hey.
+hmm
+say You don't look like a member of White Fang...
+say What can I do for you?
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   say No! My Violin!
+mpecho &RAs Quatre gasps his last breathe his violin falls to the ground.
+mpoload 7645
+drop violin
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  fight_prog~
+Arglist   50~
+Comlist   if rand(10)
+mea $n &zQuatre pulls out an uzi and sprays you with bullets!
+mer $n &zQuatre pulls out an uzi and sprays $n with bullets!
+mpdamage $n 3500
+else
+if rand(20)
+say Why are you doing this?!
+punch  $n
+kick $n
+punch  $n
+kick $n
+gouge $n
+else
+if rand(40)
+say I'll never forget this!
+punch  $n
+kick $n
+punch  $n
+kick $n
+punch  $n
+kick $n
+punch  $n
+kick $n
+punch  $n
+kick $n
+else
+if rand(30)
+say No! I won't give up!
+mea $n &zQuatre rushes forward slamming into you and driving you into the wall!
+mer $n &zQuatre rushes into $n and slams them into the wall!
+mpdamage $n 500
+endif
+endif
+endif
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7602
+Keywords   rashid kurama~
+Short      Rashid~
+Long       Rashid Kurama is here, coordinating the Rescue efforts.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 500000
+Stats3     100 4 10
+Stats4     0 0 7 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   parry~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if ispc($n)
+if carryingvnum($n) 7645
+say You killed Master Quatre! You fiend!
+mpkill $n
+else
+if carryingvnum($n) 7646
+say I see you took out the Founder.
+mpforce $n give founders rashid
+nod
+em turns the armband over in his hands.
+mpsleep 3
+mpjunk armband
+say Very good work, $n.
+say Here, Take this for your efforts.
+mpoload 7610
+give cloak $n
+say Wear it with pride.
+bow $n
+else
+smile $n
+say Hmmm. You don't look like one of those White Fang soldiers.
+say Perhaps then, You'd be willing to do me a small favor?
+endif
+endif
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   yes yea sure yeah ok okay~
+Comlist   say Good, good.
+look $n
+say Yes, You should be fine.
+say The White Fang are mistreating the miners here.
+say If you can bring me a token that says their leader is dead..
+say I'll reward you nicely.
+say Quickly now, before they notice we're here.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   no nope 'no thanks' nah~
+Comlist   sigh
+say Alright, Thanks anyways.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   if rand(20)
+mpe &RWith his dying breath rashid removes his sash and hands it to you.
+rem sash
+give sash $n
+else
+mpjunk all
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  fight_prog~
+Arglist   40~
+Comlist   if rand(40)
+mea $n &z$I bashes you in the side of the head with his fist!
+mer $n &z$I bashes $n in the side of the head with his fist!
+mpdamage $n 1500
+else
+if rand(30)
+cackle
+mpecho &R$I flies into a frenzy!
+punch $r
+kick $r
+punch $r
+kick $r
+punch $r
+kick $r
+punch $r
+kick $r
+punch $r
+kick $r
+punch $r
+kick $r
+bash $n
+else
+if rand(20)
+mea $n &Y$I's tackle &Gt&gh&Gr&ga&Gs&gh&Ge&gs &Wyou! &b-< &C[&c3800&C] &b>-
+mer $n &w$I's tackle &Gt&gh&Gr&ga&Gs&gh&Ge&gs &w$n! &b-< &C[&c3800&C] &b>-
+mpdamage $n 3800
+else
+if rand(10)
+mea $n &Y$I's lunge &Gt&gh&Gr&ga&Gs&gh&Ge&gs &Wyou! &b-< &C[&c5000&C] &b>-
+mer $n &w$I's lunge &Gt&gh&Gr&ga&Gs&gh&Ge&gs &w$n! &b-< &C[&c5000&C] &b>-
+mpdamage $n 5000
+endif
+endif
+endif
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7603
+Keywords   Auda maguanac~
+Short      Auda~
+Long       Auda, of the Maganac Corps, is here showing Miners the way to the Ariadne.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 350000
+Stats3     100 4 10
+Stats4     0 0 6 200 200
+Attribs    24 10 10 24 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   dodge~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if ispc($n)
+if carryingvnum($n) 7645
+say You killed Master Quatre! You fiend!
+mpkill $n
+else
+if carryingvnum($n) 7646
+say Wow. You took out the Founder? Quick go see Rashid!
+else
+say Oh! Have you come to help free the prisoners?
+endif
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  fight_prog~
+Arglist   50~
+Comlist   sigh
+say You won't get away with this!
+punch $n
+kick $n
+punch $n
+kick $n
+punch $n
+kick $n
+punch $n
+kick $n
+punch $n
+gouge $r
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7604
+Keywords   Ahmed maguanac~
+Short      Ahmed~
+Long       Ahmed, of the Maganac Corps, is here trying to help Miners escape.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if ispc($n)
+if carryingvnum($n) 7645
+say You killed Master Quatre! You fiend!
+mpkill $n
+else
+if carryingvnum($n) 7646
+say Wow. You took out the Founder? Quick go see Rashid!
+else
+say Oh! Have you come to help free the prisoners?
+endif
+endif
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  fight_prog~
+Arglist   40~
+Comlist   sigh
+say You won't get away with this!
+punch $n
+kick $n
+punch $n
+kick $n
+punch $n
+kick $n
+punch $n
+kick $n
+punch $n
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7605
+Keywords   Abdul Maguanac~
+Short      Abdul~
+Long       Abdul, of the Maganac Corps, is here trying to help Miners escape.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Affected   detect_invis detect_hidden infrared truesight~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 300000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    24 10 10 25 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if ispc($n)
+if carryingvnum($n) 7645
+say You killed Master Quatre! You fiend!
+mpkill $n
+else
+if carryingvnum($n) 7646
+say Wow. You took out the Founder? Quick go see Rashid!
+else
+say Oh! Have you come to help free the prisoners?
+endif
+endif
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  fight_prog~
+Arglist   45~
+Comlist   sigh
+say You won't get away with this!
+punch $n
+kick $n
+punch $n
+kick $n
+punch $n
+kick $n
+punch $n
+kick $n
+punch $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   if rand(15)
+mpe &RWith a garbled warning, $I collapses to the ground losing his sunglasses.
+mpjunk all
+mpoload 7609
+drop sun
+else
+Mpe &R$I collapses landing on his sunglasses crushing them.
+mpjunk all
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7606
+Keywords   Quinze Founder White Fang~
+Short      Quinze~
+Long       The founder of &WW&white &RF&rang&P is here, keeping the installation going.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 1000 0 100 0 0
+Stats2     200 10 1000000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick circle~
+Defenses   parry dodge~
+#MUDPROG
+Progtype  act_prog~
+Arglist   backstab~
+Comlist   say Fool! I am the Founder of White Fang! I will not be atacked in such a way!
+mpe &GHe activates a button on the control panel, and acid sprays in your face!
+mpdamage $n 30000
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  fight_prog~
+Arglist   50~
+Comlist   if rand(20)
+say Idiot! I'm unbeatable!
+gouge $n
+punch $n
+kick $n
+else
+if rand(30)
+say You can't win.. Give up!
+cackle
+mea $n Quinze rushes forward jabbing several times at your vital organs!
+mer $n Quinze rushes $n stabbing at them several times!
+mpdamage $n 800
+else
+if rand(40)
+say Fool!
+punch $n
+kick $n
+punch $n
+kick $n
+punch $n
+kick $n
+punch $n
+else
+if rand(10)
+say There is no hope for you!
+mea $n Quinze lashes out and catches you across the faces with a backhand!
+mer $n Quinze catches $n across the faces with a nasty backhand!
+mpdamage $n 3500
+cackle
+endif
+endif
+endif
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if ispc($n)
+if carryingvnum($n) 7645
+say I see you have succeeded in ending that twits life.
+mpforce $n give violin quinze
+say Ahhh.
+nod
+em turns the Violin over in his hands.
+mpsleep 3
+mpjunk violin
+say Very good work, $n.
+say Here, Take this for your efforts.
+mpoload 7648
+give fang $n
+say Wear it with pride.
+salute $n
+else
+grin $n
+say Hmmm. You don't look like one of those Maganac fools.
+say Perhaps then, You'd bee willing to do me a small favor?
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   yes yea sure yeah ok okay~
+Comlist   say Good, good.
+look $n
+say Yes, You should be fine.
+say The Maganac Corps are trying to steal my miners.
+say If you can bring me a token that says their leader is dead..
+say I'll reward you nicely.
+chuckle
+say Now go, before I rescind my offer.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   no nope 'no thanks' nah~
+Comlist   growl $n
+say Insolent Fool!
+roar
+say No one tells me no!!
+say Leave my instalation at once! Guards! Take $m away!
+mea $n &zSeveral White Fang Guards rush in and drag you to the Hangar.
+mer $n &zSeveral White Fang Guards rush in and drag $n away.
+mptransfer $n 7600
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpe &RAs Quinze collapses, his armband slides off and falls to the ground.
+mpoload 7646
+drop armband
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7607
+Keywords   Dornille Officer White Fang~
+Short      Dornille~
+Long       An Officer of &WW&white &RF&rang &Pstands here enjoying his break.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 3500 0
+Stats2     200 10 450000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    24 10 10 24 10 10 24
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   dodge~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if ispc($n)
+if carryingvnum($n) 7646
+say You killed the Founder?! You bastard!!
+mpkill $n
+else
+if carryingvnum($n) 7645
+say Hmph. You took out Quatre? Go see the Founder.
+else
+growl
+say I suggest you turn around and leave.
+endif
+endif
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  act_prog~
+Arglist   circle~
+Comlist   say This is what happens when you don't listen!
+tackle $n
+mea $n &Y$I's tackle &Gt&gh&Gr&ga&Gs&gh&Ge&gs &Wyou! &b-< &C[&c15000&C] &b>-
+mer $n &w$I's tackle &Gt&gh&Gr&ga&Gs&gh&Ge&gs &w$n! &b-< &C[&c15000&C] &b>-
+mpdamage $n 15000
+mprestore dornille 15000
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  fight_prog~
+Arglist   50~
+Comlist   if rand(40)
+mea $n &z$I bashes you in the side of the head with a chair!
+mer $n &z$I bashes $n in the side of the head with a chair!
+mpdamage $n 1500
+else
+if rand(30)
+cackle
+mpecho &R$I flies into a frenzy!
+punch $r
+kick $r
+punch $r
+kick $r
+punch $r
+kick $r
+punch $r
+kick $r
+punch $r
+kick $r
+punch $r
+kick $r
+bash $n
+else
+if rand(20)
+mea $n &Y$I's spinkick &Gt&gh&Gr&ga&Gs&gh&Ge&gs &Wyou! &b-< &C[&c3800&C] &b>-
+mer $n &w$I's spinkick &Gt&gh&Gr&ga&Gs&gh&Ge&gs &W$n! &b-< &C[&c3800&C] &b>-
+mpdamage $n 3800
+else
+if rand(10)
+say Now you see me....
+gouge $n
+say Now you don't!
+cackle
+endif
+endif
+endif
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   if rand(20)
+mpjunk gloves
+mpe With the killing blow, Dornille's gloves slide off his hands and fall
+mpe to the ground with a quiet thud.
+mpoload 7608
+drop gloves
+else
+mpjunk gloves
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7608
+Keywords   ralph kurt officer white fang~
+Short      Ralph Kurt~
+Long       An Officer of &WW&white &RF&rang &Psits here working at the terminal.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 3500 0
+Stats2     200 10 450000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    24 10 10 24 10 10 24
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   dodge~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if ispc($n)
+if carryingvnum($n) 7646
+say You killed the Founder?! You bastard!!
+mpkill $n
+else
+if carryingvnum($n) 7645
+say You took out Quatre? You should go see the Founder.
+else
+em slams his fist into the table.
+say Haven't you people ever heard of knocking?
+mutter
+endif
+endif
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  act_prog~
+Arglist   circle~
+Comlist   cackle
+say You call that a circle?
+mea $n &Y$I's circle &Gt&gh&Gr&ga&Gs&gh&Ge&gs &Wyou! &b-< &C[&c15000&C] &b>-
+mer $n &w$I's circle &Gt&gh&Gr&ga&Gs&gh&Ge&gs &w$n! &b-< &C[&c15000&C] &b>-
+mpdamage $n 15000
+mprestore ralph 15000
+say That's how it's done.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  fight_prog~
+Arglist   30~
+Comlist   laugh
+say You pathetic bastard...
+punch $n
+kick $n
+punch $n
+kick $n
+punch $n
+kick $n
+punch $n
+kick $n
+punch $n
+gouge $r
+cackle
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7609
+Keywords   chris marley officer white fang~
+Short      Chris Marley~
+Long       An Officer of &WW&white &RF&rang &Plies here relaxing on the bed.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 3500 0
+Stats2     200 10 450000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    24 10 10 24 10 10 24
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   parry~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if ispc($n)
+if carryingvnum($n) 7646
+say You killed the Founder?! You bastard!!
+mpkill $n
+else
+if carryingvnum($n) 7645
+say Wow! You took out Quatre? Quick go see the Founder!
+else
+say Oh, Hi There.
+smile $n
+say Can I help you with something?
+endif
+endif
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  act_prog~
+Arglist   circle~
+Comlist   scream
+say You're such an ass!
+mea $n &Y$I's stab &Gt&gh&Gr&ga&Gs&gh&Ge&gs &Wyou! &b-< &C[&c15000&C] &b>-
+mer $n &w$I's stab &Gt&gh&Gr&ga&Gs&gh&Ge&gs &w$n! &b-< &C[&c15000&C] &b>-
+mpdamage $n 15000
+mprestore marley 15000
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  fight_prog~
+Arglist   50~
+Comlist   if rand(40)
+cry
+say Why are you doing this?
+punch $n
+kick $n
+punch $n
+kick $n
+punch $n
+kick $n
+say That'll learn ya!
+else
+if rand(30)
+say You Ass! Attacking me in my own room!
+mea $n &Y$I pulls out a small pistol and fires 3 rounds into your leg!
+mer $n &O$I pulls out a small pistol and fires 3 rounds into $n's leg!
+mpdamage $n 3000
+else
+if rand(20)
+say Damn you!
+punch $n
+kick $n
+punch $n
+kick $n
+punch $n
+kick $n
+punch $n
+kick $n
+punch $n
+kick $n
+punch $n
+kick $n
+say Go Away!
+else
+if rand(10)
+giggle
+say Now you're mine!
+passion $n
+mea $n &rYou feel a small dagger slide between your bottom ribs!
+mer $n &RYou watch in horror as $I drives a dagger into $n's ribs!
+mpdamage $n 3800
+endif
+endif
+endif
+endif
+look
+save
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7610
+Keywords   Sogran Officer White Fang~
+Short      Sogran~
+Long       An Officer of &WW&white &RF&rang &Psits here enjoying a nice meal.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 3500 0
+Stats2     200 10 450000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    24 10 10 24 10 10 24
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   dodge~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if ispc($n)
+if carryingvnum($n) 7646
+say You killed the Founder?! You bastard!!
+mpkill $n
+else
+if carryingvnum($n) 7645
+say Hah! You took out Quatre? Go give the Founder a laugh.
+else
+swear $n
+say Can't a guy get some time to eat around here?!
+endif
+endif
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  act_prog~
+Arglist   circle~
+Comlist   laugh $n
+say Ignorance is Obviously Bliss!
+mea $n &Y$I's rush &Gt&gh&Gr&ga&Gs&gh&Ge&gs &Wyou! &b-< &C[&c15000&C] &b>-
+mer $n &w$I's rush &Gt&gh&Gr&ga&Gs&gh&Ge&gs &w$n! &b-< &C[&c15000&C] &b>-
+mpdamage $n 15000
+mprestore sogran 15000
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  fight_prog~
+Arglist   50~
+Comlist   laugh
+say You pathetic bastard...
+punch $n
+kick $n
+punch $n
+kick $n
+punch $n
+kick $n
+punch $n
+kick $n
+punch $n
+gouge $r
+cackle
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7611
+Keywords   Sedichi Officer White Fang~
+Short      Sedichi~
+Long       An Officer of &WW&white &RF&rang &Psits here in peaceful meditation.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 3500 0
+Stats2     200 10 900000
+Stats3     0 0 0
+Stats4     0 0 0 200 0
+Attribs    24 10 10 24 10 10 24
+Saves      0 0 0 0 0
+Immune     charm~
+Defenses   parry dodge~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if ispc($n)
+if carryingvnum($n) 7646
+say You killed the Founder?! You bastard!!
+mpkill $n
+else
+if carryingvnum($n) 7645
+say Hmmm. You took out Quatre? Go see the Founder.
+else
+sigh
+say Is there something you need?
+endif
+endif
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  act_prog~
+Arglist   backstab~
+Comlist   mea $n &zAs your blade pierces the flesh of $I, his form blurs and you are hit 
+mea $n &zfrom behind!
+mer $n &z$I suddenly appears behind $n striking them hard in the back!
+mprestore sedichi 30000
+mprestore sedichi 30000
+mpdamage $n 15000
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  fight_prog~
+Arglist   30~
+Comlist   if rand(40)
+say Your spirit shall fortify my body!
+say &RN&ra&pk&zi&pr&ry&Ru&C!
+mea $n &R$I rushes forward, flips over your head and slashes across your back!
+mer $n &rIn a Flurry of movement $I suddenly ends up behind $n!
+mpdamage $n 1500
+else
+if rand(30)
+say Your spirit shall fortify my body!
+say &zO&wn&Wi-&zM&wi&zk&Wa&wg&ze&C!
+mea $n &R$I rushes forward and drives his Katana through your gut!
+mer $n &rIn a Flurry of movement $I attacks $n!
+mpdamage $n 3000
+else
+if rand(20)
+say Your spirit shall fortify my body!
+say &BT&bs&zu&wj&Wi-&wK&za&bz&Be&C!
+mea $n &R$I drops to one knee knocking your feet from under you and stabbing
+mea $n &Rdeep into your leg with asmall kunai!
+mer $n &rIn a Flurry of movement $I attacks $n!
+mpdamage $n 4500
+else
+if rand(10)
+say Your spirit shall fortify my body!
+say &GT&ga&wc&Wh&zi&p-&zK&wa&gg&Ge&C!
+mea $n &R$I reaches into a small pouch and pulls out a handful of black powder,
+mea $n &G$I blows the powder into your face causing you to cough.
+mpforce $n cough
+mpforce $n puke
+mer $n &rIn a Flurry of movement $I attacks $n!
+mpdamage $n 9000
+endif
+endif
+endif
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpe &C$I says '&cGah... It cannot be....&C'
+mpe &z$I &Gc&go&Gu&gg&Gh&gs &zloudly.
+mpe &C$I says '&cI have been.. bea..ten...&C'
+if rand(5)
+mpe &RWith his dying breath Sedichi losses his grip on his blade.
+mpe &C$I says '&WO&wn&zi&Wk&zi&wr&Wi&c is it's name.. it's blessing...&C'
+mpe &z$I &Gc&go&Gu&gg&Gh&gs &zloudly.
+mpe &C$I says '&cwill protect... you...&C'
+mpjunk fake
+mpoload 7603
+drop onikiri
+else 
+mpe &C$I says &C'&cYou.. will.. not.. take.. my.. blade....&c'
+mpe &zSedichi performs an ancient Ninjutsu hand seal and the blade vanishes!
+mpjunk fake
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7612
+Keywords   Overseer White Fang~
+Short      A White Fang Overseer~
+Long       A White Fang Overseer is here keeping the Miners working.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc~
+Stats1     0 1000 0 -2400 500 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    24 10 10 24 10 10 10
+Saves      0 0 0 0 0
+Attacks    punch kick~
+Defenses   dodge~
+#ENDMOBILE
+
+#MOBILE
+Vnum       7613
+Keywords   White Fang Guard~
+Short      A White Fang Guard~
+Long       A White Fang Guard is here patrolling the installation.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Affected   detect_hidden~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Defenses   dodge~
+#ENDMOBILE
+
+#MOBILE
+Vnum       7614
+Keywords   White Fange Soldier~
+Short      A White Fang Soldier~
+Long       A White Fang Soldier is here, relaxing in his quarters.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       7615
+Keywords   white fang soldier female~
+Short      A White Fang Soldier~
+Long       A White Fang Soldier is here, relaxing in her quarters.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       7616
+Keywords   White Fang Pilot~
+Short      Marcus~
+Long       A White Fang Pilot is here, keeping the satellite on course.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#ENDMOBILE
+
+#MOBILE
+Vnum       7617
+Keywords   white fang navigator~
+Short      Christian~
+Long       A White Fang Navigator is here keeping the course plotted.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#ENDMOBILE
+
+#MOBILE
+Vnum       7618
+Keywords   White Fang Defensive Systems Operator~
+Short      Christy~
+Long       A White Fang Defensive Systems Operator sits here watching for inbound threats.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#ENDMOBILE
+
+#MOBILE
+Vnum       7619
+Keywords   White Fang Officer Relaxing~
+Short      A White Fang Officer~
+Long       A White Fang Officer is here relaxing in a leather armchair.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#MUDPROG
+Progtype  rand_prog~
+Arglist   5~
+Comlist   say Damn.. Quinze's gonna have my head if he finds out I lost my key card...
+sigh
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7620
+Keywords   injured miner~
+Short      An Injured Miner~
+Long       An injured miner, lies here, writhing in pain.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       7621
+Keywords   Miner Female~
+Short      a Female Miner~
+Long       A Female Miner is here, being forced to work herself to exhaustion.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc~
+Stats1     0 400 0 -900 50 0
+Stats2     80 10 4000
+Stats3     40 4 2
+Stats4     0 0 0 80 80
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       7622
+Keywords   Miner Male~
+Short      a Male Miner~
+Long       A Male Miner is here, being forced to work himself to exhaustion.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc~
+Stats1     0 500 0 -1150 50 0
+Stats2     100 10 5000
+Stats3     50 4 2
+Stats4     0 0 0 100 100
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       7623
+Keywords   main level marker~
+Short      The Main Level marker Mob~
+Long       The Main Level marker Mob is here. DO NOT TOUCH IT!
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1001 0 -2402 0 0
+Stats2     200 10 10010
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p Main Level~
+Comlist   mpe &RA light on the consol flashes.&D
+mpe &CThe Consol says '&cYou're already on this Floor.&C'&D
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p Mine Level~
+Comlist   mpe The elevator doors slide closed.
+mpclosepassage 7609 south
+mpe The elevator jolts into an downward movement.
+mpsleep 10
+mpe The elevator comes to a stop and the south doors slide open.
+mpat 7 mpmload 7624
+mpat marker mpforce marker mpinvis
+mptransfer marker 7610
+mpopenpassage 7610 7661 south
+mpat 7 mppurge 7623
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p Command Level~
+Comlist   mpe The elevator doors slide closed.
+mpclosepassage 7609 south
+mpe The elevator jolts into an upward movement.
+mpsleep 10
+mpe The elevator comes to a stop and the south doors slide open.
+mpat 7 mpmload 7624
+mpat command mpforce marker mpinvis
+mptransfer marker 7610
+mpopenpassage 7610 7661 south
+mpat 7 mppurge 7623
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7624
+Keywords   mine level marker~
+Short      The Mine Level marker Mob~
+Long       The Mine Level marker Mob is here. DO NOT TOUCH IT!
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1001 0 -2402 0 0
+Stats2     200 10 10010
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       7625
+Keywords   command level marker~
+Short      The Command Level marker Mob~
+Long       The Command Level marker Mob is here. DO NOT TOUCH IT!
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1001 0 -2402 0 0
+Stats2     200 10 10010
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       7626
+Keywords   main level elevator closer~
+Short      a newly created main level elevator closer~
+Long       Some god abandoned a newly created main level elevator closer here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel prototype~
+Stats1     0 1001 0 -2402 0 0
+Stats2     200 10 10010
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       7627
+Keywords   mine level elevator closer~
+Short      a newly created mine level elevator closer~
+Long       Some god abandoned a newly created mine level elevator closer here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1001 0 -2402 0 0
+Stats2     200 10 10010
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   mpclosepassage 7610 north
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       7628
+Keywords   command level elevator closer~
+Short      a newly created command level elevator closer~
+Long       Some god abandoned a newly created command level elevator closer here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       7749
+Keywords   Final mob~
+Short      a newly created Final mob~
+Long       Some god abandoned a newly created Final mob here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#OBJECT
+Vnum     7600
+Keywords winner foundation frigate ariadne~
+Type     trash~
+Short    &CThe Frigate "Ariadne"~
+Long     &CThe Frigate "Ariadne" of the Winner Foundation is docked here awaiting miners.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7601
+Keywords commanders key card~
+Type     key~
+Short    &WA &WW&wh&Wi&wt&We &RF&ra&Rn&rg &WCommander's Key Card~
+Long     &WA &WW&wh&Wi&wt&We &RF&ra&Rn&rg &WCommander lost their key card here.~
+Flags    hidden~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7602
+Keywords couch leather~
+Type     furniture~
+Short    a leather couch~
+Long     A long leather sectional couch is here.~
+Values   10 0 3 0 0 0
+Stats    1 0 0 0 1
+#ENDOBJECT
+
+#OBJECT
+Vnum     7603
+Keywords katana onikiri sedichi~
+Type     weapon~
+Short    &WO&wn&zi&Wk&zi&wr&Wi~
+Long     &WO&wn&zi&Wk&zi&wr&Wi&z, the sword of Sedichi was misplaced here.~
+Flags    dark bless~
+WFlags   take wield~
+Values   10 150 2 1000 1000 0
+Stats    1 0 0 0 1000
+Affect       -1 -1 25 18 0
+Affect       -1 -1 30 19 0
+Affect       -1 -1 1000 13 0
+Affect       -1 -1 1000 14 0
+Affect       -1 -1 -100 17 0
+#MUDPROG
+Progtype  wear_prog~
+Arglist   100~
+Comlist   mea $n &zAs you wield the blade, Your form begins to blur.
+mea $n &zThis is the blessing of the Oni.
+mer $n &zAs $n wields the blade, their form begins to blur.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  remove_prog~
+Arglist   100~
+Comlist   mea $n &wThe blur fades, allowing your oponents to see you clearly.
+mer $n &wThe blur fades, allowing you to see $n clearly.
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     7604
+Keywords elevator call button mines~
+Type     button~
+Short    an elevator call button~
+Long     A button to call the elevator hangs here by the elevator doors.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 -1
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mea $n &wAs you push the button, it lights up, and you can hear the elevator
+mea $n &wcoming this way in the elevator shaft.
+mer $n &wAs $n pushes the button, it lights up, and you can hear the elevator
+mer $n &wcoming this way in the elevator shaft.
+pull button
+mpsleep 2
+mpe &wThe Transparisteel doors slide open and allow you to enter.
+mpopenpassage 7661 7610 north
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     7605
+Keywords elevator call button main~
+Type     button~
+Short    an elevator call button~
+Long     A button to call the elevator hangs here by the elevator doors.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mea $n As you push the button, it lights up, and you can hear the elevator
+mea $n coming this way in the elevator shaft.
+mer $n As $n pushes the button, it lights up, and you can hear the elevator
+mer $n coming this way in the elevator shaft.
+pull button
+mpsleep 2
+mpe The Transparisteel doors slide open and allow you to enter.
+mpopenpassage 7609 7610 north
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     7606
+Keywords elevator call button command~
+Type     button~
+Short    an elevator call button~
+Long     A button to call the elevator hangs here by the elevator doors.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  push_prog~
+Arglist   100~
+Comlist   mea $n As you push the button, it lights up, and you can hear the elevator
+mea $n coming this way in the elevator shaft.
+mer $n As $n pushes the button, it lights up, and you can hear the elevator
+mer $n coming this way in the elevator shaft.
+pull button
+mpsleep 2
+mpe The Transparisteel doors slide open and allow you to enter.
+mpopenpassage 7718 7610 south
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     7607
+Keywords pile rocks rubble~
+Type     trash~
+Short    a pile of rubble~
+Long     &zA small pile of rubble and rocks is here resting near the northeast tunnel.~
+Flags    hidden~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    rubble rocks pile~
+ExDesc       This small pile of rocks and rubble has been meticulously piled near the
+northeast tunnel. Apparently someone wanted to remember this tunnel.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     7608
+Keywords dornille gloves~
+Type     armor~
+Short    &CD&co&wr&Wni&wl&cl&Ce&z's &GG&gl&cov&ge&Gs~
+Long     &zA pair of black leather fingertipless gloves lie here seemingly forgotten...~
+WFlags   take hands~
+Values   75 0 0 0 0 0
+Stats    1 0 0 0 75
+Affect       -1 -1 1000 13 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 23 18 0
+Affect       -1 -1 25 19 0
+Affect       -1 -1 10 19 0
+Affect       -1 -1 -50 17 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7609
+Keywords sunglasses abdul round~
+Type     armor~
+Short    &RA&rb&pd&ru&Rl&z's &YS&Ou&zn&wg&Wla&ws&zs&Oe&Ys~
+Long     &zA pair of little round sunglasses lie here collecting dust.~
+WFlags   take eyes~
+Values   75 0 0 0 0 0
+Stats    1 0 0 0 75
+Affect       -1 -1 30 18 0
+Affect       -1 -1 40 19 0
+Affect       -1 -1 40 26 0
+Affect       -1 -1 500 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7610
+Keywords maganac desert cloak brown fabric~
+Type     armor~
+Short    &GM&ga&wg&za&wn&ga&Gc&z's &YD&Oe&wse&Or&Yt &WC&wl&Wo&wa&Wk~
+Long     &OA length of brown fabric lies here all bunched up.~
+WFlags   take about~
+Values   75 75 0 0 0 0
+Stats    1 0 0 0 64
+Affect       -1 -1 10 18 0
+Affect       -1 -1 15 19 0
+Affect       -1 -1 750 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7611
+Keywords fake onikiri~
+Type     weapon~
+Short    &WO&wn&zi&Wk&zi&wr&Wi~
+Long     &zSome 'tard was playing with something he shouldn't have been.~
+WFlags   take wield~
+Values   0 0 2 0 0 0
+Stats    1 0 0 0 1000
+#ENDOBJECT
+
+#OBJECT
+Vnum     7645
+Keywords quatre violin~
+Type     treasure~
+Short    &YQ&Ou&wa&zt&wr&Oe&Y's &OV&wi&zol&wi&On&z~
+Long     &YQ&Ou&wa&zt&wr&Oe&Y's &OV&wi&zol&wi&On &zlies here, waiting to be taken.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7646
+Keywords founders armband~
+Type     treasure~
+Short    &zF&wo&Wu&znd&We&wr&zs &RA&rr&pm&zb&pa&rn&Rd~
+Long     &zThe &zF&wo&Wu&znd&We&wr&zs &RA&rr&pm&zb&pa&rn&Rd &zlies here, waiting to be taken.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     7647
+Keywords sash maganac rashid~
+Type     armor~
+Short    &YR&Oa&Ws&wh&Wi&Od'&Ys &GM&ga&wg&za&wn&ga&Gc &WS&wa&Ws&wh~
+Long     &YR&Oa&Ws&wh&Wi&Od'&Ys &GM&ga&wg&za&wn&ga&Gc &WS&wa&Ws&wh &zlies here forgotten.~
+WFlags   take waist~
+Values   75 0 0 0 0 0
+Stats    1 750000 75000 0 75
+Affect       -1 -1 500 14 0
+Affect       -1 -1 500 13 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 16 19 0
+Affect       -1 -1 -25 17 0
+Affect       -1 -1 524288 26 0
+#MUDPROG
+Progtype  wear_prog~
+Arglist   100~
+Comlist   mea $n &OThe Roar of the desert winds fills your ears as you wear the sash.
+mer $n &O$n is surrounded by a feeling of serenity as $e wears the sash.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  remove_prog~
+Arglist   100~
+Comlist   mea $n &wThe roar fades, and your spirit sags as you remove the sash.
+mer $n &w$n's spirit seems to sag a little as $e removes the earring.
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     7648
+Keywords earring white fang~
+Type     armor~
+Short    &zA small &WW&wh&Wi&wt&We &RF&ra&Rn&rg&z~
+Long     &zA small &WW&wh&Wi&wt&We &RF&ra&Rn&rg&z lies here calling for you to wear it.~
+WFlags   take ears~
+Values   75 0 0 0 0 0
+Stats    1 0 0 0 75
+Affect       -1 -1 20 18 0
+Affect       -1 -1 25 19 0
+Affect       -1 -1 -10 17 0
+Affect       -1 -1 1000 13 0
+Affect       -1 -1 500 14 0
+#MUDPROG
+Progtype  wear_prog~
+Arglist   100~
+Comlist   mea $n &zYou're filled with a &Cf&ce&wr&ca&Cl &Rr&ra&Rg&re &zas you wear it.
+mer $n &z$n is filled with a &Cf&ce&wr&ca&Cl &Rr&ra&Rg&re &zas $e wears it.
+mpforce $n howl
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  remove_prog~
+Arglist   100~
+Comlist   mea $n &zYour &Cf&ce&wr&ca&Cl &Rr&ra&Rg&re&z subsides as you remove the earring.
+mer $n &z$n's &Cf&ce&wr&ca&Cl &Rr&ra&Rg&re&z subsides as $e removes the earring.
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     7749
+Keywords Final obj~
+Type     trash~
+Short    a Final obj~
+Long     A Final obj is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     7600
+Name     Hangar Bay of MO-III~
+Sector   inside~
+Flags    nomob can_land can_fly docking~
+Desc     The one thing you notice about this place as you climb out of your suit, is
+the fact that it is in pristine condition, especially for something
+supposedly that is a mine. Several people stand in the far corner of the
+hanger and it appears  that they are wearing bands on their upper arms
+that have the letters WF on them. 
+~
+#EXIT
+Direction north~
+ToRoom    7601
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7601
+Name     MO-III Security Checkpoint~
+Sector   inside~
+Flags    nomob indoors~
+Desc     This small room is kept pristine clean, and in perfect working order. Several
+sets of scanners can be seen in tracks running across the ceiling, and large
+blast doors can be seen at both ends of the room, ready to close should the
+need arise.
+~
+#EXIT
+Direction north~
+ToRoom    7602
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7600
+#ENDEXIT
+
+#MUDPROG
+Progtype  act_prog~
+Arglist   p from the south.~
+Comlist   mea $n &zAs you enter, the doors slide closed with a hiss. A  &Wwhite&z
+mea $n &zlight fills the room, and it gets suddenly hot. A voice comes over
+mea $n &zthe loudspeaker '&CPlease remain still while the Biometric Scanner
+mea $n &Cchecks for explosives.&z'
+mea $n &WThe white light begins to slowly pass over your body.
+if carryingvnum($n) = 4135
+mea $n &RAn alarm sounds and you are escorted back to the Hanger.
+mptransfer $n 7600
+else
+if carryingvnum($n) = 45
+mea $n &RAn alarm sounds and you are escorted back to the Hanger.
+mptransfer $n 7600
+else
+if carryingvnum($n) = 10425
+mea $n &RAn alarm sounds and you are escorted back to the Hanger.
+mptransfer $n 7600
+else
+if carryingvnum($n) = 9291
+mea $n &RAn alarm sounds and you are escorted back to the Hanger.
+mptransfer $n 7600
+else
+if carryingvnum($n) = 9344
+mea $n &RAn alarm sounds and you are escorted back to the Hanger.
+mptransfer $n 7600
+else
+if carryingvnum($n) = 9345
+mea $n &RAn alarm sounds and you are escorted back to the Hanger.
+mptransfer $n 7600
+else
+mea $n &zThe light passes over you and finds nothing.
+mea $n &zThe Doors slide open and you're allowed to enter.
+endif
+endif
+endif
+endif
+endif
+endif
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     7602
+Name     Hallway Intersection~
+Sector   inside~
+Flags    indoors~
+Desc     Four hallways converge here, The Main corridor leading to the east and west,
+the southern hallway leading through the Security scanner, and an further on
+to the hanger. And north is one of four miner residency hallways.
+~
+#EXIT
+Direction north~
+ToRoom    7603
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7618
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7601
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7611
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7603
+Name     Corridor A-1~
+Sector   inside~
+Flags    indoors~
+Desc     This cramped hallway is home to the residencies of the miners of MO-III
+and is not kept as clean as the rest of the satellite. The walls here seem
+to have been repolished and the dust of the mines, has at least in some 
+small way been attempted to be cleaned up. Small rooms line the hallway, 
+and from the cramped conditions within them you decide it would be better
+to not go in.
+~
+#EXIT
+Direction north~
+ToRoom    7604
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7602
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7604
+Name     Corridor A-1~
+Sector   inside~
+Flags    indoors~
+Desc     This cramped hallway is home to the residencies of the miners of MO-III
+and is not kept as clean as the rest of the satellite. The walls here seem
+to have been repolished and the dust of the mines, has at least in some 
+small way been attempted to be cleaned up. Small rooms line the hallway, 
+and from the cramped conditions within them you decide it would be better
+to not go in.
+~
+#EXIT
+Direction north~
+ToRoom    7605
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7603
+#ENDEXIT
+
+Reset M 0 7613 1 7604
+#ENDROOM
+
+#ROOM
+Vnum     7605
+Name     Corridor A-1~
+Sector   inside~
+Flags    indoors~
+Desc     This cramped hallway is home to the residencies of the miners of MO-III
+and is not kept as clean as the rest of the satellite. The walls here seem
+to have been repolished and the dust of the mines, has at least in some 
+small way been attempted to be cleaned up. Small rooms line the hallway, 
+and from the cramped conditions within them you decide it would be better
+to not go in.
+~
+#EXIT
+Direction north~
+ToRoom    7606
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7604
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7606
+Name     Corridor A-1~
+Sector   inside~
+Flags    indoors~
+Desc     This cramped hallway is home to the residencies of the miners of MO-III
+and is not kept as clean as the rest of the satellite. The walls here seem
+to have been repolished and the dust of the mines, has at least in some 
+small way been attempted to be cleaned up. Small rooms line the hallway, 
+and from the cramped conditions within them you decide it would be better
+to not go in.
+~
+#EXIT
+Direction north~
+ToRoom    7607
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7605
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7607
+Name     Meeting of Hallways~
+Sector   inside~
+Flags    indoors~
+Desc     Four hallways converge here, The Main corridor leading to the east and west,
+the southern hallway leading through one of the miner residency hallways,
+And to the north is a short hallway leading to the Central Elevator.
+~
+#EXIT
+Direction north~
+ToRoom    7608
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7649
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7606
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7648
+#ENDEXIT
+
+Reset M 0 7613 11 7607
+#ENDROOM
+
+#ROOM
+Vnum     7608
+Name     Short Hallway~
+Sector   inside~
+Flags    indoors~
+Desc     This short hallway looks much the same as the main corridor. White plexisteel
+walls from ceiling to about knee high, where the walls are then a pine wood
+with a coating to keep them from losing their marbled luster.
+~
+#EXIT
+Direction north~
+ToRoom    7609
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7607
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7609
+Name     Before the Elevator~
+Sector   inside~
+Flags    nomob indoors~
+Desc     This short hallway looks much the same as the main corridor. White
+plexisteel walls from ceiling to about knee high, where the walls are then
+a pine wood with a coating to keep them from losing their marbled luster.
+Two large transparisteel doors stand open to the north, leading into the
+elevator.
+~
+#EXIT
+Direction north~
+ToRoom    7610
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7658
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7608
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7657
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7610
+Name     Elevator~
+Sector   inside~
+Flags    nomob indoors~
+Desc     This large elevator was recently cleaned. The carpet is freshly vaccuumed,
+the steel doors shine with a fresh polish, and the redwood smells faintly
+of a fresh forest morning. The control panel to the right of the doors, has
+something posted above it on a plaque.
+~
+#EXDESC
+ExDescKey    plaque panel control~
+ExDesc       /------------------------------------------------------------------------\
+|                                                                        |
+| To Go to the Main Level, simply say "Main Level"                       |
+| To Go to the Mine Level, simply say "Mine Level"                       |
+| To Go to the Command Level, simply say "Command Level"                 |
+|                                                                        |
+| Thank you for using Spartan Electronics Voice Recognition Elevator     |
+| Equipment. If there are any problems with this device, please contact  |
+| our home office.             Model #818653367                          |
+|                                                                        |
+\------------------------------------------------------------------------/
+~
+#ENDEXDESC
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p Main Level~
+Comlist   mea $n &wThe doors slide closed and the elevator jolts into movement. 
+mea $n .
+mea $n ..
+mea $n ...
+mea $n &wThe Elevator comes to a stop, and the doors slide open.
+mea $n &wYou cautiously make your way onto the Main Level of MO-III...
+mptransfer $n 7609
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p Mine Level~
+Comlist   mea $n The doors slide closed and the elevator jolts into movement. 
+mea $n .
+mea $n ..
+mea $n ...
+mea $n The Elevator comes to a stop, and the doors slide open.
+mea $n You cautiously make your way onto the Mine Level of MO-III...
+mptransfer $n 7661
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p Command Level~
+Comlist   mea $n The doors slide closed and the elevator jolts into movement.
+mea $n .
+mea $n ..
+mea $n ...
+mea $n The elevator comes to a stop, and the doors slide open.
+mea $n You cautiously make your way onto the Command Level of MO-III...
+mptrans $n 7718
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     7611
+Name     Main Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     This large hallway is clear of any and all debris from the mines. The walls
+are a white plexisteel from ceiling to about knee high, where they then become
+a wooden substance, most likely pine, and are coated with a substance to keep
+them from losing their luster.
+~
+#EXIT
+Direction east~
+ToRoom    7602
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7612
+#ENDEXIT
+
+Reset M 0 7613 20 7611
+#ENDROOM
+
+#ROOM
+Vnum     7612
+Name     Main Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     This large hallway is clear of any and all debris from the mines. The walls
+are a white plexisteel from ceiling to about knee high, where they then become
+a wooden substance, most likely pine, and are coated with a substance to keep
+them from losing their luster.
+~
+#EXIT
+Direction north~
+ToRoom    7625
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7611
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7613
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7613
+Name     Main Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     This large hallway is clear of any and all debris from the mines. The walls
+are a white plexisteel from ceiling to about knee high, where they then become
+a wooden substance, most likely pine, and are coated with a substance to keep
+them from losing their luster.
+~
+#EXIT
+Direction east~
+ToRoom    7612
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7705
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7614
+#ENDEXIT
+
+Reset M 0 7613 19 7613
+#ENDROOM
+
+#ROOM
+Vnum     7614
+Name     Main Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     This large hallway is clear of any and all debris from the mines. The walls
+are a white plexisteel from ceiling to about knee high, where they then become
+a wooden substance, most likely pine, and are coated with a substance to keep
+them from losing their luster.
+~
+#EXIT
+Direction north~
+ToRoom    7706
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7613
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7615
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7615
+Name     Main Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     This large hallway is clear of any and all debris from the mines. The walls
+are a white plexisteel from ceiling to about knee high, where they then become
+a wooden substance, most likely pine, and are coated with a substance to keep
+them from losing their luster.
+~
+#EXIT
+Direction east~
+ToRoom    7614
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7707
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7616
+#ENDEXIT
+
+Reset M 0 7613 18 7615
+#ENDROOM
+
+#ROOM
+Vnum     7616
+Name     Main Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     This large hallway is clear of any and all debris from the mines. The walls
+are a white plexisteel from ceiling to about knee high, where they then become
+a wooden substance, most likely pine, and are coated with a substance to keep
+them from losing their luster.
+~
+#EXIT
+Direction north~
+ToRoom    7708
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7615
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7617
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7617
+Name     A Bend in the Main Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     The hallway bends to the north and east here and the walls are a white
+plexisteel from ceiling to about knee high, where they then become a
+wooden substance, most likely pine, and are coated with a substance to
+keep them from losing their luster.
+~
+#EXIT
+Direction north~
+ToRoom    7638
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7616
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7709
+#ENDEXIT
+
+Reset M 0 7613 17 7617
+#ENDROOM
+
+#ROOM
+Vnum     7618
+Name     Main Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     This large hallway is clear of any and all debris from the mines. The walls
+are a white plexisteel from ceiling to about knee high, where they then become
+a wooden substance, most likely pine, and are coated with a substance to keep
+them from losing their luster.
+~
+#EXIT
+Direction east~
+ToRoom    7619
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7602
+#ENDEXIT
+
+Reset M 0 7613 2 7618
+#ENDROOM
+
+#ROOM
+Vnum     7619
+Name     Main Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     This large hallway is clear of any and all debris from the mines. The walls
+are a white plexisteel from ceiling to about knee high, where they then become
+a wooden substance, most likely pine, and are coated with a substance to keep
+them from losing their luster.
+~
+#EXIT
+Direction north~
+ToRoom    7629
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7620
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7618
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7620
+Name     Main Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     This large hallway is clear of any and all debris from the mines. The walls
+are a white plexisteel from ceiling to about knee high, where they then become
+a wooden substance, most likely pine, and are coated with a substance to keep
+them from losing their luster.
+~
+#EXIT
+Direction east~
+ToRoom    7621
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7704
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7619
+#ENDEXIT
+
+Reset M 0 7613 3 7620
+#ENDROOM
+
+#ROOM
+Vnum     7621
+Name     Main Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     This large hallway is clear of any and all debris from the mines. The walls
+are a white plexisteel from ceiling to about knee high, where they then become
+a wooden substance, most likely pine, and are coated with a substance to keep
+them from losing their luster.
+~
+#EXIT
+Direction north~
+ToRoom    7703
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7622
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7620
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7622
+Name     Main Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     This large hallway is clear of any and all debris from the mines. The walls
+are a white plexisteel from ceiling to about knee high, where they then become
+a wooden substance, most likely pine, and are coated with a substance to keep
+them from losing their luster.
+~
+#EXIT
+Direction east~
+ToRoom    7623
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7702
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7621
+#ENDEXIT
+
+Reset M 0 7613 4 7622
+#ENDROOM
+
+#ROOM
+Vnum     7623
+Name     Main Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     This large hallway is clear of any and all debris from the mines. The walls
+are a white plexisteel from ceiling to about knee high, where they then become
+a wooden substance, most likely pine, and are coated with a substance to keep
+them from losing their luster.
+~
+#EXIT
+Direction north~
+ToRoom    7701
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7624
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7622
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7624
+Name     A Bend in the Main Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     The hallway bends to the north and west here and the walls are a white
+plexisteel from ceiling to about knee high, where they then become a
+wooden substance, most likely pine, and are coated with a substance to
+keep them from losing their luster.
+~
+#EXIT
+Direction north~
+ToRoom    7633
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7700
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7623
+#ENDEXIT
+
+Reset M 0 7613 5 7624
+#ENDROOM
+
+#ROOM
+Vnum     7625
+Name     Corridor A-2~
+Sector   inside~
+Flags    indoors~
+Desc     This cramped hallway is home to the residencies of the miners of MO-III
+and is not kept as clean as the rest of the satellite. The walls here have
+no luster, and the plexisteel is dull brown color from the dust of the mines.
+Small rooms line the hallway, and from the cramped conditions within them you
+decide it would be better to not go in.
+~
+#EXIT
+Direction north~
+ToRoom    7626
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7612
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7626
+Name     Corridor A-2~
+Sector   inside~
+Flags    indoors~
+Desc     This cramped hallway is home to the residencies of the miners of MO-III
+and is not kept as clean as the rest of the satellite. The walls here have
+no luster, and the plexisteel is dull brown color from the dust of the mines.
+Small rooms line the hallway, and from the cramped conditions within them you
+decide it would be better to not go in.
+~
+#EXIT
+Direction north~
+ToRoom    7627
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7625
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7627
+Name     Corridor A-2~
+Sector   inside~
+Flags    indoors~
+Desc     This cramped hallway is home to the residencies of the miners of MO-III
+and is not kept as clean as the rest of the satellite. The walls here have
+no luster, and the plexisteel is dull brown color from the dust of the mines.
+Small rooms line the hallway, and from the cramped conditions within them you
+decide it would be better to not go in.
+~
+#EXIT
+Direction north~
+ToRoom    7628
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7626
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7628
+Name     Corridor A-2~
+Sector   inside~
+Flags    indoors~
+Desc     This cramped hallway is home to the residencies of the miners of MO-III
+and is not kept as clean as the rest of the satellite. The walls here have
+no luster, and the plexisteel is dull brown color from the dust of the mines.
+Small rooms line the hallway, and from the cramped conditions within them you
+decide it would be better to not go in.
+~
+#EXIT
+Direction north~
+ToRoom    7647
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7627
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7629
+Name     Corridor A-3~
+Sector   inside~
+Flags    indoors~
+Desc     This cramped hallway is home to the residencies of the miners of MO-III
+and is not kept as clean as the rest of the satellite. The walls here have
+no luster, and the plexisteel is dull brown color from the dust of the mines.
+Small rooms line the hallway, and from the cramped conditions within them you
+decide it would be better to not go in.
+~
+#EXIT
+Direction north~
+ToRoom    7630
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7619
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7630
+Name     Corridor A-3~
+Sector   inside~
+Flags    indoors~
+Desc     This cramped hallway is home to the residencies of the miners of MO-III
+and is not kept as clean as the rest of the satellite. The walls here have
+no luster, and the plexisteel is dull brown color from the dust of the mines.
+Small rooms line the hallway, and from the cramped conditions within them you
+decide it would be better to not go in.
+~
+#EXIT
+Direction north~
+ToRoom    7631
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7629
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7631
+Name     Corridor A-3~
+Sector   inside~
+Flags    indoors~
+Desc     This cramped hallway is home to the residencies of the miners of MO-III
+and is not kept as clean as the rest of the satellite. The walls here have
+no luster, and the plexisteel is dull brown color from the dust of the mines.
+Small rooms line the hallway, and from the cramped conditions within them you
+decide it would be better to not go in.
+~
+#EXIT
+Direction north~
+ToRoom    7632
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7630
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7632
+Name     Corridor A-3~
+Sector   inside~
+Flags    indoors~
+Desc     This cramped hallway is home to the residencies of the miners of MO-III
+and is not kept as clean as the rest of the satellite. The walls here have
+no luster, and the plexisteel is dull brown color from the dust of the mines.
+Small rooms line the hallway, and from the cramped conditions within them you
+decide it would be better to not go in.
+~
+#EXIT
+Direction north~
+ToRoom    7650
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7631
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7633
+Name     Main Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     This large hallway is clear of any and all debris from the mines. The walls
+are a white plexisteel from ceiling to about knee high, where they then become
+a wooden substance, most likely pine, and are coated with a substance to keep
+them from losing their luster.
+~
+#EXIT
+Direction north~
+ToRoom    7634
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7699
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7624
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7634
+Name     Main Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     This large hallway is clear of any and all debris from the mines. The walls
+are a white plexisteel from ceiling to about knee high, where they then become
+a wooden substance, most likely pine, and are coated with a substance to keep
+them from losing their luster.
+~
+#EXIT
+Direction north~
+ToRoom    7635
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7633
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7698
+#ENDEXIT
+
+Reset M 0 7613 6 7634
+#ENDROOM
+
+#ROOM
+Vnum     7635
+Name     Main Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     This large hallway is clear of any and all debris from the mines. The walls
+are a white plexisteel from ceiling to about knee high, where they then become
+a wooden substance, most likely pine, and are coated with a substance to keep
+them from losing their luster.
+~
+#EXIT
+Direction north~
+ToRoom    7636
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7697
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7634
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7636
+Name     Main Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     This large hallway is clear of any and all debris from the mines. The walls
+are a white plexisteel from ceiling to about knee high, where they then become
+a wooden substance, most likely pine, and are coated with a substance to keep
+them from losing their luster.
+~
+#EXIT
+Direction north~
+ToRoom    7637
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7635
+#ENDEXIT
+
+Reset M 0 7613 7 7636
+#ENDROOM
+
+#ROOM
+Vnum     7637
+Name     A Bend in the Main Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     The hallway bends to the south and west here and the walls are a white
+plexisteel from ceiling to about knee high, where they then become a
+wooden substance, most likely pine, and are coated with a substance to
+keep them from losing their luster.
+~
+#EXIT
+Direction south~
+ToRoom    7636
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7654
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7638
+Name     Main Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     This large hallway is clear of any and all debris from the mines. The walls
+are a white plexisteel from ceiling to about knee high, where they then become
+a wooden substance, most likely pine, and are coated with a substance to keep
+them from losing their luster.
+~
+#EXIT
+Direction north~
+ToRoom    7639
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7617
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7639
+Name     Main Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     This large hallway is clear of any and all debris from the mines. The walls
+are a white plexisteel from ceiling to about knee high, where they then become
+a wooden substance, most likely pine, and are coated with a substance to keep
+them from losing their luster.
+~
+#EXIT
+Direction north~
+ToRoom    7640
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7638
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7710
+#ENDEXIT
+
+Reset M 0 7613 16 7639
+#ENDROOM
+
+#ROOM
+Vnum     7640
+Name     Main Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     This large hallway is clear of any and all debris from the mines. The walls
+are a white plexisteel from ceiling to about knee high, where they then become
+a wooden substance, most likely pine, and are coated with a substance to keep
+them from losing their luster.
+~
+#EXIT
+Direction north~
+ToRoom    7641
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7711
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7639
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7641
+Name     Main Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     This large hallway is clear of any and all debris from the mines. The walls
+are a white plexisteel from ceiling to about knee high, where they then become
+a wooden substance, most likely pine, and are coated with a substance to keep
+them from losing their luster.
+~
+#EXIT
+Direction north~
+ToRoom    7642
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7640
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7712
+#ENDEXIT
+
+Reset M 0 7613 15 7641
+#ENDROOM
+
+#ROOM
+Vnum     7642
+Name     A Bend in the Main Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     The hallway bends to the south and east here and the walls are a white
+plexisteel from ceiling to about knee high, where they then become a
+wooden substance, most likely pine, and are coated with a substance to
+keep them from losing their luster.
+~
+#EXIT
+Direction north~
+ToRoom    7713
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7643
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7641
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7643
+Name     Main Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     This large hallway is clear of any and all debris from the mines. The walls
+are a white plexisteel from ceiling to about knee high, where they then become
+a wooden substance, most likely pine, and are coated with a substance to keep
+them from losing their luster.
+~
+#EXIT
+Direction east~
+ToRoom    7644
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7714
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7642
+#ENDEXIT
+
+Reset M 0 7613 14 7643
+#ENDROOM
+
+#ROOM
+Vnum     7644
+Name     Main Corridor~
+Sector   inside~
+Flags    nomob indoors~
+Desc     This large hallway is clear of any and all debris from the mines. The walls
+are a white plexisteel from ceiling to about knee high, where they then become
+a wooden substance, most likely pine, and are coated with a substance to keep
+them from losing their luster.
+~
+#EXIT
+Direction north~
+ToRoom    7715
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7645
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7643
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7645
+Name     Main Corridor~
+Sector   inside~
+Flags    nomob indoors~
+Desc     This large hallway is clear of any and all debris from the mines. The walls
+are a white plexisteel from ceiling to about knee high, where they then become
+a wooden substance, most likely pine, and are coated with a substance to keep
+them from losing their luster.
+~
+#EXIT
+Direction east~
+ToRoom    7646
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7716
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7644
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7646
+Name     Main Corridor~
+Sector   inside~
+Flags    nomob indoors~
+Desc     This large hallway is clear of any and all debris from the mines. The walls
+are a white plexisteel from ceiling to about knee high, where they then become
+a wooden substance, most likely pine, and are coated with a substance to keep
+them from losing their luster.
+~
+#EXIT
+Direction north~
+ToRoom    7717
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7647
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7645
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7647
+Name     Main Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     This large hallway is clear of any and all debris from the mines. The walls
+are a white plexisteel from ceiling to about knee high, where they then become
+a wooden substance, most likely pine, and are coated with a substance to keep
+them from losing their luster.
+~
+#EXIT
+Direction north~
+ToRoom    7655
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7648
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7628
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7646
+#ENDEXIT
+
+Reset M 0 7613 12 7647
+#ENDROOM
+
+#ROOM
+Vnum     7648
+Name     Main Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     This large hallway is clear of any and all debris from the mines. The walls
+are a white plexisteel from ceiling to about knee high, where they then become
+a wooden substance, most likely pine, and are coated with a substance to keep
+them from losing their luster.
+~
+#EXIT
+Direction east~
+ToRoom    7607
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7647
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7649
+Name     Main Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     This large hallway is clear of any and all debris from the mines. The walls
+are a white plexisteel from ceiling to about knee high, where they then become
+a wooden substance, most likely pine, and are coated with a substance to keep
+them from losing their luster.
+~
+#EXIT
+Direction east~
+ToRoom    7650
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7607
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7650
+Name     Main Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     This large hallway is clear of any and all debris from the mines. The walls
+are a white plexisteel from ceiling to about knee high, where they then become
+a wooden substance, most likely pine, and are coated with a substance to keep
+them from losing their luster.
+~
+#EXIT
+Direction north~
+ToRoom    7660
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7651
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7632
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7649
+#ENDEXIT
+
+Reset M 0 7613 10 7650
+#ENDROOM
+
+#ROOM
+Vnum     7651
+Name     Main Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     This large hallway is clear of any and all debris from the mines. The walls
+are a white plexisteel from ceiling to about knee high, where they then become
+a wooden substance, most likely pine, and are coated with a substance to keep
+them from losing their luster.
+~
+#EXIT
+Direction east~
+ToRoom    7652
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7650
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7652
+Name     Main Corridor~
+Sector   inside~
+Flags    nomob indoors~
+Desc     This large hallway is clear of any and all debris from the mines. The walls
+are a white plexisteel from ceiling to about knee high, where they then become
+a wooden substance, most likely pine, and are coated with a substance to keep
+them from losing their luster.
+~
+#EXIT
+Direction east~
+ToRoom    7653
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7694
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7651
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7653
+Name     Main Corridor~
+Sector   inside~
+Flags    nomob indoors~
+Desc     This large hallway is clear of any and all debris from the mines. The walls
+are a white plexisteel from ceiling to about knee high, where they then become
+a wooden substance, most likely pine, and are coated with a substance to keep
+them from losing their luster.
+~
+#EXIT
+Direction north~
+ToRoom    7695
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7654
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7652
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7654
+Name     Main Corridor~
+Sector   inside~
+Flags    indoors~
+Desc     This large hallway is clear of any and all debris from the mines. The walls
+are a white plexisteel from ceiling to about knee high, where they then become
+a wooden substance, most likely pine, and are coated with a substance to keep
+them from losing their luster.
+~
+#EXIT
+Direction east~
+ToRoom    7637
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7696
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7653
+#ENDEXIT
+
+Reset M 0 7613 8 7654
+#ENDROOM
+
+#ROOM
+Vnum     7655
+Name     Corridor A-4~
+Sector   inside~
+Flags    indoors~
+Desc     This cramped hallway is home to the residencies of the miners of MO-III
+and is not kept as clean as the rest of the satellite. The walls here have
+no luster, and the plexisteel is dull brown color from the dust of the mines.
+Small rooms line the hallway, and from the cramped conditions within them you
+decide it would be better to not go in.
+~
+#EXIT
+Direction north~
+ToRoom    7656
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7647
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7656
+Name     Corridor A-4~
+Sector   inside~
+Flags    indoors~
+Desc     This cramped hallway is home to the residencies of the miners of MO-III
+and is not kept as clean as the rest of the satellite. The walls here have
+no luster, and the plexisteel is dull brown color from the dust of the mines.
+Small rooms line the hallway, and from the cramped conditions within them you
+decide it would be better to not go in.
+~
+#EXIT
+Direction east~
+ToRoom    7657
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7655
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7657
+Name     Corridor A-4~
+Sector   inside~
+Flags    indoors~
+Desc     This cramped hallway is home to the residencies of the miners of MO-III
+and is not kept as clean as the rest of the satellite. The walls here have
+no luster, and the plexisteel is dull brown color from the dust of the mines.
+Small rooms line the hallway, and from the cramped conditions within them you
+decide it would be better to not go in.
+~
+#EXIT
+Direction east~
+ToRoom    7609
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7656
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7658
+Name     Corridor A-4~
+Sector   inside~
+Flags    indoors~
+Desc     This cramped hallway is home to the residencies of the miners of MO-III
+and is not kept as clean as the rest of the satellite. The walls here have
+no luster, and the plexisteel is dull brown color from the dust of the mines.
+Small rooms line the hallway, and from the cramped conditions within them you
+decide it would be better to not go in.
+~
+#EXIT
+Direction east~
+ToRoom    7659
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7609
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7659
+Name     Corridor A-4~
+Sector   inside~
+Flags    indoors~
+Desc     This cramped hallway is home to the residencies of the miners of MO-III
+and is not kept as clean as the rest of the satellite. The walls here have
+no luster, and the plexisteel is dull brown color from the dust of the mines.
+Small rooms line the hallway, and from the cramped conditions within them you
+decide it would be better to not go in.
+~
+#EXIT
+Direction south~
+ToRoom    7660
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7658
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7660
+Name     Corridor A-4~
+Sector   inside~
+Flags    indoors~
+Desc     This cramped hallway is home to the residencies of the miners of MO-III
+and is not kept as clean as the rest of the satellite. The walls here have
+no luster, and the plexisteel is dull brown color from the dust of the mines.
+Small rooms line the hallway, and from the cramped conditions within them you
+decide it would be better to not go in.
+~
+#EXIT
+Direction north~
+ToRoom    7659
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7650
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7661
+Name     Before the Mines~
+Sector   underground~
+Flags    nomob~
+Desc     This small room looks exactly like the ones upstairs, except what used to
+be white Plexisteel is now a deep brown color from all the Dust, and where
+there would be pine here, is all Plexisteel. The sounds of miners hard at
+work lofts in from the south.
+~
+#EXIT
+Direction north~
+ToRoom    7610
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7662
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7662
+Name     Entrance to the Mines~
+Sector   underground~
+Desc     The only thing to be seen here are roughly hewn tunnels and metal grated
+catwalks leading through the massive mines.far to the south, you think you
+can make out what looks like a refinery of some sort. All around you are
+the sounds of miners hard at work, trying not to be beaten by the White
+Fang Overseers.
+~
+#EXIT
+Direction north~
+ToRoom    7661
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7663
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7663
+Name     Entrance to Shaft Alpha~
+Sector   underground~
+Desc     The roughly hewn Alpha Shaft extends outward here and steps leading off the 
+catwalk lead into the shaft to the east and west. The Catwalk continues on
+towards the other Shafts to the south.
+~
+#EXIT
+Direction north~
+ToRoom    7662
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7667
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7670
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7664
+#ENDEXIT
+
+Reset M 0 7612 3 7663
+#ENDROOM
+
+#ROOM
+Vnum     7664
+Name     Shaft Alpha-1~
+Sector   underground~
+Desc     Miner's line this wide roughly hewn tunnel, swinging their picks at the
+tunnel walls. The dampness in the air, and the dust from the mine assault
+your very senses, and the utter darkness in here certainly doesn't help 
+matters any.
+~
+#EXIT
+Direction east~
+ToRoom    7663
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7665
+#ENDEXIT
+
+Reset M 0 7622 2 7664
+#ENDROOM
+
+#ROOM
+Vnum     7665
+Name     Shaft Alpha-1~
+Sector   underground~
+Desc     Miner's line this wide roughly hewn tunnel, swinging their picks at the
+tunnel walls. The dampness in the air, and the dust from the mine assault
+your very senses, and the utter darkness in here certainly doesn't help 
+matters any.
+~
+#EXIT
+Direction east~
+ToRoom    7664
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7666
+#ENDEXIT
+
+Reset M 0 7621 3 7665
+#ENDROOM
+
+#ROOM
+Vnum     7666
+Name     Shaft Alpha-1~
+Sector   underground~
+Desc     Miner's line this wide roughly hewn tunnel, swinging their picks at the
+tunnel walls. The dampness in the air, and the dust from the mine assault
+your very senses, and the utter darkness in here certainly doesn't help 
+matters any.
+~
+#EXIT
+Direction east~
+ToRoom    7665
+#ENDEXIT
+
+Reset M 0 7622 3 7666
+#ENDROOM
+
+#ROOM
+Vnum     7667
+Name     Shaft Alpha-2~
+Sector   underground~
+Desc     Miner's line this wide roughly hewn tunnel, swinging their picks at the
+tunnel walls. The dampness in the air, and the dust from the mine assault
+your very senses, and the utter darkness in here certainly doesn't help 
+matters any.
+~
+#EXIT
+Direction east~
+ToRoom    7668
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7663
+#ENDEXIT
+
+Reset M 0 7621 1 7667
+#ENDROOM
+
+#ROOM
+Vnum     7668
+Name     Shaft Alpha-2~
+Sector   underground~
+Desc     Miner's line this wide roughly hewn tunnel, swinging their picks at the
+tunnel walls. The dampness in the air, and the dust from the mine assault
+your very senses, and the utter darkness in here certainly doesn't help 
+matters any.
+~
+#EXIT
+Direction east~
+ToRoom    7669
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7667
+#ENDEXIT
+
+Reset M 0 7622 1 7668
+#ENDROOM
+
+#ROOM
+Vnum     7669
+Name     Shaft Alpha-2~
+Sector   underground~
+Desc     Miner's line this wide roughly hewn tunnel, swinging their picks at the
+tunnel walls. The dampness in the air, and the dust from the mine assault
+your very senses, and the utter darkness in here certainly doesn't help 
+matters any.
+~
+#EXIT
+Direction west~
+ToRoom    7668
+#ENDEXIT
+
+Reset M 0 7621 2 7669
+#ENDROOM
+
+#ROOM
+Vnum     7670
+Name     Between Alpha and Beta Shafts~
+Sector   underground~
+Desc     The floor of this tunnel has collapsed beneath the catwalk leaving only the
+catwalk as the main way of traversing this part of the tunnels. A slick
+substance seems to have made it's way onto the catwalk here as well.
+~
+#EXIT
+Direction north~
+ToRoom    7663
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7671
+#ENDEXIT
+
+#MUDPROG
+Progtype  entry_prog~
+Arglist   100~
+Comlist   if ispc($n)
+if rand(35)
+mea $n &OYou loose your footing and slide off the edge of the slick catwalk.
+mea $n &zYou fall several feet and knock your head on the ground.
+mptransfer $n 7724
+mpat $n mea $n &wAs you come to, you notice things are not as they were...
+else
+mea $n &OYou narrowly avoid falling from the catwalk.
+endif
+endif
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     7671
+Name     Entrance to Beta Shaft~
+Sector   underground~
+Desc     The roughly hewn Beta Shaft extends outward here and steps leading off the 
+catwalk lead into the shaft to the east and west. The Catwalk continues on
+towards the other Shafts to the south.
+~
+#EXIT
+Direction north~
+ToRoom    7670
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7676
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7680
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7672
+#ENDEXIT
+
+Reset M 0 7612 2 7671
+#ENDROOM
+
+#ROOM
+Vnum     7672
+Name     Shaft Beta-1~
+Sector   underground~
+Desc     Miner's line this wide roughly hewn tunnel, swinging their picks at the
+tunnel walls. The dampness in the air, and the dust from the mine assault
+your very senses, and the utter darkness in here certainly doesn't help 
+matters any.
+~
+#EXIT
+Direction east~
+ToRoom    7671
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7673
+#ENDEXIT
+
+Reset M 0 7622 6 7672
+#ENDROOM
+
+#ROOM
+Vnum     7673
+Name     Shaft Beta-1~
+Sector   underground~
+Desc     Miner's line this wide roughly hewn tunnel, swinging their picks at the
+tunnel walls. The dampness in the air, and the dust from the mine assault
+your very senses, and the utter darkness in here certainly doesn't help 
+matters any.
+~
+#EXIT
+Direction east~
+ToRoom    7672
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7674
+#ENDEXIT
+
+Reset M 0 7621 6 7673
+#ENDROOM
+
+#ROOM
+Vnum     7674
+Name     Shaft Beta-1~
+Sector   underground~
+Desc     Miner's line this wide roughly hewn tunnel, swinging their picks at the
+tunnel walls. The dampness in the air, and the dust from the mine assault
+your very senses, and the utter darkness in here certainly doesn't help 
+matters any.
+~
+#EXIT
+Direction east~
+ToRoom    7673
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7675
+#ENDEXIT
+
+Reset M 0 7622 7 7674
+#ENDROOM
+
+#ROOM
+Vnum     7675
+Name     Shaft Beta-1~
+Sector   underground~
+Desc     Miner's line this wide roughly hewn tunnel, swinging their picks at the
+tunnel walls. The dampness in the air, and the dust from the mine assault
+your very senses, and the utter darkness in here certainly doesn't help 
+matters any.
+~
+#EXIT
+Direction east~
+ToRoom    7674
+#ENDEXIT
+
+Reset M 0 7621 7 7675
+#ENDROOM
+
+#ROOM
+Vnum     7676
+Name     Shaft Beta-2~
+Sector   underground~
+Desc     Miner's line this wide roughly hewn tunnel, swinging their picks at the
+tunnel walls. The dampness in the air, and the dust from the mine assault
+your very senses, and the utter darkness in here certainly doesn't help 
+matters any.
+~
+#EXIT
+Direction east~
+ToRoom    7677
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7671
+#ENDEXIT
+
+Reset M 0 7622 4 7676
+#ENDROOM
+
+#ROOM
+Vnum     7677
+Name     Shaft Beta-2~
+Sector   underground~
+Desc     Miner's line this wide roughly hewn tunnel, swinging their picks at the
+tunnel walls. The dampness in the air, and the dust from the mine assault
+your very senses, and the utter darkness in here certainly doesn't help 
+matters any.
+~
+#EXIT
+Direction east~
+ToRoom    7678
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7676
+#ENDEXIT
+
+Reset M 0 7621 4 7677
+#ENDROOM
+
+#ROOM
+Vnum     7678
+Name     Shaft Beta-2~
+Sector   underground~
+Desc     Miner's line this wide roughly hewn tunnel, swinging their picks at the
+tunnel walls. The dampness in the air, and the dust from the mine assault
+your very senses, and the utter darkness in here certainly doesn't help 
+matters any.
+~
+#EXIT
+Direction east~
+ToRoom    7679
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7677
+#ENDEXIT
+
+Reset M 0 7622 5 7678
+#ENDROOM
+
+#ROOM
+Vnum     7679
+Name     Shaft Beta-2~
+Sector   underground~
+Desc     Miner's line this wide roughly hewn tunnel, swinging their picks at the
+tunnel walls. The dampness in the air, and the dust from the mine assault
+your very senses, and the utter darkness in here certainly doesn't help 
+matters any.
+~
+#EXIT
+Direction west~
+ToRoom    7678
+#ENDEXIT
+
+Reset M 0 7621 5 7679
+#ENDROOM
+
+#ROOM
+Vnum     7680
+Name     Between Beta and Gamme Shafts~
+Sector   underground~
+Desc     This section of the tunnel seems to be in pretty stable shape compared to
+the last section between shafts. The sound of the work going on in Gamma
+Shaft sounds muffled, almost as though they are a great distance off..
+unlike the shafts.
+~
+#EXIT
+Direction north~
+ToRoom    7671
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7681
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7681
+Name     Entrance to Gamma Shaft~
+Sector   underground~
+Desc     The roughly hewn Gamma Shaft extends outward here and steps leading off the 
+catwalk lead into the shaft to the southeast and southwest. The Catwalk 
+continures towards the refinery to the south.
+~
+#EXIT
+Direction north~
+ToRoom    7680
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7682
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    7688
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    7683
+#ENDEXIT
+
+Reset M 0 7612 1 7681
+#ENDROOM
+
+#ROOM
+Vnum     7682
+Name     Mineral Refinery~
+Sector   underground~
+Flags    nomob~
+Desc     The Refinery here looks much the same as the installation below which it sits.
+The walls bear that same White Plexisteel and lack of pine footboards as the
+entrance to the mines, while the ship docked here to carry the refined ore away
+does not resemble any normal ore ship you've ever seen.
+~
+#EXIT
+Direction north~
+ToRoom    7681
+#ENDEXIT
+
+#EXIT
+Direction somewhere~
+ToRoom    7693
+Flags     hidden can_enter~
+#ENDEXIT
+
+Reset M 0 7603 1 7682
+Reset O 0 7600 1 7682
+#ENDROOM
+
+#ROOM
+Vnum     7683
+Name     Gamma Shaft~
+Sector   underground~
+Desc     Miner's line this wide roughly hewn tunnel, swinging their picks at the
+tunnel walls. The dampness in the air, and the dust from the mine assault
+your very senses, and the utter darkness in here certainly doesn't help 
+matters any.
+~
+#EXIT
+Direction west~
+ToRoom    7684
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    7681
+#ENDEXIT
+
+Reset M 0 7622 8 7683
+#ENDROOM
+
+#ROOM
+Vnum     7684
+Name     Gamma Shaft~
+Sector   underground~
+Desc     Miner's line this wide roughly hewn tunnel, swinging their picks at the
+tunnel walls. The dampness in the air, and the dust from the mine assault
+your very senses, and the utter darkness in here certainly doesn't help 
+matters any.
+~
+#EXIT
+Direction east~
+ToRoom    7683
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7685
+#ENDEXIT
+
+Reset M 0 7604 1 7684
+Reset M 0 7621 8 7684
+#ENDROOM
+
+#ROOM
+Vnum     7685
+Name     Gamma Shaft~
+Sector   underground~
+Desc     Miner's line this wide roughly hewn tunnel, swinging their picks at the
+tunnel walls. The dampness in the air, and the dust from the mine assault
+your very senses, and the utter darkness in here certainly doesn't help 
+matters any.
+~
+#EXIT
+Direction east~
+ToRoom    7684
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7686
+#ENDEXIT
+
+Reset M 0 7622 9 7685
+#ENDROOM
+
+#ROOM
+Vnum     7686
+Name     Gamma Shaft~
+Sector   underground~
+Desc     Miner's line this wide roughly hewn tunnel, swinging their picks at the
+tunnel walls. The dampness in the air, and the dust from the mine assault
+your very senses, and the utter darkness in here certainly doesn't help 
+matters any.
+~
+#EXIT
+Direction east~
+ToRoom    7685
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7687
+#ENDEXIT
+
+Reset M 0 7621 9 7686
+#ENDROOM
+
+#ROOM
+Vnum     7687
+Name     Gamma Shaft~
+Sector   underground~
+Desc     Miner's line this wide roughly hewn tunnel, swinging their picks at the
+tunnel walls. The dampness in the air, and the dust from the mine assault
+your very senses, and the utter darkness in here certainly doesn't help 
+matters any.
+~
+#EXIT
+Direction east~
+ToRoom    7686
+#ENDEXIT
+
+Reset M 0 7622 10 7687
+#ENDROOM
+
+#ROOM
+Vnum     7688
+Name     Gamma Shaft~
+Sector   underground~
+Desc     Miner's line this wide roughly hewn tunnel, swinging their picks at the
+tunnel walls. The dampness in the air, and the dust from the mine assault
+your very senses, and the utter darkness in here certainly doesn't help 
+matters any.
+~
+#EXIT
+Direction east~
+ToRoom    7689
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    7681
+#ENDEXIT
+
+Reset M 0 7621 10 7688
+#ENDROOM
+
+#ROOM
+Vnum     7689
+Name     Gamma Shaft~
+Sector   underground~
+Desc     Miner's line this wide roughly hewn tunnel, swinging their picks at the
+tunnel walls. The dampness in the air, and the dust from the mine assault
+your very senses, and the utter darkness in here certainly doesn't help 
+matters any.
+~
+#EXIT
+Direction east~
+ToRoom    7690
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7688
+#ENDEXIT
+
+Reset M 0 7622 11 7689
+#ENDROOM
+
+#ROOM
+Vnum     7690
+Name     Gamma Shaft~
+Sector   underground~
+Desc     Miner's line this wide roughly hewn tunnel, swinging their picks at the
+tunnel walls. The dampness in the air, and the dust from the mine assault
+your very senses, and the utter darkness in here certainly doesn't help 
+matters any.
+~
+#EXIT
+Direction east~
+ToRoom    7691
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7689
+#ENDEXIT
+
+Reset M 0 7621 11 7690
+#ENDROOM
+
+#ROOM
+Vnum     7691
+Name     Gamma Shaft~
+Sector   underground~
+Desc     Miner's line this wide roughly hewn tunnel, swinging their picks at the
+tunnel walls. The dampness in the air, and the dust from the mine assault
+your very senses, and the utter darkness in here certainly doesn't help 
+matters any.
+~
+#EXIT
+Direction east~
+ToRoom    7692
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7690
+#ENDEXIT
+
+Reset M 0 7605 1 7691
+Reset M 0 7622 12 7691
+#ENDROOM
+
+#ROOM
+Vnum     7692
+Name     Gamma Shaft~
+Sector   underground~
+Desc     Miner's line this wide roughly hewn tunnel, swinging their picks at the
+tunnel walls. The dampness in the air, and the dust from the mine assault
+your very senses, and the utter darkness in here certainly doesn't help 
+matters any.
+~
+#EXIT
+Direction west~
+ToRoom    7691
+#ENDEXIT
+
+Reset M 0 7621 12 7692
+#ENDROOM
+
+#ROOM
+Vnum     7693
+Name     Cargo Section of the Ariadne~
+Sector   inside~
+Flags    nomob indoors~
+Desc     The massive cargo bay of the frigate has been converted into a sort of home
+away from home for the miners of MO-III. The Maguanac Corps have every 
+intention of taking these miners back to their families from which the White
+Fang kidnapped them.
+~
+#EXIT
+Direction south~
+ToRoom    7723
+#ENDEXIT
+
+#EXIT
+Direction somewhere~
+ToRoom    7682
+Flags     hidden can_leave~
+#ENDEXIT
+
+Reset M 0 7602 1 7693
+  Reset E 1 7647 1 13
+#ENDROOM
+
+#ROOM
+Vnum     7694
+Name     White Fang Officers Quarters~
+Sector   inside~
+Flags    nomob~
+Desc     These lavish quarters are much better off than those of the lower members of
+the militia group. Small computer terminals are set up on desks beside the
+beds with egyptian cotton sheets. A trunk rests at the foot of the bed with
+a rather secure looking lock holding it closed, and a bathroom can be seen
+through a door in the southeast corner of the room.
+~
+#EXIT
+Direction north~
+ToRoom    7652
+#ENDEXIT
+
+Reset M 0 7610 1 7694
+#ENDROOM
+
+#ROOM
+Vnum     7695
+Name     White Fang Officers Quarters~
+Sector   inside~
+Flags    nomob indoors~
+Desc     These lavish quarters are much better off than those of the lower members of
+the militia group. Small computer terminals are set up on desks beside the
+beds with egyptian cotton sheets. A trunk rests at the foot of the bed with
+a rather secure looking lock holding it closed, and a bathroom can be seen
+through a door in the southeast corner of the room.
+~
+#EXIT
+Direction south~
+ToRoom    7653
+#ENDEXIT
+
+Reset M 0 7611 1 7695
+  Reset E 1 7611 1 16
+#ENDROOM
+
+#ROOM
+Vnum     7696
+Name     MO-III Mess Hall~
+Sector   inside~
+Flags    indoors~
+Desc     This massive room is filled with tables for the soldiers to eat at. The noise
+is almost an unbearable cacaughony, And the smell of the food reminds of your
+old high school cafeteria.
+~
+#EXIT
+Direction north~
+ToRoom    7654
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7697
+Name     White Fang Crew Quarters~
+Sector   inside~
+Flags    indoors~
+Desc     This small room is home to several members of the White Fang that currently
+control this instalation. The room is bare save for a couple beds, a few trunks
+for them to store their personal items in, and a small bathroom near the back.
+~
+#EXIT
+Direction west~
+ToRoom    7635
+#ENDEXIT
+
+Reset M 0 7614 1 7697
+#ENDROOM
+
+#ROOM
+Vnum     7698
+Name     White Fang Crew Quarters~
+Sector   inside~
+Flags    indoors~
+Desc     This small room is home to several members of the White Fang that currently
+control this instalation. The room is bare save for a couple beds, a few trunks
+for them to store their personal items in, and a small bathroom near the back.
+~
+#EXIT
+Direction east~
+ToRoom    7634
+#ENDEXIT
+
+Reset M 0 7615 1 7698
+#ENDROOM
+
+#ROOM
+Vnum     7699
+Name     White Fang Crew Quarters~
+Sector   inside~
+Flags    indoors~
+Desc     This small room is home to several members of the White Fang that currently
+control this instalation. The room is bare save for a couple beds, a few trunks
+for them to store their personal items in, and a small bathroom near the back.
+~
+#EXIT
+Direction west~
+ToRoom    7633
+#ENDEXIT
+
+Reset M 0 7614 2 7699
+#ENDROOM
+
+#ROOM
+Vnum     7700
+Name     White Fang Crew Quarters~
+Sector   inside~
+Flags    indoors~
+Desc     This small room is home to several members of the White Fang that currently
+control this instalation. The room is bare save for a couple beds, a few trunks
+for them to store their personal items in, and a small bathroom near the back.
+~
+#EXIT
+Direction north~
+ToRoom    7624
+#ENDEXIT
+
+Reset M 0 7615 2 7700
+#ENDROOM
+
+#ROOM
+Vnum     7701
+Name     White Fang Crew Quarters~
+Sector   inside~
+Flags    indoors~
+Desc     This small room is home to several members of the White Fang that currently
+control this instalation. The room is bare save for a couple beds, a few trunks
+for them to store their personal items in, and a small bathroom near the back.
+~
+#EXIT
+Direction south~
+ToRoom    7623
+#ENDEXIT
+
+Reset M 0 7614 3 7701
+#ENDROOM
+
+#ROOM
+Vnum     7702
+Name     White Fang Crew Quarters~
+Sector   inside~
+Flags    indoors~
+Desc     This small room is home to several members of the White Fang that currently
+control this instalation. The room is bare save for a couple beds, a few trunks
+for them to store their personal items in, and a small bathroom near the back.
+~
+#EXIT
+Direction north~
+ToRoom    7622
+#ENDEXIT
+
+Reset M 0 7615 3 7702
+#ENDROOM
+
+#ROOM
+Vnum     7703
+Name     White Fang Crew Quarters~
+Sector   inside~
+Flags    indoors~
+Desc     This small room is home to several members of the White Fang that currently
+control this instalation. The room is bare save for a couple beds, a few trunks
+for them to store their personal items in, and a small bathroom near the back.
+~
+#EXIT
+Direction south~
+ToRoom    7621
+#ENDEXIT
+
+Reset M 0 7614 4 7703
+#ENDROOM
+
+#ROOM
+Vnum     7704
+Name     White Fang Crew Quarters~
+Sector   inside~
+Flags    indoors~
+Desc     This small room is home to several members of the White Fang that currently
+control this instalation. The room is bare save for a couple beds, a few trunks
+for them to store their personal items in, and a small bathroom near the back.
+~
+#EXIT
+Direction north~
+ToRoom    7620
+#ENDEXIT
+
+Reset M 0 7615 4 7704
+#ENDROOM
+
+#ROOM
+Vnum     7705
+Name     White Fang Crew Quarters~
+Sector   inside~
+Flags    indoors~
+Desc     This small room is home to several members of the White Fang that currently
+control this instalation. The room is bare save for a couple beds, a few trunks
+for them to store their personal items in, and a small bathroom near the back.
+~
+#EXIT
+Direction north~
+ToRoom    7613
+#ENDEXIT
+
+Reset M 0 7614 5 7705
+#ENDROOM
+
+#ROOM
+Vnum     7706
+Name     White Fang Crew Quarters~
+Sector   inside~
+Flags    indoors~
+Desc     This small room is home to several members of the White Fang that currently
+control this instalation. The room is bare save for a couple beds, a few trunks
+for them to store their personal items in, and a small bathroom near the back.
+~
+#EXIT
+Direction south~
+ToRoom    7614
+#ENDEXIT
+
+Reset M 0 7613 20 7706
+Reset M 0 7615 5 7706
+#ENDROOM
+
+#ROOM
+Vnum     7707
+Name     White Fang Crew Quarters~
+Sector   inside~
+Flags    indoors~
+Desc     This small room is home to several members of the White Fang that currently
+control this instalation. The room is bare save for a couple beds, a few trunks
+for them to store their personal items in, and a small bathroom near the back.
+~
+#EXIT
+Direction north~
+ToRoom    7615
+#ENDEXIT
+
+Reset M 0 7614 6 7707
+#ENDROOM
+
+#ROOM
+Vnum     7708
+Name     White Fang Crew Quarters~
+Sector   inside~
+Flags    indoors~
+Desc     This small room is home to several members of the White Fang that currently
+control this instalation. The room is bare save for a couple beds, a few trunks
+for them to store their personal items in, and a small bathroom near the back.
+~
+#EXIT
+Direction south~
+ToRoom    7616
+#ENDEXIT
+
+Reset M 0 7615 6 7708
+#ENDROOM
+
+#ROOM
+Vnum     7709
+Name     White Fang Crew Quarters~
+Sector   inside~
+Flags    indoors~
+Desc     This small room is home to several members of the White Fang that currently
+control this instalation. The room is bare save for a couple beds, a few trunks
+for them to store their personal items in, and a small bathroom near the back.
+~
+#EXIT
+Direction east~
+ToRoom    7617
+#ENDEXIT
+
+Reset M 0 7614 7 7709
+#ENDROOM
+
+#ROOM
+Vnum     7710
+Name     White Fang Crew Quarters~
+Sector   inside~
+Flags    indoors~
+Desc     This small room is home to several members of the White Fang that currently
+control this instalation. The room is bare save for a couple beds, a few trunks
+for them to store their personal items in, and a small bathroom near the back.
+~
+#EXIT
+Direction east~
+ToRoom    7639
+#ENDEXIT
+
+Reset M 0 7615 7 7710
+#ENDROOM
+
+#ROOM
+Vnum     7711
+Name     White Fang Crew Quarters~
+Sector   inside~
+Flags    indoors~
+Desc     This small room is home to several members of the White Fang that currently
+control this instalation. The room is bare save for a couple beds, a few trunks
+for them to store their personal items in, and a small bathroom near the back.
+~
+#EXIT
+Direction west~
+ToRoom    7640
+#ENDEXIT
+
+Reset M 0 7614 8 7711
+#ENDROOM
+
+#ROOM
+Vnum     7712
+Name     White Fang Crew Quarters~
+Sector   inside~
+Flags    indoors~
+Desc     This small room is home to several members of the White Fang that currently
+control this instalation. The room is bare save for a couple beds, a few trunks
+for them to store their personal items in, and a small bathroom near the back.
+~
+#EXIT
+Direction east~
+ToRoom    7641
+#ENDEXIT
+
+Reset M 0 7615 8 7712
+#ENDROOM
+
+#ROOM
+Vnum     7713
+Name     White Fang Enlisted Lounge~
+Sector   inside~
+Flags    indoors~
+Desc     This small lounge has been prepared for the enlisted members of the White Fang
+Several furnishings litter the room from leather couches to leather armchairs,
+a vending machine takes up the west wall, a sign on it reads "Enlisted Only."
+~
+#EXIT
+Direction south~
+ToRoom    7642
+#ENDEXIT
+
+Reset O 0 7602 1 7713
+#ENDROOM
+
+#ROOM
+Vnum     7714
+Name     MO-III Medical Center~
+Sector   inside~
+Flags    indoors heal~
+Desc     This lavish medical center is equipped with all the best of everything. MRI
+machines, CT Scanners, Everything. The White Fang spared no expense at
+preparing this installation for their members.
+~
+#EXIT
+Direction north~
+ToRoom    7643
+#ENDEXIT
+
+Reset M 0 7620 1 7714
+#ENDROOM
+
+#ROOM
+Vnum     7715
+Name     White Fang Officers Quarters~
+Sector   inside~
+Flags    nomob indoors~
+Desc     These lavish quarters are much better off than those of the lower members of
+the militia group. Small computer terminals are set up on desks beside the
+beds with egyptian cotton sheets. A trunk rests at the foot of the bed with
+a rather secure looking lock holding it closed, and a bathroom can be seen
+through a door in the southeast corner of the room.
+~
+#EXIT
+Direction south~
+ToRoom    7644
+#ENDEXIT
+
+Reset M 0 7609 1 7715
+#ENDROOM
+
+#ROOM
+Vnum     7716
+Name     White Fang Officers Quarters~
+Sector   inside~
+Flags    nomob indoors~
+Desc     These lavish quarters are much better off than those of the lower members of
+the militia group. Small computer terminals are set up on desks beside the
+beds with egyptian cotton sheets. A trunk rests at the foot of the bed with
+a rather secure looking lock holding it closed, and a bathroom can be seen
+through a door in the southeast corner of the room.
+~
+#EXIT
+Direction north~
+ToRoom    7645
+#ENDEXIT
+
+Reset M 0 7608 1 7716
+#ENDROOM
+
+#ROOM
+Vnum     7717
+Name     White Fang Officers Quarters~
+Sector   inside~
+Flags    nomob indoors~
+Desc     These lavish quarters are much better off than those of the lower members of
+the militia group. Small computer terminals are set up on desks beside the
+beds with egyptian cotton sheets. A trunk rests at the foot of the bed with
+a rather secure looking lock holding it closed, and a bathroom can be seen
+through a door in the southeast corner of the room.
+~
+#EXIT
+Direction south~
+ToRoom    7646
+#ENDEXIT
+
+Reset M 0 7607 1 7717
+  Reset E 1 7608 1 9
+#ENDROOM
+
+#ROOM
+Vnum     7718
+Name     Before the Command Deck~
+Sector   inside~
+Flags    indoors~
+Desc     This small lounge seems to be kept cleaner than the rest of the installation.
+Several furnishings have been placed here, along with a vending machine that
+reads "Officers Only." A large transparisteel door leads to the north, but 
+unlike the two to the south for the elevator, this one is clased, and from the
+looks of the keycard reader beside it, locked, securely.
+~
+#EXIT
+Direction north~
+ToRoom    7719
+Key       7601
+Flags     isdoor closed locked pickproof~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7610
+#ENDEXIT
+
+Reset M 0 7619 1 7718
+Reset O 0 7602 1 7718
+Reset D 0 7718 0 2
+#ENDROOM
+
+#ROOM
+Vnum     7719
+Name     MO-III Command and Control Station~
+Sector   inside~
+Flags    indoors~
+Desc     This is the Command Station for the entire satellite. From here, the Deck
+Officer can give orders, and relay messages to the entire station. There
+appear to be no transparisteel windows normally situated in the bridges of
+ships, instead there are Holographic video projections of the surrounding
+space displayed at the four stations visible from this spot.
+~
+#EXIT
+Direction north~
+ToRoom    7720
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7722
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7718
+Key       7601
+Flags     isdoor closed locked pickproof~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7721
+#ENDEXIT
+
+Reset M 0 7606 1 7719
+Reset D 0 7719 2 2
+#ENDROOM
+
+#ROOM
+Vnum     7720
+Name     MO-III Piloting and Manuevers Station~
+Sector   inside~
+Flags    indoors~
+Desc     This Station is completely the opposite of the other stations here. Two chairs
+and six consols make up the Pilot and Co-Pilot sections of the station. Each 
+station has three consols to monitor the different aspects of flight, the view
+screens here show very little activity in the surrounding space.
+~
+#EXIT
+Direction south~
+ToRoom    7719
+#ENDEXIT
+
+Reset M 0 7616 1 7720
+#ENDROOM
+
+#ROOM
+Vnum     7721
+Name     MO-III Defensive Weapons Station~
+Sector   inside~
+Flags    indoors~
+Desc     This station is much like the Command Station to the east, except this station
+is devoted solely to the defense of the installation. Several seperate
+targetting computers, and monitors line the 4 consols here. Everything seems
+to be a least a little quiet at the moment.
+~
+#EXIT
+Direction east~
+ToRoom    7719
+#ENDEXIT
+
+Reset M 0 7618 1 7721
+#ENDROOM
+
+#ROOM
+Vnum     7722
+Name     MO-III Navigational Control Station~
+Sector   inside~
+Flags    indoors~
+Desc     This station is much like the Command Station to the east, except this station
+is devoted solely to the navigation of the installation. Several seperate
+computers, and monitors line the 4 consols here. Everything seems to be a 
+little under used at the moment.
+~
+#EXIT
+Direction west~
+ToRoom    7719
+#ENDEXIT
+
+Reset M 0 7617 1 7722
+#ENDROOM
+
+#ROOM
+Vnum     7723
+Name     Cockpit of the Ariadne~
+Sector   inside~
+Flags    nomob indoors~
+Desc     This is the cockpit of the Frigate Ariadne. It's small crapped space only
+allows for five people to fit here comfortably. The ship is currently docked
+but ready at any time to launch and return the miners to their homes.
+~
+#EXIT
+Direction north~
+ToRoom    7693
+#ENDEXIT
+
+Reset M 0 7601 1 7723
+#ENDROOM
+
+#ROOM
+Vnum     7724
+Name     Lost Within Some Twisting Tunnels~
+Sector   underground~
+Desc     You seem to have fallen into a massive complex of tunnels beaneath the mine
+shafts. All around you are massive stalagmites, and stalagtites. The chilling
+feeling you could have landed on any of them fills you mind with dread. As you
+look around, you notice that tunnels lead off in all directions and most seem
+to loop around on themselves.
+~
+#EXIT
+Direction north~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    7725
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    7724
+#ENDEXIT
+
+Reset O 0 7607 1 7724
+#EXDESC
+ExDescKey    scribbles scribbled scribble wall~
+ExDesc       If you've come to find the key,
+be aware you may not find me,
+If you truely want to try,
+You had better have one keen eye.
+ 
+tsaehtron
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     7725
+Name     Lost Within Some Twisting Tunnels~
+Sector   underground~
+Desc     The tunnels continue here, twisting and winding all around, while several
+pieces of rubble have been seemingly piled around the room, while several
+large stalagmites have toppled over here and there, A light, cold, damp, 
+breeze, flows through the oppressive darkness of the caves, carrying with it
+the sound of rocks falling somewhere nearby.
+~
+#EXIT
+Direction north~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    7726
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXDESC
+ExDescKey    stalagmite~
+ExDesc       This massive stalagmite has toppled over and oddly it seems to point toward
+the southeast tunnel.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     7726
+Name     Lost Within Some Twisting Tunnels~
+Sector   underground~
+Desc     The tunnels continue here, twisting and winding all around, while several
+pieces of rubble have been seemingly piled around the room, while several
+large stalagmites have toppled over here and there, A light, cold, damp, 
+breeze, flows through the oppressive darkness of the caves, carrying with it
+the sound of rocks falling somewhere nearby.
+~
+#EXIT
+Direction north~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    7727
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXDESC
+ExDescKey    rubble~
+ExDesc       This rather large pile of rubble has been piled on both sides of the
+northwest tunnel.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     7727
+Name     Lost Within Some Twisting Tunnels~
+Sector   underground~
+Desc     The tunnels continue here, twisting and winding all around, while several
+pieces of rubble have been seemingly piled around the room, while several
+large stalagmites have toppled over here and there, A light, cold, damp, 
+breeze, flows through the oppressive darkness of the caves, carrying with it
+the sound of rocks falling somewhere nearby.
+~
+#EXIT
+Direction north~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    7728
+#ENDEXIT
+
+#MUDPROG
+Progtype  rand_prog~
+Arglist   5~
+Comlist   mpe &zThe sound of a falling stalagtite echoes in from the southwest.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     7728
+Name     Lost Within Some Twisting Tunnels~
+Sector   underground~
+Desc     The tunnels continue here, twisting and winding all around, while several
+pieces of rubble have been seemingly piled around the room, while several
+large stalagmites have toppled over here and there, A light, cold, damp, 
+breeze, flows through the oppressive darkness of the caves, carrying with it
+the sound of rocks falling somewhere nearby.
+~
+#EXIT
+Direction north~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7729
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXDESC
+ExDescKey    rocks~
+ExDesc       These small rocks have been places here in the shape of an "E" and oddly
+enough don't seem to budge when you poke at them.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     7729
+Name     Lost Within Some Twisting Tunnels~
+Sector   underground~
+Desc     The tunnels continue here, twisting and winding all around, while several
+pieces of rubble have been seemingly piled around the room, while several
+large stalagmites have toppled over here and there, A light, cold, damp, 
+breeze, flows through the oppressive darkness of the caves, carrying with it
+the sound of rocks falling somewhere nearby.
+~
+#EXIT
+Direction north~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    7730
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXDESC
+ExDescKey    pile~
+ExDesc       This small pile of what looks like dirt or sand, has been pushed up against
+the side of the southeast tunnel.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     7730
+Name     Lost Within Some Twisting Tunnels~
+Sector   underground~
+Desc     The tunnels continue here, twisting and winding all around, while several
+pieces of rubble have been seemingly piled around the room, while several
+large stalagmites have toppled over here and there, A light, cold, damp, 
+breeze, flows through the oppressive darkness of the caves, carrying with it
+the sound of rocks falling somewhere nearby.
+~
+#EXIT
+Direction north~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7731
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    7724
+#ENDEXIT
+
+#MUDPROG
+Progtype  rand_prog~
+Arglist   5~
+Comlist   mpe &wA little tiney mouse scampers off down the tunnel to the west.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     7731
+Name     Lost Within Some Twisting Tunnels~
+Sector   underground~
+Desc     The tunnels continue here, twisting and winding all around, while several
+pieces of rubble have been seemingly piled around the room, while several
+large stalagmites have toppled over here and there, A light, cold, damp, 
+breeze, flows through the oppressive darkness of the caves, carrying with it
+the sound of rocks falling somewhere nearby.
+~
+#EXIT
+Direction north~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7732
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXDESC
+ExDescKey    stalagmite~
+ExDesc       This small stalagmite toppled over after what looks like something collided
+with it forcing it to point at the western tunnel.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     7732
+Name     Lost Within Some Twisting Tunnels~
+Sector   underground~
+Desc     The tunnels continue here, twisting and winding all around, while several
+pieces of rubble have been seemingly piled around the room, while several
+large stalagmites have toppled over here and there, A light, cold, damp, 
+breeze, flows through the oppressive darkness of the caves, carrying with it
+the sound of rocks falling somewhere nearby.
+~
+#EXIT
+Direction north~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    7733
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXDESC
+ExDescKey    pile~
+ExDesc       A small pile of rocks have been placed carefully beside the southeast tunnel
+as though someone was trying to mark something important.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     7733
+Name     Lost Within Some Twisting Tunnels~
+Sector   underground~
+Desc     The tunnels continue here, twisting and winding all around, while several
+pieces of rubble have been seemingly piled around the room, while several
+large stalagmites have toppled over here and there, A light, cold, damp, 
+breeze, flows through the oppressive darkness of the caves, carrying with it
+the sound of rocks falling somewhere nearby.
+~
+#EXIT
+Direction north~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7734
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXDESC
+ExDescKey    rubble~
+ExDesc       This rubble has been cleared away from around the southern exit, allowing
+for clear travel down that tunnel.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     7734
+Name     Lost Within Some Twisting Tunnels~
+Sector   underground~
+Desc     The tunnels continue here, twisting and winding all around, while several
+pieces of rubble have been seemingly piled around the room, while several
+large stalagmites have toppled over here and there, A light, cold, damp, 
+breeze, flows through the oppressive darkness of the caves, carrying with it
+the sound of rocks falling somewhere nearby.
+~
+#EXIT
+Direction north~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    7735
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXDESC
+ExDescKey    rocks~
+ExDesc       A pair of strange, out of place rocks stand on either side of the southeast
+tunnel.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     7735
+Name     Lost Within Some Twisting Tunnels~
+Sector   underground~
+Desc     The tunnels continue here, twisting and winding all around, while several
+pieces of rubble have been seemingly piled around the room, while several
+large stalagmites have toppled over here and there, A light, cold, damp, 
+breeze, flows through the oppressive darkness of the caves, carrying with it
+the sound of rocks falling somewhere nearby.
+~
+#EXIT
+Direction north~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    7736
+#ENDEXIT
+
+#MUDPROG
+Progtype  rand_prog~
+Arglist   5~
+Comlist   mpe &zThe darkness of the tunnels seems to deepen immensely to the southwest.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     7736
+Name     Lost Within Some Twisting Tunnels~
+Sector   underground~
+Desc     The tunnels continue here, twisting and winding all around, while several
+pieces of rubble have been seemingly piled around the room, while several
+large stalagmites have toppled over here and there, A light, cold, damp, 
+breeze, flows through the oppressive darkness of the caves, carrying with it
+the sound of rocks falling somewhere nearby.
+~
+#EXIT
+Direction north~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    7737
+#ENDEXIT
+
+#EXDESC
+ExDescKey    rubble~
+ExDesc       This large pile of rubble has been pushed back away from the southwest
+tunnel, so that people can squeeze by.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     7737
+Name     Lost Within Some Twisting Tunnels~
+Sector   underground~
+Desc     The tunnels continue here, twisting and winding all around, while several
+pieces of rubble have been seemingly piled around the room, while several
+large stalagmites have toppled over here and there, A light, cold, damp, 
+breeze, flows through the oppressive darkness of the caves, carrying with it
+the sound of rocks falling somewhere nearby.
+~
+#EXIT
+Direction north~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    7738
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXDESC
+ExDescKey    stalagmite~
+ExDesc       This stalagmite is titanic, and must be thousands of years old. It seems to
+almost be protecting the northwest tunnel from something.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     7738
+Name     Lost Within Some Twisting Tunnels~
+Sector   underground~
+Desc     The tunnels continue here, twisting and winding all around, while several
+pieces of rubble have been seemingly piled around the room, while several
+large stalagmites have toppled over here and there, A light, cold, damp, 
+breeze, flows through the oppressive darkness of the caves, carrying with it
+the sound of rocks falling somewhere nearby.
+~
+#EXIT
+Direction north~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    7739
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    7724
+#ENDEXIT
+
+#MUDPROG
+Progtype  rand_prog~
+Arglist   5~
+Comlist   mpe &OA massive bat flies, screeching and squeeling in from the northeast.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     7739
+Name     Lost Within Some Twisting Tunnels~
+Sector   underground~
+Desc     The tunnels continue here, twisting and winding all around, while several
+pieces of rubble have been seemingly piled around the room, while several
+large stalagmites have toppled over here and there, A light, cold, damp, 
+breeze, flows through the oppressive darkness of the caves, carrying with it
+the sound of rocks falling somewhere nearby.
+~
+#EXIT
+Direction north~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    7740
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    7724
+#ENDEXIT
+
+#MUDPROG
+Progtype  entry_prog~
+Arglist   100~
+Comlist   mpe &WDisturbed by your entry, Thousands of bats take flight screeching and
+mpe &Wsqueeling, and fly away out the northwest tunnel.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     7740
+Name     Lost Within Some Twisting Tunnels~
+Sector   underground~
+Desc     The tunnels continue here, twisting and winding all around, while several
+pieces of rubble have been seemingly piled around the room, while several
+large stalagmites have toppled over here and there, A light, cold, damp, 
+breeze, flows through the oppressive darkness of the caves, carrying with it
+the sound of rocks falling somewhere nearby.
+~
+#EXIT
+Direction north~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    7741
+#ENDEXIT
+
+#EXDESC
+ExDescKey    stalagtite~
+ExDesc       This large stalagtite would have certainly killed you had it hit you,
+thankfully it missed, but oddly it seems to point to the southwest.
+~
+#ENDEXDESC
+
+#MUDPROG
+Progtype  entry_prog~
+Arglist   100~
+Comlist   mpe &RAs you Enter, a Stalagtite falls from the ceiling narrowly missing you.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     7741
+Name     Lost Within Some Twisting Tunnels~
+Sector   underground~
+Desc     The tunnels continue here, twisting and winding all around, while several
+pieces of rubble have been seemingly piled around the room, while several
+large stalagmites have toppled over here and there, A light, cold, damp, 
+breeze, flows through the oppressive darkness of the caves, carrying with it
+the sound of rocks falling somewhere nearby.
+~
+#EXIT
+Direction north~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    7742
+#ENDEXIT
+
+#EXDESC
+ExDescKey    stalagmite~
+ExDesc       This has to be the smallest stalagmite you've ever seen, why anyone would even
+notice it is beyond you. You reach out a hand to touch it and it falls over and
+rolls down the southwest tunnel.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     7742
+Name     Lost Within Some Twisting Tunnels~
+Sector   underground~
+Desc     The tunnels continue here, twisting and winding all around, while several
+pieces of rubble have been seemingly piled around the room, while several
+large stalagmites have toppled over here and there, A light, cold, damp, 
+breeze, flows through the oppressive darkness of the caves, carrying with it
+the sound of rocks falling somewhere nearby.
+~
+#EXIT
+Direction north~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    7743
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXDESC
+ExDescKey    rocks~
+ExDesc       These 19 small rocks have been piled here by the northwest tunnel. Someone
+has an odd sense of humor.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     7743
+Name     Lost Within Some Twisting Tunnels~
+Sector   underground~
+Desc     The tunnels continue here, twisting and winding all around, while several
+pieces of rubble have been seemingly piled around the room, while several
+large stalagmites have toppled over here and there, A light, cold, damp, 
+breeze, flows through the oppressive darkness of the caves, carrying with it
+the sound of rocks falling somewhere nearby.
+~
+#EXIT
+Direction north~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7744
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXDESC
+ExDescKey    pile~
+ExDesc       This massive pile of rocks and rubble have been piled to the left of the
+eastern tunnel.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     7744
+Name     Lost Within Some Twisting Tunnels~
+Sector   underground~
+Desc     The tunnels continue here, twisting and winding all around, while several
+pieces of rubble have been seemingly piled around the room, while several
+large stalagmites have toppled over here and there, A light, cold, damp, 
+breeze, flows through the oppressive darkness of the caves, carrying with it
+the sound of rocks falling somewhere nearby.
+~
+#EXIT
+Direction north~
+ToRoom    7745
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    7724
+#ENDEXIT
+
+#MUDPROG
+Progtype  rand_prog~
+Arglist   5~
+Comlist   mpe &WHave you been here before? You're not sure...
+mpe &YA small yellow light seems to float off down the north tunnel
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     7745
+Name     Lost Within Some Twisting Tunnels~
+Sector   underground~
+Desc     The tunnels continue here, twisting and winding all around, while several
+pieces of rubble have been seemingly piled around the room, while several
+large stalagmites have toppled over here and there, A light, cold, damp, 
+breeze, flows through the oppressive darkness of the caves, carrying with it
+the sound of rocks falling somewhere nearby.
+~
+#EXIT
+Direction north~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    7746
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    7724
+#ENDEXIT
+
+#MUDPROG
+Progtype  entry_prog~
+Arglist   100~
+Comlist   mpe &gA massive lizard, the likes of which you've never seen before, is
+mpe &gstartled by your presence and rushes off fown the northwest tunnel.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     7746
+Name     Lost Within Some Twisting Tunnels~
+Sector   underground~
+Desc     The tunnels continue here, twisting and winding all around, while several
+pieces of rubble have been seemingly piled around the room, while several
+large stalagmites have toppled over here and there, A light, cold, damp, 
+breeze, flows through the oppressive darkness of the caves, carrying with it
+the sound of rocks falling somewhere nearby.
+~
+#EXIT
+Direction north~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7747
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXDESC
+ExDescKey    rubble~
+ExDesc       This pile of rubble has seemingly been placed to the left of the eastern
+tunnel to mark something important.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     7747
+Name     Lost Within Some Twisting Tunnels~
+Sector   underground~
+Desc     The tunnels continue here, twisting and winding all around, while several
+pieces of rubble have been seemingly piled around the room, while several
+large stalagmites have toppled over here and there, A light, cold, damp, 
+breeze, flows through the oppressive darkness of the caves, carrying with it
+the sound of rocks falling somewhere nearby.
+~
+#EXIT
+Direction north~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    7748
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXDESC
+ExDescKey    rocks~
+ExDesc       These two massive rocks stand here on either side of the northeast tunnel like
+two huge doors.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     7748
+Name     Lost Within Some Twisting Tunnels~
+Sector   underground~
+Desc     This huge room still continues to loop around in a series of twisting tunnels
+but these are somehow different. While still seemingly loopin back on each
+other, these appear to be slightly more tidy, no rubble, no fallen stalagtites
+no toppled stalagmites... nothing. Just a large open chamber leading into
+another to the west.
+~
+#EXIT
+Direction north~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    7749
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    7724
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    7724
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     7749
+Name     Center of the Twisting Hallways~
+Sector   underground~
+Desc     This titanic chamber is filled with massive stalagtites and stalagmites the
+sound of dripping water is almost constant and sounds vaguely like rain. The
+a small underground river trickles past a small ladder leading up along the far
+wall and fresh footsteps show that someone else has been here recently.
+~
+#EXIT
+Direction east~
+ToRoom    7748
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    7661
+Flags     hidden~
+#ENDEXIT
+
+Reset O 0 7601 1 7749
+#ENDROOM
+
+#ENDAREA

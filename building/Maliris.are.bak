@@ -1,0 +1,347 @@
+#AREA   {PROTO} Maliris's area in progress~
+
+
+
+#AUTHOR Maliris~
+
+#OWNED_BY None~
+
+#RANGES
+0 0 0 0
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 0
+
+#MOBILES
+#6600
+first~
+a newly created first~
+Some god abandoned a newly created first here.
+~
+~
+1073741825 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#6699
+last~
+a newly created last~
+Some god abandoned a newly created last here.
+~
+~
+1073741825 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#6600
+first~
+a first~
+A first is here.~
+~
+13 1073741824 0
+0 0 0 0
+1 0 0
+#6699
+last~
+a last~
+A last is here.~
+~
+13 1073741824 0
+0 0 0 0
+1 0 0
+#0
+
+
+#ROOMS
+#6600
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#6601
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6602
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6603
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6604
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6605
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6606
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6607
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6608
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6609
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6610
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6611
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6612
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6613
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6614
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6615
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6616
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6617
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6618
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6619
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6620
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6621
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6622
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6623
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6624
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6625
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6626
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6627
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6628
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6629
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6630
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6631
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6632
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6633
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6634
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6635
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6636
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6637
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6638
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6639
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6640
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6641
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6642
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6643
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6644
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6645
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6646
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6647
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6648
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6649
+Floating in a void~
+~
+0 1073741824 0 1 0
+S
+#6699
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#0
+
+
+#RESETS
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

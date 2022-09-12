@@ -1,0 +1,787 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         WolfWood's Unfinished Area~
+Author       WolfWood~
+Ranges       1 1007 1 1007
+Economy      0 6250000
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       11500
+Keywords   A Linen Shopkeeper~
+Short      A Linen Shopkeeper~
+Long       A linen shopkeeper is standing here
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc stayarea prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   74 77 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   stock~
+Comlist   mpoload 2016
+mpoload 2026
+mpoload 2025
+mpoload 2024
+mpoload 2023
+mpoload 2022
+mpoload 2021
+mpoload 2020
+mpoload 2013
+mpoload 2018
+mpoload 2017
+mpoload 2015
+mpoload 2014
+mpoload 65
+emote is currently loading up his shelf full of goodies.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11501
+Keywords   a sexy nurse~
+Short      A Sexy Nurse~
+Long       A Sexy Nurse is standing here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  speech_prog~
+Arglist   heal~
+Comlist   mprestore $n 1000
+say There you go sexy!
+spank $n
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11502
+Keywords   The Lobbist~
+Short      The Lobbist~
+Long       The Lobbist is standing here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   say Hello!
+say Welcome to the Hotel of Fetish
+say We know that you'll enjoy your stay!
+wink
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11503
+Keywords   Bellhop~
+Short      A Bellhop~
+Long       A bellhop is standing here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc stayarea prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   say Hi!
+say If you want to go up say 'up'
+say if you want to go down say 'down'
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       11599
+Keywords   last~
+Short      a newly created last~
+Long       Some god abandoned a newly created last here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#OBJECT
+Vnum     11500
+Keywords Anthrax~
+Type     spice~
+Short    Anthrax~
+Long     Anthrax is poisoning the room.~
+Flags    prototype~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     11599
+Keywords last~
+Type     trash~
+Short    a last~
+Long     A last is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     11500
+Name     Big Bad Pope Pad~
+Sector   inside~
+Flags    nomob bank hotel factory prototype~
+Desc     As you walk in here you trip other empty bottles of holy wine. In the
+corner a bed is pushed in which is unmade.  After stepping into the room
+fully, an unwelcome smell overcomes your senses and you pass out, right
+next to another drunk named...WolfWood. 
+~
+#EXIT
+Direction east~
+ToRoom    100
+Flags     isdoor pickproof~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11501
+Name     Transporter Pad for S3X~
+Sector   inside~
+Flags    nomob prototype~
+Desc     You hear a hum in the background from colonists transporting back and forth
+to their destinations. As you look back and forth from the different kind
+of colonists that come here you notice some unique traits. They are either
+together to become a couple or coming not to be a couple
+~
+#EXIT
+Direction north~
+ToRoom    11502
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11502
+Name     Hallway~
+Sector   inside~
+Flags    nomob prototype~
+Desc     All around you are tapestries shrouding the ceiling and walls. As you walk
+around some more you feel a sense of inner peace.   Off in the distance
+you start to see a large congregation of people in the middle of a
+crossroads.
+~
+#EXIT
+Direction north~
+ToRoom    11503
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11501
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11503
+Name     Intersection~
+Sector   inside~
+Flags    prototype~
+Desc     There are many people running by in search to find the best deal on
+shopping. Now as you look more closely you see that there are three more
+ways to go. You notice that the majority of people are going north in
+search for the Priest.
+~
+#EXIT
+Direction north~
+ToRoom    11506
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11504
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11502
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11505
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11504
+Name     A Small Corridor~
+Sector   inside~
+Flags    nomob prototype~
+Desc     You look down the corridor and notice that there is a place to sleep and
+buy things to make clothes out of. Also you notice something in the ground
+more to the east which seems like a secret passage way. 
+~
+#EXIT
+Direction east~
+ToRoom    11507
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11503
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11505
+Name     A Small Corridor~
+Sector   inside~
+Flags    prototype~
+#EXIT
+Direction east~
+ToRoom    11503
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11511
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11506
+Name     Hallway~
+Sector   inside~
+Flags    prototype~
+#EXIT
+Direction north~
+ToRoom    11512
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11503
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11507
+Name     Hallway~
+Sector   inside~
+Flags    prototype~
+Desc     To the north is a linen shop where you can buy items to make armor and
+containers. To the south there is a hotel which is very popular to stay at
+and is very cheap. To the east you notice something which seems to be
+bulging out of the floor.
+~
+#EXIT
+Direction north~
+ToRoom    11508
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11510
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11509
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11504
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11508
+Name     A Linen Shop~
+Sector   inside~
+Flags    prototype~
+Desc     In here you can buy all sorts of items to suit your fancy with clothing
+which you may determine to purchase. As you look around the store you try
+to figure out where you could actually make anything and decide to go off
+and search for a place.
+~
+#EXIT
+Direction south~
+ToRoom    11507
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11509
+Name     Hotel~
+Sector   inside~
+Flags    nomob safe hotel prototype~
+Desc     There are beds laying around the room in a symetrical order. The counter
+where a clerk is suppose to be is empty and a sign reading 'out fishin'.
+Now as you get aquainted with the room you feel a certain sense of
+security and you decide to lay down some where.
+~
+#EXIT
+Direction north~
+ToRoom    11507
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11510
+Name     Dead End~
+Sector   inside~
+Flags    prototype~
+Desc     There is no where to go except to the west.  Then you look around more and
+you notice something on the ground which looks like a secret trap door. As
+you inspect it more closely you see that inscribed on it is 'Workshop'.
+~
+#EXIT
+Direction west~
+ToRoom    11507
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    11513
+Flags     isdoor hidden~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11511
+Name     The Residential District~
+Sector   inside~
+Flags    prototype~
+#EXIT
+Direction north~
+ToRoom    11517
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11505
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11518
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11519
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11512
+Name     Hallway~
+Sector   inside~
+Flags    prototype~
+#EXIT
+Direction south~
+ToRoom    11506
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    11514
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11513
+Name     A Small Workshop~
+Sector   inside~
+Flags    prototype~
+Desc     This is a place for you to work on making your armor and clothes for your
+own personal use. Also you can make bags and containers for you to put
+things in and carry them around.
+~
+#EXIT
+Direction up~
+ToRoom    11510
+Flags     isdoor~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11514
+Name     Hallway~
+Sector   inside~
+Flags    prototype~
+#EXIT
+Direction north~
+ToRoom    11515
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11516
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    11512
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11515
+Name     Hallway~
+Sector   inside~
+Flags    prototype~
+#EXIT
+Direction south~
+ToRoom    11514
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11516
+Name     Hospital~
+Sector   inside~
+Flags    prototype~
+#EXIT
+Direction west~
+ToRoom    11514
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11517
+Name     An Empty Apartment~
+Sector   inside~
+Flags    empty_home prototype~
+#EXIT
+Direction south~
+ToRoom    11511
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11518
+Name     An Empty Apartment~
+Sector   inside~
+Flags    empty_home prototype~
+#EXIT
+Direction north~
+ToRoom    11511
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11519
+Name     The Residential District~
+Sector   inside~
+Flags    prototype~
+#EXIT
+Direction north~
+ToRoom    11520
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11511
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11521
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11522
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11520
+Name     An Empty Apartment~
+Sector   inside~
+Flags    empty_home prototype~
+#EXIT
+Direction south~
+ToRoom    11519
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11521
+Name     An Empty Apartment~
+Sector   inside~
+Flags    empty_home prototype~
+#EXIT
+Direction north~
+ToRoom    11519
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11522
+Name     Entrance to the Hotel of Fetish~
+Sector   inside~
+Flags    prototype~
+#EXIT
+Direction east~
+ToRoom    11519
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    11523
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11523
+Name     The Lobby~
+Sector   inside~
+Flags    prototype~
+#EXIT
+Direction north~
+ToRoom    11525
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11524
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    11522
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11524
+Name     The Shop of Kinkiness~
+Sector   inside~
+Flags    prototype~
+#EXIT
+Direction west~
+ToRoom    11523
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11525
+Name     Elevator~
+Sector   inside~
+Flags    prototype~
+#EXIT
+Direction south~
+ToRoom    11523
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   up~
+Comlist   mptrans $n 11526
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     11526
+Name     Elevator~
+Sector   inside~
+Flags    prototype~
+#EXIT
+Direction north~
+ToRoom    11527
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   down~
+Comlist   mptrans $n 11525
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     11527
+Name     Hallway~
+Sector   inside~
+Flags    prototype~
+#EXIT
+Direction north~
+ToRoom    11530
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    11528
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11526
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11529
+Flags     isdoor~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11528
+Name     Room #69~
+Sector   inside~
+Flags    prototype~
+#EXIT
+Direction west~
+ToRoom    11527
+Flags     isdoor~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11529
+Name     Room #666~
+Sector   inside~
+Flags    prototype~
+#EXIT
+Direction east~
+ToRoom    11527
+Flags     isdoor~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11530
+Name     Hallway~
+Sector   inside~
+Flags    prototype~
+#EXIT
+Direction east~
+ToRoom    11531
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    11527
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    11532
+Flags     isdoor~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11531
+Name     Room #S+M~
+Sector   inside~
+Flags    prototype~
+#EXIT
+Direction west~
+ToRoom    11530
+Flags     isdoor~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     11532
+Name     Room #739~
+Sector   inside~
+Flags    prototype~
+#EXIT
+Direction east~
+ToRoom    11530
+Flags     isdoor~
+#ENDEXIT
+
+#ENDROOM
+
+#ENDAREA

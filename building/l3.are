@@ -1,0 +1,2408 @@
+#AREA   Colony L3~
+
+
+
+#AUTHOR Hinzu~
+
+#RANGES
+0 500 0 1000
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 52046715
+
+#MOBILES
+#200
+Class 2 Training Robot~
+a Class 2 Training Robot~
+A Class 2 Training Robot whirs and hums before you.
+~
+~
+67108867 0 0 Z
+40 0 0 8d10+400 4d4+2
+60 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+8 8 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#201
+Class 3 Training Droid~
+a Class 3 Training Droid~
+A Class 3 Training Droid buzzes and squeaks here.
+~
+~
+67108867 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+90 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+20 20 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#202
+Class 4 Training Droid~
+A Class 4 Training Droid~
+A Class 4 Training Droid is here, humming quietly.
+~
+~
+67108867 0 0 Z
+155 0 -287 31d10+1550 15d4+2
+120 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+31 31 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#203
+Class 5 Training Android~
+a Class 5 Training Android~
+A Class 5 Training Android hums glows and hums quietly here.
+~
+~
+67108867 0 0 Z
+300 0 -650 60d10+3000 30d4+2
+180 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+60 60 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#204
+Class 6 Training Android~
+a Class 6 Training Android~
+A Class 6 Training Android is here, with a glazed look.
+~
+~
+67108867 0 0 Z
+350 0 -775 70d10+3500 35d4+2
+210 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+70 70 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#205
+Class 7 Training Cyborg~
+a Class 7 Training Cyborg~
+A Class 7 Training Cyborg stands here, scowling at you.
+~
+~
+3 0 0 Z
+425 0 -962 85d10+4250 42d4+2
+240 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+85 85 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#206
+Class 8 Training Cyborg~
+a Class 8 Cyborg~
+A Class 8 Training Cyborg is here, scowling.
+~
+~
+3 0 0 Z
+501 0 300 100d10+5010 50d4+2
+250 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+100 100 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#207
+L3 Military Grunt~
+an L3 Military Grunt~
+An L3 Military Grunt stands here, guarding the entrance.
+~
+~
+3 0 0 Z
+500 0 -1150 100d10+5000 50d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+100 100 0 0 0 0 0 0
+4 0 0 0 0 0 0 0
+> bribe_prog 5000~
+mpload 273 0
+unlock north
+open north
+~
+> script_prog ~
+$n leaves north
+close north
+lock north
+~
+|
+#208
+L3 Repairman~
+an L3 Repairman~
+An L3 Repairman is here, sharpening some old blades.
+~
+~
+134217731 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+1000 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+20 20 0 0 0 0 0 0
+4 0 0 0 0 0 0 0
+#209
+Military Provisioner~
+a newly created Military Provisioner~
+Some god abandoned a newly created Military Provisioner here.
+~
+~
+1 0 0 Z
+300 0 -650 60d10+3000 30d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+60 60 0 0 0 0 0 0
+4 0 0 0 0 0 0 0
+#210
+L3 Workshop Shopkeeper~
+The L3 Engineering Shopkeeper~
+The shopkeeper is waiting to take your order.
+~
+~
+134217731 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> all_greet_prog 100~
+blink
+say Oh, I didn't expect anyone to come here.
+say Well anyway, Welcome to Engineering Goods!
+~
+|
+#217
+Augmented Combat Cyborg~
+An Augmented Combat Cyborg~
+An Oddly Augmented Combat Cyborg stares at you menacingly.
+~
+~
+3 0 0 Z
+500 0 -1150 100d10+5000 50d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+100 100 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#218
+Null Dude, makeover.~
+an L3 Military Grunt~
+A dude who isnt finished
+~
+~
+3 0 0 Z
+500 0 -1150 100d10+5000 50d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+4 0 0 0 0 0 0 0
+> speech_prog Open up~
+if ispc($n)
+mpoload 273 0
+Say Nice doing business with ya, $n
+unlock south
+open south
+endif
+~
+|
+#219
+Restaurant Waiter~
+A Restaurant Waiter~
+A Restaurant Waiter is here, seating customers and taking orders.
+~
+~
+134217731 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+0 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+20 20 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog order~
+say Very well $n, here's your menu.
+mpoload 219
+mpoload 222
+mpoload 202
+mpoload 223
+~
+|
+#220
+Bar Wench~
+An L3 Bar Wench~
+An L3 Bar Wench goes back and forth, serving half-drunken customers.
+~
+~
+134217731 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+0 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+20 20 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog booze~
+say over on the counter, check the list again, $n
+mpoload 202
+mpoload 203
+mpoload 219
+mpoload 221
+~
+|
+#221
+L3 Citizen~
+citizen~
+A colony citizen is here.
+~
+~
+1 0 0 Z
+15 0 62 3d10+150 1d4+2
+50 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+3 3 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#222
+An L3 Hotel Manager~
+An L3 Hotel Manager~
+An L3 Hotel Manager is here, waiting to give you a room.
+~
+~
+3 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+0 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#223
+L3 Academy Trainer~
+An L3 Academy Trainer~
+An L3 Academy Trainer is here, cycling between reading books, and workout out.
+~
+~
+515 0 0 Z
+250 0 -525 50d10+2500 25d4+2
+0 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+50 50 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#224
+Guard~
+Customs Guard~
+An L3 guard stands here looking through peoples belongings for weapons and drugs.
+~
+~
+3 0 0 Z
+700 0 -1650 140d10+7000 70d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+85 65 0 0 0 0 32 3
+0 0 0 0 0 0 0 0
+> all_greet_prog 100~
+say Hello $n, We don't want any trouble here, so keep it clean.
+~
+|
+#225
+Dog~
+Police Dog~
+An L3 Police Dog is here sniffing people's bags in search of drugs.
+~
+~
+1 0 0 Z
+700 0 -1650 140d10+7000 70d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+85 65 0 0 0 0 32 3
+0 0 0 0 0 0 0 0
+> all_greet_prog 100~
+emote Walks up to $n and sniffs him for drugs.
+~
+|
+#226
+Crooked Salesman~
+A Crooked Salesman~
+A Crooked Salesman is here smoking some weed.
+~
+~
+134217731 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#257
+L3 Item Provisioner~
+an L3 Item Provisioner~
+An L3 Item Provisioner is here, shuffling through some drawers.
+~
+~
+134217731 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+1000 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+20 20 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog restock~
+say "Oh...i'm sorry, give me a minute please."
+mpecho The Provisioner shuffles around, restocking.
+say "There ya go sweetie, all restocked."
+mpoload 500
+mpoload 2014
+mpoload 2015
+mpoload 2017
+mpoload 2018
+mpoload 2013
+mpoload 2020
+mpoload 2022
+mpoload 10424
+mpoload 2023
+mpoload 2021
+mpoload 2024
+mpoload 2025
+mpoload 2016
+mpoload 2026
+mpoload 10498
+mpoload 10313
+mpoload 10314
+~
+|
+#271
+L3 Armorer~
+an L3 Armorer~
+An L3 Armorer is here, oiling some leather.
+~
+~
+134217731 0 0 Z
+99 0 -147 19d10+990 9d4+2
+1000 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+22 20 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog today?~
+mpoload 201
+mpoload 204
+mpoload 205
+mpoload 206
+mpoload 501
+mpoload 503
+mpoload 504
+mpoload 505
+~
+|
+#272
+L3 Weaponsmith~
+an L3 Weaponsmith~
+An L3 Weaponsmith is here, cleaning the barrel on a pistol.
+~
+~
+134217735 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+1000 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+20 20 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog shipment?~
+mpoload 59
+mpoload 2000
+mpoload 2002
+mpoload 2007
+mpoload 6003
+~
+|
+#273
+Minime~
+&GM&gi&bn&gi&b-&GL&ge&bp&gp&Gy~
+&GM&gi&bn&gi&b-&GL&ge&bp&gp&Gy&b stands here playing with himself.
+~
+~
+11 0 0 Z
+1000 0 -2400 200d10+10000 100d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+200 200 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+scream
+shin $n
+~
+> death_prog 100~
+mpmload 273
+mpecho And I shall call him... Mini-Leppy.
+~
+> speech_prog casa~
+if hasqbit($n) == 5
+say yeah you're a pimp, you can go..
+say Welcome to Casa de Leppy.
+mptransfer $n 107
+else
+say fuck you bitch, i may be 3 foot 9 but i got a 10 foot dick!
+say take your bitch ass on somewhere...
+mptransfer $n 106
+~
+|
+#274
+Molly~
+&CM&co&Cl&cl&Cy&c~
+&CM&co&Cl&cl&Cy&c stands here handing out beer.
+~
+~
+11 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog beer~
+mpoload 202
+say Here ya go.
+smile
+give beer $n
+say Have fun.
+~
+> all_greet_prog 100~
+say Hello $n, and welcome to Leppy's Private Club.
+say Can I Get you a drink or something?
+beam
+~
+|
+#285
+Class 1 Training Robot~
+a Class 1 Training Robot~
+A Class 1 Training Robot sputters and sparks before you.
+~
+~
+67108867 0 0 Z
+12 0 70 2d10+120 1d4+2
+30 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+2 2 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#200
+Colony Balancing Mechanism~
+The Colony Balancing Mechanism~
+The Balancing Mechanism for Colony L3 is here, whirring and humming.~
+~
+13 3 0
+0 0 0 0
+1 0 0
+#201
+Black Trench Coat~
+a black trench coat~
+A black trench coat is lying here.~
+~
+9 8192 9 32
+75 75 0 0
+1 700 400000
+#202
+beer~
+A bottle of Beer~
+A bottle of Beer sits here.~
+~
+17 0 1
+5 5 1 0
+1 100 10
+#203
+Whiskey~
+A shot of Whiskey~
+A shot of Whiskey sits here.~
+~
+17 0 1
+1 1 5 0
+1 175 17
+#204
+Black Wool Pants~
+some black wool pants~
+Some black wool pants are lying here.~
+~
+9 8192 33 2
+27 27 0 0
+1 500 100
+#205
+Black Cotton Shirt~
+a black cotton shirt~
+A black cotton shirt is lying here.~
+~
+9 8192 9 1
+35 35 0 0
+1 500 50
+#206
+Black Leather Belt~
+a black leather belt~
+A black leather belt is lying here.~
+~
+9 8192 2049
+20 20 0 0
+1 400 40
+#207
+Pimp Cane~
+&wD&zi&wa&zm&wo&zn&wd &CS&ct&gu&Gd&gd&ce&Cd &RP&ri&Rm&rp &YC&Oa&Yn&Oe~
+&wA &wD&zi&wa&zm&wo&zn&wd &CS&ct&gu&Gd&gd&ce&Cd &RP&ri&Rm&rp &YC&Oa&Yn&Oe&Y was dropped here.~
+~
+5 3 8193
+12000 8860 2 2 999999 999999
+1 0 0
+A
+18 300
+A
+19 300
+A
+48 100
+#218
+L3 Military Grunt~
+a L3 Military Grunt~
+A L3 Military Grunt is here.~
+~
+13 0 0
+0 0 0 0
+1 0 0
+#219
+Cup of Wine~
+A cup of Wine~
+A cup of Wine sits here.~
+~
+17 8192 1
+3 3 2 0
+1 50 35
+#220
+Bar Wench~
+a Bar Wench~
+A Bar Wench is here.~
+~
+13 0 0
+0 0 0 0
+1 0 0
+#221
+Tall Mug Black Coffee~
+A tall mug of black coffee~
+A tall mug of Black Coffee sits here.~
+~
+17 8192 1
+6 6 12 0
+1 75 7
+#222
+Juicy Red Lobster~
+A juicy Red Lobster~
+A juicy Red Lobster is sitting here.~
+~
+19 8192 1
+50 50 0 0
+2 20 50
+#223
+Buttered Bread~
+some buttered bread~
+Some buttered bread is sitting here.~
+~
+19 8192 1
+50 50 0 0
+2 20 12
+#224
+Spice~
+a Spice~
+A Spice is here.~
+~
+78 0 1
+0 0 0 0
+1 1500 150
+#258
+a miniature mega particle cannon~
+a miniature mega particle cannon~
+A miniature mega particle cannon lies here.~
+~
+5 8192 8193
+100 4 2 6 5000 5000
+1 0 0
+#259
+stool~
+A Stool~
+A Stool is here for you to sit on.~
+~
+12 0 0
+5 5 2 0
+1 0 0
+#260
+Pimp Hat~
+&wA &YP&Oi&Ym&Op &wH&za&wt~
+&wA &YP&Oi&Ym&Op &wH&za&wt&z was dropped here.~
+~
+9 0 17
+99999 99999 2 2 99999 99999
+1 0 0
+#261
+Versace Chain~
+&zA &wP&zl&wa&zt&wi&zn&wu&zm &YV&Oe&Yr&Os&Ya&Oc&Ye &CC&ch&Ca&ci&Cn~
+&zA &wP&zl&wa&zt&wi&zn&wu&zm &YV&Oe&Yr&Os&Ya&Oc&Ye &CC&ch&Ca&ci&Cn&c was dropped here.~
+~
+9 0 5
+99999 99999 2 2 99999 99999
+1 0 0
+#262
+Versace Shirt~
+&wA &YG&Oo&Yl&Od &GA&gn&Gd &wB&zl&wa&zc&wk &YV&Oe&Yr&Os&Ya&Oc&Ye &RD&rr&Re&rs&Rs &CS&ch&Ci&cr&Ct~
+&wA &YG&Oo&Yl&Od &GA&gn&Gd &wB&zl&wa&zc&wk &YV&Oe&Yr&Os&Ya&Oc&Ye &RD&rr&Re&rs&Rs &CS&ch&Ci&cr&Ct&c was dropped here.~
+~
+9 0 9
+99999 99999 2 2 99999 99999
+1 0 0
+#263
+Polo Pants~
+&wB&zl&wa&zc&wk &RP&ro&Rl&ro &CP&ca&Cn&ct&Cs~
+&cA &GP&ga&Gi&gr &Po&pf &wB&zl&wa&zc&wk &RP&ro&Rl&ro &CP&ca&Cn&ct&Cs&c were dropped here.~
+~
+9 0 33
+99999 99999 2 2 99999 99999
+1 0 0
+#264
+Timberland Boots~
+&YT&Oi&Ym&Ob&Ye&Or&Yl&Oa&Yn&Od &YB&Oo&Yo&Ot&Ys~
+&YA &OP&Ya&Oi&Yr &Oo&Yf &OT&Yi&Om&Yb&Oe&Yr&Ol&Ya&On&Yd &OB&Yo&Oo&Yt&Os&Y were dropped here.~
+~
+9 0 65
+99999 99999 2 2 99999 99999
+1 0 0
+#265
+sewing kit~
+a sewing kit~
+A needle and thread lie here.~
+~
+77 0 1
+0 0 0 0
+1 20 2
+#273
+ESUN Jail Key~
+ESUN Jail Key~
+A key with the insignia of the ESUN is lying here.~
+~
+18 0 1
+1 0 0 0
+1 0 0
+#0
+
+
+#ROOMS
+#200
+&zL&W3 &CS&Bt&Ca&cr &BP&Co&cr&Bt~
+This is the L3 Colony Star Port, there are many mobile ships and suits
+coming and leaving here. Many engineers run from ship to ship repairing
+the damages that have been receive on the suits and refueling the fuel
+that they lost.
+~
+0 52 4 1 0
+D0
+~
+~
+0 -1 201
+S
+#201
+&zL&W3 Street~
+This is the beginning of the main street in L3. You see that there is a
+Customs guard here confiscating all weapons and drugs he finds, if you are
+smart you should not carry any.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 202
+D2
+~
+~
+0 -1 200
+S
+#202
+&zL&W3 Street~
+The street keeps going further and further, and the beauty of this colony
+becomes clearer and clearer with each step you take.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 209
+D1
+~
+~
+0 -1 6310
+D2
+~
+~
+0 -1 201
+D3
+~
+~
+0 -1 239
+D6
+~
+~
+0 -1 203
+S
+#203
+Walkway~
+The street keeps going further and further, and the beauty of this colony
+becomes clearer and clearer with each step you take.
+~
+0 4 0 0 0
+D6
+~
+~
+0 -1 288
+D9
+~
+~
+0 -1 202
+S
+#204
+Store Lobby~
+This is L3's mini shopping center, here you can get weapons, armors, and
+all kinda of items. If you can't find what you need here, maybe you should
+just leave. 
+~
+0 8 0 0 0
+D0
+~
+~
+0 -1 212
+D1
+~
+~
+0 -1 207
+D2
+~
+~
+0 -1 206
+D3
+~
+~
+0 -1 205
+D4
+~
+~
+0 -1 299
+S
+#205
+Item Shop~
+As you walk into the Provisioner's shop, you notice that the owner is a
+young woman, and she is shuffling through papers, and flirting with some
+customers.  You wonder if she has realized she hasn't even restocked her
+shelves.  Maybe you should ask her to Restock.
+~
+0 8 0 0 0
+D1
+~
+~
+0 -1 204
+S
+#206
+Weapons Shop~
+This is the L3 colony Weapons Shop.  The shopkeeper is an unfriendly old
+coot, but if you ask him about his Shipment, he just might sell to you.
+~
+0 8 0 0 0
+D0
+~
+~
+0 -1 204
+S
+#207
+Armor Shop~
+You are standing in what appears to be the L3 Colony Armory. Sometimes the
+shopkeeper forgets to put out his wares, so don't forget to ask him what's
+for sale Today. 
+~
+0 8 0 0 0
+D3
+~
+~
+0 -1 204
+S
+#208
+Factory~
+As you walk into the large factory you notice that it is so loud that you
+cant even hear yourself think. There are large fabrication machines here
+and they seem to be ready for use.
+~
+0 67174408 0 0 0
+D7
+~
+~
+0 -1 202
+S
+#209
+&zL&W3 Street~
+The street keeps going further and further, and the beauty of this colony
+becomes clearer and clearer with each step you take.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 210
+D1
+~
+~
+0 -1 220
+D2
+~
+~
+0 -1 202
+D3
+~
+~
+0 -1 222
+S
+#210
+&zL&W3 Street~
+The street keeps going further and further, and the beauty of this colony
+becomes clearer and clearer with each step you take.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 211
+D2
+~
+~
+0 -1 209
+D3
+~
+~
+0 -1 239
+S
+#211
+&zL&W3 Street~
+The street keeps going further and further, and the beauty of this colony
+becomes clearer and clearer with each step you take. 
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 267
+D1
+~
+~
+0 -1 212
+D2
+~
+~
+0 -1 210
+D3
+~
+~
+0 -1 223
+S
+#212
+&zL&W3 Street~
+The street keeps going further and further, and the beauty of this colony
+becomes clearer and clearer with each step you take.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 213
+D2
+~
+~
+0 -1 204
+D3
+~
+~
+0 -1 211
+D5
+~
+~
+0 -1 268
+S
+#213
+L3 Residential Sector~
+This is the beginning of L3's best neighborhood. In here you will see some
+of the best homes still available to everyday people.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 214
+D3
+~
+~
+0 -1 212
+S
+#214
+L3 Residential Sector~
+The homes here are in incredible condition, and the lawns are so freshly
+cut you can still smell the cut grass floating on the air.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 215
+D3
+~
+~
+0 -1 213
+S
+#215
+L3 Residential Sector~
+The homes here are in incredible condition, and the lawns are so freshly
+cut you can still smell the cut grass floating on the air.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 224
+D3
+~
+~
+0 -1 214
+S
+#216
+Sector 2~
+The general area is a very plain area, no color. Its just very cold
+like metal is. There is no emotion here just the cold steel. This
+walkway shows some of the true abilities of the human race.
+~
+0 0 0 1 0
+D6
+~
+~
+0 -1 217
+D9
+~
+~
+0 -1 215
+S
+#217
+Sector 2~
+The general area is a very plain area, no color. Its just very cold
+like metal is. There is no emotion here just the cold steel. This
+walkway shows some of the true abilities of the human race.
+~
+0 0 0 1 0
+D6
+~
+~
+0 -1 218
+D9
+~
+~
+0 -1 216
+S
+#218
+Sector 2~
+This is one of the Colony's few airlocks, there's only one reason for using
+this.  Awww...can't really be that bad, can it?  Well, if you REALLY wanna
+end it all, say Activate.  [Warning]: Doing so will KILL you.
+~
+0 0 0 1 0
+D9
+~
+~
+0 -1 217
+> speech_prog activate~
+mpdamage $n 30000
+~
+|
+S
+#219
+Le Grange Point~
+This is L3's Le Grange Point, where the balancing mechanism that controls
+the colony's stability is housed. 
+~
+0 12 0 0 0
+S
+#220
+Hotel~
+This is L3's most popular hotel. There are many visitors that come here
+from every colony to enjoy our first class treatment. To the south is our
+hotels bar where you can find all of the craziest people found on L3. If
+you go over there and ask, I'm sure you can get some beer.
+&BHere you can feel free to 'save' and 'quit' without worry.
+~
+0 8388620 0 0 0
+D2
+~
+~
+0 -1 221
+D3
+~
+~
+0 -1 209
+S
+#221
+Hotel Bar~
+This is the L3 Bar, word has it the bar wench here knows a lot about people
+on this colony.  Maybe if you asked her who could be bribed... At first
+glance you don't see any liquor, maybe you should nag her about da booze.
+~
+0 8 0 0 0
+D0
+~
+~
+0 -1 220
+> speech_prog bribed?~
+mpechoat $n The Bar Wench whispers, "Military Grunt, 5000 credits."
+mpecho The Bar Wench scurries off to serve some customers.
+~
+|
+S
+#222
+Restaurant~
+This is the only restaurant on L3, but is nonetheless a rather classy
+place.  There are tables, chairs, candles, and just about any
+pointlessly gaudy thing in existence in this restaurant.  Just say you'd
+like to order, and the waiter will run right over with a menu for you.
+~
+0 8 0 0 0
+D1
+~
+~
+0 -1 209
+S
+#223
+Hospital~
+There are dozens of nurses popping in and out of rooms, and you wonder if
+you will ever be seen.  Finally you decide you should just say heal.
+~
+0 8 2 0 0
+D1
+~
+~
+0 -1 211
+S
+#224
+L3 Residential Sector~
+The homes here are in incredible condition, and the lawns are so freshly
+cut you can still smell the cut grass floating on the air.
+~
+0 4 0 1 0
+D1
+~
+~
+0 -1 225
+D3
+~
+~
+0 -1 215
+S
+#225
+L3 Residential Sector~
+The homes here are in incredible condition, and the lawns are so freshly
+cut you can still smell the cut grass floating on the air.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 226
+D3
+~
+~
+0 -1 224
+S
+#226
+L3 Residential Sector~
+The homes here are in incredible condition, and the lawns are so freshly
+cut you can still smell the cut grass floating on the air.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 227
+D1
+~
+~
+0 -1 259
+D2
+~
+~
+0 -1 237
+D3
+~
+~
+0 -1 225
+S
+#227
+L3 Residential Sector~
+The homes here are in incredible condition, and the lawns are so freshly
+cut you can still smell the cut grass floating on the air. Maybe you
+should check and see if there are any homes here for sale.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 228
+D1
+~
+~
+0 -1 260
+D2
+~
+~
+0 -1 226
+S
+#228
+L3 Residential Sector~
+The homes here are in incredible condition, and the lawns are so freshly
+cut you can still smell the cut grass floating on the air. Maybe you
+should check and see if there are any homes here for sale.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 229
+D2
+~
+~
+0 -1 227
+S
+#229
+L3 Residential Sector~
+The homes here are in incredible condition, and the lawns are so freshly
+cut you can still smell the cut grass floating on the air. Maybe you
+should check and see if there are any homes here for sale.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 230
+D2
+~
+~
+0 -1 262
+D3
+~
+~
+0 -1 228
+S
+#230
+L3 Residential Sector~
+The homes here are in incredible condition, and the lawns are so freshly
+cut you can still smell the cut grass floating on the air. Maybe you
+should check and see if there are any homes here for sale.
+~
+0 0 0 1 0
+D2
+~
+~
+0 -1 231
+D3
+~
+~
+0 -1 229
+S
+#231
+L3 Residential Sector~
+The homes here are in incredible condition, and the lawns are so freshly
+cut you can still smell the cut grass floating on the air. Maybe you
+should check and see if there are any homes here for sale. 
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 230
+D2
+~
+~
+0 -1 232
+D3
+~
+~
+0 -1 263
+S
+#232
+L3 Residential Sector~
+The homes here are in incredible condition, and the lawns are so freshly
+cut you can still smell the cut grass floating on the air. Maybe you
+should check and see if there are any homes here for sale.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 231
+D2
+~
+~
+0 -1 233
+D3
+~
+~
+0 -1 264
+S
+#233
+L3 Residential Sector~
+The homes here are in incredible condition, and the lawns are so freshly
+cut you can still smell the cut grass floating on the air. Maybe you
+should check and see if there are any homes here for sale.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 232
+D2
+~
+~
+0 -1 234
+D3
+~
+~
+0 -1 265
+S
+#234
+L3 Residential Sector~
+The homes here are in incredible condition, and the lawns are so freshly
+cut you can still smell the cut grass floating on the air. Maybe you
+should check and see if there are any homes here for sale.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 233
+D3
+~
+~
+0 -1 235
+S
+#235
+L3 Residential Sector~
+The homes here are in incredible condition, and the lawns are so freshly
+cut you can still smell the cut grass floating on the air. Maybe you
+should check and see if there are any homes here for sale.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 266
+D1
+~
+~
+0 -1 234
+D3
+~
+~
+0 -1 236
+S
+#236
+L3 Residential Sector~
+The homes here are in incredible condition, and the lawns are so freshly
+cut you can still smell the cut grass floating on the air. Maybe you
+should check and see if there are any homes here for sale.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 237
+D1
+~
+~
+0 -1 235
+S
+#237
+L3 Residential Sector~
+The homes here are in incredible condition, and the lawns are so freshly
+cut you can still smell the cut grass floating on the air. Maybe you
+should check and see if there are any homes here for sale.
+~
+0 0 0 1 0
+D0
+~
+~
+0 -1 226
+D1
+~
+~
+0 -1 261
+D2
+~
+~
+0 -1 236
+S
+#238
+Sector 3~
+The general area is a very plain area, no color nor emotion. Its just
+very cold like metal is. There is no emotion here just the cold steel.
+This walkway shows some of the true abilities of the human race.
+~
+0 0 0 1 0
+D7
+~
+~
+0 -1 212
+D8
+~
+~
+0 -1 239
+S
+#239
+&zL&W3 &CS&Bt&Ca&cr &BP&Co&cr&Bt  &rB&pa&rn&Rk~
+The street keeps going further and further, and the beauty of this colony
+becomes clearer and clearer with each step you take.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 202
+S
+#240
+Empty Space~
+The street keeps going further and further, and the beauty of this colony
+becomes clearer and clearer with each step you take. 
+~
+0 8 0 0 0
+D3
+~
+~
+0 -1 241
+S
+#241
+Empty Space~
+The street keeps going further and further, and the beauty of this colony
+becomes clearer and clearer with each step you take.
+~
+0 8 0 0 0
+D0
+~
+~
+0 -1 242
+D1
+~
+~
+0 -1 240
+D2
+~
+~
+0 -1 243
+D3
+~
+~
+0 -1 246
+S
+#242
+Empty Space~
+~
+0 8 0 0 0
+D2
+~
+~
+0 -1 241
+S
+#243
+Empty Space~
+This is the entrance to the gym, in the gym you can train your stats and
+become even stronger then you are now.
+~
+0 8 0 0 0
+D0
+~
+~
+0 -1 241
+D8
+~
+~
+0 -1 244
+S
+#244
+Empty Space~
+This is the Academy Training Area, the buffed up super-nerd academy trainer
+can train you in any stat, and it's completely free.  It does, however,
+take awhile, and is not error-proof.
+~
+0 8 0 0 0
+D7
+~
+~
+0 -1 243
+S
+#245
+Floating in a void~
+~
+0 4 0 0 0
+S
+#246
+Empty Space~
+The street keeps going further and further, and the beauty of this colony
+becomes clearer and clearer with each step you take.
+~
+0 8 0 0 0
+D0
+~
+~
+0 -1 248
+D1
+~
+~
+0 -1 241
+D3
+~
+~
+0 -1 247
+S
+#247
+Empty Space~
+The street keeps going further and further, and the beauty of this colony
+becomes clearer and clearer with each step you take.
+~
+0 8 0 0 0
+D0
+~
+~
+0 -1 249
+D1
+~
+~
+0 -1 246
+D2
+~
+~
+0 -1 250
+S
+#248
+Empty Space~
+~
+0 8 0 0 0
+D2
+~
+~
+0 -1 246
+S
+#249
+Empty Space~
+~
+0 8 0 0 0
+D2
+~
+~
+0 -1 247
+S
+#250
+Empty Space~
+~
+0 8 0 1 0
+D0
+~
+~
+0 -1 247
+S
+#251
+ESUN Base Entrance~
+This is the entrance to the L3 Military Base, the door is locked
+though, it's been said the grunt can be bribed for the right amount,
+perhaps you should ask around.
+~
+0 0 0 1 0
+D0
+~
+~
+6 -1 252
+D2
+~
+~
+0 -1 212
+S
+#252
+L3 Military Base~
+Well, you bribed the security guard, and you're inside the base.  It'd be
+nice if you could get back out without being caught though, perhaps you
+can sneak out in a cab by hailing.
+~
+0 8 0 0 0
+D0
+~
+~
+0 -1 255
+D1
+~
+~
+0 -1 254
+D2
+~
+~
+0 -1 251
+D3
+~
+~
+0 -1 253
+D5
+~
+~
+0 -1 273
+S
+#253
+L3 Military Armory~
+This is the L3 Military Armory, you can feel a slight breeze from above, it
+seems the whole colony is plagued with bad ventilation.
+~
+0 8 0 0 0
+D1
+~
+~
+0 -1 252
+D4
+~
+~
+2099201 -1 275
+S
+#254
+L3 Military Barracks~
+This is the L3 Military Barracks, there are a few Nurse Droids wandering
+around, and they will come mend your wounds if you say 'heal'.
+~
+0 8 2 0 0
+D3
+~
+~
+0 -1 252
+S
+#255
+Training Sector Entrance~
+In the background you can hear the loud screams and the soungds of individual
+combat. The smell of blood is dominant in the air, almost like someone has died
+recently. Are you really ready?
+~
+0 0 0 0 0
+D2
+~
+~
+0 -1 252
+D5
+~
+~
+0 -1 276
+S
+#256
+&BA&bl&wb&We&wd&bo&B'&ws &GD&go&cp&ge &GP&ga&cd~
+As you walk in you see &Ystars&z hang from the celing sending &YLight&z all
+over the room. Against one wall sits a big comfy couch with lots of
+pillows. A TV sits on the other wall and to the left is a &Rfire&z place
+that is &RBurning&z warmly.
+~
+0 76546316 0 1 0
+D6
+~
+~
+0 -1 106
+S
+#257
+Floating in a void~
+~
+0 1073741828 0 1 0
+S
+#258
+Repair Shop~
+This is the L3 Repairman's shop. He'll repair any weapon or piece of armor,
+for a price of course.  Which is 20% of the item's worth.
+~
+0 12 0 1 0
+S
+#259
+&RLyra's &CPad~
+~
+0 1049608 0 0 0
+D3
+~
+~
+0 -1 226
+S
+#260
+An Empty Apartment~
+~
+0 2098184 0 0 0
+D3
+~
+~
+0 -1 227
+S
+#261
+&RT&rh&Re &YCh&Oine&Yse &BBlu&bebe&Brry &CMu&cff&Cin &GP&glac&Ge&T~
+~
+0 1049608 0 0 0
+D3
+~
+~
+0 -1 237
+S
+#262
+An Empty Apartment~
+~
+0 2097160 0 0 0
+D0
+~
+~
+0 -1 229
+S
+#263
+An Empty Apartment~
+~
+0 2097160 0 0 181
+D1
+~
+~
+0 -1 231
+S
+#264
+An Empty Apartment~
+~
+0 2097160 0 0 0
+D1
+~
+~
+0 -1 232
+S
+#265
+An Empty Apartment~
+~
+0 2097160 0 0 0
+D1
+~
+~
+0 -1 233
+S
+#266
+An Empty Apartment~
+~
+0 2097160 0 0 174
+D2
+~
+~
+0 -1 235
+S
+#267
+&zL&W3 &CS&Bt&Ca&cr &BP&Co&cr&Bt  &rB&pa&rn&Rk~
+You are standing in the L3 First National Bank, clerks are running around
+frantically and you even see some armed guards carrying in bags.  Bank
+balance/withdraw/deposit for their respective purposes.
+~
+0 264 0 0 0
+D2
+~
+~
+0 -1 211
+S
+#268
+Back Alley~
+The back alley is dark and cold, and it provides nothing as far as light.
+This Alley is so dark it seems to never end.
+~
+0 13 0 1 0
+D4
+~
+~
+0 -1 212
+D5
+~
+~
+0 -1 269
+S
+#269
+Back Alley~
+The back alley is dark and cold, and it provides nothing as far as light.
+This Alley is so dark it seems to never end.
+~
+0 5 0 1 0
+D4
+~
+~
+0 -1 268
+D7
+~
+~
+0 -1 270
+S
+#270
+Back Alley~
+The back alley is dark and cold, and it provides nothing as far as light.
+This Alley is so dark it seems to never end.
+~
+0 5 0 1 0
+D1
+~
+~
+0 -1 273
+D8
+~
+~
+0 -1 269
+S
+#271
+&wW&zo&rr&Rk&rs&zh&Wo&wp~
+This is one of L3's Engineering Workshops, here you can take your time and
+make whatever it is you feel like.
+~
+0 100663304 0 1 0
+D6
+~
+~
+0 -1 292
+S
+#272
+&wW&zo&rr&Rk&rs&zh&Wo&wp~
+This is one of L3's Engineering Workshops, here you can take your time and
+make whatever it is you feel like.
+~
+0 100663304 0 1 0
+D8
+~
+~
+0 -1 292
+S
+#273
+Back Alley~
+This room is full of many boxes, all stacked up in different areas. You can
+feel a slight breeze coming from the roof, which is slightly odd given the
+area.  There is a faint smell of gunpowder and grease.  Maybe if you
+searched UP and around the area.
+~
+0 13 0 1 0
+D3
+~
+~
+0 -1 270
+D4
+~
+~
+0 -1 252
+S
+#274
+Ventilation Shaft~
+As you climb up from the storage room, you find yourself
+in what appears to be one of the colonies' thousands of ventilation
+shafts.  To the south you can smell the odor of grease.
+~
+0 12 0 1 0
+D2
+~
+~
+0 -1 275
+D5
+~
+~
+33 -1 273
+S
+#275
+Ventilation Shaft~
+Just as you are about to crawl further south, you notice
+a small ventilation grate almost directly under you.  The room
+below appears to be some sort of armory.
+~
+0 12 0 1 0
+D0
+~
+~
+0 -1 274
+D5
+~
+~
+33 -1 253
+S
+#276
+Military Combat Training Facility~
+You are now standing in the L3 Military Training Sector.
+Be very careful in this area, as it is not meant for those
+without any combat training, and the robots here are extremely
+dangerous, and very real.
+Say 'Begin' to call for a battle trainer.
+~
+0 12 0 1 0
+D0
+~
+~
+0 -1 277
+D1
+~
+~
+0 -1 279
+D2
+~
+~
+0 -1 281
+D3
+~
+~
+0 -1 283
+D4
+~
+~
+0 -1 255
+D5
+~
+~
+0 -1 287
+D6
+~
+~
+0 -1 278
+D7
+~
+~
+0 -1 284
+D8
+~
+~
+0 -1 280
+D9
+~
+~
+0 -1 282
+S
+#277
+Training Area Alpha~
+The room is filled will the odor of blood and cybernetic fluids.
+There are dark red stains on the floor and stains of a deiierent
+color.
+~
+0 8 0 1 0
+D2
+~
+~
+0 -1 276
+> speech_prog Begin~
+mpecho There is a hum, and a door opens.
+mpecho A Class 1 Robot steps out and scans you.
+mpmload 285
+~
+|
+S
+#278
+Training Area Beta~
+The room is filled will the odor of blood and cybernetic fluids.
+There are dark red stains on the floor and stains of a deiierent
+color.
+~
+0 8 0 1 0
+D9
+~
+~
+0 -1 276
+> speech_prog begin~
+mpecho With a hum and a whir, a Door slides open.
+mpecho A Class 2 Training Robot steps out and cranks gears.
+mpmload 200
+~
+|
+S
+#279
+Training Area Gamma~
+The room is filled will the odor of blood and cybernetic fluids.
+There are dark red stains on the floor and stains of a deiierent
+color.
+~
+0 8 0 1 0
+D3
+~
+~
+0 -1 276
+> speech_prog begin~
+mpecho a hatch on the far wall opens with a creak.
+mpecho A Class 3 Training Droid slides out and turns to you.
+mpmload 201
+~
+|
+S
+#280
+Training Area Delta~
+The room is filled will the odor of blood and cybernetic fluids.
+There are dark red stains on the floor and stains of a deiierent
+color.
+~
+0 8 0 1 0
+D7
+~
+~
+0 -1 276
+> speech_prog begin~
+mpecho With a swoosh, a thin, tall door opens before you.
+mpecho An agile Class 4 Droid steps out, and looks to you.
+mpmload 202
+~
+|
+S
+#281
+Training Area Epsilon~
+The room is filled will the odor of blood and cybernetic fluids.
+There are dark red stains on the floor and stains of a deiierent
+color.
+~
+0 8 0 1 0
+D0
+~
+~
+0 -1 276
+> speech_prog begin~
+mpecho With a flash, and a high-pitched screech, a door opens.
+mpecho a Class 5 Android steps out and and turns to you.
+mpmload 203
+~
+|
+S
+#282
+Training Area Zeta~
+The room is filled will the odor of blood and cybernetic fluids.
+There are dark red stains on the floor and stains of a deiierent
+color.
+~
+0 8 0 1 0
+D6
+~
+~
+0 -1 276
+> speech_prog begin~
+mpecho A door on the far wall slams open.
+mpecho A Class 6 android steps out of the doorframe.
+mpmload 204
+~
+|
+S
+#283
+Training Area Eta~
+The room is filled will the odor of blood and cybernetic fluids.
+There are dark red stains on the floor and stains of a deiierent
+color.
+~
+0 8 0 1 0
+D1
+~
+~
+0 -1 276
+> speech_prog begin~
+mpecho two double-doors on the far wall open up.
+mpecho A Class 7 Cyborg steps out and grins.
+mpmload 205
+~
+|
+S
+#284
+Training Area Theta~
+The room is filled will the odor of blood and cybernetic fluids.
+There are dark red stains on the floor and stains of a deiierent
+color.
+~
+0 8 0 1 0
+D8
+~
+~
+0 -1 276
+> speech_prog begin~
+mpecho A grate in the floor creaks open.
+mpecho A Class 8 Android leaps out of the grate.
+mpmload 206
+~
+|
+S
+#285
+&wW&zo&rr&Rk&rs&zh&Wo&wp~
+This is one of L3's Engineering Workshops, here you can take your time and
+make whatever it is you feel like.
+~
+0 100663304 0 1 0
+D0
+~
+~
+0 -1 292
+S
+#286
+Engineering Goods~
+Here you will find the shopkeeper that will sell you everything that you'll
+need to make basic goods for Engineering. The store is a little dusty
+because hardly anyone ever comes to this place anymore.
+~
+0 8 0 1 0
+D4
+~
+~
+0 -1 292
+S
+#287
+Advanced Training Room~
+This area is very dangerous, combat levels of 400 or under should beware
+fighting here alone.
+Say 'Test my Power' to begin the final test.
+~
+0 0 0 1 0
+D4
+~
+~
+0 -1 276
+> speech_prog Test my Power~
+mpecho 3 Doors open up in front of you with a woosh.
+mpecho With a flash, 3 odd looking cyborgs step out.
+mpmload 217
+~
+|
+S
+#288
+Elevator~
+This is a very high classed elevator, it even have the fancy elevator
+music.
+&BTo go to the Engineering area type, 'Engineering'.
+~
+0 4 0 1 0
+D9
+~
+~
+0 -1 203
+> speech_prog engineering~
+mpechoat $n You have been taken to the Engineering Area.
+mpechoaround $n $n has just been taken to the engineering area.
+mptransfer $n 289
+~
+|
+S
+#289
+Elevator~
+This is a very high classed elevator, it even have the fancy elevator
+music.
+&BTo go to the Main area type, 'Main'.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 290
+> speech_prog main~
+mpechoat $n You have been taken to the Main
+area.
+mpechoaround $n $n has just been taken to the Main area.
+mptransfer $n 288
+~
+|
+S
+#290
+A Short Hallway~
+From here you can hear all the engineers hard at work. If you move towards
+the sound you might be able to make some stuff of your own.
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 291
+D3
+~
+~
+0 -1 289
+S
+#291
+A Short Hallway~
+From here you can hear all the engineers hard at work. If you move towards
+the sound you might be able to make some stuff of your own
+~
+0 0 0 1 0
+D1
+~
+~
+0 -1 292
+D3
+~
+~
+0 -1 290
+S
+#292
+Hallway~
+There are sparks being shot into this room from every direction. Maybe if
+you pick an empty room you can avoid all the interruptions that the other
+engineers might cause for you.
+~
+0 8 0 1 0
+D0
+~
+~
+0 -1 293
+D1
+~
+~
+0 -1 295
+D2
+~
+~
+0 -1 285
+D3
+~
+~
+0 -1 291
+D4
+~
+~
+0 -1 298
+D5
+~
+~
+0 -1 286
+D6
+~
+~
+0 -1 294
+D7
+~
+~
+0 -1 272
+D8
+~
+~
+0 -1 296
+D9
+~
+~
+0 -1 271
+S
+#293
+&wW&zo&rr&Rk&rs&zh&Wo&wp~
+This is one of L3's Engineering Workshops, here you can take your time and
+make whatever it is you feel like.
+~
+0 100663304 0 1 0
+D2
+~
+~
+0 -1 292
+S
+#294
+&wW&zo&rr&Rk&rs&zh&Wo&wp~
+This is one of L3's Engineering Workshops, here you can take your time and
+make whatever it is you feel like
+~
+0 100663304 0 1 0
+D9
+~
+~
+0 -1 292
+S
+#295
+&wW&zo&rr&Rk&rs&zh&Wo&wp~
+This is one of L3's Engineering Workshops, here you can take your time and
+make whatever it is you feel like.
+~
+0 100663304 0 1 0
+D3
+~
+~
+0 -1 292
+S
+#296
+&wW&zo&rr&Rk&rs&zh&Wo&wp~
+This is one of L3's Engineering Workshops, here you can take your time and
+make whatever it is you feel like
+~
+0 100663304 0 1 0
+D7
+~
+~
+0 -1 292
+S
+#297
+Workshop~
+This is one of L3's Engineering Workshops, here you can take your time and
+make whatever it is you feel like
+~
+0 100663304 0 1 0
+D0
+~
+~
+0 -1 292
+S
+#298
+&wW&zo&rr&Rk&rs&zh&Wo&wp~
+This is one of L3's Engineering Workshops, here you can take your time and
+make whatever it is you feel like
+~
+0 100663296 0 1 0
+D5
+~
+~
+0 -1 292
+S
+#299
+Illegal Shop~
+This store is not your typical store. It has some very strange
+items for sale. Do ya really wanna do business here?
+~
+0 4 0 1 0
+D5
+~
+~
+0 -1 204
+S
+#0
+
+
+#RESETS
+M 1 257 1 205
+G 1 2016 1
+G 1 2026 1
+G 1 2025 1
+G 1 2024 1
+G 1 2021 1
+G 1 2023 1
+G 1 10424 1
+G 1 2022 1
+G 1 2020 1
+G 1 2013 1
+G 1 2018 1
+G 1 2017 1
+G 1 2015 1
+G 1 2014 1
+G 1 500 1
+G 1 10498 1
+G 1 10314 1
+G 1 10313 1
+M 1 272 1 206
+G 1 2000 1
+G 1 2002 1
+G 1 502 1
+G 1 2007 1
+O 1 200 1 219
+M 1 220 1 221
+G 1 203 1
+G 1 202 1
+M 1 207 1 251
+G 1 273 1
+G 1 3 1
+M 1 208 1 258
+M 1 203 1 281
+M 1 206 1 284
+M 1 217 3 287
+M 1 222 1 220
+M 1 219 1 222
+G 1 219 1
+G 1 222 1
+G 1 202 1
+G 1 223 1
+M 1 271 1 207
+G 1 204 1
+G 1 205 1
+G 1 206 1
+G 1 503 1
+G 1 504 1
+G 1 505 1
+G 1 201 1
+M 0 221 100 202
+M 1 226 1 299
+G 1 50 1
+G 1 224 1
+G 1 60 1
+M 1 224 1 201
+M 1 225 1 209
+M 1 224 2 215
+M 1 221 10 213
+M 1 225 2 213
+M 1 221 14 210
+M 1 224 3 210
+M 1 274 1 115
+O 1 259 1 115
+O 1 2029 1 114
+M 1 210 1 286
+G 1 2010 1
+G 1 2027 1
+G 1 2013 1
+G 1 265 1
+S
+
+
+#SHOPS
+ 210    0  0  0  0  0   120  90         0 23    ; The L3 Engineering Shopkeeper
+ 219    0 17  0  0  0   120  90         0 23    ; A Restaurant Waiter
+ 220    0  0  0  0  0   120  90         0 23    ; An L3 Bar Wench
+ 226    0  0  0  0  0   120  90         0 23    ; A Crooked Salesman
+ 257    0  0  0  0  0   120  90         0 23    ; an L3 Item Provisioner
+ 271    0  0  0  0  0   120  90         0 23    ; an L3 Armorer
+ 272    0  0  0  0  0   120  90         0 23    ; an L3 Weaponsmith
+0
+
+
+#REPAIRS
+ 208    5  9  0         125   1         0 23    ; an L3 Repairman
+0
+
+
+#SPECIALS
+M  224 spec_customs_weapons
+M  224 spec_customs_spice
+M  225 spec_customs_spice
+S
+
+
+#$

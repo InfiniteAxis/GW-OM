@@ -1,0 +1,1447 @@
+#AREA   Colony X45~
+
+
+
+#AUTHOR Antonio~
+
+#RANGES
+0 0 0 1000
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 6309864
+
+#MOBILES
+#3000
+A Scientist~
+A Scientist~
+A Scientist is here, babbling on about the new cloning technology
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> all_greet_prog 100~
+say Hello $n, we developed a new cloning technology
+say Just go find the line and you could try it
+say It allows people to live on after they die for a small fee
+smile
+~
+|
+#3001
+An Item Shop Keeper~
+An Item Shop Keeper~
+An Item Shop Keeper is here, selling junk
+~
+~
+3 0 0 Z
+25 0 37 5d10+250 2d4+2
+800 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+5 5 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#3002
+Waitress~
+A Waitress~
+A Waitress is here, taking orders
+~
+~
+3 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+20 20 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#3003
+An Oz Soilder~
+An Oz Soilder~
+An Oz Soilder is here, selling stuff
+~
+~
+3 0 0 Z
+150 0 -275 30d10+1500 15d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+30 30 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#3004
+Marcus~
+Marcus~
+Marcus, The Mobile Suit Piloting Teacher
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> all_greet_prog 100~
+say Hello $n
+say Would you like to learn how to fly mobile suits?
+say Just say yes if you want to learn
+~
+> speech_prog yes~
+say Ok, first of you need to know these three skills
+say they are mobilesuits , navigation, and ship systems
+say you can learn them on Colony G42
+say type help suits to learn the commands
+smile
+~
+|
+#3009
+Grenade~
+a newly created Grenade~
+Some god abandoned a newly created Grenade here.
+~
+~
+1073741825 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#3010
+Broken Circuit~
+a newly created Broken Circuit~
+Some god abandoned a newly created Broken Circuit here.
+~
+~
+1073741825 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#3099
+final mob~
+a newly created final mob~
+Some god abandoned a newly created final mob here.
+~
+~
+1 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#3000
+Colony Mail Board~
+A Colony Mail Board~
+A Colony Mail Board~
+~
+13 2 0
+0 0 0 0
+1 10 1
+#3001
+Sunglasses~
+some sunglasses~
+Some sunglasses were left here~
+~
+9 0 131073
+0 0 0 0
+1 20 2
+#3002
+Vacuum Cleaner~
+A Vacuum Cleaner~
+A Vacuum Cleaner was left here in a pile of trash.~
+~
+5 2 8193
+800 2 4 12 1000 1000
+1 0 0
+#3003
+A Key~
+A Key~
+A Key to the Oz Base is here~
+~
+18 0 16385
+0 0 0 0
+1 0 0
+#3004
+Oz Mail Board~
+a Oz Mail Board~
+A Oz Mail Board is here.~
+~
+13 2 0
+0 0 0 0
+1 0 0
+#3005
+An ATM Machine~
+An ATM Machine~
+An ATM Machine is here against the wall~
+~
+13 2 0
+0 0 0 0
+1 0 0
+E
+An ATM Machine~
+This ATM can be used for banking
+the commands for it
+are
+Bank deposit
+<ammount>
+Bank withdraw
+<ammount>
+Bank
+ballance
+~
+E
+An ATM Machine~
+This ATM can be used for
+banking
+~
+E
+An ATM Machine~
+~
+E
+An ATM Machine~
+~
+E
+An ATM Machine~
+This Atm can be used for all banking purpose
+~
+E
+An ATM Machine~
+~
+#3006
+A Sign~
+A Sign~
+A Sign is here posted on the wall~
+~
+13 0 0
+0 0 0 0
+1 0 0
+E
+A Sign~
+To the East is the Residental Center
+To the North is the Training and Shoping Center
+To the West is some Research Centers
+To the South is the Docking Bay
+~
+#3007
+OZ Uniform~
+An OZ Uniform~
+An OZ Uniform is here, lying on the ground~
+~
+9 8192 9
+25 25 0 0
+1 2500 250
+#3008
+beer~
+A Bottle of Beer~
+A Bottle of Beer~
+~
+17 1073741824 1
+10 10 1 0
+1 0 0
+#3009
+Grenade~
+A grenade~
+A grenade~
+~
+82 0 16385
+100 200 0 0
+1 500 50
+#3010
+A Broken Circuit~
+A Broken Circuit~
+A Broken Circuit was discarded here.~
+~
+13 0 16385
+0 0 0 0
+1 1 0
+#3099
+Final object~
+Final object~
+Final object~
+~
+13 0 0
+0 0 0 0
+1 0 0
+#0
+
+
+#ROOMS
+#3000
+Colony X45 Docking Bay~
+You stand in the Docking Bay of Colony X45
+here you see many Mobile Suits landng and lifting off and
+&BTo go to Z64, say "Z64"
+~
+0 0 1
+D0
+~
+~
+0 -1 3001
+D1
+~
+~
+0 -1 3069
+> speech_prog z64~
+mpechoat $n Welcome to Z64.
+mea $n $n boards a shuttle to Colony Z64.
+mptransfer $n 5100
+~
+|
+S
+#3001
+Colony X45 Streets~
+~
+0 0 1
+D0
+~
+~
+0 -1 3002
+D2
+~
+~
+0 -1 3000
+S
+#3002
+Colony X45 Streets~
+~
+0 0 1
+D0
+~
+~
+0 -1 3003
+D2
+~
+~
+0 -1 3001
+D3
+~
+~
+0 -1 3067
+S
+#3003
+Colony X45 Streets~
+~
+0 0 1
+D0
+~
+~
+0 -1 3004
+D2
+~
+~
+0 -1 3002
+S
+#3004
+Colony X45 Streets~
+~
+0 0 1
+D0
+~
+~
+0 -1 3005
+D2
+~
+~
+0 -1 3003
+D3
+~
+~
+0 -1 3023
+S
+#3005
+An Intersection~
+This is the intersection of Colony X45
+its almost around the exact center
+of the colony
+~
+0 0 1
+D0
+~
+~
+0 -1 3016
+D1
+~
+~
+0 -1 3011
+D2
+~
+~
+0 -1 3004
+D3
+~
+~
+0 -1 3006
+D5
+~
+~
+2099215 3003 3051
+D6
+~
+~
+0 -1 3021
+D7
+~
+~
+0 -1 3022
+D8
+~
+~
+0 -1 3063
+D9
+~
+~
+0 -1 3062
+S
+#3006
+Colony X45 Streets~
+~
+0 0 1
+D1
+~
+~
+0 -1 3005
+D3
+~
+~
+0 -1 3007
+S
+#3007
+Colony X45 Streets~
+~
+0 0 1
+D1
+~
+~
+0 -1 3006
+D3
+~
+~
+0 -1 3008
+S
+#3008
+Colony X45 Streets~
+~
+0 0 1
+D1
+~
+~
+0 -1 3007
+D3
+~
+~
+0 -1 3009
+S
+#3009
+Colony X45 Streets~
+~
+0 0 1
+D1
+~
+~
+0 -1 3008
+D3
+~
+~
+0 -1 3010
+S
+#3010
+Colony X45 Streets~
+~
+0 0 1
+D1
+~
+~
+0 -1 3009
+S
+#3011
+Colony X45 Streets~
+~
+0 0 1
+D0
+~
+~
+0 -1 3040
+D1
+~
+~
+0 -1 3012
+D2
+~
+~
+0 -1 3041
+D3
+~
+~
+0 -1 3005
+S
+#3012
+Colony X45 Streets~
+~
+0 0 1
+D0
+~
+~
+0 -1 3042
+D1
+~
+~
+0 -1 3013
+D2
+~
+~
+0 -1 3043
+D3
+~
+~
+0 -1 3011
+S
+#3013
+Colony X45 Streets~
+~
+0 0 1
+D0
+~
+~
+0 -1 3044
+D1
+~
+~
+0 -1 3014
+D2
+~
+~
+0 -1 3045
+D3
+~
+~
+0 -1 3012
+S
+#3014
+Colony X45 Streets~
+~
+0 0 1
+D0
+~
+~
+0 -1 3046
+D1
+~
+~
+0 -1 3015
+D2
+~
+~
+0 -1 3047
+D3
+~
+~
+0 -1 3013
+S
+#3015
+Colony X45 Streets~
+~
+0 0 1
+D0
+~
+~
+0 -1 3048
+D2
+~
+~
+0 -1 3049
+D3
+~
+~
+0 -1 3014
+S
+#3016
+Colony X45 Streets~
+~
+0 0 1
+D0
+~
+~
+0 -1 3017
+D2
+~
+~
+0 -1 3005
+S
+#3017
+Colony X45 Streets~
+~
+0 0 1
+D0
+~
+~
+0 -1 3018
+D2
+~
+~
+0 -1 3016
+S
+#3018
+Colony X45 Streets~
+~
+0 0 1
+D0
+~
+~
+0 -1 3019
+D2
+~
+~
+0 -1 3017
+D3
+~
+~
+0 -1 1020
+S
+#3019
+Colony X45 Streets~
+A Sign here says
+The Training Center is closed until further notice
+~
+0 0 1
+D0
+~
+~
+0 -1 3020
+D2
+~
+~
+0 -1 3018
+S
+#3020
+Colony X45 Streets~
+~
+0 0 1
+D2
+~
+~
+0 -1 3019
+S
+#3021
+A Small Hotel~
+This place looks safe enough to
+&B'save' and 'quit'
+~
+0 8388616 1
+D0
+~
+~
+0 -1 3050
+D9
+~
+~
+0 -1 3005
+S
+#3022
+An Item Shop~
+You look around and see a Shop keeper selling
+some items and other junk
+~
+0 1032 1
+D8
+~
+~
+0 -1 3005
+S
+#3023
+Healing Tank Entrance~
+&BType Enter to enter the Healing tank
+~
+0 0 1
+D1
+~
+~
+0 -1 3004
+D10
+~
+~
+133120 -1 3024
+S
+#3024
+Healing Tank~
+&BSay 'Heal' to be healed
+Type 'leave' to get otu of here
+~
+0 1032 1
+D10
+~
+~
+264192 -1 3023
+> speech_prog heal ehal heel hael~
+mprestore $n 3000
+mpechoat $n You have been healed
+~
+|
+S
+#3025
+A Medical Research Center Entrance~
+To Leave say "Leave".
+~
+0 1036 1
+D3
+~
+~
+0 -1 3026
+> speech_prog Leave~
+mpechoat $n You are here.
+mpechoaround $n $n is gone.
+mptransfer $n 2019
+~
+|
+S
+#3026
+A Hallway~
+~
+0 1036 1
+D1
+~
+~
+0 -1 3025
+D2
+~
+~
+0 -1 3027
+S
+#3027
+A Hallway~
+~
+0 1036 1
+D0
+~
+~
+0 -1 3026
+D1
+~
+~
+0 -1 3028
+S
+#3028
+A Hallway~
+~
+0 1036 1
+D1
+~
+~
+0 -1 3030
+D2
+~
+~
+0 -1 3029
+D3
+~
+~
+0 -1 3027
+S
+#3029
+An Office~
+~
+0 1036 1
+D0
+~
+~
+0 -1 3028
+S
+#3030
+A Hallway~
+~
+0 1036 1
+D0
+~
+~
+0 -1 3031
+D1
+~
+~
+0 -1 3033
+D3
+~
+~
+0 -1 3028
+S
+#3031
+The Start of the Line~
+Just wait here and your turn will be soon.
+~
+0 1036 1
+D2
+~
+~
+0 -1 3030
+> rand_prog 37~
+mpechoat $n &RYou are escorted to the front of the line
+mpechoareound $n &R$n is escorted to the front of the line
+mptransfer $n 3032
+~
+> rand_prog 65~
+mpechoat $n &RYou are escorted to the front of the line.
+mpechoareound $n $n is escorted to the front of the line.
+mptransfer $n 3032
+~
+|
+S
+#3032
+Front Of the Line~
+&BType &RClone &B to be cloned
+~
+0 1036 1
+D2
+~
+~
+0 -1 3031
+S
+#3033
+Sick Bay~
+~
+0 12 1
+D3
+~
+~
+0 -1 3030
+> speech_prog heal~
+mpechoat $n You are healed.
+mprestore $n 500
+~
+|
+S
+#3034
+Train Center~
+This is a small training area where you can practice
+combat and your combat skills.
+Type Begin in any of the training rooms to start
+~
+0 1036 1
+D0
+~
+~
+0 -1 3037
+D1
+~
+~
+0 -1 3036
+D3
+~
+~
+0 -1 3035
+D4
+~
+~
+0 -1 3039
+D5
+~
+~
+0 -1 3038
+S
+#3035
+Training Level 3~
+~
+0 12 1
+D1
+~
+~
+0 -1 3034
+S
+#3036
+Training Level 2~
+~
+0 12 1
+D3
+~
+~
+0 -1 3034
+S
+#3037
+Training Level 1~
+~
+0 12 1
+D2
+~
+~
+0 -1 3034
+S
+#3038
+Training Level 5~
+~
+0 12 1
+D4
+~
+~
+0 -1 3034
+S
+#3039
+Training Level 4~
+~
+0 12 1
+D5
+~
+~
+0 -1 3034
+S
+#3040
+An Empty Apartment~
+~
+0 2098188 1
+D2
+~
+~
+0 -1 3011
+S
+#3041
+An Empty Apartment~
+~
+0 2098188 1
+D0
+~
+~
+0 -1 3011
+S
+#3042
+Azures's Crash Pad~
+~
+0 1049612 1
+D2
+~
+~
+0 -1 3012
+S
+#3043
+An Empty Home~
+~
+0 2098188 1
+D0
+~
+~
+0 -1 3012
+S
+#3044
+An Empty Home~
+~
+0 2098188 1
+D2
+~
+~
+0 -1 3013
+S
+#3045
+An Empty Home~
+~
+0 2098188 1
+D0
+~
+~
+0 -1 3013
+S
+#3046
+An Empty Apartment~
+~
+0 2098188 1
+D2
+~
+~
+0 -1 3014
+S
+#3047
+An Empty Apartment~
+~
+0 2098188 1
+D0
+~
+~
+0 -1 3014
+S
+#3048
+Char's Manchine~
+~
+0 1049612 1
+D2
+~
+~
+0 -1 3015
+S
+#3049
+An Empty Home~
+~
+0 2098188 1
+D0
+~
+~
+0 -1 3015
+S
+#3050
+A Resteraunt~
+~
+0 1036 1
+D2
+~
+~
+0 -1 3021
+S
+#3051
+A Mysterious Hole~
+~
+0 12 1
+D3
+~
+~
+2048 -1 3052
+D4
+~
+~
+7 3003 3005
+S
+#3052
+A Mysterious Tunnel~
+~
+0 12 1
+D1
+~
+~
+0 -1 3051
+D3
+~
+~
+2048 -1 3053
+S
+#3053
+Oz Base Entrance~
+~
+0 12 1
+D0
+~
+~
+35 3003 3054
+D1
+~
+~
+0 -1 3052
+> entry_prog 100~
+if clan($n) == Oz
+mpecho Hello $n
+else
+mpecho get out $n
+mptransfer $n 3052
+endif
+~
+|
+S
+#3054
+A Hallway~
+~
+0 12 1
+D0
+~
+~
+0 -1 3055
+D1
+~
+~
+0 -1 3065
+D2
+~
+~
+35 3003 3053
+D3
+~
+~
+0 -1 3064
+S
+#3055
+A Hallway~
+~
+0 12 1
+D0
+~
+~
+0 -1 3056
+D1
+~
+Jail Door~
+7 3003 3058
+D2
+~
+~
+0 -1 3054
+D3
+~
+Vault~
+7 3003 3057
+S
+#3056
+A Hallway~
+~
+0 12 1
+D1
+~
+~
+0 -1 3061
+D2
+~
+~
+0 -1 3055
+D3
+~
+~
+0 -1 3059
+D5
+~
+~
+2048 -1 3060
+S
+#3057
+Oz Storeroom~
+~
+0 524300 1
+D1
+~
+Vault~
+7 3003 3055
+S
+#3058
+A Jail~
+~
+0 4 1
+D3
+~
+Jail Door~
+7 3003 3055
+S
+#3059
+Oz Mail Room~
+~
+0 12 1
+D0
+~
+~
+0 -1 3066
+D1
+~
+~
+0 -1 3056
+S
+#3060
+Fall-Out Shelter~
+~
+0 100664332 1
+D4
+~
+~
+0 -1 3056
+S
+#3061
+An Empty Office For Sale~
+~
+0 2097164 1
+D3
+~
+~
+0 -1 3056
+S
+#3062
+Colony X45 Bank~
+~
+0 1292 1
+D6
+~
+~
+0 -1 3005
+S
+#3063
+A Factory~
+~
+0 67175436 1
+D7
+~
+~
+0 -1 3005
+S
+#3064
+An Empty Office For Sale~
+~
+0 2097164 1
+D1
+~
+~
+0 -1 3054
+S
+#3065
+An Empty Office For Sale~
+~
+0 2097164 1
+D3
+~
+~
+0 -1 3054
+S
+#3066
+Oz Soilder Shop~
+~
+0 1036 1
+D2
+~
+~
+0 -1 3059
+S
+#3067
+Mobile Suits Piloting Class~
+~
+0 1036 1
+D1
+~
+~
+0 -1 3002
+S
+#3068
+Crazy Party Room~
+~
+0 1036 1
+D3
+~
+~
+0 -1 3000
+S
+#3069
+Artificial Garden~
+~
+0 1036 4
+D3
+~
+~
+0 -1 3000
+S
+#3070
+Floating in a void~
+~
+0 1036 1
+D3
+~
+~
+0 -1 3068
+S
+#3071
+Floating in a void~
+~
+0 1036 1
+S
+#3072
+Floating in a void~
+~
+0 1036 1
+S
+#3073
+Floating in a void~
+~
+0 1036 1
+S
+#3074
+Floating in a void~
+~
+0 4 1
+S
+#3075
+Floating in a void~
+~
+0 4 1
+S
+#3076
+Floating in a void~
+~
+0 4 1
+S
+#3077
+Floating in a void~
+~
+0 4 1
+S
+#3078
+Floating in a void~
+~
+0 4 1
+S
+#3079
+Floating in a void~
+~
+0 4 1
+S
+#3080
+Floating in a void~
+~
+0 4 1
+S
+#3081
+Floating in a void~
+~
+0 4 1
+S
+#3082
+Floating in a void~
+~
+0 4 1
+S
+#3083
+Floating in a void~
+~
+0 4 1
+S
+#3084
+Floating in a void~
+~
+0 4 1
+S
+#3085
+Floating in a void~
+~
+0 4 1
+S
+#3086
+Floating in a void~
+~
+0 4 1
+S
+#3087
+Floating in a void~
+~
+0 4 1
+S
+#3088
+Floating in a void~
+~
+0 4 1
+S
+#3089
+Floating in a void~
+~
+0 4 1
+S
+#3090
+Floating in a void~
+~
+0 4 1
+S
+#3091
+Floating in a void~
+~
+0 4 1
+S
+#3092
+Floating in a void~
+~
+0 4 1
+S
+#3093
+Floating in a void~
+~
+0 4 1
+S
+#3094
+Floating in a void~
+~
+0 4 1
+S
+#3095
+Floating in a void~
+~
+0 4 1
+S
+#3096
+Floating in a void~
+~
+0 4 1
+S
+#3097
+Floating in a void~
+~
+0 4 1
+S
+#3098
+Floating in a void~
+~
+0 4 1
+S
+#3099
+Prog Rooms~
+~
+0 4 1
+S
+#0
+
+
+#RESETS
+O 1 3000 1 3000
+O 1 10315 1 3000
+O 1 3006 1 3005
+D 0 3005 5 2
+M 1 3001 1 3022
+G 1 3001 1
+G 1 10494 1
+G 1 65 1
+G 1 10313 1
+M 1 3000 1 3029
+M 1 3002 1 3050
+G 1 10313 1
+G 1 10314 1
+D 0 3051 4 2
+D 0 3053 0 1
+D 0 3054 2 1
+D 0 3055 1 2
+D 0 3055 3 2
+D 0 3057 1 2
+D 0 3058 3 2
+O 1 3004 1 3059
+O 1 3005 1 3062
+M 1 3003 1 3066
+G 1 3007 1
+G 1 2000 1
+M 1 3004 1 3067
+O 1 3003 1 3099
+S
+
+
+#SHOPS
+ 3001    0  0  0  0  0   120  90         0 23    ; An Item Shop Keeper
+ 3002    0  0  0  0  0   120  90         0 23    ; A Waitress
+ 3003    0  0  0  0  0   120  90         0 23    ; An Oz Soilder
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+M  3004 spec_gambler
+S
+
+
+#$

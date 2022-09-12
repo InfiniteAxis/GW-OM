@@ -1,0 +1,2994 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         Colony R28~
+Author       Akumaka~
+Ranges       1 1007 1 1007
+Economy      0 758601079
+ResetMsg     Lightning flashes overhead.~
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       2000
+Keywords   Engineer Teacher~
+Short      An Engineer Teacher~
+Long       An Engineer Teacher stands here, awaiting his students.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel practice nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   emote looks up
+say Ah!  Hello $n!  Good to see you!  Are you ready for your lesson?   
+smile
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       2001
+Keywords   citizen~
+Short      citizen~
+Long       A colony citizen is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 1 0 0 5 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+VIPFlags   R28~
+#ENDMOBILE
+
+#MOBILE
+Vnum       2002
+Keywords   R28 Military Weapons Dealer~
+Short      An R28 Military Weapons Dealer~
+Long       An R28 Military Weapons Dealer is here, smoking a cigar.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 10 0 75 1000 0
+Stats2     2 10 100
+Stats3     1 4 2
+Stats4     0 0 0 2 2
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+VIPFlags   R28~
+ShopData   0 0 0 0 0 120 100 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       2003
+Keywords   R28 Military Armor Keeper~
+Short      An R28 Military Armor Keeper~
+Long       An R28 Military Armor Keeper is here, repairing some broken armor.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 100 0 -150 1000 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+VIPFlags   R28~
+ShopData   0 0 0 0 0 120 100 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       2004
+Keywords   Hardware Shopkeeper~
+Short      A Hardware Shopkeeper~
+Long       The Hardware Shopkeeper is here, selling engineering items.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 100 0 -150 83 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+VIPFlags   R28~
+ShopData   0 0 0 0 0 120 100 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p stock~
+Comlist   mpoload 2006
+mpoload 2007
+mpoload 2008
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       2005
+Keywords   Bounty Official~
+Short      The Bounty Official~
+Long       The Bounty Official stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel stayarea~
+Stats1     0 1000 0 -2400 750 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       2006
+Keywords   The General~
+Short      The General~
+Long       The general is here
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel stayarea~
+Stats1     0 10 0 75 200 0
+Stats2     2 10 100
+Stats3     1 4 2
+Stats4     0 0 0 2 2
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+VIPFlags   R28~
+#ENDMOBILE
+
+#MOBILE
+Vnum       2007
+Keywords   A Robot~
+Short      a robot~
+Long       A training robot is here for you to destroy.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel stayarea~
+Stats1     0 15 0 62 5 0
+Stats2     3 10 150
+Stats3     0 4 2
+Stats4     0 0 0 3 3
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       2008
+Keywords   R28 soldier~
+Short      r28 soldier~
+Long       A r28 soldier is patrolling here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_police_attack~
+Gender     nonbinary~
+Actflags   npc stayarea~
+Stats1     0 80 0 -100 10 0
+Stats2     16 10 800
+Stats3     8 4 2
+Stats4     0 0 0 16 16
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+VIPFlags   R28~
+#ENDMOBILE
+
+#MOBILE
+Vnum       2009
+Keywords   A tough robot~
+Short      robot~
+Long       A tough-looking robot is here. Can you handle it?
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel stayarea~
+Stats1     0 30 0 25 10 0
+Stats2     6 10 300
+Stats3     3 4 2
+Stats4     0 0 0 6 6
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       2010
+Keywords   An Engineer ~
+Short      engineer~
+Long       An engineer is selling supplies here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel stayarea nocorpse~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    18 10 10 10 10 10 10
+Saves      0 0 0 0 0
+VIPFlags   R28~
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  speech_prog~
+Arglist   stock~
+Comlist   mpoload 2013
+mpoload 65
+mpoload 2016
+mpoload 2018
+mpoload 2015
+mpoload 2014
+mpoload 2017
+mpoload 2020
+mpoload 2021
+mpoload 2022
+mpoload 2023
+mpoload 2024
+mpoload 2025
+mpoload 2026
+mpoload 10491
+mpecho &gThe shelves have been restocked.&x
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       2014
+Keywords   training droid~
+Short      A training droid~
+Long       A tall slow moving training droid stands here anticipating your moves.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel stayarea~
+Stats1     0 50 0 -25 10 0
+Stats2     10 10 500
+Stats3     1 4 2
+Stats4     0 0 0 2 2
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       2015
+Keywords   Training droid~
+Short      A Training droid~
+Long       A short but fast training droid stands here waiting to attack you.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel stayarea~
+Stats1     0 75 0 -87 10 0
+Stats2     15 10 750
+Stats3     1 4 2
+Stats4     0 0 0 2 2
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       2016
+Keywords   young engineer~
+Short      A young engineer~
+Long       A young engineer is here, shopping for materials
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 5 0 87 0 0
+Stats2     1 10 50
+Stats3     0 4 2
+Stats4     0 0 0 1 1
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+VIPFlags   R28~
+#ENDMOBILE
+
+#MOBILE
+Vnum       2017
+Keywords   R28 Security~
+Short      An R28 Security Officer~
+Long       An R28 Security Officer stands here, looking for smuggled goods.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_customs_weapons~
+Specfun2    spec_customs_spice~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 500 0 -1150 0 0
+Stats2     100 10 5000
+Stats3     50 4 2
+Stats4     0 0 0 100 100
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    punch kick~
+Defenses   dodge~
+VIPFlags   R28~
+#ENDMOBILE
+
+#MOBILE
+Vnum       2018
+Keywords   Electronics Clerk~
+Short      An Electronics Clerk~
+Long       An Electronics Clerk is here, examining a microchip.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       2019
+Keywords   Leather Clerk~
+Short      A Leather Clerk~
+Long       A Leather Clerk stands here, examining some fabric.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 2 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   say Please.. wish me back with the Dragonballs...
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  hitprcnt_prog~
+Arglist   30~
+Comlist   scream
+say I.. won't let you DEFEAT ME!!!
+mpecho &RG&ro&Rk&ru&R'&rs&w eyes flicker &GE&gmerald &GG&gr&GE&ge&GN&B!&b!
+mpecho &RG&ro&Rk&ru&R'&rs&w Aura turns &YG&Oo&Yl&Od&w along with hishair!
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  act_prog~
+Arglist   circle~
+Comlist   say Kaioken x10!!!!
+mpecho &RGoku&w Aura brightens!
+mpdamage $n 5000
+mpecho &RGoku&w grows in power!!
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  act_prog~
+Arglist   gouge~
+Comlist   say You.... i won't STAND for this!!!
+mpecho &RG&ro&Rk&ru&w fires a large Ki-Blast at $n!
+mea $n &RG&ro&Rk&ru&R'&rs&w damages you for 5000 points!
+mpdamage $n 5000
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       2020
+Keywords   Zoot~
+Short      Zoot~
+Long       A person is walking quickly by, hiding his face.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc~
+Stats1     0 20 0 50 0 0
+Stats2     4 10 200
+Stats3     2 4 2
+Stats4     0 0 0 4 4
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#ENDMOBILE
+
+#MOBILE
+Vnum       2021
+Keywords   Adar~
+Short      Adar~
+Long       A person wearing a hooded jacket is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc~
+Stats1     0 220 0 -450 0 0
+Stats2     44 10 2200
+Stats3     22 4 2
+Stats4     0 0 0 44 44
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Defenses   parry~
+#ENDMOBILE
+
+#MOBILE
+Vnum       2022
+Keywords   Kolak~
+Short      Kolak~
+Long       Kolak is here, looking a little nervous.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc~
+Stats1     0 420 0 -950 0 0
+Stats2     84 10 4200
+Stats3     42 4 2
+Stats4     0 0 0 84 84
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    kick~
+#ENDMOBILE
+
+#MOBILE
+Vnum       2023
+Keywords   zeinel~
+Short      Zeinel~
+Long       Zeinel is here, minding his own business.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc~
+Stats1     0 620 0 -1450 0 0
+Stats2     124 10 6200
+Stats3     62 4 2
+Stats4     0 0 0 124 124
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch~
+Defenses   dodge~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpecho &rZeinel's head just kinds of...falls off.&g 
+mpoload 2034
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       2024
+Keywords   Snit~
+Short      Snit~
+Long       A young woman is here, sneering at you.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   parry dodge~
+#ENDMOBILE
+
+#MOBILE
+Vnum       2029
+Keywords   Mackenzie~
+Short      Mackenzie~
+Long       Mackenzie is here, greeting people.
+~
+Desc       Mackenzie is a beautiful young woman, with blonde hair, brown eyes, and a
+striking figure. Her flight suit is rather sliming and just adds to the
+mystery that is Mackenzie.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc train noassist~
+Stats1     0 100 0 -150 0 0
+Stats2     30000 30000 3000000
+Stats3     100 100 1000
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  act_prog~
+Arglist   p enters the ship.~
+Comlist   if hasqbit($n) == 5
+say We have no room for cheaters here!
+mpforce $n leaveship
+else
+if goldamt ($n) >= 300
+mpforce $n give 300 dollars mack
+say Welcome aboard!
+else
+say Sorry, you need more money to board!
+mpforce $n leave
+endif
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       2030
+Keywords   Gluttony~
+Short      &RG&rlu&ptt&ron&Ry~
+Long       &RG&rlu&ptt&ron&Ry&w is wandering around, looking for food.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_homunculus~
+Gender     nonbinary~
+Actflags   npc noassist~
+Affected   invisible hide truesight~
+Stats1     0 1000 0 -2400 200000 0
+Stats2     200 10 1500000
+Stats3     100 4 2
+Stats4     0 0 4 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    bite~
+Defenses   parry dodge~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   say I'll.. be.. back.. To eat.. Homunculus... can't die...
+mpoload 95
+mpnothing Log: $n just killed Gluttony.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       2099
+Keywords   last~
+Short      a newly created last~
+Long       Some god abandoned a newly created last here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#OBJECT
+Vnum     2000
+Keywords pistol~
+Type     weapon~
+Short    a pistol~
+Long     A pistol is here.~
+Flags    inventory~
+WFlags   take wield~
+Values   0 1 3 6 500 500
+Stats    1 1000 100 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2001
+Keywords HK UMP~
+Type     weapon~
+Short    &Wa&wn &WH&wK &WU&wM&WP &w.&W4&w5 &WA&wC&WP~
+Long     &zA small, lightweight, low-recoil submachine gun lies here.~
+Flags    inventory~
+WFlags   take wield~
+Values   25 23 30 6 2000 2000
+Stats    1 5000 500 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2002
+Keywords SMG~
+Type     weapon~
+Short    An SMG~
+Long     Someone left there SMG lying here.~
+Flags    inventory~
+WFlags   take wield~
+Values   100 5 25 6 1200 1200
+Stats    1 300 1000 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2003
+Keywords A riot shield~
+Type     armor~
+Short    &wa &zr&Wi&wo&zt &Cs&ch&Oi&ce&Ol&Cd~
+Long     A A riot shield is here.~
+Flags    inventory~
+WFlags   take shield~
+Values   10 10 50 0 0 0
+Stats    1 10000 500 0 0
+Affect       -1 -1 2 18 0
+Affect       -1 -1 2 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2004
+Keywords Military Uniform~
+Type     armor~
+Short    a Military Uniform~
+Long     A Military Uniform is here.~
+Flags    inventory~
+WFlags   take body~
+Values   25 25 0 0 0 0
+Stats    1 2500 250 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2005
+Keywords Army Boots~
+Type     armor~
+Short    a Army Boots~
+Long     A Army Boots is here.~
+Flags    inventory~
+WFlags   take feet~
+Values   10 10 0 0 0 0
+Stats    1 1000 100 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2006
+Keywords A Lunch Pack~
+Type     food~
+Short    a lunch pack~
+Long     A lunch pack is here. Mmmmmmmmmm food.~
+Flags    inventory~
+WFlags   take~
+Values   50 50 0 0 0 0
+Stats    1 3 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2007
+Keywords Ammo Cell~
+Type     ammo~
+Short    an Ammo Cell~
+Long     An Ammo Cell is here~
+Flags    inventory~
+WFlags   take~
+Values   1000 0 0 0 0 0
+Stats    1 100 50 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2008
+Keywords unknown pill~
+Type     pill~
+Short    an unknown pill~
+Long     An unknown pill is here.~
+Flags    inventory~
+WFlags   take~
+Values   100 -1 -1 -1 0 0
+Stats    1 1000 100 0 0
+Spells   'armor' 'NONE' 'NONE'
+#ENDOBJECT
+
+#OBJECT
+Vnum     2009
+Keywords A Medpac~
+Type     medpac~
+Short    a A Medpac~
+Long     A Medpac is here.~
+Flags    inventory~
+WFlags   take hold~
+Values   10 0 0 0 0 0
+Stats    1 200 20 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2010
+Keywords Silk~
+Type     fabric~
+Short    Some Silk~
+Long     Some Silk was left here.~
+Flags    inventory~
+WFlags   take~
+Values   20 20 0 0 0 0
+Stats    1 100 100 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2011
+Keywords A desk~
+Type     container~
+Short    a desk~
+Long     A nice looking desk is here.~
+Values   10 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2012
+Keywords A standard issue pistol~
+Type     weapon~
+Short    standard issue pistol~
+Long     A standard issue pistol is here.~
+Flags    inventory~
+WFlags   take wield~
+Values   100 5 10 6 0 0
+Stats    1 200 20 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2013
+Keywords some cloth~
+Type     fabric~
+Short    some cloth~
+Long     Some cloth has been left here.~
+Flags    inventory~
+WFlags   take~
+Values   5 5 0 0 0 0
+Stats    1 50 1 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2014
+Keywords A sewing kit~
+Type     thread~
+Short    A sewing kit~
+Long     A sewing kit has been dropped here.~
+Flags    inventory~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 20 2 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2015
+Keywords A toolkit~
+Type     toolkit~
+Short    A toolkit~
+Long     A toolkit is here.~
+Flags    inventory~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 500 2 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2016
+Keywords a small oven~
+Type     oven~
+Short    A small oven~
+Long     A small oven is here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 50 5 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2017
+Keywords A battery~
+Type     battery~
+Short    A battery~
+Long     A battery lies discarded here.~
+Flags    inventory~
+WFlags   take~
+Values   1000 0 0 0 0 0
+Stats    1 70 1 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2018
+Keywords a piece of steel~
+Type     durasteel~
+Short    a a piece of steel~
+Long     A a piece of steel is here.~
+Flags    inventory~
+WFlags   take~
+Values   30 30 0 0 0 0
+Stats    1 35 3 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2019
+Keywords A piece of iron~
+Type     duraplast~
+Short    a A piece of iron~
+Long     A A piece of iron is here.~
+Flags    inventory~
+WFlags   take~
+Values   40 40 0 0 0 0
+Stats    1 40 4 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2020
+Keywords chemical set~
+Type     chemical~
+Short    a chemical set~
+Long     A chemical set is here.~
+Flags    inventory~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 70 1 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2021
+Keywords lens~
+Type     lens~
+Short    a lens~
+Long     A lens is here.~
+Flags    inventory~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 70 1 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2022
+Keywords wire~
+Type     superconductor~
+Short    a wire~
+Long     A wire is here.~
+Flags    inventory~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 70 1 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2023
+Keywords crystal~
+Type     crystal~
+Short    a crystal~
+Long     A crystal is here.~
+Flags    inventory~
+WFlags   take~
+Values   50 50 0 0 0 0
+Stats    1 100 10 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2024
+Keywords Mirror~
+Type     mirror~
+Short    a Mirror~
+Long     A Mirror is here.~
+Flags    inventory~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 70 1 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2025
+Keywords piece of gold~
+Type     rare_metal~
+Short    a piece of gold~
+Long     A piece of gold is here.~
+Flags    inventory~
+WFlags   take~
+Values   55 55 0 0 0 0
+Stats    1 50 5 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2026
+Keywords computer circuit~
+Type     circuit~
+Short    a computer circuit~
+Long     A computer circuit is here.~
+Flags    inventory~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 70 1 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2027
+Keywords Hard Leather~
+Type     fabric~
+Short    Some Hard Leather~
+Long     Some Hard Leather was left here.~
+WFlags   take~
+Values   50 50 0 0 0 0
+Stats    1 200 20 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2028
+Keywords bag pretzels~
+Type     food~
+Short    Bag of Pretzels~
+Long     A scrumptious bag of pretzels is laying here.~
+WFlags   take hold~
+Values   10 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2029
+Keywords Couch~
+Type     furniture~
+Short    a Couch~
+Long     A Big Comfy Couch is here.~
+Values   5 5 2 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2030
+Keywords Beer Hose~
+Type     drinkcon~
+Short    A Beer Hose~
+Long     A Long hose to be drunk from hangs from the ceiling.~
+Values   1000000 1000000 1 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2031
+Keywords head zoot~
+Type     treasure~
+Short    The Head of Zoot~
+Long     The Head of Zoot~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2032
+Keywords head adar~
+Type     treasure~
+Short    The Head of Adar~
+Long     The Head of Adar~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2033
+Keywords head kolak~
+Type     treasure~
+Short    The Head of Kolak~
+Long     The Head of Kolak~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2034
+Keywords head zeinel~
+Type     treasure~
+Short    The Head of Zeinel~
+Long     The Head of Zeinel~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2035
+Keywords head snit~
+Type     treasure~
+Short    The Head of Snit~
+Long     The Head of Snit~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2036
+Keywords Crib~
+Type     furniture~
+Short    A Small Crib~
+Long     A Small Rockable Crib is here.~
+Values   2 2 3 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     2099
+Keywords last~
+Type     trash~
+Short    a last~
+Long     A last is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     2000
+Name     Landing Pad of R28~
+Sector   city~
+Flags    nomob can_land can_fly docking~
+Desc     This is the landing pad of a colony well known for inventions and
+engineering.  Colony R28 is home to some of the best scientists and
+engineers in the galaxy, and also boasts a decent amount of military
+presence.  In the distance, the sounds of metal working can be heard
+amongst the racket of the colony. 
+&BSay 'G42' to go to Colony G42.
+~
+#EXIT
+Direction north~
+ToRoom    2001
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   g42~
+Comlist   mpechoat $n Welcome to G42.
+mpechoaround $n $n boards a shuttle to G42.
+mptransfer $n 500
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     2001
+Name     R28 Commons~
+Sector   city~
+Desc     These are the Colony R28 Commons.  Many shops line the outer edge of the
+commons, while the rest of the commons are for people to enjoy themselves.
+ The sound of happy shoppers and citizens fills the air.
+~
+#EXIT
+Direction north~
+ToRoom    2008
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2002
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2000
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2005
+#ENDEXIT
+
+Reset M 0 2016 25 2001
+#ENDROOM
+
+#ROOM
+Vnum     2002
+Name     R28 Commons~
+Sector   city~
+Desc     These are the Colony R28 Commons.  Many shops line the outer edge of the
+commons, while the rest of the commons are for people to enjoy themselves.
+ The sound of happy shoppers and citizens fills the air.
+~
+#EXIT
+Direction north~
+ToRoom    2009
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2003
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2001
+#ENDEXIT
+
+Reset M 0 2016 25 2002
+Reset M 0 2001 43 2002
+Reset M 0 2001 43 2002
+#ENDROOM
+
+#ROOM
+Vnum     2003
+Name     R28 Commons~
+Sector   city~
+Desc     These are the Colony R28 Commons.  Many shops line the outer edge of the
+commons, while the rest of the commons are for people to enjoy themselves.
+ The sound of happy shoppers and citizens fills the air.
+~
+#EXIT
+Direction north~
+ToRoom    2010
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2002
+#ENDEXIT
+
+Reset M 0 2016 25 2003
+Reset M 0 2001 43 2003
+Reset M 0 2001 43 2003
+#ENDROOM
+
+#ROOM
+Vnum     2004
+Name     R28 Commons~
+Sector   city~
+Desc     These are the Colony R28 Commons.  Many shops line the outer edge of the
+commons, while the rest of the commons are for people to enjoy themselves.
+ The sound of happy shoppers and citizens fills the air.
+~
+#EXIT
+Direction north~
+ToRoom    2006
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2005
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2026
+#ENDEXIT
+
+Reset M 0 2016 25 2004
+Reset M 0 2001 43 2004
+#ENDROOM
+
+#ROOM
+Vnum     2005
+Name     R28 Commons~
+Sector   city~
+Desc     redit desc These are the Colony R28 Commons.  Many shops line the outer
+edge of the commons, while the rest of the commons are for people to enjoy
+themselves.  The sound of happy shoppers and citizens fills the air.
+~
+#EXIT
+Direction north~
+ToRoom    2007
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2001
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2004
+#ENDEXIT
+
+Reset M 0 2016 25 2005
+Reset M 0 2001 43 2005
+#ENDROOM
+
+#ROOM
+Vnum     2006
+Name     R28 Commons~
+Sector   city~
+Desc     These are the Colony R28 Commons.  Many shops line the outer edge of the
+commons, while the rest of the commons are for people to enjoy themselves.
+ The sound of happy shoppers and citizens fills the air.
+~
+#EXIT
+Direction north~
+ToRoom    2011
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2007
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2004
+#ENDEXIT
+
+Reset M 0 2016 25 2006
+Reset M 0 2001 43 2006
+#ENDROOM
+
+#ROOM
+Vnum     2007
+Name     R28 Commons~
+Sector   city~
+Desc     These are the Colony R28 Commons.  Many shops line the outer edge of the
+commons, while the rest of the commons are for people to enjoy themselves.
+ The sound of happy shoppers and citizens fills the air.
+~
+#EXIT
+Direction north~
+ToRoom    2012
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2008
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2005
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2006
+#ENDEXIT
+
+Reset M 0 2016 25 2007
+Reset M 0 2001 43 2007
+Reset M 0 2001 43 2007
+Reset M 0 2023 1 2007
+#ENDROOM
+
+#ROOM
+Vnum     2008
+Name     R28 Commons~
+Sector   city~
+Desc     These are the Colony R28 Commons.  Many shops line the outer edge of the
+commons, while the rest of the commons are for people to enjoy themselves.
+ The sound of happy shoppers and citizens fills the air.
+~
+#EXIT
+Direction north~
+ToRoom    2013
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2009
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2001
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2007
+#ENDEXIT
+
+Reset M 0 2016 25 2008
+Reset M 0 2001 43 2008
+#ENDROOM
+
+#ROOM
+Vnum     2009
+Name     R28 Commons~
+Sector   city~
+Desc     These are the Colony R28 Commons.  Many shops line the outer edge of the
+commons, while the rest of the commons are for people to enjoy themselves.
+ The sound of happy shoppers and citizens fills the air.
+~
+#EXIT
+Direction north~
+ToRoom    2014
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2010
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2002
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2008
+#ENDEXIT
+
+Reset M 0 2016 25 2009
+#ENDROOM
+
+#ROOM
+Vnum     2010
+Name     R28 Commons~
+Sector   city~
+Desc     These are the Colony R28 Commons.  Many shops line the outer edge of the
+commons, while the rest of the commons are for people to enjoy themselves.
+ The sound of happy shoppers and citizens fills the air.
+~
+#EXIT
+Direction north~
+ToRoom    2015
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2039
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2003
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2009
+#ENDEXIT
+
+Reset M 0 2016 25 2010
+Reset M 0 2001 43 2010
+Reset M 0 2001 43 2010
+#ENDROOM
+
+#ROOM
+Vnum     2011
+Name     R28 Commons~
+Sector   city~
+Desc     These are the Colony R28 Commons.  Many shops line the outer edge of the
+commons, while the rest of the commons are for people to enjoy themselves.
+ The sound of happy shoppers and citizens fills the air.
+~
+#EXIT
+Direction north~
+ToRoom    2016
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2012
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2006
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2027
+#ENDEXIT
+
+Reset M 0 2016 25 2011
+Reset M 0 2001 43 2011
+Reset M 0 2001 43 2011
+#ENDROOM
+
+#ROOM
+Vnum     2012
+Name     R28 Commons~
+Sector   city~
+Desc     These are the Colony R28 Commons.  Many shops line the outer edge of the
+commons, while the rest of the commons are for people to enjoy themselves.
+ The sound of happy shoppers and citizens fills the air.
+~
+#EXIT
+Direction north~
+ToRoom    2017
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2013
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2007
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2011
+#ENDEXIT
+
+Reset M 0 2016 25 2012
+Reset M 0 2001 43 2012
+#ENDROOM
+
+#ROOM
+Vnum     2013
+Name     The R28 Informational Center~
+Sector   city~
+Flags    nomob~
+Desc     This is the R28 Informational Center. There is a women behind a desk
+waiting to help people that are in line.
+~
+#EXIT
+Direction north~
+ToRoom    2018
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2014
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2008
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2012
+#ENDEXIT
+
+Reset M 0 2030 1 2013
+Reset O 0 2011 1 2013
+#ENDROOM
+
+#ROOM
+Vnum     2014
+Name     R28 Commons~
+Sector   city~
+Desc     These are the Colony R28 Commons.  Many shops line the outer edge of the
+commons, while the rest of the commons are for people to enjoy themselves.
+ The sound of happy shoppers and citizens fills the air.
+~
+#EXIT
+Direction north~
+ToRoom    2019
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2015
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2009
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2013
+#ENDEXIT
+
+Reset M 0 2016 25 2014
+Reset M 0 2001 43 2014
+Reset M 0 2001 43 2014
+Reset M 0 2001 43 2014
+#ENDROOM
+
+#ROOM
+Vnum     2015
+Name     R28 Commons~
+Sector   city~
+Desc     These are the Colony R28 Commons.  Many shops line the outer edge of the
+commons, while the rest of the commons are for people to enjoy themselves.
+ The sound of happy shoppers and citizens fills the air.
+~
+#EXIT
+Direction north~
+ToRoom    2020
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2010
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2014
+#ENDEXIT
+
+Reset M 0 2016 25 2015
+Reset M 0 2001 43 2015
+Reset M 0 2001 43 2015
+#ENDROOM
+
+#ROOM
+Vnum     2016
+Name     R28 Commons~
+Sector   city~
+Desc     These are the Colony R28 Commons.  Many shops line the outer edge of the
+commons, while the rest of the commons are for people to enjoy themselves.
+ The sound of happy shoppers and citizens fills the air.
+~
+#EXIT
+Direction north~
+ToRoom    2021
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2017
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2011
+#ENDEXIT
+
+Reset M 0 2016 25 2016
+Reset M 0 2001 43 2016
+#ENDROOM
+
+#ROOM
+Vnum     2017
+Name     R28 Commons~
+Sector   city~
+Desc     These are the Colony R28 Commons.  Many shops line the outer edge of the
+commons, while the rest of the commons are for people to enjoy themselves.
+ The sound of happy shoppers and citizens fills the air.
+~
+#EXIT
+Direction north~
+ToRoom    2022
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2018
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2012
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2016
+#ENDEXIT
+
+Reset M 0 2016 25 2017
+Reset M 0 2001 43 2017
+#ENDROOM
+
+#ROOM
+Vnum     2018
+Name     R28 Commons~
+Sector   city~
+Desc     These are the Colony R28 Commons.  Many shops line the outer edge of the
+commons, while the rest of the commons are for people to enjoy themselves.
+ The sound of happy shoppers and citizens fills the air.
+~
+#EXIT
+Direction north~
+ToRoom    2023
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2019
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2013
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2017
+#ENDEXIT
+
+Reset M 0 2016 25 2018
+Reset M 0 2001 43 2018
+#ENDROOM
+
+#ROOM
+Vnum     2019
+Name     R28 Commons~
+Sector   city~
+Desc     These are the Colony R28 Commons.  Many shops line the outer edge of the
+commons, while the rest of the commons are for people to enjoy themselves.
+ The sound of happy shoppers and citizens fills the air.
+~
+#EXIT
+Direction north~
+ToRoom    2024
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2020
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2014
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2018
+#ENDEXIT
+
+Reset M 0 2016 25 2019
+#ENDROOM
+
+#ROOM
+Vnum     2020
+Name     R28 Commons~
+Sector   city~
+Desc     These are the Colony R28 Commons.  Many shops line the outer edge of the
+commons, while the rest of the commons are for people to enjoy themselves.
+ The sound of happy shoppers and citizens fills the air.
+~
+#EXIT
+Direction north~
+ToRoom    2025
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2029
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2015
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2019
+#ENDEXIT
+
+Reset M 0 2016 25 2020
+Reset M 0 2001 43 2020
+#ENDROOM
+
+#ROOM
+Vnum     2021
+Name     R28 Commons~
+Sector   city~
+Desc     These are the Colony R28 Commons.  Many shops line the outer edge of the
+commons, while the rest of the commons are for people to enjoy themselves.
+ The sound of happy shoppers and citizens fills the air.
+~
+#EXIT
+Direction east~
+ToRoom    2022
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2016
+#ENDEXIT
+
+Reset M 0 2016 25 2021
+Reset M 0 2001 43 2021
+#ENDROOM
+
+#ROOM
+Vnum     2022
+Name     R28 Commons~
+Sector   city~
+Desc     These are the Colony R28 Commons.  Many shops line the outer edge of the
+commons, while the rest of the commons are for people to enjoy themselves.
+ The sound of happy shoppers and citizens fills the air.
+~
+#EXIT
+Direction north~
+ToRoom    2028
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2023
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2017
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2021
+#ENDEXIT
+
+Reset M 0 2016 25 2022
+Reset M 0 2001 43 2022
+Reset M 0 2001 43 2022
+Reset M 0 2001 43 2022
+#ENDROOM
+
+#ROOM
+Vnum     2023
+Name     R28 Commons~
+Sector   city~
+Desc     These are the Colony R28 Commons.  Many shops line the outer edge of the
+commons, while the rest of the commons are for people to enjoy themselves.
+ The sound of happy shoppers and citizens fills the air.
+~
+#EXIT
+Direction east~
+ToRoom    2024
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2018
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2022
+#ENDEXIT
+
+Reset M 0 2016 25 2023
+Reset M 0 2001 43 2023
+#ENDROOM
+
+#ROOM
+Vnum     2024
+Name     R28 Commons~
+Sector   city~
+Desc     These are the Colony R28 Commons.  Many shops line the outer edge of the
+commons, while the rest of the commons are for people to enjoy themselves.
+ The sound of happy shoppers and citizens fills the air.
+~
+#EXIT
+Direction east~
+ToRoom    2025
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2019
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2023
+#ENDEXIT
+
+Reset M 0 2016 25 2024
+Reset M 0 2001 43 2024
+Reset M 0 2001 43 2024
+#ENDROOM
+
+#ROOM
+Vnum     2025
+Name     R28 Commons~
+Sector   city~
+Desc     These are the Colony R28 Commons.  Many shops line the outer edge of the
+commons, while the rest of the commons are for people to enjoy themselves.
+ The sound of happy shoppers and citizens fills the air.
+~
+#EXIT
+Direction north~
+ToRoom    2062
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2020
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2024
+#ENDEXIT
+
+Reset M 0 2016 25 2025
+#ENDROOM
+
+#ROOM
+Vnum     2026
+Name     R28 Hardware Store~
+Sector   city~
+Desc     This hardware store boasts having all of the tools an engineer could ever
+possibly need.  The boasts are proven true as the shelves on the walls and
+floor are lined with tools and materials of almost every sort.
+~
+#EXIT
+Direction north~
+ToRoom    2004
+#ENDEXIT
+
+Reset M 0 2004 1 2026
+  Reset G 1 2014 1
+  Reset G 1 2015 1
+  Reset G 1 2016 1
+  Reset G 1 2018 1
+  Reset G 1 2019 1
+  Reset G 1 2020 1
+  Reset G 1 2025 1
+Reset M 0 2001 43 2026
+Reset M 0 2001 43 2026
+Reset M 0 2001 43 2026
+#ENDROOM
+
+#ROOM
+Vnum     2027
+Name     Entrance to the Military Base~
+Sector   city~
+Flags    nomob~
+Desc     This is the entrance the R28's Military Facility.  Created solely for the
+protection of R28 and its many brilliant engineers and scientists, the
+military has kept out of major conflicts which don't involve this colony.
+~
+#EXIT
+Direction east~
+ToRoom    2011
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2040
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2028
+Name     The Leather Works~
+Sector   city~
+Desc     This is the colony Leather Works.  Don't be fooled by the name, because
+they sell much more than leather.  Here a person can acquire the best
+fabrics money can buy, from simple cloth to the most delicate of silk, all
+of which can be seen lining the walls of the store.
+~
+#EXIT
+Direction south~
+ToRoom    2022
+#ENDEXIT
+
+Reset M 0 2019 1 2028
+  Reset G 1 2013 1
+  Reset G 1 2027 1
+  Reset G 1 2010 1
+Reset M 0 2001 43 2028
+#ENDROOM
+
+#ROOM
+Vnum     2029
+Name     Workshop Corridor~
+Sector   city~
+Flags    nomob~
+Desc     This is an area renown to Colony R28.  A long corridor of workshops where
+R28's famous engineers made there greatest accomplishments.  While its a
+historical landmark, civilians are still allowed to practice engineering
+here.
+~
+#EXIT
+Direction north~
+ToRoom    2032
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2030
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2035
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2020
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2030
+Name     Workshop Corridor~
+Sector   city~
+Desc     This is an area renown to Colony R28.  A long corridor of workshops where
+R28's famous engineers made there greatest accomplishments.  While its a
+historicle landmark, civilians are still allowed to practice engineering
+here.
+~
+#EXIT
+Direction north~
+ToRoom    2033
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2031
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2036
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2029
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2031
+Name     Workshop Corridor~
+Sector   city~
+Flags    indoors~
+Desc     This is an area renown to Colony R28.  A long corridor of workshops where
+R28's famous engineers made there greatest accomplishments.  While its a
+historicle landmark, civilians are still allowed to practice engineering
+here.
+~
+#EXIT
+Direction north~
+ToRoom    2034
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2038
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2037
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2030
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2032
+Name     A Workshop~
+Sector   city~
+Flags    refinery factory~
+Desc     This is one of R28's many workshops.  Concentration is the word of the day
+in here, so no one is allowed to speak.  Benches and tables surround the
+room, making it ideal for making just about anything.
+~
+#EXIT
+Direction south~
+ToRoom    2029
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2033
+Name     A Workshop~
+Sector   city~
+Flags    factory~
+Desc     This is one of R28's many workshops.  Concentration is the word of the day
+in here, so no one is allowed to speak.  Benches and tables surround the
+room, making it ideal for making just about anything.
+~
+#EXIT
+Direction south~
+ToRoom    2030
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2034
+Name     A Workshop~
+Sector   city~
+Flags    factory~
+Desc     This is one of R28's many workshops.  Concentration is the word of the day
+in here, so no one is allowed to speak.  Benches and tables surround the
+room, making it ideal for making just about anything.
+~
+#EXIT
+Direction south~
+ToRoom    2031
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2035
+Name     A Workshop~
+Sector   city~
+Flags    factory~
+Desc     This is one of R28's many workshops.  Concentration is the word of the day
+in here, so no one is allowed to speak.  Benches and tables surround the
+room, making it ideal for making just about anything.
+~
+#EXIT
+Direction north~
+ToRoom    2029
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2036
+Name     A Workshop~
+Sector   city~
+Flags    factory~
+Desc     This is one of R28's many workshops.  Concentration is the word of the day
+in here, so no one is allowed to speak.  Benches and tables surround the
+room, making it ideal for making just about anything.
+~
+#EXIT
+Direction north~
+ToRoom    2030
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2037
+Name     A Workshop~
+Sector   city~
+Flags    factory~
+Desc     This is one of R28's many workshops.  Concentration is the word of the day
+in here, so no one is allowed to speak.  Benches and tables surround the
+room, making it ideal for making just about anything. 
+~
+#EXIT
+Direction north~
+ToRoom    2031
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2038
+Name     A Workshop~
+Sector   city~
+Flags    factory~
+Desc     This is one of R28's many workshops.  Concentration is the word of the day
+in here, so no one is allowed to speak.  Benches and tables surround the
+room, making it ideal for making just about anything.
+~
+#EXIT
+Direction west~
+ToRoom    2031
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   bountyman~
+Comlist   mptransfer $n 5
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     2039
+Name     Electronics Boutique~
+Sector   city~
+Desc     This is the galaxy famous Electronics Boutique.  The walls are lined with
+only the finest components for making electrical items and tools.  Any
+engineer is honored to have shopped here.
+~
+#EXIT
+Direction west~
+ToRoom    2010
+#ENDEXIT
+
+Reset M 0 2018 1 2039
+  Reset G 1 2024 1
+  Reset G 1 2026 1
+  Reset G 1 2017 1
+  Reset G 1 2021 1
+  Reset G 1 2022 1
+  Reset G 1 2023 1
+  Reset G 1 10424 1
+Reset M 0 2001 43 2039
+Reset M 0 2001 43 2039
+Reset M 0 2001 43 2039
+#ENDROOM
+
+#ROOM
+Vnum     2040
+Name     Military Base Corridor~
+Sector   city~
+Flags    indoors~
+Desc     This is a simple corridor with wooden walls, ceiling lights, and nothing
+spectacular to boast about. 
+~
+#EXIT
+Direction north~
+ToRoom    2041
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2027
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2042
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2041
+Name     R28 Military Base Security~
+Sector   city~
+Flags    indoors~
+Desc     This is the R28 Military's Security Station.  The guard here looks for any
+spice, drugs, or weapons which may be used against the soldiers in the
+base.
+~
+#EXIT
+Direction south~
+ToRoom    2040
+#ENDEXIT
+
+Reset M 0 2017 1 2041
+#ENDROOM
+
+#ROOM
+Vnum     2042
+Name     R28 Military Base~
+Sector   city~
+Flags    indoors~
+Desc     This is the main area of the military base on R28.  The base if composed of
+a regiment of soldiers dedicated to protecting the colony and all of its
+citizens.  The sounds of training soldiers can be heard everywhere.
+~
+#EXIT
+Direction east~
+ToRoom    2040
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2058
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2043
+#ENDEXIT
+
+Reset M 0 2008 9 2042
+#ENDROOM
+
+#ROOM
+Vnum     2043
+Name     R28 Military Base~
+Sector   city~
+Flags    indoors~
+Desc     This is the main area of the military base on R28.  The base if composed of
+a regiment of soldiers dedicated to protecting the colony and all of its
+citizens.  The sounds of training soldiers can be heard everywhere.
+~
+#EXIT
+Direction north~
+ToRoom    2044
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2042
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2057
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2045
+#ENDEXIT
+
+Reset M 0 2008 9 2043
+#ENDROOM
+
+#ROOM
+Vnum     2044
+Name     R28 Military Armor Storage~
+Sector   city~
+Flags    indoors~
+Desc     This is the armor storage room of the R28 Military.  Behind the Armor
+Keeper, lies a locked locker filled with all types of armor for the use of
+the military, or anyone who has the money to pay for it.
+~
+#EXIT
+Direction south~
+ToRoom    2043
+#ENDEXIT
+
+Reset M 0 2003 1 2044
+  Reset G 1 2003 1
+  Reset G 1 2004 1
+  Reset G 1 2005 1
+#ENDROOM
+
+#ROOM
+Vnum     2045
+Name     R28 Military Base~
+Sector   city~
+Flags    indoors~
+Desc     This is the main area of the military base on R28.  The base if composed of
+a regiment of soldiers dedicated to protecting the colony and all of its
+citizens.  The sounds of training soldiers can be heard everywhere.
+~
+#EXIT
+Direction north~
+ToRoom    2046
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2043
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2055
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2047
+#ENDEXIT
+
+Reset M 0 2008 9 2045
+#ENDROOM
+
+#ROOM
+Vnum     2046
+Name     R28 Military Weapons Storage~
+Sector   city~
+Flags    indoors~
+Desc     This is the weapon storage room of the R28 Military.  Behind the Weapon
+Keeper, lies a locked locker filled with all types of weapons for the use
+of the military, or anyone who has the money to pay for it.
+~
+#EXIT
+Direction south~
+ToRoom    2045
+#ENDEXIT
+
+Reset M 0 2002 1 2046
+  Reset G 1 2012 1
+  Reset G 1 2001 1
+  Reset G 1 2007 1
+  Reset G 1 2001 1
+#ENDROOM
+
+#ROOM
+Vnum     2047
+Name     Military Base Corridor~
+Sector   city~
+Flags    indoors~
+Desc     This is a simple corridor with wooden walls, ceiling lights, and nothing
+spectacular to boast about.
+~
+#EXIT
+Direction east~
+ToRoom    2045
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2050
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2048
+#ENDEXIT
+
+Reset M 0 2008 9 2047
+#ENDROOM
+
+#ROOM
+Vnum     2048
+Name     Military Base Corridor~
+Sector   city~
+Flags    indoors~
+Desc     This is a simple corridor with wooden walls, ceiling lights, and nothing
+spectacular to boast about.
+~
+#EXIT
+Direction north~
+ToRoom    2049
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2047
+#ENDEXIT
+
+Reset M 0 2008 9 2048
+#ENDROOM
+
+#ROOM
+Vnum     2049
+Name     R28 Military Barracks~
+Sector   city~
+Flags    indoors bank hotel~
+Desc     This is the R28 Military Barracks.  The walls are lined with beds, a trunk
+at the end of each one.  Around several of the beds are dirty posters of
+naked women, and other personal items.  An ATM machine also serves as the
+Military's bank in the back.
+~
+#EXIT
+Direction south~
+ToRoom    2048
+#ENDEXIT
+
+Reset M 0 2008 9 2049
+Reset M 0 2008 9 2049
+#ENDROOM
+
+#ROOM
+Vnum     2050
+Name     R28 Military Training Center~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is the R28 military training area that the R28 Military uses to train
+there officers.  Each room is its own chamber with a robot or droid of
+specific strength to fight.  Simply say &B'Begin'&g to fight one.
+~
+#EXIT
+Direction north~
+ToRoom    2047
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2052
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2053
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2051
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    2054
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    2063
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2051
+Name     Level 3~
+Sector   city~
+Flags    indoors~
+Desc     This room is a simple, small, and square stone room.  It has a small
+opening on one end where the opponent for this room will come out.  All a
+person has to do is say &B'Begin'&g...
+~
+#EXIT
+Direction east~
+ToRoom    2050
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Begin~
+Comlist   mpecho A robot comes out of the dispenser. 
+mpmload 2014
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     2052
+Name     Level 1~
+Sector   city~
+Flags    indoors~
+Desc     This room is a simple, small, and square stone room.  It has a small
+opening on one end where the opponent for this room will come out.  All a
+person has to do is say &B'Begin'&g...
+~
+#EXIT
+Direction west~
+ToRoom    2050
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho A robot comes out of the dispenser. 
+mpmload 2007
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     2053
+Name     Level 2~
+Sector   city~
+Flags    indoors~
+Desc     This room is a simple, small, and square stone room.  It has a small
+opening on one end where the opponent for this room will come out.  All a
+person has to do is say &B'Begin'&g...
+~
+#EXIT
+Direction north~
+ToRoom    2050
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho A robot comes out of the dispenser.  
+mpmload 2009
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     2054
+Name     Level 4~
+Sector   city~
+Flags    indoors~
+Desc     This room is a simple, small, and square stone room.  It has a small
+opening on one end where the opponent for this room will come out.  All a
+person has to do is say &B'Begin'&g...
+~
+#EXIT
+Direction down~
+ToRoom    2050
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho A robot comes out of the dispenser.  
+mpmload 2015
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     2055
+Name     R28 Military Base~
+Sector   city~
+Flags    indoors~
+Desc     This is the main area of the military base on R28.  The base if composed of
+a regiment of soldiers dedicated to protecting the colony and all of its
+citizens.  The sounds of training soldiers can be heard everywhere.
+~
+#EXIT
+Direction north~
+ToRoom    2045
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2057
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2061
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2056
+#ENDEXIT
+
+Reset M 0 2008 9 2055
+#ENDROOM
+
+#ROOM
+Vnum     2056
+Name     The General's Office~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    2055
+#ENDEXIT
+
+Reset M 0 2006 1 2056
+Reset O 0 2011 1 2056
+#ENDROOM
+
+#ROOM
+Vnum     2057
+Name     R28 Military Base~
+Sector   city~
+Flags    indoors~
+Desc     This is the main area of the military base on R28.  The base if composed of
+a regiment of soldiers dedicated to protecting the colony and all of its
+citizens.  The sounds of training soldiers can be heard everywhere.
+~
+#EXIT
+Direction north~
+ToRoom    2043
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2058
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2060
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2055
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2058
+Name     R28 Military Base~
+Sector   city~
+Flags    indoors~
+Desc     This is the main area of the military base on R28.  The base if composed of
+a regiment of soldiers dedicated to protecting the colony and all of its
+citizens.  The sounds of training soldiers can be heard everywhere. 
+~
+#EXIT
+Direction north~
+ToRoom    2042
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    2059
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2057
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2059
+Name     R28 Military Base~
+Sector   city~
+Flags    indoors~
+Desc     This is the main area of the military base on R28.  The base if composed of
+a regiment of soldiers dedicated to protecting the colony and all of its
+citizens.  The sounds of training soldiers can be heard everywhere.
+~
+#EXIT
+Direction north~
+ToRoom    2058
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2060
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2060
+Name     R28 Military Base~
+Sector   city~
+Flags    indoors~
+Desc     This is the main area of the military base on R28.  The base if composed of
+a regiment of soldiers dedicated to protecting the colony and all of its
+citizens.  The sounds of training soldiers can be heard everywhere.
+~
+#EXIT
+Direction north~
+ToRoom    2057
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2059
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2061
+#ENDEXIT
+
+Reset M 0 2008 9 2060
+#ENDROOM
+
+#ROOM
+Vnum     2061
+Name     R28 Military Base~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is the main area of the military base on R28.  The base if composed of
+a regiment of soldiers dedicated to protecting the colony and all of its
+citizens.  The sounds of training soldiers can be heard everywhere.
+~
+#EXIT
+Direction north~
+ToRoom    2055
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2060
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2062
+Name     Engineering School~
+Sector   city~
+Flags    nomob indoors~
+Desc     The famous R28 Engineering School has turned out some of the most famous
+engineers of the day.  The colony specializing in engineering, it is no
+surprise that the teachers, as well as the students, would be only the
+best.
+~
+#EXIT
+Direction south~
+ToRoom    2025
+#ENDEXIT
+
+Reset M 0 2000 2 2062
+#ENDROOM
+
+#ROOM
+Vnum     2063
+Name     Medical Center~
+Sector   city~
+Flags    indoors heal~
+Desc     This is the medical center of the Training area.  The medical staff is
+treating wounds ranging from small scratches to bloody wounds, inflicted
+in the training area.
+~
+#EXIT
+Direction up~
+ToRoom    2050
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2064
+Name     Entrance to The Bounty Agency~
+Sector   city~
+Flags    nomob~
+Desc     The path to power is open only for those with the intelligence to find it. 
+Good job, you found a place of power.
+~
+#EXIT
+Direction down~
+ToRoom    2013
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2065
+Name     The Bounty Hunting Office~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is a small office with basic plaster walls and not much else. There is
+a list on the wall of wanted men and women for any bounty hunters to go
+after. To turn in bounty heads and claim your prize, simply type "&CBounty
+Gain&z".
+~
+#EXIT
+Direction up~
+ToRoom    2066
+#ENDEXIT
+
+Reset M 0 2005 1 2065
+#EXDESC
+ExDescKey    list~
+ExDesc       &RWANTED BY THE GALACTIC BOUNTY OFFICE
+ 
+&GNAME  &B-  &WREWARD
+&GZoot  &B-  &W1000
+&GAdar  &B-  &W6000
+&GKolak &B-  &W10000
+&GZeinel&B-  &W20000
+&GSnit  &B-  &W30000  
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     2066
+Name     Entrance to the Bounty Office~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is the entrance to the galactic bounty office.  Here one may turn in
+the heads of those listed for a reward.
+~
+#EXIT
+Direction up~
+ToRoom    1304
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    2065
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2067
+Name     &RT&rh&Re &CB&co&Bun&ct&Cy &GA&Yg&gen&Yc&Gy&W~
+Sector   city~
+Flags    nomob indoors safe~
+Desc     As you pass beyond the hidden door you find yourself in an office of
+unusual design. On one wall is a rack of weapons. In the far corner is a
+small gym with worn equipment as if it has been used for a while. The most
+peculiar thing about the office is the person standing in front of you.
+Although his manner of greeting you is friendly. You realize that he is
+more than he seems. As he greets you you notice he is A Bounty Hunter and
+the weapons on the wall are the reminders of his proffession. Perhaps you
+can learn a thing or two if you study under this man.
+ 
+~
+#ENDROOM
+
+#ROOM
+Vnum     2068
+Name     R28 Local Hotel~
+Sector   city~
+Flags    nomob hotel prototype~
+#ENDROOM
+
+#ROOM
+Vnum     2077
+Name     Floating in a Void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     2079
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     2080
+Name     Star Shuttle~
+Sector   city~
+Flags    nomob spacecraft~
+Reset M 0 2029 1 2080
+#ENDROOM
+
+#ROOM
+Vnum     2081
+Name     Star Shuttle Control Bay~
+Sector   city~
+Flags    nomob spacecraft~
+Desc     Don't pilot this! it'll mess up the code!
+~
+#ENDROOM
+
+#ROOM
+Vnum     2084
+Name     &WA &CM&ca&Ck&co &BS&bp&Br&bi&Bn&bg~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     2085
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     2094
+Name     Cloning Area~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    2095
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2019
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2095
+Name     Cloning Area~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    2096
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2094
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2096
+Name     Cloning Area~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    2097
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    2099
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    2095
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     2097
+Name     Start of the Line~
+Sector   city~
+Flags    indoors~
+Desc     This is the beggining of the cloning line.  Al you can do is stand here and
+wait your turn.
+~
+#EXIT
+Direction south~
+ToRoom    2096
+#ENDEXIT
+
+#MUDPROG
+Progtype  rand_prog~
+Arglist   65~
+Comlist   mpechoat $n You are taken to the front of the line.
+mpechoaround $n $n is taken to the front of the line.
+mptransfer $n 2098
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     2098
+Name     End of the Line~
+Sector   city~
+Flags    nomob indoors~
+Desc     Type &RClone&g to be cloned.  It costs about 20000 credits.  Say &RExit&g
+to leave without cloning.
+~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   exit~
+Comlist   mpechoat $n You are taken back to the elevator.
+mptransfer $n 2019
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     2099
+Name     Medical Room~
+Sector   city~
+Flags    nomob indoors~
+#EXIT
+Direction west~
+ToRoom    2096
+#ENDEXIT
+
+#ENDROOM
+
+#ENDAREA

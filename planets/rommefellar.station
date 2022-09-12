@@ -1,0 +1,11 @@
+#PLANET
+Name         Rommefellar~
+Filename     rommefellar.plt~
+BaseValue    100000
+Flags        2
+PopSupport   50.000000
+GovernedBy   Phoenix Rising~
+Area         Rommefellar.are~
+End
+
+#END

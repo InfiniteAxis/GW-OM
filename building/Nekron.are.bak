@@ -1,0 +1,131 @@
+#AREA   {PROTO} Nekron's area in progress~
+
+
+
+#AUTHOR Nekron~
+
+#RANGES
+0 0 0 0
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 0
+
+#MOBILES
+#11601
+null~
+a newly created null~
+Some god abandoned a newly created null here.
+~
+~
+1073741825 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#11650
+null~
+a newly created null~
+Some god abandoned a newly created null here.
+~
+~
+1073741825 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#11601
+null~
+a null~
+A null is here.~
+~
+13 1073741824 0
+0 0 0 0
+1 0 0
+#11650
+null~
+a null~
+A null is here.~
+~
+13 1073741824 0
+0 0 0 0
+1 0 0
+#0
+
+
+#ROOMS
+#11601
+null~
+~
+0 1073741828 1
+S
+#11602
+&R&rLong Hard Road Out Of Hell~
+The flames grow high,
+Watching as i die.
+Fuck you bitch,
+You threw me in a ditch.
+You set me on fire,
+I was lit like a live wire.
+Understand this you little whore,
+Hell is mine , no longer a bore.
+Once again will you see my face,
+You best stock up just in case.
+My life has come and go.
+and soon will be yours , you little
+Hoe.
+~
+0 1073741824 1
+D0
+~
+~
+0 -1 11603
+S
+#11603
+&R&rLong Hard Road Out Of Hell~
+~
+0 1073741824 1
+D2
+~
+~
+0 -1 11602
+S
+#11650
+null~
+~
+0 1073741828 1
+S
+#0
+
+
+#RESETS
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

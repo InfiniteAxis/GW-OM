@@ -1,0 +1,3714 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         Brussel City~
+Author       Nemesis~
+Ranges       1 1007 1 1007
+Economy      -1 24539778
+ResetMsg     The sounds of the city are heard in the background.~
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       6300
+Keywords   Brussel City Citizen~
+Short      a citizen of brussel city~
+Long       A citizen of brussel city walks around here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc stayarea wimpy noassist~
+Stats1     0 200 0 -400 0 0
+Stats2     40 10 12000
+Stats3     20 4 500
+Stats4     0 0 0 40 40
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6301
+Keywords   Bloody Mari~
+Short      &RB&rl&Ro&ro&Rd&ry &WM&wa&Wr&wi~
+Long       A wierd looking doll wanders about with strings attatched to it.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 400 0 -900 0 0
+Stats2     80 10 4000
+Stats3     40 4 2
+Stats4     0 0 0 80 80
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6307
+Keywords   Sparda~
+Short      &RS&rp&Ra&rr&Rd&ra~
+Long       An old man, almost demonic looking, sits here calmly.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       6308
+Keywords   Dante~
+Short      &CD&ca&Cn&ct&Ce~
+Long       &zA man in a long flowing red trench coat stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     -1000 1000 0 -7000 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    18 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    punch~
+#MUDPROG
+Progtype  death_prog~
+Arglist   4~
+Comlist   emote transform into his demon form.
+say DEFEAT ME NOW!
+mpmload 6350
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6309
+Keywords   Trish~
+Short      &PT&pr&Pi&ps&Ph~
+Long       A shapely woman with blonde hair stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       6310
+Keywords   MP Officer~
+Short      &GM&gP &GO&gf&Gf&gi&Gc&ge&Gr~
+Long       A Military Police Officer walks around here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 750 0 -1775 0 0
+Stats2     150 10 7500
+Stats3     75 4 2
+Stats4     0 0 0 150 150
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   if clan ($n) == ESUN
+emote nods $n
+say Hello, Sir.
+else
+yell You're a traitor!
+mpkill $n
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6346
+Keywords   Deputy~
+Short      a police deputy~
+Long       An officer stands here, dumbfounded.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel stayarea~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  entry_prog~
+Arglist   100~
+Comlist   nod %n
+say Err, uh, hi. Welcome to our station.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6349
+Keywords   Cell Guard~
+Short      a cell guard~
+Long       A guard sits here reading his magazine.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 50 0 -25 0 0
+Stats2     10 10 500
+Stats3     5 4 2
+Stats4     0 0 0 10 10
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6350
+Keywords   Dante~
+Short      &CD&ca&Cn&ct&Ce~
+Long       &zA man in a long flowing red trentch coat stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel nocorpse~
+Stats1     -1000 1000 0 -7000 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    18 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    punch~
+#MUDPROG
+Progtype  death_prog~
+Arglist   3~
+Comlist   say You have defeated me.
+mpoload 11505
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6351
+Keywords   reploid warrior~
+Short      &WR&we&Wp&wl&Wo&wi&Wd &RW&ra&Rr&rr&Ri&ro&Rr&w~
+Long       &zA tall reploid stands here, guarding the entrance.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 30000
+Stats3     100 4 1000
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6353
+Keywords   a reploid worker~
+Short      a reploid worker~
+Long       A young reploid rushes around here, working on the base.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel droid~
+Stats1     0 350 0 -775 0 0
+Stats2     11 10 5000
+Stats3     35 4 2
+Stats4     0 0 0 70 70
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6354
+Keywords   Zero~
+Short      &RZ&re&Rr&ro~
+Long       &zA dangerous &Rred&z reploid stands here.
+~
+Desc       &zHere stands a half robot, half human named Zero. His abilities in combat
+are well known, and feared. He and another Reploid, X fight to protect the
+good in the world. Being a Reploid, he has ample knowledge with
+technology. He can help to upgrade some of your old weapons.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse prototype~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   nods toward you.
+say My name is Zero, I can help you upgrade some of your
+say current weapons. Look at the list to see which ones can be upgraded.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  act_prog~
+Arglist   give zero japanese~
+Comlist   if ovnuminv(810)
+nod
+say Give me a few seconds, I'll have your new weapon.
+mpjunk japanese
+emote fiddles and changes the shape of the sword..
+emote looks at the product, nods, and smiles.
+say It's finished!
+mpoload 6300
+drop zero
+endif
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  act_prog~
+Arglist   give zero gundanium~
+Comlist   if ovnuminv(502)
+nod
+say I'll have it ready in a second.
+emote hammers the sword a bit, crafting it to something brand new.
+say It's finished!
+mpoload 6327
+drop yi
+mpjunk gundanium
+else
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6355
+Keywords   X~
+Short      &cX~
+Long       &zA medium height &Bblue&z reploid stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel prototype~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   say My name is X, I can upgrade a specific weapon for you. 
+say Look at the list to see which one.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  act_prog~
+Arglist   give zero m4~
+Comlist   if ovnuminv(6201)
+nod
+say I'll whip this into an X-Buster in no time!
+emote fiddles with the rifle, adding parts and such..
+mpjunk m4
+mpoload 6330
+say Ah, finally! It's done! Enjoy.
+drop x
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6356
+Keywords   Deli Owner~
+Short      Deli Owner~
+Long       The Deli Owner stands here, selling food.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       6358
+Keywords   Throwbacks R' Us Clerk~
+Short      Throwbacks R' Us Clerk~
+Long       &zA tall man stands here sporting a throwback &GE&ga&Gg&gl&Ge&gs&z jersey.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       6359
+Keywords   Willie~
+Short      &CW&ci&Cl&cl&Ci&ce&w~
+Long       An old man stands here behind a counter, selling weapons.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       6360
+Keywords   Fitted Factory Clerk~
+Short      Fitted Factory Clerk~
+Long       &zA man stands here in a &Rred&z fitted shirt and cap.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       6366
+Keywords   Mayor's Bodyguard~
+Short      the Mayor's bodyguard~
+Long       A tall man wearing a black suit stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 20000
+Stats3     100 4 100
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Bodyparts  guts~
+Attacks    circle~
+Defenses   dodge~
+#ENDMOBILE
+
+#MOBILE
+Vnum       6370
+Keywords   The Mayor~
+Short      the Mayor of Brussel City~
+Long       The Mayor of Brussel City sits at his desk.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel stayarea nocorpse~
+Stats1     0 20 0 50 0 0
+Stats2     4 10 2000
+Stats3     2 4 2
+Stats4     0 0 0 4 4
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6371
+Keywords   Uncle Ottis~
+Short      &GU&gn&Gc&gl&Ge &gO&Gt&gt&Gi&gs~
+Long       Uncle Ottis sells his weapons here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       6372
+Keywords   Pimp Clerk~
+Short      &PP&pi&Pm&pp &PC&pl&Pe&pr&Pk~
+Long       &zA tall man wearing a &Ppurple&z suit stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       6373
+Keywords   Accessories Clerk~
+Short      &zAccessories Clerk&w~
+Long       &zA man stands here selling accessories.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       6376
+Keywords   Level 1 Hologram~
+Short      &wl&We&wv&We&wl &Wo&wn&We &wh&Wo&wl&Wo&wg&Wr&wa&Wm~
+Long       A level one hologram stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6377
+Keywords   Level 3 Hologram~
+Short      &wl&We&wv&We&wl &Wt&wh&Wr&we&We &wh&Wo&wl&Wo&wg&Wr&wa&Wm~
+Long       A level three hologram stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 600 0 -1400 0 0
+Stats2     120 10 6000
+Stats3     60 4 2
+Stats4     0 0 0 120 120
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6378
+Keywords   Level 2 Hologram~
+Short      &wl&We&wv&We&wl &Wt&ww&Wo &wh&Wo&wl&Wo&wg&Wr&wa&Wm~
+Long       A level two hologram stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 400 0 -900 0 0
+Stats2     80 10 2000
+Stats3     40 4 2
+Stats4     0 0 0 80 80
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6379
+Keywords   Level 4 Hologram~
+Short      &Wa &wl&We&wv&We&wl &Wf&wo&Wu&wr &wh&Wo&wl&Wo&wg&Wr&wa&Wm~
+Long       A level four hologram stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 800 0 -1900 0 0
+Stats2     160 10 5000
+Stats3     80 4 2
+Stats4     0 0 0 160 160
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6380
+Keywords   Level 5 Hologram~
+Short      &Wa &wl&We&wv&We&wl &Wf&wi&Wv&we &wh&Wo&wl&Wo&wg&Wr&wa&Wm~
+Long       A level five hologram stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6384
+Keywords   Engineer Shop Clerk~
+Short      Engineer Shop Clerk~
+Long       &zThe clerk of the Engineer's Shop stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       6385
+Keywords   Materials Shop Clerk~
+Short      Materials Shop Clerk~
+Long       The materials shop clerk stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 100 0 -150 0 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       6391
+Keywords   a smuggler~
+Short      &wa &Cs&cm&Cu&cg&Cg&cl&Ce&cr~
+Long       &zA man in a trenchcoat stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   say Hey, you've reached the smuggler's way of Brussel City.
+say Just put a weapon in a bag, and go south, he'll inspect you.
+say If you play your cards right, you won't get caught!
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6392
+Keywords   a smuggler guard~
+Short      &Wa &ws&Wm&wu&Wg&wg&Wl&we&Wr &wg&Wu&wa&Wr&wd~
+Long       &zA man stands here watching out for smugglers.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_customs_weapons~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 21000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6393
+Keywords   Catacombs Guard~
+Short      &wt&Wh&we &GC&ga&Gt&ga&Gc&go&Gm&gb &WG&wu&Wa&wr&Wd~
+Long       &zThe keeper of the legendary catacombs stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel aggressive nocorpse~
+Stats1     1000 1000 0 -2400 0 0
+Stats2     200 10 50000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6398
+Keywords   Dragon Master Decendant~
+Short      &RD&rr&Ra&rg&Ro&rn &WM&wa&Ws&wt&We&wr &CD&ce&Cs&cc&Ce&cn&Cd&ca&Cn&ct~
+Long       &zA descendant of the &RDragon &WMaster&z stands here, selling items.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 1000000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 90 0 23
+#ENDMOBILE
+
+#MOBILE
+Vnum       6399
+Keywords   last~
+Short      a newly created last~
+Long       Some god abandoned a newly created last here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#OBJECT
+Vnum     6300
+Keywords Zero Saber~
+Type     weapon~
+Short    &Wt&wh&We &RZ&W-&GS&ga&Gb&ge&Gr~
+Long     &zA sword with a &Ggreen&z glowing blade lies here.~
+Flags    glow contraband inventory~
+WFlags   take wield~
+Values   1100 11 137 2 0 0
+Stats    1 75000 7500 0 0
+Affect       -1 -1 20 18 0
+Affect       -1 -1 5 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6301
+Keywords Throwback Eagles Jersey~
+Type     armor~
+Short    &wA &WT&wh&Wr&wo&Ww&wb&Wa&wc&Wk &GE&ga&Gg&gl&Ge&gs &WJ&we&Wr&ws&We&wy~
+Long     &WAn &GEagles&W jersey lies here on the ground.~
+WFlags   take about~
+Values   75 75 0 0 0 0
+Stats    1 10000 1000 0 0
+Affect       -1 -1 -75 17 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 2 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6302
+Keywords A White Wifebeater~
+Type     armor~
+Short    &wA &WW&wh&Wi&wt&We &wW&wi&Wf&we&Wb&we&Wa&wt&We&wr~
+Long     &WA wifebeater lies on the ground here.~
+WFlags   take body~
+Values   75 75 0 0 0 0
+Stats    1 10000 1000 0 0
+Affect       -1 -1 -75 17 0
+Affect       -1 -1 2 18 0
+Affect       -1 -1 10 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6303
+Keywords Throwback Rams Jersey~
+Type     armor~
+Short    &wA &WT&wh&Wr&wo&Ww&wb&Wa&wc&Wk &BR&ba&Bm&bs &WJ&we&Wr&ws&We&wy~
+Long     &wA &BRams&w jersey lies here on the ground.~
+WFlags   take about~
+Values   75 75 0 0 0 0
+Stats    1 10000 1000 0 0
+Affect       -1 -1 -75 17 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 2 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6304
+Keywords Mecca Hoody~
+Type     armor~
+Short    &zA &RM&re&Rc&rc&Ra &r1&R3&z H&wo&zo&wd&zy~
+Long     &zA black hoody lies here.~
+WFlags   take about~
+Values   75 75 0 0 0 0
+Stats    1 0 0 0 0
+Affect       -1 -1 -75 17 0
+Affect       -1 -1 5 18 0
+Affect       -1 -1 5 19 0
+Affect       -1 -1 1 5 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6305
+Keywords Mecca Sweats~
+Type     armor~
+Short    &zA &wp&za&wi&zr &wo&zf &RM&re&Rc&rc&Ra &zs&ww&ze&wa&zt&ws~
+Long     &zA pair of &RMecca&z sweatpants lies here.~
+WFlags   take legs~
+Values   75 75 0 0 0 0
+Stats    1 8000 800 0 0
+Affect       -1 -1 -75 17 0
+Affect       -1 -1 4 18 0
+Affect       -1 -1 2 19 0
+Affect       -1 -1 250 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6306
+Keywords Air Force Ones~
+Type     armor~
+Short    &zA &wp&za&wi&zr &wo&zf &CA&ci&Cr &cF&Co&cr&Cc&ce &CO&cn&Ce&cs~
+Long     &zA pair of nikes lie here.~
+WFlags   take feet~
+Values   40 40 0 0 0 0
+Stats    1 9000 900 0 0
+Affect       -1 -1 -75 17 0
+Affect       -1 -1 250 13 0
+Affect       -1 -1 10 18 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6307
+Keywords Masamune~
+Type     weapon~
+Short    &WA &wM&Wa&ws&Wa&wm&Wu&wn&We~
+Long     &zA large sword is stuck here in the ground.~
+Flags    glow~
+WFlags   take wield~
+Values   1100 12 160 2 0 0
+Stats    3 0 0 0 0
+Affect       -1 -1 20 18 0
+Affect       -1 -1 20 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6308
+Keywords A Throwback Sixers Jersey~
+Type     armor~
+Short    &WA &wT&Wh&wr&Wo&ww&Wb&wa&Wc&wk &RS&zi&Rx&ze&Rr&zs &WJ&we&Wr&ws&We&wy~
+Long     &WA &RSixers&W jersey lies here on the ground.~
+WFlags   take about~
+Values   75 75 0 0 0 0
+Stats    1 10000 1000 0 0
+Affect       -1 -1 -75 17 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 2 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6309
+Keywords A Throwback Magic Jersey~
+Type     armor~
+Short    &WA &wT&Wh&wr&Wo&ww&Wb&wa&Wc&wk &BM&ba&Bg&bi&Bc &WJ&we&Wr&ws&We&wy~
+Long     &WA &BMagic&W jersey lies here on the ground.~
+WFlags   take about~
+Values   75 75 0 0 0 0
+Stats    1 10000 1000 0 0
+Affect       -1 -1 -75 17 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 2 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6310
+Keywords Dragon Shield~
+Type     armor~
+Short    &RD&rr&Ra&rg&Ro&rn &WS&wh&Wi&we&Wl&wd~
+Long     &OA majestic looking shield lies here shimmering.~
+Flags    glow bless~
+WFlags   take shield~
+Values   75 75 0 0 0 0
+Stats    1 150000 15000 0 0
+Affect       -1 -1 -75 17 0
+Affect       -1 -1 25 18 0
+Affect       -1 -1 25 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6311
+Keywords Dragon Helmet~
+Type     armor~
+Short    &RD&rr&Ra&rg&Ro&rn &WH&we&Wl&wm&We&wt~
+Long     &OA majestic looking helmet lays on the ground here.~
+Flags    glow bless inventory~
+WFlags   take head~
+Values   75 75 0 0 0 0
+Stats    1 150000 15000 0 0
+Affect       -1 -1 2500 13 0
+Affect       -1 -1 6 18 0
+Affect       -1 -1 10 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6312
+Keywords Dragon Armor~
+Type     armor~
+Short    &RD&rr&Ra&rg&Ro&rn &WA&wr&Wm&wo&Wr~
+Long     &OA majestic looking piece of body armor lies here.~
+Flags    glow bless~
+WFlags   take about~
+Values   75 75 0 0 0 0
+Stats    1 150000 15000 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6313
+Keywords Black Spandex~
+Type     armor~
+Short    &zB&wl&za&wc&zk &WS&wp&Wa&wn&Wd&we&Wx &C(&zB&Wo&zd&Wy&C)~
+Long     &OSome black spandex lies here.~
+WFlags   take body~
+Values   75 75 0 0 0 0
+Stats    1 125000 12500 0 0
+Affect       -1 -1 4 19 0
+Affect       -1 -1 4 18 0
+Affect       -1 -1 32768 26 0
+Affect       -1 -1 -75 17 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6314
+Keywords Black Spandex~
+Type     armor~
+Short    &zB&wl&za&wc&zk &WS&wp&Wa&wn&Wd&we&Wx &C(&zL&We&zg&Ws&C)~
+Long     &OSome black spandex lies here.~
+Flags    inventory~
+WFlags   take legs~
+Values   75 75 0 0 0 0
+Stats    1 125000 12500 0 0
+Affect       -1 -1 4 19 0
+Affect       -1 -1 4 18 0
+Affect       -1 -1 32768 26 0
+Affect       -1 -1 -75 17 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6315
+Keywords Dragon Wristband~
+Type     armor~
+Short    &RD&rr&Ra&rg&Ro&rn &WW&wr&Wi&ws&Wt&wb&Wa&wn&Wd~
+Long     &OA majestic looking wristband lies here.~
+Flags    inventory~
+WFlags   take wrist~
+Values   75 75 0 0 0 0
+Stats    1 10000 1000 0 0
+Affect       -1 -1 20 17 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 10 19 0
+Affect       -1 -1 1 1 0
+Affect       -1 -1 1 2 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6316
+Keywords Dragon Boots~
+Type     armor~
+Short    &RD&rr&Ra&rg&Ro&rn &WB&wo&Wo&wt&Ws~
+Long     &OA pair of majestic looking boots lies here.~
+Flags    glow bless~
+WFlags   take feet~
+Values   75 75 0 0 0 0
+Stats    1 150000 15000 0 0
+Affect       -1 -1 8 18 0
+Affect       -1 -1 8 19 0
+Affect       -1 -1 -75 17 0
+Affect       -1 -1 33554432 26 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6317
+Keywords Althena's Sword~
+Type     weapon~
+Short    &YA&Ol&Yt&Oh&Ye&On&Ya&O'&Ys &WS&ww&Wo&wr&Wd~
+Long     &OA majestic and ancient sword lies here, glimmering brightly.~
+Flags    glow magic~
+WFlags   take wield~
+Values   75 10 151 2 2000 2000
+Stats    1 175000 17500 0 0
+Affect       -1 -1 15 19 0
+Affect       -1 -1 15 18 0
+Affect       -1 -1 2000 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6318
+Keywords Dragon Ring~
+Type     armor~
+Short    &wa &RD&rr&Ra&rg&Ro&rn &WR&wi&Wn&wg~
+Long     &zA mystic ring lies here.~
+Flags    glow hum~
+WFlags   take finger~
+Values   75 75 0 0 0 0
+Stats    1 50000 5000 0 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 10 19 0
+Affect       -1 -1 1000 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6319
+Keywords Ebony~
+Type     weapon~
+Short    &zE&Wb&zo&Wn&zy~
+Long     &zA custom made handgun lies here, &Yshining&z demonically..~
+Flags    inventory~
+WFlags   take wield~
+Values   75 10 134 6 2000 2000
+Stats    1 75000 7500 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6320
+Keywords Ivory~
+Type     weapon~
+Short    &WI&wv&Wo&wr&Wy~
+Long     &zA custom made handgun lies here, &Yshining&z demonically..~
+Flags    inventory~
+WFlags   take wield~
+Values   75 10 134 6 2000 2000
+Stats    1 75000 7500 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6321
+Keywords Force Edge~
+Type     weapon~
+Short    &WF&wo&Wr&wc&We &CE&cd&Cg&ce~
+Long     &zA long sharp blade the size of a katana lies here.~
+Flags    contraband inventory~
+WFlags   take wield~
+Values   1100 10 150 2 0 0
+Stats    1 22000 2200 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6322
+Keywords Alastor~
+Type     weapon~
+Short    &CA&cl&Ca&cs&Ct&co&Cr~
+Long     &zA sword with swirling &Ce&cl&Ce&cc&Ct&cr&Ci&cc&Ci&ct&Cy&z lies here.~
+Flags    contraband inventory~
+WFlags   take wield~
+Values   1100 11 150 2 0 0
+Stats    1 100000 5600 0 0
+Affect       -1 -1 1000 13 0
+Affect       -1 -1 15 18 0
+Affect       -1 -1 15 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6323
+Keywords Ifrit Gauntlets~
+Type     armor~
+Short    &RI&rf&Rr&ri&Rt &YG&Oa&Yu&On&Yt&Ol&Ye&Ot&Ys~
+Long     &zA pair of gauntlets lies here, &rf&Rl&ra&Rm&ri&Rn&rg&z with energy..~
+Flags    inventory~
+WFlags   take hands~
+Values   75 75 0 0 0 0
+Stats    1 95000 4000 0 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 10 19 0
+Affect       -1 -1 20 18 0
+Affect       -1 -1 13 19 0
+Affect       -1 -1 1000 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6324
+Keywords Sparda~
+Type     weapon~
+Short    &C-&c| &RS&rp&Ra&rr&Rd&ra &c|&C-~
+Long     &zThe sword of the &CG&co&Cd&cs&z lies here, &Ycharging&z with energy..~
+Flags    contraband inventory~
+WFlags   take wield~
+Values   1100 12 130 2 0 0
+Stats    1 500000 50000 0 0
+Affect       -1 -1 30 18 0
+Affect       -1 -1 30 19 0
+Affect       -1 -1 1000 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6325
+Keywords Toilet~
+Type     trash~
+Short    a toilet~
+Long     A cracked toilet is here, smelling badly.~
+Flags    inventory~
+Values   0 0 0 0 0 0
+Stats    112 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6326
+Keywords large sickle~
+Type     weapon~
+Short    &RB&rl&Ro&ro&Rd&ry &WM&wa&Wr&wi&W'&ws &CS&ci&Cc&ck&Cl&ce~
+Long     A large sickle is stuck in the ground here.~
+Flags    contraband~
+WFlags   take wield~
+Values   20 10 20 2 500 500
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6327
+Keywords Yi Tian Villainous Sword~
+Type     weapon~
+Short    &CY&ci &CT&ci&Ca&cn &CV&ci&Cl&cl&Ca&ci&Cn&co&Cu&cs &CS&cw&Co&cr&Cd~
+Long     &zA noble sword lies here, shimmering brightly.~
+WFlags   take wield~
+Values   50 11 160 2 1500 1500
+Stats    1 50000 5000 0 0
+Affect       -1 -1 5 18 0
+Affect       -1 -1 5 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6330
+Keywords X-Buster~
+Type     weapon~
+Short    &BX&b-&BB&bu&Bs&bt&Be&br~
+Long     &zA gun with a &Bblue &zglowing aura lies here.~
+Flags    hum~
+WFlags   take wield~
+Values   50 10 148 6 3000 3000
+Stats    1 0 0 0 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 15 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6331
+Keywords Fitted Red Cap~
+Type     armor~
+Short    &za fitted &Rr&re&Rd&z cap~
+Long     &zA fitted &Rred &zcap lies here.~
+WFlags   take head~
+Values   50 25 0 0 0 0
+Stats    1 0 0 0 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 10 19 0
+Affect       -1 -1 250 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6332
+Keywords Fitted Blue Cap~
+Type     armor~
+Short    &za fitted &Bb&bl&Bu&be&z cap~
+Long     &zA fitted &Bblue &zcap lies here.~
+WFlags   take head~
+Values   50 25 0 0 0 0
+Stats    1 0 0 0 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 10 19 0
+Affect       -1 -1 250 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6333
+Keywords Fitted Green Cap~
+Type     armor~
+Short    &za fitted &Gg&gr&Ge&ge&Gn&z cap~
+Long     &zA fitted &Ggreen &zcap lies here.~
+WFlags   take head~
+Values   50 25 0 0 0 0
+Stats    1 0 0 0 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 10 19 0
+Affect       -1 -1 250 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6334
+Keywords Fitted Purple Cap~
+Type     armor~
+Short    &za fitted &Pp&pu&Pr&pp&Pl&pe&z cap~
+Long     &zA fitted &Ppurple &zcap lies here.~
+WFlags   take head~
+Values   50 25 0 0 0 0
+Stats    1 0 0 0 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 10 19 0
+Affect       -1 -1 250 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6335
+Keywords Fitted Red Shirt~
+Type     armor~
+Short    &za fitted &Rr&re&Rd&z shirt~
+Long     &zA fitted shirt lies here.~
+WFlags   take body~
+Values   75 75 0 0 0 0
+Stats    1 10000 1000 0 1
+Affect       -1 -1 -75 17 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 2 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6336
+Keywords Fitted Blue Shirt~
+Type     armor~
+Short    &za fitted &Bb&bl&Bu&be&z shirt~
+Long     &zA fitted shirt lies here.~
+WFlags   take body~
+Values   75 75 0 0 0 0
+Stats    1 10000 1000 0 0
+Affect       -1 -1 -75 17 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 2 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6337
+Keywords Fitted Green Shirt~
+Type     armor~
+Short    &za fitted &Gg&gr&Ge&ge&Gn&z shirt~
+Long     &zA fitted shirt lies here.~
+WFlags   take body~
+Values   75 75 0 0 0 0
+Stats    1 10000 1000 0 0
+Affect       -1 -1 -75 17 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 2 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6338
+Keywords Fitted Purple Shirt~
+Type     armor~
+Short    &za fitted &Pp&pu&Pr&pp&Pl&pe&z shirt~
+Long     &zA fitted shirt lies here.~
+WFlags   take body~
+Values   75 75 0 0 0 0
+Stats    1 10000 1000 0 0
+Affect       -1 -1 -75 17 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 2 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6340
+Keywords Automatic Pistol~
+Type     weapon~
+Short    &Wa&wn &W9&w2&WF&wS &WA&wu&Wt&wo&Wm&wa&Wt&wi&Wc &wP&Wi&ws&Wt&wo&Wl~
+Long     &WA black finely polished handgun lies here.~
+WFlags   take wield~
+Values   20 7 200 6 300 300
+Stats    1 5000 500 0 0
+Affect       -1 -1 3 18 0
+Affect       -1 -1 3 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6341
+Keywords .50AE Automatic Pistol~
+Type     weapon~
+Short    &Wa&wn &W.&w5&W0&wA&WE &WA&wu&Wt&wo&Wm&wa&Wt&wi&Wc &wP&Wi&ws&Wt&wo&Wl~
+Long     &WA fifty calibur pistol lies here.~
+WFlags   take wield~
+Values   20 6 273 6 0 0
+Stats    1 15000 1500 0 0
+Affect       -1 -1 3 18 0
+Affect       -1 -1 3 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6350
+Keywords M240 Machine Gun~
+Type     weapon~
+Short    &Wa&wn &WM&w2&W4&w0 &WM&wa&Wc&wh&Wi&wn&We &wG&Wu&wn~
+Long     &WA large machine gun lies here.~
+WFlags   take wield~
+Values   75 10 150 6 10000 10000
+Stats    5 75000 7500 0 0
+Affect       -1 -1 15 18 0
+Affect       -1 -1 15 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6351
+Keywords M16A1 Assault Rifle~
+Type     weapon~
+Short    &Wa&wn &WM&w-&W1&w6&WA&w1 &WA&ws&Ws&wa&Wu&wl&Wt &wR&Wi&wf&Wl&we~
+Long     &WA shiny assault rifle lies here.~
+Flags    inventory~
+WFlags   take wield~
+Values   0 15 97 90 0 0
+Stats    1 100000 10000 0 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 10 19 0
+Affect       -1 -1 -75 17 0
+Affect       -1 -1 2 1 0
+Affect       -1 -1 25 40 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6360
+Keywords Purple Tuxedo Jacket~
+Type     armor~
+Short    &wa &Pp&pu&Pr&pp&Pl&pe &CG&cu&Cc&cc&Ci &zt&wu&zx&we&zd&wo &zj&wa&zc&wk&ze&wt~
+Long     &zA &Ppurple&z tuxedo jacket lies here.~
+WFlags   take about~
+Values   34 34 0 0 0 0
+Stats    1 12000 1200 0 2
+Affect       -1 -1 5 18 0
+Affect       -1 -1 5 19 0
+Affect       -1 -1 500 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6361
+Keywords White Frilly Undershirt~
+Type     armor~
+Short    &wa &Ww&wh&Wi&wt&We &zf&wr&zi&wl&zl&wy &zu&wn&zd&we&zr&ws&zh&wi&zr&wt~
+Long     &zA &wwhite&z shirt with frills on it lies here.~
+WFlags   take body~
+Values   20 20 0 0 0 0
+Stats    1 10000 1000 0 0
+Affect       -1 -1 3 18 0
+Affect       -1 -1 7 19 0
+Affect       -1 -1 3 25 0
+Affect       -1 -1 500 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6363
+Keywords Pimp Hat~
+Type     armor~
+Short    &wa &Pp&pu&Pr&pp&Pl&pe &zh&wa&zt &ww&zi&wt&zh &wa &zf&we&za&wt&zh&we&zr &wi&zn &wi&zt~
+Long     &zA &Ppurple&z hat lies here, with a feather at its rim.~
+WFlags   take head~
+Values   24 24 0 0 0 0
+Stats    1 5000 500 0 1
+Affect       -1 -1 -75 17 0
+Affect       -1 -1 4 18 0
+Affect       -1 -1 4 19 0
+Affect       -1 -1 1 25 0
+Affect       -1 -1 500 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6364
+Keywords White Dewrag~
+Type     armor~
+Short    &wa &Ww&wh&Wi&wt&We &zd&we&zw&wr&za&wg~
+Long     &zA &wwhite&z dewrag lies here.~
+WFlags   take head~
+Values   20 20 0 0 0 0
+Stats    1 7000 700 0 0
+Affect       -1 -1 2 18 0
+Affect       -1 -1 8 19 0
+Affect       -1 -1 500 13 0
+Affect       -1 -1 -75 17 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6365
+Keywords Purple Tuxedo Pants~
+Type     armor~
+Short    &wa &zp&wa&zi&wr &zo&wf &Pp&pu&Pr&pp&Pl&pe &CG&cu&Cc&cc&Ci &zt&wu&zx&we&zd&wo &zp&wa&zn&wt&zs~
+Long     &zA pair of &Ppurple&z pants are here.~
+WFlags   take legs~
+Values   50 50 0 0 0 0
+Stats    1 0 0 0 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 8 19 0
+Affect       -1 -1 500 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6366
+Keywords Gold Rolex~
+Type     armor~
+Short    &Ya &Og&Yo&Ol&Yd &Or&Yo&Ol&Ye&Ox~
+Long     &zAn expensive watch lies here.~
+Flags    glow~
+WFlags   take wrist~
+Values   75 75 0 0 0 0
+Stats    1 120000 12000 0 0
+Affect       -1 -1 25 18 0
+Affect       -1 -1 10 19 0
+Affect       -1 -1 -75 17 0
+Affect       -1 -1 500 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6367
+Keywords Pimp Cane~
+Type     weapon~
+Short    &Ya &Op&Yi&Om&Yp &Oc&Ya&On&Ye~
+Long     &zA golden pimp cane lies here.~
+Flags    glow~
+WFlags   take wield~
+Values   40 10 150 8 0 0
+Stats    1 125000 12500 0 0
+Affect       -1 -1 -75 17 0
+Affect       -1 -1 20 18 0
+Affect       -1 -1 20 19 0
+Affect       -1 -1 2000 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6370
+Keywords TP-01 Alloy~
+Type     durasteel~
+Short    &WT&wP&W-&w0&W1 &wa&Wl&wl&Wo&wy~
+Long     A piece of an expensive experimental alloy lies here.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 10000 1000 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6371
+Keywords Iron Briefcase~
+Type     container~
+Short    &wa&Wn &wi&Wr&wo&Wn &wb&Wr&wi&We&wf&Wc&wa&Ws&we~
+Long     &zAn expensive &Wiron&z briefcase lies here, shimmering.~
+Flags    inventory~
+WFlags   take hold~
+Values   25 25 0 1000 0 0
+Stats    1 5000 500 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6372
+Keywords Backpack~
+Type     container~
+Short    &za &wb&za&wc&zk&wp&za&wc&zk~
+Long     &zA large black backpack lies here.~
+Flags    inventory~
+WFlags   take body~
+Values   150 25 0 1000 0 0
+Stats    1 15000 1500 0 1
+Affect       -1 -1 -75 17 0
+Affect       -1 -1 4 18 0
+Affect       -1 -1 4 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6384
+Keywords sewing kit~
+Type     thread~
+Short    &wa &Ws&we&Ww&wi&Wn&wg &Wk&wi&Wt~
+Long     A needle and thread lie here.~
+Flags    inventory~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 20 2 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6385
+Keywords Chemical Set~
+Type     chemical~
+Short    &wa &Gc&gh&Ge&gm&Gi&gc&Ga&gl &Ws&we&Wt~
+Long     A chemical set is here.~
+Flags    inventory~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 70 7 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6386
+Keywords small oven~
+Type     oven~
+Short    &wa &Ws&wm&Wa&wl&Wl &co&Cv&ce&Cn~
+Long     &zA small oven lies here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 50 5 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6387
+Keywords toolkit~
+Type     toolkit~
+Short    &wa &Wt&wo&Wo&wl&Wk&wi&Wt~
+Long     &zA toolkit lies here.~
+Flags    inventory~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 500 50 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6388
+Keywords a piece of gold~
+Type     rare_metal~
+Short    &wa &Wp&wi&We&wc&We &wo&Wf &Yg&Oo&Yl&Od~
+Long     A piece of gold lies here.~
+Flags    inventory~
+WFlags   take~
+Values   55 55 0 0 0 0
+Stats    1 50 5 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6389
+Keywords a piece of steel~
+Type     durasteel~
+Short    &wa &Wp&wi&We&wc&We &wo&Wf &ws&Wt&we&We&wl~
+Long     &zA piece of steel lies here.~
+Flags    inventory~
+WFlags   take~
+Values   30 30 0 0 0 0
+Stats    1 35 3 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6390
+Keywords piece of fabric~
+Type     fabric~
+Short    &wa &Wp&wi&We&wc&We &wo&Wf &wf&Wa&wb&Wr&wi&Wc~
+Long     &zA piece of fabric lies here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 2 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6399
+Keywords last~
+Type     trash~
+Short    a last~
+Long     A last is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     6300
+Name     Wandering a Town~
+Sector   city~
+Desc     You stand in a desolate town, with nothing more but a few empty buildings.
+There is an establishment to the north bustling with activity, its sign
+reads,   "&PD&pe&Pv&pi&Pl &pM&Pa&py &PC&pr&Py&c." 
+~
+#EXIT
+Direction north~
+ToRoom    6302
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6301
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6303
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6304
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6322
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6301
+Name     A deserted building~
+Sector   city~
+Flags    indoors~
+Desc     A roach crawls across your foot as you look around, seeing nothing but
+filthe and decreption.  The faint scent of rotting flesh fills the air, as
+a strange puppet can be seen in the background which seems to be
+moving...How? 
+~
+#EXIT
+Direction west~
+ToRoom    6300
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6351
+Flags     hidden~
+#ENDEXIT
+
+Reset M 0 6301 2 6301
+  Reset E 1 6326 1 16
+#ENDROOM
+
+#ROOM
+Vnum     6302
+Name     Before &PD&pe&Pv&pi&Pl &pM&Pa&py &PC&pr&Py&c~
+Sector   city~
+Desc     This is a dark looking town, with no lights on, and strange sounds coming
+from all around. There are no signs of life, only a large and exuberant
+sign stating, "Devil May Cry" to the north. 
+~
+#EXIT
+Direction north~
+ToRoom    6305
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6300
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6303
+Name     An Empty Apartment~
+Sector   city~
+Flags    indoors empty_home~
+#EXIT
+Direction north~
+ToRoom    6300
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6304
+Name     A deserted house~
+Sector   city~
+Flags    nomob indoors~
+Desc     A roach crawls across your foot as you look around, seeing nothing but
+filthe and decreption.  The faint scent of rotting flesh fills the air, as
+a strange puppet can be seen in the background which seems to be
+moving...How? 
+~
+#EXIT
+Direction east~
+ToRoom    6300
+#ENDEXIT
+
+Reset M 0 6301 2 6304
+  Reset G 1 6326 1
+#ENDROOM
+
+#ROOM
+Vnum     6305
+Name     &PD&pe&Pv&pi&Pl &pM&Pa&py &PC&pr&Py~
+Sector   city~
+Flags    indoors~
+Desc     This is a cabin-like establishment founded to kill demons, and run by a
+half-demon man himself. The room is furnished with skulls and swords.
+There is a desk to the north, a shop to the east, and a bathroom to the
+west.
+~
+#EXIT
+Direction north~
+ToRoom    6308
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6307
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6302
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6306
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6309
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6306
+Name     &PD&pe&Pv&pi&Pl &pM&Pa&py &PC&pr&Py &C- Bathroom~
+Sector   city~
+Flags    indoors~
+Desc     You stand in the middle of a smelly, dank bathroom. There are cockroaches
+scattering about the room, and the smell of urine fills your nose. There's
+a picture of a naked woman on the wall, signifying how sleezy this place
+is.
+~
+#EXIT
+Direction east~
+ToRoom    6305
+#ENDEXIT
+
+Reset O 0 6325 1 6306
+#ENDROOM
+
+#ROOM
+Vnum     6307
+Name     &PD&pe&Pv&pi&Pl &pM&Pa&py &PC&pr&Py&C - Snack stand~
+Sector   city~
+Flags    indoors~
+Desc     You're in the middle of a mini-snack bar. Unlike the rest of the place,
+this actually looks a little nice. There's an old man with the nametag,
+"sparda" behind the counter, selling foods to people. 
+~
+#EXIT
+Direction west~
+ToRoom    6305
+#ENDEXIT
+
+Reset M 0 6307 1 6307
+  Reset G 1 10314 1
+  Reset G 1 10313 1
+#ENDROOM
+
+#ROOM
+Vnum     6308
+Name     &PD&pe&Pv&pi&Pl &pM&Pa&py &PC&pr&Py&C - Dante's Office~
+Sector   city~
+Flags    indoors~
+Desc     This is Dante, the demon hunter's office. It's a large one, with nude
+pictures of women on the wall. Behind his desk, hung on the wall, is the
+legendary sword sparda, which was his father's. He has since retired from
+the Demon Hunting business, and now just occasionally takes a job for fun.
+~
+#EXIT
+Direction south~
+ToRoom    6305
+#ENDEXIT
+
+Reset M 0 6308 1 6308
+  Reset E 0 6321 1 16
+#ENDROOM
+
+#ROOM
+Vnum     6309
+Name     &PD&pe&Pv&pi&Pl &pM&Pa&py &PC&pr&Py&C - Trish's Shop~
+Sector   city~
+Flags    indoors~
+Desc     This is a shop selling ultra-rare swords from Dante's demonic past. She
+even sells a couple types of guns, some of her personal favorites. It's a 
+neatly decorated shop, with still more knives and things hanging on the
+wall.
+~
+#EXIT
+Direction southwest~
+ToRoom    6305
+#ENDEXIT
+
+Reset M 0 6309 1 6309
+  Reset G 1 6321 1
+  Reset G 1 6322 1
+  Reset G 1 6323 1
+  Reset G 1 6319 1
+  Reset G 1 6320 1
+  Reset G 1 6324 1
+#ENDROOM
+
+#ROOM
+Vnum     6310
+Name     Road to Brussel City~
+Sector   city~
+Desc     This paved road is 2 lanes. There are children playing on a playground to 
+the south, and old people by the lake. It's a short trail to the city, 
+which is to the east. 
+~
+#EXIT
+Direction east~
+ToRoom    6311
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    202
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6311
+Name     Brussel City Entrance~
+Sector   city~
+Flags    nomob~
+Desc     You stand in the entrance to the city known as Brussel City. It's a medium
+sized city, with an epicenter of weapons sales. The road insects into four
+directions, north, east, south, and west.
+~
+#EXIT
+Direction north~
+ToRoom    6312
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6337
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6313
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6310
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6312
+Name     North Road - Brussel City~
+Sector   city~
+Flags    nomob~
+Desc     The road continues north, with people busseling by about their business.
+~
+#EXIT
+Direction north~
+ToRoom    6314
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6389
+Flags     hidden~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6311
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6313
+Name     South Road - Brussel City~
+Sector   city~
+Flags    nomob~
+Desc     The road continues south, with people busseling by about their business.
+~
+#EXIT
+Direction north~
+ToRoom    6311
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6323
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6314
+Name     North Road - Brussel City~
+Sector   city~
+Flags    nomob~
+Desc     The road continues north, with people busseling by about their business.
+~
+#EXIT
+Direction north~
+ToRoom    6315
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6312
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6315
+Name     City Intersection - Brussel City~
+Sector   city~
+Flags    nomob~
+Desc     This road insects four places, with a training center to the north. Uncle
+Ottis' Gun Shop is to the northwest, and the road continues east, and
+south.
+~
+#EXIT
+Direction north~
+ToRoom    6374
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6316
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6314
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6371
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6316
+Name     Third Street - Brussel City~
+Sector   city~
+Flags    nomob~
+Desc     The road continues east, with people busseling by about their business.
+~
+#EXIT
+Direction east~
+ToRoom    6317
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6315
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6317
+Name     Third Street - Brussel City~
+Sector   city~
+Flags    nomob~
+Desc     The road continues east, with people busseling by about their business. The
+Pimpin' Ain't Easy Shop is to the north, where all the players go to get
+their pimp gear.
+~
+#EXIT
+Direction north~
+ToRoom    6372
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6318
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6316
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6318
+Name     Third Street - Brussel City~
+Sector   city~
+Flags    nomob~
+Desc     The road continues east, with people busseling by about their business.
+~
+#EXIT
+Direction east~
+ToRoom    6319
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6317
+#ENDEXIT
+
+Reset M 0 6300 3 6318
+Reset M 0 6300 3 6318
+#ENDROOM
+
+#ROOM
+Vnum     6319
+Name     Third Street - Brussel City~
+Sector   city~
+Flags    nomob~
+Desc     The road continues east, with people busseling by about their business.
+~
+#EXIT
+Direction east~
+ToRoom    6320
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6318
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6320
+Name     Third Street - Brussel City~
+Sector   city~
+Flags    nomob~
+Desc     The road continues east, with people busseling by about their business. The
+City Hall is also to the north here. 
+~
+#EXIT
+Direction north~
+ToRoom    6366
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6321
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6319
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6321
+Name     Third Street - Brussel City~
+Sector   city~
+Flags    nomob~
+Desc     The road continues east, with people busseling by about their business. As
+well as the apartment complex to the south. 
+~
+#EXIT
+Direction east~
+ToRoom    6322
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6362
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6320
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6322
+Name     City Intersection - Brussel City~
+Sector   city~
+Flags    nomob~
+Desc     The road continues east, with people busseling by about their business.
+~
+#EXIT
+Direction south~
+ToRoom    6336
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6321
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6300
+Flags     hidden~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6323
+Name     South Road - Brussel City~
+Sector   city~
+Flags    nomob~
+Desc     The road continues south, with people busseling by about their business.
+~
+#EXIT
+Direction north~
+ToRoom    6313
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6324
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6388
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6324
+Name     City Intersection - Brussel City~
+Sector   city~
+Flags    nomob~
+Desc     The road peaks north and west here, leaving you with few options.
+~
+#EXIT
+Direction north~
+ToRoom    6323
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6325
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6325
+Name     First Street - Brussel City~
+Sector   city~
+Flags    nomob~
+Desc     This street continues east, with cars rushing by and police running around.
+~
+#EXIT
+Direction east~
+ToRoom    6326
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6382
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6324
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6326
+Name     First Street - Brussel City~
+Sector   city~
+Flags    nomob~
+Desc     This street continues east, with cars rushing by and police running around.
+~
+#EXIT
+Direction east~
+ToRoom    6327
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6325
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6327
+Name     First Street - Brussel City~
+Sector   city~
+Flags    nomob~
+Desc     This street continues east, with cars rushing by and police running around.
+~
+#EXIT
+Direction east~
+ToRoom    6328
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6346
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6326
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6328
+Name     First Street - Brussel City~
+Sector   city~
+Flags    nomob~
+Desc     This street continues east, with cars rushing by and police running around.
+~
+#EXIT
+Direction north~
+ToRoom    6386
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6329
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6327
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6329
+Name     First Street - Brussel City~
+Sector   city~
+Flags    nomob~
+Desc     This street continues east, with cars rushing by and police running around.
+~
+#EXIT
+Direction east~
+ToRoom    6330
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6387
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6328
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6330
+Name     First Street - Brussel City~
+Sector   city~
+Flags    nomob~
+Desc     This street continues east, with cars rushing by and police running around.
+~
+#EXIT
+Direction east~
+ToRoom    6331
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6329
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6331
+Name     City Intersection - Brussel City~
+Sector   city~
+Desc     The street peaks north and west, giving you few choices.
+~
+#EXIT
+Direction north~
+ToRoom    6332
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6330
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6332
+Name     South Street - Brussel City~
+Sector   city~
+Desc     The road continues south, with people busseling by about their business.
+~
+#EXIT
+Direction north~
+ToRoom    6333
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6331
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6333
+Name     South Street - Brussel City~
+Sector   city~
+Desc     The road continues south, with people busseling by about their business.
+~
+#EXIT
+Direction north~
+ToRoom    6334
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6332
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6334
+Name     City Intersection - Brussel City~
+Sector   city~
+Desc     This street intersects north, south, and west. People walk by this business
+district going to their jobs and sort. 
+~
+#EXIT
+Direction north~
+ToRoom    6335
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6333
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6342
+#ENDEXIT
+
+Reset M 0 6300 3 6334
+  Reset E 1 59 1 16
+#ENDROOM
+
+#ROOM
+Vnum     6335
+Name     North Street - Brussel City~
+Sector   city~
+Desc     The road continues north, with people busseling by about their business.
+~
+#EXIT
+Direction north~
+ToRoom    6336
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6334
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6336
+Name     North Street - Brussel City~
+Sector   city~
+Desc     The road continues south, with people busseling by about their business.
+~
+#EXIT
+Direction north~
+ToRoom    6322
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6335
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6393
+Flags     hidden~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6337
+Name     Second Street - Brussel City~
+Sector   city~
+Desc     This street continues east, with cars rushing by and police running around.
+~
+#EXIT
+Direction east~
+ToRoom    6338
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6356
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6311
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6338
+Name     Second Street - Brussel City~
+Sector   city~
+Desc     This street continues east, with cars rushing by and police running around.
+~
+#EXIT
+Direction north~
+ToRoom    6357
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6339
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6337
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6339
+Name     Second Street - Brussel City~
+Sector   city~
+Desc     This street continues east, with cars rushing by and police running around.
+~
+#EXIT
+Direction east~
+ToRoom    6340
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6358
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6338
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6340
+Name     Second Street - Brussel City~
+Sector   city~
+Desc     This street continues east, with cars rushing by and police running around.
+~
+#EXIT
+Direction north~
+ToRoom    6359
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6341
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6339
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6341
+Name     Second Street - Brussel City~
+Sector   city~
+Desc     This street continues east, with cars rushing by and police running around.
+~
+#EXIT
+Direction east~
+ToRoom    6342
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6360
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6340
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6342
+Name     Second Street - Brussel City~
+Sector   city~
+Desc     This street continues east, with cars rushing by and police running around.
+~
+#EXIT
+Direction north~
+ToRoom    6361
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6334
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6341
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6343
+Name     Second Street - Brussel City~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    6344
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6342
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6344
+Name     Second Street - Brussel City~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    6345
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6343
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6345
+Name     Second Street - Brussel City~
+Sector   city~
+#EXIT
+Direction west~
+ToRoom    6344
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6346
+Name     Police Station - Brussel City~
+Sector   city~
+Flags    indoors~
+Desc     This is a small local police station designed to keep the peace in Brussel
+City. There isn't much violence around here because of the precense of
+ESUN in the area. This force conists of about 13 police officers total.
+~
+#EXIT
+Direction north~
+ToRoom    6327
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6348
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6349
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6347
+#ENDEXIT
+
+Reset M 0 6346 1 6346
+#ENDROOM
+
+#ROOM
+Vnum     6347
+Name     Stock Room - Brussel City~
+Sector   city~
+Flags    indoors~
+Desc     Here is the room where the small police force stores their equipment for
+the few times they must venture out to handle something. There are a
+couple of shotguns, an M-16, and some riot shields lined around the room.
+~
+#EXIT
+Direction east~
+ToRoom    6346
+#ENDEXIT
+
+Reset O 0 50 1 6347
+Reset O 0 2003 1 6347
+Reset O 0 4136 1 6347
+#ENDROOM
+
+#ROOM
+Vnum     6348
+Name     Waiting Room - Brussel City~
+Sector   city~
+Flags    indoors~
+Desc     You stand in a small room with chairs lined against the walls, and a booth
+at the upper right corner of the room. People come here to report petty
+matters that can be taken care of with no police  intervention. 
+~
+#EXIT
+Direction west~
+ToRoom    6346
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6349
+Name     Guard Station - Brussel City~
+Sector   city~
+Flags    indoors~
+Desc     A single guard sits in a chair here, reading his newspaper and  every now
+and then glancing at the prisoners to make sure they aren't trying
+anything funny. To your right lies the cell, filled with drunks and other
+trouble makers of the small city.
+~
+#EXIT
+Direction north~
+ToRoom    6346
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6350
+Flags     isdoor closed~
+#ENDEXIT
+
+Reset M 0 6349 1 6349
+Reset D 0 6349 1 1
+#ENDROOM
+
+#ROOM
+Vnum     6350
+Name     Jail Cell - Brussel City~
+Sector   city~
+Flags    indoors~
+Desc     There are several scratches on the walls, along with graphitti of  all
+sorts. The smell of liquor is present, as well as a bum lying down on the
+hard wooden bed. 
+~
+#EXIT
+Direction west~
+ToRoom    6349
+Flags     isdoor pickproof~
+#ENDEXIT
+
+Reset D 0 6350 3 0
+#ENDROOM
+
+#ROOM
+Vnum     6351
+Name     Entrance - Hidden Reploid Base~
+Sector   city~
+Flags    dark~
+Desc     This is the entrance to the base, which was hidden completely. The exit
+continues to the east. 
+~
+#EXIT
+Direction east~
+ToRoom    6352
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6301
+#ENDEXIT
+
+Reset M 0 6351 1 6351
+Reset O 0 17 1 6351
+#ENDROOM
+
+#ROOM
+Vnum     6352
+Name     Hallway - Hidden Reploid Base~
+Sector   city~
+Desc     This is a hallway in the Reploid Resistance Base. It goes north, and south.
+~
+#EXIT
+Direction south~
+ToRoom    6353
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6351
+#ENDEXIT
+
+Reset M 0 6353 1 6352
+#ENDROOM
+
+#ROOM
+Vnum     6353
+Name     Hallway - Hidden Reploid Base~
+Sector   city~
+Desc     This is a hallway in the Reploid Resistance Base. There are two exits, east
+and west.
+~
+#EXIT
+Direction north~
+ToRoom    6352
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6355
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6354
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6354
+Name     Weapon Upgrade Center - Hidden Reploid Base~
+Sector   city~
+Desc     This is a large room, with items and things all over. There is are spare
+parts lying around, and a reploid of medium height in the middle of the
+room. To his left, on the wall, is a &RList&z.
+~
+#EXIT
+Direction east~
+ToRoom    6353
+#ENDEXIT
+
+Reset M 0 6354 1 6354
+#EXDESC
+ExDescKey    list~
+ExDesc       Do to his limitations, Zero can only upgrade a Japanese Sword.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6355
+Name     Command Center - Hidden Reploid Base~
+Sector   city~
+Desc     This room is the area where X and Zero plan tactical strikes on other
+bases. There are several computers buzzing about, processing data and
+other valuable items. A couple reploids are here, working on a computer.
+~
+#EXIT
+Direction west~
+ToRoom    6353
+#ENDEXIT
+
+Reset M 0 6355 1 6355
+#EXDESC
+ExDescKey    list~
+ExDesc       X is currently able to upgrade an M4 Automatic Assault Rifle.
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     6356
+Name     Town Deli - Brussel City~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    6337
+#ENDEXIT
+
+Reset M 0 6356 1 6356
+  Reset G 1 1316 1
+  Reset G 1 10314 1
+#ENDROOM
+
+#ROOM
+Vnum     6357
+Name     An Empty Apartment~
+Sector   city~
+Flags    indoors empty_home~
+#EXIT
+Direction south~
+ToRoom    6338
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6358
+Name     Throwbacks 'R Us - Brussel City~
+Sector   city~
+Flags    indoors~
+Desc     All around you are throwback football jersies from various teams. There are
+a variety, from the Eagles, to the Rams, and so on. There are also a
+couple Basketball jersies lining the walls. Some other apparel is offered
+here as well.
+~
+#EXIT
+Direction north~
+ToRoom    6339
+#ENDEXIT
+
+Reset M 0 6358 1 6358
+  Reset G 1 6303 1
+  Reset G 1 6301 1
+  Reset G 1 6302 1
+  Reset G 1 6306 1
+  Reset G 1 6304 1
+  Reset G 1 6305 1
+  Reset G 1 6308 1
+  Reset G 1 6309 1
+#ENDROOM
+
+#ROOM
+Vnum     6359
+Name     Willie's Weapons - Brussel City~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction south~
+ToRoom    6340
+#ENDEXIT
+
+Reset M 0 6359 1 6359
+  Reset G 1 9001 1
+  Reset G 1 54 1
+  Reset G 1 53 1
+  Reset G 1 9227 1
+  Reset G 1 6201 1
+  Reset G 1 6340 1
+  Reset G 1 6341 1
+#ENDROOM
+
+#ROOM
+Vnum     6360
+Name     Fitted Factory - Brussel City~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    6341
+#ENDEXIT
+
+Reset M 0 6360 1 6360
+  Reset G 1 6338 1
+  Reset G 1 6337 1
+  Reset G 1 6336 1
+  Reset G 1 6335 1
+  Reset G 1 6334 1
+  Reset G 1 6333 1
+  Reset G 1 6332 1
+  Reset G 1 6331 1
+#ENDROOM
+
+#ROOM
+Vnum     6361
+Name     An Empty Apartment~
+Sector   city~
+Flags    indoors empty_home~
+#EXIT
+Direction south~
+ToRoom    6342
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6362
+Name     Apartment Complex - Brussel City~
+Sector   city~
+Flags    nomob indoors~
+Desc     These simple homes are affordable, and easy to access. There are three to
+choose from. 
+~
+#EXIT
+Direction north~
+ToRoom    6321
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6364
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6365
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6363
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6363
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction east~
+ToRoom    6362
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6364
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction west~
+ToRoom    6362
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6365
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction north~
+ToRoom    6362
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6366
+Name     Before City Hall - Brussel City~
+Sector   city~
+Flags    nomob~
+Desc     All of Brussel City's matters are handled here by their mayor. A man stands
+ here guarding the mayor's room from any possible attacks.
+~
+#EXIT
+Direction north~
+ToRoom    6367
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6320
+#ENDEXIT
+
+Reset M 0 6366 1 6366
+  Reset E 1 9004 1 16
+#ENDROOM
+
+#ROOM
+Vnum     6367
+Name     Inside City Hall - Brussel City~
+Sector   city~
+Flags    nomob~
+Desc     You have four choices of where you can go from here. You can enter the
+mayor's office, go to the mailroom, the meeting room, or go back south.
+~
+#EXIT
+Direction north~
+ToRoom    6370
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6368
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6366
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6369
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6368
+Name     Mailroom - Brussel City~
+Sector   city~
+Flags    nomob~
+Desc     A simple room where mail comes in, is sorted, and shipped around.
+~
+#EXIT
+Direction west~
+ToRoom    6367
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6369
+Name     Meeting Room - Brussel City~
+Sector   city~
+Flags    nomob~
+Desc     This is where all of the big league business men talk their deals out. It's
+a simple room with a large table and 6 chairs.
+~
+#EXIT
+Direction east~
+ToRoom    6367
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6370
+Name     Mayor's Office - Brussel City~
+Sector   city~
+Flags    nomob~
+Desc     The mayor is in this room, jabbering on the phone trying to handle other
+matters of the city. He's a simple man, who was elected for his kindness
+and caring for the city.
+~
+#EXIT
+Direction south~
+ToRoom    6367
+#ENDEXIT
+
+Reset M 0 6370 1 6370
+Reset O 0 2011 1 6370
+#ENDROOM
+
+#ROOM
+Vnum     6371
+Name     Uncle Ottis' Gun Shop - Brussel City~
+Sector   city~
+Flags    nomob indoors~
+Desc     You stand in the famous Uncle Ottis' Gun Shop. He's an old black man
+selling weapons of top quality. They're all replicas of weapons used back
+in his hometown of Philladelphia, PA.
+~
+#EXIT
+Direction southeast~
+ToRoom    6315
+#ENDEXIT
+
+Reset M 0 6371 1 6371
+  Reset G 1 6350 1
+  Reset G 1 6340 1
+  Reset G 1 6341 1
+#ENDROOM
+
+#ROOM
+Vnum     6372
+Name     Pimpin' Ain't Easy Shop - Brussel City~
+Sector   city~
+Flags    nomob~
+Desc     Every pimp in the nation comes here to get their gear. A true pimp is a 
+proper pimp. 
+~
+#EXIT
+Direction east~
+ToRoom    6373
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6317
+#ENDEXIT
+
+Reset M 0 6372 1 6372
+  Reset G 1 6360 1
+  Reset G 1 6361 1
+  Reset G 1 6363 1
+#ENDROOM
+
+#ROOM
+Vnum     6373
+Name     Pimpin' Ain't Easy Accessories - Brussel City~
+Sector   city~
+Flags    nomob~
+Desc     This expands on the original shop, with 2 extra items to complete the
+official Gundam Wing Operation Meteor Pimp Gear.
+~
+#EXIT
+Direction west~
+ToRoom    6372
+#ENDEXIT
+
+Reset M 0 6373 1 6373
+  Reset G 1 6366 1
+  Reset G 1 6364 1
+#ENDROOM
+
+#ROOM
+Vnum     6374
+Name     Training Center - Brussel City~
+Sector   city~
+Flags    nomob indoors~
+Desc     The people of this region aren't that strong, but, they do need to exercise
+alot. They made this small training facility just for that. It's not much,
+but every little bit counts.
+~
+#EXIT
+Direction east~
+ToRoom    6375
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6315
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6381
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6375
+Name     Training - Brussel City~
+Sector   city~
+Flags    nomob indoors~
+Desc     You stand in the hallway of the training facility. When you enter one of
+these rooms, say &CBegin&z for a hologram to appear.
+~
+#EXIT
+Direction north~
+ToRoom    6376
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6378
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6377
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6374
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6379
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6380
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6376
+Name     Level 1 - Brussel City~
+Sector   city~
+Flags    nomob indoors~
+#EXIT
+Direction south~
+ToRoom    6375
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpload 6376
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpechoat $n A hologram appears.
+mpmload 6376 1
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6377
+Name     Level 3 - Brussel City~
+Sector   city~
+Flags    nomob indoors~
+#EXIT
+Direction north~
+ToRoom    6375
+#ENDEXIT
+
+Reset M 0 6377 1 6377
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpechoat $n A hologram appears.
+mpmload 6377 1
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6378
+Name     Level 2 - Brussel City~
+Sector   city~
+Flags    nomob indoors~
+#EXIT
+Direction west~
+ToRoom    6375
+#ENDEXIT
+
+Reset M 0 6378 1 6378
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpechoat $n A hologram appears.
+mpmload 6378 1
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6379
+Name     Level 4 - Brussel City~
+Sector   city~
+Flags    nomob indoors~
+#EXIT
+Direction down~
+ToRoom    6375
+#ENDEXIT
+
+Reset M 0 6379 1 6379
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpechoat $n A hologram appears.
+mpmload 6379 1
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6380
+Name     Level 5 - Brussel City~
+Sector   city~
+Flags    nomob indoors~
+#EXIT
+Direction up~
+ToRoom    6375
+#ENDEXIT
+
+Reset M 0 6380 1 6380
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpechoat $n A hologram appears.
+mpmload 6380 1
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6381
+Name     Hospital - Brussel City~
+Sector   city~
+Flags    nomob indoors heal~
+Desc     You stand in the training facility's hospital. Those who are weary from a
+workout lay here in hopes of recovery. All you need to do is wait here for
+about 30 seconds, and you'll feel refreshed as well.
+~
+#EXIT
+Direction east~
+ToRoom    6374
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6382
+Name     Engineer's Workshop - Brussel City~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is an important mainstay on Brussel City's economy. People here are
+forced to make their own items alot, so they can sell them and make some
+quick cash. 
+~
+#EXIT
+Direction north~
+ToRoom    6325
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6383
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6385
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6384
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6383
+Name     Factory - Brussel City~
+Sector   city~
+Flags    nomob indoors factory~
+Desc     You stand in a factory where you can make alot of items.
+~
+#EXIT
+Direction west~
+ToRoom    6382
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6384
+Name     Engineer Shop - Brussel City~
+Sector   city~
+Flags    nomob indoors~
+Desc     You stand in an engineer's shop where they offer a variety of engineering
+equipment. 
+~
+#EXIT
+Direction east~
+ToRoom    6382
+#ENDEXIT
+
+Reset M 0 6384 1 6384
+  Reset G 1 6372 1
+  Reset G 1 6371 1
+  Reset G 1 6384 1
+  Reset G 1 6385 1
+  Reset G 1 6386 1
+  Reset G 1 6387 1
+#ENDROOM
+
+#ROOM
+Vnum     6385
+Name     Materials Shop - Brussel City~
+Sector   city~
+Flags    nomob indoors~
+Desc     This shop sells various items that will help you make items.
+~
+#EXIT
+Direction north~
+ToRoom    6382
+#ENDEXIT
+
+Reset M 0 6385 1 6385
+  Reset G 1 6370 1
+  Reset G 1 6388 1
+  Reset G 1 6389 1
+  Reset G 1 6390 1
+#ENDROOM
+
+#ROOM
+Vnum     6386
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction south~
+ToRoom    6328
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6387
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction north~
+ToRoom    6329
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6388
+Name     Hotel - Brussel City~
+Sector   city~
+Flags    nomob indoors hotel~
+Desc     You can save and quit here, since it's a hotel.
+~
+#EXIT
+Direction east~
+ToRoom    6323
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6389
+Name     Dark Alley - Brussel City~
+Sector   city~
+Flags    dark nomob~
+#EXIT
+Direction east~
+ToRoom    6390
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6312
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6390
+Name     Dark Alley - Brussel City~
+Sector   city~
+Flags    dark nomob~
+#EXIT
+Direction west~
+ToRoom    6389
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6391
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6391
+Name     Smuggler's Underground - Brussel City~
+Sector   city~
+Flags    nomob~
+Desc     Every city has its dark little secrets. This underground smuggler's route is
+Brussel City's little secret. Listen to the experience smuggler here, it's
+valuable advice.
+~
+#EXIT
+Direction south~
+ToRoom    6392
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6390
+#ENDEXIT
+
+Reset M 0 6391 1 6391
+#ENDROOM
+
+#ROOM
+Vnum     6392
+Name     Guard Room - Brussel City~
+Sector   city~
+Flags    nomob~
+Desc     You stand in a dank room with a gaurd in the middle. He routinely checks
+for smugglers in this area. If you put a weapon in a bag, he will probably
+ overlook it.
+~
+#EXIT
+Direction north~
+ToRoom    6391
+#ENDEXIT
+
+Reset M 0 6392 1 6392
+  Reset G 1 51 1
+#ENDROOM
+
+#ROOM
+Vnum     6393
+Name     Catacombs - Brussel City~
+Sector   city~
+Flags    dark nomob indoors~
+#EXIT
+Direction east~
+ToRoom    6336
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6394
+#ENDEXIT
+
+Reset M 0 6393 2 6393
+  Reset E 1 6317 1 16
+#ENDROOM
+
+#ROOM
+Vnum     6394
+Name     Catacombs - Brussel City~
+Sector   city~
+Flags    dark nomob indoors~
+#EXIT
+Direction east~
+ToRoom    6393
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6395
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6395
+Name     Catacombs - Brussel City~
+Sector   city~
+Flags    dark nomob indoors~
+#EXIT
+Direction north~
+ToRoom    6394
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6396
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6396
+Name     Catacombs - Brussel City~
+Sector   city~
+Flags    dark nomob indoors~
+#EXIT
+Direction east~
+ToRoom    6395
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6397
+#ENDEXIT
+
+Reset M 0 6393 2 6396
+  Reset E 1 6317 1 16
+#ENDROOM
+
+#ROOM
+Vnum     6397
+Name     Lunar Cavern - Brussel City~
+Sector   city~
+Flags    nomob indoors~
+Desc     Before Brussel City came in existance, there was a majestic castle in its
+place. The catacombs of the castle went undiscovered, in  which you're
+standing in right now. 
+~
+#EXIT
+Direction east~
+ToRoom    6398
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6399
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6396
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6398
+Name     Lunar Shop - Brussel City~
+Sector   city~
+Flags    nomob indoors~
+Desc     This is an old dusty shop which sells replicas of the equipment of the
+famed Dragon Master. Its been run for generations by decendants of the
+Dragon Master himself. Its equipment repell evil, and are quite strong.
+~
+#EXIT
+Direction west~
+ToRoom    6397
+#ENDEXIT
+
+Reset M 0 6398 1 6398
+  Reset G 1 6318 1
+  Reset G 1 6316 1
+  Reset G 1 6315 1
+  Reset G 1 6312 1
+  Reset G 1 6311 1
+  Reset G 1 6310 1
+  Reset G 1 6314 1
+  Reset G 1 6313 1
+  Reset G 1 6317 1
+#ENDROOM
+
+#ROOM
+Vnum     6399
+Name     Lunar Healing Pool - Brussel City~
+Sector   city~
+Flags    nomob indoors heal~
+Desc     The water inside of this pool has incredible healing properties. It can
+heal you very quickly, all you have to do is sit in it for a little bit.
+~
+#EXIT
+Direction east~
+ToRoom    6397
+#ENDEXIT
+
+#ENDROOM
+
+#ENDAREA

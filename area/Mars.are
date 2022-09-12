@@ -1,0 +1,4334 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         Mars~
+Author       Katrina~
+Ranges       1 1007 1 1007
+Economy      0 636966563
+ResetMsg     You hear bells chime in the distance~
+ResetFreq    30
+#ENDAREADATA
+
+#MOBILE
+Vnum       800
+Keywords   Suzume~
+Short      Suzume~
+Long       Suzume is standing here, greeting people.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   smile $n
+say Konnichiwa! Nihon ni hajimemashite.
+say If you need a dictionary, say help.
+bow $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p help~
+Comlist   say Hai. I hope this helps $n -san.
+emote takes a Jisho from her bag.
+mpoload 800
+give jisho $n
+bow $n
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       801
+Keywords   Kaoru~
+Short      Kaoru~
+Long       Kaoru is here smiling at you.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 100 0 23
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   bow $n
+say Konnichiwa! How may i be of assistance?
+smile $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p stock~
+Comlist   mpoload 803
+mpoload 804
+mpoload 805
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       802
+Keywords   Kasumi~
+Short      Kasumi~
+Long       Kasumi is standing here smiling
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 100 0 23
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   bow $n
+say Welcome. What will you be having today?
+smile
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p stock~
+Comlist   mpoload 802
+mpoload 806
+mpoload 807
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       803
+Keywords   Keiichi~
+Short      Keiichi~
+Long       Keiichi is waiting to assist you
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 100 0 23
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   smile
+say Moshimoshi! Can i help you with something?
+bow $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p stock~
+Comlist   mpoload 808
+mpoload 2013
+mpoload 2014
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       804
+Keywords   Hiku~
+Short      Hiku~
+Long       Hiku is here waiting for you to HURRY UP and tell him what you want.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel nocorpse~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   5 0 0 0 0 120 100 0 23
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   glare $n
+say NANI YO! WHAT DO YOU WANT! HURRY UP!
+growl
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p stock~
+Comlist   mpoload 809
+mpoload 810
+mpoload 811
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       805
+Keywords   Aki~
+Short      Aki~
+Long       Aki is here tending the wounded
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   nod
+say Hai. I will tend your wounds.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       806
+Keywords   Kashikoi~
+Short      Kashikoi~
+Long       Kashikoi the wise master is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel train~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    18 18 18 18 18 18 18
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   bow $n
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       807
+Keywords   Yokozuma~
+Short      Yokozuma~
+Long       Yokozuma is crouched here in a sumo stance
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 300 0 -650 250 0
+Stats2     60 10 3000
+Stats3     30 4 2
+Stats4     0 0 0 60 60
+Attribs    18 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       808
+Keywords   Battousai~
+Short      Battousai~
+Long       Battousai is in the battoujutsu stance
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 600 0 -1400 100 0
+Stats2     120 10 6000
+Stats3     60 4 2
+Stats4     0 0 0 10 10
+Attribs    18 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Attacks    punch~
+Defenses   dodge~
+#ENDMOBILE
+
+#MOBILE
+Vnum       809
+Keywords   Cadet~
+Short      Cadet~
+Long       Cadet is here on patrol.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc~
+Stats1     0 250 0 -525 100 0
+Stats2     50 10 2500
+Stats3     25 4 2
+Stats4     0 0 0 50 50
+Attribs    15 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       810
+Keywords   shimin~
+Short      Shimin~
+Long       Shimin is walking along enjoying the weather
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 50 0 -25 200 0
+Stats2     10 10 500
+Stats3     5 4 2
+Stats4     0 0 0 10 10
+Attribs    13 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       811
+Keywords   Isha~
+Short      Isha~
+Long       Isha is here relaxing on his vacation
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say Konbanwa. Do you need some help?
+bow $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  death_prog~
+Arglist   1~
+Comlist   mpmload 850
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       812
+Keywords   Chiquita~
+Short      Chiquita~
+Long       Chiquita the stripper is here taking it all off for you.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p yes~
+Comlist   say You want some of this?
+mpechoat $n Chiquita twirls around on her pole topless.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p more~
+Comlist   say More, eh? How's this?
+mpechoat $n Chiquita slips out of her thong and rubs against you.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p lap~
+Comlist   say oooo, Kinky!
+mpechoat $n Chiquita sits on your lap, grinding against you.
+giggle
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       813
+Keywords   Carlos~
+Short      Carlos~
+Long       Carlos is here takin' it ALL off!
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p yes~
+Comlist   say Oh yeah baby!
+mpechoat $n Carlos shakes his ass at you seductively.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p more~
+Comlist   say You want more of this??
+mpechoat $n Carlos rips off his pants for you.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p again~
+Comlist   say Give it to me baby!
+mpechoat $n Carlos rubs his hard groin in your face.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p anal~
+Comlist   say mMMmMmmmMMmm You want it hot. Follow me!
+wink $n
+mpechoat $n Carlos gyrates his hips at you.
+mptransfer $n 945
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       814
+Keywords   Megumi~
+Short      Megumi~
+Long       Megumi is here giving food to hungry cadets
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 90 0 23
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   smile $n
+say Are you hungry or thirsty?
+emote looks around quickly.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   hungry~
+Comlist   mpoload 10313
+say There you go.
+give ration $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p thirsty~
+Comlist   mpoload 10314
+say Here you go.
+give canteen $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   illegal~
+Comlist   mpoload 6809
+say Ww-h-hat d-do y-y-you w-wan-tt?
+say t-t-the g-gloves?
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       815
+Keywords   Edwardo~
+Short      Edwardo~
+Long       Edwardo is here, smiling at you.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel nocorpse~
+Stats1     0 500 0 -1150 0 0
+Stats2     100 10 5000
+Stats3     50 4 2
+Stats4     0 0 0 100 100
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 100 0 23
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   smile $n
+say Hallo! Welcome to my shop!
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p stock~
+Comlist   mpoload 502
+mpoload 810
+mpoload 6003
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       816
+Keywords   Carmelita~
+Short      Carmelita~
+Long       Carmelita is here to help you with your purchase.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel nocorpse~
+Stats1     0 500 0 -1150 0 0
+Stats2     100 10 5000
+Stats3     50 4 2
+Stats4     0 0 0 100 100
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 100 0 23
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   bow $n
+say Hallo. Please to look around my shop.
+smile $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p stock~
+Comlist   mpoload 2006
+mpoload 10314
+mpoload 2017
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       817
+Keywords   Lola~
+Short      Lola~
+Long       Lola is here in the shadows waiting for your purchase.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel nocorpse~
+Stats1     0 500 0 -1150 0 0
+Stats2     100 10 5000
+Stats3     50 4 2
+Stats4     0 0 0 100 100
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+ShopData   0 0 0 0 0 120 100 0 23
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   grin
+say Hallo. What can I do for you tonight?
+smirk
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p stock~
+Comlist   mpoload 813
+mpoload 814
+mpoload 815
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       818
+Keywords   Mario~
+Short      Mario~
+Long       Mario is here to assist you
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel nocorpse~
+Stats1     0 500 0 -1150 0 0
+Stats2     100 10 5000
+Stats3     50 4 2
+Stats4     0 0 0 100 100
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 100 0 23
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   smile $n
+say Welcome to my shop! Thank you for shopping here!
+bow $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p stock~
+Comlist   mpoload 1323
+mpoload 1324
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       819
+Keywords   Dancing Woman~
+Short      a Dancing Woman~
+Long       A Dancing Woman is here...Dancing!
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc~
+Stats1     0 1000 0 -2400 10 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+VIPFlags   Mars~
+#ENDMOBILE
+
+#MOBILE
+Vnum       821
+Keywords   Pickpocket~
+Short      a Pickpocket~
+Long       A Pickpocket is here trying to rip you off.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 50 0 -25 10 0
+Stats2     10 10 500
+Stats3     5 4 2
+Stats4     0 0 0 10 10
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       822
+Keywords   stripper~
+Short      a Stripper~
+Long       A Stripper is here taking it all off.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 100 0 -150 25 0
+Stats2     20 10 1000
+Stats3     10 4 2
+Stats4     0 0 0 20 20
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       823
+Keywords   mugger~
+Short      a Mugger~
+Long       A Mugger runs up and attacks you.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 150 0 -275 40 0
+Stats2     30 10 1500
+Stats3     15 4 2
+Stats4     0 0 0 30 30
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       824
+Keywords   prostitute~
+Short      a Prostitute~
+Long       A Prostitute is smirking at you seductively
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel~
+Stats1     0 300 0 -650 55 0
+Stats2     60 10 3000
+Stats3     30 4 2
+Stats4     0 0 0 60 60
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       825
+Keywords   pimp~
+Short      a Pimp~
+Long       A Pimp is here leaning on his cane.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 550 0 -1275 70 0
+Stats2     110 10 5500
+Stats3     55 4 2
+Stats4     0 0 0 110 110
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       826
+Keywords   druggie~
+Short      a Druggie~
+Long       A Druggie is begging for a hit.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 700 0 -1650 95 0
+Stats2     140 10 7000
+Stats3     70 4 2
+Stats4     0 0 0 50 50
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       827
+Keywords   dealer~
+Short      a Crack Dealer~
+Long       A Crack Dealer is here trying to make a sale.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 850 0 -2025 110 0
+Stats2     170 10 8500
+Stats3     85 4 2
+Stats4     0 0 0 50 50
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       828
+Keywords   rapist~
+Short      a Rapist~
+Long       A Rapist is smirking at you from the shadows.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 125 0
+Stats2     200 10 10000
+Stats3     100 5 87
+Stats4     0 0 0 50 50
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       850
+Keywords   Isha~
+Short      Isha~
+Long       Isha is here relaxing on his vacation
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  death_prog~
+Arglist   1~
+Comlist   mpoload 11510
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       851
+Keywords   Mars Police Officer~
+Short      A Mars Police Officer~
+Long       A Mars Police Officer is here looking for Criminals.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc stayarea~
+Stats1     0 25 0 37 0 0
+Stats2     5 10 250
+Stats3     2 4 2
+Stats4     0 0 0 5 5
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+VIPFlags   Mars~
+#ENDMOBILE
+
+#MOBILE
+Vnum       853
+Keywords   null~
+Short      a newly created null~
+Long       Some god abandoned a newly created null here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       862
+Keywords   McLovin~
+Short      Killing Machine~
+Long       &PM&pc&rL&Ro&Pv&pi&rn
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc stayarea prototype~
+Stats1     0 1005 0 -2412 0 0
+Stats2     30000 30000 10050
+Stats3     100 100 2
+Stats4     0 0 20 201 201
+Attribs    10 10 10 10 10 10 10
+Saves      -1 0 0 0 0
+Attacks    poison circle~
+Defenses   parry dodge disarm~
+#MUDPROG
+Progtype  fight_prog~
+Arglist   75~
+Comlist   ifrand 45
+gouge
+ifrand 45
+dropkick
+else mpdamage $n 10000
+endif
+endif
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       865
+Keywords   Jews ~
+Short      a newly created Jews ~
+Long       Some god abandoned a newly created Jews  here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       999
+Keywords   Snit~
+Short      Snit~
+Long       Snit, a beautiful young woman, stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   dodge~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpecho &rYou gracefully remove Snit's head from her silken shoulders.&g
+mpoload 2035
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#OBJECT
+Vnum     800
+Keywords jisho~
+Type     map~
+Short    a Jisho of Japanese/English terms~
+Long     A Jisho of Japanese/English terms is here~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    jisho~
+ExDesc       Jisho of Japanese/English
+Terms.
+ 
+*Apato: Apartment
+*Buki Mise: Weapon Shop
+*Byooin: Hospital
+*Chikyuu: the Earth
+*Gijutsu no Kyooshitsu: Classroom of Skills
+*Heya: Room
+*Hoshi: Star
+*Kimono Mise: Clothing Store
+*Koomoku Mise: Item Store
+*Shinshitsu: Bedroom/Barracks
+*Shokudoo: Cafeteria/Restaurant
+*Tatami: Floormat used for sleeping
+*Tsuki: the Moon
+*Yado: Hotel
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     801
+Keywords waterbed~
+Type     furniture~
+Short    a waterbed with black silk sheets~
+Long     A waterbed with black silk sheets is here.~
+Values   10000 10000 2 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     802
+Keywords sushi~
+Type     food~
+Short    sushi~
+Long     Sushi is here~
+WFlags   take~
+Values   1000 1000 0 0 0 0
+Stats    1 10 4 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     803
+Keywords Kimono~
+Type     armor~
+Short    a silk kimono~
+Long     A silk kimono is lying here~
+Flags    inventory~
+WFlags   take body~
+Values   35 35 0 0 0 0
+Stats    1 250 50 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     804
+Keywords Ninja~
+Type     armor~
+Short    a ninja suit~
+Long     A ninja suit is lying here~
+WFlags   take body~
+Values   50 50 0 0 0 0
+Stats    1 375 75 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     805
+Keywords Yukata~
+Type     armor~
+Short    a yukata robe~
+Long     A yukata robe is lying here~
+Flags    inventory~
+WFlags   take body~
+Values   30 30 0 0 0 0
+Stats    1 500 100 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     806
+Keywords sashimi~
+Type     food~
+Short    sashimi~
+Long     Sashimi is here~
+WFlags   take~
+Values   1000 1000 0 0 0 0
+Stats    1 15 5 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     807
+Keywords sake~
+Type     drinkcon~
+Short    a cup of sake~
+Long     A cup of sake is here~
+WFlags   take~
+Values   10 10 2 0 0 0
+Stats    1 7 2 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     808
+Keywords Gameboy(tm)~
+Type     treasure~
+Short    A Gameboy(tm)~
+Long     A Gameboy(tm) is laying here~
+Flags    inventory~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 10 1 0 0
+Affect       -1 -1 50 13 0
+Affect       -1 -1 2 19 0
+Affect       -1 -1 3 18 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     809
+Keywords nunchakus~
+Type     weapon~
+Short    nunchakus~
+Long     Some nunchakus are lying here~
+Flags    inventory~
+WFlags   take wield~
+Values   1000 20 20 8 0 0
+Stats    1 12000 27 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     810
+Keywords Japanese sword~
+Type     weapon~
+Short    a Japanese sword~
+Long     A Japanese sword is here.~
+Flags    contraband inventory~
+WFlags   take wield~
+Values   12 10 150 2 0 0
+Stats    1 22000 300 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     811
+Keywords Katana~
+Type     weapon~
+Short    katana~
+Long     A Katana is lying here~
+WFlags   take wield~
+Values   1000 5 100 2 0 0
+Stats    1 17000 50 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     812
+Keywords banana~
+Type     light~
+Short    Sir Fruit Alot~
+Long     Sir Fruit Alot is here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     813
+Keywords condom~
+Type     smut~
+Short    a condom~
+Long     A condom has been dropped here~
+WFlags   take waist~
+Values   0 0 0 0 0 0
+Stats    1 50 5 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     814
+Keywords crotchless panties~
+Type     smut~
+Short    a pair of crotchless panties~
+Long     A pair of crotchless panties were dropped here~
+WFlags   take waist~
+Values   0 0 0 0 0 0
+Stats    1 100 10 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     815
+Keywords handcuffs~
+Type     smut~
+Short    some handcuffs~
+Long     Some handcuffs have been dropped here~
+WFlags   take wrist~
+Values   0 0 0 0 0 0
+Stats    1 150 15 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     816
+Keywords Cocaine~
+Type     rawspice~
+Short    a Cocaine~
+Long     A Cocaine is here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     820
+Keywords waterbed~
+Type     furniture~
+Short    a waterbed with black silk sheets~
+Long     A waterbed with black silk sheets is here~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     824
+Keywords black rose~
+Type     light~
+Short    a &zblack &rrose&W~
+Long     A &zblack &rrose &Wlays here.~
+WFlags   take hold~
+Values   0 0 100000 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     825
+Keywords key passcard card ~
+Type     key~
+Short    A &Ygold&w passcard~
+Long     &YHeaven&w can be so sweet when you have the key to the gates.~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     826
+Keywords shimmering dress~
+Type     armor~
+Short    A &BL&bo&Bn&bg &GS&gh&Gi&gm&Gm&ge&Gr&gi&Gn&gg &RD&rr&Re&rs&Rs &co&Cf &PS&pp&Pu&pn &YL&Oi&Yg&Oh&Yt~
+Long     A long shimmering dress of spun light lies here~
+WFlags   take body~
+Values   35 35 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     999
+Keywords null~
+Type     trash~
+Short    a null~
+Long     A null is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     800
+Name     &WHeya no Transfer~
+Sector   inside~
+Flags    nomob indoors~
+Desc     You are standing in the room where you can be transferred from colony to
+colony if you don't have a ship.
+Say the name of the colony to be tranferred there.
+&BTo go to Korea, say "Korea"
+&BTo go to Rio, say "Rio"
+To go to China, say "China"
+To go to Russia, say "Russia"
+To go to Mexico, say "Mexico"
+&BTo go to Toronto, say "Toronto"
+&BTo go to New York City, say "New York City"
+&BTo go to Tokyo, say "Tokyo"
+~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   korea~
+Comlist   mpechoat $n You hop onto a shuttle and take off to Korea.
+mpechoaround $n $n takes a shuttle to Korea.
+mptransfer $n 700
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p rio~
+Comlist   mpechoat $n You are here.
+mpechoaround $n $n is gone.
+mptransfer $n 913
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   china~
+Comlist   mpechoat $n You hop onto a shuttle and take off to China.
+mpechoaround $n $n gets onto a shuttle and flies off to China.
+mptransfer $n 9200
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   mexico~
+Comlist   mpechoat $n You hop onto a shuttle and take off to Mexico.
+mpechoaround $n $n gets onto a shuttle and flies off to Mexico.
+mptransfer $n 10600
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   toronto~
+Comlist   mpechoat $n You hop onto a shuttle and take off to Toronto.
+mpechoaround $n $n gets onto a shuttle and flies off to Toronto.
+mptransfer $n 1800
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   russia~
+Comlist   mpechoat $n You hop onto a shuttle and take off to Russia.
+mpechoaround $n $n gets onto a shuttle and flies off to Russia.
+mptransfer $n 7500
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p new york city~
+Comlist   mea $n You are taken to New York City.
+mptransfer $n 11001
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Tokyo~
+Comlist   mpechoat $n You are taken to Tokyo.
+mptransfer $n 807
+mpecho $n gets onto a shuttle and flies to Tokyo.
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     801
+Name     &WT-Home~
+Sector   inside~
+Flags    indoors plr_home~
+Owner    Tremor~
+#EXIT
+Direction west~
+ToRoom    821
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     802
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob indoors safe~
+#ENDROOM
+
+#ROOM
+Vnum     803
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob indoors safe~
+Reset M 0 810 5 803
+Reset M 0 810 5 803
+#ENDROOM
+
+#ROOM
+Vnum     804
+Name     Kamiya Apaato~
+Sector   inside~
+Flags    indoors~
+Desc     You are standing in the lobby of a very nice apartment There is quite a
+demand for an apartment here, even though they are all small. There are
+bonzai trees and silk tapestries decorating the room, and the staircase is
+a very ornately carved dragon. There is quite a demand for an apartment
+here, even though the apartments are quite small.
+~
+#EXIT
+Direction north~
+ToRoom    826
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    806
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    867
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    864
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    805
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     805
+Name     Kamiya Apaato~
+Sector   inside~
+Flags    indoors~
+Desc     You are standing on the top floor. The hallway is just as ornately
+decorated as the lobby with beautiful art adorning the walls, and silk
+carpet on the floor.
+~
+#EXIT
+Direction north~
+ToRoom    813
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    809
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    815
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    811
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    804
+#ENDEXIT
+
+Reset M 0 810 5 805
+#ENDROOM
+
+#ROOM
+Vnum     806
+Name     An Empty Apartment~
+Sector   inside~
+Flags    nomob empty_home~
+#EXIT
+Direction west~
+ToRoom    804
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     807
+Name     Tokyo Kokusai-teki Kuukoo~
+Sector   inside~
+Flags    can_land can_fly~
+Desc     You are standing in Tokyo's new air/space port. There are thousands of
+people running around trying to make it to their flight on time. As you
+try to stay out of the way, you notice what a very beautiful place it is.
+There are bonzai trees and silk scrolls along the walls, and it is very
+clean. As you leave there is a sign stating 'Welcome' in large Kanji
+letters and 'welcome' in small english characters.
+~
+#EXIT
+Direction south~
+ToRoom    816
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    800
+#ENDEXIT
+
+Reset M 0 800 1 807
+Reset M 0 851 1 807
+#ENDROOM
+
+#ROOM
+Vnum     808
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob safe~
+#ENDROOM
+
+#ROOM
+Vnum     809
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors empty_home~
+#EXIT
+Direction west~
+ToRoom    805
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     810
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob indoors safe~
+#ENDROOM
+
+#ROOM
+Vnum     811
+Name     An Empty Apartment~
+Sector   inside~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction east~
+ToRoom    805
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     812
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob indoors~
+#ENDROOM
+
+#ROOM
+Vnum     813
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors empty_home~
+#EXIT
+Direction south~
+ToRoom    805
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     814
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob indoors safe~
+#ENDROOM
+
+#ROOM
+Vnum     815
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors empty_home~
+#EXIT
+Direction north~
+ToRoom    805
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     816
+Name     Tsuki Street~
+Sector   inside~
+Desc     You are standing on what seems to be the main residential street in Tokyo.
+There are beautiful classical homes all along the street, as well as some
+apartment buildings. The sakura trees are in bloom and everything is a sea
+of pink blossoms.
+~
+#EXIT
+Direction north~
+ToRoom    807
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    817
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    837
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    831
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     817
+Name     Tsuki Street~
+Sector   inside~
+Desc     You are standing on what seems to be the main residential street in Tokyo.
+There are beautiful classical homes all along the street, as well as some
+apartment buildings. The sakura trees are in bloom and everything is a sea
+of pink blossoms.
+~
+#EXIT
+Direction east~
+ToRoom    818
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    816
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     818
+Name     Tsuki Street~
+Sector   inside~
+Desc     You are standing on what seems to be the main residential street in Tokyo.
+There are beautiful classical homes all along the street, as well as some
+apartment buildings. The sakura trees are in bloom and everything is a sea
+of pink blossoms.
+~
+#EXIT
+Direction east~
+ToRoom    819
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    817
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     819
+Name     Tsuki Street~
+Sector   inside~
+Desc     You are standing on what seems to be the main residential street in Tokyo.
+There are beautiful classical homes all along the street, as well as some
+apartment buildings. The sakura trees are in bloom and everything is a sea
+of pink blossoms.
+~
+#EXIT
+Direction south~
+ToRoom    832
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    818
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    820
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     820
+Name     Tsuki Street~
+Sector   inside~
+Desc     You are standing on what seems to be the main residential street in Tokyo.
+There are beautiful classical homes all along the street, as well as some
+apartment buildings. The sakura trees are in bloom and everything is a sea
+of pink blossoms.
+~
+#EXIT
+Direction south~
+ToRoom    821
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    819
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     821
+Name     Tsuki Street~
+Sector   inside~
+Desc     You are standing on what seems to be the main residential street in Tokyo.
+There are beautiful classical homes all along the street, as well as some
+apartment buildings. The sakura trees are in bloom and everything is a sea
+of pink blossoms.
+~
+#EXIT
+Direction north~
+ToRoom    820
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    801
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    822
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     822
+Name     Tsuki Street~
+Sector   inside~
+Desc     You are standing on what seems to be the main residential street in Tokyo.
+There are beautiful classical homes all along the street, as well as some
+apartment buildings. The sakura trees are in bloom and everything is a sea
+of pink blossoms.
+~
+#EXIT
+Direction north~
+ToRoom    821
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    823
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     823
+Name     Tsuki Street~
+Sector   inside~
+Desc     You are standing on what seems to be the main residential street in Tokyo.
+There are beautiful classical homes all along the street, as well as some
+apartment buildings. The sakura trees are in bloom and everything is a sea
+of pink blossoms.
+~
+#EXIT
+Direction north~
+ToRoom    822
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    824
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     824
+Name     Tsuki Street~
+Sector   inside~
+Desc     You are standing on what seems to be the main residential street in Tokyo.
+There are beautiful classical homes all along the street, as well as some
+apartment buildings. The sakura trees are in bloom and everything is a sea
+of pink blossoms.
+~
+#EXIT
+Direction north~
+ToRoom    840
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    825
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    823
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     825
+Name     Tsuki Street~
+Sector   inside~
+Desc     You are standing on what seems to be the main residential street in Tokyo.
+There are beautiful classical homes all along the street, as well as some
+apartment buildings. The sakura trees are in bloom and everything is a sea
+of pink blossoms.
+~
+#EXIT
+Direction east~
+ToRoom    824
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    826
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     826
+Name     Tsuki Street~
+Sector   inside~
+Desc     You are standing on what seems to be the main residential street in Tokyo.
+There are beautiful classical homes all along the street, as well as some
+apartment buildings. The sakura trees are in bloom and everything is a sea
+of pink blossoms.
+~
+#EXIT
+Direction east~
+ToRoom    825
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    804
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    827
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     827
+Name     Tsuki Street~
+Sector   inside~
+Desc     You are standing on what seems to be the main residential street in Tokyo.
+There are beautiful classical homes all along the street, as well as some
+apartment buildings. The sakura trees are in bloom and everything is a sea
+of pink blossoms.
+~
+#EXIT
+Direction north~
+ToRoom    836
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    826
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    828
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     828
+Name     Tsuki Street~
+Sector   inside~
+Desc     You are standing on what seems to be the main residential street in Tokyo.
+There are beautiful classical homes all along the street, as well as some
+apartment buildings. The sakura trees are in bloom and everything is a sea
+of pink blossoms.
+~
+#EXIT
+Direction north~
+ToRoom    829
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    869
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    827
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     829
+Name     Tsuki Street~
+Sector   inside~
+Desc     You are standing on what seems to be the main residential street in Tokyo.
+There are beautiful classical homes all along the street, as well as some
+apartment buildings. The sakura trees are in bloom and everything is a sea
+of pink blossoms.
+~
+#EXIT
+Direction north~
+ToRoom    830
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    828
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     830
+Name     Tsuki Street~
+Sector   inside~
+Desc     You are standing on what seems to be the main residential street in Tokyo.
+There are beautiful classical homes all along the street, as well as some
+apartment buildings. The sakura trees are in bloom and everything is a sea
+of pink blossoms.
+~
+#EXIT
+Direction north~
+ToRoom    831
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    829
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    866
+Flags     passage~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     831
+Name     Tsuki Street~
+Sector   inside~
+Desc     You are standing on what seems to be the main residential street in Tokyo.
+There are beautiful classical homes all along the street, as well as some
+apartment buildings. The sakura trees are in bloom and everything is a sea
+of pink blossoms.
+~
+#EXIT
+Direction east~
+ToRoom    878
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    830
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    816
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     832
+Name     Chikyuu Street~
+Sector   inside~
+#EXIT
+Direction north~
+ToRoom    819
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    833
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     833
+Name     Chikyuu Street~
+Sector   inside~
+#EXIT
+Direction northeast~
+ToRoom    832
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    834
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     834
+Name     Tokyo Tower~
+Sector   inside~
+Desc     You are at the famous Tokyo Tower in the center of Tokyo's shopping
+district. If you climb the tower, you can see the entire city in all its
+splendor. The park here is very well maintained and the sakura blossoms
+make a great environment for all the children that are here playing. The
+citizens in this area are all very peaceful and content.
+~
+#EXIT
+Direction north~
+ToRoom    857
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    858
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    860
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    859
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    861
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    842
+Flags     hidden~
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    833
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    838
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    839
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    835
+#ENDEXIT
+
+Reset O 0 10315 1 834
+#ENDROOM
+
+#ROOM
+Vnum     835
+Name     Chikyuu Street~
+Sector   inside~
+#EXIT
+Direction northeast~
+ToRoom    834
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    836
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     836
+Name     Chikyuu Street~
+Sector   inside~
+#EXIT
+Direction south~
+ToRoom    827
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    835
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     837
+Name     Hoshi Street~
+Sector   inside~
+#EXIT
+Direction north~
+ToRoom    816
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    838
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     838
+Name     Hoshi Street~
+Sector   inside~
+#EXIT
+Direction northwest~
+ToRoom    837
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    834
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     839
+Name     Hoshi Street~
+Sector   inside~
+#EXIT
+Direction northwest~
+ToRoom    834
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    840
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     840
+Name     Hoshi Street~
+Sector   inside~
+#EXIT
+Direction south~
+ToRoom    824
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    839
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     841
+Name     Top of Tokyo Tower~
+Sector   inside~
+Desc     You are standing at the top of Tokyo Tower after a VERY long hike up the
+stairs. The view of the city is absolutely worth it. As you gaze around,
+you see all the beautiful Sakura Trees in bloom and the classical Japanese
+style homes scattered amongst the newer apartment buildings. You feel very
+at peace up here, and you are able to forget about war and mechs...
+~
+#EXIT
+Direction down~
+ToRoom    861
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     842
+Name     Entrance to Kakusu Kichi~
+Sector   inside~
+Flags    nomob indoors~
+Desc     You have found the entrance to the Japanese Military's hidden base. You
+have heard rumors about this place existing, but you never knew they were
+true. It is said that if you get stationed here, and can't hack it, they
+force you to commit seppuku. Be careful as you explore this place because
+you don't want to be caught.
+~
+#EXIT
+Direction north~
+ToRoom    843
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    846
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    845
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    844
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    834
+Flags     hidden nomob~
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    855
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    862
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    856
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     843
+Name     Steel Hallway~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    847
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    842
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     844
+Name     Steel Hallway~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    842
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    850
+#ENDEXIT
+
+Reset M 0 809 5 844
+#ENDROOM
+
+#ROOM
+Vnum     845
+Name     Steel Hallway~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    842
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    853
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     846
+Name     Steel Hallway~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    848
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    842
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     847
+Name     Steel Hallway~
+Sector   inside~
+Flags    indoors~
+Desc     You are standing in a large room with mats on the floor and walls. It is
+very obvious that the room is used for sparring from the marks and blood
+stains everywhere. This is the beginners training room, but you should
+still be careful.
+~
+#EXIT
+Direction north~
+ToRoom    852
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    843
+#ENDEXIT
+
+Reset M 0 809 5 847
+#ENDROOM
+
+#ROOM
+Vnum     848
+Name     Steel Hallway~
+Sector   inside~
+Flags    nomob indoors~
+#EXIT
+Direction east~
+ToRoom    851
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    846
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     849
+Name     Steel Hallway~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    845
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     850
+Name     Steel Hallway~
+Sector   inside~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    844
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    854
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     851
+Name     Beginners Dojo~
+Sector   inside~
+Flags    indoors factory~
+Desc     You are standing in a large room with mats on the floor and walls. It is
+quite clear that this room is used to train from the bloodstains
+everywhere. Use extreme caution when training here.
+Say sumo to call out a sparring partner.
+~
+#EXIT
+Direction west~
+ToRoom    848
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   sumo~
+Comlist   mpecho A Sumo wrestler falls into a fighting stance.
+mpmload 807
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     852
+Name     Beginners Dojo~
+Sector   inside~
+Flags    indoors~
+Desc     You are standing in a large room with mats on the floor and walls. It is
+quite clear that this room is used to train from the bloodstains
+everywhere. Use extreme caution when training here.
+Say sumo to call out a sparring partner.
+~
+#EXIT
+Direction south~
+ToRoom    847
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p sumo~
+Comlist   mpecho A Sumo wrestler falls into a fighting stance.
+mpmload 807
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     853
+Name     Advanced Dojo~
+Sector   inside~
+Flags    indoors~
+Desc     You are standing in a large room with mats on the floor and walls. It is
+very obvious that the room is used for sparring from the marks and blood
+stains everywhere. This is where the advanced soldiers train, so use
+extreme caution when training here.
+Say samurai to call out a sparring partner.
+~
+#EXIT
+Direction north~
+ToRoom    845
+#ENDEXIT
+
+Reset M 0 809 5 853
+#MUDPROG
+Progtype  speech_prog~
+Arglist   samurai~
+Comlist   mpecho $n The Battousai appears, ready to fight!
+mpmload 808
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     854
+Name     Gijutsu no Kyooshitsu~
+Sector   inside~
+Flags    indoors~
+Desc     You are standing in the skills classroom. You can learn skills here from
+the teacher, or train your stats to make yourself a stronger person. Pay
+close attention to the instructor for he is very wise.
+~
+#EXIT
+Direction east~
+ToRoom    850
+#ENDEXIT
+
+Reset M 0 806 1 854
+#ENDROOM
+
+#ROOM
+Vnum     855
+Name     Shinshitsu~
+Sector   inside~
+Flags    indoors safe~
+Desc     This is where the Japanese Cadets sleep. It is very sparse and plain with
+just a row of bunks and chests. Better not get caught in here. 
+~
+#EXIT
+Direction southwest~
+ToRoom    842
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     856
+Name     Shokudoo~
+Sector   inside~
+Flags    indoors safe~
+Desc     You are standing in the Cafeteria of the base. The food looks disgusting,
+but nourishing and at least the lady that works here is friendly. It seems
+though that she's a little nervous looking..maybe something 'illegal' is
+going on.
+Say 'Hungry' or 'Thirsty' for assistance.
+~
+#EXIT
+Direction northeast~
+ToRoom    842
+#ENDEXIT
+
+Reset M 0 814 1 856
+#ENDROOM
+
+#ROOM
+Vnum     857
+Name     Buki Mise~
+Sector   inside~
+Flags    indoors safe~
+Desc     You are standing in a small weapon shop. The owner obviously takes a lot of
+pride in his work, and only offers the best. The weapons here are very
+good quality and very strong at a reasonable price.
+~
+#EXIT
+Direction south~
+ToRoom    834
+#ENDEXIT
+
+Reset M 0 804 1 857
+  Reset G 1 810 1
+  Reset G 1 809 1
+  Reset G 1 811 1
+#ENDROOM
+
+#ROOM
+Vnum     858
+Name     Kimono Mise~
+Sector   inside~
+Flags    indoors~
+Desc     You are standing in a quaint little clothing shop. As you look around, you
+see classic style Japanese attire, as well as more modern clothing and
+armor. Take a look at what they are selling to see if they have anything
+you might like.
+Say stock to get a list of the current sales.
+~
+#EXIT
+Direction west~
+ToRoom    834
+#ENDEXIT
+
+Reset M 0 801 1 858
+  Reset G 1 803 1
+  Reset G 1 804 1
+  Reset G 1 805 1
+#ENDROOM
+
+#ROOM
+Vnum     859
+Name     Koomoku Mise~
+Sector   inside~
+Flags    indoors~
+Desc     You are standing in an items shop that seems to have everything you could
+ever need. It is very well stocked and very reasonably priced. See if they
+offer anything you need or want, you're sure to find something.
+Say stock to see what items are currently on sale.
+~
+#EXIT
+Direction east~
+ToRoom    834
+#ENDEXIT
+
+Reset M 0 803 1 859
+  Reset G 1 808 1
+  Reset G 1 10424 1
+#ENDROOM
+
+#ROOM
+Vnum     860
+Name     Sushi no Shakudoo~
+Sector   inside~
+Flags    indoors~
+Desc     You are standing in the best sushi shop in Tokyo. The place doesn't smell
+too good...after all, they serve raw fish, but the food looks delicious.
+Say stock to get a menu of what they serve.
+~
+#EXIT
+Direction north~
+ToRoom    834
+#ENDEXIT
+
+Reset M 0 802 1 860
+  Reset G 1 802 1
+  Reset G 1 806 1
+  Reset G 1 807 1
+#ENDROOM
+
+#ROOM
+Vnum     861
+Name     Tokyo Tower Yado~
+Sector   inside~
+Flags    indoors bank hotel heal~
+Desc     You are standing in the hotel on the mid level of the Tokyo Tower. It is
+very beautiful and ornately decorated, and the rooms look very inviting
+and comfortable. If you go up another level, you can see the entire city
+of Tokyo. 
+~
+#EXIT
+Direction up~
+ToRoom    841
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    834
+#ENDEXIT
+
+Reset M 0 811 1 861
+#ENDROOM
+
+#ROOM
+Vnum     862
+Name     Byooin~
+Sector   inside~
+Flags    indoors~
+Desc     You are standing in the base clinic waiting to be tended to by the nurse.
+There are mangled soldiers laying on the beds and crying out in pain.
+Theses are the men that can't handle the rigorous training and are forced
+to commit seppuku.
+~
+#EXIT
+Direction southeast~
+ToRoom    842
+#ENDEXIT
+
+Reset M 0 805 1 862
+#ENDROOM
+
+#ROOM
+Vnum     863
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob indoors safe~
+#ENDROOM
+
+#ROOM
+Vnum     864
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors empty_home~
+#EXIT
+Direction east~
+ToRoom    804
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     865
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob indoors hotel~
+#ENDROOM
+
+#ROOM
+Vnum     866
+Name     An Empty Apartment~
+Sector   inside~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction east~
+ToRoom    830
+Flags     isdoor closed pickproof~
+#ENDEXIT
+
+Reset D 0 866 1 1
+#ENDROOM
+
+#ROOM
+Vnum     867
+Name     An Empty Apartment~
+Sector   inside~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction north~
+ToRoom    804
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     868
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob indoors~
+Desc     You are in the Private Tatami Room. Sort of a Bathroom use for private
+sanitation. A large four legged bathtub is in the corner of the bathroom
+and a sink is on the south wall. Back to the North is the main room.
+ 
+~
+Reset O 0 10315 1 868
+#ENDROOM
+
+#ROOM
+Vnum     869
+Name     An Empty Apartment~
+Sector   inside~
+Flags    indoors bank empty_home~
+#EXIT
+Direction east~
+ToRoom    828
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     870
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob indoors safe~
+Desc     This is the guest bedroom. The bed has a warm looking quilt on it, and the
+nightable has a small tiffany lamp. There is a dresser in the corner for
+your clothes. It seems to be a very inviting room.
+~
+#ENDROOM
+
+#ROOM
+Vnum     871
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob indoors~
+Desc     This is the master bedroom.
+~
+Reset O 0 820 1 871
+#ENDROOM
+
+#ROOM
+Vnum     872
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob~
+Desc     You are standing in a huge backyard. There are two oak trees and an apple
+tree with sqirrels and birds in them. The garden is full of flowers and
+the lawn is neatly trimmed. It's a great place to spend an afternoon
+barbecueing.
+~
+#ENDROOM
+
+#ROOM
+Vnum     873
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob indoors~
+Desc     This is the kitchen.  It's spotless and not very well stocked because it
+doesn't seem to be used much.
+~
+#ENDROOM
+
+#ROOM
+Vnum     874
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     875
+Name     Elevator~
+Sector   inside~
+Flags    nomob indoors safe~
+Desc     You are standing in the elevator that will take you to each training level
+in the facility. The higher the number, the stronger harder the training,
+so be careful as you choose.
+&B Say '1-8' to go to your desired level.
+&B Say 'Return' to go back to the Main Room.
+~
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p return~
+Comlist   mpechoat $n The elevator stops at the main floor.
+mptransfer $n 945
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p 1~
+Comlist   mpechoat $n You are left at Sub Level 1
+mptransfer $n 946
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p 2~
+Comlist   mpechoat $n You are left at Sub Level 2.
+mptransfer $n 947
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p 3~
+Comlist   mpechoat $n You are left at Sub Level 3.
+mptransfer $n 948
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p 4~
+Comlist   mpechoat $n You are left at Sub Level 4.
+mptransfer $n 949
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p 5~
+Comlist   mpechoat $n You are left at Sub Level 5.
+mptransfer $n 950
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p 6~
+Comlist   mpechoat $n Sub Level 6. &R!!Caution!!
+mptransfer $n 951
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p 7~
+Comlist   mpechoat $n Sub Level 7. &R!!Caution!!
+mptransfer $n 952
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p 8~
+Comlist   mpechoat $n Sub Level 8. &R!!Caution!!
+mptransfer $n 953
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     876
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob~
+Desc     You are in a comfortable Healing CHamber which has been lined from wall to
+wall in colourful pillows. As you sit down and rest you realize this place
+can hel you heal faster. Just say "Heal" and you will be.
+ 
+~
+Reset M 0 10365 11 876
+#ENDROOM
+
+#ROOM
+Vnum     877
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob~
+Desc     You are in the Crafting Center. Many items of the craft trade can be seen
+lining the walls very neatly. The room all in all is very well organized
+and doesnt smell like a typical refinery or factory. The owner tends to
+make sure everything is in its place.
+ 
+~
+#ENDROOM
+
+#ROOM
+Vnum     878
+Name     An Empty Apartment~
+Sector   inside~
+Flags    nomob empty_home hotel~
+#EXIT
+Direction west~
+ToRoom    831
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     879
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     880
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     881
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     882
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     883
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     884
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     885
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     886
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     887
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     888
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     889
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     890
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     891
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     892
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     893
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     894
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     895
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     896
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     897
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     898
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     899
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     900
+Name     Rio De Janeiro Internacional Aeroporto  ~
+Sector   inside~
+Flags    nomob~
+Desc     You are standing in Rio de Janeiro's huge spaceport. It is very colorfully
+decorated in a fiesta theme and the people are very friendly. As you walk
+towards your ship, you notice that no one seems to be in a hurry, they're
+more interested in partying. This seems like it'll be a very fun place to
+stay for a while.
+~
+#EXIT
+Direction north~
+ToRoom    901
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    910
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    904
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    907
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    913
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    915
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    914
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    917
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    916
+#ENDEXIT
+
+Reset M 0 999 1 900
+Reset M 0 851 2 900
+#ENDROOM
+
+#ROOM
+Vnum     901
+Name     Terra Street~
+Sector   inside~
+Desc     There are people dancing and partying in the streets here as you walk
+along. It is very crowded so be careful that you don't get mugged while
+you're here. There is music blaring loudly and everyone is having a great
+time. Why don't you join in?
+~
+#EXIT
+Direction north~
+ToRoom    902
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    900
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     902
+Name     Terra Street~
+Sector   inside~
+Desc     There are people dancing and partying in the streets here as you walk
+along. It is very crowded so be careful that you don't get mugged while
+you're here. There is music blaring loudly and everyone is having a great
+time. Why don't you join in?
+~
+#EXIT
+Direction north~
+ToRoom    903
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    901
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     903
+Name     Terra Street~
+Sector   inside~
+Desc     There are people dancing and partying in the streets here as you walk
+along. It is very crowded so be careful that you don't get mugged while
+you're here. There is music blaring loudly and everyone is having a great
+time. Why don't you join in?
+~
+#EXIT
+Direction south~
+ToRoom    902
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    918
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    938
+#ENDEXIT
+
+Reset M 0 819 14 903
+#ENDROOM
+
+#ROOM
+Vnum     904
+Name     Terra Street~
+Sector   inside~
+Desc     There are people dancing and partying in the streets here as you walk
+along. It is very crowded so be careful that you don't get mugged while
+you're here. There is music blaring loudly and everyone is having a great
+time. Why don't you join in?
+~
+#EXIT
+Direction north~
+ToRoom    900
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    905
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     905
+Name     Terra Street~
+Sector   inside~
+Desc     There are people dancing and partying in the streets here as you walk
+along. It is very crowded so be careful that you don't get mugged while
+you're here. There is music blaring loudly and everyone is having a great
+time. Why don't you join in?
+~
+#EXIT
+Direction north~
+ToRoom    904
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    906
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     906
+Name     Terra Street~
+Sector   inside~
+Desc     There are people dancing and partying in the streets here as you walk
+along. It is very crowded so be careful that you don't get mugged while
+you're here. There is music blaring loudly and everyone is having a great
+time. Why don't you join in?
+~
+#EXIT
+Direction north~
+ToRoom    905
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    926
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    927
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     907
+Name     Lua Street~
+Sector   inside~
+Desc     There are people dancing and partying in the streets here as you walk
+along. It is very crowded so be careful that you don't get mugged while
+you're here. There is music blaring loudly and everyone is having a great
+time. Why don't you join in? 
+~
+#EXIT
+Direction east~
+ToRoom    900
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    908
+#ENDEXIT
+
+Reset M 0 819 14 907
+#ENDROOM
+
+#ROOM
+Vnum     908
+Name     Lua Street~
+Sector   inside~
+Desc     There are people dancing and partying in the streets here as you walk
+along. It is very crowded so be careful that you don't get mugged while
+you're here. There is music blaring loudly and everyone is having a great
+time. Why don't you join in?
+~
+#EXIT
+Direction east~
+ToRoom    907
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    909
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     909
+Name     Lua Street~
+Sector   inside~
+Desc     There are people dancing and partying in the streets here as you walk
+along. It is very crowded so be careful that you don't get mugged while
+you're here. There is music blaring loudly and everyone is having a great
+time. Why don't you join in? 
+~
+#EXIT
+Direction east~
+ToRoom    908
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    942
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    935
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    934
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     910
+Name     Lua Street~
+Sector   inside~
+Desc     There are people dancing and partying in the streets here as you walk
+along. It is very crowded so be careful that you don't get mugged while
+you're here. There is music blaring loudly and everyone is having a great
+time. Why don't you join in?
+~
+#EXIT
+Direction east~
+ToRoom    911
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    900
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     911
+Name     Lua Street~
+Sector   inside~
+Desc     There are people dancing and partying in the streets here as you walk
+along. It is very crowded so be careful that you don't get mugged while
+you're here. There is music blaring loudly and everyone is having a great
+time. Why don't you join in?
+~
+#EXIT
+Direction east~
+ToRoom    912
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    910
+#ENDEXIT
+
+Reset M 0 819 14 911
+Reset M 0 819 14 911
+#ENDROOM
+
+#ROOM
+Vnum     912
+Name     Lua Street~
+Sector   inside~
+Desc     There are people dancing and partying in the streets here as you walk
+along. It is very crowded so be careful that you don't get mugged while
+you're here. There is music blaring loudly and everyone is having a great
+time. Why don't you join in?
+~
+#EXIT
+Direction east~
+ToRoom    941
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    911
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    921
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    922
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     913
+Name     Quarto de Transferencia~
+Sector   inside~
+Flags    indoors~
+Desc     You are standing in the room that is used for immediate transport. It is
+very cheery and light and the music playing in the background is upbeat.
+~
+#EXIT
+Direction west~
+ToRoom    800
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    900
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     914
+Name     Estrela Street~
+Sector   inside~
+Desc     You are on a small street that's almost like an alleyway. There are
+children and stray dogs running around and you can still hear the music
+from the fiesta faintly. 
+~
+#EXIT
+Direction northwest~
+ToRoom    931
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    900
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     915
+Name     Estrela Street~
+Sector   inside~
+Desc     You are on a small street that's almost like an alleyway. There are
+children and stray dogs running around and you can still hear the music
+from the fiesta faintly. 
+~
+#EXIT
+Direction northeast~
+ToRoom    930
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    900
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     916
+Name     Estrela Street~
+Sector   inside~
+Desc     You are on a small street that's almost like an alleyway. There are
+children and stray dogs running around and you can still hear the music
+from the fiesta faintly. 
+~
+#EXIT
+Direction northeast~
+ToRoom    900
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    940
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     917
+Name     Estrela Street~
+Sector   inside~
+Desc     You are on a small street that's almost like an alleyway. There are
+children and stray dogs running around and you can still hear the music
+from the fiesta faintly. 
+~
+#EXIT
+Direction northwest~
+ToRoom    900
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    939
+#ENDEXIT
+
+Reset M 0 819 14 917
+#ENDROOM
+
+#ROOM
+Vnum     918
+Name     Partido Street~
+Sector   inside~
+Desc     You are standing on a street that looks like one big party. There is
+dancing and music and you can barely make your way through the crowds of
+people.
+~
+#EXIT
+Direction northwest~
+ToRoom    903
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    919
+#ENDEXIT
+
+Reset M 0 819 14 918
+Reset M 0 819 14 918
+#ENDROOM
+
+#ROOM
+Vnum     919
+Name     Partido Street~
+Sector   inside~
+Desc     You are standing on a street that looks like one big party. There is
+dancing and music and you can barely make your way through the crowds of
+people.
+~
+#EXIT
+Direction northwest~
+ToRoom    918
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    920
+#ENDEXIT
+
+Reset M 0 819 14 919
+#ENDROOM
+
+#ROOM
+Vnum     920
+Name     Partido Street~
+Sector   inside~
+Desc     You are standing on a street that looks like one big party. There is
+dancing and music and you can barely make your way through the crowds of
+people.
+~
+#EXIT
+Direction northwest~
+ToRoom    919
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    921
+#ENDEXIT
+
+Reset M 0 819 14 920
+#ENDROOM
+
+#ROOM
+Vnum     921
+Name     Partido Street~
+Sector   inside~
+Desc     You are standing on a street that looks like one big party. There is
+dancing and music and you can barely make your way through the crowds of
+people.
+~
+#EXIT
+Direction northwest~
+ToRoom    920
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    912
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     922
+Name     Partido Street~
+Sector   inside~
+Desc     You are standing on a street that looks like one big party. There is
+dancing and music and you can barely make your way through the crowds of
+people.
+~
+#EXIT
+Direction northeast~
+ToRoom    912
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    923
+#ENDEXIT
+
+Reset M 0 819 14 922
+#ENDROOM
+
+#ROOM
+Vnum     923
+Name     Partido Street~
+Sector   inside~
+Desc     You are standing on a street that looks like one big party. There is
+dancing and music and you can barely make your way through the crowds of
+people.
+~
+#EXIT
+Direction northeast~
+ToRoom    922
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    924
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     924
+Name     Partido Street~
+Sector   inside~
+Desc     You are standing on a street that looks like one big party. There is
+dancing and music and you can barely make your way through the crowds of
+people.
+~
+#EXIT
+Direction northeast~
+ToRoom    923
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    925
+#ENDEXIT
+
+Reset M 0 819 14 924
+Reset M 0 819 14 924
+#ENDROOM
+
+#ROOM
+Vnum     925
+Name     Partido Street~
+Sector   inside~
+Desc     You are standing on a street that looks like one big party. There is
+dancing and music and you can barely make your way through the crowds of
+people.
+~
+#EXIT
+Direction northeast~
+ToRoom    924
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    926
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     926
+Name     Partido Street~
+Sector   inside~
+Desc     You are standing on a street that looks like one big party. There is
+dancing and music and you can barely make your way through the crowds of
+people.
+~
+#EXIT
+Direction northeast~
+ToRoom    925
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    906
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     927
+Name     Partido Street~
+Sector   inside~
+Desc     You are standing on a street that looks like one big party. There is
+dancing and music and you can barely make your way through the crowds of
+people.
+~
+#EXIT
+Direction northwest~
+ToRoom    928
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    906
+#ENDEXIT
+
+Reset M 0 819 14 927
+#ENDROOM
+
+#ROOM
+Vnum     928
+Name     Partido Street~
+Sector   inside~
+Desc     You are standing on a street that looks like one big party. There is
+dancing and music and you can barely make your way through the crowds of
+people.
+~
+#EXIT
+Direction northwest~
+ToRoom    929
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    927
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     929
+Name     Partido Street~
+Sector   inside~
+Desc     You are standing on a street that looks like one big party. There is
+dancing and music and you can barely make your way through the crowds of
+people.
+~
+#EXIT
+Direction northwest~
+ToRoom    934
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    928
+#ENDEXIT
+
+Reset M 0 819 14 929
+#ENDROOM
+
+#ROOM
+Vnum     930
+Name     Loja da Arma~
+Sector   inside~
+Flags    indoors~
+Desc     You are standing in a small weapon shop. The shopkeeper is smiling broadly
+at you, waiting for you to make your decision. There isn't a huge
+selection here, but the few things they have are of excellent quality.
+There is a staircase in the back with a sign pointing up and exlaiming,
+"SALE!!"
+Say 'Stock' to see what Ed has to sell
+~
+#EXIT
+Direction up~
+ToRoom    932
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    915
+#ENDEXIT
+
+Reset M 0 815 1 930
+  Reset G 0 502 1
+  Reset G 0 810 1
+  Reset G 0 33 1
+#ENDROOM
+
+#ROOM
+Vnum     931
+Name     Loja da Roupa~
+Sector   inside~
+Flags    indoors~
+Desc     You are standing in a clothing shop. There is a great selection of clothes
+here. The shop is very small and cozy and you can faintly hear music
+playing in the background. The friendly shopkeeper will be happy to help
+you with your purchase when you're ready.
+Say 'Stock' to see what he has for sale.
+~
+#EXIT
+Direction up~
+ToRoom    933
+Flags     hidden~
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    914
+#ENDEXIT
+
+Reset M 0 818 1 931
+#ENDROOM
+
+#ROOM
+Vnum     932
+Name     Loja da Artigo~
+Sector   inside~
+Flags    indoors~
+Desc     You are standing in a small item shop. The windows are open and the room is
+light and airy. There are various items from around the world on display
+here. The shopkeeper is waiting patiently to help you with your purchase.
+Say 'Stock' to see what she has to sell.
+~
+#EXIT
+Direction down~
+ToRoom    930
+#ENDEXIT
+
+Reset M 0 816 1 932
+#ENDROOM
+
+#ROOM
+Vnum     933
+Name     Loja da Sexo~
+Sector   inside~
+Flags    indoors~
+Desc     You are standing in a mysterious looking room. You can't see much because
+it's very dark and smoky, but there are things hanging on the walls that
+look like they're leather and metal... You can hear soft moans coming from
+somewhere as you decide to explore. The shopkeeper waits in the shadows
+for you to make a purchase.
+Say 'Stock' to see what this place has to offer.
+~
+#EXIT
+Direction down~
+ToRoom    931
+#ENDEXIT
+
+Reset M 0 817 1 933
+#ENDROOM
+
+#ROOM
+Vnum     934
+Name     Partido Street~
+Sector   inside~
+Desc     You are standing on a street that looks like one big party. There is
+dancing and music and you can barely make your way through the crowds of
+people.
+~
+#EXIT
+Direction northwest~
+ToRoom    909
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    929
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     935
+Name     Partido Street~
+Sector   inside~
+Desc     You are standing on a street that looks like one big party. There is
+dancing and music and you can barely make your way through the crowds of
+people.
+~
+#EXIT
+Direction northeast~
+ToRoom    936
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    909
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     936
+Name     Partido Street~
+Sector   inside~
+Desc     You are standing on a street that looks like one big party. There is
+dancing and music and you can barely make your way through the crowds of
+people.
+~
+#EXIT
+Direction northeast~
+ToRoom    937
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    935
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     937
+Name     Partido Street~
+Sector   inside~
+Desc     You are standing on a street that looks like one big party. There is
+dancing and music and you can barely make your way through the crowds of
+people.
+ 
+~
+#EXIT
+Direction northeast~
+ToRoom    938
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    936
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     938
+Name     Partido Street~
+Sector   inside~
+Desc     You are standing on a street that looks like one big party. There is
+dancing and music and you can barely make your way through the crowds of
+people.
+~
+#EXIT
+Direction northeast~
+ToRoom    903
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    937
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     939
+Name     Hospital~
+Sector   inside~
+Flags    indoors heal~
+Desc     You are standing in a tiny hospital exam room. It is very well stocked and
+the walls are decorated in very bright colors. The doctors and nurses
+bustling around have smiles on their faces as they rush off to help
+injured people.
+~
+#EXIT
+Direction northwest~
+ToRoom    917
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p return~
+Comlist   mpechoat $n You return to the training area.
+mpechoaround $n $n is gone!!
+mptransfer $n 945
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     940
+Name     Hotel~
+Sector   inside~
+Flags    indoors hotel~
+Desc     You are standing in a tiny out-of-the-way hotel. It's very clean and
+colorful and the bed looks comfortable.
+You can 'Save' and 'Quit' here.
+~
+#EXIT
+Direction northeast~
+ToRoom    916
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     941
+Name     Arcade~
+Sector   inside~
+Flags    nomob indoors~
+Desc     You are standing in a small arcade full of various games. Strangely there
+are no kids around, just adults that look strangely jumpy. Upon closer
+examination, you find that most aren't even playing the games at all, just
+standing there spaced out.
+~
+#EXIT
+Direction west~
+ToRoom    912
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    943
+Flags     hidden~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     942
+Name     Clube da Tira~
+Sector   inside~
+Flags    nomob~
+Desc     You are in a seedy looking strip club. There is smoke everywhere and kinky
+music is playing while the girls on the stage dance. In the corner there
+is a special place where you can have a private dance, and there are
+stairs in the back leading up to the next level. Enjoy! 
+Say 'Yes' for Chiquita to do a striptease for you.
+Say 'More' if you want more.
+Say 'Lap' to get a lapdance.
+~
+#EXIT
+Direction east~
+ToRoom    909
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    944
+#ENDEXIT
+
+Reset M 0 812 1 942
+#ENDROOM
+
+#ROOM
+Vnum     943
+Name     Laboratorio Escondido da Droga~
+Sector   inside~
+Flags    indoors~
+Desc     As you look around, you realize why the arcade had no kids. The arcade was
+just a cover for this hidden drug lab and all the people in the arcade are
+probably clients and users. This place is cold and sterile, and there's
+drugs laying everywhere. Better be careful not to get caught here.
+~
+#EXIT
+Direction down~
+ToRoom    941
+Flags     hidden~
+#ENDEXIT
+
+Reset O 0 816 1 943
+#ENDROOM
+
+#ROOM
+Vnum     944
+Name     Quarto do Sexo~
+Sector   inside~
+Flags    heal~
+Desc     You are on the top floor of the strip club. This is where women go to have
+a good time watching men dance for them. There is loud music playing and
+in one corner you can have a private dance by Carlos. Have fun!
+Say 'Yes' for a strip tease.
+Say 'More' to see more.
+Say 'Again' to get it all.
+Say 'Anal' if you want it badly.
+~
+#EXIT
+Direction down~
+ToRoom    942
+#ENDEXIT
+
+Reset M 0 813 1 944
+#ENDROOM
+
+#ROOM
+Vnum     945
+Name     Escondido Facilidade de Treinamento~
+Sector   inside~
+Flags    nomob~
+Desc     You are standing in a hidden training center that the Brazilian government
+doesn't know about. It is completely illegal and you can see why from the
+bloodstains on everything and the cries of agony coming from the rooms. Be
+careful as you train because this is a dangerous place. 
+&B Say 'Ambulance' to go to the hospital.
+&B Say 'Home' to return to Rio.
+~
+#EXIT
+Direction east~
+ToRoom    875
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p ambulance~
+Comlist   mpechoaround $n $n is taken to the hospital.
+mpechoat $n Say 'Return' to come back when you're healed.
+mptransfer $n 939
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p home~
+Comlist   mpechoat $n You suddenly appear back in Rio.
+mpechoaround $n $n suddenly disappears!
+mptransfer $n 900
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     946
+Name     Sub Level 1~
+Sector   inside~
+Flags    indoors~
+Desc     &B Say 'Wallet' to summon a pickpocket.
+~
+#EXIT
+Direction west~
+ToRoom    875
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p wallet~
+Comlist   mpecho A Pickpocket slides out of the shadows.
+mpmload 821
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     947
+Name     Sub Level 2~
+Sector   inside~
+Flags    nomob~
+Desc     &B Say 'Naked' to call out a dancer.
+~
+#EXIT
+Direction west~
+ToRoom    875
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p naked~
+Comlist   mpecho A Stripper dances into the room.
+mpmload 822
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     948
+Name     Sub Level 3~
+Sector   inside~
+Flags    nomob~
+Desc     &B Say 'Thief' to summon a mugger.
+~
+#EXIT
+Direction west~
+ToRoom    875
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p thief~
+Comlist   mpecho A Mugger comes around the corner.
+mpmload 823
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     949
+Name     Sub Level 4~
+Sector   inside~
+Flags    indoors~
+Desc     &B Say 'Hooker' to summon a prostitute.
+~
+#EXIT
+Direction west~
+ToRoom    875
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p hooker~
+Comlist   mpecho A Prostitute saunters around the corner.
+mpmload 824
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     950
+Name     Sub Level 5~
+Sector   inside~
+Flags    indoors~
+Desc     &B Say 'Pimp' to summon a pimp.
+~
+#EXIT
+Direction west~
+ToRoom    875
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p pimp~
+Comlist   mpecho A Pimp swaggers out of the alley.
+mpmload 825
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     951
+Name     Sub Level 6~
+Sector   inside~
+Flags    nomob indoors~
+Desc     &B Say 'Drugs' to summon a drug addict
+~
+#EXIT
+Direction west~
+ToRoom    875
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p drugs~
+Comlist   mpecho A Druggie staggers out from the shadows.
+mpmload 826
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     952
+Name     Sub Level 7~
+Sector   inside~
+Flags    indoors~
+Desc     &B Say 'Deal' to summon a crack dealer.
+~
+#EXIT
+Direction west~
+ToRoom    875
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p deal~
+Comlist   mpecho A Crack dealer sneaks around the corner.
+mpmload 827
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     953
+Name     Sub Level 8~
+Sector   inside~
+Flags    indoors~
+Desc     &B Say 'Rape' to summon a rapist.
+~
+#EXIT
+Direction west~
+ToRoom    875
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p rape~
+Comlist   mpecho A Rapist emerges from your nightmares.
+mpmload 828
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     956
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     960
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     961
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     962
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     967
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     970
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     971
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     976
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     977
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     980
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob~
+#ENDROOM
+
+#ROOM
+Vnum     981
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     999
+Name     7th Hell~
+Sector   inside~
+Flags    nomob~
+Desc     Now you've done it... the gods must have truly forsaken you, to have sent
+you straight to hell!    It is highly advised to wait here to make your
+appeal to the wrath of the gods... or face being damned to hell for all
+eternity!   
+~
+Reset M 0 2 2 999
+#ENDROOM
+
+#ENDAREA

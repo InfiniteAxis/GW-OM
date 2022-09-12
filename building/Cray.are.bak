@@ -1,0 +1,236 @@
+#AREA   {PROTO} Cray's area in progress~
+
+
+
+#AUTHOR Cray~
+
+#RANGES
+0 0 0 0
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 0
+
+#MOBILES
+#8600
+Ticket Seller~
+A Ticket Seller~
+A Ticket Seller is here, shouting out prices.
+~
+~
+~
+3 0 Z
+250 0 -525 50d10+2500 25d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+50 50 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> bribe_prog 500~
+mpoload 8600
+give ticket $n
+say Thank you $n.
+say Have a nice trip!
+~
+> greet_prog 100~
+say Hey there sport! Just 500 dollars a ticket! 
+~
+|
+#8601
+Small Child~
+A Small Child~
+A small child is here, looking around for something.
+~
+~
+~
+1 0 Z
+10 0 75 2d10+100 1d4+2
+3 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+2 2 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#8600
+Train Ticket~
+A Train Ticket~
+A train ticket was discarded here.~
+~
+8 0 1
+0 0 0 0
+1 300 30
+#8601
+Bench~
+A Long Bench~
+A long wooden bench is here.~
+~
+12 0 0
+4 0 2 0
+1 0 0
+#0
+
+
+#ROOMS
+#8600
+Train Station~
+A Busy section of the station. Where a large archway goes over your head to
+the other side of the station. The ticket seller is making quite a bit of
+money from everyone wanting tickets for the train.
+~
+0 1073741832 0 1 0
+D0
+~
+~
+0 -1 8601
+D1
+~
+~
+0 -1 8606
+D3
+~
+~
+0 -1 8605
+S
+#8601
+Train Station~
+A marble floor is pierced by a large stone pillar, raising up atleast 20
+feet to the ceiling. The room is flushed by people at various times, all
+going their seperate ways.
+~
+0 1073741832 0 1 0
+D0
+~
+~
+0 -1 8602
+D2
+~
+~
+0 -1 8600
+D3
+~
+~
+0 -1 8604
+S
+#8602
+Train Station~
+~
+0 1073741832 0 1 0
+D2
+~
+~
+0 -1 8601
+D3
+~
+~
+0 -1 8603
+S
+#8603
+Train Station~
+~
+0 1073741832 0 1 0
+D1
+~
+~
+0 -1 8602
+D2
+~
+~
+0 -1 8604
+D3
+~
+~
+0 -1 8607
+S
+#8604
+Train Station~
+More and more people scurry about this area, as platforms to trains are
+nearby. Luggage and people pass by every few seconds, no one really
+stopping to use the long wooden bench.
+~
+0 1073741832 0 1 0
+D0
+~
+~
+0 -1 8603
+D1
+~
+~
+0 -1 8601
+D2
+~
+~
+0 -1 8605
+S
+#8605
+Train Station~
+Another large archway can be seen, drawing attention away from all the busy
+people coming and going to and from their destinations. You hear chitter
+chatter about everywhere, a very noisy place.
+~
+0 1073741832 0 1 0
+D0
+~
+~
+0 -1 8604
+D1
+~
+~
+0 -1 8600
+S
+#8606
+Empty Landing~
+Here you stand on a deserted platform. Nothing is really here except for a
+garbage can and a lonely brick pillar. But the pillar seems kind of odd..
+and there must be an exit somewhere in this dusty, barely lit room.
+~
+0 1073741832 0 1 0
+D3
+~
+~
+2048 -1 8600
+S
+#8607
+Train Platform~
+~
+0 1073741824 0 1 0
+D1
+~
+~
+0 -1 8603
+S
+#0
+
+
+#RESETS
+O 1 8601 1 8606
+M 1 8600 1 8600
+O 1 8601 1 8600
+O 1 8601 1 8602
+O 1 8601 1 8604
+M 1 8601 1 8605
+M 1 8601 2 8601
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

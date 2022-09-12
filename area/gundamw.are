@@ -1,0 +1,841 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         Gundam Wing Control~
+Author       GW:OM Staff~
+Ranges       1 1007 1 1007
+Economy      0 16276982
+ResetMsg     Can't sleep, newbies will eat me...~
+ResetFreq    7
+#ENDAREADATA
+
+#MOBILE
+Vnum       100
+Keywords   Shikon Dealer~
+Short      &GT&gh&Ge &BS&bh&zik&bo&Bn &YJ&Oe&Ww&Oe&Yl &RD&re&pal&re&Rr&D~
+Long       &GT&gh&Ge &BS&bh&zik&bo&Bn &YJ&Oe&Ww&Oe&Yl &RD&re&pal&re&Rr&D stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc scavenger prototype~
+Stats1     0 1005 0 -2412 0 0
+Stats2     201 10 10050
+Stats3     100 4 2
+Stats4     0 0 1 201 201
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  speech_prog~
+Arglist   quarter~
+Comlist   mpoload 67
+nod $n
+say One &GQu&ga&cr&gt&Ger &BS&bh&zik&bo&Bn &YJ&Oe&Ww&Oe&Yl&D, coming up!
+mpsleep 10
+give quarter $n
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       199
+Keywords   Token Dealer~
+Short      &CO&cp&be&Br&ga&Gt&gi&co&Cn &WM&we&zt&we&zo&Wr &GQ&gu&Oe&gs&Gt &RT&ro&pk&re&Rn&D Dealer~
+Long       The &CO&cp&be&Br&ga&Gt&gi&co&Cn &WM&we&zt&we&zo&Wr &GQ&gu&Oe&gs&Gt &RT&ro&pk&re&Rn&D Dealer is here, handing out tokens.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  speech_prog~
+Arglist   Single~
+Comlist   nod $n
+mpsleep 10
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#OBJECT
+Vnum     100
+Keywords terminal omnipresent monitor~
+Type     trash~
+Short    the Monitoring Terminal~
+Long     The Monitoring Terminal has been installed here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     110
+Keywords an ecstasy pill~
+Type     drug~
+Short    an ecstasy pill~
+Long     A small pill is here, inviting you to take it.~
+WFlags   take~
+Values   0 -1 -1 -1 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     111
+Keywords LSD~
+Type     drug~
+Short    a hit of LSD~
+Long     A small taste of LSD is here... enticing you to take it.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     112
+Keywords a chronic blunt~
+Type     drug~
+Short    a chronic blunt~
+Long     A green herb wrapped in dark paper lies here, still burning slightly.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     113
+Keywords cocaine~
+Type     drug~
+Short    a line of coke~
+Long     A line of white powder lies here... calling you to snort it.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     114
+Keywords a crack vial~
+Type     drug~
+Short    a vial of crack~
+Long     A vial containing several small rocks lies here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     115
+Keywords a syringe of heroin~
+Type     drug~
+Short    a syringe of heroin~
+Long     A syringe of liquid lies here, begging you to inject it.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     116
+Keywords a speed pill~
+Type     drug~
+Short    a speed pill~
+Long     A small red pill lies here, giving off its own energy. ~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     117
+Keywords angel dust~
+Type     drug~
+Short    a packet of angel dust~
+Long     A small pouch of light dust is here, making the room a happier place.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     118
+Keywords a drop of acid~
+Type     drug~
+Short    a drop of acid~
+Long     A small tear shaped hit of acid lies here, begging to be taken.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     119
+Keywords an adrenaline pill~
+Type     drug~
+Short    an adrenaline pill~
+Long     An encased red and white pill is here, pulsating as if by some mysterious chemical reaction inside.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     120
+Keywords GHB pills~
+Type     drug~
+Short    GHB pills~
+Long     A pair of quick dissolve caplets are here, waiting to be used.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     121
+Keywords a small bottle of absinthe~
+Type     drug~
+Short    a small bottle of absinthe~
+Long     A small bottle of green liquid releases vapors into the air.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     122
+Keywords magic mushrooms~
+Type     drug~
+Short    some magic shrooms~
+Long     Some fungi is here releasing toxic spores into the air, making you see the world more vividly.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     130
+Keywords Yggdrasil Leaf~
+Type     armor~
+Short    &GY&gg&cg&Cd&Gr&Ca&cs&gi&Gl &GL&gea&Gf~
+Long     A &GY&gg&cg&Cd&Gr&Ca&cs&gi&Gl &GL&gea&Gf&w has mysteriously appeared here.~
+Flags    glow noinvoke~
+WFlags   take relic~
+Values   25 25 0 0 0 0
+Stats    1 0 0 0 0
+Affect       -1 -1 1000 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     131
+Keywords black netrunner suit~
+Type     armor~
+Short    &za Black &CN&ce&wt&Wr&zu&Wn&wn&ce&Cr &zSuit&D~
+Long     &zA black suit with strange designs on it.&D~
+WFlags   take body~
+Values   100 100 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     132
+Keywords black reflective shades sunglasses~
+Type     armor~
+Short    &zblack &Cr&ce&wf&Wl&zec&Wt&wi&cv&Ce&z shades&D~
+Long     &zA pair of black reflective sunglasses were misplaced here.&D~
+WFlags   take eyes~
+Values   100 100 0 0 0 0
+Stats    1 0 0 0 0
+Affect       -1 -1 4194304 26 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     133
+Keywords grey jacket shards~
+Type     armor~
+Short    &wa grey jacket that reads &z"&CSh&car&wds &Wo&zf &WE&wly&csi&Cum&z"&D~
+Long     &wA jacket lies here discarded, the word &z"&CSh&car&wds&z"&w visibile. ~
+WFlags   take about~
+Values   100 100 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     199
+Keywords final blah~
+Type     trash~
+Short    a final blah~
+Long     A final blah is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     100
+Name     The Immortal Complex~
+Sector   inside~
+Flags    indoors bank hotel factory~
+Desc     You are in the center of the Immortal Complex. Here the immortals can do
+their business without the distraction of mortals.
+~
+#EXIT
+Direction east~
+ToRoom    102
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    106
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    105
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    103
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    120
+#ENDEXIT
+
+Reset O 0 100 1 100
+#ENDROOM
+
+#ROOM
+Vnum     101
+Name     &CA&cx&Ci&cs&Y' &WL&wo&zun&wg&We&D~
+Sector   city~
+Flags    indoors bank plr_home hotel heal lottery storage~
+Desc     This room has an almost antique feel to it. The walls are a beautifully 
+finished cherry with a touch of oak alternating every so often. The floor 
+is a perfectly done hardwood floor of a rich pine, and releases the 
+relaxing aroma of a forest in mid-spring. A roaring fire is ablaze in a 
+beautifully carved marble fireplace along the eastern wall of the room, 
+and several bookshelves line the other walls. A particularly comfortable 
+looking chair is oriented right near the fireplace, a perfect place to 
+relax and think. A large floor to ceiling window is nestled along the 
+southern wall, open ever so slightly to allow a light breeze to filter 
+through the room and make the smell of the hardwood floors absolutely 
+intoxicating.
+~
+Owner    Axis~
+#EXIT
+Direction up~
+ToRoom    106
+#ENDEXIT
+
+#EXIT
+Direction somewhere~
+ToRoom    5191
+Keywords  ikon~
+Flags     hidden can_enter auto~
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   heal~
+Comlist   mpat hologram mpforce hologram mpat kayle mpforce kayle quit 
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     102
+Name     Conference Room~
+Sector   inside~
+Flags    indoors empty_home hotel~
+Desc     You are in the conference room where the Immortals engage the mortals in
+questioning and occasionally punishment.  The room is bare and there are
+no apparent exits except the one to the west .
+~
+#EXIT
+Direction west~
+ToRoom    100
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     103
+Name     Complaint Center~
+Sector   inside~
+Flags    nomob indoors empty_home~
+Desc     You stand in the middle of a large room. On a board nearby you see the
+words 'Complaint Center' on it. You also see a large desk that is piled a
+mile high with papers.
+You think you wouldn't wanna work here if the only reason was having to
+clear away the papers.
+~
+#EXIT
+Direction up~
+ToRoom    100
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     104
+Name     &WT&zh&We &wD&zar&wk &RC&ra&zr&wni&zv&ra&Rl&D~
+Sector   ocean floor~
+Flags    indoors bank plr_home hotel refinery factory heal~
+Desc     &zUpon entering this office, an odor of blood, rotting corpses, and burning
+flesh can be unmistakably smelled.  The walls seem appear to be sentients
+encased in carbonite.  The &Rplaque&z to the left of the doorway has the
+names of some of those that have unwillingly contributed to the
+unpalatableness that is this office.  The floor is of the same disturbing
+composition as the walls, the ceiling appears to mimic the exact same
+construction with lights covering the larger seams between the carbonite
+cells.  A massive &Rdesk &zsits towards the back of the room in front of a
+rather large leather chair where Scoyn devises most of, if not all of his
+ideas.&D
+~
+Owner    Scoyn~
+#EXIT
+Direction southeast~
+ToRoom    106
+#ENDEXIT
+
+Reset M 0 5191 3 104
+#EXDESC
+ExDescKey    plaque~
+ExDesc       The following people have "donated" themselves to the decoration of
+Scoyn's office.
+Churchhill  Seraphinas  Demonaire   Gilthanas   Rivelinho   Greetmir.
+Thanatos    Tirandyl    Viktoria    Aristel     Dextera     Drakane .
+Ellinai     Gunther     Halcyon     Jesikah     Kalibar     Kamorov .
+Madison     Rebecca     Xaradin     Zanelli     Aedwin      Altima  .
+Athrun      Austra      Borvie      Brioni      Dylane      Fallen  .
+Gareon      Gorian      Gultar      Katren      Klorel      Lokita  .
+Maldar      Mennis      Oracle      Radlam      Rayner      Scorch  .
+Selene      Skaara      Taalia      Tamsin      Tharan      Tharen  .
+Tremor      Xanica      Aeris       Aslan       Auron       Becky   .
+Boris       Bruth       Chara       Dagon       Faran       Famin   .
+Gheed       Intri       Kayln       Keera       Makor       Malyn   .
+Meier       Omega       Ralyn       Refen       Snake       Shang   .
+Taynk       Trunn       Tykor       Varen       Zaner       Zinri   .
+Cray        Ebon        Hate        Luna        Mark        Nena    .
+Rath                                                                .
+~
+#ENDEXDESC
+
+#ENDROOM
+
+#ROOM
+Vnum     105
+Name     Isolation Room~
+Sector   inside~
+Flags    nomob indoors nomagic norecall~
+#ENDROOM
+
+#ROOM
+Vnum     106
+Name     The Immortal Offices~
+Sector   inside~
+Flags    nomob indoors~
+Desc     Here is where all the rooms of the Immortals are adjoined. They are placed
+so close to each other for easy contact to one another.
+~
+#EXIT
+Direction north~
+ToRoom    100
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    128
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    116
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    111
+Flags     isdoor pickproof~
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    110
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    101
+Keywords  trapdoor office~
+Flags     isdoor~
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    113
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    104
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    112
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    256
+#ENDEXIT
+
+Reset D 0 106 3 0
+Reset D 0 106 4 0
+Reset D 0 106 5 0
+#ENDROOM
+
+#ROOM
+Vnum     110
+Name     An Empty Office~
+Sector   inside~
+Flags    bank empty_home~
+#EXIT
+Direction down~
+ToRoom    106
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     111
+Name     An Empty Office~
+Sector   inside~
+Flags    nomob indoors bank empty_home hotel factory heal~
+#EXIT
+Direction east~
+ToRoom    106
+Flags     isdoor pickproof~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     112
+Name     An Empty Office~
+Sector   inside~
+Flags    indoors empty_home~
+#EXIT
+Direction northwest~
+ToRoom    106
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     113
+Name     An Empty Office~
+Sector   inside~
+Flags    nomob indoors empty_home hotel heal~
+#EXIT
+Direction southwest~
+ToRoom    106
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     116
+Name     An Empty Office~
+Sector   inside~
+Flags    indoors bank safe empty_home hotel factory heal~
+#EXIT
+Direction north~
+ToRoom    106
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     117
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     118
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     119
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     120
+Name     A Immortal Complex Hallway~
+Sector   inside~
+Flags    indoors safe prototype~
+#EXIT
+Direction north~
+ToRoom    121
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    100
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     121
+Name     A Immortal Complex Hallway~
+Sector   inside~
+Flags    indoors safe prototype~
+#EXIT
+Direction north~
+ToRoom    122
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    120
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     122
+Name     A Immortal Complex Hallway~
+Sector   inside~
+Flags    indoors safe prototype~
+#EXIT
+Direction north~
+ToRoom    123
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    121
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     123
+Name     A Immortal Complex Hallway~
+Sector   inside~
+Flags    indoors safe prototype~
+#EXIT
+Direction north~
+ToRoom    124
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    122
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     124
+Name     A Immortal Complex Hallway~
+Sector   inside~
+Flags    indoors safe prototype~
+#EXIT
+Direction north~
+ToRoom    125
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    123
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     125
+Name     A Immortal Complex Hallway~
+Sector   inside~
+Flags    indoors safe prototype~
+#EXIT
+Direction east~
+ToRoom    126
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    124
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    127
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     126
+Name     Immortal To Mortal Room~
+Sector   inside~
+Flags    indoors safe prototype~
+#EXIT
+Direction west~
+ToRoom    125
+Flags     isdoor pickproof~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     127
+Name     Room~
+Sector   inside~
+Flags    prototype~
+#EXIT
+Direction east~
+ToRoom    125
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     128
+Name     Dungeon of Disappointment~
+Sector   inside~
+Flags    nomob indoors plr_home~
+Owner    Draxxus~
+#EXIT
+Direction west~
+ToRoom    106
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     129
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     130
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     131
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     132
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     133
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     134
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     135
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     136
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     137
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     138
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     139
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     140
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     148
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     150
+Name     Floating in a void~
+Sector   inside~
+Flags    nomob prototype~
+#ENDROOM
+
+#ROOM
+Vnum     199
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ENDAREA

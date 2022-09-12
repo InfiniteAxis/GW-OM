@@ -1,0 +1,3479 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         Colony K46~
+Author       Couryn~
+Ranges       1 1007 1 1007
+Economy      0 133266165
+ResetFreq    15
+#ENDAREADATA
+
+#MOBILE
+Vnum       6000
+Keywords   varimere~
+Short      &zVarimere&T~
+Long       &zVarimere stands here greeting people.&T
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel train~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+VIPFlags   K46~
+#MUDPROG
+Progtype  act_prog~
+Arglist   "steps out of a ship."~
+Comlist   bow $n
+say Welcome to Colony K46, $n.
+say Enjoy your stay.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   bow $n
+say Enjoy You're stay?
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6001
+Keywords   k46 custom guard~
+Short      &WA &cK&C4&c6 &WC&wu&Ws&wt&Wo&wm&Ws &zG&wu&za&wr&zd~
+Long       &zA &cK&C4&c6 &WC&wu&Ws&wt&Wo&wm&Ws &zG&wu&za&wr&zd stands here checking for illegal goods.&T
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Specfun    spec_customs_weapons~
+Specfun2    spec_police~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1000 0 -2400 0 0
+Stats2     199 10 9990
+Stats3     99 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say Welcome to Colony K46, $n.
+tip $n
+say Enjoy your stay here. And Try and stay out of trouble.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6002
+Keywords   Shelly~
+Short      &WS&wh&We&wl&Wl&wy&z~
+Long       &WS&wh&We&wl&Wl&wy&z stands here awaiting your purchase.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel nocorpse~
+Affected   detect_invis detect_hidden~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 100 80 0 23
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say Hi there, $n!
+say Welcome to the Shining Cutlass, Premier Weapons dealership on K46.
+say How can I help you?
+smile $n
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   stock~
+Comlist   say Oh Sorry, I must be missing a few things.
+mpoload 6009 0
+mpoload 6008 0
+mpoload 6010 0
+mpoload 502 0
+mpoload 4135 0
+mpoload 6351 0
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6003
+Keywords   john~
+Short      &RJ&ro&Rh&rn&z~
+Long       &RJ&ro&Rh&rn&z is here sorting through some of his junk.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Affected   detect_invis detect_hidden~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    18 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 120 100 0 23
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   bow $n
+say Welcome to my Junk Shop.
+say If there's anything I can get you just let me know.
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6004
+Keywords   Mark~
+Short      &zM&wa&zr&wk&z~
+Long       &zM&wa&zr&wk&z is here unpacking some surplus army gear.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel nocorpse~
+Affected   detect_invis detect_hidden~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+ShopData   0 0 0 0 0 100 80 0 23
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say Hey, Welcome to the Army Surplus Store.
+say Lemme know if there's Anything I can get for you.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   stock~
+Comlist   say Damn. Sorry, Lemme get that stuff for ya.
+mpoload 6005 0
+mpoload 6007 0
+mpoload 6011 0
+mpoload 503 0
+mpoload 504 0
+mpoload 505 0
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6005
+Keywords   hologram gheed~
+Short      A Hologram of Gheed~
+Long       A Hologram of Gheed stands here like a retard.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 503 0 -1408 300 0
+Stats2     100 10 5040
+Stats3     50 4 2
+Stats4     0 0 0 100 100
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6006
+Keywords   hologram level 2~
+Short      A level 2 Hologram~
+Long       A Hologram is here, ready for battle.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 560 0 -1580 325 0
+Stats2     112 10 5600
+Stats3     56 4 2
+Stats4     0 0 0 112 112
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6007
+Keywords   hologram level 3~
+Short      A level 3 Hologram~
+Long       A Hologram stands here ready for combat.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 616 0 -1748 350 0
+Stats2     123 10 6160
+Stats3     61 4 2
+Stats4     0 0 0 123 123
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6008
+Keywords   hologram level 4~
+Short      A level 4 Hologram~
+Long       A Hologram stands here ready for combat.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 671 0 -1912 0 0
+Stats2     134 10 6710
+Stats3     67 4 2
+Stats4     0 0 0 134 134
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6010
+Keywords   hologram level 6~
+Short      A level 6 Hologram~
+Long       A Hologram stands here ready for combat.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 785 0 -1862 425 0
+Stats2     157 10 7850
+Stats3     78 4 2
+Stats4     0 0 0 157 157
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6011
+Keywords   hologram level 7~
+Short      A level 7 Hologram~
+Long       A Hologram stands here ready for combat.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 841 0 -2002 450 0
+Stats2     168 10 8410
+Stats3     84 4 2
+Stats4     0 0 0 168 168
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6012
+Keywords   hologram level 8~
+Short      A level 8 Hologram~
+Long       A Hologram stands here ready for combat.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 896 0 -2140 475 0
+Stats2     179 10 8960
+Stats3     89 4 2
+Stats4     0 0 0 179 179
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6013
+Keywords   hologram level 9~
+Short      A level 9 Hologram~
+Long       A Hologram stands here ready for combat.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 951 0 -2277 500 0
+Stats2     190 10 9510
+Stats3     95 4 2
+Stats4     0 0 0 190 190
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6014
+Keywords   hologram level 10~
+Short      A level 10 Hologram~
+Long       A Hologram stands here ready for combat.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 1001 0 -2402 500 0
+Stats2     200 10 10010
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6015
+Keywords   hologram level 5~
+Short      A level 5 Hologram~
+Long       A hologram is here, ready for combat.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 729 0 -2086 400 0
+Stats2     145 10 7290
+Stats3     72 4 2
+Stats4     0 0 0 145 145
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6016
+Keywords   captain phoenix~
+Short      Phoenix~
+Long       &RP&Yh&Wo&we&Wn&Yi&Rx&z, Captain of the Predator, is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Affected   fireshield~
+Stats1     0 1000 0 -2400 500 0
+Stats2     200 10 299458
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   parry dodge~
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say Welcome, Perhaps you've come to try and claim my Mask? Maybe my Sword?
+mfinger $n
+say Good Luck.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpoload 6001
+mpoload 6003
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6017
+Keywords   frost first officer~
+Short      Frost~
+Long       &BF&Cr&co&Cs&Bt&z, First officer of the Predator, is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel~
+Affected   iceshield~
+Stats1     0 991 0 -2377 500 0
+Stats2     198 10 298000
+Stats3     99 4 2
+Stats4     0 0 0 198 198
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   parry dodge~
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say Welcome, Theses are my quarters.
+bow $n
+say Is there something you're looking for?
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpoload 6002
+mpoload 6004
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  greet_prog~
+Arglist   100~
+Comlist   say If you want my armor and my sword, come and get it!
+ready
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6018
+Keywords   predator crew male~
+Short      A Predator crew member~
+Long       A male member of the predator crew stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc~
+Stats1     0 900 0 -2150 400 0
+Stats2     180 10 90000
+Stats3     90 4 2
+Stats4     0 0 0 180 180
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6019
+Keywords   predator crew female~
+Short      A Predator crew member~
+Long       A female member of the predator crew stands here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc~
+Stats1     0 900 0 -2150 400 0
+Stats2     180 10 90000
+Stats3     90 4 2
+Stats4     0 0 0 180 180
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6020
+Keywords   k46 citizen~
+Short      A K46 Citizen~
+Long       A Citizen of K46 is strolling the streets here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc~
+Stats1     0 56 0 -40 100 0
+Stats2     11 10 560
+Stats3     5 4 2
+Stats4     0 0 0 11 11
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+VIPFlags   K46~
+#ENDMOBILE
+
+#MOBILE
+Vnum       6021
+Keywords   predator pilot~
+Short      The Pilot~
+Long       The Predator's Pilot is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 900 0 -2150 350 0
+Stats2     180 10 80000
+Stats3     90 4 2
+Stats4     0 0 0 180 180
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6022
+Keywords   predator copilot~
+Short      The Co-Pilot~
+Long       The Predator's Co-Pilot is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc sentinel~
+Stats1     0 900 0 -2150 350 0
+Stats2     180 10 80000
+Stats3     90 4 2
+Stats4     0 0 0 180 180
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6023
+Keywords   sewer rat~
+Short      &GS&ge&Gw&ge&Gr &zR&wa&zt~
+Long       &zA &GS&ge&Gw&ge&Gr &zR&wa&zt wanders along here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 500 0 -1150 10 0
+Stats2     100 10 5000
+Stats3     50 4 2
+Stats4     0 0 0 100 100
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6024
+Keywords   cody~
+Short      Cody~
+Long       &WCody&z is here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p Come, let me have the seal.~
+Comlist   shake
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6025
+Keywords   tyler~
+Short      Tyler~
+Long       Tyler sits here playing with some cars.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6026
+Keywords   rebecca~
+Short      Rebecca~
+Long       Rebecca is here playing hopscotch.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6027
+Keywords   jonathan~
+Short      Jonathan~
+Long       Jonathan is here picking up cans and putting them in his wagon.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 0 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#MOBILE
+Vnum       6031
+Keywords   Conquest~
+Short      &WC&wo&Wn&wq&Wu&we&Ws&wt~
+Long       &zA horseman is here, He wears a crown and wields a bow.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Affected   truesight~
+Stats1     0 1001 0 -2402 5000 0
+Stats2     200 10 3000000
+Stats3     1 1 1
+Stats4     0 0 8 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   parry~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpecho &WC&wo&Wn&wq&Wu&we&Ws&wt&z has fallen! The second seal is broken!
+mpecho &B"&RCome!&B"&z A rider appears, His horse is Red.
+mpmload 6032
+mptransfer war 6094
+mpnothing Log: $n just killed Conquest.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  death_prog~
+Arglist   50~
+Comlist   if hasqbit($n) == 13
+mea $n &zYou have already received the gift of Conquest's Crown.
+mea $n &zYou may kill him as much as you want, but one Crown per lifetime.
+else
+mpoload 6012 0
+mpqset $n 13
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6032
+Keywords   War~
+Short      &RW&ra&Rr~
+Long       &zA Horseman is here, He wields a large sword and his horse is red.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Affected   truesight~
+Stats1     0 1002 0 -2405 5000 0
+Stats2     200 10 3000000
+Stats3     2 1 2
+Stats4     0 0 8 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   parry~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpecho &RW&ra&Rr &zhas Fallen! The Third seal is Broken!
+mpecho &B"&RCome!&B"&z A rider appears, his horse is black.
+mpmload 6033
+mptransfer famine 6095
+mpnothing Log: $n just killed War.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  death_prog~
+Arglist   50~
+Comlist   if hasqbit($n) == 14
+mea $n &zYou have already received the gift of War's Collars.
+mea $n &zYou may kill him as much as you want, but two Collars per lifetime.
+else
+mpoload 6013 0
+mpoload 6013 0
+mpqset $n 14
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6033
+Keywords   Famine~
+Short      &GF&ga&cmi&gn&Ge~
+Long       &zA horseman is here, he bears a set of scales, and his horse is black.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Affected   truesight~
+Stats1     0 1003 0 -2407 5000 0
+Stats2     200 10 3000000
+Stats3     3 1 3
+Stats4     0 0 8 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   parry~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   mpechoat $n &B"&zA quart of wheat for a days wages, and three quarts of
+mpechoat $n &zbarley for a day's wages, And Do not damage the oil and wine!&B"
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpecho &GF&ga&cmi&gn&Ge&z has Fallen! The fourth seal is Broken!
+mpecho &B"&RCome!&B"&z A Rider appears His horse is pale.
+mpmload 6034
+mptransfer death 6096
+mpnothing Log: $n just killed Famine.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  death_prog~
+Arglist   50~
+Comlist   if hasqbit($n) == 15
+mea $n &zYou have already received the gift of Famine's Boots.
+mea $n &zYou may kill him as much as you want, but one Boots per lifetime.
+else
+mpoload 6014 0
+mpqset $n 15
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6034
+Keywords   Death~
+Short      &zD&we&Wa&wt&zh~
+Long       &z A horseman is here, behind him flies Hades, and his horse is pale.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel~
+Affected   truesight~
+Stats1     0 1004 0 -2410 5000 0
+Stats2     200 10 3000000
+Stats3     4 1 4
+Stats4     0 0 8 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   parry~
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpecho &zDeath has fallen! The seals are broken!
+mpecho &zA rumble comes from the northeast.
+mpmload 6035
+mptransfer lilith 6097
+mpnothing Log: $n just killed Death.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  death_prog~
+Arglist   50~
+Comlist   if hasqbit($n) == 16
+mea $n &zYou have already received the gift of Death's Hands.
+mea $n &zYou may kill him as much as you want, but one Hands per lifetime.
+else
+mpoload 6015 0
+mpqset $n 16
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6035
+Keywords   Lilith~
+Short      &CL&ci&wli&ct&Ch~
+Long       &CL&ci&wli&ct&Ch&z, A beautiful young woman floats here, enshrouded in light and darkness.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     female~
+Actflags   npc sentinel aggressive nocorpse~
+Affected   truesight~
+Stats1     0 1005 0 -2412 0 0
+Stats2     201 10 3000000
+Stats3     5 1 5
+Stats4     0 0 8 201 201
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+Attacks    punch kick~
+Defenses   parry dodge~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100~
+Comlist   say So. You have defeated my Riders. You will not find me so easy!
+chuckle
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  death_prog~
+Arglist   100~
+Comlist   mpecho &CL&ci&wli&ct&Ch &zhas fallen! The Apocalypse has been averted!
+mpecho &BSimply say 'Show me the Darkness.' To be released.
+mpnothing Log: $n just killed Lilith.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  death_prog~
+Arglist   50~
+Comlist   if hasqbit($n) == 17
+mea $n &zYou have already received the gift of Lilith's Greaves.
+mea $n &zYou may kill her as much as you want, but one Greaves per lifetime.
+else
+mpoload 6016 0
+mpqset $n 17
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6036
+Keywords   kragen~
+Short      Kragen~
+Long       &RK&rr&zag&re&Rn&z The Coffer Guardian, is floats here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     male~
+Actflags   npc sentinel train~
+Affected   sanctuary truesight~
+Stats1     0 1000 0 -2400 0 0
+Stats2     200 10 10000
+Stats3     100 4 2
+Stats4     0 0 0 200 200
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+Immune     charm~
+#MUDPROG
+Progtype  all_greet_prog~
+Arglist   100 ~
+Comlist   mea $n &BA voice fills your head...
+mea $n &zSo... You've defeated Lilith and her minions.. I feel a strange need
+mea $n &zto congratulate you. No one has ever defeated the Alpha and Omega,
+mea $n &zthe beginning and the end, the First and the Last... Vampire...
+mea $n &zI offer you the contents of the Coffer of Apocalypse. You have most
+mea $n &zcertainly earned it. Defeating the Original Vampire could not
+mea $n &zhave been an easy task.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   original vampire~
+Comlist   mea $n &BThe voice fills your head again...
+mea $n &zYes. Christians believed in Christ as the Alpha and Omega. And he 
+mea $n &zwas for humans. Vampires like myself, however, are no longer human
+mea $n &zand have our own Alpha and Omega. Lilith.
+mea $n &zLilith was the mother of Dracula, Lord of the most ancient vampires.
+mea $n &zIn the bible, It says that the four horsemen would serve the Alpha
+mea $n &zand Omega. No where though, did it say it would be the human one.
+smirk $n
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       6099
+Keywords   last~
+Short      a newly created last~
+Long       Some god abandoned a newly created last here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#OBJECT
+Vnum     6000
+Keywords Water cooler pass~
+Type     trash~
+Short    &WA Pass to the &BW&ba&Bt&be&Br &CC&co&Co&cl&Ce&cr &WRoom~
+Long     &WA Pass to the &BW&ba&Bt&be&Br &CC&co&Co&cl&Ce&cr &WRoom is lying here. Who's the dumbass?~
+Flags    glow hum nodrop inventory~
+WFlags   take hold~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6001
+Keywords burning mask phoenix~
+Type     comlink~
+Short    &RB&Yu&Wr&wn&Wi&Yn&Rg &RM&zas&Rk &zof &RP&Yh&Wo&we&Wn&Yi&Rx~
+Long     A Mask is lying here, burning with an unnatural flame.~
+Flags    glow~
+WFlags   take eyes~
+Values   75 75 0 0 0 0
+Stats    1 50000 5000 0 0
+Affect       -1 -1 25 18 0
+Affect       -1 -1 35 19 0
+Affect       -1 -1 40 26 0
+#EXDESC
+ExDescKey    mask burning phoenix~
+ExDesc       The Mask burns with unnatural flames, and radiates with an unknown power.
+It is covered in an interesting pattern of runes that seem to shift and
+rearrange themselves every little bit.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6002
+Keywords ice shard armor~
+Type     armor~
+Short    &CIce&cShard &CA&cr&Cm&co&Cr~
+Long     A suit of armor made from shards of ice lies here.~
+WFlags   take body~
+Values   50 50 0 0 0 0
+Stats    1 60000 6000 0 0
+Affect       -1 -1 40 18 0
+Affect       -1 -1 45 19 0
+Affect       -1 -1 1500 13 0
+#EXDESC
+ExDescKey    ice shard armor~
+ExDesc       The Armor is made from small shards of ice. It doesn't seem to be melting
+and it radiates with a strange power. Whatever made this was beyond our
+comprehension.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6003
+Keywords sword nemesis~
+Type     weapon~
+Short    &zN&we&zm&we&zs&wi&zs~
+Long     &zA sword of some power lies here gathering dust.~
+Flags    glow hum contraband~
+WFlags   take wield~
+Values   1000 10 150 2 1000 1000
+Stats    1 40000 4000 0 0
+Affect       -1 -1 1000 13 0
+Affect       -1 -1 15 18 0
+Affect       -1 -1 20 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6004
+Keywords sword nightmare~
+Type     weapon~
+Short    &zN&ri&zg&rh&zt&rm&za&rr&ze~
+Long     &zA sword of some power lies here collecting dust.~
+Flags    glow hum contraband~
+WFlags   take wield~
+Values   1000 10 150 2 1000 1000
+Stats    1 0 0 0 0
+Affect       -1 -1 1000 13 0
+Affect       -1 -1 20 18 0
+Affect       -1 -1 15 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6005
+Keywords light shard darkness~
+Type     light~
+Short    &RS&rh&pa&rr&Rd &zof &zD&wa&Wr&zk&wn&We&zs&ws~
+Long     &zA &RS&rh&pa&rr&Rd &zof &zD&wa&Wr&zk&wn&We&zs&ws &zhas been carelessly dropped here.~
+Flags    glow~
+WFlags   take hold~
+Values   0 0 -1 0 0 0
+Stats    1 100000 10000 0 0
+Affect       -1 -1 1000 13 0
+Affect       -1 -1 -100 17 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6006
+Keywords statue fallen hero fountain~
+Type     fountain~
+Short    A Statue of a Forgotten Hero~
+Long     A Statue of a forgotten hero is here, crushed and crumbling into the fountain at it's base.~
+Values   1000000 1000000 0 0 0 0
+Stats    1 0 0 0 0
+#EXDESC
+ExDescKey    statue fallen hero fountain~
+ExDesc       The fountain has been toppled over and now lies in ruin in the fountain at it's
+base. The sparkling water flowing flawlessly around the white marble chunks.
+~
+#ENDEXDESC
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6007
+Keywords backpack dragon~
+Type     container~
+Short    &zA Backpack embroidered with a Dragon Emblem~
+Long     &zSomeone dropped their backpack here.~
+WFlags   take~
+Values   350 0 0 0 0 0
+Stats    1 50000 5000 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6008
+Keywords particle beam rifle~
+Type     weapon~
+Short    &CP&carticl&Ce &PB&pea&Pm &CR&cifl&Ce~
+Long     &zA &CP&carticl&Ce &PB&pea&Pm &CR&cifl&Ce&z was carelessly dropped here.~
+Flags    hum~
+WFlags   take wield~
+Values   1100 10 120 6 2000 2000
+Stats    25 1000000 100000 0 0
+Affect       -1 -1 20 18 0
+Affect       -1 -1 25 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6009
+Keywords blade chaos~
+Type     weapon~
+Short    &RB&rlad&Re &zof &RC&zh&wa&zo&Rs~
+Long     &zA blade lies here, a glowing chain around it's hilt.~
+Flags    glow~
+WFlags   take wield~
+Values   1000 10 150 2 2000 2000
+Stats    1 100000 10000 0 0
+Affect       -1 -1 30 19 0
+Affect       -1 -1 -30 18 0
+Affect       -1 -1 1000 13 0
+#MUDPROG
+Progtype  wear_prog~
+Arglist   100~
+Comlist   mea $n _dch As you wield the blade, the chain wraps itself around your
+mea $n _dch forearm, and sears itself to your skin.
+mer $n _dch As $n wields the blade, the chain wraps itself around their
+mer $n _dch forearm and sears itself to their skin.
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  remove_prog~
+Arglist   100~
+Comlist   mea $n _dch As you remove the blade, the chains tear away from your flesh
+mea $n _dch leaving you scarred and bloody.
+mpdamage $n 3000
+mer $n _dch As $n removes the blade, the chains tear away from their flesh
+mer $n _dch leaving them scarred and bloody.
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6010
+Keywords spear destiny~
+Type     weapon~
+Short    &WS&wp&We&wa&Wr &zof &YD&Oe&Ys&Ot&Yi&On&Yy~
+Long     &zA &WS&wp&We&wa&Wr &zof &YD&Oe&Ys&Ot&Yi&On&Yy&z has been misplaced here.~
+Flags    glow hum~
+WFlags   take wield~
+Values   1000 10 100 11 1000 1000
+Stats    5 450000 45000 0 0
+Affect       -1 -1 20 18 0
+Affect       -1 -1 20 19 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6011
+Keywords urban camouflage pants~
+Type     armor~
+Short    &zU&wr&Wb&wa&zn &zC&wa&Wm&zo&wu&Wf&zl&wa&Wg&ze &zC&wa&Wr&wg&zo &zP&wa&Wn&wt&zs~
+Long     Some urban camouflage pants are lying here.~
+WFlags   take legs~
+Values   45 45 0 0 0 0
+Stats    1 500000 50000 0 0
+Affect       -1 -1 30 18 0
+Affect       -1 -1 -30 19 0
+Affect       -1 -1 900 13 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6012
+Keywords whetstone~
+Type     whetstone~
+Short    a whetstone~
+Long     A whetstone has been discarded here.~
+WFlags   take~
+Values   10 0 0 0 0 0
+Stats    2 150 15 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6017
+Keywords coffer of apocalypse~
+Type     container~
+Short    &zC&wo&Wff&we&zr of &RA&rp&zo&wc&Wal&wy&zp&rs&Re~
+Long     &zThe &zC&wo&Wff&we&zr of &RA&rp&zo&wc&Wal&wy&zp&rs&Re &zis here, waiting to be opened.~
+Flags    glow~
+Values   5 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6019
+Keywords neon green glowstick~
+Type     light~
+Short    &GNeon Green Glowstick&D~
+Long     A small stick filled with neon green phosphorescent liquid lies here forgotten.~
+Flags    glow~
+WFlags   take~
+Values   0 0 100 0 0 0
+Stats    1 0 0 0 0
+#MUDPROG
+Progtype  wear_prog~
+Arglist   100~
+Comlist   mea $n You crack the stick, give it a little shake and it starts to emit light.
+mer $n $n cracks a stick, gives it a little shake and it starts to emit light.
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     6037
+Keywords desk~
+Type     furniture~
+Short    a desk~
+Long     A Mahogany desk sits here in the middle of the room. ~
+Values   5 5 1 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6038
+Keywords captain's chair~
+Type     furniture~
+Short    &zThe &RC&Ya&Wp&wt&Wa&Yi&Rn&z's Chair~
+Long     &zThe &RC&Ya&Wp&wt&Wa&Yi&Rn&z's Chair sits here in the middle of the bridge.~
+Values   5 5 3 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6045
+Keywords insterstellar message board~
+Type     trash~
+Short    a insterstellar message board~
+Long     A insterstellar message board is here.~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6046
+Keywords vending machine~
+Type     container~
+Short    a vending machine~
+Long     A vending machine is here.~
+Values   4 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6047
+Keywords k46 map~
+Type     map~
+Short    a k46 map~
+Long     A k46 map is here.~
+WFlags   take~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     6099
+Keywords last~
+Type     trash~
+Short    a last~
+Long     A last is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     6000
+Name     &cK&C4&c6 &YD&Oo&Yc&Ok&Yi&On&Yg &wB&Wa&wy~
+Sector   city~
+Flags    nomob indoors docking~
+Desc     You stand on the Landing pad of K46. Engineers scurry about trying to repair
+the damage to suits and keep the bay clear of debris. Perhaps it would be best
+to get clear of here before you get in the way.
+~
+#EXIT
+Direction north~
+ToRoom    6001
+#ENDEXIT
+
+Reset M 0 6000 1 6000
+#ENDROOM
+
+#ROOM
+Vnum     6001
+Name     &cK&C4&c6 &WC&wu&Ws&wt&Wo&wm&Ws &zO&wf&zf&wi&zc&we~
+Sector   city~
+Flags    nomob indoors~
+Desc     People are here getting bags checked and being checked for illegal items
+by the Customs guards. A sign hung from the ceiling reads, "Weapons are banned
+from non-military usage."
+~
+#EXIT
+Direction north~
+ToRoom    6002
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6000
+#ENDEXIT
+
+Reset M 0 6001 1 6001
+#ENDROOM
+
+#ROOM
+Vnum     6002
+Name     &cK&C4&c6 &zMain &wHub~
+Sector   city~
+Desc     This is the main intersection for K46. People walk all around but they seem
+to be avoiding the Alley to the east. The Residetial area is off to the west, 
+and north of here is Main Street.
+~
+#EXIT
+Direction north~
+ToRoom    6007
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6003
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6001
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6011
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6018
+#ENDEXIT
+
+Reset O 0 6006 1 6002
+#ENDROOM
+
+#ROOM
+Vnum     6003
+Name     &RA&rl&pl&re&Ry &CE&cn&wt&Wra&wn&cc&Ce~
+Sector   city~
+Flags    nomob~
+Desc     The lights of this alley are dim and many are broken. Trash litters the alley,
+Food wrappers, old magazines, lots of miscellaneous trash.
+~
+#EXIT
+Direction east~
+ToRoom    6004
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6002
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6004
+Name     &zD&Wa&zr&Wk &zA&wl&Wl&ze&wy&Ww&za&wy~
+Sector   city~
+Flags    nomob~
+Desc     The lights of this alley are dim and many are broken. Trash litters the alley,
+Food wrappers, old magazines, lots of miscellaneous trash.
+~
+#EXIT
+Direction east~
+ToRoom    6005
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6003
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6005
+Name     &zD&Wa&zr&Wk &zA&wl&Wl&ze&wy&Ww&za&wy~
+Sector   city~
+Flags    nomob~
+Desc     The lights of this alley are dim and many are broken. Trash litters the alley,
+Food wrappers, old magazines, lots of miscellaneous trash.
+~
+#EXIT
+Direction east~
+ToRoom    6006
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6004
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6006
+Name     &zD&we&za&wd &RE&rn&Rd~
+Sector   city~
+Flags    nomob~
+Desc     The wall here is covered in posters of Rock shows, plays, operas, and other
+theatrical stuff. But what really gets your attention is the nasty smell
+coming from somewhere below you. It smells almost like... Sewage.
+~
+#EXIT
+Direction west~
+ToRoom    6005
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6022
+Flags     hidden~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6007
+Name     &BM&ba&Bi&bn &CS&ct&wre&ce&Ct~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    6008
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6002
+#ENDEXIT
+
+Reset M 0 6024 1 6007
+#ENDROOM
+
+#ROOM
+Vnum     6008
+Name     &BM&ba&Bi&bn &CS&ct&wre&ce&Ct~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    6009
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6054
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6007
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6009
+Name     &BM&ba&Bi&bn &CS&ct&wre&ce&Ct~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    6010
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6008
+#ENDEXIT
+
+Reset M 0 6020 8 6009
+Reset M 0 6025 1 6009
+#ENDROOM
+
+#ROOM
+Vnum     6010
+Name     &YS&Oh&Yo&Op&Yp&Oi&Yn&Og &CD&ci&Cs&ct&Cr&ci&Cc&ct~
+Sector   city~
+Desc     Welcome to the K46 Shopping District, To the North we have John's Junk Shop,
+East we have Mark's Army Surplus, to the West we have the Shining Cutlass, 
+and to the southeast we have the Colony Bank.
+~
+#EXIT
+Direction north~
+ToRoom    6021
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6019
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6009
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6020
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6017
+#ENDEXIT
+
+Reset M 0 6020 8 6010
+#ENDROOM
+
+#ROOM
+Vnum     6011
+Name     &RC&ro&Rr&ro&Rn&ra&Rd&ro &BD&br&Bi&bv&Be~
+Sector   city~
+Desc     This is Coronado Drive, The way to the Residential section. Not many people
+come here. Must not be their kinda place. The road is kept neat and there
+is very little littering the street, A couple of leaves here and there,
+nothing much else.
+~
+#EXIT
+Direction east~
+ToRoom    6002
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6012
+#ENDEXIT
+
+Reset M 0 6020 8 6011
+#ENDROOM
+
+#ROOM
+Vnum     6012
+Name     &RC&ro&Rr&ro&Rn&ra&Rd&ro &BD&br&Bi&bv&Be~
+Sector   city~
+Desc     This is Coronado Drive, The way to the Residential section. Not many people
+come here. Must not be their kinda place. The road is kept neat and there
+is very little littering the street, A couple of leaves here and there,
+nothing much else.
+~
+#EXIT
+Direction east~
+ToRoom    6011
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6013
+#ENDEXIT
+
+Reset M 0 6027 1 6012
+#ENDROOM
+
+#ROOM
+Vnum     6013
+Name     &RC&ro&Rr&ro&Rn&ra&Rd&ro &BD&br&Bi&bv&Be~
+Sector   city~
+Desc     This is Coronado Drive, The way to the Residential section. Not many people
+come here. Must not be their kinda place. The road is kept neat and there
+is very little littering the street, A couple of leaves here and there,
+nothing much else.
+~
+#EXIT
+Direction north~
+ToRoom    6016
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6012
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6015
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6014
+#ENDEXIT
+
+Reset M 0 6020 8 6013
+Reset M 0 6020 8 6013
+#ENDROOM
+
+#ROOM
+Vnum     6014
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction east~
+ToRoom    6013
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6015
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+#EXIT
+Direction north~
+ToRoom    6013
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6016
+Name     An Empty Apartment~
+Sector   city~
+Flags    nomob indoors empty_home~
+Owner    Xano~
+#EXIT
+Direction south~
+ToRoom    6013
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6017
+Name     &cK&C4&c6 &YB&Oan&Yk~
+Sector   city~
+Flags    indoors bank~
+Desc     This bank is first rate. Polished Oak tables, Gold timming along the Teller
+windows. ATM's Everywhere. This is truely a magnificent bank. The place
+looks like a mansion.. But it's a Bank?!
+~
+#EXIT
+Direction northwest~
+ToRoom    6010
+#ENDEXIT
+
+Reset M 0 6020 8 6017
+#ENDROOM
+
+#ROOM
+Vnum     6018
+Name     &PB&pe&Pd &Ra&rn&Rd &GB&gr&Ge&ga&Gk&gf&Ga&gs&Gt~
+Sector   city~
+Flags    nomob indoors hotel~
+Desc     This quaint little bed and breakfast is run by a little ole lady that very
+rarely shows herself. It's free to use and nicely decorated. 
+&B Say 'Breakfast' For something to Eat.
+~
+#EXIT
+Direction southeast~
+ToRoom    6002
+#ENDEXIT
+
+Reset M 0 6026 1 6018
+#MUDPROG
+Progtype  speech_prog~
+Arglist   breakfast~
+Comlist   mpecho &zNorma yells out from the kitchen, "&cGo to hell! I'm not your damn mom!&z"
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6019
+Name     &zM&wa&zr&wk&z'&ws &GA&gr&Gm&gy &BS&Ru&Br&Rp&Bl&Ru&Bs~
+Sector   city~
+Flags    indoors~
+Desc     Helmets, Sets of BDU's, Military grade weapons. Mark has it all. And he gets
+more on a regular basis, If he doesn't have something try stopping by
+at a later date. Who knows, maybe he'll have it.
+&BSay 'Stock' for Mark to refresh his inventory.
+~
+#EXIT
+Direction west~
+ToRoom    6010
+#ENDEXIT
+
+Reset M 0 6004 1 6019
+  Reset G 1 6005 1
+  Reset G 1 6007 1
+  Reset G 1 6011 1
+  Reset G 1 505 1
+  Reset G 1 504 1
+  Reset G 1 503 1
+#ENDROOM
+
+#ROOM
+Vnum     6020
+Name     &WS&wh&Wi&wn&Wi&wn&Wg &zC&ru&zt&rl&za&rs&zs~
+Sector   city~
+Flags    indoors~
+Desc     This is the Shining Cutlass, the premier Weapons dealership of K46. Which
+may seem odd being that weapons are banned from non-military use here on
+K46. But Obviously, Someone has connections within the local government.
+&BSay 'Stock' for Shelly to refresh her inventory.
+~
+#EXIT
+Direction east~
+ToRoom    6010
+#ENDEXIT
+
+Reset M 0 6002 1 6020
+  Reset G 1 6008 1
+  Reset G 1 6010 1
+  Reset G 1 502 1
+  Reset G 1 6009 1
+#ENDROOM
+
+#ROOM
+Vnum     6021
+Name     &RJ&ro&Rh&rn&R'&rs &zJ&wu&zn&wk &wS&Wh&wo&Wp~
+Sector   city~
+Flags    indoors~
+Desc     Tons of Junk litters this store. Everything you could ever need you can
+probably find here at John's. He's known as the Colony packrat. He doesn't
+what it is. He'll keep it.
+~
+#EXIT
+Direction south~
+ToRoom    6010
+#ENDEXIT
+
+Reset M 0 6003 1 6021
+  Reset G 0 2006 1
+  Reset G 0 10424 1
+  Reset G 0 10314 1
+  Reset G 0 2014 1
+  Reset G 0 2017 1
+  Reset G 0 2013 1
+  Reset G 0 6012 1
+Reset M 0 6025 1 6021
+#ENDROOM
+
+#ROOM
+Vnum     6022
+Name     &GS&ge&Gw&ge&Gr &CE&cn&wt&Wra&wn&cc&Ce~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    6023
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6029
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6026
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6006
+#ENDEXIT
+
+Reset M 0 6023 18 6022
+#ENDROOM
+
+#ROOM
+Vnum     6023
+Name     &GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    6024
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6022
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6028
+#ENDEXIT
+
+Reset M 0 6023 18 6023
+Reset M 0 6023 18 6023
+#ENDROOM
+
+#ROOM
+Vnum     6024
+Name     &GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    6036
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6032
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6029
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6023
+#ENDEXIT
+
+Reset M 0 6023 18 6024
+Reset M 0 6023 18 6024
+Reset M 0 6023 18 6024
+Reset M 0 6023 18 6024
+#ENDROOM
+
+#ROOM
+Vnum     6025
+Name     &GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+Sector   city~
+Flags    indoors~
+Desc     redit desc This is the janitor's closet. All the utilities for cleaning the
+complex are in this room. It is amazing that someone still works here in
+this building. The janitor usually roams about the complex picking of
+pieces of trash that he finds scattered about.
+~
+#EXIT
+Direction north~
+ToRoom    6026
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6038
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6026
+Name     &GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    6028
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6022
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6025
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6034
+#ENDEXIT
+
+Reset M 0 6023 18 6026
+#ENDROOM
+
+#ROOM
+Vnum     6027
+Name     &GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction up~
+ToRoom    6028
+#ENDEXIT
+
+Reset M 0 6023 18 6027
+#ENDROOM
+
+#ROOM
+Vnum     6028
+Name     &GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    6035
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6023
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6026
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6033
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6027
+#ENDEXIT
+
+Reset M 0 6023 18 6028
+#ENDROOM
+
+#ROOM
+Vnum     6029
+Name     &GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    6024
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6031
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6030
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6022
+#ENDEXIT
+
+Reset M 0 6023 18 6029
+Reset M 0 6023 18 6029
+#ENDROOM
+
+#ROOM
+Vnum     6030
+Name     &GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    6029
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6038
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6031
+Name     &GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction west~
+ToRoom    6029
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6032
+Name     &GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+Sector   city~
+Flags    nomob indoors~
+#EXIT
+Direction west~
+ToRoom    6024
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6033
+Name     &GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    6028
+#ENDEXIT
+
+Reset M 0 6023 18 6033
+#ENDROOM
+
+#ROOM
+Vnum     6034
+Name     &GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction east~
+ToRoom    6026
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6035
+Name     &GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction south~
+ToRoom    6028
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6037
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6036
+Name     &GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction south~
+ToRoom    6024
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6037
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6037
+Name     &GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    6040
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6036
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6035
+#ENDEXIT
+
+Reset M 0 6023 18 6037
+#ENDROOM
+
+#ROOM
+Vnum     6038
+Name     &GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction south~
+ToRoom    6039
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6030
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6025
+#ENDEXIT
+
+Reset M 0 6023 18 6038
+Reset M 0 6023 18 6038
+#ENDROOM
+
+#ROOM
+Vnum     6039
+Name     &GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction north~
+ToRoom    6038
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6040
+Name     &GW&ga&zn&wd&We&wr&zi&gn&Gg &Rt&rh&Re &GS&ge&Gw&ge&Gr&gs~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction south~
+ToRoom    6037
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6067
+#ENDEXIT
+
+Reset M 0 6023 18 6040
+Reset M 0 6023 18 6040
+#ENDROOM
+
+#ROOM
+Vnum     6041
+Name     &cK&C4&c6 &GC&go&Gm&gb&Ga&gt &RA&rr&Re&rn&Ra &GE&gn&wt&Wra&wn&gc&Ge ~
+Sector   city~
+Desc     &B Say 'Main' to Return.
+~
+#EXIT
+Direction west~
+ToRoom    6042
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   main~
+Comlist   mpechoat $n You are taken to the Main Sector.
+mpechoaround $n $n is transported to the Main Sector.
+mptransfer $n 6054
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6042
+Name     &zA&wp&zp&wr&zo&wa&zc&wh&zi&wn&zg &Bt&bh&Be &RA&rr&Re&rn&Ra~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    6041
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6043
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6043
+Name     &RA&rr&Re&rn&Ra &CL&co&Cb&cb&Cy~
+Sector   city~
+Flags    heal~
+#EXIT
+Direction east~
+ToRoom    6042
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6044
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6044
+Name     &RA&rr&Re&rn&Ra &BH&bu&Bb~
+Sector   city~
+Desc     &BSay 'Begin' To call up Holograms
+&BSay 'Final' To go to the Final Level
+~
+#EXIT
+Direction north~
+ToRoom    6046
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6043
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6047
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6045
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6048
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6049
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6050
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6052
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6051
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6053
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   final~
+Comlist   mptransfer $n 6055
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6045
+Name     &RA&rr&Re&rn&Ra &WR&wo&Wu&wn&Wd &z1~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    6044
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho &zA hologram of Gheed flickers to Life.
+mpmload 6005
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6046
+Name     &RA&rr&Re&rn&Ra &WR&wo&Wu&wn&Wd &z2~
+Sector   city~
+#EXIT
+Direction south~
+ToRoom    6044
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho &zA hologram appears.
+mpmload 6006
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6047
+Name     &RA&rr&Re&rn&Ra &WR&wo&Wu&wn&Wd &z3~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    6044
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin~
+Comlist   mpecho &zA hologram appears.
+mpmload 6007
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6048
+Name     &RA&rr&Re&rn&Ra &WR&wo&Wu&wn&Wd &z4~
+Sector   city~
+#EXIT
+Direction down~
+ToRoom    6044
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin ~
+Comlist   mpecho &zA hologram appears. 
+mpmload 6008
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6049
+Name     &RA&rr&Re&rn&Ra &WR&wo&Wu&wn&Wd &z5~
+Sector   city~
+#EXIT
+Direction up~
+ToRoom    6044
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin ~
+Comlist   mpecho &zA hologram appears. 
+mpmload 6015
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6050
+Name     &RA&rr&Re&rn&Ra &WR&wo&Wu&wn&Wd &z6~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction southwest~
+ToRoom    6044
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin ~
+Comlist   mpecho &zA hologram appears. 
+mpmload 6010
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6051
+Name     &RA&rr&Re&rn&Ra &WR&wo&Wu&wn&Wd &z7~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction northwest~
+ToRoom    6044
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin ~
+Comlist   mpecho &zA hologram appears. 
+mpmload 6011
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6052
+Name     &RA&rr&Re&rn&Ra &WR&wo&Wu&wn&Wd &z8~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction southeast~
+ToRoom    6044
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin ~
+Comlist   mpecho &zA hologram appears. 
+mpmload 6012
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6053
+Name     &RA&rr&Re&rn&Ra &WR&wo&Wu&wn&Wd &z9~
+Sector   city~
+Flags    indoors~
+#EXIT
+Direction northeast~
+ToRoom    6044
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin ~
+Comlist   mpecho &zA hologram appears. 
+mpmload 6013
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6054
+Name     &cK&C4&c6 &zT&wr&Wa&zn&ws&Wp&zo&wr&Wt &PP&pa&Pd~
+Sector   city~
+Flags    nomob~
+Desc     This is the K46 Transport Pad, where you can catch shuttles to different
+places. Several Shuttles are here awaiting passengers, but the best part
+is.. It's Free!
+&BSay 'Arena' to be taken to the Combat Arena&T
+~
+#EXIT
+Direction west~
+ToRoom    6008
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   arena~
+Comlist   mpechoat $n You are taken to the Combat Arena.
+mpechoaround $n $n is transported to the Combat Arena.
+mptransfer $n 6041
+~
+#ENDPROG
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   romm~
+Comlist   mpechoat $n You are Here.
+mpechoaround $n $n is gone.
+mptransfer $n 4101
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6055
+Name     &RA&rr&Re&rn&Ra &zF&wi&zn&wa&zl &YM&Oa&Yt&Oc&Yh~
+Sector   city~
+#EXIT
+Direction down~
+ToRoom    6044
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   begin ~
+Comlist   mpecho &zA hologram appears. 
+mpmload 6014
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6056
+Name     &zH&wul&zl &zof a &wS&Wt&wa&Wr&ws&Wh&wi&Wp~
+Sector   city~
+Flags    nomob~
+Desc     This is as close as you can get to the Hull without actually being inside
+the ship. "&zPr&we&Wd&wat&zor" is apparently the name of the ship as it is
+painted on both sides of the ships bow. A hole has been ripped in the hull
+obviously from the impact with the colony.
+~
+#EXIT
+Direction north~
+ToRoom    6057
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6067
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6057
+Name     &CI&cn&Cs&ci&Cd&ce &za &RC&rr&za&ws&zh&re&Rd &wS&Wt&wa&Wr&ws&Wh&wi&Wp~
+Sector   city~
+Desc     For colliding with a Colony, The ship seems to be in perfect working condition,
+well, if you take away the hole you just used to get inside. The Crew is 
+still out moving around and going on as though they haven't collided with
+anything at all.
+~
+#EXIT
+Direction north~
+ToRoom    6058
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6056
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6058
+Name     &zH&wa&Wl&zl&Ww&wa&zy~
+Sector   city~
+Desc     This Hallway is kept in perfect order. Consoles along the walls provide
+easy access to the ships computer, allowing easy crew access to enable alarms
+that signal Intruders, and any other such thing that would need to be
+told to the rest of the Crew.
+~
+#EXIT
+Direction north~
+ToRoom    6059
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6057
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6059
+Name     &CP&ca&wr&Wtia&wl&cl&Cy &RC&ro&zl&wl&Wa&wp&zs&re&Rd &zH&wa&Wl&zl&Ww&wa&zy~
+Sector   city~
+Desc     This hallway is much like the one before, only difference being there is 
+severe structural damage to the right side of the hallway. It could give way 
+at any moment.
+~
+#EXIT
+Direction north~
+ToRoom    6060
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6058
+#ENDEXIT
+
+Reset M 0 6018 17 6059
+#ENDROOM
+
+#ROOM
+Vnum     6060
+Name     &BS&bh&za&wdo&zw&be&Bd &wM&We&we&Wt&wi&Wn&wg &zP&wo&zi&wn&zt~
+Sector   city~
+Desc     This is the main intersection of the Predator. The Only way other than through
+the Engine bays to go from the Starboard side to the Port side. North is
+the path to the Elevator, that will take you to the Command Deck, or down to
+the Crew Quarters.
+~
+#EXIT
+Direction north~
+ToRoom    6071
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6061
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6059
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6065
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6061
+Name     &BP&bo&zr&Bt&bs&zi&Bd&be &zH&wa&Wl&zl&Ww&wa&zy~
+Sector   city~
+Desc     This Hallway is kept in perfect order. Consoles along the walls provide
+easy access to the ships computer, allowing easy crew access to enable alarms
+that signal Intruders, and any other such thing that would need to be
+told to the rest of the Crew.
+~
+#EXIT
+Direction north~
+ToRoom    6072
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6063
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6062
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6060
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6062
+Name     &BP&bo&Br&bt &zA&wr&zm&wo&zr&wy~
+Sector   city~
+Desc     Weapons, Armor, Grenades, Ammo. Anything you could need for a military
+offensive, is here in this Armory. Everything here looks as though it's in
+perfect working condition but you can't get to any of it without the
+permission of the Captain.
+~
+#EXIT
+Direction north~
+ToRoom    6061
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6063
+Name     &BP&bo&zr&Bt&bs&zi&Bd&be &RB&ro&Rw &YV&Oiewin&Yg &GD&ge&Gc&gk~
+Sector   city~
+Flags    safe~
+Desc     This is the Bow Viewing Deck, Not much is to be seen from this window,
+All you can really see is the side of the Colony. The fountains here 
+are simply beautiful, and the sound is so soothing.
+~
+#EXIT
+Direction north~
+ToRoom    6073
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6061
+#ENDEXIT
+
+Reset M 0 6018 17 6063
+Reset M 0 6018 17 6063
+Reset M 0 6019 14 6063
+#ENDROOM
+
+#ROOM
+Vnum     6064
+Name     &CS&ct&war&Wbo&wa&cr&Cd &zA&wr&zm&wo&zr&wy~
+Sector   city~
+Desc     Weapons, Armor, Grenades, Ammo. Anything you could need for a military
+offensive, is here in this Armory. Everything here looks as though it's in
+perfect working condition but you can't get to any of it without the
+permission of the Captain.
+~
+#EXIT
+Direction north~
+ToRoom    6065
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6065
+Name     &CSt&car&wbo&Wa&wrd&csi&Cde &zH&wa&Wl&zl&Ww&wa&zy~
+Sector   city~
+Desc     This Hallway is kept in perfect order. Consoles along the walls provide
+easy access to the ships computer, allowing easy crew access to enable alarms
+that signal Intruders, and any other such thing that would need to be
+told to the rest of the Crew.
+~
+#EXIT
+Direction north~
+ToRoom    6070
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6060
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6064
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6066
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6066
+Name     &CSt&car&wbo&Wa&wrd&csi&Cde &RB&ro&Rw &YV&Oiewin&Yg &GD&ge&Gc&gk~
+Sector   city~
+Flags    safe~
+Desc     This is the Bow Viewing Deck, Not much is to be seen from this window,
+All you can really see is the side of the Colony. The fountains here 
+are simply beautiful, and the sound is so soothing.
+~
+#EXIT
+Direction north~
+ToRoom    6069
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6065
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6067
+Name     &CB&ce&Cf&co&Cr&ce &za &RC&rr&za&Ws&zh&re&Rd &wS&Wt&wa&Wr&ws&Wh&wi&Wp~
+Sector   city~
+Flags    nomob~
+Desc     A large ship has crashed into the side of K46, embedding itself so well in
+the side of K46 that there is no atmosphere leakage. The air is still 
+breatheable and it doesn't seem to want to suck you into space. You must
+be ok.
+~
+#EXIT
+Direction north~
+ToRoom    6056
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6040
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6068
+Name     &CS&ct&wa&Wrbo&wa&cr&Cd &zG&wu&zn &wB&za&wt&zt&we&zr&wy~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    6069
+#ENDEXIT
+
+Reset M 0 6018 17 6068
+#ENDROOM
+
+#ROOM
+Vnum     6069
+Name     &zI&wn&Wt&ze&wr&Ws&ze&wc&Wt&zi&wo&Wn~
+Sector   city~
+Desc     This is a secondary Intersection for the Main Deck. West is the Gun Battery,
+East is the Engineering sector, and North and South are the Viewing Decks
+~
+#EXIT
+Direction north~
+ToRoom    6079
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6070
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6066
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6068
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6070
+Name     &CS&ct&wa&Wrbo&wa&cr&Cd &zEngineering Sector~
+Sector   city~
+Flags    factory~
+Desc     This is the Engineering sector, Crew members come here to machine parts 
+for different places on the ship, make something special for someone who
+has caught their eye, or even work on something for their kids back home.
+~
+#EXIT
+Direction north~
+ToRoom    6078
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6065
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6069
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6071
+Name     &zP&wa&zt&wh &zto the &WE&wl&We&wv&Wa&wt&Wo&wr&T~
+Sector   city~
+Desc     This is the main path to the Elevator between decks. The path is clean and
+well taken care of. The crew takes great pride in their ship, and it's clearly
+visible in the way they keep it clean.
+~
+#EXIT
+Direction north~
+ToRoom    6077
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6060
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6072
+Name     &BP&bo&Br&bt &zEngineering Sector&T~
+Sector   city~
+Flags    factory~
+Desc     This is the Engineering sector, Crew members come here to machine parts 
+for different places on the ship, make something special for someone who
+has caught their eye, or even work on something for their kids back home.
+~
+#EXIT
+Direction north~
+ToRoom    6076
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6073
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6061
+#ENDEXIT
+
+Reset M 0 6019 14 6072
+Reset M 0 6018 17 6072
+#ENDROOM
+
+#ROOM
+Vnum     6073
+Name     &zI&wn&Wt&ze&wr&Ws&ze&wc&Wt&zi&wo&Wn~
+Sector   city~
+Desc     This is a secondary Intersection for the Main Deck. East is the Gun Battery,
+West is the Engineering sector, and North and South are the Viewing Decks.
+~
+#EXIT
+Direction north~
+ToRoom    6075
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6074
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6063
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6072
+#ENDEXIT
+
+Reset M 0 6019 14 6073
+#ENDROOM
+
+#ROOM
+Vnum     6074
+Name     &BP&bo&Br&bt &zG&wu&zn &wB&za&wt&zt&we&zr&wy~
+Sector   city~
+#EXIT
+Direction west~
+ToRoom    6073
+#ENDEXIT
+
+Reset M 0 6019 14 6074
+#ENDROOM
+
+#ROOM
+Vnum     6075
+Name     &BP&bo&zr&Bt&bs&zi&Bd&be &RA&rf&Rt &YV&Oiewin&Yg &GD&ge&Gc&gk&T~
+Sector   city~
+Flags    safe~
+Desc     This is the Aft Viewing Deck,The view of the Stars is amazing, and the
+glow of the engines just adds to the scene. The fountains here are simply
+beautiful, and the sound is so soothing.
+~
+#EXIT
+Direction south~
+ToRoom    6073
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6076
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6076
+Name     &BP&bo&zr&Bt&bs&zi&Bd&be &RE&rn&wt&Wra&wn&rc&Re &zto the Engine Rooms&T~
+Sector   city~
+Desc     This is an Entrance to the Engine compartments, The cound s of the engines
+is almost unbearable even here outside the compartment. Pity the poor souls
+that have to work inside the compartments.
+~
+#EXIT
+Direction north~
+ToRoom    6082
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6075
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6072
+#ENDEXIT
+
+Reset M 0 6019 14 6076
+#ENDROOM
+
+#ROOM
+Vnum     6077
+Name     &WE&wl&We&wv&Wa&wt&Wo&wr~
+Sector   city~
+Desc     This is the Main Elevator, Up leads to the Command Deck, Down leads to the
+Crew Quarters. The elevator is state of the art and moves up and down in
+complete silence.
+~
+#EXIT
+Direction south~
+ToRoom    6071
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6084
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6090
+#ENDEXIT
+
+Reset M 0 6019 14 6077
+Reset M 0 6019 14 6077
+#ENDROOM
+
+#ROOM
+Vnum     6078
+Name     &CSt&car&wbo&Wa&wrd&csi&Cde &RE&rn&wt&Wra&wn&rc&Re &zto the Engine Rooms&T~
+Sector   city~
+Desc     This is an Entrance to the Engine compartments, The cound s of the engines
+is almost unbearable even here outside the compartment. Pity the poor souls
+that have to work inside the compartments.
+~
+#EXIT
+Direction north~
+ToRoom    6080
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6070
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6079
+#ENDEXIT
+
+Reset M 0 6019 14 6078
+#ENDROOM
+
+#ROOM
+Vnum     6079
+Name     &CS&ct&wa&Wrbo&wa&cr&Cd &RA&rf&Rt &YV&Oiewin&Yg &GD&ge&Gc&gk&T~
+Sector   city~
+Flags    safe~
+Desc     This is the Aft Viewing Deck,The view of the Stars is amazing, and the
+glow of the engines just adds to the scene. The fountains here are simply
+beautiful, and the sound is so soothing.
+~
+#EXIT
+Direction east~
+ToRoom    6078
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6069
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6080
+Name     &CS&ct&wa&Wrbo&wa&cr&Cd &zEngine Compartment~
+Sector   city~
+Desc     The sounds and heat of the engines is almost unbearable. Crew members walk
+around in fire protection suits, and sound dampening helmets. Perhaps leaving
+in short order would be a good idea.
+~
+#EXIT
+Direction east~
+ToRoom    6081
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6078
+#ENDEXIT
+
+Reset M 0 6018 17 6080
+#ENDROOM
+
+#ROOM
+Vnum     6081
+Name     &BC&Ce&cn&bt&cr&Ca&Bl &zEngine Compartment~
+Sector   city~
+Desc     The sounds and heat of the engines is almost unbearable. Crew members walk
+around in fire protection suits, and sound dampening helmets. Perhaps leaving
+in short order would be a good idea.
+~
+#EXIT
+Direction east~
+ToRoom    6082
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6080
+#ENDEXIT
+
+Reset M 0 6019 14 6081
+#ENDROOM
+
+#ROOM
+Vnum     6082
+Name     &BP&bo&Br&bt &zEngine Compartment~
+Sector   city~
+Desc     The sounds and heat of the engines is almost unbearable. Crew members walk
+around in fire protection suits, and sound dampening helmets. Perhaps leaving
+in short order would be a good idea.
+~
+#EXIT
+Direction south~
+ToRoom    6076
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6081
+#ENDEXIT
+
+Reset M 0 6018 17 6082
+#ENDROOM
+
+#ROOM
+Vnum     6083
+Name     &GF&gi&Gr&gs&Gt &CO&cf&Cf&ci&Cc&ce&Cr&c'&Cs &GQ&guarter&Gs~
+Sector   city~
+Desc     A Bed rests in the far corner of the room, A Desk and chair in the center,
+and Everything the floor, the cieling, the walls... it all a crystaline
+Ice Blue color. And the room is unnaturaly cold.
+~
+#EXIT
+Direction south~
+ToRoom    6084
+#ENDEXIT
+
+Reset M 0 6017 1 6083
+Reset O 0 6037 1 6083
+#ENDROOM
+
+#ROOM
+Vnum     6084
+Name     &WS&we&Wc&wu&Wr&wi&Wt&wy &RC&rh&ze&wc&Wkp&wo&zi&rn&Rt~
+Sector   city~
+Flags    nomob~
+Desc     As you step off the Elevator you are scanned by several computers that
+check for concealed weapons, Explosives, or any other threats to the command
+of the Predator.
+North is the First Officer, South is the Captain, East and West are the
+missile batteries, and Up the lift here, is the Main Bridge.
+~
+#EXIT
+Direction north~
+ToRoom    6083
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    6085
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6087
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    6086
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6089
+#ENDEXIT
+
+#EXIT
+Direction down~
+ToRoom    6077
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6085
+Name     &BP&bo&zr&Bt&bs&zi&Bd&be &zM&wi&zs&ws&zi&wl&ze &wB&za&wt&zt&we&zr&wy~
+Sector   city~
+#EXIT
+Direction west~
+ToRoom    6084
+#ENDEXIT
+
+Reset M 0 6018 17 6085
+Reset M 0 6018 17 6085
+#ENDROOM
+
+#ROOM
+Vnum     6086
+Name     &CSt&car&wbo&Wa&wrd&csi&Cde &zM&wi&zs&ws&zi&wl&ze &wB&za&wt&zt&we&zr&wy~
+Sector   city~
+#EXIT
+Direction east~
+ToRoom    6084
+#ENDEXIT
+
+Reset M 0 6018 17 6086
+Reset M 0 6018 17 6086
+Reset M 0 6018 17 6086
+Reset M 0 6018 17 6086
+#ENDROOM
+
+#ROOM
+Vnum     6087
+Name     &zH&wa&Wl&zl&Ww&wa&zy&T~
+Sector   city~
+#EXIT
+Direction north~
+ToRoom    6084
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6088
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6088
+Name     &RC&Ya&Wp&wta&Wi&Yn'&Rs &GQ&guarter&Gs&T~
+Sector   city~
+Desc     There is very little in this room aside from the Desk in the center. It
+feels like a furnace in here and the room is all black. Black walls, black
+floor, black ceiling...Black Everything.
+~
+#EXIT
+Direction north~
+ToRoom    6087
+#ENDEXIT
+
+Reset M 0 6016 1 6088
+Reset O 0 6037 1 6088
+#ENDROOM
+
+#ROOM
+Vnum     6089
+Name     &wM&Wa&wi&Wn &RB&rr&Ri&rd&Rg&re&T~
+Sector   city~
+Desc     This is the main bridge. The Nerve center. From here All aspects of the
+Predator are controlled. Crew members run around checking on the different
+stations around the bridge. Weapons control, Sensory arrays, navigations,
+all of it controlled from here.
+~
+#EXIT
+Direction down~
+ToRoom    6084
+#ENDEXIT
+
+Reset M 0 6021 1 6089
+Reset M 0 6022 1 6089
+Reset O 0 6038 1 6089
+#ENDROOM
+
+#ROOM
+Vnum     6090
+Name     &WE&wl&We&wv&Wa&wt&Wo&wr~
+Sector   city~
+Desc     This is the Main Elevator, Up leads to the Main Deck, and further up leads to
+the Command Deck. The elevator is state of the art and moves up and down in
+complete silence.
+~
+#EXIT
+Direction south~
+ToRoom    6091
+#ENDEXIT
+
+#EXIT
+Direction up~
+ToRoom    6077
+#ENDEXIT
+
+Reset M 0 6019 14 6090
+#ENDROOM
+
+#ROOM
+Vnum     6091
+Name     &YC&Ore&Yw &GQ&guarter&Gs~
+Sector   city~
+Desc     This is the Crew's quarters, It's fairly nondescript, Beds, tables, places
+where food can be made. All the neccesities needed to live comfortably while
+away from home.
+~
+#EXIT
+Direction north~
+ToRoom    6090
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6092
+#ENDEXIT
+
+Reset M 0 6018 17 6091
+#ENDROOM
+
+#ROOM
+Vnum     6092
+Name     &YC&Ore&Yw &GQ&guarter&Gs~
+Sector   city~
+Desc     This is the Crew's quarters, It's fairly nondescript, Beds, tables, places
+where food can be made. All the neccesities needed to live comfortably while
+away from home.
+~
+#EXIT
+Direction north~
+ToRoom    6091
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    6097
+#ENDEXIT
+
+Reset M 0 6019 14 6092
+#ENDROOM
+
+#ROOM
+Vnum     6093
+Name     &zI&wn&Wn&we&zr &zS&wa&Wn&zc&Wt&wu&zm of &WC&wo&Wn&wq&Wu&we&Ws&wt~
+Sector   city~
+Desc     Light flows in mysterious currents here, making the walls of the room seem
+as if they're made of pure light. The floor is made of white marble, and
+there doesnt appear to be a ceiling. The horse here is white and seems to
+emanate with a strange light, while the rider atop it seems to suck the very
+light from the room.
+~
+#EXIT
+Direction southeast~
+ToRoom    6097
+#ENDEXIT
+
+Reset M 0 6031 1 6093
+#ENDROOM
+
+#ROOM
+Vnum     6094
+Name     &zI&wn&Wn&we&zr &zS&wa&Wn&zc&Wt&wu&zm of &RW&ra&Rr~
+Sector   city~
+Desc     What little light there is here illuminates the blood covered floor and
+walls. The ceiling appears to have been ripped off by some greater power,
+and the blood seems as though it's fresh. The horse here is deep crimson
+in color and almost indistinguisable from the room. The rider atop it
+is cloaked in black and seems to steal the very warmth from your bones.
+The most notable feature of the rider is the collar he wears around his
+neck.
+~
+#EXIT
+Direction southwest~
+ToRoom    6097
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6095
+Name     &zI&wn&Wn&we&zr &zS&wa&Wn&zc&Wt&wu&zm of &GF&ga&cmi&gn&Ge~
+Sector   city~
+Desc     Everything about this room seems odd. The piles of food, the stacks of barrels
+with wine and oil in them, Not to mention the odd crunching noise as you
+walk. As you look you see the floor is covered in millions of beetles,
+and they are trying to climb up the walls. The black horse here looks almost
+as if it were brought straight from hell itself. And the Rider looks much
+the same Most notably his boots.
+~
+#EXIT
+Direction northwest~
+ToRoom    6097
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6096
+Name     &zI&wn&Wn&we&zr &zS&wa&Wn&zc&Wt&wu&zm of &zD&we&Wa&wt&zh~
+Sector   city~
+Desc     This unnaturally dark room has very little in the ways of illumination.
+The walls are made of a shimering black stone, possibly obsidian, and the
+floor is made of human bones. This pale horse is nearly starved and looks
+like litle more than flesh and bone. The Rider is cloaked in black and shrouded
+in immense power. The most notable feature about the rider is the Guantlets. 
+~
+#EXIT
+Direction northeast~
+ToRoom    6097
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6097
+Name     &zS&wa&Wn&zc&Wt&wu&zm of &WB&we&zg&Wi&wn&zn&Wi&wn&zg&Ws &zand &zE&wn&Wd&zi&Wn&wg&zs~
+Sector   city~
+Desc     Five pillars are located here. White, Red, Black, Transparent, and the middlle
+pillar is a swirl of black and white that is constantly shifting. Shimmering
+archways lead off in any of 4 directions, and there appear to be no other
+exits from here.. Perhaps there is something that must be completed before
+you can leave here.
+~
+#EXIT
+Direction north~
+ToRoom    6092
+#ENDEXIT
+
+#EXIT
+Direction northeast~
+ToRoom    6094
+#ENDEXIT
+
+#EXIT
+Direction northwest~
+ToRoom    6093
+#ENDEXIT
+
+#EXIT
+Direction southeast~
+ToRoom    6095
+#ENDEXIT
+
+#EXIT
+Direction southwest~
+ToRoom    6096
+#ENDEXIT
+
+#MUDPROG
+Progtype  speech_prog~
+Arglist   p Show me the Darkness.~
+Comlist   mptransfer $n 6098
+~
+#ENDPROG
+
+#ENDROOM
+
+#ROOM
+Vnum     6098
+Name     &zP&wat&zh of &RB&rurnin&Rg &WB&wodie&Ws~
+Sector   city~
+Desc     This path is made of the bodies off all those that have tried and failed 
+to claim the gifts of the horsemen. The bodies slowly burn but the flames
+don't seem to harm you as you walk through. Screams of pain and agony can
+be heard coming from somewhere down below.
+~
+#EXIT
+Direction east~
+ToRoom    6099
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     6099
+Name     &zC&wh&Wa&zm&Wb&we&zr of &RA&rp&zo&wc&Wal&wy&zp&rs&Re~
+Sector   city~
+Desc     This room is quite strange indeed. The walls are covered in Blood, and 
+strange runes can be seen glowing beneath the blood. Closer examination
+of the runes reveals that they actually change to a language you understand
+you try to read them. "Here lies the gift for those that stop the Apocalypse"
+~
+#EXIT
+Direction down~
+ToRoom    6002
+#ENDEXIT
+
+Reset M 0 6036 1 6099
+  Reset G 1 10424 1
+Reset O 0 6017 1 6099
+#ENDROOM
+
+#ENDAREA

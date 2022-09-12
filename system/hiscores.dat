@@ -1,0 +1,211 @@
+#HISCORES
+#TABLE
+Keyword    pkill
+Desc       The Best Player Killers~
+Vnum       -1
+MaxLength  25
+Entry      Aramaust 1218
+Entry      Akiran 1052
+Entry      Cray 106
+Entry      Jefed 16
+Entry      Maldar 13
+Entry      Daviticus 3
+Entry      Aralia 3
+Entry      Toshiba 3
+Entry      Scorpion 2
+Entry      Scoyn 2
+Entry      Rice 1
+Entry      Remy 1
+Entry      Xenarg 1
+Entry      Rivelinho 1
+Entry      Aleron 0
+Entry      Collen 0
+Entry      Catherine 0
+Entry      Roclor 0
+Entry      Aramis 0
+Entry      Uthar 0
+Entry      Tremor 0
+Entry      Caro 0
+Entry      Maximus 0
+Entry      Akira 0
+Entry      Draxxus 0
+End
+
+#TABLE
+Keyword    deaths
+Desc       People Who've Died the Most~
+Vnum       -1
+MaxLength  25
+Entry      Aramaust 1129
+Entry      Akiran 1064
+Entry      Arcturis 154
+Entry      Jefed 64
+Entry      Daviticus 56
+Entry      Aralia 39
+Entry      Jay 34
+Entry      Ragnarok 28
+Entry      Khaos 23
+Entry      Melden 19
+Entry      Rethel 18
+Entry      Fayte 16
+Entry      Toshiba 15
+Entry      Xenarg 15
+Entry      Souza 14
+Entry      Viktoria 13
+Entry      Rosalinda 12
+Entry      Deximus 12
+Entry      Hellspawn 11
+Entry      Maldar 11
+Entry      Athon 10
+Entry      Hiead 10
+Entry      Gyran 9
+Entry      Rivelinho 9
+Entry      Draxxus 0
+End
+
+#TABLE
+Keyword    hasfroze
+Desc       Has Froze Others Most~
+Vnum       -1
+MaxLength  25
+Entry      Cray 13
+Entry      Agar 2
+Entry      Aramaust 1
+Entry      Scoyn 1
+Entry      Aleron 0
+Entry      Collen 0
+Entry      Catherine 0
+Entry      Roclor 0
+Entry      Aramis 0
+Entry      Uthar 0
+Entry      Rosalinda 0
+Entry      Tremor 0
+Entry      Caro 0
+Entry      Daviticus 0
+Entry      Hunter 0
+Entry      Maximus 0
+Entry      Zenvega 0
+Entry      Ghost 0
+Entry      Racor 0
+Entry      Mouse 0
+Entry      Gunther 0
+Entry      Aralia 0
+Entry      Toshiba 0
+Entry      Slanith 0
+Entry      Akira 0
+End
+
+#TABLE
+Keyword    beenfroze
+Desc       Has been Frozen the Most~
+Vnum       -1
+MaxLength  25
+Entry      Cray 4
+Entry      Veraca 1
+Entry      Aramaust 1
+Entry      Amras 1
+Entry      Maldar 1
+Entry      Aleron 0
+Entry      Collen 0
+Entry      Catherine 0
+Entry      Roclor 0
+Entry      Aramis 0
+Entry      Uthar 0
+Entry      Rosalinda 0
+Entry      Tremor 0
+Entry      Caro 0
+Entry      Daviticus 0
+Entry      Hunter 0
+Entry      Maximus 0
+Entry      Zenvega 0
+Entry      Ghost 0
+Entry      Racor 0
+Entry      Aralia 0
+Entry      Toshiba 0
+Entry      Slanith 0
+Entry      Akira 0
+Entry      Scoyn 0
+End
+
+#TABLE
+Keyword    apkills
+Desc       Most Kills in Arena~
+Vnum       -1
+MaxLength  25
+Entry      Cray 270
+Entry      Scoyn 16
+Entry      Akiran 9
+Entry      Aramaust 8
+Entry      Toshiba 7
+Entry      Hiead 2
+Entry      Aralia 1
+Entry      Aleron 0
+Entry      Collen 0
+Entry      Catherine 0
+Entry      Roclor 0
+Entry      Aramis 0
+Entry      Uthar 0
+Entry      Rosalinda 0
+Entry      Tremor 0
+Entry      Caro 0
+Entry      Daviticus 0
+Entry      Hunter 0
+Entry      Maximus 0
+Entry      Agar 0
+Entry      Zenvega 0
+Entry      Ghost 0
+Entry      Slanith 0
+Entry      Akira 0
+Entry      Draxxus 0
+End
+
+#TABLE
+Keyword    apdeaths
+Desc       Most Deaths in the arena~
+Vnum       -1
+MaxLength  10
+Entry      Akiran 20
+Entry      Cray 7
+Entry      Toshiba 6
+Entry      Aramaust 6
+Entry      Aralia 5
+Entry      Hiead 4
+Entry      Flick 3
+Entry      Khaos 1
+Entry      Amras 1
+Entry      Draxxus 0
+End
+
+#TABLE
+Keyword    mkills
+Desc       Players Who've killed the most Mobs~
+Vnum       -1
+MaxLength  25
+Entry      Toshiba 190711
+Entry      Xenarg 182489
+Entry      Aralia 64249
+Entry      Maldar 63844
+Entry      Akiran 61893
+Entry      Gyran 54645
+Entry      Aramaust 54220
+Entry      Rhaurc 47016
+Entry      Jefed 35294
+Entry      Hiead 30948
+Entry      Ragnarok 29987
+Entry      Remy 27366
+Entry      Mal 23869
+Entry      Arishem 23269
+Entry      Rice 21723
+Entry      Saul 20187
+Entry      Agar 18696
+Entry      Khaos 18224
+Entry      Hellspawn 18217
+Entry      Wolfe 18131
+Entry      Rethel 16254
+Entry      Daviticus 16170
+Entry      Tremor 14211
+Entry      Taeyeon 13960
+Entry      Draxx 6
+End
+
+#END

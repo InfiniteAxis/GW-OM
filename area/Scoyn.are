@@ -1,0 +1,164 @@
+#FUSSAREA
+#AREADATA
+Version      2
+Name         Venice~
+Author       scoyn~
+Ranges       0 0 0 0
+ResetFreq    15
+Flags        prototype~
+#ENDAREADATA
+
+#MOBILE
+Vnum       1000
+Keywords   first~
+Short      a newly created first~
+Long       Some god abandoned a newly created first here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc scavenger prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#MUDPROG
+Progtype  act_prog~
+Arglist   "steps out of a ship."~
+Comlist   say Hello! Welcome to Venice, Italy!
+mpsleep 5
+say I hope you have a fantastic visit!
+~
+#ENDPROG
+
+#ENDMOBILE
+
+#MOBILE
+Vnum       1050
+Keywords   last~
+Short      a newly created last~
+Long       Some god abandoned a newly created last here.
+~
+Race       Colonist~
+Position   standing~
+DefPos     standing~
+Gender     nonbinary~
+Actflags   npc prototype~
+Stats1     0 1 0 0 0 0
+Stats2     0 0 0
+Stats3     0 0 0
+Stats4     0 0 1 0 0
+Attribs    10 10 10 10 10 10 10
+Saves      0 0 0 0 0
+#ENDMOBILE
+
+#OBJECT
+Vnum     1000
+Keywords first~
+Type     trash~
+Short    a first~
+Long     A first is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#OBJECT
+Vnum     1001
+Keywords wallet bmf bad mother fucker~
+Type     container~
+Short    &OBad Mother Fucker~
+Long     A &Obrown leather wallet &Dwith writing on the front has been left here.~
+Flags    prototype~
+WFlags   take hold~
+Values   1000 0 0 0 0 0
+Stats    0 1000 100 0 0
+#EXDESC
+ExDescKey    wallet bmf bad mother fucker~
+ExDesc       &x^O            ____                _        &D    
+&x^O           |  _ \              | |           &D
+&x^O           | |_) |   __ _    __| |           &D
+&x^O           |  _ <   / _` |  / _` |           &D
+&x^O           | |_) | | (_| | | (_| |           &D
+&x^O           |____/   \__,_|  \__,_|           &D
+&x^O  __  __           _     _                   &D
+&x^O |  \/  |         | |   | |                  &D
+&x^O | \  / |   ___   | |_  | |__     ___   _ __ &D
+&x^O | |\/| |  / _ \  | __| | '_ \   / _ \ | '__|&D
+&x^O | |  | | | (_) | | |_  | | | | |  __/ | |   &D
+&x^O |_|  |_|  \___/   \__| |_| |_|  \___| |_|   &D
+&x^O  ______                  _                  &D
+&x^O |  ____|                | |                 &D
+&x^O | |__     _   _    ___  | | __   ___   _ __ &D
+&x^O |  __|   | | | |  / __| | |/ /  / _ \ | '__|&D
+&x^O | |      | |_| | | (__  |   <  |  __/ | |   &D
+&x^O |_|       \__,_|  \___| |_|\_\  \___| |_|   &D
+~
+#ENDEXDESC
+
+#MUDPROG
+Progtype  get_prog~
+Arglist   100~
+Comlist   mer $n $n picks up $O and puts it in $S back pocket.
+~
+#ENDPROG
+
+#ENDOBJECT
+
+#OBJECT
+Vnum     1050
+Keywords last~
+Type     trash~
+Short    a last~
+Long     A last is here.~
+Flags    prototype~
+Values   0 0 0 0 0 0
+Stats    1 0 0 0 0
+#ENDOBJECT
+
+#ROOM
+Vnum     1000
+Name     Spaceport Marghera~
+Sector   city~
+Flags    nomob prototype~
+Desc     Welcome to Spaceport Marghera! Because of the fragility of Venice itself, 
+this has been designated the main port of entry to the archipelago of Venice.
+To the west of the spaceport there are docks of cargo ships being unloaded
+with various goods and supplies for the area. To the east there are people
+getting embarking and disembarking from their personal crafts as they head to
+and from larger crafts that lead off planet. All throughout the area, mechanics
+loosening and tightening parts on ships, their plasma cutters removing damaged
+can be seen diligently working on different projects. The sound of their drills
+pieces of the hulls, and the clatter of materials being thrown inot a pile.
+Repair droids rush in all directions to help the mechanics.
+~
+#EXIT
+Direction north~
+ToRoom    1001
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1001
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#EXIT
+Direction south~
+ToRoom    1000
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum     1050
+Name     Floating in a void~
+Sector   city~
+Flags    nomob prototype~
+#ENDROOM
+
+#ENDAREA
