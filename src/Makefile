@@ -48,7 +48,7 @@ all:
 -include dependencies.d
 
 ifdef CYGWIN
-gwom: $(O_FILES)
+gwom: o $(O_FILES)
 	rm -f gwom.exe
 	dlltool --export-all --output-def gwom.def $(O_FILES)
 	dlltool --dllname gwom.exe --output-exp gwom.exp --def gwom.def
@@ -66,7 +66,7 @@ clean:
 	@rm -f o/*.o gwom.exe dependencies.d resolver.exe resolver.o *~
 
 else
-gwom: $(O_FILES)
+gwom: o $(O_FILES)
 	rm -f gwom
 	$(CC) -export-dynamic -o gwom $(O_FILES) $(L_FLAGS) $(NOCRYPT)
 	@echo "$(L_BLUE)[- $(L_YELLOW)Generating dependency file ...$(L_NRM)";
@@ -81,6 +81,9 @@ gwom: $(O_FILES)
 clean:
 	@rm -f o/*.o gwom dependencies.d resolver resolver.o *~
 endif
+
+o:
+	mkdir o
 
 dns: resolver.o
 	rm -f resolver
