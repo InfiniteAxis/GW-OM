@@ -2110,7 +2110,8 @@ short str_similarity( const char *astr, const char *bstr )
 		if( LOWER( *astr ) == LOWER( *bstr ) )
 			matches++;
 
-		if( ++bstr == '\0' )
+                bstr++;
+		if( *bstr == '\0' )
 			return matches;
 	}
 
@@ -2133,7 +2134,8 @@ short str_prefix_level( const char *astr, const char *bstr )
 		else
 			return matches;
 
-		if( ++bstr == '\0' )
+                bstr++;
+		if( *bstr == '\0' )
 			return matches;
 	}
 

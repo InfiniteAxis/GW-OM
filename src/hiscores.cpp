@@ -232,7 +232,7 @@ CMDF( do_hiscoset )
 	/*
 	 * at this point, its hiscoset set entry ..
 	 */
-	if( argument == '\0' || !is_number( argument ) )
+	if( *argument == '\0' || !is_number( argument ) )
 	{
 		send_to_char( "Second argument to set entry must be numberic.\r\n", ch );
 		return;
