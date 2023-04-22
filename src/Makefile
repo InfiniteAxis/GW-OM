@@ -8,6 +8,7 @@ L_GREEN   = \033[1;32m
 L_WHITE   = \033[1;37m
 L_NRM     = \033[0m
 L_YELLOW  = \033[1;33m
+L_RED	  = \033[1;31m
 
 #Uncomment to compile in Cygwin
 #CYGWIN = -DCYGWIN
@@ -40,42 +41,45 @@ O_FILES := $(patsubst %.cpp,o/%.o,$(C_FILES))
 
 H_FILES = $(wildcard *.h)
 
+ifdef CYGWIN
+G_BIN = gwom.exe
+R_BIN = resolver.exe
+DLLS  = gwom.def gwom.exp
+else
+G_BIN = gwom
+R_BIN = resolver
+DLLS  =
+endif
+BINARIES = $(G_BIN) $(R_BIN)
+
 all:
-	@$(MAKE) -s gwom
-	@$(MAKE) -s resolver
+	@$(MAKE) -s $(G_BIN)
+	@$(MAKE) -s $(R_BIN)
+
+clean:
+	@echo "$(L_BLUE)[- $(L_RED)Removing build clutter.$(L_NRM)";
+	@rm -f o/*.o *~ $(BINARIES) dependencies.d $(DLLS)
+	-@rmdir o 2> /dev/null || true
 
 # pull in dependency info for *existing* .o files
+# but ONLY if it already exists, so make clean doesn't regenerate them!
+ifneq ("$(wildcard dependencies.d)", "")
 -include dependencies.d
+endif
 
+$(G_BIN): dependencies.d o $(O_FILES)
+	@rm -f $(G_BIN)
 ifdef CYGWIN
-gwom: dependencies.d o $(O_FILES)
-	@rm -f gwom.exe
 	dlltool --export-all --output-def gwom.def $(O_FILES)
 	dlltool --dllname gwom.exe --output-exp gwom.exp --def gwom.def
 	$(CC) -o gwom.exe $(O_FILES) gwom.exp $(L_FLAGS) $(NOCRYPT)
-	@echo "$(L_BLUE)[- $(L_GREEN) Done compiling mud.$(L_NRM)";
-	@chmod g+w gwom.exe
-	@chmod a+x gwom.exe
-	@chmod g+w $(O_FILES)
-
-clean:
-	@rm -f o/*.o gwom.exe dependencies.d resolver.exe *~
-	@rmdir o
-
 else
-gwom: dependencies.d o $(O_FILES)
-	@rm -f gwom
-	$(CC) -export-dynamic -o gwom $(O_FILES) $(L_FLAGS) $(NOCRYPT)
-	@echo "$(L_BLUE)[- $(L_GREEN) Done compiling mud.$(L_NRM)";
-	@chmod g+w gwom
-	@chmod a+x gwom
-	@chmod g+w $(O_FILES)
-
-clean:
-	@rm -f o/*.o gwom dependencies.d resolver *~
-	@rmdir o
-
+	@$(CC) -export-dynamic -o gwom $(O_FILES) $(L_FLAGS) $(NOCRYPT)
 endif
+	@echo "$(L_BLUE)[- $(L_GREEN) Done compiling mud.$(L_NRM)";
+	@chmod g+w $(G_BIN)
+	@chmod a+x $(G_BIN)
+	@chmod g+w $(O_FILES)
 
 o:
 	mkdir o
@@ -86,12 +90,12 @@ dependencies.d: $(C_FILES) $(H_FILES)
 	@perl -pi -e 's.^([a-z]).o/$$1.g' dependencies.d
 	@chmod ug+w dependencies.d
 
-resolver: o/resolver.o
-	@rm -f resolver
-	$(CC) $(D_FLAGS) -o resolver o/resolver.o
+$(R_BIN): o o/resolver.o
+	@rm -f $(R_BIN)
+	@$(CC) $(D_FLAGS) -o $(R_BIN) o/resolver.o
 	@echo "$(L_BLUE)[- $(L_LBLUE) Done compiling DNS resolver.$(L_NRM)";
-	@chmod g+w resolver
-	@chmod a+x resolver
+	@chmod g+w $(R_BIN)
+	@chmod a+x $(R_BIN)
 	@chmod g+w o/resolver.o
 
 indent:
@@ -103,7 +107,7 @@ indentclean:
 
 o/%.o: %.cpp
 	@echo "$(L_BLUE)[- $(L_WHITE)  Compiling $@....$(L_NRM)";
-	$(CC) -c $(C_FLAGS) $< -o $@
+	@$(CC) -c $(C_FLAGS) $< -o $@
 
 #.cpp.o: mud.h
 #	$(CC) -c $(C_FLAGS) $<
