@@ -41,68 +41,69 @@ O_FILES := $(patsubst %.cpp,o/%.o,$(C_FILES))
 H_FILES = $(wildcard *.h)
 
 all:
-	$(MAKE) -s gwom
-	$(MAKE) -s dns
+	@$(MAKE) -s gwom
+	@$(MAKE) -s resolver
 
 # pull in dependency info for *existing* .o files
 -include dependencies.d
 
 ifdef CYGWIN
-gwom: o $(O_FILES)
-	rm -f gwom.exe
+gwom: dependencies.d o $(O_FILES)
+	@rm -f gwom.exe
 	dlltool --export-all --output-def gwom.def $(O_FILES)
 	dlltool --dllname gwom.exe --output-exp gwom.exp --def gwom.def
 	$(CC) -o gwom.exe $(O_FILES) gwom.exp $(L_FLAGS) $(NOCRYPT)
-	@echo "$(L_BLUE)[- $(L_YELLOW)Generating dependency file ...$(L_NRM)";
-	@$(CC) -MM $(C_FLAGS) $(C_FILES) > dependencies.d
-	@perl -pi -e 's.^([a-z]).o/$$1.g' dependencies.d
 	@echo "$(L_BLUE)[- $(L_GREEN) Done compiling mud.$(L_NRM)";
-	chmod g+w gwom.exe
-	chmod a+x gwom.exe
-	chmod g+w $(O_FILES)
-	chmod ug+w dependencies.d
+	@chmod g+w gwom.exe
+	@chmod a+x gwom.exe
+	@chmod g+w $(O_FILES)
 
 clean:
-	@rm -f o/*.o gwom.exe dependencies.d resolver.exe resolver.o *~
+	@rm -f o/*.o gwom.exe dependencies.d resolver.exe *~
+	@rmdir o
 
 else
-gwom: o $(O_FILES)
-	rm -f gwom
+gwom: dependencies.d o $(O_FILES)
+	@rm -f gwom
 	$(CC) -export-dynamic -o gwom $(O_FILES) $(L_FLAGS) $(NOCRYPT)
-	@echo "$(L_BLUE)[- $(L_YELLOW)Generating dependency file ...$(L_NRM)";
-	@$(CC) -MM $(C_FLAGS) $(C_FILES) > dependencies.d
-	@perl -pi -e 's.^([a-z]).o/$$1.g' dependencies.d
 	@echo "$(L_BLUE)[- $(L_GREEN) Done compiling mud.$(L_NRM)";
-	chmod g+w gwom
-	chmod a+x gwom
-	chmod g+w $(O_FILES)
-	chmod ug+w dependencies.d
+	@chmod g+w gwom
+	@chmod a+x gwom
+	@chmod g+w $(O_FILES)
 
 clean:
-	@rm -f o/*.o gwom dependencies.d resolver resolver.o *~
+	@rm -f o/*.o gwom dependencies.d resolver *~
+	@rmdir o
+
 endif
 
 o:
 	mkdir o
 
-dns: resolver.o
-	rm -f resolver
-	$(CC) $(D_FLAGS) -o resolver resolver.o
+dependencies.d: $(C_FILES) $(H_FILES)
+	@echo "$(L_BLUE)[- $(L_YELLOW)Generating dependency file ...$(L_NRM)";
+	@$(CC) -MM $(C_FLAGS) $(C_FILES) > dependencies.d
+	@perl -pi -e 's.^([a-z]).o/$$1.g' dependencies.d
+	@chmod ug+w dependencies.d
+
+resolver: o/resolver.o
+	@rm -f resolver
+	$(CC) $(D_FLAGS) -o resolver o/resolver.o
 	@echo "$(L_BLUE)[- $(L_LBLUE) Done compiling DNS resolver.$(L_NRM)";
 	chmod g+w resolver
 	chmod a+x resolver
-	chmod g+w resolver.o
+	chmod g+w o/resolver.o
 
 indent:
 	indent -ts4 -nut -nsaf -nsai -nsaw -npcs -npsl -ncs -nbc -bls -prs -bap -cbi0 -cli3 -bli0 -l125 -lp -i3 -cdb -c1 -cd1 -sc -pmt $(C_FILES)
 	indent -ts4 -nut -nsaf -nsai -nsaw -npcs -npsl -ncs -nbc -bls -prs -bap -cbi0 -cli3 -bli0 -l125 -lp -i3 -cdb -c1 -cd1 -sc -pmt $(H_FILES)
 
 indentclean:
-	rm *.cpp~ *.h~
+	@rm *.cpp~ *.h~
 
 o/%.o: %.cpp
-	echo "$(L_BLUE)[- $(L_WHITE)  Compiling $@....$(L_NRM)";
+	@echo "$(L_BLUE)[- $(L_WHITE)  Compiling $@....$(L_NRM)";
 	$(CC) -c $(C_FLAGS) $< -o $@
 
-.cpp.o: mud.h
-	$(CC) -c $(C_FLAGS) $<
+#.cpp.o: mud.h
+#	$(CC) -c $(C_FLAGS) $<
