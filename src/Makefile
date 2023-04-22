@@ -90,9 +90,9 @@ resolver: o/resolver.o
 	@rm -f resolver
 	$(CC) $(D_FLAGS) -o resolver o/resolver.o
 	@echo "$(L_BLUE)[- $(L_LBLUE) Done compiling DNS resolver.$(L_NRM)";
-	chmod g+w resolver
-	chmod a+x resolver
-	chmod g+w o/resolver.o
+	@chmod g+w resolver
+	@chmod a+x resolver
+	@chmod g+w o/resolver.o
 
 indent:
 	indent -ts4 -nut -nsaf -nsai -nsaw -npcs -npsl -ncs -nbc -bls -prs -bap -cbi0 -cli3 -bli0 -l125 -lp -i3 -cdb -c1 -cd1 -sc -pmt $(C_FILES)
