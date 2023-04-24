@@ -31,11 +31,11 @@ D_FLAGS = -g2 -O $(PROF) $(SOLARIS_LINK)
 W_FLAGS = -std=c++1z -Wall -Wshadow -Wformat-security -Wpointer-arith -Wcast-align -Wredundant-decls
 
 C_FILES = act_comm.cpp act_info.cpp act_move.cpp act_obj.cpp act_wiz.cpp arena.cpp bits.cpp board.cpp bounty.cpp \
-	  build.cpp clans.cpp color.cpp comm.cpp comments.cpp const.cpp db.cpp dns.cpp fight.cpp freeze.cpp grub.cpp \
-	  handler.cpp hashstr.cpp hiscores.cpp host.cpp hotboot.cpp immcomm.cpp interp.cpp land.cpp magic.cpp \
-	  mail.cpp makeobjs.cpp mccp.cpp memory.cpp misc.cpp msweapons.cpp mud_comm.cpp mud_prog.cpp pfiles.cpp \
-	  player.cpp relationship.cpp renumber.cpp reset.cpp save.cpp sha256.cpp shops.cpp skills.cpp space.cpp \
-          special.cpp swskills.cpp tables.cpp track.cpp update.cpp
+	build.cpp clans.cpp color.cpp comm.cpp comments.cpp const.cpp db.cpp dns.cpp fight.cpp freeze.cpp grub.cpp \
+	handler.cpp hashstr.cpp hiscores.cpp host.cpp hotboot.cpp immcomm.cpp interp.cpp land.cpp magic.cpp \
+	mail.cpp makeobjs.cpp mccp.cpp memory.cpp misc.cpp msweapons.cpp mud_comm.cpp mud_prog.cpp pfiles.cpp \
+	player.cpp relationship.cpp renumber.cpp reset.cpp save.cpp sha256.cpp shops.cpp skills.cpp space.cpp \
+    special.cpp swskills.cpp tables.cpp track.cpp update.cpp
 
 O_FILES := $(patsubst %.cpp,o/%.o,$(C_FILES))
 
