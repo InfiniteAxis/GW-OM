@@ -637,7 +637,7 @@ void game_loop( )
 				if( select( 0, NULL, NULL, NULL, &stall_time ) < 0 )
 				{
 					perror( "game_loop: select: stall" );
-					exit( 22 );
+					//exit( 22 );
 				}
 			}
 		}
