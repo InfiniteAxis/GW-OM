@@ -55,15 +55,15 @@ BINARIES = $(G_BIN) $(R_BIN)
 all: $(G_BIN) $(R_BIN)
 	@$(MAKE) -s $(G_BIN)
 	@$(MAKE) -s $(R_BIN)
-	@echo "$$(date +%H:%M:%S) $(L_BLUE)[- $(L_RED)Build complete.$(L_NRM)";
+	@echo -e "$$(date +%H:%M:%S) $(L_BLUE)[- $(L_RED)Build complete.$(L_NRM)";
 
 spotless:
 	@$(MAKE) -s clean
 	@rm -f dependencies.d errors
-	@echo "$$(date +%H:%M:%S) $(L_BLUE)[- $(L_RED)Shiny!$(L_NRM)";
+	@echo -e "$$(date +%H:%M:%S) $(L_BLUE)[- $(L_RED)Shiny!$(L_NRM)";
 
 clean:
-	@echo "$$(date +%H:%M:%S) $(L_BLUE)[- $(L_RED)Removing build clutter ...$(L_NRM)";
+	@echo -e "$$(date +%H:%M:%S) $(L_BLUE)[- $(L_RED)Removing build clutter ...$(L_NRM)";
 	@rm -f o/*.o *~ $(BINARIES) $(DLLS)
 	-@rmdir o 2> /dev/null || true
 
@@ -85,13 +85,13 @@ endif
 	@chmod g+w $(G_BIN)
 	@chmod a+x $(G_BIN)
 	@chmod g+w $(O_FILES)
-	@echo "$$(date +%H:%M:%S) $(L_BLUE)[- $(L_GREEN) Done compiling mud.$(L_NRM)";
+	@echo -e "$$(date +%H:%M:%S) $(L_BLUE)[- $(L_GREEN) Done compiling mud.$(L_NRM)";
 
 o:
 	@mkdir o
 
 dependencies.d: $(C_FILES) $(H_FILES)
-	@echo "$$(date +%H:%M:%S) $(L_BLUE)[- $(L_YELLOW)Generating dependency file ...$(L_NRM)";
+	@echo -e "$$(date +%H:%M:%S) $(L_BLUE)[- $(L_YELLOW)Generating dependency file ...$(L_NRM)";
 	@$(CC) -MM $(C_FLAGS) $(C_FILES) > dependencies.d
 	@perl -pi -e 's.^([a-z]).o/$$1.g' dependencies.d
 	@chmod ug+w dependencies.d
@@ -102,7 +102,7 @@ $(R_BIN): o o/resolver.o
 	@chmod g+w $(R_BIN)
 	@chmod a+x $(R_BIN)
 	@chmod g+w o/resolver.o
-	@echo "$$(date +%H:%M:%S) $(L_BLUE)[- $(L_LBLUE) Done compiling DNS resolver.$(L_NRM)";
+	@echo -e "$$(date +%H:%M:%S) $(L_BLUE)[- $(L_LBLUE) Done compiling DNS resolver.$(L_NRM)";
 
 indent:
 	indent -ts4 -nut -nsaf -nsai -nsaw -npcs -npsl -ncs -nbc -bls -prs -bap -cbi0 -cli3 -bli0 -l125 -lp -i3 -cdb -c1 -cd1 -sc -pmt $(C_FILES)
@@ -112,7 +112,7 @@ indentclean:
 	@rm *.cpp~ *.h~
 
 o/%.o: %.cpp
-	@echo "$$(date +%H:%M:%S) $(L_BLUE)[- $(L_WHITE)  Compiling $@ ...$(L_NRM)";
+	@echo -e "$$(date +%H:%M:%S) $(L_BLUE)[- $(L_WHITE)  Compiling $@ ...$(L_NRM)";
 	@$(CC) -c $(C_FLAGS) $< -o $@
 
 #.cpp.o: mud.h
