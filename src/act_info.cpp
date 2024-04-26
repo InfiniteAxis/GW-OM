@@ -2794,17 +2794,17 @@ CMDF( do_who )
 
 			if( IS_IMMORTAL( wch ) )
 			{
-				snprintf( lev, 5, "%d", wch->top_level );
+				snprintf( lev, MIL, "%d", wch->top_level );
 			}
 			else
 			{
 				if( IS_SET( wch->pcdata->cybaflags, CYBA_NOLEVEL ) )
 				{
-					snprintf( lev, 5, "&b    " );
+					snprintf( lev, MIL, "&b    " );
 				}
 				else
 				{
-					snprintf( lev, 5, "%d", wch->skill_level[COMBAT_ABILITY] + wch->skill_level[HUNTING_ABILITY] );
+					snprintf( lev, MIL, "%d", wch->skill_level[COMBAT_ABILITY] + wch->skill_level[HUNTING_ABILITY] );
 				}
 			}
 
@@ -4506,7 +4506,7 @@ CMDF( do_afk )
 		msg[50] = '\0';
 
 	smash_tilde( msg );
-	snprintf( buf, MAX_STRING_LENGTH, "&W[&zA&WF&zK&W] %s", msg );
+	snprintf( buf, MAX_STRING_LENGTH+19, "&W[&zA&WF&zK&W] %s", msg );
 	ch->pcdata->afkmess = str_dup( buf );
 	return;
 
@@ -4785,7 +4785,7 @@ CMDF( do_whois )
 
 		if( get_trust( victim ) < get_trust( ch ) )
 		{
-			snprintf( buf2, MAX_STRING_LENGTH, "list %s", buf );
+			snprintf( buf2, MAX_STRING_LENGTH+5, "list %s", buf );
 			do_comment( ch, buf2 );
 		}
 
