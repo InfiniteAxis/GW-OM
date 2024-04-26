@@ -1581,7 +1581,7 @@ CMDF( do_open )
 		return;
 	}
 
-	if( !str_cmp( arg, "hatch" ) );
+	if( !str_cmp( arg, "hatch" ) )
 	{
 		do_openhatch( ch, argument );
 		return;
