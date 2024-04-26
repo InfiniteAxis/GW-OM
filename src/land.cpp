@@ -277,12 +277,12 @@ void suit_timer( )
 
 		if( weapon->weapontype == PT_RIGHTARM )
 		{
-			sprintf( name, "%s", suitweapon_table[ship->wrightarm].weapon_name );
+			snprintf( name, MAX_STRING_LENGTH, "%s", suitweapon_table[ship->wrightarm].weapon_name );
 			wtype = suitweapon_table[ship->wrightarm].weapon_type;
 		}
 		if( weapon->weapontype == PT_LEFTARM )
 		{
-			sprintf( name, "%s", suitweapon_table[ship->wleftarm].weapon_name );
+			snprintf( name, MAX_STRING_LENGTH, "%s", suitweapon_table[ship->wleftarm].weapon_name );
 			wtype = suitweapon_table[ship->wleftarm].weapon_type;
 		}
 
@@ -290,7 +290,7 @@ void suit_timer( )
 		{
 			cnum = number_range( 1, 3 );
 
-			sprintf( buf, "%s begins an attack with its %s! &z[&g%s&z] &z[&g%s&z] &z[&g%s&z]", ship->name, name,
+			snprintf( buf, MAX_STRING_LENGTH, "%s begins an attack with its %s! &z[&g%s&z] &z[&g%s&z] &z[&g%s&z]", ship->name, name,
 				cnum == 1 ? "&G1" : "1", cnum == 2 ? "&G2" : "2", cnum == 3 ? "&G3" : "3" );
 			weapon->counter = cnum;
 			echo_to_ship( AT_WHITE, target, buf );
@@ -304,25 +304,25 @@ void suit_timer( )
 					|| ( wtype == WT_PIERCE && target->countertype == CT_BLOCK )
 					|| ( wtype == WT_BULLET && target->countertype == CT_BLOCK ) )
 				{
-					sprintf( buf, "Your attack is blocked by %s's shield!\r\n", target->name );
+					snprintf( buf, MAX_STRING_LENGTH, "Your attack is blocked by %s's shield!\r\n", target->name );
 					echo_to_ship( AT_WHITE, ship, buf );
-					sprintf( buf, "You quicklyblock %s's attack with your shield!", ship->name );
+					snprintf( buf, MAX_STRING_LENGTH, "You quicklyblock %s's attack with your shield!", ship->name );
 					echo_to_ship( AT_WHITE, target, buf );
 				}
 				else if( wtype == WT_MISSILE && target->countertype == CT_SHOOT )
 				{
-					sprintf( buf, "Your missiles are shot out of the air by %s!\r\n", target->name );
+					snprintf( buf, MAX_STRING_LENGTH, "Your missiles are shot out of the air by %s!\r\n", target->name );
 					echo_to_ship( AT_WHITE, ship, buf );
-					sprintf( buf, "You shoot %s's missiles out of the sky!", ship->name );
+					snprintf( buf, MAX_STRING_LENGTH, "You shoot %s's missiles out of the sky!", ship->name );
 					echo_to_ship( AT_WHITE, target, buf );
 				}
 				else if( ( wtype == WT_BEAM && target->countertype == CT_EVADE )
 					|| ( wtype == WT_BULLET && target->countertype == CT_EVADE )
 					|| ( wtype == WT_MISSILE && target->countertype == CT_EVADE ) )
 				{
-					sprintf( buf, "Your attack is completely evaded by %s!\r\n", target->name );
+					snprintf( buf, MAX_STRING_LENGTH, "Your attack is completely evaded by %s!\r\n", target->name );
 					echo_to_ship( AT_WHITE, ship, buf );
-					sprintf( buf, "You evade %s's attack!", ship->name );
+					snprintf( buf, MAX_STRING_LENGTH, "You evade %s's attack!", ship->name );
 					echo_to_ship( AT_WHITE, target, buf );
 				}
 				else
@@ -410,12 +410,12 @@ void suit_timer( )
 						ship->move[3] = ship->move[4];
 						ship->move[4] = MOVE_DONE;
 						ship->tlength = 4;
-						sprintf( buf, "Moved To: %d/%d", ship->grid, ship->gridlvl );
+						snprintf( buf, MAX_STRING_LENGTH, "Moved To: %d/%d", ship->grid, ship->gridlvl );
 						echo_to_ship( AT_WHITE, ship, buf );
 						if( ship->move[1] == MOVE_DONE )
 						{
 							REMOVE_BIT( ship->flags, SUIT_MOVING );
-							sprintf( buf, "Your movement is finished." );
+							snprintf( buf, MAX_STRING_LENGTH, "Your movement is finished." );
 							echo_to_ship( AT_WHITE, ship, buf );
 							ship->move[1] = 0;
 							ship->move[2] = 0;
@@ -425,10 +425,10 @@ void suit_timer( )
 					}
 					else
 					{
-						sprintf( buf, "WARNING: Can't leave Battle Grid!" );
+						snprintf( buf, MAX_STRING_LENGTH, "WARNING: Can't leave Battle Grid!" );
 						echo_to_ship( AT_WHITE, ship, buf );
 						REMOVE_BIT( ship->flags, SUIT_MOVING );
-						sprintf( buf, "Your movement is finished." );
+						snprintf( buf, MAX_STRING_LENGTH, "Your movement is finished." );
 						echo_to_ship( AT_WHITE, ship, buf );
 						ship->move[1] = 0;
 						ship->move[2] = 0;
@@ -453,12 +453,12 @@ void damagesuit( SHIP_DATA *ship, SHIP_DATA *target, int weapontype )
 	if( weapontype == PT_RIGHTARM )
 	{
 		damage = suitweapon_table[ship->wrightarm].damage;
-		sprintf( name, "%s", suitweapon_table[ship->wrightarm].weapon_name );
+		snprintf( name, MAX_STRING_LENGTH, "%s", suitweapon_table[ship->wrightarm].weapon_name );
 	}
 	if( weapontype == PT_LEFTARM )
 	{
 		damage = suitweapon_table[ship->wleftarm].damage;
-		sprintf( name, "%s", suitweapon_table[ship->wleftarm].weapon_name );
+		snprintf( name, MAX_STRING_LENGTH, "%s", suitweapon_table[ship->wleftarm].weapon_name );
 	}
 
 
@@ -485,9 +485,9 @@ void damagesuit( SHIP_DATA *ship, SHIP_DATA *target, int weapontype )
 	}
 
 	target->frame -= damage;
-	sprintf( buf, "%sYour %s damages %s! =%.0f=\r\n", critical == 1 ? "[Crt]" : "", name, target->name, damage );
+	snprintf( buf, MAX_STRING_LENGTH, "%sYour %s damages %s! =%.0f=\r\n", critical == 1 ? "[Crt]" : "", name, target->name, damage );
 	echo_to_ship( AT_WHITE, ship, buf );
-	sprintf( buf1, "%s%s damages you with its %s! =%.0f=", critical == 1 ? "[Crt]" : "", ship->name, name, damage );
+	snprintf( buf1, MAX_STRING_LENGTH, "%s%s damages you with its %s! =%.0f=", critical == 1 ? "[Crt]" : "", ship->name, name, damage );
 	echo_to_ship( AT_WHITE, target, buf1 );
 	//    target->frame -= atk;
 	if( target->frame <= 0 )
@@ -507,13 +507,13 @@ void destroy_suit( CHAR_DATA *ch, SHIP_DATA *ship, SHIP_DATA *target )
 	if( !str_cmp( "Holosuit", target->owner ) )
 	{
 		echo_to_ship( AT_WHITE, ship, "&GThe image of battle flickers out as your fight comes to an end.\r\n" );
-		sprintf( buf, "The image of %s flickers out of sight.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "The image of %s flickers out of sight.", target->name );
 		echo_to_system( AT_WHITE + AT_BLINK, target, buf, NULL );
 		resetsuit( target );
 		return;
 	}
 
-	sprintf( buf, "%s's frame collapses from all of the damage!", target->name );
+	snprintf( buf, MAX_STRING_LENGTH, "%s's frame collapses from all of the damage!", target->name );
 	echo_to_system( AT_WHITE + AT_BLINK, target, buf, NULL );
 
 	echo_to_ship( AT_WHITE + AT_BLINK, target, "Your console blinks bright red..." );
@@ -600,7 +600,7 @@ void clearturn( CHAR_DATA *ch, SHIP_DATA *ship, SHIP_DATA *target )
 	if( ship->speed > target->speedmax * 2 )
 	{
 		echo_to_ship( AT_WHITE, ship, "-=Ex-Turn=- Go again!" );
-		sprintf( buf, "%s gets an Ex-Turn.", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s gets an Ex-Turn.", ship->name );
 		echo_to_ship( AT_WHITE, target, buf );
 		ship->agility += 4;
 		if( ship->agility > 6 )
@@ -771,7 +771,7 @@ CMDF( do_attack )
 	}
 
 	ch_printf( ch, "You engage %s in combat!\r\n", target->name );
-	sprintf( buf, "%s engages you in combat!\r\n", ch->name );
+	snprintf( buf, MAX_STRING_LENGTH, "%s engages you in combat!\r\n", ch->name );
 	echo_to_ship( AT_WHITE, target, buf );
 
 	SET_BIT( ship->flags, SUIT_INGRID );
@@ -835,7 +835,7 @@ CMDF( do_retreat )
 
 
 	ch_printf( ch, "You retreat from battle!\r\n" );
-	//    sprintf( buf, "%s retreats from combat!\r\n", ch->name );
+	//    snprintf( buf, MAX_STRING_LENGTH, "%s retreats from combat!\r\n", ch->name );
 	//    echo_to_ship( AT_WHITE, target, buf );
 	REMOVE_BIT( ship->flags, SUIT_INGRID );
 	ship->grid = 0;
@@ -1746,7 +1746,7 @@ CMDF( do_one )
 	if( ( target = who_suitfighting( ship ) ) == NULL )
 	{
 		send_to_char( "Wierd Bug - Report to Cray Immediately.\r\n", ch );
-		sprintf( buf, "do_one: %s has no target.", ch->name );
+		snprintf( buf, MAX_STRING_LENGTH, "do_one: %s has no target.", ch->name );
 		bug( buf, 0 );
 		return;
 	}
@@ -1792,7 +1792,7 @@ CMDF( do_two )
 	if( ( target = who_suitfighting( ship ) ) == NULL )
 	{
 		send_to_char( "Wierd Bug - Report to Cray Immediately.\r\n", ch );
-		sprintf( buf, "do_two: %s has no target.", ch->name );
+		snprintf( buf, MAX_STRING_LENGTH, "do_two: %s has no target.", ch->name );
 		bug( buf, 0 );
 		return;
 	}
@@ -1955,7 +1955,7 @@ CMDF( do_ltarget )
 		ship->target2 = target;
 
 	send_to_char( "&GTarget Locked.\r\n", ch );
-	sprintf( buf, "You are being targetted by %s.", ship->name );
+	snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", ship->name );
 	echo_to_cockpit( AT_BLOOD, target, buf );
 
 	sound_to_room( ch->in_room, "!!SOUND(targetlock)" );
@@ -2038,14 +2038,14 @@ CMDF( do_drive )
 		}
 
 		send_to_char( "You drive the vehicle into the bay.\r\n", ch );
-		sprintf( buf, "%s drives into %s.", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s drives into %s.", ship->name, target->name );
 		echo_to_room( AT_GREY, ship->in_room, buf );
-		sprintf( buf, "%s drives %s into %s.", ch->name, ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s drives %s into %s.", ch->name, ship->name, target->name );
 		log_string( buf );
 
 		transship( ship, target->hanger );
 
-		sprintf( buf, "%s drives into the bay", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s drives into the bay", ship->name );
 		echo_to_room( AT_GREY, ship->in_room, buf );
 		do_look( ch, "auto" );
 		return;
@@ -2080,12 +2080,12 @@ CMDF( do_drive )
 		}
 
 		send_to_char( "You drive the vehicle out of the bay.\r\n", ch );
-		sprintf( buf, "%s drives out of the ship.", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s drives out of the ship.", ship->name );
 		echo_to_room( AT_GREY, ship->in_room, buf );
 
 		transship( ship, target->in_room->vnum );
 
-		sprintf( buf, "%s drives out of %s", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s drives out of %s", ship->name, target->name );
 		do_look( ch, "auto" );
 		echo_to_room( AT_GREY, ship->in_room, buf );
 		return;
@@ -2154,7 +2154,7 @@ ch_ret drive_ship( CHAR_DATA *ch, SHIP_DATA *ship, EXIT_DATA *pexit, int fall )
 #ifdef DEBUG
 	if( pexit )
 	{
-		sprintf( buf, "drive_ship: %s to door %d", ch->name, pexit->vdir );
+		snprintf( buf, MAX_STRING_LENGTH, "drive_ship: %s to door %d", ch->name, pexit->vdir );
 		log_string( buf );
 	}
 #endif
@@ -2322,11 +2322,11 @@ ch_ret drive_ship( CHAR_DATA *ch, SHIP_DATA *ship, EXIT_DATA *pexit, int fall )
 		else
 			txt = "fly";
 	}
-	sprintf( buf, "$n %ss the suit $T.", txt );
+	snprintf( buf, MAX_STRING_LENGTH, "$n %ss the suit $T.", txt );
 	act( AT_ACTION, buf, ch, NULL, dir_name[door], TO_ROOM );
-	sprintf( buf, "You %s the suit $T.", txt );
+	snprintf( buf, MAX_STRING_LENGTH, "You %s the suit $T.", txt );
 	act( AT_ACTION, buf, ch, NULL, dir_name[door], TO_CHAR );
-	sprintf( buf, "%s %ss %s.", ship->name, txt, dir_name[door] );
+	snprintf( buf, MAX_STRING_LENGTH, "%s %ss %s.", ship->name, txt, dir_name[door] );
 	echo_to_room( AT_ACTION, get_room_index( ship->location ), buf );
 
 	extract_ship( ship );
@@ -2385,7 +2385,7 @@ ch_ret drive_ship( CHAR_DATA *ch, SHIP_DATA *ship, EXIT_DATA *pexit, int fall )
 		break;
 	}
 
-	sprintf( buf, "%s %s from %s.", ship->name, txt, dtxt );
+	snprintf( buf, MAX_STRING_LENGTH, "%s %s from %s.", ship->name, txt, dtxt );
 	echo_to_room( AT_ACTION, get_room_index( ship->location ), buf );
 
 	for( rch = ch->in_room->last_person; rch; rch = next_rch )
@@ -2472,7 +2472,7 @@ CMDF( do_hover )
 			act( AT_PLAIN, "$n presses a lever, the suit fires its thrusters and flies into the air.", ch,
 				NULL, argument, TO_ROOM );
 			learn_from_success( ch, gsn_landcombat );
-			sprintf( buf, "%s fires up its thrusters, you're pushed back by the power of its quick lift off.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "%s fires up its thrusters, you're pushed back by the power of its quick lift off.", ship->name );
 			echo_to_room( AT_YELLOW, get_room_index( ship->location ), buf );
 			ship->hover = 1;
 			return;
@@ -2482,7 +2482,7 @@ CMDF( do_hover )
 			send_to_char( "&GThe suit lands back on the ground as you turn your thrusters off.\r\n", ch );
 			act( AT_PLAIN, "$n sets the suit back down onto the ground.", ch, NULL, argument, TO_ROOM );
 			learn_from_success( ch, gsn_landcombat );
-			sprintf( buf, "%s lands slowly back on the ground, a loud thud booms through the area.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "%s lands slowly back on the ground, a loud thud booms through the area.", ship->name );
 			echo_to_room( AT_YELLOW, get_room_index( ship->location ), buf );
 			ship->hover = 0;
 			return;
@@ -2511,10 +2511,10 @@ void remove_part( CHAR_DATA *ch, SHIP_DATA *ship, int part )
 		piece = create_object( get_obj_index( OBJ_SUITPART ), 0 );
 		STRFREE( piece->name );
 		piece->name = STRALLOC( ship->wonename );
-		sprintf( buf, "a %s", ship->wonename );
+		snprintf( buf, MAX_STRING_LENGTH, "a %s", ship->wonename );
 		STRFREE( piece->short_descr );
 		piece->short_descr = STRALLOC( buf );
-		sprintf( buf, "A %s was left here.", ship->wonename );
+		snprintf( buf, MAX_STRING_LENGTH, "A %s was left here.", ship->wonename );
 		STRFREE( piece->description );
 		piece->description = STRALLOC( buf );
 		piece->item_type = ITEM_SUITWEAPON;
@@ -2693,7 +2693,7 @@ CMDF( do_guard )
 	if( ( target = who_suitfighting( ship ) ) == NULL )
 	{
 		send_to_char( "Wierd Bug - Report to Cray Immediately.\r\n", ch );
-		sprintf( buf, "do_guard: %s has no target.", ch->name );
+		snprintf( buf, MAX_STRING_LENGTH, "do_guard: %s has no target.", ch->name );
 		bug( buf, 0 );
 		return;
 	}
@@ -2705,7 +2705,7 @@ CMDF( do_guard )
 	}
 
 	send_to_char( "You go into guard mode.\r\n", ch );
-	sprintf( buf, "%s takes a guard position.\r\n", ch->name );
+	snprintf( buf, MAX_STRING_LENGTH, "%s takes a guard position.\r\n", ch->name );
 	ship->agility -= 4;
 	echo_to_ship( AT_WHITE, target, buf );
 	SET_BIT( ship->flags, SUIT_ISGUARDING );
@@ -3002,25 +3002,25 @@ char *gridcheck( SHIP_DATA *ship, int gridnumber, int gridlevel )
 	static char buf[MAX_STRING_LENGTH];
 	SHIP_DATA *target;
 
-	sprintf( buf, " " );
+	snprintf( buf, MAX_STRING_LENGTH, " " );
 
 	if( ship->grid == gridnumber && ship->gridlvl == gridlevel )
 	{
 		if( ship->position == POS_NORTH )
 		{
-			sprintf( buf, "&B^^&W" );
+			snprintf( buf, MAX_STRING_LENGTH, "&B^^&W" );
 		}
 		else if( ship->position == POS_SOUTH )
 		{
-			sprintf( buf, "&Bv&W" );
+			snprintf( buf, MAX_STRING_LENGTH, "&Bv&W" );
 		}
 		else if( ship->position == POS_WEST )
 		{
-			sprintf( buf, "&B<&W" );
+			snprintf( buf, MAX_STRING_LENGTH, "&B<&W" );
 		}
 		else if( ship->position == POS_EAST )
 		{
-			sprintf( buf, "&B>&W" );
+			snprintf( buf, MAX_STRING_LENGTH, "&B>&W" );
 		}
 	}
 
@@ -3043,19 +3043,19 @@ char *gridcheck( SHIP_DATA *ship, int gridnumber, int gridlevel )
 
 		if( target->position == POS_NORTH )
 		{
-			sprintf( buf, "&R^^&W" );
+			snprintf( buf, MAX_STRING_LENGTH, "&R^^&W" );
 		}
 		else if( target->position == POS_SOUTH )
 		{
-			sprintf( buf, "&Rv&W" );
+			snprintf( buf, MAX_STRING_LENGTH, "&Rv&W" );
 		}
 		else if( target->position == POS_WEST )
 		{
-			sprintf( buf, "&R<&W" );
+			snprintf( buf, MAX_STRING_LENGTH, "&R<&W" );
 		}
 		else if( target->position == POS_EAST )
 		{
-			sprintf( buf, "&R>&W" );
+			snprintf( buf, MAX_STRING_LENGTH, "&R>&W" );
 		}
 
 	}
@@ -3129,7 +3129,7 @@ CMDF( do_store )
 	if( ( target = who_suitfighting( ship ) ) == NULL )
 	{
 		send_to_char( "Wierd Bug - Report to Axis Immediately.\r\n", ch );
-		sprintf( buf, "do_store: %s has no target.", ch->name );
+		snprintf( buf, MAX_STRING_LENGTH, "do_store: %s has no target.", ch->name );
 		bug( buf, 0 );
 		return;
 	}
@@ -3162,7 +3162,7 @@ CMDF( do_store )
 	}
 
 	send_to_char( "You pull energy in from your reserves.\r\n", ch );
-	sprintf( buf, "%s's arms lower, as it pulls in reserve energy.\r\n", ship->name );
+	snprintf( buf, MAX_STRING_LENGTH, "%s's arms lower, as it pulls in reserve energy.\r\n", ship->name );
 	ship->agility -= 4;
 	ship->reserve -= amount;
 	ship->extra += amount;
@@ -3204,7 +3204,7 @@ CMDF( do_recharge )
 	if( ( target = who_suitfighting( ship ) ) == NULL )
 	{
 		send_to_char( "Wierd Bug - Report to Axis Immediately.\r\n", ch );
-		sprintf( buf, "do_store: %s has no target.", ch->name );
+		snprintf( buf, MAX_STRING_LENGTH, "do_store: %s has no target.", ch->name );
 		bug( buf, 0 );
 		return;
 	}
@@ -3222,7 +3222,7 @@ CMDF( do_recharge )
 	}
 
 	send_to_char( "You recharge your suit, repairing frame damage.\r\n", ch );
-	sprintf( buf, "%s's recharges, repairing frame damage.\r\n", ship->name );
+	snprintf( buf, MAX_STRING_LENGTH, "%s's recharges, repairing frame damage.\r\n", ship->name );
 	ship->agility -= 4;
 	ship->reserve -= amount;
 	ship->frame += ( ship->framemax * 0.3 );

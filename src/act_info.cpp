@@ -621,14 +621,14 @@ void show_char_to_char_0( CHAR_DATA *victim, CHAR_DATA *ch )
 	{
 		if( victim->pcdata->avatar && victim->pcdata->avatar[0] != '\0' )
 		{
-			sprintf( buf1, "%s&w is here.\n", victim->pcdata->avatar );
+			snprintf( buf1, MAX_STRING_LENGTH, "%s&w is here.\n", victim->pcdata->avatar );
 			mudstrlcat( buf, buf1, MAX_STRING_LENGTH );
 			send_to_char( buf, ch );
 			return;
 		}
 		else
 		{
-			sprintf( buf1, "A Nameless Avatar is here..\n" );
+			snprintf( buf1, MAX_STRING_LENGTH, "A Nameless Avatar is here..\n" );
 			mudstrlcat( buf, buf1, MAX_STRING_LENGTH );
 			send_to_char( buf, ch );
 			return;
@@ -668,17 +668,17 @@ void show_char_to_char_0( CHAR_DATA *victim, CHAR_DATA *ch )
 		{
 			if( IS_SET( victim->on->value[2], SLEEP_AT ) )
 			{
-				sprintf( message, " &wis sleeping at %s.", victim->on->short_descr );
+				snprintf( message, MAX_STRING_LENGTH, " &wis sleeping at %s.", victim->on->short_descr );
 				mudstrlcat( buf, message, MAX_STRING_LENGTH );
 			}
 			else if( IS_SET( victim->on->value[2], SLEEP_ON ) )
 			{
-				sprintf( message, " &wis sleeping on %s.", victim->on->short_descr );
+				snprintf( message, MAX_STRING_LENGTH, " &wis sleeping on %s.", victim->on->short_descr );
 				mudstrlcat( buf, message, MAX_STRING_LENGTH );
 			}
 			else
 			{
-				sprintf( message, " &wis sleeping in %s.", victim->on->short_descr );
+				snprintf( message, MAX_STRING_LENGTH, " &wis sleeping in %s.", victim->on->short_descr );
 				mudstrlcat( buf, message, MAX_STRING_LENGTH );
 			}
 		}
@@ -696,17 +696,17 @@ void show_char_to_char_0( CHAR_DATA *victim, CHAR_DATA *ch )
 		{
 			if( IS_SET( victim->on->value[2], REST_AT ) )
 			{
-				sprintf( message, " &wis resting at %s.", victim->on->short_descr );
+				snprintf( message, MAX_STRING_LENGTH, " &wis resting at %s.", victim->on->short_descr );
 				mudstrlcat( buf, message, MAX_STRING_LENGTH );
 			}
 			else if( IS_SET( victim->on->value[2], REST_ON ) )
 			{
-				sprintf( message, " &wis resting on %s.", victim->on->short_descr );
+				snprintf( message, MAX_STRING_LENGTH, " &wis resting on %s.", victim->on->short_descr );
 				mudstrlcat( buf, message, MAX_STRING_LENGTH );
 			}
 			else
 			{
-				sprintf( message, " &wis resting in %s.", victim->on->short_descr );
+				snprintf( message, MAX_STRING_LENGTH, " &wis resting in %s.", victim->on->short_descr );
 				mudstrlcat( buf, message, MAX_STRING_LENGTH );
 			}
 		}
@@ -725,17 +725,17 @@ void show_char_to_char_0( CHAR_DATA *victim, CHAR_DATA *ch )
 		{
 			if( IS_SET( victim->on->value[2], SIT_AT ) )
 			{
-				sprintf( message, " &wis sitting at %s.", victim->on->short_descr );
+				snprintf( message, MAX_STRING_LENGTH, " &wis sitting at %s.", victim->on->short_descr );
 				mudstrlcat( buf, message, MAX_STRING_LENGTH );
 			}
 			else if( IS_SET( victim->on->value[2], SIT_ON ) )
 			{
-				sprintf( message, " &wis sitting on %s.", victim->on->short_descr );
+				snprintf( message, MAX_STRING_LENGTH, " &wis sitting on %s.", victim->on->short_descr );
 				mudstrlcat( buf, message, MAX_STRING_LENGTH );
 			}
 			else
 			{
-				sprintf( message, " &wis sitting in %s.", victim->on->short_descr );
+				snprintf( message, MAX_STRING_LENGTH, " &wis sitting in %s.", victim->on->short_descr );
 				mudstrlcat( buf, message, MAX_STRING_LENGTH );
 			}
 		}
@@ -747,17 +747,17 @@ void show_char_to_char_0( CHAR_DATA *victim, CHAR_DATA *ch )
 		{
 			if( IS_SET( victim->on->value[2], STAND_AT ) )
 			{
-				sprintf( message, " &wis standing at %s.", victim->on->short_descr );
+				snprintf( message, MAX_STRING_LENGTH, " &wis standing at %s.", victim->on->short_descr );
 				mudstrlcat( buf, message, MAX_STRING_LENGTH );
 			}
 			else if( IS_SET( victim->on->value[2], STAND_ON ) )
 			{
-				sprintf( message, " &wis standing on %s.", victim->on->short_descr );
+				snprintf( message, MAX_STRING_LENGTH, " &wis standing on %s.", victim->on->short_descr );
 				mudstrlcat( buf, message, MAX_STRING_LENGTH );
 			}
 			else
 			{
-				sprintf( message, " &wis standing in %s.", victim->on->short_descr );
+				snprintf( message, MAX_STRING_LENGTH, " &wis standing in %s.", victim->on->short_descr );
 				mudstrlcat( buf, message, MAX_STRING_LENGTH );
 			}
 		}
@@ -1679,7 +1679,7 @@ CMDF( do_examine )
 		return;
 	}
 
-	sprintf( buf, "%s noprog", arg );
+	snprintf( buf, MAX_STRING_LENGTH, "%s noprog", arg );
 	do_look( ch, buf );
 
 	/*
@@ -1819,7 +1819,7 @@ CMDF( do_examine )
 
 			/* Not needed due to check in do_look already
 				case ITEM_PORTAL:
-					sprintf( buf, "in %s noprog", arg );
+					snprintf( buf, MAX_STRING_LENGTH, "in %s noprog", arg );
 					do_look( ch, buf );
 					break;
 			*/
@@ -1854,7 +1854,7 @@ CMDF( do_examine )
 		if( IS_OBJ_STAT( obj, ITEM_COVERING ) )
 			break;
 		send_to_char( "When you look inside, you see:\r\n", ch );
-		sprintf( buf, "in %s noprog", arg );
+		snprintf( buf, MAX_STRING_LENGTH, "in %s noprog", arg );
 		do_look( ch, buf );
 		break;
 
@@ -1890,12 +1890,12 @@ CMDF( do_examine )
 		case ITEM_DRINK_CON:
 		case ITEM_WHOLDER:
 			send_to_char( "When you look inside, you see:\r\n", ch );
-			sprintf( buf, "in %s noprog", arg );
+			snprintf( buf, MAX_STRING_LENGTH, "in %s noprog", arg );
 			do_look( ch, buf );
 		}
 		if( IS_OBJ_STAT( obj, ITEM_COVERING ) )
 		{
-			sprintf( buf, "under %s noprog", arg );
+			snprintf( buf, MAX_STRING_LENGTH, "under %s noprog", arg );
 			do_look( ch, buf );
 		}
 		oprog_examine_trigger( ch, obj );
@@ -1936,26 +1936,26 @@ CMDF( do_exits )
 
 				if( IS_SET( pexit->exit_info, EX_CLOSED ) )
 				{
-					sprintf( buf + strlen( buf ), "&W%-5s &W- (closed)\r\n", capitalize( dir_name[pexit->vdir] ) );
+					snprintf( buf + strlen( buf ), ( MAX_STRING_LENGTH - strlen( buf ) ), "&W%-5s &W- (closed)\r\n", capitalize( dir_name[pexit->vdir] ) );
 				}
 				else if( IS_SET( pexit->exit_info, EX_WINDOW ) )
 				{
-					sprintf( buf + strlen( buf ), "&W%-5s &W- (window)\r\n", capitalize( dir_name[pexit->vdir] ) );
+					snprintf( buf + strlen( buf ), ( MAX_STRING_LENGTH - strlen( buf ) ), "&W%-5s &W- (window)\r\n", capitalize( dir_name[pexit->vdir] ) );
 				}
 				else if( IS_SET( pexit->exit_info, EX_xAUTO ) )
 				{
-					sprintf( buf + strlen( buf ), "&W%-5s &W-&W %s\r\n",
+					snprintf( buf + strlen( buf ), ( MAX_STRING_LENGTH - strlen( buf ) ), "&W%-5s &W-&W %s\r\n",
 						capitalize( pexit->keyword ),
 						room_is_dark( pexit->to_room ) ? "Too dark to tell" : pexit->to_room->name );
 				}
 				else
-					sprintf( buf + strlen( buf ), "&W%-5s &W- &W%s\r\n",
+					snprintf( buf + strlen( buf ), ( MAX_STRING_LENGTH - strlen( buf ) ), "&W%-5s &W- &W%s\r\n",
 						capitalize( dir_name[pexit->vdir] ),
 						room_is_dark( pexit->to_room ) ? "Too dark to tell" : pexit->to_room->name );
 			}
 			else
 			{
-				sprintf( buf + strlen( buf ), " %s", capitalize( dir_name[pexit->vdir] ) );
+				snprintf( buf + strlen( buf ), ( MAX_STRING_LENGTH - strlen( buf ) ), " %s", capitalize( dir_name[pexit->vdir] ) );
 
 			}
 		}
@@ -2684,14 +2684,14 @@ CMDF( do_who )
 			//          continue;
 
 			if( fShowHomepage && wch->pcdata->homepage && wch->pcdata->homepage[0] != '\0' )
-				sprintf( char_name, "<A HREF=\"%s\">%s</A>", show_tilde( wch->pcdata->homepage ), wch->name );
+				snprintf( char_name, MAX_STRING_LENGTH, "<A HREF=\"%s\">%s</A>", show_tilde( wch->pcdata->homepage ), wch->name );
 			else
 				mudstrlcpy( char_name, "", MAX_INPUT_LENGTH );
 
 
 			if( wch->sex == SEX_MALE )
 			{
-				sprintf( race_text, "&B%s", race_table[wch->race].race_name );
+				snprintf( race_text, MAX_STRING_LENGTH, "&B%s", race_table[wch->race].race_name );
 
 				if( strlen( race_text ) > 5 )
 				{
@@ -2702,7 +2702,7 @@ CMDF( do_who )
 			}
 			else if( wch->sex == SEX_FEMALE )
 			{
-				sprintf( race_text, "&P%s", race_table[wch->race].race_name );
+				snprintf( race_text, MAX_STRING_LENGTH, "&P%s", race_table[wch->race].race_name );
 
 				if( strlen( race_text ) > 5 )
 				{
@@ -2714,7 +2714,7 @@ CMDF( do_who )
 			}
 			else if( wch->sex == SEX_NONBINARY )
 			{
-				sprintf( race_text, "&W%s", race_table[wch->race].race_name );
+				snprintf( race_text, MAX_STRING_LENGTH, "&W%s", race_table[wch->race].race_name );
 
 				if( strlen( race_text ) > 5 )
 				{
@@ -2760,14 +2760,14 @@ CMDF( do_who )
 				mudstrlcpy( extra_title, "", MAX_INPUT_LENGTH );
 
 			if( xIS_SET( wch->act, PLR_PPKER ) )
-				sprintf( pker, " &r|&PP&pP&PK&r|" );
+				snprintf( pker, MAX_STRING_LENGTH, " &r|&PP&pP&PK&r|" );
 			else if( xIS_SET( wch->act, PLR_PKER ) )
-				sprintf( pker, "  &p|&rPK&p|&W" );
+				snprintf( pker, MAX_STRING_LENGTH, "  &p|&rPK&p|&W" );
 			else
 				mudstrlcpy( pker, "      &W", MSL );
 
 			if( IS_SET( wch->pcdata->flags, PCFLAG_DND ) )
-				sprintf( dnd, "&B[&CD&cN&CD&B]" );
+				snprintf( dnd, MAX_STRING_LENGTH, "&B[&CD&cN&CD&B]" );
 			else
 				mudstrlcpy( dnd, "", MSL );
 
@@ -2780,31 +2780,31 @@ CMDF( do_who )
 			else if( wch->pcdata->rank && wch->pcdata->rank[0] != '\0' )
 				race = wch->pcdata->rank;
 
-			sprintf( tempbuf2, "  " );
+			snprintf( tempbuf2, MAX_STRING_LENGTH, "  " );
 			if( wch->pcdata->clan )
 			{
-				sprintf( tempbuf2, "%s %s ^z", wch->pcdata->clan->cone, wch->pcdata->clan->ctwo );
+				snprintf( tempbuf2, MAX_STRING_LENGTH, "%s %s ^z", wch->pcdata->clan->cone, wch->pcdata->clan->ctwo );
 			}
 			mudstrlcpy( clan_name, tempbuf2, MSL );
 
 			if( xIS_SET( wch->act, PLR_WIZINVIS ) )
-				sprintf( invis_str, "(%d)", wch->pcdata->wizinvis );
+				snprintf( invis_str, MAX_STRING_LENGTH, "(%d)", wch->pcdata->wizinvis );
 			else
 				invis_str[0] = '\0';
 
 			if( IS_IMMORTAL( wch ) )
 			{
-				sprintf( lev, "%d", wch->top_level );
+				snprintf( lev, MAX_STRING_LENGTH, "%d", wch->top_level );
 			}
 			else
 			{
 				if( IS_SET( wch->pcdata->cybaflags, CYBA_NOLEVEL ) )
 				{
-					sprintf( lev, "&b    " );
+					snprintf( lev, MAX_STRING_LENGTH, "&b    " );
 				}
 				else
 				{
-					sprintf( lev, "%d", wch->skill_level[COMBAT_ABILITY] + wch->skill_level[HUNTING_ABILITY] );
+					snprintf( lev, MAX_STRING_LENGTH, "%d", wch->skill_level[COMBAT_ABILITY] + wch->skill_level[HUNTING_ABILITY] );
 				}
 			}
 
@@ -3429,31 +3429,31 @@ CMDF( do_practice )
 
 			if( ch->pcdata->learned[sn] == 0 )
 			{
-				sprintf( starrating, "&B-----" );
+				snprintf( starrating, MAX_STRING_LENGTH, "&B-----" );
 			}
 			else if( ch->pcdata->learned[sn] <= 20 )
 			{
-				sprintf( starrating, "&c*    " );
+				snprintf( starrating, MAX_STRING_LENGTH, "&c*    " );
 			}
 			else if( ch->pcdata->learned[sn] <= 40 )
 			{
-				sprintf( starrating, "&c**   " );
+				snprintf( starrating, MAX_STRING_LENGTH, "&c**   " );
 			}
 			else if( ch->pcdata->learned[sn] <= 60 )
 			{
-				sprintf( starrating, "&c***  " );
+				snprintf( starrating, MAX_STRING_LENGTH, "&c***  " );
 			}
 			else if( ch->pcdata->learned[sn] <= 80 )
 			{
-				sprintf( starrating, "&c**** " );
+				snprintf( starrating, MAX_STRING_LENGTH, "&c**** " );
 			}
 			else if( ch->pcdata->learned[sn] <= 99 )
 			{
-				sprintf( starrating, "&c*****" );
+				snprintf( starrating, MAX_STRING_LENGTH, "&c*****" );
 			}
 			else if( ch->pcdata->learned[sn] >= 100 )
 			{
-				sprintf( starrating, "&C<>=<>" );
+				snprintf( starrating, MAX_STRING_LENGTH, "&C<>=<>" );
 			}
 
 
@@ -3540,7 +3540,7 @@ CMDF( do_practice )
 		 */
 		if( skill_table[sn]->teachers && skill_table[sn]->teachers[0] != '\0' )
 		{
-			sprintf( buf, "%d", mob->pIndexData->vnum );
+			snprintf( buf, MAX_STRING_LENGTH, "%d", mob->pIndexData->vnum );
 			if( !is_name( buf, skill_table[sn]->teachers ) )
 			{
 				act( AT_TELL, "$n tells you, 'I know not know how to teach that.'", mob, NULL, ch, TO_VICT );
@@ -3557,7 +3557,7 @@ CMDF( do_practice )
 
 		if( ch->gold < skill_table[sn]->min_level * 20 )
 		{
-			sprintf( buf, "$n tells you, 'I charge %d dollars to teach that. You don't have enough.'",
+			snprintf( buf, MAX_STRING_LENGTH, "$n tells you, 'I charge %d dollars to teach that. You don't have enough.'",
 				skill_table[sn]->min_level * 20 );
 			act( AT_TELL, buf, mob, NULL, ch, TO_VICT );
 			act( AT_TELL, "$n tells you 'You don't have enough money.'", mob, NULL, ch, TO_VICT );
@@ -3566,7 +3566,7 @@ CMDF( do_practice )
 
 		if( ch->pcdata->learned[sn] >= adept )
 		{
-			sprintf( buf, "$n tells you, 'I've taught you everything I can about %s.'", skill_table[sn]->name );
+			snprintf( buf, MAX_STRING_LENGTH, "$n tells you, 'I've taught you everything I can about %s.'", skill_table[sn]->name );
 			act( AT_TELL, buf, mob, NULL, ch, TO_VICT );
 			act( AT_TELL, "$n tells you, 'You'll have to practice it on your own now...'", mob, NULL, ch, TO_VICT );
 		}
@@ -3666,9 +3666,9 @@ CMDF( do_teach )
 		else
 		{
 			victim->pcdata->learned[sn] += int_app[get_curr_int( ch )].learn;
-			sprintf( buf, "You teach %s $T.", victim->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You teach %s $T.", victim->name );
 			act( AT_ACTION, buf, ch, NULL, skill_table[sn]->name, TO_CHAR );
-			sprintf( buf, "%s teaches you $T.", ch->name );
+			snprintf( buf, MAX_STRING_LENGTH, "%s teaches you $T.", ch->name );
 			act( AT_ACTION, buf, victim, NULL, skill_table[sn]->name, TO_CHAR );
 		}
 	}
@@ -4462,7 +4462,7 @@ CMDF( do_afk )
 	if( argument[0] == '\0' )
 	{
 		send_to_char( "Normal AFK message set.\r\n", ch );
-		sprintf( buf, "&W[&zA&WF&zK&W] %s points at the pretty AFK Tag.", ch->name );
+		snprintf( buf, MAX_STRING_LENGTH, "&W[&zA&WF&zK&W] %s points at the pretty AFK Tag.", ch->name );
 		ch->pcdata->afkmess = str_dup( buf );
 		return;
 	}
@@ -4470,7 +4470,7 @@ CMDF( do_afk )
 	if( !str_cmp( argument, "brb" ) )
 	{
 		send_to_char( "BRB Afk message set.\r\n", ch );
-		sprintf( buf, "&W[&zA&WF&zK&W] %s will BrB!", ch->name );
+		snprintf( buf, MAX_STRING_LENGTH, "&W[&zA&WF&zK&W] %s will BrB!", ch->name );
 		ch->pcdata->afkmess = str_dup( buf );
 		return;
 	}
@@ -4478,7 +4478,7 @@ CMDF( do_afk )
 	if( !str_cmp( argument, "boo" ) )
 	{
 		send_to_char( "Boo message set.\r\n", ch );
-		sprintf( buf, "&W[&zA&WF&zK&W] %s is currently busy with %s boo!", ch->name,
+		snprintf( buf, MAX_STRING_LENGTH, "&W[&zA&WF&zK&W] %s is currently busy with %s boo!", ch->name,
 			ch->sex == SEX_MALE ? "his" : ch->sex == SEX_FEMALE ? "her" : "its" );
 		ch->pcdata->afkmess = str_dup( buf );
 		return;
@@ -4487,7 +4487,7 @@ CMDF( do_afk )
 	if( !str_cmp( argument, "dog" ) )
 	{
 		send_to_char( "Dog AFK message set.\r\n", ch );
-		sprintf( buf, "&W[&zA&WF&zK&W] %s is walking the dog!", ch->name );
+		snprintf( buf, MAX_STRING_LENGTH, "&W[&zA&WF&zK&W] %s is walking the dog!", ch->name );
 		ch->pcdata->afkmess = str_dup( buf );
 		return;
 	}
@@ -4495,7 +4495,7 @@ CMDF( do_afk )
 	if( !str_cmp( argument, "food" ) )
 	{
 		send_to_char( "Eating messege set.\r\n", ch );
-		sprintf( buf, "&W[&zA&WF&zK&W] %s is currently enjoying food.", ch->name );
+		snprintf( buf, MAX_STRING_LENGTH, "&W[&zA&WF&zK&W] %s is currently enjoying food.", ch->name );
 		ch->pcdata->afkmess = str_dup( buf );
 		return;
 	}
@@ -4506,7 +4506,7 @@ CMDF( do_afk )
 		msg[50] = '\0';
 
 	smash_tilde( msg );
-	sprintf( buf, "&W[&zA&WF&zK&W] %s", msg );
+	snprintf( buf, MAX_STRING_LENGTH, "&W[&zA&WF&zK&W] %s", msg );
 	ch->pcdata->afkmess = str_dup( buf );
 	return;
 
@@ -4580,9 +4580,9 @@ CMDF( do_slist )
 				continue;
 		}
 		if( ability >= 0 )
-			sprintf( skn, "&Y[&O>&R%s&O<&Y]", ability_name[ability] );
+			snprintf( skn, MAX_INPUT_LENGTH, "&Y[&O>&R%s&O<&Y]", ability_name[ability] );
 		else
-			sprintf( skn, " " );
+			snprintf( skn, MAX_INPUT_LENGTH, " " );
 
 		send_to_pager( "\r\n", ch );
 		send_to_pager( color_align( skn, 74, ALIGN_CENTER ), ch );
@@ -4698,9 +4698,9 @@ CMDF( do_whois )
 	}
 
 	if( IS_IMMORTAL( victim ) )
-		sprintf( lev, "%d", victim->top_level );
+		snprintf( lev, MAX_STRING_LENGTH, "%d", victim->top_level );
 	else
-		sprintf( lev, "%d", victim->skill_level[COMBAT_ABILITY] + victim->skill_level[HUNTING_ABILITY] );
+		snprintf( lev, MAX_STRING_LENGTH, "%d", victim->skill_level[COMBAT_ABILITY] + victim->skill_level[HUNTING_ABILITY] );
 
 	ch_printf( ch, "\r\n&CAge&c:&z %d              &CHighest Level&c:&z %-4s", get_age( victim ), lev );
 	send_to_char( "\r\n&B----------------------------------------------------\r\n", ch );
@@ -4785,14 +4785,14 @@ CMDF( do_whois )
 
 		if( get_trust( victim ) < get_trust( ch ) )
 		{
-			sprintf( buf2, "list %s", buf );
+			snprintf( buf2, MAX_STRING_LENGTH, "list %s", buf );
 			do_comment( ch, buf2 );
 		}
 
 		if( xIS_SET( victim->act, PLR_SILENCE ) || xIS_SET( victim->act, PLR_NO_EMOTE )
 			|| xIS_SET( victim->act, PLR_NO_TELL ) )
 		{
-			sprintf( buf2, "This player has the following flags set:" );
+			snprintf( buf2, MAX_STRING_LENGTH, "This player has the following flags set:" );
 			if( xIS_SET( victim->act, PLR_SILENCE ) )
 				strcat( buf2, " silence" );
 			if( xIS_SET( victim->act, PLR_NO_EMOTE ) )
@@ -4804,7 +4804,7 @@ CMDF( do_whois )
 		}
 		if( victim->desc && victim->desc->host[0] != '\0' )   /* added by Gorog */
 		{
-			sprintf( buf2, "%s's IP info: ", victim->name );
+			snprintf( buf2, MAX_STRING_LENGTH, "%s's IP info: ", victim->name );
 			if( get_trust( ch ) >= LEVEL_LIAISON )
 			{
 				strcat( buf2, victim->desc->user );
@@ -4816,7 +4816,7 @@ CMDF( do_whois )
 		}
 		if( get_trust( ch ) >= LEVEL_LIAISON && get_trust( ch ) >= get_trust( victim ) && victim->pcdata )
 		{
-			sprintf( buf2, "Email: %s\r\n", victim->pcdata->email );
+			snprintf( buf2, MAX_STRING_LENGTH, "Email: %s\r\n", victim->pcdata->email );
 			send_to_char( buf2, ch );
 		}
 	}

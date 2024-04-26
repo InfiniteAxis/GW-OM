@@ -45,7 +45,7 @@ void save_timedata( void )
 	FILE *fp;
 	char filename[MIL];
 
-	sprintf( filename, "%stime.dat", SYSTEM_DIR );
+	snprintf( filename, MIL, "%stime.dat", SYSTEM_DIR );
 
 	if( ( fp = FileOpen( filename, "w" ) ) == NULL )
 	{
@@ -106,7 +106,7 @@ bool load_timedata( void )
 	bool found;
 
 	found = false;
-	sprintf( filename, "%stime.dat", SYSTEM_DIR );
+	snprintf( filename, MIL, "%stime.dat", SYSTEM_DIR );
 
 	if( ( fp = FileOpen( filename, "r" ) ) != NULL )
 	{
@@ -255,7 +255,7 @@ timecheck:
 			else
 			{
 				days = sysdata.newbie_purge;
-				sprintf( log_buf, "Player %s was deleted. Exceeded time limit of %d days.", name, days );
+				snprintf( log_buf, MAX_STRING_LENGTH, "Player %s was deleted. Exceeded time limit of %d days.", name, days );
 				log_string( log_buf );
 #ifdef AUTO_AUTH
 				remove_from_auth( name );
@@ -274,7 +274,7 @@ timecheck:
 				else
 				{
 					days = sysdata.regular_purge;
-					sprintf( log_buf, "Player %s was deleted. Exceeded time limit of %d days.", name, days );
+					snprintf( log_buf, MAX_STRING_LENGTH, "Player %s was deleted. Exceeded time limit of %d days.", name, days );
 					log_string( log_buf );
 #ifdef AUTO_AUTH
 					remove_from_auth( name );
@@ -297,8 +297,8 @@ timecheck:
 
 		if( guild->shortname[0] != '\0' && toplevel < LEVEL_STAFF )
 		{
-			sprintf( clanmemberlist, "%s%s.list", CLAN_DIR, guild->shortname );
-			sprintf( buf, "%s~", name );
+			snprintf( clanmemberlist, MAX_STRING_LENGTH, "%s%s.list", CLAN_DIR, guild->shortname );
+			snprintf( buf, MAX_STRING_LENGTH, "%s~", name );
 			append_to_file( clanmemberlist, buf );
 		}
 
@@ -319,7 +319,7 @@ void read_pfile( const char *dirname, const char *filename, bool count )
 
 	now_time = time( 0 );
 
-	sprintf( fname, "%s/%s", dirname, filename );
+	snprintf( fname, MSL, "%s/%s", dirname, filename );
 
 	if( !str_cmp( filename, ".clone" ) || !str_cmp( filename, ".home" ) )
 		return;
@@ -378,13 +378,13 @@ void pfile_scan( bool count )
 	for( clan = first_clan; clan; clan = clan->next )
 	{
 		clan->members = 0;
-		sprintf( buf, "%s%s.list", CLAN_DIR, clan->shortname );
+		snprintf( buf, MAX_STRING_LENGTH, "%s%s.list", CLAN_DIR, clan->shortname );
 		remove( buf );
 	}
 
 	for( alpha_loop = 0; alpha_loop <= 25; alpha_loop++ )
 	{
-		sprintf( directory_name, "%s%c", PLAYER_DIR, 'a' + alpha_loop );
+		snprintf( directory_name, 100, "%s%c", PLAYER_DIR, 'a' + alpha_loop );
 		/*
 		 * log_string( directory_name );
 		 */
@@ -407,15 +407,15 @@ void pfile_scan( bool count )
 	else
 		log_string( "Pfile count completed." );
 
-	sprintf( log_buf, "Total pfiles scanned: %d", cou );
+	snprintf( log_buf, MAX_STRING_LENGTH, "Total pfiles scanned: %d", cou );
 	log_string( log_buf );
 
 	if( !count )
 	{
-		sprintf( log_buf, "Total pfiles deleted: %d", deleted );
+		snprintf( log_buf, MAX_STRING_LENGTH, "Total pfiles deleted: %d", deleted );
 		log_string( log_buf );
 
-		sprintf( log_buf, "Total pfiles remaining: %d", cou - deleted );
+		snprintf( log_buf, MAX_STRING_LENGTH, "Total pfiles remaining: %d", cou - deleted );
 		num_pfiles = cou - deleted;
 		log_string( log_buf );
 	}
@@ -440,7 +440,7 @@ CMDF( do_pfiles )
 		/*
 		 * Makes a backup copy of existing pfiles just in case - Samson
 		 */
-		sprintf( buf, "tar -cf %spfiles.tar %s*", PLAYER_DIR, PLAYER_DIR );
+		snprintf( buf, MAX_STRING_LENGTH, "tar -cf %spfiles.tar %s*", PLAYER_DIR, PLAYER_DIR );
 
 		/*
 		 * GAH, the shell pipe won't process the command that gets pieced
@@ -448,7 +448,7 @@ CMDF( do_pfiles )
 		 */
 		system( buf );
 
-		sprintf( log_buf, "Manual pfile cleanup started by %s.", ch->name );
+		snprintf( log_buf, MAX_STRING_LENGTH, "Manual pfile cleanup started by %s.", ch->name );
 		log_string( log_buf );
 		pfile_scan( false );
 #ifdef SAMSONRENT
@@ -467,7 +467,7 @@ CMDF( do_pfiles )
 
 	if( !str_cmp( argument, "count" ) )
 	{
-		sprintf( log_buf, "Pfile count started by %s.", ch->name );
+		snprintf( log_buf, MAX_STRING_LENGTH, "Pfile count started by %s.", ch->name );
 		log_string( log_buf );
 		pfile_scan( true );
 		return;
@@ -500,7 +500,7 @@ void check_pfiles( time_t reset )
 			/*
 			 * Makes a backup copy of existing pfiles just in case - Samson
 			 */
-			sprintf( buf, "tar -cf %spfiles.tar %s*", PLAYER_DIR, PLAYER_DIR );
+			snprintf( buf, MAX_STRING_LENGTH, "tar -cf %spfiles.tar %s*", PLAYER_DIR, PLAYER_DIR );
 
 			/*
 			 * Would use the shell pipe for this, but alas, it requires a ch in order
@@ -550,8 +550,8 @@ void add_member( const char *name, const char *shortname )
 		return;
 	}
 
-	sprintf( fbuf, "%s%s.list", CLAN_DIR, shortname );
-	sprintf( buf, "%s~", name );
+	snprintf( fbuf, MSL, "%s%s.list", CLAN_DIR, shortname );
+	snprintf( buf, MAX_STRING_LENGTH, "%s~", name );
 	append_to_file( fbuf, buf );
 
 }
@@ -576,8 +576,8 @@ void remove_member( const char *name, const char *shortname )
 		return;
 	}
 
-	sprintf( list, "%s%s.list", CLAN_DIR, shortname );
-	sprintf( temp, "%s.temp", list );
+	snprintf( list, MAX_STRING_LENGTH, "%s%s.list", CLAN_DIR, shortname );
+	snprintf( temp, MAX_STRING_LENGTH, "%s.temp", list );
 
 	if( ( fpList = FileOpen( list, "r" ) ) == NULL )
 	{

@@ -121,12 +121,12 @@ void save_bits( void )
 	{
 		if( mode == 0 )
 		{
-			sprintf( filename, "%sabit.lst", SYSTEM_DIR );
+			snprintf( filename, MAX_INPUT_LENGTH, "%sabit.lst", SYSTEM_DIR );
 			start_bit = first_abit;
 		}
 		else
 		{
-			sprintf( filename, "%sqbit.lst", SYSTEM_DIR );
+			snprintf( filename, MAX_INPUT_LENGTH, "%sqbit.lst", SYSTEM_DIR );
 			start_bit = first_qbit;
 		}
 
@@ -157,7 +157,7 @@ void load_bits( void )
 	BIT_DATA *bit = NULL;
 	FILE *fp;
 
-	sprintf( buf, "%sabit.lst", SYSTEM_DIR );
+	snprintf( buf, MAX_STRING_LENGTH, "%sabit.lst", SYSTEM_DIR );
 	if( ( fp = FileOpen( buf, "r" ) ) == NULL )
 	{
 		perror( buf );
@@ -183,7 +183,7 @@ void load_bits( void )
 				if( mode == 0 )
 				{
 					mode = 1; /* We have two files to read, I reused the same code to read both */
-					sprintf( buf, "%sqbit.lst", SYSTEM_DIR );
+					snprintf( buf, MAX_STRING_LENGTH, "%sqbit.lst", SYSTEM_DIR );
 					if( ( fp = FileOpen( buf, "r" ) ) == NULL )
 					{
 						perror( buf );

@@ -61,7 +61,7 @@ void save_mail( CHAR_DATA *ch, char *filename )
 		return;
 	}
 
-	sprintf( buf, "%s%c/%s", MAIL_DIR, tolower( filename[0] ), capitalize( filename ) );
+	snprintf( buf, MAX_STRING_LENGTH, "%s%c/%s", MAIL_DIR, tolower( filename[0] ), capitalize( filename ) );
 
 	if( ( fp = FileOpen( buf, "a" ) ) == NULL )
 	{
@@ -88,7 +88,7 @@ void load_mail( CHAR_DATA *ch )
 	char buf[MAX_STRING_LENGTH], notebuf[MAX_STRING_LENGTH];
 	bool deleting = false;
 
-	sprintf( buf, "%s%c/%s", MAIL_DIR, tolower( ch->name[0] ), capitalize( ch->name ) );
+	snprintf( buf, MAX_STRING_LENGTH, "%s%c/%s", MAIL_DIR, tolower( ch->name[0] ), capitalize( ch->name ) );
 
 	if( ( fp = FileOpen( buf, "r" ) ) == NULL )
 	{
@@ -96,7 +96,7 @@ void load_mail( CHAR_DATA *ch )
 		return;
 	}
 
-	sprintf( buf, "%s%c/%s.dlt", MAIL_DIR, tolower( ch->name[0] ), capitalize( ch->name ) );
+	snprintf( buf, MAX_STRING_LENGTH, "%s%c/%s.dlt", MAIL_DIR, tolower( ch->name[0] ), capitalize( ch->name ) );
 
 	if( ( wfp = FileOpen( buf, "w" ) ) == NULL )
 	{
@@ -104,8 +104,8 @@ void load_mail( CHAR_DATA *ch )
 		return;
 	}
 
-	sprintf( buf, " " );
-	sprintf( notebuf, "---------- Gundam Mail ----------\n" );
+	snprintf( buf, MAX_STRING_LENGTH, " " );
+	snprintf( notebuf, MAX_STRING_LENGTH, "---------- Gundam Mail ----------\n" );
 
 	while( fgets( buf, sizeof( buf ), fp ) != NULL )
 	{
@@ -140,15 +140,15 @@ void load_mail( CHAR_DATA *ch )
 	paper->name = STRALLOC( "disk mail" );
 	obj_to_char( paper, ch );
 
-	sprintf( buf, "%s%c/%s", MAIL_DIR, tolower( ch->name[0] ), capitalize( ch->name ) );
-	sprintf( notebuf, "%s%c/%s.dlt", MAIL_DIR, tolower( ch->name[0] ), capitalize( ch->name ) );
+	snprintf( buf, MAX_STRING_LENGTH, "%s%c/%s", MAIL_DIR, tolower( ch->name[0] ), capitalize( ch->name ) );
+	snprintf( notebuf, MAX_STRING_LENGTH, "%s%c/%s.dlt", MAIL_DIR, tolower( ch->name[0] ), capitalize( ch->name ) );
 
 	rename( notebuf, buf );
 
 	FileClose( fp );
 	FileClose( wfp );
 
-	sprintf( buf, "%s%c/%s", MAIL_DIR, tolower( ch->name[0] ), capitalize( ch->name ) );
+	snprintf( buf, MAX_STRING_LENGTH, "%s%c/%s", MAIL_DIR, tolower( ch->name[0] ), capitalize( ch->name ) );
 
 	wwfp = FileOpen( buf, "r" );
 
@@ -164,7 +164,7 @@ void mail_count( CHAR_DATA *ch )
 	char buf[MAX_STRING_LENGTH];
 	struct stat fst;
 
-	sprintf( buf, "%s%c/%s", MAIL_DIR, tolower( ch->name[0] ), capitalize( ch->name ) );
+	snprintf( buf, MAX_STRING_LENGTH, "%s%c/%s", MAIL_DIR, tolower( ch->name[0] ), capitalize( ch->name ) );
 
 	if( stat( buf, &fst ) != -1 )
 		ch_printf( ch, "&GYou've got mail!\n" );
@@ -221,7 +221,7 @@ CMDF( do_mail )
 
 	if( nifty_is_name_prefix( arg, "receive" ) )
 	{
-		sprintf( buf, "%s%c/%s", MAIL_DIR, tolower( ch->name[0] ), capitalize( ch->name ) );
+		snprintf( buf, MAX_STRING_LENGTH, "%s%c/%s", MAIL_DIR, tolower( ch->name[0] ), capitalize( ch->name ) );
 
 		if( stat( buf, &fst ) == -1 )
 		{
@@ -242,7 +242,7 @@ CMDF( do_mail )
 			return;
 		}
 
-		sprintf( buf, "%s%c/%s", PLAYER_DIR, tolower( argument[0] ), capitalize( argument ) );
+		snprintf( buf, MAX_STRING_LENGTH, "%s%c/%s", PLAYER_DIR, tolower( argument[0] ), capitalize( argument ) );
 
 		if( stat( buf, &fst ) == -1 )
 		{

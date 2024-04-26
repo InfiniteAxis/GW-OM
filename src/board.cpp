@@ -170,7 +170,7 @@ void finish_note( BOARD_DATA *board, NOTE_DATA *note )
 	 * append note to note file
 	 */
 
-	sprintf( filename, "%s%s", NOTE_DIR, board->short_name );
+	snprintf( filename, 200, "%s%s", NOTE_DIR, board->short_name );
 
 	fp = FileOpen( filename, "a" );
 	if( !fp )
@@ -180,7 +180,7 @@ void finish_note( BOARD_DATA *board, NOTE_DATA *note )
 		return;
 	}
 
-	sprintf( buf, "&GA &BN&be&Bw&G &CP&co&Cs&ct&G has been added to &P|&p%s&P|\r\n", board->short_name );
+	snprintf( buf, MAX_STRING_LENGTH, "&GA &BN&be&Bw&G &CP&co&Cs&ct&G has been added to &P|&p%s&P|\r\n", board->short_name );
 	for( vch = first_char; vch; vch = vch->next )
 	{
 		if( IS_NPC( vch ) )
@@ -256,15 +256,15 @@ static void save_board( BOARD_DATA *board )
 {
 	FILE *fp;
 	char filename[200];
-	char buf[200];
+	char buf[MAX_STRING_LENGTH];
 	NOTE_DATA *note;
 
-	sprintf( filename, "%s%s", NOTE_DIR, board->short_name );
+	snprintf( filename, 200, "%s%s", NOTE_DIR, board->short_name );
 
 	fp = FileOpen( filename, "w" );
 	if( !fp )
 	{
-		sprintf( buf, "Error writing to: %s", filename );
+		snprintf( buf, MAX_STRING_LENGTH, "Error writing to: %s", filename );
 		bug( buf, 0 );
 	}
 	else
@@ -284,7 +284,7 @@ static void show_note_to_char( CHAR_DATA *ch, NOTE_DATA *note, int num )
 	/*
 	 * Ugly colors ?
 	 */
-	sprintf( buf,
+	snprintf( buf, 4*MAX_STRING_LENGTH,
 		"&C[&c%4d&C] &B%s&b: &p%s\r\n&BDate&b:&p  %s\r\n"
 		"&BTo&b:&p    %s\r\n"
 		"&G===========================================================================\r\n"
@@ -310,7 +310,7 @@ void load_board( BOARD_DATA *board )
 	NOTE_DATA *last_note;
 	char filename[200];
 
-	sprintf( filename, "%s%s", NOTE_DIR, board->short_name );
+	snprintf( filename, 200, "%s%s", NOTE_DIR, board->short_name );
 
 	fp = FileOpen( filename, "r" );
 
@@ -382,7 +382,7 @@ void load_board( BOARD_DATA *board )
 		{
 			char archive_name[200];
 
-			sprintf( archive_name, "%s%s.old", NOTE_DIR, board->short_name );
+			snprintf( archive_name, 200, "%s%s.old", NOTE_DIR, board->short_name );
 			fp_archive = FileOpen( archive_name, "a" );
 			if( !fp_archive )
 				bug( "Could not open archive boards for writing", 0 );
@@ -529,11 +529,11 @@ CMDF( do_nwrite )
 	/*
 	 * Begin writing the note !
 	 */
-	sprintf( buf, "\r\n&zYou are now %s a new note on the &B%s &zboard.\r\n",
+	snprintf( buf, MAX_STRING_LENGTH, "\r\n&zYou are now %s a new note on the &B%s &zboard.\r\n",
 		ch->pcdata->in_progress->text ? "continuing" : "posting", ch->pcdata->board->short_name );
 	send_to_char( buf, ch );
 
-	sprintf( buf, "&YFrom&O:&G  %s\r\n\r\n", ch->name );
+	snprintf( buf, MAX_STRING_LENGTH, "&YFrom&O:&G  %s\r\n\r\n", ch->name );
 	send_to_char( buf, ch );
 
 	if( !ch->pcdata->in_progress->text ) /* Are we continuing an old note or not? */
@@ -541,16 +541,16 @@ CMDF( do_nwrite )
 		switch( ch->pcdata->board->force_type )
 		{
 		case DEF_NORMAL:
-			sprintf( buf, "&zIf you press enter, default recipient \" %s \" will be chosen.\r\n",
+			snprintf( buf, MAX_STRING_LENGTH, "&zIf you press enter, default recipient \" %s \" will be chosen.\r\n",
 				ch->pcdata->board->names );
 			break;
 		case DEF_INCLUDE:
-			sprintf( buf,
+			snprintf( buf, MAX_STRING_LENGTH,
 				"&zThe recipient list &RMUST&z include \"%s\". If not, it will be added automatically.\r\n", ch->pcdata->board->names );
 			break;
 
 		case DEF_EXCLUDE:
-			sprintf( buf, "&zThe recipient of this note must &RNOT&z include: \"%s\".",
+			snprintf( buf, MAX_STRING_LENGTH, "&zThe recipient of this note must &RNOT&z include: \"%s\".",
 				ch->pcdata->board->names );
 
 			break;
@@ -567,7 +567,7 @@ CMDF( do_nwrite )
 	}
 	else /* we are continuing, print out all the fields and the note so far */
 	{
-		sprintf( buf, "&YTo&O:&G      %s\r\n"
+		snprintf( buf, MAX_STRING_LENGTH, "&YTo&O:&G      %s\r\n"
 			"&YExpires&O:&G %s\r\n"
 			"&YSubject&O:&G %s\r\n",
 			ch->pcdata->in_progress->to_list,
@@ -706,7 +706,7 @@ CMDF( do_nlist )
 			has_shown++;   /* note that we want to see X VISIBLE note, not just last X */
 			if( !show || ( ( count - show ) < has_shown ) )
 			{
-				sprintf( buf, "&B%3d  &C%-13s &G%s\r\n", num, p->sender, p->subject );
+				snprintf( buf, MAX_STRING_LENGTH, "&B%3d  &C%-13s &G%s\r\n", num, p->sender, p->subject );
 				send_to_char( buf, ch );
 			}
 		}
@@ -796,7 +796,7 @@ CMDF( do_unread )
 		unread = unread_notes( ch, &boards[i] );  /* how many unread notes? */
 		if( unread != BOARD_NOACCESS )
 		{
-			sprintf( buf, "&zYou have &B%d &znew &C%s&z to read.\r\n", unread, boards[i].short_name );
+			snprintf( buf, MAX_STRING_LENGTH, "&zYou have &B%d &znew &C%s&z to read.\r\n", unread, boards[i].short_name );
 			send_to_char( buf, ch );
 			count++;
 		}
@@ -824,7 +824,7 @@ CMDF( do_boards )
 		( "\r\n&BSyntax&b: &zSubject <Subject>\r\n&BSubjects&b:&z Notes, Ideas, Articles, Mistakes, Personnel.\r\n\r\n",
 			ch );
 
-		sprintf( buf, "\r\n&zYou current subject is &B%s&z.\r\n", ch->pcdata->board->short_name );
+		snprintf( buf, MAX_STRING_LENGTH, "\r\n&zYou current subject is &B%s&z.\r\n", ch->pcdata->board->short_name );
 		send_to_char( buf, ch );
 
 		/*
@@ -861,7 +861,7 @@ CMDF( do_boards )
 		if( count == number ) /* found the board.. change to it */
 		{
 			ch->pcdata->board = &boards[i];
-			sprintf( buf, "\r\n&zCurrent subject changed to &B%s&z. %s.\r\n", boards[i].short_name,
+			snprintf( buf, MAX_STRING_LENGTH, "\r\n&zCurrent subject changed to &B%s&z. %s.\r\n", boards[i].short_name,
 				( get_trust( ch ) < boards[i].write_level )
 				? "You can only read here" : "You can both read and write here" );
 			send_to_char( buf, ch );
@@ -896,7 +896,7 @@ CMDF( do_boards )
 	}
 
 	ch->pcdata->board = &boards[i];
-	sprintf( buf, "&zCurrent subject changed to &B%s&z. %s.\r\n", boards[i].short_name,
+	snprintf( buf, MAX_STRING_LENGTH, "&zCurrent subject changed to &B%s&z. %s.\r\n", boards[i].short_name,
 		( get_trust( ch ) < boards[i].write_level ) ? "You can only read here" : "You can both read and write here" );
 	send_to_char( buf, ch );
 }
@@ -989,7 +989,7 @@ void handle_con_note_to( DESCRIPTOR_DATA *d, const char *argument )
 		if( !buf[0] )  /* empty string? */
 		{
 			ch->pcdata->in_progress->to_list = STRALLOC( ch->pcdata->board->names );
-			sprintf( buf, "Assumed default recipient: %s\r\n", ch->pcdata->board->names );
+			snprintf( buf, MAX_STRING_LENGTH, "Assumed default recipient: %s\r\n", ch->pcdata->board->names );
 			write_to_buffer( d, buf, 0 );
 		}
 		else
@@ -1004,7 +1004,7 @@ void handle_con_note_to( DESCRIPTOR_DATA *d, const char *argument )
 			strcat( buf, ch->pcdata->board->names );
 			ch->pcdata->in_progress->to_list = STRALLOC( buf );
 
-			sprintf( buf, "\n\rYou did not specify %s as recipient, so it was automatically added.\r\n"
+			snprintf( buf, MAX_STRING_LENGTH, "\n\rYou did not specify %s as recipient, so it was automatically added.\r\n"
 				"New To :  %s\r\n",
 				ch->pcdata->board->names, ch->pcdata->in_progress->to_list );
 			write_to_buffer( d, buf, 0 );
@@ -1022,7 +1022,7 @@ void handle_con_note_to( DESCRIPTOR_DATA *d, const char *argument )
 
 		if( is_full_name( ch->pcdata->board->names, buf ) )
 		{
-			sprintf( buf, "You are not allowed to send notes to %s on this board. Try again.\r\n"
+			snprintf( buf, MAX_STRING_LENGTH, "You are not allowed to send notes to %s on this board. Try again.\r\n"
 				"To:      ", ch->pcdata->board->names );
 			write_to_buffer( d, buf, 0 );
 			return; /* return from nanny, not changing to the next state! */
@@ -1073,7 +1073,7 @@ void handle_con_note_subject( DESCRIPTOR_DATA *d, const char *argument )
 		ch->pcdata->in_progress->subject = STRALLOC( buf );
 		if( IS_IMMORTAL( ch ) )   /* immortals get to choose number of expire days */
 		{
-			sprintf( buf, "\n\rHow many days do you want this note to expire in?\r\n"
+			snprintf( buf, MAX_STRING_LENGTH, "\n\rHow many days do you want this note to expire in?\r\n"
 				"Press Enter for default value for this board, %d days.\r\n"
 				"Expire:  ", ch->pcdata->board->purge_days );
 			write_to_buffer( d, buf, 0 );
@@ -1082,7 +1082,7 @@ void handle_con_note_subject( DESCRIPTOR_DATA *d, const char *argument )
 		else
 		{
 			ch->pcdata->in_progress->expire = current_time + ch->pcdata->board->purge_days * 24L * 3600L;
-			sprintf( buf, "This note will expire %s\r", ctime( &ch->pcdata->in_progress->expire ) );
+			snprintf( buf, MAX_STRING_LENGTH, "This note will expire %s\r", ctime( &ch->pcdata->in_progress->expire ) );
 			write_to_buffer( d, buf, 0 );
 			write_to_buffer( d,
 				"\n\rEnter text. Type ~ or END on an empty line to end note.\r\n"
@@ -1399,7 +1399,7 @@ CMDF( do_auction )
 
 		if( ch == auction_list->owner && !IS_IMMORTAL( ch ) )
 		{
-			sprintf( buf1, "You're auctioning %s&w.\r\n", obj->short_descr );
+			snprintf( buf1, MAX_STRING_LENGTH, "You're auctioning %s&w.\r\n", obj->short_descr );
 			send_to_char( buf1, ch );
 			return;
 		}
@@ -1423,7 +1423,7 @@ CMDF( do_auction )
 		if( auction_list->item != NULL )
 		{
 			obj_to_char( auction_list->item, ch );
-			sprintf( buf1, "%s&w appears in your hands.\r\n", auction_list->item->short_descr );
+			snprintf( buf1, MAX_STRING_LENGTH, "%s&w appears in your hands.\r\n", auction_list->item->short_descr );
 			send_to_char( buf1, ch );
 		}
 
@@ -1530,7 +1530,7 @@ CMDF( do_auction )
 
 		if( bid < auction_list->min_bid )
 		{
-			sprintf( buf1, "The minimum bid is &Y%ld&w dollars.\r\n", auction_list->min_bid );
+			snprintf( buf1, MAX_STRING_LENGTH, "The minimum bid is &Y%ld&w dollars.\r\n", auction_list->min_bid );
 			send_to_char( buf1, ch );
 			return;
 		}
@@ -1543,11 +1543,11 @@ CMDF( do_auction )
 				return;
 			}
 
-			sprintf( buf1, "You must bid above the current bid of &Y%ld dollars&w.\r\n", auction_list->current_bid );
+			snprintf( buf1, MAX_STRING_LENGTH, "You must bid above the current bid of &Y%ld dollars&w.\r\n", auction_list->current_bid );
 			return;
 		}
 
-		sprintf( buf1, "&Y%ld&C dollars has been offered for %s&C.\r\n", bid, auction_list->item->short_descr );
+		snprintf( buf1, MAX_STRING_LENGTH, "&Y%ld&C dollars has been offered for %s&C.\r\n", bid, auction_list->item->short_descr );
 		talk_auction( buf1 );
 
 		if( auction_list->high_bidder != NULL )
@@ -1658,11 +1658,11 @@ void auction_update( void )
 		{
 			if( auction_list->status == 0 )
 			{
-				sprintf( buf1, "Now taking bids on %s%s&C", auction_list->item->short_descr,
+				snprintf( buf1, MAX_STRING_LENGTH, "Now taking bids on %s%s&C", auction_list->item->short_descr,
 					auction_list->min_bid > 0 ? "" : ".\r\n" );
 				if( auction_list->min_bid > 0 )
 				{
-					sprintf( temp, ". &C[Min Bid &Y%ld&C]\r\n", auction_list->min_bid );
+					snprintf( temp, MAX_STRING_LENGTH, ". &C[Min Bid &Y%ld&C]\r\n", auction_list->min_bid );
 					strcat( buf1, temp );
 				}
 
@@ -1671,12 +1671,12 @@ void auction_update( void )
 
 			if( auction_list->status == AUCTION_LENGTH )
 			{
-				sprintf( buf1, "No bids on %s&C - item removed.\r\n", auction_list->item->short_descr );
+				snprintf( buf1, MAX_STRING_LENGTH, "No bids on %s&C - item removed.\r\n", auction_list->item->short_descr );
 				talk_auction( buf1 );
 
 				obj_to_char( auction_list->item, auction_list->owner );
 
-				sprintf( buf1, "%s&C is returned to you.\r\n", auction_list->item->short_descr );
+				snprintf( buf1, MAX_STRING_LENGTH, "%s&C is returned to you.\r\n", auction_list->item->short_descr );
 				send_to_char( buf1, auction_list->owner );
 
 				reset_auc( auction_list );
@@ -1685,14 +1685,14 @@ void auction_update( void )
 
 			if( auction_list->status == AUCTION_LENGTH - 1 )
 			{
-				sprintf( buf1, "%s&C - going twice (No Bids Received).\r\n", auction_list->item->short_descr );
+				snprintf( buf1, MAX_STRING_LENGTH, "%s&C - going twice (No Bids Received).\r\n", auction_list->item->short_descr );
 				talk_auction( buf1 );
 				return;
 			}
 
 			if( auction_list->status == AUCTION_LENGTH - 2 )
 			{
-				sprintf( buf1, "%s&C - going once (No Bids Received).\r\n", auction_list->item->short_descr );
+				snprintf( buf1, MAX_STRING_LENGTH, "%s&C - going once (No Bids Received).\r\n", auction_list->item->short_descr );
 				talk_auction( buf1 );
 				return;
 			}
@@ -1701,19 +1701,19 @@ void auction_update( void )
 		{
 			if( auction_list->status == AUCTION_LENGTH )
 			{
-				sprintf( buf1, "%s&C sold to &P%s&C for &Y%ld &Cdollars.\r\n",
+				snprintf( buf1, MAX_STRING_LENGTH, "%s&C sold to &P%s&C for &Y%ld &Cdollars.\r\n",
 					auction_list->item->short_descr, auction_list->high_bidder->name, auction_list->current_bid );
 				talk_auction( buf1 );
 
 				auction_list->owner->gold += ( auction_list->gold_held * 9 ) / 10;
 
-				sprintf( temp, "%ld dollars", ( auction_list->gold_held * 9 ) / 10 );
-				sprintf( buf1, "You receive %s.\r\n", auction_list->gold_held > 0 ? temp : "0 dollars" );
+				snprintf( temp, MAX_STRING_LENGTH, "%ld dollars", ( auction_list->gold_held * 9 ) / 10 );
+				snprintf( buf1, MAX_STRING_LENGTH, "You receive %s.\r\n", auction_list->gold_held > 0 ? temp : "0 dollars" );
 				send_to_char( buf1, auction_list->owner );
 
 				obj_to_char( auction_list->item, auction_list->high_bidder );
 
-				sprintf( buf1, "%s&C appears in your hands.\r\n", auction_list->item->short_descr );
+				snprintf( buf1, MAX_STRING_LENGTH, "%s&C appears in your hands.\r\n", auction_list->item->short_descr );
 				send_to_char( buf1, auction_list->high_bidder );
 
 				reset_auc( auction_list );
@@ -1722,7 +1722,7 @@ void auction_update( void )
 
 			if( auction_list->status == AUCTION_LENGTH - 1 )
 			{
-				sprintf( buf1, "%s&C - going twice at &Y%ld&C dollars.\r\n",
+				snprintf( buf1, MAX_STRING_LENGTH, "%s&C - going twice at &Y%ld&C dollars.\r\n",
 					auction_list->item->short_descr, auction_list->current_bid );
 				talk_auction( buf1 );
 				return;
@@ -1730,7 +1730,7 @@ void auction_update( void )
 
 			if( auction_list->status == AUCTION_LENGTH - 2 )
 			{
-				sprintf( buf1, "%s&C - going once at &Y%ld&C dollars.\r\n", auction_list->item->short_descr,
+				snprintf( buf1, MAX_STRING_LENGTH, "%s&C - going once at &Y%ld&C dollars.\r\n", auction_list->item->short_descr,
 					auction_list->current_bid );
 				talk_auction( buf1 );
 				return;

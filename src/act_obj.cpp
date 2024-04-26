@@ -237,7 +237,7 @@ void get_obj( CHAR_DATA *ch, OBJ_DATA *obj, OBJ_DATA *container )
 		if( IS_OBJ_STAT( obj, ITEM_ARTIFACT ) )
 		{
 			save_artifacts( );
-			sprintf( buf, "Picked up %s.", obj->name );
+			snprintf( buf, MAX_STRING_LENGTH, "Picked up %s.", obj->name );
 			append_file( ch, ARTI_FILE, buf );
 		}
 
@@ -957,7 +957,7 @@ CMDF( do_drop )
 		if( IS_OBJ_STAT( obj, ITEM_ARTIFACT ) )
 		{
 			save_artifacts( );
-			sprintf( buf, "Dropped %s.", obj->name );
+			snprintf( buf, MAX_STRING_LENGTH, "Dropped %s.", obj->name );
 			append_file( ch, ARTI_FILE, buf );
 		}
 
@@ -1043,7 +1043,7 @@ CMDF( do_drop )
 				if( IS_OBJ_STAT( obj, ITEM_ARTIFACT ) )
 				{
 					save_artifacts( );
-					sprintf( buf, "Dropped %s.", obj->name );
+					snprintf( buf, MAX_STRING_LENGTH, "Dropped %s.", obj->name );
 					append_file( ch, ARTI_FILE, buf );
 				}
 
@@ -1434,7 +1434,7 @@ void wear_obj( CHAR_DATA *ch, OBJ_DATA *obj, bool fReplace, short wear_bit )
 					send_to_char( "You cannot wield that.\r\n", ch );
 					break;
 				default:
-					sprintf( buf, "You cannot wear that on your %s.\r\n", w_flags[bit] );
+					snprintf( buf, MAX_STRING_LENGTH, "You cannot wear that on your %s.\r\n", w_flags[bit] );
 					send_to_char( buf, ch );
 				}
 			}
@@ -2488,7 +2488,7 @@ void save_clan_storeroom( CHAR_DATA *ch, CLAN_DATA *clan )
 		return;
 	}
 
-	sprintf( filename, "%s%s.vault", CLAN_DIR, clan->filename );
+	snprintf( filename, 256, "%s%s.vault", CLAN_DIR, clan->filename );
 	if( ( fp = FileOpen( filename, "w" ) ) == NULL )
 	{
 		bug( "save_clan_storeroom: FileOpen", 0 );
@@ -2544,7 +2544,7 @@ void obj_fall( OBJ_DATA *obj, bool through )
 
 		if( obj->in_room == to_room )
 		{
-			sprintf( buf, "Object falling into same room, room %d", to_room->vnum );
+			snprintf( buf, MAX_STRING_LENGTH, "Object falling into same room, room %d", to_room->vnum );
 			bug( buf, 0 );
 			extract_obj( obj );
 			return;
@@ -2720,13 +2720,13 @@ CMDF( do_sheath )
 	}
 	if( found == 0 )
 	{
-		sprintf( buf, "You need to be wearing a %s, before you can %s your weapon.\r\n", type, type );
+		snprintf( buf, MAX_STRING_LENGTH, "You need to be wearing a %s, before you can %s your weapon.\r\n", type, type );
 		send_to_char( buf, ch );
 		return;
 	}
 	if( !sheath )
 	{
-		sprintf( buf, "%s&w won't fit in that.\r\n", weapon->short_descr );
+		snprintf( buf, MAX_STRING_LENGTH, "%s&w won't fit in that.\r\n", weapon->short_descr );
 		send_to_char( buf, ch );
 		return;
 	}
@@ -2744,20 +2744,20 @@ CMDF( do_sheath )
 		}
 		else
 		{
-			sprintf( buf, "Your %s was made for a particular weapon.\r\n", type );
+			snprintf( buf, MAX_STRING_LENGTH, "Your %s was made for a particular weapon.\r\n", type );
 			send_to_char( buf, ch );
 			return;
 		}
 	}
 
-	sprintf( buf, "'%s'", weapon->name );
+	snprintf( buf, MAX_STRING_LENGTH, "'%s'", weapon->name );
 	do_remove( ch, buf );
-	sprintf( buf, "'%s' '%s'", weapon->name, sheath->name );
+	snprintf( buf, MAX_STRING_LENGTH, "'%s' '%s'", weapon->name, sheath->name );
 	do_put( ch, buf );
 
 	if( !sheath->first_content )
 	{
-		sprintf( buf, "'%s'", weapon->name );
+		snprintf( buf, MAX_STRING_LENGTH, "'%s'", weapon->name );
 		do_wear( ch, buf );
 	}
 	return;
@@ -2862,13 +2862,13 @@ CMDF( do_draw )
 		}
 	}
 
-	sprintf( buf, "'%s' '%s'", weapon->name, sheath->name );
+	snprintf( buf, MAX_STRING_LENGTH, "'%s' '%s'", weapon->name, sheath->name );
 	do_get( ch, buf );
-	sprintf( buf, "'%s'", weapon->name );
+	snprintf( buf, MAX_STRING_LENGTH, "'%s'", weapon->name );
 	do_wear( ch, buf );
 	if( weapon->wear_loc != WEAR_WIELD && weapon->wear_loc != WEAR_MISSILE_WIELD && weapon->wear_loc != WEAR_DUAL_WIELD )
 	{
-		sprintf( buf, "'%s' '%s'", weapon->name, sheath->name );
+		snprintf( buf, MAX_STRING_LENGTH, "'%s' '%s'", weapon->name, sheath->name );
 		do_put( ch, buf );
 	}
 	/*

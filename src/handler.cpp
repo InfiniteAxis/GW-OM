@@ -1102,7 +1102,7 @@ void char_to_room( CHAR_DATA *ch, ROOM_INDEX_DATA *pRoomIndex )
 	{
 		char buf[MAX_STRING_LENGTH];
 
-		sprintf( buf, "Char_to_room: %s -> NULL room!  Putting char in limbo (%d)", ch->name, ROOM_VNUM_LIMBO );
+		snprintf( buf, MAX_STRING_LENGTH, "Char_to_room: %s -> NULL room!  Putting char in limbo (%d)", ch->name, ROOM_VNUM_LIMBO );
 		bug( buf, 0 );
 		/*
 		 * This used to just return, but there was a problem with crashing
@@ -1674,7 +1674,7 @@ void extract_char( CHAR_DATA *ch, bool fPull )
 
 	if( char_died( ch ) )
 	{
-		sprintf( buf, "extract_char: %s already died!", ch->name );
+		snprintf( buf, MAX_STRING_LENGTH, "extract_char: %s already died!", ch->name );
 		bug( buf, 0 );
 		//  return;
 	}
@@ -2952,9 +2952,9 @@ ch_ret spring_trap( CHAR_DATA *ch, OBJ_DATA *obj )
 	}
 
 	dam = number_range( obj->value[2], obj->value[2] * 2 );
-	sprintf( buf, "You are %s!", txt );
+	snprintf( buf, MAX_STRING_LENGTH, "You are %s!", txt );
 	act( AT_HITME, buf, ch, NULL, NULL, TO_CHAR );
-	sprintf( buf, "$n is %s.", txt );
+	snprintf( buf, MAX_STRING_LENGTH, "$n is %s.", txt );
 	act( AT_ACTION, buf, ch, NULL, NULL, TO_ROOM );
 	--obj->value[0];
 	if( obj->value[0] <= 0 )
@@ -3369,10 +3369,10 @@ void showaffect( CHAR_DATA *ch, AFFECT_DATA *paf )
 		switch( paf->location )
 		{
 		default:
-			sprintf( buf, "Affects %s by %d.\r\n", affect_loc_name( paf->location ), paf->modifier );
+			snprintf( buf, MAX_STRING_LENGTH, "Affects %s by %d.\r\n", affect_loc_name( paf->location ), paf->modifier );
 			break;
 		case APPLY_AFFECT:
-			sprintf( buf, "Affects %s by", affect_loc_name( paf->location ) );
+			snprintf( buf, MAX_STRING_LENGTH, "Affects %s by", affect_loc_name( paf->location ) );
 			for( x = 0; x < 32; x++ )
 				if( IS_SET( paf->modifier, 1 << x ) )
 				{
@@ -3384,13 +3384,13 @@ void showaffect( CHAR_DATA *ch, AFFECT_DATA *paf )
 		case APPLY_WEAPONSPELL:
 		case APPLY_WEARSPELL:
 		case APPLY_REMOVESPELL:
-			sprintf( buf, "Casts spell '%s'\r\n",
+			snprintf( buf, MAX_STRING_LENGTH, "Casts spell '%s'\r\n",
 				IS_VALID_SN( paf->modifier ) ? skill_table[paf->modifier]->name : "unknown" );
 			break;
 		case APPLY_RESISTANT:
 		case APPLY_IMMUNE:
 		case APPLY_SUSCEPTIBLE:
-			sprintf( buf, "Affects %s by", affect_loc_name( paf->location ) );
+			snprintf( buf, MAX_STRING_LENGTH, "Affects %s by", affect_loc_name( paf->location ) );
 			for( x = 0; x < 32; x++ )
 				if( IS_SET( paf->modifier, 1 << x ) )
 				{
@@ -4250,7 +4250,7 @@ void check_lottery( CHAR_DATA *ch )
 
 	if( ch->pcdata->ticketnumber == sysdata.lotterynum )
 	{
-		sprintf( buf, "%s has won the Jackpot of %d!!!", ch->name, sysdata.jackpot );
+		snprintf( buf, MAX_STRING_LENGTH, "%s has won the Jackpot of %d!!!", ch->name, sysdata.jackpot );
 		info_chan( buf );
 		ch->gold += sysdata.jackpot;
 		REMOVE_BIT( ch->pcdata->flags, PCFLAG_HASLOTTO );
@@ -4258,7 +4258,7 @@ void check_lottery( CHAR_DATA *ch )
 		sysdata.lotteryweek += 1;
 		sysdata.lotterynum = 10000;
 		sysdata.lotterytimer = 50;
-		sprintf( buf, "%s", ch->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s", ch->name );
 		sysdata.lastwinner = str_dup( buf );
 		save_sysdata( sysdata );
 		return;
@@ -4287,7 +4287,7 @@ bool exists_player( const char *name )
 	if( !name || !str_cmp( name, "" ) )
 		return false;
 
-	sprintf( buf, "%s%c/%s", PLAYER_DIR, tolower( name[0] ), capitalize( name ) );
+	snprintf( buf, MAX_STRING_LENGTH, "%s%c/%s", PLAYER_DIR, tolower( name[0] ), capitalize( name ) );
 
 	if( stat( buf, &fst ) != -1 )
 		return true;

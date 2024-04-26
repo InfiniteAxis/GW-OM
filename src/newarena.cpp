@@ -149,9 +149,9 @@ CMDF( do_bet )
 		arena_pot += ( newbet / 2 );
 		bet_pot += ( newbet / 2 );
 		GET_BET_AMT( ch ) = newbet;
-		sprintf( buf, "You place %d dollars on %s.\r\n", newbet, ch->betted_on->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You place %d dollars on %s.\r\n", newbet, ch->betted_on->name );
 		send_to_char( buf, ch );
-		sprintf( buf, "&R[&r|&PA&pr&re&pn&Pa&r|&R]&r %s has placed %d dollars on %s.", ch->name,
+		snprintf( buf, MAX_STRING_LENGTH, "&R[&r|&PA&pr&re&pn&Pa&r|&R]&r %s has placed %d dollars on %s.", ch->name,
 			newbet, ch->betted_on->name );
 		echo_to_all( AT_IMMORT, buf, ECHOTAR_ALL );
 	}
@@ -175,7 +175,7 @@ CMDF( do_arena )
 
 	if( ch->top_level < lo_lim )
 	{
-		sprintf( buf, "Sorry but you must be at least level %d to enter this arena.\r\n", lo_lim );
+		snprintf( buf, MAX_STRING_LENGTH, "Sorry but you must be at least level %d to enter this arena.\r\n", lo_lim );
 		send_to_char( buf, ch );
 		return;
 	}
@@ -200,7 +200,7 @@ CMDF( do_arena )
 		act( AT_WHITE, "$n is dropped from the sky.", ch, NULL, NULL, TO_ROOM );
 		send_to_char( "You have been taken to the killing fields\r\n", ch );
 		do_look( ch, "auto" );
-		sprintf( buf, "&R[&r|&PA&pr&re&pn&Pa&r|&R]&r %s has joined the blood bath.", ch->name );
+		snprintf( buf, MAX_STRING_LENGTH, "&R[&r|&PA&pr&re&pn&Pa&r|&R]&r %s has joined the blood bath.", ch->name );
 		echo_to_all( AT_IMMORT, buf, ECHOTAR_ALL );
 		send_to_char( buf, ch );
 		ch->hit = ch->max_hit;
@@ -228,7 +228,7 @@ CMDF( do_chaos )
 	one_argument( argument, purse );
 	arena_pot = atoi( purse );
 
-	sprintf( buf, "LowLim %d HiLim %d Delay %d Length %d\r\n", lo_lim,
+	snprintf( buf, MAX_STRING_LENGTH, "LowLim %d HiLim %d Delay %d Length %d\r\n", lo_lim,
 		hi_lim, start_time, game_length );
 	send_to_char( buf, ch );
 
@@ -292,21 +292,21 @@ void start_arena( )
 		{
 			if( time_to_start > 1 )
 			{
-				sprintf( buf, "&R[&r|&PA&pr&re&pn&Pa&r|&R]&r The Killing Fields are open to levels &R%d &Wthru &R%d!", lo_lim, hi_lim );
+				snprintf( buf, MAX_STRING_LENGTH, "&R[&r|&PA&pr&re&pn&Pa&r|&R]&r The Killing Fields are open to levels &R%d &Wthru &R%d!", lo_lim, hi_lim );
 				echo_to_all( AT_IMMORT, buf, ECHOTAR_ALL );
-				sprintf( buf, "&R[&r|&PA&pr&re&pn&Pa&r|&R]&r %d &Whours to start!", time_to_start );
+				snprintf( buf, MAX_STRING_LENGTH, "&R[&r|&PA&pr&re&pn&Pa&r|&R]&r %d &Whours to start!", time_to_start );
 				echo_to_all( AT_IMMORT, buf, ECHOTAR_ALL );
 			}
 			else
 			{
-				sprintf( buf, "&R[&r|&PA&pr&re&pn&Pa&r|&R]&r The Killing Fields are open to levels &R%d &Wthru &R%d!", lo_lim, hi_lim );
+				snprintf( buf, MAX_STRING_LENGTH, "&R[&r|&PA&pr&re&pn&Pa&r|&R]&r The Killing Fields are open to levels &R%d &Wthru &R%d!", lo_lim, hi_lim );
 				echo_to_all( AT_IMMORT, buf, ECHOTAR_ALL );
-				sprintf( buf, "&R[&r|&PA&pr&re&pn&Pa&r|&R]&r 1 &Whour to start!" );
+				snprintf( buf, MAX_STRING_LENGTH, "&R[&r|&PA&pr&re&pn&Pa&r|&R]&r 1 &Whour to start!" );
 				echo_to_all( AT_IMMORT, buf, ECHOTAR_ALL );
 			}
-			sprintf( buf, "&R[&r|&PA&pr&re&pn&Pa&r|&R]&r Type &Rarena &rto enter." );
+			snprintf( buf, MAX_STRING_LENGTH, "&R[&r|&PA&pr&re&pn&Pa&r|&R]&r Type &Rarena &rto enter." );
 			echo_to_all( AT_IMMORT, buf, ECHOTAR_ALL );
-			sprintf( buf, "&R[&r|&PA&pr&re&pn&Pa&r|&R]&r Place your bets!!!" );
+			snprintf( buf, MAX_STRING_LENGTH, "&R[&r|&PA&pr&re&pn&Pa&r|&R]&r Place your bets!!!" );
 			echo_to_all( AT_IMMORT, buf, ECHOTAR_ALL );
 			/* echo_to_all(AT_WHITE, buf1, ECHOTAR_ALL); */
 			time_to_start--;
@@ -327,12 +327,12 @@ void start_arena( )
 			{
 				if( time_to_start > 1 )
 				{
-					sprintf( buf1, "The dual will start in %d hours. Place your bets!",
+					snprintf( buf1, MAX_STRING_LENGTH, "The dual will start in %d hours. Place your bets!",
 						time_to_start );
 				}
 				else
 				{
-					sprintf( buf1, "The dual will start in 1 hour. Place your bets!" );
+					snprintf( buf1, MAX_STRING_LENGTH, "The dual will start in 1 hour. Place your bets!" );
 				}
 				echo_to_all( AT_IMMORT, buf, ECHOTAR_ALL );
 				time_to_start--;
@@ -385,17 +385,17 @@ void do_game( )
 	}
 	else if( time_left_in_game % 5 )
 	{
-		sprintf( buf, "With %d hours left in the game there are %d players left.", time_left_in_game, num_in_arena( ) );
+		snprintf( buf, MAX_STRING_LENGTH, "With %d hours left in the game there are %d players left.", time_left_in_game, num_in_arena( ) );
 		echo_to_all( AT_IMMORT, buf, ECHOTAR_ALL );
 	}
 	else if( time_left_in_game == 1 )
 	{
-		sprintf( buf, "With 1 hour left in the game there are %d players left.", num_in_arena( ) );
+		snprintf( buf, MAX_STRING_LENGTH, "With 1 hour left in the game there are %d players left.", num_in_arena( ) );
 		echo_to_all( AT_IMMORT, buf, ECHOTAR_ALL );
 	}
 	else if( time_left_in_game <= 4 )
 	{
-		sprintf( buf, "With %d hours left in the game there are %d players left.", time_left_in_game, num_in_arena( ) );
+		snprintf( buf, MAX_STRING_LENGTH, "With %d hours left in the game there are %d players left.", time_left_in_game, num_in_arena( ) );
 		echo_to_all( AT_IMMORT, buf, ECHOTAR_ALL );
 	}
 	time_left_in_game--;
@@ -428,20 +428,20 @@ void find_game_winner( )
 			{
 				if( time_left_in_game == 1 )
 				{
-					sprintf( buf, "After 1 hour of battle %s is declared the winner", i->name );
+					snprintf( buf, MAX_STRING_LENGTH, "After 1 hour of battle %s is declared the winner", i->name );
 					echo_to_all( AT_IMMORT, buf, ECHOTAR_ALL );
 				}
 				else
 				{
-					sprintf( buf, "After %d hours of battle %s is declared the winner",
+					snprintf( buf, MAX_STRING_LENGTH, "After %d hours of battle %s is declared the winner",
 						game_length - time_left_in_game, i->name );
 					echo_to_all( AT_IMMORT, buf, ECHOTAR_ALL );
 				}
 				i->gold += arena_pot / 2;
-				sprintf( buf, "You have been awarded %d dollars for winning the arena\r\n",
+				snprintf( buf, MAX_STRING_LENGTH, "You have been awarded %d dollars for winning the arena\r\n",
 					( arena_pot / 2 ) );
 				send_to_char( buf, i );
-				sprintf( buf2, "%s awarded %d dollars for winning arena", i->name,
+				snprintf( buf2, MAX_STRING_LENGTH, "%s awarded %d dollars for winning arena", i->name,
 					( arena_pot / 2 ) );
 				bug( buf2, 0 );
 				CREATE( fame_node, struct hall_of_fame_element, 1 );
@@ -469,9 +469,9 @@ void show_jack_pot( )
 	char buf[MAX_INPUT_LENGTH];
 	/*  char buf1[MAX_INPUT_LENGTH]; */
 
-	sprintf( buf, "\r\nLets get ready to RUMBLE!!!!!!!!\r\n" );
-	sprintf( buf, "The jack pot for this arena is %d dollars\r\n", arena_pot );
-	sprintf( buf, "%d dollars have been bet on this arena.\r\n", bet_pot );
+	snprintf( buf, MAX_STRING_LENGTH, "\r\nLets get ready to RUMBLE!!!!!!!!\r\n" );
+	snprintf( buf, MAX_STRING_LENGTH, "The jack pot for this arena is %d dollars\r\n", arena_pot );
+	snprintf( buf, MAX_STRING_LENGTH, "%d dollars have been bet on this arena.\r\n", bet_pot );
 	echo_to_all( AT_IMMORT, buf, ECHOTAR_ALL );
 }
 
@@ -487,7 +487,7 @@ void silent_end( )
 	time_left_in_game = 0;
 	arena_pot = 0;
 	bet_pot = 0;
-	sprintf( buf, "It looks like no one was brave enough to enter the Arena." );
+	snprintf( buf, MAX_STRING_LENGTH, "It looks like no one was brave enough to enter the Arena." );
 	echo_to_all( AT_IMMORT, buf, ECHOTAR_ALL );
 	reset_bets( );
 }
@@ -518,7 +518,7 @@ void do_end_game( )
 				act( AT_TELL, "$n falls from the sky.", i, NULL, NULL, TO_ROOM );
 			}
 		}
-	sprintf( buf, "After %d hours of battle the Match is a draw.", game_length );
+	snprintf( buf, MAX_STRING_LENGTH, "After %d hours of battle the Match is a draw.", game_length );
 	echo_to_all( AT_IMMORT, buf, ECHOTAR_ALL );
 	time_left_in_game = 0;
 	ppl_in_arena = 0;
@@ -577,21 +577,21 @@ CMDF( do_awho )
 		return;
 	}
 
-	sprintf( buf, "&W  Players in the Arena\r\n" );
-	sprintf( buf, "%s-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-", buf );
-	sprintf( buf, "%s&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-\r\n", buf );
-	sprintf( buf, "%sGame Length = &R%-3d   &WTime To Start &R%-3d\r\n", buf, game_length, time_to_start );
-	sprintf( buf, "%s&WLevel Limits &R%d &Wto &R%d\r\n", buf, lo_lim, hi_lim );
-	sprintf( buf, "%s         &WJackpot = &R%d\r\n", buf, arena_pot );
-	sprintf( buf, "%s&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B", buf );
-	sprintf( buf, "%s-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B\r\n", buf );
+	snprintf( buf, MAX_STRING_LENGTH, "&W  Players in the Arena\r\n" );
+	snprintf( buf, MAX_STRING_LENGTH, "%s-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-", buf );
+	snprintf( buf, MAX_STRING_LENGTH, "%s&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-\r\n", buf );
+	snprintf( buf, MAX_STRING_LENGTH, "%sGame Length = &R%-3d   &WTime To Start &R%-3d\r\n", buf, game_length, time_to_start );
+	snprintf( buf, MAX_STRING_LENGTH, "%s&WLevel Limits &R%d &Wto &R%d\r\n", buf, lo_lim, hi_lim );
+	snprintf( buf, MAX_STRING_LENGTH, "%s         &WJackpot = &R%d\r\n", buf, arena_pot );
+	snprintf( buf, MAX_STRING_LENGTH, "%s&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B", buf );
+	snprintf( buf, MAX_STRING_LENGTH, "%s-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B-&W-&B\r\n", buf );
 	send_to_char( buf, ch );
 
 	for( tch = first_char; tch; tch = tch->next )
 		if( tch->in_room && xIS_SET( tch->in_room->room_flags, ROOM_ARENA )
 			&& ( tch->top_level < LEVEL_STAFF ) )
 		{
-			sprintf( buf2, "&W%s\r\n", tch->name );
+			snprintf( buf2, MAX_STRING_LENGTH, "&W%s\r\n", tch->name );
 			send_to_char( buf2, ch );
 		}
 	return;
@@ -612,18 +612,18 @@ CMDF( do_ahall )
 		return;
 	}
 
-	sprintf( buf2, "&B|---------------------------------------|\r\n" );
+	snprintf( buf2, MAX_STRING_LENGTH, "&B|---------------------------------------|\r\n" );
 	strcat( buf2, "| &WPast Winners of The Rise in Power Arena&B  |\r\n" );
 	strcat( buf2, "|---------------------------------------|\r\r\n\n" );
 
 	send_to_char( buf2, ch );
 	strcpy( format, "%-25.25s  %-10.10s  %-16.16s\r\n" );
-	sprintf( buf, format,
+	snprintf( buf, MAX_STRING_LENGTH, format,
 		"&RName",
 		"&RDate",
 		"&RAward Amt" );
 	send_to_char( buf, ch );
-	sprintf( buf, format,
+	snprintf( buf, MAX_STRING_LENGTH, format,
 		"&B---------------------------------",
 		"&B---------------------------------",
 		"&B---------------------------------" );
@@ -640,7 +640,7 @@ CMDF( do_ahall )
 		}
 		else
 			strcpy( site, "Unknown" );
-		sprintf( buf, format2, fame_node->name, site, fame_node->award );
+		snprintf( buf, MAX_STRING_LENGTH, format2, fame_node->name, site, fame_node->award );
 		send_to_char( buf, ch );
 	}
 	return;
@@ -715,7 +715,7 @@ void find_bet_winners( CHAR_DATA *winner )
 
 			if( ( !IS_NPC( wch ) ) && ( GET_BET_AMT( wch ) > 0 ) && ( GET_BETTED_ON( wch ) == winner ) )
 			{
-				sprintf( buf1, "You have won %d dollars on your bet.\r\n", ( GET_BET_AMT( wch ) ) * 2 );
+				snprintf( buf1, MAX_STRING_LENGTH, "You have won %d dollars on your bet.\r\n", ( GET_BET_AMT( wch ) ) * 2 );
 				send_to_char( buf1, wch );
 				wch->gold += GET_BET_AMT( wch ) * 2;
 				GET_BETTED_ON( wch ) = NULL;
@@ -788,10 +788,10 @@ CMDF( do_challenge )
 		send_to_char( "&WSomeone is already in the arena!\r\n", ch );
 		return;
 	}
-	sprintf( buf, "&R%s &Whas challenged you to a dual!\r\n", ch->name );
+	snprintf( buf, MAX_STRING_LENGTH, "&R%s &Whas challenged you to a dual!\r\n", ch->name );
 	send_to_char( buf, victim );
 	send_to_char( "&WPlease either agree to, or decline the challenge.\r\n\r\n", victim );
-	sprintf( buf, "&R[&r|&PA&pr&re&pn&Pa&r|&R]&r %s has challenged %s to a dual!!\r\n", ch->name, victim->name );
+	snprintf( buf, MAX_STRING_LENGTH, "&R[&r|&PA&pr&re&pn&Pa&r|&R]&r %s has challenged %s to a dual!!\r\n", ch->name, victim->name );
 	echo_to_all( AT_IMMORT, buf, ECHOTAR_ALL );
 	victim->challenged = ch;
 }
@@ -830,7 +830,7 @@ CMDF( do_agree )
 			return;
 		}
 
-		sprintf( buf, "&R[&r|&PA&pr&re&pn&Pa&r|&R]&G %s &CH&cA&CS&G accepted %s's challenge! &C(&zYAY&W! &B^^&R_&B^^&C)\r\n", ch->name, dch->name );
+		snprintf( buf, MAX_STRING_LENGTH, "&R[&r|&PA&pr&re&pn&Pa&r|&R]&G %s &CH&cA&CS&G accepted %s's challenge! &C(&zYAY&W! &B^^&R_&B^^&C)\r\n", ch->name, dch->name );
 		echo_to_all( AT_IMMORT, buf, ECHOTAR_ALL );
 		ch->challenged = NULL;
 		ch->retran = ch->in_room->vnum;
@@ -858,7 +858,7 @@ CMDF( do_decline )
 
 	if( ch->challenged )
 	{
-		sprintf( buf, "&R[&r|&PA&pr&re&pn&Pa&r|&R]&G %s did &CN&cO&CT&G accept %s's challenge! &C(&zCoward&W! &B^^&R_&B^^&C)\r\n", ch->name, ch->challenged->name );
+		snprintf( buf, MAX_STRING_LENGTH, "&R[&r|&PA&pr&re&pn&Pa&r|&R]&G %s did &CN&cO&CT&G accept %s's challenge! &C(&zCoward&W! &B^^&R_&B^^&C)\r\n", ch->name, ch->challenged->name );
 		echo_to_all( AT_IMMORT, buf, ECHOTAR_ALL );
 		ch->challenged = NULL;
 		return;

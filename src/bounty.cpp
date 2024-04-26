@@ -48,7 +48,7 @@ void save_disintigrations( )
 	FILE *fpout;
 	char filename[256];
 
-	sprintf( filename, "%s%s", SYSTEM_DIR, DISINTIGRATION_LIST );
+	snprintf( filename, 256, "%s%s", SYSTEM_DIR, DISINTIGRATION_LIST );
 	fpout = FileOpen( filename, "w" );
 	if( !fpout )
 	{
@@ -100,7 +100,7 @@ void load_bounties( )
 
 	log_string( "Loading disintigrations..." );
 
-	sprintf( bountylist, "%s%s", SYSTEM_DIR, DISINTIGRATION_LIST );
+	snprintf( bountylist, 256, "%s%s", SYSTEM_DIR, DISINTIGRATION_LIST );
 	if( ( fpList = FileOpen( bountylist, "r" ) ) == NULL )
 	{
 		perror( bountylist );
@@ -185,7 +185,7 @@ void disintigration( CHAR_DATA *ch, CHAR_DATA *victim, long amount )
 	bounty->amount = bounty->amount + amount;
 	save_disintigrations( );
 
-	sprintf( buf, "%s has added %ld dollars to the bounty on %s.", ch->name, amount, victim->name );
+	snprintf( buf, MAX_STRING_LENGTH, "%s has added %ld dollars to the bounty on %s.", ch->name, amount, victim->name );
 	echo_to_all( AT_RED, buf, 0 );
 
 }
@@ -411,7 +411,7 @@ void claim_disintigration( CHAR_DATA *ch, CHAR_DATA *victim )
 			xSET_BIT( ch->act, PLR_KILLER );
 			ch_printf( ch, "You are now wanted for the murder of %s.\r\n", victim->name );
 		}
-		sprintf( buf, "%s is Dead!", victim->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s is Dead!", victim->name );
 		echo_to_all( AT_RED, buf, 0 );
 		return;
 
@@ -428,9 +428,9 @@ void claim_disintigration( CHAR_DATA *ch, CHAR_DATA *victim )
 	ch_printf( ch, "You receive %ld experience and %ld dollars,\r\n from the bounty on %s\r\n", exp, bounty->amount,
 		bounty->target );
 
-	sprintf( buf, "%s has claimed the bounty on %s!", ch->name, victim->name );
+	snprintf( buf, MAX_STRING_LENGTH, "%s has claimed the bounty on %s!", ch->name, victim->name );
 	echo_to_all( AT_RED, buf, 0 );
-	sprintf( buf, "%s is Dead!", victim->name );
+	snprintf( buf, MAX_STRING_LENGTH, "%s is Dead!", victim->name );
 	echo_to_all( AT_RED, buf, 0 );
 
 	if( !xIS_SET( victim->act, PLR_KILLER ) )

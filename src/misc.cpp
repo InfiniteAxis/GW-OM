@@ -2687,9 +2687,9 @@ void actiondesc( CHAR_DATA *ch, OBJ_DATA *obj, void *vo )
 	*roomptr = '\0';
 
 	/*
-	sprintf( buf, "Charbuf: %s", charbuf );
+	snprintf( buf, MAX_STRING_LENGTH, "Charbuf: %s", charbuf );
 	log_string_plus( buf, LOG_HIGH, LEVEL_LIAISON );
-	sprintf( buf, "Roombuf: %s", roombuf );
+	snprintf( buf, MAX_STRING_LENGTH, "Roombuf: %s", roombuf );
 	log_string_plus( buf, LOG_HIGH, LEVEL_LIAISON );
 	*/
 
@@ -3579,7 +3579,7 @@ void do_buzz( CHAR_DATA *ch, char *arg )
 
 	ch->buzzed_from_room = ch->in_room;
 
-	sprintf( buf, "%s rings the doorbell. Ding Dong!", ch->name );
+	snprintf( buf, MAX_STRING_LENGTH, "%s rings the doorbell. Ding Dong!", ch->name );
 	echo_to_room( AT_WHITE, home, buf );
 	send_to_char( "You ring the door bell.\r\n", ch );
 	act( AT_ACTION, "$n rings a door bell.", ch, NULL, NULL, TO_ROOM );
@@ -3686,7 +3686,7 @@ CMDF( do_setguests )
 
 			if( !nifty_is_name( arg, buf ) )
 			{
-				sprintf( buf2, "%s ", arg );
+				snprintf( buf2, MAX_STRING_LENGTH, "%s ", arg );
 				strcat( buf, buf2 );
 			}
 		}
@@ -3713,7 +3713,7 @@ CMDF( do_setguests )
 
 			if( !nifty_is_name( arg, argument ) )
 			{
-				sprintf( buf3, "%s ", arg );
+				snprintf( buf3, MAX_STRING_LENGTH, "%s ", arg );
 				strcat( buf2, buf3 );
 			}
 		}
@@ -3753,7 +3753,7 @@ CMDF( do_aquest )
 		{
 			if( ch->questmob == -1 && ch->questgiver->short_descr != NULL )
 			{
-				sprintf( buf, "Your task is ALMOST complete!\n\rGet back to %s before your time limit is up!\r\n",
+				snprintf( buf, MAX_STRING_LENGTH, "Your task is ALMOST complete!\n\rGet back to %s before your time limit is up!\r\n",
 					ch->questgiver->short_descr );
 				send_to_char( buf, ch );
 			}
@@ -3762,7 +3762,7 @@ CMDF( do_aquest )
 				questinfoobj = get_obj_index( ch->questobj );
 				if( questinfoobj != NULL )
 				{
-					sprintf( buf, "You are on a task to pick up the %s!\r\n", questinfoobj->name );
+					snprintf( buf, MAX_STRING_LENGTH, "You are on a task to pick up the %s!\r\n", questinfoobj->name );
 					send_to_char( buf, ch );
 				}
 				else
@@ -3774,7 +3774,7 @@ CMDF( do_aquest )
 				questinfo = get_mob_index( ch->questmob );
 				if( questinfo != NULL )
 				{
-					sprintf( buf, "You are out to punk off %s!\r\n", questinfo->short_descr );
+					snprintf( buf, MAX_STRING_LENGTH, "You are out to punk off %s!\r\n", questinfo->short_descr );
 					send_to_char( buf, ch );
 				}
 				else
@@ -3788,7 +3788,7 @@ CMDF( do_aquest )
 	}
 	if( !strcmp( arg1, "points" ) )
 	{
-		sprintf( buf, "You have %d favor points.\r\n", ch->questpoints );
+		snprintf( buf, MAX_STRING_LENGTH, "You have %d favor points.\r\n", ch->questpoints );
 		send_to_char( buf, ch );
 		return;
 	}
@@ -3799,18 +3799,18 @@ CMDF( do_aquest )
 			send_to_char( "You aren't under taking a Task at the moment.\r\n", ch );
 			if( ch->nextquest > 1 )
 			{
-				sprintf( buf, "There are %d minutes left until you can do another Task\r\n", ch->nextquest );
+				snprintf( buf, MAX_STRING_LENGTH, "There are %d minutes left until you can do another Task\r\n", ch->nextquest );
 				send_to_char( buf, ch );
 			}
 			else if( ch->nextquest == 1 )
 			{
-				sprintf( buf, "Only about a minute more until you can do another Task.\r\n" );
+				snprintf( buf, MAX_STRING_LENGTH, "Only about a minute more until you can do another Task.\r\n" );
 				send_to_char( buf, ch );
 			}
 		}
 		else if( ch->countdown > 0 )
 		{
-			sprintf( buf, "Time left for Task: %d\r\n", ch->countdown );
+			snprintf( buf, MAX_STRING_LENGTH, "Time left for Task: %d\r\n", ch->countdown );
 			send_to_char( buf, ch );
 		}
 		return;
@@ -3864,7 +3864,7 @@ CMDF( do_aquest )
 	{
 		act( AT_PLAIN, "$n asks $N for a list of 'Goods'.", ch, NULL, questman, TO_ROOM );
 		act( AT_PLAIN, "You ask $N for a list of 'Goods'.", ch, NULL, questman, TO_CHAR );
-		sprintf( buf,
+		snprintf( buf, MAX_STRING_LENGTH,
 			"\r\n&B[&C++&c++&C++&c++&C++&B] &RS&rt&po&Pl&pe&rn &GM&ge&zr&Wc&gh&Ga&gn&z&Wd&zi&gs&Ge &B[&C++&c++&C++&c++&C++&B]\r\n\r\n"
 			"&P|&pFP Cost&P|          |&pItem&P|\r\n" "&Y%-5d         %-30s\r\n" "&Y%-5d         %-30s\r\n"
 			"&Y%-5d         %-30s\r\n" "&Y%-5d         %-30s\r\n" "&Y%-5d         %-30s\r\n", QUEST_VALUE1,
@@ -3891,7 +3891,7 @@ CMDF( do_aquest )
 			}
 			else
 			{
-				sprintf( buf, "Who you tryin to kid, %s? You need more more Favor Points.", ch->name );
+				snprintf( buf, MAX_STRING_LENGTH, "Who you tryin to kid, %s? You need more more Favor Points.", ch->name );
 				do_say( questman, buf );
 				return;
 			}
@@ -3905,7 +3905,7 @@ CMDF( do_aquest )
 			}
 			else
 			{
-				sprintf( buf, "Who you tryin to kid, %s? You need more more Favor Points.", ch->name );
+				snprintf( buf, MAX_STRING_LENGTH, "Who you tryin to kid, %s? You need more more Favor Points.", ch->name );
 				do_say( questman, buf );
 				return;
 			}
@@ -3919,7 +3919,7 @@ CMDF( do_aquest )
 			}
 			else
 			{
-				sprintf( buf, "Who you tryin to kid, %s? You need more more Favor Points.", ch->name );
+				snprintf( buf, MAX_STRING_LENGTH, "Who you tryin to kid, %s? You need more more Favor Points.", ch->name );
 				do_say( questman, buf );
 				return;
 			}
@@ -3933,7 +3933,7 @@ CMDF( do_aquest )
 			}
 			else
 			{
-				sprintf( buf, "Who you tryin to kid, %s? You need more more Favor Points.", ch->name );
+				snprintf( buf, MAX_STRING_LENGTH, "Who you tryin to kid, %s? You need more more Favor Points.", ch->name );
 				do_say( questman, buf );
 				return;
 			}
@@ -3947,7 +3947,7 @@ CMDF( do_aquest )
 			}
 			else
 			{
-				sprintf( buf, "Who you tryin to kid, %s? You need more more Favor Points.", ch->name );
+				snprintf( buf, MAX_STRING_LENGTH, "Who you tryin to kid, %s? You need more more Favor Points.", ch->name );
 				do_say( questman, buf );
 				return;
 			}
@@ -3964,7 +3964,7 @@ CMDF( do_aquest )
 			}
 			else
 			{
-				sprintf( buf, "Who you tryin to kid, %s? You need more more Favor Points.", ch->name );
+				snprintf( buf, MAX_STRING_LENGTH, "Who you tryin to kid, %s? You need more more Favor Points.", ch->name );
 				do_say( questman, buf );
 				return;
 			}
@@ -3981,14 +3981,14 @@ CMDF( do_aquest )
 			}
 			else
 			{
-				sprintf( buf, "Who you tryin to kid, %s? You need more more Favor Points.", ch->name );
+				snprintf( buf, MAX_STRING_LENGTH, "Who you tryin to kid, %s? You need more more Favor Points.", ch->name );
 				do_say( questman, buf );
 				return;
 			}
 		}
 		else
 		{
-			sprintf( buf, "Where's this magical item you want, %s?", ch->name );
+			snprintf( buf, MAX_STRING_LENGTH, "Where's this magical item you want, %s?", ch->name );
 			do_say( questman, buf );
 		}
 		if( obj != NULL )
@@ -4010,20 +4010,20 @@ CMDF( do_aquest )
 		act( AT_PLAIN, "You ask $N for a Task.", ch, NULL, questman, TO_CHAR );
 		if( xIS_SET( ch->act, PLR_QUESTOR ) )
 		{
-			sprintf( buf, "Dude, you're already on a task, finish it first!" );
+			snprintf( buf, MAX_STRING_LENGTH, "Dude, you're already on a task, finish it first!" );
 			do_say( questman, buf );
 			return;
 		}
 		if( ch->nextquest > 0 )
 		{
-			sprintf( buf, "We don't respect people who hog Tasks, %s.", ch->name );
+			snprintf( buf, MAX_STRING_LENGTH, "We don't respect people who hog Tasks, %s.", ch->name );
 			do_say( questman, buf );
-			sprintf( buf, "Scram for a while!" );
+			snprintf( buf, MAX_STRING_LENGTH, "Scram for a while!" );
 			do_say( questman, buf );
 			return;
 		}
 
-		sprintf( buf, "Aight, cool %s!", ch->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Aight, cool %s!", ch->name );
 		do_say( questman, buf );
 
 		generate_quest( ch, questman );
@@ -4032,9 +4032,9 @@ CMDF( do_aquest )
 		{
 			ch->countdown = number_range( 10, 30 );
 			xSET_BIT( ch->act, PLR_QUESTOR );
-			sprintf( buf, "%d minutes is all you have to finish this task for me.", ch->countdown );
+			snprintf( buf, MAX_STRING_LENGTH, "%d minutes is all you have to finish this task for me.", ch->countdown );
 			do_say( questman, buf );
-			sprintf( buf, "G'luck bud." );
+			snprintf( buf, MAX_STRING_LENGTH, "G'luck bud." );
 			do_say( questman, buf );
 		}
 		return;
@@ -4046,7 +4046,7 @@ CMDF( do_aquest )
 		act( AT_PLAIN, "You tell $N you can't do this task.", ch, NULL, questman, TO_CHAR );
 		if( ch->questgiver != questman || !xIS_SET( ch->act, PLR_QUESTOR ) )
 		{
-			sprintf( buf, "I haven't even sent you on one..." );
+			snprintf( buf, MAX_STRING_LENGTH, "I haven't even sent you on one..." );
 			do_say( questman, buf );
 			return;
 		}
@@ -4068,15 +4068,15 @@ CMDF( do_aquest )
 			}
 			if( obj_found == true )
 			{
-				sprintf( buf, "You idiot, you have what I wanted!" );
+				snprintf( buf, MAX_STRING_LENGTH, "You idiot, you have what I wanted!" );
 				do_say( questman, buf );
-				sprintf( buf, "Oops..." );
+				snprintf( buf, MAX_STRING_LENGTH, "Oops..." );
 				do_say( ch, buf );
 				do_aquest( ch, "complete" );
 				return;
 			}
 		}
-		sprintf( buf, "Can't complete it? Pssh..." );
+		snprintf( buf, MAX_STRING_LENGTH, "Can't complete it? Pssh..." );
 		do_say( questman, buf );
 
 		xREMOVE_BIT( ch->act, PLR_QUESTOR );
@@ -4095,7 +4095,7 @@ CMDF( do_aquest )
 		act( AT_PLAIN, "You inform $N you have completed $s his task.", ch, NULL, questman, TO_CHAR );
 		if( ch->questgiver != questman )
 		{
-			sprintf( buf, "I never sent you on a Task.. maybe ask for one first..." );
+			snprintf( buf, MAX_STRING_LENGTH, "I never sent you on a Task.. maybe ask for one first..." );
 			do_say( questman, buf );
 			return;
 		}
@@ -4109,9 +4109,9 @@ CMDF( do_aquest )
 				reward = number_range( 5000, 10000 );
 				pointreward = number_range( 10, 50 );
 
-				sprintf( buf, "Bout time you finished your task!" );
+				snprintf( buf, MAX_STRING_LENGTH, "Bout time you finished your task!" );
 				do_say( questman, buf );
-				sprintf( buf, "As thanks I'm giving you %d favor points, and %d dollars.", pointreward, reward );
+				snprintf( buf, MAX_STRING_LENGTH, "As thanks I'm giving you %d favor points, and %d dollars.", pointreward, reward );
 				do_say( questman, buf );
 
 				xREMOVE_BIT( ch->act, PLR_QUESTOR );
@@ -4150,9 +4150,9 @@ CMDF( do_aquest )
 					act( AT_PLAIN, "You hand $p to $N.", ch, obj, questman, TO_CHAR );
 					act( AT_PLAIN, "$n hands $p to $N.", ch, obj, questman, TO_ROOM );
 
-					sprintf( buf, "Bout time you completed your task!" );
+					snprintf( buf, MAX_STRING_LENGTH, "Bout time you completed your task!" );
 					do_say( questman, buf );
-					sprintf( buf, "As thanks I'm giving you %d favor points, and %d dollars.", pointreward, reward );
+					snprintf( buf, MAX_STRING_LENGTH, "As thanks I'm giving you %d favor points, and %d dollars.", pointreward, reward );
 					do_say( questman, buf );
 
 					xREMOVE_BIT( ch->act, PLR_QUESTOR );
@@ -4168,7 +4168,7 @@ CMDF( do_aquest )
 				}
 				else
 				{
-					sprintf( buf, "You haven't completed the quest yet, but there is still time!" );
+					snprintf( buf, MAX_STRING_LENGTH, "You haven't completed the quest yet, but there is still time!" );
 					do_say( questman, buf );
 					return;
 				}
@@ -4176,15 +4176,15 @@ CMDF( do_aquest )
 			}
 			else if( ( ch->questmob > 0 || ch->questobj > 0 ) && ch->countdown > 0 )
 			{
-				sprintf( buf, "You haven't completed your task yet, there's still time HURRY up!" );
+				snprintf( buf, MAX_STRING_LENGTH, "You haven't completed your task yet, there's still time HURRY up!" );
 				do_say( questman, buf );
 				return;
 			}
 		}
 		if( ch->nextquest > 0 )
-			sprintf( buf, "Too slow, you should work faster next time!" );
+			snprintf( buf, MAX_STRING_LENGTH, "Too slow, you should work faster next time!" );
 		else
-			sprintf( buf, "Try asking for a quest first, %s.", ch->name );
+			snprintf( buf, MAX_STRING_LENGTH, "Try asking for a quest first, %s.", ch->name );
 		do_say( questman, buf );
 		return;
 	}
@@ -4285,7 +4285,7 @@ void generate_quest( CHAR_DATA *ch, CHAR_DATA *questman )
 
 		if( vsearch == NULL || ( victim = get_char_world( ch, vsearch->player_name ) ) == NULL || !IS_NPC( victim ) )
 		{
-			sprintf( buf, "Sorry man, no Tasks right now, come back later." );
+			snprintf( buf, MAX_STRING_LENGTH, "Sorry man, no Tasks right now, come back later." );
 			do_say( questman, buf );
 			ch->nextquest = 5;
 			return;
@@ -4332,14 +4332,14 @@ void generate_quest( CHAR_DATA *ch, CHAR_DATA *questman )
 
 		if( vsearch == NULL || ( victim = get_char_world( ch, vsearch->player_name ) ) == NULL || !IS_NPC( victim ) )
 		{
-			sprintf( buf, "Sorry man, no Tasks right now, come back later." );
+			snprintf( buf, MAX_STRING_LENGTH, "Sorry man, no Tasks right now, come back later." );
 			do_say( questman, buf );
 			ch->nextquest = 5;
 			return;
 		}
 		if( ( room = find_location( ch, victim->name ) ) == NULL )
 		{
-			sprintf( buf, "Sorry man, no Tasks right now, come back later." );
+			snprintf( buf, MAX_STRING_LENGTH, "Sorry man, no Tasks right now, come back later." );
 			do_say( questman, buf );
 			ch->nextquest = 5;
 			return;
@@ -4382,7 +4382,7 @@ void generate_quest( CHAR_DATA *ch, CHAR_DATA *questman )
 		questitem->timer = 30;
 		ch->questobj = questitem->pIndexData->vnum;
 
-		sprintf( buf, "Some POS stole a %s from us! We want it back!", questitem->short_descr );
+		snprintf( buf, MAX_STRING_LENGTH, "Some POS stole a %s from us! We want it back!", questitem->short_descr );
 		do_say( questman, buf );
 
 		/*
@@ -4391,7 +4391,7 @@ void generate_quest( CHAR_DATA *ch, CHAR_DATA *questman )
 		 * lines. - Vassago
 		 */
 
-		sprintf( buf, "Resources tell us its at %s, on  %s!", room->name, room->area->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Resources tell us its at %s, on  %s!", room->name, room->area->name );
 		do_say( questman, buf );
 		return;
 	}
@@ -4405,19 +4405,19 @@ void generate_quest( CHAR_DATA *ch, CHAR_DATA *questman )
 		switch( number_range( 0, 1 ) )
 		{
 		case 0:
-			sprintf( buf, "Yeah, so this punk %s, wants to mess with us. Take him Out!", victim->short_descr );
+			snprintf( buf, MAX_STRING_LENGTH, "Yeah, so this punk %s, wants to mess with us. Take him Out!", victim->short_descr );
 			do_say( questman, buf );
 			break;
 
 		case 1:
-			sprintf( buf, "This punk, %s, stole from us.. you know what to do.", victim->short_descr );
+			snprintf( buf, MAX_STRING_LENGTH, "This punk, %s, stole from us.. you know what to do.", victim->short_descr );
 			do_say( questman, buf );
 			break;
 		}
 
 		if( room->name != NULL )
 		{
-			sprintf( buf, "%s's punk ass is over by %s on %s!", victim->short_descr, room->name, room->area->name );
+			snprintf( buf, MAX_STRING_LENGTH, "%s's punk ass is over by %s on %s!", victim->short_descr, room->name, room->area->name );
 			do_say( questman, buf );
 
 			/*
@@ -4537,7 +4537,7 @@ CMDF( do_lottery )
 
 	if( arg1[0] == '\0' || arg2[0] == '\0' )
 	{
-		sprintf( buf, "\r\n&GThe lottery prize money is already at $&Y%d&G.&g\r\n"
+		snprintf( buf, MAX_STRING_LENGTH, "\r\n&GThe lottery prize money is already at $&Y%d&G.&g\r\n"
 			"&GHours until next draw: &g%d\r\n"
 			"&GThe last winner was: &g%s\r\n", sysdata.jackpot, sysdata.lotterytimer, sysdata.lastwinner );
 		send_to_char( buf, ch );
@@ -4583,11 +4583,11 @@ CMDF( do_lottery )
 		ch->gold -= 5000;
 		sysdata.jackpot += 20000;
 		obj = create_object( get_obj_index( OBJ_VNUM_TICKET ), 1 );
-		sprintf( buf, "A ticket with the number '%d'", value );
+		snprintf( buf, MAX_STRING_LENGTH, "A ticket with the number '%d'", value );
 		STRFREE( obj->short_descr );
 		obj->short_descr = STRALLOC( buf );
 		obj_to_char( obj, ch );
-		sprintf( buf, "&GYou purchase a lottery ticket.\r\n" );
+		snprintf( buf, MAX_STRING_LENGTH, "&GYou purchase a lottery ticket.\r\n" );
 		send_to_char( buf, ch );
 		ch->pcdata->ticketnumber = value;
 		SET_BIT( ch->pcdata->flags, PCFLAG_HASLOTTO );

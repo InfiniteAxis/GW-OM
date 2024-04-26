@@ -70,7 +70,7 @@ CMDF( do_askout )
 	}
 	if( ch->pcdata->spouse != NULL )
 	{
-		sprintf( buf, "I don't think that %s would like that very much\r\n", ch->pcdata->spouse );
+		snprintf( buf, MAX_STRING_LENGTH, "I don't think that %s would like that very much\r\n", ch->pcdata->spouse );
 		stc( buf, ch );
 		return;
 	}
@@ -192,13 +192,13 @@ CMDF( do_marry )
 
 	if( ( spouse1 = get_char_room( ch, arg1 ) ) == NULL )
 	{
-		sprintf( buf, "But %s isn't in the room!!\r\n", arg1 );
+		snprintf( buf, MAX_STRING_LENGTH, "But %s isn't in the room!!\r\n", arg1 );
 		stc( buf, ch );
 		return;
 	}
 	if( ( spouse2 = get_char_room( ch, arg2 ) ) == NULL )
 	{
-		sprintf( buf, "But %s isn't in the room!!\r\n", arg2 );
+		snprintf( buf, MAX_STRING_LENGTH, "But %s isn't in the room!!\r\n", arg2 );
 		stc( buf, ch );
 		return;
 	}
@@ -240,13 +240,13 @@ CMDF( do_marry )
 	}
 	if( !spouse1->pcdata->engaged )
 	{
-		sprintf( buf, "%s isn't engaged, though", spouse1->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s isn't engaged, though", spouse1->name );
 		stc( buf, ch );
 		return;
 	}
 	if( !spouse2->pcdata->engaged )
 	{
-		sprintf( buf, "%s isn't engaged, though", spouse2->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s isn't engaged, though", spouse2->name );
 		stc( buf, ch );
 		return;
 	}
@@ -265,7 +265,7 @@ CMDF( do_marry )
 
 		send_to_char( "You are now officially married. Congratulations\r\n", spouse1 );
 		send_to_char( "You are now officially married. Congratulations\r\n", spouse2 );
-		sprintf( buf, "%s and %s{have finally been married. Everyone congratulate them.\r\n", spouse1->name, spouse2->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s and %s{have finally been married. Everyone congratulate them.\r\n", spouse1->name, spouse2->name );
 		do_echo( ch, buf );
 		do_save( spouse1, "" );
 		do_save( spouse2, "" );
@@ -305,13 +305,13 @@ CMDF( do_divorce )
 
 	if( ( spouse1 = get_char_room( ch, arg1 ) ) == NULL )
 	{
-		sprintf( buf, "But %s isn't in the room!!\r\n", arg1 );
+		snprintf( buf, MAX_STRING_LENGTH, "But %s isn't in the room!!\r\n", arg1 );
 		stc( buf, ch );
 		return;
 	}
 	if( ( spouse2 = get_char_room( ch, arg2 ) ) == NULL )
 	{
-		sprintf( buf, "But %s isn't in the room!!\r\n", arg2 );
+		snprintf( buf, MAX_STRING_LENGTH, "But %s isn't in the room!!\r\n", arg2 );
 		stc( buf, ch );
 		return;
 	}
@@ -340,13 +340,13 @@ CMDF( do_divorce )
 	}
 	if( !spouse1->pcdata->married )
 	{
-		sprintf( buf, "%s isn't married, though", spouse1->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s isn't married, though", spouse1->name );
 		stc( buf, ch );
 		return;
 	}
 	if( !spouse2->pcdata->married )
 	{
-		sprintf( buf, "%s isn't married, though", spouse2->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s isn't married, though", spouse2->name );
 		stc( buf, ch );
 		return;
 	}
@@ -400,7 +400,7 @@ CMDF( do_accept )
 	}
 	if( !ISTDATING( ch, victim ) )
 	{
-		sprintf( buf, "%s hasn't asked for your acceptance to do anything!\r\n", victim->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s hasn't asked for your acceptance to do anything!\r\n", victim->name );
 		stc( buf, ch );
 		return;
 	}
@@ -410,9 +410,9 @@ CMDF( do_accept )
 
 		if( ch->pcdata->predating )
 		{
-			sprintf( buf, "You accept %s's invitation\r\n", ch->pcdata->tspouse );
+			snprintf( buf, MAX_STRING_LENGTH, "You accept %s's invitation\r\n", ch->pcdata->tspouse );
 			stc( buf, ch );
-			sprintf( buf, "%s has accepted your invitation\r\n", ch->name );
+			snprintf( buf, MAX_STRING_LENGTH, "%s has accepted your invitation\r\n", ch->name );
 			stc( buf, victim );
 			victim->pcdata->spouse = ch->name;
 			ch->pcdata->spouse = victim->name;
@@ -430,9 +430,9 @@ CMDF( do_accept )
 
 		if( ch->pcdata->preengaged )
 		{
-			sprintf( buf, "You accept %s's proposal\r\n", ch->pcdata->tspouse );
+			snprintf( buf, MAX_STRING_LENGTH, "You accept %s's proposal\r\n", ch->pcdata->tspouse );
 			stc( buf, ch );
-			sprintf( buf, "%s has accepted your proposal\r\n", ch->name );
+			snprintf( buf, MAX_STRING_LENGTH, "%s has accepted your proposal\r\n", ch->name );
 			stc( buf, victim );
 			victim->pcdata->dating = false;
 			ch->pcdata->dating = false;
@@ -475,7 +475,7 @@ CMDF( do_decline )
 
 	if( !ISTDATING( ch, victim ) )
 	{
-		sprintf( buf, "%s hasn't given you anything to decline.\r\n", buf );
+		snprintf( buf, MAX_STRING_LENGTH, "%s hasn't given you anything to decline.\r\n", buf );
 		stc( buf, ch );
 		return;
 	}
@@ -483,9 +483,9 @@ CMDF( do_decline )
 
 	if( ch->pcdata->predating )
 	{
-		sprintf( buf, "You decline %s's invitation\r\n", ch->pcdata->tspouse );
+		snprintf( buf, MAX_STRING_LENGTH, "You decline %s's invitation\r\n", ch->pcdata->tspouse );
 		stc( buf, ch );
-		sprintf( buf, "%s has declined your invitation\r\n", ch->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s has declined your invitation\r\n", ch->name );
 		stc( buf, victim );
 		victim->pcdata->tspouse = NULL;
 		ch->pcdata->tspouse = NULL;
@@ -502,9 +502,9 @@ CMDF( do_decline )
 
 	if( ch->pcdata->preengaged )
 	{
-		sprintf( buf, "You decline %s's proposal.\r\n", ch->pcdata->tspouse );
+		snprintf( buf, MAX_STRING_LENGTH, "You decline %s's proposal.\r\n", ch->pcdata->tspouse );
 		stc( buf, ch );
-		sprintf( buf, "%s has declined your proposal.\r\n", ch->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s has declined your proposal.\r\n", ch->name );
 		stc( buf, victim );
 		//they were dating before, correct?? Just because we don't wanna get married don't mean we don't wanna keep dating 'em.
 
@@ -600,9 +600,9 @@ CMDF( do_breakup )
 
 	if( ch->pcdata->dating )
 	{
-		sprintf( buf, "You break up with %s\r\n", ch->pcdata->spouse );
+		snprintf( buf, MAX_STRING_LENGTH, "You break up with %s\r\n", ch->pcdata->spouse );
 		stc( buf, ch );
-		sprintf( buf, "%s has broken up with you\r\n", ch->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s has broken up with you\r\n", ch->name );
 		stc( buf, victim );
 		victim->pcdata->tspouse = NULL;
 		ch->pcdata->tspouse = NULL;
@@ -619,9 +619,9 @@ CMDF( do_breakup )
 
 	if( ch->pcdata->engaged )
 	{
-		sprintf( buf, "You break up with %s\r\n", ch->pcdata->spouse );
+		snprintf( buf, MAX_STRING_LENGTH, "You break up with %s\r\n", ch->pcdata->spouse );
 		stc( buf, ch );
-		sprintf( buf, "%s has broken up with you\r\n", ch->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s has broken up with you\r\n", ch->name );
 		stc( buf, victim );
 		victim->pcdata->tspouse = NULL;
 		ch->pcdata->tspouse = NULL;

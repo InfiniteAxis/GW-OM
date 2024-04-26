@@ -1349,7 +1349,7 @@ void mprog_translate( char ch, char *t, CHAR_DATA *mob, CHAR_DATA *actor, OBJ_DA
 		{
 			char buf[MAX_STRING_LENGTH];
 
-			sprintf( buf, "\"%s\"", v_obj->name );
+			snprintf( buf, MAX_STRING_LENGTH, "\"%s\"", v_obj->name );
 			can_see_obj( mob, v_obj ) ? strcpy( t, buf )
 				: strcpy( t, "something" );
 		}
@@ -2268,7 +2268,7 @@ void mprog_bribe_trigger( CHAR_DATA *mob, CHAR_DATA *ch, int amount )
 			return;
 
 		obj = create_object( get_obj_index( OBJ_VNUM_MONEY_SOME ), 0 );
-		sprintf( buf, obj->short_descr, amount );
+		snprintf( buf, MAX_STRING_LENGTH, obj->short_descr, amount );
 		STRFREE( obj->short_descr );
 		obj->short_descr = STRALLOC( buf );
 		obj->value[0] = amount;
@@ -2358,7 +2358,7 @@ void mprog_greet_trigger( CHAR_DATA *ch )
 
 #ifdef DEBUG
 	char buf[MAX_STRING_LENGTH];
-	sprintf( buf, "mprog_greet_trigger -> %s", ch->name );
+	snprintf( buf, MAX_STRING_LENGTH, "mprog_greet_trigger -> %s", ch->name );
 	log_string( buf );
 #endif
 
@@ -2541,7 +2541,7 @@ void set_supermob( OBJ_DATA *obj )
 
 	/* Added by Jenny to allow bug messages to show the vnum
 	   of the object, and not just supermob's vnum */
-	sprintf( buf, "Object #%d", obj->pIndexData->vnum );
+	snprintf( buf, MAX_STRING_LENGTH, "Object #%d", obj->pIndexData->vnum );
 	STRFREE( supermob->description );
 	supermob->description = STRALLOC( buf );
 

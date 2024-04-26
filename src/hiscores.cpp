@@ -355,7 +355,7 @@ void show_hiscore( const char *keyword, CHAR_DATA *ch )
 	ch_printf( ch,
 		"\r\n&c-&C=&B/&z><&B\\&C=&c-&c-&C=&B/&z><&B\\&C=&c-&c-&C=&B/&z><&B\\&C=&c-&c-&C=&B/&z><&B\\&C=&c-&c-&C=&B/&z><&B\\&C=&c-&c-&C=&B/&z><&B\\&C=&c-&c-&C=&B/&z><&B\\&C=&c-&c-&C=&B/&z><&B\\&C=&c-\r\n" );
 
-	sprintf( buf, "&O[&Y %s &O]", table->desc );
+	snprintf( buf, MAX_STRING_LENGTH, "&O[&Y %s &O]", table->desc );
 	len = strlen_color( buf );
 	len = len / 2;
 	len = 32 - len;
@@ -399,7 +399,7 @@ void adjust_hiscore( const char *keyword, CHAR_DATA *ch, int score )
 			  /*
 			   * replace for info channel
 			   */
-			   //      sprintf( buf, "&B&w%s&B&W is now &B&w%d&B&W in the &B&w%s&B&W chart&B&w!",
+			   //      snprintf( buf, MAX_STRING_LENGTH, "&B&w%s&B&W is now &B&w%d&B&W in the &B&w%s&B&W chart&B&w!",
 			   //          ch->name, pos, table->desc );
 			   //      rank_chan( buf );
 	}
@@ -580,7 +580,7 @@ void save_hiscores( void )
 	HISCORE *table;
 	HISCORE_ENTRY *entry;
 
-	sprintf( filename, "%shiscores.dat", SYSTEM_DIR );
+	snprintf( filename, MAX_INPUT_LENGTH, "%shiscores.dat", SYSTEM_DIR );
 
 	fp = FileOpen( filename, "w" );
 	if( fp == NULL )
@@ -617,7 +617,7 @@ void load_hiscores( void )
 	FILE *fp;
 	HISCORE *new_table;
 
-	sprintf( filename, "%shiscores.dat", SYSTEM_DIR );
+	snprintf( filename, MAX_INPUT_LENGTH, "%shiscores.dat", SYSTEM_DIR );
 
 	fp = FileOpen( filename, "r" );
 	if( fp == NULL )

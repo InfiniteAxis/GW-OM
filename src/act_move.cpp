@@ -289,7 +289,7 @@ void decorate_room( ROOM_INDEX_DATA *room )
 			previous[iRand] = x;
 
 			len = strlen( buf );
-			sprintf( buf2, "%s", room_sents[sector][x] );
+			snprintf( buf2, MAX_STRING_LENGTH, "%s", room_sents[sector][x] );
 			if( len > 5 && buf[len - 1] == '.' )
 			{
 				strcat( buf, "  " );
@@ -300,7 +300,7 @@ void decorate_room( ROOM_INDEX_DATA *room )
 			strcat( buf, buf2 );
 		}
 	}
-	sprintf( buf2, "%s\r\n", wordwrap( buf, 78 ) );
+	snprintf( buf2, MAX_STRING_LENGTH, "%s\r\n", wordwrap( buf, 78 ) );
 	room->description = STRALLOC( buf2 );
 }
 
@@ -568,7 +568,7 @@ ch_ret move_char( CHAR_DATA *ch, EXIT_DATA *pexit, int fall )
 #ifdef DEBUG
 	if( pexit )
 	{
-		sprintf( buf, "move_char: %s to door %d", ch->name, pexit->vdir );
+		snprintf( buf, MAX_STRING_LENGTH, "move_char: %s to door %d", ch->name, pexit->vdir );
 		log_string( buf );
 	}
 #endif
@@ -965,12 +965,12 @@ ch_ret move_char( CHAR_DATA *ch, EXIT_DATA *pexit, int fall )
 		}
 		if( ch->mount )
 		{
-			sprintf( buf, "$n %s %s upon $N.", txt, dir_name[door] );
+			snprintf( buf, MAX_STRING_LENGTH, "$n %s %s upon $N.", txt, dir_name[door] );
 			act( AT_ACTION, buf, ch, NULL, ch->mount, TO_NOTVICT );
 		}
 		else
 		{
-			sprintf( buf, "$n %s $T.", txt );
+			snprintf( buf, MAX_STRING_LENGTH, "$n %s $T.", txt );
 			act( AT_ACTION, buf, ch, NULL, dir_name[door], TO_ROOM );
 		}
 	}
@@ -1078,12 +1078,12 @@ ch_ret move_char( CHAR_DATA *ch, EXIT_DATA *pexit, int fall )
 		}
 		if( ch->mount )
 		{
-			sprintf( buf, "$n %s from %s upon $N.", txt, dtxt );
+			snprintf( buf, MAX_STRING_LENGTH, "$n %s from %s upon $N.", txt, dtxt );
 			act( AT_ACTION, buf, ch, NULL, ch->mount, TO_ROOM );
 		}
 		else
 		{
-			sprintf( buf, "$n %s from %s.", txt, dtxt );
+			snprintf( buf, MAX_STRING_LENGTH, "$n %s from %s.", txt, dtxt );
 			act( AT_ACTION, buf, ch, NULL, NULL, TO_ROOM );
 		}
 	}

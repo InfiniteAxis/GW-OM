@@ -71,7 +71,7 @@ int load_imm_host( )
 
 		if( !fMatch )
 		{
-			sprintf( buf, "Load_imm_host: no match: %s", word );
+			snprintf( buf, MAX_STRING_LENGTH, "Load_imm_host: no match: %s", word );
 			bug( buf, 0 );
 		}
 	}
@@ -133,7 +133,7 @@ int fread_imm_host( FILE *fp, IMMORTAL_HOST *data )
 		}
 		if( !fMatch )
 		{
-			sprintf( buf, "Fread_immortal_host: no match: %s", word );
+			snprintf( buf, MAX_STRING_LENGTH, "Fread_immortal_host: no match: %s", word );
 			bug( buf, 0 );
 		}
 	}

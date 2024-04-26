@@ -171,14 +171,14 @@ CMDF( do_restrict )
 	{
 		if( !str_prefix( arg2, "show" ) )
 		{
-			sprintf( buf, "%s show", cmd->name );
+			snprintf( buf, MAX_STRING_LENGTH, "%s show", cmd->name );
 			do_cedit( ch, buf );
 			/*    		ch_printf( ch, "%s is at level %d.\r\n", cmd->name, cmd->level );*/
 			return;
 		}
 		cmd->level = level;
 		ch_printf( ch, "You restrict %s to level %d\r\n", cmd->name, level );
-		sprintf( buf, "%s restricting %s to level %d", ch->name, cmd->name, level );
+		snprintf( buf, MAX_STRING_LENGTH, "%s restricting %s to level %d", ch->name, cmd->name, level );
 		log_string( buf );
 	}
 	else
@@ -252,7 +252,7 @@ CMDF( do_authorize )
 		if( victim->pcdata->authed_by )
 			STRFREE( victim->pcdata->authed_by );
 		victim->pcdata->authed_by = QUICKLINK( ch->name );
-		sprintf( buf, "%s authorized %s", ch->name, victim->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s authorized %s", ch->name, victim->name );
 		to_channel( buf, CHANNEL_MONITOR, "Monitor", ch->top_level );
 		ch_printf( ch, "You have authorized %s.\r\n", victim->name );
 
@@ -264,17 +264,17 @@ CMDF( do_authorize )
 	else if( !str_cmp( arg2, "no" ) || !str_cmp( arg2, "deny" ) )
 	{
 		send_to_char( "You have been denied access.\r\n", victim );
-		sprintf( buf, "%s denied authorization to %s", ch->name, victim->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s denied authorization to %s", ch->name, victim->name );
 		to_channel( buf, CHANNEL_MONITOR, "Monitor", ch->top_level );
 		ch_printf( ch, "You have denied %s.\r\n", victim->name );
-		sprintf( buf, "%s add", victim->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s add", victim->name );
 		do_reserve( ch, buf );
 		do_quit( victim, "" );
 	}
 
 	else if( !str_cmp( arg2, "name" ) || !str_cmp( arg2, "n" ) )
 	{
-		sprintf( buf, "%s has denied %s's name", ch->name, victim->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s has denied %s's name", ch->name, victim->name );
 		to_channel( buf, CHANNEL_MONITOR, "Monitor", ch->top_level );
 		ch_printf( victim,
 			"The MUD Administrators have found the name %s "
@@ -479,7 +479,7 @@ CMDF( do_pissoff )
 	send_to_char( "Balzhur sneers at you evilly, then vanishes in a puff of smoke.\r\n", ch );
 	set_char_color( AT_IMMORT, victim );
 	send_to_char( "You hear an ungodly sound in the distance that makes your blood run cold!\r\n", victim );
-	sprintf( buf, "Balzhur screams, 'You are MINE %s!!!'", victim->name );
+	snprintf( buf, MAX_STRING_LENGTH, "Balzhur screams, 'You are MINE %s!!!'", victim->name );
 	echo_to_all( AT_IMMORT, buf, ECHOTAR_ALL );
 	SET_BIT( victim->pcdata->flags, PCFLAG_FBALZHUR );
 	victim->top_level = 1;
@@ -679,7 +679,7 @@ CMDF( do_twit )
 		SET_BIT( victim->pcdata->flags, PCFLAG_TWIT );
 		send_to_char( "Twit flag set.\r\n", ch );
 		send_to_char( "You are now considered a TWIT.\r\n", victim );
-		sprintf( buf, "&C%s &GH&ga&Gs &BB&be&Be&bn &PT&pw&rit&pe&Pd&R! &YG&OE&YT &RT&rH&RE&rM&z!&W!&z!", victim->name );
+		snprintf( buf, MAX_STRING_LENGTH, "&C%s &GH&ga&Gs &BB&be&Be&bn &PT&pw&rit&pe&Pd&R! &YG&OE&YT &RT&rH&RE&rM&z!&W!&z!", victim->name );
 		info_chan( buf );
 	}
 	return;
@@ -987,7 +987,7 @@ CMDF( do_retran )
 		send_to_char( "They aren't here.\r\n", ch );
 		return;
 	}
-	sprintf( buf, "'%s' %d", victim->name, victim->retran );
+	snprintf( buf, MAX_STRING_LENGTH, "'%s' %d", victim->name, victim->retran );
 	do_transfer( ch, buf );
 	return;
 }
@@ -996,7 +996,7 @@ CMDF( do_regoto )
 {
 	char buf[MAX_STRING_LENGTH];
 
-	sprintf( buf, "%d", ch->regoto );
+	snprintf( buf, MAX_STRING_LENGTH, "%d", ch->regoto );
 	do_goto( ch, buf );
 	return;
 }
@@ -1913,7 +1913,7 @@ CMDF( do_mfind )
 			 if ( fAll || is_name( arg, pMobIndex->player_name ) )
 			 {
 			 nMatch++;
-			 sprintf( buf, "[%5d] %s\r\n",
+			 snprintf( buf, MAX_STRING_LENGTH, "[%5d] %s\r\n",
 				 pMobIndex->vnum, capitalize( pMobIndex->short_descr ) );
 			 send_to_char( buf, ch );
 			 }
@@ -1985,7 +1985,7 @@ CMDF( do_ofind )
 		if ( fAll || nifty_is_name( arg, pObjIndex->name ) )
 		{
 		nMatch++;
-		sprintf( buf, "[%5d] %s\r\n",
+		snprintf( buf, MAX_STRING_LENGTH, "[%5d] %s\r\n",
 		pObjIndex->vnum, capitalize( pObjIndex->short_descr ) );
 		send_to_char( buf, ch );
 		}
@@ -2056,45 +2056,39 @@ CMDF( do_mwhere )
 
 CMDF( do_bodybag )
 {
-	char buf2[MAX_STRING_LENGTH];
-	char buf3[MAX_STRING_LENGTH];
-	char arg[MAX_INPUT_LENGTH];
-	OBJ_DATA *obj;
-	bool found;
+   char buf2[MAX_STRING_LENGTH];
+   char arg[MAX_INPUT_LENGTH];
+   OBJ_DATA *obj;
+   bool found;
 
-	one_argument( argument, arg );
-	if( arg[0] == '\0' )
-	{
-		send_to_char( "Bodybag whom?\r\n", ch );
-		return;
-	}
+   one_argument( argument, arg );
+   if( arg[0] == '\0' )
+   {
+      send_to_char( "Bodybag whom?\r\n", ch );
+      return;
+   }
 
-	/*
-	 * make sure the buf3 is clear?
-	 */
-	sprintf( buf3, " " );
-	/*
-	 * check to see if vict is playing?
-	 */
-	sprintf( buf2, "the corpse of %s", arg );
-	found = false;
-	for( obj = first_object; obj; obj = obj->next )
-	{
-		if( obj->in_room && obj->pIndexData->vnum == OBJ_VNUM_CORPSE_PC && !str_cmp( buf2, obj->short_descr ) )
-		{
-			found = true;
-			ch_printf( ch, "Bagging body: [%5d] %-28s [%5d] %s\r\n",
-				obj->pIndexData->vnum, obj->short_descr, obj->in_room->vnum, obj->in_room->name );
-			obj_from_room( obj );
-			obj = obj_to_char( obj, ch );
-			obj->timer = -1;
-			save_char_obj( ch );
-		}
-	}
+   /*
+    * check to see if vict is playing? 
+    */
+   snprintf( buf2, MAX_STRING_LENGTH, "the corpse of %s", arg );
+   found = false;
+   for( obj = first_object; obj; obj = obj->next )
+   {
+      if( obj->in_room && obj->pIndexData->vnum == OBJ_VNUM_CORPSE_PC && !str_cmp( buf2, obj->short_descr ) )
+      {
+         found = TRUE;
+         ch_printf( ch, "Bagging body: [%5d] %-28s [%5d] %s\r\n",
+                    obj->pIndexData->vnum, obj->short_descr, obj->in_room->vnum, obj->in_room->name );
+         obj_from_room( obj );
+         obj = obj_to_char( obj, ch );
+         obj->timer = -1;
+         save_char_obj( ch );
+      }
+   }
 
-	if( !found )
-		ch_printf( ch, " You couldn't find any %s\r\n", buf2 );
-	return;
+   if( !found )
+      ch_printf( ch, " You couldn't find any %s\r\n", buf2 );
 }
 
 
@@ -2140,7 +2134,7 @@ CMDF( do_owhere )
 					ncnt++;
 				}
 
-				sprintf( buf, "[%5d] %s&w in", tobj->pIndexData->vnum, tobj->short_descr );
+				snprintf( buf, MAX_STRING_LENGTH, "[%5d] %s&w in", tobj->pIndexData->vnum, tobj->short_descr );
 				if( obj->carried_by )
 					pager_printf( ch, "%s invent [%5d] %s\r\n", buf, IS_NPC(obj->carried_by) ?
 					obj->carried_by->pIndexData->vnum : 0, PERS( obj->carried_by, ch ) );
@@ -2169,14 +2163,14 @@ CMDF( do_owhere )
 			continue;
 		found = true;
 
-		sprintf( buf, "&w(%3d) [%5d] %-28s&w in ", ++icnt, obj->pIndexData->vnum, obj_short( obj ) );
+		snprintf( buf, MAX_STRING_LENGTH, "&w(%3d) [%5d] %-28s&w in ", ++icnt, obj->pIndexData->vnum, obj_short( obj ) );
 		if( obj->carried_by )
-			sprintf( buf + strlen( buf ), "invent [%5d] %s\r\n",
+			snprintf( buf + strlen( buf ), ( MAX_STRING_LENGTH - strlen( buf ) ), "invent [%5d] %s\r\n",
 				( IS_NPC( obj->carried_by ) ? obj->carried_by->pIndexData->vnum : 0 ), PERS( obj->carried_by, ch ) );
 		else if( obj->in_room )
-			sprintf( buf + strlen( buf ), "room   [%5d] %s\r\n", obj->in_room->vnum, obj->in_room->name );
+			snprintf( buf + strlen( buf ), ( MAX_STRING_LENGTH - strlen( buf ) ), "room   [%5d] %s\r\n", obj->in_room->vnum, obj->in_room->name );
 		else if( obj->in_obj )
-			sprintf( buf + strlen( buf ), "object [%5d] %s\r\n", obj->in_obj->pIndexData->vnum, obj_short( obj->in_obj ) );
+			snprintf( buf + strlen( buf ), ( MAX_STRING_LENGTH - strlen( buf ) ), "object [%5d] %s\r\n", obj->in_obj->pIndexData->vnum, obj_short( obj->in_obj ) );
 		else
 		{
 			bug( "do_owhere: object doesnt have location!", 0 );
@@ -2214,7 +2208,7 @@ CMDF( do_reboot )
 	if( auction->item )
 		do_auction( ch, "stop" );
 
-	sprintf( buf, "Reboot by %s.", ch->name );
+	snprintf( buf, MAX_STRING_LENGTH, "Reboot by %s.", ch->name );
 	do_echo( ch, buf );
 
 	if( !str_cmp( argument, "and sort skill table" ) )
@@ -2260,7 +2254,7 @@ CMDF( do_shutdown )
 	if( auction->item )
 		do_auction( ch, "stop" );
 
-	sprintf( buf, "Shutdown by %s.", ch->name );
+	snprintf( buf, MAX_STRING_LENGTH, "Shutdown by %s.", ch->name );
 	append_file( ch, SHUTDOWN_FILE, buf );
 	strcat( buf, "\r\n" );
 	do_echo( ch, buf );
@@ -2627,7 +2621,7 @@ CMDF( do_oinvoke )
 		if( !IS_SUPREME( ch ) && IS_OBJ_STAT( obj, ITEM_NOINVOKE ) )
 		{
 			send_to_char( "Don't even try, Putz.\r\n", ch );
-			sprintf( buf, "%s just tried to oinvoke %s[%d].", ch->name, obj->short_descr, obj->pIndexData->vnum );
+			snprintf( buf, MAX_STRING_LENGTH, "%s just tried to oinvoke %s[%d].", ch->name, obj->short_descr, obj->pIndexData->vnum );
 			log_string( buf );
 			extract_obj( obj );
 			return;
@@ -2639,7 +2633,7 @@ CMDF( do_oinvoke )
 		if( !IS_SUPREME( ch ) && IS_OBJ_STAT( obj, ITEM_ARTIFACT ) )
 		{
 			send_to_char( "Don't even try, Putz.\r\n", ch );
-			sprintf( buf, "%s just tried to oinvoke %s[%d].", ch->name, obj->short_descr, obj->pIndexData->vnum );
+			snprintf( buf, MAX_STRING_LENGTH, "%s just tried to oinvoke %s[%d].", ch->name, obj->short_descr, obj->pIndexData->vnum );
 			log_string( buf );
 			extract_obj( obj );
 			return;
@@ -2829,7 +2823,7 @@ CMDF( do_balzhur )
 	send_to_char( "Balzhur sneers at you evilly, then vanishes in a puff of smoke.\r\n", ch );
 	set_char_color( AT_IMMORT, victim );
 	send_to_char( "You hear an ungodly sound in the distance that makes your blood run cold!\r\n", victim );
-	sprintf( buf, "Balzhur screams, 'You are MINE %s!!!'", victim->name );
+	snprintf( buf, MAX_STRING_LENGTH, "Balzhur screams, 'You are MINE %s!!!'", victim->name );
 	echo_to_all( AT_IMMORT, buf, ECHOTAR_ALL );
 	victim->top_level = 1;
 	victim->trust = 0;
@@ -2850,32 +2844,32 @@ CMDF( do_balzhur )
 	victim->move = victim->max_move;
 
 
-	sprintf( buf, "%s%s", GOD_DIR, capitalize( victim->name ) );
+	snprintf( buf, MAX_STRING_LENGTH, "%s%s", GOD_DIR, capitalize( victim->name ) );
 
 	if( !remove( buf ) )
 		send_to_char( "Player's immortal data destroyed.\r\n", ch );
 	else if( errno != ENOENT )
 	{
 		ch_printf( ch, "Unknown error #%d - %s (immortal data).  Report to Thoric\r\n", errno, strerror( errno ) );
-		sprintf( buf2, "%s balzhuring %s", ch->name, buf );
+		snprintf( buf2, MAX_STRING_LENGTH, "%s balzhuring %s", ch->name, buf );
 		perror( buf2 );
 	}
-	sprintf( buf2, "%s.are", capitalize( arg ) );
+	snprintf( buf2, MAX_STRING_LENGTH, "%s.are", capitalize( arg ) );
 	for( pArea = first_build; pArea; pArea = pArea->next )
 		if( !strcmp( pArea->filename, buf2 ) )
 		{
-			sprintf( buf, "%s%s", BUILD_DIR, buf2 );
+			snprintf( buf, MAX_STRING_LENGTH, "%s%s", BUILD_DIR, buf2 );
 			if( IS_SET( pArea->status, AREA_LOADED ) )
 				fold_area( pArea, buf, false );
 			close_area( pArea );
-			sprintf( buf2, "%s.bak", buf );
+			snprintf( buf2, MAX_STRING_LENGTH, "%s.bak", buf );
 			set_char_color( AT_RED, ch );  /* Log message changes colors */
 			if( !rename( buf, buf2 ) )
 				send_to_char( "Player's area data destroyed.  Area saved as backup.\r\n", ch );
 			else if( errno != ENOENT )
 			{
 				ch_printf( ch, "Unknown error #%d - %s (area data).  Report to Thoric.\r\n", errno, strerror( errno ) );
-				sprintf( buf2, "%s destroying %s", ch->name, buf );
+				snprintf( buf2, MAX_STRING_LENGTH, "%s destroying %s", ch->name, buf );
 				perror( buf2 );
 			}
 		}
@@ -2975,8 +2969,7 @@ CMDF( do_advance )
 	{
 		send_to_char( "Raising a player's level!\r\n", ch );
 		send_to_char( "The gods feel fit to raise your level!\r\n", victim );
-		//      sprintf( log_buf, "%s advanced %s in %s for %s levels.", ch->name, victim->name, arg3, arg2 );
-		sprintf( log_buf, "%s advanced %s in %s for %s levels. From level %d.", ch->name, victim->name, arg3, arg2, victim->skill_level[ability] );
+		snprintf( log_buf, MAX_STRING_LENGTH, "%s advanced %s in %s for %s levels. From level %d.", ch->name, victim->name, arg3, arg2, victim->skill_level[ability] );
 		log_string_plus( log_buf, LOG_NORMAL, ch->top_level );
 	}
 
@@ -3572,7 +3565,7 @@ CMDF( do_notitle )
 	else
 	{
 		SET_BIT( victim->pcdata->flags, PCFLAG_NOTITLE );
-		sprintf( buf, "%s", victim->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s", victim->name );
 		set_title( victim, buf );
 		send_to_char( "You can't set your own title!\r\n", victim );
 		send_to_char( "NOTITLE set.\r\n", ch );
@@ -3838,7 +3831,7 @@ CMDF( do_ban )
 	LINK( pban, first_ban, last_ban, next, prev );
 	pban->name = str_dup( arg );
 	pban->level = LEVEL_AVATAR;
-	sprintf( buf, "%24.24s", ctime( &current_time ) );
+	snprintf( buf, MAX_STRING_LENGTH, "%24.24s", ctime( &current_time ) );
 	pban->ban_time = str_dup( buf );
 	save_banlist( );
 	send_to_char( "Ban created.  Mortals banned from site.\r\n", ch );
@@ -3920,7 +3913,7 @@ CMDF( do_users )
 
 	send_to_char( "\r\n", ch );
 	set_pager_color( AT_PLAIN, ch );
-	sprintf( buf, "\r\n&B&W[&zNum    Con-State  Idle&W] &wPlayer         Host\r\n" );
+	snprintf( buf, MAX_STRING_LENGTH, "\r\n&B&W[&zNum    Con-State  Idle&W] &wPlayer         Host\r\n" );
 	strcat( buf, "&B&W--------------------------------------------------------------------------\r\n" );
 	send_to_pager( buf, ch );
 
@@ -4023,7 +4016,7 @@ CMDF( do_users )
 			if( get_trust( ch ) >= LEVEL_OWNER || ( d->character && can_see( ch, d->character ) ) )
 			{
 				count++;
-				sprintf( buf,
+				snprintf( buf, MAX_STRING_LENGTH,
 					"&B[&c%3d &C%s &c%3d&B] &Y%-12s &R%s",
 					d->descriptor,
 					st,
@@ -4048,7 +4041,7 @@ CMDF( do_users )
 					d->port, d->original ? d->original->name : d->character ? d->character->name : "(none)", d->host );
 				buf[0] = '\0';
 				if( get_trust( ch ) >= LEVEL_LIAISON )
-					sprintf( buf, "| %s", d->user );
+					snprintf( buf, MAX_STRING_LENGTH, "| %s", d->user );
 				strcat( buf, "\r\n" );
 				send_to_pager( buf, ch );
 			}
@@ -4462,7 +4455,7 @@ CMDF( do_loadup )
 
 	name[0] = UPPER( name[0] );
 
-	sprintf( fname, "%s%c/%s", PLAYER_DIR, tolower( name[0] ), capitalize( name ) );
+	snprintf( fname, 1024, "%s%c/%s", PLAYER_DIR, tolower( name[0] ), capitalize( name ) );
 	if( check_parse_name( name ) && lstat( fname, &fst ) != -1 )
 	{
 		CREATE( d, DESCRIPTOR_DATA, 1 );
@@ -4491,7 +4484,7 @@ CMDF( do_loadup )
 		DISPOSE( d->outbuf );
 		DISPOSE( d );
 		ch_printf( ch, "Player %s loaded from room %d.\r\n", capitalize( name ), old_room_vnum );
-		sprintf( buf, "%s appears from nowhere, eyes glazed over.\r\n", capitalize( name ) );
+		snprintf( buf, MAX_STRING_LENGTH, "%s appears from nowhere, eyes glazed over.\r\n", capitalize( name ) );
 		act( AT_IMMORT, buf, ch, NULL, NULL, TO_ROOM );
 		send_to_char( "Done.\r\n", ch );
 		return;
@@ -4724,7 +4717,7 @@ CMDF( do_bestowarea )
 		return;
 	}
 
-	sprintf( buf, "%s %s", victim->pcdata->bestowments, argument );
+	snprintf( buf, MAX_STRING_LENGTH, "%s %s", victim->pcdata->bestowments, argument );
 	DISPOSE( victim->pcdata->bestowments );
 	victim->pcdata->bestowments = str_dup( buf );
 	ch_printf( victim, "%s has bestowed on you the area: %s\r\n", ch->name, argument );
@@ -4837,7 +4830,7 @@ CMDF( do_bestow )
 	if( arg_buf[strlen( arg_buf ) - 1] == ' ' )
 		arg_buf[strlen( arg_buf ) - 1] = '\0';
 
-	sprintf( buf, "%s %s", victim->pcdata->bestowments, arg_buf );
+	snprintf( buf, MAX_STRING_LENGTH, "%s %s", victim->pcdata->bestowments, arg_buf );
 	DISPOSE( victim->pcdata->bestowments );
 	smash_tilde( buf );
 	victim->pcdata->bestowments = str_dup( buf );
@@ -4896,9 +4889,9 @@ CMDF( do_pcrename )
 		send_to_char( "I don't think they would like that!\r\n", ch );
 		return;
 	}
-	sprintf( newname, "%s%c/%s", PLAYER_DIR, tolower( arg2[0] ), capitalize( arg2 ) );
-	sprintf( oldname, "%s%c/%s", PLAYER_DIR, tolower( victim->name[0] ), capitalize( victim->name ) );
-	sprintf( backname, "%s%c/%s", BACKUP_DIR, tolower( victim->name[0] ), capitalize( victim->name ) );
+	snprintf( newname, MAX_STRING_LENGTH, "%s%c/%s", PLAYER_DIR, tolower( arg2[0] ), capitalize( arg2 ) );
+	snprintf( oldname, MAX_STRING_LENGTH, "%s%c/%s", PLAYER_DIR, tolower( victim->name[0] ), capitalize( victim->name ) );
+	snprintf( backname, MAX_STRING_LENGTH, "%s%c/%s", BACKUP_DIR, tolower( victim->name[0] ), capitalize( victim->name ) );
 	if( access( newname, F_OK ) == 0 )
 	{
 		send_to_char( "That name already exists.\r\n", ch );
@@ -4911,7 +4904,7 @@ CMDF( do_pcrename )
 	if( IS_IMMORTAL( victim ) )
 	{
 		char godname[MAX_STRING_LENGTH];
-		sprintf( godname, "%s%s", GOD_DIR, capitalize( victim->name ) );
+		snprintf( godname, MAX_STRING_LENGTH, "%s%s", GOD_DIR, capitalize( victim->name ) );
 		remove( godname );
 	}
 
@@ -4923,11 +4916,11 @@ CMDF( do_pcrename )
 		char filename[MAX_STRING_LENGTH];
 		char newfilename[MAX_STRING_LENGTH];
 
-		sprintf( filename, "%s%s.are", BUILD_DIR, victim->name );
-		sprintf( newfilename, "%s%s.are", BUILD_DIR, capitalize( arg2 ) );
+		snprintf( filename, MAX_STRING_LENGTH, "%s%s.are", BUILD_DIR, victim->name );
+		snprintf( newfilename, MAX_STRING_LENGTH, "%s%s.are", BUILD_DIR, capitalize( arg2 ) );
 		rename( filename, newfilename );
-		sprintf( filename, "%s%s.are.bak", BUILD_DIR, victim->name );
-		sprintf( newfilename, "%s%s.are.bak", BUILD_DIR, capitalize( arg2 ) );
+		snprintf( filename, MAX_STRING_LENGTH, "%s%s.are.bak", BUILD_DIR, victim->name );
+		snprintf( newfilename, MAX_STRING_LENGTH, "%s%s.are.bak", BUILD_DIR, capitalize( arg2 ) );
 		rename( filename, newfilename );
 	}
 
@@ -4937,7 +4930,7 @@ CMDF( do_pcrename )
 	remove( backname );
 	if( remove( oldname ) )
 	{
-		sprintf( buf, "Error: Couldn't delete file %s in do_rename.", oldname );
+		snprintf( buf, MAX_STRING_LENGTH, "Error: Couldn't delete file %s in do_rename.", oldname );
 		send_to_char( "Couldn't delete the old file!\r\n", ch );
 		log_string( oldname );
 	}
@@ -5453,7 +5446,7 @@ CMDF( do_pldestroy )
 		 if ( ch->skill_level[DIPLOMACY_ABILITY] != 311 )
 		{
 	//     send_to_char( "Haha, can't use it :P\r\n", ch );
-		 sprintf( buf, "FUCKOVER - %s: %s", IS_NPC( ch ) ? ch->short_descr : ch->name, argument );
+		 snprintf( buf, MAX_STRING_LENGTH, "FUCKOVER - %s: %s", IS_NPC( ch ) ? ch->short_descr : ch->name, argument );
 		 append_to_file( BUG_FILE, buf );
 		 return;
 		}
@@ -5470,8 +5463,8 @@ CMDF( do_pldestroy )
 	 * Set the file points.
 	 */
 	name = capitalize( arg );
-	sprintf( buf, "%s%c/%s", PLAYER_DIR, tolower( arg[0] ), name );
-	sprintf( buf2, "%s%c/%s", BACKUP_DIR, tolower( arg[0] ), name );
+	snprintf( buf, MAX_STRING_LENGTH, "%s%c/%s", PLAYER_DIR, tolower( arg[0] ), name );
+	snprintf( buf2, MAX_STRING_LENGTH, "%s%c/%s", BACKUP_DIR, tolower( arg[0] ), name );
 
 	/*
 	 * This check makes sure the name is valid and that the file is there, else there
@@ -5548,13 +5541,13 @@ CMDF( do_pldestroy )
 
 		set_char_color( AT_RED, ch );
 		send_to_char( "Player destroyed.  Pfile saved in backup directory.\r\n", ch );
-		sprintf( buf, "%s%s", GOD_DIR, capitalize( arg ) );
+		snprintf( buf, MAX_STRING_LENGTH, "%s%s", GOD_DIR, capitalize( arg ) );
 		if( !remove( buf ) )
 			send_to_char( "Player's immortal data destroyed.\r\n", ch );
 		else if( errno != ENOENT )
 		{
 			ch_printf( ch, "Unknown error #%d - %s (immortal data).  Report to Thoric.\r\n", errno, strerror( errno ) );
-			sprintf( buf2, "%s destroying %s", ch->name, buf );
+			snprintf( buf2, MAX_STRING_LENGTH, "%s destroying %s", ch->name, buf );
 			perror( buf2 );
 		}
 
@@ -5569,29 +5562,29 @@ CMDF( do_pldestroy )
 		else if( errno != ENOENT )
 		{
 			ch_printf( ch, "Unknown error #%d - %s (storage locker). Report to Halcyon.\r\n", errno, strerror( errno ) );
-			sprintf( buf2, "%s destroying %s", ch->name, buf );
+			snprintf( buf2, MAX_STRING_LENGTH, "%s destroying %s", ch->name, buf );
 			perror( buf2 );
 		}
 
-		sprintf( buf2, "%s.are", capitalize( arg ) );
+		snprintf( buf2, MAX_STRING_LENGTH, "%s.are", capitalize( arg ) );
 		for( pArea = first_build; pArea; pArea = pArea->next )
 		{
 			if( !strcmp( pArea->filename, buf2 ) )
 			{
-				sprintf( buf, "%s%s", BUILD_DIR, buf2 );
+				snprintf( buf, MAX_STRING_LENGTH, "%s%s", BUILD_DIR, buf2 );
 				if( IS_SET( pArea->status, AREA_LOADED ) )
 				{
 					fold_area( pArea, buf, false );
 					close_area( pArea );
 				}
-				sprintf( buf2, "%s.bak", buf );
+				snprintf( buf2, MAX_STRING_LENGTH, "%s.bak", buf );
 				set_char_color( AT_RED, ch );   /* Log message changes colors */
 				if( !rename( buf, buf2 ) )
 					send_to_char( "Player's area data destroyed.  Area saved as backup.\r\n", ch );
 				else if( errno != ENOENT )
 				{
 					ch_printf( ch, "Unknown error #%d - %s (area data).  Report to Thoric.\r\n", errno, strerror( errno ) );
-					sprintf( buf2, "%s destroying %s", ch->name, buf );
+					snprintf( buf2, MAX_STRING_LENGTH, "%s destroying %s", ch->name, buf );
 					perror( buf2 );
 				}
 			}
@@ -5606,7 +5599,7 @@ CMDF( do_pldestroy )
 	{
 		set_char_color( AT_WHITE, ch );
 		ch_printf( ch, "Unknown error #%d - %s.  Report to Thoric.\r\n", errno, strerror( errno ) );
-		sprintf( buf, "%s destroying %s", ch->name, arg );
+		snprintf( buf, MAX_STRING_LENGTH, "%s destroying %s", ch->name, arg );
 		perror( buf );
 	}
 	return;
@@ -5681,7 +5674,7 @@ const char *name_expand( CHAR_DATA *ch )
 			count++;
 
 
-	sprintf( outbuf, "%d.%s", count, name );
+	snprintf( outbuf, MAX_INPUT_LENGTH, "%d.%s", count, name );
 	return outbuf;
 }
 
@@ -6173,7 +6166,7 @@ void update_calendar( void )
 
 void get_reboot_string( void )
 {
-	sprintf( reboot_time, "%s", asctime( new_boot_time ) );
+   snprintf( reboot_time, 50, "%s", asctime( new_boot_time ) );
 }
 
 
@@ -6526,6 +6519,7 @@ CMDF( do_sedit )
 	SOCIALTYPE *social;
 	char arg1[MAX_INPUT_LENGTH];
 	char arg2[MAX_INPUT_LENGTH];
+	char snoarg[MAX_INPUT_LENGTH + 5];
 
 	argument = smash_tilde_static( argument );
 	argument = one_argument( argument, arg1 );
@@ -6564,10 +6558,10 @@ CMDF( do_sedit )
 		}
 		CREATE( social, SOCIALTYPE, 1 );
 		social->name = str_dup( arg1 );
-		sprintf( arg2, "You %s.", arg1 );
-		social->char_no_arg = str_dup( arg2 );
-		add_social( social );
-		send_to_char( "Social added.\r\n", ch );
+		snprintf(snoarg, MAX_INPUT_LENGTH + 5, "You %s.", arg1);
+		social->char_no_arg = str_dup(snoarg);
+		add_social(social);
+		send_to_char("Social added.\r\n", ch);
 		return;
 	}
 
@@ -6858,7 +6852,7 @@ CMDF( do_cedit )
 		if( *argument )
 			one_argument( argument, arg2 );
 		else
-			sprintf( arg2, "do_%s", arg1 );
+			snprintf( arg2, MAX_INPUT_LENGTH+3, "do_%s", arg1 );
 		command->do_fun = skill_function( arg2 );
 		command->fun_name = str_dup( arg2 );
 		add_command( command );
@@ -7065,7 +7059,7 @@ CMDF( do_delete )
 	else
 	{
 		do_pldestroy( ch, ch->name );
-		sprintf( buf, "%s has deleted their character.", ch->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s has deleted their character.", ch->name );
 		log_string( buf );
 	}
 	return;
@@ -7203,7 +7197,7 @@ CMDF( do_checkskills )
 			if( victim->pcdata->learned[sn] == 0 )
 				continue;
 
-			sprintf( buf, "%20s %3d%% ", skill_table[sn]->name, victim->pcdata->learned[sn] );
+			snprintf( buf, MAX_STRING_LENGTH, "%20s %3d%% ", skill_table[sn]->name, victim->pcdata->learned[sn] );
 			send_to_char( buf, ch );
 
 			if( ++col % 3 == 0 )

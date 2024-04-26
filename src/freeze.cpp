@@ -54,12 +54,12 @@ CMDF( do_red )
 
 	if( IS_SET( ch->pcdata->tag_flags, TAG_BLUE ) )
 	{
-		sprintf( buf, "&z[&RR&rE&RD&z] &R%s&r:&z %s\r\n", ch->name, argument );
+		snprintf( buf, MAX_STRING_LENGTH, "&z[&RR&rE&RD&z] &R%s&r:&z %s\r\n", ch->name, argument );
 		send_to_char( buf, ch );
 	}
 	else
 	{
-		sprintf( buf, "&z[&RR&rE&RD&z] &R%s&r:&z %s\r\n", ch->name, argument );
+		snprintf( buf, MAX_STRING_LENGTH, "&z[&RR&rE&RD&z] &R%s&r:&z %s\r\n", ch->name, argument );
 	}
 
 	for( d = first_descriptor; d != NULL; d = d->next )
@@ -100,12 +100,12 @@ CMDF( do_blue )
 
 	if( IS_SET( ch->pcdata->tag_flags, TAG_RED ) )
 	{
-		sprintf( buf, "&z[&BB&bL&BU&bE&z]&B %s&b:&z %s\r\n", ch->name, argument );
+		snprintf( buf, MAX_STRING_LENGTH, "&z[&BB&bL&BU&bE&z]&B %s&b:&z %s\r\n", ch->name, argument );
 		send_to_char( buf, ch );
 	}
 	else
 	{
-		sprintf( buf, "&z[&BB&bL&BU&bE&z] &B%s&b:&z %s\r\n", ch->name, argument );
+		snprintf( buf, MAX_STRING_LENGTH, "&z[&BB&bL&BU&bE&z] &B%s&b:&z %s\r\n", ch->name, argument );
 	}
 
 	for( d = first_descriptor; d != NULL; d = d->next )
@@ -169,7 +169,7 @@ void start_tag( void )
 			do_look( d->character, "auto" );
 		}
 	}
-	sprintf( buf, "Freeze Tag has started! %d people playing.", count );
+	snprintf( buf, MAX_STRING_LENGTH, "Freeze Tag has started! %d people playing.", count );
 	tag_channel( NULL, buf );
 }
 
@@ -297,7 +297,7 @@ CMDF( do_ftag )
 			SET_BIT( ch->pcdata->tag_flags, TAG_RED );
 			REMOVE_BIT( ch->pcdata->tag_flags, TAG_BLUE );
 			send_to_char( "&zYou are on the &RR&rE&RD &zteam!\r\n", ch );
-			sprintf( buf, "&R%s&z is on the &RR&rE&RD&z team!", ch->name );
+			snprintf( buf, MAX_STRING_LENGTH, "&R%s&z is on the &RR&rE&RD&z team!", ch->name );
 			tag_channel( NULL, buf );
 		}
 		else
@@ -307,7 +307,7 @@ CMDF( do_ftag )
 			SET_BIT( ch->pcdata->tag_flags, TAG_BLUE );
 			REMOVE_BIT( ch->pcdata->tag_flags, TAG_RED );
 			send_to_char( "&zYou are on the &BB&bL&BU&bE &zteam!\r\n", ch );
-			sprintf( buf, "&B%s &zis on the &BB&bL&BU&bE &zteam!", ch->name );
+			snprintf( buf, MAX_STRING_LENGTH, "&B%s &zis on the &BB&bL&BU&bE &zteam!", ch->name );
 			tag_channel( NULL, buf );
 		}
 		SET_BIT( ch->pcdata->tag_flags, TAG_WAITING );
@@ -318,7 +318,7 @@ CMDF( do_ftag )
 	{
 		if( tag_game.status == TAG_OFF )
 		{
-			sprintf( buf, "The next game of freeze tag will start in %d minute%s.\r\n",
+			snprintf( buf, MAX_STRING_LENGTH, "The next game of freeze tag will start in %d minute%s.\r\n",
 				tag_game.next, tag_game.next == 1 ? "" : "s" );
 			send_to_char( buf, ch );
 		}
@@ -352,7 +352,7 @@ CMDF( do_ftag )
 
 			if( !IS_NPC( tch ) && tch->in_room && xIS_SET( tch->in_room->room_flags, ROOM_TAG ) )
 			{
-				sprintf( buf, "   &P%-12s   %-4s     %s\r\n",
+				snprintf( buf, MAX_STRING_LENGTH, "   &P%-12s   %-4s     %s\r\n",
 					tch->name,
 					IS_SET( tch->pcdata->tag_flags, TAG_RED ) ? "&RR&rE&RD " : "&BB&bL&BU&bE",
 					IS_SET( tch->pcdata->tag_flags, TAG_FROZEN ) ? "&CF&cr&Co&cz&Ce" : "&YM&Oo&Yv&Oi&Yn&Og" );
@@ -398,7 +398,7 @@ CMDF( do_ftag )
 	if( !str_cmp( arg1, "next" ) )
 	{
 		tag_game.next = atoi( argument );
-		sprintf( buf, "Next freeze tag game will start in %d ticks.\r\n", tag_game.next );
+		snprintf( buf, MAX_STRING_LENGTH, "Next freeze tag game will start in %d ticks.\r\n", tag_game.next );
 		send_to_char( buf, ch );
 		return;
 	}
@@ -598,7 +598,7 @@ void tag_update( void )
 
 		if( tag_game.timer > 0 )
 		{
-			sprintf( buf, "&O%d &Yminute%s left to join freeze tag&O.", tag_game.timer, tag_game.timer == 1 ? "" : "s" );
+			snprintf( buf, MAX_STRING_LENGTH, "&O%d &Yminute%s left to join freeze tag&O.", tag_game.timer, tag_game.timer == 1 ? "" : "s" );
 			tag_channel( NULL, buf );
 		}
 		else
@@ -606,7 +606,7 @@ void tag_update( void )
 			if( tag_game.playing < 3 )
 			{
 				end_tag( );
-				sprintf( buf, "&YNot enough people have joined&O,&Y maybe next time&O!" );
+				snprintf( buf, MAX_STRING_LENGTH, "&YNot enough people have joined&O,&Y maybe next time&O!" );
 				tag_channel( NULL, buf );
 				return;
 			}
@@ -621,7 +621,7 @@ void tag_update( void )
 		if( tag_game.playing == 0 )
 		{
 			end_tag( );
-			sprintf( buf, "No one left in freeze tag, next game in %d minutes.", tag_game.next );
+			snprintf( buf, MAX_STRING_LENGTH, "No one left in freeze tag, next game in %d minutes.", tag_game.next );
 			tag_channel( NULL, buf );
 			return;
 		}
@@ -629,7 +629,7 @@ void tag_update( void )
 		{
 		case 0:
 			end_tag( );
-			sprintf( buf, "Time has run out for freeze tag, next game will start in %d minutes.", tag_game.next );
+			snprintf( buf, MAX_STRING_LENGTH, "Time has run out for freeze tag, next game will start in %d minutes.", tag_game.next );
 			tag_channel( NULL, buf );
 			return;
 		case 1:
@@ -639,7 +639,7 @@ void tag_update( void )
 		case 5:
 		case 10:
 		case 15:
-			sprintf( buf, "%d minute%s remaining in freeze tag.", tag_game.timer, tag_game.timer > 1 ? "s" : "" );
+			snprintf( buf, MAX_STRING_LENGTH, "%d minute%s remaining in freeze tag.", tag_game.timer, tag_game.timer > 1 ? "s" : "" );
 			tag_channel( NULL, buf );
 		default:
 			tag_game.timer--;
@@ -666,7 +666,7 @@ void tag_channel( CHAR_DATA *ch, const char *argument )
 	CHAR_DATA *original;
 	char buf[MAX_INPUT_LENGTH];
 
-	sprintf( buf, "&B|&CFr&cee&Cze &zT&Wa&zg&B| %s", argument ); /* last %s to reset color */
+	snprintf( buf, MAX_STRING_LENGTH, "&B|&CFr&cee&Cze &zT&Wa&zg&B| %s", argument ); /* last %s to reset color */
 
 	for( d = first_descriptor; d; d = d->next )
 	{

@@ -280,9 +280,9 @@ CMDF( do_buy )
 	}
 	else
 	{
-		sprintf( arg, "$n buys %d $p%s.", noi, ( obj->short_descr[strlen( obj->short_descr ) - 1] == 's' ? "" : "s" ) );
+		snprintf( arg, MAX_INPUT_LENGTH, "$n buys %d $p%s.", noi, ( obj->short_descr[strlen( obj->short_descr ) - 1] == 's' ? "" : "s" ) );
 		act( AT_ACTION, arg, ch, obj, NULL, TO_ROOM );
-		sprintf( arg, "You buy %d $p%s.", noi, ( obj->short_descr[strlen( obj->short_descr ) - 1] == 's' ? "" : "s" ) );
+		snprintf( arg, MAX_INPUT_LENGTH, "You buy %d $p%s.", noi, ( obj->short_descr[strlen( obj->short_descr ) - 1] == 's' ? "" : "s" ) );
 		act( AT_ACTION, arg, ch, obj, NULL, TO_CHAR );
 		act( AT_ACTION, "$N puts them into a bag and hands it to you.", ch, NULL, keeper, TO_CHAR );
 	}
@@ -482,7 +482,7 @@ CMDF( do_sell )
 
 	separate_obj( obj );
 	act( AT_ACTION, "$n sells $p.", ch, obj, NULL, TO_ROOM );
-	sprintf( buf, "You sell $p for %d dollar%s.", cost, cost == 1 ? "" : "s" );
+	snprintf( buf, MAX_STRING_LENGTH, "You sell $p for %d dollar%s.", cost, cost == 1 ? "" : "s" );
 	act( AT_ACTION, buf, ch, obj, NULL, TO_CHAR );
 	ch->gold += cost;
 	keeper->gold -= cost;
@@ -558,7 +558,7 @@ CMDF( do_value )
 		return;
 	}
 
-	sprintf( buf, "$n tells you 'I'll give you %d dollars for $p.'", cost );
+	snprintf( buf, MAX_STRING_LENGTH, "$n tells you 'I'll give you %d dollars for $p.'", cost );
 	act( AT_TELL, buf, keeper, obj, ch, TO_VICT );
 	ch->reply = keeper;
 

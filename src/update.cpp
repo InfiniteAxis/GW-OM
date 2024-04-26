@@ -590,7 +590,7 @@ void mobile_update( void )
 
 		if( gch_prev && gch_prev->next != ch )
 		{
-			sprintf( buf, "FATAL: Mobile_update: %s->prev->next doesn't point to ch.", ch->name );
+			snprintf( buf, MAX_STRING_LENGTH, "FATAL: Mobile_update: %s->prev->next doesn't point to ch.", ch->name );
 			bug( buf, 0 );
 			bug( "Short-cutting here", 0 );
 			gch_prev = NULL;
@@ -803,16 +803,16 @@ void mobile_update( void )
 					switch( number_bits( 2 ) )
 					{
 					case 0:
-						sprintf( buf, "Get away from me, %s!", rch->name );
+						snprintf( buf, MAX_STRING_LENGTH, "Get away from me, %s!", rch->name );
 						break;
 					case 1:
-						sprintf( buf, "Leave me be, %s!", rch->name );
+						snprintf( buf, MAX_STRING_LENGTH, "Leave me be, %s!", rch->name );
 						break;
 					case 2:
-						sprintf( buf, "%s is trying to kill me!  Help!", rch->name );
+						snprintf( buf, MAX_STRING_LENGTH, "%s is trying to kill me!  Help!", rch->name );
 						break;
 					case 3:
-						sprintf( buf, "Someone save me from %s!", rch->name );
+						snprintf( buf, MAX_STRING_LENGTH, "Someone save me from %s!", rch->name );
 						break;
 					}
 					do_yell( ch, buf );
@@ -1534,9 +1534,9 @@ void obj_update( void )
 				separate_obj( obj );
 				obj->value[2] = timerfrac;
 				if( obj->item_type == ITEM_DROID_CORPSE )
-					sprintf( buf, d_corpse_descs[UMIN( timerfrac - 1, 4 )], bufptr );
+					snprintf( buf, MAX_STRING_LENGTH, d_corpse_descs[UMIN( timerfrac - 1, 4 )], bufptr );
 				else
-					sprintf( buf, corpse_descs[UMIN( timerfrac - 1, 4 )], capitalize( bufptr ) );
+					snprintf( buf, MAX_STRING_LENGTH, corpse_descs[UMIN( timerfrac - 1, 4 )], capitalize( bufptr ) );
 
 				STRFREE( obj->description );
 				obj->description = STRALLOC( buf );
@@ -2101,7 +2101,7 @@ void auth_update( void )
 		if( ( victim = d->character ) && IS_WAITING_FOR_AUTH( victim ) )
 		{
 			found_hit = true;
-			sprintf( buf, " %s@%s new %s\r\n", victim->name, victim->desc->host, race_table[victim->race].race_name );
+			snprintf( buf, MAX_STRING_LENGTH, " %s@%s new %s\r\n", victim->name, victim->desc->host, race_table[victim->race].race_name );
 			strcat( log, buf );
 		}
 	}
@@ -2678,7 +2678,7 @@ void reboot_check( time_t reset )
 
 	if( ( current_time % 1800 ) == 0 )
 	{
-		sprintf( buf, "%.24s: %d players", ctime( &current_time ), num_descriptors );
+		snprintf( buf, MAX_STRING_LENGTH, "%.24s: %d players", ctime( &current_time ), num_descriptors );
 		append_to_file( USAGE_FILE, buf );
 	}
 

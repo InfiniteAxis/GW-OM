@@ -448,7 +448,7 @@ CMDF( do_slookup )
 		{
 			if( aff == skill->first_affect )
 				send_to_char( "\r\n", ch );
-			sprintf( buf, "Affect %d", ++cnt );
+			snprintf( buf, MAX_STRING_LENGTH, "Affect %d", ++cnt );
 			if( aff->location )
 			{
 				strcat( buf, " modifies " );
@@ -513,7 +513,7 @@ CMDF( do_slookup )
 			ch_printf( ch, "Immroom   : %s\r\n", skill->imm_room );
 		if( skill->type != SKILL_HERB && skill->guild >= 0 && skill->guild < MAX_ABILITY )
 		{
-			sprintf( buf, "guild: %s   Align: %4d   lvl: %3d\r\n",
+			snprintf( buf, MAX_STRING_LENGTH, "guild: %s   Align: %4d   lvl: %3d\r\n",
 				ability_name[skill->guild], skill->alignment, skill->min_level );
 			send_to_char( buf, ch );
 		}
@@ -1129,7 +1129,7 @@ CMDF( do_sset )
 	{
 		if( ( sn = skill_lookup( arg1 ) ) >= 0 )
 		{
-			sprintf( arg1, "%d %s %s", sn, arg2, argument );
+			snprintf( arg1, MAX_INPUT_LENGTH, "%d %s %s", sn, arg2, argument );
 			do_sset( ch, arg1 );
 		}
 		else
@@ -1990,7 +1990,7 @@ CMDF( do_steal )
 		/*
 			   if ( !IS_NPC(victim) )
 			   {
-			sprintf( buf, "%s is a damn thief!", ch->name );
+			snprintf( buf, MAX_STRING_LENGTH, "%s is a damn thief!", ch->name );
 			do_chat( victim, buf );
 			   }
 				do_murder( victim, ch->name );
@@ -2214,7 +2214,7 @@ CMDF( do_backstab )
 
 	if( !IS_NPC( victim ) )
 	{
-		sprintf( logBuf, "%s: murder (backstabbed) %s.", ch->name, victim->name );
+		snprintf( logBuf, MAX_STRING_LENGTH, "%s: murder (backstabbed) %s.", ch->name, victim->name );
 		log_string( logBuf );
 		to_channel( logBuf, CHANNEL_MONITOR, "Monitor", LEVEL_STAFF );
 	}
@@ -4618,7 +4618,7 @@ CMDF( do_strangle )
 		 if( skill_table[sn]->name == NULL )
 			 continue;
 		 scnt = 0;
-		 sprintf( skn, "&p%s Skills&P:\r\n\r\n", capitalize( ability_name[ability] ) );
+		 snprintf( skn, sizeof( skn ), "&p%s Skills&P:\r\n\r\n", capitalize( ability_name[ability] ) );
 		 send_to_pager( skn, ch );
 		 for( sn = 0; sn < top_sn; sn++ )
 		 {

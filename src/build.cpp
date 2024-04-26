@@ -1240,9 +1240,9 @@ CMDF( do_mset )
 			if( ch->pcdata->subprompt )
 				STRFREE( ch->pcdata->subprompt );
 			if( IS_NPC( victim ) )
-				sprintf( buf, "<&CMset &W#%d&w> %%i", victim->pIndexData->vnum );
+				snprintf( buf, MAX_STRING_LENGTH, "<&CMset &W#%d&w> %%i", victim->pIndexData->vnum );
 			else
-				sprintf( buf, "<&CMset &W%s&w> %%i", victim->name );
+				snprintf( buf, MAX_STRING_LENGTH, "<&CMset &W%s&w> %%i", victim->name );
 			ch->pcdata->subprompt = STRALLOC( buf );
 		}
 		RelCreate( relMSET_ON, ch, victim );
@@ -1641,17 +1641,17 @@ CMDF( do_mset )
 			victim->pIndexData->hitroll = victim->hitroll;
 			victim->pIndexData->damroll = victim->damroll;
 		}
-		sprintf( outbuf, "%s damnumdie %d", arg1, value / 10 );
+		snprintf( outbuf, MAX_STRING_LENGTH, "%s damnumdie %d", arg1, value / 10 );
 		do_mset( ch, outbuf );
-		sprintf( outbuf, "%s damsizedie %d", arg1, 4 );
+		snprintf( outbuf, MAX_STRING_LENGTH, "%s damsizedie %d", arg1, 4 );
 		do_mset( ch, outbuf );
-		sprintf( outbuf, "%s damplus %d", arg1, 2 );
+		snprintf( outbuf, MAX_STRING_LENGTH, "%s damplus %d", arg1, 2 );
 		do_mset( ch, outbuf );
-		sprintf( outbuf, "%s hitnumdie %d", arg1, value / 5 );
+		snprintf( outbuf, MAX_STRING_LENGTH, "%s hitnumdie %d", arg1, value / 5 );
 		do_mset( ch, outbuf );
-		sprintf( outbuf, "%s hitsizedie %d", arg1, 10 );
+		snprintf( outbuf, MAX_STRING_LENGTH, "%s hitsizedie %d", arg1, 10 );
 		do_mset( ch, outbuf );
-		sprintf( outbuf, "%s hitplus %d", arg1, value * 10 );
+		snprintf( outbuf, MAX_STRING_LENGTH, "%s hitplus %d", arg1, value * 10 );
 		do_mset( ch, outbuf );
 
 		return;
@@ -2490,7 +2490,7 @@ CMDF( do_mset )
 		if( !can_mmodify( ch, victim ) )
 			return;
 
-		sprintf( outbuf, "%s resistant %s", arg1, arg3 );
+		snprintf( outbuf, MAX_STRING_LENGTH, "%s resistant %s", arg1, arg3 );
 		do_mset( ch, outbuf );
 		return;
 	}
@@ -2505,7 +2505,7 @@ CMDF( do_mset )
 			return;
 
 
-		sprintf( outbuf, "%s immune %s", arg1, arg3 );
+		snprintf( outbuf, MAX_STRING_LENGTH, "%s immune %s", arg1, arg3 );
 		do_mset( ch, outbuf );
 		return;
 	}
@@ -2519,7 +2519,7 @@ CMDF( do_mset )
 		if( !can_mmodify( ch, victim ) )
 			return;
 
-		sprintf( outbuf, "%s susceptible %s", arg1, arg3 );
+		snprintf( outbuf, MAX_STRING_LENGTH, "%s susceptible %s", arg1, arg3 );
 		do_mset( ch, outbuf );
 		return;
 	}
@@ -2533,9 +2533,9 @@ CMDF( do_mset )
 		if( !can_mmodify( ch, victim ) )
 			return;
 
-		sprintf( outbuf, "%s resistant %s", arg1, arg3 );
+		snprintf( outbuf, MAX_STRING_LENGTH, "%s resistant %s", arg1, arg3 );
 		do_mset( ch, outbuf );
-		sprintf( outbuf, "%s immune %s", arg1, arg3 );
+		snprintf( outbuf, MAX_STRING_LENGTH, "%s immune %s", arg1, arg3 );
 		do_mset( ch, outbuf );
 		return;
 	}
@@ -2550,9 +2550,9 @@ CMDF( do_mset )
 		if( !can_mmodify( ch, victim ) )
 			return;
 
-		sprintf( outbuf, "%s resistant %s", arg1, arg3 );
+		snprintf( outbuf, MAX_STRING_LENGTH, "%s resistant %s", arg1, arg3 );
 		do_mset( ch, outbuf );
-		sprintf( outbuf, "%s susceptible %s", arg1, arg3 );
+		snprintf( outbuf, MAX_STRING_LENGTH, "%s susceptible %s", arg1, arg3 );
 		do_mset( ch, outbuf );
 		return;
 	}
@@ -2566,9 +2566,9 @@ CMDF( do_mset )
 		if( !can_mmodify( ch, victim ) )
 			return;
 
-		sprintf( outbuf, "%s immune %s", arg1, arg3 );
+		snprintf( outbuf, MAX_STRING_LENGTH, "%s immune %s", arg1, arg3 );
 		do_mset( ch, outbuf );
-		sprintf( outbuf, "%s susceptible %s", arg1, arg3 );
+		snprintf( outbuf, MAX_STRING_LENGTH, "%s susceptible %s", arg1, arg3 );
 		do_mset( ch, outbuf );
 		return;
 	}
@@ -2582,11 +2582,11 @@ CMDF( do_mset )
 		if( !can_mmodify( ch, victim ) )
 			return;
 
-		sprintf( outbuf, "%s resistant %s", arg1, arg3 );
+		snprintf( outbuf, MAX_STRING_LENGTH, "%s resistant %s", arg1, arg3 );
 		do_mset( ch, outbuf );
-		sprintf( outbuf, "%s immune %s", arg1, arg3 );
+		snprintf( outbuf, MAX_STRING_LENGTH, "%s immune %s", arg1, arg3 );
 		do_mset( ch, outbuf );
-		sprintf( outbuf, "%s susceptible %s", arg1, arg3 );
+		snprintf( outbuf, MAX_STRING_LENGTH, "%s susceptible %s", arg1, arg3 );
 		do_mset( ch, outbuf );
 		return;
 	}
@@ -2821,13 +2821,13 @@ CMDF( do_mset )
 			return;
 
 		sscanf( arg3, "%d %c %d %c %d", &num, &char1, &size, &char2, &plus );
-		sprintf( outbuf, "%s hitnumdie %d", arg1, num );
+		snprintf( outbuf, MAX_STRING_LENGTH, "%s hitnumdie %d", arg1, num );
 		do_mset( ch, outbuf );
 
-		sprintf( outbuf, "%s hitsizedie %d", arg1, size );
+		snprintf( outbuf, MAX_STRING_LENGTH, "%s hitsizedie %d", arg1, size );
 		do_mset( ch, outbuf );
 
-		sprintf( outbuf, "%s hitplus %d", arg1, plus );
+		snprintf( outbuf, MAX_STRING_LENGTH, "%s hitplus %d", arg1, plus );
 		do_mset( ch, outbuf );
 		return;
 	}
@@ -2845,11 +2845,11 @@ CMDF( do_mset )
 			return;
 
 		sscanf( arg3, "%d %c %d %c %d", &num, &char1, &size, &char2, &plus );
-		sprintf( outbuf, "%s damnumdie %d", arg1, num );
+		snprintf( outbuf, MAX_STRING_LENGTH, "%s damnumdie %d", arg1, num );
 		do_mset( ch, outbuf );
-		sprintf( outbuf, "%s damsizedie %d", arg1, size );
+		snprintf( outbuf, MAX_STRING_LENGTH, "%s damsizedie %d", arg1, size );
 		do_mset( ch, outbuf );
-		sprintf( outbuf, "%s damplus %d", arg1, plus );
+		snprintf( outbuf, MAX_STRING_LENGTH, "%s damplus %d", arg1, plus );
 		do_mset( ch, outbuf );
 		return;
 	}
@@ -3245,7 +3245,7 @@ CMDF( do_oset )
 		{
 			if( ch->pcdata->subprompt )
 				STRFREE( ch->pcdata->subprompt );
-			sprintf( buf, "<&COset &W#%d&w> %%i", obj->pIndexData->vnum );
+			snprintf( buf, MAX_STRING_LENGTH, "<&COset &W#%d&w> %%i", obj->pIndexData->vnum );
 			ch->pcdata->subprompt = STRALLOC( buf );
 		}
 		RelCreate( relOSET_ON, ch, obj );
@@ -3513,7 +3513,7 @@ CMDF( do_oset )
 		{
 			if( str_infix( "rename", obj->name ) )
 			{
-				sprintf( buf, "%s %s", obj->name, "rename" );
+				snprintf( buf, MAX_STRING_LENGTH, "%s %s", obj->name, "rename" );
 				STRFREE( obj->name );
 				obj->name = STRALLOC( buf );
 			}
@@ -4641,7 +4641,7 @@ CMDF( do_redit )
 		}
 		if( argument[0] == '\0' )
 		{
-			sprintf( buf, "Flags for exit direction: %d  Keywords: %s  Key: %d\r\n[ ", xit->vdir, xit->keyword, xit->key );
+			snprintf( buf, MAX_STRING_LENGTH, "Flags for exit direction: %d  Keywords: %s  Key: %d\r\n[ ", xit->vdir, xit->keyword, xit->key );
 			for( value = 0; value <= MAX_EXFLAG; value++ )
 			{
 				if( IS_SET( xit->exit_info, 1 << value ) )
@@ -4708,7 +4708,7 @@ CMDF( do_redit )
 		}
 		if( ( xit = get_exit( location, edir ) ) == NULL )
 		{
-			sprintf( buf, "exit %c 1", dir );
+			snprintf( buf, MAX_STRING_LENGTH, "exit %c 1", dir );
 			do_redit( ch, buf );
 			xit = get_exit( location, edir );
 		}
@@ -4761,7 +4761,7 @@ CMDF( do_redit )
 		}
 		if( ( xit = get_exit( location, edir ) ) == NULL )
 		{
-			sprintf( buf, "exit %c 1", dir );
+			snprintf( buf, MAX_STRING_LENGTH, "exit %c 1", dir );
 			do_redit( ch, buf );
 			xit = get_exit( location, edir );
 		}
@@ -4802,7 +4802,7 @@ CMDF( do_redit )
 		}
 		if( ( xit = get_exit( location, edir ) ) == NULL )
 		{
-			sprintf( buf, "exit %c 1", dir );
+			snprintf( buf, MAX_STRING_LENGTH, "exit %c 1", dir );
 			do_redit( ch, buf );
 			xit = get_exit( location, edir );
 		}
@@ -4842,10 +4842,10 @@ CMDF( do_redit )
 		}
 		if( ( xit = get_exit( location, edir ) ) == NULL )
 		{
-			sprintf( buf, "exit %c 1", dir );
+			snprintf( buf, MAX_STRING_LENGTH, "exit %c 1", dir );
 			do_redit( ch, buf );
 		}
-		sprintf( buf, "exdesc %c %s", dir, argument );
+		snprintf( buf, MAX_STRING_LENGTH, "exdesc %c %s", dir, argument );
 		do_redit( ch, buf );
 		return;
 	}
@@ -4882,12 +4882,12 @@ CMDF( do_redit )
 		}
 		if( ( xit = get_exit( location, edir ) ) == NULL )
 		{
-			sprintf( buf, "exit %c 1", dir );
+			snprintf( buf, MAX_STRING_LENGTH, "exit %c 1", dir );
 			do_redit( ch, buf );
 			if( ( xit = get_exit( location, edir ) ) == NULL )
 				return;
 		}
-		sprintf( buf, "%s %s", xit->keyword, argument );
+		snprintf( buf, MAX_STRING_LENGTH, "%s %s", xit->keyword, argument );
 		STRFREE( xit->keyword );
 		xit->keyword = STRALLOC( buf );
 		return;
@@ -5062,13 +5062,13 @@ CMDF( do_redit )
 		{
 			vnum = xit->vnum;
 			if( arg3[0] != '\0' )
-				sprintf( rvnum, "%d", tmploc->vnum );
+				snprintf( rvnum, MAX_INPUT_LENGTH, "%d", tmploc->vnum );
 			if( xit->to_room )
 				rxit = get_exit( xit->to_room, rev_dir[edir] );
 			else
 				rxit = NULL;
 		}
-		sprintf( tmpcmd, "exit %s %s %s", arg2, arg3, argument );
+		snprintf( tmpcmd, MAX_INPUT_LENGTH, "exit %s %s %s", arg2, arg3, argument );
 		do_redit( ch, tmpcmd );
 		if( numnotdir )
 			xit = get_exit_num( tmploc, exnum );
@@ -5078,7 +5078,7 @@ CMDF( do_redit )
 		{
 			vnum = xit->vnum;
 			if( arg3[0] != '\0' )
-				sprintf( rvnum, "%d", tmploc->vnum );
+				snprintf( rvnum, MAX_INPUT_LENGTH, "%d", tmploc->vnum );
 			if( xit->to_room )
 				rxit = get_exit( xit->to_room, rev_dir[edir] );
 			else
@@ -5086,7 +5086,7 @@ CMDF( do_redit )
 		}
 		if( vnum )
 		{
-			sprintf( tmpcmd, "%d redit exit %d %s %s", vnum, rev_dir[edir], rvnum, argument );
+			snprintf( tmpcmd, MAX_INPUT_LENGTH, "%d redit exit %d %s %s", vnum, rev_dir[edir], rvnum, argument );
 			do_at( ch, tmpcmd );
 		}
 		return;
@@ -5147,7 +5147,7 @@ CMDF( do_redit )
 				xit->description = STRALLOC( "" );
 			else
 			{
-				sprintf( buf, "%s\r\n", argument );
+				snprintf( buf, MAX_STRING_LENGTH, "%s\r\n", argument );
 				xit->description = STRALLOC( buf );
 			}
 			send_to_char( "Done.\r\n", ch );
@@ -5439,7 +5439,7 @@ void edit_buffer( CHAR_DATA *ch, char *argument )
 				{
 					sptr = lwptr;
 					lwptr = wptr + wordln;
-					sprintf( buf, "%s%s", word2, wptr + wordln );
+					snprintf( buf, MAX_STRING_LENGTH, "%s%s", word2, wptr + wordln );
 					lineln = wptr - edit->line[xx] - wordln;
 					++count;
 					if( strlen( buf ) + lineln > 79 )
@@ -5687,7 +5687,7 @@ void assign_area( CHAR_DATA *ch )
 	if( get_trust( ch ) >= LEVEL_AVATAR && ch->pcdata->low_vnum && ch->pcdata->hi_vnum )
 	{
 		tarea = ch->pcdata->area;
-		sprintf( taf, "%s.are", capitalize( ch->name ) );
+		snprintf( taf, 1024, "%s.are", capitalize( ch->name ) );
 		if( !tarea )
 		{
 			for( tmp = first_build; tmp; tmp = tmp->next )
@@ -5699,15 +5699,15 @@ void assign_area( CHAR_DATA *ch )
 		}
 		if( !tarea )
 		{
-			sprintf( buf, "Creating area entry for %s", ch->name );
+			snprintf( buf, MAX_STRING_LENGTH, "Creating area entry for %s", ch->name );
 			log_string_plus( buf, LOG_NORMAL, ch->top_level );
 			CREATE( tarea, AREA_DATA, 1 );
 			LINK( tarea, first_build, last_build, next, prev );
 			tarea->first_room = tarea->last_room = NULL;
-			sprintf( buf, "{PROTO} %s's area in progress", ch->name );
+			snprintf( buf, MAX_STRING_LENGTH, "{PROTO} %s's area in progress", ch->name );
 			tarea->name = str_dup( buf );
 			tarea->filename = str_dup( taf );
-			sprintf( buf2, "%s", ch->name );
+			snprintf( buf2, MAX_STRING_LENGTH, "%s", ch->name );
 			tarea->author = STRALLOC( buf2 );
 			tarea->owned_by = STRALLOC( "None" );
 			tarea->age = 0;
@@ -5716,7 +5716,7 @@ void assign_area( CHAR_DATA *ch )
 		}
 		else
 		{
-			sprintf( buf, "Updating area entry for %s", ch->name );
+			snprintf( buf, MAX_STRING_LENGTH, "Updating area entry for %s", ch->name );
 			log_string_plus( buf, LOG_NORMAL, ch->top_level );
 		}
 		tarea->low_vnum = ch->pcdata->low_vnum;
@@ -5752,7 +5752,7 @@ CMDF( do_aassign )
 		return;
 	}
 
-	sprintf( buf, "%s", argument );
+	snprintf( buf, MAX_STRING_LENGTH, "%s", argument );
 	tarea = NULL;
 
 	/*	if ( get_trust(ch) >= sysdata.level_modify_proto )   */
@@ -6388,11 +6388,11 @@ void old_fold_area( AREA_DATA *tarea, const char *filename, bool install )
 
 	if( hidefoldmessage == false )
 	{
-		sprintf( buf, "Saving %s...", tarea->filename );
+		snprintf( buf, MAX_STRING_LENGTH, "Saving %s...", tarea->filename );
 		log_string_plus( buf, LOG_NORMAL, LEVEL_LIAISON );
 	}
 
-	sprintf( buf, "%s.bak", filename );
+	snprintf( buf, MAX_STRING_LENGTH, "%s.bak", filename );
 	rename( filename, buf );
 	if( ( fpout = FileOpen( filename, "w" ) ) == NULL )
 	{
@@ -6845,7 +6845,7 @@ CMDF( do_savearea )
 		return;
 	}
 
-	sprintf( filename, "%s%s", BUILD_DIR, tarea->filename );
+	snprintf( filename, 256, "%s%s", BUILD_DIR, tarea->filename );
 	fold_area( tarea, filename, false );
 	send_to_char( "Done.\r\n", ch );
 }
@@ -6900,7 +6900,7 @@ CMDF( do_savearea )
 //		send_to_char( "Your area is already loaded.\r\n", ch );
 //		return;
 //	}
-//	sprintf( filename, "%s%s", BUILD_DIR, tarea->filename );
+//	snprintf( filename, 256, "%s%s", BUILD_DIR, tarea->filename );
 //	send_to_char( "Loading...\r\n", ch );
 //	load_area_file( tarea, filename, true );
 //	send_to_char( "Linking exits...\r\n", ch );
@@ -7061,8 +7061,8 @@ CMDF( do_installarea )
 			tarea->nplayer = num;
 			tarea->installed = true;
 			send_to_char( "Renaming author's building file.\r\n", ch );
-			sprintf( buf, "%s%s.installed", BUILD_DIR, tarea->filename );
-			sprintf( arg, "%s%s", BUILD_DIR, tarea->filename );
+			snprintf( buf, MAX_STRING_LENGTH, "%s%s.installed", BUILD_DIR, tarea->filename );
+			snprintf( arg, MAX_INPUT_LENGTH, "%s%s", BUILD_DIR, tarea->filename );
 			rename( arg, buf );
 			send_to_char( "Done.\r\n", ch );
 			return;

@@ -1262,7 +1262,7 @@ void load_mobiles( AREA_DATA *tarea, FILE *fp )
 			else
 			{
 				pMobIndex = get_mob_index( vnum );
-				sprintf( buf, "Cleaning mobile: %d", vnum );
+				snprintf( buf, MAX_STRING_LENGTH, "Cleaning mobile: %d", vnum );
 				log_string_plus( buf, LOG_BUILD, sysdata.log_level );
 				clean_mob( pMobIndex );
 				oldmob = true;
@@ -1480,7 +1480,7 @@ void load_objects( AREA_DATA *tarea, FILE *fp )
 			else
 			{
 				pObjIndex = get_obj_index( vnum );
-				sprintf( buf, "Cleaning object: %d", vnum );
+				snprintf( buf, MAX_STRING_LENGTH, "Cleaning object: %d", vnum );
 				log_string_plus( buf, LOG_BUILD, sysdata.log_level );
 				clean_obj( pObjIndex );
 				oldobj = true;
@@ -1975,7 +1975,7 @@ void load_rooms( AREA_DATA *tarea, FILE *fp )
 			else
 			{
 				pRoomIndex = get_room_index( vnum );
-				sprintf( buf, "Cleaning room: %d", vnum );
+				snprintf( buf, MAX_STRING_LENGTH, "Cleaning room: %d", vnum );
 				log_string_plus( buf, LOG_BUILD, sysdata.log_level );
 				clean_room( pRoomIndex );
 				oldroom = true;
@@ -2536,7 +2536,7 @@ void area_update( void )
 			 * Rennard
 			 */
 			if( pArea->resetmsg )
-				sprintf( buf, "%s\r\n", pArea->resetmsg );
+				snprintf( buf, MAX_STRING_LENGTH, "%s\r\n", pArea->resetmsg );
 			else
 				strcpy( buf, "You hear some squeaking sounds...\r\n" );
 			for( pch = first_char; pch; pch = pch->next )
@@ -4421,7 +4421,7 @@ CMDF( do_fileio )
 
 	for( filedata = first_filedata; filedata; filedata = filedata->next )
 	{
-		sprintf( buf, "&Y%-25.25s     &w%-1.1s       &W%-20.20s     &C%-15.15s     &O%-4.4d\r\n", filedata->filename,
+		snprintf( buf, MAX_STRING_LENGTH, "&Y%-25.25s     &w%-1.1s       &W%-20.20s     &C%-15.15s     &O%-4.4d\r\n", filedata->filename,
 			filedata->mode, filedata->file, filedata->function, filedata->line );
 		count++;
 		send_to_pager( buf, ch );
@@ -4917,7 +4917,7 @@ void make_wizlist( )
 	{
 		if( dentry->d_name[0] != '.' )
 		{
-			sprintf( buf, "%s%s", GOD_DIR, dentry->d_name );
+			snprintf( buf, MAX_STRING_LENGTH, "%s%s", GOD_DIR, dentry->d_name );
 			gfp = FileOpen( buf, "r" );
 			if( gfp )
 			{
@@ -4977,12 +4977,12 @@ void make_wizlist( )
 			mudstrlcat( buf, " ", MSL );
 			if( count % 2 == 1 )
 			{
-				sprintf( buf2, "&Y   |&G%d&Y| &C%-10s &Y- %-23s &Y- &P%-17s &Y|", wiz->level, wiz->name, wiz->job,
+				snprintf( buf2, MAX_STRING_LENGTH, "&Y   |&G%d&Y| &C%-10s &Y- %-23s &Y- &P%-17s &Y|", wiz->level, wiz->name, wiz->job,
 					wiz->aim );
 			}
 			else
 			{
-				sprintf( buf2, "&Y   |&g%d&Y| &c%-10s &O- %-23s &O- &p%-17s &Y|", wiz->level, wiz->name, wiz->job,
+				snprintf( buf2, MAX_STRING_LENGTH, "&Y   |&g%d&Y| &c%-10s &O- %-23s &O- &p%-17s &Y|", wiz->level, wiz->name, wiz->job,
 					wiz->aim );
 			}
 			mudstrlcat( buf, buf2, MSL );
@@ -5037,7 +5037,7 @@ void make_webwiz( void )
 	{
 		if( dentry->d_name[0] != '.' )
 		{
-			sprintf( buf, "%s%s", GOD_DIR, dentry->d_name );
+			snprintf( buf, MAX_STRING_LENGTH, "%s%s", GOD_DIR, dentry->d_name );
 			gfp = FileOpen( buf, "r" );
 			if( gfp )
 			{
@@ -5138,7 +5138,7 @@ void make_webwiz( void )
 		if( count % 2 == 1 )
 		{
 
-			sprintf( buf2,
+			snprintf( buf2, MAX_STRING_LENGTH,
 				"<tr>   <td width=35><font color=" "#FFFF00" " face=" "Courier New" ">|<font color=" "#00FF00"
 				">%d<font color=" "#FFFF00" ">|</td> <td width=70><font color=" "#OOFFFF"
 				">%-10s</td> <td width=150><font color=" "#FFFF00" ">- <font color=" "#FF0000"
@@ -5147,7 +5147,7 @@ void make_webwiz( void )
 		}
 		else
 		{
-			sprintf( buf2,
+			snprintf( buf2, MAX_STRING_LENGTH,
 				"<tr>   <td width=35><font color=" "#FFFF00" " face=" "Courier New" ">|<font color=" "006400"
 				">%d<font color=" "#FFFF00" ">|</td> <td width=70><font color=" "#008B8B"
 				">%-10s</td> <td width=120><font color=" "#808000" ">- <font color=" "#8B0000"
@@ -5948,9 +5948,9 @@ OBJ_INDEX_DATA *make_object( int vnum, int cvnum, const char *name )
 	pObjIndex->last_extradesc = NULL;
 	if( !cObjIndex )
 	{
-		sprintf( buf, "A %s", name );
+		snprintf( buf, MAX_STRING_LENGTH, "A %s", name );
 		pObjIndex->short_descr = STRALLOC( buf );
-		sprintf( buf, "A %s is here.", name );
+		snprintf( buf, MAX_STRING_LENGTH, "A %s is here.", name );
 		pObjIndex->description = STRALLOC( buf );
 		pObjIndex->action_desc = STRALLOC( "" );
 		// it's safe to cast these because we just created the object
@@ -6039,9 +6039,9 @@ MOB_INDEX_DATA *make_mobile( int vnum, short cvnum, const char *name )
 	pMobIndex->player_name = STRALLOC( name );
 	if( !cMobIndex )
 	{
-		sprintf( buf, "A newly created %s", name );
+		snprintf( buf, MAX_STRING_LENGTH, "A newly created %s", name );
 		pMobIndex->short_descr = STRALLOC( buf );
-		sprintf( buf, "Some god abandoned a newly created %s here.\r\n", name );
+		snprintf( buf, MAX_STRING_LENGTH, "Some god abandoned a newly created %s here.\r\n", name );
 		pMobIndex->long_descr = STRALLOC( buf );
 		pMobIndex->description = STRALLOC( "" );
 		// it's safe to cast these because we just created the object
@@ -8629,7 +8629,7 @@ void save_sysdata( SYSTEM_DATA sys )
 	FILE *fp;
 	char filename[MAX_INPUT_LENGTH];
 
-	sprintf( filename, "%ssysdata.dat", SYSTEM_DIR );
+	snprintf( filename, MAX_INPUT_LENGTH, "%ssysdata.dat", SYSTEM_DIR );
 
 	if( ( fp = FileOpen( filename, "w" ) ) == NULL )
 	{
@@ -8825,7 +8825,7 @@ bool load_systemdata( SYSTEM_DATA *sys )
 	bool found;
 
 	found = false;
-	sprintf( filename, "%ssysdata.dat", SYSTEM_DIR );
+	snprintf( filename, sizeof(filename), "%ssysdata.dat", SYSTEM_DIR );
 
 	if( ( fp = FileOpen( filename, "r" ) ) != NULL )
 	{

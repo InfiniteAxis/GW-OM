@@ -162,18 +162,18 @@ CMDF( do_i100machine )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, "100mm Machine Gun fire from %s misses you.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "100mm Machine Gun fire from %s misses you.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "You shoot the 100mm Machine Gun  at %s but miss.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You shoot the 100mm Machine Gun  at %s but miss.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_bulletweapons );
 			return;
 		}
-		sprintf( buf, "100mm Machine Gun fire from %s hits %s.", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "100mm Machine Gun fire from %s hits %s.", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "You are hit by 100mm Machine Gun fire from %s!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You are hit by 100mm Machine Gun fire from %s!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "Your 100mm Machine Gun fire hits %s!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Your 100mm Machine Gun fire hits %s!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_bulletweapons );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -193,7 +193,7 @@ CMDF( do_i100machine )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->ammo -= 2;
@@ -291,18 +291,18 @@ CMDF( do_i105rifle )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, "105mm Rifle fire from %s misses you.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "105mm Rifle fire from %s misses you.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "You shoot the 105mm Rifle  at %s but miss.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You shoot the 105mm Rifle  at %s but miss.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_bulletweapons );
 			return;
 		}
-		sprintf( buf, "105mm Rifle fire from %s hits %s.", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "105mm Rifle fire from %s hits %s.", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "You are hit by 105mm Rifle fire from %s!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You are hit by 105mm Rifle fire from %s!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "Your 105mm Rifle fire hits %s!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Your 105mm Rifle fire hits %s!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_bulletweapons );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -322,7 +322,7 @@ CMDF( do_i105rifle )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->ammo -= 3;
@@ -420,18 +420,18 @@ CMDF( do_leobazooka )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, "Bazooka fire from %s misses you.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "Bazooka fire from %s misses you.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "You shoot the Bazooka  at %s but miss.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You shoot the Bazooka  at %s but miss.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_missileweapons );
 			return;
 		}
-		sprintf( buf, "Bazooka fire from %s hits %s.", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Bazooka fire from %s hits %s.", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "You are hit by Bazooka fire from %s!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You are hit by Bazooka fire from %s!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "Your Bazooka fire hits %s!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Your Bazooka fire hits %s!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_missileweapons );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -451,7 +451,7 @@ CMDF( do_leobazooka )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->ammo -= 10;
@@ -549,18 +549,18 @@ CMDF( do_shouldercannon )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, "Laser fire from %s misses you.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "Laser fire from %s misses you.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "Your Lasers  miss %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "Your Lasers  miss %s.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_missileweapons );
 			return;
 		}
-		sprintf( buf, "Laser fire from %s hits %s.", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Laser fire from %s hits %s.", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "You are hit by Laser fire from %s!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You are hit by Laser fire from %s!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "Your Laser fire hits %s!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Your Laser fire hits %s!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_missileweapons );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -580,7 +580,7 @@ CMDF( do_shouldercannon )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->ammo -= 1;
@@ -678,18 +678,18 @@ CMDF( do_sidemissilelauncher )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, " %s launches misslies at you but misses.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, " %s launches misslies at you but misses.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "You launch missiles at %s but miss.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You launch missiles at %s but miss.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_missileweapons );
 			return;
 		}
-		sprintf( buf, "Missiles launched from %s hits %s.", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Missiles launched from %s hits %s.", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "You are hit by Missiles launched from %s!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You are hit by Missiles launched from %s!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "You launch missiles and they hit %s!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You launch missiles and they hit %s!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_missileweapons );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -709,7 +709,7 @@ CMDF( do_sidemissilelauncher )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->ammo -= 5;
@@ -807,18 +807,18 @@ CMDF( do_beamrifle )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, "Beam Rifle fire from %s misses you.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "Beam Rifle fire from %s misses you.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "You shoot the Beam Rifle  at %s but miss.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You shoot the Beam Rifle  at %s but miss.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_lightenergy );
 			return;
 		}
-		sprintf( buf, "Beam Rifle fire from %s hits %s.", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Beam Rifle fire from %s hits %s.", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "You are hit by Beam Rifle fire from %s!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You are hit by Beam Rifle fire from %s!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "Your Beam Rifle fire hits %s!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Your Beam Rifle fire hits %s!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_lightenergy );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -838,7 +838,7 @@ CMDF( do_beamrifle )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->energy -= 20;
@@ -936,18 +936,18 @@ CMDF( do_lasercannon )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, "Laser Cannon fire from %s misses you.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "Laser Cannon fire from %s misses you.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "You shoot the Laser Cannon  at %s but miss.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You shoot the Laser Cannon  at %s but miss.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_lightenergy );
 			return;
 		}
-		sprintf( buf, "Laser Cannon fire from %s hits %s.", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Laser Cannon fire from %s hits %s.", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "You are hit by Laser Cannon fire from %s!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You are hit by Laser Cannon fire from %s!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "Your Laser Cannon fire hits %s!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Your Laser Cannon fire hits %s!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_lightenergy );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -967,7 +967,7 @@ CMDF( do_lasercannon )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->energy -= 10;
@@ -1065,18 +1065,18 @@ CMDF( do_twingattling )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, "Twin Gattling-Gun fire from %s misses you.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "Twin Gattling-Gun fire from %s misses you.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "You shoot the Twin Gattling-Gun  at %s but miss.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You shoot the Twin Gattling-Gun  at %s but miss.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_bulletweapons );
 			return;
 		}
-		sprintf( buf, "Twin Gattling-Gun fire from %s hits %s.", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Twin Gattling-Gun fire from %s hits %s.", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "You are hit by Twin Gattling-Gun fire from %s!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You are hit by Twin Gattling-Gun fire from %s!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "Your Twin Gattling-Gun fire hits %s!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Your Twin Gattling-Gun fire hits %s!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_bulletweapons );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -1096,7 +1096,7 @@ CMDF( do_twingattling )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->ammo -= 15;
@@ -1194,18 +1194,18 @@ CMDF( do_beamcannon )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, "Beam Cannon fire from %s misses you.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "Beam Cannon fire from %s misses you.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "You shoot the Beam Cannon  at %s but miss.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You shoot the Beam Cannon  at %s but miss.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_heavyenergy );
 			return;
 		}
-		sprintf( buf, "Beam Cannon fire from %s hits %s.", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Beam Cannon fire from %s hits %s.", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "You are hit by Beam Cannon fire from %s!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You are hit by Beam Cannon fire from %s!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "Your Beam Cannon fire hits %s!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Your Beam Cannon fire hits %s!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_heavyenergy );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -1225,7 +1225,7 @@ CMDF( do_beamcannon )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->energy -= 20;
@@ -1324,18 +1324,18 @@ CMDF( do_i250machine )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, "250mm Machine Gun fire from %s misses you.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "250mm Machine Gun fire from %s misses you.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "You shoot the 250mm Machine Gun  at %s but miss.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You shoot the 250mm Machine Gun  at %s but miss.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_bulletweapons );
 			return;
 		}
-		sprintf( buf, "250mm Machine Gun fire from %s hits %s.", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "250mm Machine Gun fire from %s hits %s.", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "You are hit by 250mm Machine Gun fire from %s!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You are hit by 250mm Machine Gun fire from %s!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "Your 250mm Machine Gun fire hits %s!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Your 250mm Machine Gun fire hits %s!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_bulletweapons );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -1355,7 +1355,7 @@ CMDF( do_i250machine )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->ammo -= 5;
@@ -1452,18 +1452,18 @@ CMDF( do_busterrifle )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, "The Buster Rifle blast from %s misses you.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "The Buster Rifle blast from %s misses you.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "Your Buster Rifle Blast races at %s but misses.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "Your Buster Rifle Blast races at %s but misses.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_heavyenergy );
 			return;
 		}
-		sprintf( buf, "The Buster Rifle Blast from %s hits %s.", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "The Buster Rifle Blast from %s hits %s.", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "You are hit by the Buster Rifle blast from %s!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You are hit by the Buster Rifle blast from %s!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "Your Buster Rifle fire hits %s!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Your Buster Rifle fire hits %s!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_heavyenergy );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -1483,7 +1483,7 @@ CMDF( do_busterrifle )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->energy -= 30;
@@ -1581,18 +1581,18 @@ CMDF( do_headvulcan )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, "The Head Vulcan burst from %s misses you.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "The Head Vulcan burst from %s misses you.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "Your Head Vulcan shoots bursts at %s but misses.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "Your Head Vulcan shoots bursts at %s but misses.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_bulletweapons );
 			return;
 		}
-		sprintf( buf, "The Head Vulcan Bursts from %s hits %s.", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "The Head Vulcan Bursts from %s hits %s.", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, " %s!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, " %s!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "Your Head Vulcan bursts out and hits %s!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Your Head Vulcan bursts out and hits %s!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_bulletweapons );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -1612,7 +1612,7 @@ CMDF( do_headvulcan )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->ammo -= 25;
@@ -1711,18 +1711,18 @@ CMDF( do_beamscythe )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, "The Beam Scythe slash from %s misses you.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "The Beam Scythe slash from %s misses you.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "Your Beam Scythe Slashes at %s but misses.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "Your Beam Scythe Slashes at %s but misses.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_lightenergy );
 			return;
 		}
-		sprintf( buf, "The Beam Scythe Slash from %s hits %s.", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "The Beam Scythe Slash from %s hits %s.", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "Your suit shakes as you are hit by the Beam Scythe from %s!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Your suit shakes as you are hit by the Beam Scythe from %s!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "Your Beam Scythe Slashes %s!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Your Beam Scythe Slashes %s!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_lightenergy );
 		echo_to_ship( AT_RED, target, "A small tremor vibrates through the suit." );
@@ -1742,7 +1742,7 @@ CMDF( do_beamscythe )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->energy -= 15;
@@ -1841,18 +1841,18 @@ CMDF( do_bustershield )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, "The Buster Shield from %s misses you.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "The Buster Shield from %s misses you.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "Your Buster Shield flies at %s but misses, and returns to you.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "Your Buster Shield flies at %s but misses, and returns to you.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_meleeweapons );
 			return;
 		}
-		sprintf( buf, "The Buster Shield from %s flies at and hits %s.", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "The Buster Shield from %s flies at and hits %s.", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "You are hit by the Buster Shield from %s!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You are hit by the Buster Shield from %s!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "Your Buster Shield hits %s and returns to you!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Your Buster Shield hits %s and returns to you!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_meleeweapons );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -1872,7 +1872,7 @@ CMDF( do_bustershield )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->energy -= 10;
@@ -1970,18 +1970,18 @@ CMDF( do_beamgattling )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, "The Beam Gattling fire from %s misses you.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "The Beam Gattling fire from %s misses you.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "Your Beam Gattling fires a spread of bullets at %s but misses.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "Your Beam Gattling fires a spread of bullets at %s but misses.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_lightenergy );
 			return;
 		}
-		sprintf( buf, "The Beam Gattling fire from %s hits %s.", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "The Beam Gattling fire from %s hits %s.", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "You are pummeled by %s's Beam Gattling fire! %s!", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You are pummeled by %s's Beam Gattling fire! %s!", ship->name, target->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "Your Beam Gattling fires and pummels %s!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Your Beam Gattling fires and pummels %s!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_lightenergy );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -2001,7 +2001,7 @@ CMDF( do_beamgattling )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->ammo -= 25;
@@ -2101,18 +2101,18 @@ CMDF( do_multiblast )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, "The Multiple Rockets from %s misses you.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "The Multiple Rockets from %s misses you.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "Your Multiple Rocket Blast bursts at %s but misses.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "Your Multiple Rocket Blast bursts at %s but misses.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_missileweapons );
 			return;
 		}
-		sprintf( buf, "The Multiple Rockets from %s pulverises %s.", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "The Multiple Rockets from %s pulverises %s.", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, " %s!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, " %s!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "Your Multiple Rockets shoot out and pulverise %s!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Your Multiple Rockets shoot out and pulverise %s!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_missileweapons );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -2132,7 +2132,7 @@ CMDF( do_multiblast )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->ammo -= 30;
@@ -2231,18 +2231,18 @@ CMDF( do_armyknife )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, "The Army Knife from %s misses you.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "The Army Knife from %s misses you.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "Your Army Knife slashes at %s but misses.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "Your Army Knife slashes at %s but misses.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_meleeweapons );
 			return;
 		}
-		sprintf( buf, "The Army Knife slash from %s slashes %s.", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "The Army Knife slash from %s slashes %s.", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "You are hit by the Army Knife from %s!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You are hit by the Army Knife from %s!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "Your Army Knife slashes %s!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Your Army Knife slashes %s!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_meleeweapons );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -2262,7 +2262,7 @@ CMDF( do_armyknife )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->energy -= 10;
@@ -2363,18 +2363,18 @@ CMDF( do_shatols )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, "The slash of the two Shatols from %s misses you.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "The slash of the two Shatols from %s misses you.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "You slash your Shatols at %s but miss.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You slash your Shatols at %s but miss.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_meleeweapons );
 			return;
 		}
-		sprintf( buf, "The Shatol's from %s slashes and strikes %s.", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "The Shatol's from %s slashes and strikes %s.", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "You are struck by the Shatols on %s!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You are struck by the Shatols on %s!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "Your Shatols slash at %s and strike!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Your Shatols slash at %s and strike!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_meleeweapons );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -2394,7 +2394,7 @@ CMDF( do_shatols )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->energy -= 15;
@@ -2493,18 +2493,18 @@ CMDF( do_missiles )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, "The Missile barrage from %s misses you.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "The Missile barrage from %s misses you.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "Your shoulders open up, and shoot out Missiles at %s but misses.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "Your shoulders open up, and shoot out Missiles at %s but misses.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_missileweapons );
 			return;
 		}
-		sprintf( buf, "The Mssile Barrage from %s hits %s.", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "The Mssile Barrage from %s hits %s.", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, " %s!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, " %s!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "Your shoulders open up, and send out a barrage of missiles, smashing into %s!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Your shoulders open up, and send out a barrage of missiles, smashing into %s!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_missileweapons );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -2524,7 +2524,7 @@ CMDF( do_missiles )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->ammo -= 35;
@@ -2622,18 +2622,18 @@ CMDF( do_crosscrusher )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, "%s dashes at you but misses.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "%s dashes at you but misses.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "You dash at %s but miss.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You dash at %s but miss.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_meleeweapons );
 			return;
 		}
-		sprintf( buf, "%s dashes at %s, capturing it in its Pincers and begins squeezing it.", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s dashes at %s, capturing it in its Pincers and begins squeezing it.", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "%s dashes at you, capturing you in its Pincers as it begins to crush you!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s dashes at you, capturing you in its Pincers as it begins to crush you!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "You dash at %s, capturing it in your pincers, as you begin to crush it!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You dash at %s, capturing it in your pincers, as you begin to crush it!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_meleeweapons );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -2653,7 +2653,7 @@ CMDF( do_crosscrusher )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->energy -= 35;
@@ -2751,18 +2751,18 @@ CMDF( do_bigbeamsabre )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, " %s flies at you but misses.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, " %s flies at you but misses.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "You fly at %s but miss.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You fly at %s but miss.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_beamsabers );
 			return;
 		}
-		sprintf( buf, "%s flies at %s and slashes hard, hitting the suit with its Big Beam Sabre", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s flies at %s and slashes hard, hitting the suit with its Big Beam Sabre", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "Your suit shudders as it is hit by %s's Big Beam Sabre!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Your suit shudders as it is hit by %s's Big Beam Sabre!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "You fly swiftly, and slash %s with your Big Beam Sabre!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You fly swiftly, and slash %s with your Big Beam Sabre!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_beamsabers );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -2782,7 +2782,7 @@ CMDF( do_bigbeamsabre )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->energy -= 30;
@@ -2882,18 +2882,18 @@ CMDF( do_heatrod )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, " %s whips it Heat Rod at you, but misses.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, " %s whips it Heat Rod at you, but misses.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "You whip your Heat Rod at %s but miss.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You whip your Heat Rod at %s but miss.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_meleeweapons );
 			return;
 		}
-		sprintf( buf, "%s whips its Heat Rod at %s leaves melted armor where it hit", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s whips its Heat Rod at %s leaves melted armor where it hit", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "Your suits armor melts slightly as it is struck by %s's Heat Rod!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Your suits armor melts slightly as it is struck by %s's Heat Rod!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "You whip your Heat Rod at %s, melting the armor that you hit!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You whip your Heat Rod at %s, melting the armor that you hit!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_meleeweapons );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -2913,7 +2913,7 @@ CMDF( do_heatrod )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->energy -= 35;
@@ -3012,18 +3012,18 @@ CMDF( do_beamglaive )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, " %s thrusts its Beam Glaive at you, but misses.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, " %s thrusts its Beam Glaive at you, but misses.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "You thrust your Beam Glaive at %s but miss.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You thrust your Beam Glaive at %s but miss.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_lightenergy );
 			return;
 		}
-		sprintf( buf, "%s thrusts its beam Glaive at %s, piercing the armor!", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s thrusts its beam Glaive at %s, piercing the armor!", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "You fly back slightly, as you are hit by %s's Beam Glaive!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You fly back slightly, as you are hit by %s's Beam Glaive!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "You thrust your Beam Glaive at %s, slightly piercing its armor!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You thrust your Beam Glaive at %s, slightly piercing its armor!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_lightenergy );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -3043,7 +3043,7 @@ CMDF( do_beamglaive )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->energy -= 20;
@@ -3141,18 +3141,18 @@ CMDF( do_dragonfang )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, " %s sends its Dragon Fang flying at you, but misses.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, " %s sends its Dragon Fang flying at you, but misses.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "You send your Dragon Fang at %s but miss.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You send your Dragon Fang at %s but miss.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_meleeweapons );
 			return;
 		}
-		sprintf( buf, "%s sends its Dragon Fang at %s as it opens up and bites into the suit with its fangs!", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s sends its Dragon Fang at %s as it opens up and bites into the suit with its fangs!", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "Your suit is clamped down, as it is struck by %s's Dragon Fang attack!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Your suit is clamped down, as it is struck by %s's Dragon Fang attack!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "You lunge your Dragon Fang at %s, clamping down as it hits!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You lunge your Dragon Fang at %s, clamping down as it hits!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_meleeweapons );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -3172,7 +3172,7 @@ CMDF( do_dragonfang )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->energy -= 30;
@@ -3270,18 +3270,18 @@ CMDF( do_flamethrower )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, " %s blasts its Flamethrower at you, but misses.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, " %s blasts its Flamethrower at you, but misses.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "You blast your Flamethrower at %s but miss.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You blast your Flamethrower at %s but miss.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_heavyenergy );
 			return;
 		}
-		sprintf( buf, "%s blasts fire at %s enveloping it in flames", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s blasts fire at %s enveloping it in flames", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "Your suit heats up tremendously as its enveloped by %s's Flamethrower!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Your suit heats up tremendously as its enveloped by %s's Flamethrower!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "You blast your Flamethrower at %s, enveloping it in flames!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You blast your Flamethrower at %s, enveloping it in flames!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_heavyenergy );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -3301,7 +3301,7 @@ CMDF( do_flamethrower )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->energy -= 35;
@@ -3399,18 +3399,18 @@ CMDF( do_dobergun )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, "The Dober Gun fire from %s misses you.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "The Dober Gun fire from %s misses you.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "Your Dober Gun fires a spread of bullets at %s but misses.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "Your Dober Gun fires a spread of bullets at %s but misses.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_bulletweapons );
 			return;
 		}
-		sprintf( buf, "The Dober Gun fire from %s hits %s.", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "The Dober Gun fire from %s hits %s.", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "You are pummeled by %s's Dober Gun fire!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You are pummeled by %s's Dober Gun fire!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "Your Dober Gun fires and pummels %s!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Your Dober Gun fires and pummels %s!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_bulletweapons );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -3430,7 +3430,7 @@ CMDF( do_dobergun )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->energy -= 30;
@@ -3528,18 +3528,18 @@ CMDF( do_shortblast )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, "The Short Range blast from %s misses you.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "The Short Range blast from %s misses you.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "Your Short Range blast shoots at %s but misses.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "Your Short Range blast shoots at %s but misses.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_lightenergy );
 			return;
 		}
-		sprintf( buf, "The Short Range blast from %s hits %s.", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "The Short Range blast from %s hits %s.", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "You are hit by the Short Range blast from %s!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You are hit by the Short Range blast from %s!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "You Power up your Beam Cannon, and fire a short, high powered blast at %s and hit!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You Power up your Beam Cannon, and fire a short, high powered blast at %s and hit!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_lightenergy );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -3559,7 +3559,7 @@ CMDF( do_shortblast )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->energy -= 35;
@@ -3657,18 +3657,18 @@ CMDF( do_longblast )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, "The Long Range blast from %s misses you.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "The Long Range blast from %s misses you.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "Your Long Range Blast races at %s but misses.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "Your Long Range Blast races at %s but misses.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_heavyenergy );
 			return;
 		}
-		sprintf( buf, "The Long Range blast from %s hits %s.", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "The Long Range blast from %s hits %s.", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "You are hit by the Long Range blast from %s!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You are hit by the Long Range blast from %s!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "You shoot a thin Long Range blast at %s and hit!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You shoot a thin Long Range blast at %s and hit!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_heavyenergy );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -3688,7 +3688,7 @@ CMDF( do_longblast )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->energy -= 25;
@@ -3786,18 +3786,18 @@ CMDF( do_smallbeamcannon )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, "The Small Beam Cannon fire from %s misses you.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "The Small Beam Cannon fire from %s misses you.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "Your Small Beam Cannon fires a spread of bullets at %s but misses.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "Your Small Beam Cannon fires a spread of bullets at %s but misses.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_lightenergy );
 			return;
 		}
-		sprintf( buf, "The Small Beam Cannon fire from %s hits %s.", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "The Small Beam Cannon fire from %s hits %s.", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "You are pummeled by %s's Small Beam Cannon fire!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You are pummeled by %s's Small Beam Cannon fire!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "Your Small Beam Cannon fires and pummels %s!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Your Small Beam Cannon fires and pummels %s!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_lightenergy );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -3817,7 +3817,7 @@ CMDF( do_smallbeamcannon )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->energy -= 30;
@@ -3915,18 +3915,18 @@ CMDF( do_beamblade )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, " %s slashes its Beam Blade at you, but misses.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, " %s slashes its Beam Blade at you, but misses.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "You slash your Beam Blade at %s but miss.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You slash your Beam Blade at %s but miss.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_beamsabers );
 			return;
 		}
-		sprintf( buf, "%s slashes its Beam Blade at %s, slashing the armor!", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s slashes its Beam Blade at %s, slashing the armor!", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "You shudder, as you are hit by %s's Beam Blade!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You shudder, as you are hit by %s's Beam Blade!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "You slash your Beam Blade at %s, slightly slashing its armor!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You slash your Beam Blade at %s, slightly slashing its armor!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_beamsabers );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -3946,7 +3946,7 @@ CMDF( do_beamblade )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->energy -= 25;
@@ -4044,18 +4044,18 @@ CMDF( do_planetdefenser )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, " %s flings its Planet Defensers at you, but misses.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, " %s flings its Planet Defensers at you, but misses.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "You fling your Planet Defensers at %s but miss.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You fling your Planet Defensers at %s but miss.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_heavyenergy );
 			return;
 		}
-		sprintf( buf, "%s flings its Planet Defensers at %s, pelting the armor!", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s flings its Planet Defensers at %s, pelting the armor!", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "You are pelted back, as you are hit by %s's Planet Defensers!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You are pelted back, as you are hit by %s's Planet Defensers!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "You fling your Planet Defensers at %s, hitting several times!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You fling your Planet Defensers at %s, hitting several times!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_heavyenergy );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -4075,7 +4075,7 @@ CMDF( do_planetdefenser )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->energy -= 10;
@@ -4169,22 +4169,22 @@ CMDF( do_libramaincannon )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, "The Main Cannon from %s misses you.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "The Main Cannon from %s misses you.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "Your Main Cannon fires at %s but misses.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "Your Main Cannon fires at %s but misses.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_spacecombat );
 			learn_from_failure( ch, gsn_spacecombat2 );
 			learn_from_failure( ch, gsn_spacecombat3 );
-			sprintf( buf, "The Main Cannon fire from %s barely misses %s.", ship->name, target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "The Main Cannon fire from %s barely misses %s.", ship->name, target->name );
 			echo_to_system( AT_ORANGE, ship, buf, target );
 			return;
 		}
-		sprintf( buf, "The Main Cannon fire from %s hits %s.", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "The Main Cannon fire from %s hits %s.", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "You're sent flying from %s's Main Cannon fire!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You're sent flying from %s's Main Cannon fire!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "Your Main Cannon sends %s flying!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Your Main Cannon sends %s flying!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_spacecombat );
 		learn_from_success( ch, gsn_spacecombat2 );
@@ -4206,7 +4206,7 @@ CMDF( do_libramaincannon )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->energy -= 2000;
@@ -4304,18 +4304,18 @@ CMDF( do_tbeamscythe )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, "The Twin Beam Scythe slash from %s misses you.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "The Twin Beam Scythe slash from %s misses you.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "Your Twin Beam Scythe Slashes at %s but misses.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "Your Twin Beam Scythe Slashes at %s but misses.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_heavyenergy );
 			return;
 		}
-		sprintf( buf, "The Twin Beam Scythe Slash from %s hits %s.", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "The Twin Beam Scythe Slash from %s hits %s.", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "Your suit shakes as you are hit by the Twin Beam Scythe from %s!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Your suit shakes as you are hit by the Twin Beam Scythe from %s!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "Your Twin Beam Scythe Slashes %s!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Your Twin Beam Scythe Slashes %s!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_heavyenergy );
 		echo_to_ship( AT_RED, target, "A small tremor vibrates through the suit." );
@@ -4335,7 +4335,7 @@ CMDF( do_tbeamscythe )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->energy -= 25;
@@ -4433,18 +4433,18 @@ CMDF( do_tbusterrifle )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, "The Twin Buster Rifle blast from %s misses you.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "The Twin Buster Rifle blast from %s misses you.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "Your Twin Buster Rifle Blast races at %s but misses.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "Your Twin Buster Rifle Blast races at %s but misses.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_heavyenergy );
 			return;
 		}
-		sprintf( buf, "The Twin Buster Rifle Blast from %s hits %s.", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "The Twin Buster Rifle Blast from %s hits %s.", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "You are hit by the Twin Buster Rifle blast from %s!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You are hit by the Twin Buster Rifle blast from %s!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "Your Twin Buster Rifle fire hits %s!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Your Twin Buster Rifle fire hits %s!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_heavyenergy );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -4464,7 +4464,7 @@ CMDF( do_tbusterrifle )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->energy -= 50;
@@ -4562,18 +4562,18 @@ CMDF( do_megacannon )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, "The Mega Cannon blast from %s misses you.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "The Mega Cannon blast from %s misses you.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "Your Mega Cannon Blast races at %s but misses.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "Your Mega Cannon Blast races at %s but misses.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_heavyenergy );
 			return;
 		}
-		sprintf( buf, "The Mega Cannon Blast from %s hits %s.", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "The Mega Cannon Blast from %s hits %s.", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "You are hit by the Mega Cannon blast from %s!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You are hit by the Mega Cannon blast from %s!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "Your Mega Cannon blast hits %s!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "Your Mega Cannon blast hits %s!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_heavyenergy );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -4593,7 +4593,7 @@ CMDF( do_megacannon )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->energy -= 50;
@@ -4691,18 +4691,18 @@ CMDF( do_tbeamglaive )
 			NULL, argument, TO_ROOM );
 		if( number_percent( ) > chance )
 		{
-			sprintf( buf, " %s thrusts its Twin Beam Trident at you, but misses.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, " %s thrusts its Twin Beam Trident at you, but misses.", ship->name );
 			echo_to_cockpit( AT_ORANGE, target, buf );
-			sprintf( buf, "You thrust your Twin Beam Trident at %s but miss.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You thrust your Twin Beam Trident at %s but miss.", target->name );
 			echo_to_cockpit( AT_ORANGE, ship, buf );
 			learn_from_failure( ch, gsn_heavyenergy );
 			return;
 		}
-		sprintf( buf, "%s thrusts its Twin Beam Trident at %s, piercing the armor!", ship->name, target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s thrusts its Twin Beam Trident at %s, piercing the armor!", ship->name, target->name );
 		echo_to_system( AT_ORANGE, ship, buf, target );
-		sprintf( buf, "You thrust back slightly, as you are hit by %s's Twin Beam Trident!", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You thrust back slightly, as you are hit by %s's Twin Beam Trident!", ship->name );
 		echo_to_cockpit( AT_BLOOD, target, buf );
-		sprintf( buf, "You thrust your Twin Beam Trident at %s, slightly piercing its armor!.", target->name );
+		snprintf( buf, MAX_STRING_LENGTH, "You thrust your Twin Beam Trident at %s, slightly piercing its armor!.", target->name );
 		echo_to_cockpit( AT_YELLOW, ship, buf );
 		learn_from_success( ch, gsn_heavyenergy );
 		echo_to_ship( AT_RED, target, "A small explosion vibrates through the suit." );
@@ -4722,7 +4722,7 @@ CMDF( do_tbeamglaive )
 		if( autofly( target ) && target->target0 != ship )
 		{
 			target->target0 = ship;
-			sprintf( buf, "You are being targetted by %s.", target->name );
+			snprintf( buf, MAX_STRING_LENGTH, "You are being targetted by %s.", target->name );
 			echo_to_cockpit( AT_BLOOD, ship, buf );
 		}
 		ship->energy -= 25;
@@ -4764,11 +4764,11 @@ CMDF( do_firstweapon )
 		if( ch->mental_state == 100 )
 		{
 			REMOVE_BIT( ch->pcdata->flags, PCFLAG_ZERO );
-			sprintf( buf, "%s explodes in a blinding flash of light!", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "%s explodes in a blinding flash of light!", ship->name );
 			echo_to_system( AT_WHITE + AT_BLINK, ship, buf, NULL );
-			sprintf( buf, "&YT&Oh&Ye &zZ&We&zr&Wo &CS&cy&Cs&ct&Ce&cm &GH&ga&Gs &BJ&bu&Bs&bt &P*&p*&P*&RR&ri&RPP&re&RD&P*&p*&P* &BA&bp&ca&br&Bt &C%s's &YM&Oin&Yd&P!&p!&P!", ch->name );
+			snprintf( buf, MAX_STRING_LENGTH, "&YT&Oh&Ye &zZ&We&zr&Wo &CS&cy&Cs&ct&Ce&cm &GH&ga&Gs &BJ&bu&Bs&bt &P*&p*&P*&RR&ri&RPP&re&RD&P*&p*&P* &BA&bp&ca&br&Bt &C%s's &YM&Oin&Yd&P!&p!&P!", ch->name );
 			info_chan( buf );
-			sprintf( log_buf, "%s killed by the Zero System.", ch->name );
+			snprintf( log_buf, MAX_STRING_LENGTH, "%s killed by the Zero System.", ch->name );
 			log_string_plus( log_buf, LOG_NORMAL, ch->top_level );
 			destroy_ship( ship, NULL );
 
@@ -4964,11 +4964,11 @@ CMDF( do_secondweapon )
 		if( ch->mental_state == 100 )
 		{
 			REMOVE_BIT( ch->pcdata->flags, PCFLAG_ZERO );
-			sprintf( buf, "%s explodes in a blinding flash of light!", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "%s explodes in a blinding flash of light!", ship->name );
 			echo_to_system( AT_WHITE + AT_BLINK, ship, buf, NULL );
-			sprintf( buf, "&YT&Oh&Ye &zZ&We&zr&Wo &CS&cy&Cs&ct&Ce&cm &GH&ga&Gs &BJ&bu&Bs&bt &P*&p*&P*&RR&ri&RPP&re&RD&P*&p*&P* &BA&bp&ca&br&Bt &C%s's &YM&Oin&Yd&P!&p!&P!", ch->name );
+			snprintf( buf, MAX_STRING_LENGTH, "&YT&Oh&Ye &zZ&We&zr&Wo &CS&cy&Cs&ct&Ce&cm &GH&ga&Gs &BJ&bu&Bs&bt &P*&p*&P*&RR&ri&RPP&re&RD&P*&p*&P* &BA&bp&ca&br&Bt &C%s's &YM&Oin&Yd&P!&p!&P!", ch->name );
 			info_chan( buf );
-			sprintf( log_buf, "%s killed by the Zero System.", ch->name );
+			snprintf( log_buf, MAX_STRING_LENGTH, "%s killed by the Zero System.", ch->name );
 			log_string_plus( log_buf, LOG_NORMAL, ch->top_level );
 			destroy_ship( ship, NULL );
 
@@ -5164,11 +5164,11 @@ CMDF( do_thirdweapon )
 		if( ch->mental_state == 100 )
 		{
 			REMOVE_BIT( ch->pcdata->flags, PCFLAG_ZERO );
-			sprintf( buf, "%s explodes in a blinding flash of light!", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "%s explodes in a blinding flash of light!", ship->name );
 			echo_to_system( AT_WHITE + AT_BLINK, ship, buf, NULL );
-			sprintf( buf, "&YT&Oh&Ye &zZ&We&zr&Wo &CS&cy&Cs&ct&Ce&cm &GH&ga&Gs &BJ&bu&Bs&bt &P*&p*&P*&RR&ri&RPP&re&RD&P*&p*&P* &BA&bp&ca&br&Bt &C%s's &YM&Oin&Yd&P!&p!&P!", ch->name );
+			snprintf( buf, MAX_STRING_LENGTH, "&YT&Oh&Ye &zZ&We&zr&Wo &CS&cy&Cs&ct&Ce&cm &GH&ga&Gs &BJ&bu&Bs&bt &P*&p*&P*&RR&ri&RPP&re&RD&P*&p*&P* &BA&bp&ca&br&Bt &C%s's &YM&Oin&Yd&P!&p!&P!", ch->name );
 			info_chan( buf );
-			sprintf( log_buf, "%s killed by the Zero System.", ch->name );
+			snprintf( log_buf, MAX_STRING_LENGTH, "%s killed by the Zero System.", ch->name );
 			log_string_plus( log_buf, LOG_NORMAL, ch->top_level );
 			destroy_ship( ship, NULL );
 

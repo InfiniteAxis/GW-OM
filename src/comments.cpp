@@ -174,7 +174,7 @@ CMDF( do_comment )
 		for( pnote = victim->comments; pnote; pnote = pnote->next )
 		{
 			vnum++;
-			sprintf( buf, "%2d) %-10s [%s] %s\r\n", vnum, pnote->sender, pnote->date, pnote->subject );
+			snprintf( buf, MAX_STRING_LENGTH, "%2d) %-10s [%s] %s\r\n", vnum, pnote->sender, pnote->date, pnote->subject );
 			/* Brittany added date to comment list and whois with above change */
 			send_to_char( buf, ch );
 		}
@@ -239,7 +239,7 @@ CMDF( do_comment )
 			vnum++;
 			if( vnum == anum || fAll )
 			{
-				sprintf( buf, "[%3d] %s: %s\r\n%s\n\rTo: %s\r\n",
+				snprintf( buf, MAX_STRING_LENGTH, "[%3d] %s: %s\r\n%s\n\rTo: %s\r\n",
 					vnum, pnote->sender, pnote->subject, pnote->date, pnote->to_list );
 				send_to_char( buf, ch );
 				send_to_char( pnote->text, ch );
@@ -303,7 +303,7 @@ CMDF( do_comment )
 			return;
 		}
 
-		sprintf( buf, "%s: %s\n\rTo: %s\r\n", ch->pnote->sender, ch->pnote->subject, ch->pnote->to_list );
+		snprintf( buf, MAX_STRING_LENGTH, "%s: %s\n\rTo: %s\r\n", ch->pnote->sender, ch->pnote->subject, ch->pnote->to_list );
 		send_to_char( buf, ch );
 		send_to_char( ch->pnote->text, ch );
 		return;
@@ -364,7 +364,7 @@ CMDF( do_comment )
 
 
 #ifdef NOTDEFD
-		sprintf( notefile, "%s/%s", BOARD_DIR, board->note_file );
+		snprintf( notefile, MAX_STRING_LENGTH, "%s/%s", BOARD_DIR, board->note_file );
 		if( ( fp = FileOpen( notefile, "a" ) ) == NULL )
 		{
 			perror( notefile );

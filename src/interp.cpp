@@ -157,7 +157,7 @@ void interpret( CHAR_DATA *ch, const char *argument )
 				bug( "interpret: SUB_REPEATCMD: last_cmd invalid", 0 );
 				return;
 			}
-			sprintf( logline, "(%s) %s", cmd->name, argument );
+			snprintf( logline, MAX_INPUT_LENGTH, "(%s) %s", cmd->name, argument );
 		}
 	}
 
@@ -281,7 +281,7 @@ void interpret( CHAR_DATA *ch, const char *argument )
 
 	if( ch->desc && ch->desc->snoop_by )
 	{
-		sprintf( logname, "%s", ch->name );
+		snprintf( logname, MAX_INPUT_LENGTH, "%s", ch->name );
 		write_to_buffer( ch->desc->snoop_by, logname, 0 );
 		write_to_buffer( ch->desc->snoop_by, "% ", 2 );
 		write_to_buffer( ch->desc->snoop_by, logline, 0 );
@@ -1439,7 +1439,7 @@ bool check_alias( CHAR_DATA *ch, const char *command, const char *argument )
 	if( !alias->cmd || !*alias->cmd )
 		return false;
 
-	sprintf( arg, "%s", alias->cmd );
+	snprintf( arg, MAX_INPUT_LENGTH, "%s", alias->cmd );
 
 	if( ch->pcdata->cmd_recurse == -1 || ++ch->pcdata->cmd_recurse > 50 )
 	{

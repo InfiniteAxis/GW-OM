@@ -174,11 +174,11 @@ CMDF( do_vload )
 			}
 			obj = create_object( pObjIndex, 0 );
 			name = wch->name;
-			sprintf( buf, obj->short_descr, name );
+			snprintf( buf, MAX_STRING_LENGTH, obj->short_descr, name );
 			obj->short_descr = STRALLOC( buf );
-			sprintf( buf, obj->description, name );
+			snprintf( buf, MAX_STRING_LENGTH, obj->description, name );
 			obj->description = STRALLOC( buf );
-			sprintf( buf, obj->name, name );
+			snprintf( buf, MAX_STRING_LENGTH, obj->name, name );
 			obj->name = STRALLOC( buf );
 			if( CAN_WEAR( obj, ITEM_TAKE ) )
 				obj_to_char( obj, ch );
@@ -370,7 +370,7 @@ CMDF( do_ignore )
 
 	argument = one_argument( argument, arg );
 
-	sprintf( fname, "%s%c/%s", PLAYER_DIR, tolower( arg[0] ), capitalize( arg ) );
+	snprintf( fname, sizeof(fname), "%s%c/%s", PLAYER_DIR, tolower( arg[0] ), capitalize( arg ) );
 
 	victim = NULL;
 
@@ -707,7 +707,7 @@ void look_sky( CHAR_DATA *ch )
 	{
 		if( ( time_info.hour >= 6 && time_info.hour <= 18 ) && ( linenum < 3 || linenum >= 6 ) )
 			continue;
-		sprintf( buf, " " );
+		snprintf( buf, MAX_STRING_LENGTH, " " );
 
 
 		/*
@@ -745,7 +745,7 @@ void look_sky( CHAR_DATA *ch )
 				{
 					if( i >= sunpos - 2 && i <= sunpos + 2 )
 					{
-						sprintf( buf2, "&Y%c", sun_map[linenum - 3][i + 2 - sunpos] );
+						snprintf( buf2, MAX_STRING_LENGTH, "&Y%c", sun_map[linenum - 3][i + 2 - sunpos] );
 						strcat( buf, buf2 );
 					}
 					else
@@ -1617,11 +1617,11 @@ CMDF( do_createvoodoo )
 
 	one_argument( corpse->name, name );
 	doll = create_object( get_obj_index( OBJ_VNUM_VOODOO ), 0 );
-	sprintf( buf, doll->short_descr, name );
+	snprintf( buf, MAX_STRING_LENGTH, doll->short_descr, name );
 	STRFREE( doll->short_descr );
 	doll->short_descr = STRALLOC( buf );
-	sprintf( buf, doll->description, name );
-	sprintf( buf, doll->name, name );
+	snprintf( buf, MAX_STRING_LENGTH, doll->description, name );
+	snprintf( buf, MAX_STRING_LENGTH, doll->name, name );
 	STRFREE( doll->name );
 	doll->name = STRALLOC( buf );
 	act( AT_MAGIC, "$p morphs into a voodoo doll.", ch, corpse, NULL, TO_CHAR );
@@ -1914,7 +1914,7 @@ CMDF( do_bomb )
 		}
 
 		echo_to_room( AT_YELLOW, get_room_index( ship->pilotseat ), "Bombing sequence activated." );
-		sprintf( buf, "%s begins to drop bombs.", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s begins to drop bombs.", ship->name );
 		echo_to_system( AT_YELLOW, ship, buf, NULL );
 		ship->bombs -= 1;
 		learn_from_success( ch, gsn_bomb );
@@ -2009,7 +2009,7 @@ its landing sequence.");
 
 	echo_to_room( AT_YELLOW , get_room_index(ship->pilotseat), "Bo
 mbing sequence activated.");
-	sprintf( buf ,"%s begins to drop bombs." , ship->name  );
+	snprintf( buf, MAX_STRING_LENGTH, "%s begins to drop bombs." , ship->name  );
 	echo_to_system( AT_YELLOW, ship, buf , NULL );
 
 	for ( vch = first_char; vch; vch = vch_next )
@@ -2168,7 +2168,7 @@ CMDF( do_trap )
 		ptrap = create_object( get_obj_index( OBJ_VNUM_PTRAP ), 0 );
 		ptrap->value[0] = 1;
 		ptrap->value[1] = ch->top_level;
-		sprintf( buf, "%s", ch->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s", ch->name );
 		STRFREE( ptrap->short_descr );
 		ptrap->short_descr = STRALLOC( buf );
 		ptrap = obj_to_room( ptrap, ch->in_room );
@@ -2204,7 +2204,7 @@ CMDF( do_trap )
 		ptrap = create_object( get_obj_index( OBJ_VNUM_PTRAP ), 0 );
 		ptrap->value[0] = 2;
 		ptrap->value[1] = ch->top_level;
-		sprintf( buf, "%s", ch->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s", ch->name );
 		STRFREE( ptrap->short_descr );
 		ptrap->short_descr = STRALLOC( buf );
 		ptrap = obj_to_room( ptrap, ch->in_room );
@@ -2247,7 +2247,7 @@ CMDF( do_trap )
 		ptrap = create_object( get_obj_index( OBJ_VNUM_PTRAP ), 0 );
 		ptrap->value[0] = 3;
 		ptrap->value[1] = ch->top_level;
-		sprintf( buf, "%s", ch->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s", ch->name );
 		STRFREE( ptrap->short_descr );
 		ptrap->short_descr = STRALLOC( buf );
 		ptrap = obj_to_room( ptrap, ch->in_room );
@@ -2293,7 +2293,7 @@ CMDF( do_trap )
 		ptrap = create_object( get_obj_index( OBJ_VNUM_PTRAP ), 0 );
 		ptrap->value[0] = 4;
 		ptrap->value[1] = ch->top_level;
-		sprintf( buf, "%s", ch->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s", ch->name );
 		STRFREE( ptrap->short_descr );
 		ptrap->short_descr = STRALLOC( buf );
 		ptrap = obj_to_room( ptrap, ch->in_room );
@@ -2336,7 +2336,7 @@ CMDF( do_trap )
 		ptrap = create_object( get_obj_index( OBJ_VNUM_PTRAP ), 0 );
 		ptrap->value[0] = 5;
 		ptrap->value[1] = ch->top_level;
-		sprintf( buf, "%s", ch->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s", ch->name );
 		STRFREE( ptrap->short_descr );
 		ptrap->short_descr = STRALLOC( buf );
 		ptrap = obj_to_room( ptrap, ch->in_room );
@@ -2373,7 +2373,7 @@ CMDF( do_trap )
 		ptrap = create_object( get_obj_index( OBJ_VNUM_PTRAP ), 0 );
 		ptrap->value[0] = 6;
 		ptrap->value[1] = ch->top_level;
-		sprintf( buf, "%s", ch->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s", ch->name );
 		STRFREE( ptrap->short_descr );
 		ptrap->short_descr = STRALLOC( buf );
 		ptrap = obj_to_room( ptrap, ch->in_room );

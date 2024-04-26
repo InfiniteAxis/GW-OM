@@ -197,7 +197,7 @@ CMDF( do_makeblade )
 	obj->level = level;
 	obj->weight = 3;
 	STRFREE( obj->name );
-	sprintf( buf, "%s %s", remand( arg ), ch->name );
+	snprintf( buf, MAX_STRING_LENGTH, "%s %s", remand( arg ), ch->name );
 	obj->name = STRALLOC( buf );
 	strcpy( buf, arg );
 	STRFREE( obj->short_descr );
@@ -462,7 +462,7 @@ CMDF( do_makeblaster )
 	obj->level = level;
 	obj->weight = 2 + level / 10;
 	STRFREE( obj->name );
-	sprintf( buf, "%s %s", remand( arg ), ch->name );
+	snprintf( buf, MAX_STRING_LENGTH, "%s %s", remand( arg ), ch->name );
 	obj->name = STRALLOC( buf );
 	strcpy( buf, arg );
 	STRFREE( obj->short_descr );
@@ -813,7 +813,7 @@ CMDF( do_makegrenade )
 	obj->level = level;
 	obj->weight = weight;
 	STRFREE( obj->name );
-	sprintf( buf, "%s %s", remand( arg ), ch->name );
+	snprintf( buf, MAX_STRING_LENGTH, "%s %s", remand( arg ), ch->name );
 	obj->name = STRALLOC( buf );
 	strcpy( buf, arg );
 	STRFREE( obj->short_descr );
@@ -1023,7 +1023,7 @@ CMDF( do_makelandmine )
 	obj->level = level;
 	obj->weight = weight;
 	STRFREE( obj->name );
-	sprintf( buf, "%s %s", remand( arg ), ch->name );
+	snprintf( buf, MAX_STRING_LENGTH, "%s %s", remand( arg ), ch->name );
 	obj->name = STRALLOC( buf );
 	strcpy( buf, arg );
 	STRFREE( obj->short_descr );
@@ -1229,7 +1229,7 @@ CMDF( do_makelight )
 	obj->level = level;
 	obj->weight = 3;
 	STRFREE( obj->name );
-	sprintf( buf, "%s %s", remand( arg ), ch->name );
+	snprintf( buf, MAX_STRING_LENGTH, "%s %s", remand( arg ), ch->name );
 	obj->name = STRALLOC( buf );
 	strcpy( buf, arg );
 	STRFREE( obj->short_descr );
@@ -1437,7 +1437,7 @@ CMDF( do_makejewelry )
 		SET_BIT( obj->wear_flags, 1 << value );
 	obj->level = level;
 	STRFREE( obj->name );
-	sprintf( buf, "%s %s", remand( arg2 ), ch->name );
+	snprintf( buf, MAX_STRING_LENGTH, "%s %s", remand( arg2 ), ch->name );
 	obj->name = STRALLOC( buf );
 	strcpy( buf, arg2 );
 	STRFREE( obj->short_descr );
@@ -1621,7 +1621,7 @@ CMDF( do_makearmor )
 		SET_BIT( obj->wear_flags, 1 << value );
 	obj->level = level;
 	STRFREE( obj->name );
-	sprintf( buf, "%s %s", remand( arg2 ), ch->name );
+	snprintf( buf, MAX_STRING_LENGTH, "%s %s", remand( arg2 ), ch->name );
 	obj->name = STRALLOC( buf );
 	strcpy( buf, arg2 );
 	STRFREE( obj->short_descr );
@@ -1808,7 +1808,7 @@ CMDF( do_makecomlink )
 	SET_BIT( obj->wear_flags, ITEM_TAKE );
 	obj->weight = 3;
 	STRFREE( obj->name );
-	sprintf( buf, "%s %s", remand( arg ), ch->name );
+	snprintf( buf, MAX_STRING_LENGTH, "%s %s", remand( arg ), ch->name );
 	obj->name = STRALLOC( buf );
 	strcpy( buf, arg );
 	STRFREE( obj->short_descr );
@@ -2019,7 +2019,7 @@ CMDF( do_makeshield )
 	obj->level = level;
 	obj->weight = 2;
 	STRFREE( obj->name );
-	sprintf( buf, "%s %s", remand( arg ), ch->name );
+	snprintf( buf, MAX_STRING_LENGTH, "%s %s", remand( arg ), ch->name );
 	obj->name = STRALLOC( buf );
 	strcpy( buf, arg );
 	STRFREE( obj->short_descr );
@@ -2406,7 +2406,7 @@ CMDF( do_makecontainer )
 		SET_BIT( obj->wear_flags, 1 << value );
 	obj->level = level;
 	STRFREE( obj->name );
-	sprintf( buf, "%s %s", remand( arg2 ), ch->name );
+	snprintf( buf, MAX_STRING_LENGTH, "%s %s", remand( arg2 ), ch->name );
 	obj->name = STRALLOC( buf );
 	strcpy( buf, arg2 );
 	STRFREE( obj->short_descr );
@@ -2663,7 +2663,7 @@ void add_reinforcements( CHAR_DATA *ch )
 
 			STRFREE( mob->name );
 			mob->name = STRALLOC( ch->pcdata->clan->name );
-			sprintf( tmpbuf, "(%s) %s", ch->pcdata->clan->name, mob->long_descr );
+			snprintf( tmpbuf, MAX_STRING_LENGTH, "(%s) %s", ch->pcdata->clan->name, mob->long_descr );
 			STRFREE( mob->long_descr );
 			mob->long_descr = STRALLOC( tmpbuf );
 		}
@@ -3020,16 +3020,16 @@ CMDF( do_first_aid )
 	if( victim == ch )
 	{
 		ch_printf( ch, "You tend to your wounds.\r\n" );
-		sprintf( buf, "$n uses %s to help heal $s wounds.", medpac->short_descr );
+		snprintf( buf, MAX_STRING_LENGTH, "$n uses %s to help heal $s wounds.", medpac->short_descr );
 		act( AT_ACTION, buf, ch, NULL, victim, TO_ROOM );
 	}
 	else
 	{
-		sprintf( buf, "You tend to $N's wounds." );
+		snprintf( buf, MAX_STRING_LENGTH, "You tend to $N's wounds." );
 		act( AT_ACTION, buf, ch, NULL, victim, TO_CHAR );
-		sprintf( buf, "$n uses %s to help heal $N's wounds.", medpac->short_descr );
+		snprintf( buf, MAX_STRING_LENGTH, "$n uses %s to help heal $N's wounds.", medpac->short_descr );
 		act( AT_ACTION, buf, ch, NULL, victim, TO_NOTVICT );
-		sprintf( buf, "$n uses %s to help heal your wounds.", medpac->short_descr );
+		snprintf( buf, MAX_STRING_LENGTH, "$n uses %s to help heal your wounds.", medpac->short_descr );
 		act( AT_ACTION, buf, ch, NULL, victim, TO_VICT );
 	}
 
@@ -3219,16 +3219,16 @@ CMDF( do_snipe )
 	{
 		char_from_room( ch );
 		char_to_room( ch, was_in_room );
-		sprintf( buf, "$n fires a shot to the %s.", dir_name[get_door( arg )] );
+		snprintf( buf, MAX_STRING_LENGTH, "$n fires a shot to the %s.", dir_name[get_door( arg )] );
 		act( AT_ACTION, buf, ch, NULL, NULL, TO_ROOM );
 
 		char_from_room( ch );
 		char_to_room( ch, victim->in_room );
 
-		sprintf( buf, "A shot fires at you from the %s.", dir_name[dir] );
+		snprintf( buf, MAX_STRING_LENGTH, "A shot fires at you from the %s.", dir_name[dir] );
 		act( AT_ACTION, buf, victim, NULL, ch, TO_CHAR );
 		act( AT_ACTION, "You fire at $N.", ch, NULL, victim, TO_CHAR );
-		sprintf( buf, "A shot fires at $N from the %s.", dir_name[dir] );
+		snprintf( buf, MAX_STRING_LENGTH, "A shot fires at $N from the %s.", dir_name[dir] );
 		act( AT_ACTION, buf, ch, NULL, victim, TO_NOTVICT );
 
 		one_hit( ch, victim, TYPE_UNDEFINED );
@@ -3244,14 +3244,14 @@ CMDF( do_snipe )
 	{
 		char_from_room( ch );
 		char_to_room( ch, was_in_room );
-		sprintf( buf, "$n fires a shot to the %s.", dir_name[get_door( arg )] );
+		snprintf( buf, MAX_STRING_LENGTH, "$n fires a shot to the %s.", dir_name[get_door( arg )] );
 		act( AT_ACTION, buf, ch, NULL, NULL, TO_ROOM );
 
 		char_from_room( ch );
 		char_to_room( ch, victim->in_room );
 
 		act( AT_ACTION, "You fire at $N but don't even come close.", ch, NULL, victim, TO_CHAR );
-		sprintf( buf, "A shot fired from the %s barely misses you.", dir_name[dir] );
+		snprintf( buf, MAX_STRING_LENGTH, "A shot fired from the %s barely misses you.", dir_name[dir] );
 		act( AT_ACTION, buf, ch, NULL, victim, TO_ROOM );
 		learn_from_failure( ch, gsn_snipe );
 	}
@@ -3356,7 +3356,7 @@ CMDF( do_throw )
 
 	else if( arg2[0] == '\0' )
 	{
-		sprintf( buf, "$n throws %s at the floor.", obj->short_descr );
+		snprintf( buf, MAX_STRING_LENGTH, "$n throws %s at the floor.", obj->short_descr );
 		act( AT_ACTION, buf, ch, NULL, NULL, TO_ROOM );
 		ch_printf( ch, "You throw %s at the floor.\r\n", obj->short_descr );
 
@@ -3456,16 +3456,16 @@ CMDF( do_throw )
 			char_from_room( ch );
 			char_to_room( ch, to_room );
 
-			sprintf( buf, "Someone throws %s at you from the %s.", obj->short_descr, dir_name[dir] );
+			snprintf( buf, MAX_STRING_LENGTH, "Someone throws %s at you from the %s.", obj->short_descr, dir_name[dir] );
 			act( AT_ACTION, buf, victim, NULL, ch, TO_CHAR );
 			act( AT_ACTION, "You throw %p at $N.", ch, obj, victim, TO_CHAR );
 			char_from_room( ch );
 			char_to_room( ch, was_in_room );
-			sprintf( buf, "$n throws %s to the %s.", obj->short_descr, dir_name[get_dir( arg2 )] );
+			snprintf( buf, MAX_STRING_LENGTH, "$n throws %s to the %s.", obj->short_descr, dir_name[get_dir( arg2 )] );
 			act( AT_ACTION, buf, ch, NULL, NULL, TO_ROOM );
 			char_from_room( ch );
 			char_to_room( ch, to_room );
-			sprintf( buf, "%s is thrown at $N from the %s.", obj->short_descr, dir_name[dir] );
+			snprintf( buf, MAX_STRING_LENGTH, "%s is thrown at $N from the %s.", obj->short_descr, dir_name[dir] );
 			act( AT_ACTION, buf, ch, NULL, victim, TO_NOTVICT );
 		}
 		else
@@ -3473,11 +3473,11 @@ CMDF( do_throw )
 			ch_printf( ch, "You throw %s %s.\r\n", obj->short_descr, dir_name[get_dir( arg2 )] );
 			char_from_room( ch );
 			char_to_room( ch, was_in_room );
-			sprintf( buf, "$n throws %s to the %s.", obj->short_descr, dir_name[get_dir( arg2 )] );
+			snprintf( buf, MAX_STRING_LENGTH, "$n throws %s to the %s.", obj->short_descr, dir_name[get_dir( arg2 )] );
 			act( AT_ACTION, buf, ch, NULL, NULL, TO_ROOM );
 			char_from_room( ch );
 			char_to_room( ch, to_room );
-			sprintf( buf, "%s is thrown from the %s.", obj->short_descr, dir_name[dir] );
+			snprintf( buf, MAX_STRING_LENGTH, "%s is thrown from the %s.", obj->short_descr, dir_name[dir] );
 			act( AT_ACTION, buf, ch, NULL, NULL, TO_ROOM );
 		}
 	}
@@ -3659,7 +3659,7 @@ CMDF( do_beg )
 
 		if( victim->alignment < 0 && victim->top_level >= ch->top_level + 5 )
 		{
-			sprintf( buf, "%s is an annoying beggar and needs to be taught a lesson!", ch->name );
+			snprintf( buf, MAX_STRING_LENGTH, "%s is an annoying beggar and needs to be taught a lesson!", ch->name );
 			do_yell( victim, buf );
 			global_retcode = multi_hit( victim, ch, TYPE_UNDEFINED );
 		}
@@ -3836,7 +3836,7 @@ CMDF( do_hijack )
 		if( ship->hatchopen )
 		{
 			ship->hatchopen = false;
-			sprintf( buf, "The hatch on %s closes.", ship->name );
+			snprintf( buf, MAX_STRING_LENGTH, "The hatch on %s closes.", ship->name );
 			echo_to_room( AT_YELLOW, get_room_index( ship->location ), buf );
 			echo_to_room( AT_YELLOW, get_room_index( ship->entrance ), "The hatch slides shut." );
 		}
@@ -3844,7 +3844,7 @@ CMDF( do_hijack )
 		send_to_char( "Launch code succeeded!.\r\n", ch );
 		act( AT_PLAIN, "$n starts up the ship and begins the launch sequence.", ch, NULL, argument, TO_ROOM );
 		echo_to_ship( AT_YELLOW, ship, "The ship hums as it lifts off the ground." );
-		sprintf( buf, "%s begins to launch.", ship->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s begins to launch.", ship->name );
 		echo_to_room( AT_YELLOW, get_room_index( ship->location ), buf );
 		rand = number_range( 10, 99 );
 		ship->code = rand;
@@ -3858,7 +3858,7 @@ CMDF( do_hijack )
 			learn_from_success( ch, gsn_capitalships );
 
 		learn_from_success( ch, gsn_hijack );
-		//                   sprintf( buf, "%s has been hijacked!", ship->name );
+		//                   snprintf( buf, MAX_STRING_LENGTH, "%s has been hijacked!", ship->name );
 		//             echo_to_all( AT_RED , buf, 0 );
 		if( xIS_SET( ch->act, PLR_PKER ) )
 		{
@@ -3879,7 +3879,7 @@ CMDF( do_hijack )
 			p_prev = p->prev;  /* TRI */
 			if( !IS_NPC( p ) && get_trust( p ) >= LEVEL_LIAISON )
 			{
-				sprintf( buf2, "%s", ship->name );
+				snprintf( buf2, MAX_STRING_LENGTH, "%s", ship->name );
 				ch_printf( p, "&R[&PA&pL&PA&pR&PM&R] &P%s has been hijacked by &P%s&p!\r\n", buf2, ch->name );
 			}
 		}
@@ -4162,7 +4162,7 @@ CMDF( do_smalltalk )
 
 		if( victim->alignment < -500 && victim->top_level >= ch->top_level + 5 )
 		{
-			sprintf( buf, "SHUT UP %s!", ch->name );
+			snprintf( buf, MAX_STRING_LENGTH, "SHUT UP %s!", ch->name );
 			do_yell( victim, buf );
 			global_retcode = multi_hit( victim, ch, TYPE_UNDEFINED );
 		}
@@ -4295,7 +4295,7 @@ CMDF( do_propeganda )
 
 	planet = ch->in_room->area->planet;
 
-	sprintf( buf, ", and the evils of %s", planet->governed_by ? planet->governed_by->name : "their current leaders" );
+	snprintf( buf, MAX_STRING_LENGTH, ", and the evils of %s", planet->governed_by ? planet->governed_by->name : "their current leaders" );
 	ch_printf( ch, "You speak to them about the benifits of the %s%s.\r\n", ch->pcdata->clan->name,
 		planet->governed_by == clan ? "" : buf );
 	act( AT_ACTION, "$n speaks about his organization.\r\n", ch, NULL, victim, TO_VICT );
@@ -4310,7 +4310,7 @@ CMDF( do_propeganda )
 
 		if( planet->governed_by != clan )
 		{
-			sprintf( buf, "%s is a traitor!", ch->name );
+			snprintf( buf, MAX_STRING_LENGTH, "%s is a traitor!", ch->name );
 			do_yell( victim, buf );
 			global_retcode = multi_hit( victim, ch, TYPE_UNDEFINED );
 			return;
@@ -4525,7 +4525,7 @@ CMDF( do_seduce )
 	if( ( victim->top_level - get_curr_cha( ch ) > ch->pcdata->learned[gsn_seduce] ) || IS_SET( victim->immune, RIS_CHARM ) )
 	{
 		send_to_char( "You failed.\r\n", ch );
-		sprintf( buf, "%s failed to seduce you.", ch->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s failed to seduce you.", ch->name );
 		send_to_char( buf, victim );
 		global_retcode = multi_hit( victim, ch, TYPE_UNDEFINED );
 		return;
@@ -4640,7 +4640,7 @@ CMDF( do_mass_propeganda )
 
 	planet = ch->in_room->area->planet;
 
-	sprintf( buf, ", and the evils of %s", planet->governed_by ? planet->governed_by->name : "their current leaders" );
+	snprintf( buf, MAX_STRING_LENGTH, ", and the evils of %s", planet->governed_by ? planet->governed_by->name : "their current leaders" );
 	ch_printf( ch, "You speak to them about the benifits of the %s%s.\r\n", ch->pcdata->clan->name,
 		planet->governed_by == clan ? "" : buf );
 	act( AT_ACTION, "$n speaks about his organization.\r\n", ch, NULL, victim, TO_VICT );
@@ -4655,7 +4655,7 @@ CMDF( do_mass_propeganda )
 
 		if( planet->governed_by != clan )
 		{
-			sprintf( buf, "%s is a traitor!", ch->name );
+			snprintf( buf, MAX_STRING_LENGTH, "%s is a traitor!", ch->name );
 			do_yell( victim, buf );
 			global_retcode = multi_hit( victim, ch, TYPE_UNDEFINED );
 		}
@@ -4755,13 +4755,13 @@ CMDF( do_gather_intelligence )
 		{
 			if( ( planet = victim->in_room->area->planet ) == NULL )
 			{
-				sprintf( buf, "Information has been recieved that %s is travelling.", victim->name );
+				snprintf( buf, MAX_STRING_LENGTH, "Information has been recieved that %s is travelling.", victim->name );
 				send_to_char( buf, ch );
 				return;
 			}
 			else
 			{
-				sprintf( buf, "Information has been recieved that %s is on %s.", victim->name, planet->name );
+				snprintf( buf, MAX_STRING_LENGTH, "Information has been recieved that %s is on %s.", victim->name, planet->name );
 				send_to_char( buf, ch );
 				return;
 			}
@@ -4771,13 +4771,13 @@ CMDF( do_gather_intelligence )
 		{
 			if( victim->pcdata->clan )
 			{
-				sprintf( buf, "%s seems to be involved with %s.", victim->name, victim->pcdata->clan->name );
+				snprintf( buf, MAX_STRING_LENGTH, "%s seems to be involved with %s.", victim->name, victim->pcdata->clan->name );
 				send_to_char( buf, ch );
 				return;
 			}
 			else
 			{
-				sprintf( buf, "%s does not seem to be involved with any organization.", victim->name );
+				snprintf( buf, MAX_STRING_LENGTH, "%s does not seem to be involved with any organization.", victim->name );
 				send_to_char( buf, ch );
 				return;
 			}
@@ -4788,26 +4788,26 @@ CMDF( do_gather_intelligence )
 		{
 			if( victim->hit < ( ( victim->max_hit ) / 4 ) )
 			{
-				sprintf( buf, "Hospital records show that %s has had a very serious injury and has not fully recovered.",
+				snprintf( buf, MAX_STRING_LENGTH, "Hospital records show that %s has had a very serious injury and has not fully recovered.",
 					victim->name );
 				send_to_char( buf, ch );
 				return;
 			}
 			if( victim->hit < ( ( victim->max_hit ) / 2 ) )
 			{
-				sprintf( buf, "Hospital records show that %s has had a serious injury and has begun to recover.", victim->name );
+				snprintf( buf, MAX_STRING_LENGTH, "Hospital records show that %s has had a serious injury and has begun to recover.", victim->name );
 				send_to_char( buf, ch );
 				return;
 			}
 			if( victim->hit < ( ( victim->max_hit ) ) )
 			{
-				sprintf( buf, "Hospital records show that %s has had a minor injury recently.", victim->name );
+				snprintf( buf, MAX_STRING_LENGTH, "Hospital records show that %s has had a minor injury recently.", victim->name );
 				send_to_char( buf, ch );
 				return;
 			}
 			if( victim->hit == victim->max_hit )
 			{
-				sprintf( buf, "There has been no recently medical history for %s", victim->name );
+				snprintf( buf, MAX_STRING_LENGTH, "There has been no recently medical history for %s", victim->name );
 				send_to_char( buf, ch );
 				return;
 			}
@@ -4819,31 +4819,31 @@ CMDF( do_gather_intelligence )
 			switch( victim->main_ability )
 			{
 			case 0:
-				sprintf( buf, "%s appears to have centered training on combat.", victim->name );
+				snprintf( buf, MAX_STRING_LENGTH, "%s appears to have centered training on combat.", victim->name );
 				break;
 			case 1:
-				sprintf( buf, "%s appears to have centered training on piloting ships.", victim->name );
+				snprintf( buf, MAX_STRING_LENGTH, "%s appears to have centered training on piloting ships.", victim->name );
 				break;
 			case 2:
-				sprintf( buf, "%s appears to have centered training on engineering.", victim->name );
+				snprintf( buf, MAX_STRING_LENGTH, "%s appears to have centered training on engineering.", victim->name );
 				break;
 			case 3:
-				sprintf( buf, "%s appears to have centered training on bounty hunting.", victim->name );
+				snprintf( buf, MAX_STRING_LENGTH, "%s appears to have centered training on bounty hunting.", victim->name );
 				break;
 			case 4:
-				sprintf( buf, "%s appears to have centered training on smuggling.", victim->name );
+				snprintf( buf, MAX_STRING_LENGTH, "%s appears to have centered training on smuggling.", victim->name );
 				break;
 			case 5:
-				sprintf( buf, "%s appears to have centered training on diplomacy.", victim->name );
+				snprintf( buf, MAX_STRING_LENGTH, "%s appears to have centered training on diplomacy.", victim->name );
 				break;
 			case 6:
-				sprintf( buf, "%s appears to have centered training on leadership.", victim->name );
+				snprintf( buf, MAX_STRING_LENGTH, "%s appears to have centered training on leadership.", victim->name );
 				break;
 			case 7:
-				sprintf( buf, "%s appears to have centered attention on studying the force.", victim->name );
+				snprintf( buf, MAX_STRING_LENGTH, "%s appears to have centered attention on studying the force.", victim->name );
 				break;
 			case 8:
-				sprintf( buf, "%s has not centered training on anything, but seems to mix smuggling with piloting abilities.",
+				snprintf( buf, MAX_STRING_LENGTH, "%s has not centered training on anything, but seems to mix smuggling with piloting abilities.",
 					victim->name );
 				break;
 			default:
@@ -5275,7 +5275,7 @@ CMDF( do_makecamera )
 	obj->level = level;
 	obj->weight = 3;
 	STRFREE( obj->name );
-	sprintf( buf, "%s %s", remand( arg ), ch->name );
+	snprintf( buf, MAX_STRING_LENGTH, "%s %s", remand( arg ), ch->name );
 	obj->name = STRALLOC( buf );
 	strcpy( buf, arg );
 	STRFREE( obj->short_descr );
@@ -5905,7 +5905,7 @@ CMDF( do_meddle )
 		{
 
 			send_to_char( "&GYou start trying to hack into the bank files.\r\n", ch );
-			sprintf( buf, "$n takes $s CDI and begins doing something." );
+			snprintf( buf, MAX_STRING_LENGTH, "$n takes $s CDI and begins doing something." );
 			act( AT_PLAIN, buf, ch, NULL, argument, TO_ROOM );
 			add_timer( ch, TIMER_DO_FUN, 10, do_meddle, 1 );
 			return;

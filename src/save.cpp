@@ -82,7 +82,7 @@ void save_home( CHAR_DATA *ch )
 		OBJ_DATA *contents;
 
 
-		sprintf( filename, "%s%c/%s.home", PLAYER_DIR, tolower( ch->name[0] ), capitalize( ch->name ) );
+		snprintf( filename, sizeof(filename), "%s%c/%s.home", PLAYER_DIR, tolower( ch->name[0] ), capitalize( ch->name ) );
 		if( ( fp = FileOpen( filename, "w" ) ) == NULL )
 		{
 		}
@@ -107,7 +107,7 @@ void load_home( CHAR_DATA *ch )
 	FILE *fph;
 	ROOM_INDEX_DATA *storeroom = ch->plr_home;
 
-	sprintf( filename, "%s%c/%s.home", PLAYER_DIR, tolower( ch->name[0] ), capitalize( ch->name ) );
+	snprintf( filename, sizeof(filename), "%s%c/%s.home", PLAYER_DIR, tolower( ch->name[0] ), capitalize( ch->name ) );
 	if( ( fph = FileOpen( filename, "r" ) ) != NULL )
 	{
 		int iNest;
@@ -189,7 +189,7 @@ void de_equip_char( CHAR_DATA *ch )
 				}
 			if( x == MAX_LAYERS )
 			{
-				sprintf( buf, "%s had on more than %d layers of clothing in one location (%d): %s",
+				snprintf( buf, MAX_STRING_LENGTH, "%s had on more than %d layers of clothing in one location (%d): %s",
 					ch->name, MAX_LAYERS, obj->wear_loc, obj->name );
 				bug( buf, 0 );
 			}
@@ -251,14 +251,14 @@ void save_char_obj( CHAR_DATA *ch )
 	de_equip_char( ch );
 
 	ch->save_time = current_time;
-	sprintf( strsave, "%s%c/%s", PLAYER_DIR, tolower( ch->name[0] ), capitalize( ch->name ) );
+	snprintf( strsave, MAX_INPUT_LENGTH, "%s%c/%s", PLAYER_DIR, tolower( ch->name[0] ), capitalize( ch->name ) );
 
 	/*
 	 * Auto-backup pfile (can cause lag with high disk access situtations
 	 */
 	if( IS_SET( sysdata.save_flags, SV_BACKUP ) )
 	{
-		sprintf( strback, "%s%c/%s", BACKUP_DIR, tolower( ch->name[0] ), capitalize( ch->name ) );
+		snprintf( strback, MAX_INPUT_LENGTH, "%s%c/%s", BACKUP_DIR, tolower( ch->name[0] ), capitalize( ch->name ) );
 		rename( strsave, strback );
 	}
 
@@ -300,7 +300,7 @@ void save_char_obj( CHAR_DATA *ch )
 			jobtitle = "&WU&wndisclosed&D";
 			break;
 		}
-		sprintf( strback, "%s%s", GOD_DIR, capitalize( ch->name ) );
+		snprintf( strback, MAX_INPUT_LENGTH, "%s%s", GOD_DIR, capitalize( ch->name ) );
 
 		if( ( fp = FileOpen( strback, "w" ) ) == NULL )
 		{
@@ -365,14 +365,14 @@ void save_clone( CHAR_DATA *ch )
 	de_equip_char( ch );
 
 	ch->save_time = current_time;
-	sprintf( strsave, "%s%c/%s.clone", PLAYER_DIR, tolower( ch->name[0] ), capitalize( ch->name ) );
+	snprintf( strsave, MAX_INPUT_LENGTH, "%s%c/%s.clone", PLAYER_DIR, tolower( ch->name[0] ), capitalize( ch->name ) );
 
 	/*
 	 * Auto-backup pfile (can cause lag with high disk access situtations
 	 */
 	if( IS_SET( sysdata.save_flags, SV_BACKUP ) )
 	{
-		sprintf( strback, "%s%c/%s", BACKUP_DIR, tolower( ch->name[0] ), capitalize( ch->name ) );
+		snprintf( strback, MAX_INPUT_LENGTH, "%s%c/%s", BACKUP_DIR, tolower( ch->name[0] ), capitalize( ch->name ) );
 		rename( strsave, strback );
 	}
 
@@ -1006,17 +1006,17 @@ bool load_char_obj( DESCRIPTOR_DATA *d, const char *name, bool preload, bool cop
 	ch->pcdata->lt_index = 0;    /* last tell index */
 	ch->pcdata->hotboot = false;
 	found = false;
-	sprintf( strsave, "%s%c/%s", PLAYER_DIR, tolower( name[0] ), capitalize( name ) );
+	snprintf( strsave, MAX_INPUT_LENGTH, "%s%c/%s", PLAYER_DIR, tolower( name[0] ), capitalize( name ) );
 	if( stat( strsave, &fst ) != -1 )
 	{
 		if( fst.st_size == 0 )
 		{
-			sprintf( strsave, "%s%c/%s", BACKUP_DIR, tolower( name[0] ), capitalize( name ) );
+			snprintf( strsave, MAX_INPUT_LENGTH, "%s%c/%s", BACKUP_DIR, tolower( name[0] ), capitalize( name ) );
 			send_to_char( "Restoring your backup player file...", ch );
 		}
 		else
 		{
-			sprintf( buf, "%s Pdata for: %s (%dK)  From: %s",
+			snprintf( buf, MAX_STRING_LENGTH, "%s Pdata for: %s (%dK)  From: %s",
 				preload ? "Preloading" : "Loading", ch->name, ( int ) fst.st_size / 1024, d->host );
 			log_string_plus( buf, LOG_COMM, LEVEL_LIAISON );
 		}
@@ -1401,7 +1401,7 @@ void fread_char( CHAR_DATA *ch, FILE *fp, bool preload, bool copyover )
 
 					if( i == BOARD_NOTFOUND )
 					{
-						sprintf( buf, "fread_char: %s had unknown board name: %s. Skipped.", ch->name, boardname );
+						snprintf( buf, MAX_STRING_LENGTH, "fread_char: %s had unknown board name: %s. Skipped.", ch->name, boardname );
 						log_string( buf );
 						fread_number( fp );
 					}
@@ -1424,7 +1424,7 @@ void fread_char( CHAR_DATA *ch, FILE *fp, bool preload, bool copyover )
 				if( !preload
 					&& ch->pcdata->clan_name[0] != '\0' && ( ch->pcdata->clan = get_clan( ch->pcdata->clan_name ) ) == NULL )
 				{
-					sprintf( buf,
+					snprintf( buf, MAX_STRING_LENGTH,
 						"Warning: the organization %s no longer exists, and therefore you no longer\n\rbelong to that organization.\r\n",
 						ch->pcdata->clan_name );
 					send_to_char( buf, ch );
@@ -1511,7 +1511,7 @@ void fread_char( CHAR_DATA *ch, FILE *fp, bool preload, bool copyover )
 				if( !preload
 					&& ch->pcdata->clan_name[0] != '\0' && ( ch->pcdata->clan = get_clan( ch->pcdata->clan_name ) ) == NULL )
 				{
-					sprintf( buf,
+					snprintf( buf, MAX_STRING_LENGTH,
 						"Warning: the organization %s no longer exists, and therefore you no longer\n\rbelong to that organization.\r\n",
 						ch->pcdata->clan_name );
 					send_to_char( buf, ch );
@@ -1582,7 +1582,7 @@ void fread_char( CHAR_DATA *ch, FILE *fp, bool preload, bool copyover )
 				 */
 				temp = fread_string( fp );
 
-				sprintf( fname, "%s%c/%s", PLAYER_DIR, tolower( temp[0] ), capitalize( temp ) );
+				snprintf( fname, sizeof( fname ), "%s%c/%s", PLAYER_DIR, tolower( temp[0] ), capitalize( temp ) );
 
 				/*
 				 * If there isn't a pfile for the name
@@ -1835,7 +1835,7 @@ void fread_char( CHAR_DATA *ch, FILE *fp, bool preload, bool copyover )
 			{
 				if( !preload && !copyover )
 				{
-					sprintf( buf, "&CL&cast &PC&ponnected &BF&brom&R:&w %s\r\n", fread_word( fp ) );
+					snprintf( buf, MAX_STRING_LENGTH, "&CL&cast &PC&ponnected &BF&brom&R:&w %s\r\n", fread_word( fp ) );
 					send_to_char( buf, ch );
 				}
 				else
@@ -2029,7 +2029,7 @@ void fread_char( CHAR_DATA *ch, FILE *fp, bool preload, bool copyover )
 				ch->pcdata->title = fread_string( fp );
 				if( isalpha( ch->pcdata->title[0] ) || isdigit( ch->pcdata->title[0] ) )
 				{
-					sprintf( buf, " %s", ch->pcdata->title );
+					snprintf( buf, MAX_STRING_LENGTH, " %s", ch->pcdata->title );
 					if( ch->pcdata->title )
 						STRFREE( ch->pcdata->title );
 					ch->pcdata->title = STRALLOC( buf );
@@ -2097,7 +2097,7 @@ void fread_char( CHAR_DATA *ch, FILE *fp, bool preload, bool copyover )
 
 			if( !fMatch )
 			{
-				sprintf( buf, "Fread_char: no match: %s", word );
+				snprintf( buf, MAX_STRING_LENGTH, "Fread_char: no match: %s", word );
 				bug( buf, 0 );
 			}
 		}
@@ -2480,7 +2480,7 @@ void write_corpses( CHAR_DATA *ch, const char *name )
 			{
 				char buf[256];
 
-				sprintf( buf, "%s%s", CORPSE_DIR, capitalize( name ) );
+				snprintf( buf, MAX_STRING_LENGTH, "%s%s", CORPSE_DIR, capitalize( name ) );
 				if( !( fp = FileOpen( buf, "w" ) ) )
 				{
 					bug( "Write_corpses: Cannot open file.", 0 );
@@ -2499,7 +2499,7 @@ void write_corpses( CHAR_DATA *ch, const char *name )
 	{
 		char buf[256];
 
-		sprintf( buf, "%s%s", CORPSE_DIR, capitalize( name ) );
+		snprintf( buf, MAX_STRING_LENGTH, "%s%s", CORPSE_DIR, capitalize( name ) );
 		remove( buf );
 	}
 	return;
@@ -2525,7 +2525,7 @@ void load_corpses( void )
 	{
 		if( de->d_name[0] != '.' )
 		{
-			sprintf( strArea, "%s%s", CORPSE_DIR, de->d_name );
+			snprintf( strArea, MAX_INPUT_LENGTH, "%s%s", CORPSE_DIR, de->d_name );
 			fprintf( stderr, "Corpse -> %s\n", strArea );
 			if( !( fpArea = FileOpen( strArea, "r" ) ) )
 			{
@@ -2776,7 +2776,7 @@ void read_finger( CHAR_DATA *ch, const char *argument )
 
 	fingload[0] = '\0';
 
-	sprintf( fingload, "%s%c/%s", PLAYER_DIR, tolower( argument[0] ), capitalize( argument ) );
+	snprintf( fingload, sizeof( fingload ), "%s%c/%s", PLAYER_DIR, tolower( argument[0] ), capitalize( argument ) );
 
 	/*
 	 * Bug fix here provided by Senir to stop /dev/null crash
@@ -2893,7 +2893,7 @@ void save_artifacts( void )
 	OBJ_DATA *obj;
 
 
-	sprintf( filename, "%s%s", SYSTEM_DIR, ARTIFACT_FILE );
+	snprintf( filename, sizeof(filename), "%s%s", SYSTEM_DIR, ARTIFACT_FILE );
 	if( ( objfp = FileOpen( filename, "w" ) ) == NULL )
 	{
 		bug( "save_artifact: FileOpen artifact file", 0 );
@@ -2930,7 +2930,7 @@ void load_artifacts( void )
 	FILE *fp;
 	char filename[MAX_INPUT_LENGTH];
 
-	sprintf( filename, "%s%s", SYSTEM_DIR, ARTIFACT_FILE );
+	snprintf( filename, sizeof(filename), "%s%s", SYSTEM_DIR, ARTIFACT_FILE );
 
 	if( ( fp = FileOpen( filename, "r" ) ) != NULL )
 	{
@@ -3002,11 +3002,11 @@ CMDF( do_last )
 		read_last_file( ch, atoi( argument ), name );
 		return;
 	}
-	sprintf( buf, "%s%c/%s", PLAYER_DIR, tolower( arg[0] ), name );
+	snprintf( buf, MAX_STRING_LENGTH, "%s%c/%s", PLAYER_DIR, tolower( arg[0] ), name );
 	if( stat( buf, &fst ) != -1 )
-		sprintf( buf, "&C%s was last on&B: &W%s\r", name, ctime( &fst.st_mtime ) );
+		snprintf( buf, MAX_STRING_LENGTH, "&C%s was last on&B: &W%s\r", name, ctime( &fst.st_mtime ) );
 	else
-		sprintf( buf, "&R%s was not found.\r\n", name );
+		snprintf( buf, MAX_STRING_LENGTH, "&R%s was not found.\r\n", name );
 	send_to_char( buf, ch );
 }
 
@@ -3025,7 +3025,7 @@ void read_last_file( CHAR_DATA *ch, int count, const char *name )
 	char day[MAX_INPUT_LENGTH];
 	char sday[5];
 	int fnd = 0;
-	sprintf( filename, "%s", LAST_LIST );
+	snprintf( filename, sizeof(filename), "%s", LAST_LIST );
 	if( ( fpout = FileOpen( filename, "r" ) ) == NULL )
 	{
 		send_to_char( "&RThere is no last file to look at.\r\n", ch );
@@ -3104,7 +3104,7 @@ void read_last_file( CHAR_DATA *ch, int count, const char *name )
 							d = *c;
 							c++;
 							e = *c;
-							sprintf( sday, "%c%c", d, e );
+							snprintf( sday, sizeof( sday ), "%c%c", d, e );
 							if( !str_cmp( sday, day ) )
 							{
 								fnd = 1;

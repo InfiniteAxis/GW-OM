@@ -6,7 +6,7 @@
 * Under US federal and government regulations, any use of the          *
 * additions or changes not part of the original code are subject       *
 * to such fines as seeing fit by the government of the United          *
-* United States of America. [Code Changes from SWR 1.0 to GW:OM        *
+* United States of America. Code Changes from SWR 1.0 to GW:OM         *
 *----------------------------------------------------------------------*
 * Additions to SWR (1.0) for Gundam Operation Meteor are               *
 * copyrighted to - Justin Bedder (Cray/Trowa) 2001+ (c)                *
@@ -429,13 +429,13 @@ void chanback( CHAR_DATA *ch, int bitv, const char *verb )
 
 	if( !chan_back_table[channel][0] || chan_back_table[channel][0][0] == '\0' )
 	{
-		sprintf( buf, "&RNobody's used the '%s' channel!\r\n", verb );
+		snprintf( buf, MAX_STRING_LENGTH, "&RNobody's used the '%s' channel!\r\n", verb );
 		send_to_char( buf, ch );
 		return;
 	}
 	else
 	{
-		sprintf( buf, "&WChanback for '%s' channel:\r\n", verb );
+		snprintf( buf, MAX_STRING_LENGTH, "&WChanback for '%s' channel:\r\n", verb );
 		send_to_char( buf, ch );
 		for( x = 0; x < MAX_CHANBACK; x++ )
 		{
@@ -578,7 +578,7 @@ void talk_channel( CHAR_DATA *ch, const char *argument, int channel, const char 
 			chanback( ch, channel, verb );
 			return;
 		}
-		sprintf( buf, "%s what?\r\n", verb );
+		snprintf( buf, MAX_STRING_LENGTH, "%s what?\r\n", verb );
 		buf[0] = UPPER( buf[0] );
 		send_to_char( buf, ch );  /* where'd this line go? */
 		return;
@@ -595,51 +595,51 @@ void talk_channel( CHAR_DATA *ch, const char *argument, int channel, const char 
 	default:
 		set_char_color( AT_GOSSIP, ch );
 		ch_printf( ch, "&B[&CI&cC&B] &cYou say&B, '&C%s&B'\r\n", argument );
-		sprintf( buf, "&B[&CI&cC&B] &c$n says&B, '&C$t&B'" );
+		snprintf( buf, MAX_STRING_LENGTH, "&B[&CI&cC&B] &c$n says&B, '&C$t&B'" );
 		break;
 	case CHANNEL_CLANTALK:
 		set_char_color( AT_CLAN, ch );
 		ch_printf( ch, "&Y|&RG&rT&RM&Y| &RYou send&r, &Y'&r%s&Y'\r\n", argument );
-		sprintf( buf, "&Y|&RG&rT&RM&Y| &R$n sends&r, &Y'&r$t&Y'" );
+		snprintf( buf, MAX_STRING_LENGTH, "&Y|&RG&rT&RM&Y| &R$n sends&r, &Y'&r$t&Y'" );
 		break;
 	case CHANNEL_MUSIC:
 		set_char_color( AT_GOSSIP, ch );
 		ch_printf( ch, "&CYou sing, '%s'\r\n", argument );
-		sprintf( buf, "$n sings, '$t'" );
+		snprintf( buf, MAX_STRING_LENGTH, "$n sings, '$t'" );
 		break;
 	case CHANNEL_SHIP:
 		set_char_color( AT_SHIP, ch );
 		ch_printf( ch, "You tell the ship, '%s'\r\n", argument );
-		sprintf( buf, "$n says over the ships com system, '$t'" );
+		snprintf( buf, MAX_STRING_LENGTH, "$n says over the ships com system, '$t'" );
 		break;
 	case CHANNEL_SYSTEM:
 	case CHANNEL_SPACE:
 		set_char_color( AT_GOSSIP, ch );
 		ch_printf( ch, "You %s, '%s'\r\n", verb, argument );
-		sprintf( buf, "$n %ss, '$t'", verb );
+		snprintf( buf, MAX_STRING_LENGTH, "$n %ss, '$t'", verb );
 		break;
 	case CHANNEL_YELL:
 	case CHANNEL_SHOUT:
 		set_char_color( AT_GOSSIP, ch );
 		ch_printf( ch, "You %s, '%s'\r\n", verb, argument );
-		sprintf( buf, "$n %ss, '$t'", verb );
+		snprintf( buf, MAX_STRING_LENGTH, "$n %ss, '$t'", verb );
 		break;
 	case CHANNEL_ASK:
 		set_char_color( AT_OOC, ch );
 		ch_printf( ch, "You %s, '%s'\r\n", verb, argument );
-		sprintf( buf, "$n %ss, '$t'", verb );
+		snprintf( buf, MAX_STRING_LENGTH, "$n %ss, '$t'", verb );
 		break;
 	case CHANNEL_NEWBIE:
 		set_char_color( AT_OOC, ch );
 		ch_printf( ch, "(NEWBIE) %s: %s\r\n", ch->name, argument );
-		sprintf( buf, "%s", "(NEWBIE) $n: $t" );
+		snprintf( buf, MAX_STRING_LENGTH, "%s", "(NEWBIE) $n: $t" );
 		break;
 	case CHANNEL_OOC:
 		set_char_color( AT_GREEN, ch );
 		if( ch->top_level < LEVEL_STAFF )
-			sprintf( buf, "&G(&B=&CO&cO&CC&B=&G) &C%s&B:&G $t", ch->name );
+			snprintf( buf, MAX_STRING_LENGTH, "&G(&B=&CO&cO&CC&B=&G) &C%s&B:&G $t", ch->name );
 		else
-			sprintf( buf, "&G(&B=&CI&cM&CM&R:&CO&cO&CC&B=&G) &C%s&B:&G $t", ch->name );
+			snprintf( buf, MAX_STRING_LENGTH, "&G(&B=&CI&cM&CM&R:&CO&cO&CC&B=&G) &C%s&B:&G $t", ch->name );
 		position = ch->position;
 		ch->position = POS_STANDING;
 		act( AT_OOC, buf, ch, argument, NULL, TO_CHAR );
@@ -647,7 +647,7 @@ void talk_channel( CHAR_DATA *ch, const char *argument, int channel, const char 
 		break;
 	case CHANNEL_WARTALK:
 		set_char_color( AT_WARTALK, ch );
-		sprintf( buf, "&C(&c~&zGmote&c~&C) &c$n $t" );
+		snprintf( buf, MAX_STRING_LENGTH, "&C(&c~&zGmote&c~&C) &c$n $t" );
 		position = ch->position;
 		ch->position = POS_STANDING;
 		act( AT_WARTALK, buf, ch, argument, NULL, TO_CHAR );
@@ -656,7 +656,7 @@ void talk_channel( CHAR_DATA *ch, const char *argument, int channel, const char 
 	case CHANNEL_PEEKAY:
 		set_char_color( AT_RED, ch );
 		ch_printf( ch, "&R(&r[&WPK&r]&R) &rYou say, '&R%s&r'\r\n", argument );
-		sprintf( buf, "%s", "&R(&r[&WPK&r]&R) &r$n says, '&R$t&r'" );
+		snprintf( buf, MAX_STRING_LENGTH, "%s", "&R(&r[&WPK&r]&R) &r$n says, '&R$t&r'" );
 		break;
 	case CHANNEL_IMMTALK:
 	case CHANNEL_RP:
@@ -664,13 +664,13 @@ void talk_channel( CHAR_DATA *ch, const char *argument, int channel, const char 
 	case CHANNEL_GOCIAL:
 	case CHANNEL_QUOTE:
 		if( channel == CHANNEL_IMMTALK )
-			sprintf( buf, "&R{&wIMM&R} &w$n&G: &Y$t" );
+			snprintf( buf, MAX_STRING_LENGTH, "&R{&wIMM&R} &w$n&G: &Y$t" );
 		else if( channel == CHANNEL_RP )
-			sprintf( buf, "&C[&c>&RR&ro&Rl&re&PP&pl&Pa&py&c<&C] &R$n&p: &c$t" );
+			snprintf( buf, MAX_STRING_LENGTH, "&C[&c>&RR&ro&Rl&re&PP&pl&Pa&py&c<&C] &R$n&p: &c$t" );
 		else if( channel == CHANNEL_i104 )
-			sprintf( buf, "&G[&YA&OT&YG&G] &Y$n&G: &O$t" );
+			snprintf( buf, MAX_STRING_LENGTH, "&G[&YA&OT&YG&G] &Y$n&G: &O$t" );
 		else if( channel == CHANNEL_QUOTE )
-			sprintf( buf, "&G&g$n quotes, '$t&g'" );
+			snprintf( buf, MAX_STRING_LENGTH, "&G&g$n quotes, '$t&g'" );
 		position = ch->position;
 		ch->position = POS_STANDING;
 		act( AT_IMMORT, buf, ch, argument, NULL, TO_CHAR );
@@ -680,7 +680,7 @@ void talk_channel( CHAR_DATA *ch, const char *argument, int channel, const char 
 
 	if( xIS_SET( ch->in_room->room_flags, ROOM_LOGSPEECH ) )
 	{
-		sprintf( buf2, "%s: %s (%s)", IS_NPC( ch ) ? ch->short_descr : ch->name, argument, verb );
+		snprintf( buf2, MAX_STRING_LENGTH, "%s: %s (%s)", IS_NPC( ch ) ? ch->short_descr : ch->name, argument, verb );
 		append_to_file( LOG_FILE, buf2 );
 	}
 
@@ -825,7 +825,7 @@ void talk_channel( CHAR_DATA *ch, const char *argument, int channel, const char 
 	{
 		char cbuf[MAX_STRING_LENGTH];
 
-		sprintf( cbuf, "%s", act_string( buf, ch, ch, argument, NULL ) );
+		snprintf( cbuf, MAX_STRING_LENGTH, "%s", act_string( buf, ch, ch, argument, NULL ) );
 		update_chanback( cbuf, channel );
 	}
 	return;
@@ -839,7 +839,7 @@ void to_channel( const char *argument, int channel, const char *verb, short leve
 	if( !first_descriptor || argument[0] == '\0' )
 		return;
 
-	sprintf( buf, "%s: %s\r\n", verb, argument );
+	snprintf( buf, MAX_STRING_LENGTH, "%s: %s\r\n", verb, argument );
 
 	for( d = first_descriptor; d; d = d->next )
 	{
@@ -1174,9 +1174,9 @@ CMDF( do_say )
 
 	if( !IS_NPC( ch ) && xIS_SET( ch->in_room->room_flags, ROOM_CYBER ) )
 	{
-		sprintf( buf, "&R%s inputs '&r%s&R' to the screen.", ch->pcdata->avatar, argument );
+		snprintf( buf, MAX_STRING_LENGTH, "&R%s inputs '&r%s&R' to the screen.", ch->pcdata->avatar, argument );
 		act( AT_SAY, buf, ch, NULL, NULL, TO_ROOM );
-		sprintf( buf, "&RYou input '&r%s&R' to the screen.", argument );
+		snprintf( buf, MAX_STRING_LENGTH, "&RYou input '&r%s&R' to the screen.", argument );
 		act( AT_SAY, buf, ch, NULL, NULL, TO_CHAR );
 		return;
 	}
@@ -1282,7 +1282,7 @@ CMDF( do_say )
 
 	if( xIS_SET( ch->in_room->room_flags, ROOM_LOGSPEECH ) )
 	{
-		sprintf( buf, "&C%s:&c %s", IS_NPC( ch ) ? ch->short_descr : ch->name, argument );
+		snprintf( buf, MAX_STRING_LENGTH, "&C%s:&c %s", IS_NPC( ch ) ? ch->short_descr : ch->name, argument );
 		append_to_file( LOG_FILE, buf );
 	}
 	mprog_speech_trigger( argument, ch );
@@ -1443,7 +1443,7 @@ CMDF( do_tell )
 		//      send_to_char( "That player is link-dead.\r\n", ch );
 
 		send_to_char( "That player is link-dead, but will recieve your messege when they get back.\r\n", ch );
-		sprintf( buf, "%s&B%s tells you '%s'\n", victim->pcdata->tellbuf ? victim->pcdata->tellbuf : "", ch->name, argument );
+		snprintf( buf, MAX_STRING_LENGTH, "%s&B%s tells you '%s'\n", victim->pcdata->tellbuf ? victim->pcdata->tellbuf : "", ch->name, argument );
 		victim->pcdata->tells++;
 		victim->pcdata->tellbuf = str_dup( buf );
 
@@ -1453,7 +1453,7 @@ CMDF( do_tell )
 	if( !IS_NPC( victim ) && victim->position == POS_FIGHTING )
 	{
 		send_to_char( "That player is fighting, but will recieve your text messege upon return.\r\n", ch );
-		sprintf( buf, "%s&B%s tells you '%s'\n", victim->pcdata->tellbuf ? victim->pcdata->tellbuf : "", ch->name, argument );
+		snprintf( buf, MAX_STRING_LENGTH, "%s&B%s tells you '%s'\n", victim->pcdata->tellbuf ? victim->pcdata->tellbuf : "", ch->name, argument );
 		victim->pcdata->tells++;
 		victim->pcdata->tellbuf = str_dup( buf );
 		return;
@@ -1465,7 +1465,7 @@ CMDF( do_tell )
 
 
 		send_to_char( "That player is AFK, but will get your tell when they return.\r\n", ch );
-		sprintf( buf, "%s&B%s tells you '%s'\n", victim->pcdata->tellbuf ? victim->pcdata->tellbuf : "", ch->name, argument );
+		snprintf( buf, MAX_STRING_LENGTH, "%s&B%s tells you '%s'\n", victim->pcdata->tellbuf ? victim->pcdata->tellbuf : "", ch->name, argument );
 		victim->pcdata->tells++;
 		victim->pcdata->tellbuf = str_dup( buf );
 
@@ -1538,7 +1538,7 @@ CMDF( do_tell )
 	victim->reply = ch;
 	if( xIS_SET( ch->in_room->room_flags, ROOM_LOGSPEECH ) )
 	{
-		sprintf( buf, "%s: %s (tell to) %s.",
+		snprintf( buf, MAX_STRING_LENGTH, "%s: %s (tell to) %s.",
 			IS_NPC( ch ) ? ch->short_descr : ch->name, argument, IS_NPC( victim ) ? victim->short_descr : victim->name );
 		append_to_file( LOG_FILE, buf );
 	}
@@ -1594,7 +1594,7 @@ CMDF( do_reply )
 		//      send_to_char( "That player is link-dead.\r\n", ch );
 
 		send_to_char( "That player is link-dead. But will recieve your text messege upon return.\r\n", ch );
-		sprintf( buf, "%s&B%s tells you '%s'\n", victim->pcdata->tellbuf ? victim->pcdata->tellbuf : "", ch->name, argument );
+		snprintf( buf, MAX_STRING_LENGTH, "%s&B%s tells you '%s'\n", victim->pcdata->tellbuf ? victim->pcdata->tellbuf : "", ch->name, argument );
 		victim->pcdata->tells++;
 		victim->pcdata->tellbuf = str_dup( buf );
 
@@ -1606,7 +1606,7 @@ CMDF( do_reply )
 		//      send_to_char( "That player is AFK.\r\n", ch );
 
 		send_to_char( "That player is AFK, but will get your tell when they return.\r\n", ch );
-		sprintf( buf, "%s&B%s tells you '%s'\n", victim->pcdata->tellbuf ? victim->pcdata->tellbuf : "", ch->name, argument );
+		snprintf( buf, MAX_STRING_LENGTH, "%s&B%s tells you '%s'\n", victim->pcdata->tellbuf ? victim->pcdata->tellbuf : "", ch->name, argument );
 		victim->pcdata->tells++;
 		victim->pcdata->tellbuf = str_dup( buf );
 
@@ -1616,7 +1616,7 @@ CMDF( do_reply )
 	if( victim->position == POS_FIGHTING )
 	{
 		send_to_char( "That player is fighting, but will recieve your text messege upon return.\r\n", ch );
-		sprintf( buf, "%s&B%s tells you '%s'\n", victim->pcdata->tellbuf ? victim->pcdata->tellbuf : "", ch->name, argument );
+		snprintf( buf, MAX_STRING_LENGTH, "%s&B%s tells you '%s'\n", victim->pcdata->tellbuf ? victim->pcdata->tellbuf : "", ch->name, argument );
 		victim->pcdata->tells++;
 		victim->pcdata->tellbuf = str_dup( buf );
 		return;
@@ -1673,7 +1673,7 @@ CMDF( do_reply )
 	victim->reply = ch;
 	if( xIS_SET( ch->in_room->room_flags, ROOM_LOGSPEECH ) )
 	{
-		sprintf( buf, "%s: %s (reply to) %s.",
+		snprintf( buf, MAX_STRING_LENGTH, "%s: %s (reply to) %s.",
 			IS_NPC( ch ) ? ch->short_descr : ch->name, argument, IS_NPC( victim ) ? victim->short_descr : victim->name );
 		append_to_file( LOG_FILE, buf );
 	}
@@ -1715,12 +1715,12 @@ CMDF( do_emote )
 	ch->act = act_Flags;
 	if( xIS_SET( ch->in_room->room_flags, ROOM_LOGSPEECH ) )
 	{
-		sprintf( buf, "%s %s (emote)", IS_NPC( ch ) ? ch->short_descr : ch->name, argument );
+		snprintf( buf, MAX_STRING_LENGTH, "%s %s (emote)", IS_NPC( ch ) ? ch->short_descr : ch->name, argument );
 		append_to_file( LOG_FILE, buf );
 	}
 	if( !IS_NPC( ch ) )
 	{
-		sprintf( buf, "%s: %s", IS_NPC( ch ) ? ch->short_descr : ch->name, argument );
+		snprintf( buf, MAX_STRING_LENGTH, "%s: %s", IS_NPC( ch ) ? ch->short_descr : ch->name, argument );
 		append_to_file( BUG_FILE, buf );
 	}
 	return;
@@ -1984,13 +1984,13 @@ CMDF( do_quit )
 
 			if( ch->pcdata->exit && ch->pcdata->exit[0] != '\0' )
 			{
-				sprintf( buf, "&C(&zGW&c:&zOM&C)&w %s", ch->pcdata->exit );
+				snprintf( buf, MAX_STRING_LENGTH, "&C(&zGW&c:&zOM&C)&w %s", ch->pcdata->exit );
 				if( !IS_SET( vch->deaf, CHANNEL_INFO ) )
 					act( AT_GOSSIP, buf, ch, NULL, vch, TO_VICT );
 			}
 			else
 			{
-				sprintf( buf,
+				snprintf( buf, MAX_STRING_LENGTH,
 					"&C(&zGW&c:&zOM&C)&w &B%s &GD&ge&cc&Ci&cd&ge&Gd &YT&Oo &RR&re&pjo&ri&Rn &CT&ch&Ce &zR&Wea&zl &PW&po&Pr&pl&Pd&z.",
 					ch->name );
 				if( !IS_SET( vch->deaf, CHANNEL_INFO ) )
@@ -2000,7 +2000,7 @@ CMDF( do_quit )
 	}
 
 	act( AT_BYE, "$n has reentered the real world.", ch, NULL, NULL, TO_ROOM );
-	sprintf( log_buf, "%s has quit. (Room %d)", ch->name, ch->in_room->vnum );
+	snprintf( log_buf, MAX_STRING_LENGTH, "%s has quit. (Room %d)", ch->name, ch->in_room->vnum );
 	quitting_char = ch;
 	save_char_obj( ch );
 	save_home( ch );
@@ -2446,7 +2446,7 @@ CMDF( do_order )
 
 	if( found )
 	{
-		sprintf( log_buf, "%s: order %s.", ch->name, argbuf );
+		snprintf( log_buf, MAX_STRING_LENGTH, "%s: order %s.", ch->name, argbuf );
 		log_string_plus( log_buf, LOG_NORMAL, ch->top_level );
 		send_to_char( "Ok.\r\n", ch );
 		WAIT_STATE( ch, 12 );
@@ -2700,7 +2700,7 @@ CMDF( do_split )
 	set_char_color( AT_GOLD, ch );
 	ch_printf( ch, "You split %d dollars.  Your share is %d dollars.\r\n", amount, share + extra );
 
-	sprintf( buf, "$n splits %d dollars.  Your share is %d dollars.", amount, share );
+	snprintf( buf, MAX_STRING_LENGTH, "$n splits %d dollars.  Your share is %d dollars.", amount, share );
 
 	for( gch = ch->in_room->first_person; gch; gch = gch->next_in_room )
 	{
@@ -2734,7 +2734,7 @@ CMDF( do_gtell )
 	/*
 	 * Note use of send_to_char, so gtell works on sleepers.
 	 */
-	 /*    sprintf( buf, "%s tells the group '%s'.\r\n", ch->name, argument );*/
+	 /*    snprintf( buf, MAX_STRING_LENGTH, "%s tells the group '%s'.\r\n", ch->name, argument );*/
 	for( gch = first_char; gch; gch = gch->next )
 	{
 		if( is_same_group( gch, ch ) )
@@ -2769,7 +2769,7 @@ void info_chan( const char *argument )
 	char buf[MAX_STRING_LENGTH];
 	CHAR_DATA *original;
 
-	sprintf( buf, "&C(&zGW&c:&zOM&C)&w %s", argument );  /* last %s to reset color */
+	snprintf( buf, MAX_STRING_LENGTH, "&C(&zGW&c:&zOM&C)&w %s", argument );  /* last %s to reset color */
 
 	for( d = first_descriptor; d; d = d->next )
 	{
@@ -2786,7 +2786,7 @@ void rank_chan( const char *argument )
 	char buf[MAX_STRING_LENGTH];
 	CHAR_DATA *original;
 
-	sprintf( buf, "&Y[&RR&ra&pn&Pk&pi&rn&Rg&Y]&w %s", argument );    /* last %s to reset color */
+	snprintf( buf, MAX_STRING_LENGTH, "&Y[&RR&ra&pn&Pk&pi&rn&Rg&Y]&w %s", argument );    /* last %s to reset color */
 
 	for( d = first_descriptor; d; d = d->next )
 	{
@@ -2803,7 +2803,7 @@ void talk_arena( const char *argument )
 	char buf[MAX_STRING_LENGTH];
 	CHAR_DATA *original;
 
-	sprintf( buf, "&P&p-&P=&RA&rr&Re&rn&Ra&P=&p- %s", argument );    /* last %s to reset color */
+	snprintf( buf, MAX_STRING_LENGTH, "&P&p-&P=&RA&rr&Re&rn&Ra&P=&p- %s", argument );    /* last %s to reset color */
 
 	for( d = first_descriptor; d; d = d->next )
 	{
@@ -2825,7 +2825,7 @@ void talk_auction( const char *argument )
 	char buf[MAX_STRING_LENGTH];
 	CHAR_DATA *original;
 	
-	sprintf( buf, "&CAuction&c:&C %s", argument );
+	snprintf( buf, MAX_STRING_LENGTH, "&CAuction&c:&C %s", argument );
 
 	for( d = first_descriptor; d; d = d->next )
 	{
@@ -2958,9 +2958,9 @@ CMDF( do_whisper )
 		}
 	}
 
-	sprintf( buf, "&WYou whisper, '&z%s&W'\r\n", arg2 );
+	snprintf( buf, MAX_STRING_LENGTH, "&WYou whisper, '&z%s&W'\r\n", arg2 );
 	send_to_char( buf, ch );
-	sprintf( buf, "&W%s whispers, '&z%s&W'\r\n", ch->name, arg2 );
+	snprintf( buf, MAX_STRING_LENGTH, "&W%s whispers, '&z%s&W'\r\n", ch->name, arg2 );
 	send_to_char( buf, victim );
 	act( AT_SOCIAL, "$n whispers something to $N...", ch, NULL, victim, TO_NOTVICT );
 }

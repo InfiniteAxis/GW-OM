@@ -85,7 +85,7 @@ void write_clan_list( )
 	FILE *fpout;
 	char filename[256];
 
-	sprintf( filename, "%s%s", CLAN_DIR, CLAN_LIST );
+	snprintf( filename, 256, "%s%s", CLAN_DIR, CLAN_LIST );
 	fpout = FileOpen( filename, "w" );
 	if( !fpout )
 	{
@@ -104,7 +104,7 @@ void write_planet_list( )
 	FILE *fpout;
 	char filename[256];
 
-	sprintf( filename, "%s%s", PLANET_DIR, PLANET_LIST );
+	snprintf( filename, 256, "%s%s", PLANET_DIR, PLANET_LIST );
 	fpout = FileOpen( filename, "w" );
 	if( !fpout )
 	{
@@ -134,12 +134,12 @@ void save_clan( CLAN_DATA *clan )
 
 	if( !clan->filename || clan->filename[0] == '\0' )
 	{
-		sprintf( buf, "save_clan: %s has no filename", clan->name );
+		snprintf( buf, MAX_STRING_LENGTH, "save_clan: %s has no filename", clan->name );
 		bug( buf, 0 );
 		return;
 	}
 
-	sprintf( filename, "%s%s", CLAN_DIR, clan->filename );
+	snprintf( filename, 256, "%s%s", CLAN_DIR, clan->filename );
 
 	if( ( fp = FileOpen( filename, "w" ) ) == NULL )
 	{
@@ -208,12 +208,12 @@ void save_planet( PLANET_DATA *planet )
 
 	if( !planet->filename || planet->filename[0] == '\0' )
 	{
-		sprintf( buf, "save_planet: %s has no filename", planet->name );
+		snprintf( buf, MAX_STRING_LENGTH, "save_planet: %s has no filename", planet->name );
 		bug( buf, 0 );
 		return;
 	}
 
-	sprintf( filename, "%s%s", PLANET_DIR, planet->filename );
+	snprintf( filename, 256, "%s%s", PLANET_DIR, planet->filename );
 
 	if( ( fp = FileOpen( filename, "w" ) ) == NULL )
 	{
@@ -413,7 +413,7 @@ void fread_clan( CLAN_DATA *clan, FILE *fp )
 
 		if( !fMatch )
 		{
-			sprintf( buf, "Fread_clan: no match: %s", word );
+			snprintf( buf, MAX_STRING_LENGTH, "Fread_clan: no match: %s", word );
 			bug( buf, 0 );
 		}
 
@@ -599,7 +599,7 @@ void fread_planet( PLANET_DATA *planet, FILE *fp )
 
 		if( !fMatch )
 		{
-			sprintf( buf, "Fread_planet: no match: %s", word );
+			snprintf( buf, MAX_STRING_LENGTH, "Fread_planet: no match: %s", word );
 			bug( buf, 0 );
 		}
 
@@ -626,7 +626,7 @@ bool load_clan_file( const char *clanfile )
 	clan->mainclan = NULL;
 
 	found = false;
-	sprintf( filename, "%s%s", CLAN_DIR, clanfile );
+	snprintf( filename, 256, "%s%s", CLAN_DIR, clanfile );
 
 	if( ( fp = FileOpen( filename, "r" ) ) != NULL )
 	{
@@ -662,7 +662,7 @@ bool load_clan_file( const char *clanfile )
 			{
 				char buf[MAX_STRING_LENGTH];
 
-				sprintf( buf, "Load_clan_file: bad section: %s.", word );
+				snprintf( buf, MAX_STRING_LENGTH, "Load_clan_file: bad section: %s.", word );
 				bug( buf, 0 );
 				break;
 			}
@@ -682,7 +682,7 @@ bool load_clan_file( const char *clanfile )
 			return found;
 		}
 
-		sprintf( filename, "%s%s.vault", CLAN_DIR, clan->filename );
+		snprintf( filename, 256, "%s%s.vault", CLAN_DIR, clan->filename );
 		if( ( fp = FileOpen( filename, "r" ) ) != NULL )
 		{
 			int iNest;
@@ -762,7 +762,7 @@ bool load_planet_file( const char *planetfile )
 	planet->last_guard = NULL;
 
 	found = false;
-	sprintf( filename, "%s%s", PLANET_DIR, planetfile );
+	snprintf( filename, 256, "%s%s", PLANET_DIR, planetfile );
 
 	if( ( fp = FileOpen( filename, "r" ) ) != NULL )
 	{
@@ -798,7 +798,7 @@ bool load_planet_file( const char *planetfile )
 			{
 				char buf[MAX_STRING_LENGTH];
 
-				sprintf( buf, "Load_planet_file: bad section: %s.", word );
+				snprintf( buf, MAX_STRING_LENGTH, "Load_planet_file: bad section: %s.", word );
 				bug( buf, 0 );
 				break;
 			}
@@ -832,7 +832,7 @@ void load_clans( )
 
 	log_string( "Loading clans..." );
 
-	sprintf( clanlist, "%s%s", CLAN_DIR, CLAN_LIST );
+	snprintf( clanlist, 256, "%s%s", CLAN_DIR, CLAN_LIST );
 	if( ( fpList = FileOpen( clanlist, "r" ) ) == NULL )
 	{
 		perror( clanlist );
@@ -848,7 +848,7 @@ void load_clans( )
 
 		if( !load_clan_file( filename ) )
 		{
-			sprintf( buf, "Cannot load clan file: %s", filename );
+			snprintf( buf, MAX_STRING_LENGTH, "Cannot load clan file: %s", filename );
 			bug( buf, 0 );
 		}
 	}
@@ -884,7 +884,7 @@ void load_planets( )
 
 	log_string( "Loading planets..." );
 
-	sprintf( planetlist, "%s%s", PLANET_DIR, PLANET_LIST );
+	snprintf( planetlist, 256, "%s%s", PLANET_DIR, PLANET_LIST );
 	if( ( fpList = FileOpen( planetlist, "r" ) ) == NULL )
 	{
 		perror( planetlist );
@@ -900,7 +900,7 @@ void load_planets( )
 
 		if( !load_planet_file( filename ) )
 		{
-			sprintf( buf, "Cannot load planet file: %s", filename );
+			snprintf( buf, MAX_STRING_LENGTH, "Cannot load planet file: %s", filename );
 			bug( buf, 0 );
 		}
 	}
@@ -1124,7 +1124,7 @@ CMDF( do_outcast )
 	act( AT_MAGIC, "You outcast $N from $t", ch, clan->name, victim, TO_CHAR );
 	act( AT_MAGIC, "$n outcasts $N from $t", ch, clan->name, victim, TO_ROOM );
 	act( AT_MAGIC, "$n outcasts you from $t", ch, clan->name, victim, TO_VICT );
-	sprintf( buf, "%s has been outcast from %s!", victim->name, clan->name );
+	snprintf( buf, MAX_STRING_LENGTH, "%s has been outcast from %s!", victim->name, clan->name );
 	echo_to_all( AT_MAGIC, buf, ECHOTAR_ALL );
 
 	DISPOSE( victim->pcdata->bestowments );
@@ -1717,7 +1717,7 @@ CMDF( do_buyposse )
 	}
 
 	clan->funds -= cost;
-	sprintf( buf, "&GYou have purchased 1 %s for %s.\r\n",
+	snprintf( buf, MAX_STRING_LENGTH, "&GYou have purchased 1 %s for %s.\r\n",
 		ttype == 1 ? "Thug" : ttype == 2 ? "Hitman" : ttype == 3 ? "Drug Dealer" : ttype == 4 ? "Pimp" : ttype ==
 		5 ? "Scalper" : "", clan->name );
 	send_to_char( buf, ch );
@@ -2286,7 +2286,7 @@ CMDF( do_makeclan )
 		send_to_char( "There is already a clan with that name.\r\n", ch );
 		return;
 	}
-	sprintf( filename, "%s%s", CLAN_DIR, strlower( argument ) );
+	snprintf( filename, 256, "%s%s", CLAN_DIR, strlower( argument ) );
 
 	CREATE( clan, CLAN_DATA, 1 );
 	LINK( clan, first_clan, last_clan, next, prev );
@@ -2330,7 +2330,7 @@ CMDF( do_makeplanet )
 		return;
 	}
 
-	sprintf( filename, "%s%s", PLANET_DIR, strlower( argument ) );
+	snprintf( filename, 256, "%s%s", PLANET_DIR, strlower( argument ) );
 
 	CREATE( planet, PLANET_DATA, 1 );
 	LINK( planet, first_planet, last_planet, next, prev );
@@ -3267,7 +3267,7 @@ CMDF( do_resign )
 	STRFREE( ch->pcdata->clan_name );
 	ch->pcdata->clan_name = STRALLOC( "" );
 	act( AT_MAGIC, "You resign your position in $t", ch, clan->name, NULL, TO_CHAR );
-	sprintf( buf, "%s has quit %s!", ch->name, clan->name );
+	snprintf( buf, MAX_STRING_LENGTH, "%s has quit %s!", ch->name, clan->name );
 	echo_to_all( AT_MAGIC, buf, ECHOTAR_ALL );
 
 	lose_exp = UMAX( ch->experience[DIPLOMACY_ABILITY] - exp_level( ch->skill_level[DIPLOMACY_ABILITY] ), 0 );
@@ -3638,9 +3638,9 @@ CMDF( do_capture )
 	//   area->owned_by    = clan;
 	planet->pop_support = 50;
 
-	sprintf( buf, "%s has been captured for %s by %s!", planet->name, clan->name, ch->name );
+	snprintf( buf, MAX_STRING_LENGTH, "%s has been captured for %s by %s!", planet->name, clan->name, ch->name );
 	echo_to_all( AT_RED, buf, 0 );
-	sprintf( buf, "%s captured %s.", ch->name, planet->name );
+	snprintf( buf, MAX_STRING_LENGTH, "%s captured %s.", ch->name, planet->name );
 	log_string( buf );
 
 	save_planet( planet );
@@ -3741,7 +3741,7 @@ CMDF( do_empower )
 	}
 	else if( !str_cmp( arg2, "pilot" ) )
 	{
-		sprintf( buf, "%s %s", victim->pcdata->bestowments, arg2 );
+		snprintf( buf, MAX_STRING_LENGTH, "%s %s", victim->pcdata->bestowments, arg2 );
 		DISPOSE( victim->pcdata->bestowments );
 		victim->pcdata->bestowments = str_dup( buf );
 		ch_printf( victim, "%s has given you permission to fly clan ships.\r\n", ch->name );
@@ -3749,7 +3749,7 @@ CMDF( do_empower )
 	}
 	else if( !str_cmp( arg2, "withdraw" ) )
 	{
-		sprintf( buf, "%s %s", victim->pcdata->bestowments, arg2 );
+		snprintf( buf, MAX_STRING_LENGTH, "%s %s", victim->pcdata->bestowments, arg2 );
 		DISPOSE( victim->pcdata->bestowments );
 		victim->pcdata->bestowments = str_dup( buf );
 		ch_printf( victim, "%s has given you permission to withdraw clan funds.\r\n", ch->name );
@@ -3757,7 +3757,7 @@ CMDF( do_empower )
 	}
 	else if( !str_cmp( arg2, "clanbuyship" ) )
 	{
-		sprintf( buf, "%s %s", victim->pcdata->bestowments, arg2 );
+		snprintf( buf, MAX_STRING_LENGTH, "%s %s", victim->pcdata->bestowments, arg2 );
 		DISPOSE( victim->pcdata->bestowments );
 		victim->pcdata->bestowments = str_dup( buf );
 		ch_printf( victim, "%s has given you permission to buy clan ships.\r\n", ch->name );
@@ -3766,7 +3766,7 @@ CMDF( do_empower )
 
 	else if( !str_cmp( arg2, "initiation" ) )
 	{
-		sprintf( buf, "%s %s", victim->pcdata->bestowments, arg2 );
+		snprintf( buf, MAX_STRING_LENGTH, "%s %s", victim->pcdata->bestowments, arg2 );
 		DISPOSE( victim->pcdata->bestowments );
 		victim->pcdata->bestowments = str_dup( buf );
 		ch_printf( victim, "%s has given you the power to initiate people.\r\n", ch->name );
@@ -3774,7 +3774,7 @@ CMDF( do_empower )
 	}
 	else if( !str_cmp( arg2, "salary" ) )
 	{
-		sprintf( buf, "%s %s", victim->pcdata->bestowments, arg2 );
+		snprintf( buf, MAX_STRING_LENGTH, "%s %s", victim->pcdata->bestowments, arg2 );
 		DISPOSE( victim->pcdata->bestowments );
 		victim->pcdata->bestowments = str_dup( buf );
 		ch_printf( victim, "%s has given you permission to assign salaries.\r\n", ch->name );
@@ -3804,7 +3804,7 @@ void save_senate( )
 		FILE *fpout;
 		char filename[256];
 
-		sprintf( filename, "%s%s", SYSTEM_DIR, BOUNTY_LIST );
+		snprintf( filename, 256, "%s%s", SYSTEM_DIR, BOUNTY_LIST );
 		fpout = FileOpen( filename, "w" );
 		if ( !fpout )
 		{
@@ -3840,7 +3840,7 @@ void load_senate( )
 
 		log_string( "Loading disintigrations..." );
 
-		sprintf( bountylist, "%s%s", SYSTEM_DIR, DISINTIGRATION_LIST );
+		snprintf( bountylist, 256, "%s%s", SYSTEM_DIR, DISINTIGRATION_LIST );
 		if ( ( fpList = FileOpen( bountylist, "r" ) ) == NULL )
 		{
 		perror( bountylist );
@@ -4138,7 +4138,7 @@ CMDF( do_war )
 			STRFREE( clan->atwar );
 			clan->atwar = STRALLOC( buf );
 
-			sprintf( buf, "%s is no longer at war with %s!", clan->name, wclan->name );
+			snprintf( buf, MAX_STRING_LENGTH, "%s is no longer at war with %s!", clan->name, wclan->name );
 			echo_to_all( AT_RED, buf, ECHOTAR_ALL );
 
 			save_char_obj( ch );   /* clan gets saved when pfile is saved */
@@ -4154,7 +4154,7 @@ CMDF( do_war )
 		STRFREE( clan->atwar );
 		clan->atwar = STRALLOC( buf );
 
-		sprintf( buf, "%s declares war on %s!", clan->name, wclan->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s declares war on %s!", clan->name, wclan->name );
 		echo_to_all( AT_RED, buf, ECHOTAR_ALL );
 
 		save_char_obj( ch );  /* clan gets saved when pfile is saved */
@@ -4196,7 +4196,7 @@ CMDF( do_war )
 			STRFREE( clan->ally );
 			clan->ally = STRALLOC( buf );
 
-			sprintf( buf, "%s no longer considers %s an ally!", clan->name, wclan->name );
+			snprintf( buf, MAX_STRING_LENGTH, "%s no longer considers %s an ally!", clan->name, wclan->name );
 			echo_to_all( AT_RED, buf, ECHOTAR_ALL );
 
 			save_char_obj( ch );   /* clan gets saved when pfile is saved */
@@ -4212,7 +4212,7 @@ CMDF( do_war )
 		STRFREE( clan->ally );
 		clan->ally = STRALLOC( buf );
 
-		sprintf( buf, "%s now considers %s an ally!", clan->name, wclan->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s now considers %s an ally!", clan->name, wclan->name );
 		echo_to_all( AT_RED, buf, ECHOTAR_ALL );
 
 		save_char_obj( ch );  /* clan gets saved when pfile is saved */
@@ -4772,7 +4772,7 @@ CMDF( do_members )
 		return;
 	}
 
-	sprintf( list, "%s%s.list", CLAN_DIR, clan->shortname );
+	snprintf( list, sizeof(list), "%s%s.list", CLAN_DIR, clan->shortname );
 
 	if( ( fpList = FileOpen( list, "r" ) ) == NULL )
 	{
@@ -4782,7 +4782,7 @@ CMDF( do_members )
 	}
 
 
-	sprintf( thebuf, "\n          &P%s&B\r\n", clan->name );
+	snprintf( thebuf, sizeof(thebuf), "\n          &P%s&B\r\n", clan->name );
 	send_to_char( thebuf, ch );
 
 	for( ;; )
@@ -4799,15 +4799,15 @@ CMDF( do_members )
 			send_to_char( "&W     ", ch );
 
 		if( !str_cmp( buf, clan->leader ) )
-			sprintf( prefix, "&B*&w" );
+			snprintf( prefix, sizeof(prefix), "&B*&w" );
 		else if( !str_cmp( buf, clan->number1 ) )
-			sprintf( prefix, "&B*&w" );
+			snprintf( prefix, sizeof(prefix), "&B*&w" );
 		else if( !str_cmp( buf, clan->number2 ) )
-			sprintf( prefix, "&B*&w" );
+			snprintf( prefix, sizeof(prefix), "&B*&w" );
 		else
-			sprintf( prefix, "   &w" );
+			snprintf( prefix, sizeof(prefix), "   &w" );
 
-		sprintf( display, "%s%-10s", prefix, buf );
+		snprintf( display, sizeof(display), "%s%-10s", prefix, buf );
 		send_to_char( display, ch );
 		++i;
 
@@ -4887,7 +4887,7 @@ CMDF( do_paratroopers )
 		if ( ch->pcdata && ch->pcdata->clan )
 		//STRFREE( mob->name );
 		//mob->name = STRALLOC( ch->pcdata->clan->name );
-		sprintf( tmpbuf , "(%s) %s" , ch->pcdata->clan->name  , mob->long_descr );
+		snprintf( tmpbuf, sizeof( tmpbuf ), "(%s) %s" , ch->pcdata->clan->name  , mob->long_descr );
 		STRFREE( mob->long_descr );
 		mob->mob_clan = ch->pcdata->clan->name;
 		mob->long_descr = STRALLOC( tmpbuf );
@@ -4992,7 +4992,7 @@ void load_gang( void )
 						mrndm = mname;
 					count++;
 				}
-				sprintf( tmpbuf, "%s %s", clan->name, mrndm->name );
+				snprintf( tmpbuf, MAX_STRING_LENGTH, "%s %s", clan->name, mrndm->name );
 				STRFREE( mob->name );
 				mob->name = STRALLOC( tmpbuf );
 				STRFREE( mob->short_descr );
@@ -5007,14 +5007,14 @@ void load_gang( void )
 						frndm = fname;
 					count++;
 				}
-				sprintf( tmpbuf, "%s %s", clan->name, frndm->name );
+				snprintf( tmpbuf, MAX_STRING_LENGTH, "%s %s", clan->name, frndm->name );
 				STRFREE( mob->name );
 				mob->name = STRALLOC( tmpbuf );
 				STRFREE( mob->short_descr );
 				mob->short_descr = STRALLOC( frndm->name );
 			}
 
-			sprintf( tmpbuf, "%s|%s|&w %s", clan->cone, clan->ctwo, mob->long_descr );
+			snprintf( tmpbuf, MAX_STRING_LENGTH, "%s|%s|&w %s", clan->cone, clan->ctwo, mob->long_descr );
 			STRFREE( mob->long_descr );
 			mob->gang = STRALLOC( clan->name );
 			mob->top_level = number_range( 100, 250 );
@@ -5061,7 +5061,7 @@ void load_gang( void )
 						mrndm = mname;
 					count++;
 				}
-				sprintf( tmpbuf, "%s %s", clan->name, mrndm->name );
+				snprintf( tmpbuf, MAX_STRING_LENGTH, "%s %s", clan->name, mrndm->name );
 				STRFREE( mob->name );
 				mob->name = STRALLOC( tmpbuf );
 				STRFREE( mob->short_descr );
@@ -5076,14 +5076,14 @@ void load_gang( void )
 						frndm = fname;
 					count++;
 				}
-				sprintf( tmpbuf, "%s %s", clan->name, frndm->name );
+				snprintf( tmpbuf, MAX_STRING_LENGTH, "%s %s", clan->name, frndm->name );
 				STRFREE( mob->name );
 				mob->name = STRALLOC( tmpbuf );
 				STRFREE( mob->short_descr );
 				mob->short_descr = STRALLOC( frndm->name );
 			}
 
-			sprintf( tmpbuf, "%s|%s|&w %s", clan->cone, clan->ctwo, mob->long_descr );
+			snprintf( tmpbuf, MAX_STRING_LENGTH, "%s|%s|&w %s", clan->cone, clan->ctwo, mob->long_descr );
 			STRFREE( mob->long_descr );
 			mob->gang = STRALLOC( clan->name );
 			mob->top_level = number_range( 250, 650 );
@@ -5130,7 +5130,7 @@ void load_gang( void )
 					mrndm = mname;
 				count++;
 			}
-			sprintf( tmpbuf, "%s %s", clan->name, mrndm->name );
+			snprintf( tmpbuf, MAX_STRING_LENGTH, "%s %s", clan->name, mrndm->name );
 			STRFREE( mob->name );
 			mob->name = STRALLOC( tmpbuf );
 			STRFREE( mob->short_descr );
@@ -5145,14 +5145,14 @@ void load_gang( void )
 					frndm = fname;
 				count++;
 			}
-			sprintf( tmpbuf, "%s %s", clan->name, frndm->name );
+			snprintf( tmpbuf, MAX_STRING_LENGTH, "%s %s", clan->name, frndm->name );
 			STRFREE( mob->name );
 			mob->name = STRALLOC( tmpbuf );
 			STRFREE( mob->short_descr );
 			mob->short_descr = STRALLOC( frndm->name );
 		}
 
-		sprintf( tmpbuf, "%s|%s|&w %s", clan->cone, clan->ctwo, mob->long_descr );
+		snprintf( tmpbuf, MAX_STRING_LENGTH, "%s|%s|&w %s", clan->cone, clan->ctwo, mob->long_descr );
 		STRFREE( mob->long_descr );
 		mob->gang = STRALLOC( clan->name );
 		mob->top_level = number_range( 500, 750 );
@@ -5215,7 +5215,7 @@ CMDF( do_startgang )
 		return;
 	}
 
-	sprintf( filename, "%s%s", CLAN_DIR, strlower( argument ) );
+	snprintf( filename, sizeof( filename ), "%s%s", CLAN_DIR, strlower( argument ) );
 
 	CREATE( clan, CLAN_DATA, 1 );
 	LINK( clan, first_clan, last_clan, next, prev );
@@ -5225,7 +5225,7 @@ CMDF( do_startgang )
 	clan->first_subclan = NULL;
 	clan->mainclan = NULL;
 	clan->name = STRALLOC( argument );
-	sprintf( buf, "%s.clan", argument );
+	snprintf( buf, MAX_STRING_LENGTH, "%s.clan", argument );
 	clan->filename = str_dup( buf );
 	clan->description = STRALLOC( "" );
 	clan->leader = STRALLOC( ch->name );
@@ -5238,12 +5238,12 @@ CMDF( do_startgang )
 	clan->motto = str_dup( "We need a motto!" );
 	clan->cone = STRALLOC( "^w" );
 	clan->ctwo = STRALLOC( "^w" );
-	sprintf( buf, "%s.list", clan->name );
+	snprintf( buf, MAX_STRING_LENGTH, "%s.list", clan->name );
 	clan->shortname = str_dup( buf );
 
 	ch->pcdata->clan = clan;
 	ch->pcdata->clan_name = QUICKLINK( clan->name );
-	sprintf( buf, "%s created clan: %s\r\n", ch->name, clan->name );
+	snprintf( buf, MAX_STRING_LENGTH, "%s created clan: %s\r\n", ch->name, clan->name );
 	log_string( buf );
 	ch->gold -= 25000000;
 	send_to_char( "Gang created.", ch );
@@ -5348,7 +5348,7 @@ CMDF( do_clanstat )
 	  if( !ch->pcdata->clan->atwar[0] == '\0' )
 	  {
 		 send_to_char( "&B------- &CCurrently at War &B-------\r\n", ch );
-		 sprintf( atwar, "&W%s\r\n", ch->pcdata->clan->atwar );
+		 snprintf( atwar, sizeof( atwar ), "&W%s\r\n", ch->pcdata->clan->atwar );
 		 send_to_char( atwar, ch );
 	  }
 
@@ -5419,7 +5419,7 @@ CMDF( do_clanstat )
 	  send_to_char( "\r\n", ch );
    else
    {
-	  sprintf( buf, "&w%s\r\n", commify_list( clan->roster_5 ) );
+	  snprintf( buf, MAX_STRING_LENGTH, "&w%s\r\n", commify_list( clan->roster_5 ) );
 	  send_to_char( buf, ch );
    }
    ch_printf( ch, "&CLevel 4&B: &w%-24.24s &CWage&B: &Y%s\r\n", clan->r4, num_punct( clan->level4wage ) );
@@ -5427,7 +5427,7 @@ CMDF( do_clanstat )
 	  send_to_char( "\r\n", ch );
    else
    {
-	  sprintf( buf, "&w%s\r\n", commify_list( clan->roster_4 ) );
+	  snprintf( buf, MAX_STRING_LENGTH, "&w%s\r\n", commify_list( clan->roster_4 ) );
 	  send_to_char( buf, ch );
    }
    ch_printf( ch, "&CLevel 3&B: &w%-24.24s &CWage&B: &Y%s\r\n", clan->r3, num_punct( clan->level3wage ) );
@@ -5435,7 +5435,7 @@ CMDF( do_clanstat )
 	  send_to_char( "\r\n", ch );
    else
    {
-	  sprintf( buf, "&w%s\r\n", commify_list( clan->roster_3 ) );
+	  snprintf( buf, MAX_STRING_LENGTH, "&w%s\r\n", commify_list( clan->roster_3 ) );
 	  send_to_char( buf, ch );
    }
    ch_printf( ch, "&CLevel 2&B: &w%-24.24s &CWage&B: &Y%s\r\n", clan->r2, num_punct( clan->level2wage ) );
@@ -5443,7 +5443,7 @@ CMDF( do_clanstat )
 	  send_to_char( "\r\n", ch );
    else
    {
-	  sprintf( buf, "&w%s\r\n", commify_list( clan->roster_2 ) );
+	  snprintf( buf, MAX_STRING_LENGTH, "&w%s\r\n", commify_list( clan->roster_2 ) );
 	  send_to_char( buf, ch );
    }
    ch_printf( ch, "&CLevel 1&B: &w%-24.24s &CWage&B: &Y%s\r\n", clan->r1, num_punct( clan->level1wage ) );
@@ -5451,7 +5451,7 @@ CMDF( do_clanstat )
 	  send_to_char( "\r\n", ch );
    else
    {
-	  sprintf( buf, "&w%s\r\n", commify_list( clan->roster_1 ) );
+	  snprintf( buf, MAX_STRING_LENGTH, "&w%s\r\n", commify_list( clan->roster_1 ) );
 	  send_to_char( buf, ch );
    }
 

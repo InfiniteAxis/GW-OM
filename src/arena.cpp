@@ -58,14 +58,14 @@ CMDF( do_startwar )
 
 	if( blevel <= 0 || blevel > MAX_LEVEL )
 	{
-		sprintf( buf, "Level must be between 1 and %d.\r\n", MAX_LEVEL );
+		snprintf( buf, MAX_STRING_LENGTH, "Level must be between 1 and %d.\r\n", MAX_LEVEL );
 		send_to_char( buf, ch );
 		return;
 	}
 
 	if( blevel <= 6 || elevel > MAX_LEVEL )
 	{
-		sprintf( buf, "Level must be between 7 and %d.\r\n", MAX_LEVEL );
+		snprintf( buf, MAX_STRING_LENGTH, "Level must be between 7 and %d.\r\n", MAX_LEVEL );
 		send_to_char( buf, ch );
 		return;
 	}
@@ -112,11 +112,11 @@ CMDF( do_startwar )
 	war_info.max_level = elevel;
 	war_info.inwar = 0;
 	war_info.wartype = type;
-	sprintf( buf, "%s &CA War has begun! A &B%s&C war, for levels &B%d&C to &B%d&C.",
+	snprintf( buf, MAX_STRING_LENGTH, "%s &CA War has begun! A &B%s&C war, for levels &B%d&C to &B%d&C.",
 		war_info.suddendeath == true ? "&rx&RX&P|&BS&bD &BM&bO&BD&bE&P|&RX&rx" : "",
 		wartype_name( war_info.wartype ), war_info.min_level, war_info.max_level );
 	war_channel( buf );
-	sprintf( buf, "&CYou announce a &B%s&C war for levels &B%d&C to&B %d&C.\r\n",
+	snprintf( buf, MAX_STRING_LENGTH, "&CYou announce a &B%s&C war for levels &B%d&C to&B %d&C.\r\n",
 		wartype_name( war_info.wartype ), war_info.min_level, war_info.max_level );
 	send_to_char( buf, ch );
 	war_info.timer = 3;
@@ -168,7 +168,7 @@ CMDF( do_awho )
 	if( !str_cmp( arg, "end" ) && IS_IMMORTAL( ch ) )
 	{
 		end_war( );
-		sprintf( buf, "%s has ended the war.", ch->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s has ended the war.", ch->name );
 		send_to_char( buf, ch );
 		return;
 	}
@@ -181,10 +181,10 @@ CMDF( do_awho )
 			return;
 		}
 
-		sprintf( buf,
+		snprintf( buf, MAX_STRING_LENGTH,
 			"\r\n&Y<&O-&Y>&O-&Y<&O-&Y>&O-&Y<&O-&Y>&O-&Y<&O-&Y>&O-&Y<&O-&Y>&O-&Y<&O-&Y>&O- &GO&gp&Ge&gr&Ga&gt&Gi&go&Gn &CM&ce&Ct&ce&Co&cr &RA&rr&Re&rn&Ra &O-&Y<&O-&Y>&O-&Y<&O-&Y>&O-&Y<&O-&Y>&O-&Y<&O-&Y>&O-&Y<&O-&Y>&O-&Y<&O-&Y>\r\n\r\n" );
-		sprintf( buf, "&B              &GTime To Start&g:&c %-3d      ", war_info.timer );
-		sprintf( buf, "&GLevels&g:&c &c%d &Gto &c%d\r\n\r\n", war_info.min_level, war_info.max_level );
+		snprintf( buf, MAX_STRING_LENGTH, "&B              &GTime To Start&g:&c %-3d      ", war_info.timer );
+		snprintf( buf, MAX_STRING_LENGTH, "&GLevels&g:&c &c%d &Gto &c%d\r\n\r\n", war_info.min_level, war_info.max_level );
 		send_to_char( buf, ch );
 		send_to_char( "&G|&cLevel&G|    |&cName        &G|   |&cFighting   &G|\r\n", ch );
 		send_to_char
@@ -194,7 +194,7 @@ CMDF( do_awho )
 		for( tch = first_char; tch; tch = tch->next )
 			if( tch->in_room && xIS_SET( tch->in_room->room_flags, ROOM_ARENA ) )
 			{
-				sprintf( buf2, "&c|&G%-5d&c|    |&G%-12s&c|   |&G%-12s&c|\r\n", tch->top_level, tch->name,
+				snprintf( buf2, MAX_STRING_LENGTH, "&c|&G%-5d&c|    |&G%-12s&c|   |&G%-12s&c|\r\n", tch->top_level, tch->name,
 					tch->fighting ? tch->fighting->who->name : "No One" );
 				send_to_char( buf2, ch );
 			}
@@ -282,7 +282,7 @@ CMDF( do_awho )
 			char_from_room( ch );
 			char_to_room( ch, location );
 			SET_BIT( ch->pcdata->flags, PCFLAG_WAR );
-			sprintf( buf, "&B%s &Chas entered the competition!", ch->name );
+			snprintf( buf, MAX_STRING_LENGTH, "&B%s &Chas entered the competition!", ch->name );
 			talk_arena( buf );
 			act( AT_MAGIC, "$n appears in a flash!", ch, NULL, NULL, TO_ROOM );
 			war_info.inwar++;
@@ -321,7 +321,7 @@ CMDF( do_awho )
 			char_from_room( ch );
 			char_to_room( ch, random );
 			SET_BIT( ch->pcdata->flags, PCFLAG_WAR );
-			sprintf( buf, "&B%s &Chas entered the Arena!", ch->name );
+			snprintf( buf, MAX_STRING_LENGTH, "&B%s &Chas entered the Arena!", ch->name );
 			war_channel( buf );
 			act( AT_MAGIC, "$n appears in a flash!", ch, NULL, NULL, TO_ROOM );
 			do_look( ch, "auto" );
@@ -414,14 +414,14 @@ CMDF( do_arenawar )
 
 		i = is_number( argument ) ? atoi( argument ) : number_range( 30, 100 );
 		war_info.next = i;
-		sprintf( buf, "The next war will start in %d minutes.\r\n", war_info.next );
+		snprintf( buf, MAX_STRING_LENGTH, "The next war will start in %d minutes.\r\n", war_info.next );
 		send_to_char( buf, ch );
 		return;
 	}
 
 	if( war_info.iswar != true )
 	{
-		sprintf( buf, "There is no war going! The next war will start in %d minutes.\r\n", war_info.next );
+		snprintf( buf, MAX_STRING_LENGTH, "There is no war going! The next war will start in %d minutes.\r\n", war_info.next );
 		send_to_char( buf, ch );
 		return;
 	}
@@ -429,25 +429,25 @@ CMDF( do_arenawar )
 	if( !str_cmp( arg, "end" ) && IS_IMMORTAL( ch ) )
 	{
 		end_war( );
-		sprintf( buf, "You end the war. Next war in %d minutes.\r\n", war_info.next );
+		snprintf( buf, MAX_STRING_LENGTH, "You end the war. Next war in %d minutes.\r\n", war_info.next );
 		send_to_char( buf, ch );
-		sprintf( buf, "$n has ended the war. The next autwar will start in %d minutes.", war_info.next );
+		snprintf( buf, MAX_STRING_LENGTH, "$n has ended the war. The next autwar will start in %d minutes.", war_info.next );
 		war_channel( buf );
-		sprintf( buf, "You have ended the war. The next autwar will start in %d minutes.\r\n", war_info.next );
+		snprintf( buf, MAX_STRING_LENGTH, "You have ended the war. The next autwar will start in %d minutes.\r\n", war_info.next );
 		send_to_char( buf, ch );
 		return;
 	}
 	else if( !str_cmp( arg, "info" ) )
 	{
 		send_to_char( buf, ch );
-		sprintf( buf, "Fighting    : %d player%s.\r\n", war_info.inwar, war_info.inwar == 1 ? "" : "s" );
+		snprintf( buf, MAX_STRING_LENGTH, "Fighting    : %d player%s.\r\n", war_info.inwar, war_info.inwar == 1 ? "" : "s" );
 		send_to_char( buf, ch );
-		sprintf( buf, "Levels      : %d - %d\r\n", war_info.min_level, war_info.max_level );
+		snprintf( buf, MAX_STRING_LENGTH, "Levels      : %d - %d\r\n", war_info.min_level, war_info.max_level );
 		send_to_char( buf, ch );
-		sprintf( buf, "Status      : %s for %d minutes.\r\n",
+		snprintf( buf, MAX_STRING_LENGTH, "Status      : %s for %d minutes.\r\n",
 			war_info.iswar == WAR_WAITING ? "Waiting" : "Running", war_info.timer );
 		send_to_char( buf, ch );
-		sprintf( buf, "Type        : %s war.\r\n", wartype_name( war_info.wartype ) );
+		snprintf( buf, MAX_STRING_LENGTH, "Type        : %s war.\r\n", wartype_name( war_info.wartype ) );
 		send_to_char( buf, ch );
 		return;
 	}
@@ -460,7 +460,7 @@ CMDF( do_arenawar )
 		{
 			if( !IS_NPC( wch ) && IS_SET( wch->pcdata->flags, PCFLAG_WAR ) )
 			{
-				sprintf( buf, "%-12s\r\n", wch->name );
+				snprintf( buf, MAX_STRING_LENGTH, "%-12s\r\n", wch->name );
 				send_to_char( buf, ch );
 				found = true;
 			}
@@ -507,7 +507,7 @@ CMDF( do_arenawar )
 			char_from_room( ch );
 			char_to_room( ch, location );
 			SET_BIT( ch->pcdata->flags, PCFLAG_WAR );
-			sprintf( buf, "%s (Level %d) joins the war!", ch->name, ch->top_level );
+			snprintf( buf, MAX_STRING_LENGTH, "%s (Level %d) joins the war!", ch->name, ch->top_level );
 			war_channel( buf );
 			act( AT_PLAIN, "$n arrives to get $s ass whipped!", ch, NULL, NULL, TO_ROOM );
 			war_info.inwar++;
@@ -611,7 +611,7 @@ void war_update( void )
 
 		if( war_info.timer > 0 )
 		{
-			sprintf( buf, "&B%d &Cminute%s left to join the Levels &B%d &C- &B%d&C,&B %s&C War!",
+			snprintf( buf, MAX_STRING_LENGTH, "&B%d &Cminute%s left to join the Levels &B%d &C- &B%d&C,&B %s&C War!",
 				war_info.timer, war_info.timer == 1 ? "" : "s",
 				war_info.min_level, war_info.max_level, wartype_name( war_info.wartype ) );
 			war_channel( buf );
@@ -621,13 +621,13 @@ void war_update( void )
 			if( war_info.inwar < 2 )
 			{
 				end_war( );
-				sprintf( buf, "&CNot enough people for war. Maybe next time!" );
+				snprintf( buf, MAX_STRING_LENGTH, "&CNot enough people for war. Maybe next time!" );
 				war_channel( buf );
 			}
 			else if( war_info.wartype == 1 && abort_race_war( ) )
 			{
 				end_war( );
-				sprintf( buf, "&CNot enough races for war. Maybe next time!" );
+				snprintf( buf, MAX_STRING_LENGTH, "&CNot enough races for war. Maybe next time!" );
 				war_channel( buf );
 			}
 			/*
@@ -642,14 +642,14 @@ void war_update( void )
 			else if( war_info.wartype == 3 && abort_clan_war( ) )
 			{
 				end_war( );
-				sprintf( buf, "&CNot enough gangs for war. Maybe next time!" );
+				snprintf( buf, MAX_STRING_LENGTH, "&CNot enough gangs for war. Maybe next time!" );
 				war_channel( buf );
 			}
 			else
 			{
 				CHAR_DATA *wch;
 
-				sprintf( buf, "&CThe competition has begun! &B%d &Cplayers are fighting!", war_info.inwar );
+				snprintf( buf, MAX_STRING_LENGTH, "&CThe competition has begun! &B%d &Cplayers are fighting!", war_info.inwar );
 				war_channel( buf );
 
 				war_info.timer = number_range( 3 * war_info.inwar, 5 * war_info.inwar );
@@ -677,7 +677,7 @@ void war_update( void )
 		if( war_info.inwar == 0 )
 		{
 			end_war( );
-			sprintf( buf, "&CNo one left in the War." );
+			snprintf( buf, MAX_STRING_LENGTH, "&CNo one left in the War." );
 			war_channel( buf );
 			return;
 		}
@@ -686,7 +686,7 @@ void war_update( void )
 		{
 		case 0:
 			end_war( );
-			sprintf( buf, "Times up, you all are too slow!." );
+			snprintf( buf, MAX_STRING_LENGTH, "Times up, you all are too slow!." );
 			war_channel( buf );
 			return;
 		case 1:
@@ -696,7 +696,7 @@ void war_update( void )
 		case 5:
 		case 10:
 		case 15:
-			sprintf( buf, "&B%d &Cminute%s remaining in the war.", war_info.timer, war_info.timer > 1 ? "s" : "" );
+			snprintf( buf, MAX_STRING_LENGTH, "&B%d &Cminute%s remaining in the war.", war_info.timer, war_info.timer > 1 ? "s" : "" );
 			war_channel( buf );
 		default:
 			war_info.timer--;
@@ -728,14 +728,14 @@ void check_war( CHAR_DATA *ch, CHAR_DATA *victim )
 	do_look( victim, "auto" );
 	send_to_char( "\r\n", ch );
 	send_to_char( "\r\n", victim );
-	sprintf( buf, "&B%s &Cwas knocked out of the arena by &B%s&C!", victim->name, ch->name );
+	snprintf( buf, MAX_STRING_LENGTH, "&B%s &Cwas knocked out of the arena by &B%s&C!", victim->name, ch->name );
 	war_channel( buf );
 	switch( war_info.wartype )
 	{
 	case 1:
 		if( abort_race_war( ) )
 		{
-			sprintf( buf, "&CThe &B%s's&C have won the Competition!", capitalize( get_race( ch ) ) );
+			snprintf( buf, MAX_STRING_LENGTH, "&CThe &B%s's&C have won the Competition!", capitalize( get_race( ch ) ) );
 			war_channel( buf );
 			for( wch = first_char; wch != NULL; wch = wch->next )
 			{
@@ -745,7 +745,7 @@ void check_war( CHAR_DATA *ch, CHAR_DATA *victim )
 				if( wch->race == ch->race )
 				{
 					wch->gold += reward;
-					sprintf( buf, "&zYou recieve &Y%d &zdollars for emerging victorious!\r\n", reward );
+					snprintf( buf, MAX_STRING_LENGTH, "&zYou recieve &Y%d &zdollars for emerging victorious!\r\n", reward );
 					send_to_char( buf, wch );
 				}
 
@@ -757,7 +757,7 @@ void check_war( CHAR_DATA *ch, CHAR_DATA *victim )
 	case 3:
 		if( abort_clan_war( ) )
 		{
-			sprintf( buf, "&B%s &Chas won the Competition!", ch->pcdata->clan->name );
+			snprintf( buf, MAX_STRING_LENGTH, "&B%s &Chas won the Competition!", ch->pcdata->clan->name );
 			war_channel( buf );
 			/*
 					for (wch = first_char; wch != NULL; wch = wch->next)
@@ -781,10 +781,10 @@ void check_war( CHAR_DATA *ch, CHAR_DATA *victim )
 	case 2:
 		if( war_info.inwar == 1 )
 		{
-			sprintf( buf, "&B%s &Chas won the Competition!", ch->name );
+			snprintf( buf, MAX_STRING_LENGTH, "&B%s &Chas won the Competition!", ch->name );
 			war_channel( buf );
 			ch->gold += reward;
-			sprintf( buf, "&zYou recieve &Y%d&z dollars for emerging victorious!\r\n", reward );
+			snprintf( buf, MAX_STRING_LENGTH, "&zYou recieve &Y%d&z dollars for emerging victorious!\r\n", reward );
 			send_to_char( buf, ch );
 			end_war( );
 			return;
@@ -857,13 +857,13 @@ void extract_war( CHAR_DATA *ch )
 		{
 			if( war_info.inwar == 0 || war_info.inwar == 1 )
 			{
-				sprintf( buf, "&B%s&C has left. War over.", ch->name );
+				snprintf( buf, MAX_STRING_LENGTH, "&B%s&C has left. War over.", ch->name );
 				war_channel( buf );
 				end_war( );
 			}
 			if( abort_race_war( ) )
 			{
-				sprintf( buf, "&B%s&C has left. War over.", ch->name );
+				snprintf( buf, MAX_STRING_LENGTH, "&B%s&C has left. War over.", ch->name );
 				war_channel( buf );
 				end_war( );
 			}
@@ -876,13 +876,13 @@ void extract_war( CHAR_DATA *ch )
 			*/
 			else if( abort_clan_war( ) )
 			{
-				sprintf( buf, "&B%s&C has left. War over.", ch->name );
+				snprintf( buf, MAX_STRING_LENGTH, "&B%s&C has left. War over.", ch->name );
 				war_channel( buf );
 				end_war( );
 			}
 			else
 			{
-				sprintf( buf, "&B$n &Chas left. &B%d&C players in the war.", war_info.inwar );
+				snprintf( buf, MAX_STRING_LENGTH, "&B$n &Chas left. &B%d&C players in the war.", war_info.inwar );
 				war_channel( buf );
 			}
 		}
@@ -897,7 +897,7 @@ void war_channel( const char *argument )
 	CHAR_DATA *original;
 	char buf[MAX_INPUT_LENGTH];
 
-	sprintf( buf, "&P&p-&P=&RA&rr&Re&rn&Ra&P=&p- %s", argument );
+	snprintf( buf, MAX_STRING_LENGTH, "&P&p-&P=&RA&rr&Re&rn&Ra&P=&p- %s", argument );
 
 	for( d = first_descriptor; d; d = d->next )
 	{

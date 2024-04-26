@@ -1268,7 +1268,7 @@ CMDF( do_homepage )
 		if( strstr( argument, "://" ) )
 			strcpy( buf, argument );
 		else
-			sprintf( buf, "http://%s", argument );
+			snprintf( buf, MAX_STRING_LENGTH, "http://%s", argument );
 		if( strlen( buf ) > 70 )
 			buf[70] = '\0';
 
@@ -1343,7 +1343,7 @@ CMDF( do_homepage )
 	if ( strstr( argument, "://" ) )
 	strcpy( buf, argument );
 	else
-	sprintf( buf, "http://%s", argument );
+	snprintf( buf, MAX_STRING_LENGTH, "http://%s", argument );
 	if ( strlen(buf) > 70 )
 	buf[70] = '\0';
 
@@ -1453,7 +1453,7 @@ CMDF( do_report )
 	if( !IS_NPC( ch ) && !str_cmp( arg, "money" ) )
 	{
 		ch_printf( ch, "You announce you have %s on hand.\r\n", num_punct( ch->gold ) );
-		sprintf( buf, "$n announces $e has %s on hand.\r\n", num_punct( ch->gold ) );
+		snprintf( buf, MAX_STRING_LENGTH, "$n announces $e has %s on hand.\r\n", num_punct( ch->gold ) );
 		act( AT_REPORT, buf, ch, NULL, NULL, TO_ROOM );
 		return;
 	}
@@ -1461,7 +1461,7 @@ CMDF( do_report )
 	if( !IS_NPC( ch ) && !str_cmp( arg, "bank" ) )
 	{
 		ch_printf( ch, "You announce you have %s dollars in the bank.\r\n", num_punct( ch->pcdata->bank ) );
-		sprintf( buf, "$n announce $e has %s dollars in the bank.\r\n", num_punct( ch->pcdata->bank ) );
+		snprintf( buf, MAX_STRING_LENGTH, "$n announce $e has %s dollars in the bank.\r\n", num_punct( ch->pcdata->bank ) );
 		act( AT_REPORT, buf, ch, NULL, NULL, TO_ROOM );
 		return;
 	}
@@ -1472,7 +1472,7 @@ CMDF( do_report )
 			ch->skill_level[COMBAT_ABILITY] + ch->skill_level[PILOTING_ABILITY] + ch->skill_level[ENGINEERING_ABILITY] +
 			ch->skill_level[HUNTING_ABILITY] + ch->skill_level[SMUGGLING_ABILITY] + ch->skill_level[DIPLOMACY_ABILITY] +
 			ch->skill_level[LEADERSHIP_ABILITY] + ch->skill_level[ESPIONAGE_ABILITY] );
-		sprintf( buf, "$n announces $e has %d combined levels.\r\n",
+		snprintf( buf, MAX_STRING_LENGTH, "$n announces $e has %d combined levels.\r\n",
 			ch->skill_level[COMBAT_ABILITY] + ch->skill_level[PILOTING_ABILITY] + ch->skill_level[ENGINEERING_ABILITY] +
 			ch->skill_level[HUNTING_ABILITY] + ch->skill_level[SMUGGLING_ABILITY] + ch->skill_level[DIPLOMACY_ABILITY] +
 			ch->skill_level[LEADERSHIP_ABILITY] + ch->skill_level[ESPIONAGE_ABILITY] );
@@ -1481,7 +1481,7 @@ CMDF( do_report )
 	}
 
 	ch_printf( ch, "You report: %ld/%ldhp   %d/%dmv.\r\n", ch->hit, ch->max_hit, ch->move, ch->max_move );
-	sprintf( buf, "$n reports: %ld/%ldhp   %d/%dmv.\r\n", ch->hit, ch->max_hit, ch->move, ch->max_move );
+	snprintf( buf, MAX_STRING_LENGTH, "$n reports: %ld/%ldhp   %d/%dmv.\r\n", ch->hit, ch->max_hit, ch->move, ch->max_move );
 	act( AT_REPORT, buf, ch, NULL, NULL, TO_ROOM );
 
 	return;
@@ -1513,8 +1513,8 @@ CMDF( do_entex )
 	argument = one_argument( argument, arg );
 	if( arg[0] == '\0' )
 	{
-		sprintf( entmess, "&B%s &RH&ra&Rs &GC&go&Gm&ge &YT&Oo &CP&cl&Ca&cy&z!", ch->name );
-		sprintf( extmess, "&B%s &GD&ge&cc&Ci&cd&ge&Gd &YT&Oo &RR&re&pjo&ri&Rn &CT&ch&Ce &zR&Wea&zl &PW&po&Pr&pl&Pd&z.",
+		snprintf( entmess, MAX_STRING_LENGTH, "&B%s &RH&ra&Rs &GC&go&Gm&ge &YT&Oo &CP&cl&Ca&cy&z!", ch->name );
+		snprintf( extmess, MAX_STRING_LENGTH, "&B%s &GD&ge&cc&Ci&cd&ge&Gd &YT&Oo &RR&re&pjo&ri&Rn &CT&ch&Ce &zR&Wea&zl &PW&po&Pr&pl&Pd&z.",
 			ch->name );
 
 		send_to_char( "\r\n&CSyntax: Entex <enter/exit> <messege>\r\n", ch );
@@ -1540,7 +1540,7 @@ CMDF( do_entex )
 		{
 			if( ch->pcdata->enter )
 				DISPOSE( ch->pcdata->enter );
-			sprintf( buf1, "&B%s &RH&ra&Rs &GC&go&Gm&ge &YT&Oo &CP&cl&Ca&cy&z!", ch->name );
+			snprintf( buf1, MAX_STRING_LENGTH, "&B%s &RH&ra&Rs &GC&go&Gm&ge &YT&Oo &CP&cl&Ca&cy&z!", ch->name );
 			ch->pcdata->enter = str_dup( buf1 );
 			send_to_char( "Set.\r\n", ch );
 			return;
@@ -1575,7 +1575,7 @@ CMDF( do_entex )
 		{
 			if( ch->pcdata->exit )
 				DISPOSE( ch->pcdata->exit );
-			sprintf( buf1, "&B%s &GD&ge&cc&Ci&cd&ge&Gd &YT&Oo &RR&re&pjo&ri&Rn &CT&ch&Ce &zR&Wea&zl &PW&po&Pr&pl&Pd&z.",
+			snprintf( buf1, MAX_STRING_LENGTH, "&B%s &GD&ge&cc&Ci&cd&ge&Gd &YT&Oo &RR&re&pjo&ri&Rn &CT&ch&Ce &zR&Wea&zl &PW&po&Pr&pl&Pd&z.",
 				ch->name );
 			ch->pcdata->exit = str_dup( buf1 );
 			send_to_char( "Set.\r\n", ch );
@@ -1873,7 +1873,7 @@ void do_fight( CHAR_DATA *ch )
 		char_from_room( ch );
 		char_to_room( ch, random );
 		SET_BIT( ch->pcdata->flags, PCFLAG_ARENA );
-		sprintf( buf, "&P&p-&P=&RA&rr&Re&rn&Ra&P=&p- &B%s &has entered the Arena!", ch->name );
+		snprintf( buf, MAX_STRING_LENGTH, "&P&p-&P=&RA&rr&Re&rn&Ra&P=&p- &B%s &has entered the Arena!", ch->name );
 		echo_to_all( AT_IMMORT, buf, ECHOTAR_ALL );
 		act( AT_MAGIC, "$n appears in a flash!", ch, NULL, NULL, TO_ROOM );
 		inwar++;
@@ -2054,7 +2054,7 @@ LOCKER_DATA *load_locker( CHAR_DATA *ch )
 	 * Find the locker file
 	 */
 
-	sprintf( strsave, "%s%s", STORAGE_DIR, capitalize( ch->name ) );
+	snprintf( strsave, MAX_INPUT_LENGTH, "%s%s", STORAGE_DIR, capitalize( ch->name ) );
 
 	if( ( fp = FileOpen( strsave, "r" ) ) != NULL )
 	{
@@ -2102,7 +2102,7 @@ LOCKER_DATA *load_locker( CHAR_DATA *ch )
 			else
 			{
 				bug( "Load_locker: bad section.", 0 );
-				sprintf( buf, "[%s]", word );
+				snprintf( buf, MAX_STRING_LENGTH, "[%s]", word );
 				bug( buf, 0 );
 				bug( ch->name, 0 );
 				break;
@@ -2161,7 +2161,7 @@ void fread_locker( CHAR_DATA *ch, LOCKER_DATA *locker, FILE *fp )
 
 		if( !fMatch )
 		{
-			sprintf( buf, "Fread_locker: no match: %s", word );
+			snprintf( buf, MAX_STRING_LENGTH, "Fread_locker: no match: %s", word );
 			bug( buf, 0 );
 		}
 	}
@@ -2184,7 +2184,7 @@ void fwrite_locker( CHAR_DATA *ch )
 		return;
 	}
 
-	sprintf( strsave, "%s%s", STORAGE_DIR, capitalize( ch->name ) );
+	snprintf( strsave, MIL, "%s%s", STORAGE_DIR, capitalize( ch->name ) );
 
 	if( ( fp = FileOpen( strsave, "w" ) ) != NULL )
 	{
@@ -2345,7 +2345,7 @@ CMDF( do_storage )
 
 			if( count > 50 )
 			{
-				sprintf( buf, "You have too many items in your storage space. Pick an item or two up then leave.\r\n" );
+				snprintf( buf, MAX_STRING_LENGTH, "You have too many items in your storage space. Pick an item or two up then leave.\r\n" );
 				send_to_char( buf, ch );
 				return;
 			}
@@ -2484,19 +2484,19 @@ CMDF( do_makestorage )
 	 * Is this a valid player?
 	 */
 	strcpy( name, capitalize( argument ) );
-	sprintf( buf, "%s%c/%s", PLAYER_DIR, tolower( argument[0] ), name );
+	snprintf( buf, MAX_STRING_LENGTH, "%s%c/%s", PLAYER_DIR, tolower( argument[0] ), name );
 	if( stat( buf, &fst ) == -1 )
 	{
-		sprintf( buf, "Player file for %s does not exist!\r\n", name );
+		snprintf( buf, MAX_STRING_LENGTH, "Player file for %s does not exist!\r\n", name );
 		send_to_char( buf, ch );
 		return;
 	}
 
-	sprintf( filename, "%s%s", STORAGE_DIR, name );
+	snprintf( filename, sizeof(filename), "%s%s", STORAGE_DIR, name );
 
 	if( stat( filename, &fst ) != -1 )
 	{
-		sprintf( buf, "Storage file for %s already exists!\r\n", name );
+		snprintf( buf, MAX_STRING_LENGTH, "Storage file for %s already exists!\r\n", name );
 		send_to_char( buf, ch );
 		return;
 	}
@@ -2518,7 +2518,7 @@ CMDF( do_makestorage )
 		fprintf( fp, "#END\n" );
 		FileClose( fp );
 
-		sprintf( buf, "Storage space [%s] created for %s\r\n", filename, argument );
+		snprintf( buf, MAX_STRING_LENGTH, "Storage space [%s] created for %s\r\n", filename, argument );
 		log_printf( buf, ch );
 	}
 
@@ -2538,11 +2538,11 @@ CMDF( do_buystorage )
 
 	if( ch->gold >= STORAGE_PRICE )
 	{
-		sprintf( buf, "%s%s", STORAGE_DIR, ch->name );
+		snprintf( buf, MAX_STRING_LENGTH, "%s%s", STORAGE_DIR, ch->name );
 
 		if( stat( buf, &fst ) != -1 )
 		{
-			sprintf( buf, "You already have storage space!\r\n" );
+			snprintf( buf, MAX_STRING_LENGTH, "You already have storage space!\r\n" );
 			send_to_char( buf, ch );
 		}
 		else

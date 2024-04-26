@@ -532,7 +532,7 @@ SKILLTYPE *fread_skill( FILE *fp )
 
 		if( !fMatch )
 		{
-			sprintf( buf, "Fread_skill: no match: %s", word );
+			snprintf( buf, MAX_STRING_LENGTH, "Fread_skill: no match: %s", word );
 			bug( buf, 0 );
 		}
 	}
@@ -641,7 +641,7 @@ WEAPONTYPE *fread_weapon( FILE *fp )
 
 		if( !fMatch )
 		{
-			sprintf( buf, "Fread_weapon: no match: %s", word );
+			snprintf( buf, MAX_STRING_LENGTH, "Fread_weapon: no match: %s", word );
 			bug( buf, 0 );
 		}
 	}
@@ -767,7 +767,7 @@ void fread_social( FILE *fp )
 
 		if( !fMatch )
 		{
-			sprintf( buf, "Fread_social: no match: %s", word );
+			snprintf( buf, MAX_STRING_LENGTH, "Fread_social: no match: %s", word );
 			bug( buf, 0 );
 		}
 	}
@@ -895,7 +895,7 @@ void fread_command( FILE *fp )
 
 		if( !fMatch )
 		{
-			sprintf( buf, "Fread_command: no match: %s", word );
+			snprintf( buf, MAX_STRING_LENGTH, "Fread_command: no match: %s", word );
 			bug( buf, 0 );
 		}
 	}
@@ -955,8 +955,8 @@ void write_last_file( const char *entry )
 	FILE *fptemp;
 	char filename[MAX_INPUT_LENGTH];
 	char tempname[MAX_INPUT_LENGTH];
-	sprintf( filename, "%s", LAST_LIST );
-	sprintf( tempname, "%s", LAST_TEMP_LIST );
+	snprintf( filename, sizeof(filename), "%s", LAST_LIST );
+	snprintf( tempname, sizeof(tempname), "%s", LAST_TEMP_LIST );
 	if( ( fptemp = FileOpen( tempname, "w" ) ) == NULL )
 	{
 		bug( "Cannot open: %s for writing", tempname );

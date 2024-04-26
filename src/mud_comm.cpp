@@ -659,7 +659,7 @@ CMDF( do_mpoload )
 
 	if( IS_OBJ_STAT( obj, ITEM_NOINVOKE ) && obj->pIndexData->vnum != 5104 )
 	{
-		sprintf( buf, "[ ILLEGAL ACTION ] &? %s just tried to mpoload %s[%d].", ch->name, obj->short_descr,
+		snprintf( buf, MAX_STRING_LENGTH, "[ ILLEGAL ACTION ] &? %s just tried to mpoload %s[%d].", ch->name, obj->short_descr,
 			obj->pIndexData->vnum );
 		log_string( buf );
 		extract_obj( obj );
@@ -1574,7 +1574,7 @@ CMDF( do_mpapply )
 	if( victim->pcdata->auth_state >= 1 )
 		return;
 
-	sprintf( log_buf, "%s@%s new %s applying for authorization...",
+	snprintf( log_buf, MAX_STRING_LENGTH, "%s@%s new %s applying for authorization...",
 		victim->name, victim->desc->host, race_table[victim->race].race_name );
 	log_string( log_buf );
 	to_channel( log_buf, CHANNEL_MONITOR, "Monitor", LEVEL_STAFF );
@@ -1625,7 +1625,7 @@ CMDF( do_mpapplyb )
 	case 1:
 	default:
 		send_to_char( "You attempt to regain the gods' attention.\r\n", victim );
-		sprintf( log_buf, "%s@%s new %s applying for authorization...",
+		snprintf( log_buf, MAX_STRING_LENGTH, "%s@%s new %s applying for authorization...",
 			victim->name, victim->desc->host, race_table[victim->race].race_name );
 		log_string( log_buf );
 		to_channel( log_buf, CHANNEL_MONITOR, "Monitor", LEVEL_STAFF );
@@ -1877,7 +1877,7 @@ ch_ret simple_damage( CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt )
 	{
 		if( !npcvict )
 		{
-			sprintf( log_buf, "%s killed by %s at %d",
+			snprintf( log_buf, MAX_STRING_LENGTH, "%s killed by %s at %d",
 				victim->name, ( IS_NPC( ch ) ? ch->short_descr : ch->name ), victim->in_room->vnum );
 			log_string( log_buf );
 			to_channel( log_buf, CHANNEL_MONITOR, "Monitor", LEVEL_STAFF );

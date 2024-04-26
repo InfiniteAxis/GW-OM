@@ -1309,7 +1309,7 @@ SPELLF( spell_charm_person )
 	if( ch != victim )
 		send_to_char( "Ok.\r\n", ch );
 
-	sprintf( buf, "%s has charmed %s.", ch->name, victim->name );
+	snprintf( buf, MAX_STRING_LENGTH, "%s has charmed %s.", ch->name, victim->name );
 	//   log_string_plus( buf, LOG_NORMAL, ch->top_level );
 	return rNONE;
 }
@@ -1903,7 +1903,7 @@ SPELLF( spell_obj_inv )
 				{
 					char buf[MAX_STRING_LENGTH];
 
-					sprintf( buf, "%s water", obj->name );
+					snprintf( buf, MAX_STRING_LENGTH, "%s water", obj->name );
 					STRFREE( obj->name );
 					obj->name = STRALLOC( buf );
 				}
