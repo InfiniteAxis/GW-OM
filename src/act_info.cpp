@@ -2794,17 +2794,17 @@ CMDF( do_who )
 
 			if( IS_IMMORTAL( wch ) )
 			{
-				snprintf( lev, MAX_INPUT_LENGTH, "%d", wch->top_level );
+				snprintf( lev, 5, "%d", wch->top_level );
 			}
 			else
 			{
 				if( IS_SET( wch->pcdata->cybaflags, CYBA_NOLEVEL ) )
 				{
-					snprintf( lev, MAX_INPUT_LENGTH, "&b    " );
+					snprintf( lev, 5, "&b    " );
 				}
 				else
 				{
-					snprintf( lev, MAX_INPUT_LENGTH, "%d", wch->skill_level[COMBAT_ABILITY] + wch->skill_level[HUNTING_ABILITY] );
+					snprintf( lev, 5, "%d", wch->skill_level[COMBAT_ABILITY] + wch->skill_level[HUNTING_ABILITY] );
 				}
 			}
 
