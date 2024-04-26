@@ -2439,6 +2439,7 @@ CMDF(do_hlist)
 CMDF(do_who)
 {
 	char buf[MAX_STRING_LENGTH];
+	char whobuf[MSL*5];
 	char clan_name[MAX_INPUT_LENGTH];
 	char invis_str[MAX_INPUT_LENGTH];
 	char char_name[MAX_INPUT_LENGTH];
@@ -2456,7 +2457,6 @@ CMDF(do_who)
 	int vMatch;
 	CHAR_DATA *wint;
 	char tempbuf[20];
-	char tempbuf2[20];
 	bool rgfRace[MAX_RACE];
 	bool fRaceRestrict;
 	bool fImmortalOnly;
@@ -2758,7 +2758,7 @@ CMDF(do_who)
 			else
 				snprintf(lev, 4, "%d", wch->skill_level[COMBAT_ABILITY] + wch->skill_level[HUNTING_ABILITY]);
 
-			snprintf(buf, MSL * 4, "&C[&c%4s %s&C]&W %s%s%s%s %s%s%s %s%s%s %s\r\n",
+			snprintf(whobuf, MSL * 5, "&C[&c%4s %s&C]&W %s%s%s%s %s%s%s %s%s%s %s\r\n",
 					 lev,
 					 race,
 					 pker,
