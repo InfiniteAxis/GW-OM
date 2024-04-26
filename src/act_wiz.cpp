@@ -4958,7 +4958,7 @@ struct tm *update_time( struct tm *old_time )
 
 //FILE *popen( const char *command, const char *type );
 //int pclose( FILE *stream );
-char *fgetf( char *s, int n, register FILE *iop );
+char *fgetf( char *s, int n, FILE *iop );
 
 CMDF( do_pipe )
 {
@@ -4976,10 +4976,10 @@ CMDF( do_pipe )
 	return;
 }
 
-char *fgetf( char *s, int n, register FILE *iop )
+char *fgetf( char *s, int n, FILE *iop )
 {
-	register int c;
-	register char *cs;
+	int c;
+	char *cs;
 
 	c = '\0';
 	cs = s;

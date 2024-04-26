@@ -3826,7 +3826,7 @@ bool pager_output( DESCRIPTOR_DATA *d )
 	const char *last;
 	CHAR_DATA *ch;
 	int pclines;
-	register int lines;
+	int lines;
 	bool ret;
 
 	if( !d || !d->pagepoint || d->pagecmd == -1 )
