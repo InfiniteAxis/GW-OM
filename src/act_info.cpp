@@ -2808,7 +2808,7 @@ CMDF( do_who )
 				}
 			}
 
-			snprintf( buf, MSL+1, "&C[&c%4s %s&C]&W %s^z%s%s%s %s%s%s %s%s%s %s^x\r\n",
+			snprintf( buf, MSL+1, "&C[&c%4.4s %s&C]&W %s^z%s%s%s %s%s%s %s%s%s %s^x\r\n",
 				lev,
 				race,
 				clan_name,
