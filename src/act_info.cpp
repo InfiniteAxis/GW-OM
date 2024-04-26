@@ -2691,7 +2691,7 @@ CMDF( do_who )
 
 			if( wch->sex == SEX_MALE )
 			{
-				snprintf( race_text, MAX_STRING_LENGTH, "&B%s", race_table[wch->race].race_name );
+				snprintf( race_text, MAX_INPUT_LENGTH, "&B%s", race_table[wch->race].race_name );
 
 				if( strlen( race_text ) > 5 )
 				{
@@ -2702,7 +2702,7 @@ CMDF( do_who )
 			}
 			else if( wch->sex == SEX_FEMALE )
 			{
-				snprintf( race_text, MAX_STRING_LENGTH, "&P%s", race_table[wch->race].race_name );
+				snprintf( race_text, MAX_INPUT_LENGTH, "&P%s", race_table[wch->race].race_name );
 
 				if( strlen( race_text ) > 5 )
 				{
@@ -2714,7 +2714,7 @@ CMDF( do_who )
 			}
 			else if( wch->sex == SEX_NONBINARY )
 			{
-				snprintf( race_text, MAX_STRING_LENGTH, "&W%s", race_table[wch->race].race_name );
+				snprintf( race_text, MAX_INPUT_LENGTH, "&W%s", race_table[wch->race].race_name );
 
 				if( strlen( race_text ) > 5 )
 				{
@@ -2760,14 +2760,14 @@ CMDF( do_who )
 				mudstrlcpy( extra_title, "", MAX_INPUT_LENGTH );
 
 			if( xIS_SET( wch->act, PLR_PPKER ) )
-				snprintf( pker, MAX_STRING_LENGTH, " &r|&PP&pP&PK&r|" );
+				snprintf( pker, MAX_INPUT_LENGTH, " &r|&PP&pP&PK&r|" );
 			else if( xIS_SET( wch->act, PLR_PKER ) )
-				snprintf( pker, MAX_STRING_LENGTH, "  &p|&rPK&p|&W" );
+				snprintf( pker, MAX_INPUT_LENGTH, "  &p|&rPK&p|&W" );
 			else
 				mudstrlcpy( pker, "      &W", MSL );
 
 			if( IS_SET( wch->pcdata->flags, PCFLAG_DND ) )
-				snprintf( dnd, MAX_STRING_LENGTH, "&B[&CD&cN&CD&B]" );
+				snprintf( dnd, MAX_INPUT_LENGTH, "&B[&CD&cN&CD&B]" );
 			else
 				mudstrlcpy( dnd, "", MSL );
 
@@ -2780,31 +2780,31 @@ CMDF( do_who )
 			else if( wch->pcdata->rank && wch->pcdata->rank[0] != '\0' )
 				race = wch->pcdata->rank;
 
-			snprintf( tempbuf2, MAX_STRING_LENGTH, "  " );
+			snprintf( tempbuf2, MAX_INPUT_LENGTH, "  " );
 			if( wch->pcdata->clan )
 			{
-				snprintf( tempbuf2, MAX_STRING_LENGTH, "%s %s ^z", wch->pcdata->clan->cone, wch->pcdata->clan->ctwo );
+				snprintf( tempbuf2, MAX_INPUT_LENGTH, "%s %s ^z", wch->pcdata->clan->cone, wch->pcdata->clan->ctwo );
 			}
 			mudstrlcpy( clan_name, tempbuf2, MSL );
 
 			if( xIS_SET( wch->act, PLR_WIZINVIS ) )
-				snprintf( invis_str, MAX_STRING_LENGTH, "(%d)", wch->pcdata->wizinvis );
+				snprintf( invis_str, MAX_INPUT_LENGTH, "(%d)", wch->pcdata->wizinvis );
 			else
 				invis_str[0] = '\0';
 
 			if( IS_IMMORTAL( wch ) )
 			{
-				snprintf( lev, MAX_STRING_LENGTH, "%d", wch->top_level );
+				snprintf( lev, MAX_INPUT_LENGTH, "%d", wch->top_level );
 			}
 			else
 			{
 				if( IS_SET( wch->pcdata->cybaflags, CYBA_NOLEVEL ) )
 				{
-					snprintf( lev, MAX_STRING_LENGTH, "&b    " );
+					snprintf( lev, MAX_INPUT_LENGTH, "&b    " );
 				}
 				else
 				{
-					snprintf( lev, MAX_STRING_LENGTH, "%d", wch->skill_level[COMBAT_ABILITY] + wch->skill_level[HUNTING_ABILITY] );
+					snprintf( lev, MAX_INPUT_LENGTH, "%d", wch->skill_level[COMBAT_ABILITY] + wch->skill_level[HUNTING_ABILITY] );
 				}
 			}
 
