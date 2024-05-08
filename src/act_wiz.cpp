@@ -2851,25 +2851,25 @@ CMDF( do_balzhur )
 	else if( errno != ENOENT )
 	{
 		ch_printf( ch, "Unknown error #%d - %s (immortal data).  Report to Thoric\r\n", errno, strerror( errno ) );
-		snprintf( buf2, MAX_STRING_LENGTH, "%s balzhuring %s", ch->name, buf );
+		snprintf( buf2, MAX_STRING_LENGTH * 2, "%s balzhuring %s", ch->name, buf );
 		perror( buf2 );
 	}
 	snprintf( buf2, MAX_STRING_LENGTH, "%s.are", capitalize( arg ) );
 	for( pArea = first_build; pArea; pArea = pArea->next )
 		if( !strcmp( pArea->filename, buf2 ) )
 		{
-			snprintf( buf, MAX_STRING_LENGTH, "%s%s", BUILD_DIR, buf2 );
+			snprintf( buf, MAX_STRING_LENGTH * 2, "%s%s", BUILD_DIR, buf2 );
 			if( IS_SET( pArea->status, AREA_LOADED ) )
 				fold_area( pArea, buf, false );
 			close_area( pArea );
-			snprintf( buf2, MAX_STRING_LENGTH, "%s.bak", buf );
+			snprintf( buf2, MAX_STRING_LENGTH + 6, "%s.bak", buf );
 			set_char_color( AT_RED, ch );  /* Log message changes colors */
 			if( !rename( buf, buf2 ) )
 				send_to_char( "Player's area data destroyed.  Area saved as backup.\r\n", ch );
 			else if( errno != ENOENT )
 			{
 				ch_printf( ch, "Unknown error #%d - %s (area data).  Report to Thoric.\r\n", errno, strerror( errno ) );
-				snprintf( buf2, MAX_STRING_LENGTH, "%s destroying %s", ch->name, buf );
+				snprintf( buf2, MAX_STRING_LENGTH * 2, "%s destroying %s", ch->name, buf );
 				perror( buf2 );
 			}
 		}
@@ -4816,7 +4816,7 @@ CMDF( do_bestow )
 			continue;
 		}
 
-		snprintf( tmparg, MAX_INPUT_LENGTH, "%s ", arg );
+		snprintf( tmparg, MAX_INPUT_LENGTH * 2, "%s ", arg );
 		strncat( arg_buf, tmparg, MAX_STRING_LENGTH );
 		argument = one_argument( argument, arg );
 		fComm = true;
@@ -4830,7 +4830,7 @@ CMDF( do_bestow )
 	if( arg_buf[strlen( arg_buf ) - 1] == ' ' )
 		arg_buf[strlen( arg_buf ) - 1] = '\0';
 
-	snprintf( buf, MAX_STRING_LENGTH, "%s %s", victim->pcdata->bestowments, arg_buf );
+	snprintf( buf, MAX_STRING_LENGTH * 2, "%s %s", victim->pcdata->bestowments, arg_buf );
 	DISPOSE( victim->pcdata->bestowments );
 	smash_tilde( buf );
 	victim->pcdata->bestowments = str_dup( buf );
@@ -4930,7 +4930,7 @@ CMDF( do_pcrename )
 	remove( backname );
 	if( remove( oldname ) )
 	{
-		snprintf( buf, MAX_STRING_LENGTH, "Error: Couldn't delete file %s in do_rename.", oldname );
+		snprintf( buf, MAX_STRING_LENGTH *2, "Error: Couldn't delete file %s in do_rename.", oldname );
 		send_to_char( "Couldn't delete the old file!\r\n", ch );
 		log_string( oldname );
 	}
@@ -5547,7 +5547,7 @@ CMDF( do_pldestroy )
 		else if( errno != ENOENT )
 		{
 			ch_printf( ch, "Unknown error #%d - %s (immortal data).  Report to Thoric.\r\n", errno, strerror( errno ) );
-			snprintf( buf2, MAX_STRING_LENGTH, "%s destroying %s", ch->name, buf );
+			snprintf( buf2, MAX_STRING_LENGTH * 2, "%s destroying %s", ch->name, buf );
 			perror( buf2 );
 		}
 
@@ -5562,7 +5562,7 @@ CMDF( do_pldestroy )
 		else if( errno != ENOENT )
 		{
 			ch_printf( ch, "Unknown error #%d - %s (storage locker). Report to Halcyon.\r\n", errno, strerror( errno ) );
-			snprintf( buf2, MAX_STRING_LENGTH, "%s destroying %s", ch->name, buf );
+			snprintf( buf2, MAX_STRING_LENGTH * 2, "%s destroying %s", ch->name, buf );
 			perror( buf2 );
 		}
 
@@ -5571,20 +5571,20 @@ CMDF( do_pldestroy )
 		{
 			if( !strcmp( pArea->filename, buf2 ) )
 			{
-				snprintf( buf, MAX_STRING_LENGTH, "%s%s", BUILD_DIR, buf2 );
+				snprintf( buf, MAX_STRING_LENGTH * 2, "%s%s", BUILD_DIR, buf2 );
 				if( IS_SET( pArea->status, AREA_LOADED ) )
 				{
 					fold_area( pArea, buf, false );
 					close_area( pArea );
 				}
-				snprintf( buf2, MAX_STRING_LENGTH, "%s.bak", buf );
+				snprintf( buf2, MAX_STRING_LENGTH * 2, "%s.bak", buf );
 				set_char_color( AT_RED, ch );   /* Log message changes colors */
 				if( !rename( buf, buf2 ) )
 					send_to_char( "Player's area data destroyed.  Area saved as backup.\r\n", ch );
 				else if( errno != ENOENT )
 				{
 					ch_printf( ch, "Unknown error #%d - %s (area data).  Report to Thoric.\r\n", errno, strerror( errno ) );
-					snprintf( buf2, MAX_STRING_LENGTH, "%s destroying %s", ch->name, buf );
+					snprintf( buf2, MAX_STRING_LENGTH * 2, "%s destroying %s", ch->name, buf );
 					perror( buf2 );
 				}
 			}
@@ -5674,7 +5674,7 @@ const char *name_expand( CHAR_DATA *ch )
 			count++;
 
 
-	snprintf( outbuf, MAX_INPUT_LENGTH, "%d.%s", count, name );
+	snprintf( outbuf, MAX_INPUT_LENGTH * 2, "%d.%s", count, name );
 	return outbuf;
 }
 
