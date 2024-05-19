@@ -1800,7 +1800,7 @@ void nanny_get_name( DESCRIPTOR_DATA *d, const char *orig_argument )
 	else
 	{
 		send_to_desc_color( "\r\n&CThat name isn't in our Database&c, &Cyou must be new here&c!\r\n\r\n", d );
-		snprintf( buf, MAX_STRING_LENGTH, "&zIs &g'&G%s&g' &zyour name&B&W? &c(&YY&c/&YN&c)&B? \r\n", argument );
+		snprintf( buf, MAX_STRING_LENGTH*2, "&zIs &g'&G%s&g' &zyour name&B&W? &c(&YY&c/&YN&c)&B? \r\n", argument );
 		send_to_desc_color( buf, d );
 		d->connected = CON_CONFIRM_NEW_NAME;
 		return;

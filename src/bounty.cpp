@@ -291,12 +291,6 @@ CMDF( do_addbounty )
 		return;
 	}
 
-	if( ch == victim )
-	{
-		send_to_char( "Bountying yourself? ahaha...\r\n", ch );
-		return;
-	}
-
 	if( !xIS_SET( ch->act, PLR_PKER ) )
 	{
 		send_to_char( "&RIf you want to set Bounty's, go PK!!\r\n", ch );
@@ -323,6 +317,12 @@ CMDF( do_addbounty )
 	if( !( victim = get_char_world( ch, arg ) ) )
 	{
 		send_to_char( "They don't appear to be here .. wait til they log in.\r\n", ch );
+		return;
+	}
+
+	if( ch == victim )
+	{
+		send_to_char( "Bountying yourself? ahaha...\r\n", ch );
 		return;
 	}
 

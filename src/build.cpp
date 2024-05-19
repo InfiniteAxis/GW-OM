@@ -5068,7 +5068,7 @@ CMDF( do_redit )
 			else
 				rxit = NULL;
 		}
-		snprintf( tmpcmd, MAX_INPUT_LENGTH, "exit %s %s %s", arg2, arg3, argument );
+		snprintf( tmpcmd, MAX_INPUT_LENGTH * 2, "exit %s %s %s", arg2, arg3, argument );
 		do_redit( ch, tmpcmd );
 		if( numnotdir )
 			xit = get_exit_num( tmploc, exnum );
@@ -5086,7 +5086,7 @@ CMDF( do_redit )
 		}
 		if( vnum )
 		{
-			snprintf( tmpcmd, MAX_INPUT_LENGTH, "%d redit exit %d %s %s", vnum, rev_dir[edir], rvnum, argument );
+			snprintf( tmpcmd, MAX_INPUT_LENGTH * 2, "%d redit exit %d %s %s", vnum, rev_dir[edir], rvnum, argument );
 			do_at( ch, tmpcmd );
 		}
 		return;

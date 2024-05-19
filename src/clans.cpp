@@ -4368,7 +4368,7 @@ CMDF( do_lcargo )
 			send_to_char( "There is no room for anymore cargo\r\n", ch );
 			return;
 		}
-		if( ( target->cargotype = !CTYPE_NONE ) && ( ship->cargotype != target->cargotype ) );
+		if( ( target->cargotype == !CTYPE_NONE ) && ( ship->cargotype != target->cargotype ) );
 		{
 			send_to_char( "Maybe you should deliver your cargo first.\r\n", ch );
 			return;
@@ -4807,7 +4807,7 @@ CMDF( do_members )
 		else
 			snprintf( prefix, sizeof(prefix), "   &w" );
 
-		snprintf( display, sizeof(display), "%s%-10s", prefix, buf );
+		snprintf( display, sizeof(display)*2, "%s%-10s", prefix, buf );
 		send_to_char( display, ch );
 		++i;
 
